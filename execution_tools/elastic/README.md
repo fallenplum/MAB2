@@ -11,7 +11,10 @@ The migration helper requires the original live v3 run, source and process ident
 CPU contract tests run from this directory:
 
 ```powershell
-python -m unittest -v test_watch_g1 test_watch_g1_elastic test_elastic_worker test_elastic_finalize test_elastic_scheduling test_elastic_supervisor test_pidfd_compat
+python -m unittest -v test_watch_g1 test_watch_g1_elastic test_elastic_worker test_elastic_finalize test_elastic_scheduling test_elastic_supervisor test_pidfd_compat test_mirror_only test_mirror_terminal_verify
 ```
 
 They use synthetic fixtures and the repository's original executor; they do not query GPUs, open real labels, or migrate processes. Engineering tests and qualification checks do not establish the G1 scientific gate or ACL submission readiness.
+
+
+The running G1 now uses `mirror_only.py` as a read-only local attach layer with four bounded data connections and an independent control heartbeat. It never uploads or launches experiments. `mirror_terminal_verify.py` verifies every committed artifact and all 60000 execution references before terminal publication. Local control counters are distinct from verified downloaded artifacts. See [the mirror recovery record](../../protocol/MIRROR_RECOVERY_20261104.md).

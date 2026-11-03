@@ -1,5 +1,5 @@
 {
-  "boundary": "Runtime bytes may use Windows CRLF; repository content is normalized UTF8 LF. Frozen runtime SHA remains authoritative.",
+  "boundary": "Runtime bytes may use Windows CRLF; repository content is normalized UTF8 LF. Frozen runtime SHA remains authoritative. Mirror and observer changes do not alter the six frozen inference/scheduler helpers.",
   "files": {
     "elastic_worker.py": {
       "runtime_sha256": "6e4bce82c0e26b786af799e01c184effac4569ffb53a1b7a5e3a1342d781fc03",
@@ -32,9 +32,19 @@
       "repository_git_blob_sha1": "37e413e648363855c183fd873f530a88660534e8"
     },
     "watch_g1.py": {
-      "runtime_sha256": "83c9a963f6cf08c90d9fdc53ac421c66554523e9ddd792aa3a79f401e2a2f58c",
-      "repository_utf8_lf_sha256": "f2191406d36cc9f1d767a8a04de60088dde47ba7f8a0e333d2bd7ea6832d34f0",
-      "repository_git_blob_sha1": "3a30e72d059c07c7939b42a6fe8d1e9ccbb1fdfa"
+      "runtime_sha256": "42422afe83367ed78bb76dd5160c6f162c8020d7048c4e69f47caf34bc30eab6",
+      "repository_utf8_lf_sha256": "c7645b89506b6f2fb17f0565ff45f5f61f941ed6a3144bc7745144bd75394a84",
+      "repository_git_blob_sha1": "5cedc82f285785b7dc4761abd3606332068db183"
+    },
+    "mirror_only.py": {
+      "runtime_sha256": "1354012f0f3fe44b6b1853424467269859e97ab3fa96708b4249f9f5dd3c93d0",
+      "repository_utf8_lf_sha256": "1354012f0f3fe44b6b1853424467269859e97ab3fa96708b4249f9f5dd3c93d0",
+      "repository_git_blob_sha1": "6266fce9ff309f471e982b40ca6945e0a37df155"
+    },
+    "mirror_terminal_verify.py": {
+      "runtime_sha256": "2cf814e60cb9d43b2cd79c873b3417d0365cba6d2bb4a1faf8d46f7d840cd3b6",
+      "repository_utf8_lf_sha256": "2cf814e60cb9d43b2cd79c873b3417d0365cba6d2bb4a1faf8d46f7d840cd3b6",
+      "repository_git_blob_sha1": "ee719f3f1f194f2e33abe25a4408b78b0a2a20f9"
     }
   }
 }

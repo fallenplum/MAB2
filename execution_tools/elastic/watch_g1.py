@@ -9,6 +9,7 @@ import argparse
 import datetime as dt
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import shlex
@@ -152,7 +153,70 @@ def file_meta(path: Path, hashed=False) -> dict:
         return {"exists": False, "bytes": 0}
 
 
+def coordinator_identity(argv, cwd, root, coordinator, create_time, owner=None, current_owner=None):
+    """Bind the actual Python entry path/root and, when available, PID owner.
+
+    mirror_only publishes a creation timestamp; legacy status files without
+    that field retain their previous timestamp-availability behavior.
+    """
+    root = Path(root).resolve()
+    cwd = Path(cwd).resolve() if cwd is not None else None
+    allowed = {root / "scripts/local_coordinator.py": "legacy_local_coordinator",
+               root / "artifacts/private/monitoring/mirror_only.py": "mirror_only"}
+    python_entries = [str(value) for value in argv if Path(str(value)).suffix.lower() == ".py"]
+    script = None
+    if len(python_entries) == 1 and "-c" not in argv and "-m" not in argv:
+        entry = Path(python_entries[0])
+        if entry.is_absolute():
+            script = entry.resolve()
+        elif cwd is not None:
+            script = (cwd / entry).resolve()
+    cli_root = None
+    if argv.count("--root") == 1:
+        try:
+            cli_root = Path(argv[argv.index("--root") + 1]).resolve()
+        except (ValueError, IndexError):
+            pass
+    expected_create = coordinator.get("process_create_time")
+    mirror_only = coordinator.get("schema") == "graph_credit_mirror_only_v1"
+    creation_matches = None
+    if expected_create is not None:
+        creation_matches = (type(expected_create) in (int, float) and math.isfinite(expected_create)
+                            and expected_create > 0 and type(create_time) in (int, float)
+                            and math.isfinite(create_time) and abs(create_time - expected_create) <= .01)
+    elif mirror_only:
+        creation_matches = False
+    owner_matches = None
+    if isinstance(owner, str) and isinstance(current_owner, str):
+        owner_matches = owner.casefold() == current_owner.casefold()
+        declared = coordinator.get("owner_username")
+        if isinstance(declared, str):
+            owner_matches = owner_matches and owner.casefold() == declared.casefold()
+    script_kind = allowed.get(script)
+    schema_matches_script = not mirror_only or script_kind == "mirror_only"
+    return {"matches_project": bool(script_kind and schema_matches_script and cli_root == root
+                                    and cwd == root and creation_matches is not False and owner_matches is not False),
+            "script_identity": script_kind, "script_path": str(script) if script else None,
+            "cli_root_matches": cli_root == root, "cwd_matches": cwd == root,
+            "expected_create_time": expected_create, "creation_time_matches": creation_matches,
+            "owner_inspection_available": owner_matches is not None, "owner_matches": owner_matches}
+
+
+def mirror_verification_snapshot(path):
+    """Read report and its SHA from the same bytes, avoiding atomic-replace races."""
+    try:
+        content = path.read_bytes()
+        report = json.loads(content)
+        return {"report": report if isinstance(report, dict) else {"_read_error": "not_object"},
+                "file": {"exists": True, "bytes": len(content), "sha256": hashlib.sha256(content).hexdigest()}}
+    except FileNotFoundError:
+        return {"report": {}, "file": {"exists": False, "bytes": 0}}
+    except (OSError, ValueError) as exc:
+        return {"report": {"_read_error": type(exc).__name__}, "file": {"exists": True}}
+
+
 def local_snapshot(root: Path) -> dict:
+    root = Path(root).resolve()
     main, coord = read_json(root / "RUN_STATUS.json"), read_json(root / "COORDINATOR_STATUS.json")
     terminal = main.get("stage") == REVIEW_STAGE
     base = root / "results" / "pilot" / RUN_ID
@@ -168,21 +232,42 @@ def local_snapshot(root: Path) -> dict:
             import psutil
             process = psutil.Process(int(coord["pid"]))
             argv = process.cmdline()
+            created = process.create_time()
             coordinator_process.update(inspection_available=True, alive=process.is_running(),
-                                       create_time=process.create_time(), rss_bytes=process.memory_info().rss)
+                                       create_time=created, rss_bytes=process.memory_info().rss)
             try:
-                cli_root = Path(argv[argv.index("--root") + 1]).resolve()
-            except (ValueError, IndexError):
-                cli_root = None
-            coordinator_process["matches_project"] = any(Path(x).name == "local_coordinator.py" for x in argv) and cli_root == root
+                cwd = process.cwd()
+            except Exception:
+                cwd = None
+            owner, current_owner = None, None
+            try:
+                owner = process.username()
+                current_owner = psutil.Process(os.getpid()).username()
+            except Exception:
+                # Some Windows accounts cannot inspect process usernames.
+                # Preserve the existing behavior when ownership is unavailable.
+                pass
+            coordinator_process.update(coordinator_identity(argv, cwd, root, coord, created, owner, current_owner))
         except ImportError:
             coordinator_process["inspection_error"] = "psutil_unavailable"
         except Exception as exc:
             coordinator_process.update(inspection_available=True, alive=False, inspection_error=type(exc).__name__)
     space = shutil.disk_usage(root)
+    artifacts = {name: file_meta(base / name, terminal) for name in ("all_observations.jsonl", "G1_ANALYSIS.json")}
+    mirror_only = coord.get("schema") == "graph_credit_mirror_only_v1"
+    mirror_verification = mirror_verification_snapshot(root / "artifacts/audit/mirror_terminal_verification.json") if mirror_only else {}
+    mirror_artifacts = {}
+    if mirror_only and coord.get("stage") == "REMOTE_TERMINAL_MIRRORED":
+        mirror_artifacts = {
+            "analysis": artifacts["G1_ANALYSIS.json"], "all_observations": artifacts["all_observations.jsonl"],
+            "frozen_plan": shards[0]["files"]["frozen_plan.json"],
+            "finalization": file_meta(base / "ELASTIC_FINALIZATION.json", True),
+            "allocation": file_meta(root / "artifacts/private/performance/allocation.json", True),
+            "migration_receipt": file_meta(root / "artifacts/audit/elastic_migration_20261103.json", True)}
     return {"main": main, "coordinator": coord, "coordinator_process": coordinator_process,
             "disk": {"total_bytes": space.total, "free_bytes": space.free},
-            "shards": shards, "artifacts": {name: file_meta(base / name, terminal) for name in ("all_observations.jsonl", "G1_ANALYSIS.json")}}
+            "shards": shards, "artifacts": artifacts, "mirror_verification": mirror_verification,
+            "mirror_artifacts": mirror_artifacts}
 
 
 def remote_snapshot(args) -> dict:
@@ -224,6 +309,47 @@ def growth_key(snapshot: dict) -> dict:
                              "calls_bytes": s.get("files", {}).get("physical_calls.jsonl", {}).get("bytes", 0),
                              "scored_bytes": s.get("files", {}).get("observations.jsonl", {}).get("bytes", 0)}
             for s in remote.get("shards", [])}
+
+
+def mirror_terminal_evidence(local, remote, coord):
+    """Strict mirror_only completion proof, separate from legacy mirroring."""
+    failures = []
+    snapshot = object_value(local.get("mirror_verification"))
+    report, metadata = object_value(snapshot.get("report")), object_value(snapshot.get("file"))
+    references = [coord.get(name) for name in ("terminal_verification_sha256", "mirror_terminal_verification_sha256")
+                  if coord.get(name) is not None]
+    if (not references or len(set(references)) != 1 or metadata.get("exists") is not True
+            or not metadata.get("bytes") or not metadata.get("sha256") or metadata.get("sha256") != references[0]):
+        failures.append("mirror_terminal_verification_missing_or_sha_mismatch")
+    if (coord.get("run_id") != RUN_ID or report.get("schema") != "graph_credit_mirror_terminal_verification_v1"
+            or report.get("status") != "PASS" or report.get("run_id") != RUN_ID
+            or report.get("observations") != 60000 or report.get("remote_stage") != REVIEW_STAGE
+            or report.get("execution_references_verified") != 60000
+            or type(report.get("execution_files_verified")) is not int
+            or not 0 < report.get("execution_files_verified", 0) <= 60000
+            or report.get("verification_scope") != "local_mirror_integrity"
+            or report.get("scientific_completion") is not False or report.get("labels_read") is not False):
+        failures.append("mirror_terminal_verification_status_run_or_coverage_mismatch")
+    scientific = object_value(object_value(remote.get("analysis")).get("scientific_gate")).get("status")
+    if report.get("scientific_gate") != scientific or report.get("scientific_gate") not in {"PASS", "INSUFFICIENT_SIGNAL"}:
+        failures.append("mirror_terminal_verification_analysis_status_mismatch")
+    hashes = object_value(report.get("artifact_sha256"))
+    required = {"finalization", "analysis", "allocation", "migration_receipt", "frozen_plan", "all_observations"}
+    if set(hashes) < required or any(not isinstance(hashes.get(name), str) or len(hashes[name]) != 64
+                                    or any(char not in "0123456789abcdef" for char in hashes[name]) for name in required):
+        failures.append("mirror_terminal_verification_artifact_hashes_missing_or_invalid")
+    for name in required:
+        actual = object_value(object_value(local.get("mirror_artifacts")).get(name))
+        if actual.get("exists") is not True or not actual.get("sha256") or hashes.get(name) != actual.get("sha256"):
+            failures.append("mirror_terminal_verification_local_artifact_mismatch:" + name)
+    for name, filename in (("analysis", "G1_ANALYSIS.json"), ("all_observations", "all_observations.jsonl")):
+        actual = object_value(object_value(remote.get("artifacts")).get(filename))
+        if not actual.get("sha256") or hashes.get(name) != actual.get("sha256"):
+            failures.append("mirror_terminal_verification_remote_artifact_mismatch:" + name)
+    for shard in remote.get("shards", []):
+        if hashes.get("frozen_plan") != object_value(object_value(shard.get("files")).get("frozen_plan.json")).get("sha256"):
+            failures.append("mirror_terminal_verification_remote_plan_mismatch")
+    return failures
 
 
 def classify(snapshot: dict, previous: dict | None = None, interval=1800) -> dict:
@@ -303,6 +429,9 @@ def classify(snapshot: dict, previous: dict | None = None, interval=1800) -> dic
     cp = object_value(local.get("coordinator_process"))
     if coord.get("stage") != "REMOTE_TERMINAL_MIRRORED" and cp.get("inspection_available") and (not cp.get("alive") or not cp.get("matches_project")):
         reasons.append("local_coordinator_process_dead_or_mismatched")
+    if (coord.get("schema") == "graph_credit_mirror_only_v1" and cp.get("inspection_available")
+            and cp.get("alive") and cp.get("matches_project") is not True):
+        reasons.append("mirror_only_process_identity_mismatch")
     # Compare immutable provenance, allowing normal lag for growing output files.
     for left, right in zip(local.get("shards", []), shards):
         local_hash = left.get("files", {}).get("frozen_plan.json", {}).get("sha256")
@@ -350,11 +479,15 @@ def classify(snapshot: dict, previous: dict | None = None, interval=1800) -> dic
                           and s.get("status", {}).get("scored") is True
                           and s.get("status", {}).get("outputs_frozen") == remote_shard.get("status", {}).get("outputs_frozen")
                           for s, remote_shard in zip(local_shards, shards)))
+    mirror_failures = []
+    if coord.get("schema") == "graph_credit_mirror_only_v1" and coord.get("stage") == "REMOTE_TERMINAL_MIRRORED":
+        mirror_failures = mirror_terminal_evidence(local, remote, coord)
+        reasons.extend(mirror_failures)
     if stage == REVIEW_STAGE and coord.get("stage") == "REMOTE_TERMINAL_MIRRORED" and not (all_done and local_done and analysis_ok and artifacts_ok and plans_present and len(protocols) == 1):
         reasons.append("terminal_completion_or_analysis_evidence_inconsistent")
     if reasons:
         state = "ATTENTION_REQUIRED"
-    elif stage == REVIEW_STAGE and all_done and local_done and artifacts_ok and analysis_ok and plans_present and coord.get("stage") == "REMOTE_TERMINAL_MIRRORED":
+    elif stage == REVIEW_STAGE and all_done and local_done and artifacts_ok and analysis_ok and plans_present and not mirror_failures and coord.get("stage") == "REMOTE_TERMINAL_MIRRORED":
         state = "REVIEW_READY"
         reasons = ["G1_generation_scoring_analysis_and_local_mirror_complete_requires_scientific_review"]
     elif stage == REVIEW_STAGE:
