@@ -13,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from graph_credit.executor import (CacheIntegrityError, Executor, Generation, GraphConfig,
-                                   MESSAGE_INSTRUCTION, ROLE_PROMPTS,
+                                   AGGREGATOR_PROMPT, MESSAGE_INSTRUCTION, ROLE_PROMPTS,
                                    affected_closure, canonical, logical_edges, normalize_message,
                                    unrolled_dependencies, validate_mask)
 
@@ -273,12 +273,29 @@ class ExecutionSemantics(unittest.TestCase):
         self.assertGreater(result.cost()["output_tokens"], 0)
 
     def test_v2_prompts_require_quoted_compact_messages_and_internal_checks(self):
-        self.assertEqual(GraphConfig().executor_version, "unrolled_closed_input_v2")
+        self.assertEqual(GraphConfig().executor_version, "unrolled_closed_input_v3")
         self.assertIn('"answer":"25"', MESSAGE_INSTRUCTION)
         self.assertIn("at most 20 words", MESSAGE_INSTRUCTION)
         self.assertIn("at most 5 words", MESSAGE_INSTRUCTION)
         self.assertIn("single-line", MESSAGE_INSTRUCTION)
         self.assertTrue(all("internally" in prompt for prompt in ROLE_PROMPTS))
+
+    def test_v3_aggregator_system_and_user_require_all_three_fields_in_order(self):
+        template = '{"answer":"<final answer>","uncertainty":"","evidence":"<brief check>"}'
+        self.assertIn(template, AGGREGATOR_PROMPT)
+        self.assertIn("ALL THREE keys are mandatory", AGGREGATOR_PROMPT)
+        self.assertIn('Never omit "uncertainty"', AGGREGATOR_PROMPT)
+        result = Executor(FakeBackend()).execute(self.question, self.full, 91)
+        user = result.nodes["aggregate"].messages[1]["content"]
+        tail = user.split("Required final format:", 1)[1]
+        self.assertIn(template, tail)
+        self.assertIn("Include exactly all 3 keys in that order", tail)
+        self.assertIn("Never omit uncertainty, even when empty", tail)
+        self.assertTrue(tail.endswith("Return only the complete single-line JSON object."))
+        for node, record in result.nodes.items():
+            if node != "aggregate":
+                self.assertNotIn("Required final format:", record.messages[1]["content"])
+                self.assertTrue(record.messages[0]["content"].endswith(MESSAGE_INSTRUCTION))
 
     def test_source_order_and_no_within_round_dependencies(self):
         result = Executor(FakeBackend()).execute(self.question, self.full, 81)

@@ -1,0 +1,137 @@
+{
+  "purpose": "G1 preregistered development-only conditional edge-credit audit",
+  "graph": {
+    "rounds": 2,
+    "n_workers": 4,
+    "message_tokens": 128,
+    "aggregate_tokens": 256,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_input_tokens": 8192,
+    "executor_version": "unrolled_closed_input_v3"
+  },
+  "seeds": [
+    1701,
+    1702,
+    1703,
+    1704,
+    1705
+  ],
+  "edge_pairs": [
+    [
+      0,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      6,
+      10
+    ]
+  ],
+  "base_masks": [
+    {
+      "name": "full",
+      "mask": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "chain",
+      "mask": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "star",
+      "mask": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "fixed_random",
+      "mask": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sequential_deletion",
+      "mask": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "expected_questions": 200,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 29173,
+  "decision_rule": "G1 PASS only after real S0 pass, complete frozen coverage, and question-cluster bootstrap lower95 of cross-seed squared interaction > 0; otherwise stop complex acquisition",
+  "scientific_completion": false,
+  "qualification_message_gate": {
+    "worker_min_format_valid_rate": 0.9,
+    "worker_max_length_finish_rate": 0.1,
+    "worker_max_trimmed_rate": 0.1,
+    "aggregator_min_format_valid_rate": 0.9,
+    "aggregator_max_length_finish_rate": 0.1,
+    "aggregator_max_trimmed_rate": 0.1,
+    "require_each_role": true
+  },
+  "protocol_revision": "v3_aggregate_three_field_reminder"
+}

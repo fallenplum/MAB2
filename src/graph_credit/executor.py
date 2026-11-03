@@ -44,7 +44,16 @@ MESSAGE_INSTRUCTION = (
 AGGREGATOR_PROMPT = (
     "You are the fixed answer aggregator. Independently verify the candidates "
     "against the question and any supplied evidence and resolve disagreements internally, "
-    "then return the best final answer. " + MESSAGE_INSTRUCTION
+    "then return the best final answer. Return ONLY one compact single-line JSON object. "
+    'Exactly ALL THREE keys are mandatory, in this order: "answer", "uncertainty", "evidence". '
+    'Use this complete template: {"answer":"<final answer>","uncertainty":"","evidence":"<brief check>"}. '
+    'Every value must be a double-quoted string, including a numerical answer. '
+    'For a numerical question put only the final number inside the answer string. '
+    'Never omit "uncertainty": include "uncertainty":"" when there is no unresolved issue. '
+    'Write the uncertainty field before the evidence field so all three required fields are present. '
+    'Keep uncertainty to at most 5 words and evidence to at most 20 words. '
+    'Do detailed checking internally; output no reasoning steps, Markdown, code fences or extra text. '
+    'Close the JSON object within the output token limit.'
 )
 
 
@@ -59,7 +68,7 @@ class GraphConfig:
     top_p: float = 0.9
     role_prompts: tuple[str, ...] = ROLE_PROMPTS
     max_input_tokens: int = 8192
-    executor_version: str = "unrolled_closed_input_v2"
+    executor_version: str = "unrolled_closed_input_v3"
 
     def __post_init__(self) -> None:
         if self.rounds not in (2, 3):
@@ -298,7 +307,10 @@ class Executor:
             inbound = [{"worker": w, "message": outputs[f"r{self.config.rounds}:w{w}"].wire_message} for w in range(4)]
             received = sum(len(self.backend.encode(i["message"])) for i in inbound)
             return [{"role": "system", "content": AGGREGATOR_PROMPT},
-                    {"role": "user", "content": qtext + "\n\nFinal worker messages:\n" + canonical(inbound)}], received, 0
+                    {"role": "user", "content": qtext + "\n\nFinal worker messages:\n" + canonical(inbound)
+                     + '\n\nRequired final format: {"answer":"<final answer>","uncertainty":"","evidence":"<brief check>"}. '
+                     + 'Include exactly all 3 keys in that order. Never omit uncertainty, even when empty. '
+                     + 'Return only the complete single-line JSON object.'}], received, 0
         r, w = (int(s[1:]) for s in node.split(":"))
         role = self.config.role_prompts[w]
         prompt = qtext

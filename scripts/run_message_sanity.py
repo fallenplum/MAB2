@@ -19,7 +19,7 @@ def main():
     p=argparse.ArgumentParser()
     p.add_argument('--root', type=Path, required=True)
     p.add_argument('--config', type=Path, required=True)
-    p.add_argument('--run-id', default='message_sanity_v2_20261103')
+    p.add_argument('--run-id', default='message_sanity_v3_20261103')
     args=p.parse_args()
     root=args.root
     out=root/'results/pilot'/args.run_id
@@ -42,13 +42,16 @@ def main():
     write_json(out/'MANIFEST.json',{'protocol_hash':executor.protocol_hash,'model_identity':backend.identity,
                                   'source_manifest_sha256':digest(plan['source_manifest'])})
     records=[]
+    per_question=[]
     for q in questions:
         result=executor.execute(q,[1]*12,1701)
         write_json(out/'executions'/(q['id']+'.json'),result.to_dict())
         records.extend(result.nodes.items())
+        per_question.append({"question_id":q["id"],"message_report":evaluate_message_records(list(result.nodes.items()),config.get("qualification_message_gate"))})
         write_json(out/'STATUS.json',{'stage':'GENERATING','completed_questions':len(records)//9,
                                       'physical_calls':len(backend.physical_calls),'scientific_completion':False})
     report=evaluate_message_records(records,config.get('qualification_message_gate'))
+    write_json(out/'PER_QUESTION.json',per_question)
     report.update(purpose='16-item label-free message engineering qualification',questions=16,
                   labels_read=False,scientific_completion=False,protocol_hash=executor.protocol_hash,
                   physical_calls=len(backend.physical_calls),timestamp=time.time())

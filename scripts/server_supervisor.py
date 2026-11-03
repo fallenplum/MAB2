@@ -65,8 +65,8 @@ def main():
                 break
             update('WAITING_GPU_MEMORY', free_mib=free)
             time.sleep(30)
-        s0run = 's0_v2_20261103'
-        child = start(command('qualification_questions.jsonl',None,'qualification_v2.json',s0run)+['--limit','1','--qualification-only'], admitted[0], 's0_v2')
+        s0run = 's0_v3_20261103'
+        child = start(command('qualification_questions.jsonl',None,'qualification_v3.json',s0run)+['--limit','1','--qualification-only'], admitted[0], 's0_v3')
         update('S0_REAL_QUALIFICATION', active_pids=[child.pid], gpus=[admitted[0]])
         result = child.wait()
         if result:
@@ -75,9 +75,9 @@ def main():
         q = json.loads(qualification.read_text())
         if q.get('status') != 'PASS' or not q.get('eligible_for_G1'):
             raise RuntimeError('S0 artifact does not pass')
-        sanity_run='message_sanity_v2_20261103'
-        sanity_cmd=[sys.executable,'-u','scripts/run_message_sanity.py','--root',str(root),'--config',str(root/'configs/qualification_v2.json'),'--run-id',sanity_run]
-        sanity=start(sanity_cmd,admitted[0],'message_sanity_v2')
+        sanity_run='message_sanity_v3_20261103'
+        sanity_cmd=[sys.executable,'-u','scripts/run_message_sanity.py','--root',str(root),'--config',str(root/'configs/qualification_v3.json'),'--run-id',sanity_run]
+        sanity=start(sanity_cmd,admitted[0],'message_sanity_v3')
         update('S0_16_ITEM_MESSAGE_SANITY',active_pids=[sanity.pid],s0_execution='PASS')
         if sanity.wait():
             raise RuntimeError('16-item message conformity qualification failed; stop before G1')
@@ -94,9 +94,9 @@ def main():
                 break
             update('WAITING_GPU_MEMORY_AFTER_QUALIFICATION',free_mib=current)
             time.sleep(30)
-        run = 'motivation_v2_20261103'
+        run = 'motivation_v3_20261103'
         for index,gpu in enumerate(admitted):
-            cmd = command('motivation_questions.jsonl','motivation_labels.jsonl','motivation_v2.json',run)
+            cmd = command('motivation_questions.jsonl','motivation_labels.jsonl','motivation_v3.json',run)
             cmd += ['--shard-index',str(index),'--num-shards',str(len(admitted))]
             children.append(start(cmd,gpu,f'g1_shard_{index:03}'))
         update('G1_REAL_GENERATION', active_pids=[c.pid for c in children], gpus=admitted, s0='PASS', expected_questions=200,
