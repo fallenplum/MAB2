@@ -1,0 +1,17 @@
+data/
+models/
+results/
+logs/
+artifacts/private/
+artifacts/audit/resource_audit*
+protocol/*.docx
+protocol/source_manifest.json
+.venv/
+.wheels/
+.cache/
+__pycache__/
+*.pyc
+*.partial
+*.pem
+*.key
+.env*

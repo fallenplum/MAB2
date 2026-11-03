@@ -1,0 +1,13 @@
+{
+  "min_questions": 200,
+  "min_seeds": 5,
+  "required_families": ["full", "chain", "star", "fixed_random", "sequential_deletion"],
+  "require_all_families_per_question": true,
+  "expected_task": "gsm8k",
+  "allowed_splits": ["dev", "motivation"],
+  "confidence": 0.95,
+  "bootstrap_samples": 2000,
+  "bootstrap_seed": 29173,
+  "min_effect_squared": 0.0,
+  "require_plan_verification": true
+}
