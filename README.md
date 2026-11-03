@@ -4,6 +4,8 @@
 
 ## 状态与证据边界
 
+当前执行v2。v1真实执行一致性通过但消息协议检查失败，初始G1已停止并排除。v2修复数值JSON解析、短消息及失败消息表示，并新增消息合规门和16题无标签资格检查；参见[修复记录](protocol/MESSAGE_PROTOCOL_REPAIR_V2.md)。软件检查现为63项通过，真实v2资格仍以产物为准。
+
 2026-11-03：已完整审阅研究方案，建立独立数据切分、执行合同和S0→G1代码。软件检查通过不代表真实动机成立；真实阶段以运行产物和独立审计为准。尚无经验证的质量提升、成本优势或ACL投稿就绪结论。
 
 首阶段使用Qwen2.5-3B-Instruct固定revision、4个冻结角色及同骨干汇总、2轮、12条可恢复有向边、128-token消息。3轮用于执行依赖资格和后续敏感性。先检验真实完整重跑与闭包反事实一致，再跑200开发题、5seed、5背景、3组边对的2×2审计；共60,000图观测。同题全部观测按问题簇处理，使用跨独立seed乘积估计平方交互，保留负估计。
@@ -16,14 +18,15 @@
 |---|---|
 | `protocol/EXECUTION_CONTRACT.md` | 原方案合同、阶段门、信息权限与完整成本 |
 | `protocol/ACL_TARGET.md` | 官方投稿时间、优势风险和交付边界 |
-| `configs/qualification_v1.json` | 真实S0资格参数，明确非科研结果 |
-| `configs/motivation_v1.json` | G1开发动机预声明参数 |
+| `configs/qualification_v2.json` | 真实S0资格参数，明确非科研结果 |
+| `configs/motivation_v2.json` | G1开发动机预声明参数 |
 | `src/graph_credit/executor.py` | 多轮DAG、可恢复边、联合闭包及严格缓存 |
 | `src/graph_credit/backend.py` | 冻结BF16真实推理、独立随机数和物理账本 |
 | `src/graph_credit/scoring.py` | GSM8K显式最终答案Decimal评分，拒绝歧义 |
 | `scripts/prepare_project.py` | 官方数据只读副本、题级去重、固定划分与方案来源 |
 | `scripts/download_model.py` | 固定模型版本、断点续传与官方文件哈希校验 |
 | `scripts/run_pilot.py` | 先冻结计划/生成全部输出，再读取诊断标签 |
+| `scripts/run_message_sanity.py` | 16道保留资格题、无标签144次调用的消息合规检查 |
 | `scripts/analyze_pilot.py` | 完整性检查、问题级统计及G1门 |
 | `scripts/server_supervisor.py` | 共享GPU显存准入、S0通过后G1分片；失败不重试推理 |
 | `scripts/local_coordinator.py` | 本地数据拥有者：传输、服务器核验和增量结果同步 |

@@ -1,0 +1,54 @@
+{
+  "purpose": "S0 execution qualification only; no scientific credit-drift claim",
+  "graph": {
+    "rounds": 2,
+    "n_workers": 4,
+    "message_tokens": 128,
+    "aggregate_tokens": 256,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_input_tokens": 8192,
+    "executor_version": "unrolled_closed_input_v2"
+  },
+  "seeds": [
+    1701,
+    1702
+  ],
+  "edge_pairs": [
+    [
+      0,
+      4
+    ]
+  ],
+  "base_masks": [
+    {
+      "name": "full",
+      "mask": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "scientific_completion": false,
+  "qualification_message_gate": {
+    "worker_min_format_valid_rate": 0.9,
+    "worker_max_length_finish_rate": 0.1,
+    "worker_max_trimmed_rate": 0.1,
+    "aggregator_min_format_valid_rate": 0.9,
+    "aggregator_max_length_finish_rate": 0.1,
+    "aggregator_max_trimmed_rate": 0.1,
+    "require_each_role": true
+  },
+  "protocol_revision": "v2_numeric_json_and_short_message_repair"
+}

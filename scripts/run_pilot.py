@@ -102,9 +102,96 @@ def scorer_identity(spec: str | None) -> dict[str, Any]:
             "module_sha256": hashlib.sha256(content).hexdigest(), "module_bytes": len(content)}
 
 
-def qualify(backend, question, config: GraphConfig, seed: int, run_dir: Path) -> dict[str, Any]:
-    """Real-model reproducibility/replay checks, separate from scientific evidence."""
+def evaluate_message_records(records, config: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Evaluate (node_name, NodeRecord) pairs without labels or model calls.
+
+    Only newly generated physical node outputs enter message-gate denominators.
+    A reused node must not inflate compliance counts. Paired same-input repeats
+    remain counted physical calls, not independent population-quality samples.
+    Complete finite numeric JSON answers accepted by the normalizer are valid;
+    repairing incomplete JSON must never turn a format failure into a success.
+    """
+    gate = {
+        "worker_min_format_valid_rate": 0.9,
+        "worker_max_length_finish_rate": 0.1,
+        "worker_max_trimmed_rate": 0.1,
+        "aggregator_min_format_valid_rate": 0.9,
+        "aggregator_max_length_finish_rate": 0.1,
+        "aggregator_max_trimmed_rate": 0.1,
+        "require_each_role": True,
+    }
+    supplied = {} if config is None else config
+    if not isinstance(supplied, dict) or set(supplied) - set(gate):
+        raise ValueError("Unknown or invalid qualification_message_gate configuration")
+    gate.update(supplied)
+    if type(gate["require_each_role"]) is not bool:
+        raise ValueError("qualification require_each_role must be boolean")
+    for key, value in gate.items():
+        if key != "require_each_role" and (type(value) not in (int, float) or not 0 <= value <= 1):
+            raise ValueError(f"qualification threshold {key} must be finite and within [0,1]")
+
+    def counts(records):
+        output = {"generated": len(records), "format_valid": 0, "format_invalid": 0,
+                  "length_finishes": 0, "trimmed": 0, "type_normalized": 0,
+                  "missing_or_invalid_metadata": 0, "unknown_finish_reasons": 0}
+        for node in records:
+            metadata = node.message_metadata
+            valid_metadata = (type(metadata.get("format_ok")) is bool
+                              and type(metadata.get("message_trimmed")) is bool)
+            output["missing_or_invalid_metadata"] += int(not valid_metadata)
+            valid = valid_metadata and metadata["format_ok"]
+            output["format_valid"] += int(valid)
+            output["format_invalid"] += int(not valid)
+            output["length_finishes"] += int(node.generation.finish_reason == "length")
+            output["unknown_finish_reasons"] += int(node.generation.finish_reason not in ("length", "eos", "stop", "eos_token"))
+            output["trimmed"] += int(metadata.get("message_trimmed", False) is True)
+            output["type_normalized"] += int(metadata.get("type_normalized", False) is True)
+        denominator = output["generated"]
+        for numerator, rate in (("format_valid", "format_valid_rate"),
+                                ("length_finishes", "length_finish_rate"), ("trimmed", "trimmed_rate")):
+            output[rate] = output[numerator] / denominator if denominator else None
+        return output
+
+    def message_check(all_records):
+        fresh = [(name, node) for name, node in all_records if not node.reused]
+        worker_records = [node for name, node in fresh if name != "aggregate"]
+        aggregator_records = [node for name, node in fresh if name == "aggregate"]
+        by_role = {f"w{role}": counts([node for name, node in fresh if name.endswith(f":w{role}")])
+                   for role in range(4)}
+        workers, aggregator = counts(worker_records), counts(aggregator_records)
+        reasons = []
+        def assess(label, counter, prefix):
+            if counter["generated"] == 0:
+                reasons.append(f"{label}: no physical generated outputs")
+                return
+            if counter["missing_or_invalid_metadata"] or counter["unknown_finish_reasons"]:
+                reasons.append(f"{label}: missing/invalid schema metadata or unknown finish reasons")
+            if counter["format_valid_rate"] < gate[prefix + "_min_format_valid_rate"]:
+                reasons.append(f"{label}: format_valid_rate={counter['format_valid_rate']:.6f} below frozen threshold")
+            if counter["length_finish_rate"] > gate[prefix + "_max_length_finish_rate"]:
+                reasons.append(f"{label}: length_finish_rate={counter['length_finish_rate']:.6f} above frozen threshold")
+            if counter["trimmed_rate"] > gate[prefix + "_max_trimmed_rate"]:
+                reasons.append(f"{label}: trimmed_rate={counter['trimmed_rate']:.6f} above frozen threshold")
+        assess("workers", workers, "worker")
+        assess("aggregator", aggregator, "aggregator")
+        if gate["require_each_role"]:
+            for role, counter in by_role.items():
+                assess(role, counter, "worker")
+        return {"status": "PASS" if not reasons else "FAIL", "reasons": reasons,
+                "workers": workers, "aggregator": aggregator, "workers_by_role": by_role,
+                "physical_generations": len(fresh), "reused_node_occurrences_excluded": len(all_records) - len(fresh),
+                "all_node_occurrences": len(all_records), "gate_config": dict(gate),
+                "format_definition": "Complete raw JSON schema; finite numeric answer canonicalization is accepted, malformed/incomplete JSON is invalid",
+                "denominator": "physical_generations_only; cached node occurrences excluded; paired repeat calls are not independent samples"}
+
+    return message_check(records)
+
+
+def qualify(backend, question, config: GraphConfig, seed: int, run_dir: Path,
+            message_gate_config: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Independent execution and message qualification on one label-free question."""
     checks = []
+    all_round_records = []
     for rounds in (2, 3):
         executor = Executor(backend, dataclasses.replace(config, rounds=rounds))
         full_mask = [1] * 12
@@ -131,18 +218,39 @@ def qualify(backend, question, config: GraphConfig, seed: int, run_dir: Path) ->
                                 "trimmed": sum(n.message_metadata["message_trimmed"] for n in result.nodes.values()),
                                 "length_finishes": sum(n.generation.finish_reason == "length" for n in result.nodes.values())}
                          for name, result in runs.items()}
-        passed = repeated_equal and replay_equal and expected_calls == changed_closure.cost()["calls"] and empty_safe
+        round_records = [(node_name, node) for execution in runs.values() for node_name, node in execution.nodes.items()]
+        all_round_records.extend(round_records)
+        messages = evaluate_message_records(round_records, message_gate_config)
+        execution_passed = repeated_equal and replay_equal and expected_calls == changed_closure.cost()["calls"] and empty_safe
+        passed = execution_passed and messages["status"] == "PASS"
         checks.append({"rounds": rounds, "same_input_seed_full_repeat_equal": repeated_equal,
                        "closure_independent_full_equal": replay_equal, "closure": changed_closure.closure,
                        "closure_expected_physical_calls": expected_calls,
                        "closure_actual_physical_calls": changed_closure.cost()["calls"],
                        "empty_graph_no_external_worker_messages": empty_safe,
                        "format_counts": format_counts, "physical_costs": {n: r.cost() for n, r in runs.items()},
-                       "protocol_hash": executor.protocol_hash, "passed": passed})
-    result = {"schema": "real_hf_execution_qualification_v1", "status": "PASS" if all(c["passed"] for c in checks) else "FAIL",
+                       "protocol_hash": executor.protocol_hash,
+                       "execution_passed": execution_passed, "message_gate": messages,
+                       "message_passed": messages["status"] == "PASS", "passed": passed})
+    combined_messages = evaluate_message_records(all_round_records, message_gate_config)
+    execution_status = "PASS" if all(c["execution_passed"] for c in checks) else "FAIL"
+    message_status = "PASS" if all(c["message_passed"] for c in checks) and combined_messages["status"] == "PASS" else "FAIL"
+    passed = execution_status == "PASS" and message_status == "PASS"
+    result = {"schema": "real_hf_execution_qualification_v2", "status": "PASS" if passed else "FAIL",
               "question_id": question["id"], "seed": seed, "checks": checks,
+              "execution_gate": {"status": execution_status},
+              "message_gate": {**combined_messages, "status": message_status,
+                               "all_rounds_must_pass": True,
+                               "round_failures": [{"rounds": c["rounds"], "reasons": c["message_gate"]["reasons"]}
+                                                  for c in checks if not c["message_passed"]]},
+              "eligible_for_G1": passed,
+              "label_access": "none; qualification uses no reference answers",
+              "qualification_question_count": 1,
+              "broader_sanity_recommendation": {"questions": 16, "labels_required": False,
+                                                "status": "NOT_ESTABLISHED_BY_THIS_SINGLE_QUESTION_CHECK",
+                                                "purpose": "check schema/length rates across held-out qualification questions before relying on population compliance"},
               "raw_generated_outputs_retained": True, "scientific_completion": False,
-              "boundary": "Execution validity only; does not establish credit drift or paper-level benefit"}
+              "boundary": "Single-question execution and message-schema validity only; no population compliance estimate, graph-credit effect or paper-level benefit"}
     write_json(run_dir / "QUALIFICATION.json", result)
     return result
 
@@ -263,7 +371,8 @@ def main() -> int:
         if args.qualification_only:
             if not assigned:
                 raise ValueError("No assigned qualification question")
-            qualification = qualify(backend, assigned[0], graph_config, seeds[0], run_dir)
+            qualification = qualify(backend, assigned[0], graph_config, seeds[0], run_dir,
+                                    cfg.get("qualification_message_gate"))
             runtime.update(phase="QUALIFICATION_" + qualification["status"], generation_complete=True,
                            workflow_complete=False, scientific_completion=False,
                            successful_physical_calls=len(backend.physical_calls))

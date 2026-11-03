@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 from graph_credit.executor import (CacheIntegrityError, Executor, Generation, GraphConfig,
+                                   MESSAGE_INSTRUCTION, ROLE_PROMPTS,
                                    affected_closure, canonical, logical_edges, normalize_message,
                                    unrolled_dependencies, validate_mask)
 
@@ -181,9 +182,103 @@ class ExecutionSemantics(unittest.TestCase):
         backend = FakeBackend()
         serialized, parsed, metadata = normalize_message("Unstructured candidate: 42", backend, 128)
         self.assertFalse(metadata["format_ok"])
+        self.assertFalse(metadata["type_normalized"])
+        self.assertEqual(parsed["answer"], "")
+        self.assertEqual(parsed["evidence"], "")
         self.assertEqual(parsed["uncertainty"], "FORMAT_ERROR")
         self.assertEqual(len(backend.calls), 0)
         self.assertEqual(json.loads(serialized), parsed)
+
+    def test_complete_numerical_answers_are_normalized_without_fabricating_evidence(self):
+        backend = FakeBackend()
+        for value, expected in ((25, "25"), (-7, "-7"), (2.5, "2.5"), (25.0, "25.0")):
+            raw = json.dumps({"answer": value, "evidence": "5 groups of 5.", "uncertainty": ""})
+            serialized, parsed, metadata = normalize_message(raw, backend, 128)
+            self.assertTrue(metadata["format_ok"])
+            self.assertTrue(metadata["type_normalized"])
+            self.assertIsNone(metadata["format_error"])
+            self.assertEqual(parsed["answer"], expected)
+            self.assertEqual(parsed["evidence"], "5 groups of 5.")
+            self.assertEqual(json.loads(serialized), parsed)
+        _, _, metadata = normalize_message('{"answer":"25","evidence":"checked","uncertainty":""}', backend, 128)
+        self.assertFalse(metadata["type_normalized"])
+
+    def test_complete_fenced_json_is_deterministically_accepted(self):
+        backend = FakeBackend()
+        for tag in ("json", "JSON", ""):
+            raw = '```' + tag + '\n{"answer":25,"evidence":"5 times 5.","uncertainty":""}\n```'
+            serialized, parsed, metadata = normalize_message(raw, backend, 128)
+            self.assertTrue(metadata["format_ok"])
+            self.assertTrue(metadata["type_normalized"])
+            self.assertEqual(parsed["answer"], "25")
+            self.assertEqual(json.loads(serialized), parsed)
+            self.assertEqual(len(backend.calls), 0)
+
+    def test_truncated_json_and_incomplete_schema_are_explicit_empty_errors(self):
+        backend = FakeBackend()
+        invalid = [
+            '{"answer":"25","evidence":"5 times',
+            '{"answer":"25","evidence":"checked"',
+            '{"answer":"25"}',
+            '{"answer":25,"uncertainty":""}',
+            '```json\n{"answer":"25","evidence":"checked","uncertainty":""}',
+            '{"answer":"25","evidence":null,"uncertainty":""}',
+        ]
+        for raw in invalid:
+            serialized, parsed, metadata = normalize_message(raw, backend, 128)
+            self.assertFalse(metadata["format_ok"], raw)
+            self.assertFalse(metadata["type_normalized"], raw)
+            self.assertEqual(parsed, {"answer": "", "evidence": "", "uncertainty": "FORMAT_ERROR"})
+            self.assertTrue(metadata["format_error"])
+            self.assertNotIn(raw, serialized)
+        self.assertEqual(len(backend.calls), 0)
+
+    def test_non_finite_boolean_and_ambiguous_answers_are_rejected(self):
+        backend = FakeBackend()
+        invalid = [
+            '{"answer":NaN,"evidence":"checked","uncertainty":""}',
+            '{"answer":Infinity,"evidence":"checked","uncertainty":""}',
+            '{"answer":1e309,"evidence":"checked","uncertainty":""}',
+            '{"answer":true,"evidence":"checked","uncertainty":""}',
+            '{"answer":null,"evidence":"checked","uncertainty":""}',
+            '{"answer":"25","answer":"26","evidence":"checked","uncertainty":""}',
+            '{"answer":"25","evidence":"checked","uncertainty":""} {"answer":"26"}',
+        ]
+        for raw in invalid:
+            _, parsed, metadata = normalize_message(raw, backend, 128)
+            self.assertFalse(metadata["format_ok"], raw)
+            self.assertEqual(parsed["answer"], "")
+            self.assertEqual(parsed["evidence"], "")
+            self.assertEqual(parsed["uncertainty"], "FORMAT_ERROR")
+
+    def test_error_messages_preserve_original_raw_generation_and_full_cost(self):
+        class TruncatedBackend(FakeBackend):
+            def generate(self, messages, seed, max_new_tokens, config):
+                raw = '{"answer":"25","evidence":"' + "x" * (max_new_tokens - 27)
+                raw = raw[:max_new_tokens]
+                result = Generation(raw, len(canonical(messages)), len(raw), .01, .008, 4096, "length")
+                self.calls.append(result)
+                return result
+        backend = TruncatedBackend()
+        result = Executor(backend).execute(self.question, self.full, 99)
+        for name, node in result.nodes.items():
+            self.assertFalse(node.message_metadata["format_ok"], name)
+            self.assertTrue(node.generation.text.startswith('{"answer":"25","evidence":"'))
+            self.assertEqual(node.generation.finish_reason, "length")
+            self.assertEqual(node.parsed["answer"], "")
+            self.assertEqual(node.parsed["evidence"], "")
+            self.assertEqual(node.parsed["uncertainty"], "FORMAT_ERROR")
+        self.assertEqual(result.cost()["calls"], len(backend.calls))
+        self.assertEqual(result.cost()["output_tokens"], sum(c.output_tokens for c in backend.calls))
+        self.assertGreater(result.cost()["output_tokens"], 0)
+
+    def test_v2_prompts_require_quoted_compact_messages_and_internal_checks(self):
+        self.assertEqual(GraphConfig().executor_version, "unrolled_closed_input_v2")
+        self.assertIn('"answer":"25"', MESSAGE_INSTRUCTION)
+        self.assertIn("at most 20 words", MESSAGE_INSTRUCTION)
+        self.assertIn("at most 5 words", MESSAGE_INSTRUCTION)
+        self.assertIn("single-line", MESSAGE_INSTRUCTION)
+        self.assertTrue(all("internally" in prompt for prompt in ROLE_PROMPTS))
 
     def test_source_order_and_no_within_round_dependencies(self):
         result = Executor(FakeBackend()).execute(self.question, self.full, 81)

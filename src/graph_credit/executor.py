@@ -9,6 +9,8 @@ from __future__ import annotations
 import dataclasses
 import hashlib
 import json
+import math
+import re
 import time
 import uuid
 from dataclasses import dataclass, field
@@ -25,22 +27,24 @@ def digest(value: Any) -> str:
 
 
 ROLE_PROMPTS = (
-    "Solve the question independently; state a candidate answer and the key reasoning.",
-    "Check evidence and arithmetic carefully; identify unsupported claims before answering.",
-    "Check the logical reasoning step by step; correct any inconsistent inference.",
-    "Look for counterexamples and alternative interpretations; give your best supported answer.",
+    "Solve the question independently. Perform all detailed reasoning internally.",
+    "Check evidence, arithmetic and unsupported claims internally before answering.",
+    "Check the logical reasoning internally and correct inconsistent inferences.",
+    "Check counterexamples and alternative interpretations internally before answering.",
 )
 MESSAGE_INSTRUCTION = (
-    'Return only one JSON object with exactly these string fields: "answer", '
-    '"evidence", "uncertainty". Put the short final answer in "answer"; '
-    'put concise reasoning or checks in "evidence"; put unresolved issues in '
-    '"uncertainty" (empty string if none). Stay within the output token limit. '
-    'For a numerical question put only the final number in "answer".'
+    'Return exactly one compact single-line JSON object with these three string fields. '
+    'Example: {"answer":"25","evidence":"5 groups of 5.","uncertainty":""}. '
+    'Always put the answer in double quotes, including numerical answers. '
+    'For a numerical question, answer must contain only the final number. '
+    'Keep evidence to at most 20 words and uncertainty to at most 5 words, or an empty string. '
+    'Do detailed reasoning internally. Do not output reasoning steps, Markdown, code fences or extra text. '
+    'Finish and close the JSON object within the output token limit.'
 )
 AGGREGATOR_PROMPT = (
     "You are the fixed answer aggregator. Independently verify the candidates "
-    "against the question and any supplied evidence, resolve disagreements, "
-    "and return the best final answer. " + MESSAGE_INSTRUCTION
+    "against the question and any supplied evidence and resolve disagreements internally, "
+    "then return the best final answer. " + MESSAGE_INSTRUCTION
 )
 
 
@@ -55,7 +59,7 @@ class GraphConfig:
     top_p: float = 0.9
     role_prompts: tuple[str, ...] = ROLE_PROMPTS
     max_input_tokens: int = 8192
-    executor_version: str = "unrolled_closed_input_v1"
+    executor_version: str = "unrolled_closed_input_v2"
 
     def __post_init__(self) -> None:
         if self.rounds not in (2, 3):
@@ -139,23 +143,53 @@ def affected_closure(old_mask: Sequence[int], new_mask: Sequence[int], rounds: i
 
 
 def normalize_message(text: str, backend: Backend, token_limit: int) -> tuple[str, dict[str, str], dict[str, Any]]:
-    """Deterministic, non-model repair; malformed output and trimming remain visible."""
+    """Normalize complete schema-valid messages, never infer missing content.
+
+    A complete fenced JSON object is accepted for deterministic transport
+    tolerance. Finite numerical answers are converted to strings. Incomplete,
+    ambiguous or malformed JSON becomes an explicit empty error message; the
+    caller retains the unchanged Generation with its raw text and full cost.
+    """
     fields = ("answer", "evidence", "uncertainty")
     parsed = None
-    decoder = json.JSONDecoder()
-    for i, char in enumerate(text):
-        if char != "{":
-            continue
-        try:
-            candidate, _ = decoder.raw_decode(text[i:])
-        except json.JSONDecodeError:
-            continue
-        if isinstance(candidate, dict) and all(isinstance(candidate.get(k), str) for k in fields):
+    type_normalized = False
+    format_error = None
+    content = text.strip()
+    fenced = re.fullmatch(r"```(?:json)?\s*\n?(.*?)\n?```", content, re.IGNORECASE | re.DOTALL)
+    if fenced:
+        content = fenced.group(1).strip()
+
+    def unique_object(pairs):
+        result = {}
+        for key, value in pairs:
+            if key in result:
+                raise ValueError("duplicate_json_key")
+            result[key] = value
+        return result
+
+    try:
+        candidate = json.loads(content, object_pairs_hook=unique_object)
+        if not isinstance(candidate, dict) or set(candidate) != set(fields):
+            format_error = "missing_or_extra_fields"
+        elif not isinstance(candidate["evidence"], str) or not isinstance(candidate["uncertainty"], str):
+            format_error = "invalid_field_type"
+        elif isinstance(candidate["answer"], str):
             parsed = {k: candidate[k] for k in fields}
-            break
+        elif type(candidate["answer"]) in (int, float):
+            value = candidate["answer"]
+            if isinstance(value, float) and not math.isfinite(value):
+                format_error = "non_finite_answer"
+            else:
+                parsed = {"answer": str(value), "evidence": candidate["evidence"],
+                          "uncertainty": candidate["uncertainty"]}
+                type_normalized = True
+        else:
+            format_error = "invalid_answer_type"
+    except (json.JSONDecodeError, ValueError) as exc:
+        format_error = "duplicate_json_key" if str(exc) == "duplicate_json_key" else "invalid_or_incomplete_json"
     format_ok = parsed is not None
     if parsed is None:
-        parsed = {"answer": text.strip(), "evidence": "", "uncertainty": "FORMAT_ERROR"}
+        parsed = {"answer": "", "evidence": "", "uncertainty": "FORMAT_ERROR"}
     serialized = canonical(parsed)
     trimmed = False
     # Trim evidence/uncertainty before the actual answer. Count the wire message,
@@ -170,8 +204,9 @@ def normalize_message(text: str, backend: Backend, token_limit: int) -> tuple[st
             trimmed = True
     if len(backend.encode(serialized)) > token_limit:
         raise ValueError("Tokenizer cannot encode the empty fixed message schema within the cap")
-    return serialized, parsed, {"format_ok": format_ok, "message_trimmed": trimmed,
-                                 "message_tokens": len(backend.encode(serialized))}
+    return serialized, parsed, {"format_ok": format_ok, "type_normalized": type_normalized,
+                               "format_error": format_error, "message_trimmed": trimmed,
+                               "message_tokens": len(backend.encode(serialized))}
 
 
 @dataclass(frozen=True)

@@ -20,6 +20,14 @@ class ScoringTests(unittest.TestCase):
         self.assertEqual(score_item('Answer: 1,,234', '#### 1234'), 0)
         self.assertEqual(score_item('Answer: 12,34', '#### 1234'), 0)
 
+    def test_real_qualification_numeric_json_and_markdown(self):
+        text = '```json\n{"answer": 25, "evidence": "38/2 = 19", "uncertainty": ""}\n```'
+        self.assertEqual(score_item(text, '#### 25'), 1)
+        self.assertEqual(score_item('{"answer":true,"evidence":"","uncertainty":""}', '#### 1'), 0)
+
+    def test_conflicting_numeric_json_answers_fail(self):
+        self.assertEqual(score_item('{"answer":25,"answer":26}', '#### 26'), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
