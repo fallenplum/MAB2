@@ -1,0 +1,279 @@
+{
+  "schema": "baseline_reproduction_registry_v1",
+  "checked_date_local": "2026-11-03",
+  "timezone": "Asia/Shanghai",
+  "scope": "只读一手论文、作者仓库元数据、固定提交关键源码；未克隆/安装/运行；不修改已冻结实验源码",
+  "primary_baselines": [
+    {
+      "name": "AgentPrune",
+      "official_repository": "yanweiyue/AgentPrune",
+      "official_repo_url": "https://github.com/yanweiyue/AgentPrune",
+      "paper_url": "https://openreview.net/forum?id=LkzuPorQ5L",
+      "arxiv_url": "https://arxiv.org/abs/2410.02506",
+      "commit": "c544dd6a1858c02c6d5d371d23c6e6ff55e0be21",
+      "commit_date_utc": "2025-03-23T13:10:20Z",
+      "commit_url": "https://github.com/yanweiyue/AgentPrune/commit/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21",
+      "code_status": "REMOTE_READ_ONLY_NOT_CLONED_NOT_EXECUTED",
+      "license": {
+        "github_metadata_value": null,
+        "license_or_copying_file_detected_in_recursive_tree": false,
+        "conclusion": "未检出许可证声明，不作授权推断",
+        "metadata_source": "https://api.github.com/repos/yanweiyue/AgentPrune"
+      },
+      "source_files": [
+        {
+          "path": "AgentPrune/graph/graph.py",
+          "blob_sha": "534e27f24b38c4b370807301ac61b8e50f5b51d1",
+          "read_status": "REMOTE_FILE_READ",
+          "url": "https://github.com/yanweiyue/AgentPrune/blob/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/AgentPrune/graph/graph.py"
+        },
+        {
+          "path": "experiments/run_gsm8k.py",
+          "blob_sha": "d0432f1758616ea2527354fcade513407c4f4f76",
+          "read_status": "REMOTE_FILE_READ",
+          "url": "https://github.com/yanweiyue/AgentPrune/blob/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/experiments/run_gsm8k.py"
+        },
+        {
+          "path": "AgentPrune/agents/final_decision.py",
+          "blob_sha": "5d72888aa69fe742f1aa5a87e0c4273474113348",
+          "read_status": "REMOTE_FILE_READ",
+          "url": "https://github.com/yanweiyue/AgentPrune/blob/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/AgentPrune/agents/final_decision.py"
+        }
+      ],
+      "native_algorithm": {
+        "actions": [
+          "spatial_DAG_edges",
+          "temporal_edges"
+        ],
+        "feedback": "已执行最终答案的可验证任务反馈；图参数训练/评分/全部节点执行必须计费",
+        "aggregator": "GSM官方已审查入口默认FinalRefer；其他最终汇总配置单列",
+        "training_label_access": "仅校准/允许反馈；本项目独立官方test不得参与选择"
+      },
+      "controlled_adapter": {
+        "name": "AgentPrune-adapted-12edge",
+        "contract": {
+          "workers": 4,
+          "rounds": 2,
+          "optional_edges": 12,
+          "message_tokens": 128,
+          "self_state_edges": "fixed",
+          "aggregation_edges": "fixed",
+          "worker_model": "Qwen2.5-3B-Instruct",
+          "aggregator": "frozen_common_aggregator"
+        },
+        "native_reproduction": false,
+        "disclosed_removed_capabilities": [
+          "native_spatial_graph_semantics",
+          "separate_spatial_temporal_action_parameters"
+        ]
+      },
+      "static_findings": [
+        {
+          "kind": "objective_path_audit",
+          "path": "experiments/run_gsm8k.py",
+          "lines": [
+            122,
+            151
+          ],
+          "finding": "已审查GSM入口路径损失为负log_prob乘utility，未找到论文核范数项；须继续逐路径核验，不能推广至全仓库或论文。",
+          "runtime_verified": false,
+          "url": "https://github.com/yanweiyue/AgentPrune/blob/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/experiments/run_gsm8k.py"
+        },
+        {
+          "kind": "split_interface_audit",
+          "path": "experiments/run_gsm8k.py",
+          "lines": [
+            72,
+            163
+          ],
+          "finding": "同一dataset_json顺序分批并累计计分；实际数据语义取决于传参/外层流程，需显式独立校准和留出统计；不能直接断言必然泄漏。",
+          "runtime_verified": false,
+          "url": "https://github.com/yanweiyue/AgentPrune/blob/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/experiments/run_gsm8k.py"
+        },
+        {
+          "kind": "pruning_behavior_audit",
+          "path": "AgentPrune/graph/graph.py",
+          "lines": [
+            317,
+            339
+          ],
+          "finding": "已读update_masks将低logit边掩码设0，该函数未包含恢复；不代表全仓库不存在恢复。",
+          "runtime_verified": false,
+          "url": "https://github.com/yanweiyue/AgentPrune/blob/c544dd6a1858c02c6d5d371d23c6e6ff55e0be21/AgentPrune/graph/graph.py"
+        }
+      ],
+      "minimum_fair_comparison": [
+        "原算法系统轨保留原核心动作与计算语义；骨干/角色/汇总差异披露",
+        "机制轨明确adapted，统一4node/2round/12edge/128token及反馈和预算",
+        "校准题与独立留出题分离；校准/评分/重试/服务全部计费",
+        "同设备与调度的质量-全成本曲线，至少5流/算法seed与问题级配对统计"
+      ],
+      "reproduction_status": "NOT_RUN",
+      "confidence": {
+        "resource_identity": "high",
+        "runtime_correctness": "unverified",
+        "performance": "unverified"
+      }
+    },
+    {
+      "name": "AgentDropout V1",
+      "official_repository": "wangzx1219/AgentDropout",
+      "official_repo_url": "https://github.com/wangzx1219/AgentDropout",
+      "paper_url": "https://aclanthology.org/2025.acl-long.1170/",
+      "arxiv_url": "https://arxiv.org/abs/2503.18891",
+      "commit": "855befab08df60ac734c9608b3b2f317ce687e6e",
+      "commit_date_utc": "2026-06-12T09:57:56Z",
+      "commit_url": "https://github.com/wangzx1219/AgentDropout/commit/855befab08df60ac734c9608b3b2f317ce687e6e",
+      "code_status": "REMOTE_READ_ONLY_NOT_CLONED_NOT_EXECUTED",
+      "license": {
+        "github_metadata_value": null,
+        "license_or_copying_file_detected_in_recursive_tree": false,
+        "conclusion": "未检出许可证声明，不作授权推断",
+        "metadata_source": "https://api.github.com/repos/wangzx1219/AgentDropout"
+      },
+      "source_files": [
+        {
+          "path": "AgentDropout/graph/graph.py",
+          "blob_sha": "c5de1c61f318ac189486d5ddddad2d46b136e39e",
+          "read_status": "REMOTE_FILE_READ",
+          "url": "https://github.com/wangzx1219/AgentDropout/blob/855befab08df60ac734c9608b3b2f317ce687e6e/AgentDropout/graph/graph.py"
+        },
+        {
+          "path": "experiments/run_gsm8k.py",
+          "blob_sha": "90fed46bb049da9a3b345ff422e1d3188e2381de",
+          "read_status": "REMOTE_FILE_READ",
+          "url": "https://github.com/wangzx1219/AgentDropout/blob/855befab08df60ac734c9608b3b2f317ce687e6e/experiments/run_gsm8k.py"
+        },
+        {
+          "path": "AgentDropout/agents/final_decision.py",
+          "blob_sha": "489bf69448b7fce4f1b339fea44bf7402ce8cdcc",
+          "read_status": "REMOTE_FILE_READ",
+          "url": "https://github.com/wangzx1219/AgentDropout/blob/855befab08df60ac734c9608b3b2f317ce687e6e/AgentDropout/agents/final_decision.py"
+        }
+      ],
+      "native_algorithm": {
+        "actions": [
+          "per_round_node_dropout",
+          "per_round_spatial_DAG_edges",
+          "temporal_edges",
+          "two_stage_reoptimization"
+        ],
+        "feedback": "已执行最终答案的可验证任务反馈；图参数训练/评分/全部节点执行必须计费",
+        "aggregator": "GSM官方已审查入口默认FinalRefer；其他最终汇总配置单列",
+        "training_label_access": "仅校准/允许反馈；本项目独立官方test不得参与选择"
+      },
+      "controlled_adapter": {
+        "name": "AgentDropout-adapted-edge-only",
+        "contract": {
+          "workers": 4,
+          "rounds": 2,
+          "optional_edges": 12,
+          "message_tokens": 128,
+          "self_state_edges": "fixed",
+          "aggregation_edges": "fixed",
+          "worker_model": "Qwen2.5-3B-Instruct",
+          "aggregator": "frozen_common_aggregator"
+        },
+        "native_reproduction": false,
+        "disclosed_removed_capabilities": [
+          "node_dropout",
+          "native_spatial_graph_semantics",
+          "per_round_independent_graph_actions"
+        ]
+      },
+      "static_findings": [
+        {
+          "kind": "hardcoded_dimension",
+          "path": "AgentDropout/graph/graph.py",
+          "lines": [
+            570,
+            599
+          ],
+          "finding": "update_masks_dec静态包含reshape(5,5)/range(5)/按5计算索引；4节点dec路径不能未经修补核验直接使用；未实际运行。",
+          "runtime_verified": false,
+          "url": "https://github.com/wangzx1219/AgentDropout/blob/855befab08df60ac734c9608b3b2f317ce687e6e/AgentDropout/graph/graph.py"
+        },
+        {
+          "kind": "training_cost",
+          "path": "experiments/run_gsm8k.py",
+          "lines": [
+            109,
+            358
+          ],
+          "finding": "节点阶段2批20题，边阶段4批10题；唯一校准题数不等于执行次数，需完整账本。",
+          "runtime_verified": false,
+          "url": "https://github.com/wangzx1219/AgentDropout/blob/855befab08df60ac734c9608b3b2f317ce687e6e/experiments/run_gsm8k.py"
+        },
+        {
+          "kind": "version_identity",
+          "path": "README.md",
+          "finding": "当前README介绍V2并跳转MASRubric；本登记锁ACL2025 V1，不得混用V2结果。",
+          "runtime_verified": false,
+          "url": "https://github.com/wangzx1219/AgentDropout/blob/855befab08df60ac734c9608b3b2f317ce687e6e/README.md"
+        }
+      ],
+      "minimum_fair_comparison": [
+        "原算法系统轨保留原核心动作与计算语义；骨干/角色/汇总差异披露",
+        "机制轨明确adapted，统一4node/2round/12edge/128token及反馈和预算",
+        "校准题与独立留出题分离；校准/评分/重试/服务全部计费",
+        "同设备与调度的质量-全成本曲线，至少5流/算法seed与问题级配对统计"
+      ],
+      "reproduction_status": "NOT_RUN",
+      "confidence": {
+        "resource_identity": "high",
+        "runtime_correctness": "unverified",
+        "performance": "unverified"
+      }
+    }
+  ],
+  "other_neighbors": [
+    {
+      "name": "SafeSieve",
+      "paper_url": "https://arxiv.org/html/2508.11733v3",
+      "official_repository": "csgen/SafeSieve",
+      "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+      "code_status": "REMOTE_TREE_AND_README_READ_CORE_PATH_NOT_AUDITED",
+      "license_metadata": null,
+      "capabilities": [
+        "semantic_initialization",
+        "historical_feedback",
+        "structured_progressive_pruning"
+      ],
+      "next_step": "继续核验核心路径与全成本；不称完成复现"
+    },
+    {
+      "name": "E2-Explainer",
+      "paper_url": "https://arxiv.org/html/2608.12921v2",
+      "official_repository": null,
+      "code_status": "OFFICIAL_CODE_UNRESOLVED_IN_BOUNDED_SEARCH",
+      "capabilities": [
+        "conditional_edge_masking",
+        "repeated_execution_supervision",
+        "amortized_budgeted_edge_and_node_subgraph_prediction"
+      ],
+      "next_step": "进一步确认作者代码或明确独立重实现；未找到不等于证明未发布"
+    },
+    {
+      "name": "AgentRevive",
+      "paper_url": "https://aclanthology.org/2026.acl-long.373/",
+      "arxiv_url": "https://arxiv.org/html/2605.17348",
+      "official_repository": null,
+      "code_status": "OFFICIAL_CODE_UNRESOLVED_IN_BOUNDED_SEARCH",
+      "capabilities": [
+        "active_standby_terminated_states",
+        "state_policy_training",
+        "compressed_memory_reuse",
+        "state_aware_edge_optimization"
+      ],
+      "next_step": "进一步确认作者代码/风险估计/预算；固定节点适配不得冒充原版"
+    }
+  ],
+  "global_rules": {
+    "paper_metrics_reproduced": false,
+    "third_party_source_uploaded": false,
+    "new_credentials_saved": false,
+    "formal_runs_allowed_before_G1": false,
+    "main_claim_boundary": "资源核对和文档锁不构成算法有效性、真实执行或ACL竞争力证据"
+  },
+  "markdown_companion": "baseline_reproduction_registry.md"
+}
