@@ -11,6 +11,7 @@ from pathlib import Path, PurePosixPath
 import queue
 import re
 import shlex
+import stat
 import threading
 import time
 import traceback
@@ -78,19 +79,29 @@ def sha_file(path):
     return h.hexdigest()
 
 
-def atomic_bytes(path, content):
+def atomic_bytes(path, content, *, root=None, root_identity=None):
     path = Path(path)
+    relative = path.relative_to(root).as_posix() if root is not None else None
+    if root is not None:
+        path = local_path(root, relative, root_identity=root_identity)
     path.parent.mkdir(parents=True, exist_ok=True)
+    if root is not None:
+        path = local_path(root, relative, root_identity=root_identity)
     temp = path.with_name(path.name + "." + uuid.uuid4().hex + ".tmp")
+    if root is not None:
+        temp = local_path(root, temp.relative_to(root).as_posix(), root_identity=root_identity)
     with temp.open("xb") as handle:
         handle.write(content)
         handle.flush()
         os.fsync(handle.fileno())
+    if root is not None:
+        local_path(root, relative, root_identity=root_identity)
+        local_path(root, temp.relative_to(root).as_posix(), root_identity=root_identity)
     os.replace(temp, path)
 
 
-def atomic_json(path, value):
-    atomic_bytes(path, (dumps(value) + "\n").encode("utf-8"))
+def atomic_json(path, value, **guard_options):
+    atomic_bytes(path, (dumps(value) + "\n").encode("utf-8"), **guard_options)
 
 
 def read_json(path):
@@ -101,16 +112,76 @@ def read_json(path):
         return {}
 
 
-def local_path(root, name):
-    if not isinstance(name, str) or "\\" in name or ":" in name:
-        raise ValueError("Unsafe mirror path")
-    rel = PurePosixPath(name)
-    if rel.is_absolute() or ".." in rel.parts or not rel.parts:
-        raise ValueError("Unsafe mirror path")
-    path = root.joinpath(*rel.parts)
-    if not path.resolve().is_relative_to(root):
-        raise ValueError("Mirror path escapes the root")
-    return path
+class MirrorPathError(ValueError):
+    def __init__(self, message, **diagnostics):
+        self.path_diagnostics = diagnostics
+        super().__init__(message)
+
+
+def local_path(root, name, *, root_identity=None):
+    """Validate existing ancestors; never resolve a nonexistent destination.
+
+    This assumes our exclusive publisher lease and owned local directories.
+    It detects existing links/reparse points and rechecks before publication;
+    it is not a claim of protection against arbitrary malicious local renames.
+    """
+    root = Path(root)
+    diagnostic = {"root": str(root), "candidate": None,
+                  "existing_parent": str(root), "resolved_existing_parent": str(root)}
+    def reject(message):
+        raise MirrorPathError(message, **diagnostic)
+    if not root.is_absolute():
+        reject("Mirror root must already be canonical and absolute")
+    if not isinstance(name, str) or not name or "\\" in name or ":" in name:
+        reject("Unsafe mirror path")
+    parts = name.split("/")
+    devices = {"CON", "PRN", "AUX", "NUL", "CONIN$", "CONOUT$"} | {f"{prefix}{i}" for prefix in ("COM", "LPT") for i in range(1, 10)}
+    if any(not part or part in (".", "..") or part.endswith((".", " "))
+           or any(ord(char) < 32 or char in '<>:"|?*' for char in part)
+           or part.split(".", 1)[0].upper() in devices for part in parts):
+        reject("Unsafe mirror path component")
+    candidate = root.joinpath(*parts)
+    diagnostic["candidate"] = str(candidate)
+    # Component containment, independent of the existence of the suffix.
+    if not candidate.is_relative_to(root):
+        reject("Mirror path escapes the root lexically")
+    root_stat = root.lstat()  # Permission and unexpected I/O errors remain errors.
+    reparse = getattr(stat, "FILE_ATTRIBUTE_REPARSE_POINT", 0x400)
+    def is_link(info):
+        return stat.S_ISLNK(info.st_mode) or bool(getattr(info, "st_file_attributes", 0) & reparse)
+    if is_link(root_stat) or not stat.S_ISDIR(root_stat.st_mode):
+        reject("Canonical mirror root is not a plain directory")
+    if root_identity is not None and (root_stat.st_dev, root_stat.st_ino) != tuple(root_identity):
+        reject("Canonical mirror root was replaced")
+    current, deepest = root, root
+    for index, part in enumerate(parts):
+        current = current / part
+        try:
+            info = current.lstat()
+        except FileNotFoundError:
+            break  # Only a genuinely missing suffix gets lexical construction.
+        if is_link(info):
+            diagnostic["existing_parent"] = str(current)
+            try:
+                diagnostic["resolved_existing_parent"] = str(current.resolve(strict=True))
+            except OSError as exc:
+                diagnostic["resolved_existing_parent"] = "unresolved:" + type(exc).__name__
+            reject("Mirror path traverses a symlink or reparse point")
+        if index < len(parts) - 1:
+            if not stat.S_ISDIR(info.st_mode):
+                reject("Existing mirror ancestor is not a directory")
+            deepest = current
+        elif not stat.S_ISREG(info.st_mode):
+            reject("Existing mirror destination is not a regular file")
+    diagnostic["existing_parent"] = str(deepest)
+    try:
+        resolved_parent = deepest.resolve(strict=True)
+    except FileNotFoundError:
+        reject("Existing mirror parent disappeared during validation")
+    diagnostic["resolved_existing_parent"] = str(resolved_parent)
+    if not resolved_parent.is_relative_to(root):
+        reject("Existing mirror parent resolves outside the canonical root")
+    return candidate
 
 
 def is_temporary(name):
@@ -186,7 +257,7 @@ class PublisherLock:
             self.handle.close()
 
 
-def fixed_copy(sftp, remote, temporary, progress, *, is_immutable=False, is_jsonl=False):
+def fixed_copy(sftp, remote, temporary, progress, *, is_immutable=False, is_jsonl=False, on_temp_created=None):
     """Copy exactly the open-handle size; append-only growth is a new version."""
     started = time.monotonic()
     with sftp.open(remote, "rb") as source:
@@ -195,7 +266,9 @@ def fixed_copy(sftp, remote, temporary, progress, *, is_immutable=False, is_json
         deadline = started + min(900, max(120, length / 131072))
         if length:
             source.prefetch(file_size=length, max_concurrent_requests=16)
-        with Path(temporary).open("wb") as target:
+        with Path(temporary).open("xb") as target:
+            if on_temp_created is not None:
+                on_temp_created()
             received = 0
             while received < length:
                 if time.monotonic() > deadline:
@@ -240,8 +313,12 @@ class Mirror:
     def __init__(self, args):
         import psutil
         self.args, self.root = args, args.root.resolve()
+        root_stat = self.root.lstat()
+        self.root_identity = (root_stat.st_dev, root_stat.st_ino)
         self.private = self.root / "artifacts/private/mirroring"
+        local_path(self.root, "artifacts/private/mirroring/probe_latest.json", root_identity=self.root_identity)
         self.private.mkdir(parents=True, exist_ok=True)
+        local_path(self.root, "artifacts/private/mirroring/probe_latest.json", root_identity=self.root_identity)
         current = psutil.Process()
         self.state = {"schema": "graph_credit_mirror_only_v1", "pid": os.getpid(), "run_id": RUN_ID,
                       "process_create_time": current.create_time(), "owner_username": current.username(),
@@ -295,7 +372,8 @@ class Mirror:
             return text.replace(secret, "<redacted>") if secret else text
         return {"error_type": type(exc).__name__, "error_message": clean(exc),
                 "traceback": clean("".join(traceback.format_exception(type(exc), exc, exc.__traceback__))),
-                "worker": worker, "path": path, "phase": phase, "attempt": attempt, "observed_unix": time.time()}
+                "worker": worker, "path": path, "phase": phase, "attempt": attempt, "observed_unix": time.time(),
+                "path_diagnostics": getattr(exc, "path_diagnostics", None)}
 
     def close_client(self, client, *, worker=None, path=None):
         """A cleanup failure must never replace the error which caused cleanup."""
@@ -309,10 +387,29 @@ class Mirror:
                 self.state["last_cleanup_error"] = detail
                 self.state["cleanup_errors"] = self.state.get("cleanup_errors", 0) + 1
 
+    def cleanup_owned_temp(self, path, identity, *, worker=None):
+        """Remove only this attempt's exclusive, unchanged regular temp file."""
+        if path is None or identity is None:
+            return
+        try:
+            relative = path.relative_to(self.root).as_posix()
+            if not re.search(r"\.attach\d+\.[0-9a-f]{32}\.mirrorpartial$", path.name):
+                raise MirrorPathError("Unexpected owned temporary filename", root=str(self.root), candidate=str(path))
+            local_path(self.root, relative, root_identity=self.root_identity)
+            info = path.lstat()
+            if (info.st_dev, info.st_ino) != tuple(identity) or not stat.S_ISREG(info.st_mode):
+                raise MirrorPathError("Temporary file identity changed before cleanup", root=str(self.root), candidate=str(path))
+            path.unlink()
+        except FileNotFoundError:
+            return  # Successful os.replace already consumed the temporary entry.
+        except Exception as exc:
+            detail = self.exception_detail(exc, worker=worker, path=str(path), phase="owned_temp_cleanup")
+            self.update(last_temp_cleanup_error=detail)
+
     def publish_status(self):
         with self.guard:
             record = {**self.state, "updated_at_unix": time.time()}
-        atomic_json(self.root / "COORDINATOR_STATUS.json", record)
+        atomic_json(self.root / "COORDINATOR_STATUS.json", record, root=self.root, root_identity=self.root_identity)
 
     def heartbeat(self):
         while not self.stop.is_set():
@@ -333,7 +430,8 @@ class Mirror:
                         break
                     for name, value in data["files"].items():
                         if "base64" in value:
-                            atomic_bytes(local_path(self.root, name), base64.b64decode(value["base64"]))
+                            atomic_bytes(local_path(self.root, name, root_identity=self.root_identity), base64.b64decode(value["base64"]),
+                                         root=self.root, root_identity=self.root_identity)
                     main = data.get("files", {}).get("RUN_STATUS.json", {}).get("value", {})
                     with self.guard:
                         self.control = main
@@ -341,7 +439,8 @@ class Mirror:
                         if self.state.get("stage") not in {"FINALIZING_MIRROR", "REMOTE_TERMINAL_MIRRORED", "FAILED"}:
                             self.state["stage"] = "REMOTE_RUNNING_AND_MIRRORING"
                 except Exception as exc:
-                    if fatal_connection_error(exc):
+                    self.update(last_control_error=self.exception_detail(exc, worker="control", path="RUN_STATUS.json", phase="control_snapshot"))
+                    if fatal_connection_error(exc) or isinstance(exc, MirrorPathError):
                         self.thread_errors.append("control_fatal:" + type(exc).__name__)
                         self.update(stage="FAILED", control_error_type=type(exc).__name__)
                         break
@@ -349,12 +448,14 @@ class Mirror:
                         self.state["control_error_type"] = type(exc).__name__
                         if self.state.get("stage") not in {"FINALIZING_MIRROR", "REMOTE_TERMINAL_MIRRORED", "FAILED"}:
                             self.state["stage"] = "MIRROR_CONNECTION_RETRY"
-                    if client:
-                        client.close(); client = None
+                    old_client, client = client, None
+                    self.close_client(old_client, worker="control", path="RUN_STATUS.json")
                 self.stop.wait(30)
+        except Exception as exc:
+            self.update(last_thread_error=self.exception_detail(exc, worker="control", path="RUN_STATUS.json", phase="control_thread"))
+            self.thread_errors.append("control_worker:" + type(exc).__name__)
         finally:
-            if client:
-                client.close()
+            self.close_client(client, worker="control", path="RUN_STATUS.json")
 
     def needs_transfer(self, item, forced=False):
         name, size, mtime_ns, *_ = item
@@ -364,7 +465,7 @@ class Mirror:
             return True
         if immutable(name) and self.cache.get(name) == signature(item):
             return False
-        path = local_path(self.root, name)
+        path = local_path(self.root, name, root_identity=self.root_identity)
         try:
             stat = path.stat()
             matched = stat.st_size == size and int(stat.st_mtime) == mtime_ns // 1_000_000_000
@@ -389,14 +490,22 @@ class Mirror:
                     phase = "prepare_local_path"
                     with self.guard:
                         self.state["current_files"][str(index)] = {"path": name, "bytes": 0, "last_progress_at": time.time()}
-                    local = local_path(self.root, name)
+                    local = local_path(self.root, name, root_identity=self.root_identity)
                     local.parent.mkdir(parents=True, exist_ok=True)
-                    temp = local.with_name(local.name + f".attach{index}.mirrorpartial")
+                    local = local_path(self.root, name, root_identity=self.root_identity)
                     success = False
                     for attempt in range(3):
                         if self.stop.is_set():
                             break
+                        temp, temp_identity = None, None
                         try:
+                            temp = local.with_name(local.name + f".attach{index}.{uuid.uuid4().hex}.mirrorpartial")
+                            temp_relative = temp.relative_to(self.root).as_posix()
+                            temp = local_path(self.root, temp_relative, root_identity=self.root_identity)
+                            def temp_created():
+                                nonlocal temp_identity
+                                info = temp.lstat()
+                                temp_identity = (info.st_dev, info.st_ino)
                             phase = "connect_sftp"
                             if client is None:
                                 client = self.connect(); sftp = client.open_sftp()
@@ -408,13 +517,16 @@ class Mirror:
                                          "opened_bytes": total, "last_progress_at": time.time(), "attempt": attempt + 1}
                             phase = "copy_open_snapshot"
                             result = fixed_copy(sftp, self.args.remote_root.rstrip("/") + "/" + name, temp, progress,
-                                                is_immutable=immutable(name), is_jsonl=name.endswith(".jsonl"))
+                                                is_immutable=immutable(name), is_jsonl=name.endswith(".jsonl"), on_temp_created=temp_created)
                             if name.endswith(".json") and not immutable(name):
                                 phase = "validate_json"
                                 json.loads(temp.read_bytes())
                             phase = "publish_replace"
+                            local_path(self.root, name, root_identity=self.root_identity)
+                            local_path(self.root, temp_relative, root_identity=self.root_identity)
                             os.replace(temp, local)
                             phase = "publish_mtime"
+                            local_path(self.root, name, root_identity=self.root_identity)
                             os.utime(local, (result["mtime"], result["mtime"]))
                             with self.guard:
                                 self.state["files_committed"] += 1
@@ -437,6 +549,8 @@ class Mirror:
                             if isinstance(exc, FileNotFoundError) or getattr(exc, "errno", None) == 2:
                                 break  # A disappearing file never restarts the entire mirror cycle.
                             self.stop.wait(min(2 ** attempt, 4))
+                        finally:
+                            self.cleanup_owned_temp(temp, temp_identity, worker=index)
                     if not success:
                         with self.guard:
                             self.state["file_errors"] += 1
@@ -474,7 +588,7 @@ class Mirror:
                   "remote_stage": control.get("files", {}).get("RUN_STATUS.json", {}).get("value", {}).get("stage"),
                   "remote_files": len(inventory["files"]), "remote_bytes": sum(item[1] for item in inventory["files"]),
                   "remote_access": "read_only", "files_copied": 0, "experiment_launches": 0}
-        atomic_json(self.private / "probe_latest.json", report)
+        atomic_json(self.private / "probe_latest.json", report, root=self.root, root_identity=self.root_identity)
         return report
 
     def terminal_verify(self):
@@ -491,7 +605,7 @@ class Mirror:
                 or result.get("execution_references_verified") != 60000 or result.get("remote_stage") != REVIEW):
             raise RuntimeError("Terminal verifier did not establish the requested completed run")
         report_path = self.root / "artifacts/audit/mirror_terminal_verification.json"
-        atomic_json(report_path, result)
+        atomic_json(report_path, result, root=self.root, root_identity=self.root_identity)
         client = self.connect()
         try:
             remote = self.execute(client, CONTROL)
@@ -522,6 +636,8 @@ class Mirror:
                 while not self.stop.is_set():
                     if self.thread_errors:
                         raise RuntimeError("Local heartbeat persistence failed: " + self.thread_errors[-1])
+                    if any(not thread.is_alive() for thread in threads):
+                        raise RuntimeError("A mirror background thread exited without a terminal stop")
                     client = None
                     try:
                         client = self.connect()
@@ -546,6 +662,8 @@ class Mirror:
                     while self.pending.unfinished_tasks and not self.stop.is_set():
                         if self.thread_errors:
                             raise RuntimeError("A mirror data thread failed: " + self.thread_errors[-1])
+                        if any(not thread.is_alive() for thread in threads):
+                            raise RuntimeError("A mirror background thread exited while work was pending")
                         self.stop.wait(1)
                     if self.thread_errors:
                         raise RuntimeError("A mirror background thread failed: " + self.thread_errors[-1])
