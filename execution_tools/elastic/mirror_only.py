@@ -13,6 +13,7 @@ import re
 import shlex
 import threading
 import time
+import traceback
 import uuid
 
 RUN_ID = "motivation_v3_20261103"
@@ -286,6 +287,28 @@ class Mirror:
                 values.pop("stage", None)
             self.state.update(values)
 
+    def exception_detail(self, exc, *, worker=None, path=None, phase=None, attempt=None):
+        """Retain the primary traceback and failed filename after queue cleanup."""
+        secret = os.environ.get("GRAPH_CREDIT_SSH_PASSWORD")
+        def clean(value):
+            text = str(value)
+            return text.replace(secret, "<redacted>") if secret else text
+        return {"error_type": type(exc).__name__, "error_message": clean(exc),
+                "traceback": clean("".join(traceback.format_exception(type(exc), exc, exc.__traceback__))),
+                "worker": worker, "path": path, "phase": phase, "attempt": attempt, "observed_unix": time.time()}
+
+    def close_client(self, client, *, worker=None, path=None):
+        """A cleanup failure must never replace the error which caused cleanup."""
+        if client is None:
+            return
+        try:
+            client.close()
+        except Exception as exc:
+            detail = self.exception_detail(exc, worker=worker, path=path, phase="connection_cleanup")
+            with self.guard:
+                self.state["last_cleanup_error"] = detail
+                self.state["cleanup_errors"] = self.state.get("cleanup_errors", 0) + 1
+
     def publish_status(self):
         with self.guard:
             record = {**self.state, "updated_at_unix": time.time()}
@@ -353,14 +376,17 @@ class Mirror:
 
     def data_worker(self, index):
         client = sftp = None
+        name, phase = None, "waiting_for_task"
         try:
             while not self.stop.is_set():
+                phase = "waiting_for_task"
                 try:
                     item = self.pending.get(timeout=.5)
                 except queue.Empty:
                     continue
                 name = item[0]
                 try:
+                    phase = "prepare_local_path"
                     with self.guard:
                         self.state["current_files"][str(index)] = {"path": name, "bytes": 0, "last_progress_at": time.time()}
                     local = local_path(self.root, name)
@@ -371,6 +397,7 @@ class Mirror:
                         if self.stop.is_set():
                             break
                         try:
+                            phase = "connect_sftp"
                             if client is None:
                                 client = self.connect(); sftp = client.open_sftp()
                                 sftp.get_channel().settimeout(25)
@@ -379,11 +406,15 @@ class Mirror:
                                     self.state["bytes_transferred"] += delta
                                     self.state["current_files"][str(index)] = {"path": name, "bytes": received,
                                          "opened_bytes": total, "last_progress_at": time.time(), "attempt": attempt + 1}
+                            phase = "copy_open_snapshot"
                             result = fixed_copy(sftp, self.args.remote_root.rstrip("/") + "/" + name, temp, progress,
                                                 is_immutable=immutable(name), is_jsonl=name.endswith(".jsonl"))
                             if name.endswith(".json") and not immutable(name):
+                                phase = "validate_json"
                                 json.loads(temp.read_bytes())
+                            phase = "publish_replace"
                             os.replace(temp, local)
+                            phase = "publish_mtime"
                             os.utime(local, (result["mtime"], result["mtime"]))
                             with self.guard:
                                 self.state["files_committed"] += 1
@@ -396,12 +427,13 @@ class Mirror:
                             success = True
                             break
                         except Exception as exc:
+                            detail = self.exception_detail(exc, worker=index, path=name, phase=phase, attempt=attempt + 1)
+                            self.update(last_file_error=detail, last_failed_file=name)
                             if fatal_connection_error(exc):
                                 self.thread_errors.append("data_fatal:" + type(exc).__name__)
                                 raise
-                            self.update(last_file_error={"path": name, "error_type": type(exc).__name__, "attempt": attempt + 1})
-                            if client:
-                                client.close(); client = sftp = None
+                            old_client, client, sftp = client, None, None
+                            self.close_client(old_client, worker=index, path=name)
                             if isinstance(exc, FileNotFoundError) or getattr(exc, "errno", None) == 2:
                                 break  # A disappearing file never restarts the entire mirror cycle.
                             self.stop.wait(min(2 ** attempt, 4))
@@ -413,12 +445,22 @@ class Mirror:
                     with self.guard:
                         self.state["current_files"].pop(str(index), None)
                         self.state["queue_pending"] = max(0, self.state["queue_pending"] - 1)
-                    self.pending.task_done()
+                    try:
+                        self.pending.task_done()
+                    except Exception:
+                        phase = "acknowledge_queue"
+                        raise
         except Exception as exc:
+            detail = self.exception_detail(exc, worker=index, path=name, phase=phase)
+            with self.guard:
+                self.state["last_thread_error"] = detail
+                self.state["last_failed_file"] = name
+                errors = self.state.setdefault("thread_error_details", [])
+                errors.append(detail)
+                del errors[:-8]
             self.thread_errors.append("data_worker_" + str(index) + ":" + type(exc).__name__)
         finally:
-            if client:
-                client.close()
+            self.close_client(client, worker=index, path=name)
 
     def probe(self):
         client = self.connect()

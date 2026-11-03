@@ -37,9 +37,9 @@
       "repository_git_blob_sha1": "5cedc82f285785b7dc4761abd3606332068db183"
     },
     "mirror_only.py": {
-      "runtime_sha256": "1354012f0f3fe44b6b1853424467269859e97ab3fa96708b4249f9f5dd3c93d0",
-      "repository_utf8_lf_sha256": "1354012f0f3fe44b6b1853424467269859e97ab3fa96708b4249f9f5dd3c93d0",
-      "repository_git_blob_sha1": "6266fce9ff309f471e982b40ca6945e0a37df155"
+      "runtime_sha256": "426208cad731d910fe67ec450893d59d15c5e12be7875134bfc81142bbadd230",
+      "repository_utf8_lf_sha256": "426208cad731d910fe67ec450893d59d15c5e12be7875134bfc81142bbadd230",
+      "repository_git_blob_sha1": "c399b0cee80b3e15d0305b517575e4acc0916ed3"
     },
     "mirror_terminal_verify.py": {
       "runtime_sha256": "2cf814e60cb9d43b2cd79c873b3417d0365cba6d2bb4a1faf8d46f7d840cd3b6",

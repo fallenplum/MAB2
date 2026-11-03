@@ -177,6 +177,87 @@ class MirrorOnlyContracts(unittest.TestCase):
             self.assertEqual(obj.state["stage"], "FAILED")
             self.assertTrue(obj.thread_errors)
 
+    def test_closed_file_error_and_cleanup_valueerror_reconnect_without_losing_primary_trace(self):
+        class SFTPClient:
+            def get_channel(self): return SimpleNamespace(settimeout=lambda value: None)
+        class Client:
+            def __init__(self, bad_close=False): self.bad_close = bad_close
+            def open_sftp(self): return SFTPClient()
+            def close(self):
+                if self.bad_close: raise ValueError("cleanup used an already closed file")
+        with tempfile.TemporaryDirectory(dir=HERE) as temp:
+            root = Path(temp)
+            obj = instance(root)
+            obj.pending.put(["results/one.json", 2, 100_000_000_000, 1, 1])
+            obj.pending.put(["results/two.json", 2, 100_000_000_000, 1, 2])
+            obj.state["queue_pending"] = 2
+            clients = iter((Client(True), Client(False)))
+            obj.connect = lambda: next(clients)
+            attempts = []
+            def copy(sftp, remote, temporary, progress, **kwargs):
+                attempts.append(remote)
+                if len(attempts) == 1:
+                    raise ValueError("I/O operation on closed file")
+                Path(temporary).write_bytes(b"{}")
+                progress(2, 2, 2)
+                if len(attempts) == 3: obj.stop.set()
+                return {"mtime": 100, "committed_bytes": 2, "source_changed": False}
+            with mock.patch.object(mirror, "fixed_copy", side_effect=copy), mock.patch.object(obj.stop, "wait", return_value=False):
+                obj.data_worker(3)
+            self.assertEqual(obj.thread_errors, [])
+            self.assertEqual(obj.pending.unfinished_tasks, 0)
+            self.assertEqual(obj.state["files_committed"], 2)
+            self.assertEqual((root / "results/two.json").read_bytes(), b"{}")
+            self.assertIn("I/O operation on closed file", obj.state["last_file_error"]["traceback"])
+            self.assertEqual(obj.state["last_file_error"]["path"], "results/one.json")
+            self.assertEqual(obj.state["last_file_error"]["phase"], "copy_open_snapshot")
+            self.assertIn("already closed file", obj.state["last_cleanup_error"]["traceback"])
+
+    def test_outer_path_failure_keeps_full_trace_and_filename_after_current_file_cleanup(self):
+        with tempfile.TemporaryDirectory(dir=HERE) as temp:
+            obj = instance(Path(temp))
+            obj.pending.put(["unsafe:name.json", 2, 100_000_000_000, 1, 1])
+            obj.state["queue_pending"] = 1
+            obj.data_worker(3)
+            self.assertTrue(obj.thread_errors)
+            self.assertEqual(obj.state["last_failed_file"], "unsafe:name.json")
+            self.assertEqual(obj.state["last_thread_error"]["phase"], "prepare_local_path")
+            self.assertIn("Unsafe mirror path", obj.state["last_thread_error"]["traceback"])
+            self.assertEqual(obj.state["current_files"], {})
+            self.assertEqual(obj.pending.unfinished_tasks, 0)
+
+    def test_exception_diagnostics_redact_runtime_ssh_password(self):
+        with tempfile.TemporaryDirectory(dir=HERE) as temp, mock.patch.dict(os.environ, {"GRAPH_CREDIT_SSH_PASSWORD": "DO_NOT_LOG"}):
+            obj = instance(Path(temp))
+            try:
+                raise ValueError("sensitive=DO_NOT_LOG")
+            except ValueError as exc:
+                detail = obj.exception_detail(exc, worker=3, path="file.json", phase="copy_open_snapshot")
+            self.assertNotIn("DO_NOT_LOG", detail["error_message"])
+            self.assertNotIn("DO_NOT_LOG", detail["traceback"])
+            self.assertIn("<redacted>", detail["traceback"])
+
+    def test_queue_accounting_valueerror_remains_fatal_with_specific_filename_and_stack(self):
+        class Client:
+            def open_sftp(self): return SimpleNamespace(get_channel=lambda: SimpleNamespace(settimeout=lambda value: None))
+            def close(self): pass
+        with tempfile.TemporaryDirectory(dir=HERE) as temp:
+            obj = instance(Path(temp))
+            obj.pending.put(["results/committed.json", 2, 100_000_000_000, 1, 1])
+            obj.state["queue_pending"] = 1
+            obj.connect = lambda: Client()
+            def copy(sftp, remote, path, progress, **kwargs):
+                Path(path).write_bytes(b"{}")
+                return {"mtime": 100, "committed_bytes": 2, "source_changed": False}
+            with mock.patch.object(mirror, "fixed_copy", side_effect=copy), \
+                    mock.patch.object(obj.pending, "task_done", side_effect=ValueError("task_done() called too many times")):
+                obj.data_worker(3)
+            detail = obj.state["last_thread_error"]
+            self.assertEqual(detail["phase"], "acknowledge_queue")
+            self.assertEqual(detail["path"], "results/committed.json")
+            self.assertIn("task_done() called too many times", detail["traceback"])
+            self.assertTrue(obj.thread_errors)
+
     def test_terminal_requires_60000_references_and_binds_actual_report_bytes(self):
         class Client:
             def close(self): pass
