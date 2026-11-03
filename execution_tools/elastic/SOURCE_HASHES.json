@@ -1,0 +1,40 @@
+{
+  "boundary": "Runtime bytes may use Windows CRLF; repository content is normalized UTF8 LF. Frozen runtime SHA remains authoritative.",
+  "files": {
+    "elastic_worker.py": {
+      "runtime_sha256": "6e4bce82c0e26b786af799e01c184effac4569ffb53a1b7a5e3a1342d781fc03",
+      "repository_utf8_lf_sha256": "6e4bce82c0e26b786af799e01c184effac4569ffb53a1b7a5e3a1342d781fc03",
+      "repository_git_blob_sha1": "7ee8d0674a34c5fd56f2440493fe304bd5328e87"
+    },
+    "elastic_finalize.py": {
+      "runtime_sha256": "26439af01a5ebd90ca7b6d1d42b9a1f1f20e64affd4c1213525078946f91b911",
+      "repository_utf8_lf_sha256": "26439af01a5ebd90ca7b6d1d42b9a1f1f20e64affd4c1213525078946f91b911",
+      "repository_git_blob_sha1": "aad1a9a7ddc0255fddf30d9715ae239891c5dffb"
+    },
+    "elastic_supervisor.py": {
+      "runtime_sha256": "60130aa24ca7f9b22df9ab3a3eee1edc75ef55c53f761837b6a7130459e26dba",
+      "repository_utf8_lf_sha256": "60130aa24ca7f9b22df9ab3a3eee1edc75ef55c53f761837b6a7130459e26dba",
+      "repository_git_blob_sha1": "3e3c3d7899e67bf338e370beaab3bc9765e3e7aa"
+    },
+    "elastic_migrate.py": {
+      "runtime_sha256": "e4af80cc728ecfd0b06c7f8d08d51c44d9d53c061280ce0d111dd63ac01ed606",
+      "repository_utf8_lf_sha256": "e9002992267e6edb906eb3dfc044cf1e160d4715ae1e9525bfbff905a5a5f88f",
+      "repository_git_blob_sha1": "83ca24aa7a26a7ced69bdfbfbc1154ce28943a94"
+    },
+    "cross_gpu_audit.py": {
+      "runtime_sha256": "d286ab45344d907b640b2be443fb1ffb3538265f435a9121602831948ff44c94",
+      "repository_utf8_lf_sha256": "d286ab45344d907b640b2be443fb1ffb3538265f435a9121602831948ff44c94",
+      "repository_git_blob_sha1": "c298282b7de4de4da80e8cf1044f8dee6e822e71"
+    },
+    "elastic_resume_qualification.py": {
+      "runtime_sha256": "15d3c9ddcb72987f5f04f8a043c3e92c442ed368521d7e7f61c50cc7acbd08bd",
+      "repository_utf8_lf_sha256": "15d3c9ddcb72987f5f04f8a043c3e92c442ed368521d7e7f61c50cc7acbd08bd",
+      "repository_git_blob_sha1": "37e413e648363855c183fd873f530a88660534e8"
+    },
+    "watch_g1.py": {
+      "runtime_sha256": "83c9a963f6cf08c90d9fdc53ac421c66554523e9ddd792aa3a79f401e2a2f58c",
+      "repository_utf8_lf_sha256": "f2191406d36cc9f1d767a8a04de60088dde47ba7f8a0e333d2bd7ea6832d34f0",
+      "repository_git_blob_sha1": "3a30e72d059c07c7939b42a6fe8d1e9ccbb1fdfa"
+    }
+  }
+}
