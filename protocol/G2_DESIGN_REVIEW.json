@@ -1,0 +1,177 @@
+{
+  "approved_config": {
+    "baseline": {
+      "fit_split": "train",
+      "name": "unconditional_edge_empirical_mean",
+      "weights": "equal_question_equal_anchor_equal_seed_per_edge"
+    },
+    "budget_caps": {
+      "engineering_failures_orphans": "separate_actual_ledger",
+      "fresh_generation_calls": 124000,
+      "raw_outputs": 52000
+    },
+    "data_partition": "original_calibration_400_only",
+    "evaluation": {
+      "absolute_risk": "cross_seed_unbiased_pair_product",
+      "bootstrap_samples": 10000,
+      "bootstrap_seed": 39173,
+      "confidence": 0.95,
+      "decision": "full_integrity_and_primary_lower95_gt_0",
+      "diagnostic": "M1_minus_M2_same_risk_difference",
+      "minimum_gain": 0,
+      "negative_values": "retain",
+      "primary": "B0_minus_M2_paired_credit_mse_risk_difference",
+      "quantile_method": "linear",
+      "resampling_unit": "whole_question",
+      "supplementary": "zero_prediction_and_observed_zero_contrast_errors",
+      "weights": "equal_question_equal_anchor_equal_edge"
+    },
+    "feature_contract": {
+      "additional_feature_scaler": "none",
+      "dimensions": {
+        "first_order": 117,
+        "second_order": 711
+      },
+      "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+      "encoder_device": "cpu",
+      "encoder_loader": "AutoModel",
+      "graph_coding": "binary_0_1",
+      "kronecker_order": "phi_major",
+      "max_length": 256,
+      "normalize_embeddings": true,
+      "pair_order": "lexicographic_i_lt_j",
+      "pca_components": 8,
+      "pca_fit_split": "train",
+      "pca_whiten": false,
+      "phi_order": "PC1_PC2_PC3_PC4_PC5_PC6_PC7_PC8_CONSTANT1",
+      "pooling": "attention_mask_mean",
+      "revision": "ROOT_TO_PIN_BEFORE_EXECUTION"
+    },
+    "g1_predictor_data_allowed": false,
+    "graph_design": {
+      "all_single_flip_edges": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "anchors": [
+        {
+          "family": "bernoulli_025",
+          "p": 0.25
+        },
+        {
+          "family": "bernoulli_075",
+          "p": 0.75
+        }
+      ],
+      "bit_domain": "graph_credit/G2/anchor/v1",
+      "deduplicate": "question_id_mask_seed_protocol",
+      "domain_fields": [
+        "question_id",
+        "family",
+        "bit_index"
+      ],
+      "flip_execution_base": "saved_own_anchor_execution",
+      "seeds": [
+        2701,
+        2702,
+        2703,
+        2704,
+        2705
+      ]
+    },
+    "purpose": "heldout conditional edge-credit prediction",
+    "schema": "graph_credit_g2_design_candidate_v1",
+    "sealed_official_test_used": false,
+    "split": {
+      "domain": "graph_credit/G2/split/v1",
+      "method": "sort_sha256_domain_plus_question_id",
+      "sizes": {
+        "heldout": 120,
+        "train": 200,
+        "tune": 80
+      }
+    },
+    "status": "PARAMETERS_APPROVED_PENDING_PLAN_AUDIT",
+    "training": {
+      "alpha_grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1,
+        10,
+        100,
+        1000
+      ],
+      "alpha_selection": "separate_per_model_min_tune_question_macro_paired_credit_mse",
+      "penalize_all_coefficients_including_constants": true,
+      "prediction_clipping": "none",
+      "refit_after_tune": false,
+      "ridge_loss": "sum_question_mean_unique_graph_squared_error_plus_alpha_l2",
+      "row_weight": "1_over_unique_graphs_in_question",
+      "tie_break": "largest_alpha",
+      "tie_tolerance": 1e-12,
+      "total_weight_per_question": 1,
+      "unit": "unique_question_graph_seedmean5"
+    }
+  },
+  "date": "2026-11-04",
+  "design_document_sha256": "121e49641298de3012762187cb285e0ada85eecb16313f1bf9203e7e45cd290c",
+  "input_audit": {
+    "blank_questions": 0,
+    "calibration_questions": 400,
+    "fields": [
+      "id",
+      "question",
+      "split",
+      "task"
+    ],
+    "sha256": "4517478a518d09c2c1afd5cf7b3e453e5947c62b128e9c98138512323328b6e1",
+    "split": "calibration",
+    "task": "gsm8k",
+    "unique_ids": 400
+  },
+  "required_plan_checks": [
+    "All 400 question IDs and payload hashes match the pinned calibration manifest",
+    "Exact train200/tune80/heldout120 question partition and cross-split normalized-question exclusions",
+    "Documented SHA canonicalization and domain separation for split/family/bit",
+    "Two anchor families and all12 single flips per question, preserving aliases and orientation",
+    "All actual unique mask IDs, alias maps, seed2701..2705 and exact output counts",
+    "Saved-anchor branch execution order establishes fresh-call cap62 per question-seed",
+    "Frozen original2round model/prompts/scorer/seed derivation plus new G2 orchestration source lineage",
+    "Pinned MiniLM revision/files/CPU AutoModel masked mean pooling L2 maxlength256 and truncation counts",
+    "Train-only PCA8 full SVD whitenFalse, phi order, deterministic sign rule and actual transform bytes",
+    "Actual train weighted X ranks711/117 and phi rank9 plus singular values/condition number",
+    "One unique question-mask seedmean5 row, rowweight1/Mq and all-parameter alpha penalty",
+    "Same eight alphas separately tuned by question macro credit MSE, tie1e-12 largest alpha, no tune refit",
+    "B0 train-only per-edge equally weighted question-anchor-seed empirical contrast",
+    "Full predictions and selected models frozen before heldout120 labels or quality reveal",
+    "Persistent first train/tune and heldout label access markers with earlier freeze hashes",
+    "Heldout120 whole-question paired delta B0-minus-M2, 10000bootstrap39173 linear95CI strict lower>0",
+    "M1-minus-M2 attribution diagnostic and zero-contrast supplementary outcomes remain separately identified",
+    "Negative risks/differences and all24 family-edge support counts retained",
+    "Canonical actual costs plus engineering/failed/orphan/unknown costs without duplicate aliases",
+    "Question IDs, raw outputs and labels stay outside public aggregate reports"
+  ],
+  "reviewer_observation_limits": {
+    "E_or_SSH_access": false,
+    "GPU_started": false,
+    "actual_encoder_or_design_rank_run": false,
+    "attribution_scope": "Primary B0 advantage can include question conditioning; extra graph-context value requires M1 comparison",
+    "context_scope": "Two predeclared Bernoulli density families",
+    "labels_read": false,
+    "power_estimate": "Unavailable without the heldout question-risk-difference variance"
+  },
+  "schema": "graph_credit_G2_statistical_design_review_v1",
+  "status": "PARAMETERS_APPROVED_PENDING_PLAN_AUDIT"
+}

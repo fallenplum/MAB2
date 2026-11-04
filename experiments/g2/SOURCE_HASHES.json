@@ -1,0 +1,38 @@
+{
+  "run_id": "g2_v1_20261104",
+  "frozen_plan_sha256": "90cbbe0e22ae1cad177e30706759a6e04341ca1a956f8faf62f80497360cdeb2",
+  "boundary": "Frozen runtime bytes are authoritative. Repository text uses UTF8 LF. A new run freezes its installed bytes and completes real qualification before formal generation.",
+  "files": {
+    "prepare.py": {
+      "runtime_sha256": "f60a75c8508e9b34324d67a6ded0f5c9bcf3b3da3b8539b4c7b98b73a4fd6de8",
+      "repository_utf8_lf_sha256": "f60a75c8508e9b34324d67a6ded0f5c9bcf3b3da3b8539b4c7b98b73a4fd6de8",
+      "repository_git_blob_sha1": "003470de5f53fd830684ab77c6dd3823e55a1b97"
+    },
+    "collector.py": {
+      "runtime_sha256": "fae5f62a08757ba09f5256564f4b6043e1fcf4b906a0e73de95a3f56dbdd1fba",
+      "repository_utf8_lf_sha256": "fae5f62a08757ba09f5256564f4b6043e1fcf4b906a0e73de95a3f56dbdd1fba",
+      "repository_git_blob_sha1": "229ba1ae243ad8a4abd0f1a2a153dffff35db792"
+    },
+    "predictor.py": {
+      "runtime_sha256": "d6d93dc938ce7cff682a5457c59b779bed5668999619e5afb614773f756e8e03",
+      "repository_utf8_lf_sha256": "d6d93dc938ce7cff682a5457c59b779bed5668999619e5afb614773f756e8e03",
+      "repository_git_blob_sha1": "240c32a29073f7f94e9dc4dfea71388cda8ef092"
+    },
+    "supervisor.py": {
+      "runtime_sha256": "a4a3b3bbabcdcce4be41797b816a4fc331a24ff14fcae3e2d0fc2404352319cb",
+      "repository_utf8_lf_sha256": "a4a3b3bbabcdcce4be41797b816a4fc331a24ff14fcae3e2d0fc2404352319cb",
+      "repository_git_blob_sha1": "b4f94a23abac4d707b90f411a7fa15741444e585"
+    },
+    "workflow.py": {
+      "runtime_sha256": "f46a92f78e81c9593213fff3410933048d531debeb28835f89a0f667f86d706f",
+      "repository_utf8_lf_sha256": "f46a92f78e81c9593213fff3410933048d531debeb28835f89a0f667f86d706f",
+      "repository_git_blob_sha1": "a3aef3e6f5b70edbd62c6c2181bb51d2caf7f37a"
+    }
+  },
+  "real_plan_outputs": 51970,
+  "original_full_cpu_regressions": 60,
+  "public_core_regressions": {
+    "passed": 44,
+    "skipped_private_plan_case": 1
+  }
+}
