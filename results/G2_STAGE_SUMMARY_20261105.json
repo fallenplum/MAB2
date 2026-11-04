@@ -1,0 +1,373 @@
+{
+  "schema": "graph_credit_g2_stage_summary_v1",
+  "created_unix": 1793819488.2087603,
+  "run_id": "g2_v1_20261104",
+  "stage_complete": true,
+  "independent_acceptance": "ACCEPTED_WITH_DOCUMENTED_LIMITATIONS",
+  "scientific_gate": "INSUFFICIENT_PREDICTIVE_GAIN",
+  "project_complete": false,
+  "acl_ready": false,
+  "G3_contract_state": "STOP_G3_UNDER_CURRENT_CONTRACT",
+  "coverage": {
+    "questions": 400,
+    "train_questions": 200,
+    "tune_questions": 80,
+    "heldout_questions": 120,
+    "seeds": [
+      2701,
+      2702,
+      2703,
+      2704,
+      2705
+    ],
+    "completed_units": 2000,
+    "unique_raw_outputs": 51970,
+    "heldout_credit_coordinates": 2880,
+    "heldout_seed_contrasts": 14400,
+    "heldout_cross_seed_pairs": 28800
+  },
+  "statistics": {
+    "comparison_tolerance": {
+      "absolute": 1e-12,
+      "relative": 1e-10
+    },
+    "first_order_diagnostic": {
+      "bootstrap_samples": 10000,
+      "bootstrap_seed": 39173,
+      "confidence": 0.95,
+      "estimate": -0.0006544201965166047,
+      "interval": [
+        -0.000844747972077557,
+        -0.00046439353776952873
+      ],
+      "question_count": 120,
+      "resampling_unit": "whole_question"
+    },
+    "mean_cross_seed_risk": {
+      "B0": 0.0014168819444444446,
+      "C1": 0.0015414357592971341,
+      "C2": 0.002195855955813739
+    },
+    "negative_question_risks": 105,
+    "negative_values_retained": true,
+    "primary": {
+      "bootstrap_samples": 10000,
+      "bootstrap_seed": 39173,
+      "confidence": 0.95,
+      "estimate": -0.0007789740113692944,
+      "interval": [
+        -0.001116609983413315,
+        -0.0004422312699556542
+      ],
+      "question_count": 120,
+      "resampling_unit": "whole_question"
+    },
+    "scientific_gate": "INSUFFICIENT_PREDICTIVE_GAIN",
+    "status": "PASS"
+  },
+  "ridge_replay": {
+    "all_coefficients_penalized": true,
+    "coefficient_tolerance": {
+      "absolute": 1e-08,
+      "relative": 1e-06
+    },
+    "implementation": "independent weighted Gram Cholesky/cho_solve",
+    "models": {
+      "C1": {
+        "alpha": 1000.0,
+        "dimensions": 117,
+        "maximum_absolute_coefficient_difference": 1.887379141862766e-15,
+        "tune_credit_mse": 0.015578573437362409
+      },
+      "C2": {
+        "alpha": 100.0,
+        "dimensions": 711,
+        "maximum_absolute_coefficient_difference": 9.825473767932635e-15,
+        "tune_credit_mse": 0.01617655763961198
+      }
+    },
+    "refit_with_tune": false,
+    "status": "PASS",
+    "sum_training_row_weights": 200.0,
+    "training_questions": 200,
+    "tuning_questions": 80,
+    "unique_training_graph_rows": 5194
+  },
+  "tuning_grid_results": {
+    "C1": {
+      "alpha": 1000.0,
+      "alpha_scores": [
+        {
+          "alpha": 0.0001,
+          "tune_credit_mse": 0.02086517299175574
+        },
+        {
+          "alpha": 0.001,
+          "tune_credit_mse": 0.020852649783936868
+        },
+        {
+          "alpha": 0.01,
+          "tune_credit_mse": 0.02073048085016558
+        },
+        {
+          "alpha": 0.1,
+          "tune_credit_mse": 0.019752484998172185
+        },
+        {
+          "alpha": 1.0,
+          "tune_credit_mse": 0.016920510219522386
+        },
+        {
+          "alpha": 10.0,
+          "tune_credit_mse": 0.015719977138282416
+        },
+        {
+          "alpha": 100.0,
+          "tune_credit_mse": 0.015896850060254812
+        },
+        {
+          "alpha": 1000.0,
+          "tune_credit_mse": 0.015578573437362398
+        }
+      ]
+    },
+    "C2": {
+      "alpha": 100.0,
+      "alpha_scores": [
+        {
+          "alpha": 0.0001,
+          "tune_credit_mse": 0.045374615372841626
+        },
+        {
+          "alpha": 0.001,
+          "tune_credit_mse": 0.04500434314182435
+        },
+        {
+          "alpha": 0.01,
+          "tune_credit_mse": 0.04197932924027021
+        },
+        {
+          "alpha": 0.1,
+          "tune_credit_mse": 0.031612286638510775
+        },
+        {
+          "alpha": 1.0,
+          "tune_credit_mse": 0.023195943620208975
+        },
+        {
+          "alpha": 10.0,
+          "tune_credit_mse": 0.01780406785022199
+        },
+        {
+          "alpha": 100.0,
+          "tune_credit_mse": 0.016176557639612024
+        },
+        {
+          "alpha": 1000.0,
+          "tune_credit_mse": 0.016629262273810463
+        }
+      ]
+    }
+  },
+  "integrity": {
+    "input_hash_manifest_sha256": "547719a1f02bf974614bcbcd5c4e4ea7de23d93de3c374ecea691f93b12d81ac",
+    "io_workers": 6,
+    "mirrored_units": 2000,
+    "raw_execution_file_reads": 103940,
+    "status": "PASS",
+    "unique_graph_outputs": 51970,
+    "unit_receipts_sha256": "dedd7554be57f1249c97e8dbab833f628d10ce606b81f4a3cd92ef8c2134ff32",
+    "verified_files": 114537
+  },
+  "score_replay": {
+    "comparison": "Independent Decimal scorer versus pinned original scorer on real raw service_output",
+    "mismatch_count": 0,
+    "original_scorer_sha256": "da315ade4be7362ca81fc7ed41252cdccaa9271dc32f9a20531356587bb5f37e",
+    "production_per_row_scored_log": "Not produced by the frozen pipeline; no row-log comparison claimed",
+    "raw_outputs_replayed": 51970,
+    "status": "PASS"
+  },
+  "prediction_replay": {
+    "implementation": "independent binary graph basis and phi-major outer product/dot",
+    "rows": 2880,
+    "status": "PASS"
+  },
+  "costs": {
+    "complete_cpu_attempt_seconds": 345.009388725,
+    "cpu_attempts": [
+      {
+        "cpu_seconds": 79.010235407,
+        "path": "results/g2/g2_v1_20261104/cpu_attempts/evaluate_224ef455456e4cac.json",
+        "sha256": "9ab908d920fdb73623cf75a8a882d9fb88d70be92525abae6cb0c01742a14ea6",
+        "state": "COMPLETED"
+      },
+      {
+        "cpu_seconds": 95.975284164,
+        "path": "results/g2/g2_v1_20261104/cpu_attempts/evaluate_f8fd173af6ea4bb0.json",
+        "sha256": "541b681f19c56116c917578caa9dfc599fdef8c096f706108db8345279d90282",
+        "state": "COMPLETED"
+      },
+      {
+        "cpu_seconds": 85.64291699099999,
+        "path": "results/g2/g2_v1_20261104/cpu_attempts/predict_61a98facb95b4772.json",
+        "sha256": "03dda3aac2bb3c7b05b8408f57d333cf12c5c905164f7c0ecf10d8e8667dc6ba",
+        "state": "COMPLETED"
+      },
+      {
+        "cpu_seconds": 84.380952163,
+        "path": "results/g2/g2_v1_20261104/cpu_attempts/predict_e430814b6c7947e4.json",
+        "sha256": "6ddcc59b9b60bbd4c66d2661d60a9d6fcabab008a5fdaa6bd6e8bbcdb8dd2eb1",
+        "state": "COMPLETED"
+      }
+    ],
+    "formal": {
+      "calls": 123440,
+      "failed_calls": 0,
+      "metrics": {
+        "elapsed_seconds": {
+          "complete_total": 378979.3874736285,
+          "known_sum": 378979.3874736285,
+          "unknown_calls": 0
+        },
+        "gpu_seconds": {
+          "complete_total": 378819.82819769287,
+          "known_sum": 378819.82819769287,
+          "unknown_calls": 0
+        },
+        "input_tokens": {
+          "complete_total": 55094502.0,
+          "known_sum": 55094502.0,
+          "unknown_calls": 0
+        },
+        "output_tokens": {
+          "complete_total": 6893988.0,
+          "known_sum": 6893988.0,
+          "unknown_calls": 0
+        }
+      },
+      "successful_calls": 123440
+    },
+    "fresh_formal_calls": 123440,
+    "inference_retries": 0,
+    "known_cpu_attempt_seconds": 345.009388725,
+    "orphan_formal_calls": 0,
+    "preprocessing": {
+      "cpu_seconds": null,
+      "cpu_status": "UNKNOWN_NOT_RECORDED",
+      "feature_receipt_created_unix": 1793762618.9253082,
+      "feature_receipt_sha256": "86e2045491f50f9d3623d43e44c8b281c40972bd973c1ea014f4ccfa529b9348",
+      "launch_receipt_sha256": "b340184bc0a74cc0072e1c93dc497d43bc3309950eb91b956cd65af0520a2a46",
+      "observed_launch_to_feature_receipt_wall_interval_seconds": 19.376149892807007,
+      "scope": "Initial CPU sentence encoding and train-only PCA preparation",
+      "server_launched_unix": 1793762599.5491583,
+      "wall_window_scope": "Observed interval between launch and feature-completion receipts includes startup/waiting; CPU duration remains unknown"
+    },
+    "preprocessing_cost_cpu_unknown": true,
+    "qualification": {
+      "calls": 712,
+      "failed_calls": 0,
+      "metrics": {
+        "elapsed_seconds": {
+          "complete_total": 3425.7377493523527,
+          "known_sum": 3425.7377493523527,
+          "unknown_calls": 0
+        },
+        "gpu_seconds": {
+          "complete_total": 3424.835351928711,
+          "known_sum": 3424.835351928711,
+          "unknown_calls": 0
+        },
+        "input_tokens": {
+          "complete_total": 302984.0,
+          "known_sum": 302984.0,
+          "unknown_calls": 0
+        },
+        "output_tokens": {
+          "complete_total": 63632.0,
+          "known_sum": 63632.0,
+          "unknown_calls": 0
+        }
+      },
+      "successful_calls": 712
+    },
+    "scope": "Each G2 formal/qualification physical ledger once; aliases/backup copies excluded; CPU attempts separate; earlier G1 phases retain their own ledgers",
+    "status": "PASS",
+    "unknown_costs_imputed": false,
+    "unknown_cpu_attempts": 0,
+    "unrecorded_inflight_call_upper_bound": 0
+  },
+  "root_postprocess_attempts": [
+    {
+      "mode": "appendix",
+      "source_sha256": "3c6eb81fd21cd320b218c814bc4e369cbaf1fcd854abf328c4e84c51260c14d1",
+      "runner_sha256": "167feb675b8eaa0565a564a0c528d8a02fa407c24aaca74b5489703f823fbe76",
+      "measured_wall_seconds": 2.930304800160229,
+      "measured_cpu_seconds": 2.34375,
+      "output_sha256": "e5c965e2dfa648103ff095514315f69ce204bba964784f76e63aad51b67791de"
+    },
+    {
+      "mode": "audit",
+      "source_sha256": "10961c1761b06bc2035b56079b609c60d3239b01aac7189fddb4cf6e797f635d",
+      "runner_sha256": "167feb675b8eaa0565a564a0c528d8a02fa407c24aaca74b5489703f823fbe76",
+      "measured_wall_seconds": 541.4846123000607,
+      "measured_cpu_seconds": 475.203125,
+      "output_sha256": "2da9c7ac2f1a75901f56dc25119cfc900d4d5b65034976a62db4bb25b7f4aff6"
+    }
+  ],
+  "overlapping_cost_scopes": "Root process measurements include the audit/appendix program measurements; do not add both",
+  "recovery": {
+    "chain_status": "PASS_BEFORE_GOLD_COMPLETE_REFERENCE_CHAIN",
+    "original_strict_validations": 51970,
+    "original_failure_history_preserved": true,
+    "wrapper_sha256": "3af74824e8adfd84c7e0fae6d88944849d4699b482847140fc0ce9e64e862894",
+    "chain_sha256": "2de99e81edf51bf0f93fd6923968b7e0e58d174d1a1d440524801dd7c49c2114"
+  },
+  "label_timing": {
+    "status": "DURABLE_FREEZE_RELEASE_FIRST_OPEN_HASH_CHAIN_VERIFIED",
+    "same_server_event_order_verified": true,
+    "cross_host_release_clock_order": "Hash dependencies establish order; local/server wall clocks are not assumed synchronized"
+  },
+  "terminal": {
+    "remote_project_compute_processes": 0,
+    "local_owner_alive": false,
+    "checked_unix": 1793819244.1127238
+  },
+  "software_checks": {
+    "combined_public_tests": 99,
+    "combined_skipped": 0,
+    "additional_recovery_tests": 14,
+    "recovery_tests_skipped": 0,
+    "combined_113_test_run_performed": false
+  },
+  "source_code_commit_before_result_publication": "701e2bece693f9f1d3bd1b012757139fd1b1d79b",
+  "artifacts": {
+    "acceptance_path": "artifacts/audit/G2_INDEPENDENT_ACCEPTANCE.json",
+    "acceptance_sha256": "2da9c7ac2f1a75901f56dc25119cfc900d4d5b65034976a62db4bb25b7f4aff6",
+    "appendix_path": "results/g2/g2_v1_20261104/descriptive_appendix/DESCRIPTIVE_APPENDIX.json",
+    "appendix_sha256": "e5c965e2dfa648103ff095514315f69ce204bba964784f76e63aad51b67791de",
+    "plan_sha256": "90cbbe0e22ae1cad177e30706759a6e04341ca1a956f8faf62f80497360cdeb2",
+    "analysis": "acdf2573e35d0f5f9d03696710f629f6047f49ac724950beecb839f67301410e",
+    "global_outputs_frozen": "e8c9ba16032f5ecfeb6569cdbc09e94d2735d0dd05e23a54dc052b7907a6f59e",
+    "local_mirror_complete": "76a102a16fc1abb6285c62bf85f9615e1f8e02c9d868ddae2958e33a0d1d880a",
+    "predictions_frozen": "9d27723b617679c92a5b0979bb05f7173da1e999d0b2c1f49a9f177c16c8555b"
+  },
+  "limitations": {
+    "scientific_scope": "Same frozen Qwen2.5-3B backbone, four fixed roles, frozen same-backbone aggregator, two rounds, GSM8K calibration split",
+    "initial_encoder_pca_cpu_seconds": null,
+    "initial_encoder_pca_cpu_status": "UNKNOWN_NOT_RECORDED",
+    "freeze_recovery_cpu_seconds": null,
+    "freeze_recovery_cpu_status": "UNKNOWN_NOT_RECORDED",
+    "total_project_cpu_seconds": null,
+    "cpu_scope": "Workflow attempts and local audit/appendix measured separately; transfer/control, recovery and initial preprocessing do not have a complete project CPU ledger",
+    "floating_order_recovery": "Post-generation, pre-label native-order compatibility wrapper; original failure and stop history preserved; all 51970 original strict validations passed",
+    "source_change_scope": "Original 23 scientific sources retained; one additional verification entry point executed and separately pinned",
+    "local_owner_label_scope": "After global output freeze the local owner reads the 400-label file to partition it; remote training and model selection receive train/tune only until predictions and independent replay are frozen",
+    "bbh_source_audit": "boolean_expressions question/target exposure occurred during a separate source audit; full family quarantined; wider model-visible exposure scope unknown; future BBH heldout design requires review",
+    "private_helper_cleanup": "Credential literals in private review helpers were removed and replaced by runtime environment scans before public release; public whitelist scan passed",
+    "g1_historical_label_timing": "Code order and hashes support history; first historical label access lacks a durable timestamp",
+    "exploratory_intervals": "ZERO and family/edge/observed-target strata are descriptive, unadjusted for multiplicity; observed-target selection does not preserve conditional true-risk unbiasedness",
+    "negative_estimates": "Retained without clipping"
+  },
+  "confidence": "HIGH_WITHIN_FROZEN_EXPERIMENT_SCOPE",
+  "contains_individual_identifiers_or_label_values": false
+}
