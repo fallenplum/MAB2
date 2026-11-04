@@ -1,0 +1,153 @@
+{
+  "schema": "graph_credit_G1_stage_summary_v1",
+  "run_id": "motivation_v3_20261103",
+  "reported_at": "2026-11-04T10:46:22.078327+08:00",
+  "g1_stage_completed": true,
+  "project_completed": false,
+  "acl_ready": false,
+  "scientific_gate": "PASS",
+  "independent_acceptance_status": "ACCEPTED_WITH_DOCUMENTED_LIMITATIONS",
+  "observations": 60000,
+  "shard_counts": [
+    20100,
+    20100,
+    19800
+  ],
+  "design": {
+    "task": "gsm8k motivation, train-derived",
+    "questions": 200,
+    "seeds": 5,
+    "contexts": 5,
+    "edge_pairs": 3,
+    "cells": 4,
+    "model": "Qwen2.5-3B-Instruct",
+    "workers": 4,
+    "aggregator": "same frozen model, fixed role",
+    "rounds": 2
+  },
+  "primary_signal": {
+    "bootstrap_samples": 2000,
+    "bootstrap_seed": 29173,
+    "confidence": 0.95,
+    "estimate": 0.0013333333333333333,
+    "interval": [
+      0.00013333333333333326,
+      0.002634166666666662
+    ],
+    "n_questions": 200,
+    "strata": {
+      "gsm8k:motivation": 200
+    }
+  },
+  "score_replay": {
+    "implementation": "independent explicit-answer Decimal parser; raw aggregate generation text",
+    "mismatches": 0,
+    "rows_replayed": 60000,
+    "status": "PASS"
+  },
+  "execution_references_verified": 60000,
+  "unique_execution_files": 60000,
+  "negative_group_u_count": 65,
+  "negative_question_u_count": 23,
+  "costs": {
+    "canonical_g1": {
+      "failed_calls": 0,
+      "metrics": {
+        "elapsed_seconds": {
+          "complete_total": 462644.0800226738,
+          "known_sum": 462644.0800226738,
+          "unknown_calls": 0
+        },
+        "gpu_seconds": {
+          "complete_total": 462422.63005856326,
+          "known_sum": 462422.63005856326,
+          "unknown_calls": 0
+        },
+        "input_tokens": {
+          "complete_total": 66186558.0,
+          "known_sum": 66186558.0,
+          "unknown_calls": 0
+        },
+        "output_tokens": {
+          "complete_total": 8259629.0,
+          "known_sum": 8259629.0,
+          "unknown_calls": 0
+        }
+      },
+      "recorded_calls": 144002,
+      "successful_calls": 144002
+    },
+    "fresh_node_calls": 144000,
+    "orphaned_success_calls": 2,
+    "migration_unknown_count_upper_bound": 3,
+    "migration_unknown_exact_count": null,
+    "unknown_costs_imputed": false,
+    "engineering": {
+      "summary": {
+        "failed_calls": 0,
+        "metrics": {
+          "elapsed_seconds": {
+            "complete_total": 2550.107381676906,
+            "known_sum": 2550.107381676906,
+            "unknown_calls": 0
+          },
+          "gpu_seconds": {
+            "complete_total": 2548.1187108154295,
+            "known_sum": 2548.1187108154295,
+            "unknown_calls": 0
+          },
+          "input_tokens": {
+            "complete_total": 278693.0,
+            "known_sum": 278693.0,
+            "unknown_calls": 0
+          },
+          "output_tokens": {
+            "complete_total": 42735.0,
+            "known_sum": 42735.0,
+            "unknown_calls": 0
+          }
+        },
+        "recorded_calls": 730,
+        "successful_calls": 730
+      },
+      "scope": "v3 S0, 16-question sanity, cross-GPU and resume engineering only; excluded v1/v2 trial costs are outside this view",
+      "missing_ledger_count": 0,
+      "category_call_counts": {
+        "cross_gpu_qualification": 480,
+        "resume_qualification": 10,
+        "message_sanity": 144,
+        "s0": 96
+      }
+    },
+    "scope_note": "Canonical G1 ledgers plus identified v3 engineering runs; earlier excluded v1/v2 and unlisted probes are outside this cost view, so this is not a project-history total."
+  },
+  "historical_label_timing": {
+    "audit_after_global_freeze": true,
+    "audit_first_gold_read_unix": 1793760351.1537023,
+    "evidence": "Pinned finalizer freezes all logical shards globally, then marks OPENING_LABELS and reads gold; intermediate receipt is overwritten",
+    "global_freeze_unix": 1793756135.1843045,
+    "historical_first_gold_opened_unix": null,
+    "limitation": "Historical first label read was not timestamped persistently; code order/hash chain does not supply a directly observed first-read timestamp",
+    "status": "CODE_ORDER_SUPPORTED_TIMESTAMP_UNAVAILABLE"
+  },
+  "artifact_sha256": {
+    "analysis": "cc7e12ae07ca31e92e568f08b7c1eb64bb4d2c9934fb02ef00549872119ee3c9",
+    "all_observations": "a8cb93867dcdb76844a551c463b46f6a918737b71a53632dca39d923a48cd874",
+    "mirror_terminal_verification": "3e374ce08e47f06c0f043bbe459e5577af56c475363ccda53e8b5cd618022703",
+    "independent_acceptance": "e52e02e9c11ee722f43b5e9621c13b06bbb8aeb858480a8930213729cbf1f745",
+    "independent_auditor_source": "bc38e0eca41fc4fb72c919b179afca0d588705d7fcdfacbc56c94a656ba5a0a0"
+  },
+  "sealed_final_test_used": false,
+  "raw_question_outputs_included": false,
+  "next_required_gates": [
+    "G2 conditional value prediction",
+    "G3 equal-complete-budget acquisition comparisons",
+    "G4 two tasks, at least five flow seeds, direct-neighbor baselines and sealed test"
+  ],
+  "limitations": [
+    "Sparse and concentrated signal within this fixed 200-question design",
+    "This U statistic is not an accuracy improvement",
+    "Same-model roles, fixed contexts; no online-policy or heterogeneous-model advantage established",
+    "Historical first label-read timestamp unavailable; no fabricated timing claim"
+  ]
+}
