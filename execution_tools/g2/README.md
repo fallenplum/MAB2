@@ -1,4 +1,4 @@
-# G2 执行控制与独立验收工具
+# G2 执行控制、独立验收与描述性附录
 
 ## 文件与职责
 
@@ -7,11 +7,12 @@
 | `coordinator.py` | 本地数据所有者控制，已完成 unit 的镜像、全局输出核验、分阶段标签释放、CPU 阶段启动与终态镜像证明 |
 | `mirror.py` | 校验并传输完成 unit，核对 claim、done、marker、tar 成员与逐文件哈希 |
 | `independent_audit.py` | 本地终态门、独立评分、独立岭回归重建、预测和统计重放、成本范围审计 |
+| `descriptive_appendix.py` | 预先冻结描述性分析配方，独立验收通过后生成聚合附录及其 CPU 尝试收据 |
 | `../mirror_only.py` | 复用的固定字节路径安全与原子发布 helper |
 | `test_*.py` | 纯 CPU 合成回归，SSH/SFTP 使用替身 |
 | `SOURCE_HASHES.json` | 原始部署字节、公开文本字节、公开测试适配及依赖路径清单 |
 
-这四个工具源码保留原始部署字节。发布白名单由三份 G2 工具、一份 helper、四份合成 CPU 测试、本文和来源哈希清单组成。运行计划、问题、标签、模型权重、特征和真实输出由数据所有者在项目根目录保管，连接参数与认证值在运行时提供。
+五份工具源码保留各自的原始部署字节。累计发布白名单由四份 G2 工具、一份 helper、五份合成 CPU 测试、本文、来源哈希清单及 `protocol/G2_DESCRIPTIVE_FROZEN_RECIPE.json` 组成。运行计划、问题、标签、模型权重、特征和真实输出由数据所有者在项目根目录保管，连接参数与认证值在运行时提供。
 
 ## 与已有公开源码的关系
 
@@ -61,6 +62,7 @@ python -m unittest discover -s execution_tools/g2 -p "test_*.py" -v
 - `test_independent_audit.py` 使用仓库相对位置定位 `experiments/g2` 和原评分器，并把来源校验展开为部署引用哈希与公开文本字节哈希两项。
 - `test_mirror_only.py` 从 `execution_tools/mirror_only.py` 导入 helper。历史 G1 终验 mock 在测试临时目录创建合成模块占位，并将该次模块定位限定到临时目录，消除对实际 G1 终验器的依赖。
 - `test_coordinator.py` 和 `test_mirror.py` 保留原始测试字节。
+- `test_descriptive_appendix.py` 仅插入仓库 `experiments/g2` 的 predictor 导入路径，原测试 AST 在移除该行后逐项一致。
 
 数值解析、样本权重、岭回归、alpha 平手规则、风险差、bootstrap、标签门与重试历史等既有测试断言保持其原有内容。
 
@@ -68,10 +70,31 @@ python -m unittest discover -s execution_tools/g2 -p "test_*.py" -v
 
 | 执行环境 | 结果 | 证据范围 |
 | --- | --- | --- |
-| root 最终公开仓库隔离布局 | 87 通过、0 跳过、0 错误、0 失败，4.061 秒 | 十文件工具包、公开五核心源码与评分器，合成 CPU 夹具，实际链接与并发写入回归 |
+| 已发布执行工具的 root 最终隔离布局 | 87 通过、0 跳过、0 错误、0 失败，4.061 秒 | 基础十文件工具包、公开五核心源码与评分器，合成 CPU 夹具，实际链接与并发写入回归 |
 | 前序工作区沙箱隔离布局 | 85 通过、2 跳过、0 错误、0 失败 | 两项 Windows junction 创建被沙箱权限拒绝，其余回归通过 |
+| 描述性附录的独立公开布局 | 12 通过、0 跳过、0 错误、0 失败，0.345 秒 | 新描述性源码、公开 predictor 与合成夹具，标签访问门、分层支持量、零基线和 bootstrap 恒等式 |
+| root 联合公开仓库隔离布局 | 99 通过、0 跳过、0 错误、0 失败，4.353 秒 | 累计执行工具、描述性附录、公开五核心源码和评分器，合成 CPU 夹具及路径安全回归 |
 
-`SOURCE_HASHES.json` 分别保存两次验证的范围。root 最终验证记录同时绑定收据字节 SHA256、持久化日志字节 SHA256 与日志 UTF8 LF 文本 SHA256，Windows 落盘换行差异通过独立字段记录。
+`SOURCE_HASHES.json` 分别保存基础工具、前序沙箱、独立附录和联合测试的验证范围。root 最终验证记录同时绑定收据字节 SHA256、持久化日志字节 SHA256 与日志 UTF8 LF 文本 SHA256，Windows 落盘换行差异通过独立字段记录。
+
+累计 99 项回归已在 root 完整公开仓库隔离布局中通过，0 跳过、0 错误、0 失败，耗时 4.353 秒。上述 87 项基础工具与 12 项独立附录的历史执行记录继续按各自范围保留。
+
+## 预冻结描述性附录
+
+公开冻结 recipe 位于 `protocol/G2_DESCRIPTIVE_FROZEN_RECIPE.json`，SHA256 为 `c92f0c498faf415836b1670fc58398cc6fd7d2f3231a8eabd16de0861e5a910c`。该文件保留本轮真实冻结收据的原始字节，记录源码、计划、评分器、helper、数值依赖版本和相应哈希。`labels_read=false` 与 `primary_gate_modified=false` 是冻结时的记录字段。
+
+该配方覆盖 ZERO、B0、C1、C2，按两种 anchor family 和十二条边形成预定单元。观测分层依据五个 seed 的实际差分取值定义。整题 bootstrap 使用 10000 次重采样和 seed 39173，分层比值保留有效重采样数、空层未定义次数与支持量。区间按探索性描述量解释，配方中的多重比较调整设置为 `none`。
+
+冻结与运行使用以下入口。
+
+```text
+python execution_tools/g2/descriptive_appendix.py --root LOCAL_PROJECT_ROOT --plan results/g2/g2_v1_20261104/frozen_plan.json --mode freeze
+python execution_tools/g2/descriptive_appendix.py --root LOCAL_PROJECT_ROOT --plan results/g2/g2_v1_20261104/frozen_plan.json --mode run
+```
+
+运行目录中的冻结配方名为 `DESCRIPTIVE_APPENDIX_PLAN.json`。当前公开 recipe 对应既定运行的冻结记录。新运行由自己的来源与数值环境生成冻结记录。
+
+运行门校验主验收及其计划、源码、原预测和原风险摘要绑定，并在持久访问事件之后打开获准的 heldout 标签，随后重放评分和统计。等待主验收时返回 `WAITING_FOR_INDEPENDENT_ACCEPTANCE`，退出码为 3，`labels_read=false`。聚合附录完成时输出 `DESCRIPTIVE_APPENDIX_COMPLETE`。G2 主门继续使用原冻结指标与独立验收结果，描述性附录单列结果及自身 CPU 尝试成本。
 
 ## 生产入口
 

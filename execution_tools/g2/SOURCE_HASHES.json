@@ -47,6 +47,22 @@
       "original_regression_sha256": "9d3c6bf7571a6ef60989d2383c272b2437d8808f52a78cf784f8bdbbead6c060",
       "repository_utf8_lf_sha256": "0ed27a1ddaff20422d68becffd5083cc0978a2e2962fbbf81d6694b3af8929a4",
       "test_methods": 29
+    },
+    "execution_tools/g2/descriptive_appendix.py": {
+      "kind": "unchanged_runtime_source",
+      "runtime_sha256": "3c6eb81fd21cd320b218c814bc4e369cbaf1fcd854abf328c4e84c51260c14d1",
+      "repository_utf8_lf_sha256": "3c6eb81fd21cd320b218c814bc4e369cbaf1fcd854abf328c4e84c51260c14d1"
+    },
+    "execution_tools/g2/test_descriptive_appendix.py": {
+      "kind": "public_cpu_regression",
+      "original_regression_sha256": "c69b04737f6df50c9dfc936fb32a97b09e214262a2f9cd109d006efd55a71066",
+      "repository_utf8_lf_sha256": "6b8df26bee64402256826a72fc3f146249cc29b00b9d57859a2d3b479c9af928",
+      "test_methods": 12
+    },
+    "protocol/G2_DESCRIPTIVE_FROZEN_RECIPE.json": {
+      "kind": "frozen_descriptive_recipe",
+      "frozen_artifact_sha256": "c92f0c498faf415836b1670fc58398cc6fd7d2f3231a8eabd16de0861e5a910c",
+      "repository_utf8_lf_sha256": "c92f0c498faf415836b1670fc58398cc6fd7d2f3231a8eabd16de0861e5a910c"
     }
   },
   "helper_installation": {
@@ -85,6 +101,10 @@
     "original_scorer": {
       "path": "src/graph_credit/scoring.py",
       "required_runtime_sha256": "da315ade4be7362ca81fc7ed41252cdccaa9271dc32f9a20531356587bb5f37e"
+    },
+    "appendix_predictor": {
+      "path": "experiments/g2/predictor.py",
+      "required_runtime_sha256": "d6d93dc938ce7cff682a5457c59b779bed5668999619e5afb614773f756e8e03"
     }
   },
   "public_test_adaptations": {
@@ -98,7 +118,10 @@
       "Historical G1 verifier location is a temporary synthetic module placeholder under mocked module __file__; all original assertions retained"
     ],
     "test_coordinator.py": [],
-    "test_mirror.py": []
+    "test_mirror.py": [],
+    "test_descriptive_appendix.py": [
+      "One module-level sys.path insertion for repository experiments/g2 predictor import; all original AST identical after removal of that insertion"
+    ]
   },
   "test_contract_validation": {
     "test_coordinator.py": {
@@ -124,6 +147,12 @@
       "all_methods_retained": true,
       "existing_assert_calls_preserved": true,
       "source_pin_assertion_exception": false
+    },
+    "test_descriptive_appendix.py": {
+      "test_methods": 12,
+      "all_methods_retained": true,
+      "all_original_ast_preserved_after_one_import_path_insertion": true,
+      "existing_assert_calls_preserved": true
     }
   },
   "data_scope": {
@@ -172,5 +201,68 @@
       "sha256": "4c4aeeaca4aa432a36476ca5954d43627276576d3faf1790f8f532f52d0e549c"
     },
     "runtime_or_test_source_modified_for_final_validation": false
+  },
+  "appendix_publication": {
+    "base_commit": "d5173103e097fbb3932c8738519986444c87a3be",
+    "base_payload_manifest_sha256": "d1e0ead70f7851c8285f82be386ddcfb2bbb39d07d5cc628a17b76208ce16c4f",
+    "recipe": {
+      "path": "protocol/G2_DESCRIPTIVE_FROZEN_RECIPE.json",
+      "sha256": "c92f0c498faf415836b1670fc58398cc6fd7d2f3231a8eabd16de0861e5a910c",
+      "state": "DESCRIPTIVE_CODE_FROZEN",
+      "created_unix": 1793783750.8226054,
+      "labels_read": false,
+      "primary_gate_modified": false,
+      "python": "3.11.14",
+      "numpy": "1.26.4"
+    },
+    "test_environment": {
+      "python": "3.11.14",
+      "numpy": "1.26.4"
+    },
+    "additional_cpu_regressions": {
+      "scope": "new descriptive source plus public predictor in isolated layout; synthetic fixtures only",
+      "tests_run": 12,
+      "passed": 12,
+      "skipped": 0,
+      "errors": 0,
+      "failures": 0,
+      "runner_elapsed_seconds": 0.345,
+      "returncode": 0,
+      "real_labels_read": false,
+      "evidence": {
+        "receipt_name": "G2_APPENDIX_PUBLIC_TESTS.json",
+        "receipt_sha256": "9fc429a4589484bf91d1b0c0e0f396bc69172d291a92ad1c0a3970a0e4e50237",
+        "tests_log_name": "G2_APPENDIX_PUBLIC_TESTS.log",
+        "tests_log_file_bytes_sha256": "6d030fe59ba357668916a21f7373dcd9444a87cf8c36e1ec5772425b2544fefb",
+        "tests_log_encoding": "UTF8 LF"
+      }
+    },
+    "combined_suite": {
+      "expected_test_methods": 99,
+      "status": "ROOT_COMBINED_PASS",
+      "tests_run": 99,
+      "passed": 99,
+      "skipped": 0,
+      "errors": 0,
+      "failures": 0,
+      "runner_elapsed_seconds": 4.353,
+      "returncode": 0,
+      "scope": "complete isolated public repository layout, base execution tools and descriptive appendix, public five-core sources and original scorer, synthetic fixtures only",
+      "evidence": {
+        "receipt_name": "G2_PUBLIC_COMBINED_99_TESTS.json",
+        "receipt_file_bytes_sha256": "6a7e337cfbe9581f570263e8e217da88917861d90ac95cd71940b0d4796e4637",
+        "tests_log_name": "G2_PUBLIC_COMBINED_99_TESTS.log",
+        "tests_log_file_bytes_sha256": "453977ed0ca2b9b0538d66d0cb3416c3b3275881cc14541fe904ed685fd71d9c",
+        "tests_log_utf8_lf_text_sha256": "453977ed0ca2b9b0538d66d0cb3416c3b3275881cc14541fe904ed685fd71d9c"
+      },
+      "runtime_test_and_recipe_source_modified": false
+    },
+    "inference_scope": "descriptive exploratory appendix",
+    "root_reported_preacceptance_probe": {
+      "status": "WAITING_FOR_INDEPENDENT_ACCEPTANCE",
+      "returncode": 3,
+      "labels_read": false,
+      "provenance": "parent-agent report of actual data-owner execution; no E drive accessed for this packaging task"
+    }
   }
 }
