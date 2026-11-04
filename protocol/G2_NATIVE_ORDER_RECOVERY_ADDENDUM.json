@@ -1,0 +1,65 @@
+{
+  "schema": "graph_credit_g2_native_order_recovery_addendum_v1",
+  "run_id": "g2_v1_20261104",
+  "scope": "Post-generation, before-label-access restoration of native node order during cost reconstruction",
+  "original_plan_sha256": "90cbbe0e22ae1cad177e30706759a6e04341ca1a956f8faf62f80497360cdeb2",
+  "original_source_manifest_sha256": "03856d909ce94b270bc7d31519acdb74a58913cfbec1886d1aa2bca4cb830b95",
+  "original_pipeline_manifest_sha256": "ed87dca6c862b12946f7c2eeabda586c7e2686deee6ae8f252776f08da660a09",
+  "wrapper_sha256": "3af74824e8adfd84c7e0fae6d88944849d4699b482847140fc0ce9e64e862894",
+  "native_node_order": [
+    "r1:w0",
+    "r1:w1",
+    "r1:w2",
+    "r1:w3",
+    "r2:w0",
+    "r2:w1",
+    "r2:w2",
+    "r2:w3",
+    "aggregate"
+  ],
+  "full_preflight": {
+    "observations": 51970,
+    "original_exact_execution_validations": 51970,
+    "changed_cost_dictionary_fields": {
+      "physical_cost.gpu_seconds": 1505,
+      "logical_service_cost.gpu_seconds": 21057
+    },
+    "counts_are_dictionaries_not_distinct_rows": true,
+    "preflight_sha256": "264269d3fecdbd3e94ac5a6080b9c7315db99ccbdfdfcb592ca622363a2e8bc3"
+  },
+  "full_original_freeze": {
+    "status": "PASS_ORIGINAL_EXACT_FREEZE",
+    "units": 2000,
+    "observations": 51970,
+    "global_outputs_frozen_sha256": "e8c9ba16032f5ecfeb6569cdbc09e94d2735d0dd05e23a54dc052b7907a6f59e",
+    "recovery_complete_sha256": "c03b1df6a80ffe8592aee3c54a94a86605fed4d01a53c6b01dbf862de6183798"
+  },
+  "history": {
+    "failed_status_sha256": "ac269f13f75cdd6cfaf8fd0803f77e613b0791c7789b02b30ed98c357d5f3f89",
+    "acknowledged_internal_stop_sha256": "7c0d8fa202deac51bbcce7e2a066c20117e1d85e035e9a2f208f3825c7405039",
+    "original_failure_and_stop_bytes_archived": true,
+    "recovered_status_identifies_new_publisher": true
+  },
+  "invariants": {
+    "original_23_source_file_bytes_match": true,
+    "raw_executions_and_unit_commitments_match": true,
+    "original_validation_checks_remain_exact": true,
+    "generation_rerun": false,
+    "statistical_gate_modified": false,
+    "new_verification_program_executed": true,
+    "recorded_training_and_heldout_label_access_before_recovery": false
+  },
+  "validation": {
+    "original_public_control_suite": {
+      "passed": 99,
+      "skipped": 0
+    },
+    "public_recovery_suite": {
+      "passed": 14,
+      "skipped": 0
+    },
+    "combined_113_suite_run": false
+  },
+  "scientific_completion": false,
+  "independent_heldout_evaluation": "PENDING"
+}
