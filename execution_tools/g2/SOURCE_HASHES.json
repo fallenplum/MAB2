@@ -1,0 +1,176 @@
+{
+  "schema": "graph_credit_g2_execution_tools_source_hashes_v1",
+  "run_id": "g2_v1_20261104",
+  "path_base": "repository_root",
+  "boundary": "Frozen runtime byte hashes and repository UTF8 LF byte hashes have separate fields. Runtime sources in this bundle are byte-identical copies.",
+  "files": {
+    "execution_tools/g2/coordinator.py": {
+      "kind": "unchanged_runtime_source",
+      "runtime_sha256": "1404cf2b996c08e1e4a11e784a279e0465a4532bda920f623e1b0dbf523a82b0",
+      "repository_utf8_lf_sha256": "1404cf2b996c08e1e4a11e784a279e0465a4532bda920f623e1b0dbf523a82b0"
+    },
+    "execution_tools/g2/mirror.py": {
+      "kind": "unchanged_runtime_source",
+      "runtime_sha256": "3baa20319cdefd3b17321027725f7e14b94b50debbbb53928c63376256bfa3f5",
+      "repository_utf8_lf_sha256": "3baa20319cdefd3b17321027725f7e14b94b50debbbb53928c63376256bfa3f5"
+    },
+    "execution_tools/g2/independent_audit.py": {
+      "kind": "unchanged_runtime_source",
+      "runtime_sha256": "10961c1761b06bc2035b56079b609c60d3239b01aac7189fddb4cf6e797f635d",
+      "repository_utf8_lf_sha256": "10961c1761b06bc2035b56079b609c60d3239b01aac7189fddb4cf6e797f635d"
+    },
+    "execution_tools/mirror_only.py": {
+      "kind": "unchanged_runtime_source",
+      "runtime_sha256": "273008dfafa95fe67f522fd116024c50f2176298072f6f4b95cf6267dc7e5ccb",
+      "repository_utf8_lf_sha256": "273008dfafa95fe67f522fd116024c50f2176298072f6f4b95cf6267dc7e5ccb"
+    },
+    "execution_tools/g2/test_coordinator.py": {
+      "kind": "public_cpu_regression",
+      "original_regression_sha256": "230edf5f3d47f805fdf7a1c0cc594f1ee79a07c8c38c2327ecc5d65c6b637a84",
+      "repository_utf8_lf_sha256": "230edf5f3d47f805fdf7a1c0cc594f1ee79a07c8c38c2327ecc5d65c6b637a84",
+      "test_methods": 23
+    },
+    "execution_tools/g2/test_mirror.py": {
+      "kind": "public_cpu_regression",
+      "original_regression_sha256": "6e251b21d0bce899aabca5d2970985a4a0d63655a47a9343eb256b47f4155042",
+      "repository_utf8_lf_sha256": "6e251b21d0bce899aabca5d2970985a4a0d63655a47a9343eb256b47f4155042",
+      "test_methods": 19
+    },
+    "execution_tools/g2/test_independent_audit.py": {
+      "kind": "public_cpu_regression",
+      "original_regression_sha256": "36d0f9b7fd415fc4ce77da373b30bf751239544e298ed23d4bf42afb9b9a9e30",
+      "repository_utf8_lf_sha256": "b1b4bd098402ea6ed3a8ce285682ae432799e27beeb6161dacacf7ef3b03521d",
+      "test_methods": 16
+    },
+    "execution_tools/g2/test_mirror_only.py": {
+      "kind": "public_cpu_regression",
+      "original_regression_sha256": "9d3c6bf7571a6ef60989d2383c272b2437d8808f52a78cf784f8bdbbead6c060",
+      "repository_utf8_lf_sha256": "0ed27a1ddaff20422d68becffd5083cc0978a2e2962fbbf81d6694b3af8929a4",
+      "test_methods": 29
+    }
+  },
+  "helper_installation": {
+    "repository_path": "execution_tools/mirror_only.py",
+    "runtime_project_relative_path": "artifacts/private/monitoring/mirror_only.py",
+    "required_sha256": "273008dfafa95fe67f522fd116024c50f2176298072f6f4b95cf6267dc7e5ccb",
+    "copy_mode": "byte-preserving"
+  },
+  "existing_public_dependencies": {
+    "core_source_hashes": {
+      "path": "experiments/g2/SOURCE_HASHES.json",
+      "sha256": "72229db706a403c6174e3ee8eda5efa6ecf6f5a2814f834ab84ee94bef188ef8"
+    },
+    "core_files": {
+      "prepare.py": {
+        "runtime_sha256": "f60a75c8508e9b34324d67a6ded0f5c9bcf3b3da3b8539b4c7b98b73a4fd6de8",
+        "repository_utf8_lf_sha256": "f60a75c8508e9b34324d67a6ded0f5c9bcf3b3da3b8539b4c7b98b73a4fd6de8"
+      },
+      "collector.py": {
+        "runtime_sha256": "fae5f62a08757ba09f5256564f4b6043e1fcf4b906a0e73de95a3f56dbdd1fba",
+        "repository_utf8_lf_sha256": "fae5f62a08757ba09f5256564f4b6043e1fcf4b906a0e73de95a3f56dbdd1fba"
+      },
+      "predictor.py": {
+        "runtime_sha256": "d6d93dc938ce7cff682a5457c59b779bed5668999619e5afb614773f756e8e03",
+        "repository_utf8_lf_sha256": "d6d93dc938ce7cff682a5457c59b779bed5668999619e5afb614773f756e8e03"
+      },
+      "supervisor.py": {
+        "runtime_sha256": "a4a3b3bbabcdcce4be41797b816a4fc331a24ff14fcae3e2d0fc2404352319cb",
+        "repository_utf8_lf_sha256": "a4a3b3bbabcdcce4be41797b816a4fc331a24ff14fcae3e2d0fc2404352319cb"
+      },
+      "workflow.py": {
+        "runtime_sha256": "f46a92f78e81c9593213fff3410933048d531debeb28835f89a0f667f86d706f",
+        "repository_utf8_lf_sha256": "f46a92f78e81c9593213fff3410933048d531debeb28835f89a0f667f86d706f"
+      }
+    },
+    "original_scorer": {
+      "path": "src/graph_credit/scoring.py",
+      "required_runtime_sha256": "da315ade4be7362ca81fc7ed41252cdccaa9271dc32f9a20531356587bb5f37e"
+    }
+  },
+  "public_test_adaptations": {
+    "test_independent_audit.py": [
+      "Repository-relative five-core source and public manifest location",
+      "Runtime-reference versus repository-text source hash assertions",
+      "Repository-relative original scorer location"
+    ],
+    "test_mirror_only.py": [
+      "Helper import moved one directory upward",
+      "Historical G1 verifier location is a temporary synthetic module placeholder under mocked module __file__; all original assertions retained"
+    ],
+    "test_coordinator.py": [],
+    "test_mirror.py": []
+  },
+  "test_contract_validation": {
+    "test_coordinator.py": {
+      "test_methods": 23,
+      "all_methods_retained": true,
+      "existing_assert_calls_preserved": true,
+      "source_pin_assertion_exception": false
+    },
+    "test_mirror.py": {
+      "test_methods": 19,
+      "all_methods_retained": true,
+      "existing_assert_calls_preserved": true,
+      "source_pin_assertion_exception": false
+    },
+    "test_independent_audit.py": {
+      "test_methods": 16,
+      "all_methods_retained": true,
+      "existing_assert_calls_preserved": true,
+      "source_pin_assertion_exception": true
+    },
+    "test_mirror_only.py": {
+      "test_methods": 29,
+      "all_methods_retained": true,
+      "existing_assert_calls_preserved": true,
+      "source_pin_assertion_exception": false
+    }
+  },
+  "data_scope": {
+    "fixtures": "synthetic only",
+    "private_plan_required": false,
+    "private_reference_directory_required": false,
+    "real_labels_included": false,
+    "real_question_ids_included": false,
+    "connection_endpoints_included": false,
+    "credentials_included": false
+  },
+  "self_hash": "omitted to avoid recursive hashing, upload allowlist records actual manifest bytes",
+  "public_cpu_regressions": {
+    "tests_run": 87,
+    "passed": 85,
+    "skipped": 2,
+    "errors": 0,
+    "failures": 0,
+    "scope": "isolated public five-core source, public scorer and synthetic fixtures only",
+    "skip_reason": "Windows sandbox denied junction creation in two actual-junction regressions",
+    "helper_deep_parallel_publish_on_final_run": "PASS without fixture or runtime changes",
+    "execution_context": "workspace sandbox"
+  },
+  "root_final_validation": {
+    "scope": "complete isolated public repository layout, public five-core sources and original scorer, synthetic CPU fixtures only",
+    "execution_context": "root approved non-sandbox local verification",
+    "tests_run": 87,
+    "passed": 87,
+    "skipped": 0,
+    "errors": 0,
+    "failures": 0,
+    "runner_elapsed_seconds": 4.061,
+    "returncode": 0,
+    "evidence_storage": "data-owner local validation artifacts; public metadata publishes their hash bindings",
+    "receipt": {
+      "name": "G2_PUBLIC_TOOLS_ROOT_TESTS.json",
+      "sha256": "4b52f849ced8bf55862e3adbe5f2b4cf56420c96b304bb241dd940e23514b326"
+    },
+    "tests_log": {
+      "name": "G2_PUBLIC_TOOLS_ROOT_TESTS.log",
+      "file_bytes_sha256": "13f1ffa9a6e55d2431edafa1e162a8ecb2bf18c8f77d45f376ca7cda1649582d",
+      "utf8_lf_text_sha256": "f163b2d8c534388e46652e22d0b16c3d21111daf78cb676586b8c17da9e7e3fc"
+    },
+    "initial_hash_scope_receipt": {
+      "name": "G2_PUBLIC_TOOLS_ROOT_TESTS_HASH_SCOPE_INITIAL.json",
+      "sha256": "4c4aeeaca4aa432a36476ca5954d43627276576d3faf1790f8f532f52d0e549c"
+    },
+    "runtime_or_test_source_modified_for_final_validation": false
+  }
+}
