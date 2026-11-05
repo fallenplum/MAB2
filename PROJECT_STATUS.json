@@ -1,23 +1,22 @@
 {
   "schema": "graph_credit_project_progress_v1",
-  "updated_unix": 1793819488.2087603,
-  "current_milestone": "G2_COMPLETED_NEGATIVE_GATE_STOP_G3",
+  "updated_unix": 1793864641.155923,
+  "current_milestone": "D1_EXPLORATORY_COMPLETE_NEW_DECISION_PROTOCOL_DRAFT",
   "active_run_id": "g2_v1_20261104",
   "g1_stage_completed": true,
   "g1_scientific_gate": "PASS",
   "observations": 60000,
   "independent_scoring_mismatches": 0,
-  "next_stage": "RESEARCH_REASSESSMENT_UNDER_NEW_CONTRACT",
+  "next_stage": "FREEZE_INDEPENDENT_DECISION_AND_FEEDBACK_CONFIRMATION",
   "g1_monitoring": "COMPLETE",
   "project_completed": false,
   "acl_ready": false,
-  "latest_report": "results/G2_STAGE_REPORT_20261105.md",
+  "latest_report": "results/D1_DECISION_REPORT_20261105.md",
   "independent_acceptance": "artifacts/audit/G2_INDEPENDENT_ACCEPTANCE.json",
   "independent_acceptance_sha256": "2da9c7ac2f1a75901f56dc25119cfc900d4d5b65034976a62db4bb25b7f4aff6",
-  "github_commit": "701e2bece693f9f1d3bd1b012757139fd1b1d79b",
+  "github_commit": "d4904557fd966b2654778d4832bc6608d30a52bc",
   "canonical_outputs_changed_by_review": false,
   "historical_label_timing": "CODE_ORDER_SUPPORTED_TIMESTAMP_UNAVAILABLE",
-  "historical_label_timing_scope": "G1 only",
   "g2": {
     "plan_sha256": "90cbbe0e22ae1cad177e30706759a6e04341ca1a956f8faf62f80497360cdeb2",
     "expected_outputs": 51970,
@@ -83,5 +82,21 @@
     "formal_experiments_started": false
   },
   "observations_scope": "G1 retained historical count",
-  "github_commit_scope": "CODE_BEFORE_TERMINAL_RESULT_PUBLICATION"
+  "github_commit_scope": "CODE_AND_G2_RESULTS_BEFORE_DECISION_REVISION_PUBLICATION",
+  "historical_label_timing_scope": "G1 only",
+  "github_publication_receipt": "artifacts/audit/G2_TERMINAL_PUBLICATION.json",
+  "research_revision": {
+    "state": "D1_EXPLORATORY_COMPLETE_CONFIRMATION_NOT_STARTED",
+    "protocol": "protocol/revisions/DECISION_UTILITY_RESEARCH_REVISION_20261105.md",
+    "analysis_id": "d1_v2_20261105",
+    "independent_confirmation": false,
+    "old_G2_negative_gate_preserved": true,
+    "new_G3_formal_experiments_started": false,
+    "models_retrained_or_selected": false,
+    "real_arithmetic_replay": "PASS",
+    "synthetic_tests": 30,
+    "new_model_GPU_calls": 0,
+    "v1_feature_binding_gap_repaired_and_v2_replayed": true,
+    "new_protocol_numeric_contract": "DRAFT_REQUIRES_FREEZE_BEFORE_NEW_DATA"
+  }
 }
