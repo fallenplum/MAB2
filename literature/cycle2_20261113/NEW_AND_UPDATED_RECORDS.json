@@ -1,0 +1,387 @@
+{
+  "schema": "mab2_cycle2_literature_delta_v1",
+  "cutoff": "2026-11-13",
+  "status": "TARGETED_SCOPING_PROVISIONAL",
+  "records": [
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "evosteer",
+      "title": "EvoSteer: Online Self-Evolving Graph Orchestration via Reference-Anchored Credit Assignment",
+      "authors": [
+        "Mingda Zhang",
+        "Hanwen Zhang",
+        "Qiang Huang",
+        "Zijia Wang",
+        "Pengfei Guo",
+        "Yuchen Zhang",
+        "Jionghao Zhu",
+        "Xiaoying Tang"
+      ],
+      "year": 2026,
+      "venue": null,
+      "arxiv": "2609.38661",
+      "version": "v2",
+      "version_date": "2026-10-22",
+      "primary_url": "https://arxiv.org/html/2609.38661v2",
+      "metadata_url": "https://arxiv.org/abs/2609.38661",
+      "read_status": "section_read",
+      "read_anchors": [
+        "v2 §4.3; Appendix C.1–C.6; Appendix D splits/metrics",
+        "v1 earlier pass: §§1–2; §4.2 ending; C.1–C.6; D cost/settings; not transferred to v2 beyond reread sections"
+      ],
+      "mechanism": "候选技能与无技能两臂从同任务和第一角色开始，参考策略继续；阈值通过率差以W/L/T计数，经共享名义alpha预算的序贯方向检验决定晋升、退役或继续采样。",
+      "mab2_overlap": "配对反事实验证、序贯判定、退役和在线图编排已有直接先例。",
+      "candidate_delta": "仅能检验固定模型通信边在图变化后证据失效/漂移校正、恢复及未来服务完整预算收益。",
+      "limitations_or_audit_risks": [
+        "检验目标是threshold-pass差，不自动等于连续原始回报均值差。",
+        "C.2/C.4统计保证依赖未来配对数据及实际观察规则有效；C.5明确实现不同于充分条件协议。",
+        "未通读AnchorTB证明、全部实验及代码；未独立复现。"
+      ],
+      "code_url": "https://github.com/beita6969/evosteer",
+      "code_license_verified": null
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "queenbee",
+      "title": "QueenBee: A Recursively Self-Improving Harness for Communication Topology Design in LLM-Based Multi-Agent Systems",
+      "authors": [
+        "Congjia Tian",
+        "Yuhang Yao",
+        "Jiaming Cui"
+      ],
+      "year": 2026,
+      "venue": null,
+      "arxiv": "2606.27492",
+      "version": "v2",
+      "version_date": "2026-10-30",
+      "primary_url": "https://arxiv.org/html/2606.27492v2",
+      "metadata_url": "https://arxiv.org/abs/2606.27492",
+      "read_status": "section_read",
+      "read_anchors": [
+        "v2 §§1–3.4, 4.1–4.5; Conclusion/Limitations",
+        "Supplementary sections referred to in body not fully inspected"
+      ],
+      "mechanism": "固定底模，以诊断卡、设计账本和程序档案选择/生成时序通信DAG；候选经过定向筛选和扩展训练验证，历史支持与反证进入后续搜索。",
+      "mab2_overlap": "结构历史、证据维护、候选亲缘与回归保护已经存在，不能把保存图历史作为独立新意。",
+      "candidate_delta": "边信用估计量及其跨图有效范围、成本预算下的独立复检策略仍须单独实验。",
+      "limitations_or_audit_risks": [
+        "搜索结果常返回v1 QueenBeePlanner旧标题/摘要，不能与v2混用。",
+        "读到的主文是经验筛选；未核全部附录、代码或形式保证。",
+        "有效执行次数相同不等于全部token/GPU成本相同。"
+      ],
+      "code_url": null,
+      "code_license_verified": null
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "shepherd",
+      "title": "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces",
+      "authors": [
+        "Simon Yu",
+        "Derek Chong",
+        "Ananjan Nandi",
+        "Dilara Soylu",
+        "Jiuding Sun",
+        "Christopher D Manning",
+        "Weiyan Shi"
+      ],
+      "year": 2026,
+      "venue": null,
+      "arxiv": "2605.10913",
+      "version": "v3",
+      "version_date": "2026-06-24",
+      "primary_url": "https://arxiv.org/html/2605.10913v3",
+      "metadata_url": "https://arxiv.org/abs/2605.10913",
+      "read_status": "section_read",
+      "read_anchors": [
+        "§5.2; Appendix F.1; F.2.1 partial; F.2.4–F.2.5; Appendix A.1 partial"
+      ],
+      "mechanism": "CRO根据旧执行轨迹提出局部工作流编辑；以任务源码/输入哈希缓存未受影响子任务，只重放受影响部分；定向训练检查后进入dev筛选，失败候选也保留记录。",
+      "mab2_overlap": "同父轨迹的配对局部比较、缓存重放和历史候选账本均已有。",
+      "candidate_delta": "在完全相同缓存引擎下检验联合反馈成本调度，而不是比较有缓存与无缓存。",
+      "limitations_or_audit_risks": [
+        "未完整读核心运行时证明/全部实验附录；未核官方代码许可证。",
+        "定向训练检查和dev提升不是独立未来流证据；论文并非边信用复检专门研究。",
+        "不能从执行缓存命中推出边信用跨图不变。"
+      ],
+      "code_url": "https://github.com/shepherd-agents/shepherd",
+      "code_license_verified": null
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "execution_state_unlearning",
+      "title": "Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents",
+      "authors": [
+        "Chao Yao",
+        "Yangbo Wei",
+        "Zhen Huang",
+        "Junhong Qian",
+        "Chenle Chen",
+        "Shaoqiang Lu",
+        "Chen Wu",
+        "Lei He"
+      ],
+      "year": 2026,
+      "venue": null,
+      "arxiv": "2609.04875",
+      "version": "v1",
+      "version_date": "2026-09-04",
+      "primary_url": "https://arxiv.org/abs/2609.04875",
+      "read_status": "abstract_read",
+      "read_anchors": [
+        "Official arXiv metadata and abstract only"
+      ],
+      "mechanism": "摘要提出按执行来源图保留未受影响前缀、重放受影响后缀的状态遗忘。",
+      "mab2_overlap": "变化局部性与后缀重放为相关祖先。",
+      "candidate_delta": "尚不足据此判定是否覆盖边信用统计维护。",
+      "limitations_or_audit_risks": [
+        "未读方法、证明、实验、代码；不把摘要下界或加速比当作已核结论。"
+      ],
+      "code_url": null,
+      "code_license_verified": null
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "additive_transfer_bai",
+      "title": "Best Arm Identification under Additive Transfer Bandits",
+      "authors": [
+        "Ojash Neopane",
+        "Aaditya Ramdas",
+        "Aarti Singh"
+      ],
+      "year": 2021,
+      "venue": null,
+      "arxiv": "2112.04083",
+      "version": "v1",
+      "version_date": "2021-12-08",
+      "primary_url": "https://arxiv.org/html/2112.04083v1",
+      "metadata_url": "https://arxiv.org/abs/2112.04083",
+      "read_status": "section_read",
+      "read_anchors": [
+        "§II and II-A; §IV equations (6)–(11), Algorithm 1; §V Theorem V.1"
+      ],
+      "mechanism": "已知可加源/目标均值映射，将源臂置信序列传播到目标臂；T-LUCB优先测量对目标区间宽度贡献最大的源臂，分离候选后停止。",
+      "mab2_overlap": "旧信用+直接测量漂移的恒等式和区间传播属于该类已知思想，不是新理论。",
+      "candidate_delta": "图演化下漂移测量的方差/真实增量成本优势及未来编辑收益需实验。",
+      "limitations_or_audit_risks": [
+        "原设定只拉源臂；MAB2可直接测目标信用，不能原样套理论。",
+        "连续可加映射、稳定源均值和sub-Gaussian观察等前提须逐项映射。",
+        "未读全部附录证明或代码。"
+      ],
+      "code_url": null,
+      "code_license_verified": null
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "betting_bounded_means",
+      "title": "Estimating means of bounded random variables by betting",
+      "authors": [
+        "Ian Waudby-Smith",
+        "Aaditya Ramdas"
+      ],
+      "year": 2020,
+      "venue": null,
+      "arxiv": "2010.09686",
+      "version": "v7",
+      "version_date": "2022-08-25",
+      "primary_url": "https://arxiv.org/html/2010.09686v7",
+      "metadata_url": "https://arxiv.org/abs/2010.09686",
+      "read_status": "section_read",
+      "read_anchors": [
+        "§2 and §2.1–2.2 (through theorem location); §5 introduction and §5.1–5.2"
+      ],
+      "mechanism": "以非负超鞅反演有界均值的时间一致置信序列；有放回目标要求固定条件均值；不放回版本针对固定有限总体的均匀随机观察顺序。",
+      "mab2_overlap": "序贯均值验证是现成统计工具。",
+      "candidate_delta": "MAB2只可贡献其在图信用维护的任务适配与实证收益。",
+      "limitations_or_audit_risks": [
+        "重复同题的多seed不自动构成总体独立样本，需题级块或明确条件均值。",
+        "不能把偏好采样缓存样本套均匀不放回保证。",
+        "未读所有betting策略、证明或软件代码；尚未选实现。",
+        "Journal DOI页面本轮打开失败，刊名/出版年不在此补猜。"
+      ],
+      "code_url": "https://github.com/gostevehoward/confseq",
+      "code_license_verified": null
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "shifting_means_bai",
+      "title": "Best Arm Identification for Bandits with Shifting Means",
+      "authors": [
+        "Lukas Zierahn",
+        "Wouter M. Koolen",
+        "Shubhada Agrawal",
+        "Christina Katsimerou",
+        "Dirk van der Hoeven"
+      ],
+      "year": 2026,
+      "venue": null,
+      "author_reported_venue": "Accepted at NeurIPS 2026 (official arXiv comments; proceedings not checked)",
+      "arxiv": "2610.10488",
+      "version": "v1",
+      "version_date": "2026-10-07",
+      "primary_url": "https://arxiv.org/abs/2610.10488",
+      "read_status": "abstract_read",
+      "read_anchors": [
+        "Official arXiv metadata and abstract"
+      ],
+      "mechanism": "摘要研究所有臂共享变化、臂间差值保持固定的均值漂移，提出importance-weighted识别。",
+      "mab2_overlap": "不能把任何非平稳最佳臂识别当作未研究问题。",
+      "candidate_delta": "图编辑可能改变边间差值/最优顺序，与共同平移假设不同；此为适用性判断，尚未作全文排除。",
+      "limitations_or_audit_risks": [
+        "未读正文/证明/代码，不以摘要确认算法可直接移植。"
+      ],
+      "code_url": null,
+      "code_license_verified": null
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "bai_resource",
+      "title": "Best Arm Identification with Resource Constraints",
+      "authors": [
+        "Zitian Li",
+        "Wang Chi Cheung"
+      ],
+      "year": 2024,
+      "venue": "AISTATS 2024, PMLR 238:253–261",
+      "arxiv": null,
+      "version": null,
+      "primary_url": "https://proceedings.mlr.press/v238/li24c.html",
+      "fulltext_url": "https://proceedings.mlr.press/v238/li24c/li24c.pdf",
+      "read_status": "section_read",
+      "read_anchors": [
+        "PDF pp.1–4: abstract/introduction; §2 Model; Algorithm 1 SH-RR"
+      ],
+      "mechanism": "固定总资源预算识别最高均值臂；允许奖励与消耗相关，消耗有界、均值正；SH-RR轮内循环拉臂、逐阶段淘汰并分配资源。",
+      "mab2_overlap": "预算约束的反馈分配已有强统计祖先。",
+      "candidate_delta": "缓存导致跨臂联合成本与状态依赖，未自动落在固定逐臂成本分布模型中。",
+      "limitations_or_audit_risks": [
+        "不应把CABAI成本独立性限制扩展为所有成本敏感BAI的限制。",
+        "本轮未核其定理证明、实验及代码。"
+      ],
+      "code_url": null,
+      "code_license_verified": null,
+      "update_of_inherited_record": true
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "toca",
+      "title": "Turnover-Orthogonal Credit Assignment for Open-Team Multi-Agent Reinforcement Learning",
+      "authors": [
+        "Amit Thakur",
+        "Mukesh Singhal"
+      ],
+      "year": 2026,
+      "venue": null,
+      "arxiv": "2610.02847",
+      "version": "v1",
+      "version_date": "2026-10-02",
+      "primary_url": "https://arxiv.org/abs/2610.02847",
+      "read_status": "abstract_read",
+      "read_anchors": [
+        "Official metadata/abstract refreshed this cycle"
+      ],
+      "mechanism": "摘要将行动、团队成员变化及交互效应分离，以外生turnover为条件构造信用。",
+      "mab2_overlap": "环境/团队变化条件下信用分解已有。",
+      "candidate_delta": "外生成员变动的RL训练目标与主动通信边复检不等价，但全文重合仍待核。",
+      "limitations_or_audit_risks": [
+        "未读全文，不据摘要声明方法缺失某功能。"
+      ],
+      "code_url": null,
+      "code_license_verified": null,
+      "update_of_inherited_record": true
+    },
+    {
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "source_kind": "primary",
+      "full_read": false,
+      "code_review_this_cycle": false,
+      "independently_reproduced": false,
+      "novelty_verdict": "PROVISIONAL",
+      "id": "ccpo",
+      "title": "Counterfactual Credit Policy Optimization for Multi-Agent Collaboration",
+      "authors": [
+        "Zhongyi Li",
+        "Wan Tian",
+        "Jinju Chen",
+        "Huiming Zhang",
+        "Yang Liu",
+        "Yikun Ban",
+        "Fuzhen Zhuang"
+      ],
+      "year": 2026,
+      "venue": null,
+      "arxiv": "2603.21563",
+      "version": "v5",
+      "version_date": "2026-06-11",
+      "primary_url": "https://arxiv.org/abs/2603.21563",
+      "read_status": "abstract_read",
+      "read_anchors": [
+        "Official metadata/abstract refreshed this cycle"
+      ],
+      "mechanism": "摘要通过移除agent的反事实或有任务验证锚的自评/互评，构造角色奖励/优势，用于双agent策略优化。",
+      "mab2_overlap": "删除反事实与信用生成不是新概念。",
+      "candidate_delta": "冻结模型池下边信用随图改变的预算化复检仍需全文对照。",
+      "limitations_or_audit_risks": [
+        "未读全文/代码，不能作排他性新颖性判断。"
+      ],
+      "code_url": null,
+      "code_license_verified": null,
+      "update_of_inherited_record": true
+    }
+  ]
+}

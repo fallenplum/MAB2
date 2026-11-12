@@ -1,0 +1,22 @@
+{
+  "qualification_evidence_sha256": "63923fbe888ad5003af75f2a47453685d7fa4a6c78e1c9cc43a003bf7c06c229",
+  "root_review_sha256": "0e9adc1c4b9115bed945dd93791e25cd468e72b9218634203be4127eacf730a9",
+  "status": "ACCEPTED_WITH_FORMAT_LIMITATION_AND_RESOURCE_REALLOCATION",
+  "physical_calls": 276,
+  "logical_calls": 810,
+  "gpu_occupancy_hours": 0.5219523676144632,
+  "replay_checks_passed": 6,
+  "format_counts": {
+    "physical_outputs": 276,
+    "malformed": 24,
+    "length_finish": 3,
+    "message_trimmed": 0,
+    "aggregate_outputs": 90,
+    "aggregate_malformed": 9,
+    "aggregate_length_finish": 0
+  },
+  "scientific_results_claimed": false,
+  "numeric_audit_repair": "Reproduce producer Python3.11 sequential summation and original node order; exact cost equality, no tolerance relaxation",
+  "original_failure_preserved": true,
+  "resume_boundary": "Frozen runner deserialization float-order issue: no blind resume after a cost-mismatch failure; require explicit audited software amendment if encountered. Fresh uninterrupted generation is unaffected."
+}

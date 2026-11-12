@@ -14,7 +14,7 @@
     "id": "DIRECT_FEEDBACK_AND_EVIDENCE_TRANSFER",
     "status": "ACTIVE"
   },
-  "active_candidate": null,
+  "active_candidate": "C2_R1_DIRECT_PAIRED_REVALIDATION",
   "historical_candidates": [
     {
       "id": "D2_C1_R1",
@@ -30,18 +30,19 @@
   "candidate_queue": [
     {
       "id": "C2_R1_DIRECT_PAIRED_REVALIDATION",
-      "status": "DESIGN"
+      "status": "FORMAL_LAUNCH_ADMITTED"
     },
     {
       "id": "C2_R2_SELECTIVE_CREDIT_INVALIDATION",
-      "status": "LITERATURE_AND_MECHANISM_REVIEW"
+      "status": "LITERATURE_AND_MECHANISM_REVIEW",
+      "mechanism_under_review": "Independent old bank plus paired four-world drift; compare noise times true incremental cost and frozen control-variate baseline"
     },
     {
       "id": "C2_R3_EXECUTION_LOCALITY_ACQUISITION",
       "status": "LITERATURE_AND_MECHANISM_REVIEW"
     }
   ],
-  "next_action": "Freeze R1 fresh-development protocol and data eligibility; implement thin executor; validate then launch bounded shared-GPU collection",
+  "next_action": "Verify formal launch, then monitor 30-minute snapshots and complete fixed collection; R2 diagnosis preparation in parallel",
   "continuity": {
     "mode": "current task plus durable checkpoints; no finite-job app automation",
     "poll_running_jobs_minutes": 30,
@@ -51,5 +52,8 @@
   },
   "sealed_test_accessed": false,
   "paper_status": "EVIDENCE_PENDING",
-  "scientific_claims_confirmed": []
+  "scientific_claims_confirmed": [],
+  "last_verified_utc": "2026-11-12T18:36:56.509844+00:00",
+  "runtime_receipt": "artifacts/private/cycle2_20261113/R1_DEPLOY_RECEIPT.json",
+  "qualification_acceptance": "results/cycle2/r1_direct_feedback_20261113/QUALIFICATION_ACCEPTED.json"
 }

@@ -1,0 +1,35 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "bai_resource",
+  "title": "Best Arm Identification with Resource Constraints",
+  "authors": [
+    "Zitian Li",
+    "Wang Chi Cheung"
+  ],
+  "year": 2024,
+  "venue": "AISTATS 2024, PMLR 238:253–261",
+  "arxiv": null,
+  "version": null,
+  "primary_url": "https://proceedings.mlr.press/v238/li24c.html",
+  "fulltext_url": "https://proceedings.mlr.press/v238/li24c/li24c.pdf",
+  "read_status": "section_read",
+  "read_anchors": [
+    "PDF pp.1–4: abstract/introduction; §2 Model; Algorithm 1 SH-RR"
+  ],
+  "mechanism": "固定总资源预算识别最高均值臂；允许奖励与消耗相关，消耗有界、均值正；SH-RR轮内循环拉臂、逐阶段淘汰并分配资源。",
+  "mab2_overlap": "预算约束的反馈分配已有强统计祖先。",
+  "candidate_delta": "缓存导致跨臂联合成本与状态依赖，未自动落在固定逐臂成本分布模型中。",
+  "limitations_or_audit_risks": [
+    "不应把CABAI成本独立性限制扩展为所有成本敏感BAI的限制。",
+    "本轮未核其定理证明、实验及代码。"
+  ],
+  "code_url": null,
+  "code_license_verified": null,
+  "update_of_inherited_record": true
+}

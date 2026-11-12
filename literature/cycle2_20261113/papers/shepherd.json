@@ -1,0 +1,41 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "shepherd",
+  "title": "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces",
+  "authors": [
+    "Simon Yu",
+    "Derek Chong",
+    "Ananjan Nandi",
+    "Dilara Soylu",
+    "Jiuding Sun",
+    "Christopher D Manning",
+    "Weiyan Shi"
+  ],
+  "year": 2026,
+  "venue": null,
+  "arxiv": "2605.10913",
+  "version": "v3",
+  "version_date": "2026-06-24",
+  "primary_url": "https://arxiv.org/html/2605.10913v3",
+  "metadata_url": "https://arxiv.org/abs/2605.10913",
+  "read_status": "section_read",
+  "read_anchors": [
+    "§5.2; Appendix F.1; F.2.1 partial; F.2.4–F.2.5; Appendix A.1 partial"
+  ],
+  "mechanism": "CRO根据旧执行轨迹提出局部工作流编辑；以任务源码/输入哈希缓存未受影响子任务，只重放受影响部分；定向训练检查后进入dev筛选，失败候选也保留记录。",
+  "mab2_overlap": "同父轨迹的配对局部比较、缓存重放和历史候选账本均已有。",
+  "candidate_delta": "在完全相同缓存引擎下检验联合反馈成本调度，而不是比较有缓存与无缓存。",
+  "limitations_or_audit_risks": [
+    "未完整读核心运行时证明/全部实验附录；未核官方代码许可证。",
+    "定向训练检查和dev提升不是独立未来流证据；论文并非边信用复检专门研究。",
+    "不能从执行缓存命中推出边信用跨图不变。"
+  ],
+  "code_url": "https://github.com/shepherd-agents/shepherd",
+  "code_license_verified": null
+}

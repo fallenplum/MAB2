@@ -1,0 +1,37 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "shifting_means_bai",
+  "title": "Best Arm Identification for Bandits with Shifting Means",
+  "authors": [
+    "Lukas Zierahn",
+    "Wouter M. Koolen",
+    "Shubhada Agrawal",
+    "Christina Katsimerou",
+    "Dirk van der Hoeven"
+  ],
+  "year": 2026,
+  "venue": null,
+  "author_reported_venue": "Accepted at NeurIPS 2026 (official arXiv comments; proceedings not checked)",
+  "arxiv": "2610.10488",
+  "version": "v1",
+  "version_date": "2026-10-07",
+  "primary_url": "https://arxiv.org/abs/2610.10488",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Official arXiv metadata and abstract"
+  ],
+  "mechanism": "摘要研究所有臂共享变化、臂间差值保持固定的均值漂移，提出importance-weighted识别。",
+  "mab2_overlap": "不能把任何非平稳最佳臂识别当作未研究问题。",
+  "candidate_delta": "图编辑可能改变边间差值/最优顺序，与共同平移假设不同；此为适用性判断，尚未作全文排除。",
+  "limitations_or_audit_risks": [
+    "未读正文/证明/代码，不以摘要确认算法可直接移植。"
+  ],
+  "code_url": null,
+  "code_license_verified": null
+}

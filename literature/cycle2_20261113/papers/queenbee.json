@@ -1,0 +1,38 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "queenbee",
+  "title": "QueenBee: A Recursively Self-Improving Harness for Communication Topology Design in LLM-Based Multi-Agent Systems",
+  "authors": [
+    "Congjia Tian",
+    "Yuhang Yao",
+    "Jiaming Cui"
+  ],
+  "year": 2026,
+  "venue": null,
+  "arxiv": "2606.27492",
+  "version": "v2",
+  "version_date": "2026-10-30",
+  "primary_url": "https://arxiv.org/html/2606.27492v2",
+  "metadata_url": "https://arxiv.org/abs/2606.27492",
+  "read_status": "section_read",
+  "read_anchors": [
+    "v2 §§1–3.4, 4.1–4.5; Conclusion/Limitations",
+    "Supplementary sections referred to in body not fully inspected"
+  ],
+  "mechanism": "固定底模，以诊断卡、设计账本和程序档案选择/生成时序通信DAG；候选经过定向筛选和扩展训练验证，历史支持与反证进入后续搜索。",
+  "mab2_overlap": "结构历史、证据维护、候选亲缘与回归保护已经存在，不能把保存图历史作为独立新意。",
+  "candidate_delta": "边信用估计量及其跨图有效范围、成本预算下的独立复检策略仍须单独实验。",
+  "limitations_or_audit_risks": [
+    "搜索结果常返回v1 QueenBeePlanner旧标题/摘要，不能与v2混用。",
+    "读到的主文是经验筛选；未核全部附录、代码或形式保证。",
+    "有效执行次数相同不等于全部token/GPU成本相同。"
+  ],
+  "code_url": null,
+  "code_license_verified": null
+}

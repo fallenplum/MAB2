@@ -1,0 +1,43 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "evosteer",
+  "title": "EvoSteer: Online Self-Evolving Graph Orchestration via Reference-Anchored Credit Assignment",
+  "authors": [
+    "Mingda Zhang",
+    "Hanwen Zhang",
+    "Qiang Huang",
+    "Zijia Wang",
+    "Pengfei Guo",
+    "Yuchen Zhang",
+    "Jionghao Zhu",
+    "Xiaoying Tang"
+  ],
+  "year": 2026,
+  "venue": null,
+  "arxiv": "2609.38661",
+  "version": "v2",
+  "version_date": "2026-10-22",
+  "primary_url": "https://arxiv.org/html/2609.38661v2",
+  "metadata_url": "https://arxiv.org/abs/2609.38661",
+  "read_status": "section_read",
+  "read_anchors": [
+    "v2 §4.3; Appendix C.1–C.6; Appendix D splits/metrics",
+    "v1 earlier pass: §§1–2; §4.2 ending; C.1–C.6; D cost/settings; not transferred to v2 beyond reread sections"
+  ],
+  "mechanism": "候选技能与无技能两臂从同任务和第一角色开始，参考策略继续；阈值通过率差以W/L/T计数，经共享名义alpha预算的序贯方向检验决定晋升、退役或继续采样。",
+  "mab2_overlap": "配对反事实验证、序贯判定、退役和在线图编排已有直接先例。",
+  "candidate_delta": "仅能检验固定模型通信边在图变化后证据失效/漂移校正、恢复及未来服务完整预算收益。",
+  "limitations_or_audit_risks": [
+    "检验目标是threshold-pass差，不自动等于连续原始回报均值差。",
+    "C.2/C.4统计保证依赖未来配对数据及实际观察规则有效；C.5明确实现不同于充分条件协议。",
+    "未通读AnchorTB证明、全部实验及代码；未独立复现。"
+  ],
+  "code_url": "https://github.com/beita6969/evosteer",
+  "code_license_verified": null
+}

@@ -1,0 +1,37 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "betting_bounded_means",
+  "title": "Estimating means of bounded random variables by betting",
+  "authors": [
+    "Ian Waudby-Smith",
+    "Aaditya Ramdas"
+  ],
+  "year": 2020,
+  "venue": null,
+  "arxiv": "2010.09686",
+  "version": "v7",
+  "version_date": "2022-08-25",
+  "primary_url": "https://arxiv.org/html/2010.09686v7",
+  "metadata_url": "https://arxiv.org/abs/2010.09686",
+  "read_status": "section_read",
+  "read_anchors": [
+    "§2 and §2.1–2.2 (through theorem location); §5 introduction and §5.1–5.2"
+  ],
+  "mechanism": "以非负超鞅反演有界均值的时间一致置信序列；有放回目标要求固定条件均值；不放回版本针对固定有限总体的均匀随机观察顺序。",
+  "mab2_overlap": "序贯均值验证是现成统计工具。",
+  "candidate_delta": "MAB2只可贡献其在图信用维护的任务适配与实证收益。",
+  "limitations_or_audit_risks": [
+    "重复同题的多seed不自动构成总体独立样本，需题级块或明确条件均值。",
+    "不能把偏好采样缓存样本套均匀不放回保证。",
+    "未读所有betting策略、证明或软件代码；尚未选实现。",
+    "Journal DOI页面本轮打开失败，刊名/出版年不在此补猜。"
+  ],
+  "code_url": "https://github.com/gostevehoward/confseq",
+  "code_license_verified": null
+}

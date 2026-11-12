@@ -1,0 +1,39 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "ccpo",
+  "title": "Counterfactual Credit Policy Optimization for Multi-Agent Collaboration",
+  "authors": [
+    "Zhongyi Li",
+    "Wan Tian",
+    "Jinju Chen",
+    "Huiming Zhang",
+    "Yang Liu",
+    "Yikun Ban",
+    "Fuzhen Zhuang"
+  ],
+  "year": 2026,
+  "venue": null,
+  "arxiv": "2603.21563",
+  "version": "v5",
+  "version_date": "2026-06-11",
+  "primary_url": "https://arxiv.org/abs/2603.21563",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Official metadata/abstract refreshed this cycle"
+  ],
+  "mechanism": "摘要通过移除agent的反事实或有任务验证锚的自评/互评，构造角色奖励/优势，用于双agent策略优化。",
+  "mab2_overlap": "删除反事实与信用生成不是新概念。",
+  "candidate_delta": "冻结模型池下边信用随图改变的预算化复检仍需全文对照。",
+  "limitations_or_audit_risks": [
+    "未读全文/代码，不能作排他性新颖性判断。"
+  ],
+  "code_url": null,
+  "code_license_verified": null,
+  "update_of_inherited_record": true
+}

@@ -1,0 +1,39 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "execution_state_unlearning",
+  "title": "Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents",
+  "authors": [
+    "Chao Yao",
+    "Yangbo Wei",
+    "Zhen Huang",
+    "Junhong Qian",
+    "Chenle Chen",
+    "Shaoqiang Lu",
+    "Chen Wu",
+    "Lei He"
+  ],
+  "year": 2026,
+  "venue": null,
+  "arxiv": "2609.04875",
+  "version": "v1",
+  "version_date": "2026-09-04",
+  "primary_url": "https://arxiv.org/abs/2609.04875",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Official arXiv metadata and abstract only"
+  ],
+  "mechanism": "摘要提出按执行来源图保留未受影响前缀、重放受影响后缀的状态遗忘。",
+  "mab2_overlap": "变化局部性与后缀重放为相关祖先。",
+  "candidate_delta": "尚不足据此判定是否覆盖边信用统计维护。",
+  "limitations_or_audit_risks": [
+    "未读方法、证明、实验、代码；不把摘要下界或加速比当作已核结论。"
+  ],
+  "code_url": null,
+  "code_license_verified": null
+}

@@ -1,0 +1,34 @@
+{
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL",
+  "id": "toca",
+  "title": "Turnover-Orthogonal Credit Assignment for Open-Team Multi-Agent Reinforcement Learning",
+  "authors": [
+    "Amit Thakur",
+    "Mukesh Singhal"
+  ],
+  "year": 2026,
+  "venue": null,
+  "arxiv": "2610.02847",
+  "version": "v1",
+  "version_date": "2026-10-02",
+  "primary_url": "https://arxiv.org/abs/2610.02847",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Official metadata/abstract refreshed this cycle"
+  ],
+  "mechanism": "摘要将行动、团队成员变化及交互效应分离，以外生turnover为条件构造信用。",
+  "mab2_overlap": "环境/团队变化条件下信用分解已有。",
+  "candidate_delta": "外生成员变动的RL训练目标与主动通信边复检不等价，但全文重合仍待核。",
+  "limitations_or_audit_risks": [
+    "未读全文，不据摘要声明方法缺失某功能。"
+  ],
+  "code_url": null,
+  "code_license_verified": null,
+  "update_of_inherited_record": true
+}

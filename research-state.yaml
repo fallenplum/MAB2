@@ -6,10 +6,10 @@ direction_status: ACTIVE
 branch: research/autoresearch-cycle2-20261113
 parent_commit: 2a7f4f101d37375ebfbf95fd5c095d0bc6610485
 budget_gpu_hours_total: 160
-budget_gpu_hours_used: 0
+budget_gpu_hours_used: live_private_ledger
 formal_candidate_rounds_total: 5
 formal_candidate_rounds_started: 0
-next_action: freeze_fresh_direct_feedback_candidate_and_launch
+next_action: monitor_fixed_development_and_prepare_next_distinct_candidate
 candidate_failure: eliminate_candidate_and_continue
 direction_failure: freeze_direction_and_research_alternatives
 project_stop: explicit_project_level_conditions_only

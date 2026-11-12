@@ -1,0 +1,52 @@
+{
+  "schema": "mab2_cycle2_resource_only_amendment_v1",
+  "status": "FROZEN",
+  "created_utc": "2026-11-12T18:47:24.769339+00:00",
+  "old_plan": {
+    "sha256": "3a28656348ba295bd86b72e2503f1e32101fa1d41cc22a010e243e7404ae4ea2"
+  },
+  "new_plan": {
+    "sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff"
+  },
+  "qualification_evidence": {
+    "sha256": "63923fbe888ad5003af75f2a47453685d7fa4a6c78e1c9cc43a003bf7c06c229"
+  },
+  "qualification_acceptance_v1": {
+    "sha256": "12205a72761527ce9f82b4beaf1f9bc0d56f9169aa816462e0686a46e8fb54d9"
+  },
+  "qualification_resident_seconds": [
+    548.511388015002,
+    664.0345551189966,
+    666.4825802780688
+  ],
+  "unchanged_fields_sha256": "b1e25e7d4ad1c827c427f87c6d900e0846ffad915cf44b9aaf706e50b52b85e1",
+  "scientific_protocol_sha256": "5336eacc6713d4e444ddb631032409cd2718ad3b4aaee1387aff5baac40f5ecf",
+  "formal_rounds_started_at_amendment": 0,
+  "changes": [
+    {
+      "path": "workers[0].resident_wall_cap_seconds",
+      "old": 28800,
+      "new": 21600
+    },
+    {
+      "path": "workers[1].resident_wall_cap_seconds",
+      "old": 28800,
+      "new": 35280
+    },
+    {
+      "path": "workers[2].resident_wall_cap_seconds",
+      "old": 28800,
+      "new": 29520
+    }
+  ],
+  "both_total_seconds": 86400,
+  "reason": "Label-free qualification timing; redistribute the same candidate reservation before any formal generation",
+  "admission_throughput_margin": "1.25",
+  "scientific_outcomes_read": false,
+  "old_qualification_costs_remain_charged": true,
+  "phase_plan_binding": {
+    "qualification": "3a28656348ba295bd86b72e2503f1e32101fa1d41cc22a010e243e7404ae4ea2",
+    "I_C_S": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff"
+  },
+  "private_certificate_sha256": "612a805e0c6162fafaa128fabb03d7cb7a855a3b2a2364471c4a4fc3ca6ff267"
+}
