@@ -1,0 +1,21 @@
+{
+  "schema": "mab2_confirmation_public_allowlist_v1",
+  "files": {
+    "confirmation_calculator.py": "74d69a120e6396f8943204221b08e2119f94f3e0988e1c9fd4d4295ea104ceb4",
+    "test_confirmation_calculator.py": "0a74d5d02a07f0817210b3277c02eedc644b9c8707397fcb5791c7494001bffd",
+    "CONFIRMATION_OPTIONS.md": "0bb1dcd46c991d44564914940bc118d151ca26c5ac917e2acd3632b3aa6e9c5e",
+    "ASSUMPTION_GRID.json": "996e78406045b7b224f6ee61f80834d07dd37914c2827f994522844fa961b0b1",
+    "SOURCES.json": "a7b6452f8dd424b2bca565c7383637d4ba0d57f5dd4a0b28c30b5c9e4a5d964c",
+    "SEARCH_LOG.json": "c43341acefe02f5d8aed2638e74bdd7302c36a3956ac059d843de186b12332be",
+    "SYNTHETIC_TEST_RECEIPT_001.json": "89c9bcc06179325b6849e50e73c4e1e8e1da2bb19b7c5d2677d4b0e40616a8a1"
+  },
+  "private_directory_excluded": true,
+  "raw_questions_answers_ids_or_arrays_exported": false,
+  "status": "DRAFT_OPTIONS_NOT_FROZEN_CONFIRMATION",
+  "tests_passed": 29,
+  "new_gpu_hours": 0,
+  "new_model_calls": 0,
+  "evidence_limit": "Synthetic arithmetic and guards only, no observed statistical power or actual throughput.",
+  "budget_snapshot_status": "NULL: parent monitor is provisional, not settled ledger",
+  "formal_candidate_iterations_consumed": 0
+}

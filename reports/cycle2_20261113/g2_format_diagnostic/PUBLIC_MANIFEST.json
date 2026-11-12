@@ -1,0 +1,74 @@
+{
+  "status": "PUBLIC_ALLOWLIST_AND_DISCLOSURE_SCAN_PASS",
+  "files": {
+    "ADDITIONAL_SCOPE_RECEIPT.json": {
+      "sha256": "c99bd6025d6439489c34e4a3f177b3c2ba3a1a2af098726574cd59f60fce029e",
+      "bytes": 749
+    },
+    "analyze_cache.py": {
+      "sha256": "34f7bbcf6bacf98e24742e4ff7e19f393e3d2107f1d2f984510e8188ec01399d",
+      "bytes": 11283
+    },
+    "ASSOCIATION_RESULTS.json": {
+      "sha256": "a149f05a5db1a6b0ca5d657ec5dc23c82f5807753fb3810d9717b67fe5860e6f",
+      "bytes": 42716
+    },
+    "D2_METRIC_REPLAY.json": {
+      "sha256": "a6de8fb4f847f0b6e5f004a78421512efdc305c947e8de3f758a062a416fd1ee",
+      "bytes": 1446
+    },
+    "DIAGNOSTIC_PROTOCOL.json": {
+      "sha256": "5f3da3a7dae63b654b93db734aafe964f585294802dbff1776eb8cabe29ab261",
+      "bytes": 1176
+    },
+    "FINDINGS.md": {
+      "sha256": "10fcf4b14c6d142ff4182720f92cd61b013531e443f1732aa7d7fbd4f2b9bd26",
+      "bytes": 4025
+    },
+    "INPUT_PINS.json": {
+      "sha256": "382b7d02b8dcc2926d6b23f10fc63dc99e78f95fdd086e4458c6e6bc393ac1bb",
+      "bytes": 278
+    },
+    "NUMERICAL_VALIDATION.json": {
+      "sha256": "196c84467584c981acad9c60f91376414ef4a457bbe72cb7a3c2033c16274459",
+      "bytes": 715
+    },
+    "README.md": {
+      "sha256": "02b541d5a9ad88f26304cfa49d1f7a6172f200a6bf5e1323fb95e7251895e287",
+      "bytes": 2248
+    },
+    "REPORT.md": {
+      "sha256": "ca548229f8f81e84e214c842c96b6dacbd2e2588a1f5d708f0ba8bb6716c80c9",
+      "bytes": 9832
+    },
+    "SCAN_COMPLETE.json": {
+      "sha256": "2d02f5ebf7a579f15f10a95aa82e8f91be651a5f7a049cb3db1fe1388e55dbf1",
+      "bytes": 2595
+    },
+    "SOURCE_LINEAGE.json": {
+      "sha256": "e415d03a73a74b311df8f9e92f06531ae26311676e617783d89f212fd8eda852",
+      "bytes": 770
+    },
+    "test_analyze_cache.py": {
+      "sha256": "c1929446373bd7cf182a54450bbb6e4f8d295aee8d0fb138cc029af6375ae7be",
+      "bytes": 1998
+    },
+    "CLI_REPLAY_VALIDATION.json": {
+      "sha256": "afee72bb8c1ac9bb15cbba5baed0b58288bc0ab534db4f60cbbaa2378b2755d3",
+      "bytes": 315
+    }
+  },
+  "excluded": [
+    "question_ids",
+    "question_text",
+    "gold",
+    "per_question_arrays",
+    "numeric_cache",
+    "selection_index",
+    "absolute_local_paths",
+    "hosts",
+    "credentials"
+  ],
+  "source_statistics_changed": false,
+  "git_add_or_commit_performed": false
+}

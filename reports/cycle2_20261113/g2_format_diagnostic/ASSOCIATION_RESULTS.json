@@ -1,0 +1,1213 @@
+{
+  "status": "EXPLORATORY_HISTORICAL_ASSOCIATION_COMPLETE",
+  "questions": 280,
+  "paired_seed_contrasts": 33600,
+  "receiver_added_message_token_checks": 33600,
+  "source_bad_sent_only_when_edge_on_checks": 33600,
+  "baselines_and_clean_path": [
+    {
+      "partition": "train",
+      "paired_seed_observations": 24000,
+      "questions": 200,
+      "nonzero_credit_fraction": 0.062625,
+      "mean_signed_credit": -0.0030416666666666665,
+      "both_correct_fraction": 0.314875,
+      "both_wrong_fraction": 0.6225
+    },
+    {
+      "partition": "train",
+      "subset": "all_relevant_source_receiver_aggregate_format_clean",
+      "paired_seed_observations": 18032,
+      "questions": 200,
+      "nonzero_credit_fraction": 0.05773070097604259,
+      "mean_signed_credit": -0.005601153504880213,
+      "both_correct_fraction": 0.33451641526175685,
+      "both_wrong_fraction": 0.6077528837622005,
+      "zero_credits_retained_fraction_of_all_zero_credits": 0.7552562563897408
+    },
+    {
+      "partition": "train",
+      "subset": "both_graphs_all_nine_nodes_format_clean",
+      "paired_seed_observations": 14577,
+      "questions": 191,
+      "nonzero_credit_fraction": 0.05378335734376072,
+      "mean_signed_credit": -0.004390478150511079,
+      "both_correct_fraction": 0.34451533237291626,
+      "both_wrong_fraction": 0.6017013102833231,
+      "zero_credits_retained_fraction_of_all_zero_credits": 0.6131039694181446
+    },
+    {
+      "partition": "tune",
+      "paired_seed_observations": 9600,
+      "questions": 80,
+      "nonzero_credit_fraction": 0.06958333333333333,
+      "mean_signed_credit": -0.0014583333333333334,
+      "both_correct_fraction": 0.37875,
+      "both_wrong_fraction": 0.5516666666666666
+    },
+    {
+      "partition": "tune",
+      "subset": "all_relevant_source_receiver_aggregate_format_clean",
+      "paired_seed_observations": 7626,
+      "questions": 80,
+      "nonzero_credit_fraction": 0.06031995803829006,
+      "mean_signed_credit": -0.0007867820613690008,
+      "both_correct_fraction": 0.3874901652242329,
+      "both_wrong_fraction": 0.5521898767374771,
+      "zero_credits_retained_fraction_of_all_zero_credits": 0.8022839229735782
+    },
+    {
+      "partition": "tune",
+      "subset": "both_graphs_all_nine_nodes_format_clean",
+      "paired_seed_observations": 6317,
+      "questions": 76,
+      "nonzero_credit_fraction": 0.051606775368054456,
+      "mean_signed_credit": 0.0006332119677061897,
+      "both_correct_fraction": 0.3796105746398607,
+      "both_wrong_fraction": 0.5687826499920848,
+      "zero_credits_retained_fraction_of_all_zero_credits": 0.6707344379758173
+    }
+  ],
+  "associations": [
+    {
+      "partition": "train",
+      "exposure": "source_format_bad",
+      "exposed": {
+        "paired_seed_observations": 1812,
+        "questions": 115,
+        "nonzero_credit_fraction": 0.04470198675496689,
+        "mean_signed_credit": 0.008278145695364239,
+        "both_correct_fraction": 0.2869757174392936,
+        "both_wrong_fraction": 0.6683222958057395
+      },
+      "unexposed": {
+        "paired_seed_observations": 22188,
+        "questions": 200,
+        "nonzero_credit_fraction": 0.06408869659275283,
+        "mean_signed_credit": -0.003966107806021273,
+        "both_correct_fraction": 0.317153416261042,
+        "both_wrong_fraction": 0.6187578871462052
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": -0.019386709837785947,
+        "ci95": [
+          -0.033184550002363665,
+          -0.0048687646500716235
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "source_length_finish",
+      "exposed": {
+        "paired_seed_observations": 390,
+        "questions": 22,
+        "nonzero_credit_fraction": 0.05128205128205128,
+        "mean_signed_credit": -0.015384615384615385,
+        "both_correct_fraction": 0.09487179487179487,
+        "both_wrong_fraction": 0.8538461538461538
+      },
+      "unexposed": {
+        "paired_seed_observations": 23610,
+        "questions": 200,
+        "nonzero_credit_fraction": 0.06281236764083016,
+        "mean_signed_credit": -0.0028377806014400677,
+        "both_correct_fraction": 0.3185091063108852,
+        "both_wrong_fraction": 0.6186785260482847
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": -0.01153031635877888,
+        "ci95": [
+          -0.04729708148133734,
+          0.030070289561656773
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "source_message_trimmed",
+      "exposed": {
+        "paired_seed_observations": 0,
+        "questions": 0,
+        "nonzero_credit_fraction": null
+      },
+      "unexposed": {
+        "paired_seed_observations": 24000,
+        "questions": 200,
+        "nonzero_credit_fraction": 0.062625,
+        "mean_signed_credit": -0.0030416666666666665,
+        "both_correct_fraction": 0.314875,
+        "both_wrong_fraction": 0.6225
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": null,
+        "ci95": null,
+        "valid_resamples": 0
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "receiver_format_bad_either",
+      "exposed": {
+        "paired_seed_observations": 1557,
+        "questions": 165,
+        "nonzero_credit_fraction": 0.07193320488118175,
+        "mean_signed_credit": -0.011560693641618497,
+        "both_correct_fraction": 0.2581888246628131,
+        "both_wrong_fraction": 0.6698779704560052
+      },
+      "unexposed": {
+        "paired_seed_observations": 22443,
+        "questions": 200,
+        "nonzero_credit_fraction": 0.06197923628748385,
+        "mean_signed_credit": -0.002450652764781892,
+        "both_correct_fraction": 0.31880764603662615,
+        "both_wrong_fraction": 0.61921311767589
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": 0.009953968593697904,
+        "ci95": [
+          -0.006547499642173408,
+          0.026871570135567922
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "aggregate_format_bad_either",
+      "exposed": {
+        "paired_seed_observations": 3113,
+        "questions": 154,
+        "nonzero_credit_fraction": 0.0973337616447157,
+        "mean_signed_credit": 0.01060070671378092,
+        "both_correct_fraction": 0.2267908769675554,
+        "both_wrong_fraction": 0.6758753613877289
+      },
+      "unexposed": {
+        "paired_seed_observations": 20887,
+        "questions": 200,
+        "nonzero_credit_fraction": 0.057452003638626896,
+        "mean_signed_credit": -0.00507492698807871,
+        "both_correct_fraction": 0.32800306410686075,
+        "both_wrong_fraction": 0.6145449322545123
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": 0.039881758006088806,
+        "ci95": [
+          0.02061263063984073,
+          0.06181865168267755
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "aggregate_numeric_parse_failure_either",
+      "exposed": {
+        "paired_seed_observations": 420,
+        "questions": 6,
+        "nonzero_credit_fraction": 0.07380952380952381,
+        "mean_signed_credit": -0.02142857142857143,
+        "both_correct_fraction": 0.0,
+        "both_wrong_fraction": 0.9261904761904762
+      },
+      "unexposed": {
+        "paired_seed_observations": 23580,
+        "questions": 200,
+        "nonzero_credit_fraction": 0.062425784563189146,
+        "mean_signed_credit": -0.002714164546225615,
+        "both_correct_fraction": 0.32048346055979643,
+        "both_wrong_fraction": 0.6170907548770144
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": 0.011383739246334665,
+        "ci95": [
+          -0.06271622174655517,
+          0.12091832172434798
+        ],
+        "valid_resamples": 1997,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_format_bad",
+      "exposed": {
+        "paired_seed_observations": 438,
+        "questions": 31,
+        "nonzero_credit_fraction": 0.0502283105022831,
+        "mean_signed_credit": 0.0091324200913242,
+        "both_correct_fraction": 0.5091324200913242,
+        "both_wrong_fraction": 0.4406392694063927
+      },
+      "unexposed": {
+        "paired_seed_observations": 9162,
+        "questions": 80,
+        "nonzero_credit_fraction": 0.07050862257149094,
+        "mean_signed_credit": -0.0019646365422396855,
+        "both_correct_fraction": 0.37251691770355816,
+        "both_wrong_fraction": 0.5569744597249509
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": -0.020280312069207843,
+        "ci95": [
+          -0.04563542827963993,
+          0.00831220250337896
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_length_finish",
+      "exposed": {
+        "paired_seed_observations": 60,
+        "questions": 8,
+        "nonzero_credit_fraction": 0.13333333333333333,
+        "mean_signed_credit": 0.06666666666666667,
+        "both_correct_fraction": 0.38333333333333336,
+        "both_wrong_fraction": 0.48333333333333334
+      },
+      "unexposed": {
+        "paired_seed_observations": 9540,
+        "questions": 80,
+        "nonzero_credit_fraction": 0.06918238993710692,
+        "mean_signed_credit": -0.0018867924528301887,
+        "both_correct_fraction": 0.37872117400419286,
+        "both_wrong_fraction": 0.5520964360587002
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": 0.06415094339622641,
+        "ci95": [
+          -0.028408937136047363,
+          0.21831902634116065
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_message_trimmed",
+      "exposed": {
+        "paired_seed_observations": 0,
+        "questions": 0,
+        "nonzero_credit_fraction": null
+      },
+      "unexposed": {
+        "paired_seed_observations": 9600,
+        "questions": 80,
+        "nonzero_credit_fraction": 0.06958333333333333,
+        "mean_signed_credit": -0.0014583333333333334,
+        "both_correct_fraction": 0.37875,
+        "both_wrong_fraction": 0.5516666666666666
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": null,
+        "ci95": null,
+        "valid_resamples": 0
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "receiver_format_bad_either",
+      "exposed": {
+        "paired_seed_observations": 463,
+        "questions": 55,
+        "nonzero_credit_fraction": 0.08207343412526998,
+        "mean_signed_credit": -0.03023758099352052,
+        "both_correct_fraction": 0.39956803455723544,
+        "both_wrong_fraction": 0.5183585313174947
+      },
+      "unexposed": {
+        "paired_seed_observations": 9137,
+        "questions": 80,
+        "nonzero_credit_fraction": 0.0689504213636861,
+        "mean_signed_credit": 0.0,
+        "both_correct_fraction": 0.3776950859144139,
+        "both_wrong_fraction": 0.5533544927219
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": 0.013123012761583869,
+        "ci95": [
+          -0.013981737231791509,
+          0.041871099697154864
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "aggregate_format_bad_either",
+      "exposed": {
+        "paired_seed_observations": 1159,
+        "questions": 62,
+        "nonzero_credit_fraction": 0.1371872303710095,
+        "mean_signed_credit": -0.0025884383088869713,
+        "both_correct_fraction": 0.271786022433132,
+        "both_wrong_fraction": 0.5910267471958585
+      },
+      "unexposed": {
+        "paired_seed_observations": 8441,
+        "questions": 80,
+        "nonzero_credit_fraction": 0.060300912214192634,
+        "mean_signed_credit": -0.0013031631323302925,
+        "both_correct_fraction": 0.393436796588082,
+        "both_wrong_fraction": 0.5462622911977254
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": 0.07688631815681686,
+        "ci95": [
+          0.035848882561785665,
+          0.1188691498762776
+        ],
+        "valid_resamples": 2000,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": null,
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "aggregate_numeric_parse_failure_either",
+      "exposed": {
+        "paired_seed_observations": 22,
+        "questions": 1,
+        "nonzero_credit_fraction": 0.2727272727272727,
+        "mean_signed_credit": -0.18181818181818182,
+        "both_correct_fraction": 0.0,
+        "both_wrong_fraction": 0.7272727272727273
+      },
+      "unexposed": {
+        "paired_seed_observations": 9578,
+        "questions": 80,
+        "nonzero_credit_fraction": 0.06911672583002715,
+        "mean_signed_credit": -0.0010440593025683859,
+        "both_correct_fraction": 0.3796199624138651,
+        "both_wrong_fraction": 0.5512633117561078
+      },
+      "nonzero_credit_rate_exposed_minus_unexposed": {
+        "difference": 0.20361054689724556,
+        "ci95": null,
+        "valid_resamples": 1279,
+        "resamples": 2000,
+        "cluster": "question",
+        "seed": 2026111308,
+        "interval_not_reported_reason": "Fewer than two supporting question clusters in a group; conditional nonempty bootstrap cannot estimate exposure-population uncertainty",
+        "scope": "exploratory association; multiple tables no familywise claims"
+      }
+    }
+  ],
+  "fixed_predictor_risk_strata": [
+    {
+      "partition": "train",
+      "exposure": "source_format_bad",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 1098,
+      "questions": 115,
+      "mse": {
+        "B0": 0.012720437613843352,
+        "C1_R0": 0.013181499188939613,
+        "C2_R0": 0.01357189525386812,
+        "C2_R1": 0.012826711619587346,
+        "C2_R3": 0.012813733479656607
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0002889667708333333,
+        "C1_R0": 0.0003944346061366029,
+        "C2_R0": 0.0004837377059889988,
+        "C2_R1": 0.0003132769496472719,
+        "C2_R3": 0.0003103082001381151
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0012632427140255008,
+        "C1_R0": 0.0017243042891217618,
+        "C2_R0": 0.0021147003540502676,
+        "C2_R1": 0.0013695167197694947,
+        "C2_R3": 0.0013565385798387547
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "source_format_bad",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 3702,
+      "questions": 195,
+      "mse": {
+        "B0": 0.015615413155051326,
+        "C1_R0": 0.01604748040882652,
+        "C2_R0": 0.016619419446965423,
+        "C2_R1": 0.015663416527076344,
+        "C2_R3": 0.01564829595517905
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.002760054062500001,
+        "C1_R0": 0.0030932859319741193,
+        "C2_R0": 0.003534393915138748,
+        "C2_R1": 0.002797076663174294,
+        "C2_R3": 0.002785414922098508
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0035786762560777955,
+        "C1_R0": 0.00401074350985299,
+        "C2_R0": 0.004582682547991893,
+        "C2_R1": 0.003626679628102813,
+        "C2_R3": 0.003611559056205521
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "source_length_finish",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 252,
+      "questions": 22,
+      "mse": {
+        "B0": 0.009833988095238097,
+        "C1_R0": 0.010802310984323603,
+        "C2_R0": 0.01139208409123396,
+        "C2_R1": 0.009906843268309592,
+        "C2_R3": 0.009989553191747554
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 1.2117708333333314e-05,
+        "C1_R0": 6.295466001032242e-05,
+        "C2_R0": 9.391774812311619e-05,
+        "C2_R1": 1.5942604919586835e-05,
+        "C2_R3": 2.0284875900079888e-05
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.00023081349206349172,
+        "C1_R0": 0.0011991363811489984,
+        "C2_R0": 0.0017889094880593557,
+        "C2_R1": 0.00030366866513498723,
+        "C2_R3": 0.00038637858857295014
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "source_length_finish",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 4548,
+      "questions": 198,
+      "mse": {
+        "B0": 0.015236837071240105,
+        "C1_R0": 0.015646190900369818,
+        "C2_R0": 0.01617331279472784,
+        "C2_R1": 0.015297531406756708,
+        "C2_R3": 0.015277507383996355
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.003036903125,
+        "C1_R0": 0.0034247658781004007,
+        "C2_R0": 0.003924213873004631,
+        "C2_R1": 0.0030944110079019795,
+        "C2_R3": 0.0030754382463365434
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0032051748021108177,
+        "C1_R0": 0.0036145286312405283,
+        "C2_R0": 0.004141650525598554,
+        "C2_R1": 0.0032658691376274192,
+        "C2_R3": 0.003245845114867064
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "source_message_trimmed",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 0,
+      "questions": 0,
+      "mse": {
+        "B0": null,
+        "C1_R0": null,
+        "C2_R0": null,
+        "C2_R1": null,
+        "C2_R3": null
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0,
+        "C1_R0": 0.0,
+        "C2_R0": 0.0,
+        "C2_R1": 0.0,
+        "C2_R3": 0.0
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": null,
+        "C1_R0": null,
+        "C2_R0": null,
+        "C2_R1": null,
+        "C2_R3": null
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "source_message_trimmed",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 4800,
+      "questions": 200,
+      "mse": {
+        "B0": 0.014953187500000003,
+        "C1_R0": 0.01539188720477739,
+        "C2_R0": 0.015922298287794415,
+        "C2_R1": 0.015014520279488236,
+        "C2_R3": 0.014999889788903292
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0030490208333333337,
+        "C1_R0": 0.003487720538110722,
+        "C2_R0": 0.004018131621127746,
+        "C2_R1": 0.0031103536128215662,
+        "C2_R3": 0.0030957231222366235
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.003049020833333333,
+        "C1_R0": 0.003487720538110722,
+        "C2_R0": 0.004018131621127747,
+        "C2_R1": 0.0031103536128215662,
+        "C2_R3": 0.003095723122236623
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "receiver_format_bad_either",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 1060,
+      "questions": 165,
+      "mse": {
+        "B0": 0.015183858254716982,
+        "C1_R0": 0.015619781058874533,
+        "C2_R0": 0.01622655620286741,
+        "C2_R1": 0.01525442221383759,
+        "C2_R3": 0.015237140416971127
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.00011143536458333335,
+        "C1_R0": 0.00020770165050145923,
+        "C2_R0": 0.00034169782813321887,
+        "C2_R1": 0.00012701823888913402,
+        "C2_R3": 0.0001232018420811242
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0005046129716981126,
+        "C1_R0": 0.0009405357758556644,
+        "C2_R0": 0.0015473109198485386,
+        "C2_R1": 0.0005751769308187201,
+        "C2_R3": 0.0005578951339522607
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "receiver_format_bad_either",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 3740,
+      "questions": 199,
+      "mse": {
+        "B0": 0.01488781022727273,
+        "C1_R0": 0.015327296968054668,
+        "C2_R0": 0.015836064761062498,
+        "C2_R1": 0.014946526683121842,
+        "C2_R3": 0.014932647632285133
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.00293758546875,
+        "C1_R0": 0.003280018887609263,
+        "C2_R0": 0.0036764337929945275,
+        "C2_R1": 0.002983335373932432,
+        "C2_R3": 0.0029725212801554987
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0037701631684491977,
+        "C1_R0": 0.00420964990923114,
+        "C2_R0": 0.004718417702238966,
+        "C2_R1": 0.003828879624298309,
+        "C2_R3": 0.0038150005734616027
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "aggregate_format_bad_either",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 2222,
+      "questions": 154,
+      "mse": {
+        "B0": 0.017529005625562557,
+        "C1_R0": 0.017992579603175116,
+        "C2_R0": 0.018463287170451433,
+        "C2_R1": 0.017604133545891038,
+        "C2_R3": 0.017596098247149854
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.001651968854166667,
+        "C1_R0": 0.0018665649746364814,
+        "C2_R0": 0.002084463352654808,
+        "C2_R1": 0.001686746820618726,
+        "C2_R3": 0.0016830271469097855
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.003568609585958596,
+        "C1_R0": 0.004032183563571157,
+        "C2_R0": 0.004502891130847471,
+        "C2_R1": 0.0036437375062870767,
+        "C2_R3": 0.003635702207545891
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "aggregate_format_bad_either",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 2578,
+      "questions": 155,
+      "mse": {
+        "B0": 0.01273306807602793,
+        "C1_R0": 0.013150328434707667,
+        "C2_R0": 0.013732198482804537,
+        "C2_R1": 0.01278251070697193,
+        "C2_R3": 0.012762195764766806
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0013970519791666667,
+        "C1_R0": 0.001621155563474241,
+        "C2_R0": 0.001933668268472938,
+        "C2_R1": 0.0014236067922028407,
+        "C2_R3": 0.0014126959753268378
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0026011828937160587,
+        "C1_R0": 0.003018443252395794,
+        "C2_R0": 0.00360031330049267,
+        "C2_R1": 0.00265062552466006,
+        "C2_R3": 0.002630310582454935
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "aggregate_numeric_parse_failure_either",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 123,
+      "questions": 6,
+      "mse": {
+        "B0": 0.017432991869918705,
+        "C1_R0": 0.018401241277525425,
+        "C2_R0": 0.018981211196580496,
+        "C2_R1": 0.017507663231605,
+        "C2_R3": 0.017554010634616198
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.00018422041666666666,
+        "C1_R0": 0.00020903180773658894,
+        "C2_R0": 0.00022389353691237534,
+        "C2_R1": 0.00018613387030987812,
+        "C2_R3": 0.00018732152251204001
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.007189089430894307,
+        "C1_R0": 0.008157338838501033,
+        "C2_R0": 0.00873730875755611,
+        "C2_R1": 0.007263760792580612,
+        "C2_R3": 0.0073101081955918076
+      }
+    },
+    {
+      "partition": "train",
+      "exposure": "aggregate_numeric_parse_failure_either",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 4677,
+      "questions": 195,
+      "mse": {
+        "B0": 0.014887971349155444,
+        "C1_R0": 0.01531274447419197,
+        "C2_R0": 0.015841852213862258,
+        "C2_R1": 0.014948953338476824,
+        "C2_R3": 0.014932719195783196
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.002864800416666667,
+        "C1_R0": 0.003278688730374134,
+        "C2_R0": 0.0037942380842153705,
+        "C2_R1": 0.0029242197425116885,
+        "C2_R3": 0.0029084015997245826
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0029401415437246095,
+        "C1_R0": 0.0033649146687611377,
+        "C2_R0": 0.0038940224084314263,
+        "C2_R1": 0.0030011235330459915,
+        "C2_R3": 0.0029848893903523625
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_format_bad",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 270,
+      "questions": 31,
+      "mse": {
+        "B0": 0.013609222222222224,
+        "C1_R0": 0.014157332792282167,
+        "C2_R0": 0.01455883439238953,
+        "C2_R1": 0.013616390454706041,
+        "C2_R3": 0.013628479662979991
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": -0.00021120312499999994,
+        "C1_R0": -0.0001341250760853206,
+        "C2_R0": -7.766391357022226e-05,
+        "C2_R1": -0.00021019509230696347,
+        "C2_R3": -0.0002084950473934392
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": -0.0015018888888888894,
+        "C1_R0": -0.0009537783188289467,
+        "C2_R0": -0.0005522767187215808,
+        "C2_R1": -0.0014947206564050733,
+        "C2_R3": -0.0014826314481311232
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_format_bad",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 1650,
+      "questions": 79,
+      "mse": {
+        "B0": 0.015533084848484851,
+        "C1_R0": 0.015811140088375523,
+        "C2_R0": 0.01644127598915752,
+        "C2_R1": 0.015558991046367767,
+        "C2_R3": 0.015515076142265202
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0018904114583333336,
+        "C1_R0": 0.002129365180114381,
+        "C2_R0": 0.0026708882198489075,
+        "C2_R1": 0.0019126745971389623,
+        "C2_R3": 0.0018749352264258235
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0021997515151515146,
+        "C1_R0": 0.0024778067550421893,
+        "C2_R0": 0.003107942655824184,
+        "C2_R1": 0.0022256577130344286,
+        "C2_R3": 0.002181742808931868
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_length_finish",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 60,
+      "questions": 8,
+      "mse": {
+        "B0": 0.020902716666666665,
+        "C1_R0": 0.020629190140344537,
+        "C2_R0": 0.021794183607297714,
+        "C2_R1": 0.02100921554217755,
+        "C2_R3": 0.020674690098610938
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": -0.00014887343749999998,
+        "C1_R0": -0.0001574211414475668,
+        "C2_R0": -0.00012101509560527995,
+        "C2_R1": -0.000145545347640285,
+        "C2_R3": -0.00015599926775174158
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": -0.00476395,
+        "C1_R0": -0.005037476526322139,
+        "C2_R0": -0.0038724830593689576,
+        "C2_R1": -0.0046574511244891195,
+        "C2_R3": -0.004991976568055731
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_length_finish",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 1860,
+      "questions": 80,
+      "mse": {
+        "B0": 0.01508060053763441,
+        "C1_R0": 0.015415650317911358,
+        "C2_R0": 0.015995343898718935,
+        "C2_R1": 0.01510118694448752,
+        "C2_R3": 0.015074776203132004
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0018280817708333332,
+        "C1_R0": 0.0021526612454766275,
+        "C2_R0": 0.0027142394018839656,
+        "C2_R1": 0.001848024852472284,
+        "C2_R3": 0.0018224394467841257
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0018870521505376342,
+        "C1_R0": 0.0022221019308145827,
+        "C2_R0": 0.002801795511622158,
+        "C2_R1": 0.0019076385573907448,
+        "C2_R3": 0.0018812278160352275
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_message_trimmed",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 0,
+      "questions": 0,
+      "mse": {
+        "B0": null,
+        "C1_R0": null,
+        "C2_R0": null,
+        "C2_R1": null,
+        "C2_R3": null
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0,
+        "C1_R0": 0.0,
+        "C2_R0": 0.0,
+        "C2_R1": 0.0,
+        "C2_R3": 0.0
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": null,
+        "C1_R0": null,
+        "C2_R0": null,
+        "C2_R1": null,
+        "C2_R3": null
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "source_message_trimmed",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 1920,
+      "questions": 80,
+      "mse": {
+        "B0": 0.015262541666666667,
+        "C1_R0": 0.015578573437362396,
+        "C2_R0": 0.01617655763961202,
+        "C2_R1": 0.015285812838165332,
+        "C2_R3": 0.01524977351236572
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0016792083333333331,
+        "C1_R0": 0.0019952401040290607,
+        "C2_R0": 0.002593224306278686,
+        "C2_R1": 0.001702479504831999,
+        "C2_R3": 0.0016664401790323843
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0016792083333333331,
+        "C1_R0": 0.0019952401040290607,
+        "C2_R0": 0.0025932243062786863,
+        "C2_R1": 0.0017024795048319987,
+        "C2_R3": 0.0016664401790323846
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "receiver_format_bad_either",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 344,
+      "questions": 55,
+      "mse": {
+        "B0": 0.015831316860465117,
+        "C1_R0": 0.01660819631135146,
+        "C2_R0": 0.01762049008062017,
+        "C2_R1": 0.015778895132302847,
+        "C2_R3": 0.01581385793252046
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 3.110937500000032e-06,
+        "C1_R0": 0.00014230183911713657,
+        "C2_R0": 0.00032367113944444664,
+        "C2_R1": -6.281288795740167e-06,
+        "C2_R3": -1.7120423417910207e-08
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 1.7363372093023114e-05,
+        "C1_R0": 0.0007942428229793664,
+        "C2_R0": 0.0018065365922480747,
+        "C2_R1": -3.505835606924724e-05,
+        "C2_R3": -9.55558516349687e-08
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "receiver_format_bad_either",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 1576,
+      "questions": 80,
+      "mse": {
+        "B0": 0.015138392766497462,
+        "C1_R0": 0.015353833419182042,
+        "C2_R0": 0.01586138456873207,
+        "C2_R1": 0.015178185738429734,
+        "C2_R3": 0.015126648486646665
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0016760973958333334,
+        "C1_R0": 0.0018529382649119241,
+        "C2_R0": 0.0022695531668342392,
+        "C2_R1": 0.001708760793627739,
+        "C2_R3": 0.001666457299455802
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.002041946065989847,
+        "C1_R0": 0.0022573867186744256,
+        "C2_R0": 0.0027649378682244536,
+        "C2_R1": 0.0020817390379221186,
+        "C2_R3": 0.0020302017861390485
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "aggregate_format_bad_either",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 839,
+      "questions": 62,
+      "mse": {
+        "B0": 0.02077472675804529,
+        "C1_R0": 0.020988796866438186,
+        "C2_R0": 0.02160515781171487,
+        "C2_R1": 0.020805277354431984,
+        "C2_R3": 0.020739449430673334
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.001421872786458333,
+        "C1_R0": 0.001515416964032102,
+        "C2_R0": 0.0017847538562649854,
+        "C2_R1": 0.001435222760608557,
+        "C2_R3": 0.0014064573293411065
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.003253868593563767,
+        "C1_R0": 0.0034679387019566584,
+        "C2_R0": 0.00408429964723334,
+        "C2_R1": 0.003284419189950452,
+        "C2_R3": 0.0032185912661918054
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "aggregate_format_bad_either",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 1081,
+      "questions": 63,
+      "mse": {
+        "B0": 0.010984351757631825,
+        "C1_R0": 0.011379519360586643,
+        "C2_R0": 0.011963240762281504,
+        "C2_R1": 0.011001973125725263,
+        "C2_R3": 0.010989053720080718
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.00025733554687499996,
+        "C1_R0": 0.00047982313999695835,
+        "C2_R0": 0.0008084704500137003,
+        "C2_R1": 0.000267256744223442,
+        "C2_R3": 0.0002599828496912779
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.00045706221091581817,
+        "C1_R0": 0.0008522298138706384,
+        "C2_R0": 0.0014359512155654988,
+        "C2_R1": 0.00047468357900925867,
+        "C2_R3": 0.00046176417336471183
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "aggregate_numeric_parse_failure_either",
+      "condition": "any_seed_exposed",
+      "edge_anchor_contexts": 15,
+      "questions": 1,
+      "mse": {
+        "B0": 0.038295600000000006,
+        "C1_R0": 0.0396320277599923,
+        "C2_R0": 0.045262136351254534,
+        "C2_R1": 0.03822063173162791,
+        "C2_R3": 0.037365044786177394
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.00011168437499999999,
+        "C1_R0": 0.00012212521687493977,
+        "C2_R0": 0.00016611044024417607,
+        "C2_R1": 0.00011109868540334297,
+        "C2_R3": 0.00010441441239201087
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0142956,
+        "C1_R0": 0.01563202775999229,
+        "C2_R0": 0.021262136351254533,
+        "C2_R1": 0.0142206317316279,
+        "C2_R3": 0.013365044786177392
+      }
+    },
+    {
+      "partition": "tune",
+      "exposure": "aggregate_numeric_parse_failure_either",
+      "condition": "all_seeds_unexposed",
+      "edge_anchor_contexts": 1905,
+      "questions": 80,
+      "mse": {
+        "B0": 0.015081179002624673,
+        "C1_R0": 0.01538917615923145,
+        "C2_R0": 0.01594753733479594,
+        "C2_R1": 0.015105223713019962,
+        "C2_R3": 0.015075637518083737
+      },
+      "original_cross_seed_risk_contribution": {
+        "B0": 0.0015675239583333332,
+        "C1_R0": 0.0018731148871541214,
+        "C2_R0": 0.0024271138660345096,
+        "C2_R1": 0.0015913808194286559,
+        "C2_R3": 0.0015620257666403735
+      },
+      "conditional_pooled_cross_seed_risk": {
+        "B0": 0.0015798666666666662,
+        "C1_R0": 0.001887863823273445,
+        "C2_R0": 0.002446224998837931,
+        "C2_R1": 0.0016039113770619524,
+        "C2_R3": 0.0015743251821257308
+      }
+    }
+  ],
+  "original_metric_alignment": [
+    {
+      "partition": "train",
+      "questions": 200,
+      "edge_anchor_contexts": 4800,
+      "single_seed_nonzero_fraction": 0.062625,
+      "five_seed_empirical_mean_nonzero_fraction": 0.22208333333333333,
+      "original_question_mean_24_context_cross_seed_risk": {
+        "B0": 0.0030490208333333337,
+        "C1_R0": 0.0034877205381107224,
+        "C2_R0": 0.004018131621127746,
+        "C2_R1": 0.003110353612821567,
+        "C2_R3": 0.0030957231222366226
+      },
+      "five_seed_mean_empirical_mse": {
+        "B0": 0.014953187500000003,
+        "C1_R0": 0.01539188720477739,
+        "C2_R0": 0.015922298287794415,
+        "C2_R1": 0.015014520279488236,
+        "C2_R3": 0.014999889788903292
+      },
+      "estimated_seed_noise_in_mean_credit": 0.01190416666666667,
+      "scope": "Original risk formula and equal question/24-context weights, but historical train/tune not original heldout gate"
+    },
+    {
+      "partition": "tune",
+      "questions": 80,
+      "edge_anchor_contexts": 1920,
+      "single_seed_nonzero_fraction": 0.06958333333333333,
+      "five_seed_empirical_mean_nonzero_fraction": 0.25104166666666666,
+      "original_question_mean_24_context_cross_seed_risk": {
+        "B0": 0.0016792083333333333,
+        "C1_R0": 0.0019952401040290607,
+        "C2_R0": 0.0025932243062786863,
+        "C2_R1": 0.0017024795048319985,
+        "C2_R3": 0.0016664401790323848
+      },
+      "five_seed_mean_empirical_mse": {
+        "B0": 0.015262541666666667,
+        "C1_R0": 0.015578573437362396,
+        "C2_R0": 0.01617655763961202,
+        "C2_R1": 0.015285812838165332,
+        "C2_R3": 0.01524977351236572
+      },
+      "estimated_seed_noise_in_mean_credit": 0.013583333333333336,
+      "scope": "Original risk formula and equal question/24-context weights, but historical train/tune not original heldout gate"
+    }
+  ],
+  "late_requested_exploratory_receiver_fallback_identity": [
+    {
+      "partition": "train",
+      "paired_seed_observations": 353,
+      "questions": 78,
+      "nonzero_credit_fraction": 0.0,
+      "mean_signed_credit": 0.0,
+      "both_correct_fraction": 0.3002832861189802,
+      "both_wrong_fraction": 0.6997167138810199,
+      "receiver_fallback_semantic_basis": "Both have the same checked answer/evidence/uncertainty fallback fields",
+      "scope": "Semantic fallback equality only; per-pair wire bytes and receiver/aggregate input or output hashes were not retained",
+      "general_downstream_exact_zero_effect_certificate_established": false
+    },
+    {
+      "partition": "tune",
+      "paired_seed_observations": 69,
+      "questions": 24,
+      "nonzero_credit_fraction": 0.0,
+      "mean_signed_credit": 0.0,
+      "both_correct_fraction": 0.5072463768115942,
+      "both_wrong_fraction": 0.4927536231884058,
+      "receiver_fallback_semantic_basis": "Both have the same checked answer/evidence/uncertainty fallback fields",
+      "scope": "Semantic fallback equality only; per-pair wire bytes and receiver/aggregate input or output hashes were not retained",
+      "general_downstream_exact_zero_effect_certificate_established": false
+    }
+  ],
+  "risk_target": "five-seed mean presence credit; exposure split by any seed in paired graphs",
+  "metric_definitions": {
+    "association_nonzero": "One seed presence credit d_s=Q_on,s-Q_off,s; not five-seed mean credit",
+    "mse_field": "Empirical (prediction-mean_5seed_credit)^2; original tuning/naive diagnostic, not original heldout risk",
+    "original_cross_seed_risk": "mean_{s<t}(prediction-d_s)*(prediction-d_t), 10 pairs; negative estimates retained",
+    "stratum_risk_contribution": "For each question sum selected-context cross-seed risk /24, then average ALL questions in partition; exposed+unexposed equals original full-partition metric",
+    "conditional_pooled_risk": "Cross-seed formula averaged only selected contexts; group weights differ from original whole-question metric; not an unbiased conditional causal/latent risk claim"
+  },
+  "fitted_models_or_hyperparameters": 0,
+  "raw_execution_rescans": 0,
+  "new_R1_access": false,
+  "new_gold_read": false,
+  "limitations": [
+    "Observational format errors correlate with question/model difficulty and saturation; no repaired-message counterfactual exists",
+    "Receiver/aggregate error flags are post-edge outcomes, not randomized treatments; conditioning may induce collider bias",
+    "Nonzero credit needs final numeric correctness to differ, not merely a valid message",
+    "Train risk is in-sample; tune was historically used for selection; neither is independent confirmation",
+    "Question-cluster bootstrap respects within-question dependence but multiple diagnostic tables are exploratory"
+  ],
+  "analysis_seconds": 0.09121251106262207,
+  "cache_sha256": "20f05a130271e136c50092c9c51d5c940bf7736f63881d9f7ec6db92dba17fc1"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "filtered_feedback_marginal",
+  "title": "Marginal-Contribution Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
+  "authors": [
+    "Elai Ben-Gal",
+    "Stela Tong"
+  ],
+  "year": 2026,
+  "version": "2604.22785v2",
+  "version_date": "2026-09-08",
+  "primary_url": "https://arxiv.org/html/2604.22785v2",
+  "metadata_url": "https://arxiv.org/abs/2604.22785v2",
+  "read_status": "section_read",
+  "read_anchors": [
+    "Section 4",
+    "Section 7",
+    "Section 8"
+  ],
+  "mechanism": "Background-conditioned contribution and propensity correction support training signals; square-root allocation trades exact-evaluation cost against gradient-weighted estimation error.",
+  "mab2_boundary": "Conditional credit and budgeted correction are not standalone novelty. The stated allocation assumes independent Bernoulli evaluations and an expected-cost constraint; this is not a proof for a hard cap with shared caches or future graph-edit utility.",
+  "read_date": "2026-11-13",
+  "reader": "root",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL"
+}

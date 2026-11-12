@@ -1,0 +1,30 @@
+{
+  "id": "cachescout",
+  "title": "Learning Agent Execution for KV-Cache Management in Agentic Serving",
+  "authors": [
+    "Rui Zhang",
+    "Chaeeun Kim",
+    "Shaoting Feng",
+    "Kuntai Du",
+    "Yuhan Liu",
+    "Yi Zhong",
+    "Cheng-Wei Ching",
+    "Junchen Jiang",
+    "Liting Hu"
+  ],
+  "year": 2026,
+  "primary_url": "https://arxiv.org/abs/2608.14624",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Primary arXiv abstract"
+  ],
+  "mechanism": "Online execution-transition modeling informs KV-cache management.",
+  "mab2_boundary": "Serving KV-cache reuse differs from complete-output reuse across counterfactual graph executions. No equivalence of these cost models is assumed.",
+  "read_date": "2026-11-13",
+  "reader": "root",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL"
+}

@@ -1,0 +1,214 @@
+{
+  "schema": "mab2_r2_design_draft_v1",
+  "status": "DRAFT_NOT_FROZEN_NOT_EXECUTED",
+  "candidate_id": "C2_R2_DIRECT_CREDIT_DRIFT_TRANSPORT_BETA1",
+  "as_of": "2026-11-13",
+  "sources": {
+    "r1_commit_reported_by_parent": "a554ea7",
+    "r1_protocol_sha256": "5336eacc6713d4e444ddb631032409cd2718ad3b4aaee1387aff5baac40f5ecf",
+    "r1_protocol_read": true,
+    "r1_inputs_read": false,
+    "r1_S_access": false,
+    "literature": "cycle2_20261113/literature; new MLMC/MFMC ancestors in SOURCES.json"
+  },
+  "scope": {
+    "mechanism": "Independent old bank plus paired current-minus-old credit drift; six-edge complete maintenance isolates estimator from acquisition ranking.",
+    "not_claimed": [
+      "New control-variate or MLMC estimator",
+      "Unconditional confidence safety",
+      "Novel paired or sequential verification",
+      "Novel selective replay",
+      "ACL-level success from this pilot",
+      "Project failure if R2 fails"
+    ]
+  },
+  "estimand": {
+    "quality_range": [
+      0,
+      1
+    ],
+    "action_gain": "Y_A,e=Q(A xor e)-Q(A); Y_B,e=Q(B xor e)-Q(B)",
+    "delta": "D_e=Y_B,e-Y_A,e",
+    "candidate": "T_e=mean_I(Y_A,e)+mean_C(D_e)",
+    "direct": "R_e=mean_new(Y_B,e)",
+    "same_panel_degeneracy": "mean(Y_A)+mean(Y_B-Y_A)==mean(Y_B)",
+    "variance_independent": "v_A/m+v_D/n",
+    "necessary_condition_warm": "v_A/m < v_B/n_direct"
+  },
+  "primary_warm_design": {
+    "initialization_questions_per_episode": 12,
+    "transport_new_questions": 3,
+    "direct_new_questions": 5,
+    "editable_edges": 6,
+    "bank": "Shared identical newly generated I12 bank; all methods charged its construction; independent of new C",
+    "baseline_coefficients": "beta_R1 estimated only from authorized R1 I/C development, frozen before fresh R2; not from R2 S or R1 S",
+    "formal_new_source": "Official-train source, exclude all previous development/qualification/exposure IDs; source/model/config unchanged unless separately amended"
+  },
+  "counterfactual_costs": {
+    "same_executor_all_methods": true,
+    "source_or_direct_calls_per_question": "9+2k",
+    "four_world_joint_calls_per_question": "13+4k for this specific three-receiver A->B shift",
+    "k6": {
+      "source_or_direct_calls": 21,
+      "four_world_calls": 37
+    },
+    "token_upper": {
+      "base": 75008,
+      "edge_increment": 16768,
+      "background_increment": 33408,
+      "k6_source_or_direct": 175616,
+      "k6_four_world": 309632,
+      "initial_bank_12": 2107392,
+      "transport_C3": 928896,
+      "direct_C5": 878080,
+      "future_S24": 1800192,
+      "common_complete_cap": 4836480
+    },
+    "score_upper": {
+      "initial_bank": 84,
+      "transport_C": 42,
+      "direct_C": 35,
+      "future_S24": 24,
+      "common_complete_cap": 150
+    },
+    "primary_claim": "Common complete upper caps; actual expenditure separately measured; not equality of actual spend",
+    "no_zero_cost_bank": true,
+    "cost_measurement_levels": [
+      "Exact observed token counts reconstructed from pinned node outputs",
+      "Observed joint four-world physical calls and resident time",
+      "Cold-B time reconstructed from cached nodes is PROFILED, not measured standalone execution",
+      "Bounded fresh qualification if standalone latency is needed"
+    ],
+    "random_cost_stopping": "Freeze sample counts before outcomes; do not stop at outcome-correlated realised cost and assume fixed-n unbiasedness"
+  },
+  "baselines": [
+    "direct_target_reestimate_C5",
+    "old_credit_only",
+    "generic_control_variate_fixed_beta_R1_same_C3",
+    "beta_half_fixed_sensitivity",
+    "beta_zero_same_C3_ablation",
+    "graph_identical_pooled_source_control",
+    "cold_direct_without_old_bank_practical_reference_separate_accounting"
+  ],
+  "exploratory_R1_diagnostic": {
+    "allowed_phases": [
+      "I",
+      "C"
+    ],
+    "source_arrays": "Sanitized scores/costs only; no raw questions, gold, S outputs, S costs or S summary",
+    "release_condition": "R1 purchase/service-action receipts already immutable, or isolated evaluator attests diagnostic cannot alter R1 execution",
+    "m": 12,
+    "C_questions": 12,
+    "folds": [
+      {
+        "train_rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "validation_rows": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      {
+        "train_rows": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "validation_rows": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    ],
+    "transport_training": "First 3 frozen-order rows of training fold",
+    "direct_training": "First 5 frozen-order rows of training fold",
+    "validation": "Both estimators use all 6 current-B rows in the heldout fold for chosen-action quality; same editor and tie rule as R1",
+    "generic_cv_diagnostic": "Leave-one-episode-out beta estimated from remaining seven episodes, no heldout-episode fitting",
+    "r1_no_change_A": "Y_A^C reused as both graph worlds only to check exact identity; no artificial fresh evidence or empirical drift claim",
+    "new_independent_confirmation": false
+  },
+  "gates": {
+    "G0": {
+      "name": "INTEGRITY",
+      "pass": "All 8 episodes complete; expected I/C counts; hashes, question disjointness, paired seeds and full cost provenance valid; S_access=false",
+      "failure": "QUARANTINE_DIAGNOSTIC_INPUT; repair, no method conclusion"
+    },
+    "G1": {
+      "name": "SUPPORT",
+      "pass": "At least 12 distinct C questions with any nonzero current action gain; at least 4 episodes with nonzero within-question target action-gain variance; aggregate direct risk > 1e-4",
+      "failure": "INCONCLUSIVE_LOW_SUPPORT; no automatic GPU extension",
+      "rationale": "Prospective investment guard, not a mathematical power guarantee"
+    },
+    "G2": {
+      "name": "COST_AND_BANK_RISK",
+      "primary_projection": "mean_over_episode_edge(v_A/12+v_D/3) / mean_over_episode_edge(v_B/5)",
+      "pass": "point ratio<=0.80 and exploratory 90% bootstrap upper<1.00; bootstrap denominator never nonpositive; report all cells including zeros; full observed-token cost-weighted risk ratio point<=1",
+      "resampling": "10000 paired episode-and-question bootstrap draws, seed 72031; I and C sampled independently, C A/B kept paired; 8 clusters only, not calibrated confirmation",
+      "supporting_cost_test": "Report actual incremental-token variance products and full construction coefficient; no cold-B cached-time substitution",
+      "failure": "NO_GO_CURRENT_BANK_AND_QUOTA if clear ratio>=1; otherwise INCONCLUSIVE_CURRENT_BANK_AND_QUOTA"
+    },
+    "G3": {
+      "name": "DECISION_RELEVANCE",
+      "pass": "Predefined R1-C two-fold episode-mean quality difference transport-direct>=0.01 and transport-old>=0; at least 6/8 episode transport-direct contrasts nonnegative",
+      "failure": "NO_GO_DECISION_VALUE or INCONCLUSIVE; do not switch primary to favorable cell/role/budget",
+      "interval_status": "All intervals exploratory; no confirmation from 6-row folds"
+    },
+    "G4": {
+      "name": "NEW_PILOT_FEASIBILITY",
+      "pass": "Both R2 new qualification and complete frozen coverage fit pre-reserved <=16 GPUh, or separately frozen <=32 GPUh from unchanged global remaining budget before starting; no S-based extension",
+      "failure": "DO_NOT_LAUNCH_UNDERPOWERED_OR_PARTIAL_COVERAGE"
+    },
+    "result": "GO_NEW_INDEPENDENT_DEVELOPMENT_PILOT only if G0-G4 pass; otherwise retain evidence and continue another authorized distinct candidate, not project stop",
+    "secondary_fixed_nonselective": [
+      "m12/n12 high-feedback failure boundary",
+      "m24,m48 algebraic projections labelled extrapolation, not observed banks and not substitute primary gate",
+      "beta*=population diagnostic envelope not deployable oracle",
+      "dirty vs non-dirty slices not validity certificates"
+    ]
+  },
+  "no_change": {
+    "exact_graph_identity": "If model/prompts/source distribution/graph and RNG protocol identical, skip drift acquisition for every method; known D=0 does not mean mu_A known.",
+    "pooled_control": "If new same-graph samples are deliberately purchased, strong control pools independent old+new samples; fixed beta1 returns old bank and can be strictly worse.",
+    "weak_locality": "Different receivers/unchanged edge neighborhood do not certify unchanged final credit because aggregator interactions remain."
+  },
+  "formal_pilot_outline": {
+    "episodes": 8,
+    "I": 12,
+    "C": 5,
+    "first_C3_four_world": true,
+    "last_C2_current_only": true,
+    "future_service_per_episode": 24,
+    "formal_new_questions": 328,
+    "qualification_not_in_scientific_denominator": true,
+    "physical_calls_excluding_qualification_and_failures": 7272,
+    "independent_service_questions": 192,
+    "physical_budget_gpu_hours_proposed": 16,
+    "budget_max_if_prefrozen_from_qualification": 32,
+    "finite_pilot_only": true,
+    "new_pilot_primary": "A->B future accuracy: beta1 transport minus direct under complete shared caps; source/CV controls retained.",
+    "progress": "Freeze a new independently powered confirmation only after valid prospective development evidence; neither R1 nor R2 final/sealed test is used for tuning."
+  },
+  "execution_state": {
+    "new_gpu_launched": false,
+    "formal_round_increment": 0,
+    "real_diagnostic_run": false,
+    "reason": "Draft and synthetic mathematical checks only"
+  }
+}

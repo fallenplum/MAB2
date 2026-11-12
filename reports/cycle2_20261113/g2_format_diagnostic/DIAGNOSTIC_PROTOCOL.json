@@ -1,0 +1,15 @@
+{
+  "schema": "mab2_historical_format_diagnostic_v1",
+  "status": "FIXED_BEFORE_RAW_SCAN",
+  "scope": "Original G2 train200+tune80 only; already exposed historical development",
+  "raw_pass_limit": 1,
+  "new_formal_candidate": false,
+  "GPU_jobs": 0,
+  "target": "Relate format fallback/trimming and path-specific exposure to sparse paired edge credit without causal attribution",
+  "fixed_flags": ["source_format_bad", "source_length_finish", "source_message_trimmed", "receiver_format_bad_either", "aggregate_format_bad_either", "aggregate_numeric_parse_failure_either"],
+  "outcomes": ["nonzero single-seed credit", "signed paired credit", "both answers correct", "both answers wrong", "fixed B0/C1_R0/C2_R0/C2_R1/C2_R3 mean-credit squared risk"],
+  "reported_partitions": ["train", "tune"],
+  "unit": "question/anchor/edge/seed; report unique-question support and question-cluster uncertainty",
+  "bootstrap": {"resamples": 2000, "seed": 2026111308},
+  "prohibited": ["new R1 files", "old exposed120 raw executions", "official final test", "gold file reads", "scorer changes", "model inference", "causal claims from associations", "candidate selection or gate changes"]
+}

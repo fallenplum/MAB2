@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-13",
+  "method": "Primary-source targeted search plus backward reference check from C3 v4",
+  "queries": [
+    "site:arxiv.org multi agent counterfactual replay caching unchanged output credit",
+    "site:aclanthology.org agent communication graph edge pruning counterfactual feedback credit 2026",
+    "site:arxiv.org LLM agent exact execution caching incremental computation counterfactual graph"
+  ],
+  "records_added": 7,
+  "saturation_claimed": false,
+  "reproductions_claimed": false
+}

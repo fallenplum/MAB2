@@ -1,0 +1,25 @@
+{
+  "id": "vouch",
+  "title": "Vouch: Counterfactual Contracts for Multi-Agent Coordination",
+  "authors": [
+    "Abhay Bhandarkar",
+    "Vedanth Nanesha"
+  ],
+  "year": 2026,
+  "venue": "Findings of IJCNLP-AACL",
+  "primary_url": "https://aclanthology.org/2026.findings-aacl.222/",
+  "doi": "10.18653/2026.findings-aacl.222",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Primary anthology metadata and abstract"
+  ],
+  "mechanism": "Cross-agent intervention commitments are checked against actual behavior; its abstract distinguishes dual-side verification from self-consistency.",
+  "mab2_boundary": "Auditable counterfactual commitments are not inherently new. It is not yet verified as a direct graph-credit baseline.",
+  "read_date": "2026-11-13",
+  "reader": "root",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL"
+}

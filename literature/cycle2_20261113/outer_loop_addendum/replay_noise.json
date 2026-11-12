@@ -1,0 +1,22 @@
+{
+  "id": "replay_noise",
+  "title": "Re-feeding Is Not Replaying: Measuring Replay Noise in Counterfactual Token-Credit Estimation",
+  "authors": [
+    "Nils Matteson"
+  ],
+  "year": 2026,
+  "primary_url": "https://arxiv.org/abs/2606.15621",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Primary arXiv abstract"
+  ],
+  "mechanism": "Compares exact decoder-state continuation, independent replicas and transcript re-feeding; examines the selection consequences of replay noise.",
+  "mab2_boundary": "Local replay checks cannot establish arbitrary engines or hardware are equivalent. MAB2 must keep its actual replay checks, fixed inference conditions and numerical limitations explicit.",
+  "read_date": "2026-11-13",
+  "reader": "root",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL"
+}

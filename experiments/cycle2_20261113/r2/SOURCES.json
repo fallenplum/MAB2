@@ -1,0 +1,71 @@
+{
+  "schema": "mab2_r2_design_sources_v1",
+  "as_of": "2026-11-13",
+  "source_kind": "primary_and_private_project_contract",
+  "search": {
+    "provider": "tools.web__run; underlying engine not disclosed",
+    "queries": [
+      "Giles multilevel Monte Carlo path simulation 2008 telescoping estimator variance cost optimal allocation pdf",
+      "Peherstorfer Willcox Gunzburger optimal model management multifidelity Monte Carlo estimation control variates 2016 pdf"
+    ],
+    "systematic_or_saturated": false
+  },
+  "records": [
+    {
+      "id": "giles_mlmc_2008",
+      "title": "Multilevel Monte Carlo Path Simulation",
+      "author": "Michael B. Giles",
+      "venue": "Operations Research 56(3):607–617",
+      "year": 2008,
+      "doi": "10.1287/opre.1070.0496",
+      "metadata_url": "https://pubsonline.informs.org/doi/abs/10.1287/opre.1070.0496",
+      "primary_fulltext": "https://people.maths.ox.ac.uk/~gilesm/files/OPRE_2008.pdf",
+      "read_status": "section_read",
+      "read_scope": "§2, printed p.608; the identity, independent estimators, shared path, variance and continuous cost allocation paragraphs; §5 caveat on heuristic estimation read as retrieved excerpt",
+      "full_read": false,
+      "overlap": "Independent base plus coupled differences and cost-aware variance allocation already established; no transfer of SDE convergence theorem to graphs."
+    },
+    {
+      "id": "peherstorfer_mfmc_2016",
+      "title": "Optimal Model Management for Multifidelity Monte Carlo Estimation",
+      "authors": [
+        "Benjamin Peherstorfer",
+        "Karen Willcox",
+        "Max Gunzburger"
+      ],
+      "venue": "SIAM Journal on Scientific Computing 38(5):A3163–A3194",
+      "year": 2016,
+      "doi": "10.1137/15M1046472",
+      "metadata_url": "https://epubs.siam.org/doi/10.1137/15M1046472",
+      "primary_fulltext": "https://kiwi.oden.utexas.edu/papers/multi-fidelity-monte-carlo-peherstorfer-willcox-gunzburger.pdf",
+      "read_status": "section_read",
+      "read_scope": "Author PDF §§3.1–3.2 through covariance/variance and budget objective (PDF pp.5–7); §3.6 including Algorithm2 (PDF pp.13–15); no full theorem/appendix proof or experiments",
+      "full_read": false,
+      "overlap": "Generic control-variate coefficients, correlated information sources, sample allocation, pilot cost estimates; R2 beta=1 is an adaptation, not a new estimator."
+    }
+  ],
+  "inherited_nearest": [
+    "EvoSteer2609.38661v2 §4.3/C",
+    "Shepherd2605.10913v3 §5.2/F.2.4",
+    "Additive Transfer BAI2112.04083v1 §II/IV/V.1"
+  ],
+  "independent_math_review": {
+    "reviewer": "scheme_audit",
+    "data_access": false,
+    "checked": [
+      "independent bank variance",
+      "same-panel degeneracy",
+      "generic beta control-variate variance",
+      "from-scratch allocation envelope",
+      "no-change pooling",
+      "random-cost stopping caveat"
+    ]
+  },
+  "private_contract_reference": {
+    "r1_protocol_path": "protocol/cycle2_20261113/R1_PROTOCOL.json",
+    "sha256": "5336eacc6713d4e444ddb631032409cd2718ad3b4aaee1387aff5baac40f5ecf",
+    "metadata_only": false,
+    "full_protocol_read": true,
+    "real_questions_or_labels_read": false
+  }
+}

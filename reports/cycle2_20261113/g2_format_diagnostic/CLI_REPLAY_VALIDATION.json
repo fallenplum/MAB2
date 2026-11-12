@@ -1,0 +1,8 @@
+{
+  "status": "PARAMETERIZED_CLI_AGGREGATES_EXACT_REPLAY_PASS",
+  "excluded_nondeterministic_field": "analysis_seconds",
+  "synthetic_tests": 5,
+  "raw_rescans": 0,
+  "scientific_statistics_changed": false,
+  "parameterized_code_sha256": "34f7bbcf6bacf98e24742e4ff7e19f393e3d2107f1d2f984510e8188ec01399d"
+}

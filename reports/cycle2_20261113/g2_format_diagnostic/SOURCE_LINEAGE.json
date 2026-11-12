@@ -1,0 +1,9 @@
+{
+  "scope": "CLI-only parameterization; original historical diagnostic scripts and all prior analysis versions archived privately",
+  "original_analyze_cache_sha256": "a43cb1ea040fdf5302159989c8d51e6f1ca8efe081e9f09dac08fcff66bf429c",
+  "parameterized_analyze_cache_sha256": "34f7bbcf6bacf98e24742e4ff7e19f393e3d2107f1d2f984510e8188ec01399d",
+  "original_report_sha256": "ca548229f8f81e84e214c842c96b6dacbd2e2588a1f5d708f0ba8bb6716c80c9",
+  "raw_scan_once_source_sha256": "47b118699de59fd50e74d373f63137b3183ab957a9026c08ef71f7689d69a463",
+  "numeric_cache_or_original_question_records_published": false,
+  "source_transformation": "Replace private absolute path and fixed input lookup with five required CLI arguments; statistical functions/body unchanged"
+}

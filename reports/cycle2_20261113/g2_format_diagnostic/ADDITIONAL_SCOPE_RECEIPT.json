@@ -1,0 +1,10 @@
+{
+  "requested_by": "root during the already-started raw scan",
+  "request": "Explore actual affected-node message identity for potential exact-cache reuse",
+  "scanner_changed": false,
+  "raw_rescan_authorized": false,
+  "available_narrow_analysis": "Both paired affected receivers are metadata-bad and scan checked identical answer/evidence/uncertainty fallback semantic fields; exact wire bytes not retained",
+  "unavailable": "General paired receiver/aggregate wire hashes or input fingerprints were not retained",
+  "claim_limit": "No general downstream exact-zero-effect certificate can be established from this cache",
+  "fairness": "Any future exact cache must be shared by every baseline; existing caching is not presented as new theory"
+}

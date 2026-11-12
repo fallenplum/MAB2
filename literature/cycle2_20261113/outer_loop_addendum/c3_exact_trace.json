@@ -1,0 +1,35 @@
+{
+  "id": "c3_exact_trace",
+  "title": "The Trace Is the State: Exact Credit Assignment for LLM Agent Teams",
+  "authors": [
+    "Yanjun Chen",
+    "Yirong Sun",
+    "Hanlin Wang",
+    "Jinghan Wang",
+    "Xinming Zhang",
+    "Xiaoyu Shen",
+    "Wenjie Li",
+    "Wei Zhang"
+  ],
+  "year": 2026,
+  "version": "2603.06859v4",
+  "version_date": "2026-10-07",
+  "primary_url": "https://arxiv.org/html/2603.06859v4",
+  "metadata_url": "https://arxiv.org/abs/2603.06859v4",
+  "read_status": "section_read",
+  "read_anchors": [
+    "Sections 2.1-2.4",
+    "Section 6",
+    "Section 7"
+  ],
+  "mechanism": "Recorded state enables downstream counterfactual continuation; it distinguishes message advantage from agent-removal value and studies estimator reliability.",
+  "mab2_boundary": "Predictor-free executed credit, shared-prefix savings, and state restoration are precedented. MAB2 targets maintenance across graph edits and subsequent graph decisions, not policy-gradient training.",
+  "version_warning": "Search results still surfaced the old Contextual Counterfactual Credit Assignment title; metadata and HTML v4 agree on the revised title.",
+  "read_date": "2026-11-13",
+  "reader": "root",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL"
+}

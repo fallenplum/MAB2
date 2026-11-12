@@ -1,0 +1,21 @@
+{
+  "schema": "mab2_software_public_export_v1",
+  "scientific_operators_changed": false,
+  "frozen_R2_contract_regenerated": false,
+  "portable_derivatives": {
+    "r2/SOURCES.json": {
+      "original_sha256": "83b302da6d8ce1bec85289133fda8d19b7bcd6374b6c698ce8238cc22bd4e1fe",
+      "public_sha256": "6cb3c0bf238d591cb1a8fc8bd766cb95ac2db2d6bc6ae19140d7c2374a2e3c28",
+      "only_change": "machine_absolute_contract_path_to_repository_relative_path",
+      "frozen_contract_references_original_bytes": true
+    },
+    "r2/test_r2_math.py": {
+      "original_sha256": "d67cfcea19ffde3743c4d08e971139991f104fd23dee89c5073c6618a64971f7",
+      "public_sha256": "3ae32bdad6c35b0b9416e8b3a3d60fb4bc58bdb44aaec1f9c2600efd082d2deb",
+      "only_change": "test_report_destination_environment_or_dedicated_test_tmp_and_exclusive_create",
+      "mathematical_checks_unchanged": true
+    }
+  },
+  "original_source_evidence": "Retained in the private experiment archive; frozen hashes continue to identify original bytes.",
+  "contract_generator_scope": "Historical source only. Do not regenerate the frozen protocol from sanitized source metadata."
+}

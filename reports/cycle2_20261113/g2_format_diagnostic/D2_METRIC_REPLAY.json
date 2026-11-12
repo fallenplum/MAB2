@@ -1,0 +1,60 @@
+{
+  "status": "FROZEN_D2_TUNE_METRICS_REPLAY_PASS",
+  "checks": 10,
+  "max_abs_error": 8.673617379884035e-19,
+  "checks_detail": [
+    {
+      "model": "B0",
+      "metric": "mean_credit_risk",
+      "absolute_error": 8.673617379884035e-19
+    },
+    {
+      "model": "B0",
+      "metric": "mean_credit_mse",
+      "absolute_error": 0.0
+    },
+    {
+      "model": "C1_R0",
+      "metric": "mean_credit_risk",
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "model": "C1_R0",
+      "metric": "mean_credit_mse",
+      "absolute_error": 0.0
+    },
+    {
+      "model": "C2_R0",
+      "metric": "mean_credit_risk",
+      "absolute_error": 4.336808689942018e-19
+    },
+    {
+      "model": "C2_R0",
+      "metric": "mean_credit_mse",
+      "absolute_error": 0.0
+    },
+    {
+      "model": "C2_R1",
+      "metric": "mean_credit_risk",
+      "absolute_error": 6.505213034913027e-19
+    },
+    {
+      "model": "C2_R1",
+      "metric": "mean_credit_mse",
+      "absolute_error": 0.0
+    },
+    {
+      "model": "C2_R3",
+      "metric": "mean_credit_risk",
+      "absolute_error": 6.505213034913027e-19
+    },
+    {
+      "model": "C2_R3",
+      "metric": "mean_credit_mse",
+      "absolute_error": 0.0
+    }
+  ],
+  "old_D2_results_sha256": "242024766bd77215f6e3175c6a3d22f6d01d1a5b6cddec16be4da9b348e80406",
+  "old_heldout_metric_not_compared": true,
+  "raw_rescan": false
+}

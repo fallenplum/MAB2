@@ -1,0 +1,10 @@
+{
+  "schema": "mab2_confirmation_calculator_synthetic_tests_v1",
+  "tests": 29,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "real_experiment_data_read": false,
+  "calculator_sha256": "74d69a120e6396f8943204221b08e2119f94f3e0988e1c9fd4d4295ea104ceb4",
+  "test_sha256": "0a74d5d02a07f0817210b3277c02eedc644b9c8707397fcb5791c7494001bffd"
+}

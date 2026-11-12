@@ -1,0 +1,19 @@
+{
+  "schema":"mab2_confirmation_search_log_v1",
+  "date_local":"2026-11-13",
+  "successful_engine":"web tool native search; underlying engine undisclosed, not claimed Google",
+  "queries":[
+    "site.jmlr.org Demsar Statistical Comparisons of Classifiers over Multiple Data Sets 2006",
+    "site.pmc.ncbi.nlm.nih.gov Westfall Kenny Judd statistical power experiments samples participants stimuli 2014",
+    "site.itl.nist.gov paired proportions McNemar sample size"
+  ],
+  "primary_opened":[
+    "https://itl.nist.gov/div898/software/dataplot/refman1/auxillar/mcnemar.htm",
+    "https://jmlr.org/papers/volume7/demsar06a/demsar06a.pdf"
+  ],
+  "official_metadata_opened":"https://huggingface.co/datasets/openai/gsm8k/raw/main/README.md",
+  "metadata_boundary_event":"Official card unexpectedly included public example question+answer. Private exposure receipt and parent notification created; no original dataset files read and no example content used/reproduced in public report.",
+  "saturation_claim":false,
+  "private_data_uploaded":false,
+  "paid_api_used":false
+}

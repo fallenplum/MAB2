@@ -1,0 +1,31 @@
+{
+  "id": "messagesieve",
+  "title": "MessageSieve: Runtime Message Pruning for Accurate and Efficient LLM-Based Multi-Agent Communication",
+  "authors": [
+    "Nianhao You",
+    "Yubo Dong",
+    "Jun Wang",
+    "Hehe Fan",
+    "Yi Yang"
+  ],
+  "year": 2026,
+  "venue": "EMNLP",
+  "primary_url": "https://aclanthology.org/2026.emnlp-main.2179/",
+  "fulltext_url": "https://aclanthology.org/2026.emnlp-main.2179.pdf",
+  "doi": "10.18653/2026.emnlp-main.2179",
+  "read_status": "section_read",
+  "read_anchors": [
+    "Abstract",
+    "Introduction",
+    "Section 2.1"
+  ],
+  "mechanism": "Fixed-graph runtime selection of full, compact, or omitted message instances via local state cards.",
+  "mab2_boundary": "Message-sensitive communication control has a direct precedent. Exact replay equivalence and historical credit validity require separate definitions. Detailed implementation and comparisons remain unread.",
+  "read_date": "2026-11-13",
+  "reader": "root",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL"
+}

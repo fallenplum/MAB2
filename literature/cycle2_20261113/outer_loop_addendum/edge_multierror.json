@@ -1,0 +1,27 @@
+{
+  "id": "edge_multierror",
+  "title": "EDGE: Error Dependency Graph-Guided Multi-Error Attribution in Multi-Agent LLM Systems",
+  "authors": [
+    "Jun Hou",
+    "Priya Pitre",
+    "Yi Fang",
+    "Xuan Wang"
+  ],
+  "year": 2026,
+  "venue": "Findings of EMNLP",
+  "primary_url": "https://aclanthology.org/2026.findings-emnlp.387/",
+  "doi": "10.18653/2026.findings-emnlp.387",
+  "read_status": "abstract_read",
+  "read_anchors": [
+    "Primary anthology metadata and abstract"
+  ],
+  "mechanism": "An error dependency graph guides attribution; counterfactual rollout validates a subset.",
+  "mab2_boundary": "Graph-guided causal verification is adjacent prior art; this abstract does not establish an adaptive credit-revalidation budget policy.",
+  "read_date": "2026-11-13",
+  "reader": "root",
+  "source_kind": "primary",
+  "full_read": false,
+  "code_review_this_cycle": false,
+  "independently_reproduced": false,
+  "novelty_verdict": "PROVISIONAL"
+}

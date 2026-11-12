@@ -1,0 +1,11 @@
+{
+  "status": "AGGREGATE_IDENTITY_CHECKS_PASS",
+  "checks": 166,
+  "max_weighted_risk_partition_error": 3.469446951953614e-18,
+  "raw_rescan": false,
+  "max_naive_mse_minus_noise_minus_original_risk_error": 3.469446951953614e-18,
+  "max_B0_pairwise_naive_mse_difference_minus_original_risk_difference_error": 2.168404344971009e-18,
+  "max_stratum_contributions_minus_original_risk_error": 1.3010426069826053e-18,
+  "interpretation": "For fixed seed-independent prediction and identical complete five-seed cells/weights, model risk differences and alpha rankings cannot change merely because naive MSE versus off-diagonal risk has a different absolute scale",
+  "conditional_unbiased_risk_claim": false
+}
