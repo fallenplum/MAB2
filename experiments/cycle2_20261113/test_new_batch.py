@@ -9,7 +9,8 @@ from unittest.mock import patch
 import new_batch as nb
 from make_plan_template import make_plan
 
-SOURCE = Path(__file__).parent/"source_audit"
+HERE = Path(__file__).resolve().parent
+SOURCE = HERE/"source_audit" if (HERE/"source_audit/src/graph_credit").exists() else HERE.parents[1]
 PINS = {p: nb.file_sha(SOURCE/p) for p in nb.REQUIRED_SOURCES}
 M, _ = nb.load_operator(SOURCE, PINS)
 
