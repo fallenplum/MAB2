@@ -11,3 +11,4 @@ AUTONOMOUS_RESEARCH_STATUS.json text eol=lf
 AGENTS.md text eol=lf
 protocol/cycle2_20261113/** text eol=lf
 experiments/cycle2_20261113/** text eol=lf
+src/graph_credit/** -text

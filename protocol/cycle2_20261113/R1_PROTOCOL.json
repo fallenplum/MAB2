@@ -1,0 +1,581 @@
+{
+  "schema": "mab2_cycle2_r1_scientific_protocol_v1",
+  "status": "FROZEN_BEFORE_NEW_GENERATION",
+  "candidate_id": "C2_R1_DIRECT_PAIRED_REVALIDATION",
+  "cycle": "cycle2_20261113",
+  "hypothesis": "Graph-change and incumbent-gap directed revalidation of directly observed old action credits improves future-query accuracy over uniformly allocating the same paired-feedback quota after a background graph change.",
+  "novelty": "PROVISIONAL; paired testing/graph pruning/cost accounting are existing tools. R1 tests a new graph-shift/feedback arrangement and heuristic, not a proved novel sequential test.",
+  "model": "unchanged Qwen2.5-3B-Instruct; four fixed roles; two rounds; original scorer and aggregation",
+  "data": {
+    "source": "GSM8K original train online_stream partition",
+    "role": "fresh-to-MAB2 development pilot, not final confirmation",
+    "questions": 390,
+    "qualification_questions": 6,
+    "formal_questions": 384,
+    "independent_future_service_questions": 192,
+    "disjoint_blocks": [
+      "I",
+      "C",
+      "S"
+    ],
+    "episodes": [
+      {
+        "episode": 0,
+        "seed": 3701,
+        "node_cyclic_shift": 0,
+        "editable_complement": 0,
+        "editable_edges": [
+          0,
+          3,
+          4,
+          6,
+          8,
+          9
+        ],
+        "changed_background_edges": [
+          1,
+          5,
+          10
+        ],
+        "A": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "B": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "dirty_by_editable": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      },
+      {
+        "episode": 1,
+        "seed": 3702,
+        "node_cyclic_shift": 0,
+        "editable_complement": 1,
+        "editable_edges": [
+          0,
+          3,
+          4,
+          6,
+          8,
+          9
+        ],
+        "changed_background_edges": [
+          1,
+          5,
+          10
+        ],
+        "A": [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "B": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "dirty_by_editable": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      },
+      {
+        "episode": 2,
+        "seed": 3703,
+        "node_cyclic_shift": 1,
+        "editable_complement": 0,
+        "editable_edges": [
+          0,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "changed_background_edges": [
+          1,
+          5,
+          6
+        ],
+        "A": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "B": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "dirty_by_editable": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      },
+      {
+        "episode": 3,
+        "seed": 3704,
+        "node_cyclic_shift": 1,
+        "editable_complement": 1,
+        "editable_edges": [
+          0,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "changed_background_edges": [
+          1,
+          5,
+          6
+        ],
+        "A": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "B": [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "dirty_by_editable": [
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      },
+      {
+        "episode": 4,
+        "seed": 3705,
+        "node_cyclic_shift": 2,
+        "editable_complement": 0,
+        "editable_edges": [
+          0,
+          1,
+          4,
+          8,
+          9,
+          11
+        ],
+        "changed_background_edges": [
+          5,
+          6,
+          10
+        ],
+        "A": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "B": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "dirty_by_editable": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      },
+      {
+        "episode": 5,
+        "seed": 3706,
+        "node_cyclic_shift": 2,
+        "editable_complement": 1,
+        "editable_edges": [
+          0,
+          1,
+          4,
+          8,
+          9,
+          11
+        ],
+        "changed_background_edges": [
+          5,
+          6,
+          10
+        ],
+        "A": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "B": [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "dirty_by_editable": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      },
+      {
+        "episode": 6,
+        "seed": 3707,
+        "node_cyclic_shift": 3,
+        "editable_complement": 0,
+        "editable_edges": [
+          0,
+          2,
+          4,
+          5,
+          8,
+          9
+        ],
+        "changed_background_edges": [
+          1,
+          6,
+          10
+        ],
+        "A": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ],
+        "B": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "dirty_by_editable": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      },
+      {
+        "episode": 7,
+        "seed": 3708,
+        "node_cyclic_shift": 3,
+        "editable_complement": 1,
+        "editable_edges": [
+          0,
+          2,
+          4,
+          5,
+          8,
+          9
+        ],
+        "changed_background_edges": [
+          1,
+          6,
+          10
+        ],
+        "A": [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        "B": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "dirty_by_editable": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "I_questions": 12,
+        "C_questions": 12,
+        "S_questions": 24
+      }
+    ],
+    "source_selection_sha256": "bc298368813c5c53406ab029819d133dd3c6188b2bd53b8c077fb3c0ddc5cd24",
+    "data_receipt_sha256": "629726f1b8734eb538d5c01ef2174f5cfdbb261aacde814b5b397e13258dbc93",
+    "official_test_content_access": false,
+    "unknown_external_exposure_certified_absent": false
+  },
+  "acquisition": {
+    "primary_k": 2,
+    "secondary_k": [
+      1
+    ],
+    "I_action_gain": "g_e=mean_i(Q_i(A xor e)-Q_i(A))",
+    "I_uncertainty_proxy": "w_e=sqrt(sample_variance(I paired action gains,ddof=1)/12)+1/12",
+    "incumbent": "b=max(0,max_e g_e)",
+    "decision_score": "w_e/(b-g_e+w_e)",
+    "candidate_score": "(1+dirty_receiver_e)*w_e/(b-g_e+w_e)",
+    "dirty": "changed-background-edge receiver overlap with editable receiver; heuristic, not a validity certificate",
+    "selection": "descending score, exact ties by physical edge index; one edge pair frozen for all C12 questions",
+    "updates": "replace purchased edge cells with C paired action-gain mean; unpurchased cells retain g and source-graph provenance",
+    "editor": "argmax updated gain, edit only if max strictly>0 else stay; exact ties smaller physical edge index",
+    "confidence_safety_claim": false,
+    "no_change": "dirty=0, full candidate and no-graph ablation must be identical"
+  },
+  "methods": [
+    "candidate",
+    "uniform_pair_expectation",
+    "cyclic_pair",
+    "max_uncertainty",
+    "no_graph_ablation",
+    "dirty_only",
+    "source_only",
+    "current_stay",
+    "full_revalidation_high_cost"
+  ],
+  "uniform_reference": "Exact expectation over all C(6,k) equally weighted frozen edge subsets, each replica sees only its own C purchases; no best-pair selection. Full cache remains evaluator-only.",
+  "cyclic_reference": "Use sorted editable cyclic order starting at episode mod6; take k; no claim about adaptive temporal scheduling.",
+  "cost": {
+    "primary_comparison": "same conservative complete token-and-score upper caps plus same paired-feedback quota; actual costs separately reported",
+    "one_base_token_upper": 75008,
+    "one_edge_increment_token_upper": 16768,
+    "primary_complete_token_cap_per_episode_condition": 5210112,
+    "primary_complete_score_count_cap": 144,
+    "definition": "Input plus output tokens; base=8 workers*(8192+128)+(8192+256); flip=one worker plus aggregator. I12*(base+6flip)+C12*(base+2flip)+S24*base.",
+    "noaudit": "No C generation/scoring charged; actual savings retained, no free extra service offered by fixed-horizon design",
+    "same_actual_expenditure_claim": false,
+    "cost_normalization_ablation": "not run: identical single-edge closure quote, structurally unidentifiable",
+    "future_costs_visible_to_policy": false,
+    "scoring_CPU": "measured separately where possible, count limited; no money conversion or unknown cost imputation",
+    "physical_research_budget_gpu_hours": 24,
+    "global_budget_gpu_hours": 160,
+    "global_formal_rounds_cap": 5
+  },
+  "statistics": {
+    "primary": "A->B, k2, candidate minus exact uniform expected accuracy, equal episode means over their24 S questions",
+    "secondary": [
+      "candidate-source_only",
+      "candidate-no_graph_ablation",
+      "A->A paired negative control",
+      "difference of A->B and A->A contrasts",
+      "actual complete token and scoring costs",
+      "k1 descriptive quota curve",
+      "all episode outcomes and chosen edits"
+    ],
+    "independent_unit_for_learning": "episode;8 blocks,192 service questions",
+    "interval": "10000 episode bootstrap percentile95, seed69173, explicitly exploratory with8clusters",
+    "conditional_service_interval": "question resampling within fixed episode policies may be descriptive only, not full training uncertainty",
+    "no_scientific_confirmation_claim": true,
+    "repeated_seed_is_not_extra_sample": true,
+    "multiplicity": "one primary; secondary intervals descriptive, not replacement gates"
+  },
+  "decision": {
+    "validity_failure": "quarantine and repair affected engineering artifacts; preserve attempts and costs; not candidate support",
+    "candidate_progress_rule": "If valid primary point gain>=0.01, candidate point gain versus source_only>=0, and budget makes an independently powered confirmation feasible, freeze one independent confirmation plan; this development signal is not proof. Otherwise record candidate failure/inconclusive and move to materially distinct candidate R2 without changing this protocol.",
+    "no_fallback_control_as_winner": true,
+    "project_on_candidate_failure": "ACTIVE; outer-loop analysis then next candidate",
+    "project_stop": "only cycle2 autonomy contract enumerated project-level conditions",
+    "no_S_driven_sample_extension": true
+  },
+  "execution_order": [
+    "Commit scientific protocol and code; select IDs before payload read",
+    "Real six-question qualification: full replay/cache/format/cost; no effect selection",
+    "Freeze source and worker plan; reserve full coverage before formal start",
+    "Collect hidden full menu; no labels on server",
+    "Freeze complete outputs hash manifest",
+    "Open only I scores; freeze each purchase plan",
+    "Read purchased C feedback per replica; freeze all service actions",
+    "Open S scores to evaluator and compute all predeclared metrics",
+    "Independent arithmetic replay; candidate decision; update outer loop"
+  ],
+  "scope_limits": [
+    "Single fixed background change plus one edit per episode, not full online graph evolution",
+    "8 clusters do not ensure precise estimation of1-2pp effects",
+    "Four fixed roles of one3B model, no heterogeneous-pool claim",
+    "Restoring an absent template edge is measured; persistent multi-step paused-edge recovery is not established"
+  ]
+}
