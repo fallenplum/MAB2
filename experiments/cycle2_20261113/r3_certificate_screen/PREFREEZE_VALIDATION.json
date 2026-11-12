@@ -1,0 +1,23 @@
+{
+  "status": "SYNTHETIC_TESTS_PASS_REAL_IC_UNREAD",
+  "utc": "2026-11-12T20:18:16.312094+00:00",
+  "parent_commit": "8f9b022b90641a49d828c3500e652d06ee35041c",
+  "new_gpu_hours": 0,
+  "new_formal_rounds": 0,
+  "tests": 6,
+  "wall_seconds": 1.830561876296997,
+  "protocol_and_source": {
+    "certificate_core.py": "7a51981403ee3dfd646c743f6cca034ceb106fb0819c4db72e298a5b799f2421",
+    "PROTOCOL.md": "8347414dec92f6e8918a1a461ca4865a078f3291eb33053b40f88fe135c024e1",
+    "run_screen.py": "86a9619a7958b993619d89dc75ea0a92191ac53a2e6dbf58215caf79f771a9e8",
+    "test_certificate_core.py": "86d67b4b4b74473aed652958effaea0aa84ffc3079eba942e7e1f27ca73857cd"
+  },
+  "tests_scope": [
+    "729 partially observed binary banks vs all compatible completions",
+    "64 complete binary banks vs exhaustive minimum-cost certificates",
+    "128 target subsets vs independent structural cost formula",
+    "120 policy runs checked against correct certificates and oracle lower bounds",
+    "Unpurchased-label perturbation prefix invariance and invalid feedback rejection"
+  ],
+  "actual_experiment_results_included": false
+}
