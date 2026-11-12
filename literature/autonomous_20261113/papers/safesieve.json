@@ -1,0 +1,60 @@
+{
+  "id": "safesieve",
+  "title": "SafeSieve: From Heuristics to Experience in Progressive Pruning for LLM-based Multi-Agent Communication",
+  "authors": [
+    "Ruijia Zhang",
+    "Xinyan Zhao",
+    "Ruixiang Wang",
+    "Sigen Chen",
+    "Guibin Zhang",
+    "An Zhang",
+    "Kun Wang",
+    "Qingsong Wen"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "primary_url": "https://ojs.aaai.org/index.php/AAAI/article/view/40236",
+  "doi": "10.1609/aaai.v40i35.40236",
+  "arxiv": "2508.11733",
+  "version": "v3",
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 2,
+  "source_kind": "primary",
+  "read_anchors": [
+    "arXiv v3: SafeSieve: Integrated Pruning Strategy, Eqs.(2)-(11); Experiment Setup; Tables 1-2",
+    "https://arxiv.org/html/2508.11733v3"
+  ],
+  "mechanism": "角色语义/专家评分与历史成功贡献逐步混合，用0-extension聚类剪枝；Eq.(11)剪后重新标准化分数并调整历史权重。",
+  "mab2_overlap": "历史反馈维护、逐步演化、剪后图变化校正都与MAB2接近。",
+  "candidate_delta": "候选区别必须具体到是否购买哪条边的新反事实、如何恢复删除边及同完整预算下的决策收益；单说图变化后校正不足。",
+  "limitations_or_audit_risks": [
+    "官方仓库主路径9文件已核；成功图中实际存在的边计入历史贡献，不能解释为逐边反事实信用。论文算子与实现存在差异，尚未benchmark复现。",
+    "Eq.(9)掩码为乘法递减；该公式没有恢复机制。",
+    "正文中的结构/聚类近似理论不自动保证实际LLM质量。",
+    "AAAI网页当前受访问验证限制，元数据由官方检索记录核对；原文用arXiv v3章节，PDF本地下载超时。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": true,
+  "forensic_status": "technical_sections_and_partial_main_code_reviewed_no_benchmark_reproduction",
+  "novelty_verdict": "PROVISIONAL",
+  "followup_technical_coverage": [
+    "Entire available main-text technical narrative through Conclusion, Eqs1-11, Tables1-4",
+    "README official MMLU path and nine core/source files; precise findings listed"
+  ],
+  "followup_exclusions": [
+    "Externally referenced Supplementary Material not retrieved",
+    "HumanEval/SVAMP execution routes not reviewed",
+    "Dataset files, model weights and benchmark original questions not fetched"
+  ],
+  "forensic_record": "forensic_20261113/FORENSIC_REVIEW.json",
+  "official_code_review": {
+    "repository": "https://github.com/csgen/SafeSieve",
+    "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+    "files_partially_or_fully_read": 9,
+    "license": null,
+    "scope": "Selected main execution paths; AST-only synthetic clustering counterexample; no benchmark runs.",
+    "exact_author_reproduction": false
+  }
+}

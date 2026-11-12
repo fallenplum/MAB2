@@ -1,0 +1,35 @@
+{
+  "schema": "d2_diagnostic_figure_contract_v1",
+  "backend": "Python/matplotlib explicitly selected for this engineering report",
+  "purpose": "Negative-result diagnostic; not a submission figure",
+  "core_conclusion": "Removing intercept penalties reduces observed credit risk, while the nominated method has zero observed edit gain and an interval spanning zero.",
+  "archetype": "quantitative grid",
+  "panels": [
+    {
+      "id": "a",
+      "evidence": "All 12 methods, selected and historical fixed alpha; exposed120 cross-seed risk; points only, no risk CI available."
+    },
+    {
+      "id": "b",
+      "evidence": "Same methods and alpha views; gain versus stay; 95% whole-question bootstrap intervals; both anchors kept together."
+    }
+  ],
+  "dimensions_inches": [
+    11.4,
+    6.5
+  ],
+  "formats": [
+    "PNG",
+    "SVG"
+  ],
+  "svg_text": "editable",
+  "palette": "neutral baselines; blue C1; orange C2; shapes distinguish selected versus fixed alpha",
+  "statistical_limits": [
+    "old evaluation data exposed; exploratory unadjusted intervals",
+    "5 seeds are repeated observations, not independent questions",
+    "no risk interval is invented",
+    "12 methods all retained; no selected positive panel subset"
+  ],
+  "data_source": "method_metrics.csv",
+  "privacy": "aggregate-only, relative references, no machine paths/hosts/question records"
+}

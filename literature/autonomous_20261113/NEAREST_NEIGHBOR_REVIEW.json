@@ -1,0 +1,231 @@
+{
+  "schema": "mab2_nearest_neighbor_forensic_v2",
+  "date": "2026-11-13",
+  "status": "SUBSTANTIVE_REVIEW_COMPLETE_FOR_ADAPTATION_DECISIONS_NOT_REPRODUCTION",
+  "novelty": "PROVISIONAL",
+  "independent_review": false,
+  "full_report_read_count": 0,
+  "technical_sections_covered_excluding_cases": [
+    "e2_explainer",
+    "cats"
+  ],
+  "records": [
+    {
+      "id": "e2_explainer",
+      "version": "arxiv_v2",
+      "primary_url": "https://arxiv.org/html/2608.12921v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.12921v2",
+      "pdf_pages": 18,
+      "read_status": "all_relevant_technical_sections_read_cases_excluded",
+      "coverage": [
+        "Abstract, Introduction, Related Work, Problem Formulation, complete E2 method Eqs.(1)-(17)",
+        "Experimental Setup, Results and Analysis, Conclusion, Tables1-4",
+        "Appendix A architecture, causal supervision, settings, dataset/scoring metadata, evaluation/cost protocols, budget sweep Table7",
+        "Appendix post-case hand-crafted graph evaluation Table13 and OFA redundancy analysis",
+        "Appendix C Algorithms1-2"
+      ],
+      "not_read": [
+        "Qualitative case original questions/traces excluded in this follow-up",
+        "References were navigated, not individually verified",
+        "All figure images not visually inspected"
+      ],
+      "code": {
+        "official_repository": null,
+        "availability": "not_verified_in_paper_or_bounded_search",
+        "license": null
+      },
+      "critical_gaps": [
+        "rho retention/removal inconsistency in body versus Appendix Eq29",
+        "semantic-equivalence partition method/model not identified in read implementation settings",
+        "fixed query/role embedding model and exact feature serialization unspecified",
+        "calibration split seeds and budget-selection validation split not fully specified",
+        "offline total cost excluded; no equal-full-budget superiority established"
+      ],
+      "paper_result_checks": [
+        {
+          "anchor": "PDF p.13 Table7",
+          "claim": "E75+N0 saves5.27% total online tokens; E25+N20 saves25.10%, so node removal matters materially.",
+          "independently_reproduced": false
+        },
+        {
+          "anchor": "PDF p.17 Table13",
+          "claim": "Count of nondecreasing table entries is25/30 (including1 tie), although prose says26/30.",
+          "kind": "arithmetic_read_check",
+          "independently_reproduced": false
+        }
+      ],
+      "baseline_readiness": "E2-inspired adaptation can be specified with explicit missing-detail choices; exact author reproduction unavailable. Fixed-node E2(task-only) should be distinct from original full task+entropy/node version."
+    },
+    {
+      "id": "cats",
+      "version": "arxiv_v1",
+      "primary_url": "https://arxiv.org/html/2610.29292v1",
+      "read_status": "all_relevant_technical_sections_read_cases_excluded",
+      "coverage": [
+        "Sections1-6 including limitations and responsible-use statement",
+        "Appendix A.1-A.5: role/tool pools, selected architectures, hyperparameters, baselines, evaluation protocol, per-seed Tables8-10"
+      ],
+      "not_read": [
+        "Appendix B worked BigCodeBench attribution case omitted; generic prompt preamble only encountered",
+        "Figure graph images not visually inspected"
+      ],
+      "code": {
+        "official_repository": null,
+        "availability": "not_verified_in_paper_or_bounded_search",
+        "license": null
+      },
+      "critical_gaps": [
+        "Hosted model aliases expose no weight hashes or quantization",
+        "Attributer sees scores, so correlation with success is not independent validation",
+        "Score-only baseline is explicitly heuristic, omits REINFORCE score factor, and is not separately tuned",
+        "Same candidate count is explicitly not same compute",
+        "Shared coding artifacts create communication outside graph edges"
+      ],
+      "budget": "Search token accounting includes attribution; no explicit objective optimizing total cost. Deployment reported separately.",
+      "baseline_readiness": "Secondary judge-attribution search adaptation only; requires declared judge and matched full cost. Cannot substitute for fixed-predictor revalidation controls or claim edge-specific causality."
+    },
+    {
+      "id": "safesieve",
+      "version": "arxiv_v3_and_official_github_head_20250725",
+      "primary_url": "https://arxiv.org/html/2508.11733v3",
+      "read_status": "main_text_read_supplement_not_retrieved_code_route_audited",
+      "coverage": [
+        "Entire available main-text technical narrative through Conclusion, Eqs1-11, Tables1-4",
+        "README official MMLU path and nine core/source files; precise findings listed"
+      ],
+      "not_read": [
+        "Externally referenced Supplementary Material not retrieved",
+        "HumanEval/SVAMP execution routes not reviewed",
+        "Dataset files, model weights and benchmark original questions not fetched"
+      ],
+      "code": {
+        "repository": "https://github.com/csgen/SafeSieve",
+        "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+        "license": null,
+        "root_license_file_seen": false,
+        "inspected_files": 9,
+        "behavior_test": "CPU-only4-node counterexample; no full module or dataset execution"
+      },
+      "findings": [
+        {
+          "id": "SS01",
+          "severity": "major",
+          "claim": "Released zero_extension assigns by vertex order rather than optimizing weighted graph objective; can violate terminal self-assignment.",
+          "paper_anchor": "0-Extension Clustering / Eq.(7)",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/graph/pruning_algorithm.py#L35",
+          "code_lines": [
+            35,
+            46
+          ],
+          "evidence": "Synthetic terminals [2,3] produce f(3)=2; two permuted edge-weight sets return same assignment.",
+          "validation": "SAFESIEVE_SYNTHETIC_AUDIT.json",
+          "confidence": "high"
+        },
+        {
+          "id": "SS02",
+          "severity": "major",
+          "claim": "README MMLU route invokes enhanced_train; it constructs losses but makes no backward, optimizer.step, or zero_grad call.",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/experiments/run_mmlu.py#L268",
+          "code_lines": [
+            268,
+            277,
+            290,
+            504
+          ],
+          "evidence": "AST inspection of entire enhanced_train call set. Legacy train_mmlu has updates but is not invoked by this route.",
+          "confidence": "high",
+          "interpretation_limit": "Absence of gradient update alone does not invalidate heuristic pruning; it prevents treating this code as a trained policy optimizer."
+        },
+        {
+          "id": "SS03",
+          "severity": "major",
+          "claim": "Historical feedback increments every realized spatial edge when final prediction matches gold, rather than measuring each edge's conditional intervention effect.",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/experiments/run_mmlu.py#L350",
+          "code_lines": [
+            350,
+            385
+          ],
+          "supporting_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/graph/edge_matrix.py#L81",
+          "confidence": "high",
+          "feedback_permission": "Needs correctness labels on the dev calibration stream; no selective acquisition ledger or edge-specific labels in reviewed main route."
+        },
+        {
+          "id": "SS04",
+          "severity": "major",
+          "claim": "Paper/code discrepancy: active code keeps alpha fixed, increases beta with batch index, uses min-max edge scores; paper Eq.(4) decays semantic weight and Eq.(11) uses z-score plus range-based history adjustment.",
+          "paper_anchor": "Eqs.(4),(11)",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/graph/edge_matrix.py#L107",
+          "supporting_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/experiments/run_mmlu.py#L402",
+          "confidence": "high",
+          "interpretation_limit": "Scope limited to README MMLU route and fetched graph modules, not a claim about unreleased author experiments."
+        },
+        {
+          "id": "SS05",
+          "severity": "major",
+          "claim": "Backend charges all actual models using hard-coded gpt-3.5-turbo-instruct tokenizer/pricing; temperature/max-token interface arguments are not forwarded to request JSON.",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/llm/gpt_chat.py#L31",
+          "code_lines": [
+            31,
+            34,
+            88,
+            120
+          ],
+          "supporting_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/llm/price.py#L14",
+          "confidence": "high",
+          "consequence": "Cannot reuse reported backend cost counters for MAB2 full-budget comparison."
+        },
+        {
+          "id": "SS06",
+          "severity": "moderate",
+          "claim": "Default MMLU experiment truncates dev/val to first200, evaluates at most153, trains via all batches rather than num_iterations; final evaluation has no credit maintenance.",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/experiments/run_mmlu.py#L153",
+          "code_lines": [
+            153,
+            173,
+            286,
+            304
+          ],
+          "supporting_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/experiments/evaluate_mmlu.py#L12",
+          "confidence": "high"
+        },
+        {
+          "id": "SS07",
+          "severity": "moderate",
+          "claim": "Actual role scoring is direct LLM numeric similarity; legacy fallback is role text-length similarity, not paper embedding blend plus five-level quantization.",
+          "paper_anchor": "Eq.(2)",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/graph/prompt_similarity.py#L10",
+          "code_lines": [
+            10,
+            44,
+            208,
+            240
+          ],
+          "confidence": "high"
+        },
+        {
+          "id": "SS08",
+          "severity": "moderate",
+          "claim": "Mask construction uses threshold only to trigger pruning globally; update_masks_with_zero_extension keeps same-cluster or terminal-incident edges then low-score fills pruning, not exact paper threshold conjunction.",
+          "paper_anchor": "Structured Edge Pruning / Eq.(8)",
+          "code_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/SafeSieve/graph/graph.py#L577",
+          "supporting_url": "https://github.com/csgen/SafeSieve/blob/0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac/experiments/run_mmlu.py#L423",
+          "confidence": "high"
+        }
+      ],
+      "baseline_readiness": "Do not mark official-code fidelity passed. Use clearly labeled clean paper-based SafeSieve-inspired historical score control if needed; preserve official discrepancy as audit evidence."
+    }
+  ],
+  "acceptance": {
+    "choose_mechanism_control_suite": true,
+    "claim_exact_external_reproduction": false,
+    "claim_all_fulltexts_read": false,
+    "publish_third_party_code": false,
+    "run_new_formal_experiments": false
+  },
+  "budget": {
+    "gpu_hours": 0,
+    "formal_candidate_iterations": 0,
+    "paid_api_calls": 0,
+    "benchmark_files_opened": 0
+  }
+}

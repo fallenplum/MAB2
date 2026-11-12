@@ -1,0 +1,10 @@
+{
+  "schema": "mab2_d3_report_cost_v1",
+  "successful_render_main_CPU_seconds": 0.078125,
+  "render_wall_seconds": 0.14061617851257324,
+  "scope": "excludes_imports_final_manifest_and_prior_QA_attempts",
+  "preparation_commands_CPU_seconds": null,
+  "agent_or_human_cost": null,
+  "new_GPU_calls": 0,
+  "new_GPU_hours": 0
+}

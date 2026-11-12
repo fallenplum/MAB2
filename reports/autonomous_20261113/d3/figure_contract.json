@@ -1,0 +1,21 @@
+{
+  "backend": "Python/matplotlib",
+  "kind": "internal_negative_result_diagnostic",
+  "core_conclusion": "The single prespecified graph-only selector fails the development spending gate; the enrichment interval spans zero.",
+  "panel": "All four frozen selectors on exposed120, with whole-question bootstrap intervals; only order2 is candidate eligible.",
+  "formats": [
+    "PNG",
+    "SVG"
+  ],
+  "dimensions_inches": [
+    8.6,
+    4.5
+  ],
+  "statistics": "10000 question bootstrap draws, seed59173; auxiliary intervals descriptive and unadjusted",
+  "limits": [
+    "Negative U-statistic estimates retained; not negative true squares.",
+    "Exposed development data, not fresh confirmation.",
+    "No GPU pilot, no control substitution."
+  ],
+  "privacy": "Aggregate-only; no machine paths, hosts, question identifiers or individual values."
+}

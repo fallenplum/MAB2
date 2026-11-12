@@ -1,0 +1,14 @@
+{
+  "status": "PASS_MACHINE_CHECKS_HUMAN_REVIEW_PENDING",
+  "metric_rows": 8,
+  "alpha_path_rows": 16,
+  "privacy_findings": [],
+  "original_replay_script_unchanged": true,
+  "submission_ready": false,
+  "figure_visual_review": "PASS_ASSISTANT_VISUAL_REVIEW_HUMAN_REVIEW_PENDING",
+  "matplotlib_version": "3.10.8",
+  "data_sources": {
+    "D3_RESULTS.json": "92447d84ed3bcb9aedf9e449b9e99d0f77ef59783ce7f10d61e3e3501c11d94f",
+    "D3_REPLAY_SUMMARY.json": "60f9b103905c878ac607ee27e8bbf5bcfa57330e67e0d3cd9fca5d1fa9ec389c"
+  }
+}

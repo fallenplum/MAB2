@@ -1,0 +1,50 @@
+{
+  "schema": "safesieve_synthetic_operator_audit_v1",
+  "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+  "source_sha256": "e30eefabfde8e6fe3ca2d3530c9ed1344261cae87dca8de85de51795b2fcc2e5",
+  "scope": "Synthetic fixed-terminal constraint and weight-sensitivity counterexample plus AST call audit; not benchmark reproduction",
+  "vertices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "edges": [
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "terminals": [
+    2,
+    3
+  ],
+  "assignment_a": {
+    "0": 2,
+    "1": 3,
+    "2": 2,
+    "3": 2
+  },
+  "assignment_b": {
+    "0": 2,
+    "1": 3,
+    "2": 2,
+    "3": 2
+  },
+  "fixed_terminal_constraint_violations": [
+    3
+  ],
+  "assignment_unchanged_under_weight_permutation": true,
+  "enhanced_train_optimizer_or_backward_calls": [],
+  "gpu_hours": 0,
+  "benchmark_files_opened": 0,
+  "conclusion": "Released operator does not generally satisfy f(t)=t and is not an implementation of the stated weighted 0-extension optimization. The active enhanced_train path has no optimizer/backward calls."
+}

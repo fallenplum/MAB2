@@ -1,0 +1,7 @@
+split,statistic,questions,estimate,ci_low,ci_high,samples,seed,folds_independent,feedback_acquisition_cost_included,future_question_service_benefit,evidence_ids
+test,naive_observed_menu_oracle,120,0.11666666666666667,0.095,0.14,10000,59173,False,False,False,E01;E02
+test,leave_one_seed_out_selection_gain,120,0.019166666666666665,0.0033333333333333327,0.0375,10000,59173,False,False,False,E01;E02
+train,naive_observed_menu_oracle,200,0.11699999999999999,0.1005,0.134,10000,59173,False,False,False,E01;E02
+train,leave_one_seed_out_selection_gain,200,0.015,0.0035000000000000005,0.02701249999999982,10000,59173,False,False,False,E01;E02
+tune,naive_observed_menu_oracle,80,0.11875,0.09125000000000001,0.14625000000000002,10000,59173,False,False,False,E01;E02
+tune,leave_one_seed_out_selection_gain,80,0.025,-3.4694469519536144e-19,0.05125,10000,59173,False,False,False,E01;E02

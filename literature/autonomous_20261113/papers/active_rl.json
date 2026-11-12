@@ -1,0 +1,34 @@
+{
+  "id": "active_rl",
+  "title": "Active Reinforcement Learning: Observing Rewards at a Cost",
+  "authors": [
+    "David Krueger",
+    "Jan Leike",
+    "Owain Evans",
+    "John Salvatier"
+  ],
+  "year": 2020,
+  "venue": null,
+  "primary_url": "https://arxiv.org/abs/2011.06709",
+  "doi": null,
+  "arxiv": "2011.06709",
+  "version": null,
+  "read_status": "abstract_screened",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "Primary abstract/metadata only"
+  ],
+  "mechanism": "决定是否付费观察奖励，并考虑未来信息价值；仅摘要核读。",
+  "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+  "candidate_delta": null,
+  "limitations_or_audit_risks": [
+    "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "pending",
+  "novelty_verdict": "PROVISIONAL"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "bai_resource",
+  "title": "Best Arm Identification with Resource Constraints",
+  "authors": [
+    "Zitian Li",
+    "Wang Chi Cheung"
+  ],
+  "year": 2024,
+  "venue": "AISTATS 2024",
+  "primary_url": "https://proceedings.mlr.press/v238/li24c.html",
+  "doi": null,
+  "arxiv": null,
+  "version": null,
+  "read_status": "abstract_screened",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "Primary abstract/metadata only"
+  ],
+  "mechanism": "有限资源而非固定采样次数的最佳臂识别；SH-RR。",
+  "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+  "candidate_delta": null,
+  "limitations_or_audit_risks": [
+    "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "pending",
+  "novelty_verdict": "PROVISIONAL"
+}

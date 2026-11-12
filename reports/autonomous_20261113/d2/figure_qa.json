@@ -1,0 +1,24 @@
+{
+  "schema": "mab2_d2_figure_qa_v1",
+  "status": "PASS_ASSISTANT_VISUAL_REVIEW",
+  "human_author_review": "pending",
+  "backend": "Python/matplotlib",
+  "inspection": "Rendered PNG opened and visually inspected; SVG text nodes parsed.",
+  "checks": {
+    "all_12_method_rows_visible": true,
+    "selected_and_fixed_markers_distinguishable": true,
+    "nominee_marked_not_significance": true,
+    "all_intervals_visible": true,
+    "no_label_or_caption_overlap_observed": true,
+    "risk_points_have_no_invented_intervals": true,
+    "action_zero_reference_visible": true,
+    "editable_svg_text": true,
+    "exposed_data_and_bootstrap_limits_on_figure": true
+  },
+  "source_files": {
+    "method_metrics.csv": "7ed679f6fedffd282a0dd74b17ab22e9acfca0fda0a031c671c5f4a5bf748220",
+    "d2_risk_and_action.png": "8cedfaf6106741a32ee307d8fe9bcb8fcf932a97086d319af5c9e1c29230f6c7",
+    "d2_risk_and_action.svg": "565421669aad7aa3af03455d86bc8605d34be4e9d2ce85fd42dd4875346799c0"
+  },
+  "figure_is_submission_ready": false
+}

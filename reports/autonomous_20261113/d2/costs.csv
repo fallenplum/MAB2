@@ -1,0 +1,9 @@
+component,measure,value,status,scope
+D2_main_process,CPU_seconds,23.421875,measured,process_start_including_threads
+D2_git_children,CPU_seconds,3.5051327999681234,upper_bound,wall_times_logical_cores; exact_CPU_unknown
+D2_wall,wall_seconds,23.04694652557373,measured,D2_process
+independent_replay,CPU_seconds,2.75,measured,replay_function_excludes_process_initialization
+report_generation,CPU_seconds,0.203125,measured,successful_render_main_excludes_imports_final_manifest_and_prior_QA_attempts
+new_generation,GPU_hours,0,no_calls,D2_and_this_report
+historical_inference,total_cost,,not_reaggregated,existing_project_ledger_required
+agent_human_energy_currency,total_cost,,unmeasured,not_assumed_free

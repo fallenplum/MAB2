@@ -1,0 +1,44 @@
+{
+  "id": "active_learning_structure",
+  "title": "Active Learning for Communication Structure Optimization in LLM-Based Multi-Agent Systems",
+  "authors": [
+    "Huchen Yang",
+    "Xinghao Dong",
+    "Dan Negrut",
+    "Jin-Long Wu"
+  ],
+  "year": 2026,
+  "venue": null,
+  "primary_url": "https://arxiv.org/abs/2605.05703",
+  "doi": null,
+  "arxiv": "2605.05703",
+  "version": "v1",
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "arXiv v1: Section 2 / Figure 1 cost statement; Sections 4.1-4.4 and 5.1-5.2 / Table 1",
+    "Root independently verified these narrow claims; child separately read the same primary HTML. Appendix and code not reviewed.",
+    "https://arxiv.org/html/2605.05703v1"
+  ],
+  "mechanism": "从答案已知的训练池选择任务，用ensemble/EKI估计图参数信息增益，结合代表性筛选与surrogate，随后优化通信图。",
+  "mab2_overlap": "已将主动采集用于图优化，且Figure 1比较匹配8倍MAS推理token、Table1分列Select/Train/Test；不能把计采集成本或主动图学习称首创。",
+  "candidate_delta": "候选区别必须落实到图编辑后历史边信用复检、未来任务流和恢复决策；它选择的是训练task而非待复检的边。",
+  "limitations_or_audit_risks": [
+    "Section4.1参考答案已事先可用，昂贵动作是MAS rollout；不得误写成购买未知gold标签。",
+    "未读附录/代码，不能宣称完全复现或所有成本均已覆盖。",
+    "Root第二读者核验仅支持上述单位/反馈权限/预算口径，不代表整体新颖性门通过。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "section_verified_code_pending",
+  "novelty_verdict": "PROVISIONAL",
+  "independent_claim_review": {
+    "reviewer": "/root",
+    "scope": "Sections4.1-4.4,5.1-5.2;Figure1;Table1: acquisition unit, known-reference permission, selection/train/test token accounting",
+    "status": "narrow_claims_verified",
+    "full_forensic_pass": false
+  }
+}

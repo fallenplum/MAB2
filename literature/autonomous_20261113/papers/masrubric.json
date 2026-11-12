@@ -1,0 +1,41 @@
+{
+  "id": "masrubric",
+  "title": "MASRubric: Auditing Information Flow in Multi-Agent Systems with Failure-Distilled Pitfall Rubrics",
+  "authors": [
+    "Yutong Wang",
+    "Siyuan Xiong",
+    "Xuebo Liu",
+    "Wenkang Zhou",
+    "Liang Ding",
+    "Miao Zhang",
+    "Min Zhang"
+  ],
+  "year": 2026,
+  "venue": null,
+  "primary_url": "https://arxiv.org/abs/2602.23258",
+  "doi": null,
+  "arxiv": "2602.23258",
+  "version": "v3",
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "arXiv v3: Sections 3.1-3.3, 4.1; Appendix A.1 and A.6; Eqs.(3)-(5); Table 7",
+    "https://arxiv.org/html/2602.23258v3"
+  ],
+  "mechanism": "离线从失败轨迹挖掘判据；在线逐消息检索和审核，按满足率选择传递、修改或扣留。",
+  "mab2_overlap": "推理时主动审查、阻止错误传播、迭代反馈均已有。",
+  "candidate_delta": "其判据是内容审核而非图边信用重新测量；MAB2应将复检开销与未来图决策收益明确挂钩。",
+  "limitations_or_audit_risks": [
+    "同一arXiv旧版题名AgentDropoutV2；不得与ACL2025 AgentDropout混为同一方法。",
+    "A.6显示审核开销显著，不能仅因使用小模型就推断经济性。",
+    "离线miner使用更强模型，公平对照须计成本。",
+    "本地PDF下载超时，仅primary HTML章节阅读；正式venue未核实。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "section_verified_code_pending",
+  "novelty_verdict": "PROVISIONAL"
+}

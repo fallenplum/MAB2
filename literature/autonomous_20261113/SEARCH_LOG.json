@@ -1,0 +1,224 @@
+{
+  "schema": "mab2_literature_search_v1",
+  "cutoff": "2026-11-13",
+  "review_type": "targeted_scoping_review_not_systematic_or_exhaustive",
+  "discovery_engine": "web__run ranked web search; engine provider not asserted",
+  "queries": [
+    {
+      "query": "AgentPrune AgentDropout SafeSieve E2-Explainer multi agent paper",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"SafeSieve\" multi agent",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"E2-Explainer\" paper",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"SafeSieve\" site:arxiv.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"SafeSieve\" site:ojs.aaai.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"AgentPrune\" site:openreview.net",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "AgentPrune \"Cut\" arxiv",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Cost-Aware Best Arm Identification\" paper",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Learning to Optimize\" \"Decision-Focused\" 2019 Wilder",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Active Reinforcement Learning\" costly feedback",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Melding the Data-Decisions Pipeline\" site:arxiv.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Smart Predict\" \"Optimize\" site:pubsonline.informs.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Active Reinforcement Learning: Observing Rewards at a Cost\" site:arxiv.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "multi agent graph credit revalidation active feedback pruning bandit site:aclanthology.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Melding the Data-Decisions Pipeline\" site:ojs.aaai.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Counterfactual Multi-Agent Policy Gradients\" arxiv",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Combinatorial Pure Exploration\" \"Linear\" \"2014\" Chen",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Optimal Best Arm Identification with Fixed Confidence\" site:proceedings.mlr.press",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Feedback Attribution for Counterfactual Bandit Learning\" site:aclanthology.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Combinatorial Pure Exploration of Multi-Armed Bandits\" site:papers.neurips.cc",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"GPTSwarm\" site:proceedings.mlr.press",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Graph-Conditional\" \"credit\" communication revalidation",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"credit\" \"revalidation\" \"multi-agent\" graph",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Credit Where Credit Is Due: Contrastive Attribution Topology Search\" site:arxiv.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Counterfactual Credit Policy Optimization for Multi-Agent Collaboration\" site:arxiv.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Turnover-Orthogonal Credit Assignment\" site:arxiv.org",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "site.proceedings.neurips.cc \"Combinatorial Pure Exploration\" \"2014\"",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "site.aclanthology.org/2021.emnlp-main.91 \"Feedback Attribution\"",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Active Learning for Communication Structure Optimization in LLM-Based Multi-Agent Systems\"",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    },
+    {
+      "query": "\"Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems\"",
+      "date": "2026-11-13",
+      "total_index_hits": null,
+      "pagination_complete": false
+    }
+  ],
+  "primary_verification_domains": [
+    "aclanthology.org",
+    "proceedings.iclr.cc",
+    "arxiv.org",
+    "ojs.aaai.org",
+    "proceedings.mlr.press",
+    "papers.neurips.cc",
+    "rlj.cs.umass.edu",
+    "pubsonline.informs.org"
+  ],
+  "inclusion": "MAS topology pruning, conditional contribution/attribution, graph evolution, paid feedback and decision-focused methodological ancestors",
+  "exclusion": "Financial credit scoring, operational trust revalidation unrelated to research question, secondary summaries as evidence",
+  "search_saturation": false,
+  "saturation_reason": "Latest synonym and citation searches still found CATS, Agents that Matter, CCPO and TOCA; nearest-neighbor frontier remains open.",
+  "errors": [
+    {
+      "url": "https://arxiv.org/abs/2406.18389",
+      "type": "wrong_identifier",
+      "resolution": "Primary title is unrelated blockchain paper; excluded; correct AgentPrune ID verified as 2410.02506."
+    },
+    {
+      "url": "https://openreview.net/forum?id=LkzuPorQ5L",
+      "type": "browser_challenge",
+      "resolution": "Official ICLR proceedings PDF retrieved instead."
+    },
+    {
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40236",
+      "type": "direct_access_denied",
+      "resolution": "Official indexed metadata plus author arXiv v3 sections; record remains section-read."
+    },
+    {
+      "url": "https://arxiv.org/pdf/",
+      "type": "local_network_connect_timeout",
+      "resolution": "Primary web-rendered HTML sections read; no local PDF bytes claimed for these sources."
+    }
+  ]
+}

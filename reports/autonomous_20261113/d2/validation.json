@@ -1,0 +1,23 @@
+{
+  "schema": "mab2_d2_report_validation_v1",
+  "status": "PASS_MACHINE_CHECKS_HUMAN_REVIEW_PENDING",
+  "method_count": 12,
+  "metric_rows": 48,
+  "selected_and_fixed_exposed_rows": 24,
+  "support_counts_consistent": true,
+  "claim_text_bindings": 6,
+  "data_source_sha256": "4c6c498cca99838bd52dc424f357d71891143a4e1a845442d80ca969764cacff",
+  "risk_intervals_invented": false,
+  "tune_intervals_invented": false,
+  "svg_editable_text": true,
+  "privacy_pattern_findings": [],
+  "private_arrays_included": false,
+  "backend": "Python/matplotlib",
+  "matplotlib_version": "3.10.8",
+  "numpy_version": "1.26.4",
+  "human_verified": false,
+  "formal_peer_review": false,
+  "submission_ready": false,
+  "figure_visual_inspection": "PASS_ASSISTANT_VISUAL_REVIEW_HUMAN_REVIEW_PENDING",
+  "generation_wall_seconds": 0.3379068374633789
+}

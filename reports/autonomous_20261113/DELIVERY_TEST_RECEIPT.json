@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "commands": [
+    "python -m unittest discover -s experiments/d2_diagnostics -p test_*.py",
+    "python -m unittest discover -s experiments/d3_diagnostics -p test_*.py"
+  ],
+  "D2_tests": 28,
+  "D3_tests": 18,
+  "D2_unittest_elapsed_seconds": 0.076,
+  "D3_unittest_elapsed_seconds": 0.08,
+  "combined_tool_wall_seconds": 1.9302016,
+  "process_CPU_seconds": null,
+  "new_GPU_calls": 0,
+  "scope": "delivery command verification; no new scientific test data"
+}

@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "id": "E01",
+      "name": "D2_RESULTS.json",
+      "sha256": "242024766bd77215f6e3175c6a3d22f6d01d1a5b6cddec16be4da9b348e80406",
+      "verification": "machine_reproduced_or_hash_verified; human_review_pending"
+    },
+    {
+      "id": "E02",
+      "name": "D2_INDEPENDENT_REAL_REPLAY.json",
+      "sha256": "5bddeb9f917ff9dc39ca928cee0f2f0bbaf038cf3b10f4ebfbc981697095dfb1",
+      "verification": "machine_reproduced_or_hash_verified; human_review_pending"
+    },
+    {
+      "id": "E03",
+      "name": "D2_PROTOCOL.json",
+      "sha256": "eb7ea87221fcf117d2f16b88cb193d28ba8728147863263f59307f4c6b9bab3e",
+      "verification": "machine_reproduced_or_hash_verified; human_review_pending"
+    }
+  ],
+  "verification_scope": "machine replay completed; author-side human review pending",
+  "source_code_sha256": {
+    "diagnostics.py": "dadaeb2dfb038f0a26e97bf41e12af6a743fa2c2f591c190708476cd624734bc",
+    "run_d2.py": "681659ba0ae07d9f638cfdf155a93979ab009fd50b947e1d74b744496e77108f",
+    "test_diagnostics.py": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7",
+    "test_run_d2.py": "e538960e8707cf0fe05630e3a7feca494a10c3f8e72960ec686325c4a3430b46"
+  }
+}

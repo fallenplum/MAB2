@@ -1,0 +1,60 @@
+{
+  "skills": [
+    {
+      "skill": "research-rigor",
+      "repository": "bsq415/research-rigor-skill",
+      "commit": "abaa503cc33f9a885e187ca4d56d5ecc331d04e1",
+      "path": "skills/research-rigor",
+      "license": "MIT",
+      "installed_SKILL_sha256": "68e256d4c27fc4ea55077d72d59b9499cceec104bb86cc7d7584e40de7a6f052",
+      "url": "https://github.com/bsq415/research-rigor-skill/tree/abaa503cc33f9a885e187ca4d56d5ecc331d04e1/skills/research-rigor"
+    },
+    {
+      "skill": "autoresearch",
+      "repository": "Orchestra-Research/AI-Research-SKILLs",
+      "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+      "path": "0-autoresearch-skill",
+      "license": "MIT",
+      "installed_SKILL_sha256": "b7ca0d7a6e905da85a8b494d3fe398ac78eaa278854f67b50a34f2b37a9a2b78",
+      "url": "https://github.com/Orchestra-Research/AI-Research-SKILLs/tree/773a52944ba4747a18bd4ae9ade53fff041adcbc/0-autoresearch-skill"
+    },
+    {
+      "skill": "paper-lookup",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "commit": "2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5",
+      "path": "skills/paper-lookup",
+      "license": "MIT",
+      "installed_SKILL_sha256": "fac99456ad404ff9a0d3043709b956b5d6383838ae8e8394f274a5693d8bd294",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5/skills/paper-lookup"
+    },
+    {
+      "skill": "literature-review",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "commit": "2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5",
+      "path": "skills/literature-review",
+      "license": "MIT",
+      "installed_SKILL_sha256": "16a9e85bcdcb9bb859e1646bf836e51b22900445ba2e367d8d75be05b5a5cba8",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5/skills/literature-review"
+    },
+    {
+      "skill": "scientific-writing",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "commit": "2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5",
+      "path": "skills/scientific-writing",
+      "license": "MIT",
+      "installed_SKILL_sha256": "511a2096bebecd8cf0f8212b9d262d37154ae1ba566eb385d93ac968682edbd1",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5/skills/scientific-writing"
+    },
+    {
+      "skill": "peer-review",
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "commit": "2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5",
+      "path": "skills/peer-review",
+      "license": "MIT",
+      "installed_SKILL_sha256": "a042ccdc76d3399431b9a6c4cd4f98968eab964b1c14baeea4d9e73de82c7d19",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills/tree/2d2065fb4520fa3f3f2bcf61cff26ec8b7eba4b5/skills/peer-review"
+    }
+  ],
+  "external_runtime_hooks_executed": false,
+  "policy": "user budgets and privacy override unbounded skill defaults"
+}

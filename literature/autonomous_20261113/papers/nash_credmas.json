@@ -1,0 +1,39 @@
+{
+  "id": "nash_credmas",
+  "title": "Nash-Pruned CredMAS: Dynamic Panel Pruning for VLM-MAS using Nash-based Selection and Doubly-Robust Credits",
+  "authors": [
+    "Yijia Fan",
+    "Mingyu Liu",
+    "Jing Yang",
+    "Jian Wang",
+    "Keze Wang",
+    "Jusheng Zhang"
+  ],
+  "year": 2026,
+  "venue": "Findings of ACL 2026",
+  "primary_url": "https://aclanthology.org/2026.findings-acl.1975/",
+  "doi": "10.18653/v1/2026.findings-acl.1975",
+  "arxiv": null,
+  "version": null,
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "PDF pp.1-6 (printed pp.39640-39645); Sections 3.1-3.3, 4.1-4.3, 5; Eqs.(1)-(5); Algorithm 1"
+  ],
+  "mechanism": "离线AIPW标签训练上下文价值网络，在线按预测净收益/成本选择下一轮代理panel。",
+  "mab2_overlap": "上下文信用、带成本的动态参与选择、离线训练轻量critic已经存在。",
+  "candidate_delta": "MAB2候选单位是通信边与复检反馈选择，且须把学习、复检、评分、服务全部计成本。",
+  "limitations_or_audit_risks": [
+    "Eq.(3)写的是单处理潜在结果形式，不能仅凭该式推出处理差。",
+    "F=U-lambda*cost未自动保持单调性；固定历史的sum V是可加目标，论文近似保证不能直接移植。",
+    "Section 5明确排除训练和warmup成本。",
+    "方法示意图包含公开视觉案例文本，已记暴露。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "section_verified_code_pending",
+  "novelty_verdict": "PROVISIONAL"
+}

@@ -1,0 +1,69 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_REGEX_FALSE_POSITIVES",
+  "scoped_directories": [
+    "reports/autonomous_20261113",
+    "literature/autonomous_20261113",
+    "protocol/autonomous_20261113",
+    "experiments/d2_diagnostics",
+    "experiments/d3_diagnostics"
+  ],
+  "raw_scan_finding_count": 7,
+  "unresolved_findings": 0,
+  "resolved_findings": [
+    {
+      "file": "experiments/d2_diagnostics/diagnostics.py",
+      "line": 292,
+      "category": "email",
+      "resolution": "false_positive_Python_matrix_multiplication",
+      "source_sha256": "dadaeb2dfb038f0a26e97bf41e12af6a743fa2c2f591c190708476cd624734bc"
+    },
+    {
+      "file": "experiments/d2_diagnostics/run_d2.py",
+      "line": 270,
+      "category": "email",
+      "resolution": "false_positive_Python_matrix_multiplication",
+      "source_sha256": "681659ba0ae07d9f638cfdf155a93979ab009fd50b947e1d74b744496e77108f"
+    },
+    {
+      "file": "experiments/d2_diagnostics/test_diagnostics.py",
+      "line": 46,
+      "category": "email",
+      "resolution": "false_positive_Python_matrix_multiplication",
+      "source_sha256": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7"
+    },
+    {
+      "file": "experiments/d2_diagnostics/test_diagnostics.py",
+      "line": 76,
+      "category": "email",
+      "resolution": "false_positive_Python_matrix_multiplication",
+      "source_sha256": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7"
+    },
+    {
+      "file": "experiments/d2_diagnostics/test_diagnostics.py",
+      "line": 101,
+      "category": "email",
+      "resolution": "false_positive_Python_matrix_multiplication",
+      "source_sha256": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7"
+    },
+    {
+      "file": "experiments/d2_diagnostics/test_diagnostics.py",
+      "line": 137,
+      "category": "email",
+      "resolution": "false_positive_Python_matrix_multiplication",
+      "source_sha256": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7"
+    },
+    {
+      "file": "experiments/d2_diagnostics/test_diagnostics.py",
+      "line": 237,
+      "category": "email",
+      "resolution": "false_positive_Python_matrix_multiplication",
+      "source_sha256": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7"
+    }
+  ],
+  "aggregate_report_manifests_verified": true,
+  "semantic_scope": "code,protocol,aggregate results and literature summaries only; no raw data, full paper PDFs, third-party code, resources or credentials",
+  "scanner_limitations": "Pattern scanning and semantic allowlisting are bounded checks, not a proof of anonymity.",
+  "human_external_review_claimed": false,
+  "project_complete": false,
+  "paper_ready": false
+}

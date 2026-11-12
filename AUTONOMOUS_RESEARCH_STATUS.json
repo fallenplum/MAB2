@@ -1,0 +1,36 @@
+{
+  "updated_utc": "2026-11-12T17:42:34.907819+00:00",
+  "branch": "research/autonomous-20261113",
+  "status": "BOUNDED_CYCLE_STOPPED_SCIENTIFIC_CRITERION",
+  "project_complete": false,
+  "paper_ready": false,
+  "paper_status": "INSUFFICIENT_EVIDENCE",
+  "new_GPU_hours": 0,
+  "new_model_calls": 0,
+  "budget_GPU_hours": 160,
+  "formal_rounds_started": 0,
+  "formal_rounds_cap": 5,
+  "CPU_diagnostic_rounds_completed": 2,
+  "D2_nominee": "C1_R1",
+  "D2_nomination_passed": false,
+  "D2_independent_checks": 914,
+  "D3_status": "STOP_CURRENT_CANDIDATE_ROUTE",
+  "D3_enrichment": {
+    "bootstrap_unit": "question",
+    "data_role": "exposed_development",
+    "estimate": -0.0017361111111111114,
+    "independent_confirmation": false,
+    "interval95": [
+      -0.005833333333333334,
+      0.0022222222222222222
+    ],
+    "question_count": 120,
+    "resamples": 10000,
+    "seed": 59173
+  },
+  "D3_independent_audit": "PASS_WITH_EXPLORATORY_LIMITATIONS",
+  "literature_status": "PROVISIONAL_SCOPING_REVIEW",
+  "best_effective_method": null,
+  "sealed_test_accessed_this_cycle": false,
+  "report": "reports/autonomous_20261113/AUDIT_REPORT.md"
+}

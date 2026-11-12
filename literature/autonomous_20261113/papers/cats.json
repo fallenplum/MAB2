@@ -1,0 +1,46 @@
+{
+  "id": "cats",
+  "title": "Credit Where Credit Is Due: Contrastive Attribution Topology Search for Multi-Agent Systems",
+  "authors": [
+    "Fabian Tritthart",
+    "Tom Zehle"
+  ],
+  "year": 2026,
+  "venue": null,
+  "primary_url": "https://arxiv.org/abs/2610.29292",
+  "doi": null,
+  "arxiv": "2610.29292",
+  "version": "v1",
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 2,
+  "source_kind": "primary",
+  "read_anchors": [
+    "arXiv v1 Sections 1-6; Appendix A.1-A.3; Tables 1,2,5,6",
+    "https://arxiv.org/html/2610.29292v1"
+  ],
+  "mechanism": "固定supergraph中采样候选，LLM比较同任务轨迹并分配代理带符号信用，更新入边并逐步删除，最终部署固定团队。",
+  "mab2_overlap": "小模型协作、固定模型池、信用驱动图演化与匹配候选评估均高度重合。",
+  "candidate_delta": "其任务是离线团队搜索；MAB2需展示图条件历史信用失效、选择购买新反事实和恢复对未来服务收益的独立作用。",
+  "limitations_or_audit_risks": [
+    "正文明确matched candidate evaluations不等于matched compute。",
+    "已记录含attributer的搜索token，不能指控其完全忽略归因成本。",
+    "信用为LLM判断的节点级优化信号，作者明确不称因果度量。",
+    "score-only基线未独立调参；共享环境可替代直接边，未分离节点与通信贡献。",
+    "题首页标Workshop on Responsible Use of Meta-Agents，正式录用/主会归属未独立核实，venue留null。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "all_relevant_technical_sections_read_cases_excluded_official_code_unverified",
+  "novelty_verdict": "PROVISIONAL",
+  "followup_technical_coverage": [
+    "Sections1-6 including limitations and responsible-use statement",
+    "Appendix A.1-A.5: role/tool pools, selected architectures, hyperparameters, baselines, evaluation protocol, per-seed Tables8-10"
+  ],
+  "followup_exclusions": [
+    "Appendix B worked BigCodeBench attribution case omitted; generic prompt preamble only encountered",
+    "Figure graph images not visually inspected"
+  ],
+  "forensic_record": "forensic_20261113/FORENSIC_REVIEW.json"
+}

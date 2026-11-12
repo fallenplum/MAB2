@@ -4,3 +4,6 @@ research-state.yaml text eol=lf
 research-log.md text eol=lf
 findings.md text eol=lf
 experiments/d3_diagnostics/* text eol=lf
+reports/autonomous_20261113/** -text
+literature/autonomous_20261113/** -text
+AUTONOMOUS_RESEARCH_STATUS.json text eol=lf

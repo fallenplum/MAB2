@@ -1,0 +1,84 @@
+{
+  "scope": "new cycle and links to historical physical ledgers; no unknown replaced by zero",
+  "budget": {
+    "schema": "mab2_autonomous_budget_v1",
+    "authorized_utc": "2026-11-12T16:56:12.968728+00:00",
+    "gpu_hours_cap": 160,
+    "formal_candidate_rounds_cap": 5,
+    "gpu_hours_used": 0,
+    "gpu_hours_reserved": 0,
+    "formal_candidate_rounds_started": 0,
+    "cpu_diagnostic_rounds_cap": 2,
+    "cpu_diagnostic_process_hours_cap_per_round": 4,
+    "gpu_accounting": "sum per-task GPU occupancy wall time across devices; CUDA events separately; failures and qualification included",
+    "concurrency": "actual process and resource inspection; user permits sharing; no interference with other jobs",
+    "historical_costs": "excluded from new cap and retained in historical ledgers; unknown costs remain null",
+    "paid_compute_authorized": false,
+    "budget_state": "STOPPED_BY_SCIENTIFIC_RULE_NOT_BUDGET_EXHAUSTION",
+    "events": [
+      {
+        "id": "D2",
+        "new_GPU_hours": 0,
+        "model_calls": 0,
+        "main_process_cpu_seconds": 23.421875,
+        "git_cpu_seconds": null,
+        "git_cpu_upper_bound_seconds": 3.5051327999681234,
+        "wall_seconds": 23.04694652557373,
+        "preflight_EOL_failure_cpu_seconds": null,
+        "unknown_costs_imputed": false
+      },
+      {
+        "id": "D3",
+        "new_GPU_hours": 0,
+        "model_calls": 0,
+        "main_process_cpu_seconds": 0.359375,
+        "git_cpu_seconds": null,
+        "git_cpu_upper_bound_seconds": 2.8388128001242876,
+        "wall_seconds": 0.7449088096618652,
+        "unknown_costs_imputed": false
+      }
+    ],
+    "cpu_diagnostic_rounds_completed": 2,
+    "unmeasured_costs": [
+      "D2 EOL preflight CPU",
+      "some synthetic checks/report generation/software engineering CPU",
+      "literature browsing and assistant runtime"
+    ]
+  },
+  "independent_audits": {
+    "D2": {
+      "main_process_cpu_seconds": 2.75,
+      "wall_seconds": 1.8698325157165527,
+      "new_gpu_hours": 0
+    },
+    "D3": {
+      "review_main_process_cpu_seconds": 0.703125,
+      "review_wall_seconds_from_first_script_timestamp": 0.8137261867523193,
+      "includes_import_CPU": true,
+      "preparation_commands_CPU_seconds": null,
+      "reviewer_agent_inference_CPU_seconds": null,
+      "child_process_CPU_seconds": 0,
+      "new_GPU_calls": 0,
+      "new_GPU_hours": 0
+    }
+  },
+  "historical_G2": {
+    "formal_calls": 123440,
+    "formal_CUDA_seconds": 378819.82819769287,
+    "qualification_calls": 712,
+    "qualification_CUDA_seconds": 3424.835351928711,
+    "formal_input_tokens": 55094502,
+    "formal_output_tokens": 6893988,
+    "CUDA_events_not_occupancy_hours": true,
+    "initial_preprocessing_CPU_seconds": null,
+    "source": "historical G2_INDEPENDENT_ACCEPTANCE.json"
+  },
+  "historical_G1": {
+    "formal_calls": 144002,
+    "engineering_calls": 730,
+    "migration_unknown_inflight_call_upper_bound": 3,
+    "full_cost_source": "historical INDEPENDENT_G1_ACCEPTANCE.json",
+    "GPU_occupancy_hours": null
+  },
+  "formal_comparative_complete_budget_experiment_run": false
+}

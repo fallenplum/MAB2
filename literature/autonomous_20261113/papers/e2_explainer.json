@@ -1,0 +1,56 @@
+{
+  "id": "e2_explainer",
+  "title": "Discovering Efficient and Explainable Communication Topologies for LLM-based Multi-Agent Systems via Causal Inference",
+  "authors": [
+    "Junzhi Li",
+    "Peng He",
+    "Qirui Ji",
+    "Wei Wang",
+    "Lixiang Liu",
+    "Chuxiong Sun"
+  ],
+  "year": 2026,
+  "venue": null,
+  "primary_url": "https://arxiv.org/abs/2608.12921",
+  "doi": null,
+  "arxiv": "2608.12921",
+  "version": "v2",
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 2,
+  "source_kind": "primary",
+  "read_anchors": [
+    "arXiv v2: Problem Formulation; E2-Explainer; Eqs.(3)-(17)",
+    "Appendix A: Causal Supervision Construction Details, Implementation Settings, Additional Evaluation Protocols / Token accounting",
+    "https://arxiv.org/html/2608.12921v2"
+  ],
+  "mechanism": "固定其他通道做单边删除，五次独立执行估计任务差与语义熵；边/节点预算子图作为监督，离线蒸馏为部署时预测器。",
+  "mab2_overlap": "图条件单边反事实、稀疏任务信用的辅助信号、预算子图预测已经被明确提出。",
+  "candidate_delta": "本文部署不再干预；MAB2可研究连续图编辑后选择性复检的长期价值。本文budget约束结构数量，与购买反馈预算不同。",
+  "limitations_or_audit_risks": [
+    "正文Budget-Aware Subgraph Selection称rho为保留比例，附录Pruning counts Eq.(29)称其为删除比例；适配时须核代码，不能默选一种约定。",
+    "只保留非负preservation贡献，不能原样充当带符号删/增边净效用。",
+    "附录明确在线token不含离线干预、语义采样、拓扑/解释器训练。",
+    "独立非配对随机执行；平均五次仍有噪声。",
+    "没有核实正式录用venue；本地PDF下载超时，使用primary HTML章节。",
+    "Web返回相邻案例造成已记录的公开样本暴露。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "all_relevant_technical_sections_read_cases_excluded_official_code_unverified",
+  "novelty_verdict": "PROVISIONAL",
+  "followup_technical_coverage": [
+    "Abstract, Introduction, Related Work, Problem Formulation, complete E2 method Eqs.(1)-(17)",
+    "Experimental Setup, Results and Analysis, Conclusion, Tables1-4",
+    "Appendix A architecture, causal supervision, settings, dataset/scoring metadata, evaluation/cost protocols, budget sweep Table7",
+    "Appendix post-case hand-crafted graph evaluation Table13 and OFA redundancy analysis",
+    "Appendix C Algorithms1-2"
+  ],
+  "followup_exclusions": [
+    "Qualitative case original questions/traces excluded in this follow-up",
+    "References were navigated, not individually verified",
+    "All figure images not visually inspected"
+  ],
+  "forensic_record": "forensic_20261113/FORENSIC_REVIEW.json"
+}

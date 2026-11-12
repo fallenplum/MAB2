@@ -1,0 +1,34 @@
+{
+  "id": "cabai",
+  "title": "Cost Aware Best Arm Identification",
+  "authors": [
+    "Kellen Kanarios",
+    "Qining Zhang",
+    "Lei Ying"
+  ],
+  "year": 2024,
+  "venue": "RLC 2024 / Reinforcement Learning Journal",
+  "primary_url": "https://rlj.cs.umass.edu/2024/papers/RLJ_RLC_2024_193.pdf",
+  "doi": null,
+  "arxiv": "2402.16710",
+  "version": null,
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "PDF pp.1-4; Sections 1-3; Assumptions 1-2; Theorem 1"
+  ],
+  "mechanism": "固定置信下按异质抽样成本识别最高均值臂；成本归一化信息分配与停止规则。",
+  "mab2_overlap": "将信息收益按获取成本归一化不是MAB2独立新意。",
+  "candidate_delta": "可迁移的是成本与信息目标分离；边信用会随图变化，服务/测量交错，需另证假设。",
+  "limitations_or_audit_risks": [
+    "稳定臂分布、reward/cost独立、正有界成本等假设不可默认适用于LLM配对边差。",
+    "最小识别成本目标不等于有限服务周期累计效用。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "section_verified_code_pending",
+  "novelty_verdict": "PROVISIONAL"
+}

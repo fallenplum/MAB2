@@ -1,0 +1,21 @@
+{
+  "schema": "mab2_d3_figure_qa_v1",
+  "status": "PASS_ASSISTANT_VISUAL_REVIEW",
+  "human_author_review": "pending",
+  "backend": "Python/matplotlib",
+  "inspection": "PNG opened and visually inspected; SVG text parsed.",
+  "checks": {
+    "four_frozen_selectors_visible": true,
+    "unique_candidate_marked": true,
+    "all_intervals_and_zero_line_visible": true,
+    "no_label_caption_clipping_or_overlap_observed": true,
+    "negative_estimator_and_no_pilot_limit_in_caption": true,
+    "svg_editable_text": true
+  },
+  "source_sha256": {
+    "metrics.csv": "40d715dc0cbfc47366a5831f5ff363611b1a311c3c41bfe3061470b21e398983",
+    "d3_enrichment.png": "16262adf88b8627ad3f63280c0a122c6a5043cf922a585c9a82224aae957c85c",
+    "d3_enrichment.svg": "44c003b9ab77913b6e879a3435552c31448cdeb0f9329e0192fd9b5df6810da6"
+  },
+  "submission_ready": false
+}

@@ -1,0 +1,39 @@
+{
+  "id": "agentdropout",
+  "title": "AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration",
+  "authors": [
+    "Zhexuan Wang",
+    "Yutong Wang",
+    "Xuebo Liu",
+    "Liang Ding",
+    "Miao Zhang",
+    "Jie Liu",
+    "Min Zhang"
+  ],
+  "year": 2025,
+  "venue": "ACL 2025 Long Papers",
+  "primary_url": "https://aclanthology.org/2025.acl-long.1170/",
+  "doi": "10.18653/v1/2025.acl-long.1170",
+  "arxiv": "2503.18891",
+  "version": null,
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "PDF pp.2-7 (printed pp.24014-24019); Sections 3.1-3.4, 4.1-4.3; Eqs.(1)-(8)"
+  ],
+  "mechanism": "按通信轮分别学习邻接权重，先按加权度删节点，再重新学习并删边；40个训练样本，之后使用学习后的拓扑。",
+  "mab2_overlap": "动态轮级角色/结构变化、节点与边的重要性选择均已有。",
+  "candidate_delta": "“dynamic”主要是不同推理轮有不同保留结构；MAB2需检验跨未来问题的信用失效与预算化重新测量，而非仅轮级dropout。",
+  "limitations_or_audit_risks": [
+    "Eq.(4)符号与相邻描述存在intra/inter歧义，适配前需代码核对。",
+    "不能把四代理/十二边重实现直接称作者原配置复现。",
+    "报告效果不可直接搬到3B固定角色系统。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "section_verified_code_pending",
+  "novelty_verdict": "PROVISIONAL"
+}

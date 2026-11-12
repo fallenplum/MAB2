@@ -1,0 +1,191 @@
+{
+  "schema": "mab2_d3_independent_real_replay_v1",
+  "status": "PASS_WITH_EXPLORATORY_LIMITATIONS",
+  "source_script_sha256": "d182a1759a76a5269428042d6b67ecefa2c7caf86b3c1fd915db8dee6e4e06d0",
+  "scope": {
+    "accepted_D2_arrays_read": true,
+    "D3_frozen_outputs_read": true,
+    "production_modules_imported": false,
+    "original_questions_gold_or_new_data_read": false,
+    "new_candidates_added": false,
+    "original_results_modified": false
+  },
+  "numerical_checks": 91,
+  "maximum_numerical_difference": 4.547473508864641e-13,
+  "independent_fit_replay": {
+    "1": {
+      "selected_alpha": 10,
+      "alpha_grid_fully_refitted": true,
+      "alpha_candidates": 8,
+      "solver": "direct_normal_equations",
+      "effective_df_reconstructed": 7.5
+    },
+    "2": {
+      "selected_alpha": 1000,
+      "alpha_grid_fully_refitted": true,
+      "alpha_candidates": 8,
+      "solver": "direct_normal_equations",
+      "effective_df_reconstructed": 1.2499801781000692
+    }
+  },
+  "tie_disclosures": {
+    "graph_only_order1": {
+      "top2_reconstructed_score_near_tie_differences": 0,
+      "exact_all_score_ties": 400
+    },
+    "graph_only_order2": {
+      "top2_reconstructed_score_near_tie_differences": 0,
+      "exact_all_score_ties": 0
+    },
+    "fixed_old_C2_R3": {
+      "top2_reconstructed_score_near_tie_differences": 0,
+      "exact_all_score_ties": 0
+    },
+    "B0": {
+      "top2_reconstructed_score_near_tie_differences": 0,
+      "exact_all_score_ties": 400
+    }
+  },
+  "independent_statistics": {
+    "tune": {
+      "graph_only_order1": {
+        "selected_squared_drift_mean": 0.0031249999999999993,
+        "uniform_top2_expected_squared_drift_mean": 0.0037500000000000007,
+        "enrichment": {
+          "estimate": -0.0006250000000000012,
+          "interval95": [
+            -0.010312499999999999,
+            0.012502604166666629
+          ]
+        },
+        "negative_U_coordinates": 64,
+        "questions": 80
+      },
+      "graph_only_order2": {
+        "selected_squared_drift_mean": 0.0018749999999999995,
+        "uniform_top2_expected_squared_drift_mean": 0.0037500000000000007,
+        "enrichment": {
+          "estimate": -0.0018750000000000004,
+          "interval95": [
+            -0.0090625,
+            0.005625000000000001
+          ]
+        },
+        "negative_U_coordinates": 64,
+        "questions": 80
+      },
+      "fixed_old_C2_R3": {
+        "selected_squared_drift_mean": 0.0024999999999999996,
+        "uniform_top2_expected_squared_drift_mean": 0.0037500000000000007,
+        "enrichment": {
+          "estimate": -0.00125,
+          "interval95": [
+            -0.008541666666666666,
+            0.006458333333333332
+          ]
+        },
+        "negative_U_coordinates": 64,
+        "questions": 80
+      },
+      "B0": {
+        "selected_squared_drift_mean": 0.0031249999999999993,
+        "uniform_top2_expected_squared_drift_mean": 0.0037500000000000007,
+        "enrichment": {
+          "estimate": -0.0006250000000000012,
+          "interval95": [
+            -0.010312499999999999,
+            0.012502604166666629
+          ]
+        },
+        "negative_U_coordinates": 64,
+        "questions": 80
+      }
+    },
+    "exposed": {
+      "graph_only_order1": {
+        "selected_squared_drift_mean": 0.0,
+        "uniform_top2_expected_squared_drift_mean": 0.00048611111111111056,
+        "enrichment": {
+          "estimate": -0.00048611111111111056,
+          "interval95": [
+            -0.004583333333333333,
+            0.0037500000000000007
+          ]
+        },
+        "negative_U_coordinates": 103,
+        "questions": 120
+      },
+      "graph_only_order2": {
+        "selected_squared_drift_mean": -0.0012500000000000002,
+        "uniform_top2_expected_squared_drift_mean": 0.00048611111111111056,
+        "enrichment": {
+          "estimate": -0.001736111111111111,
+          "interval95": [
+            -0.005833333333333334,
+            0.0022222222222222222
+          ]
+        },
+        "negative_U_coordinates": 103,
+        "questions": 120
+      },
+      "fixed_old_C2_R3": {
+        "selected_squared_drift_mean": -0.0008333333333333335,
+        "uniform_top2_expected_squared_drift_mean": 0.00048611111111111056,
+        "enrichment": {
+          "estimate": -0.0013194444444444445,
+          "interval95": [
+            -0.005555555555555556,
+            0.002777777777777778
+          ]
+        },
+        "negative_U_coordinates": 103,
+        "questions": 120
+      },
+      "B0": {
+        "selected_squared_drift_mean": 0.0,
+        "uniform_top2_expected_squared_drift_mean": 0.00048611111111111056,
+        "enrichment": {
+          "estimate": -0.00048611111111111056,
+          "interval95": [
+            -0.004583333333333333,
+            0.0037500000000000007
+          ]
+        },
+        "negative_U_coordinates": 103,
+        "questions": 120
+      }
+    }
+  },
+  "gate_reconstruction": {
+    "pass": false,
+    "status": "STOP_CURRENT_CANDIDATE_ROUTE",
+    "classification": "INCONCLUSIVE",
+    "point_direction": "negative",
+    "independent_pilot_gpu_hour_cap": 0,
+    "fallback_allowed": false
+  },
+  "scientific_interpretation": [
+    "The unique predeclared graph-only selector did not pass its development spending gate.",
+    "A negative cross-seed estimate is retained sampling variation of an estimator; squared population drift is not claimed negative.",
+    "An interval spanning zero means the enrichment effect is unresolved, not demonstrated equivalence or universal impossibility.",
+    "No auxiliary control can replace the failed candidate; no new GPU pilot is triggered by this gate.",
+    "Graph-credit drift enrichment, even if positive, would not itself establish future service or complete-budget benefit."
+  ],
+  "costs": {
+    "review_main_process_cpu_seconds": 0.703125,
+    "review_wall_seconds_from_first_script_timestamp": 0.8137261867523193,
+    "includes_import_CPU": true,
+    "preparation_commands_CPU_seconds": null,
+    "reviewer_agent_inference_CPU_seconds": null,
+    "child_process_CPU_seconds": 0,
+    "new_GPU_calls": 0,
+    "new_GPU_hours": 0
+  },
+  "limitations": [
+    "No regrading from original model answers or gold; accepted derived arrays are the audit starting point.",
+    "Source-order freeze is checked through markers and hashes plus prior source audit; wall-clock markers alone are not a security proof.",
+    "No claim of human author approval, formal venue review, independent new-sample confirmation, or paper readiness."
+  ],
+  "original_review_sha256": "5c85a2f4a0e8588af57b4ce78880768b08008471f1dcc2376f207cb9492f45f9",
+  "human_author_review": "pending"
+}

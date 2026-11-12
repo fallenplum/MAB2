@@ -1,0 +1,902 @@
+{
+  "schema": "mab2_literature_ledger_v1",
+  "cutoff": "2026-11-13",
+  "created_utc": "2026-11-12T17:21:42.181831+00:00",
+  "status": "PROVISIONAL_SECTION_REVIEW",
+  "records": [
+    {
+      "id": "agentprune",
+      "title": "Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems",
+      "authors": [
+        "Guibin Zhang",
+        "Yanwei Yue",
+        "Zhixun Li",
+        "Sukwon Yun",
+        "Guancheng Wan",
+        "Kun Wang",
+        "Dawei Cheng",
+        "Jeffrey Xu Yu",
+        "Tianlong Chen"
+      ],
+      "year": 2025,
+      "venue": "ICLR 2025",
+      "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bbc461518c59a2a8d64e70e2c38c4a0e-Paper-Conference.pdf",
+      "doi": null,
+      "arxiv": "2410.02506",
+      "version": null,
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "PDF pp.1-10; Sections 2, 3.1-3.4, 4.1-4.5; Eqs.(7)-(13)"
+      ],
+      "mechanism": "空间/时间图mask经任务回报策略梯度与低秩正则优化，再一次TopK剪枝；多query模式在少量任务上学习后固定图。",
+      "mab2_overlap": "以通信图为优化对象，保留固定agent并削减信息通道；图剪枝与token节省已有。",
+      "candidate_delta": "候选区别是图编辑后历史边信用的重新测量及恢复，并将购买反馈计入长期完整预算。",
+      "limitations_or_audit_risks": [
+        "本文已有训练阶段成本分析，不能称所有先前研究均忽略训练成本。",
+        "本轮未重审代码，公开图示并不证明实现与公式完全一致。",
+        "案例图公开算术题已进入暴露账本。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "agentdropout",
+      "title": "AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration",
+      "authors": [
+        "Zhexuan Wang",
+        "Yutong Wang",
+        "Xuebo Liu",
+        "Liang Ding",
+        "Miao Zhang",
+        "Jie Liu",
+        "Min Zhang"
+      ],
+      "year": 2025,
+      "venue": "ACL 2025 Long Papers",
+      "primary_url": "https://aclanthology.org/2025.acl-long.1170/",
+      "doi": "10.18653/v1/2025.acl-long.1170",
+      "arxiv": "2503.18891",
+      "version": null,
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "PDF pp.2-7 (printed pp.24014-24019); Sections 3.1-3.4, 4.1-4.3; Eqs.(1)-(8)"
+      ],
+      "mechanism": "按通信轮分别学习邻接权重，先按加权度删节点，再重新学习并删边；40个训练样本，之后使用学习后的拓扑。",
+      "mab2_overlap": "动态轮级角色/结构变化、节点与边的重要性选择均已有。",
+      "candidate_delta": "“dynamic”主要是不同推理轮有不同保留结构；MAB2需检验跨未来问题的信用失效与预算化重新测量，而非仅轮级dropout。",
+      "limitations_or_audit_risks": [
+        "Eq.(4)符号与相邻描述存在intra/inter歧义，适配前需代码核对。",
+        "不能把四代理/十二边重实现直接称作者原配置复现。",
+        "报告效果不可直接搬到3B固定角色系统。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "safesieve",
+      "title": "SafeSieve: From Heuristics to Experience in Progressive Pruning for LLM-based Multi-Agent Communication",
+      "authors": [
+        "Ruijia Zhang",
+        "Xinyan Zhao",
+        "Ruixiang Wang",
+        "Sigen Chen",
+        "Guibin Zhang",
+        "An Zhang",
+        "Kun Wang",
+        "Qingsong Wen"
+      ],
+      "year": 2026,
+      "venue": "AAAI 2026",
+      "primary_url": "https://ojs.aaai.org/index.php/AAAI/article/view/40236",
+      "doi": "10.1609/aaai.v40i35.40236",
+      "arxiv": "2508.11733",
+      "version": "v3",
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 2,
+      "source_kind": "primary",
+      "read_anchors": [
+        "arXiv v3: SafeSieve: Integrated Pruning Strategy, Eqs.(2)-(11); Experiment Setup; Tables 1-2",
+        "https://arxiv.org/html/2508.11733v3"
+      ],
+      "mechanism": "角色语义/专家评分与历史成功贡献逐步混合，用0-extension聚类剪枝；Eq.(11)剪后重新标准化分数并调整历史权重。",
+      "mab2_overlap": "历史反馈维护、逐步演化、剪后图变化校正都与MAB2接近。",
+      "candidate_delta": "候选区别必须具体到是否购买哪条边的新反事实、如何恢复删除边及同完整预算下的决策收益；单说图变化后校正不足。",
+      "limitations_or_audit_risks": [
+        "官方仓库主路径9文件已核；成功图中实际存在的边计入历史贡献，不能解释为逐边反事实信用。论文算子与实现存在差异，尚未benchmark复现。",
+        "Eq.(9)掩码为乘法递减；该公式没有恢复机制。",
+        "正文中的结构/聚类近似理论不自动保证实际LLM质量。",
+        "AAAI网页当前受访问验证限制，元数据由官方检索记录核对；原文用arXiv v3章节，PDF本地下载超时。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": true,
+      "forensic_status": "technical_sections_and_partial_main_code_reviewed_no_benchmark_reproduction",
+      "novelty_verdict": "PROVISIONAL",
+      "followup_technical_coverage": [
+        "Entire available main-text technical narrative through Conclusion, Eqs1-11, Tables1-4",
+        "README official MMLU path and nine core/source files; precise findings listed"
+      ],
+      "followup_exclusions": [
+        "Externally referenced Supplementary Material not retrieved",
+        "HumanEval/SVAMP execution routes not reviewed",
+        "Dataset files, model weights and benchmark original questions not fetched"
+      ],
+      "forensic_record": "forensic_20261113/FORENSIC_REVIEW.json",
+      "official_code_review": {
+        "repository": "https://github.com/csgen/SafeSieve",
+        "commit": "0af1b31474ae0107a4f6876b3dd6beb5dda6a9ac",
+        "files_partially_or_fully_read": 9,
+        "license": null,
+        "scope": "Selected main execution paths; AST-only synthetic clustering counterexample; no benchmark runs.",
+        "exact_author_reproduction": false
+      }
+    },
+    {
+      "id": "e2_explainer",
+      "title": "Discovering Efficient and Explainable Communication Topologies for LLM-based Multi-Agent Systems via Causal Inference",
+      "authors": [
+        "Junzhi Li",
+        "Peng He",
+        "Qirui Ji",
+        "Wei Wang",
+        "Lixiang Liu",
+        "Chuxiong Sun"
+      ],
+      "year": 2026,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2608.12921",
+      "doi": null,
+      "arxiv": "2608.12921",
+      "version": "v2",
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 2,
+      "source_kind": "primary",
+      "read_anchors": [
+        "arXiv v2: Problem Formulation; E2-Explainer; Eqs.(3)-(17)",
+        "Appendix A: Causal Supervision Construction Details, Implementation Settings, Additional Evaluation Protocols / Token accounting",
+        "https://arxiv.org/html/2608.12921v2"
+      ],
+      "mechanism": "固定其他通道做单边删除，五次独立执行估计任务差与语义熵；边/节点预算子图作为监督，离线蒸馏为部署时预测器。",
+      "mab2_overlap": "图条件单边反事实、稀疏任务信用的辅助信号、预算子图预测已经被明确提出。",
+      "candidate_delta": "本文部署不再干预；MAB2可研究连续图编辑后选择性复检的长期价值。本文budget约束结构数量，与购买反馈预算不同。",
+      "limitations_or_audit_risks": [
+        "正文Budget-Aware Subgraph Selection称rho为保留比例，附录Pruning counts Eq.(29)称其为删除比例；适配时须核代码，不能默选一种约定。",
+        "只保留非负preservation贡献，不能原样充当带符号删/增边净效用。",
+        "附录明确在线token不含离线干预、语义采样、拓扑/解释器训练。",
+        "独立非配对随机执行；平均五次仍有噪声。",
+        "没有核实正式录用venue；本地PDF下载超时，使用primary HTML章节。",
+        "Web返回相邻案例造成已记录的公开样本暴露。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "all_relevant_technical_sections_read_cases_excluded_official_code_unverified",
+      "novelty_verdict": "PROVISIONAL",
+      "followup_technical_coverage": [
+        "Abstract, Introduction, Related Work, Problem Formulation, complete E2 method Eqs.(1)-(17)",
+        "Experimental Setup, Results and Analysis, Conclusion, Tables1-4",
+        "Appendix A architecture, causal supervision, settings, dataset/scoring metadata, evaluation/cost protocols, budget sweep Table7",
+        "Appendix post-case hand-crafted graph evaluation Table13 and OFA redundancy analysis",
+        "Appendix C Algorithms1-2"
+      ],
+      "followup_exclusions": [
+        "Qualitative case original questions/traces excluded in this follow-up",
+        "References were navigated, not individually verified",
+        "All figure images not visually inspected"
+      ],
+      "forensic_record": "forensic_20261113/FORENSIC_REVIEW.json"
+    },
+    {
+      "id": "masrubric",
+      "title": "MASRubric: Auditing Information Flow in Multi-Agent Systems with Failure-Distilled Pitfall Rubrics",
+      "authors": [
+        "Yutong Wang",
+        "Siyuan Xiong",
+        "Xuebo Liu",
+        "Wenkang Zhou",
+        "Liang Ding",
+        "Miao Zhang",
+        "Min Zhang"
+      ],
+      "year": 2026,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2602.23258",
+      "doi": null,
+      "arxiv": "2602.23258",
+      "version": "v3",
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "arXiv v3: Sections 3.1-3.3, 4.1; Appendix A.1 and A.6; Eqs.(3)-(5); Table 7",
+        "https://arxiv.org/html/2602.23258v3"
+      ],
+      "mechanism": "离线从失败轨迹挖掘判据；在线逐消息检索和审核，按满足率选择传递、修改或扣留。",
+      "mab2_overlap": "推理时主动审查、阻止错误传播、迭代反馈均已有。",
+      "candidate_delta": "其判据是内容审核而非图边信用重新测量；MAB2应将复检开销与未来图决策收益明确挂钩。",
+      "limitations_or_audit_risks": [
+        "同一arXiv旧版题名AgentDropoutV2；不得与ACL2025 AgentDropout混为同一方法。",
+        "A.6显示审核开销显著，不能仅因使用小模型就推断经济性。",
+        "离线miner使用更强模型，公平对照须计成本。",
+        "本地PDF下载超时，仅primary HTML章节阅读；正式venue未核实。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "graph_grpo",
+      "title": "Graph-GRPO: Stabilizing Multi-Agent Topology Learning via Group Relative Policy Optimization",
+      "authors": [
+        "Yueyang Cang",
+        "Xiaoteng Zhang",
+        "Erlu Zhao",
+        "Zehua Ji",
+        "Yuhang Liu",
+        "Yuchen He",
+        "Zhiyuan Ning",
+        "Yijun Chen",
+        "Wenge Que",
+        "Li Shi"
+      ],
+      "year": 2026,
+      "venue": "Findings of ACL 2026",
+      "primary_url": "https://aclanthology.org/2026.findings-acl.1010/",
+      "doi": "10.18653/v1/2026.findings-acl.1010",
+      "arxiv": null,
+      "version": "ACL PDF v2",
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "PDF v2 pp.1-7; Sections 3.1-3.3, 4.1-4.4; Eqs.(3)-(7); Algorithm 1"
+      ],
+      "mechanism": "每query采样16图，统计边存在条件下成功率并在组内标准化，训练GAT拓扑策略；部署时阈值选边。",
+      "mab2_overlap": "稀疏全局回报、难度混杂、边级信用与共享MiniLM特征的诊断已被研究。",
+      "candidate_delta": "MAB2需要验证同一边随其他边编辑而失效及主动重新测量，不应把组内归一化或边信用学习称首创。",
+      "limitations_or_audit_risks": [
+        "S_ij=P(success|edge present)不是保持其他边不变的paired删除差；“counterfactual”用词须核公式。",
+        "Eq.(2)前文字DAG方向与公式不一致，需实现核查。",
+        "基线表来自另一论文，不能当成同完整预算重新运行。",
+        "作者以PDF v2的Yijun Chen为准，网页排列/其他论文引用存在差异。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "nash_credmas",
+      "title": "Nash-Pruned CredMAS: Dynamic Panel Pruning for VLM-MAS using Nash-based Selection and Doubly-Robust Credits",
+      "authors": [
+        "Yijia Fan",
+        "Mingyu Liu",
+        "Jing Yang",
+        "Jian Wang",
+        "Keze Wang",
+        "Jusheng Zhang"
+      ],
+      "year": 2026,
+      "venue": "Findings of ACL 2026",
+      "primary_url": "https://aclanthology.org/2026.findings-acl.1975/",
+      "doi": "10.18653/v1/2026.findings-acl.1975",
+      "arxiv": null,
+      "version": null,
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "PDF pp.1-6 (printed pp.39640-39645); Sections 3.1-3.3, 4.1-4.3, 5; Eqs.(1)-(5); Algorithm 1"
+      ],
+      "mechanism": "离线AIPW标签训练上下文价值网络，在线按预测净收益/成本选择下一轮代理panel。",
+      "mab2_overlap": "上下文信用、带成本的动态参与选择、离线训练轻量critic已经存在。",
+      "candidate_delta": "MAB2候选单位是通信边与复检反馈选择，且须把学习、复检、评分、服务全部计成本。",
+      "limitations_or_audit_risks": [
+        "Eq.(3)写的是单处理潜在结果形式，不能仅凭该式推出处理差。",
+        "F=U-lambda*cost未自动保持单调性；固定历史的sum V是可加目标，论文近似保证不能直接移植。",
+        "Section 5明确排除训练和warmup成本。",
+        "方法示意图包含公开视觉案例文本，已记暴露。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "cats",
+      "title": "Credit Where Credit Is Due: Contrastive Attribution Topology Search for Multi-Agent Systems",
+      "authors": [
+        "Fabian Tritthart",
+        "Tom Zehle"
+      ],
+      "year": 2026,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2610.29292",
+      "doi": null,
+      "arxiv": "2610.29292",
+      "version": "v1",
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 2,
+      "source_kind": "primary",
+      "read_anchors": [
+        "arXiv v1 Sections 1-6; Appendix A.1-A.3; Tables 1,2,5,6",
+        "https://arxiv.org/html/2610.29292v1"
+      ],
+      "mechanism": "固定supergraph中采样候选，LLM比较同任务轨迹并分配代理带符号信用，更新入边并逐步删除，最终部署固定团队。",
+      "mab2_overlap": "小模型协作、固定模型池、信用驱动图演化与匹配候选评估均高度重合。",
+      "candidate_delta": "其任务是离线团队搜索；MAB2需展示图条件历史信用失效、选择购买新反事实和恢复对未来服务收益的独立作用。",
+      "limitations_or_audit_risks": [
+        "正文明确matched candidate evaluations不等于matched compute。",
+        "已记录含attributer的搜索token，不能指控其完全忽略归因成本。",
+        "信用为LLM判断的节点级优化信号，作者明确不称因果度量。",
+        "score-only基线未独立调参；共享环境可替代直接边，未分离节点与通信贡献。",
+        "题首页标Workshop on Responsible Use of Meta-Agents，正式录用/主会归属未独立核实，venue留null。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "all_relevant_technical_sections_read_cases_excluded_official_code_unverified",
+      "novelty_verdict": "PROVISIONAL",
+      "followup_technical_coverage": [
+        "Sections1-6 including limitations and responsible-use statement",
+        "Appendix A.1-A.5: role/tool pools, selected architectures, hyperparameters, baselines, evaluation protocol, per-seed Tables8-10"
+      ],
+      "followup_exclusions": [
+        "Appendix B worked BigCodeBench attribution case omitted; generic prompt preamble only encountered",
+        "Figure graph images not visually inspected"
+      ],
+      "forensic_record": "forensic_20261113/FORENSIC_REVIEW.json"
+    },
+    {
+      "id": "cabai",
+      "title": "Cost Aware Best Arm Identification",
+      "authors": [
+        "Kellen Kanarios",
+        "Qining Zhang",
+        "Lei Ying"
+      ],
+      "year": 2024,
+      "venue": "RLC 2024 / Reinforcement Learning Journal",
+      "primary_url": "https://rlj.cs.umass.edu/2024/papers/RLJ_RLC_2024_193.pdf",
+      "doi": null,
+      "arxiv": "2402.16710",
+      "version": null,
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "PDF pp.1-4; Sections 1-3; Assumptions 1-2; Theorem 1"
+      ],
+      "mechanism": "固定置信下按异质抽样成本识别最高均值臂；成本归一化信息分配与停止规则。",
+      "mab2_overlap": "将信息收益按获取成本归一化不是MAB2独立新意。",
+      "candidate_delta": "可迁移的是成本与信息目标分离；边信用会随图变化，服务/测量交错，需另证假设。",
+      "limitations_or_audit_risks": [
+        "稳定臂分布、reward/cost独立、正有界成本等假设不可默认适用于LLM配对边差。",
+        "最小识别成本目标不等于有限服务周期累计效用。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "agents_that_matter",
+      "title": "Agents that Matter: How Subtle Choices Shape Agent Attribution in Multi-Agent Systems",
+      "authors": [
+        "Mingyu Lu",
+        "Yushan Huang",
+        "Chris Lin",
+        "Su-In Lee"
+      ],
+      "year": 2026,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2605.27621",
+      "doi": null,
+      "arxiv": "2605.27621",
+      "version": "v2",
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "arXiv v2 Sections 1-3.4, 4.1-4.4, 5.1-5.4; Definition 1; Eqs.(1)-(4)",
+        "https://arxiv.org/html/2605.27621v2"
+      ],
+      "mechanism": "将归因定义为固定架构下由联盟分布、干预算子和效用决定的合作博弈；比较LOO与组合归因及删除/替换/提示修改等干预，使用独立归因集和干预评估集。",
+      "mab2_overlap": "“信用并非固有重要性”“预测/归因需服务预期决策”已有直接体系；完整团队冗余可让LOO接近零，不能仅由稀疏标签推出预测器无效。",
+      "candidate_delta": "所读实验是预估归因后按排序干预；MAB2需证明持续图编辑后的历史边信用失效与选择性购买新证据的额外价值。",
+      "limitations_or_audit_risks": [
+        "Section 5.2冗余在完整联盟导致近零LOO，但较小联盟可能有用；应做图上下文受控诊断。",
+        "Section 5.4删除归因与提示修改归因目标错配；MAB2必须锁定删除/恢复算子、符号和效用。",
+        "Section 5.1作者报告LLM模拟移除不忠实于真实移除；不能把更大judge等同真实反事实。",
+        "当前v2题名与旧版/他文引用不同；未核代码、附录或正式录用venue。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "active_learning_structure",
+      "title": "Active Learning for Communication Structure Optimization in LLM-Based Multi-Agent Systems",
+      "authors": [
+        "Huchen Yang",
+        "Xinghao Dong",
+        "Dan Negrut",
+        "Jin-Long Wu"
+      ],
+      "year": 2026,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2605.05703",
+      "doi": null,
+      "arxiv": "2605.05703",
+      "version": "v1",
+      "read_status": "section_read",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "arXiv v1: Section 2 / Figure 1 cost statement; Sections 4.1-4.4 and 5.1-5.2 / Table 1",
+        "Root independently verified these narrow claims; child separately read the same primary HTML. Appendix and code not reviewed.",
+        "https://arxiv.org/html/2605.05703v1"
+      ],
+      "mechanism": "从答案已知的训练池选择任务，用ensemble/EKI估计图参数信息增益，结合代表性筛选与surrogate，随后优化通信图。",
+      "mab2_overlap": "已将主动采集用于图优化，且Figure 1比较匹配8倍MAS推理token、Table1分列Select/Train/Test；不能把计采集成本或主动图学习称首创。",
+      "candidate_delta": "候选区别必须落实到图编辑后历史边信用复检、未来任务流和恢复决策；它选择的是训练task而非待复检的边。",
+      "limitations_or_audit_risks": [
+        "Section4.1参考答案已事先可用，昂贵动作是MAS rollout；不得误写成购买未知gold标签。",
+        "未读附录/代码，不能宣称完全复现或所有成本均已覆盖。",
+        "Root第二读者核验仅支持上述单位/反馈权限/预算口径，不代表整体新颖性门通过。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "section_verified_code_pending",
+      "novelty_verdict": "PROVISIONAL",
+      "independent_claim_review": {
+        "reviewer": "/root",
+        "scope": "Sections4.1-4.4,5.1-5.2;Figure1;Table1: acquisition unit, known-reference permission, selection/train/test token accounting",
+        "status": "narrow_claims_verified",
+        "full_forensic_pass": false
+      }
+    },
+    {
+      "id": "bai_resource",
+      "title": "Best Arm Identification with Resource Constraints",
+      "authors": [
+        "Zitian Li",
+        "Wang Chi Cheung"
+      ],
+      "year": 2024,
+      "venue": "AISTATS 2024",
+      "primary_url": "https://proceedings.mlr.press/v238/li24c.html",
+      "doi": null,
+      "arxiv": null,
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "有限资源而非固定采样次数的最佳臂识别；SH-RR。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "active_rl",
+      "title": "Active Reinforcement Learning: Observing Rewards at a Cost",
+      "authors": [
+        "David Krueger",
+        "Jan Leike",
+        "Owain Evans",
+        "John Salvatier"
+      ],
+      "year": 2020,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2011.06709",
+      "doi": null,
+      "arxiv": "2011.06709",
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "决定是否付费观察奖励，并考虑未来信息价值；仅摘要核读。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "decision_focused",
+      "title": "Melding the Data-Decisions Pipeline: Decision-Focused Learning for Combinatorial Optimization",
+      "authors": [
+        "Bryan Wilder",
+        "Bistra Dilkina",
+        "Milind Tambe"
+      ],
+      "year": 2019,
+      "venue": "AAAI 2019",
+      "primary_url": "https://ojs.aaai.org/index.php/AAAI/article/view/3982",
+      "doi": null,
+      "arxiv": "1809.05504",
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "决策目标与预测误差不一致已有系统研究；不是MAB2的创新声明。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "spo",
+      "title": "Smart “Predict, then Optimize”",
+      "authors": [
+        "Adam N. Elmachtoub",
+        "Paul Grigas"
+      ],
+      "year": 2022,
+      "venue": "Management Science 68(1):9-26",
+      "primary_url": "https://pubsonline.informs.org/doi/10.1287/mnsc.2020.3922",
+      "doi": "10.1287/mnsc.2020.3922",
+      "arxiv": null,
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "SPO度量预测诱发决策损失；online publication2021、volume年份2022，二者区分。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "coma",
+      "title": "Counterfactual Multi-Agent Policy Gradients",
+      "authors": [
+        "Jakob Foerster",
+        "Gregory Farquhar",
+        "Triantafyllos Afouras",
+        "Nantas Nardelli",
+        "Shimon Whiteson"
+      ],
+      "year": 2018,
+      "venue": "AAAI 2018",
+      "primary_url": "https://ojs.aaai.org/index.php/AAAI/article/view/11794",
+      "doi": null,
+      "arxiv": "1705.08926",
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "固定他人动作边际化单代理动作的信用基线；与通信边删除和买反馈不同。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "feedback_attribution",
+      "title": "Feedback Attribution for Counterfactual Bandit Learning in Multi-Domain Spoken Language Understanding",
+      "authors": [
+        "Tobias Falke",
+        "Patrick Lehnen"
+      ],
+      "year": 2021,
+      "venue": "EMNLP 2021",
+      "primary_url": "https://aclanthology.org/2021.emnlp-main.91/",
+      "doi": "10.18653/v1/2021.emnlp-main.91",
+      "arxiv": null,
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "模块化语言理解系统的历史反馈归因；不是LLM通信图复检。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "track_stop",
+      "title": "Optimal Best Arm Identification with Fixed Confidence",
+      "authors": [
+        "Aurélien Garivier",
+        "Emilie Kaufmann"
+      ],
+      "year": 2016,
+      "venue": "COLT 2016",
+      "primary_url": "https://proceedings.mlr.press/v49/garivier16a.html",
+      "doi": null,
+      "arxiv": null,
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "Track-and-Stop下界与渐近分配；不能误写ICML2016。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "gptswarm",
+      "title": "GPTSwarm: Language Agents as Optimizable Graphs",
+      "authors": [
+        "Mingchen Zhuge",
+        "Wenyi Wang",
+        "Louis Kirsch",
+        "Francesco Faccio",
+        "Dmitrii Khizbullin",
+        "Jürgen Schmidhuber"
+      ],
+      "year": 2024,
+      "venue": "ICML 2024",
+      "primary_url": "https://proceedings.mlr.press/v235/zhuge24a.html",
+      "doi": null,
+      "arxiv": null,
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "语言agent作为可优化图的体系祖先。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "cpe",
+      "title": "Combinatorial Pure Exploration of Multi-Armed Bandits",
+      "authors": [
+        "Shouyuan Chen",
+        "Tian Lin",
+        "Irwin King",
+        "Michael R. Lyu",
+        "Wei Chen"
+      ],
+      "year": 2014,
+      "venue": "NeurIPS 2014",
+      "primary_url": "https://papers.neurips.cc/paper_files/paper/2014/hash/d3ea0f3316d2da934d79b8b344eafee4-Abstract.html",
+      "doi": null,
+      "arxiv": null,
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "组合决策类最佳集合识别；图组合不自动满足其奖励结构。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "ccpo",
+      "title": "Counterfactual Credit Policy Optimization for Multi-Agent Collaboration",
+      "authors": [
+        "Zhongyi Li",
+        "Wan Tian",
+        "Yikun Ban",
+        "Jinju Chen",
+        "Huiming Zhang",
+        "Yang Liu",
+        "Fuzhen Zhuang"
+      ],
+      "year": 2026,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2603.21563",
+      "doi": null,
+      "arxiv": "2603.21563",
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "反事实代理优势与全局历史归一化用于联合策略训练；待正文近邻审核。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "toca",
+      "title": "Turnover-Orthogonal Credit Assignment for Open-Team Multi-Agent Reinforcement Learning",
+      "authors": [
+        "Amit Thakur",
+        "Mukesh Singhal"
+      ],
+      "year": 2026,
+      "venue": null,
+      "primary_url": "https://arxiv.org/abs/2610.02847",
+      "doi": null,
+      "arxiv": "2610.02847",
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "外生团队turnover与动作/交互信用分解；不同于内生通信边编辑。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    },
+    {
+      "id": "mas_efficiency_eval",
+      "title": "Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems",
+      "authors": [
+        "Jiamu Zhang",
+        "Lingxi Zhang",
+        "Pengjun Lu",
+        "Qiyue Zhang",
+        "Yu-Neng Chuang",
+        "Zhengchen Li",
+        "Shuai Xu",
+        "Vipin Chaudhary",
+        "Hanjie Chen"
+      ],
+      "year": 2026,
+      "venue": "EMNLP 2026",
+      "primary_url": "https://aclanthology.org/2026.emnlp-main.798/",
+      "doi": null,
+      "arxiv": "2609.05933",
+      "version": null,
+      "read_status": "abstract_screened",
+      "read_date": "2026-11-13",
+      "reader": "resource_audit_v2",
+      "annotation_version": 1,
+      "source_kind": "primary",
+      "read_anchors": [
+        "Primary abstract/metadata only"
+      ],
+      "mechanism": "官方摘要：共同backbone/registry/runtime下评估结构优化，警惕结构坍缩、关闭工具路径及随机剪枝足够；正文尚未核读。",
+      "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+      "candidate_delta": null,
+      "limitations_or_audit_risks": [
+        "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+      ],
+      "independently_reproduced": false,
+      "code_review_this_pass": false,
+      "forensic_status": "pending",
+      "novelty_verdict": "PROVISIONAL"
+    }
+  ],
+  "section_read_count": 11,
+  "full_text_read_count": 0,
+  "independent_forensic_review_count": 0,
+  "source_code_reproduction_count": 0
+}

@@ -1,0 +1,36 @@
+{
+  "id": "gptswarm",
+  "title": "GPTSwarm: Language Agents as Optimizable Graphs",
+  "authors": [
+    "Mingchen Zhuge",
+    "Wenyi Wang",
+    "Louis Kirsch",
+    "Francesco Faccio",
+    "Dmitrii Khizbullin",
+    "Jürgen Schmidhuber"
+  ],
+  "year": 2024,
+  "venue": "ICML 2024",
+  "primary_url": "https://proceedings.mlr.press/v235/zhuge24a.html",
+  "doi": null,
+  "arxiv": null,
+  "version": null,
+  "read_status": "abstract_screened",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "Primary abstract/metadata only"
+  ],
+  "mechanism": "语言agent作为可优化图的体系祖先。",
+  "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+  "candidate_delta": null,
+  "limitations_or_audit_risks": [
+    "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "pending",
+  "novelty_verdict": "PROVISIONAL"
+}

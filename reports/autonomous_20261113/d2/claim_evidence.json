@@ -1,0 +1,50 @@
+[
+  {
+    "id": "C01",
+    "type": "result",
+    "confidence": "高（计算重放范围）",
+    "evidence": "E01;E02",
+    "locator": "nomination;models.C1_R1.exposed_evaluation",
+    "text": "预定提名为C1_R1，开发过滤失败且无替补；其已曝光评价收益为0.000 pp，95%区间为[-1.333, 1.417] pp。"
+  },
+  {
+    "id": "C02",
+    "type": "controlled_diagnostic",
+    "confidence": "高（固定ridge与数据几何范围）",
+    "evidence": "E01;E02;E03",
+    "locator": "constant_response_control",
+    "text": "在图无关的常数响应控制中，原R0惩罚所有系数产生C1平均信用0.01770203、C2平均信用0.02611512，两者信用均为正。"
+  },
+  {
+    "id": "C03",
+    "type": "attribution_boundary",
+    "confidence": "高（固定α对照）",
+    "evidence": "E01;E02;E03",
+    "locator": "models.C1_R1.fixed_alpha_exposed_evaluation;models.C2_R1.fixed_alpha_exposed_evaluation",
+    "text": "保持历史α不变，免罚全局截距仍降低本批数据上的信用风险；C2再从α=100改选1000的额外变化必须与截距因素分开。"
+  },
+  {
+    "id": "C04",
+    "type": "nonclaim",
+    "confidence": "高（证据边界）",
+    "evidence": "E01;E02;E03",
+    "locator": "noise_by_partition.test;split_seed_diagnostic",
+    "text": "LOSO同题诊断为1.917 pp，95%区间[0.333, 3.750] pp；它未计全菜单反馈成本，不证明未来新题上的服务收益。"
+  },
+  {
+    "id": "C05",
+    "type": "method_fidelity",
+    "confidence": "高（协议及历史重放范围）",
+    "evidence": "E02;E03",
+    "locator": "variants.R0;independent_refits",
+    "text": "R0全系数惩罚是原冻结目标；本次发现属于原目标的统计性质，不是旧实现违反原合同。"
+  },
+  {
+    "id": "C06",
+    "type": "readiness",
+    "confidence": "高（缺失证据范围）",
+    "evidence": "E01;E02;E03",
+    "locator": "public_boundaries;nomination",
+    "text": "尚无新独立确认、完整成本在线机制收益或恢复证据；本报告不构成完整论文，也不支持ACL投稿就绪声明。"
+  }
+]

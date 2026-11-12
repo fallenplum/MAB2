@@ -1,0 +1,41 @@
+{
+  "id": "agentprune",
+  "title": "Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems",
+  "authors": [
+    "Guibin Zhang",
+    "Yanwei Yue",
+    "Zhixun Li",
+    "Sukwon Yun",
+    "Guancheng Wan",
+    "Kun Wang",
+    "Dawei Cheng",
+    "Jeffrey Xu Yu",
+    "Tianlong Chen"
+  ],
+  "year": 2025,
+  "venue": "ICLR 2025",
+  "primary_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/bbc461518c59a2a8d64e70e2c38c4a0e-Paper-Conference.pdf",
+  "doi": null,
+  "arxiv": "2410.02506",
+  "version": null,
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "PDF pp.1-10; Sections 2, 3.1-3.4, 4.1-4.5; Eqs.(7)-(13)"
+  ],
+  "mechanism": "空间/时间图mask经任务回报策略梯度与低秩正则优化，再一次TopK剪枝；多query模式在少量任务上学习后固定图。",
+  "mab2_overlap": "以通信图为优化对象，保留固定agent并削减信息通道；图剪枝与token节省已有。",
+  "candidate_delta": "候选区别是图编辑后历史边信用的重新测量及恢复，并将购买反馈计入长期完整预算。",
+  "limitations_or_audit_risks": [
+    "本文已有训练阶段成本分析，不能称所有先前研究均忽略训练成本。",
+    "本轮未重审代码，公开图示并不证明实现与公式完全一致。",
+    "案例图公开算术题已进入暴露账本。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "section_verified_code_pending",
+  "novelty_verdict": "PROVISIONAL"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "graph_grpo",
+  "title": "Graph-GRPO: Stabilizing Multi-Agent Topology Learning via Group Relative Policy Optimization",
+  "authors": [
+    "Yueyang Cang",
+    "Xiaoteng Zhang",
+    "Erlu Zhao",
+    "Zehua Ji",
+    "Yuhang Liu",
+    "Yuchen He",
+    "Zhiyuan Ning",
+    "Yijun Chen",
+    "Wenge Que",
+    "Li Shi"
+  ],
+  "year": 2026,
+  "venue": "Findings of ACL 2026",
+  "primary_url": "https://aclanthology.org/2026.findings-acl.1010/",
+  "doi": "10.18653/v1/2026.findings-acl.1010",
+  "arxiv": null,
+  "version": "ACL PDF v2",
+  "read_status": "section_read",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "PDF v2 pp.1-7; Sections 3.1-3.3, 4.1-4.4; Eqs.(3)-(7); Algorithm 1"
+  ],
+  "mechanism": "每query采样16图，统计边存在条件下成功率并在组内标准化，训练GAT拓扑策略；部署时阈值选边。",
+  "mab2_overlap": "稀疏全局回报、难度混杂、边级信用与共享MiniLM特征的诊断已被研究。",
+  "candidate_delta": "MAB2需要验证同一边随其他边编辑而失效及主动重新测量，不应把组内归一化或边信用学习称首创。",
+  "limitations_or_audit_risks": [
+    "S_ij=P(success|edge present)不是保持其他边不变的paired删除差；“counterfactual”用词须核公式。",
+    "Eq.(2)前文字DAG方向与公式不一致，需实现核查。",
+    "基线表来自另一论文，不能当成同完整预算重新运行。",
+    "作者以PDF v2的Yijun Chen为准，网页排列/其他论文引用存在差异。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "section_verified_code_pending",
+  "novelty_verdict": "PROVISIONAL"
+}

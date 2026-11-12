@@ -1,0 +1,35 @@
+{
+  "id": "cpe",
+  "title": "Combinatorial Pure Exploration of Multi-Armed Bandits",
+  "authors": [
+    "Shouyuan Chen",
+    "Tian Lin",
+    "Irwin King",
+    "Michael R. Lyu",
+    "Wei Chen"
+  ],
+  "year": 2014,
+  "venue": "NeurIPS 2014",
+  "primary_url": "https://papers.neurips.cc/paper_files/paper/2014/hash/d3ea0f3316d2da934d79b8b344eafee4-Abstract.html",
+  "doi": null,
+  "arxiv": null,
+  "version": null,
+  "read_status": "abstract_screened",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "Primary abstract/metadata only"
+  ],
+  "mechanism": "组合决策类最佳集合识别；图组合不自动满足其奖励结构。",
+  "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+  "candidate_delta": null,
+  "limitations_or_audit_risks": [
+    "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "pending",
+  "novelty_verdict": "PROVISIONAL"
+}

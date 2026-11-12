@@ -1,0 +1,39 @@
+{
+  "id": "mas_efficiency_eval",
+  "title": "Rethinking the Evaluation of Efficiency Methods for Multi-Agent Systems",
+  "authors": [
+    "Jiamu Zhang",
+    "Lingxi Zhang",
+    "Pengjun Lu",
+    "Qiyue Zhang",
+    "Yu-Neng Chuang",
+    "Zhengchen Li",
+    "Shuai Xu",
+    "Vipin Chaudhary",
+    "Hanjie Chen"
+  ],
+  "year": 2026,
+  "venue": "EMNLP 2026",
+  "primary_url": "https://aclanthology.org/2026.emnlp-main.798/",
+  "doi": null,
+  "arxiv": "2609.05933",
+  "version": null,
+  "read_status": "abstract_screened",
+  "read_date": "2026-11-13",
+  "reader": "resource_audit_v2",
+  "annotation_version": 1,
+  "source_kind": "primary",
+  "read_anchors": [
+    "Primary abstract/metadata only"
+  ],
+  "mechanism": "官方摘要：共同backbone/registry/runtime下评估结构优化，警惕结构坍缩、关闭工具路径及随机剪枝足够；正文尚未核读。",
+  "mab2_overlap": "方法学或体系近邻；不作为未读正文技术细节的证据。",
+  "candidate_delta": null,
+  "limitations_or_audit_risks": [
+    "尚未达到章节/全文阅读；不宣称其没有MAB2机制。"
+  ],
+  "independently_reproduced": false,
+  "code_review_this_pass": false,
+  "forensic_status": "pending",
+  "novelty_verdict": "PROVISIONAL"
+}
