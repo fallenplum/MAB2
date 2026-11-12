@@ -1,0 +1,26 @@
+{
+  "status": "PASS_INDEPENDENT_CPU_BOUNDARY_PROBES",
+  "checks": [
+    {
+      "name": "normalizer_exception_preserves_returned_generation_cost_and_13_slots",
+      "pass": true,
+      "attempted_requests": 1,
+      "retained_generations": 1,
+      "unattempted_slots": 12
+    },
+    {
+      "name": "aggregator_receiver_preparation_failure_retains_all_12_candidates_without_extra_request",
+      "pass": true,
+      "attempted_requests": 12,
+      "retained_generations": 12,
+      "unattempted_slots": 1
+    }
+  ],
+  "reviewed_source_sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "reviewed_tests_sha256": "b43d90c55b9bc36b92d64f4c47b6dcc894ca2401cf88d1dc14c7636fa9b7e25f",
+  "probe_script_sha256": "e1ebe097685f0832f2c9e5e04ac39383719e717e6db91e71a254a108b96ab6d9",
+  "new_GPU_calls": 0,
+  "model_loads": 0,
+  "production_sources_modified": false,
+  "scope": "Synthetic mock failures only; no real-model engineering qualification or scientific admission"
+}

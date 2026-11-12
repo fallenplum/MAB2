@@ -1,0 +1,105 @@
+{
+  "schema": "mab2_independent12_qualification_preparation_sha256_v1",
+  "files": [
+    {
+      "path": "check_preparation.py",
+      "bytes": 13483,
+      "sha256": "375520c547e73c9bc9d59b226090381f45dab91269b28d9cd2f26d69b2f3c4d2"
+    },
+    {
+      "path": "DELIVERY_RECEIPT.json",
+      "bytes": 1779,
+      "sha256": "b53924f540150339b6d83babc52d3d5f30e3ab03f9cd5e6cfe6c0c7de044ae64"
+    },
+    {
+      "path": "DEPLOYMENT_SOURCE_MANIFEST.json",
+      "bytes": 1968,
+      "sha256": "38962728750929ec36c87d27dfb1fd761188ee239c86f53f544cfeacec084015"
+    },
+    {
+      "path": "gpu_job_guard.py",
+      "bytes": 1913,
+      "sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f"
+    },
+    {
+      "path": "PRIVATE_PLAN.template.json",
+      "bytes": 970,
+      "sha256": "7e21b97a12669a66567af93b1035ec1c38b46e1370574f99616a127a01cfd6cf"
+    },
+    {
+      "path": "PROTOCOL.json",
+      "bytes": 3912,
+      "sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf"
+    },
+    {
+      "path": "qualify_independent12.py",
+      "bytes": 22440,
+      "sha256": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7402,
+      "sha256": "855e4946345cd5c35fa9129a693ec29bd71b8855d09d84425a25591e3ffb4057"
+    },
+    {
+      "path": "STATIC_CHECKS.json",
+      "bytes": 5849,
+      "sha256": "ee193edf1cb9abbc6252cfc9bfcd16c65e59850c7a28773a20091e959790e3f9"
+    },
+    {
+      "path": "SUPERVISOR_DIFF.patch",
+      "bytes": 1315,
+      "sha256": "b00599fa6b807f768e18fbc8384fae72c57d7095cbb80f7f22f9a25a5b006a60"
+    },
+    {
+      "path": "deployment_sources/experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "bytes": 5616,
+      "sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625"
+    },
+    {
+      "path": "deployment_sources/experiments/cycle2_20261113/independent12_control_v2/independent12_executor.py",
+      "bytes": 19744,
+      "sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc"
+    },
+    {
+      "path": "deployment_sources/experiments/cycle2_20261113/independent12_qualification_v1/gpu_job_guard.py",
+      "bytes": 1913,
+      "sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f"
+    },
+    {
+      "path": "deployment_sources/experiments/cycle2_20261113/independent12_qualification_v1/PROTOCOL.json",
+      "bytes": 3912,
+      "sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf"
+    },
+    {
+      "path": "deployment_sources/experiments/cycle2_20261113/independent12_qualification_v1/qualify_independent12.py",
+      "bytes": 22440,
+      "sha256": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b"
+    },
+    {
+      "path": "deployment_sources/src/graph_credit/__init__.py",
+      "bytes": 81,
+      "sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd"
+    },
+    {
+      "path": "deployment_sources/src/graph_credit/backend.py",
+      "bytes": 9672,
+      "sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed"
+    },
+    {
+      "path": "deployment_sources/src/graph_credit/executor.py",
+      "bytes": 19119,
+      "sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1"
+    },
+    {
+      "path": "reference_v2/PROTOCOL.json",
+      "bytes": 3207,
+      "sha256": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8"
+    },
+    {
+      "path": "reference_v2/qualify_routed_executor.py",
+      "bytes": 9288,
+      "sha256": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b"
+    }
+  ]
+}

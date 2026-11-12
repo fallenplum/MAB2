@@ -1,0 +1,30 @@
+{
+  "schema": "mab2_independent12_engineering_qualification_v1",
+  "status": "ENGINEERING_ONLY_REQUIRES_SEPARATE_ADMISSION",
+  "purpose": "Qualify the separately identified independent 4-role by 3-sample control on two synthetic questions only; no benchmark admission or accuracy claim.",
+  "reservation_id": "C2_INDEPENDENT12_ENGINEERING_QUALIFICATION",
+  "models": ["Qwen/Qwen2.5-3B-Instruct", "mistralai/Mistral-7B-Instruct-v0.3"],
+  "model_route": {"workers": ["qwen", "mistral", "qwen", "mistral"], "aggregate": "mistral"},
+  "control_id": "independent_4roles_x3samples_plus_aggregate_v2_cost_reconciliation_staging",
+  "control_source_sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "guard_source_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+  "graph_config_used_as_sampling_config": {"rounds": 3, "message_tokens": 128, "aggregate_tokens": 256, "do_sample": true, "temperature": 0.7, "top_p": 0.9, "max_input_tokens": 8192},
+  "seed": 99191,
+  "fresh_repeats_per_question": 2,
+  "task_repeat_order": "arithmetic repeat1, arithmetic repeat2, reading repeat1, reading repeat2",
+  "synthetic_inputs": [
+    {"id": "synthetic_hetero_arithmetic", "question": "A box contains two blue blocks and three red blocks. How many blocks are in the box?"},
+    {"id": "synthetic_hetero_reading", "question": "What color is Mira's card?", "context": "Mira has a blue card. Leon has a red card. Each person has exactly one card."}
+  ],
+  "expected_complete_calls": 52,
+  "expected_complete_calls_by_model": {"qwen": 24, "mistral": 28},
+  "fresh_equality_fields": {"slot": ["node", "role", "sample", "model", "seed", "messages", "input_fingerprint", "received_message_tokens", "self_state_tokens", "status"], "record": ["wire_message", "parsed", "message_metadata", "input_fingerprint", "seed", "messages", "received_message_tokens", "self_state_tokens"], "generation": ["text", "input_tokens", "output_tokens", "finish_reason"]},
+  "cross_fresh_exclusions": ["execution_id", "call_id", "output_digest", "elapsed_seconds", "gpu_seconds", "gpu_peak_allocated_bytes", "started_unix"],
+  "admission": {"root_independent_review_required": true, "frozen_source_commit_required": true, "explicit_launch_authorization_required": true, "new_budget_reservation_receipt_required": true, "minimum_free_gpu_mib": 32000, "max_gpu_occupancy_hours": 0.5, "parent_watchdog_seconds": 1770, "child_deadline_seconds": 1760, "termination_grace_seconds": 10, "formal_rounds_increment": 0},
+  "pass_conditions": ["All four fresh executions contain exactly 13 completed fixed slots", "All 52 unique physical calls and route/cost records close with 24 Qwen and 28 Mistral", "The two fresh executions per question match all declared semantic fields", "Every node integrity digest independently matches its own complete record", "Every sender wire and backend complete-input bound is respected", "A separate closed resident ledger is available after supervisor exit"],
+  "format_policy": "Report format-error count by model and slot. Format errors remain paid slots and are never removed or retried; this qualification sets no synthetic accuracy or format-quality threshold.",
+  "failure_policy": "No retries. Keep immutable final execution files and separate per-slot partial checkpoints, original backend/route logs and closed occupancy. Unknown failure metrics remain null. Failed runs never produce a PASS qualification.",
+  "scope_limit": "One direct GPU model process and its threads; no additional GPU child processes, detached descendants or privilege changes. Supervisor only terminates its own child process group.",
+  "excluded_claims": ["No real-task quality claim", "No scientific candidate admission", "No extension of the original graph qualification to this control without execution", "No R1 result or benchmark access"],
+  "launch_requires_private_admission": true
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "mab2_independent12_qualification_staged_source_manifest_v1",
+  "status": "PREPARED_NOT_FROZEN_NOT_RESERVED_NOT_LAUNCHED",
+  "source_commit": null,
+  "files": [
+    {
+      "path": "src/graph_credit/__init__.py",
+      "bytes": 81,
+      "sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "crlf_count": 0
+    },
+    {
+      "path": "src/graph_credit/executor.py",
+      "bytes": 19119,
+      "sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "crlf_count": 0
+    },
+    {
+      "path": "src/graph_credit/backend.py",
+      "bytes": 9672,
+      "sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "crlf_count": 0
+    },
+    {
+      "path": "experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "bytes": 5616,
+      "sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "crlf_count": 0
+    },
+    {
+      "path": "experiments/cycle2_20261113/independent12_control_v2/independent12_executor.py",
+      "bytes": 19744,
+      "sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+      "crlf_count": 0
+    },
+    {
+      "path": "experiments/cycle2_20261113/independent12_qualification_v1/qualify_independent12.py",
+      "bytes": 22440,
+      "sha256": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b",
+      "crlf_count": 0
+    },
+    {
+      "path": "experiments/cycle2_20261113/independent12_qualification_v1/gpu_job_guard.py",
+      "bytes": 1913,
+      "sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "crlf_count": 0
+    },
+    {
+      "path": "experiments/cycle2_20261113/independent12_qualification_v1/PROTOCOL.json",
+      "bytes": 3912,
+      "sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+      "crlf_count": 0
+    }
+  ]
+}

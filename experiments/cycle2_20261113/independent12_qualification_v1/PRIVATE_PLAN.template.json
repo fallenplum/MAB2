@@ -1,0 +1,24 @@
+{
+  "preparation_state": "TEMPLATE_ONLY_NOT_RESERVED_NOT_AUTHORIZED",
+  "qualification_only": true,
+  "reservation_id": "C2_INDEPENDENT12_ENGINEERING_QUALIFICATION",
+  "launch_authorized": false,
+  "root_review_receipt_sha256": null,
+  "budget_reservation_confirmed": false,
+  "reservation_receipt_sha256": null,
+  "source_commit": null,
+  "source_manifest": {},
+  "code_root": "<ABSOLUTE_FROZEN_CODE_ROOT>",
+  "project_root": "<ABSOLUTE_PRIVATE_PROJECT_ROOT>",
+  "output": "<FRESH_ABSOLUTE_PRIVATE_OUTPUT_DIRECTORY>",
+  "output_artifact_class": "PRIVATE",
+  "permitted_gpus": [],
+  "minimum_free_mib": 32000,
+  "max_resident_seconds": 1770,
+  "reserved_gpu_hours": 0.5,
+  "models": {
+    "qwen": {"path": "<ABSOLUTE_EXISTING_QWEN_SNAPSHOT>", "model_files": {}, "allowed_metadata_files": []},
+    "mistral": {"path": "<ABSOLUTE_EXISTING_MISTRAL_SNAPSHOT>", "model_files": {}, "allowed_metadata_files": ["MAB2_SOURCE_MANIFEST.json"]}
+  },
+  "resource_guard_version": 2
+}

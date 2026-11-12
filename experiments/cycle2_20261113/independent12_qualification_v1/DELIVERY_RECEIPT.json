@@ -1,0 +1,37 @@
+{
+  "status": "PREPARED_CPU_STATIC_CHECKED_NOT_FROZEN_NOT_RESERVED_NOT_LAUNCHED",
+  "qualification_code_sha256": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b",
+  "protocol_sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+  "control_dependency_sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "guard_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+  "static_check_receipt_sha256": "ee193edf1cb9abbc6252cfc9bfcd16c65e59850c7a28773a20091e959790e3f9",
+  "static_checks_passed": 47,
+  "deployment_source_files": 8,
+  "all_deployment_sources_LF": true,
+  "planned_physical_calls": 52,
+  "planned_model_calls": {
+    "qwen": 24,
+    "mistral": 28
+  },
+  "real_model_calls": 0,
+  "new_GPU_calls": 0,
+  "budget_reserved": false,
+  "source_commit": null,
+  "scientific_admission": false,
+  "real_model_engineering_qualification": "NOT_RUN",
+  "guard_runtime_tests_repeated": false,
+  "prior_guard_reuse_basis": "Exact qualified v2 guard bytes; parent text differs only in reservation ID and main only adds admission validation",
+  "supervisor_semantic_changes": [
+    "New reservation ID",
+    "Explicit private admission validation before parent/child dispatch",
+    "No changes to GPU observation, Popen supervision, deadlines, parent-death binding, own-process-group termination or resident cost calculation"
+  ],
+  "unresolved_before_launch": [
+    "Root final independent admission record",
+    "Actual Git source freeze and exact file pins",
+    "New budget reservation receipt and global-budget check",
+    "Private paths/models/permitted GPUs and fresh output plan"
+  ],
+  "E_or_Git_mutations": 0,
+  "benchmark_or_R1_result_reads": 0
+}

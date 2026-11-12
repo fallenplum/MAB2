@@ -1,0 +1,109 @@
+{
+  "status": "ROOT_CODE_AND_PROTOCOL_REVIEW_PASS_PENDING_FREEZE_RESERVATION",
+  "utc": "2026-11-12T23:19:31.897956+00:00",
+  "qualification_code_sha256": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b",
+  "protocol_sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+  "control_sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "source_review_sha256": "81d1d3107cc0f46be47d2357d33909dcd8359efd068449eacb1be1eca4d4867a",
+  "root_review": [
+    "Read full new supervisor/child and 52-call semantic/cost checks",
+    "52 synthetic calls: 24 Qwen and 28 Mistral; 2 authored fixtures times 2 fresh replays",
+    "Compared outputs exclude runtime/call-ID fields while each own integrity digest is verified",
+    "All 8 deployment sources verified against exact bytes; qualified dependencies unchanged",
+    "Guard exactly retained; parent changes reservation identity; admission validation added before dispatch",
+    "Private template refuses launch; 1770-second parent/1760-second child; 0.5-GPU-hour maximum reservation",
+    "No benchmark, labels, scientific score, external model asset or new service permission required"
+  ],
+  "CPU_checks": "47 supplied checks inspected; independent control suite separately root-replayed 23/23",
+  "Linux_guard_tests_rerun": false,
+  "prior_guard_reuse": "Exact qualified guard bytes; no altered process supervision",
+  "launch_condition": "Freeze Git, reserve 0.5 GPU hours in inherited budget, record private plan and observe actual eligible GPU processes",
+  "scientific_admission": false,
+  "formal_round_increment": 0,
+  "files": {
+    "check_preparation.py": {
+      "sha256": "375520c547e73c9bc9d59b226090381f45dab91269b28d9cd2f26d69b2f3c4d2",
+      "bytes": 13483
+    },
+    "DELIVERY_RECEIPT.json": {
+      "sha256": "b53924f540150339b6d83babc52d3d5f30e3ab03f9cd5e6cfe6c0c7de044ae64",
+      "bytes": 1779
+    },
+    "DEPLOYMENT_SOURCE_MANIFEST.json": {
+      "sha256": "38962728750929ec36c87d27dfb1fd761188ee239c86f53f544cfeacec084015",
+      "bytes": 1968
+    },
+    "gpu_job_guard.py": {
+      "sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "bytes": 1913
+    },
+    "PRIVATE_PLAN.template.json": {
+      "sha256": "7e21b97a12669a66567af93b1035ec1c38b46e1370574f99616a127a01cfd6cf",
+      "bytes": 970
+    },
+    "PROTOCOL.json": {
+      "sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+      "bytes": 3912
+    },
+    "qualify_independent12.py": {
+      "sha256": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b",
+      "bytes": 22440
+    },
+    "README.md": {
+      "sha256": "855e4946345cd5c35fa9129a693ec29bd71b8855d09d84425a25591e3ffb4057",
+      "bytes": 7402
+    },
+    "SHA256SUMS.json": {
+      "sha256": "824cb8053585cf88277a2b7bec4fdf0f51388bf93cbb392c8fd2bd75c16b37e8",
+      "bytes": 3781
+    },
+    "STATIC_CHECKS.json": {
+      "sha256": "ee193edf1cb9abbc6252cfc9bfcd16c65e59850c7a28773a20091e959790e3f9",
+      "bytes": 5849
+    },
+    "SUPERVISOR_DIFF.patch": {
+      "sha256": "b00599fa6b807f768e18fbc8384fae72c57d7095cbb80f7f22f9a25a5b006a60",
+      "bytes": 1315
+    },
+    "deployment_sources/experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py": {
+      "sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "bytes": 5616
+    },
+    "deployment_sources/experiments/cycle2_20261113/independent12_control_v2/independent12_executor.py": {
+      "sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+      "bytes": 19744
+    },
+    "deployment_sources/experiments/cycle2_20261113/independent12_qualification_v1/gpu_job_guard.py": {
+      "sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "bytes": 1913
+    },
+    "deployment_sources/experiments/cycle2_20261113/independent12_qualification_v1/PROTOCOL.json": {
+      "sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+      "bytes": 3912
+    },
+    "deployment_sources/experiments/cycle2_20261113/independent12_qualification_v1/qualify_independent12.py": {
+      "sha256": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b",
+      "bytes": 22440
+    },
+    "deployment_sources/src/graph_credit/backend.py": {
+      "sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "bytes": 9672
+    },
+    "deployment_sources/src/graph_credit/executor.py": {
+      "sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "bytes": 19119
+    },
+    "deployment_sources/src/graph_credit/__init__.py": {
+      "sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "bytes": 81
+    },
+    "reference_v2/PROTOCOL.json": {
+      "sha256": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8",
+      "bytes": 3207
+    },
+    "reference_v2/qualify_routed_executor.py": {
+      "sha256": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b",
+      "bytes": 9288
+    }
+  }
+}

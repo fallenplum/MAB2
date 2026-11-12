@@ -1,0 +1,37 @@
+{
+  "schema": "independent12_v1_v2_source_map",
+  "original_stage_unchanged": true,
+  "changed_files": [
+    {
+      "path": "independent12_executor.py",
+      "v1_sha256": "59349b801dda9419cbbe779e2ed3b8dcedbe9ca08e2408fe0253424f2a159892",
+      "v2_sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc"
+    },
+    {
+      "path": "run_cpu_tests.py",
+      "v1_sha256": "ae546f70ecba8389fbd66224cb6b20d8f343a3d95dcc9823f277ef663c853753",
+      "v2_sha256": "9cf447f9f90a1562630f454c7fe6f1efcaeff43d049ad69181f738dd83c135b3"
+    },
+    {
+      "path": "CONTRACT.json",
+      "v1_sha256": "d3a9505a1c848222ba3ec3ca5ab854cef5008951880dba7be677eaf2f14635dd",
+      "v2_sha256": "24aec65bc3a4bf90ce82d7695cfb8d5e1ef56ce8308aa769c55a261da20414ed"
+    },
+    {
+      "path": "README.md",
+      "v1_sha256": "43a922cadd578687c3e42d2f37e8076ccfafd9660777ff10c316dc1c44a3746e",
+      "v2_sha256": "00abed17644fe0499f841c594551ec68e16703945cdaac3921f4e62d9dcd9926"
+    }
+  ],
+  "new_files": [
+    {
+      "path": "test_cost_reconciliation.py",
+      "sha256": "aebe58ec4b3f591f8e9b6d0a02b1ace09121bd48de43ea3ef91229e251d9955b"
+    },
+    {
+      "path": "REPAIR_REPORT.md",
+      "sha256": "02317452cb7ed3b31850c90d95bcdb467b0e51635a86b3ef2a1e152f9d6e21b3"
+    }
+  ],
+  "unchanged_tests_and_dependency_sources": true
+}

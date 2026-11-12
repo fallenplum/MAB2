@@ -1,0 +1,57 @@
+{
+  "schema": "mab2_independent12_control_source_manifest_v2",
+  "status": "CPU_REPAIR_VERIFIED_ENGINEERING_QUALIFICATION_PENDING",
+  "dependency_source_commit": "b7434719eebb93eb41770bbc9af63222e3a47380",
+  "files": [
+    {
+      "path": "frozen_dependencies/experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "bytes": 5616,
+      "sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625"
+    },
+    {
+      "path": "frozen_dependencies/src/graph_credit/__init__.py",
+      "bytes": 81,
+      "sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd"
+    },
+    {
+      "path": "frozen_dependencies/src/graph_credit/backend.py",
+      "bytes": 9672,
+      "sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed"
+    },
+    {
+      "path": "frozen_dependencies/src/graph_credit/executor.py",
+      "bytes": 19119,
+      "sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1"
+    },
+    {
+      "path": "independent12_executor.py",
+      "bytes": 19744,
+      "sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc"
+    },
+    {
+      "path": "independent_edge_probe.py",
+      "bytes": 4096,
+      "sha256": "e1ebe097685f0832f2c9e5e04ac39383719e717e6db91e71a254a108b96ab6d9"
+    },
+    {
+      "path": "run_cpu_tests.py",
+      "bytes": 2678,
+      "sha256": "9cf447f9f90a1562630f454c7fe6f1efcaeff43d049ad69181f738dd83c135b3"
+    },
+    {
+      "path": "test_cost_reconciliation.py",
+      "bytes": 9953,
+      "sha256": "aebe58ec4b3f591f8e9b6d0a02b1ace09121bd48de43ea3ef91229e251d9955b"
+    },
+    {
+      "path": "test_independent12_executor.py",
+      "bytes": 15058,
+      "sha256": "b43d90c55b9bc36b92d64f4c47b6dcc894ca2401cf88d1dc14c7636fa9b7e25f"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 837,
+      "sha256": "61f819b3b2054a57271a7049e0ae00649457faff4ff8c3ab9f4abba0a7280cba"
+    }
+  ]
+}

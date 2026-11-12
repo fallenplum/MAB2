@@ -1,0 +1,68 @@
+{
+  "status": "REVIEW_COMPLETE_ONE_P2_COST_FINDING",
+  "reviewer": "separate staged_feedback_design agent; not the original implementer",
+  "original_tests_replayed": 14,
+  "original_tests_failures": 0,
+  "original_boundary_probes_replayed": 2,
+  "new_independent_probe_groups": 6,
+  "checks": [
+    {
+      "name": "perturb_all_worker_outputs_without_changing_later_worker_prompts",
+      "pass": true,
+      "worker_prompts_compared": 12,
+      "aggregate_changes": true,
+      "unused_metadata_excluded": true
+    },
+    {
+      "name": "independent_hash_seed_reconstruction",
+      "pass": true,
+      "checked_node_seeds": 208,
+      "claim": "Matches frozen common-node seed semantics, not proof of independent generated outputs or universal collision freedom"
+    },
+    {
+      "name": "concurrent_rejection_preserves_other_active_node_and_lock",
+      "pass": true
+    },
+    {
+      "name": "aggregate_format_failure_is_complete_service_but_invalid_answer",
+      "pass": true,
+      "paid_calls": 13,
+      "empty_answer": true
+    },
+    {
+      "name": "missing_reordered_or_duplicate_aggregate_slots_rejected",
+      "pass": true,
+      "variants": 3
+    },
+    {
+      "name": "duplicate_same_call_log_failure_cost_probe",
+      "pass": false,
+      "expected_behavior": "Charge one call once or leave ambiguous fields unknown",
+      "finding": {
+        "priority": "P2",
+        "title": "Duplicate physical-log states for one call_id are summed as separate token expenditures",
+        "expected_unique_physical_call_input_tokens": 914,
+        "reported_input_tokens": 1828,
+        "unique_physical_call_ids": 1,
+        "physical_event_rows": 2,
+        "attempted_backend_requests": 1,
+        "model_elapsed_seconds_reported": 0.30000000000000004,
+        "cost_fields_complete": false,
+        "unknown_output_tokens_retained": true,
+        "source_reachability": "Frozen HFBackend._record appends SUCCESS before file write; OSError from that write enters generate except, which records FAILED with the same call_id. No second generation is executed.",
+        "recommended_fix": "For each attempted request, preserve all event rows but do not sum repeated states for the same call_id; merge proven nonconflicting metrics or leave ambiguous totals null. Add an explicit synthetic log-write fault test."
+      }
+    }
+  ],
+  "P1_findings": 0,
+  "P2_findings": 1,
+  "source_tree_unchanged": true,
+  "reviewed_control_sha256": "59349b801dda9419cbbe779e2ed3b8dcedbe9ca08e2408fe0253424f2a159892",
+  "reviewed_backend_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+  "review_script_sha256": "200bb73ba0aad363a3b0162b9084db9320b0c8cb5bc6f52009fef65db571ad3a",
+  "new_GPU_calls": 0,
+  "model_loads": 0,
+  "benchmark_or_R1_reads": 0,
+  "torch_or_transformers_imported": false,
+  "recommendation": "Repair the identified failure-accounting edge case before a separately budgeted synthetic real-model engineering qualification; no scientific admission."
+}

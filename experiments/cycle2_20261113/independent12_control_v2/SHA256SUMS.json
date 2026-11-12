@@ -1,0 +1,110 @@
+{
+  "schema": "mab2_independent12_control_stage_sha256_v2",
+  "files": [
+    {
+      "path": "CONTRACT.json",
+      "bytes": 4189,
+      "sha256": "24aec65bc3a4bf90ce82d7695cfb8d5e1ef56ce8308aa769c55a261da20414ed"
+    },
+    {
+      "path": "CPU_TESTS.log",
+      "bytes": 4221,
+      "sha256": "c5a982098139a07cb2eb08653c75a5f880a86874f2f5b95c876bd12aedf6eb45"
+    },
+    {
+      "path": "DELIVERY_RECEIPT.json",
+      "bytes": 983,
+      "sha256": "34f87264d2a902236642195d5334273a417da03ef4162ac70f728803184ed34b"
+    },
+    {
+      "path": "frozen_dependencies/experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "bytes": 5616,
+      "sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625"
+    },
+    {
+      "path": "frozen_dependencies/src/graph_credit/__init__.py",
+      "bytes": 81,
+      "sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd"
+    },
+    {
+      "path": "frozen_dependencies/src/graph_credit/backend.py",
+      "bytes": 9672,
+      "sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed"
+    },
+    {
+      "path": "frozen_dependencies/src/graph_credit/executor.py",
+      "bytes": 19119,
+      "sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1"
+    },
+    {
+      "path": "independent12_executor.py",
+      "bytes": 19744,
+      "sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc"
+    },
+    {
+      "path": "INDEPENDENT_EDGE_PROBE.json",
+      "bytes": 1019,
+      "sha256": "4ec64dffac4ae33e77b2fde6362cbd8ed35c6583e76e113743c8a052ca0a6883"
+    },
+    {
+      "path": "independent_edge_probe.py",
+      "bytes": 4096,
+      "sha256": "e1ebe097685f0832f2c9e5e04ac39383719e717e6db91e71a254a108b96ab6d9"
+    },
+    {
+      "path": "ORIGINAL_V1_REVIEW_PUBLIC.md",
+      "bytes": 2336,
+      "sha256": "82245325d6ee0f15e023aef52b545e11ec52fbb4c8666b1c9769fb7d67f57808"
+    },
+    {
+      "path": "ORIGINAL_V1_REVIEW_RECEIPT_PUBLIC.json",
+      "bytes": 3069,
+      "sha256": "42ff10ed68fb892b499609bd3de9c22df3db23d511f35b820767f6710ff6a4b5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7989,
+      "sha256": "00abed17644fe0499f841c594551ec68e16703945cdaac3921f4e62d9dcd9926"
+    },
+    {
+      "path": "REPAIR_REPORT.md",
+      "bytes": 2720,
+      "sha256": "02317452cb7ed3b31850c90d95bcdb467b0e51635a86b3ef2a1e152f9d6e21b3"
+    },
+    {
+      "path": "run_cpu_tests.py",
+      "bytes": 2678,
+      "sha256": "9cf447f9f90a1562630f454c7fe6f1efcaeff43d049ad69181f738dd83c135b3"
+    },
+    {
+      "path": "SOURCE_HASH_MAP.json",
+      "bytes": 1368,
+      "sha256": "0748a7a7f7460bec09a83ffa4077d6dd7b4c0be678ce9c659992a50057f17b67"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 2011,
+      "sha256": "edd56ca045c22a46cd7258ebc7c9735b3bf90d63931d7153e57bb05766a3939e"
+    },
+    {
+      "path": "test_cost_reconciliation.py",
+      "bytes": 9953,
+      "sha256": "aebe58ec4b3f591f8e9b6d0a02b1ace09121bd48de43ea3ef91229e251d9955b"
+    },
+    {
+      "path": "test_independent12_executor.py",
+      "bytes": 15058,
+      "sha256": "b43d90c55b9bc36b92d64f4c47b6dcc894ca2401cf88d1dc14c7636fa9b7e25f"
+    },
+    {
+      "path": "TEST_RESULTS.json",
+      "bytes": 3498,
+      "sha256": "53d8f6bbd0108d32d66f464c57a8fcf03224acb4e863a9744c412f7d2ed59a68"
+    },
+    {
+      "path": "verify_package.py",
+      "bytes": 837,
+      "sha256": "61f819b3b2054a57271a7049e0ae00649457faff4ff8c3ab9f4abba0a7280cba"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "status": "V2_COST_RECONCILIATION_CPU_TESTED_NOT_GPU_ADMITTED",
+  "control_id": "independent_4roles_x3samples_plus_aggregate_v2_cost_reconciliation_staging",
+  "scientific_admission": false,
+  "GPU_authorization": false,
+  "source_dependency_commit": "b7434719eebb93eb41770bbc9af63222e3a47380",
+  "worker_roles": 4,
+  "samples_per_role": 3,
+  "worker_sample_order": "role 0..3, within each role sample 1..3",
+  "worker_models": [
+    "qwen",
+    "mistral",
+    "qwen",
+    "mistral"
+  ],
+  "aggregator_model": "mistral",
+  "complete_physical_requests": 13,
+  "complete_requests_by_model": {
+    "qwen": 6,
+    "mistral": 7
+  },
+  "worker_information": "Exact frozen first-round system/user messages: full original question and supplied context plus that role; no self/peer/prior-sample message or sample marker",
+  "node_alias": "r{sample}:w{role}; r means independent sample here, not conversational round",
+  "seed_policy": "Unchanged derive_seed(question_id, execution_seed, node), including aggregate",
+  "aggregator_information": "Full question/context and all 12 normalized wire slots in fixed role-major/sample-minor order; includes role/sample/node metadata and format-failure slots",
+  "sender_normalization": "Frozen normalize_message with selected sender tokenizer and its output cap",
+  "receiver_accounting": "Aggregator tokenizer encodes each of 12 wire strings; full templated input count remains backend-owned",
+  "default_config": {
+    "rounds": 3,
+    "n_workers": 4,
+    "message_tokens": 128,
+    "aggregate_tokens": 256,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_input_tokens": 8192
+  },
+  "configuration_notes": "rounds=3 is required as the frozen three-sample alias; exact frozen four role prompts and fixed route required; other explicit GraphConfig changes alter protocol identity",
+  "cache": "DISABLED; execute accepts no mask/base argument",
+  "backend_failure": "Abort, no retry; retain all 13 planned slots with completed/failed/not-attempted states and partial_result on exception; no aggregate after worker exception",
+  "format_failure": "Keep paid Generation and frozen FORMAT_ERROR wire in its original slot; continue and aggregate all 12 slots",
+  "postgeneration_failure": "Retain returned Generation and costs, abort without silent replacement",
+  "failure_costs": "Within one attempted backend request, same identified call states are charged once only for metrics whose reports are all complete, valid and equal. Missing/conflicting metrics are null, with event evidence and known subtotal retained. No latest/max imputation.",
+  "occupancy_ledger": "Not supplied by this adapter; caller must retain a separate supervised resident-GPU ledger before any real execution",
+  "real_model_engineering_qualification": "NOT_RUN; original graph qualification does not qualify this new control",
+  "parent_control_sha256": "59349b801dda9419cbbe779e2ed3b8dcedbe9ca08e2408fe0253424f2a159892",
+  "cost_identity": {
+    "required": [
+      "model from frozen slot route",
+      "nonempty call_id",
+      "seed matching request in every report"
+    ],
+    "optional_if_present_must_agree": [
+      "prompt_sha256",
+      "started_unix"
+    ],
+    "missing_call_id": "Keep reports separate and mark identity uncertain; neither merge nor assume additive physical calls",
+    "multiple_ids_in_request": "Identity uncertain; do not infer hidden retries from event rows",
+    "id_reuse_across_requests": "Identity uncertain; no silent deduplication"
+  },
+  "cost_ranges": "Observed per-field min/max describe reports only, not truth bounds. Known subtotal excludes ambiguous groups; total upper is null whenever unresolved. Peak max only combines reconciled distinct request costs.",
+  "event_status_semantics": "SUCCESS/FAILED are states, not proof of repeat generation",
+  "test_counts": {
+    "original_contract": 14,
+    "original_boundary_probes": 2,
+    "new_cost_regressions": 9
+  },
+  "repair_review_scope": "Original defect was independently reviewed. v2 repair tests are performed by the repairer and are not labelled a second independent approval."
+}

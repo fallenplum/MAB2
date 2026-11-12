@@ -1,0 +1,23 @@
+{
+  "status": "V2_CPU_REPAIR_VERIFIED_NOT_REAL_MODEL_QUALIFIED",
+  "original_stage_unchanged": true,
+  "original_control_sha256": "59349b801dda9419cbbe779e2ed3b8dcedbe9ca08e2408fe0253424f2a159892",
+  "new_control_sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "tests": {
+    "original_contract": 14,
+    "original_boundary": 2,
+    "new_regressions": 9,
+    "all_pass": true
+  },
+  "original_P2_reproduction_repaired": true,
+  "new_cost_semantics": "identity-aware complete-equal reports once; missing/conflicting unknown with evidence, no latest/max guess",
+  "can_prepare_separately_budgeted_synthetic_real_model_engineering_qualification": true,
+  "GPU_launch_authorized_by_this_receipt": false,
+  "scientific_admission": false,
+  "model_loads": 0,
+  "new_GPU_calls": 0,
+  "new_formal_rounds": 0,
+  "benchmark_or_R1_reads": 0,
+  "E_or_Git_writes": false,
+  "v2_review_is_repairer_validation_not_independent_approval": true
+}

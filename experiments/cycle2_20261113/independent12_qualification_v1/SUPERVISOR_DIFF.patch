@@ -1,0 +1,18 @@
+--- qualified_v2_parent_main
++++ prepared_independent12_parent_main
+@@ -5,7 +5,7 @@
+     out=Path(plan['output']).resolve();project=Path(plan['project_root']).resolve(strict=True)
+     assert out.is_relative_to(project) and not out.exists(),'Fresh output required'
+     assert plan['max_resident_seconds']==1770 and plan['reserved_gpu_hours']==0.5
+-    assert plan['qualification_only'] is True and plan['reservation_id']=='C2_HETERO_ENGINEERING_QUALIFICATION'
++    assert plan['qualification_only'] is True and plan['reservation_id']=='C2_INDEPENDENT12_ENGINEERING_QUALIFICATION'
+     # Prefer an idle permitted card; never stop another project.
+     raw=subprocess.check_output(['nvidia-smi','--query-gpu=index,uuid,memory.free,utilization.gpu','--format=csv,noheader,nounits'],text=True)
+     apps=subprocess.check_output(['nvidia-smi','--query-compute-apps=gpu_uuid,pid,used_memory','--format=csv,noheader,nounits'],text=True)
+@@ -53,5 +53,6 @@
+         arm_child_deadline(a.supervisor_pid,a.deadline_monotonic)
+     elif a.supervisor_pid is not None or a.deadline_monotonic is not None:p.error('Child-only arguments')
+     plan=json.loads(a.plan.read_bytes())
++    validate_launch_plan(plan)
+     if a.child:child(plan,Path(plan['output']));return 0
+     return parent(a.plan.resolve(),plan)

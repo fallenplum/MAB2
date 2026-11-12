@@ -1,0 +1,215 @@
+{
+  "status": "PASS_CPU_PREPARATION_CHECKS_NOT_ENGINEERING_QUALIFIED",
+  "checks": [
+    {
+      "name": "all_preparation_python_sources_compile",
+      "pass": true
+    },
+    {
+      "name": "parent_exact_text_except_reservation_id",
+      "pass": true
+    },
+    {
+      "name": "main_exact_text_except_launch_plan_validation",
+      "pass": true
+    },
+    {
+      "name": "sha_helper_exact_text_reuse",
+      "pass": true
+    },
+    {
+      "name": "write_helper_exact_text_reuse",
+      "pass": true
+    },
+    {
+      "name": "pin_sources_helper_exact_text_reuse",
+      "pass": true
+    },
+    {
+      "name": "guard_exact_original_bytes",
+      "pass": true
+    },
+    {
+      "name": "original_two_synthetic_inputs_unchanged",
+      "pass": true
+    },
+    {
+      "name": "original_graph_config_and_model_route_seed_unchanged",
+      "pass": true
+    },
+    {
+      "name": "exact_52_call_matrix",
+      "pass": true
+    },
+    {
+      "name": "exact_24_Qwen_28_Mistral",
+      "pass": true
+    },
+    {
+      "name": "control_pin_consistent",
+      "pass": true
+    },
+    {
+      "name": "sealed_control_dependency_matches_current_file",
+      "pass": true
+    },
+    {
+      "name": "deployment_manifest_contains_exact_eight_sources",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_src/graph_credit/__init__.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_src/graph_credit/executor.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_src/graph_credit/backend.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_experiments/cycle2_20261113/independent12_control_v2/independent12_executor.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_experiments/cycle2_20261113/independent12_qualification_v1/qualify_independent12.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_experiments/cycle2_20261113/independent12_qualification_v1/gpu_job_guard.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_source_pin_experiments/cycle2_20261113/independent12_qualification_v1/PROTOCOL.json",
+      "pass": true
+    },
+    {
+      "name": "deployment_qualification_matches_reviewed_qualify_independent12.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_qualification_matches_reviewed_gpu_job_guard.py",
+      "pass": true
+    },
+    {
+      "name": "deployment_qualification_matches_reviewed_PROTOCOL.json",
+      "pass": true
+    },
+    {
+      "name": "unapproved_template_is_fail_closed",
+      "pass": true
+    },
+    {
+      "name": "normal_main_rejects_template_before_supervisor",
+      "pass": true
+    },
+    {
+      "name": "template_does_not_reach_parent",
+      "pass": true
+    },
+    {
+      "name": "optimized_python_cannot_remove_admission_gate",
+      "pass": true
+    },
+    {
+      "name": "no_template_reservation_or_launch",
+      "pass": true
+    },
+    {
+      "name": "four_handmade_13_slot_ledgers_pass_new_auditor",
+      "pass": true
+    },
+    {
+      "name": "fresh_semantics_ignore_call_id_time_and_own_digest",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_generation_text",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_generation_input_tokens",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_generation_output_tokens",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_generation_finish_reason",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_slot_messages",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_slot_input_fingerprint",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_slot_seed",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_record_parsed",
+      "pass": true
+    },
+    {
+      "name": "fresh_rejects_record_wire_message",
+      "pass": true
+    },
+    {
+      "name": "missing_worker_or_aggregate_slot_rejected",
+      "pass": true
+    },
+    {
+      "name": "internally_matching_but_wrong_execution_cost_rejected",
+      "pass": true
+    },
+    {
+      "name": "52_route_physical_and_result_calls_close",
+      "pass": true
+    },
+    {
+      "name": "duplicate_physical_event_rejected",
+      "pass": true
+    },
+    {
+      "name": "wrong_model_route_rejected",
+      "pass": true
+    },
+    {
+      "name": "no_model_runtime_imported",
+      "pass": true
+    }
+  ],
+  "source_pins": {
+    "qualify_independent12.py": "07cfbf5682f50d914c21a9321b6550917af32edf8b1a2f0b8e6c372ff4f2012b",
+    "gpu_job_guard.py": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+    "PROTOCOL.json": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+    "PRIVATE_PLAN.template.json": "7e21b97a12669a66567af93b1035ec1c38b46e1370574f99616a127a01cfd6cf",
+    "check_preparation.py": "375520c547e73c9bc9d59b226090381f45dab91269b28d9cd2f26d69b2f3c4d2"
+  },
+  "control_dependency_sha256": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "fresh_field_equalities_fixture_only": 572,
+  "guard_tests_repeated": false,
+  "supervisor_launched": false,
+  "budget_reserved": false,
+  "new_GPU_calls": 0,
+  "model_loads": 0,
+  "benchmark_or_R1_reads": 0,
+  "scientific_admission": false,
+  "limitations": [
+    "Static source equivalence and synthetic ledger fixtures only",
+    "No new Linux guard exercise",
+    "No real tokenizer or model execution",
+    "Root review, source freeze and new budget reservation still required"
+  ]
+}

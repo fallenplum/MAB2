@@ -1,0 +1,15 @@
+# Independent12 v2 费用修复验收
+
+**原P2复现已修复；可进入另行冻结、单独计费的synthetic real-model工程资格准备。当前没有GPU启动授权或算法科学准入。** 原stage保持不变，原独立审查与失败证据保存在相邻independent12_secondary_review目录。
+
+原漏洞：1个call_id的SUCCESS后FAILED两条状态被相加，914 input tokens被报1828。v2按每次backend请求核对身份与费用；同call_id、seed及已出现的其他身份字段一致时，仅对完整且一致的费用字段计一次。缺失、无效或冲突字段为null，原事件保留。缺call_id不盲并；单请求多个身份或跨请求复用身份产生显式不确定性。status不是生成次数。
+
+新增request_cost_evidence列出每组报告来源、状态、identity_issues及每个费用字段的缺失/冲突/observed范围。observed_min/max不是真实费用上下界；不以最新行或最大值补真值。known_cost_components只累计无歧义费用；未知总额的known_cost_ranges.upper=null。returned_generation_cost保留为原Generation报告诊断，并明确它不能替代有冲突时的核对总额。
+
+验证：原14测试、原2边界probe和新增9测试全部通过。新增覆盖同身份多状态计一次、不同费用冲突及已知前缀费用、字段不完整、缺call_id、seed冲突、单请求多ID、Generation与事件冲突、跨请求ID复用。最小日志故障测试执行冻结HFBackend._record的原AST，注入SUCCESS append后OSError，再执行同call_id FAILED异常尾部；不导入/构造HF模型，不执行真实HF.generate。它验证目标语义，不冒充GPU I/O事故重放。
+
+worker信息、完整12槽聚合、6Q+7M路由、原节点共同随机数推导、sender/receiver计数方向均未修改。新的control_id、源码哈希及协议身份隔离v1缓存/结果。冻结executor/router/backend依赖保持原字节。
+
+优势是消除重复费用假精确并显式保存不确定性。风险是保守null会使部分费用无法结算，必须由外层原始日志与resident-GPU占用账本处理；不能把known部分当完整费用。真实12候选输入容量、回放、格式率、模型环境和占用仍需新的工程资格。资格方案必须先固定synthetic输入、调用/重复次数、硬期限、完整预算及失败保留，加载与失败计费；工程通过不能替代科学实验。
+
+v2修复后的测试由修复者完成，不另称独立审查。源文件前后哈希、完整23测试回执及原2probe回执见SOURCE_MANIFEST.json、SOURCE_HASH_MAP.json、TEST_RESULTS.json和INDEPENDENT_EDGE_PROBE.json。全程0 GPU、模型加载、benchmark/R1读取；未写E盘或Git。
