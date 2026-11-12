@@ -1,0 +1,12 @@
+schema: mab2_autoresearch_state_v1
+controller: .research/research_state.json
+status: active
+stage: D2_root_cause_diagnosis
+branch: research/autonomous-20261113
+budget_gpu_hours: 160
+budget_formal_rounds: 5
+formal_rounds_started: 0
+diagnostic_round: 1
+sealed_test_access: forbidden_until_frozen_final_evaluation
+next_action: implement_validate_and_execute_D2
+paper_status: insufficient_evidence

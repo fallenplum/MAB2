@@ -1,0 +1,99 @@
+{
+  "schema": "mab2_d2_exploratory_protocol_v1",
+  "analysis_id": "d2_20261113",
+  "status": "FROZEN_BEFORE_NEW_DIAGNOSTIC_RESULTS",
+  "evidence_tier": "POSTHOC_DEVELOPMENT",
+  "base_commit": "171bb65953e0bb0a14a6fb5e3c4118fb55fde112",
+  "data": {
+    "run": "g2_v1_20261104",
+    "questions": 400,
+    "train": 200,
+    "tune": 80,
+    "exposed_evaluation": 120,
+    "unique_outputs": 51970,
+    "seeds": [
+      2701,
+      2702,
+      2703,
+      2704,
+      2705
+    ],
+    "sealed_official_test_read": false,
+    "new_generation_calls": 0
+  },
+  "questions": [
+    "Does penalizing quality intercepts induce spurious edge credit?",
+    "Does removing question-level nuisance or reweighting observed contrast directions improve decision utility?",
+    "How much five-seed credit variation persists across independent seed splits?"
+  ],
+  "models": [
+    "ZERO",
+    "B0",
+    "C1_R0",
+    "C1_R1",
+    "C1_R1b",
+    "C1_R2",
+    "C1_R3",
+    "C2_R0",
+    "C2_R1",
+    "C2_R1b",
+    "C2_R2",
+    "C2_R3"
+  ],
+  "variants": {
+    "R0": "historical unique-graph quality ridge, all coefficients penalized",
+    "R1": "same objective, only global constant coefficient exempt from penalty",
+    "R1b": "same objective, all nine question-only baseline coefficients exempt",
+    "R2": "same unique graph rows, center BOTH X and y within training question; penalty unchanged",
+    "R3": "same underlying unique graph evidence, 24 preplanned contrast directions per question; block-dependent targets"
+  },
+  "graph_orders": [
+    1,
+    2
+  ],
+  "features": "unchanged train-only PCA8 plus constant; binary graph terms; phi-major",
+  "alpha_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1,
+    10,
+    100,
+    1000
+  ],
+  "training_weight": "each question total1; R0-R2 1/n_unique; R3 1/24",
+  "alpha_selection": "old tune80 question-macro mean-credit MSE; tie tolerance1e-12 choose largest; no refit",
+  "attribution": "also compare each variant at historical fixed alpha; optimized-alpha effects are not isolated penalty effects",
+  "primary_development_metric": "one-toggle-or-stay mean quality gain vs ZERO_STAY; lambda0; strict-positive max; smallest edge tie",
+  "secondary": [
+    "gain vs uniform13 actions",
+    "cross-seed credit risk",
+    "sign/rank with support",
+    "constant-target linear decomposition",
+    "seed noise and split-seed selected action",
+    "difference-matrix rank and graph components"
+  ],
+  "uncertainty": {
+    "unit": "whole question, both anchors together",
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 59173,
+    "scope": "exploratory unadjusted intervals, no confirmatory pass"
+  },
+  "negative_control": "fit constant response equal training weighted mean at historical alpha; quality independent of graph",
+  "split_seed_diagnostic": "choose best nonnegative action on four seeds; evaluate on excluded fifth; average five leave-one-seed-out choices; descriptive only",
+  "candidate_nomination": "nominate at most one variant by tune80 action gain then lower tune MSE then lower order then variant lexical; require positive gain and positive point difference vs B0/uniform on exposed120; else no predictor nomination",
+  "failure_handling": "abort on input/hash/support/baseline-replay mismatch; preserve attempt; implementation repairs need versioned event",
+  "budget": {
+    "new_gpu_hours": 0,
+    "diagnostic_round": 1,
+    "max_process_cpu_hours": 4
+  },
+  "nonclaims": [
+    "independent confirmation",
+    "true zero credit from observed zeros",
+    "online full-budget benefit",
+    "certified confidence",
+    "novel predictor architecture"
+  ]
+}
