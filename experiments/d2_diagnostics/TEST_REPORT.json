@@ -1,0 +1,15 @@
+{
+  "scope": "synthetic_only_no_project_data_read",
+  "utc": "2026-11-12T17:02:09.949589+00:00",
+  "python": "3.13.3",
+  "numpy": "2.2.4",
+  "tests_run": 19,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "wall_seconds": 0.3215061000082642,
+  "sha256": {
+    "diagnostics.py": "dadaeb2dfb038f0a26e97bf41e12af6a743fa2c2f591c190708476cd624734bc",
+    "test_diagnostics.py": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7"
+  }
+}

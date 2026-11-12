@@ -1,0 +1,17 @@
+{
+  "scope": "synthetic_only_imported_functions_no_execute_or_read_inputs",
+  "command": "python -m unittest -v test_run_d2",
+  "tests_run": 9,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "reported_unittest_seconds": 0.047,
+  "recorded_utc": "2026-11-12T17:04:58.625128+00:00",
+  "source_hash_capture": "after_successful_test_invocation",
+  "sha256": {
+    "diagnostics.py": "dadaeb2dfb038f0a26e97bf41e12af6a743fa2c2f591c190708476cd624734bc",
+    "test_diagnostics.py": "4b7c66d4d6a7a80cabe21e1b8199112be0ef72b87e3fbc03a0c13768c485cfa7",
+    "run_d2.py": "fe9f2b3e2e43c73209e43e6aba2bcf89409a18743d7c5255490f920b1635d428",
+    "test_run_d2.py": "e538960e8707cf0fe05630e3a7feca494a10c3f8e72960ec686325c4a3430b46"
+  }
+}

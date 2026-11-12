@@ -1,0 +1,24 @@
+test_all_nuisance_and_zero_columns (test_diagnostics.NumericalTests.test_all_nuisance_and_zero_columns) ... ok
+test_complete_pairwise_loss_and_coefficients_equal_r2 (test_diagnostics.NumericalTests.test_complete_pairwise_loss_and_coefficients_equal_r2) ... ok
+test_connectivity_rank_spectrum_and_isolates (test_diagnostics.NumericalTests.test_connectivity_rank_spectrum_and_isolates) ... ok
+test_constant_residual_decomposition_at_fixed_alpha (test_diagnostics.NumericalTests.test_constant_residual_decomposition_at_fixed_alpha) ... ok
+test_constant_target_exposes_pseudocredit (test_diagnostics.NumericalTests.test_constant_target_exposes_pseudocredit) ... ok
+test_graph_alias_deduplication_preserves_weight_and_fit (test_diagnostics.NumericalTests.test_graph_alias_deduplication_preserves_weight_and_fit) ... ok
+test_invalid_arrays_fail_closed (test_diagnostics.NumericalTests.test_invalid_arrays_fail_closed) ... ok
+test_near_tie_uses_fixed_absolute_tolerance (test_diagnostics.NumericalTests.test_near_tie_uses_fixed_absolute_tolerance) ... ok
+test_path_reuses_main_svd (test_diagnostics.NumericalTests.test_path_reuses_main_svd) ... ok
+test_r0_matches_direct_normal_equations (test_diagnostics.NumericalTests.test_r0_matches_direct_normal_equations) ... ok
+test_r1_global_shift_credit_invariance (test_diagnostics.NumericalTests.test_r1_global_shift_credit_invariance) ... ok
+test_r1b_removes_context_baseline_graph_effect (test_diagnostics.NumericalTests.test_r1b_removes_context_baseline_graph_effect) ... ok
+test_r2_centers_both_operands_and_is_shift_invariant (test_diagnostics.NumericalTests.test_r2_centers_both_operands_and_is_shift_invariant) ... ok
+test_r3_fixed_count_sign_and_order_invariance (test_diagnostics.NumericalTests.test_r3_fixed_count_sign_and_order_invariance) ... ok
+test_rank_deficient_fwl_matches_augmented_solution (test_diagnostics.NumericalTests.test_rank_deficient_fwl_matches_augmented_solution) ... ok
+test_row_order_does_not_change_r0_fwl_or_r2 (test_diagnostics.NumericalTests.test_row_order_does_not_change_r0_fwl_or_r2) ... ok
+test_second_order_phi_major_nuisance_layout (test_diagnostics.NumericalTests.test_second_order_phi_major_nuisance_layout) ... ok
+test_tuning_is_question_balanced_ties_max_and_no_refit (test_diagnostics.NumericalTests.test_tuning_is_question_balanced_ties_max_and_no_refit) ... ok
+test_zero_incidence_rows_are_recorded (test_diagnostics.NumericalTests.test_zero_incidence_rows_are_recorded) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.227s
+
+OK
