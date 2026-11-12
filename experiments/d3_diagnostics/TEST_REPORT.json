@@ -1,0 +1,18 @@
+{
+  "scope": "synthetic_only_no_actual_D3_targets_read",
+  "utc": "2026-11-12T17:24:04.454250+00:00",
+  "python": "3.13.3",
+  "numpy": "2.2.4",
+  "tests_run": 18,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "wall_seconds": 0.30316409999795724,
+  "sha256": {
+    "D3_PROTOCOL.json": "eb270cce128376efbb5289bbb5818482acbd8b37010c54f6ae920443c9b40445",
+    "D3_PROTOCOL.md": "e3ab56166acba18c20de2de10bf2b5eb16812b185430da560c1b6f1c0689d5eb",
+    "d3_code/drift_diagnostics.py": "69c19fe391c9ff76af552b259b6bed4d06dc50ec9352df6fc6c886c0e7ad944a",
+    "d3_code/test_drift_diagnostics.py": "78841c0f717cc92231ac28535a789a4b8edad96be908dfe91f4dc1d18eae2a31",
+    "d2_code/diagnostics.py": "dadaeb2dfb038f0a26e97bf41e12af6a743fa2c2f591c190708476cd624734bc"
+  }
+}

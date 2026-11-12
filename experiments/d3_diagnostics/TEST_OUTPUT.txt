@@ -1,0 +1,23 @@
+test_cross_seed_drift_equals_mean_square_minus_sample_noise (d3_code.test_drift_diagnostics.DriftEvaluationTests.test_cross_seed_drift_equals_mean_square_minus_sample_noise) ... ok
+test_negative_cross_seed_estimate_is_not_clipped (d3_code.test_drift_diagnostics.DriftEvaluationTests.test_negative_cross_seed_estimate_is_not_clipped) ... ok
+test_no_drift_has_zero_enrichment_and_zero_interval (d3_code.test_drift_diagnostics.DriftEvaluationTests.test_no_drift_has_zero_enrichment_and_zero_interval) ... ok
+test_question_level_enrichment_and_bootstrap_repeatability (d3_code.test_drift_diagnostics.DriftEvaluationTests.test_question_level_enrichment_and_bootstrap_repeatability) ... ok
+test_same_question_labels_cannot_change_selected_indices (d3_code.test_drift_diagnostics.DriftEvaluationTests.test_same_question_labels_cannot_change_selected_indices) ... ok
+test_top2_exact_ties_use_small_edge_indices (d3_code.test_drift_diagnostics.DriftEvaluationTests.test_top2_exact_ties_use_small_edge_indices) ... ok
+test_uniform_top2_expectation_is_all_edge_mean (d3_code.test_drift_diagnostics.DriftEvaluationTests.test_uniform_top2_expectation_is_all_edge_mean) ... ok
+test_alpha_exact_tie_uses_maximum_grid_value (d3_code.test_drift_diagnostics.GraphOnlyTests.test_alpha_exact_tie_uses_maximum_grid_value) ... ok
+test_analytic_credit_design_equals_potential_difference (d3_code.test_drift_diagnostics.GraphOnlyTests.test_analytic_credit_design_equals_potential_difference) ... ok
+test_first_order_fit_equals_shrunk_B0_and_has_zero_drift (d3_code.test_drift_diagnostics.GraphOnlyTests.test_first_order_fit_equals_shrunk_B0_and_has_zero_drift) ... ok
+test_graph_pair_credit_interaction_is_symmetric (d3_code.test_drift_diagnostics.GraphOnlyTests.test_graph_pair_credit_interaction_is_symmetric) ... ok
+test_second_order_fit_predicts_synthetic_shared_graph_effects (d3_code.test_drift_diagnostics.GraphOnlyTests.test_second_order_fit_predicts_synthetic_shared_graph_effects) ... ok
+test_controls_or_unfrozen_provenance_cannot_pass_gate (d3_code.test_drift_diagnostics.SpendingGateTests.test_controls_or_unfrozen_provenance_cannot_pass_gate) ... ok
+test_invalid_interval_is_not_scientific_negative_evidence (d3_code.test_drift_diagnostics.SpendingGateTests.test_invalid_interval_is_not_scientific_negative_evidence) ... ok
+test_malformed_arrays_fail_closed (d3_code.test_drift_diagnostics.SpendingGateTests.test_malformed_arrays_fail_closed) ... ok
+test_negative_point_is_not_automatically_reverse_evidence (d3_code.test_drift_diagnostics.SpendingGateTests.test_negative_point_is_not_automatically_reverse_evidence) ... ok
+test_nonpositive_or_inconclusive_evidence_stops (d3_code.test_drift_diagnostics.SpendingGateTests.test_nonpositive_or_inconclusive_evidence_stops) ... ok
+test_pass_is_bounded_and_not_conditional_on_action_or_MSE (d3_code.test_drift_diagnostics.SpendingGateTests.test_pass_is_bounded_and_not_conditional_on_action_or_MSE) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.288s
+
+OK
