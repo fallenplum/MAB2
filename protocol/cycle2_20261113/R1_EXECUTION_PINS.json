@@ -1,0 +1,22 @@
+{
+  "status": "PREFLIGHT_PASS",
+  "plan_sha256": "3a28656348ba295bd86b72e2503f1e32101fa1d41cc22a010e243e7404ae4ea2",
+  "scientific_protocol_sha256": "5336eacc6713d4e444ddb631032409cd2718ad3b4aaee1387aff5baac40f5ecf",
+  "runner_sha256": "86e362f4633d66b4a48fe67f9296a07de214fcbad1f1292826fe5816f42a12a8",
+  "executor_protocol_hash": "5c52efae884ee59481f22396c46afd4830e1bc9b5abb0f803b39a373b7600426",
+  "source_manifest": {
+    "src/graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "src/graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "src/graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed"
+  },
+  "unit_count": 390,
+  "units_by_worker": {
+    "0": 130,
+    "1": 130,
+    "2": 130
+  },
+  "physical_model_calls_planned": 12948,
+  "formal_outputs_planned": 4704,
+  "label_accessed_by_collector": false,
+  "remote_launched": false
+}
