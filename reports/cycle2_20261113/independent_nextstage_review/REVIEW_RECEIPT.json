@@ -1,0 +1,231 @@
+{
+  "schema": "mab2_independent_nextstage_review_v1",
+  "created_utc": "2026-11-12T21:34:25.166899+00:00",
+  "status": "ACCEPT_V2_BOUNDED_ENGINEERING_CHECK_ONLY_REAL_MODEL_QUALIFICATION_PENDING",
+  "reviewed_baseline_commit": "5397a8ea9dd5f5b8f0fc7e1671cd3319d81cf3ad",
+  "original_source_files_match_baseline_commit_bytes": true,
+  "source_sha256": {
+    "experiments/cycle2_20261113/heterogeneous_qualification/routed_executor.py": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+    "experiments/cycle2_20261113/heterogeneous_qualification/qualify_routed_executor.py": "9eb6581e893201d1e476980be5fd85283405120dcedbe99d696a5e3d3e2de242",
+    "experiments/cycle2_20261113/heterogeneous_qualification/test_routed_executor.py": "44a30e80fa473ab083326375a3f1fc2c0b696bfdb04535b2e5ca99629a729dcc",
+    "experiments/cycle2_20261113/heterogeneous_qualification/PROTOCOL.json": "ca6159295a7e749da6aeb7ebf261c4c4710dcba77475ac52de68d20bb2b5ff6d",
+    "experiments/cycle2_20261113/hotpot_support/hotpot_support.py": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e",
+    "experiments/cycle2_20261113/hotpot_support/test_hotpot_support.py": "3257edb7a9319092ded452edac301a1289a6f04ffea2737d769acfb0e1b53f85",
+    "experiments/cycle2_20261113/response_mediation_diagnostic/response_mediation_scan.py": "35725f660fdda9f4020b0ff9ebab35d6c71035c810448101b342da7802144acd",
+    "experiments/cycle2_20261113/response_mediation_diagnostic/test_response_mediation.py": "e8aa1ff0225d03b67ca66de61e26963284a55b85fe84ec91b55386810b568f4f",
+    "experiments/cycle2_20261113/response_mediation_diagnostic/PROTOCOL.json": "0bb50c240bcdb69ff409dccca3adc384d6c4b83f741efb87304d1543ee1976fe",
+    "experiments/cycle2_20261113/heterogeneous_qualification_v2/gpu_job_guard.py": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+    "experiments/cycle2_20261113/heterogeneous_qualification_v2/qualify_routed_executor.py": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b",
+    "experiments/cycle2_20261113/heterogeneous_qualification_v2/PROTOCOL.json": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8"
+  },
+  "review_md_sha256": "7daf7255f607cf59dfef727920a22a4ff87c03bc7f0afd3a6040109f38d72e8e",
+  "scope": {
+    "raw_or_benchmark_questions_read": false,
+    "new_R1_results_read": false,
+    "gold_or_sealed_test_read": false,
+    "reviewer_SSH_used": false,
+    "reviewer_model_execution": false,
+    "research_repository_modified": false,
+    "GPU_hours_used_by_review": 0,
+    "new_formal_candidate_rounds": 0
+  },
+  "local_synthetic_tests": {
+    "status": "PASS",
+    "count": 15,
+    "test_runner": "Python 3.13.3 -B unittest.TextTestRunner verbosity=2",
+    "execution_evidence": "Actual local tool invocation; no model/data discovery. Tests not rerun while archiving.",
+    "unittest_seconds": 0.076,
+    "hotpot_answer_pairs_compared_with_pinned_official_AST": 2006,
+    "tests": [
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_cache_replay_three_rounds",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_concurrent_router_use_rejected",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_failure_does_not_fallback_or_leave_active_node",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_homogeneous_adapter_preserves_prompt_and_wire",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_model_dispatch_and_receiver_tokenizer",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_route_and_model_change_invalidate_cache",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_route_mutation_after_freeze_rejected",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_routed_executor.RoutedExecutorTest",
+        "test": "test_route_validation_and_labels",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_hotpot_support.HotpotSupportTest",
+        "test": "test_context_preservation",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_hotpot_support.HotpotSupportTest",
+        "test": "test_differential_official_metrics",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_hotpot_support.HotpotSupportTest",
+        "test": "test_invalid_context_rejected",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_hotpot_support.HotpotSupportTest",
+        "test": "test_malformed_transport_is_not_repaired_with_gold",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_hotpot_support.HotpotSupportTest",
+        "test": "test_question_groups",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_hotpot_support.HotpotSupportTest",
+        "test": "test_upstream_bytes_match_git_blobs",
+        "status": "PASS"
+      },
+      {
+        "suite": "test_response_mediation.CanonicalNumberTest",
+        "test": "test_exact_decimal_equivalence_without_context_rounding",
+        "status": "PASS"
+      }
+    ]
+  },
+  "linux_probe_receipt": {
+    "outer_receipt_sha256": "125fb986b2f92fa7b6f60f66f990a91585cdbe6b6c5c3f2c44152165cdb7c8c8",
+    "outer_command_exit_code": 0,
+    "sanitized_probe": {
+      "scope": "independent_OS_primitives_not_production_qualification",
+      "script_sha256": "5fdb82ed68dff3a964fbc6858f206f94631aad6597148902144f38b5fa67f698",
+      "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]",
+      "gpu_access": false,
+      "real_data_read": false,
+      "independent_primitive_tests": [
+        {
+          "test": "SIGKILL_supervisor_terminates_separate_session_child",
+          "status": "PASS",
+          "child_final_observed_state": "Z",
+          "zombie_means_no_execution_not_reaped": true
+        },
+        {
+          "test": "independent_default_SIGALRM_terminates_busy_loop",
+          "status": "PASS"
+        },
+        {
+          "test": "normal_exit_preserves_unrelated_process",
+          "status": "PASS"
+        },
+        {
+          "test": "own_group_timeout_stops_own_descendants_only",
+          "status": "PASS",
+          "grandchild_final_observed_state": "absent"
+        },
+        {
+          "test": "post_prctl_expected_parent_mismatch_fails_closed",
+          "status": "PASS"
+        },
+        {
+          "test": "expired_absolute_deadline_exits_before_work",
+          "status": "PASS"
+        },
+        {
+          "test": "inherited_blocked_SIGALRM_is_unblocked",
+          "status": "PASS"
+        }
+      ],
+      "production_guard_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "production_guard_tests": [
+        {
+          "test": "SIGKILL_supervisor_terminates_separate_session_child",
+          "status": "PASS",
+          "child_final_observed_state": "absent",
+          "zombie_means_no_execution_not_reaped": false
+        },
+        {
+          "test": "independent_default_SIGALRM_terminates_busy_loop",
+          "status": "PASS"
+        },
+        {
+          "test": "normal_exit_preserves_unrelated_process",
+          "status": "PASS"
+        },
+        {
+          "test": "own_group_timeout_stops_own_descendants_only",
+          "status": "PASS",
+          "grandchild_final_observed_state": "absent"
+        },
+        {
+          "test": "post_prctl_expected_parent_mismatch_fails_closed",
+          "status": "PASS"
+        },
+        {
+          "test": "expired_absolute_deadline_exits_before_work",
+          "status": "PASS"
+        },
+        {
+          "test": "inherited_blocked_SIGALRM_is_unblocked",
+          "status": "PASS"
+        }
+      ],
+      "status": "PASS_CPU_WATCHDOG_PRIMITIVES",
+      "wall_seconds": 2.2411018749698997
+    },
+    "source_guard_matches_reported_probe_pin": true,
+    "probe_executed_by": "coordinating_agent_on_Linux",
+    "independently_read_and_verified": true
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P1",
+      "old_version_status": "BLOCKED_PARENT_DEATH_BUDGET_ESCAPE",
+      "v2_status": "STATIC_AND_LINUX_CPU_TEST_CLOSED",
+      "remaining_scope": "Direct model process/threads only; new descendants require renewed review; unclosed ledger still requires recovery"
+    },
+    {
+      "id": "F2",
+      "priority": "P2",
+      "status": "CLARIFICATION_WITHOUT_CHANGING_FROZEN_CLASSIFICATION",
+      "definition": "changed_receiver_answer means literal UTF-8 parsed answer string change, not semantic equivalence"
+    },
+    {
+      "id": "F3",
+      "priority": "P2",
+      "status": "REPORTING_RESTRICTION_IF_OVERLAP_SUPPORT_LT_2",
+      "rule": "Preserve original output; no inferential interpretation or public interval for fewer than two paired questions"
+    }
+  ],
+  "admission": {
+    "engineering_check_only": true,
+    "existing_reserved_gpu_hours": 0.5,
+    "planned_real_model_generations": 64,
+    "real_model_qualification_at_review_cutoff": "NOT_RUN_PER_COORDINATOR_NO_REAL_PASS_EVIDENCE_REVIEWED",
+    "formal_candidate_admitted": false,
+    "benchmark_readiness_claim": false,
+    "scientific_effectiveness_claim": false,
+    "deployment_and_closed_actual_cost_receipt_still_required": true
+  }
+}

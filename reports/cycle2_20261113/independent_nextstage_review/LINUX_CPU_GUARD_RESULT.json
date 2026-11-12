@@ -1,0 +1,76 @@
+{
+  "scope": "independent_OS_primitives_not_production_qualification",
+  "script_sha256": "5fdb82ed68dff3a964fbc6858f206f94631aad6597148902144f38b5fa67f698",
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]",
+  "gpu_access": false,
+  "real_data_read": false,
+  "independent_primitive_tests": [
+    {
+      "test": "SIGKILL_supervisor_terminates_separate_session_child",
+      "status": "PASS",
+      "child_final_observed_state": "Z",
+      "zombie_means_no_execution_not_reaped": true
+    },
+    {
+      "test": "independent_default_SIGALRM_terminates_busy_loop",
+      "status": "PASS"
+    },
+    {
+      "test": "normal_exit_preserves_unrelated_process",
+      "status": "PASS"
+    },
+    {
+      "test": "own_group_timeout_stops_own_descendants_only",
+      "status": "PASS",
+      "grandchild_final_observed_state": "absent"
+    },
+    {
+      "test": "post_prctl_expected_parent_mismatch_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "test": "expired_absolute_deadline_exits_before_work",
+      "status": "PASS"
+    },
+    {
+      "test": "inherited_blocked_SIGALRM_is_unblocked",
+      "status": "PASS"
+    }
+  ],
+  "production_guard_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+  "production_guard_tests": [
+    {
+      "test": "SIGKILL_supervisor_terminates_separate_session_child",
+      "status": "PASS",
+      "child_final_observed_state": "absent",
+      "zombie_means_no_execution_not_reaped": false
+    },
+    {
+      "test": "independent_default_SIGALRM_terminates_busy_loop",
+      "status": "PASS"
+    },
+    {
+      "test": "normal_exit_preserves_unrelated_process",
+      "status": "PASS"
+    },
+    {
+      "test": "own_group_timeout_stops_own_descendants_only",
+      "status": "PASS",
+      "grandchild_final_observed_state": "absent"
+    },
+    {
+      "test": "post_prctl_expected_parent_mismatch_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "test": "expired_absolute_deadline_exits_before_work",
+      "status": "PASS"
+    },
+    {
+      "test": "inherited_blocked_SIGALRM_is_unblocked",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS_CPU_WATCHDOG_PRIMITIVES",
+  "wall_seconds": 2.2411018749698997
+}

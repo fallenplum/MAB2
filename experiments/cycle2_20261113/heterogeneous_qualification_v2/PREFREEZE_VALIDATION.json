@@ -1,0 +1,16 @@
+{
+  "status": "PASS_STATIC_AND_CPU_GUARDS_REAL_MODELS_PENDING",
+  "local_existing_tests": 15,
+  "Linux_guard_tests": 14,
+  "new_GPU_calls": 0,
+  "independent_review_receipt_sha256": "c964803c0b244121930ca6a7a96d240f21e375184f2dd5cc838b28e4cf83b1ed",
+  "qualification_source_sha256": {
+    "routed_executor.py": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+    "test_routed_executor.py": "44a30e80fa473ab083326375a3f1fc2c0b696bfdb04535b2e5ca99629a729dcc",
+    "qualify_routed_executor.py": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b",
+    "PROTOCOL.json": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8",
+    "README.md": "77759c1ac152425d449cbb9ef377e4ef112531d6417ace82b6a8a9e7225c24d5",
+    "gpu_job_guard.py": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f"
+  },
+  "reservation_gpu_hours": 0.5
+}

@@ -1,0 +1,168 @@
+{
+  "schema": "mab2_historical_cost_provenance_v1",
+  "evidence": "accepted historical summaries, not a fresh per-call re-audit",
+  "source_sha256": {
+    "INDEPENDENT_G1_ACCEPTANCE.json": "e52e02e9c11ee722f43b5e9621c13b06bbb8aeb858480a8930213729cbf1f745",
+    "G2_INDEPENDENT_ACCEPTANCE.json": "2da9c7ac2f1a75901f56dc25119cfc900d4d5b65034976a62db4bb25b7f4aff6",
+    "v1_interrupted_costs.json": "0fede875580d1109684357c376e0835954ae1ccd5f73032c1c661c4a364518aa"
+  },
+  "stages": {
+    "G1": {
+      "canonical_model_calls": {
+        "failed_calls": 0,
+        "metrics": {
+          "elapsed_seconds": {
+            "complete_total": 462644.0800226738,
+            "known_sum": 462644.0800226738,
+            "unknown_calls": 0
+          },
+          "gpu_seconds": {
+            "complete_total": 462422.63005856326,
+            "known_sum": 462422.63005856326,
+            "unknown_calls": 0
+          },
+          "input_tokens": {
+            "complete_total": 66186558.0,
+            "known_sum": 66186558.0,
+            "unknown_calls": 0
+          },
+          "output_tokens": {
+            "complete_total": 8259629.0,
+            "known_sum": 8259629.0,
+            "unknown_calls": 0
+          }
+        },
+        "recorded_calls": 144002,
+        "successful_calls": 144002
+      },
+      "engineering_summary": {
+        "failed_calls": 0,
+        "metrics": {
+          "elapsed_seconds": {
+            "complete_total": 2550.107381676906,
+            "known_sum": 2550.107381676906,
+            "unknown_calls": 0
+          },
+          "gpu_seconds": {
+            "complete_total": 2548.1187108154295,
+            "known_sum": 2548.1187108154295,
+            "unknown_calls": 0
+          },
+          "input_tokens": {
+            "complete_total": 278693.0,
+            "known_sum": 278693.0,
+            "unknown_calls": 0
+          },
+          "output_tokens": {
+            "complete_total": 42735.0,
+            "known_sum": 42735.0,
+            "unknown_calls": 0
+          }
+        },
+        "recorded_calls": 730,
+        "successful_calls": 730
+      },
+      "engineering_scope": "v3 S0, 16-question sanity, cross-GPU and resume engineering only; excluded v1/v2 trial costs are outside this view",
+      "engineering_missing_ledgers": [],
+      "migration_unrecorded_inflight": {
+        "cost_status": "UNKNOWN_NOT_ZERO_NOT_IMPUTED",
+        "count_upper_bound": 3,
+        "elapsed_seconds": null,
+        "exact_count": null,
+        "gpu_seconds": null,
+        "input_tokens": null,
+        "output_tokens": null
+      },
+      "orphaned_success_calls_already_in_canonical": 2,
+      "source_status": "ACCEPTED_WITH_DOCUMENTED_LIMITATIONS",
+      "full_gpu_occupancy_hours": null,
+      "occupancy_status": "NOT_PRESENT_IN_ACCEPTED_SUMMARY; CUDA-event time is not a substitute"
+    },
+    "G2": {
+      "formal_model_calls": {
+        "calls": 123440,
+        "failed_calls": 0,
+        "metrics": {
+          "elapsed_seconds": {
+            "complete_total": 378979.3874736285,
+            "known_sum": 378979.3874736285,
+            "unknown_calls": 0
+          },
+          "gpu_seconds": {
+            "complete_total": 378819.82819769287,
+            "known_sum": 378819.82819769287,
+            "unknown_calls": 0
+          },
+          "input_tokens": {
+            "complete_total": 55094502.0,
+            "known_sum": 55094502.0,
+            "unknown_calls": 0
+          },
+          "output_tokens": {
+            "complete_total": 6893988.0,
+            "known_sum": 6893988.0,
+            "unknown_calls": 0
+          }
+        },
+        "successful_calls": 123440
+      },
+      "qualification_model_calls": {
+        "calls": 712,
+        "failed_calls": 0,
+        "metrics": {
+          "elapsed_seconds": {
+            "complete_total": 3425.7377493523527,
+            "known_sum": 3425.7377493523527,
+            "unknown_calls": 0
+          },
+          "gpu_seconds": {
+            "complete_total": 3424.835351928711,
+            "known_sum": 3424.835351928711,
+            "unknown_calls": 0
+          },
+          "input_tokens": {
+            "complete_total": 302984.0,
+            "known_sum": 302984.0,
+            "unknown_calls": 0
+          },
+          "output_tokens": {
+            "complete_total": 63632.0,
+            "known_sum": 63632.0,
+            "unknown_calls": 0
+          }
+        },
+        "successful_calls": 712
+      },
+      "complete_cpu_attempt_seconds": 345.009388725,
+      "independent_audit_cpu_seconds": 474.703125,
+      "preprocessing_cpu_seconds": null,
+      "preprocessing_cpu_status": "UNKNOWN_NOT_RECORDED",
+      "observed_preprocessing_launch_to_receipt_wall_interval_seconds": 19.376149892807007,
+      "unrecorded_inflight_call_upper_bound": 0,
+      "source_status": "ACCEPTED_WITH_DOCUMENTED_LIMITATIONS",
+      "full_gpu_occupancy_hours": null,
+      "occupancy_status": "NOT_PRESENT_IN_ACCEPTED_SUMMARY; CUDA-event time is not a substitute"
+    }
+  },
+  "entire_project_cost_complete": false,
+  "missing_or_nonidentifiable": [
+    "G1 migration in-flight call costs",
+    "Earlier v1/v2 engineering coverage beyond their retained trial receipt",
+    "G2 initial feature-preparation CPU duration",
+    "Historical full GPU load-to-exit occupancy absent from these accepted summaries",
+    "Some audit/engineering/human/agent CPU costs"
+  ],
+  "earlier_trial_receipt_present": true,
+  "earlier_trial_receipt_top_level_keys": [
+    "status",
+    "shards",
+    "partial_outputs_used_for_repair",
+    "motivation_labels_read",
+    "interrupted_call_costs",
+    "time_unix"
+  ],
+  "budget_boundary": "These historical G1/G2 jobs precede the authorized new autonomous 160 GPU-hour cap. They remain research costs but are not charged again to this cycle.",
+  "do_not_sum_as_one_unit": "Historical CUDA-event seconds, historical per-call elapsed seconds and new GPU residency are distinct measures; retain separate columns.",
+  "unknowns_imputed_as_zero": false,
+  "duplicate_backup_aliases_added": false
+}

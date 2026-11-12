@@ -1,0 +1,11 @@
+{
+  "schema": "mab2_response_diagnostic_interpretation_addendum_v1",
+  "basis": "Independent source review while the raw historical scan is still running; no response-stage result has been produced or examined",
+  "original_protocol_changed": false,
+  "running_source_changed": false,
+  "clarification": "Receiver answer equality means literal equality of the executor's normalized parsed answer string, as implemented and frozen. Numerically equivalent strings such as 5 and 5.0 remain different here. Only the final aggregate comparison uses the historical numeric answer parser with exact Decimal canonicalization. Do not describe the receiver grouping as semantic or correctness equivalence.",
+  "small_cluster_rule": "Retain the original generated result verbatim. If paired overlap contains fewer than two unique questions, any degenerate percentile interval is descriptive arithmetic only and must not be displayed as a population interval in the public narrative. Always report overlap support and all category denominators.",
+  "no_causal_claim": "Conditioning on post-intervention receiver strings is an observational partition of paired interventions, not identification of a causal mediation effect.",
+  "no_new_admission_gate": true,
+  "no_new_model_calls": true
+}
