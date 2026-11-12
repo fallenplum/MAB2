@@ -1,0 +1,58 @@
+{
+  "status": "ROOT_REVIEWED_CANDIDATE_NOT_ADMITTED",
+  "utc": "2026-11-12T23:37:24.794856+00:00",
+  "root_observed_synthetic_statistics_tests": 8,
+  "root_observed_failures": 0,
+  "root_reviewed": [
+    "384 fixed questions; 4 balanced edges; no outcome-driven extension",
+    "B only, EM primary; F1/A/seed winner cannot replace it",
+    "2 independent seed cross-product per question, not product of overall means",
+    "Approximate question bootstrap; sparse/degenerate statistics do not prove no effect",
+    "No new theoretical novelty or heterogeneity causal claim",
+    "Full context and all 12 independent candidates retained",
+    "Actual deployment costs distinguished from counterfactual cache costs"
+  ],
+  "R1_final_results_seen_by_root_at_archival": true,
+  "agent_design_receipt_reports_R1_reads": false,
+  "changes_to_agent_thresholds_at_archival": false,
+  "Hotpot_model_calls_before_archival": 0,
+  "Hotpot_questions_selected": 0,
+  "budget_reserved": false,
+  "hard_dependencies_incomplete": true,
+  "remaining": [
+    "Real full-matrix synthetic qualification and throughput",
+    "Data normalizer/exposure/selection source pins",
+    "Runtime model/scorer/operator pins",
+    "Final explicit full-round resource admission"
+  ],
+  "files": {
+    "PROTO.json": {
+      "sha256": "1fd8cc88719367ef06a40079a2601f32b70c11d4235ade044d8433298257759b",
+      "bytes": 9081
+    },
+    "PROTOCOL.md": {
+      "sha256": "6bd14072f016a2938debd865e71191a35cb0cd07ad4231aa55ae7c3ae2ddd6dd",
+      "bytes": 15117
+    },
+    "MATRIX.csv": {
+      "sha256": "c2948a954fc5be80cc0fb309dfb83b547a28e1c888e2514c51e6c9b44d2ed463",
+      "bytes": 866
+    },
+    "applicability_statistics.py": {
+      "sha256": "3417dc11bc583d72a2ec8c8cc139c6ee490aa039d8eb386c97f7e2aa52060bfe",
+      "bytes": 9782
+    },
+    "test_statistics.py": {
+      "sha256": "b03993ce69f88da89c72c2eb6784be1e8d7729c3e42406a732813633e7189b07",
+      "bytes": 4943
+    },
+    "STATISTICS_API.md": {
+      "sha256": "9b6325961e762fa288cafbbd1da60a777b55ced638f0d55139243418b6dbf076",
+      "bytes": 1971
+    },
+    "CONTRACT_RECEIPT.json": {
+      "sha256": "b7621af365ae53247d278fe93368aa92bf92aabf0d26255b6b1e8bd01605bc87",
+      "bytes": 3547
+    }
+  }
+}

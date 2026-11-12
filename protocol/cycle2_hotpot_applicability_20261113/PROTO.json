@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "HOTPOT_GRAPH_CREDIT_APPLICABILITY_384_V1_CANDIDATE",
+  "status": "CANDIDATE_NOT_FROZEN_NOT_ADMITTED",
+  "date": "2026-11-13",
+  "research_data_read_for_design": false,
+  "R1_results_read_for_design": false,
+  "new_question_ids_selected": false,
+  "scientific_scope": {
+    "task": "HotpotQA distractor train",
+    "primary": "answer_EM",
+    "secondary": "answer_F1",
+    "sole_communication_candidate": "B",
+    "A_rescue_allowed": false,
+    "heterogeneity_causal_claim": false,
+    "active_revalidation_method_claim": false,
+    "private_evidence_partition_allowed": false,
+    "delete_self_state_allowed": false
+  },
+  "population": {
+    "n_questions": 384,
+    "edge_indices": [
+      1,
+      5,
+      7,
+      9
+    ],
+    "n_questions_per_edge": 96,
+    "selection": "UTF8 byte-sorted eligible IDs; PCG64 sample permutation first 384",
+    "edge_assignment": "PCG64 permutation of np.repeat([1,5,7,9],96)",
+    "no_quality_or_length_based_exclusions_after_selection": true,
+    "labels_hidden_until_full_coverage_and_ledger_closure": true,
+    "known_exposure_exclusion_required": true,
+    "unrecorded_exposure_status": "UNKNOWN",
+    "duplicate_group_rule": "At least NFKC + Unicode-whitespace collapse + casefold question-text groups; add exact normalized payload links; take connected components. Any exposed member excludes the entire component. Otherwise keep UTF8-byte-minimum ID. Normalizer must be pinned."
+  },
+  "seeds": {
+    "generation_seed1": 26111301,
+    "generation_seed2": 26111302,
+    "sampling_pcg64": 261113101,
+    "edge_assignment_pcg64": 261113102,
+    "bootstrap_pcg64": 261113103,
+    "blind_prefix_pcg64": 261113104,
+    "namespace_uniqueness_check_required_before_freeze": true
+  },
+  "execution": {
+    "worker_models": [
+      "Qwen2.5-3B-Instruct",
+      "Mistral-7B-Instruct-v0.3",
+      "Qwen2.5-3B-Instruct",
+      "Mistral-7B-Instruct-v0.3"
+    ],
+    "aggregator": "Mistral-7B-Instruct-v0.3",
+    "rounds": 3,
+    "worker_max_new_tokens": 128,
+    "aggregator_and_single_max_new_tokens": 256,
+    "input_limit_tokens": 8192,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true,
+    "edge_indexing": "zero-based source-major excluding self",
+    "A_mask": 4095,
+    "B_mask": 674,
+    "no_edge_mask": 0,
+    "seed1_sequence": [
+      "A",
+      "B",
+      "NO_EDGE",
+      "A_MINUS_E",
+      "B_MINUS_E",
+      "INDEPENDENT12",
+      "SINGLE_M"
+    ],
+    "seed2_sequence": [
+      "A",
+      "B",
+      "A_MINUS_E",
+      "B_MINUS_E"
+    ],
+    "conditions_total": 4224,
+    "graph_conditions": 3456,
+    "independent12_conditions": 384,
+    "single_conditions": 384,
+    "expected_all_success_physical_calls": 33408,
+    "expected_all_success_independent_logical_calls": 50304,
+    "graph_service_logical_calls": 13,
+    "physical_call_estimate_is_hard_bound": false,
+    "peer_edge_deletion_removes_worker_calls": false
+  },
+  "failure_policy": {
+    "input_overflow": "FAIL_INPUT_OVERFLOW; no truncation; condition EM/F1=0; other conditions remain; do not fabricate missing base; any overflow blocks semantic upgrade",
+    "malformed_completed_output": "frozen formatter and strict parsed.answer; no raw fallback",
+    "length_finish": "normal fixed-budget completion; no extension",
+    "runtime_or_integrity_failure": "INCOMPLETE_OR_INVALID; no zero-imputation/no partial-subset inference/no silent retry",
+    "complete_condition_terminal_records_required": 4224,
+    "complete_question_records_required": 384
+  },
+  "statistics": {
+    "primary_order": [
+      "B_MINUS_NO_EDGE_EM",
+      "B_MINUS_INDEPENDENT12_EM",
+      "MEAN_SIGNED_DELTA_EM",
+      "MEAN_CROSSSEED_DELTA_PRODUCT_EM"
+    ],
+    "graph_array_order": [
+      "A",
+      "B",
+      "A_MINUS_E",
+      "B_MINUS_E"
+    ],
+    "theta_definition": "mean_q(delta[q,seed1]*delta[q,seed2]); not product of grand means",
+    "theta_negative_estimates_retained": true,
+    "theta_assumptions": [
+      "independent generation streams between the two seeds conditional on question and edge",
+      "same fixed stochastic operator",
+      "paired graph contrast within each seed"
+    ],
+    "bootstrap_repetitions": 10000,
+    "bootstrap_rng": "numpy.Generator(numpy.random.PCG64(261113103))",
+    "bootstrap_draw_shape": [
+      10000,
+      4,
+      96
+    ],
+    "bootstrap_draw_call": "rng.integers(0,96,size=(10000,4,96))",
+    "strata_edge_order": [
+      1,
+      5,
+      7,
+      9
+    ],
+    "within_stratum_order": "ascending original manifest row index",
+    "resampling_unit": "question; preserve all seeds/graphs/baselines",
+    "primary_family_size": 4,
+    "family_alpha": 0.05,
+    "ci_kind": "Bonferroni percentile question-cluster bootstrap; approximate not finite-sample deployment guarantee",
+    "primary_percentile_quantiles": [
+      0.00625,
+      0.99375
+    ],
+    "quantile_method": "linear",
+    "secondary_percentile_quantiles": [
+      0.025,
+      0.975
+    ],
+    "secondary_may_rescue_primary": false,
+    "min_nonzero_question_clusters_for_inference": 20,
+    "zero_variance_blocks_bootstrap_gate": true,
+    "no_theta_small_upper_bound_automatic_exclusion": true,
+    "degenerate_bootstrap_estimator_or_interval_blocks_gate": true,
+    "pooled_and_bootstrap_variances_reported_separately": true
+  },
+  "evidence_rules": {
+    "L1_supported": "both quality intervals have lower>0 and support guards pass",
+    "L1_disfavored": "either quality interval upper<0 with guard passed",
+    "L1_other": "INCONCLUSIVE",
+    "L1_2pp_resolution": "both bounds in [-0.02,+0.02] only approximate small-effect tag, no strict equivalence",
+    "five_pp": "descriptive magnitude tag; not required for further independent research",
+    "L2_direction": "signed delta CI lower>0 or upper<0 with support guard; record direction",
+    "L2_nonzero": "theta CI lower>0 with support guard",
+    "L2_other": "INCONCLUSIVE; positive point or all-zero bootstrap is insufficient",
+    "theta_reference": 0.0025,
+    "theta_reference_interpretation": "RMS 5pp scale only, not automatic pass/exclusion",
+    "semantic_upgrade": "L1 supported and L2 supported, zero input-overflow and complete integrity; only eligibility to consider independent mechanism protocol, subject to absolute cost frontier; no GPU admission"
+  },
+  "resource": {
+    "cap_gpu_hours_proposal": 48,
+    "cap_is_authorized": false,
+    "actual_cap_seconds": null,
+    "per_worker_caps_seconds": null,
+    "model_load_and_residence_included": true,
+    "failures_and_resume_included": true,
+    "blind_benchmark_prefix_units": 8,
+    "blind_prefix": "sort frozen selected IDs by max receiver-tokenizer question+full-context length (tie UTF8 ID), split 8 groups of48, PCG64(261113104) pick1/group; remaining original selected order",
+    "prefix_is_formal_round_and_budget": true,
+    "prefix_effects_may_be_viewed": false,
+    "minimum_forecast_time_margin": 0.25,
+    "prefix_failure_to_fit": "INCOMPLETE_RESOURCE; no sample size change or cap increase",
+    "no_interim_effect_stopping": true,
+    "no_adaptive_sample_size": true,
+    "new_round_specific_qualification_and_profile_cost_included": true,
+    "prior_independent_engineering_cost_recharged_to_round": false,
+    "prior_shared_engineering_cost_accounting": "Retain original reservations/actuals in global160h; reference separately, no re-addition to candidate48h; unique ledger transaction/attempt IDs; separate shared, incremental and full-system attribution views."
+  },
+  "required_pins_before_execution": {
+    "protocol_commit": "REQUIRED_BEFORE_ADMISSION",
+    "model_files": "REQUIRED_BEFORE_ADMISSION",
+    "tokenizer_files": "REQUIRED_BEFORE_ADMISSION",
+    "graph_executor_source": "REQUIRED_BEFORE_ADMISSION",
+    "independent12_operator_source": "REQUIRED_BEFORE_ADMISSION",
+    "single_operator_source": "REQUIRED_BEFORE_ADMISSION",
+    "node_seed_derivation": "REQUIRED_BEFORE_ADMISSION",
+    "prompts_and_formatter": "REQUIRED_BEFORE_ADMISSION",
+    "official_hotpot_scorer": "REQUIRED_BEFORE_ADMISSION",
+    "local_answer_adapter": "REQUIRED_BEFORE_ADMISSION",
+    "runtime_environment": "REQUIRED_BEFORE_ADMISSION",
+    "qualified_operator_receipts": "REQUIRED_BEFORE_ADMISSION",
+    "source_train_manifest": "REQUIRED_BEFORE_ADMISSION",
+    "payload_normalizer": "REQUIRED_BEFORE_ADMISSION",
+    "known_exposure_exclusions": "REQUIRED_BEFORE_ADMISSION",
+    "selected_question_manifest": "REQUIRED_BEFORE_ADMISSION",
+    "edge_assignment_manifest": "REQUIRED_BEFORE_ADMISSION",
+    "label_vault_access_control": "REQUIRED_BEFORE_ADMISSION",
+    "budget_and_worker_cap_receipt": "REQUIRED_BEFORE_ADMISSION",
+    "R1_closure_receipt": "REQUIRED_BEFORE_ADMISSION"
+  },
+  "implementation_boundary": "Candidate scientific contract and pure-array statistics only; no collector implementation, selection, scoring, deployment or GPU authorization."
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-11-12T23:28:02.493561+00:00",
+  "status": "COMPLETE_CANDIDATE_CONTRACT_NOT_ADMITTED",
+  "artifacts": {
+    "PROTOCOL.md": {
+      "sha256": "6bd14072f016a2938debd865e71191a35cb0cd07ad4231aa55ae7c3ae2ddd6dd",
+      "bytes": 15117
+    },
+    "PROTO.json": {
+      "sha256": "1fd8cc88719367ef06a40079a2601f32b70c11d4235ade044d8433298257759b",
+      "bytes": 9081
+    },
+    "MATRIX.csv": {
+      "sha256": "c2948a954fc5be80cc0fb309dfb83b547a28e1c888e2514c51e6c9b44d2ed463",
+      "bytes": 866
+    },
+    "applicability_statistics.py": {
+      "sha256": "3417dc11bc583d72a2ec8c8cc139c6ee490aa039d8eb386c97f7e2aa52060bfe",
+      "bytes": 9782
+    },
+    "test_statistics.py": {
+      "sha256": "b03993ce69f88da89c72c2eb6784be1e8d7729c3e42406a732813633e7189b07",
+      "bytes": 4943
+    },
+    "STATISTICS_API.md": {
+      "sha256": "9b6325961e762fa288cafbbd1da60a777b55ced638f0d55139243418b6dbf076",
+      "bytes": 1971
+    }
+  },
+  "arithmetic_checks": {
+    "matrix_conditions": 4224,
+    "physical_all_success_calls": 33408,
+    "logical_all_success_calls": 50304
+  },
+  "planning_precision": {
+    "normal_z_four_two_sided_comparisons": 2.4977054744123737,
+    "assumed_question_variance": 0.1,
+    "N": 384,
+    "quality_interval_halfwidth_normal_approx": 0.04030654877554257,
+    "power_for_5pp_normal_approx": 0.7259738293005391,
+    "not_observed_or_guaranteed": true
+  },
+  "synthetic_tests": {
+    "command": "python -B -m unittest -v test_statistics.py",
+    "tests": 8,
+    "status": "PASS",
+    "unittest_elapsed_seconds": 1.525,
+    "tool_command_elapsed_seconds": 2.6530477,
+    "data": "synthetic arrays only"
+  },
+  "boundaries": {
+    "benchmark_or_labels_read": false,
+    "R1_results_read": false,
+    "new_question_selection": false,
+    "new_gpu_hours": 0,
+    "E_or_git_mutated": false,
+    "prior_engineering_recharged_to_48h": false,
+    "GPU_admission": false
+  },
+  "required_before_freeze": [
+    "protocol_commit",
+    "model_files",
+    "tokenizer_files",
+    "graph_executor_source",
+    "independent12_operator_source",
+    "single_operator_source",
+    "node_seed_derivation",
+    "prompts_and_formatter",
+    "official_hotpot_scorer",
+    "local_answer_adapter",
+    "runtime_environment",
+    "qualified_operator_receipts",
+    "source_train_manifest",
+    "payload_normalizer",
+    "known_exposure_exclusions",
+    "selected_question_manifest",
+    "edge_assignment_manifest",
+    "label_vault_access_control",
+    "budget_and_worker_cap_receipt",
+    "R1_closure_receipt"
+  ],
+  "statistical_red_team": "Independent colleague read core statistics and verified paired delta product, balanced PCG64 strata and quantiles. Identified pooled-variance vs fixed-stratum bootstrap-degeneracy loophole; repaired with nonconstant bootstrap draws and nonzero interval width, tested by per-stratum constant counterexample. Earlier all-zero theta exclusion pitfall also addressed. This is a bounded static review, not full research qualification.",
+  "synthetic_test_history": [
+    {
+      "command": "python -B -m unittest -v test_statistics.py",
+      "tests": 7,
+      "status": "PASS",
+      "unittest_elapsed_seconds": 1.248,
+      "tool_command_elapsed_seconds": 3.925208,
+      "data": "synthetic arrays only",
+      "source_sha256": "6335048b858dc05f826332f937d9f6e3ea5260c64e9ce4f798df5d013ae47bb2"
+    }
+  ],
+  "updated_at_utc": "2026-11-12T23:29:27.990498+00:00"
+}

@@ -1,0 +1,12 @@
+condition,seed_role,mask_rule,base_condition,logical_calls_per_question,expected_physical_calls_per_question,questions,primary_role
+A,seed1,4095,NONE,13,13,384,credit_dense_background
+B,seed1,674,A,13,9,384,sole_communication_candidate
+NO_EDGE,seed1,0,A,13,9,384,primary_no_peer_baseline
+A_MINUS_E,seed1,4095_clear_assigned_edge,A,13,6,384,credit_dense_counterfactual
+B_MINUS_E,seed1,674_clear_assigned_edge,B,13,4,384,credit_sparse_counterfactual
+INDEPENDENT12,seed1,NOT_A_GRAPH,NONE,13,13,384,primary_independent_sampling_baseline
+SINGLE_M,seed1,NOT_A_GRAPH,NONE,1,1,384,secondary_cheap_strong_reference
+A,seed2,4095,NONE,13,13,384,credit_dense_background
+B,seed2,674,A,13,9,384,credit_sparse_background
+A_MINUS_E,seed2,4095_clear_assigned_edge,A,13,6,384,credit_dense_counterfactual
+B_MINUS_E,seed2,674_clear_assigned_edge,B,13,4,384,credit_sparse_counterfactual
