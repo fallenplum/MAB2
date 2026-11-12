@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-13",
+  "status": "BOUNDED_PRIMARY_SOURCE_REVIEW_COMPLETE_NO_EXPERIMENT_ADMISSION",
+  "scope": "Finite fixed-bank inference under arbitrary exact known subsets and fresh random sampling conditional on the full history.",
+  "skills": [
+    "research-rigor",
+    "paper-lookup",
+    "literature-review"
+  ],
+  "actual_search_tool": "mcp__codex_apps__search_service_web_run",
+  "provider_engine": "UNSPECIFIED",
+  "google_used": false,
+  "queries": [
+    "\"Confidence sequences for sampling without replacement\" Waudby Smith Ramdas",
+    "\"active risk control\" confidence sequences sampling prediction powered",
+    "\"prediction powered\" \"sampling without replacement\" confidence sequences",
+    "\"finite population\" \"side information\" \"confidence sequence\"",
+    "\"Risk-limiting Financial Audits via Weighted Sampling without Replacement\"",
+    "\"Active Risk Control\" paper",
+    "\"Prediction-Powered Active Testing\" arxiv",
+    "\"Active Statistical Inference\" confidence sequences prediction powered",
+    "\"active risk\" \"confidence\" \"label\" martingale",
+    "\"Active Testing\" \"Sample-Efficient Model Evaluation\" ICML 2021",
+    "\"Active Statistical Inference\" arxiv Zrnic Candès",
+    "\"active risk control\" \"e-process\""
+  ],
+  "query_count": 12,
+  "systematic_review": false,
+  "sources": [
+    {
+      "id": "WaudbySmithRamdas2020",
+      "title": "Confidence sequences for sampling without replacement",
+      "authors": [
+        "Ian Waudby-Smith",
+        "Aaditya Ramdas"
+      ],
+      "venue": "NeurIPS",
+      "year": 2020,
+      "primary_url": "https://proceedings.neurips.cc/paper/2020/file/e96c7de8f6390b1e6c71556e4e0a4959-Paper.pdf",
+      "read_depth": "Selected full-text sections 1.1, 3.1, 3.2 and 4; not an independent proof audit of every theorem.",
+      "role": "Finite-population, uniform without-replacement CS precursor."
+    },
+    {
+      "id": "ShekharEtAl2023",
+      "title": "Risk-limiting financial audits via weighted sampling without replacement",
+      "authors": [
+        "Shubhanshu Shekhar",
+        "Ziyu Xu",
+        "Zachary Lipton",
+        "Pierre Liang",
+        "Aaditya Ramdas"
+      ],
+      "venue": "UAI",
+      "year": 2023,
+      "pmlr_volume": 216,
+      "pages": "1932-1941",
+      "primary_url": "https://proceedings.mlr.press/v216/shekhar23a.html",
+      "full_text_url": "https://proceedings.mlr.press/v216/shekhar23a/shekhar23a.pdf",
+      "read_depth": "Main-text sections 2, 2.2, 3 and 4; targeted formula, logical interval and control-variate reading. Supplementary proofs not independently audited.",
+      "role": "Direct formula predecessor; arbitrary adaptive randomized remaining-set sampling and side-information control variates."
+    },
+    {
+      "id": "ZrnicCandes2024",
+      "title": "Active Statistical Inference",
+      "authors": [
+        "Tijana Zrnic",
+        "Emmanuel Candes"
+      ],
+      "venue": "ICML",
+      "year": 2024,
+      "pmlr_volume": 235,
+      "pages": "62993-63010",
+      "primary_url": "https://proceedings.mlr.press/v235/zrnic24a.html",
+      "full_text_url": "https://arxiv.org/html/2403.03208v2",
+      "read_depth": "Metadata, abstract, section 6 and Appendix C. Appendix C explicitly gives nonasymptotic/time-uniform bounded common-conditional-mean extension.",
+      "role": "Prediction-assisted active inference plus standard betting-CS construction; do not conflate main asymptotic results with universal finite-bank validity."
+    },
+    {
+      "id": "AngelopoulosEtAl2023",
+      "title": "Prediction-Powered Inference",
+      "authors": [
+        "Anastasios N. Angelopoulos",
+        "Stephen Bates",
+        "Clara Fannjiang",
+        "Michael I. Jordan",
+        "Tijana Zrnic"
+      ],
+      "year": 2023,
+      "primary_url": "https://arxiv.org/html/2301.09633v4",
+      "read_depth": "Abstract, Appendix B finite-population setup and mean result, Appendix E.2 assumptions and nonasymptotic interval reference; not full manuscript.",
+      "role": "Uniform finite-population sample with prediction residual correction; does not alone validate arbitrary cached selection."
+    },
+    {
+      "id": "KossenEtAl2021",
+      "title": "Active Testing: Sample-Efficient Model Evaluation",
+      "authors": [
+        "Jannik Kossen",
+        "Sebastian Farquhar",
+        "Yarin Gal",
+        "Tom Rainforth"
+      ],
+      "venue": "ICML",
+      "year": 2021,
+      "primary_url": "https://proceedings.mlr.press/v139/kossen21a.html",
+      "read_depth": "Official metadata and abstract only.",
+      "role": "Context for actively selected evaluation labels and bias correction; not used to prove anytime validity."
+    },
+    {
+      "id": "ZecchinEtAl2025",
+      "title": "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection",
+      "authors": [
+        "Matteo Zecchin",
+        "Sangwoo Park",
+        "Osvaldo Simeone"
+      ],
+      "venue": "ICML",
+      "year": 2025,
+      "pmlr_volume": 267,
+      "pages": "74018-74036",
+      "primary_url": "https://proceedings.mlr.press/v267/zecchin25a.html",
+      "read_depth": "Current pass official metadata/abstract and fixed-commit code lines 35-330; earlier bounded review read selected paper sections. Current mathematical argument does not rely on an unverified defect in aLTT."
+    }
+  ],
+  "code_evidence": {
+    "repository": "kclip/aLTT",
+    "commit": "b071916f44cf1cea2892b0ecd51736598c5d446e",
+    "file": "LLM/code/automatic_prompt_engineer/altogether_ape.py",
+    "git_blob_sha1": "cb7b46cab43b5281810308b48853cc1c60dd5367",
+    "primary_url": "https://github.com/kclip/aLTT/blob/b071916f44cf1cea2892b0ecd51736598c5d446e/LLM/code/automatic_prompt_engineer/altogether_ape.py",
+    "directly_fetched_ranges": [
+      [
+        35,
+        128
+      ],
+      [
+        108,
+        165
+      ],
+      [
+        165,
+        260
+      ],
+      [
+        260,
+        330
+      ]
+    ],
+    "conclusion": "exploit uses the global self.t-1, not the commented per-arm counter. forward selects an arm, increments global t, then exploits. loss_compute charges fixed cost_single_eval.",
+    "boundary": "This is a limited call-path audit, not full repository correctness validation. The hypothetical cross-arm side-information example does not demonstrate a flaw in this implementation.",
+    "license_boundary": "Parent reported MIT in LLM/code/LICENSE.md and no root LICENSE. This pass did not independently re-audit licenses and makes no repository-wide license claim."
+  },
+  "excluded_or_limited_leads": [
+    {
+      "url": "https://arxiv.org/abs/2309.00836",
+      "reason": "Mistaken guessed identifier opened an unrelated alloy-solidification paper; excluded. Correct Active Statistical Inference identifier was verified as 2403.03208."
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.08347",
+      "title": "Prediction-Powered Active Testing",
+      "read_depth": "Search result only; not used to support main conclusion."
+    },
+    {
+      "url": "https://arxiv.org/abs/2511.08991",
+      "title": "Robust Sampling for Active Statistical Inference",
+      "read_depth": "Search metadata/abstract lead only; not used to support main conclusion."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.34681",
+      "title": "Pro-Active Inference",
+      "read_depth": "Search lead only; not used to support main conclusion."
+    },
+    {
+      "query": "Active Risk Control",
+      "reason": "No exact named ML paper established from this bounded query; category covered by verified aLTT and active-inference sources, no invented citation."
+    }
+  ],
+  "novelty_assessment": {
+    "identity_novel": false,
+    "anytime_validity_novel": false,
+    "arbitrary_known_set_extension": "Explicit full-filtration conditional-expectation corollary; not attributed verbatim to prior theorem.",
+    "graph_specific_scheduler_novelty": "UNESTABLISHED",
+    "maximum_conditional_questions": 1
+  },
+  "constraints": {
+    "research_data_read": false,
+    "new_R1_read": false,
+    "benchmark_read": false,
+    "gpu_used": false,
+    "experiments_implemented": false,
+    "formal_candidates_admitted": 0
+  }
+}

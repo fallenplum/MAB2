@@ -1,0 +1,33 @@
+{
+  "status": "ARCHIVED_WITH_ROOT_PRIMARY_SOURCE_SPOTCHECK",
+  "utc": "2026-11-12T23:05:38.681179+00:00",
+  "files": {
+    "REVIEW.md": {
+      "sha256": "b987add43bceba0d63cad489c654d205c046b6b477e7a1eef8dc4375be5ea891",
+      "bytes": 4890
+    },
+    "MATH_CHECK.md": {
+      "sha256": "af7a665d73fe9d14b3c92ff494e52ea6958334dc5694204b74d80aaa68453f51",
+      "bytes": 4133
+    },
+    "SOURCES.json": {
+      "sha256": "90c1e4d9c9ce4ec0a71cbf47284082803231c60424834e2cece7a1eec000f7bd",
+      "bytes": 8199
+    },
+    "REVIEW_RECEIPT.json": {
+      "sha256": "bca78f3e2d7043633de2305280998d8591cf14b5a800e0684b428accba337bfa",
+      "bytes": 2155
+    },
+    "ALTT_OFFICIAL_SOURCE_RECEIPT.json": {
+      "sha256": "0b15529cdae9f38daab21d74bd63b9252004485308f001228f0193bc1f37dcd7",
+      "bytes": 1006
+    },
+    "ROOT_VERIFICATION.md": {
+      "sha256": "3a03de3da13df83db766b4fb178fd98624b6e0ccafe0a6511d54a28d38979155",
+      "bytes": 1643
+    }
+  },
+  "model_calls": 0,
+  "formal_round_increment": 0,
+  "project_status": "ACTIVE"
+}

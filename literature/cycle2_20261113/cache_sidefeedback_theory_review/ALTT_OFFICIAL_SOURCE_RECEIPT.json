@@ -1,0 +1,27 @@
+{
+  "status": "OFFICIAL_SOURCE_SNAPSHOT_BLOB_VERIFIED_NO_CODE_EXECUTION",
+  "repo": "kclip/aLTT",
+  "commit": "b071916f44cf1cea2892b0ecd51736598c5d446e",
+  "files": [
+    {
+      "path": "LLM/code/automatic_prompt_engineer/altogether_ape.py",
+      "git_blob_sha": "cb7b46cab43b5281810308b48853cc1c60dd5367",
+      "sha256": "cfa196ebdda56257ea1a939f1abb28ca0215cbb12544f2eb345af5832cc2d9a7",
+      "bytes": 15357
+    },
+    {
+      "path": "LLM/code/LICENSE.md",
+      "git_blob_sha": "b2e0476297e5eb82771adc5e7499a82b356ce457",
+      "sha256": "2839bf24461fa92f38f9062a7115254929f57b2c22f55203603f006a35765154",
+      "bytes": 1062
+    },
+    {
+      "path": "README_LLM.md",
+      "git_blob_sha": "744fe718b9554ec3e7927083831978b68bb27e85",
+      "sha256": "d6fdcf77332e504a6d3761cf4f3eaeaa2708ae5dd90d04d1768c3ea87cb6f318",
+      "bytes": 889
+    }
+  ],
+  "model_calls": 0,
+  "scope": "Read-only selected LLM implementation; root license not inferred from subtree license"
+}
