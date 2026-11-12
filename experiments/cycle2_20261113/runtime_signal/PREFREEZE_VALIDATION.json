@@ -1,0 +1,13 @@
+{
+  "status": "SYNTHETIC_VALIDATED_NO_RUNTIME_FEATURES_OR_NEW_FITS_READ",
+  "utc": "2026-11-12T20:32:28.202605+00:00",
+  "tests": 7,
+  "new_gpu_hours": 0,
+  "new_formal_rounds": 0,
+  "files": {
+    "PROTOCOL.md": "557dfa594377611c17c083881765b335db82a3ef84b82a6d918bfd84abb05d15",
+    "runtime_features.py": "b9a9ea06bd559b1a355ea9d0981e97964e5b13e8fc75d1192ed8f1bdcbcb89d5",
+    "run_diagnostic.py": "9a31a5c1180b9f96eab123c9e32029d123132373d86dbcb945138a84ed9ef71e",
+    "test_runtime_features.py": "9ffae41b26cd904f74ef0569daae0db06bcc20441e4ee1c8d87778b554394807"
+  }
+}
