@@ -1,0 +1,23 @@
+{
+  "source_results_sha256": "48a68a2c32242d623f5bde5a5988a9fb13a8e6fae9460b2de6c31c3e9b2873eb",
+  "public_results_sha256": "48a68a2c32242d623f5bde5a5988a9fb13a8e6fae9460b2de6c31c3e9b2873eb",
+  "old_artifacts_modified": false,
+  "is_post_result_publication": true,
+  "original_protocol_freeze_retained": true,
+  "root_second_arithmetic_implementation_not_human_independence": true,
+  "files": {
+    "experiments/cycle2_20261113/group_intervention_diagnostic/D_PROTOCOL.json": "78e6a913770a940b2e298521aa3976be2a3db21d9151be5ca1b6e533e5c9d4e8",
+    "experiments/cycle2_20261113/group_intervention_diagnostic/D_METADATA_AMENDMENT.json": "dea9a81e71af4643c5466dc1c7c3e45efdb2fe6d5e8d1e8d24708f9cc6e9685d",
+    "experiments/cycle2_20261113/group_intervention_diagnostic/group_math.py": "f4d2c4dc0ad0982c58499c007f2b6ce92ae6be56171eaacf0a158fe6a06f325a",
+    "experiments/cycle2_20261113/group_intervention_diagnostic/inventory_metadata.py": "e17b9fc32fe1573b6b962bce6049def589671a54d6e794d8f2667d584671c58f",
+    "experiments/cycle2_20261113/group_intervention_diagnostic/run_group_diagnostic.py": "4e5a19f988474ec53d4eb823653052c2a8d7a3b7490924d72a076b6765a59382",
+    "experiments/cycle2_20261113/group_intervention_diagnostic/test_group_diagnostic.py": "38052dc910d3b165b2f86aea4ddc68b36b390ebac869b27dc2cb9a0980be10c7",
+    "experiments/cycle2_20261113/group_intervention_diagnostic/replay_g1_independent.py": "0096c915119b97a77d660309516007f059b8481b1f660e670c041fd1cdaaccda",
+    "experiments/cycle2_20261113/group_intervention_diagnostic/PREEXECUTION_FREEZE.json": "246826e6735d8748a5337e1f84871f612c076b44551d719fb2f20f7f1e431404",
+    "reports/cycle2_20261113/group_intervention_diagnostic/REPORT.md": "798677fb554a00c505c1e3845b7009cc36e34a0ca86d81dde5221881e4d4b12c",
+    "reports/cycle2_20261113/group_intervention_diagnostic/RESULTS.json": "48a68a2c32242d623f5bde5a5988a9fb13a8e6fae9460b2de6c31c3e9b2873eb",
+    "reports/cycle2_20261113/group_intervention_diagnostic/G1_SECOND_IMPLEMENTATION_REPLAY.json": "f1a5c9bf57f2d1e369bbf041962986a0596b412553dcf1da186b53546a40d27f",
+    "literature/cycle2_20261113/second_outer_loop/RECORDS_AND_SEARCH.json": "95e7ebb1064eb2dffc93718fd08e1bedaa2219a4433cc5017be96af9f4ed8895",
+    "literature/cycle2_20261113/second_outer_loop/TREE_AND_NOVELTY_ADDENDUM.md": "d010d1053c96182901f8129a955a4017e45b6f799921d5d5f8d1170a051688ec"
+  }
+}

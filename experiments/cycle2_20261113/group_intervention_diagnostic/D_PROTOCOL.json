@@ -1,0 +1,55 @@
+{
+  "schema":"mab2_group_intervention_exploratory_protocol_v1",
+  "status":"FROZEN_BEFORE_OUTCOME_ACCESS",
+  "scope":"Previously exposed G1/G2 only; no R1 I/C/S or official benchmark test files; no new GPU execution or git changes.",
+  "hypothesis":"Some observed graph contexts have edge interactions for which apparently negligible single-edge deletion losses coexist with a positive joint deletion loss; the signal may instead be seed noise.",
+  "data_inventory_first":"Enumerate all recorded same-question graph masks by protocol/model lineage and seed. A 2x2 face requires both tested edges vary and every other bit is identical. Never impute an unexecuted corner. Different questions, seeds, models or backgrounds cannot complete a face.",
+  "frozen_input_pin":"Existing accepted G2 D2 private inputs.npz SHA256 7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963; original G2 frozen_plan SHA256 90cbbe0e22ae1cad177e30706759a6e04341ca1a956f8faf62f80497360cdeb2.",
+  "enumeration":"All unordered edge pairs, all recorded backgrounds with those two bits cleared, all questions. Deduplicate each question/pair/background; observed F00,F01,F10,F11 in binary edge order. Count missing corners and complete faces before quality access.",
+  "outcome":"Historical binary answer quality; no cost penalty added retrospectively. Edges present=1, absent=0.",
+  "definitions":{
+    "a":"F11-F01: loss of deleting first edge when both present",
+    "b":"F11-F10: loss of deleting second edge when both present",
+    "L":"F11-F00: joint deletion loss; equal to joint restoration gain from F00",
+    "h":"F11-F10-F01+F00; L=a+b-h",
+    "redundancy_signature":"a=b=0,L>0 implies h<0. This identity is not proof that empirical zero singles have zero conditional means.",
+    "de_noised_square":"For K complete independent-seed replicates, ((sum_s h_s)^2-sum_s h_s^2)/(K*(K-1)); estimates squared conditional mean only under conditional independent identically distributed seed replicates. Retain negative values.",
+    "single_de_noised_squares":"Apply same cross-seed product estimator to a and b; negative estimates retained.",
+    "same_seed_square":"mean(h_s^2), descriptive and noise-confounded; not substitute for cross-seed square."
+  },
+  "seed_design":{
+    "G2_order":[2701,2702,2703,2704,2705],
+    "required_complete_seed_count":5,
+    "crossfit_folds":[{"select_positions":[0,1],"evaluate_positions":[2,3,4]},{"select_positions":[2,3,4],"evaluate_positions":[0,1]}],
+    "near_zero_selection":"On selection seeds only, abs(mean(a))<=0.05 and abs(mean(b))<=0.05; fixed threshold, no pair or graph selection by joint outcomes.",
+    "evaluation":"Report heldout L,a,b,h on every selected face/fold; average folds within face where selected, faces within question, then questions equally. Both folds are dependent and never two independent replications.",
+    "selection_denominator":"Report eligible questions/faces, selected fold-face counts, selected distinct questions, and per-fold selected counts. No selected cells gives INCONCLUSIVE, never zero effect.",
+    "independence_boundary":"Historical per-node seed derivation/fork_rng and no collisions are engineering support, not mathematical independence proof; common questions/backgrounds induce clustering."
+  },
+  "statistics":{
+    "unit":"Question; all faces/edge pairs and both crossfit folds stay in the same cluster",
+    "weight":"Equal question weights; within each question equal complete-face weights for unconditional summaries, equal selected-face weights for selection summaries",
+    "bootstrap_seed":83019,
+    "bootstrap_resamples":10000,
+    "intervals":"percentile 95%; 90% for explicitly exploratory single-effect equivalence screen; no validated coverage claim for small supports",
+    "partition_reporting":"G2 train200/tune80/exposed-development120 individually and all400 pooled; all are previously exposed development evidence, no independent confirmation",
+    "pair_reporting":"Every represented pair with denominator, no best-pair selection",
+    "primary_scope":"All complete 5-seed G2 faces; G1 separated by lineage/available seed design, never pooled as iid replicates"
+  },
+  "low_cost_investment_screen":{
+    "not_confirmatory":true,
+    "coverage_required":{"complete_face_unique_questions":30,"represented_edge_pairs":3,"selected_unique_questions":20},
+    "all_signal_conditions_required":["cross-seed interaction square point>0 and question-bootstrap95 lower>0","crossfit joint deletion loss point>=0.10 and question-bootstrap95 lower>0","both crossfit heldout single-loss 90% intervals entirely within [-0.05,0.05]"],
+    "interpretation":"Only evidence to consider a bounded fresh pilot for this observed-context phenomenon, not approval, algorithm novelty, online improvement, or equal-full-cost superiority.",
+    "failure":"Missing four worlds => NOT_IDENTIFIABLE; insufficient support or intervals spanning thresholds => INCONCLUSIVE; valid opposite effect or no detectable interaction => NO_SUPPORTED_SIGNAL_FOR_THIS_CANDIDATE. Preserve all outcomes; never stop the overall project solely for this route."
+  },
+  "fairness_contract":{
+    "action_space":"Candidate, uniform group-feedback, fixed cyclic group-feedback, greedy group lookahead, and rollback baseline all receive same predeclared singleton/pair deletions/restorations and stay; same initial bank.",
+    "strong_baselines":"Direct fresh joint verification and limited-depth pair lookahead, plus same-action-space uniform/cyclic feedback. A single-edge-only control isolates action-space benefit but is not the decisive maintenance baseline.",
+    "shared_cache":"Every method shares identical exact execution-cache semantics, valid only at same question/seed/model/full state. Prefix probes, speculative calls and rollback are charged.",
+    "full_cost":"Initialization + pair/single feedback + any failed proposals/rollback + scoring + independent future service; physical shared collection and logical deployment ledgers both retained.",
+    "historical_limit":"Four-world historical quality identifies local outcome interactions only. Without a full logged intervention/rollback/feedback policy trajectory, it cannot identify active acquisition value or future-service benefit."
+  },
+  "resource_caps":{"new_gpu_hours":0,"new_model_calls":0,"CPU_seconds_cap":1800},
+  "post_result_changes_allowed":false
+}

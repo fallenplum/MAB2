@@ -1,0 +1,71 @@
+{
+  "schema": "mab2_second_outer_loop_literature_addendum_v1",
+  "date": "2026-11-13",
+  "search_provider": "Available web search tool; underlying Google backend not asserted. Primary arXiv, official proceedings and author code were opened.",
+  "search_queries": [
+    "multi agent counterfactual credit assignment selective rollout downstream evaluation communication graph active feedback",
+    "multi fidelity best arm identification partial rollout expensive evaluation correlated arms communication topology",
+    "Credit Where Credit Is Due Contrastive Attribution code github"
+  ],
+  "coverage": "Targeted mechanism expansion, not a systematic-search saturation claim. Failed or nonprimary hits are not evidence of novelty.",
+  "records": [
+    {
+      "id": "infodelphi",
+      "title": "Diverse Evidence, Better Forecasts: Multi-Agent Deliberation Under Information Asymmetry",
+      "authors": ["Yuante Li", "Yicheng Tao", "Kate Zhang", "Taozhi Wang", "Gefei Gu", "Yaxin Zhou"],
+      "version": "2607.01661v1",
+      "version_date": "2026-07-02",
+      "primary_url": "https://arxiv.org/html/2607.01661v1",
+      "metadata_url": "https://arxiv.org/abs/2607.01661v1",
+      "read_status": "sections_read",
+      "read_anchors": ["Sections 3.1-3.3", "Section 4 and limitations"],
+      "mechanism": "Public/private evidence partition, BM25-based routing, iterative deliberation and confidence aggregation alter information diversity.",
+      "boundary": "Information partition is already proposed. Its linear-error correlation analysis requires assumptions; it does not prove arbitrary LLM private errors independent. It does not by itself establish graph-credit revalidation utility.",
+      "implication_for_mab2": "Shared input redundancy is an environment mechanism worth measuring, but evidence partition is not a new MAB2 algorithm. Any future common/private condition must give every baseline identical information and charge retrieval/routing cost.",
+      "not_read_or_verified": ["Full appendix proof conditions", "Independent empirical reproduction", "Official code audit"],
+      "venue": null
+    },
+    {
+      "id": "acts",
+      "title": "Learning Who Talks to Whom: Role-Aware Communication Topology Scheduling for Efficient LLM Multi-Agent Collaboration",
+      "authors": ["Haibin Li", "Wenya Yu", "Xuefeng Jiang", "Jia Li", "Xiao Han", "Shuai Su", "Wei Wei"],
+      "version": "2610.25851v1",
+      "version_date": "2026-10-19",
+      "primary_url": "https://arxiv.org/html/2610.25851v1",
+      "metadata_url": "https://arxiv.org/abs/2610.25851v1",
+      "read_status": "selected_sections_read",
+      "read_anchors": ["Section 4.3.1", "Appendix E.1.1 and E.6.3"],
+      "mechanism": "Role-conditioned relational attention and a topology-aware value mixer train adaptive communication schedules.",
+      "boundary": "Its information-gain quantity is a task-accuracy heuristic with an exploration term, not a mutual-information estimator or a significance test. The audited excerpts do not establish private evidence partition.",
+      "implication_for_mab2": "Learned graph-aware scheduling is occupied prior work. MAB2 must isolate purchased revalidation feedback under fixed models, not relabel a topology-conditioned predictor as the contribution.",
+      "not_read_or_verified": ["Full technical text", "Code reproduction", "Venue acceptance"],
+      "venue": null
+    },
+    {
+      "id": "multi_fidelity_bai_2022",
+      "title": "Multi-Fidelity Best-Arm Identification",
+      "authors": ["Riccardo Poiani", "Alberto Maria Metelli", "Marcello Restelli"],
+      "year": 2022,
+      "venue": "NeurIPS 2022",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/71c31ebf577ffdad5f4a74156daad518-Abstract.html",
+      "doi": "10.52202/068431-1298",
+      "read_status": "official_abstract_only",
+      "mechanism": "IISE chooses among costly accurate observations and cheaper biased fidelities, assuming known maximum fidelity biases.",
+      "implication_for_mab2": "A partial receiver rollout can be a paid screening feature, but its unknown relation to final quality is not a known-bias fidelity. No IISE guarantee transfers without verifying the required bounds.",
+      "not_read_or_verified": ["Full proofs and supplement", "Independent implementation"]
+    },
+    {
+      "id": "cats_recheck",
+      "relationship": "Recheck of existing historical cats entry; not a newly discovered paper or independent reproduction",
+      "primary_url": "https://arxiv.org/html/2610.29292v1",
+      "read_status": "technical_sections_rechecked",
+      "read_anchors": ["Sections 1-6", "Appendix A.1-A.5, especially evaluation and per-seed cost tables"],
+      "mechanism": "A score-aware LLM attributes agent credit across sampled topologies; credits guide offline pruning in a fixed supergraph.",
+      "boundary": "Candidate evaluation counts are matched, not complete compute. Attribution costs are reported. Shared artifacts can mediate cooperation outside graph edges, so agent selection and communication are not fully separated.",
+      "implication_for_mab2": "Credit-guided pruning alone is not new. Require graph-change-conditioned old-credit reuse, charged feedback acquisition and future service comparisons. No official implementation was verified in this lookup; absence of code is not claimed.",
+      "venue": null,
+      "venue_note": "Workshop heading is present; independent acceptance verification remains unavailable"
+    }
+  ],
+  "novelty_verdict": "PROVISIONAL_NO_POSITIVE_METHOD_CLAIM"
+}

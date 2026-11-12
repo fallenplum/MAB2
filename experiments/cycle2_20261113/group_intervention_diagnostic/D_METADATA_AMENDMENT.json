@@ -1,0 +1,14 @@
+{
+ "schema":"mab2_group_metadata_amendment_v1",
+ "reason":"Metadata audit: G2 has only 39 complete faces in 9 questions; G1 explicitly executed 200 questions x 5 contexts x 3 pairs x 5 seeds x 4 worlds. Same diagnostic applied separately to all available G1 and G2 faces; no quality-selected subset.",
+ "timing":"After G1 acceptance report aggregate interaction statistic was incidentally displayed with metadata; before new G1/G2 world-level numeric analysis. This is exploratory secondary analysis of exposed data, not blind preregistration.",
+ "unchanged":"All formulas, crossfit positions, zero-screen threshold, bootstrap seed, support minimums and signal thresholds in D_PROTOCOL.json remain unchanged. Both lineage reports retained regardless of outcome.",
+ "G1_seeds":[1701,1702,1703,1704,1705],
+ "G1_acceptance_sha256":"e52e02e9c11ee722f43b5e9621c13b06bbb8aeb858480a8930213729cbf1f745",
+ "G1_plan_sha256":"85fc48c682694154ca47d060c0d6227584d374d3bf19112e4aae54e94c0f56a9",
+ "G1_scope":"Deduplicate all executed same-question/same-seed masks; require identical quality and logical token/call costs across duplicated worlds. Enumerate every complete two-edge face, including incidental faces; separately label three original named pairs/contexts. No missing corner imputation.",
+ "G1_cost_appendix":"Per world logical input+output tokens and calls from accepted observations. Report joint-deletion token savings and quality-loss together, no GPU-speed interpretation. Full current rollout plus acquisition/rollback/future-service cost is not identified by these per-world differences.",
+ "cost_noninferiority_boundary":"Quality noninferiority margin for a future cost-saving experiment is NOT frozen here. No positive-quality-improvement gate is imposed on such a distinct future objective. Historical Pareto signs are descriptive; they do not establish noninferiority or online savings.",
+ "G1_vs_G2":"Do not pool independent questions across model/protocol lineages as one confirmation. A screening pass from either exposed dataset is at most an exploratory rationale; multiplicity not erased.",
+ "new_gpu_hours":0
+}
