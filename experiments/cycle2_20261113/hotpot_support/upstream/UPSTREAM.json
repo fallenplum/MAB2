@@ -1,0 +1,11 @@
+{
+  "repository": "hotpotqa/hotpot",
+  "commit": "3635853403a8735609ee997664e1528f4480762a",
+  "source_blob": "50b0c2b2a123d183b65310debd35ba470c3a8104",
+  "license_blob": "f3290f572e36d634ffb079fbb11a8acd50f6711a",
+  "source_url": "https://github.com/hotpotqa/hotpot/blob/3635853403a8735609ee997664e1528f4480762a/hotpot_evaluate_v1.py",
+  "license": "Apache-2.0",
+  "dataset_license_separate": "CC-BY-SA-4.0",
+  "code_modified": false,
+  "benchmark_data_downloaded": false
+}

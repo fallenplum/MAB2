@@ -1,0 +1,9 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "tests": 6,
+  "official_metric_differential_pairs": 2006,
+  "benchmark_examples_read": 0,
+  "new_model_calls": 0,
+  "wall_seconds": 0.4701855182647705,
+  "python": "3.11.14"
+}

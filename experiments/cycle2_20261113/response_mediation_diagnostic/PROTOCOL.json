@@ -1,0 +1,18 @@
+{
+  "schema": "mab2_historical_response_mediation_diagnostic_v1",
+  "status": "EXPLORATORY_FIXED_BEFORE_ADDITIONAL_RAW_SCAN",
+  "scope": "Already exposed G2 train200 and tune80 only; no old exposed120, new R1 or official test executions",
+  "question": "Do rare terminal edge credits arise before the edited receiver changes, or after changed receiver messages reach the aggregator?",
+  "new_hypothesis_not_old_gate_retest": "Separate exact wire coalescence, answer-preserving message changes and receiver-answer changes, then measure terminal answer and credit changes. This is a mechanism measurement, not a replacement winner selected from failed runtime-signal baselines.",
+  "fixed_categories": ["same_receiver_wire", "changed_wire_same_receiver_answer", "changed_receiver_answer"],
+  "metrics": ["support and unique questions", "aggregate numeric-answer change including parse status", "nonzero single-seed credit", "signed credit", "exact-coalescence incremental suffix token ceiling"],
+  "arithmetic_checks": ["Only the edited second-round receiver may change among nonaggregate nodes", "Identical receiver wire implies identical aggregate prompt, generated text and score with paired seed", "Identical aggregate normalized numeric answers imply equal credit scores"],
+  "paired_diagnostic": "Within each question average all 24 anchor/edge pairs and 5 seeds; contrast event yields for receiver-answer-change versus answer-preserving changed wire only on questions supporting both categories; report overlap support separately",
+  "uncertainty": {"resamples": 2000, "seed": 97173, "cluster": "question", "interval": "percentile 95 percent", "scope": "exploratory historical associations, not causal mediation identification"},
+  "cost_scope": "Hypothetical marginal counterfactual suffix only: generating the edited receiver then aggregate with off-world baseline already cached. An exact equal-wire cache could skip the aggregate. This is an upper bound on a generic optimization available to every baseline, excludes baseline construction and cannot establish complete-budget improvement.",
+  "raw_scan_reason": "Prior format cache did not retain receiver/aggregate answer equality or exact wire identity. The additional scan is a separate measurement and preserves the prior single-pass diagnostic unchanged.",
+  "prohibited": ["Causal mediation effect claims from associations", "Treating changed receiver answers as zero-bias proxies", "Treating a parser failure as a correct answer", "New model inference", "Candidate admission from this report alone", "Official test or new R1 label access", "Changing any historical gate"],
+  "formal_candidate_rounds": 0,
+  "new_gpu_hours": 0,
+  "raw_pass_limit_for_this_new_diagnostic": 1
+}
