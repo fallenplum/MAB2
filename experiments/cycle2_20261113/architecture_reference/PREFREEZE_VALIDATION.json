@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_BEFORE_R1_ANALYSIS_S_ACCESS",
+  "utc": "2026-11-12T20:41:50.455214+00:00",
+  "tests": 5,
+  "R1_postprocess_observed_status": "WAITING_FOR_ALL_RAW_OUTPUTS_AND_CLOSED_COSTS",
+  "new_gpu_calls": 0,
+  "files": {
+    "PROTOCOL.md": "d64c02045639b2a1abfe9636af902ab863234f172eeead43a7e9135c76ad1957",
+    "reference.py": "b5e39dcb98af0b9c4aab0dd5e41e51c342d2426adcebb5285208e021109ba107",
+    "test_reference.py": "ffd5938e2fb6571651e36497e094ccc4c2dcd22d5e4dc1fda3e02d58f38da281"
+  }
+}
