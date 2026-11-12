@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "tests": 8,
+  "real_model_calls": 0,
+  "wall_seconds": 0.6359717845916748,
+  "python": "3.11.14",
+  "files": {
+    "routed_executor.py": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+    "test_routed_executor.py": "44a30e80fa473ab083326375a3f1fc2c0b696bfdb04535b2e5ca99629a729dcc",
+    "qualify_routed_executor.py": "9eb6581e893201d1e476980be5fd85283405120dcedbe99d696a5e3d3e2de242",
+    "PROTOCOL.json": "ca6159295a7e749da6aeb7ebf261c4c4710dcba77475ac52de68d20bb2b5ff6d",
+    "README.md": "3ed1ccfbf55eac5c72cd795b82a4824178f3898b6ff6770067c4131801464d2f"
+  },
+  "no_algorithm_or_benchmark_claim": true
+}

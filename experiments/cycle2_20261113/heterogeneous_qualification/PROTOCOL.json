@@ -1,0 +1,20 @@
+{
+  "schema": "mab2_heterogeneous_engineering_qualification_v1",
+  "status": "ENGINEERING_ONLY_NO_BENCHMARK",
+  "purpose": "Verify explicit node routing, recipient token accounting and conservative replay across two fixed local model families. Not an algorithm candidate or positive scientific evidence.",
+  "models": ["Qwen/Qwen2.5-3B-Instruct", "mistralai/Mistral-7B-Instruct-v0.3"],
+  "model_route": {"workers": ["qwen", "mistral", "qwen", "mistral"], "aggregate": "mistral"},
+  "graph": {"rounds": 3, "message_tokens": 128, "aggregate_tokens": 256, "do_sample": true, "temperature": 0.7, "top_p": 0.9, "max_input_tokens": 8192},
+  "old_mask": [1,1,1,1,1,1,1,1,1,1,1,1],
+  "new_mask": [0,1,1,1,1,1,1,1,1,1,1,1],
+  "seed": 99191,
+  "synthetic_inputs": [
+    {"id": "synthetic_hetero_arithmetic", "question": "A box contains two blue blocks and three red blocks. How many blocks are in the box?"},
+    {"id": "synthetic_hetero_reading", "question": "What color is Mira's card?", "context": "Mira has a blue card. Leon has a red card. Each person has exactly one card."}
+  ],
+  "admission": {"minimum_free_gpu_mib": 32000, "max_gpu_occupancy_hours": 0.5, "external_watchdog_seconds": 1770, "watchdog_termination_grace_seconds": 10, "formal_rounds": 0},
+  "pass_conditions": ["All 64 planned physical generations succeed", "Every affected-closure replay equals a fresh execution in prompts, seeds, generated text and normalized messages", "An identical graph replay issues zero new physical calls", "All sender wire and recipient input bounds are respected", "Closed occupancy ledger retained"],
+  "format_policy": "Report malformed fractions by model; no format or synthetic accuracy threshold is used to claim benchmark readiness. Any poor format behavior requires a separate documented engineering decision before formal experiments.",
+  "excluded_claims": ["No benchmark accuracy claim", "No heterogeneity improvement claim", "No automatic candidate admission", "No reproduction of the frozen R1 scientific experiment"],
+  "failure_policy": "Preserve all calls and costs. Repair implementation under a new qualification version if required; never retry a failed call silently. Candidate and project decisions are unaffected."
+}
