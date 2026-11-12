@@ -1,0 +1,57 @@
+{
+  "schema": "mab2_response_publication_sources_v1",
+  "original_report_md": {
+    "present_at_reviewed_source": false,
+    "public_replacement": "README.md",
+    "replacement_role": "explicitly newly written summary from frozen aggregate results and independent audit; not original report"
+  },
+  "sources": [
+    {
+      "public_name": "RESULTS.json",
+      "source_role": "original_aggregate_diagnostic",
+      "source_basename": "RESULTS.json",
+      "source_sha256": "575e4823518b2fa16dba2d31601f8797205d5ec4359050acf457dfba8a3efd80",
+      "public_sha256": "575e4823518b2fa16dba2d31601f8797205d5ec4359050acf457dfba8a3efd80",
+      "source_bytes": 3104,
+      "transformation": "exact_byte_copy"
+    },
+    {
+      "public_name": "INDEPENDENT_REVIEW.md",
+      "source_role": "independent_audit",
+      "source_basename": "REVIEW.md",
+      "source_sha256": "703563e60e08d5b70dd27d048b90fad007e66d5940e4b47e783e10126c81bd95",
+      "public_sha256": "703563e60e08d5b70dd27d048b90fad007e66d5940e4b47e783e10126c81bd95",
+      "source_bytes": 3853,
+      "transformation": "exact_byte_copy"
+    },
+    {
+      "public_name": "INDEPENDENT_REVIEW_RECEIPT.json",
+      "source_role": "independent_audit",
+      "source_basename": "REVIEW_RECEIPT.json",
+      "source_sha256": "003942950587904eec781b7706bfc38752bf2f50a18b1ee8946f7b7b4ddca49a",
+      "public_sha256": "003942950587904eec781b7706bfc38752bf2f50a18b1ee8946f7b7b4ddca49a",
+      "source_bytes": 11550,
+      "transformation": "exact_byte_copy"
+    },
+    {
+      "public_name": "review_response.py",
+      "source_role": "independent_audit",
+      "source_basename": "review_response.py",
+      "source_sha256": "20982133269a486f8c871c5c69c84757d81c01acfed9a69c84da33c23b1546f4",
+      "public_sha256": "20982133269a486f8c871c5c69c84757d81c01acfed9a69c84da33c23b1546f4",
+      "source_bytes": 24254,
+      "transformation": "exact_byte_copy"
+    }
+  ],
+  "raw_data_copied": false,
+  "private_paths_published": false,
+  "new_summary_derived_metrics": {
+    "tune_pooled_descriptive_event_rate_ratio": 6.17050393126099,
+    "formula": "(582/4206)/(86/3835)",
+    "post_receiver_conditional_association_only": true,
+    "not_free_sampling_benefit": true,
+    "not_causal_effect": true
+  },
+  "statistical_evidence_tier": "historical_exposed_development_exploratory",
+  "new_candidate_or_gate": false
+}

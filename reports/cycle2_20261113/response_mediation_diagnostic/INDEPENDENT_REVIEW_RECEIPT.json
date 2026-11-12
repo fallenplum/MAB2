@@ -1,0 +1,334 @@
+{
+  "status": "PASS_INDEPENDENT_DERIVED_ARRAY_ARITHMETIC_REPLAY",
+  "audit_script_sha256": "20982133269a486f8c871c5c69c84757d81c01acfed9a69c84da33c23b1546f4",
+  "input_sha256": {
+    "RESULTS.json": "575e4823518b2fa16dba2d31601f8797205d5ec4359050acf457dfba8a3efd80",
+    "PRIVATE_MEASUREMENT_ROWS.npy": "99249a540aecaaf3b88f34b5c9aad5199efc6e161f561cb3f048f4235a8dfb13",
+    "HASHED_NODE_CACHE.npz": "2264edf673b50e1ec2f7a858b34ec33c1cb36620473285e969a6533395285759",
+    "PROTOCOL.json": "0bb50c240bcdb69ff409dccca3adc384d6c4b83f741efb87304d1543ee1976fe",
+    "FREEZE_COMMIT.json": "917368403e186703fcc7aedfa3ec73555d3bf3471f7cf8440b411ae781985175",
+    "SCAN_STARTED.json": "64edc82252c13aec103bb86fb2d7abe9f20ee5e2edcb967b84628830a47116ef",
+    "INTERPRETATION_ADDENDUM.json": "528ca97e921ccf1b903995a5452835e4d1a2cf9998ed2107d455639e04568f61",
+    "INTERPRETATION_FREEZE_RECEIPT.json": "06d882a52a5a86e689a7edaf1d6f3c460bba813017e8c0ff86960644eca5dd46"
+  },
+  "d2_input_sha256": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+  "source_code_imported": false,
+  "scope": {
+    "selected_questions": 280,
+    "train_questions": 200,
+    "tune_questions": 80,
+    "excluded_question_outcomes_used": false,
+    "source_container_questions": 400,
+    "raw_executions_opened": false,
+    "question_text_or_gold_opened": false,
+    "new_R1_accessed": false,
+    "official_test_accessed": false,
+    "new_GPU_calls": 0,
+    "new_candidates_screened": 0,
+    "reconstructed_measurement_rows": 33600,
+    "reconstructed_columns": 9,
+    "exact_measurement_array_equality": true,
+    "present_cached_executions": 36370
+  },
+  "chain_check_decomposition": {
+    "one_unaffected_wire_array_check_per_cell": 33600,
+    "equal_receiver_wire_cells": 5961,
+    "three_checks_per_equal_wire_cell": 17883,
+    "one_zero_credit_check_per_equal_aggregate_numeric_cell": 28359,
+    "total": 79842,
+    "not_independent_sample_size": true
+  },
+  "bootstrap": {
+    "rng": "NumPy PCG64",
+    "seed": 97173,
+    "resamples": 2000,
+    "stream_order": [
+      "train",
+      "tune"
+    ],
+    "reseed_between_partitions": false,
+    "unit": "question",
+    "contrast": "per-question conditional event-rate difference; equal weight on overlapping questions",
+    "quantile": "independent sorted order-statistic linear interpolation"
+  },
+  "independently_recomputed": {
+    "train": {
+      "cells": [
+        {
+          "category": "same_receiver_wire",
+          "n": 4402,
+          "questions": 200,
+          "event_rate": 0.0,
+          "aggregate_numeric_answer_change_rate": 0.0,
+          "signed_credit": 0.0,
+          "event_count": 0,
+          "aggregate_numeric_answer_change_count": 0,
+          "signed_credit_sum": 0
+        },
+        {
+          "category": "changed_wire_same_receiver_answer",
+          "n": 9145,
+          "questions": 200,
+          "event_rate": 0.019901585565882996,
+          "aggregate_numeric_answer_change_rate": 0.04188080918534719,
+          "signed_credit": 0.0015308911973756151,
+          "event_count": 182,
+          "aggregate_numeric_answer_change_count": 383,
+          "signed_credit_sum": 14
+        },
+        {
+          "category": "changed_receiver_answer",
+          "n": 10453,
+          "questions": 197,
+          "event_rate": 0.12637520329092128,
+          "aggregate_numeric_answer_change_rate": 0.31646417296469914,
+          "signed_credit": -0.00832296948244523,
+          "event_count": 1321,
+          "aggregate_numeric_answer_change_count": 3308,
+          "signed_credit_sum": -87
+        }
+      ],
+      "question_count": 200,
+      "single_seed_cells": 24000,
+      "paired_questions": 197,
+      "paired_question_equal_weight_mean": 0.09826770145917837,
+      "paired_ci95_linear_percentile": [
+        0.08387270372837888,
+        0.113467882320225
+      ],
+      "suffix_token_denominator": 25971032,
+      "potential_skipped_aggregate_token_numerator": 2653629,
+      "suffix_ratio": 0.10217649418013115,
+      "public_interval_supported_by_at_least_two_clusters": true
+    },
+    "tune": {
+      "cells": [
+        {
+          "category": "same_receiver_wire",
+          "n": 1559,
+          "questions": 80,
+          "event_rate": 0.0,
+          "aggregate_numeric_answer_change_rate": 0.0,
+          "signed_credit": 0.0,
+          "event_count": 0,
+          "aggregate_numeric_answer_change_count": 0,
+          "signed_credit_sum": 0
+        },
+        {
+          "category": "changed_wire_same_receiver_answer",
+          "n": 3835,
+          "questions": 80,
+          "event_rate": 0.02242503259452412,
+          "aggregate_numeric_answer_change_rate": 0.041460234680573665,
+          "signed_credit": 0.0010430247718383311,
+          "event_count": 86,
+          "aggregate_numeric_answer_change_count": 159,
+          "signed_credit_sum": 4
+        },
+        {
+          "category": "changed_receiver_answer",
+          "n": 4206,
+          "questions": 79,
+          "event_rate": 0.1383737517831669,
+          "aggregate_numeric_answer_change_rate": 0.330718021873514,
+          "signed_credit": -0.0042796005706134095,
+          "event_count": 582,
+          "aggregate_numeric_answer_change_count": 1391,
+          "signed_credit_sum": -18
+        }
+      ],
+      "question_count": 80,
+      "single_seed_cells": 9600,
+      "paired_questions": 79,
+      "paired_question_equal_weight_mean": 0.10767714561712631,
+      "paired_ci95_linear_percentile": [
+        0.08725457641904401,
+        0.1302860107784785
+      ],
+      "suffix_token_denominator": 10423742,
+      "potential_skipped_aggregate_token_numerator": 945866,
+      "suffix_ratio": 0.09074150146847457,
+      "public_interval_supported_by_at_least_two_clusters": true
+    }
+  },
+  "numeric_fields_checked": 40,
+  "maximum_reported_numeric_absolute_difference": 0.0,
+  "numeric_comparisons": [
+    {
+      "field": "train/same_receiver_wire/n",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/same_receiver_wire/questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/same_receiver_wire/event_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/same_receiver_wire/aggregate_numeric_answer_change_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/same_receiver_wire/signed_credit",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_wire_same_receiver_answer/n",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_wire_same_receiver_answer/questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_wire_same_receiver_answer/event_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_wire_same_receiver_answer/aggregate_numeric_answer_change_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_wire_same_receiver_answer/signed_credit",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_receiver_answer/n",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_receiver_answer/questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_receiver_answer/event_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_receiver_answer/aggregate_numeric_answer_change_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/changed_receiver_answer/signed_credit",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/paired_questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/paired_mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/paired_ci95/0",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/paired_ci95/1",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "train/suffix_token_ratio",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/same_receiver_wire/n",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/same_receiver_wire/questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/same_receiver_wire/event_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/same_receiver_wire/aggregate_numeric_answer_change_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/same_receiver_wire/signed_credit",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_wire_same_receiver_answer/n",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_wire_same_receiver_answer/questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_wire_same_receiver_answer/event_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_wire_same_receiver_answer/aggregate_numeric_answer_change_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_wire_same_receiver_answer/signed_credit",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_receiver_answer/n",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_receiver_answer/questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_receiver_answer/event_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_receiver_answer/aggregate_numeric_answer_change_rate",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/changed_receiver_answer/signed_credit",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/paired_questions",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/paired_mean",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/paired_ci95/0",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/paired_ci95/1",
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "tune/suffix_token_ratio",
+      "absolute_difference": 0.0
+    }
+  ],
+  "interpretation_binding_verified": true,
+  "limitations": [
+    "Hashes are trusted derived evidence: no original wire, prompt, generation, numeric parse or gold was re-opened.",
+    "The 79,842 value is a dependent assertion counter, not an independent sample size.",
+    "Source index paths/raw-byte total and actual raw scan uniqueness were not independently rescanned.",
+    "Receiver answer equality is literal parsed-string equality, not semantic correctness.",
+    "Credit events are single-seed paired differences, not five-seed aggregated G2 risk.",
+    "Categories condition on post-intervention output and do not identify a causal mediation effect.",
+    "Receiver state is observed only after generating it; this is not a free acquisition signal.",
+    "Token ratio excludes baseline bank construction and other full-budget costs; available to all methods.",
+    "No candidate or model improvement is admitted by this audit."
+  ],
+  "numpy_version": "2.2.4",
+  "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+  "wall_seconds": 1.2601280999951996,
+  "review_md_sha256": "703563e60e08d5b70dd27d048b90fad007e66d5940e4b47e783e10126c81bd95"
+}

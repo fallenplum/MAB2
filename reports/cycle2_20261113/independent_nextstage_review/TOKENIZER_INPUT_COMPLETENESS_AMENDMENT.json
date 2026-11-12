@@ -1,0 +1,22 @@
+{
+  "status": "INPUT_COMPLETENESS_FIX_BEFORE_ANY_HETEROGENEOUS_GPU_CALL",
+  "previous_plan_sha256": "1ce5d04d0543ccbf1af7c6e3acbd10cc6d736ce4a065adb7fde783491a9e5081",
+  "new_plan_sha256": "279bec01c0a3516f3293990c8464deda78a240a6aed7bafb9ceafcd36016089c",
+  "source_commit_unchanged": "b7434719eebb93eb41770bbc9af63222e3a47380",
+  "code_and_protocol_unchanged": true,
+  "added_official_file": {
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "file": "tokenizer.model",
+    "bytes": 587404,
+    "sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89"
+  },
+  "original_transfer_incident_preserved": true,
+  "reserved_gpu_hours_unchanged": 0.5,
+  "formal_round_increment": 0,
+  "at_unix": 1794520403.5178118,
+  "tokenizer_class": "LlamaTokenizerFast",
+  "synthetic_probe_tokens": 26,
+  "GPU_loaded_in_probe": false,
+  "model_quality_claim": false
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "mab2_response_publication_manifest_v1",
+  "status": "STAGED_FOR_PARENT_REVIEW_NOT_PUBLISHED",
+  "files": [
+    {
+      "name": "INDEPENDENT_REVIEW.md",
+      "bytes": 3853,
+      "sha256": "703563e60e08d5b70dd27d048b90fad007e66d5940e4b47e783e10126c81bd95"
+    },
+    {
+      "name": "INDEPENDENT_REVIEW_RECEIPT.json",
+      "bytes": 11550,
+      "sha256": "003942950587904eec781b7706bfc38752bf2f50a18b1ee8946f7b7b4ddca49a"
+    },
+    {
+      "name": "PUBLICATION_CHECKS.json",
+      "bytes": 1360,
+      "sha256": "bd631ee7281941e698a243a88db50672c3732d51704309a239ad53cfd27fa2f0"
+    },
+    {
+      "name": "README.md",
+      "bytes": 5402,
+      "sha256": "01917cc246d1ea72425a2ac2a95ad39d647641c5978fb8690ad3cc930deb8d34"
+    },
+    {
+      "name": "RESULTS.json",
+      "bytes": 3104,
+      "sha256": "575e4823518b2fa16dba2d31601f8797205d5ec4359050acf457dfba8a3efd80"
+    },
+    {
+      "name": "SOURCE_PROVENANCE.json",
+      "bytes": 2360,
+      "sha256": "165d2e56cef98273e6d63d0d416b496dc7de8e6e2701249ffb0be2a9032c0640"
+    },
+    {
+      "name": "review_response.py",
+      "bytes": 24254,
+      "sha256": "20982133269a486f8c871c5c69c84757d81c01acfed9a69c84da33c23b1546f4"
+    }
+  ],
+  "manifest_self_hash_excluded": true,
+  "raw_or_per_question_data_included": false
+}

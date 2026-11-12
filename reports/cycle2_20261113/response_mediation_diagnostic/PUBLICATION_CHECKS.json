@@ -1,0 +1,39 @@
+{
+  "status": "ALLOWLIST_AND_CONTENT_REVIEW_PASS",
+  "expected_files": [
+    "INDEPENDENT_REVIEW.md",
+    "INDEPENDENT_REVIEW_RECEIPT.json",
+    "PUBLICATION_CHECKS.json",
+    "PUBLICATION_MANIFEST.json",
+    "README.md",
+    "RESULTS.json",
+    "SOURCE_PROVENANCE.json",
+    "review_response.py"
+  ],
+  "aggregate_results_and_audit_bindings_verified": true,
+  "exact_source_copies": [
+    "RESULTS.json",
+    "INDEPENDENT_REVIEW.md",
+    "INDEPENDENT_REVIEW_RECEIPT.json",
+    "review_response.py"
+  ],
+  "all_40_reported_numeric_fields_previously_replayed": true,
+  "pooled_rate_ratio_distinguished_from_question_equal_weight_contrast": true,
+  "post_receiver_association_not_free_information": true,
+  "suffix_tokens_not_complete_cost": true,
+  "generic_cache_not_new_contribution": true,
+  "reproduction_requires_authorized_private_arrays": true,
+  "original_REPORT_missing_explicitly_recorded": true,
+  "excluded_artifact_types": [
+    "numeric caches",
+    "measurement rows",
+    "question identifiers",
+    "raw prompts or outputs",
+    "gold",
+    "execution index",
+    "weights"
+  ],
+  "content_review": "human review of aggregate sources and generated narrative, plus automated patterns for paths, hosts, commands, tokens and identifiers; not a universal privacy proof",
+  "research_worktree_modified": false,
+  "git_stage_commit_or_push": false
+}
