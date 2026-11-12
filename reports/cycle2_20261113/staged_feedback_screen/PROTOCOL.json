@@ -1,0 +1,33 @@
+{
+  "schema": "historical_paid_receiver_stage_oracle_screen_v1",
+  "status": "FIXED_BEFORE_NUMERIC_ARRAY_INSPECTION_POST_HOC_HISTORY",
+  "scope": "Already exposed old G2 train200/tune80 anonymized derived data only. No exposed120, new R1, raw questions, official test, model inference or GPU.",
+  "purpose": "Try to falsify cost headroom for paying for receiver replay before selecting expensive aggregate counterfactuals. This is an optimistic historical oracle screen, not a deployed method, original estimator, fresh confirmation or admission gate.",
+  "data_allowed": ["response_mediation_diagnostic/RESULTS.json", "response_mediation_diagnostic/PROTOCOL.json", "response_mediation_diagnostic/INTERPRETATION_ADDENDUM.json", "response_mediation_diagnostic/PRIVATE_MEASUREMENT_ROWS.npy", "response_mediation_diagnostic/HASHED_NODE_CACHE.npz", "old d2 private/inputs.npz partition train/tune only if needed"],
+  "partition_order": ["train", "tune"],
+  "target": "Finite-bank equal-row signed paired terminal credit mean; seeds/edges/anchors within a question are dependent for generalization. A scalar mean is a limited design target, not edge ranking, BAI, policy improvement or new-question service utility.",
+  "strata": ["exact same receiver wire: deterministic zero credit under frozen paired execution", "changed wire but literal parsed receiver answer string equal", "literal parsed receiver answer string changed"],
+  "common_optimization": "Every comparator may skip aggregate after exact receiver-wire coalescence. Receiver replay is paid before that identity can be known. No zero credit inferred merely from same parsed answer.",
+  "comparators": ["Uniform direct row SRS with identical exact-wire cache", "Complete direct census with identical exact-wire cache", "Full-bank paid receiver probing then oracle continuous SRS allocation across nonzero-capable strata", "Uniform first-stage Bernoulli probes then oracle independent stratum-specific completion probabilities; HT estimates with exact realized design probabilities"],
+  "cost_scope": {
+    "hypothetical": "Receiver/aggregate ratios 0.5,1,2 separately labelled hypothetical, not measured latency or money.",
+    "measured": "Use recorded input+output token counts if supplied by authorized arrays; report receiver/aggregate by split and category. Tokens are measured historical resource proxies, not measured wall-time or GPU-hour prices.",
+    "complete": "Charge baseline graph construction, receiver probes, aggregate completion and scoring. Reconstruct baseline token cost only if authorized cache identifies it; otherwise keep missing cost explicit, provide symbolic B and scoring sensitivity, and do not claim measured complete-cost win.",
+    "base_sharing": "Show full shared base-bank prepayment and, if reconstructable, lazy expected baseline touch cost for random acquisition. Never use prepayment-excluding marginal results as complete-budget savings.",
+    "scoring": "Scoring costs not recoverable from model token cache remain unknown, with separate sensitivity rather than silently assumed free.",
+    "cache": "Physical cross-row replay reuse, if identified, must be common; distinguish exact-wire coalescence from additional duplicate-node cache savings. Unsupported independent-row models are labelled relaxations."
+  },
+  "calculations": {
+    "direct_srs": "Var(mean_hat)=S_y^2*(1/n-1/N), expected suffix cost n*mean(receiver+eligible aggregate). Continuous n is optimistic relaxation.",
+    "census_probe_stratified_srs": "Var=sum_h (N_h/N)^2*S_h^2*(1/n_h-1/N_h); cost=all receiver probes+sum_h n_h*mean aggregate_h+base+scoring. Solve convex oracle allocation with n_h capped by N_h. Membership and true variances are historical oracle information; zero empirical variance is not a guaranteed zero for future data.",
+    "staged_poisson_ht": "Var=N^-2*sum_i y_i^2*(1/(q*p_h)-1); expected suffix cost=q*sum receiver_i+q*sum_h p_h*sum aggregate_i. Optimize q,p_h in [0,1] at common expected cap; unknown strata do not become free labels. Expected caps are not hard realized caps.",
+    "frontier_grid": "Fractions 0.02,0.05,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0 of full direct suffix census cost plus stage-one threshold breakpoints; compare at matched total cost and report cost times variance.",
+    "checks": ["Reproduce category counts and zero-wire credit", "Validate token units and cache linkage", "Validate allocation KKT/numerical solution", "Check census variance zero", "Compare matched target and same cache", "Do not infer new-question variance or guarantees from finite-bank randomization variance"]
+  },
+  "interpretation": "No cost headroom in these restricted oracle families rejects this instance for this target/cost model, not every adaptive policy. Headroom only motivates an independent fresh-data contract. A favourable oracle optimum is not a deployable strategy or strict upper bound over all policies.",
+  "literature": "Verify nearest primary sources for Neyman/cost allocation, multi-fidelity BAI, filtered feedback and AIPW. Record real search provider and exact URLs; no fabricated Google claim.",
+  "prohibited_claims": ["new estimator from routine Neyman or HT", "unknown proxy bias treated as known multi-fidelity accuracy", "semantic equivalence from literal strings", "causal mediation from association", "future service gain", "formal candidate admission", "globally optimal over all policies", "measured full cost when scoring/base are missing"],
+  "new_gpu_hours": 0,
+  "new_model_calls": 0,
+  "new_formal_rounds": 0
+}

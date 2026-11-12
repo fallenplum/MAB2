@@ -1,0 +1,27 @@
+{
+  "schema": "public_interface_replay_validation_v1",
+  "status": "PASS",
+  "frontier_rows": 1248,
+  "frontier_byte_identical": true,
+  "frontier_sha256": "157ee8903e7b05966054bf41df091be920ab8ff1bdf9d25c89b29950ee0f3545",
+  "scientific_json_exact_match": true,
+  "timing_field_excluded": {
+    "historical": 9.735000000000582,
+    "replay": 9.968000000008033
+  },
+  "expected_post_result_provenance_changes": [
+    {
+      "name": "run_screen.py",
+      "original_sha256": "9f2a1ad9bff0daba38f999ea36c679cbd4374947c9ea56633de05e8ca8e91a88",
+      "public_sha256": "40feb1c75a66f5ac02605a4c4b47fd34945940bd69ac7d7d4c72569aadacd639"
+    }
+  ],
+  "other_input_and_source_hashes_identical": true,
+  "overwrite_guard_passed": true,
+  "zero_score_and_point_one_degeneracy_rows": 48,
+  "score_ratio_one_counterexample_preserved": true,
+  "new_gpu_hours": 0,
+  "new_model_calls": 0,
+  "new_formal_rounds": 0,
+  "raw_question_or_R1_or_official_test_read": false
+}

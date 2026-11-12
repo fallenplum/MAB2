@@ -1,0 +1,87 @@
+{
+  "schema": "post_result_public_interface_revision_v1",
+  "created_utc": "2026-11-12T22:02:21.690846+00:00",
+  "timing": "AFTER historical oracle results; interface revision only; not a preregistered algorithm change",
+  "scientific_protocol_changed": false,
+  "mathematical_implementation_changed": false,
+  "public_data_not_included": true,
+  "source_map": [
+    {
+      "original_name": "frontier_math.py",
+      "public_name": "frontier_math.py",
+      "original_sha256": "d8262cf5e1ad52549639a08872af9e98c857344e142aed8998db5a962ffaa9cb",
+      "public_sha256": "d8262cf5e1ad52549639a08872af9e98c857344e142aed8998db5a962ffaa9cb",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "PROTOCOL.json",
+      "public_name": "PROTOCOL.json",
+      "original_sha256": "e905d49063dce0482cea78d9c79baa806c42112405ff2367ed98fc9d254016d6",
+      "public_sha256": "e905d49063dce0482cea78d9c79baa806c42112405ff2367ed98fc9d254016d6",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "SCHEMA_AND_COST_ADDENDUM.json",
+      "public_name": "SCHEMA_AND_COST_ADDENDUM.json",
+      "original_sha256": "28f75aeaccb0b10e57235b9f9a1082b5a03448ca9d407da0451bae0e61e8f3ef",
+      "public_sha256": "28f75aeaccb0b10e57235b9f9a1082b5a03448ca9d407da0451bae0e61e8f3ef",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "REPORT.md",
+      "public_name": "REPORT.md",
+      "original_sha256": "2acec069f69fd1e1746ca6b07939cf37d6ae8549ae9c8b99b6b314f5e57ad50d",
+      "public_sha256": "2acec069f69fd1e1746ca6b07939cf37d6ae8549ae9c8b99b6b314f5e57ad50d",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "MATHEMATICAL_NOTE.md",
+      "public_name": "MATHEMATICAL_NOTE.md",
+      "original_sha256": "954530bb9c7276cee1c372988c318ee62994a90610e5c7bf6644c8757f47d5e0",
+      "public_sha256": "954530bb9c7276cee1c372988c318ee62994a90610e5c7bf6644c8757f47d5e0",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "INDEPENDENT_MATH_REVIEW.md",
+      "public_name": "INDEPENDENT_MATH_REVIEW.md",
+      "original_sha256": "382b2f4987e382607851374fd6418ba8d638b7b3867b99e7250b9e81b63e60b8",
+      "public_sha256": "382b2f4987e382607851374fd6418ba8d638b7b3867b99e7250b9e81b63e60b8",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "LITERATURE.md",
+      "public_name": "LITERATURE.md",
+      "original_sha256": "8ab795bccebd1b8924f90c2fa2cfbeef5e7a42476c3f44d7520a72c56512828c",
+      "public_sha256": "8ab795bccebd1b8924f90c2fa2cfbeef5e7a42476c3f44d7520a72c56512828c",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "NEXT_MECHANISM_ONE_PAGE.md",
+      "public_name": "NEXT_MECHANISM_ONE_PAGE.md",
+      "original_sha256": "a8a753500e2bc99eef6590e1ec28441f4dfa68f44743f73395428d850e2c0efe",
+      "public_sha256": "a8a753500e2bc99eef6590e1ec28441f4dfa68f44743f73395428d850e2c0efe",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "RESULTS.json",
+      "public_name": "HISTORICAL_RESULTS.json",
+      "original_sha256": "ef13c2ffdef4908cec0387b3552edccfb8926e7c8fd9fda13103cff993ff070a",
+      "public_sha256": "ef13c2ffdef4908cec0387b3552edccfb8926e7c8fd9fda13103cff993ff070a",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "FRONTIER.csv",
+      "public_name": "HISTORICAL_FRONTIER.csv",
+      "original_sha256": "157ee8903e7b05966054bf41df091be920ab8ff1bdf9d25c89b29950ee0f3545",
+      "public_sha256": "157ee8903e7b05966054bf41df091be920ab8ff1bdf9d25c89b29950ee0f3545",
+      "change": "byte-identical copy; historical outputs renamed only"
+    },
+    {
+      "original_name": "run_screen.py",
+      "public_name": "run_screen.py",
+      "original_sha256": "9f2a1ad9bff0daba38f999ea36c679cbd4374947c9ea56633de05e8ca8e91a88",
+      "public_sha256": "40feb1c75a66f5ac02605a4c4b47fd34945940bd69ac7d7d4c72569aadacd639",
+      "change": "CLI parameterization and separate immutable source directory from new output directory"
+    }
+  ]
+}

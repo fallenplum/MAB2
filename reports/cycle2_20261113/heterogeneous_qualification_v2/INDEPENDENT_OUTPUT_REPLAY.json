@@ -1,0 +1,49 @@
+{
+  "status": "PASS_INDEPENDENT_IMPLEMENTATION_SYNTHETIC_ENGINEERING_REPLAY",
+  "reviewer": "root separate arithmetic implementation; not external human review",
+  "synthetic_questions": 2,
+  "physical_calls": 64,
+  "models": {
+    "qwen": {
+      "n": 28,
+      "bad": 0
+    },
+    "mistral": {
+      "n": 36,
+      "bad": 0
+    }
+  },
+  "replay_field_equalities": 260,
+  "graph_cost_records_checked": 8,
+  "resident_gpu_hours": 0.11611894417664088,
+  "CUDA_event_seconds": 84.01500048828125,
+  "input_tokens": 19568,
+  "output_tokens": 1720,
+  "source_pins": {
+    "IDENTITY.json": "f1b205445393a03644d10d00cf80cd20f9eeef7c7d6c9a5d9c7e66dd6530b45a",
+    "mistral_physical_calls.jsonl": "02ef9ac156c29e5b21725fc401a4b3c308ad1bd25b71cf423ef557b6391ee4d9",
+    "QUALIFICATION.json": "d0dfee34aa0c65646b0c662f130ca8fce0a7cf6c8b055a24daf8ada39e9c41f6",
+    "qwen_physical_calls.jsonl": "39e5051be284ee67d55403a486ff77b6472a68669ab39c92098b5382118b2443",
+    "RESIDENT_STATUS.json": "10d7ad08007905a8b64a99273ab4a6a9c1d98728a24e381b103f11b91cdf3cdf",
+    "RESOURCE_ADMISSION.json": "2a277dca3e9eeb7b0166f69e6c82142b8cb7c507c070baf77cca368bcd14215c",
+    "route_calls.jsonl": "16ea482c325fdcf381d7d47817afe40f43a285a1a5dd1a6096447700173b04a8",
+    "synthetic_hetero_arithmetic_base.json": "f6400e2a29c26a07c5198822040d682a9214ebcca8739e58cd9b132b4d1bcded",
+    "synthetic_hetero_arithmetic_cache.json": "9db1ee6287a60adc99d6437b0119b5c843bf87d941c62a0292f0e09fe8de72f7",
+    "synthetic_hetero_arithmetic_changed.json": "dad841cbb58a3dea8e36ff615ad8bdd9297a153c3cd7f961fe6e7ce3ce28f789",
+    "synthetic_hetero_arithmetic_fresh.json": "c09dee33a7087ae7ee4b9bcbb0e342bcc207634f5433373a4c34521d8792d0a6",
+    "synthetic_hetero_reading_base.json": "9f822c95cbc21e42a59b5e2944b832331c7b578bfda761c0d8f92cff4f7c1f9d",
+    "synthetic_hetero_reading_cache.json": "cdffd6390fb188aff2aa8dd0455add9ad88fead2871dcac453a5c4814c4bfa56",
+    "synthetic_hetero_reading_changed.json": "ffee464011c7921fd39bb5a8bc64ccc58c54a4e1e5950b2065d94666909e9e0f",
+    "synthetic_hetero_reading_fresh.json": "0bb472a45b17ca82d127255c1f55d5db6699f14648f8f1b8f28312f24b7e7232"
+  },
+  "review_code_sha256": "82338d4a8bbe55fe602e760237439d89236754f9e2082db34af736841d7c64c9",
+  "limitations": [
+    "Only two synthetic tasks and one seed; no benchmark quality claim",
+    "Models and prompts unchanged; no real mixed-task scoring validation",
+    "Format success here does not estimate population format error",
+    "Receiver tokenizer runtime uses frozen executor; this check does not independently tokenize raw strings"
+  ],
+  "GPU_calls_added_by_review": 0,
+  "formal_rounds_increment": 0,
+  "review_implementation_correction": "Initial reviewer incorrectly required whole output_digest equality across fresh calls; it includes call_id and physical runtime. Corrected to compare semantic outputs and independently recompute all per-node integrity digests; reuse digest equality still required. No production output or protocol changed."
+}

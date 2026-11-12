@@ -1,0 +1,15 @@
+{
+  "status": "DESCRIPTIVE_FIGURE_RENDERED_REQUIRES_VISUAL_REVIEW",
+  "source_csv_sha256": "157ee8903e7b05966054bf41df091be920ab8ff1bdf9d25c89b29950ee0f3545",
+  "source_code_sha256": "16f70fda3d24a204484f5c0606a4dfeab40ddbd5519762e50a53855a333abb6d",
+  "panels": 2,
+  "points": 48,
+  "filter": {
+    "scenario": "observed_token_score_equivalent_ratio_0",
+    "method": "staged_Poisson_HT_oracle",
+    "fractions": "all <1 including threshold breakpoints; census excluded because both variances zero"
+  },
+  "reference": "same direct Poisson with exact-wire cache and same cost scope",
+  "inferential_CI": false,
+  "raw_question_data": false
+}

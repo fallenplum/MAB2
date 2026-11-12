@@ -15,3 +15,5 @@ src/graph_credit/** -text
 literature/cycle2_20261113/** text eol=lf
 experiments/cycle2_20261113/r2/FROZEN_DIAGNOSTIC_CONTRACT.md -text
 reports/cycle2_20261113/response_mediation_diagnostic/** -text
+reports/cycle2_20261113/heterogeneous_qualification_v2/** -text
+reports/cycle2_20261113/staged_feedback_screen/** -text

@@ -1,0 +1,14 @@
+{
+  "status": "FIXED_AFTER_SCHEMA_REVIEW_BEFORE_NUMERIC_FRONTIER_RUN",
+  "original_protocol_unchanged": true,
+  "measurement_columns": ["D2 global question index (train/tune only)", "anchor 0..1", "physical directed edge 0..11", "seed index 0..4", "category 0..2", "aggregate numeric answer differs", "on-minus-off binary quality credit", "right receiver+aggregate input+output tokens", "aggregate tokens saved for exact-wire equality else zero"],
+  "mapping": "left/right.reshape(400,2,12)[train/tune questions]; receiver=4+destination in source-major 4-node off-diagonal edges; aggregate=8; seed execution=2701+index",
+  "baseline_definition": "Logical full baseline graph token sum over all 9 nodes, once per distinct (left graph index, seed). This is a declared accounting model using recorded tokens, not reconstructed actual physical GPU or call cost. Additional identical prompt/node caching is not inferred from missing call_id/reused metadata.",
+  "overlap_audit": "Report right graph membership in left bank. Physical graph reuse could change action space; the logical-observation ledger charges purchased counterfactual completion even if physically cached, matching the autonomy contract. Do not interpret this logical cost as actual physical execution cost.",
+  "complete_cost_variants": ["All distinct left baselines prepaid: B + suffix cost", "Lazy baseline activation: expected touched (left graph, seed) baseline costs for the selected receiver probes"],
+  "lazy_cost": "SRS group-touch probability 1-C(N-m,n)/C(N,n); Bernoulli probe group-touch probability 1-(1-q)^m. Continuous gamma extension for SRS n is explicitly a relaxation.",
+  "scoring_sensitivity": "Historical scoring wall time is unknown. Add hypothetical per-score token-equivalent cost 0,0.1,1.0 times the split mean aggregate input+output tokens; pay once for each baseline score and each purchased noncoalesced aggregate score. Zero is optimistic, not measured free scoring.",
+  "assumed_ratio_sensitivity": "Receiver/aggregate unit cost 0.5,1,2 uses hypothetical constant costs and suffix-only budgets. Keep these separate from observed heterogeneous token counts; complete baseline costs are measured-token logical scenarios only.",
+  "scope_guard": "Do not read quality_by_seed, masks or raw node content: rows already contain authorized credits. D2 mapping metadata only, with partition filter before outcome calculations.",
+  "nonclaims": ["actual full GPU cost measured", "new-question performance", "global upper bound", "shared physical cache ignored in deployment"]
+}

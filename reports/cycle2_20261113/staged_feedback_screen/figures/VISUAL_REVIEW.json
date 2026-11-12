@@ -1,0 +1,10 @@
+{
+  "status": "ROOT_VISUAL_REVIEW_PASS",
+  "source_figure_sha256": "6db69452043ef818a32a6e18adf9ad1d99c077c547d89ce4d561d93b284ac521",
+  "observations": [
+    "Both panels, axes, legend and caveats visible; no clipped text",
+    "Both train and tune overlap at ratio one in complete lazy baseline panel",
+    "Figure is descriptive; score-equivalent ratio zero only; other scenarios retained in complete table"
+  ],
+  "no_scientific_gate_changed": true
+}

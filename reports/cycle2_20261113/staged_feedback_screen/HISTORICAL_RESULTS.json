@@ -1,0 +1,453 @@
+{
+  "status": "COMPLETE_HISTORICAL_OPTIMISTIC_ORACLE_SCREEN",
+  "new_model_calls": 0,
+  "new_gpu_hours": 0,
+  "new_formal_rounds": 0,
+  "R1_read": false,
+  "official_test_read": false,
+  "raw_text_read": false,
+  "quality_by_seed_read": false,
+  "math_checks": {
+    "enumerated_SRS_subsets": 56,
+    "SRS_variance_error": 1.3877787807814457e-17,
+    "Neyman_vs_SLSQP_error": 2.979387569990166e-16,
+    "Poisson_vs_SLSQP_error": 3.820771823925817e-14,
+    "status": "PASS"
+  },
+  "source_sha256": {
+    "PRIVATE_MEASUREMENT_ROWS.npy": "99249a540aecaaf3b88f34b5c9aad5199efc6e161f561cb3f048f4235a8dfb13",
+    "HASHED_NODE_CACHE.npz": "2264edf673b50e1ec2f7a858b34ec33c1cb36620473285e969a6533395285759",
+    "inputs.npz": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+    "PROTOCOL.json": "e905d49063dce0482cea78d9c79baa806c42112405ff2367ed98fc9d254016d6",
+    "SCHEMA_AND_COST_ADDENDUM.json": "28f75aeaccb0b10e57235b9f9a1082b5a03448ca9d407da0451bae0e61e8f3ef",
+    "frontier_math.py": "d8262cf5e1ad52549639a08872af9e98c857344e142aed8998db5a962ffaa9cb",
+    "run_screen.py": "9f2a1ad9bff0daba38f999ea36c679cbd4374947c9ea56633de05e8ca8e91a88"
+  },
+  "splits": {
+    "train": {
+      "N_rows": 24000,
+      "N_questions": 200,
+      "signed_mean": -0.0030416666666666665,
+      "sample_variance": 0.0626183573621123,
+      "receiver_tokens": {
+        "n": 24000,
+        "mean": 453.15179166666667,
+        "median": 441.0,
+        "min": 278.0,
+        "max": 865.0
+      },
+      "aggregate_tokens": {
+        "n": 24000,
+        "mean": 628.9745416666667,
+        "median": 614.0,
+        "min": 435.0,
+        "max": 1002.0
+      },
+      "ratio_sum_receiver_to_sum_aggregate_tokens": 0.7204612613825321,
+      "mean_per_row_receiver_aggregate_ratio": 0.7207895067624395,
+      "suffix_no_cache_tokens": 25971032,
+      "suffix_common_exact_wire_cache_tokens": 23317403,
+      "logical_unique_off_graph_seed_baselines": 14205,
+      "logical_base_graph_token_sum": 48854582,
+      "logical_base_graph_token_per_pair_sum": 80764284,
+      "right_graph_also_in_full_left_bank_fraction": 0.48895833333333333,
+      "strata": [
+        {
+          "category": 0,
+          "N": 4402,
+          "credit_mean": 0.0,
+          "credit_sample_variance": 0.0,
+          "credit_second_moment": 0.0,
+          "receiver_tokens_mean": 444.3139482053612,
+          "aggregate_tokens_mean": 602.823489323035
+        },
+        {
+          "category": 1,
+          "N": 9145,
+          "credit_mean": 0.0015308911973756151,
+          "credit_sample_variance": 0.01990141814558582,
+          "credit_second_moment": 0.019901585565882996,
+          "receiver_tokens_mean": 461.1249863313286,
+          "aggregate_tokens_mean": 626.2348824494259
+        },
+        {
+          "category": 2,
+          "N": 10453,
+          "credit_mean": -0.00832296948244523,
+          "credit_sample_variance": 0.12631801584912236,
+          "credit_second_moment": 0.12637520329092128,
+          "receiver_tokens_mean": 449.89811537357696,
+          "aggregate_tokens_mean": 642.3841959246149
+        }
+      ],
+      "scenario_summary": {
+        "assumed_receiver_aggregate_ratio_0.5/suffix_only": {
+          "full_suffix_cost": 31598.0,
+          "full_base_cost": 0.0,
+          "full_direct_census_cost": 31598.0,
+          "probe_fraction_of_suffix": 0.37977087157415024,
+          "staged_best_grid_ratio_to_SRS": 0.5754159717986195,
+          "staged_worst_grid_ratio_to_SRS": 0.954664149880151,
+          "all_probe_best_grid_ratio_to_SRS": 0.575411131163551,
+          "all_probe_worst_grid_ratio_to_SRS": 3231.0800581621365,
+          "not_global_policy_bound": true
+        },
+        "assumed_receiver_aggregate_ratio_1/suffix_only": {
+          "full_suffix_cost": 43598.0,
+          "full_base_cost": 0.0,
+          "full_direct_census_cost": 43598.0,
+          "probe_fraction_of_suffix": 0.5504839671544566,
+          "staged_best_grid_ratio_to_SRS": 0.8560222718060007,
+          "staged_worst_grid_ratio_to_SRS": 0.98540365177607,
+          "all_probe_best_grid_ratio_to_SRS": 0.9930332822218932,
+          "all_probe_worst_grid_ratio_to_SRS": 4683.069713155582,
+          "not_global_policy_bound": true
+        },
+        "assumed_receiver_aggregate_ratio_2/suffix_only": {
+          "full_suffix_cost": 67598.0,
+          "full_base_cost": 0.0,
+          "full_direct_census_cost": 67598.0,
+          "probe_fraction_of_suffix": 0.7100801798869789,
+          "staged_best_grid_ratio_to_SRS": 0.9955962273705482,
+          "staged_worst_grid_ratio_to_SRS": 0.9996458921397998,
+          "all_probe_best_grid_ratio_to_SRS": 2.688856235582606,
+          "all_probe_worst_grid_ratio_to_SRS": 6040.408092428956,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0/suffix_only": {
+          "full_suffix_cost": 23317403.0,
+          "full_base_cost": 48854582.0,
+          "full_direct_census_cost": 72171985.0,
+          "probe_fraction_of_suffix": 0.4664174222146437,
+          "staged_best_grid_ratio_to_SRS": 0.7364318493987135,
+          "staged_worst_grid_ratio_to_SRS": 0.9732005474487957,
+          "all_probe_best_grid_ratio_to_SRS": 0.7485399787218587,
+          "all_probe_worst_grid_ratio_to_SRS": 3989.019954141031,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0/prepaid_full_bank": {
+          "full_suffix_cost": 23317403.0,
+          "full_base_cost": 48854582.0,
+          "full_direct_census_cost": 72171985.0,
+          "probe_fraction_of_suffix": 0.4664174222146437,
+          "staged_best_grid_ratio_to_SRS": 0.7364318493987116,
+          "staged_worst_grid_ratio_to_SRS": 0.9732005474487958,
+          "all_probe_best_grid_ratio_to_SRS": 0.7485399787218577,
+          "all_probe_worst_grid_ratio_to_SRS": 3989.019954141031,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0/lazy_baseline": {
+          "full_suffix_cost": 23317403.0,
+          "full_base_cost": 48854582.0,
+          "full_direct_census_cost": 72171985.0,
+          "probe_fraction_of_suffix": 0.4664174222146437,
+          "staged_best_grid_ratio_to_SRS": 1.0000581928463945,
+          "staged_worst_grid_ratio_to_SRS": 1.0001052830353603,
+          "all_probe_best_grid_ratio_to_SRS": 8.46036821457635,
+          "all_probe_worst_grid_ratio_to_SRS": 8.46036821457635,
+          "not_global_policy_bound": true,
+          "direct_is_global_optimum_in_declared_2strata_Poisson_class": true,
+          "derivative_certificate_margins": [
+            3405483286.0,
+            77101148594.0
+          ],
+          "baseline_cost_derivative_at_q_1": 42688317.0,
+          "staged_best_grid_ratio_to_direct_Poisson": 0.9999999999999982
+        },
+        "observed_token_score_equivalent_ratio_0.1/suffix_only": {
+          "full_suffix_cost": 24550067.306758333,
+          "full_base_cost": 49748040.33643751,
+          "full_direct_census_cost": 74298107.64319584,
+          "probe_fraction_of_suffix": 0.4429985003342972,
+          "staged_best_grid_ratio_to_SRS": 0.6938801112008003,
+          "staged_worst_grid_ratio_to_SRS": 0.9688585333469681,
+          "all_probe_best_grid_ratio_to_SRS": 0.6955295485436256,
+          "all_probe_worst_grid_ratio_to_SRS": 3786.992908049685,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0.1/prepaid_full_bank": {
+          "full_suffix_cost": 24550067.306758333,
+          "full_base_cost": 49748040.33643751,
+          "full_direct_census_cost": 74298107.64319584,
+          "probe_fraction_of_suffix": 0.4429985003342972,
+          "staged_best_grid_ratio_to_SRS": 0.6938801112008023,
+          "staged_worst_grid_ratio_to_SRS": 0.9688585333469684,
+          "all_probe_best_grid_ratio_to_SRS": 0.6955295485436261,
+          "all_probe_worst_grid_ratio_to_SRS": 3786.992908049685,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0.1/lazy_baseline": {
+          "full_suffix_cost": 24550067.306758333,
+          "full_base_cost": 49748040.33643751,
+          "full_direct_census_cost": 74298107.64319584,
+          "probe_fraction_of_suffix": 0.4429985003342972,
+          "staged_best_grid_ratio_to_SRS": 1.000058528405715,
+          "staged_worst_grid_ratio_to_SRS": 1.0001052931760164,
+          "all_probe_best_grid_ratio_to_SRS": 7.123582942533565,
+          "all_probe_worst_grid_ratio_to_SRS": 7.123582942533565,
+          "not_global_policy_bound": true,
+          "direct_is_global_optimum_in_declared_2strata_Poisson_class": true,
+          "derivative_certificate_margins": [
+            2906910325.1072903,
+            78769117941.47935
+          ],
+          "baseline_cost_derivative_at_q_1": 43466358.50804168,
+          "staged_best_grid_ratio_to_direct_Poisson": 0.9999999999999998
+        },
+        "observed_token_score_equivalent_ratio_1/suffix_only": {
+          "full_suffix_cost": 35644046.06758334,
+          "full_base_cost": 57789165.36437502,
+          "full_direct_census_cost": 93433211.43195835,
+          "probe_fraction_of_suffix": 0.305118082817509,
+          "staged_best_grid_ratio_to_SRS": 0.49086864216146453,
+          "staged_worst_grid_ratio_to_SRS": 0.9385998967125534,
+          "all_probe_best_grid_ratio_to_SRS": 0.49086451277319665,
+          "all_probe_worst_grid_ratio_to_SRS": 2603.021369186835,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_1/prepaid_full_bank": {
+          "full_suffix_cost": 35644046.06758334,
+          "full_base_cost": 57789165.36437502,
+          "full_direct_census_cost": 93433211.43195835,
+          "probe_fraction_of_suffix": 0.305118082817509,
+          "staged_best_grid_ratio_to_SRS": 0.49086864216146453,
+          "staged_worst_grid_ratio_to_SRS": 0.9385998967125533,
+          "all_probe_best_grid_ratio_to_SRS": 0.49086451277319665,
+          "all_probe_worst_grid_ratio_to_SRS": 2603.0213691909144,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_1/lazy_baseline": {
+          "full_suffix_cost": 35644046.06758334,
+          "full_base_cost": 57789165.36437502,
+          "full_direct_census_cost": 93433211.43195835,
+          "probe_fraction_of_suffix": 0.305118082817509,
+          "staged_best_grid_ratio_to_SRS": 0.9972112180743969,
+          "staged_worst_grid_ratio_to_SRS": 1.0000951589738,
+          "all_probe_best_grid_ratio_to_SRS": 3.0433912607009797,
+          "all_probe_worst_grid_ratio_to_SRS": 8.964772018272289,
+          "not_global_policy_bound": true,
+          "direct_is_global_optimum_in_declared_2strata_Poisson_class": false,
+          "derivative_certificate_margins": [
+            -1580246322.927122,
+            93780842068.7934
+          ],
+          "baseline_cost_derivative_at_q_1": 50468732.08041668,
+          "staged_best_grid_ratio_to_direct_Poisson": 0.9971061599039441
+        }
+      }
+    },
+    "tune": {
+      "N_rows": 9600,
+      "N_questions": 80,
+      "signed_mean": -0.0014583333333333334,
+      "sample_variance": 0.06958845539465919,
+      "receiver_tokens": {
+        "n": 9600,
+        "mean": 458.555,
+        "median": 451.0,
+        "min": 282.0,
+        "max": 804.0
+      },
+      "aggregate_tokens": {
+        "n": 9600,
+        "mean": 627.2514583333333,
+        "median": 621.0,
+        "min": 462.0,
+        "max": 941.0
+      },
+      "ratio_sum_receiver_to_sum_aggregate_tokens": 0.7310544980133233,
+      "mean_per_row_receiver_aggregate_ratio": 0.7315814545370052,
+      "suffix_no_cache_tokens": 10423742,
+      "suffix_common_exact_wire_cache_tokens": 9477876,
+      "logical_unique_off_graph_seed_baselines": 5770,
+      "logical_base_graph_token_sum": 19871683,
+      "logical_base_graph_token_per_pair_sum": 32401504,
+      "right_graph_also_in_full_left_bank_fraction": 0.4890625,
+      "strata": [
+        {
+          "category": 0,
+          "N": 1559,
+          "credit_mean": 0.0,
+          "credit_sample_variance": 0.0,
+          "credit_second_moment": 0.0,
+          "receiver_tokens_mean": 455.5221295702373,
+          "aggregate_tokens_mean": 606.7132777421424
+        },
+        {
+          "category": 1,
+          "N": 3835,
+          "credit_mean": 0.0010430247718383311,
+          "credit_sample_variance": 0.022429793401385668,
+          "credit_second_moment": 0.02242503259452412,
+          "receiver_tokens_mean": 466.91056062581487,
+          "aggregate_tokens_mean": 624.34185136897
+        },
+        {
+          "category": 2,
+          "N": 4206,
+          "credit_mean": -0.0042796005706134095,
+          "credit_sample_variance": 0.1383883394030271,
+          "credit_second_moment": 0.1383737517831669,
+          "receiver_tokens_mean": 452.0606276747504,
+          "aggregate_tokens_mean": 637.5171184022824
+        }
+      ],
+      "scenario_summary": {
+        "assumed_receiver_aggregate_ratio_0.5/suffix_only": {
+          "full_suffix_cost": 12841.0,
+          "full_base_cost": 0.0,
+          "full_direct_census_cost": 12841.0,
+          "probe_fraction_of_suffix": 0.3738026633439763,
+          "staged_best_grid_ratio_to_SRS": 0.583227432253273,
+          "staged_worst_grid_ratio_to_SRS": 0.955095346027221,
+          "all_probe_best_grid_ratio_to_SRS": 0.583351250720408,
+          "all_probe_worst_grid_ratio_to_SRS": 3184.585773665249,
+          "not_global_policy_bound": true
+        },
+        "assumed_receiver_aggregate_ratio_1/suffix_only": {
+          "full_suffix_cost": 17641.0,
+          "full_base_cost": 0.0,
+          "full_direct_census_cost": 17641.0,
+          "probe_fraction_of_suffix": 0.5441868374808684,
+          "staged_best_grid_ratio_to_SRS": 0.861200787144223,
+          "staged_worst_grid_ratio_to_SRS": 0.9857707206894322,
+          "all_probe_best_grid_ratio_to_SRS": 0.9871628269876827,
+          "all_probe_worst_grid_ratio_to_SRS": 4635.725459335661,
+          "not_global_policy_bound": true
+        },
+        "assumed_receiver_aggregate_ratio_2/suffix_only": {
+          "full_suffix_cost": 27241.0,
+          "full_base_cost": 0.0,
+          "full_direct_census_cost": 27241.0,
+          "probe_fraction_of_suffix": 0.7048199405308175,
+          "staged_best_grid_ratio_to_SRS": 0.9968185145896566,
+          "staged_worst_grid_ratio_to_SRS": 0.9996092643063131,
+          "all_probe_best_grid_ratio_to_SRS": 2.5927157184100267,
+          "all_probe_worst_grid_ratio_to_SRS": 6003.722886135675,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0/suffix_only": {
+          "full_suffix_cost": 9477876.0,
+          "full_base_cost": 19871683.0,
+          "full_direct_census_cost": 29349559.0,
+          "probe_fraction_of_suffix": 0.46446355702480174,
+          "staged_best_grid_ratio_to_SRS": 0.747267855718875,
+          "staged_worst_grid_ratio_to_SRS": 0.9741449113603151,
+          "all_probe_best_grid_ratio_to_SRS": 0.7592735498130766,
+          "all_probe_worst_grid_ratio_to_SRS": 3973.871208249636,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0/prepaid_full_bank": {
+          "full_suffix_cost": 9477876.0,
+          "full_base_cost": 19871683.0,
+          "full_direct_census_cost": 29349559.0,
+          "probe_fraction_of_suffix": 0.46446355702480174,
+          "staged_best_grid_ratio_to_SRS": 0.7472678557188746,
+          "staged_worst_grid_ratio_to_SRS": 0.974144911360315,
+          "all_probe_best_grid_ratio_to_SRS": 0.759273549813078,
+          "all_probe_worst_grid_ratio_to_SRS": 3973.871208249636,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0/lazy_baseline": {
+          "full_suffix_cost": 9477876.0,
+          "full_base_cost": 19871683.0,
+          "full_direct_census_cost": 29349559.0,
+          "probe_fraction_of_suffix": 0.46446355702480174,
+          "staged_best_grid_ratio_to_SRS": 0.9998107266686357,
+          "staged_worst_grid_ratio_to_SRS": 0.999924662371709,
+          "all_probe_best_grid_ratio_to_SRS": 8.420465475025663,
+          "all_probe_worst_grid_ratio_to_SRS": 8.420465475025663,
+          "not_global_policy_bound": true,
+          "direct_is_global_optimum_in_declared_2strata_Poisson_class": true,
+          "derivative_certificate_margins": [
+            716814284.0,
+            13883851428.0
+          ],
+          "baseline_cost_derivative_at_q_1": 17455156.0,
+          "staged_best_grid_ratio_to_direct_Poisson": 1.0
+        },
+        "observed_token_score_equivalent_ratio_0.1/suffix_only": {
+          "full_suffix_cost": 9982248.897645833,
+          "full_base_cost": 20233607.091458336,
+          "full_direct_census_cost": 30215855.989104167,
+          "probe_fraction_of_suffix": 0.44099561583143626,
+          "staged_best_grid_ratio_to_SRS": 0.7050452153303165,
+          "staged_worst_grid_ratio_to_SRS": 0.9698364786676051,
+          "all_probe_best_grid_ratio_to_SRS": 0.7067895574661349,
+          "all_probe_worst_grid_ratio_to_SRS": 3771.668097745009,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0.1/prepaid_full_bank": {
+          "full_suffix_cost": 9982248.897645833,
+          "full_base_cost": 20233607.091458336,
+          "full_direct_census_cost": 30215855.989104167,
+          "probe_fraction_of_suffix": 0.44099561583143626,
+          "staged_best_grid_ratio_to_SRS": 0.7050452153303165,
+          "staged_worst_grid_ratio_to_SRS": 0.9698364786676053,
+          "all_probe_best_grid_ratio_to_SRS": 0.7067895574661349,
+          "all_probe_worst_grid_ratio_to_SRS": 3771.668097752047,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_0.1/lazy_baseline": {
+          "full_suffix_cost": 9982248.897645833,
+          "full_base_cost": 20233607.091458336,
+          "full_direct_census_cost": 30215855.989104167,
+          "probe_fraction_of_suffix": 0.44099561583143626,
+          "staged_best_grid_ratio_to_SRS": 0.9998115597154447,
+          "staged_worst_grid_ratio_to_SRS": 0.9999246849375552,
+          "all_probe_best_grid_ratio_to_SRS": 7.090951901010119,
+          "all_probe_worst_grid_ratio_to_SRS": 7.090951901010119,
+          "not_global_policy_bound": true,
+          "direct_is_global_optimum_in_declared_2strata_Poisson_class": true,
+          "derivative_certificate_margins": [
+            626770831.7527504,
+            14185701389.1885
+          ],
+          "baseline_cost_derivative_at_q_1": 17772231.6121875,
+          "staged_best_grid_ratio_to_direct_Poisson": 0.9999999999999998
+        },
+        "observed_token_score_equivalent_ratio_1/suffix_only": {
+          "full_suffix_cost": 14521604.97645833,
+          "full_base_cost": 23490923.914583333,
+          "full_direct_census_cost": 38012528.891041666,
+          "probe_fraction_of_suffix": 0.3031433513813728,
+          "staged_best_grid_ratio_to_SRS": 0.502574717563848,
+          "staged_worst_grid_ratio_to_SRS": 0.9396484739522106,
+          "all_probe_best_grid_ratio_to_SRS": 0.5026814135587688,
+          "all_probe_worst_grid_ratio_to_SRS": 2588.399513232261,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_1/prepaid_full_bank": {
+          "full_suffix_cost": 14521604.97645833,
+          "full_base_cost": 23490923.914583333,
+          "full_direct_census_cost": 38012528.891041666,
+          "probe_fraction_of_suffix": 0.3031433513813728,
+          "staged_best_grid_ratio_to_SRS": 0.5025747175638494,
+          "staged_worst_grid_ratio_to_SRS": 0.9396484739522105,
+          "all_probe_best_grid_ratio_to_SRS": 0.5026814135587702,
+          "all_probe_worst_grid_ratio_to_SRS": 2588.3995132306018,
+          "not_global_policy_bound": true
+        },
+        "observed_token_score_equivalent_ratio_1/lazy_baseline": {
+          "full_suffix_cost": 14521604.97645833,
+          "full_base_cost": 23490923.914583333,
+          "full_direct_census_cost": 38012528.891041666,
+          "probe_fraction_of_suffix": 0.3031433513813728,
+          "staged_best_grid_ratio_to_SRS": 0.998805615683407,
+          "staged_worst_grid_ratio_to_SRS": 0.9999108279338051,
+          "all_probe_best_grid_ratio_to_SRS": 3.0315963407701267,
+          "all_probe_worst_grid_ratio_to_SRS": 8.843782583654065,
+          "not_global_policy_bound": true,
+          "direct_is_global_optimum_in_declared_2strata_Poisson_class": false,
+          "derivative_certificate_margins": [
+            -183620238.47249794,
+            16902351039.885
+          ],
+          "baseline_cost_derivative_at_q_1": 20625912.121875003,
+          "staged_best_grid_ratio_to_direct_Poisson": 0.9988806913020475
+        }
+      }
+    }
+  },
+  "elapsed_wall_seconds": 9.735000000000582
+}
