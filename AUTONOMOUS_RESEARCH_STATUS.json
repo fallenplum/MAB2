@@ -1,36 +1,55 @@
 {
-  "updated_utc": "2026-11-12T17:42:34.907819+00:00",
-  "branch": "research/autonomous-20261113",
-  "status": "BOUNDED_CYCLE_STOPPED_SCIENTIFIC_CRITERION",
-  "project_complete": false,
-  "paper_ready": false,
-  "paper_status": "INSUFFICIENT_EVIDENCE",
-  "new_GPU_hours": 0,
-  "new_model_calls": 0,
-  "budget_GPU_hours": 160,
-  "formal_rounds_started": 0,
-  "formal_rounds_cap": 5,
-  "CPU_diagnostic_rounds_completed": 2,
-  "D2_nominee": "C1_R1",
-  "D2_nomination_passed": false,
-  "D2_independent_checks": 914,
-  "D3_status": "STOP_CURRENT_CANDIDATE_ROUTE",
-  "D3_enrichment": {
-    "bootstrap_unit": "question",
-    "data_role": "exposed_development",
-    "estimate": -0.0017361111111111114,
-    "independent_confirmation": false,
-    "interval95": [
-      -0.005833333333333334,
-      0.0022222222222222222
-    ],
-    "question_count": 120,
-    "resamples": 10000,
-    "seed": 59173
+  "schema": "mab2_autoresearch_project_state_v2",
+  "cycle_id": "cycle2_20261113",
+  "created_utc": "2026-11-12T18:10:28.159302+00:00",
+  "branch": "research/autoresearch-cycle2-20261113",
+  "parent_commit": "2a7f4f101d37375ebfbf95fd5c095d0bc6610485",
+  "project": {
+    "status": "ACTIVE",
+    "stop": null,
+    "goal": "Evidence-supported graph-conditional communication-credit maintenance and budgeted feedback, with ACL-style draft at the evidence boundary",
+    "completed": false
   },
-  "D3_independent_audit": "PASS_WITH_EXPLORATORY_LIMITATIONS",
-  "literature_status": "PROVISIONAL_SCOPING_REVIEW",
-  "best_effective_method": null,
-  "sealed_test_accessed_this_cycle": false,
-  "report": "reports/autonomous_20261113/AUDIT_REPORT.md"
+  "direction": {
+    "id": "DIRECT_FEEDBACK_AND_EVIDENCE_TRANSFER",
+    "status": "ACTIVE"
+  },
+  "active_candidate": null,
+  "historical_candidates": [
+    {
+      "id": "D2_C1_R1",
+      "status": "REJECTED",
+      "immutable": true
+    },
+    {
+      "id": "D3_graph_only_order2_R3",
+      "status": "STOP_CURRENT_CANDIDATE_ROUTE",
+      "immutable": true
+    }
+  ],
+  "candidate_queue": [
+    {
+      "id": "C2_R1_DIRECT_PAIRED_REVALIDATION",
+      "status": "DESIGN"
+    },
+    {
+      "id": "C2_R2_SELECTIVE_CREDIT_INVALIDATION",
+      "status": "LITERATURE_AND_MECHANISM_REVIEW"
+    },
+    {
+      "id": "C2_R3_EXECUTION_LOCALITY_ACQUISITION",
+      "status": "LITERATURE_AND_MECHANISM_REVIEW"
+    }
+  ],
+  "next_action": "Freeze R1 fresh-development protocol and data eligibility; implement thin executor; validate then launch bounded shared-GPU collection",
+  "continuity": {
+    "mode": "current task plus durable checkpoints; no finite-job app automation",
+    "poll_running_jobs_minutes": 30,
+    "candidate_failure_action": "record, eliminate, choose or derive next candidate without user approval",
+    "direction_failure_action": "freeze direction, run outer-loop primary literature and mechanism analysis, form distinct hypotheses",
+    "project_stop_requires": "enumerated project-level condition with evidence and remaining alternatives"
+  },
+  "sealed_test_accessed": false,
+  "paper_status": "EVIDENCE_PENDING",
+  "scientific_claims_confirmed": []
 }

@@ -7,3 +7,7 @@ experiments/d3_diagnostics/* text eol=lf
 reports/autonomous_20261113/** -text
 literature/autonomous_20261113/** -text
 AUTONOMOUS_RESEARCH_STATUS.json text eol=lf
+
+AGENTS.md text eol=lf
+protocol/cycle2_20261113/** text eol=lf
+experiments/cycle2_20261113/** text eol=lf

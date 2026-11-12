@@ -24,3 +24,5 @@ counterfactual feedback correct future edits more efficiently than simple
 policies once all costs are included? Nearest-neighbor novelty remains provisional.
 
 2026-11-13 D3: fixed graph-only order2 nominee enrichment -0.001736111, 95% exploratory question CI [-0.005833333,0.002222222]. STOP_CURRENT_CANDIDATE_ROUTE. No fallback, new inference or full paper. Independent arithmetic replay passed; this does not establish equivalence or universal impossibility.
+
+Cycle2 outer-loop question: can directly purchased paired feedback, selective evidence invalidation or execution-locality-aware acquisition improve future graph decisions without depending on accurate graph-value prediction? These are separate untested candidates, not rescues of D3.
