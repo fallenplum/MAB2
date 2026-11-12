@@ -30,7 +30,7 @@
   "candidate_queue": [
     {
       "id": "C2_R1_DIRECT_PAIRED_REVALIDATION",
-      "status": "FORMAL_LAUNCH_ADMITTED"
+      "status": "FORMAL_COLLECTING"
     },
     {
       "id": "C2_R2_SELECTIVE_CREDIT_INVALIDATION",
@@ -42,7 +42,7 @@
       "status": "LITERATURE_AND_MECHANISM_REVIEW"
     }
   ],
-  "next_action": "Verify formal launch, then monitor 30-minute snapshots and complete fixed collection; R2 diagnosis preparation in parallel",
+  "next_action": "Complete fixed R1 generation; maintain 30-minute resource checks; prepare R2 diagnostics independently",
   "continuity": {
     "mode": "current task plus durable checkpoints; no finite-job app automation",
     "poll_running_jobs_minutes": 30,

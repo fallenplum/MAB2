@@ -8,7 +8,7 @@ parent_commit: 2a7f4f101d37375ebfbf95fd5c095d0bc6610485
 budget_gpu_hours_total: 160
 budget_gpu_hours_used: live_private_ledger
 formal_candidate_rounds_total: 5
-formal_candidate_rounds_started: 0
+formal_candidate_rounds_started: 1
 next_action: monitor_fixed_development_and_prepare_next_distinct_candidate
 candidate_failure: eliminate_candidate_and_continue
 direction_failure: freeze_direction_and_research_alternatives
