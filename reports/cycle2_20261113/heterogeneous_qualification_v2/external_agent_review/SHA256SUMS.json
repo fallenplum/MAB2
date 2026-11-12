@@ -1,0 +1,20 @@
+{
+  "schema": "mab2_independent_hetero_review_sha256_v1",
+  "files": [
+    {
+      "name": "REVIEW.md",
+      "bytes": 8384,
+      "sha256": "5582500a27cf3e54c748197e17ae085985f20423856629693d57fdb81f83773b"
+    },
+    {
+      "name": "INDEPENDENT_RECEIPT.json",
+      "bytes": 21254,
+      "sha256": "2fc835830777c21970a14f824a3835d3ab3ef36305e647a8fd0534243a10fe8a"
+    },
+    {
+      "name": "independent_review.py",
+      "bytes": 23004,
+      "sha256": "5bac09498ce02a11d1ba5ee8b5e229f0b4e4abe3782241c502a8dec037475848"
+    }
+  ]
+}

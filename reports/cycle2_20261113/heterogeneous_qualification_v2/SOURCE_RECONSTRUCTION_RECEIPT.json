@@ -1,0 +1,9 @@
+{
+  "status": "EXACT_QUALIFIED_SOURCE_BYTES_RECONSTRUCTED",
+  "git_commit": "b7434719eebb93eb41770bbc9af63222e3a47380",
+  "manifest_sha256": "df814850c7395f03fd2dfcec9a3b88a957976abefe26ae7f9bfedb08a85c6721",
+  "files": 7,
+  "models_loaded": false,
+  "inference_calls": 0,
+  "private_runtime_plan_included": false
+}

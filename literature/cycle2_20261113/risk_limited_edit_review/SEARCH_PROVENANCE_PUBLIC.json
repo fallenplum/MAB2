@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "review_date_local": "2026-11-13",
+  "recorded_at_utc": "2026-11-12 22:15:59 UTC",
+  "provider": "mcp__codex_apps__search_service_web_run",
+  "underlying_search_engine": "not disclosed",
+  "google": {
+    "dedicated_google_api_available": false,
+    "direct_search_url_attempted": true,
+    "direct_search_url_succeeded": false,
+    "note": "不得把实际 search_service 查询描述为 Google Search。"
+  },
+  "scope": "bounded targeted adversarial novelty review; not exhaustive systematic review",
+  "exact_query_count": 21,
+  "known_limitations": [
+    "部分 PDF 出版 URL 403/404 或 application/octet-stream 不被 web 解析；使用可得作者版本或明确止于摘要。",
+    "一次内部引用解析返回了不同文档；该段未用于 MOPE 结论，随后以原始 PMLR PDF URL 重新打开 §5.3 并核对。",
+    "搜索服务摘要可能有抓取日期噪声；发表年以出版元数据或 arXiv 日期为准。",
+    "本轮正式版本/预印本合并，不报告未经严格筛选流程得到的检索记录总数。",
+    "阅读来源只作有界证据；未逐项重证定理或验证其软件实现。"
+  ],
+  "query_records": [
+    {
+      "key": "risk_search_001",
+      "available": true,
+      "query_strings": [
+        "\"safe policy improvement\" \"confidence sequences\"",
+        "\"best arm identification\" \"common random numbers\"",
+        "\"graph\" \"edits\" \"confidence sequence\"",
+        "\"cost-aware\" \"best arm identification\" reuse"
+      ],
+      "literal_urls_requested": [
+        "https://www.google.com/search?q=anytime+confidence+sequences+paired+counterfactual+safe+policy+improvement"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Cost Aware Best Arm Identification (https://arxiv.science/abs/2402.16710)",
+        "RLJ | RLC 2024 (https://rlj.cs.umass.edu/2024/papers/RLJ_RLC_2024_193.pdf)",
+        "Cost Aware Best Arm Identification (https://arxiv.org/abs/2402.16710)",
+        "Cost Aware Best Arm Identification (https://rlj.org/papers/kanarios2024cost)",
+        "Cost-aware adversarial best arm identification (https://www.amazon.science/publications/cost-aware-adversarial-best-arm-identification)",
+        "Cost-Aware Exploration for Structured Bandits (https://cnyouwei.github.io/assets/papers/Liu_et_al_cost_aware.pdf)",
+        "RLJ | RLC 2024 (https://openreview.net/pdf?id=UHaBsi6g9p)",
+        "Cost Aware Best Arm Identification — Lacuna (https://lacuna.tiptreesystems.com/work/cost-aware-best-arm-identification)",
+        "Cost-Aware Optimal Pairwise Pure Exploration (https://raw.githubusercontent.com/mlresearch/v258/main/assets/wu25c/wu25c.pdf)",
+        "Cost-Aware Best-LLM Identification using Dueling Feedback (https://arxiv.org/abs/2609.30360)",
+        "High Confidence Safe Policy Improvement — Lacuna (https://lacuna.tiptreesystems.com/direction/risk-aware-policy-deployment/rdr_c8409f9d340c47548e6e3b0b825b1479)",
+        "Cost Aware Best Arm Identification | alphaXiv (https://www.alphaxiv.org/cs/abs/2402.16710)",
+        "High Confidence Safe Policy Improvement — Lacuna (https://lacuna.tiptreesystems.com/direction/high-confidence-safe-policy-improvement/txn_4e7475d1c47a4c6eb129688fccf0062a)",
+        "The Certification Exponent: Instance-Optimal Sequential Certification of Policy Improvement from History Dependent Logs (https://www.paperpeel.com/paper/2610.24345)",
+        "Cost-aware Best Arm Identification in Stochastic Bandits (https://www.citedrive.com/en/discovery/cost-aware-best-arm-identification-in-stochastic-bandits/)",
+        "Cost-Aware Best-LLM Identification using Dueling Feedback (https://www.catalyzex.com/paper/cost-aware-best-llm-identification-using)",
+        "value_logic/references.bib at main · TristanMiano/value_logic · GitHub (https://github.com/TristanMiano/value_logic/blob/main/references.bib)",
+        "Cost Aware Best Arm Identification (https://www.catalyzex.com/paper/cost-aware-best-arm-identification)",
+        "Cost-aware Best Arm Identification in Stochastic Bandits — Lacuna (https://lacuna.tiptreesystems.com/work/cost-aware-best-arm-identification-in-stochastic-bandits)",
+        "Cost-Aware Best-LLM Identification using Dueling Feedback (https://www.alphaxiv.org/abs/2609.30360)",
+        "Indifference-Zone-Free Selection of the Best (https://www.researchgate.net/publication/309143222_Indifference-Zone-Free_Selection_of_the_Best)",
+        "Cost Aware Best Arm Identification - arXiv.gg (https://arxiv.gg/abs/2402.16710)",
+        "Design and Inference of Randomized Experiments for Modern Applications (https://escholarship.org/uc/item/7vv8v99g)",
+        "WSC 2024 Proceedings (https://www.informs-sim.org/wsc24papers/by_area.html)",
+        "Nathan Kallus (https://nathankallus.com/)",
+        "Efficient and Trustworthy Algorithm Design for Large-Scale Simulation and Inference (https://escholarship.org/uc/item/4mt962h7)",
+        "Paper Digest: ICML 2019 Highlights – Resources | Paper Digest (https://resources.paperdigest.org/2019/05/icml-2019-highlights/)",
+        "Nathan Kallus (https://hello.doclang.workers.dev/host-https-nathankallus.com)",
+        "WSC 2024 Proceedings (https://informs-sim.org/wsc24papers/by_area.html)",
+        "WSC 2024 Proceedings (https://informs-sim.org/wsc24papers/at_a_glance.html)",
+        "Best Arm Identification in Generalized Linear Bandits via Hybrid Feedback (https://arxiv.org/abs/2605.05745)",
+        "Policy Learning with Abstention (https://www.researchgate.net/publication/396790642_Policy_Learning_with_Abstention)",
+        "Search | arXiv e-print repository (https://accelresearching.com/accel-zinc-picolinate-50mg/?_=%2Fsearch%2F%23nLw79nwZb1b3uPkZUsgpm5M%3D&query=Gan%2C+K&searchtype=author&start=0)",
+        "WSC 2023 Proceedings (https://informs-sim.org/wsc23papers/by_area.html)",
+        "Brian M Cho — Lacuna (https://lacuna.tiptreesystems.com/author/brian-m-cho/aut_949ae2bd77e64d9199612478550813cc)",
+        "Search | arXiv e-print repository (https://accelresearching.com/accel-zinc-picolinate-50mg/?_=%2Fsearch%2Fcs%23nLw79nwZb1b3uPkZUsgpm5M%3D&query=Kallus%2C+N&searchtype=author)",
+        "au:Gan_K in:stat - SciRate Search (https://scirate.com/search?q=au%3AGan_K+in%3Astat)",
+        "Non-Asymptotic Sequential Tests for Overlapping Hypotheses and application to near optimal arm identification in bandit models (https://www.researchgate.net/publication/332977921_Non-Asymptotic_Sequential_Tests_for_Overlapping_Hypotheses_and_application_to_near_optimal_arm_identification_in_bandit_models)",
+        "Dual-Directed Algorithm Design for Efficient Pure Exploration (https://ideas.repec.org/a/inm/oropre/v74y2026i2p1104-1125.html)",
+        "Ranking and Selection (https://www.researchgate.net/publication/369465969_Ranking_and_Selection)",
+        "token-warden/docs/hundred-algorithms.md at main · vukkt/token-warden · GitHub (https://github.com/vukkt/token-warden/blob/main/docs/hundred-algorithms.md)",
+        "dblp: Shivaram Kalyanakrishnan (https://dblp.org/pid/16/4410.html)",
+        "Add 77 new RecSys papers (2026-06-23 → 2026-07-06); update jsonl/README/index (2656→2733) · yufan/recsys-papers-2025-2026 at 37431aa (https://huggingface.co/datasets/yufan/recsys-papers-2025-2026/commit/37431aa9df8be99f20da1c19c69c31868f0b8c66)",
+        "Top arXiv papers (https://scirate.com/?date=2026-02-09&page=189&range=31)",
+        "Paul Mineiro — Lacuna (https://lacuna.tiptreesystems.com/author/paul-mineiro)",
+        "Inference Report — Research (https://inference.report/research/2026-10-29)",
+        "Measurement records · Soup CLI Docs | Soup CLI (https://trysoup.dev/docs/measurement-records)",
+        "Daily Papers - Hugging Face (https://huggingface.co/papers?q=confidence+sequence)",
+        "Highland Gardens Camp Hill Pa (https://www.catalyzex.com/s/Highland%20Gardens%20Camp%20Hill%20Pa)",
+        "Daily Papers - Hugging Face (https://huggingface.co/papers?q=truncated+timestep+scheduling)",
+        "Daily Papers - Hugging Face (https://huggingface.co/papers?q=confidence-guided+intra-block+correction)",
+        "Daily Papers - Hugging Face (https://huggingface.co/papers?q=confidence+sequences)",
+        "Top arXiv papers (https://scirate.com/?date=2026-11-02&page=198&range=31)",
+        "Top arXiv papers (https://scirate.com/?date=2026-05-14&page=198&range=56)"
+      ]
+    },
+    {
+      "key": "risk_search_002",
+      "available": true,
+      "query_strings": [
+        "\"Off-Policy Confidence Sequences\" Karampatziakis Mineiro Ramdas",
+        "\"Anytime-valid\" \"off-policy\" inference contextual bandits",
+        "\"High Confidence Policy Improvement\" Thomas 2015",
+        "\"Time-uniform, nonparametric, nonasymptotic confidence sequences\""
+      ],
+      "literal_urls_requested": [],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "High Confidence Policy Improvement (https://proceedings.mlr.press/v37/thomas15.html)",
+        "Off-Policy Confidence Sequences (https://proceedings.mlr.press/v139/karampatziakis21a)",
+        "The Annals of Statistics (https://par.nsf.gov/servlets/purl/10251927)",
+        "Off-Policy Confidence Sequences (https://proceedings.mlr.press/v139/karampatziakis21a/karampatziakis21a.pdf)",
+        "Anytime-valid off-policy inference for contextual bandits (https://arxiv.org/abs/2210.10768)",
+        "UCPH Statistics Seminar:  Off-policy inference in contextual bandits (https://www.math.ku.dk/english/calendar/events/ucph-statistics-seminar--off-policy-inference-in-contextual-bandits/)",
+        "Anytime-valid off-policy inference for contextual bandits (https://jds.acm.org/files/JDS_Issue3_Paper1.pdf)",
+        "High Confidence Policy Improvement (https://proceedings.mlr.press/v37/thomas15.pdf)",
+        "Off-policy Confidence Sequences (https://arxiv.org/abs/2102.09540)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences (https://arxiv.org/abs/1810.08240)",
+        "High Confidence Policy Improvement (https://mlanthology.org/icml/2015/thomas2015icml-high/)",
+        "【turn444435search3】 [wordlim: 200] Published: 11.9 years ago; Crawled: 5 months ago; # High Confidence Policy Improvement ... International Conference on Machine Learning, 2015.](https://mlanthology.org/icml/2015/thomas2015icml-high/)`",
+        "Anytime-valid off-policy inference for contextual bandits -- JSM 2023 (https://ww2.amstat.org/meetings/jsm/2023/onlineprogram/abstract.cfm?sid=1193&tid=1193-p4)",
+        "dblp: High Confidence Policy Improvement. (https://dblp.org/rec/conf/icml/ThomasTG15.html)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences (https://www.alphaxiv.org/abs/1810.08240)",
+        "Adobe Research » High Confidence Policy Improvement (https://research.adobe.com/publication/high-confidence-policy-improvement/)",
+        "dblp: High Confidence Policy Improvement. (https://dblp.uni-trier.de/rec/conf/icml/ThomasTG15.html)",
+        "Anytime-valid off-policy inference for contextual bandits — Lacuna (https://lacuna.tiptreesystems.com/work/anytime-valid-off-policy-inference-for-contextual-bandits/wrk_2dee1ad9dc7910e34b32d692d9afb743)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences | OpenAlex (https://openalex.org/works/W3030671780)",
+        "Anytime-valid off-policy inference for contextual bandits (https://www.citedrive.com/en/discovery/anytime-valid-off-policy-inference-for-contextual-bandits/)",
+        "Philip S. Thomas · Home (https://people.cs.umass.edu/~pthomas/)",
+        "BibSLEIGH — High Confidence Policy Improvement (https://bibtex.github.io/ICML-2015-ThomasTG.html)",
+        "Philip S. Thomas · Home (https://people.cs.umass.edu/~pthomas/index.html)",
+        "Aaditya Ramdas' Webpage (https://web.stanford.edu/~aramdas/)",
+        "Anytime-valid off-policy Inference for Contextual Bandits — CiteStamp (https://citestamp.com/paper/10.1145/3643693)",
+        "Off-Policy Confidence Sequences — Lacuna (https://lacuna.tiptreesystems.com/work/off-policy-confidence-sequences-567j)",
+        "Howard, Steven R., Ramdas, Aaditya, McAuliffe, Jon, Sekhon, Jasjeet (2021) Time-uniform, nonparametric, nonasymptotic confidence sequences. The Annals of Statistics, 49 (2) doi:10.1214/20-aos1991 (https://www.mindat.org/reference.php?id=13443952)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences · mlsanity (https://mlsanity.com/paper/1810.08240/)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences (https://scixplorer.org/abs/2018arXiv181008240H/abstract)",
+        "dblp: Off-Policy Confidence Sequences. (https://dblp.org/rec/conf/icml/KarampatziakisM21.html)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences (https://oamonitor.ireland.openaire.eu/national/search/publication?pid=10.1214%2F20-aos1991)",
+        "Anytime-valid off-policy Inference for Contextual Bandits (pdf) | Paperity (https://paperity.org/p/376902261/anytime-valid-off-policy-inference-for-contextual-bandits)",
+        "GitHub - microsoft/csrobust: Robust confidence sequences · GitHub (https://github.com/microsoft/csrobust)",
+        "Off-policy Confidence Sequences (https://shamra-academia.com/en/show/3a4440febfdec2)",
+        "High Confidence Policy Improvement (https://conftrace.com/papers/173292-high-confidence-policy-improvement)",
+        "Steve Howard (https://www.stevehoward.org/)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences (https://www.mendeley.com/catalogue/c108038e-ab10-3ba5-bf0f-c93c10f3a88b/)",
+        "TIME-UNIFORM, NONPARAMETRIC, NONASYMPTOTIC CONFIDENCE SEQUENCES: AI Summary, Post-Publication Reviews & Author Contact - Peeref (https://www.peeref.com/works/21965395)",
+        "Off-policy Confidence Sequences — Lacuna (https://lacuna.tiptreesystems.com/work/off-policy-confidence-sequences-yjxp)",
+        "Off-policy Confidence Sequences (https://www.alphaxiv.org/abs/2102.09540)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences – Read with an AI tutor (https://www.chapterpal.com/s/nwpxcmby/time-uniform-nonparametric-nonasymptotic-confidence-sequences)",
+        "High Confidence Policy Improvement (https://videolectures.net/videos/icml2015_thomas_policy_improvement)",
+        "Optimal Policy Identification: an Anytime-Valid Approach – Daniel Molitor (https://dmolitor.com/blog/posts/optimal_policy_id/index.html)",
+        "Anytime-valid off-policy Inference for Contextual Bandits (https://www.researchgate.net/publication/377870735_Anytime-valid_off-policy_inference_for_contextual_bandits)",
+        "High Confidence Policy Improvement — Lacuna (https://lacuna.tiptreesystems.com/work/high-confidence-policy-improvement)",
+        "Off-Policy Confidence Sequences (https://conftrace.com/papers/177029-off-policy-confidence-sequences)",
+        "Time-uniform, nonparametric, nonasymptotic confidence sequences (https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202202208832350367)",
+        "Time-uniform, nonparametric, nonasymptotic confidence... (https://arxivlens.com/paperview/details/time-uniform-nonparametric-nonasymptotic-confidence-sequences-5594-2318390)",
+        "dblp: Off-policy Confidence Sequences. (https://dblp.org/rec/journals/corr/abs-2102-09540.html)",
+        "Anytime-valid off-policy inference for contextual bandits (https://www.catalyzex.com/paper/anytime-valid-off-policy-inference-for)",
+        "Anytime-valid off-policy inference for contextual bandits |... (https://arxivlens.com/paperview/details/anytime-valid-off-policy-inference-for-contextual-bandits-4091-1625861)",
+        "Off-Policy Confidence Sequences (https://papertalk.org/papertalks/32167)",
+        "Off-Policy Confidence Sequences (https://eurekamag.com/research/099/784/099784236.php)",
+        "dblp: Off-policy Confidence Sequences. (https://dblp.uni-trier.de/rec/journals/corr/abs-2102-09540.html)",
+        "dblp: Anytime-valid off-policy inference for contextual bandits. (https://dblp.dagstuhl.de/rec/journals/corr/abs-2210-10768.html)",
+        "High Confidence Policy Improvement (https://explore.metascienceobservatory.org/papers/W1931027396)",
+        "Semiparametric Efficient Inference in Adaptive Experiments (https://arxiv.org/abs/2311.18274)"
+      ]
+    },
+    {
+      "key": "risk_search_003",
+      "available": true,
+      "query_strings": [
+        "\"PAC Subset Selection\" \"LUCB\" 2012",
+        "\"Good Arm Identification\" bandit threshold 2018",
+        "\"Conservative Bandits\" Wu Shariff Lattimore Szepesvari 2016",
+        "\"best arm identification\" \"correlated\" \"side observations\""
+      ],
+      "literal_urls_requested": [
+        "https://proceedings.mlr.press/v139/karampatziakis21a/karampatziakis21a.pdf",
+        "https://proceedings.mlr.press/v37/thomas15.pdf",
+        "https://arxiv.org/abs/2609.30360",
+        "https://arxiv.org/abs/2610.24345"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Conservative Bandits (https://proceedings.mlr.press/v48/wu16.html)",
+        "PAC Subset Selection in Stochastioc Multi-armed Bandits (https://www.cs.utexas.edu/~ai-lab/pub-view.php?PubID=127167)",
+        "ICML 2012 – Accepted papers (https://icml.cc/2012/papers/)",
+        "Conservative Bandits (https://sites.ualberta.ca/~szepesva/papers/ICML16-cbandit.pdf)",
+        "Peter Stone: PAC Subset Selection in Stochastic Multi-armed Bandits (https://www.cs.utexas.edu/~pstone/Papers/bib2html/b2hd-ICML12-shivaram.html)",
+        "ICML 2012 – Accepted papers (https://icml.cc/2012/papers.1.html)",
+        "Conservative Bandits (https://arxiv.org/abs/1602.04282)",
+        "Conservative bandits (https://cris.technion.ac.il/en/publications/conservative-bandits/)",
+        "dblp: Conservative Bandits. (https://dblp.uni-trier.de/rec/conf/icml/WuSLS16.html)",
+        "PAC Subset Selection in Stochastic Multi-armed Bandits (https://icml.cc/2012/papers/359.pdf)",
+        "Conservative Bandits (https://roshan.ca/publications/wu16-poster.pdf)",
+        "PAC Subset Selection in Stochastic Multi-armed Bandits (https://www.cse.iitb.ac.in/~shivaram/papers/ktas_icml_2012.pdf)",
+        "Conservative Bandits (https://bibbase.org/network/publication/shariff-wu-lattimore-szepesvri-conservativebandits-2016)",
+        "Conservative Bandits (https://conftrace.com/papers/173442-conservative-bandits)",
+        "dblp: Conservative Bandits. (https://dblp.org/rec/conf/icml/WuSLS16.html)",
+        "Publications (https://sites.ualberta.ca/~szepesva/pubs.html)",
+        "Good arm identification via bandit feedback (https://d-nb.info/1182228267/34)",
+        "dblp: Conservative Bandits. (https://dblp.dagstuhl.de/rec/conf/icml/WuSLS16.html)",
+        "Conservative Bandits (https://www.alphaxiv.org/abs/1602.04282)",
+        "Good arm identification via bandit feedback (https://link.springer.com/article/10.1007/s10994-019-05784-4)",
+        "Conservative Bandits (https://www.catalyzex.com/paper/conservative-bandits)",
+        "Good Arm Identification via Bandit Feedback (https://arxiv.org/abs/1710.06360)",
+        "Conservative Bandits — Lacuna (https://lacuna.tiptreesystems.com/work/conservative-bandits/wrk_ab7aaf65444dcd19d6e19d4c1f257537)",
+        "PAC Subset Selection in Stochastic Multi-armed Bandits (https://www.tcs.tifr.res.in/web/events/415)",
+        "Good Arm Identification via Bandit Feedback (https://www.alphaxiv.org/abs/1710.06360)",
+        "Good arm identification via bandit feedback (https://keio.elsevierpure.com/en/publications/good-arm-identification-via-bandit-feedback/)",
+        "Roshan Shariff - Publications (https://roshan.ca/publications/)",
+        "High Confidence Policy Improvement (https://proceedings.mlr.press/v37/thomas15.pdf)",
+        "[2609.30360] Cost-Aware Best-LLM Identification using Dueling Feedback (https://arxiv.org/abs/2609.30360)",
+        "[2610.24345] The Certification Exponent: Instance-Optimal Sequential Certification of Policy Improvement from History Dependent Logs (https://arxiv.org/abs/2610.24345)"
+      ]
+    },
+    {
+      "key": "risk_search_004",
+      "available": true,
+      "query_strings": [
+        "\"Best-Arm Identification\" \"Correlated\" Gupta Joshi Yagan",
+        "\"best arm identification\" \"graph feedback\" pure exploration",
+        "\"sequential\" \"comparison with a control\" \"common random numbers\"",
+        "\"Estimating means of bounded random variables by betting\""
+      ],
+      "literal_urls_requested": [
+        "https://proceedings.mlr.press/v258/wu25c.html",
+        "https://arxiv.org/abs/2402.16710",
+        "https://arxiv.org/abs/1710.06360",
+        "https://arxiv.org/abs/2609.00065"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Best-Arm Identification in (https://users.ece.cmu.edu/~oyagan/Journals/BestArm_Correlated.pdf)",
+        "Estimating means of bounded random variables by betting (https://academic.oup.com/jrsssb/article/86/1/1/7043257)",
+        "Best-Arm Identification in Correlated Multi-Armed Bandits (https://arxiv.org/abs/2109.04941)",
+        "Estimating means of bounded random variables by betting (https://arxiv.org/abs/2010.09686)",
+        "Estimating means of bounded random variables by betting (https://0-academic-oup-com.legcat.gov.ns.ca/jrsssb/article/86/1/1/7043257)",
+        "Estimating means of bounded random variables by betting. (https://openurl.ebsco.com/contentitem/gcd%3A175634273?crl=c&id=ebsco%3Agcd%3A175634273&jrnl=13697412&sid=ebsco%3Aplink%3Acrawler-gcd)",
+        "Estimating means of bounded random variables by betting - Aaditya Ramdas | Department of Statistics (https://www.stat.iastate.edu/event/2021/estimating-means-bounded-random-variables-betting-aaditya-ramdas)",
+        "Estimating means of bounded random variables by betting (https://doi.org/10.1093/jrsssb%2Fqkad009)",
+        "Estimating Means of Bounded Random Variables by Betting (https://dimacs.rutgers.edu/dimacsevents/seminar-details/estimating-means-of-bounded-ra)",
+        "Proposer of the vote of thanks to Waudy-Smith and Ramdas and contribution to the Discussion of ‘Estimating means of bounded random variables by betting’ (https://academic.oup.com/jrsssb/article/86/1/28/7394904)",
+        "Paper page - Estimating means of bounded random variables by betting (https://huggingface.co/papers/2010.09686)",
+        "Under review as a conference paper at ICLR 2026 (https://openreview.net/pdf/960dd891bbe68ddd4df9ccae51c7b87ca9d6b7f8.pdf)",
+        "Jiayi Li, Yuantong Li and Xiaowu Dai's contribution to the Discussion of ‘Estimating means of bounded random variables by betting' by Waudby-Smith and Ramdas (https://academic.oup.com/jrsssb/article/86/1/41/7303977?searchresult=1)",
+        "Estimating means of bounded random variables by betting (https://par.nsf.gov/servlets/purl/10379214)",
+        "Jiayi Li, Yuantong Li and Xiaowu Dai's contribution to the Discussion of ‘Estimating means of bounded random variables by betting' by Waudby-Smith and Ramdas (https://escholarship.org/uc/item/61n9r79w)",
+        "Rong Jiang and Keming Yu's Discussion of “Estimating means of bounded random variables by betting” by Ian Waudby-Smith and Aaditya Ramdas (https://bura.brunel.ac.uk/handle/2438/27675)",
+        "Estimating means of bounded random variables by betting (https://www.opentrain.ai/papers/estimating-means-of-bounded-random-variables-by-betting--doi-10.1093_jrsssb_qkad009/)",
+        "Estimating means of bounded random variables by betting (https://repository.essex.ac.uk/36566/1/qkad118.pdf)",
+        "Estimating means of bounded random variables by betting (https://watermark02.silverchair.com/qkad118.pdf?token=REDACTED)",
+        "Research – Gauri Joshi (https://www.andrew.cmu.edu/user/gaurij/Research.html)",
+        "Cost-Aware Optimal Pairwise Pure Exploration (https://proceedings.mlr.press/v258/wu25c.html)",
+        "[2402.16710] Cost Aware Best Arm Identification (https://arxiv.org/abs/2402.16710)",
+        "[1710.06360] Good Arm Identification via Bandit Feedback (https://arxiv.org/abs/1710.06360)",
+        "[2609.00065] Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents (https://arxiv.org/abs/2609.00065)"
+      ]
+    },
+    {
+      "key": "risk_search_005",
+      "available": true,
+      "query_strings": [
+        "site.projecteuclid.org \"Learn then test\" \"2025\"",
+        "site:proceedings.neurips.cc \"Sequential Bayesian Experimental Design with Variable Cost Structure\"",
+        "site:jds.acm.org \"Anytime-valid off-policy inference\" 2024",
+        "site:link.springer.com \"Good Arm Identification via Bandit Feedback\" 2019"
+      ],
+      "literal_urls_requested": [],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Good arm identification via bandit feedback (https://link.springer.com/article/10.1007/s10994-019-05784-4)",
+        "OpenAccess This article is distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.",
+        "Sequential Bayesian Experimental Design with Variable Cost Structure (https://proceedings.neurips.cc/paper/2020/hash/2adee8815dd939548ee6b2772524b6f2-Abstract.html)",
+        "Sequential Bayesian Experimental Design with (https://proceedings.neurips.cc/paper_files/paper/2020/file/2adee8815dd939548ee6b2772524b6f2-Paper.pdf)",
+        "Supplementary Material: Sequential Bayesian (https://proceedings.neurips.cc/paper_files/paper/2020/file/2adee8815dd939548ee6b2772524b6f2-Supplemental.pdf)",
+        "Supplementary Material: Sequential Bayesian Experimental Design with Variable Cost Structure (https://proceedings.neurips.cc/paper/2020/file/2adee8815dd939548ee6b2772524b6f2-Supplemental.pdf)",
+        "Review for NeurIPS paper: Sequential Bayesian Experimental Design with Variable Cost Structure (https://proceedings.neurips.cc/paper/2020/file/2adee8815dd939548ee6b2772524b6f2-Review.html)",
+        "Anytime-valid off-policy inference for contextual bandits (https://jds.acm.org/files/JDS_Issue3_Paper1.pdf)",
+        "Review for NeurIPS paper: Sequential Bayesian Experimental Design with Variable Cost Structure (https://proceedings.neurips.cc/paper/2020/file/2adee8815dd939548ee6b2772524b6f2-MetaReview.html)",
+        "Anytime-valid off-policyinference for contextual bandits (https://jds.acm.org/files/JDS_Issue3_Cover1.pdf)",
+        "The Annals of Applied Statistics (https://www.imstat.org/publications/aoas/aoas_19_2/aoas_19_2.pdf)",
+        "Learn then test: calibrating predictive algorithms to achieve risk control - MaRDI portal (https://portal.mardi4nfdi.de/wiki/Learn_then_test%3A_calibrating_predictive_algorithms_to_achieve_risk_control)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://proceedings.mlr.press/v267/zecchin25a.html)",
+        "Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control (https://gsbpreserve.stanford.edu/view/32366/learn-then-test-calibrating-predictive-algorithms-to-achieve-risk-control?limit=25&offset=9&q=facet%2Cmetadata.OA_DC_KEYWORD.en.keyword%2Cequals%2Cmachine+learning&q=facet%2Cmetadata.OA_DC_PUBTYPE.en.keyword%2Cequals%2CArticles&q=facet%2Cparents%2Cequals%2C1298&sort=-title.keyword)",
+        "Disease diagnosis and control by reinforcement learning techniques: a systematic literature review (https://link.springer.com/article/10.1007/s10791-025-09539-9)",
+        "Learn then test: Calibrating predictive algorithms to achieve risk control - 科研通 (https://www.ablesci.com/assist/detail?id=obJkkz)",
+        "Book (https://proceedings.neurips.cc/paper_files/paper/2020)",
+        "Learn then test: Calibrating predictive algorithms to achieve risk control (https://www.researchgate.net/publication/392305954_Learn_then_test_Calibrating_predictive_algorithms_to_achieve_risk_control)",
+        "Learn then test: calibrating predictive algorithms to achieve risk control - MaRDI portal (https://portal.mardi4nfdi.de/wiki/Item%3AQ6949465)",
+        "Calibrating Predictive Algorithms for Risk Control | PDF | P Value | Machine Learning (https://www.scribd.com/document/870705354/24-AOAS1998)",
+        "Adaptive Learn-Then-Test – King's Communications, Learning & Information Processing lab (https://blogs.kcl.ac.uk/kclip/2025/05/02/adaptive-learn-then-test/)",
+        "Learn then test: Calibrating predictive algorithms to achieve risk control (https://bishtref.com/articles/10.1214/24-aoas1998)",
+        "More Criticism Does Not Make a Better Review: EquiReview-R (https://www.alphaxiv.org/abs/2609.03943)",
+        "Browse | GSB Preserve (https://gsbpreserve.stanford.edu/browse?limit=50&q=facet%2Cmetadata.OA_DC_ACADEMICAREA.en.keyword%2Cequals%2CEconomics&q=facet%2Cmetadata.OA_DC_KEYWORD.en.keyword%2Cequals%2Cconformal+prediction&sort=-title.keyword)",
+        "Learn then Test: Calibrating Predictive Algorithms to Achieve Risk Control (https://eurekamag.com/research/096/499/096499459.php)",
+        "Ensuring Reliability via Hyperparameter Selection: Review and Advances (https://arxiv.org/abs/2502.04206)"
+      ]
+    },
+    {
+      "key": "risk_search_006",
+      "available": true,
+      "query_strings": [
+        "\"Adaptive Learn-then-Test\" arxiv e-processes"
+      ],
+      "literal_urls_requested": [
+        "https://raw.githubusercontent.com/mlresearch/v267/main/assets/zecchin25a/zecchin25a.pdf"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://arxiv.org/abs/2409.15844)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://proceedings.mlr.press/v267/zecchin25a.html)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://openreview.net/pdf/950b65e20561b99e53e829739e5c96d4ae1d045c.pdf)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://raw.githubusercontent.com/mlresearch/v267/main/assets/zecchin25a/zecchin25a.pdf)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://icml.cc/media/icml-2025/Slides/45663.pdf)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection · ArXivSignals (https://arxivsignals.io/papers/2409.15844)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://openreview.net/pdf?id=JxnOZwFNcU)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://www.researchgate.net/publication/384295044_Adaptive_Learn-then-Test_Statistically_Valid_and_Efficient_Hyperparameter_Selection)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection - Paper Detail (https://deeplearn.org/arxiv/571684/adaptive-learn-then-test%3A-statistically-valid-and-efficient-hyperparameter-selection)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection · paper-with-me (https://khansong-paper-with-me.hf.space/paper/adaptive-learn-then-test-statistically-valid)",
+        "au:Simeone_O in:math - SciRate Search (https://scirate.com/search?q=au%3ASimeone_O+in%3Amath)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://pith.science/paper/2409.15844)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection · mlsanity (https://mlsanity.com/paper/2409.15844/)",
+        "Matteo Zecchin – King's Communications, Learning & Information Processing lab (https://blogs.kcl.ac.uk/kclip/author/k2364738/)",
+        "Mht (https://www.catalyzex.com/s/Mht)",
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=202402218940614281)",
+        "au:Zecchin_M in:stat - SciRate Search (https://scirate.com/search?q=au%3AZecchin_M+in%3Astat)",
+        "AdaFCP: Local Neural Functional Representations for Industrial Change Detection (https://arxiv.org/abs/2611.13464)"
+      ]
+    },
+    {
+      "key": "risk_read_001",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://arxiv.org/html/2010.09686v5",
+        "https://arxiv.org/pdf/1810.08240",
+        "https://jds.acm.org/files/JDS_Issue3_Paper1.pdf",
+        "https://proceedings.mlr.press/v258/wu25c/wu25c.pdf"
+      ],
+      "find_patterns": [
+        "gated",
+        "candidate"
+      ],
+      "source_titles_and_urls": [
+        "Estimating means of bounded random variables by betting (https://arxiv.org/html/2010.09686v5)",
+        "High Confidence Policy Improvement (https://proceedings.mlr.press/v37/thomas15.pdf)"
+      ]
+    },
+    {
+      "key": "risk_read_002",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://arxiv.org/html/2210.10768v4",
+        "https://raw.githubusercontent.com/mlresearch/v258/main/assets/wu25c/wu25c.pdf",
+        "https://rlj.cs.umass.edu/2024/papers/RLJ_RLC_2024_193.pdf"
+      ],
+      "find_patterns": [
+        "Theorem 4",
+        "conditional mean"
+      ],
+      "source_titles_and_urls": [
+        "Estimating means of bounded random variables by betting (https://arxiv.org/html/2010.09686v5)"
+      ]
+    },
+    {
+      "key": "risk_read_003",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://arxiv.org/html/2010.09686v7",
+        "https://arxiv.org/html/2210.10768v3",
+        "https://arxiv.org/html/2609.38661v2",
+        "https://arxiv.org/html/2605.10913v3",
+        "https://icml.cc/2012/papers/359.pdf",
+        "https://arxiv.org/pdf/1710.06360v2"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Estimating means of bounded random variables by betting (https://arxiv.org/html/2010.09686v7)",
+        "Anytime-valid off-policy inference for contextual bandits (https://arxiv.org/html/2210.10768v3)",
+        "EvoSteer: Online Self-Evolving Graph Orchestration via Reference-Anchored Credit Assignment (https://arxiv.org/html/2609.38661v2)",
+        "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces (https://arxiv.org/html/2605.10913v3)",
+        "PAC Subset Selection in Stochastic Multi-armed Bandits (https://icml.cc/2012/papers/359.pdf)",
+        "Good Arm Identification via Bandit Feedback (https://arxiv.org/pdf/1710.06360v2)"
+      ]
+    },
+    {
+      "key": "risk_read_004",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [],
+      "find_patterns": [
+        "4.3",
+        "5.2",
+        "nonstationary",
+        "conditional"
+      ],
+      "source_titles_and_urls": [
+        "EvoSteer: Online Self-Evolving Graph Orchestration via Reference-Anchored Credit Assignment (https://arxiv.org/html/2609.38661v2)",
+        "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces (https://arxiv.org/html/2605.10913v3)",
+        "Anytime-valid off-policy inference for contextual bandits (https://arxiv.org/html/2210.10768v3)",
+        "Estimating means of bounded random variables by betting (https://arxiv.org/html/2010.09686v7)"
+      ]
+    },
+    {
+      "key": "risk_read_005",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "EvoSteer: Online Self-Evolving Graph Orchestration via Reference-Anchored Credit Assignment (https://arxiv.org/html/2609.38661v2)",
+        "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces (https://arxiv.org/html/2605.10913v3)",
+        "Estimating means of bounded random variables by betting (https://arxiv.org/html/2010.09686v7)",
+        "Anytime-valid off-policy inference for contextual bandits (https://arxiv.org/html/2210.10768v3)"
+      ]
+    },
+    {
+      "key": "risk_read_006",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://proceedings.mlr.press/v139/karampatziakis21a/karampatziakis21a.pdf",
+        "https://proceedings.mlr.press/v37/thomas15.pdf",
+        "https://sli.csail.mit.edu/pdfs/publications/zheng2020neurips.pdf",
+        "https://informs-sim.org/wsc03papers/065.pdf"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "High Confidence Policy Improvement (https://proceedings.mlr.press/v37/thomas15.pdf)",
+        "2003: COMPARISON WITH A STANDARD VIA FULLY SEQUENTIAL PROCEDURES (https://informs-sim.org/wsc03papers/065.pdf)"
+      ]
+    },
+    {
+      "key": "risk_read_007",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://projecteuclid.org/journals/annals-of-applied-statistics/volume-19/issue-2/Learn-then-test--Calibrating-predictive-algorithms-to-achieve-risk/10.1214/24-AOAS1998.full",
+        "https://sli.csail.mit.edu/pdfs/publications/zheng2020neurips.pdf",
+        "https://proceedings.mlr.press/v258/wu25c.html"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "projecteuclid.org (https://projecteuclid.org/journals/annals-of-applied-statistics/volume-19/issue-2/Learn-then-test--Calibrating-predictive-algorithms-to-achieve-risk/10.1214/24-AOAS1998.full)",
+        "Cost-Aware Optimal Pairwise Pure Exploration (https://proceedings.mlr.press/v258/wu25c.html)"
+      ]
+    },
+    {
+      "key": "risk_read_008",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://proceedings.mlr.press/v267/zecchin25a.html",
+        "https://proceedings.mlr.press/v267/zecchin25a/zecchin25a.pdf"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://proceedings.mlr.press/v267/zecchin25a.html)"
+      ]
+    },
+    {
+      "key": "risk_read_009",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://openreview.net/pdf?id=JxnOZwFNcU"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Verifying your browser | OpenReview (https://openreview.net/pdf?id=JxnOZwFNcU ; rewritten summary of https://openreview.net/challenge?redirect=/pdf?id%3DJxnOZwFNcU)"
+      ]
+    },
+    {
+      "key": "risk_read_010",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://arxiv.org/html/2409.15844v2"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://arxiv.org/html/2409.15844v2)"
+      ]
+    },
+    {
+      "key": "risk_read_011",
+      "available": true,
+      "query_strings": [],
+      "literal_urls_requested": [
+        "https://arxiv.org/html/2409.15844v2"
+      ],
+      "find_patterns": [],
+      "source_titles_and_urls": [
+        "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection (https://arxiv.org/html/2409.15844v2)"
+      ]
+    }
+  ],
+  "original_full_log_sha256": "5b0946361fc7c2a7138c7221cd54366d820f6c83170212a4e150bbcd4d3c6922",
+  "publication_note": "Public query and URL provenance excerpt; raw provider responses and arXiv abstract XML retained privately."
+}

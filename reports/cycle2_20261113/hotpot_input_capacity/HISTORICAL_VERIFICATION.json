@@ -1,0 +1,14 @@
+{
+  "status": "PASS_DERIVED_COUNT_RECOMPUTATION",
+  "sample_size": 2000,
+  "both_models_verified": true,
+  "seed_selection_reproduced": true,
+  "all_reported_distributions_and_reserve_counts_exact": true,
+  "mistral_local_loader_payload_ids_equal_rows": 2000,
+  "server_equivalence_still_not_established": true,
+  "raw_data_read_by_verifier": false,
+  "new_gpu_hours": 0,
+  "new_model_calls": 0,
+  "result_sha256": "164505807d50638a06288790895173367e1d6ab82e2997698254e7417dd32aab",
+  "verifier_sha256": "aacf7076eab9201e1424c52bc611d286ff1d24b53af0ebc63ef0b66c80adbdb9"
+}

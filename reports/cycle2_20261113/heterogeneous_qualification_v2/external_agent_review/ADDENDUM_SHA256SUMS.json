@@ -1,0 +1,20 @@
+{
+  "schema": "mab2_f1_closure_addendum_sha256_v1",
+  "files": [
+    {
+      "name": "ADDENDUM.md",
+      "bytes": 2231,
+      "sha256": "4d39ca3a564b84dd38ff316048da10d347435bdaaec4e5ae840cf39c8ce242aa"
+    },
+    {
+      "name": "ADDENDUM_RECEIPT.json",
+      "bytes": 3838,
+      "sha256": "87ad68c50a494137e2ff631c6786e4045101c8a75ea44213309376a75516e459"
+    },
+    {
+      "name": "verify_addendum.py",
+      "bytes": 4904,
+      "sha256": "3a27bb2d3403b9fae19028d392dc236b62fbdfb21bfaa9c708d9ae614174a1e4"
+    }
+  ]
+}

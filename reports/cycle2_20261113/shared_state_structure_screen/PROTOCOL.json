@@ -1,0 +1,11 @@
+{
+  "status": "FIXED_BEFORE_NEW_STRUCTURE_CALCULATION",
+  "scope": "Old G2 train/tune graph-index structure only; no quality, predictions, labels, raw text, R1 or official test",
+  "question": "Does repeated terminal-state incidence create extra information sharing beyond the shared anchor already supplied to ordinary edge-wise baselines?",
+  "known_context": "The preceding cost screen reported about 48.9 percent of right indices also occur among left indices. This is not assumed to be a novel saving or free policy observation.",
+  "calculations": ["Per-question undirected contrast graph on terminal graph-state indices: unique states, unique contrasts, connected components and incidence rank V-components", "For each of two anchor groups, intersection of its twelve left/right endpoint pairs: test existence of a common center and twelve distinct leaves", "Overlap between anchor stars, duplicate contrasts, and exact center-only explanation of right-in-left incidence", "Terminal state counts for independent endpoints, ordinary center-cached comparisons, and globally unique states; no inference tokens/GPU-hour claim"],
+  "interpretation": "A disjoint union of stars is already handled by ordinary shared-anchor baselines. Overlapping states would motivate further accounting but do not alone establish novelty or decision utility. No scientific candidate is admitted.",
+  "fixed_input_sha256": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+  "new_gpu_hours": 0,
+  "new_formal_rounds": 0
+}

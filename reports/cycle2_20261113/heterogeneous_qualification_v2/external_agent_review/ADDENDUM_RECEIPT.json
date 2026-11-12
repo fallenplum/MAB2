@@ -1,0 +1,78 @@
+{
+  "status": "F1_CLOSED_BY_EXACT_GIT_TO_DEPLOYMENT_BYTE_RECONSTRUCTION",
+  "source_commit": "b7434719eebb93eb41770bbc9af63222e3a47380",
+  "source_byte_map_sha256": "df814850c7395f03fd2dfcec9a3b88a957976abefe26ae7f9bfedb08a85c6721",
+  "materializer_script_sha256": "14dd17cb64d09902b9debe3947a6bf3a9e957d72428f25385176168aa842cda2",
+  "existing_reconstruction_receipt_sha256": "fa069b23560aea1a45a43783884a25448da4f699cad5cee9b0b9b7e1e699a050",
+  "addendum_verifier_sha256": "3a27bb2d3403b9fae19028d392dc236b62fbdfb21bfaa9c708d9ae614174a1e4",
+  "checks": [
+    {
+      "file": "src/graph_credit/__init__.py",
+      "git_blob_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "reconstructed_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "bytes": 81,
+      "transform": "IDENTITY",
+      "pass": true
+    },
+    {
+      "file": "src/graph_credit/executor.py",
+      "git_blob_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "reconstructed_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "bytes": 19119,
+      "transform": "IDENTITY",
+      "pass": true
+    },
+    {
+      "file": "src/graph_credit/backend.py",
+      "git_blob_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "reconstructed_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "bytes": 9672,
+      "transform": "IDENTITY",
+      "pass": true
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "git_blob_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "reconstructed_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "bytes": 5616,
+      "transform": "IDENTITY",
+      "pass": true
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/qualify_routed_executor.py",
+      "git_blob_sha256": "80dbec1b7d6820ea57239bfd407daa6c598e2eadfdb42022b3bde82b8f784dc8",
+      "reconstructed_sha256": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b",
+      "bytes": 9288,
+      "transform": "LF_TO_CRLF",
+      "pass": true
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/gpu_job_guard.py",
+      "git_blob_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "reconstructed_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "bytes": 1913,
+      "transform": "IDENTITY",
+      "pass": true
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/PROTOCOL.json",
+      "git_blob_sha256": "29f1303f3c4e57c8d2cee381f3b9b04fa575a1ef6ff00bdce92ac539acb2e087",
+      "reconstructed_sha256": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8",
+      "bytes": 3207,
+      "transform": "LF_TO_CRLF",
+      "pass": true
+    }
+  ],
+  "transforms": {
+    "IDENTITY": 5,
+    "LF_TO_CRLF": 2
+  },
+  "previous_review_seal_sha256": "1f07d496f7a30084845269f1baa77aa0042ee05659d97523625a3b9701166f99",
+  "previous_review_three_artifacts_unchanged": true,
+  "previous_16_run_artifacts_unchanged": true,
+  "original_plan_unchanged": true,
+  "original_7_source_files_unchanged": true,
+  "reconstruction_script_executed_by_this_review": false,
+  "new_GPU_calls": 0,
+  "conclusion": "F1 exact deployed source-byte reproducibility gap is closed by the explicit map plus independently verified existing reconstruction; the original LF/CRLF historical difference remains recorded. F2 pre-generation rejection logging limitation remains open. No new runtime or scientific qualification is claimed."
+}

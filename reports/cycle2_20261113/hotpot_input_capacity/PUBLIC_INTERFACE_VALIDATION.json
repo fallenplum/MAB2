@@ -1,0 +1,17 @@
+{
+  "schema": "hotpot_capacity_public_interface_validation_v1",
+  "status": "PASS",
+  "historical_aggregate_results_byte_identical": true,
+  "historical_verification_byte_identical": true,
+  "original_source_files_unchanged": true,
+  "source_revision_after_results": true,
+  "full_2000_count_not_repeated": true,
+  "synthetic_samples_only": 3,
+  "template_render_encode_checks_total": 30,
+  "overwrite_guard_passed": true,
+  "server_runtime_equivalence": false,
+  "private_indices_or_per_question_counts_or_tokenizer_copies_included": false,
+  "E_worktree_or_Git_modified_by_publication": false,
+  "new_model_calls": 0,
+  "new_gpu_hours": 0
+}

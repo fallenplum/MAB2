@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_BOUNDED_LITERATURE_AND_DESIGN_REVIEW",
+  "created_utc": "2026-11-12T22:17:23.732499+00:00",
+  "checks": {
+    "unique_paper_ids": true,
+    "all_papers_primary_urls_and_depth": true,
+    "two_designs_exactly": true,
+    "arxiv_eight_of_eight": true,
+    "twenty_one_exact_queries": true,
+    "all_search_records_present": true,
+    "core_prior_ids_present": true,
+    "explicit_non_exhaustive": true,
+    "google_failure_honest": true,
+    "no_private_paths_or_user_tokens_in_report": true
+  },
+  "papers_registered": 21,
+  "exact_search_queries": 21,
+  "candidate_design_count": 2,
+  "novelty_verdict": "generic paired fresh validation plus anytime gate is covered by prior work; graph-specific incremental value unproven",
+  "experimental_activity": {
+    "gpu_hours": 0,
+    "new_formal_candidate_rounds": 0,
+    "new_models_executed": 0,
+    "new_R1_results_read": false,
+    "question_or_gold_records_read": false,
+    "sealed_test_read": false,
+    "repository_modified": false
+  },
+  "coverage_limit": "Bibliographic and selected-section review; no independent theorem reproof, no experimental effectiveness validation. Structural file checks are not research tests.",
+  "validation_history": [
+    {
+      "attempt": 1,
+      "status": "REJECTED_REGEX_FALSE_POSITIVE",
+      "reason": "Naive drive-path regex matched the final s:/ in public https URLs; no research result or source changed."
+    },
+    {
+      "attempt": 2,
+      "status": "PASS",
+      "change": "Required a non-letter prefix before a drive letter."
+    }
+  ],
+  "files": {
+    "ADVERSARIAL_CROSSCHECK.md": {
+      "sha256": "66909e7e913db64988469cd09327da1657c201b26f5a9f130653232a6c10fe4b",
+      "bytes": 2233
+    },
+    "PAPERS.json": {
+      "sha256": "c59072fe83ce19396d9c54c00f8a8dcc54b75dd274baf6b754dd61d3e2e71909",
+      "bytes": 18777
+    },
+    "REVIEW.md": {
+      "sha256": "eac56a07250511f3c91d2c51b0b74ce29fc9e49de8808304bb287b9d9551ba1d",
+      "bytes": 18178
+    },
+    "SEARCH_LOG.json": {
+      "sha256": "5b0946361fc7c2a7138c7221cd54366d820f6c83170212a4e150bbcd4d3c6922",
+      "bytes": 50576
+    },
+    "sources/arxiv_identifier_lookup.atom": {
+      "sha256": "727b38ed9bf8b68f181f0b51e0ba740cb259c6e4be6c9d65290948305159f80f",
+      "bytes": 18151
+    },
+    "sources/arxiv_identifier_lookup.json": {
+      "sha256": "c4338282a6c678aee1bb4100b2e14d03a327574fdc49159307391dc24aa59eb2",
+      "bytes": 15991
+    }
+  }
+}

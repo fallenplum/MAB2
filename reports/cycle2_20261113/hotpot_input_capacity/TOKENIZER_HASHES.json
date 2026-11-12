@@ -1,0 +1,91 @@
+{
+  "schema": "local_tokenizer_artifact_hashes_only_v1",
+  "files": [
+    {
+      "model": "qwen",
+      "filename": "tokenizer.json",
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "model": "qwen",
+      "filename": "tokenizer_config.json",
+      "bytes": 7305,
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    {
+      "model": "qwen",
+      "filename": "vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "model": "qwen",
+      "filename": "merges.txt",
+      "bytes": 1671839,
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+    },
+    {
+      "model": "mistral",
+      "filename": "tokenizer.json",
+      "bytes": 1961548,
+      "sha256": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49"
+    },
+    {
+      "model": "mistral",
+      "filename": "tokenizer_config.json",
+      "bytes": 140874,
+      "sha256": "0533dec9cfe319163801b6618d0f3ec9cfa126b6288e3df5deca6e32acb09cd2"
+    },
+    {
+      "model": "mistral",
+      "filename": "special_tokens_map.json",
+      "bytes": 414,
+      "sha256": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0"
+    },
+    {
+      "model": "mistral",
+      "filename": "tokenizer.model",
+      "bytes": 587404,
+      "sha256": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89"
+    }
+  ],
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "pyarrow": "23.0.0",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "sentencepiece_installed": false
+  },
+  "server_runtime_equivalence": false,
+  "tokenizer_files_included": false,
+  "model_metadata": {
+    "qwen": {
+      "tokenizer_class": "Qwen2Tokenizer",
+      "tokenizer_module": "transformers.models.qwen2.tokenization_qwen2",
+      "is_fast": true,
+      "legacy_requested": null,
+      "legacy_attribute": null,
+      "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+      "backend_tokenizer_sha256": "e360e6f6266884e6667874f3a7d158ca20c4639e2e1dc80427e1edc2c69a38c7",
+      "local_auto_vs_explicit_equivalence": null
+    },
+    "mistral": {
+      "tokenizer_class": "LlamaTokenizer",
+      "tokenizer_module": "transformers.models.llama.tokenization_llama",
+      "is_fast": true,
+      "legacy_requested": false,
+      "legacy_attribute": false,
+      "chat_template_sha256": "e16746b40344d6c5b5265988e0328a0bf7277be86f1c335156eae07e29c82826",
+      "backend_tokenizer_sha256": "1cd304d34370c063fed1a83eb3bfc54893d6c4dff65b602a0c1aff12a8d075ff",
+      "local_auto_vs_explicit_equivalence": {
+        "auto_class": "LlamaTokenizer",
+        "explicit_class": "LlamaTokenizer",
+        "same_backend_serialization": true,
+        "same_chat_template": true,
+        "payload_token_id_matches": 2000
+      }
+    }
+  }
+}

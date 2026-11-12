@@ -1,0 +1,645 @@
+{
+  "status": "PASS_SCOPED_SYNTHETIC_ENGINEERING_OUTPUT_AUDIT",
+  "reviewer": "separate_codex_agent_independent_stdlib_replay",
+  "source_commit": "b7434719eebb93eb41770bbc9af63222e3a47380",
+  "private_plan_sha256": "279bec01c0a3516f3293990c8464deda78a240a6aed7bafb9ceafcd36016089c",
+  "review_script_sha256": "5bac09498ce02a11d1ba5ee8b5e229f0b4e4abe3782241c502a8dec037475848",
+  "source_pins": {
+    "src/graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "src/graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "src/graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+    "experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+    "experiments/cycle2_20261113/heterogeneous_qualification_v2/qualify_routed_executor.py": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b",
+    "experiments/cycle2_20261113/heterogeneous_qualification_v2/gpu_job_guard.py": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+    "experiments/cycle2_20261113/heterogeneous_qualification_v2/PROTOCOL.json": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8"
+  },
+  "git_to_deployed_line_ending_mapping": [
+    {
+      "file": "src/graph_credit/__init__.py",
+      "git_blob_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "deployed_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "git_blob_LF_normalized_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "deployed_LF_normalized_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "git_blob_bytes": 81,
+      "deployed_bytes": 81,
+      "git_blob_CRLF_count": 0,
+      "deployed_CRLF_count": 0,
+      "byte_identity": "exact"
+    },
+    {
+      "file": "src/graph_credit/executor.py",
+      "git_blob_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "deployed_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "git_blob_LF_normalized_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "deployed_LF_normalized_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "git_blob_bytes": 19119,
+      "deployed_bytes": 19119,
+      "git_blob_CRLF_count": 0,
+      "deployed_CRLF_count": 0,
+      "byte_identity": "exact"
+    },
+    {
+      "file": "src/graph_credit/backend.py",
+      "git_blob_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "deployed_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "git_blob_LF_normalized_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "deployed_LF_normalized_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "git_blob_bytes": 9672,
+      "deployed_bytes": 9672,
+      "git_blob_CRLF_count": 0,
+      "deployed_CRLF_count": 0,
+      "byte_identity": "exact"
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "git_blob_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "deployed_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "git_blob_LF_normalized_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "deployed_LF_normalized_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "git_blob_bytes": 5616,
+      "deployed_bytes": 5616,
+      "git_blob_CRLF_count": 0,
+      "deployed_CRLF_count": 0,
+      "byte_identity": "exact"
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/qualify_routed_executor.py",
+      "git_blob_sha256": "80dbec1b7d6820ea57239bfd407daa6c598e2eadfdb42022b3bde82b8f784dc8",
+      "deployed_sha256": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b",
+      "git_blob_LF_normalized_sha256": "80dbec1b7d6820ea57239bfd407daa6c598e2eadfdb42022b3bde82b8f784dc8",
+      "deployed_LF_normalized_sha256": "80dbec1b7d6820ea57239bfd407daa6c598e2eadfdb42022b3bde82b8f784dc8",
+      "git_blob_bytes": 9148,
+      "deployed_bytes": 9288,
+      "git_blob_CRLF_count": 0,
+      "deployed_CRLF_count": 140,
+      "byte_identity": "LF_CRLF_ONLY"
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/gpu_job_guard.py",
+      "git_blob_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "deployed_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "git_blob_LF_normalized_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "deployed_LF_normalized_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "git_blob_bytes": 1913,
+      "deployed_bytes": 1913,
+      "git_blob_CRLF_count": 0,
+      "deployed_CRLF_count": 0,
+      "byte_identity": "exact"
+    },
+    {
+      "file": "experiments/cycle2_20261113/heterogeneous_qualification_v2/PROTOCOL.json",
+      "git_blob_sha256": "29f1303f3c4e57c8d2cee381f3b9b04fa575a1ef6ff00bdce92ac539acb2e087",
+      "deployed_sha256": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8",
+      "git_blob_LF_normalized_sha256": "29f1303f3c4e57c8d2cee381f3b9b04fa575a1ef6ff00bdce92ac539acb2e087",
+      "deployed_LF_normalized_sha256": "29f1303f3c4e57c8d2cee381f3b9b04fa575a1ef6ff00bdce92ac539acb2e087",
+      "git_blob_bytes": 3113,
+      "deployed_bytes": 3207,
+      "git_blob_CRLF_count": 0,
+      "deployed_CRLF_count": 94,
+      "byte_identity": "LF_CRLF_ONLY"
+    }
+  ],
+  "input_artifact_pins": {
+    "IDENTITY.json": "f1b205445393a03644d10d00cf80cd20f9eeef7c7d6c9a5d9c7e66dd6530b45a",
+    "QUALIFICATION.json": "d0dfee34aa0c65646b0c662f130ca8fce0a7cf6c8b055a24daf8ada39e9c41f6",
+    "RESIDENT_STATUS.json": "10d7ad08007905a8b64a99273ab4a6a9c1d98728a24e381b103f11b91cdf3cdf",
+    "RESOURCE_ADMISSION.json": "2a277dca3e9eeb7b0166f69e6c82142b8cb7c507c070baf77cca368bcd14215c",
+    "child.log": "bce86fa14ef9e309041a0585ed7c3fe4b42594e3257b3421d303fd5e82ca5263",
+    "mistral_physical_calls.jsonl": "02ef9ac156c29e5b21725fc401a4b3c308ad1bd25b71cf423ef557b6391ee4d9",
+    "qwen_physical_calls.jsonl": "39e5051be284ee67d55403a486ff77b6472a68669ab39c92098b5382118b2443",
+    "route_calls.jsonl": "16ea482c325fdcf381d7d47817afe40f43a285a1a5dd1a6096447700173b04a8",
+    "synthetic_hetero_arithmetic_base.json": "f6400e2a29c26a07c5198822040d682a9214ebcca8739e58cd9b132b4d1bcded",
+    "synthetic_hetero_arithmetic_cache.json": "9db1ee6287a60adc99d6437b0119b5c843bf87d941c62a0292f0e09fe8de72f7",
+    "synthetic_hetero_arithmetic_changed.json": "dad841cbb58a3dea8e36ff615ad8bdd9297a153c3cd7f961fe6e7ce3ce28f789",
+    "synthetic_hetero_arithmetic_fresh.json": "c09dee33a7087ae7ee4b9bcbb0e342bcc207634f5433373a4c34521d8792d0a6",
+    "synthetic_hetero_reading_base.json": "9f822c95cbc21e42a59b5e2944b832331c7b578bfda761c0d8f92cff4f7c1f9d",
+    "synthetic_hetero_reading_cache.json": "cdffd6390fb188aff2aa8dd0455add9ad88fead2871dcac453a5c4814c4bfa56",
+    "synthetic_hetero_reading_changed.json": "ffee464011c7921fd39bb5a8bc64ccc58c54a4e1e5950b2065d94666909e9e0f",
+    "synthetic_hetero_reading_fresh.json": "0bb472a45b17ca82d127255c1f55d5db6699f14648f8f1b8f28312f24b7e7232"
+  },
+  "input_receipt_pins": {
+    "CLOSED_SYNC_RECEIPT.json": "775eddf50631b4cfcb16986ae9b453b88265d0e020ef7e2a796646cc777f5c4d",
+    "INDEPENDENT_OUTPUT_REPLAY.json": "7d7196c2b623749af279ee78e550096b1af90ba1c3731dab43c0742de9be0dee",
+    "ROOT_CLOSURE_RECEIPT.json": "5236ff0696624000ad760ac9e9781c83c709c49a224fe0b3f282bbab22909368",
+    "DEPLOY_RECEIPT_V2B.json": "5e2799fd7fe566958beae41ab5f13668dbefef4ee9b0c1db2373bdd0db31c65b"
+  },
+  "checks": [
+    {
+      "check": "private_plan_exact_sha256",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "source_commit",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "deployed_source_byte_pins_match_local_qualification_files",
+      "pass": true,
+      "count": 7
+    },
+    {
+      "check": "frozen_git_sources_match_after_only_CRLF_to_LF_normalization",
+      "pass": true,
+      "count": 7
+    },
+    {
+      "check": "deployed_source_receipt_pins_and_lengths",
+      "pass": true,
+      "count": 7
+    },
+    {
+      "check": "deployed_plan_receipt_pin",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "closed_sync_exact_file_hashes_and_lengths",
+      "pass": true,
+      "count": 16
+    },
+    {
+      "check": "root_replay_input_pins",
+      "pass": true,
+      "count": 15
+    },
+    {
+      "check": "worker_and_aggregator_route_matches_protocol",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "model_identity_manifest_qwen",
+      "pass": true,
+      "count": 9
+    },
+    {
+      "check": "backend_source_identity_qwen",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "model_identity_manifest_mistral",
+      "pass": true,
+      "count": 11
+    },
+    {
+      "check": "backend_source_identity_mistral",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "routing_adapter_source_identity",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "independently_reconstructed_protocol_hash",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "64_unique_successful_physical_calls",
+      "pass": true,
+      "count": 64
+    },
+    {
+      "check": "route_physical_bijection",
+      "pass": true,
+      "count": 64
+    },
+    {
+      "check": "local_tokenizer_json_pin_qwen",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "local_tokenizer_json_pin_mistral",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_arithmetic_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_arithmetic_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_arithmetic_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_arithmetic_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_arithmetic_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_arithmetic_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_arithmetic_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_arithmetic_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_arithmetic_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_arithmetic_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_arithmetic_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_arithmetic_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_arithmetic_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_arithmetic_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_arithmetic_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_arithmetic_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_arithmetic_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_arithmetic_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_arithmetic_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_arithmetic_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_arithmetic_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_arithmetic_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_arithmetic_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_arithmetic_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_arithmetic_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_arithmetic_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_arithmetic_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_arithmetic_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_reading_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_reading_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_reading_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_reading_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_reading_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_reading_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_reading_base",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_reading_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_reading_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_reading_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_reading_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_reading_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_reading_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_reading_changed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_reading_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_reading_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_reading_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_reading_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_reading_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_reading_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_reading_fresh",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "execution_header_synthetic_hetero_reading_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "mask_and_closure_synthetic_hetero_reading_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "reuse_set_synthetic_hetero_reading_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "physical_cost_synthetic_hetero_reading_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "logical_service_cost_synthetic_hetero_reading_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "cache_count_synthetic_hetero_reading_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "aggregate_answer_link_synthetic_hetero_reading_cache",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "all_node_integrity_seed_fingerprint_raw_output_physical_route_checks",
+      "pass": true,
+      "count": 104
+    },
+    {
+      "check": "closed_input_prompts_reconstructed_from_only_synthetic_contract_and_permitted_messages",
+      "pass": true,
+      "count": 104
+    },
+    {
+      "check": "all_physical_generation_ids_billed_once",
+      "pass": true,
+      "count": 64
+    },
+    {
+      "check": "changed_vs_fresh_semantic_equalities",
+      "pass": true,
+      "count": 234
+    },
+    {
+      "check": "independent_low_level_tokenizer_sender_receiver_self_state",
+      "pass": true,
+      "count": 312
+    },
+    {
+      "check": "closed_resident_receipt",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "GPU_occupancy_cost_recomputed",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "closed_cost_agreement",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "qualification_only_64_calls_0_new_formal_rounds",
+      "pass": true,
+      "count": 1
+    },
+    {
+      "check": "root_replay_aggregate_cost_agreement",
+      "pass": true,
+      "count": 1
+    }
+  ],
+  "node_records": 104,
+  "execution_summary": [
+    {
+      "case": "arithmetic",
+      "variant": "base",
+      "physical_calls": 13,
+      "logical_calls": 13,
+      "cache_reused": 0
+    },
+    {
+      "case": "arithmetic",
+      "variant": "changed",
+      "physical_calls": 6,
+      "logical_calls": 13,
+      "cache_reused": 7
+    },
+    {
+      "case": "arithmetic",
+      "variant": "fresh",
+      "physical_calls": 13,
+      "logical_calls": 13,
+      "cache_reused": 0
+    },
+    {
+      "case": "arithmetic",
+      "variant": "cache",
+      "physical_calls": 0,
+      "logical_calls": 13,
+      "cache_reused": 13
+    },
+    {
+      "case": "reading",
+      "variant": "base",
+      "physical_calls": 13,
+      "logical_calls": 13,
+      "cache_reused": 0
+    },
+    {
+      "case": "reading",
+      "variant": "changed",
+      "physical_calls": 6,
+      "logical_calls": 13,
+      "cache_reused": 7
+    },
+    {
+      "case": "reading",
+      "variant": "fresh",
+      "physical_calls": 13,
+      "logical_calls": 13,
+      "cache_reused": 0
+    },
+    {
+      "case": "reading",
+      "variant": "cache",
+      "physical_calls": 0,
+      "logical_calls": 13,
+      "cache_reused": 13
+    }
+  ],
+  "physical_calls_by_model": {
+    "qwen": 28,
+    "mistral": 36
+  },
+  "input_tokens": 19568,
+  "output_tokens": 1720,
+  "CUDA_event_seconds": 84.01500048828122,
+  "resident_seconds": 418.02819903590716,
+  "resident_GPU_hours": 0.11611894417664088,
+  "sender_wire_max_observed_by_model": {
+    "qwen": 33,
+    "mistral": 38
+  },
+  "prompt_tokens_max_observed_by_model": {
+    "qwen": 325,
+    "mistral": 505
+  },
+  "receiver_count_differs_from_sender_sum_records": 72,
+  "independent_tokenizer_json_recount": true,
+  "tokenizers_version_for_CPU_recount": "0.22.2",
+  "recount_scope": "Tokenizer JSON exact bytes; encode(add_special_tokens=False); no original HF chat-template or model generation replay",
+  "new_GPU_calls": 0,
+  "model_weight_files_opened": 0,
+  "benchmark_or_original_gold_reads": 0,
+  "formal_rounds_increment": 0,
+  "reviewer_correction": "Initial audit assumed Git blob bytes equalled deployed checkout bytes and failed source pins. Corrected only after checking exact deployment and working-file pins plus equality under CRLF-to-LF normalization; mapping retained. No production artifacts changed.",
+  "limitations": [
+    "Two synthetic tasks, one seed, one fixed route and one edge deletion only.",
+    "Full HF chat-template input count and generated-token ID count are cross-linked to physical logs, not independently reconstructed from token IDs.",
+    "Model file identity verified through frozen manifests and hash chain; weights deliberately not reread.",
+    "Root closure formal_rounds is cumulative project state; qualification increments zero.",
+    "Does not establish real-task quality, long-context capacity, stability under failures, heterogeneous improvement or scientific admission."
+  ]
+}

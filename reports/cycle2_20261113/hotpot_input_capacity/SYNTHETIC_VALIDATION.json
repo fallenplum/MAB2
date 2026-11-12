@@ -1,0 +1,43 @@
+{
+  "schema": "synthetic_public_capacity_interface_validation_v1",
+  "status": "PASS_SYNTHETIC_INTERFACE_ONLY",
+  "synthetic_rows": 3,
+  "benchmark_rows_read": 0,
+  "source_hashes_match_historical": true,
+  "tokenizer_file_hashes_match_historical": true,
+  "context_preservation_checked": true,
+  "full_2000_historical_count_repeated": false,
+  "server_runtime_equivalence": false,
+  "models": {
+    "qwen": {
+      "synthetic_rows": 3,
+      "template_render_encode_checks": 15,
+      "min_prompt_tokens": 198,
+      "max_prompt_tokens": 340,
+      "tokenizer_class": "Qwen2Tokenizer",
+      "legacy_attribute": null,
+      "server_runtime_equivalence": false
+    },
+    "mistral": {
+      "synthetic_rows": 3,
+      "template_render_encode_checks": 15,
+      "min_prompt_tokens": 210,
+      "max_prompt_tokens": 376,
+      "tokenizer_class": "LlamaTokenizer",
+      "legacy_attribute": false,
+      "server_runtime_equivalence": false
+    }
+  },
+  "new_model_calls": 0,
+  "new_gpu_hours": 0,
+  "new_formal_rounds": 0,
+  "CUDA_initialized": false,
+  "environment": {
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2"
+  },
+  "wall_seconds": 74.05000779998954,
+  "cpu_seconds": 11.984375,
+  "public_source_sha256": "d9d75082b73b19894e51e70934d0bda726929242e6e5e1f7e48b9cdd61d6f9c7",
+  "synthetic_probe_sha256": "e05bd8b54fa907f6067e1edadcf5b097727501261512e8e6389e5da90aa7a9ad"
+}

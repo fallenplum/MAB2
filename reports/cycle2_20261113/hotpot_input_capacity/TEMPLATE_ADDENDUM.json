@@ -1,0 +1,10 @@
+{
+  "status": "FIXED_BEFORE_DATA_SAMPLING_AND_COUNTS",
+  "correction": "GraphConfig defaults are rounds=2, but heterogeneous_qualification_v2/PROTOCOL.json explicitly uses rounds=3. This capacity probe uses that engineering protocol's graph configuration, not the default as a proxy for the validated route.",
+  "validated_engineering_graph_rounds": 3,
+  "formal_hotpot_scientific_template_exists": false,
+  "local_dependency_state": "transformers 5.12.1, tokenizers 0.22.2, sentencepiece unavailable; no dependency installation or upgrade authorized by this probe",
+  "tokenizer_fidelity": "Local rendered chat templates and local token IDs can be counted exactly for the loader that succeeds. Equivalence to the server runtime, especially LlamaTokenizerFast(legacy=False), is not assumed. Report loader/class/legacy settings and any failure or fallback; local tokenizer counts are a capacity precheck until server equivalence is separately established.",
+  "mistral_preflight": "Attempt local AutoTokenizer(use_fast=True) and explicit LlamaTokenizerFast(legacy=False) on synthetic text only; compare if both succeed. Missing dependency is reported, not silently replaced by a claimed equivalent implementation.",
+  "no_input_contract_change": "Collector context preservation, no-label projection, sample seed, sample size and no-truncation policy remain unchanged."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS_SEPARATE_MATRIX_RANK_AND_DEGREE_REPLAY",
+  "question_structures_checked": 280,
+  "source_result_sha256": "6f0fd08e8a11d84731ada947c307583f5d1949395af465d26517ad529cac49ec",
+  "review_source_sha256": "18228b0562c605157096e89046f0c51340265ab54b52d6d614b66ca14b211f2f",
+  "quality_read": false,
+  "new_GPU_calls": 0,
+  "reviewer": "root separate implementation, not external human reviewer"
+}

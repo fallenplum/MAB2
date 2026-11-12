@@ -1,0 +1,23 @@
+{
+  "schema": "hotpot_unlabelled_cpu_input_capacity_v1",
+  "status": "FIXED_BEFORE_SAMPLE_AND_TOKEN_COUNTS",
+  "purpose": "Engineering input-capacity probe for a possible future second task; no formal Hotpot scientific template, data split, candidate admission or inference.",
+  "dataset": "hotpotqa/hotpot_qa distractor train only",
+  "dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+  "population_rows": 90447,
+  "sample": {"n": 2000, "numpy_rng": "Generator(PCG64)", "seed": 2026111302, "method": "uniform without replacement on concatenated two-shard global row indices; sort selected indices for deterministic reading", "private_manifest_only": true, "formal_split": false, "no_adaptive_filter_or_resample": true},
+  "allowed_columns": ["id", "question", "context", "type", "level"],
+  "forbidden_value_reads": ["answer", "supporting_facts", "validation", "test", "model_weights", "R1_results"],
+  "serialization": "Use existing collector_payload unchanged, preserving every context title/sentence in original order and compact JSON. Use Executor.question_payload and Executor._messages unchanged; payload means exact qtext (question + two newlines + Supplied context: newline + compact context JSON), without identity metadata.",
+  "existing_graph_config_defaults": {"rounds": 2, "n_workers": 4, "message_tokens": 128, "aggregate_tokens": 256, "max_input_tokens": 8192},
+  "models": ["Qwen2.5-3B-Instruct local tokenizer", "Mistral-7B-Instruct-v0.3 local tokenizer with tokenizer.model supplement revision c170c708c41dac9275d15a8fff4eca08d52bab71"],
+  "tokenizer_policy": "CPU only, offline, no trust_remote_code, no weights or HFBackend construction. First attempt local AutoTokenizer fast backend from small copied tokenizer files only. Missing dependency is reported without environment upgrade; any fallback must be explicit and validated before claiming real template counts.",
+  "counting": {"payload": "encode(qtext, add_special_tokens=False)", "worker_base": "all four actual round-1 messages from existing executor, apply_chat_template(tokenize=True,add_generation_prompt=True)", "aggregate_placeholder": "existing aggregate message builder with four empty-string wire messages; real chat-template tokenization of this artificial placeholder, not an actual generated aggregate input", "truncation": false},
+  "hypothetical_reserves": [0, 512, 1024, 2048, 4096],
+  "reserve_warning": "Reserve means assumed additional total tokens under the receiving tokenizer. Four sender-token caps are not a proven bound after JSON escaping or cross-tokenizer conversion. No actual later-round messages are generated.",
+  "metrics": ["min,median,p90,p95,p99,max payload and base prompt tokens", "counts over 8192 and counts over 8192 after each hypothetical reserve", "headroom distribution", "sample type/level composition", "wall and CPU time for input reading and tokenization", "process memory measurements"],
+  "interpretation": "Sample maxima cover only the fixed 2000 rows, not all train. Fit does not establish GPU memory/time feasibility, answer quality, supporting-fact quality or successful full graph execution.",
+  "new_gpu_hours": 0,
+  "new_model_calls": 0,
+  "new_formal_rounds": 0
+}

@@ -1,0 +1,6 @@
+# Validated historical local environment; no automatic environment mutation.
+numpy==1.26.4
+pyarrow==23.0.0
+transformers==5.12.1
+tokenizers==0.22.2
+psutil==7.2.2

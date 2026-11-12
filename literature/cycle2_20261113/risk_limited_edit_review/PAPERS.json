@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "review_date_local": "2026-11-13",
+  "purpose": "针对风险受限图编辑的反向新颖性核查；非穷尽系统综述",
+  "papers": [
+    {
+      "id": "ALTT2025",
+      "title": "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection",
+      "authors": [
+        "Matteo Zecchin",
+        "Sangwoo Park",
+        "Osvaldo Simeone"
+      ],
+      "venue": "ICML 2025, PMLR 267:74018-74036",
+      "status": "正式发表，PMLR 元数据核实；正文读作者 v2，未声称与最终版逐字相同",
+      "urls": [
+        "https://proceedings.mlr.press/v267/zecchin25a.html",
+        "https://arxiv.org/html/2409.15844v2"
+      ],
+      "depth": "正文选读",
+      "sections": [
+        "2.3",
+        "Algorithm 1",
+        "4.1-4.3",
+        "5.1-5.2"
+      ],
+      "finding": "已有先验知识、数据依赖候选子集采集、e-process、提前停止与 FWER；已有 LLM 提示选择应用。",
+      "boundary": "未据此证明任意环境漂移或跨图证据搬运合法；共享 DAG 重算费用不是本文研究对象。",
+      "reader": "本代理"
+    },
+    {
+      "id": "MOPE2021",
+      "title": "Off-Policy Confidence Sequences",
+      "authors": [
+        "Nikos Karampatziakis",
+        "Paul Mineiro",
+        "Aaditya Ramdas"
+      ],
+      "venue": "ICML 2021, PMLR 139:5301-5310",
+      "status": "正式发表",
+      "urls": [
+        "https://proceedings.mlr.press/v139/karampatziakis21a.html",
+        "https://proceedings.mlr.press/v139/karampatziakis21a/karampatziakis21a.pdf"
+      ],
+      "depth": "正文选读",
+      "sections": [
+        "Introduction",
+        "5.3 Gated Deployment, Theorem 4",
+        "7.4"
+      ],
+      "finding": "直接用目标与基线价值差的置信序列进行部署/丢弃门控。",
+      "boundary": "其重要性采样日志估计不同于实际执行两图的配对反馈；仅替换观测构造不能自动成为新 CS 理论。",
+      "reader": "本代理"
+    },
+    {
+      "id": "HCPI2015",
+      "title": "High Confidence Policy Improvement",
+      "authors": [
+        "Philip S. Thomas",
+        "Georgios Theocharous",
+        "Mohammad Ghavamzadeh"
+      ],
+      "venue": "ICML 2015, PMLR 37:2380-2388",
+      "status": "正式发表",
+      "urls": [
+        "https://proceedings.mlr.press/v37/thomas15.html",
+        "https://proceedings.mlr.press/v37/thomas15.pdf"
+      ],
+      "depth": "正文选读",
+      "sections": [
+        "4, Algorithm 4",
+        "5 中重复复用安全数据的讨论"
+      ],
+      "finding": "独立训练集挑选候选，另用安全检验集决定返回候选或无解；已明确多重比较风险。",
+      "boundary": "区分文中的严格 CI 与 semi-safe t/BCa 版本，不能将所有实验实现都描述为有限样本严格安全。",
+      "reader": "本代理"
+    },
+    {
+      "id": "LTT2025",
+      "title": "Learn then test: Calibrating predictive algorithms to achieve risk control",
+      "authors": [
+        "Anastasios N. Angelopoulos",
+        "Stephen Bates",
+        "Emmanuel J. Candes",
+        "Michael I. Jordan",
+        "Lihua Lei"
+      ],
+      "venue": "Annals of Applied Statistics 19(2):1641-1662, 2025",
+      "doi": "10.1214/24-AOAS1998",
+      "status": "正式发表；主代理本轮直接出版页只有 iframe，委派代理核对元数据",
+      "urls": [
+        "https://projecteuclid.org/journals/annals-of-applied-statistics/volume-19/issue-2/Learn-then-test--Calibrating-predictive-algorithms-to-achieve-risk/10.1214/24-AOAS1998.full",
+        "https://arxiv.org/pdf/2110.01052"
+      ],
+      "depth": "委派代理正文选读",
+      "sections": [
+        "1.1",
+        "2 fixed-sequence / graphical testing",
+        "Appendix D split fixed-sequence"
+      ],
+      "finding": "独立学习样本确定候选检验顺序，再用校准样本做多重检验；旧信用仅排序不是新原则。",
+      "boundary": "固定样本 p-value 不能未经修正用于任意停止。",
+      "reader": "risk_novelty_adversary"
+    },
+    {
+      "id": "KIM2003",
+      "title": "Comparison with a Standard via Fully Sequential Procedures",
+      "authors": [
+        "Seong-Hee Kim"
+      ],
+      "venue": "Winter Simulation Conference 2003:528-534",
+      "status": "官方完整论文；2005 TOMACS 扩展本轮未读全文",
+      "urls": [
+        "https://informs-sim.org/wsc03papers/065.pdf"
+      ],
+      "depth": "正文选读并独立交叉核对",
+      "sections": [
+        "1-3",
+        "Section 2 assumptions",
+        "Section 3 CRN Case C"
+      ],
+      "finding": "顺序选择优于 standard 的系统，否则保留 standard；支持未知标准均值、异方差和共同随机数。",
+      "boundary": "假设每系统 iid normal，使用 indifference zone；不能直接移植为三值正确率差的精确有限样本证明。",
+      "reader": "本代理与 risk_novelty_adversary"
+    },
+    {
+      "id": "HOWARD2021",
+      "title": "Time-uniform, nonparametric, nonasymptotic confidence sequences",
+      "authors": [
+        "Steven R. Howard",
+        "Aaditya Ramdas",
+        "Jon McAuliffe",
+        "Jasjeet Sekhon"
+      ],
+      "venue": "Annals of Statistics 49(2):1055-1080, 2021",
+      "doi": "10.1214/20-AOS1991",
+      "status": "正式发表；arXiv API 校验标识",
+      "urls": [
+        "https://arxiv.org/pdf/1810.08240",
+        "https://doi.org/10.1214/20-AOS1991"
+      ],
+      "depth": "正文选读",
+      "sections": [
+        "4.1, Theorem 4",
+        "4.2 potential-outcome ATE"
+      ],
+      "finding": "方差自适应、有界观测和时间一致区间已经是可复用统计基础。",
+      "boundary": "适应抽样和任意停止需要其条件均值/可预测性条件；不是任意选择偏差修复器。",
+      "reader": "本代理"
+    },
+    {
+      "id": "BETTING2024",
+      "title": "Estimating means of bounded random variables by betting",
+      "authors": [
+        "Ian Waudby-Smith",
+        "Aaditya Ramdas"
+      ],
+      "venue": "Journal of the Royal Statistical Society Series B 86(1):1-27, 2024",
+      "doi": "10.1093/jrsssb/qkad009",
+      "status": "正式发表；API 最新版本 v7",
+      "urls": [
+        "https://academic.oup.com/jrsssb/article/86/1/1/7043257",
+        "https://arxiv.org/html/2010.09686v7"
+      ],
+      "depth": "正文选读；v5 初读后核对 v7",
+      "sections": [
+        "2",
+        "4",
+        "5 sampling without replacement",
+        "B.2-B.3 adaptive betting"
+      ],
+      "finding": "有界均值的 betting CS、可预测下注和无放回抽样已有现成方法。",
+      "boundary": "经验 Bernstein 或 aGRAPA 加到稀疏三值差上，本身不能作新方法；有限银行与流式总体的目标不同。",
+      "reader": "本代理"
+    },
+    {
+      "id": "AVOPE2024",
+      "title": "Anytime-valid off-policy inference for contextual bandits",
+      "authors": [
+        "Ian Waudby-Smith",
+        "Lili Wu",
+        "Aaditya Ramdas",
+        "Nikos Karampatziakis",
+        "Paul Mineiro"
+      ],
+      "venue": "ACM/IMS Journal of Data Science, 2024",
+      "doi": "10.1145/3643693",
+      "status": "出版元数据/作者版本核对；出版 PDF 403，正文读 arXiv v3",
+      "urls": [
+        "https://doi.org/10.1145/3643693",
+        "https://arxiv.org/html/2210.10768v3"
+      ],
+      "depth": "正文选读",
+      "sections": [
+        "Introduction",
+        "3 Inference for time-varying policy values"
+      ],
+      "finding": "支持适应日志；漂移情形显式估计至今条件政策价值的平均。",
+      "boundary": "过去条件均值平均的区间不等于下一时刻、下一图或未来环境净收益保证。",
+      "reader": "本代理"
+    },
+    {
+      "id": "GAI2019",
+      "title": "Good arm identification via bandit feedback",
+      "authors": [
+        "Hideaki Kano",
+        "Junya Honda",
+        "Kentaro Sakamaki",
+        "Kentaro Matsuura",
+        "Atsuyoshi Nakamura",
+        "Masashi Sugiyama"
+      ],
+      "venue": "Machine Learning 108:721-745, 2019",
+      "doi": "10.1007/s10994-019-05784-4",
+      "status": "正式发表；与 1710.06360v2 预印本合并为一项工作",
+      "urls": [
+        "https://link.springer.com/article/10.1007/s10994-019-05784-4",
+        "https://arxiv.org/pdf/1710.06360v2"
+      ],
+      "depth": "出版社正文选读",
+      "sections": [
+        "1",
+        "2.1",
+        "3.1-3.2",
+        "Conclusion"
+      ],
+      "finding": "尽早找到任意达到阈值的 arm，提出 HDoC，并比较 LUCB-G、APT-G。",
+      "boundary": "原 Bernoulli 观察设置；三值配对净差需合法变换/相应有界检验，不能照搬原定理。",
+      "reader": "本代理"
+    },
+    {
+      "id": "LUCB2012",
+      "title": "PAC Subset Selection in Stochastic Multi-armed Bandits",
+      "authors": [
+        "Shivaram Kalyanakrishnan",
+        "Ambuj Tewari",
+        "Peter Auer",
+        "Peter Stone"
+      ],
+      "venue": "ICML 2012",
+      "status": "官方论文获取",
+      "urls": [
+        "https://icml.cc/2012/papers/359.pdf"
+      ],
+      "depth": "摘要与问题定义，未重证定理",
+      "sections": [
+        "Abstract",
+        "Problem formulation"
+      ],
+      "finding": "固定置信度子集/最佳臂选择的标准对照来源。",
+      "boundary": "首次找到正收益编辑不要求最优臂；只有 LUCB 对照会错配任务。",
+      "reader": "本代理"
+    },
+    {
+      "id": "ZHENG2020",
+      "title": "Sequential Bayesian Experimental Design with Variable Cost Structure",
+      "authors": [
+        "Sue Zheng",
+        "David Hayden",
+        "Jason Pacheco",
+        "John W. Fisher III"
+      ],
+      "venue": "NeurIPS 2020",
+      "status": "官方元数据和作者全文交叉核对",
+      "urls": [
+        "https://proceedings.neurips.cc/paper/2020/hash/2adee8815dd939548ee6b2772524b6f2-Abstract.html",
+        "https://sli.csail.mit.edu/pdfs/publications/zheng2020neurips.pdf"
+      ],
+      "depth": "正文选读并独立交叉核对",
+      "sections": [
+        "3",
+        "3.1 equations 7-8",
+        "3.2",
+        "4 opening"
+      ],
+      "finding": "明确跨候选共享后验采样成本，候选成本随状态/评估次数变化，用收益改进除费用分配，并比较 AE/LUCB。",
+      "boundary": "MI 界与 BOED 目标不同；文中也明确既有 BAI 保证不能直接搬到其设置。",
+      "reader": "本代理与 risk_novelty_adversary"
+    },
+    {
+      "id": "CAET2025",
+      "title": "Cost-Aware Optimal Pairwise Pure Exploration",
+      "authors": [
+        "Di Wu",
+        "Chengshuai Shi",
+        "Ruida Zhou",
+        "Cong Shen"
+      ],
+      "venue": "AISTATS 2025, PMLR 258:4492-4500",
+      "status": "正式发表，出版摘要核实；PDF 未成功读取",
+      "urls": [
+        "https://proceedings.mlr.press/v258/wu25c.html",
+        "https://raw.githubusercontent.com/mlresearch/v258/main/assets/wu25c/wu25c.pdf"
+      ],
+      "depth": "官方摘要/元数据",
+      "sections": [
+        "Abstract"
+      ],
+      "finding": "配对关系纯探索、异构 arm 费用、包括零费用，成本最优 Track-and-Stop 框架。",
+      "boundary": "未读完整假设与证明，不能断言覆盖任意联合闭包费用或与当前工程直接兼容。",
+      "reader": "本代理"
+    },
+    {
+      "id": "CABAI2024",
+      "title": "Cost Aware Best Arm Identification",
+      "authors": [
+        "Kellen Kanarios",
+        "Qining Zhang",
+        "Lei Ying"
+      ],
+      "venue": "Reinforcement Learning Conference / Reinforcement Learning Journal, 2024",
+      "status": "官方页面/PDF及arXiv标识核实",
+      "urls": [
+        "https://rlj.org/papers/kanarios2024cost",
+        "https://rlj.cs.umass.edu/2024/papers/RLJ_RLC_2024_193.pdf",
+        "https://arxiv.org/abs/2402.16710"
+      ],
+      "depth": "摘要与引言",
+      "sections": [
+        "Abstract",
+        "Introduction"
+      ],
+      "finding": "随机异构抽样费用下的最佳臂识别；强调累计费用而不只是样本数。",
+      "boundary": "未全面核对分布/相关性假设，不把所有成本文献概括为费用独立或固定。",
+      "reader": "本代理"
+    },
+    {
+      "id": "EVOSTEER2026",
+      "title": "EvoSteer: Online Self-Evolving Graph Orchestration via Reference-Anchored Credit Assignment",
+      "authors_verification": "本任务仅核题名/版本/正文；作者名单不从记忆补写",
+      "venue": "arXiv 2609.38661v2, 2026",
+      "status": "作者预印本；不宣称本轮独立核实正式录用",
+      "urls": [
+        "https://arxiv.org/html/2609.38661v2"
+      ],
+      "depth": "正文选读；既有矩阵交叉核对",
+      "sections": [
+        "4.3 Validated Skill Admission, equations 10-12"
+      ],
+      "finding": "同任务配对反事实、wins/losses/ties、顺序晋升/淘汰及跨比较跨观察 alpha spending 已在多智能体场景出现。",
+      "boundary": "其核心判断是二元阈值通过率方向；名义 FWER 明确依赖实际选择/采样下 p 值有效。",
+      "reader": "本代理"
+    },
+    {
+      "id": "SHEPHERD2026",
+      "title": "Shepherd: Enabling Programmable Meta-Agents via Reversible Agentic Execution Traces",
+      "authors_verification": "本任务仅核题名/版本/正文；作者名单不从记忆补写",
+      "venue": "arXiv 2605.10913v3, 2026",
+      "status": "作者预印本；不宣称本轮独立核实正式录用",
+      "urls": [
+        "https://arxiv.org/html/2605.10913v3"
+      ],
+      "depth": "正文选读；既有矩阵交叉核对",
+      "sections": [
+        "5.2 CRO",
+        "Introduction byte-identical replay discussion"
+      ],
+      "finding": "固定父执行轨迹、首个受影响点分支、仅重跑后缀并在 fix/guard 集验证编辑已有直接系统先例。",
+      "boundary": "本文没有据此获得总体 anytime 误编辑保证；缓存工程优势不能独占或冒充新统计方法。",
+      "reader": "本代理"
+    },
+    {
+      "id": "CONSERVATIVE2016",
+      "title": "Conservative Bandits",
+      "authors": [
+        "Yifan Wu",
+        "Roshan Shariff",
+        "Tor Lattimore",
+        "Csaba Szepesvari"
+      ],
+      "venue": "ICML 2016, PMLR 48:1254-1262",
+      "status": "正式发表",
+      "urls": [
+        "https://proceedings.mlr.press/v48/wu16.html"
+      ],
+      "depth": "官方摘要",
+      "sections": [
+        "Abstract"
+      ],
+      "finding": "累计服务奖励相对基线的持续保守约束已有专门研究。",
+      "boundary": "单次错误认证概率并非累计用户损失或服务期间安全约束。",
+      "reader": "本代理"
+    },
+    {
+      "id": "NELSON2001",
+      "title": "Comparisons with a Standard in Simulation Experiments",
+      "authors": [
+        "Barry L. Nelson",
+        "David Goldsman"
+      ],
+      "venue": "Management Science 47(3):449-463, 2001",
+      "doi": "10.1287/mnsc.47.3.449.9778",
+      "status": "委派代理核官方元数据/摘要",
+      "urls": [
+        "https://pubsonline.informs.org/doi/10.1287/mnsc.47.3.449.9778"
+      ],
+      "depth": "摘要/元数据",
+      "sections": [
+        "Abstract"
+      ],
+      "finding": "多个随机系统对同一标准比较，讨论 CRN；不能默认共享 seed 总能降方差。",
+      "boundary": "本轮未读全文，不移植定理。",
+      "reader": "risk_novelty_adversary"
+    },
+    {
+      "id": "HEALEY2015",
+      "title": "A minimal switching procedure for constrained ranking and selection under independent or common random numbers",
+      "authors": [
+        "Healey (given names not independently verified)",
+        "Sigrun Andradottir",
+        "Seong-Hee Kim"
+      ],
+      "venue": "IIE Transactions 47(11):1170-1184, 2015",
+      "doi": "10.1080/0740817X.2015.1009198",
+      "status": "委派代理核官方索引摘要；作者首名本轮仅保留缩写",
+      "urls": [
+        "https://www.tandfonline.com/doi/abs/10.1080/0740817X.2015.1009198"
+      ],
+      "depth": "摘要/元数据",
+      "sections": [
+        "Abstract"
+      ],
+      "finding": "联合考虑切换和采样费用、独立或 CRN 观察。",
+      "boundary": "全文访问受限；未据摘要断言覆盖任意 DAG 重算缓存。",
+      "reader": "risk_novelty_adversary"
+    },
+    {
+      "id": "MCNEMAR1947",
+      "title": "Note on the sampling error of the difference between correlated proportions or percentages",
+      "authors": [
+        "Quinn McNemar"
+      ],
+      "venue": "Psychometrika 12:153-157, 1947",
+      "doi": "10.1007/BF02295996",
+      "status": "委派代理核官方摘要/元数据",
+      "urls": [
+        "https://link.springer.com/article/10.1007/BF02295996"
+      ],
+      "depth": "摘要/元数据",
+      "sections": [
+        "Abstract"
+      ],
+      "finding": "配对二元正确率比较属于经典统计问题。",
+      "boundary": "本轮没有核得可直接移植的 sequential McNemar 原文；不得称已验证 anytime 版本。",
+      "reader": "risk_novelty_adversary"
+    },
+    {
+      "id": "LLMCOST2026",
+      "title": "Cost-Aware Best-LLM Identification using Dueling Feedback",
+      "authors": [
+        "Sarvesh Gharat",
+        "Nikhil Karamchandani",
+        "Jayakrishnan Nair"
+      ],
+      "venue": "arXiv 2609.30360v1, 2026",
+      "status": "作者备注称 Accepted at NeurIPS 2026；本轮未以会议官网独立确认",
+      "urls": [
+        "https://arxiv.org/abs/2609.30360v1"
+      ],
+      "depth": "摘要与 API 元数据",
+      "sections": [
+        "Abstract",
+        "Comments"
+      ],
+      "finding": "LLM 异构调用费用、dueling feedback、Condorcet winner 与成本敏感 Track-and-Stop 的更近线索。",
+      "boundary": "未核正文证明，不作为否定新颖性的唯一依据。",
+      "reader": "本代理"
+    },
+    {
+      "id": "CERT2026",
+      "title": "The Certification Exponent: Instance-Optimal Sequential Certification of Policy Improvement from History Dependent Logs",
+      "authors": [
+        "Rui Wang"
+      ],
+      "venue": "arXiv 2610.24345v1, 2026",
+      "status": "Submitted to JMLR；不是已录用，未完成证明审查",
+      "urls": [
+        "https://arxiv.org/abs/2610.24345v1"
+      ],
+      "depth": "摘要与 API 元数据",
+      "sections": [
+        "Abstract",
+        "Comments"
+      ],
+      "finding": "明确研究基于历史依赖日志的顺序政策改进认证与样本复杂度。",
+      "boundary": "只作后续线索，不依赖未经核对的最优性定理作本任务结论。",
+      "reader": "本代理"
+    }
+  ]
+}

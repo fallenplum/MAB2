@@ -1,0 +1,66 @@
+{
+  "schema": "post_result_capacity_public_interface_revision_v1",
+  "created_utc": "2026-11-12T22:24:44.603601+00:00",
+  "historical_run_unchanged": true,
+  "revision_after_historical_results": true,
+  "historical_2000_count_rerun_required_for_this_packaging": false,
+  "validation_scope": "Synthetic interface/template check only; not a new 2000-row replay or server runtime equivalence test",
+  "source_map": [
+    {
+      "original_name": "PROTOCOL.json",
+      "public_name": "PROTOCOL.json",
+      "original_sha256": "d6bd0f511970ff8560f68ca5a287fccd729b3d11a7715ea9fa3c50de4f418977",
+      "public_sha256": "d6bd0f511970ff8560f68ca5a287fccd729b3d11a7715ea9fa3c50de4f418977",
+      "change": "Byte-identical aggregate/protocol copy"
+    },
+    {
+      "original_name": "TEMPLATE_ADDENDUM.json",
+      "public_name": "TEMPLATE_ADDENDUM.json",
+      "original_sha256": "a6009eb892a35355248e82c1f0e20011b6956848c02dfdb4830c6be0dd14c476",
+      "public_sha256": "a6009eb892a35355248e82c1f0e20011b6956848c02dfdb4830c6be0dd14c476",
+      "change": "Byte-identical aggregate/protocol copy"
+    },
+    {
+      "original_name": "RESULTS.json",
+      "public_name": "HISTORICAL_RESULTS.json",
+      "original_sha256": "164505807d50638a06288790895173367e1d6ab82e2997698254e7417dd32aab",
+      "public_sha256": "164505807d50638a06288790895173367e1d6ab82e2997698254e7417dd32aab",
+      "change": "Byte-identical aggregate/protocol copy"
+    },
+    {
+      "original_name": "VERIFICATION.json",
+      "public_name": "HISTORICAL_VERIFICATION.json",
+      "original_sha256": "c4a0a0699912d3844beda8ce4ee263badabb47d616e7ff16a634f7c8e1d391a0",
+      "public_sha256": "c4a0a0699912d3844beda8ce4ee263badabb47d616e7ff16a634f7c8e1d391a0",
+      "change": "Byte-identical aggregate/protocol copy"
+    },
+    {
+      "original_name": "TOKENIZER_SOURCE_CHECK.json",
+      "public_name": "TOKENIZER_SOURCE_CHECK.json",
+      "original_sha256": "b7a3b2b8554aaa285431d5879875eb7068ac9453bb2c7f6fb38dca2bba31207d",
+      "public_sha256": "b7a3b2b8554aaa285431d5879875eb7068ac9453bb2c7f6fb38dca2bba31207d",
+      "change": "Byte-identical aggregate/protocol copy"
+    },
+    {
+      "original_name": "run_capacity.py",
+      "public_name": "run_capacity.py",
+      "original_sha256": "5f96a0f4907ecf5dea2e3d19e2a4a19724726d9724355998ce19d1d4ff740101",
+      "public_sha256": "d9d75082b73b19894e51e70934d0bda726929242e6e5e1f7e48b9cdd61d6f9c7",
+      "change": "CLI paths, fresh output, explicit bytecode-write prevention, and synthetic-only branch"
+    },
+    {
+      "original_name": "verify_capacity.py",
+      "public_name": "verify_capacity.py",
+      "original_sha256": "aacf7076eab9201e1424c52bc611d286ff1d24b53af0ebc63ef0b66c80adbdb9",
+      "public_sha256": "5717df58e54629277fb50a25ba36848f9422c1d35f968de75ba47266057a3423",
+      "change": "Output-path parameterization; formulas unchanged"
+    },
+    {
+      "original_name": "REPORT.md",
+      "public_name": "REPORT.md",
+      "original_sha256": "6da5c80a6c7a58b0efaf2fa4ffd49731e2867f21c381a6e72de3c00b3b9122da",
+      "public_sha256": "f6e99f974c0765419aa57fb180bf0cf87f3707ddb8d188fe83b4af460572cad2",
+      "change": "Required public title and explicit interpretation boundary"
+    }
+  ]
+}

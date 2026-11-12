@@ -1,0 +1,74 @@
+{
+  "status": "COMPLETE_STRUCTURE_ONLY_NO_QUALITY_READ",
+  "protocol_sha256": "71cff9c91336634322d80358fb4e629a016adb0d4f740b366aecd7b1968c96cf",
+  "input_sha256": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+  "source_sha256": "d791f44a3619af83f9466074995c092b9e8a58e1b600aa7317d153cb908c3ee8",
+  "splits": {
+    "train": {
+      "counts": {
+        "questions": 200,
+        "contrasts": 4800,
+        "independent_endpoint_state_count": 9600,
+        "shared_anchor_state_count": 5200,
+        "globally_unique_state_count": 5194,
+        "right_in_left": 2347,
+        "right_in_left_center": 2343,
+        "right_in_left_noncenter": 4,
+        "duplicate_contrasts": 0
+      },
+      "structure_histogram": [
+        {
+          "structure": {
+            "components": 1,
+            "incidence_rank": 23,
+            "star_overlap_states": 2,
+            "states": 24,
+            "unique_contrasts": 24
+          },
+          "questions": 3
+        },
+        {
+          "structure": {
+            "components": 2,
+            "incidence_rank": 24,
+            "star_overlap_states": 0,
+            "states": 26,
+            "unique_contrasts": 24
+          },
+          "questions": 197
+        }
+      ]
+    },
+    "tune": {
+      "counts": {
+        "questions": 80,
+        "contrasts": 1920,
+        "independent_endpoint_state_count": 3840,
+        "shared_anchor_state_count": 2080,
+        "globally_unique_state_count": 2080,
+        "right_in_left": 939,
+        "right_in_left_center": 939,
+        "right_in_left_noncenter": 0,
+        "duplicate_contrasts": 0
+      },
+      "structure_histogram": [
+        {
+          "structure": {
+            "components": 2,
+            "incidence_rank": 24,
+            "star_overlap_states": 0,
+            "states": 26,
+            "unique_contrasts": 24
+          },
+          "questions": 80
+        }
+      ]
+    }
+  },
+  "CPU_seconds": 0.0,
+  "new_gpu_hours": 0,
+  "formal_round_increment": 0,
+  "quality_array_accessed": false,
+  "R1_accessed": false,
+  "raw_question_identifiers_accessed": false
+}

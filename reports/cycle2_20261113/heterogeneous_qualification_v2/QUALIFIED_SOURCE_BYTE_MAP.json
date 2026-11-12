@@ -1,0 +1,56 @@
+{
+  "status": "POST_RUN_REPRODUCIBILITY_REPAIR_WITHOUT_EXECUTION_CHANGE",
+  "git_commit": "b7434719eebb93eb41770bbc9af63222e3a47380",
+  "files": [
+    {
+      "path": "src/graph_credit/__init__.py",
+      "git_blob_content_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "deployed_sha256": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+      "deployed_bytes": 81,
+      "byte_transform": "IDENTITY"
+    },
+    {
+      "path": "src/graph_credit/executor.py",
+      "git_blob_content_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "deployed_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+      "deployed_bytes": 19119,
+      "byte_transform": "IDENTITY"
+    },
+    {
+      "path": "src/graph_credit/backend.py",
+      "git_blob_content_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "deployed_sha256": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+      "deployed_bytes": 9672,
+      "byte_transform": "IDENTITY"
+    },
+    {
+      "path": "experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py",
+      "git_blob_content_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "deployed_sha256": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+      "deployed_bytes": 5616,
+      "byte_transform": "IDENTITY"
+    },
+    {
+      "path": "experiments/cycle2_20261113/heterogeneous_qualification_v2/qualify_routed_executor.py",
+      "git_blob_content_sha256": "80dbec1b7d6820ea57239bfd407daa6c598e2eadfdb42022b3bde82b8f784dc8",
+      "deployed_sha256": "abdc33973700aed55ef9622c2e60b80f9d9cd2e20c617fd320957488b272114b",
+      "deployed_bytes": 9288,
+      "byte_transform": "LF_TO_CRLF"
+    },
+    {
+      "path": "experiments/cycle2_20261113/heterogeneous_qualification_v2/gpu_job_guard.py",
+      "git_blob_content_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "deployed_sha256": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+      "deployed_bytes": 1913,
+      "byte_transform": "IDENTITY"
+    },
+    {
+      "path": "experiments/cycle2_20261113/heterogeneous_qualification_v2/PROTOCOL.json",
+      "git_blob_content_sha256": "29f1303f3c4e57c8d2cee381f3b9b04fa575a1ef6ff00bdce92ac539acb2e087",
+      "deployed_sha256": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8",
+      "deployed_bytes": 3207,
+      "byte_transform": "LF_TO_CRLF"
+    }
+  ],
+  "reason": "Two Windows worktree files used CRLF while Git normalization stored LF; deployment source pins were exact and remain unchanged. Explicit reconstruction makes the original plan pin check reproducible."
+}

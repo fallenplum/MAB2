@@ -1,0 +1,981 @@
+{
+  "status": "COMPLETE_LOCAL_CPU_TOKENIZER_CAPACITY_PRECHECK",
+  "source_dataset_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+  "population_rows": 90447,
+  "sample_rows": 2000,
+  "sample_formal_split": false,
+  "allowed_value_columns": [
+    "id",
+    "question",
+    "context",
+    "type",
+    "level"
+  ],
+  "answer_values_read": false,
+  "supporting_facts_values_read": false,
+  "validation_or_test_read": false,
+  "R1_results_read": false,
+  "weights_loaded": false,
+  "new_model_calls": 0,
+  "new_gpu_hours": 0,
+  "new_formal_rounds": 0,
+  "context_truncated_or_filtered": false,
+  "source_file_verification": "Current metadata row counts and file sizes checked against prior pinned audit. Parquet byte hashes are prior audit pins; no full-file rehash was performed. Only allowlisted columns were decoded.",
+  "source_metadata": [
+    {
+      "relative_path": "distractor/train-00000-of-00002.parquet",
+      "rows": 45224,
+      "row_groups": 46,
+      "bytes": 165624177,
+      "prior_audit_sha256": "76d3bb3048a7cc73c1958107c0c5872a00d7e7d00c105b81e92f6769e7822e68",
+      "global_start": 0
+    },
+    {
+      "relative_path": "distractor/train-00001-of-00002.parquet",
+      "rows": 45223,
+      "row_groups": 46,
+      "bytes": 166162479,
+      "prior_audit_sha256": "713661628434fbb19fff7392e2e321e4ed107e3c7c7784d0690946e5f722763f",
+      "global_start": 45224
+    }
+  ],
+  "source_pins": {
+    "collector_sha256": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e",
+    "executor_sha256": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "engineering_protocol_sha256": "8bc9dddec00137a3424e118077a62426df8eeb43135de72c4b73e8c049eaeeb8",
+    "capacity_protocol_sha256": "d6bd0f511970ff8560f68ca5a287fccd729b3d11a7715ea9fa3c50de4f418977",
+    "template_addendum_sha256": "a6009eb892a35355248e82c1f0e20011b6956848c02dfdb4830c6be0dd14c476",
+    "prior_audit_summary_sha256": "c8a0ad1b0aa9f8215bf75cb1fb98efe481f6d549436fa0ca0916595d05de095a",
+    "script_sha256": "5f96a0f4907ecf5dea2e3d19e2a4a19724726d9724355998ce19d1d4ff740101"
+  },
+  "private_sample_manifest_sha256": "4fbc217d83d84de8d61a41280be9365160ce163b61ec6c3084e914eeae4b9401",
+  "private_selection_sha256": "9ba91653923ac8ef5b26e208a621be0a0983317fe3b3658b9257f3c81b61a891",
+  "sample_types": {
+    "bridge": 1605,
+    "comparison": 395
+  },
+  "sample_levels": {
+    "easy": 407,
+    "medium": 1243,
+    "hard": 350
+  },
+  "sample_normalized_question_duplicate_excess": 0,
+  "engineering_graph_config": {
+    "rounds": 3,
+    "message_tokens": 128,
+    "aggregate_tokens": 256,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_input_tokens": 8192
+  },
+  "formal_hotpot_scientific_template": false,
+  "timing": {
+    "sample_read": {
+      "wall_seconds": 13.643846200007829,
+      "cpu_seconds": 2.921875
+    },
+    "transformers_import": {
+      "wall_seconds": 11.970468399988022,
+      "cpu_seconds": 9.28125
+    },
+    "total": {
+      "wall_seconds": 117.19336560000374,
+      "cpu_seconds": 95.015625
+    }
+  },
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "pyarrow": "23.0.0",
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "sentencepiece_installed": false
+  },
+  "models": {
+    "qwen": {
+      "tokenizer_class": "Qwen2Tokenizer",
+      "tokenizer_module": "transformers.models.qwen2.tokenization_qwen2",
+      "is_fast": true,
+      "legacy_requested": null,
+      "legacy_attribute": null,
+      "server_runtime_equivalence_established": false,
+      "chat_template_sha256": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+      "backend_tokenizer_sha256": "e360e6f6266884e6667874f3a7d158ca20c4639e2e1dc80427e1edc2c69a38c7",
+      "local_auto_vs_explicit_equivalence": null,
+      "payload_tokens": {
+        "n": 2000,
+        "min": 126,
+        "max": 3137,
+        "mean": 1463.6205,
+        "quantiles": {
+          "0": 126.0,
+          "0.5": 1434.0,
+          "0.9": 1898.0,
+          "0.95": 2085.25,
+          "0.99": 2444.06,
+          "1": 3137.0
+        }
+      },
+      "round1_workers": {
+        "w0": {
+          "tokens": {
+            "n": 2000,
+            "min": 278,
+            "max": 3289,
+            "mean": 1615.6205,
+            "quantiles": {
+              "0": 278.0,
+              "0.5": 1586.0,
+              "0.9": 2050.0,
+              "0.95": 2237.25,
+              "0.99": 2596.06,
+              "1": 3289.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4903,
+            "max": 7914,
+            "mean": 6576.3795,
+            "quantiles": {
+              "0": 4903.0,
+              "0.5": 6606.0,
+              "0.9": 6978.1,
+              "0.95": 7093.1,
+              "0.99": 7321.02,
+              "1": 7914.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        },
+        "w1": {
+          "tokens": {
+            "n": 2000,
+            "min": 277,
+            "max": 3288,
+            "mean": 1614.6205,
+            "quantiles": {
+              "0": 277.0,
+              "0.5": 1585.0,
+              "0.9": 2049.0,
+              "0.95": 2236.25,
+              "0.99": 2595.06,
+              "1": 3288.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4904,
+            "max": 7915,
+            "mean": 6577.3795,
+            "quantiles": {
+              "0": 4904.0,
+              "0.5": 6607.0,
+              "0.9": 6979.1,
+              "0.95": 7094.1,
+              "0.99": 7322.02,
+              "1": 7915.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        },
+        "w2": {
+          "tokens": {
+            "n": 2000,
+            "min": 277,
+            "max": 3288,
+            "mean": 1614.6205,
+            "quantiles": {
+              "0": 277.0,
+              "0.5": 1585.0,
+              "0.9": 2049.0,
+              "0.95": 2236.25,
+              "0.99": 2595.06,
+              "1": 3288.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4904,
+            "max": 7915,
+            "mean": 6577.3795,
+            "quantiles": {
+              "0": 4904.0,
+              "0.5": 6607.0,
+              "0.9": 6979.1,
+              "0.95": 7094.1,
+              "0.99": 7322.02,
+              "1": 7915.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        },
+        "w3": {
+          "tokens": {
+            "n": 2000,
+            "min": 276,
+            "max": 3287,
+            "mean": 1613.6205,
+            "quantiles": {
+              "0": 276.0,
+              "0.5": 1584.0,
+              "0.9": 2048.0,
+              "0.95": 2235.25,
+              "0.99": 2594.06,
+              "1": 3287.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4905,
+            "max": 7916,
+            "mean": 6578.3795,
+            "quantiles": {
+              "0": 4905.0,
+              "0.5": 6608.0,
+              "0.9": 6980.1,
+              "0.95": 7095.1,
+              "0.99": 7323.02,
+              "1": 7916.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        }
+      },
+      "round1_max_across_workers": {
+        "tokens": {
+          "n": 2000,
+          "min": 278,
+          "max": 3289,
+          "mean": 1615.6205,
+          "quantiles": {
+            "0": 278.0,
+            "0.5": 1586.0,
+            "0.9": 2050.0,
+            "0.95": 2237.25,
+            "0.99": 2596.06,
+            "1": 3289.0
+          }
+        },
+        "headroom_to_8192": {
+          "n": 2000,
+          "min": 4903,
+          "max": 7914,
+          "mean": 6576.3795,
+          "quantiles": {
+            "0": 4903.0,
+            "0.5": 6606.0,
+            "0.9": 6978.1,
+            "0.95": 7093.1,
+            "0.99": 7321.02,
+            "1": 7914.0
+          }
+        },
+        "hypothetical_extra_token_reserves": [
+          {
+            "extra_tokens": 0,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 512,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 1024,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 2048,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 4096,
+            "over_8192": 0,
+            "within_8192": 2000
+          }
+        ]
+      },
+      "aggregate_empty_wire_placeholder": {
+        "tokens": {
+          "n": 2000,
+          "min": 415,
+          "max": 3426,
+          "mean": 1752.6205,
+          "quantiles": {
+            "0": 415.0,
+            "0.5": 1723.0,
+            "0.9": 2187.0,
+            "0.95": 2374.25,
+            "0.99": 2733.06,
+            "1": 3426.0
+          }
+        },
+        "headroom_to_8192": {
+          "n": 2000,
+          "min": 4766,
+          "max": 7777,
+          "mean": 6439.3795,
+          "quantiles": {
+            "0": 4766.0,
+            "0.5": 6469.0,
+            "0.9": 6841.1,
+            "0.95": 6956.1,
+            "0.99": 7184.02,
+            "1": 7777.0
+          }
+        },
+        "hypothetical_extra_token_reserves": [
+          {
+            "extra_tokens": 0,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 512,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 1024,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 2048,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 4096,
+            "over_8192": 0,
+            "within_8192": 2000
+          }
+        ]
+      },
+      "max_base_across_round1_and_placeholder": {
+        "tokens": {
+          "n": 2000,
+          "min": 415,
+          "max": 3426,
+          "mean": 1752.6205,
+          "quantiles": {
+            "0": 415.0,
+            "0.5": 1723.0,
+            "0.9": 2187.0,
+            "0.95": 2374.25,
+            "0.99": 2733.06,
+            "1": 3426.0
+          }
+        },
+        "headroom_to_8192": {
+          "n": 2000,
+          "min": 4766,
+          "max": 7777,
+          "mean": 6439.3795,
+          "quantiles": {
+            "0": 4766.0,
+            "0.5": 6469.0,
+            "0.9": 6841.1,
+            "0.95": 6956.1,
+            "0.99": 7184.02,
+            "1": 7777.0
+          }
+        },
+        "hypothetical_extra_token_reserves": [
+          {
+            "extra_tokens": 0,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 512,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 1024,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 2048,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 4096,
+            "over_8192": 0,
+            "within_8192": 2000
+          }
+        ]
+      },
+      "timing": {
+        "wall_seconds": 50.321169699993334,
+        "cpu_seconds": 44.3125,
+        "rows_per_wall_second": 39.74469770856848
+      },
+      "tokenizer_model_max_length_metadata": 131072,
+      "input_cap_used": 8192
+    },
+    "mistral": {
+      "tokenizer_class": "LlamaTokenizer",
+      "tokenizer_module": "transformers.models.llama.tokenization_llama",
+      "is_fast": true,
+      "legacy_requested": false,
+      "legacy_attribute": false,
+      "server_runtime_equivalence_established": false,
+      "chat_template_sha256": "e16746b40344d6c5b5265988e0328a0bf7277be86f1c335156eae07e29c82826",
+      "backend_tokenizer_sha256": "1cd304d34370c063fed1a83eb3bfc54893d6c4dff65b602a0c1aff12a8d075ff",
+      "local_auto_vs_explicit_equivalence": {
+        "auto_class": "LlamaTokenizer",
+        "explicit_class": "LlamaTokenizer",
+        "same_backend_serialization": true,
+        "same_chat_template": true,
+        "payload_token_id_matches": 2000
+      },
+      "payload_tokens": {
+        "n": 2000,
+        "min": 140,
+        "max": 3503,
+        "mean": 1651.592,
+        "quantiles": {
+          "0": 140.0,
+          "0.5": 1622.0,
+          "0.9": 2138.1000000000004,
+          "0.95": 2353.05,
+          "0.99": 2726.1,
+          "1": 3503.0
+        }
+      },
+      "round1_workers": {
+        "w0": {
+          "tokens": {
+            "n": 2000,
+            "min": 296,
+            "max": 3659,
+            "mean": 1807.7395,
+            "quantiles": {
+              "0": 296.0,
+              "0.5": 1778.0,
+              "0.9": 2294.1000000000004,
+              "0.95": 2509.05,
+              "0.99": 2882.1,
+              "1": 3659.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4533,
+            "max": 7896,
+            "mean": 6384.2605,
+            "quantiles": {
+              "0": 4533.0,
+              "0.5": 6414.0,
+              "0.9": 6835.0,
+              "0.95": 6961.05,
+              "0.99": 7216.1,
+              "1": 7896.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        },
+        "w1": {
+          "tokens": {
+            "n": 2000,
+            "min": 297,
+            "max": 3660,
+            "mean": 1808.7395,
+            "quantiles": {
+              "0": 297.0,
+              "0.5": 1779.0,
+              "0.9": 2295.1000000000004,
+              "0.95": 2510.05,
+              "0.99": 2883.1,
+              "1": 3660.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4532,
+            "max": 7895,
+            "mean": 6383.2605,
+            "quantiles": {
+              "0": 4532.0,
+              "0.5": 6413.0,
+              "0.9": 6834.0,
+              "0.95": 6960.05,
+              "0.99": 7215.1,
+              "1": 7895.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        },
+        "w2": {
+          "tokens": {
+            "n": 2000,
+            "min": 295,
+            "max": 3658,
+            "mean": 1806.7395,
+            "quantiles": {
+              "0": 295.0,
+              "0.5": 1777.0,
+              "0.9": 2293.1000000000004,
+              "0.95": 2508.05,
+              "0.99": 2881.1,
+              "1": 3658.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4534,
+            "max": 7897,
+            "mean": 6385.2605,
+            "quantiles": {
+              "0": 4534.0,
+              "0.5": 6415.0,
+              "0.9": 6836.0,
+              "0.95": 6962.05,
+              "0.99": 7217.1,
+              "1": 7897.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        },
+        "w3": {
+          "tokens": {
+            "n": 2000,
+            "min": 295,
+            "max": 3658,
+            "mean": 1806.7395,
+            "quantiles": {
+              "0": 295.0,
+              "0.5": 1777.0,
+              "0.9": 2293.1000000000004,
+              "0.95": 2508.05,
+              "0.99": 2881.1,
+              "1": 3658.0
+            }
+          },
+          "headroom_to_8192": {
+            "n": 2000,
+            "min": 4534,
+            "max": 7897,
+            "mean": 6385.2605,
+            "quantiles": {
+              "0": 4534.0,
+              "0.5": 6415.0,
+              "0.9": 6836.0,
+              "0.95": 6962.05,
+              "0.99": 7217.1,
+              "1": 7897.0
+            }
+          },
+          "hypothetical_extra_token_reserves": [
+            {
+              "extra_tokens": 0,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 512,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 1024,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 2048,
+              "over_8192": 0,
+              "within_8192": 2000
+            },
+            {
+              "extra_tokens": 4096,
+              "over_8192": 0,
+              "within_8192": 2000
+            }
+          ]
+        }
+      },
+      "round1_max_across_workers": {
+        "tokens": {
+          "n": 2000,
+          "min": 297,
+          "max": 3660,
+          "mean": 1808.7395,
+          "quantiles": {
+            "0": 297.0,
+            "0.5": 1779.0,
+            "0.9": 2295.1000000000004,
+            "0.95": 2510.05,
+            "0.99": 2883.1,
+            "1": 3660.0
+          }
+        },
+        "headroom_to_8192": {
+          "n": 2000,
+          "min": 4532,
+          "max": 7895,
+          "mean": 6383.2605,
+          "quantiles": {
+            "0": 4532.0,
+            "0.5": 6413.0,
+            "0.9": 6834.0,
+            "0.95": 6960.05,
+            "0.99": 7215.1,
+            "1": 7895.0
+          }
+        },
+        "hypothetical_extra_token_reserves": [
+          {
+            "extra_tokens": 0,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 512,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 1024,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 2048,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 4096,
+            "over_8192": 0,
+            "within_8192": 2000
+          }
+        ]
+      },
+      "aggregate_empty_wire_placeholder": {
+        "tokens": {
+          "n": 2000,
+          "min": 457,
+          "max": 3820,
+          "mean": 1968.7395,
+          "quantiles": {
+            "0": 457.0,
+            "0.5": 1939.0,
+            "0.9": 2455.1000000000004,
+            "0.95": 2670.05,
+            "0.99": 3043.1,
+            "1": 3820.0
+          }
+        },
+        "headroom_to_8192": {
+          "n": 2000,
+          "min": 4372,
+          "max": 7735,
+          "mean": 6223.2605,
+          "quantiles": {
+            "0": 4372.0,
+            "0.5": 6253.0,
+            "0.9": 6674.0,
+            "0.95": 6800.05,
+            "0.99": 7055.1,
+            "1": 7735.0
+          }
+        },
+        "hypothetical_extra_token_reserves": [
+          {
+            "extra_tokens": 0,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 512,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 1024,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 2048,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 4096,
+            "over_8192": 0,
+            "within_8192": 2000
+          }
+        ]
+      },
+      "max_base_across_round1_and_placeholder": {
+        "tokens": {
+          "n": 2000,
+          "min": 457,
+          "max": 3820,
+          "mean": 1968.7395,
+          "quantiles": {
+            "0": 457.0,
+            "0.5": 1939.0,
+            "0.9": 2455.1000000000004,
+            "0.95": 2670.05,
+            "0.99": 3043.1,
+            "1": 3820.0
+          }
+        },
+        "headroom_to_8192": {
+          "n": 2000,
+          "min": 4372,
+          "max": 7735,
+          "mean": 6223.2605,
+          "quantiles": {
+            "0": 4372.0,
+            "0.5": 6253.0,
+            "0.9": 6674.0,
+            "0.95": 6800.05,
+            "0.99": 7055.1,
+            "1": 7735.0
+          }
+        },
+        "hypothetical_extra_token_reserves": [
+          {
+            "extra_tokens": 0,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 512,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 1024,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 2048,
+            "over_8192": 0,
+            "within_8192": 2000
+          },
+          {
+            "extra_tokens": 4096,
+            "over_8192": 0,
+            "within_8192": 2000
+          }
+        ]
+      },
+      "timing": {
+        "wall_seconds": 40.81221750000259,
+        "cpu_seconds": 38.328125,
+        "rows_per_wall_second": 49.0049182585455
+      },
+      "tokenizer_model_max_length_metadata": 1000000000000000019884624838656,
+      "input_cap_used": 8192
+    }
+  },
+  "limitations": [
+    "The maximum covers only this fixed 2000-row capacity sample, not all train.",
+    "No answer, supporting-fact, graph-accuracy, inference-memory or GPU-time feasibility claim.",
+    "Server tokenizer/runtime equivalence remains unestablished; counts are exact for the reported local tokenizer.",
+    "Aggregate base uses four empty wire placeholders; later message reserves are hypothetical recipient-token additions, not measured generations or certified cross-tokenizer bounds."
+  ],
+  "private_token_counts_sha256": "95da0857e2de731d1cccfd624eb64d3468186de3c13f7a4987381714ebd20233",
+  "process_memory": {
+    "peak_rss_bytes": 793714688,
+    "final_rss_bytes": 719798272
+  },
+  "cuda_initialized": false
+}
