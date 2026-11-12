@@ -1,5 +1,5 @@
 {
-  "schema": "mab2_d2_exploratory_protocol_v1",
+  "schema": "mab2_d2_exploratory_protocol_v1_1",
   "analysis_id": "d2_20261113",
   "status": "FROZEN_BEFORE_NEW_DIAGNOSTIC_RESULTS",
   "evidence_tier": "POSTHOC_DEVELOPMENT",
@@ -81,13 +81,36 @@
     "scope": "exploratory unadjusted intervals, no confirmatory pass"
   },
   "negative_control": "fit constant response equal training weighted mean at historical alpha; quality independent of graph",
-  "split_seed_diagnostic": "choose best nonnegative action on four seeds; evaluate on excluded fifth; average five leave-one-seed-out choices; descriptive only",
-  "candidate_nomination": "nominate at most one variant by tune80 action gain then lower tune MSE then lower order then variant lexical; require positive gain and positive point difference vs B0/uniform on exposed120; else no predictor nomination",
+  "split_seed_diagnostic": {
+    "rule": "choose strictly positive best gain on four seeds else stay; smallest edge on exact tie; evaluate excluded fifth; average five folds",
+    "folds_are_independent_experiments": false,
+    "inference_unit": "whole question",
+    "scope": "descriptive noisy selection diagnostic"
+  },
+  "candidate_nomination": {
+    "eligible": [
+      "C1_R1",
+      "C1_R1b",
+      "C1_R2",
+      "C1_R3",
+      "C2_R1",
+      "C2_R1b",
+      "C2_R2",
+      "C2_R3"
+    ],
+    "selection": "tune80 action gain largest, then tune MSE smallest, then order smallest, then variant lexical",
+    "float_tie_tolerance": 1e-12,
+    "persist_before_exposed_evaluation": true,
+    "filter": "selected tune gain>0 and exposed120 gain>0, selected point gain exceeds B0 and uniform13",
+    "fallback_after_evaluation": "none; rejected nominee is not replaced by runner-up",
+    "scope": "planning nomination only, not independent evidence"
+  },
   "failure_handling": "abort on input/hash/support/baseline-replay mismatch; preserve attempt; implementation repairs need versioned event",
   "budget": {
     "new_gpu_hours": 0,
     "diagnostic_round": 1,
-    "max_process_cpu_hours": 4
+    "max_process_cpu_hours": 4,
+    "cpu_time_scope": "main process CPU plus child CPU when used; thread CPU included; no child training launched"
   },
   "nonclaims": [
     "independent confirmation",
@@ -95,5 +118,7 @@
     "online full-budget benefit",
     "certified confidence",
     "novel predictor architecture"
-  ]
+  ],
+  "action_floating_ties": "exact equality, consistent with historic D1; no positive tolerance",
+  "attribution_limit": "linear coefficient/prediction decomposition only; selected-action gains are nonlinear and cannot be causally decomposed"
 }
