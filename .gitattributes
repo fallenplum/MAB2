@@ -3,3 +3,4 @@ experiments/d2_diagnostics/* text eol=lf
 research-state.yaml text eol=lf
 research-log.md text eol=lf
 findings.md text eol=lf
+experiments/d3_diagnostics/* text eol=lf

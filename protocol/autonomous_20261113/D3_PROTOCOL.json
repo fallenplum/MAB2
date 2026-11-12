@@ -1,0 +1,168 @@
+{
+  "schema": "mab2_d3_development_drift_protocol_v1",
+  "study_id": "D3_GRAPH_ONLY_DRIFT_ENRICHMENT_20261113",
+  "status": "READY_FOR_ROOT_COMMIT_BEFORE_EXECUTION",
+  "authorization": {
+    "source": "root-confirmed user authorization",
+    "remaining_global_gpu_hour_cap": 160,
+    "global_formal_candidate_round_cap": 5,
+    "this_cpu_round_count": 1,
+    "diagnostic_round_index": 2,
+    "new_gpu_calls_in_D3": 0,
+    "max_D3_process_cpu_seconds": 3600,
+    "conditional_independent_pilot_gpu_hour_cap": 16
+  },
+  "input_bindings": {
+    "accepted_D2_attempt": "28fb250d1c46",
+    "complete_sha256": "46a8cecc2e6e17a4ffbaf6ce8b22d2bcdfbd6a23d818c6b4a74c6d605977c3b8",
+    "results_sha256": "242024766bd77215f6e3175c6a3d22f6d01d1a5b6cddec16be4da9b348e80406",
+    "private_inputs_npz_sha256": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+    "private_parameters_npz_sha256": "893cd7f5ff6d39b7613fd5a8a6c1cf9e63e24c2b19a9d44516535dc6ce4aa598",
+    "independent_replay_sha256": "5bddeb9f917ff9dc39ca928cee0f2f0bbaf038cf3b10f4ebfbc981697095dfb1",
+    "data_role": "already_exposed_G2_development_only",
+    "old_file_mutation_allowed": false,
+    "new_confirmation_claim_allowed": false
+  },
+  "hypothesis": {
+    "id": "H_D3",
+    "claim": "Removing question-text interactions permits a low-dimensional shared graph-interaction model to identify which edge credits change most across two graph contexts on other questions.",
+    "mechanism": "The 66 pairwise graph coefficients pool evidence across training questions. Their induced conditional-credit difference supplies a label-free current-question drift ranking.",
+    "falsifiable_prediction": "The single frozen graph-only order-2 selector's top-2 mean cross-seed squared drift exceeds the uniform-top-2 expectation on the exposed 120-question development block.",
+    "not_claimed": [
+      "online service improvement",
+      "feedback-cost superiority",
+      "same-question repeated-seed gain as future-question gain",
+      "confirmed novelty",
+      "confirmed independent replication"
+    ]
+  },
+  "data": {
+    "train_questions": 200,
+    "tune_questions": 80,
+    "exposed_development_questions": 120,
+    "anchors_per_question": 2,
+    "edges": 12,
+    "seeds": 5,
+    "question_ids_and_seed_order": "exact accepted D2 ordering",
+    "anchor_order": "exact D2 sorted anchor_id ordering",
+    "access": "Only accepted D2 arrays; no sealed or new test targets.",
+    "same_question_gold_for_selector": false
+  },
+  "unique_candidate": {
+    "name": "D3_graph_only_order2_R3",
+    "graph_feature_dimension": 79,
+    "effective_credit_parameter_dimension": 78,
+    "features": "[1,12 edge bits,66 unordered pair products], no text/PCA features",
+    "fit_target": "5-seed mean of all 24 prespecified edge-presence contrasts per training question",
+    "train_row_weight": "1/24; each question total one",
+    "objective": "sum_i w_i(y_i-X_i beta)^2 + alpha*||beta||^2; intercept contrast column is identically zero",
+    "alpha_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1,
+      10,
+      100,
+      1000
+    ],
+    "alpha_selection": "minimum tune question-mean credit MSE; within absolute 1e-12 of minimum choose largest alpha",
+    "refit_after_tune": false,
+    "nomination": "this candidate is nominated by protocol before results; only its alpha is tuned"
+  },
+  "selector": {
+    "score": "abs(predicted_credit_at_anchor1 - predicted_credit_at_anchor0)",
+    "k": 2,
+    "ranking": "descending score; exact score ties use smaller edge index",
+    "feedback_access": "scores and selected indices depend only on frozen coefficients and current graph masks",
+    "k_model_metric_changes_after_results": false
+  },
+  "controls": [
+    {
+      "name": "uniform_top2",
+      "definition": "Expected average score under uniform sampling of two distinct edges is the average over all 12 edges; compute analytically without Monte Carlo."
+    },
+    {
+      "name": "B0",
+      "definition": "Frozen D2 train-only per-edge mean credit; graph-context drift is exactly zero. Report deterministic tied-index top-2 separately; it has no drift-ranking information."
+    },
+    {
+      "name": "graph_only_order1_R3",
+      "definition": "13 columns with effective 12 coefficients, same train/tune objective/grid. Drift is identically zero. Verify beta_e = Ntrain/(Ntrain+12*alpha)*B0_e. Not eligible as fallback."
+    },
+    {
+      "name": "fixed_old_C2_R3",
+      "definition": "Use accepted D2 parameters.npz key C2_R3 (711 coefficients) with accepted phi-major feature order. No refit or new alpha selection. Same old train/tune information; descriptive comparator only."
+    }
+  ],
+  "primary_metric": {
+    "delta_seed": "credit_anchor1_seed - credit_anchor0_seed for each question,edge,seed",
+    "squared_drift": "mean_{s<t} delta_s*delta_t over all 10 distinct seed pairs; negative estimates are retained",
+    "selected_per_question": "average squared_drift over the selector's 2 chosen edges",
+    "uniform_per_question": "average squared_drift over all 12 edges",
+    "contrast_per_question": "selected_per_question - uniform_per_question",
+    "aggregate": "mean over questions; two anchors are compared within each question, not treated as 240 independent samples",
+    "primary_partition": "exposed 120-question development only",
+    "secondary_partitions": [
+      "tune80 descriptive report"
+    ],
+    "independence_assumption": "Cross-seed products estimate squared conditional means only under independent seed replicates; retain audit limitations."
+  },
+  "statistics": {
+    "bootstrap_unit": "question",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 59173,
+    "bootstrap_interval": "percentile 95%, quantiles 0.025 and 0.975",
+    "primary_comparisons": 1,
+    "auxiliary_intervals": "descriptive, unadjusted, not additional gates",
+    "fold_independence_claim": false,
+    "negative_cross_products_clipped": false
+  },
+  "spending_gate": {
+    "status_if_pass": "GO_BOUNDED_INDEPENDENT_PILOT",
+    "all_required": [
+      "all provenance, algebra, candidate-freeze and integrity checks pass",
+      "primary exposed-120 enrichment point estimate > 0",
+      "primary enrichment 95% question-bootstrap lower endpoint > 0",
+      "candidate selected squared-drift point estimate > 0"
+    ],
+    "required_action_gain_positive": false,
+    "required_global_MSE_improvement": false,
+    "interpretation": "Exploratory resource-allocation gate on previously exposed data; not a significance/confirmation claim.",
+    "if_fail_or_inconclusive": "STOP_CURRENT_CANDIDATE_ROUTE; preserve negative or inconclusive evidence; no substitute from controls, no change of k, score, alpha criterion, model, seed split, or metric."
+  },
+  "conditional_independent_pilot": {
+    "maximum_gpu_hours": 16,
+    "formal_rounds": 1,
+    "requires_frozen_new_protocol": true,
+    "requires_minimum_novelty_mechanism_audit": true,
+    "data_split": "disjoint historical-credit calibration, new-feedback calibration, and sealed future service questions; no current service gold enters a selector/update",
+    "minimum_mechanism_controls": [
+      "graph change vs matched no-change condition",
+      "same initial predictor/credits/update rule/model pool",
+      "targeted vs uniform-random revalidation; no-revalidation baseline"
+    ],
+    "costs": "Record initialization, service, counterfactual revalidation, scoring, and failures; prior diagnostic does not establish matched complete cost.",
+    "primary_requirement": "Demonstrate effects on independent future-question decisions at matched complete budgets, not merely squared-drift enrichment.",
+    "failure_boundary": "No evidence of useful targeting or future service benefit at full cost => stop/narrow this candidate claim; do not infer universal impossibility of credit maintenance."
+  },
+  "preexecution_checks": [
+    "commit protocol and source hashes before using actual D3 targets",
+    "recheck all accepted D2 pins",
+    "check train/tune/exposed question disjointness and exact 200/80/120 counts",
+    "check credit arrays and bit ordering match accepted D2; no extra labels",
+    "freeze chosen alpha, coefficients and selected indices before exposed-block scoring",
+    "verify order1 degeneracy and B0 zero drift",
+    "record score ties and changed-context support",
+    "recheck unchanged source/input hashes after execution"
+  ],
+  "literature_boundary": {
+    "status": "PROVISIONAL",
+    "source_documents": [
+      "literature/HANDOFF.md",
+      "literature/NOVELTY_MATRIX.md"
+    ],
+    "primary_rechecked": "https://arxiv.org/html/2605.27621v2 sections 4.4 and 5.2",
+    "scope": "Graph/context-dependent attribution is existing work; eventual claim must concern selective revalidation and future service under full cost."
+  }
+}
