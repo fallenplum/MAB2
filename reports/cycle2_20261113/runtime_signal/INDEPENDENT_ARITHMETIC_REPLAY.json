@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Separate arithmetic implementation, same root agent; not independent human or model review",
+  "checks": 653,
+  "maximum_per_question_yield_error": 5.551115123125783e-17,
+  "candidate_status": "NOT_ADMITTED_CURRENT_RUNTIME_SIGNAL",
+  "cpu_seconds": 0.203125,
+  "wall_seconds": 0.24897027015686035,
+  "source_sha256": "49cddfe9a170f195afef7179a3c8a45ccb742544d4f507b0bddc7209a77a99e8",
+  "results_sha256": "3e172eaf86df1a179efad04cc99fb9d4cfdc459937e8e7fbeaa556ca6e1f9621",
+  "prediction_sha256": "8f830e431fbb70f70dd9ca8996d39157720da6d7336624f51654f00a39339ccb",
+  "new_gpu_hours": 0
+}

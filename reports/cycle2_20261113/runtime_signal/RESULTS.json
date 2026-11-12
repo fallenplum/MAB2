@@ -1,0 +1,87 @@
+{
+  "status": "NOT_ADMITTED_CURRENT_RUNTIME_SIGNAL",
+  "evidence_class": "EXPLORATORY_OLD_TRAIN_TUNE_SINGLE_SEED_EVENT_ACQUISITION",
+  "project_stop": false,
+  "new_gpu_hours": 0,
+  "new_formal_rounds": 0,
+  "question_counts": {
+    "train": 200,
+    "tune": 80
+  },
+  "tune_support_questions": 60,
+  "strict_positive_questions_vs_strongest": 24,
+  "metrics": {
+    "graph_only": {
+      "mean_top6_event_yield": 0.09305555555555556,
+      "auc": 0.5869560699469847,
+      "average_precision": 0.09110978706630916
+    },
+    "full": {
+      "mean_top6_event_yield": 0.09715277777777777,
+      "auc": 0.5860853863254235,
+      "average_precision": 0.09589489634208964
+    },
+    "runtime_only": {
+      "mean_top6_event_yield": 0.09386011904761904,
+      "auc": 0.5203390520794505,
+      "average_precision": 0.08184631086233428
+    },
+    "sender_receiver_disagreement": {
+      "mean_top6_event_yield": 0.07461458333333333,
+      "auc": 0.5240177951307418,
+      "average_precision": 0.0729805489150897
+    },
+    "receiver_incoming_disagreement": {
+      "mean_top6_event_yield": 0.06158938123924579,
+      "auc": 0.4614515092072908,
+      "average_precision": 0.06610250330300774
+    },
+    "source_uncertainty": {
+      "mean_top6_event_yield": 0.06364583333333333,
+      "auc": 0.49318000809844714,
+      "average_precision": 0.06894589246165204
+    },
+    "inverse_receiver_degree": {
+      "mean_top6_event_yield": 0.09172533369408369,
+      "auc": 0.5811570991469814,
+      "average_precision": 0.0850754238791533
+    },
+    "uniform": {
+      "mean_top6_event_yield": 0.06958333333333333,
+      "auc": 0.5,
+      "average_precision": 0.06958333333333333
+    }
+  },
+  "strongest_fixed_baseline": "graph_only",
+  "full_minus_uniform": 0.027569444444444438,
+  "full_minus_strongest_baseline": 0.0040972222222222104,
+  "bootstrap90_full_minus_max_baseline": [
+    -0.005637206890331882,
+    0.009974149981962476
+  ],
+  "gates": {
+    "support_questions_at_least20": true,
+    "full_minus_uniform_at_least_point02": true,
+    "full_minus_strongest_baseline_at_least_point01": false,
+    "bootstrap90_lower_above0": false,
+    "strict_improvement_questions_at_least20": true
+  },
+  "input_sha256": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+  "historical_index_sha256": "548504fecd0b308bc9b7292bf56e31d4c882c1a95664d06070bb6cb6ff7a0942",
+  "historical_invariance_audit_sha256": "2d02f5ebf7a579f15f10a95aa82e8f91be651a5f7a049cb3db1fe1388e55dbf1",
+  "raw_files_read": 1400,
+  "raw_bytes_read": 33120153,
+  "post_first_round_features_used": false,
+  "R1_or_final_test_used": false,
+  "prediction_freeze_sha256": "4d0b1ad2ee6ef81aae36c4b556bb322f712c570244442a975da54076eb79d568",
+  "code_commit": "796967226be2d53af22257a9aad66c49a0286ece",
+  "protocol_sha256": "557dfa594377611c17c083881765b335db82a3ef84b82a6d918bfd84abb05d15",
+  "cpu_seconds": 13.328125,
+  "wall_seconds": 19.60273575782776,
+  "limitations": [
+    "Event acquisition is not population credit prediction or future graph-edit quality.",
+    "Same-count call upper bound is not equal measured token or total-system expenditure.",
+    "Old tune was previously exposed; question bootstrap is exploratory conditional on this fitted model.",
+    "Per-edge anchors cannot be concatenated into one common current graph."
+  ]
+}
