@@ -1,0 +1,21 @@
+{
+  "current_hotpot_quality_read": false,
+  "files": {
+    "DECISION.json": "d8e3bdc9b8d218bf8243735f6afb9ede98c9273b0cdf4af224a566d1c56be860",
+    "DELIVERY.md": "ca92fe3085013d9484b67fd9ad46ece76bde29d1bf4140bef3c5f41a8d3961d0",
+    "INDEPENDENT_REDTEAM.md": "8bae0ff6447f5bd807a698e938bb7950076f068d2302a65a1c954d7a483b308f",
+    "LOGIC_CHECKS.json": "d4a843de42230618e45e7aa392f51c6dbf35b8fa9ee8bb475edaf4f2f1ede463",
+    "PRIMARY_SOURCES.json": "02d10d3763b2761ab9d5ba2122cc9d6d8ca353fadbcf60d65b5b2e2f2872a4d2",
+    "REPORT.md": "a31144343fd1ee21c4511f012270288c0ba2834600505401f2e911222d0cdf77",
+    "ROOT_INTERPRETATION.md": "14ef7dbc1b095d3a478a52d1f0c3f246cd49318f48aae760654ca8a32b6133da",
+    "SEARCH_LOG.json": "938ea0a2ab5e5622115f7db84fe9020d3d704fb85802d84a40d407986ec7c464",
+    "UPSTREAM_REPORT_PINS.json": "7a87f792a9f89ea2d4e77f21734c045243d750df2564c6e7fc8316c76bc1ded8",
+    "logic_checks.py": "5360be8e10321deace7098738408570311f08b942b4917625744ca8201664a65"
+  },
+  "new_GPU_hours": 0,
+  "new_formal_rounds": 0,
+  "original_delivery_receipt_sha256": "285a971fbfd29449d85b24d7e9cee231a950a637db59a897e1d45b3bc67bd5f9",
+  "private_primary_files_published": false,
+  "status": "PUBLIC_SCOPE_ANALYSIS_NOT_PROJECT_STOP",
+  "unix": 1794538642.9679275
+}

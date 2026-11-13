@@ -1,0 +1,105 @@
+{
+  "all_performance_claims_not_independently_replicated": true,
+  "papers": [
+    {
+      "access_date": "2026-11-13",
+      "anchors": [
+        "3.1",
+        "5.4",
+        "5.5"
+      ],
+      "boundary": "Query-conditioned central model routing and routing overhead pre-exist. Not evidence for graph maintenance or this project cost savings.",
+      "full_text_read_claimed": false,
+      "id": "routellm",
+      "local_file": "private_primary_sources/RouteLLM_2406.18665v4.html",
+      "local_sha256": "e96b999824b3cb735d65c149bf1ba77636395b33e5bdc032684bf3e136df7696",
+      "official_url": "https://openreview.net/pdf?id=8sSqNntaMr",
+      "read_depth": "selected sections",
+      "read_url": "https://arxiv.org/html/2406.18665v4",
+      "title": "RouteLLM: Learning to Route LLMs with Preference Data",
+      "venue": "ICLR 2025; official indexed accepted PDF title page",
+      "version": "arXiv v4 2025-02-23"
+    },
+    {
+      "access_date": "2026-11-13",
+      "anchors": [
+        "2.2",
+        "3.1",
+        "3.4"
+      ],
+      "boundary": "Contextual online model and inference-compute choice pre-exists. Composite quality includes correctness and verifier scores; transfer requires explicit feedback permissions. Published PDF not byte-equated to v1.",
+      "full_text_read_claimed": false,
+      "id": "uniscale",
+      "local_file": "private_primary_sources/UniScale_2605.30898v1.html",
+      "local_sha256": "d10afcf8296f6a446cda21600c01018f36d6095523f87c27c89eebb4692d794f",
+      "official_url": "https://proceedings.mlr.press/v306/huang26bd.html",
+      "read_depth": "selected paragraphs of sections",
+      "read_url": "https://arxiv.org/html/2605.30898v1",
+      "title": "UniScale: Adaptive Unified Inference Scaling via Online Joint Optimization of Model Routing and Test-Time Scaling",
+      "venue": "ICML 2026, PMLR306:47765-47791",
+      "version": "arXiv v1 2026-05-29"
+    },
+    {
+      "access_date": "2026-11-13",
+      "anchors": [
+        "4.1 PDF page5",
+        "B.1 PDF page13"
+      ],
+      "boundary": "Six retrieved passages are assigned to two private corpora as an IA simulation; described single-agent baseline sees one private corpus. This section is not provenance that centralization is impossible in a real deployment.",
+      "full_text_read_claimed": false,
+      "id": "statedelta",
+      "local_file": "private_primary_sources/StateDelta_2025.pdf",
+      "local_sha256": "f8a920504a5f91272dbe56036fa9fd28d72703f42ea037bfe4290785354f896f",
+      "official_url": "https://aclanthology.org/2025.emnlp-main.518/",
+      "read_depth": "selected sections",
+      "read_url": "https://aclanthology.org/2025.emnlp-main.518.pdf",
+      "title": "Augmenting Multi-Agent Communication with State Delta Trajectory",
+      "venue": "EMNLP2025:10219-10240",
+      "version": "official PDF retrieved 2026-11-13"
+    },
+    {
+      "access_date": "2026-11-13",
+      "anchors": [
+        "official abstract",
+        "prior review cost-table note"
+      ],
+      "boundary": "Task-conditioned topology and cost accounting are not new.",
+      "full_text_read_claimed": false,
+      "id": "gdesigner",
+      "local_file": null,
+      "official_url": "https://proceedings.mlr.press/v267/zhang25cu.html",
+      "read_depth": "official abstract freshly verified; prior selected-section review retained",
+      "title": "G-Designer: Architecting Multi-agent Communication Topologies via Graph Neural Networks",
+      "venue": "ICML2025, PMLR267:76678-76692"
+    },
+    {
+      "access_date": "2026-11-13",
+      "anchors": [
+        "abstract"
+      ],
+      "boundary": "Local observation and communication-constrained synthetic diagnostics already exist; not evidence of real-source constraints, and not nominated as a new benchmark.",
+      "full_text_read_claimed": false,
+      "id": "masbench",
+      "local_file": null,
+      "official_url": "https://aclanthology.org/2026.findings-acl.1698/",
+      "read_depth": "official abstract only",
+      "title": "When 20 Agents Fail to Sort: The Distributed Sorting Benchmark for Scalable Multi-Agent Systems",
+      "venue": "Findings ACL2026:34002-34021"
+    },
+    {
+      "access_date": "2026-11-13",
+      "anchors": [
+        "indexed page1 abstract"
+      ],
+      "boundary": "When/whom to query versus downstream utility has direct prior art. No algorithm/proof-detail claims from unavailable full text.",
+      "full_text_read_claimed": false,
+      "id": "ats",
+      "local_file": null,
+      "official_url": "https://openreview.net/pdf?id=9OEy68av40",
+      "read_depth": "official indexed title page and abstract; direct access challenge",
+      "title": "Active Teacher Selection for Reward Learning",
+      "venue": "TMLR05/2026 per official indexed PDF title page"
+    }
+  ],
+  "scope": "bounded primary nearest-neighbor check, not systematic review"
+}

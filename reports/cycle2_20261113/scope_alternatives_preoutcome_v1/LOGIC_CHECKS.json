@@ -1,0 +1,33 @@
+{
+  "GPU_hours": 0,
+  "break_even_equal_not_strict": 500,
+  "budget_or_scientific_admission": false,
+  "call_envelopes": {
+    "132_per_question": [
+      8448,
+      16896
+    ],
+    "41_per_question": [
+      2624,
+      5248
+    ],
+    "four_config_13call": [
+      3328,
+      6656
+    ]
+  },
+  "checks": 8,
+  "conditional_credit": [
+    "1/10",
+    "-1/10"
+  ],
+  "conditional_oracle_fixed_two_action_class": "3/4",
+  "empirical_data_accessed": false,
+  "first_integer_strict_saving": 501,
+  "future_policy_or_all_strategy_upper_bound_claimed": false,
+  "mean_central": "31/40",
+  "mean_no_edge": "7/10",
+  "mean_static_B": "27/40",
+  "new_model_calls": 0,
+  "status": "PASS_EXACT_FABRICATED_LOGIC_ONLY"
+}

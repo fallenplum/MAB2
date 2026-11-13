@@ -1,0 +1,39 @@
+{
+  "B_failure_is_hypothetical_here": true,
+  "alternatives": [
+    {
+      "id": "Q1",
+      "missing_evidence": [
+        "source-fixed observable task conditions",
+        "externally justified background-change episodes",
+        "independent advantage beyond central baselines",
+        "finite external service horizon and full-cost feasibility"
+      ],
+      "question": "Incremental graph-credit maintenance value beyond full-information contextual central routing",
+      "status": "DEFERRED"
+    },
+    {
+      "id": "Q2",
+      "missing_evidence": [
+        "real nonfree information centralization constraint",
+        "source-change frequency",
+        "finite external service horizon",
+        "feasible total cost including central baselines and confirmation"
+      ],
+      "question": "Finite-horizon graph maintenance under independently documented distributed information costs",
+      "status": "DEFERRED_SOURCE_EVIDENCE"
+    }
+  ],
+  "current_B_gate_unchanged": true,
+  "current_Hotpot_outcomes_read": false,
+  "future_experiment_or_budget_authorized": false,
+  "old_failed_candidates_preserved": [
+    "R1 change/k2",
+    "R2 beta1 paired residual",
+    "R3 gap_bundle",
+    "literal r1 disagreement x receiver-change support screen 13/37"
+  ],
+  "project_stop_inferred": false,
+  "same_bank_proxy_search_performed": false,
+  "status": "BOUNDED_ANALYSIS_COMPLETE_NO_NEW_ADMISSION"
+}

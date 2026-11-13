@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-13",
+  "engine_actually_used": "web__run search/open/find; public direct curl for 3 files",
+  "excluded_sources": "Nonprimary search hits not used as claim evidence; no broad citation graph or exhaustive recall claim",
+  "failures_and_recovery": [
+    {
+      "request": "https://www.google.com/search?q=RouteLLM+Learning+to+Route+LLMs+with+Preference+Data",
+      "status": "not accessible via tool; not counted as Google search"
+    },
+    {
+      "recovery": "RouteLLM official author arXiv version; ATS only indexed official abstract",
+      "request": "OpenReview RouteLLM PDF and ATS forum",
+      "status": "browser verification page; not bypassed"
+    },
+    {
+      "recovery": "official arXiv v1 explicit version",
+      "request": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/huang26bd/huang26bd.pdf",
+      "status": "web tool unsupported application/octet-stream"
+    },
+    {
+      "recovery": "authorized public read network request succeeded",
+      "request": "first local curl of official StateDelta PDF",
+      "status": "sandbox DNS resolution failure"
+    },
+    {
+      "recovery": "read last heading occurrences with ASCII-safe JSON, source bytes unchanged",
+      "request": "first local HTML section-excerpt display",
+      "status": "selected TOC occurrence and GBK UnicodeEncodeError; not counted as section verification"
+    }
+  ],
+  "opened_primary_urls": [
+    "https://aclanthology.org/2025.emnlp-main.518.pdf",
+    "https://aclanthology.org/2025.emnlp-main.518/",
+    "https://aclanthology.org/2026.findings-acl.1698/",
+    "https://arxiv.org/html/2406.18665v4",
+    "https://arxiv.org/html/2605.30898v1",
+    "https://openreview.net/pdf?id=8sSqNntaMr",
+    "https://openreview.net/pdf?id=9OEy68av40",
+    "https://proceedings.mlr.press/v267/zhang25cu.html",
+    "https://proceedings.mlr.press/v306/huang26bd.html"
+  ],
+  "private_download_policy": "Three public primary full texts retained only privately; public whitelist excludes them",
+  "query_strings": [
+    "site.proceedings.mlr.press G-Designer Multi-Agent Communication Topologies 2025",
+    "site:aclanthology.org multi agent information asymmetry benchmark communication centralized 2025",
+    "site:arxiv.org \"multi-agent\" \"private information\" \"centralized\"",
+    "site:proceedings.mlr.press \"test-time compute\" \"routing\"",
+    "\"RouteLLM\" \"ICLR 2025\" [domains openreview.net, arxiv.org]",
+    "\"Active Teacher Selection\" \"9OEy68av40\" [domain openreview.net]",
+    "\"multi-agent debate\" \"single-agent\" \"compute\" [domains aclanthology.org, proceedings.mlr.press]",
+    "\"Learning to communicate\" \"information\" \"centralized\" \"cost\" [domains proceedings.neurips.cc, proceedings.mlr.press]",
+    "RouteLLM Learning to Route LLMs from Preference Data site:openreview.net/forum",
+    "\"Active Teacher Selection\" site:openreview.net/forum",
+    "\"UniScale: Adaptive Unified Inference Scaling\" arxiv"
+  ],
+  "stop_rule": "Stop after direct prior art for central routing, task topology, information-asymmetry construction, and feedback value; no further candidate expansion",
+  "successful_Google_search_claimed": false
+}
