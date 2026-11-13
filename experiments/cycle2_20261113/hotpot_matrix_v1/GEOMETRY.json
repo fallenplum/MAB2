@@ -1,0 +1,495 @@
+{
+  "status": "PASS_INDEPENDENT_GEOMETRY",
+  "per_probe_edge": [
+    {
+      "edge_indexing": "zero_based_source_major",
+      "probe_edge": 1,
+      "probe_endpoints": [
+        0,
+        2
+      ],
+      "B_edges": [
+        1,
+        5,
+        7,
+        9
+      ],
+      "B_endpoints": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "closures": {
+        "A": [
+          "r1:w0",
+          "r1:w1",
+          "r1:w2",
+          "r1:w3",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3",
+          "aggregate"
+        ],
+        "B": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "NO_EDGE": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "A_MINUS_E": [
+          "aggregate",
+          "r2:w2",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "B_MINUS_E": [
+          "aggregate",
+          "r2:w2",
+          "r3:w1",
+          "r3:w2"
+        ],
+        "INDEPENDENT12": [
+          "r1:w0",
+          "r2:w0",
+          "r3:w0",
+          "r1:w1",
+          "r2:w1",
+          "r3:w1",
+          "r1:w2",
+          "r2:w2",
+          "r3:w2",
+          "r1:w3",
+          "r2:w3",
+          "r3:w3",
+          "aggregate"
+        ],
+        "SINGLE_M": [
+          "aggregate"
+        ]
+      },
+      "physical_calls_by_condition": {
+        "A": 13,
+        "B": 9,
+        "NO_EDGE": 9,
+        "A_MINUS_E": 6,
+        "B_MINUS_E": 4,
+        "INDEPENDENT12": 13,
+        "SINGLE_M": 1
+      },
+      "seed1_calls": 55,
+      "seed2_calls": 32,
+      "total_success_physical_calls": 87,
+      "total_success_logical_calls": 131,
+      "total_success_model_calls": {
+        "qwen": 40,
+        "mistral": 47
+      },
+      "successful_cache_schedule_only": true,
+      "missing_base_policy": "FRESH; actual request count can exceed 87"
+    },
+    {
+      "edge_indexing": "zero_based_source_major",
+      "probe_edge": 5,
+      "probe_endpoints": [
+        1,
+        3
+      ],
+      "B_edges": [
+        1,
+        5,
+        7,
+        9
+      ],
+      "B_endpoints": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "closures": {
+        "A": [
+          "r1:w0",
+          "r1:w1",
+          "r1:w2",
+          "r1:w3",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3",
+          "aggregate"
+        ],
+        "B": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "NO_EDGE": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "A_MINUS_E": [
+          "aggregate",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "B_MINUS_E": [
+          "aggregate",
+          "r2:w3",
+          "r3:w0",
+          "r3:w3"
+        ],
+        "INDEPENDENT12": [
+          "r1:w0",
+          "r2:w0",
+          "r3:w0",
+          "r1:w1",
+          "r2:w1",
+          "r3:w1",
+          "r1:w2",
+          "r2:w2",
+          "r3:w2",
+          "r1:w3",
+          "r2:w3",
+          "r3:w3",
+          "aggregate"
+        ],
+        "SINGLE_M": [
+          "aggregate"
+        ]
+      },
+      "physical_calls_by_condition": {
+        "A": 13,
+        "B": 9,
+        "NO_EDGE": 9,
+        "A_MINUS_E": 6,
+        "B_MINUS_E": 4,
+        "INDEPENDENT12": 13,
+        "SINGLE_M": 1
+      },
+      "seed1_calls": 55,
+      "seed2_calls": 32,
+      "total_success_physical_calls": 87,
+      "total_success_logical_calls": 131,
+      "total_success_model_calls": {
+        "qwen": 36,
+        "mistral": 51
+      },
+      "successful_cache_schedule_only": true,
+      "missing_base_policy": "FRESH; actual request count can exceed 87"
+    },
+    {
+      "edge_indexing": "zero_based_source_major",
+      "probe_edge": 7,
+      "probe_endpoints": [
+        2,
+        1
+      ],
+      "B_edges": [
+        1,
+        5,
+        7,
+        9
+      ],
+      "B_endpoints": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "closures": {
+        "A": [
+          "r1:w0",
+          "r1:w1",
+          "r1:w2",
+          "r1:w3",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3",
+          "aggregate"
+        ],
+        "B": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "NO_EDGE": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "A_MINUS_E": [
+          "aggregate",
+          "r2:w1",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "B_MINUS_E": [
+          "aggregate",
+          "r2:w1",
+          "r3:w1",
+          "r3:w3"
+        ],
+        "INDEPENDENT12": [
+          "r1:w0",
+          "r2:w0",
+          "r3:w0",
+          "r1:w1",
+          "r2:w1",
+          "r3:w1",
+          "r1:w2",
+          "r2:w2",
+          "r3:w2",
+          "r1:w3",
+          "r2:w3",
+          "r3:w3",
+          "aggregate"
+        ],
+        "SINGLE_M": [
+          "aggregate"
+        ]
+      },
+      "physical_calls_by_condition": {
+        "A": 13,
+        "B": 9,
+        "NO_EDGE": 9,
+        "A_MINUS_E": 6,
+        "B_MINUS_E": 4,
+        "INDEPENDENT12": 13,
+        "SINGLE_M": 1
+      },
+      "seed1_calls": 55,
+      "seed2_calls": 32,
+      "total_success_physical_calls": 87,
+      "total_success_logical_calls": 131,
+      "total_success_model_calls": {
+        "qwen": 34,
+        "mistral": 53
+      },
+      "successful_cache_schedule_only": true,
+      "missing_base_policy": "FRESH; actual request count can exceed 87"
+    },
+    {
+      "edge_indexing": "zero_based_source_major",
+      "probe_edge": 9,
+      "probe_endpoints": [
+        3,
+        0
+      ],
+      "B_edges": [
+        1,
+        5,
+        7,
+        9
+      ],
+      "B_endpoints": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "closures": {
+        "A": [
+          "r1:w0",
+          "r1:w1",
+          "r1:w2",
+          "r1:w3",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3",
+          "aggregate"
+        ],
+        "B": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "NO_EDGE": [
+          "aggregate",
+          "r2:w0",
+          "r2:w1",
+          "r2:w2",
+          "r2:w3",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "A_MINUS_E": [
+          "aggregate",
+          "r2:w0",
+          "r3:w0",
+          "r3:w1",
+          "r3:w2",
+          "r3:w3"
+        ],
+        "B_MINUS_E": [
+          "aggregate",
+          "r2:w0",
+          "r3:w0",
+          "r3:w2"
+        ],
+        "INDEPENDENT12": [
+          "r1:w0",
+          "r2:w0",
+          "r3:w0",
+          "r1:w1",
+          "r2:w1",
+          "r3:w1",
+          "r1:w2",
+          "r2:w2",
+          "r3:w2",
+          "r1:w3",
+          "r2:w3",
+          "r3:w3",
+          "aggregate"
+        ],
+        "SINGLE_M": [
+          "aggregate"
+        ]
+      },
+      "physical_calls_by_condition": {
+        "A": 13,
+        "B": 9,
+        "NO_EDGE": 9,
+        "A_MINUS_E": 6,
+        "B_MINUS_E": 4,
+        "INDEPENDENT12": 13,
+        "SINGLE_M": 1
+      },
+      "seed1_calls": 55,
+      "seed2_calls": 32,
+      "total_success_physical_calls": 87,
+      "total_success_logical_calls": 131,
+      "total_success_model_calls": {
+        "qwen": 42,
+        "mistral": 45
+      },
+      "successful_cache_schedule_only": true,
+      "missing_base_policy": "FRESH; actual request count can exceed 87"
+    }
+  ],
+  "new_GPU_calls": 0,
+  "benchmark_reads": 0
+}

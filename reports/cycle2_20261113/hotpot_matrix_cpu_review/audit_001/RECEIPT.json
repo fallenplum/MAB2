@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CPU_INDEPENDENT_BOUNDARY_REVIEW",
+  "tests_run": 20,
+  "author_tests_rerun": 15,
+  "additional_independent_boundary_tests": 5,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "matrix_source_sha256": "016b175f75fca838c83f3c26073a656b901e3d2fda12133c917073304c67bb8c",
+  "input_manifest_sha256": "bfdd98e7778aa7d0d46dc44169f5ff1d31814de2a04c3f0b92b61ce051f62960",
+  "review_source_sha256": "fbf0678f022b80df05eb9be5653f1ab04f476477ee42bfc26c19872ff824347f",
+  "source_files_unchanged": true,
+  "scientific_admission": false,
+  "models_or_GPU_used": false,
+  "benchmark_or_R1_data_read": false,
+  "scope": "Read-only reviewed source; rerun author synthetic tests plus independent boundary cases; no real-backend qualification."
+}

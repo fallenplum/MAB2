@@ -1,0 +1,16 @@
+{
+  "status": "NEW_OPERATOR_CPU_PREPARED_NOT_REAL_QUALIFIED",
+  "control_id": "single_mistral_full_context_direct_v1_cpu_staging",
+  "source_sha256": "016b175f75fca838c83f3c26073a656b901e3d2fda12133c917073304c67bb8c",
+  "system_prompt": "You are a careful question-answering assistant. Answer the question directly using the supplied context. Independently verify the relevant evidence, resolve ambiguous references, and check that the answer follows from that context. Do detailed reasoning internally. Return exactly one compact single-line JSON object with these three string fields. Example: {\"answer\":\"25\",\"evidence\":\"5 groups of 5.\",\"uncertainty\":\"\"}. Always put the answer in double quotes, including numerical answers. For a numerical question, answer must contain only the final number. Keep evidence to at most 20 words and uncertainty to at most 5 words, or an empty string. Do detailed reasoning internally. Do not output reasoning steps, Markdown, code fences or extra text. Finish and close the JSON object within the output token limit.",
+  "user_prompt": "question verbatim; append two newlines, Supplied context:, newline and complete context when nonempty",
+  "model": "mistral",
+  "max_new_tokens": 256,
+  "node_alias": "aggregate",
+  "seed_rule": "derive_seed(question_id, caller_seed1, aggregate)",
+  "sender_normalization": "frozen normalize_message using Mistral tokenizer",
+  "received_message_tokens": 0,
+  "self_state_tokens": 0,
+  "candidate_inputs": [],
+  "failure_policy": "retain format errors and paid raw generation; no retry; no scores"
+}

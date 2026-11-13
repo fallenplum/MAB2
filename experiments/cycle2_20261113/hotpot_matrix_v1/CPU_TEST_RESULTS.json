@@ -1,0 +1,44 @@
+{
+  "status": "PASS_CPU_MOCK_ONLY",
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed_test_ids": [
+    "test_matrix_executor.MatrixTests.test_aggregate_overflow_preserves_12_partial_nodes_and_never_reuses_partial_base",
+    "test_matrix_executor.MatrixTests.test_backend_success_then_failure_same_id_is_one_request_with_unknown_cost",
+    "test_matrix_executor.MatrixTests.test_cross_condition_call_id_reuse_is_unresolved_and_stops",
+    "test_matrix_executor.MatrixTests.test_every_condition_matches_direct_frozen_operator_semantics_and_cost",
+    "test_matrix_executor.MatrixTests.test_graph_lineage_uses_only_declared_original_base_and_same_seed",
+    "test_matrix_executor.MatrixTests.test_independent_and_single_have_no_cross_control_candidates_or_cache",
+    "test_matrix_executor.MatrixTests.test_independent_geometry_matches_frozen_closure_for_all_four_edges",
+    "test_matrix_executor.MatrixTests.test_infrastructure_failure_stops_preserves_raw_generations_and_cleans_locks",
+    "test_matrix_executor.MatrixTests.test_invalid_inputs_and_identity_changes_rejected_before_model_calls",
+    "test_matrix_executor.MatrixTests.test_matrix_order_counts_model_routes_and_logical_cost_for_all_edges",
+    "test_matrix_executor.MatrixTests.test_missing_A_base_fresh_continuation_can_exceed_87",
+    "test_matrix_executor.MatrixTests.test_missing_B_base_does_not_replay_B_minus_from_A_or_partial_B",
+    "test_matrix_executor.MatrixTests.test_only_exact_input_preflight_errors_continue",
+    "test_matrix_executor.MatrixTests.test_route_log_failure_keeps_returned_generation_missing_from_graph_nodes",
+    "test_matrix_executor.MatrixTests.test_single_format_failure_remains_paid_without_scoring"
+  ],
+  "source_pins": {
+    "matrix_executor.py": "016b175f75fca838c83f3c26073a656b901e3d2fda12133c917073304c67bb8c",
+    "matrix_geometry.py": "e5bdc9e47d2564fb4338516da15ad183c4a935b6e778de34788fdfc33cb8fc46",
+    "test_matrix_executor.py": "14b6a6900a22a00fe7c2c4311e6ecc0bc6eaad840ac9c680101f6686cea39a8e",
+    "run_cpu_checks.py": "76287f1ac1f18c99d15ef11850c6d547b230548bbf25fc2f27a8f25278fa70d7"
+  },
+  "python_version": "3.11.14",
+  "real_model_runtime_imported": false,
+  "direct_frozen_operator_condition_comparisons": 44,
+  "probe_edges_checked": [
+    1,
+    5,
+    7,
+    9
+  ],
+  "new_GPU_calls": 0,
+  "model_weights_read": 0,
+  "benchmark_or_R1_reads": 0,
+  "scientific_admission": false,
+  "real_model_engineering_qualification": "NOT_RUN_REQUIRED_SEPARATELY"
+}
