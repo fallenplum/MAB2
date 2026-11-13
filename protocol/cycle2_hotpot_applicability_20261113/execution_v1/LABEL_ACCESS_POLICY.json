@@ -1,0 +1,27 @@
+{
+  "status": "FROZEN_LABEL_ACCESS_POLICY_NO_LABELS_EXTRACTED",
+  "source_split": "HotpotQA distractor train only",
+  "collector_projection": [
+    "id",
+    "question",
+    "context",
+    "type",
+    "level"
+  ],
+  "all_selected_context_preserved": true,
+  "server_uploaded_labels": false,
+  "label_vault_exists": false,
+  "collector_has_no_label_loader": true,
+  "release_requires": [
+    "384 unique questions and 4224 terminal conditions",
+    "independent source/native/durable/cache audit",
+    "all attempt and parent residence closure",
+    "root SHA-bound external review",
+    "frozen scorer/statistics/frontier identities"
+  ],
+  "runtime_failure": "INCOMPLETE; no partial-score release",
+  "capacity_failure": "retain zero EM/F1 under original frozen rule; semantic upgrade blocked",
+  "first_label_extraction": "Only after full collection/ledger integrity; project train source selected IDs only; private vault; no official validation/test",
+  "operating_system_access_isolation_claimed": false,
+  "scientific_design_sha256": "e69b608aa065517934985b17261a7a225383439ed95bb8580b52ea4bcd29ab59"
+}

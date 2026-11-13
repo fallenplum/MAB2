@@ -1,0 +1,22 @@
+{
+  "candidate": "C2_FORMAL2_HOTPOT_APPLICABILITY",
+  "attempt_id": "c2_hotpot_applicability_384_v1_attempt001",
+  "candidate_cap_seconds": 172800,
+  "worker_caps_seconds": [
+    43039,
+    43039,
+    43039,
+    43039
+  ],
+  "prior_qualification_seconds": 642.057382708881,
+  "prior_transaction_id": "C2_HOTPOT_MATRIX_ENGINEERING_QUALIFICATION:52674fdc9a58a9035e169be9115812ac71dbd8e6ad939442a001d07d19555745",
+  "new_reserved_seconds": 172156,
+  "budget_sha256": "221671d9e1fcaf12d1581bee939957f8ac8e6d2503063a80c6b1c44b039205ca",
+  "reservation_receipt_sha256": "0150599ac80c675ba63939819beca52e1f65731455a0d63fb1906a8ad9b47437",
+  "global_used_GPU_hours": 14.64724894903626,
+  "global_cap_GPU_hours": 160,
+  "formal_rounds_started_before": 1,
+  "formal_round_cap": 5,
+  "formal_results_seen": false,
+  "launch_requires_separate_root_plan_admission": true
+}

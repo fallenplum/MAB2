@@ -1,0 +1,19 @@
+{
+  "experiments/cycle2_20261113/durable_backend_v1/durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+  "experiments/cycle2_20261113/hotpot_matrix_v1/matrix_executor.py": "016b175f75fca838c83f3c26073a656b901e3d2fda12133c917073304c67bb8c",
+  "experiments/cycle2_20261113/hotpot_matrix_v1/matrix_geometry.py": "e5bdc9e47d2564fb4338516da15ad183c4a935b6e778de34788fdfc33cb8fc46",
+  "experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+  "experiments/cycle2_20261113/independent12_control_v2/independent12_executor.py": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "src/graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+  "src/graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+  "src/graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+  "experiments/cycle2_20261113/hotpot_collection_runner_v1/parent.py": "6657150073dbbfc4a2f5ce1b872346f8cfb8b0b7bb5b1de491cab6120a9379fb",
+  "experiments/cycle2_20261113/hotpot_collection_runner_v1/worker.py": "fc0bb7ca591018a64172cdaa832c885eb6846ef174e7d9a96316211673e36e19",
+  "experiments/cycle2_20261113/hotpot_collection_runner_v1/plan_tools.py": "25bfed108ee61024ad91ec0a61a22557793488d8ef52827db60d31f3ea6205de",
+  "experiments/cycle2_20261113/hotpot_collection_runner_v1/orchestration_core.py": "62806ee4ab096def68a39481e6f27126c064ab70c25f0f99a5da9c9fc2eee79f",
+  "experiments/cycle2_20261113/hotpot_collection_runner_v1/storage.py": "df793fb520d89d43263a2c787f3ee55d91f4dc8991fa51492893a4719a9e47ed",
+  "experiments/cycle2_20261113/hotpot_collection_runner_v1/production_guard.py": "666184a17aa880a7303fc8e767f4ced69cbb8b8a93f61890a77ac1b7c349d988",
+  "experiments/cycle2_20261113/hotpot_collection_runner_v1/runtime_factory.py": "36e3225fe246d43fa6f47bcd521099f3afac986d5bf51f2a49864eb81b743b8b",
+  "experiments/cycle2_20261113/hotpot_matrix_v1/GEOMETRY.json": "661a1ac5acaef743a92067e743455b136b5109075014b3ceb6c4f0545506b049",
+  "experiments/cycle2_20261113/hotpot_support/hotpot_support.py": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e"
+}
