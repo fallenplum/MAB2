@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "PNG_SHA256": "d7a6bdfcd1b03b7d1897f40130cf78131eb5445929f3bfc554d483e884a3f4e1",
+  "root_image_viewed": true,
+  "nine_methods_visible": true,
+  "no_point_overlap": true,
+  "no_new_error_bars": true,
+  "original_evidence_and_csv_unchanged": true,
+  "new_GPU_calls": 0
+}

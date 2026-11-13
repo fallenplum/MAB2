@@ -1,0 +1,54 @@
+{
+  "schema": "architecture_reference_diagnostic_repair_freeze_v1",
+  "status": "FROZEN_DIAGNOSTIC_REPAIR_AFTER_EXPOSURE",
+  "post_exposure_diagnostic_repair": true,
+  "original_protocol_target_unchanged": true,
+  "new_scientific_experiment": false,
+  "old_result_sha256": "9c90246d002462b6771b2e4997d5c042fd7f8330353c7ac3a29934e1f39562ba",
+  "old_source_sha256": "b5e39dcb98af0b9c4aab0dd5e41e51c342d2426adcebb5285208e021109ba107",
+  "source_sha256": {
+    "original_private/RESULTS.json": "9c90246d002462b6771b2e4997d5c042fd7f8330353c7ac3a29934e1f39562ba",
+    "axis_mapping.py": "55b8a2a2fdf92200dd06af44d163857ad79176e009aa4465597b0d4fa73feb4a",
+    "original_private/test_reference.py": "ffd5938e2fb6571651e36497e094ccc4c2dcd22d5e4dc1fda3e02d58f38da281",
+    "repair_reference.py": "c9d6636a831993cd5b9a366a5087d0e2a5400f6eea5b5410b3cd93b9a858d7c0",
+    "original_private/reference.py": "b5e39dcb98af0b9c4aab0dd5e41e51c342d2426adcebb5285208e021109ba107",
+    "original_private/PROTOCOL.md": "d64c02045639b2a1abfe9636af902ab863234f172eeead43a7e9135c76ad1957",
+    "run_cpu_tests.py": "939338fc882cb6dc259845f2fd72ececb891ed38c873162eaef804c26dd53fea",
+    "README.md": "72b019723a265ac997d6495022a0df73a2559022621fbec6521aa1ebe829d446",
+    "test_axis_mapping.py": "ae783a3f618caa018042b27e658365f808b16290603dc36f9003ac964b9ba7b8"
+  },
+  "expected_aggregate_graph_checks": 384,
+  "expected_new_CPU_score_calls": 1344,
+  "new_model_calls": 0,
+  "new_GPU_hours": 0,
+  "utc": "2026-11-12T23:53:05.745976+00:00",
+  "root_review": "SOURCE_AND_SENTINEL_TESTS_PASS",
+  "root_tests": [
+    {
+      "args": [
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "original_private",
+        "-v"
+      ],
+      "returncode": 0,
+      "log_sha256": "506f1b0769be06cbea7726b6d641212095ba87b91c252471c62022abfcf07957"
+    },
+    {
+      "args": [
+        "-B",
+        "-m",
+        "unittest",
+        "test_axis_mapping",
+        "-v"
+      ],
+      "returncode": 0,
+      "log_sha256": "3daa99b771258f51119bd224bc6e70cd5136fbc9101c98ffb6f746129fcc35a1"
+    }
+  ],
+  "root_review_scope": "Explicit B/change/axis0 and A/no_change/axis1; all 384 raw aggregate scores and 16 all-node logical-cost rows required; old result immutable; no R1 policy change",
+  "does_not_establish_scientific_effect": true
+}

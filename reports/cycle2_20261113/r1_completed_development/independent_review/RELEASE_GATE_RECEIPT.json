@@ -1,0 +1,9 @@
+{
+  "observed_utc": "2026-11-12T23:34:19.880534+00:00",
+  "status": "POSTPROCESS_COMPLETE_ROOT_SCIENTIFIC_AND_VISUAL_REVIEW_REQUIRED",
+  "status_bytes_sha256": "88603f423def1710281cb67064127bd6839d80ecf33d55c19d5ddf483617da16",
+  "poll_count": 10,
+  "read_scope": "status_only",
+  "release_allowed": true,
+  "results_metrics_read_by_watcher": false
+}

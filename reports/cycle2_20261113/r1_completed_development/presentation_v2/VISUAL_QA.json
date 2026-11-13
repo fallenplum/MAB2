@@ -1,0 +1,22 @@
+{
+  "status": "VISUAL_REVIEW_PASS",
+  "reviewer": "staged_feedback_design",
+  "backend": "Python matplotlib",
+  "reviewed_png_sha256": "d7a6bdfcd1b03b7d1897f40130cf78131eb5445929f3bfc554d483e884a3f4e1",
+  "checks": [
+    "All nine method rows individually visible",
+    "Token bars and accuracy points share the same row alignment",
+    "Full/Dirty and Uncertainty/Priority ablation are separately visible",
+    "No clipped labels or value annotations",
+    "Complete logical I+C+S cost and unit stated",
+    "Eight learning episodes and 192 service questions stated",
+    "No added intervals or error bars",
+    "CSV preserved byte-for-byte and 45 numeric fields unchanged"
+  ],
+  "figure_manifest_sha256": "4db6a0083b21f8fd5343580ccd2079c13c3dc2a87630f7c788749b67751989f1",
+  "source_csv_sha256": "9f5ae0eda1c74175b6a7aadf290239b30ee297d219906ba97dc6e8d51b542593",
+  "new_plot_sha256": "5e85e8d527f6fde27eaa24b9a1d9e977e7618f8b5285f1195d553d7a636f1432",
+  "presentation_only": true,
+  "new_model_calls": 0,
+  "new_GPU_hours": 0
+}

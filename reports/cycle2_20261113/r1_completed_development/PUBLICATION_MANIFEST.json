@@ -1,0 +1,33 @@
+{
+  "status": "AGGREGATE_ONLY_NEGATIVE_RESULTS_ARCHIVED",
+  "utc": "2026-11-12T23:55:58.554009+00:00",
+  "source_sha256": {
+    "R1_RESULTS.json": "ca6ed37d35db760507fc157ff72ea791c70aa69060e8a9a0f5d96521592d76eb",
+    "R1_INDEPENDENT_REPLAY.json": "5c23a586f4837688069f7cc61332d6771119debe0d1bb63a2cdce745190427a3",
+    "R2_IC_DIAGNOSTIC.json": "819ae44cc2fa2d60c0b52f1d64d7e723ef2af52498f040232e85a21e3976adcb",
+    "ROOT_RESIDENT_COST_CLOSURE.json": "b386520a1223f48d99491f220b37a6014f91878790956fefbac7085c1a49d9e0",
+    "independent_review/REPORT.md": "22c5a3d03a9aa824d0fa40a0076c4fab166e3a7ce25684799aef5c0d391e17e1",
+    "independent_review/RECEIPT.json": "1a10d0ad43d14c4dc3c20e593d2c89b9ecfb3e3527f92475a0e94b3efeaac6ad",
+    "independent_review/REVIEW_PLAN.json": "06bff64513bc3d38d62e98912fc47151a10ca3d4999903efa21f244c28d131c3",
+    "independent_review/RELEASE_GATE_RECEIPT.json": "3ff06969e02ad58e207358947ce4f012b3b39774a6919664721ba0b2018051b6",
+    "independent_review/verify_review.py": "475bcb4f0b1d07ca7eb75e290f435335e5b085416a32adc12d922f914ba34278",
+    "independent_review/ARCHITECTURE_REPAIR_ADDENDUM.md": "9a23c4b11687bb85b917b0b733194a683deed6636da9ffa035dc7ed8d8e61d48",
+    "architecture_reference_repaired/RESULTS.json": "e9b45b8ee331d962e386cdb3560bb559850308a221ad22aa15ddf5c6a39da5b1",
+    "architecture_reference_repaired/MAPPING_VERIFICATION.json": "90ae7548c649d5970cfd6c560333caafa7545cf46d049ad269d981db4921c68f",
+    "architecture_reference_repaired/COMPLETE.json": "7393ce594af2a2e7021143072836c1d9b515a220c0dae2148b9dbf7edd0e7002",
+    "architecture_reference_repaired/REPAIR_FREEZE.json": "74037041cbf81310ea2e2b508d0c86dc5424d4396ef00931d6cdeda1ec6aabc0",
+    "architecture_reference_repaired/repair_reference.py": "c9d6636a831993cd5b9a366a5087d0e2a5400f6eea5b5410b3cd93b9a858d7c0",
+    "architecture_reference_repaired/axis_mapping.py": "55b8a2a2fdf92200dd06af44d163857ad79176e009aa4465597b0d4fa73feb4a",
+    "architecture_reference_repaired/test_axis_mapping.py": "ae783a3f618caa018042b27e658365f808b16290603dc36f9003ac964b9ba7b8",
+    "architecture_reference_repaired/README.md": "72b019723a265ac997d6495022a0df73a2559022621fbec6521aa1ebe829d446",
+    "architecture_reference_repaired/original_private/reference.py": "b5e39dcb98af0b9c4aab0dd5e41e51c342d2426adcebb5285208e021109ba107",
+    "architecture_reference_repaired/original_private/test_reference.py": "ffd5938e2fb6571651e36497e094ccc4c2dcd22d5e4dc1fda3e02d58f38da281",
+    "architecture_reference_repaired/original_private/PROTOCOL.md": "d64c02045639b2a1abfe9636af902ab863234f172eeead43a7e9135c76ad1957",
+    "architecture_reference_repaired/original_private/RESULTS.json": "9c90246d002462b6771b2e4997d5c042fd7f8330353c7ac3a29934e1f39562ba"
+  },
+  "new_GPU_hours": 0,
+  "old_result_unchanged": true,
+  "private_verification_kept_private": true,
+  "scientific_conclusion": "R1 original point gate fails; R2 G2 fails; no control is promoted; project remains ACTIVE",
+  "architecture_result": "run_001 A/B labels quarantined; run_002 independently verified raw graph mapping repair"
+}

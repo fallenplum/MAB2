@@ -1,0 +1,218 @@
+{
+  "status": "DESCRIPTIVE_ARCHITECTURE_REFERENCE_COMPLETE_NOT_A_GATE",
+  "source_commit": "dc75f833a77847c7ef4f9f415a964556d269e089",
+  "methods": {
+    "worker0": {
+      "accuracy": 0.21875,
+      "episode_accuracies": [
+        0.20833333333333334,
+        0.2916666666666667,
+        0.041666666666666664,
+        0.25,
+        0.20833333333333334,
+        0.4166666666666667,
+        0.20833333333333334,
+        0.125
+      ],
+      "input_tokens": 40178,
+      "output_tokens": 11212,
+      "calls": 192,
+      "parse_valid_fraction": 0.9947916666666666
+    },
+    "worker1": {
+      "accuracy": 0.18229166666666669,
+      "episode_accuracies": [
+        0.125,
+        0.125,
+        0.08333333333333333,
+        0.25,
+        0.25,
+        0.2916666666666667,
+        0.20833333333333334,
+        0.125
+      ],
+      "input_tokens": 39986,
+      "output_tokens": 9343,
+      "calls": 192,
+      "parse_valid_fraction": 0.9895833333333334
+    },
+    "worker2": {
+      "accuracy": 0.171875,
+      "episode_accuracies": [
+        0.125,
+        0.20833333333333334,
+        0.041666666666666664,
+        0.25,
+        0.16666666666666666,
+        0.20833333333333334,
+        0.16666666666666666,
+        0.20833333333333334
+      ],
+      "input_tokens": 39986,
+      "output_tokens": 10609,
+      "calls": 192,
+      "parse_valid_fraction": 0.9947916666666666
+    },
+    "worker3": {
+      "accuracy": 0.16145833333333331,
+      "episode_accuracies": [
+        0.16666666666666666,
+        0.16666666666666666,
+        0.041666666666666664,
+        0.25,
+        0.125,
+        0.25,
+        0.125,
+        0.16666666666666666
+      ],
+      "input_tokens": 39794,
+      "output_tokens": 10747,
+      "calls": 192,
+      "parse_valid_fraction": 0.9947916666666666
+    },
+    "vote4": {
+      "accuracy": 0.203125,
+      "episode_accuracies": [
+        0.16666666666666666,
+        0.2916666666666667,
+        0.08333333333333333,
+        0.2916666666666667,
+        0.16666666666666666,
+        0.2916666666666667,
+        0.20833333333333334,
+        0.125
+      ],
+      "input_tokens": 159944,
+      "output_tokens": 41911,
+      "calls": 768,
+      "parse_valid_fraction": 0.9947916666666666
+    },
+    "A_stay": {
+      "accuracy": 0.359375,
+      "episode_accuracies": [
+        0.375,
+        0.4583333333333333,
+        0.16666666666666666,
+        0.5,
+        0.2916666666666667,
+        0.4583333333333333,
+        0.25,
+        0.375
+      ],
+      "input_tokens": 553136,
+      "output_tokens": 95441,
+      "calls": 1728,
+      "parse_valid_fraction": null
+    },
+    "B_stay": {
+      "accuracy": 0.375,
+      "episode_accuracies": [
+        0.4583333333333333,
+        0.4166666666666667,
+        0.2916666666666667,
+        0.5,
+        0.3333333333333333,
+        0.4583333333333333,
+        0.25,
+        0.2916666666666667
+      ],
+      "input_tokens": 587471,
+      "output_tokens": 95082,
+      "calls": 1728,
+      "parse_valid_fraction": null
+    }
+  },
+  "contrasts": [
+    {
+      "contrast": "A_stay - worker0",
+      "mean": 0.140625,
+      "ci95": [
+        0.08854166666666666,
+        0.19270833333333331
+      ],
+      "episode_differences": [
+        0.16666666666666666,
+        0.16666666666666663,
+        0.125,
+        0.25,
+        0.08333333333333334,
+        0.04166666666666663,
+        0.04166666666666666,
+        0.25
+      ]
+    },
+    {
+      "contrast": "A_stay - vote4",
+      "mean": 0.15625,
+      "ci95": [
+        0.109375,
+        0.19791666666666669
+      ],
+      "episode_differences": [
+        0.20833333333333334,
+        0.16666666666666663,
+        0.08333333333333333,
+        0.20833333333333331,
+        0.12500000000000003,
+        0.16666666666666663,
+        0.04166666666666666,
+        0.25
+      ]
+    },
+    {
+      "contrast": "B_stay - worker0",
+      "mean": 0.15625,
+      "ci95": [
+        0.09895833333333331,
+        0.21354166666666666
+      ],
+      "episode_differences": [
+        0.24999999999999997,
+        0.125,
+        0.25,
+        0.25,
+        0.12499999999999997,
+        0.04166666666666663,
+        0.04166666666666666,
+        0.16666666666666669
+      ]
+    },
+    {
+      "contrast": "B_stay - vote4",
+      "mean": 0.171875,
+      "ci95": [
+        0.125,
+        0.21875
+      ],
+      "episode_differences": [
+        0.29166666666666663,
+        0.125,
+        0.20833333333333337,
+        0.20833333333333331,
+        0.16666666666666666,
+        0.16666666666666663,
+        0.04166666666666666,
+        0.16666666666666669
+      ]
+    }
+  ],
+  "new_model_calls": 0,
+  "new_gpu_hours": 0,
+  "new_score_calls": 960,
+  "new_formal_rounds": 0,
+  "cost_scope": "LOGICAL_SERVICE_ONLY_NOT_COMPLETE_POLICY_BUDGET",
+  "S_role": "R1_DEVELOPMENT_SERVICE_NOT_FINAL_TEST",
+  "new_method_selected": false,
+  "project_stop": false,
+  "source_graphs_sha256": "0988ff2b01452be9eb90020c39b532665ed8668911e68308acdc43ff94756957",
+  "protocol_sha256": "d64c02045639b2a1abfe9636af902ab863234f172eeead43a7e9135c76ad1957",
+  "scorer_sha256": "da315ade4be7362ca81fc7ed41252cdccaa9271dc32f9a20531356587bb5f37e",
+  "cpu_seconds": 0.328125,
+  "wall_seconds": 0.4723236560821533,
+  "limitations": [
+    "8 related graph episodes; descriptive intervals only.",
+    "Prompts and aggregation differ, so differences do not isolate communication causally.",
+    "Four role instances use one model; no heterogeneous pool claim.",
+    "No original R1 criterion or metric was changed."
+  ]
+}

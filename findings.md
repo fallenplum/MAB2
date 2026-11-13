@@ -35,9 +35,11 @@ cannot reverse predictor rankings. These descriptive facts do not identify a
 causal format effect or prove that true conditional credit is zero. Full report:
 reports/cycle2_20261113/g2_format_diagnostic/REPORT.md.
 
-The active R1 tests whether fixed, purchased paired feedback can improve future
-decisions. R2 asks whether an independent old bank plus measured drift has useful
-variance/cost and decision behavior. Both remain unconfirmed. Exact replay or
+The frozen R1 tested purchased paired feedback on future development decisions.
+It failed its primary point gate. R2 failed the original variance/cost gate for
+its current bank and quota despite a passing decision diagnostic. Exact replay or
 existing control-variate identities alone are not novelty claims. Conditional
 service confirmation and repeated-learning confirmation require different units;
 five seeds cannot manufacture independent questions or banks.
+
+2026-11-13 closure: R1 full-minus-uniform -0.003125 (eight-episode exploratory 95% interval [-0.028125,0.016666667]); R2 risk ratio 3.450685654. Preserve both negatives. The descriptive architecture A/B label incident was repaired from 384 raw graphs in new run_002; original run_001 stays quarantined. Project remains ACTIVE and the new Hotpot applicability candidate is not admitted. See reports/cycle2_20261113/r1_completed_development.

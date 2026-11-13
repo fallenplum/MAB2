@@ -1,0 +1,20 @@
+{
+  "checked_aggregate_graphs": 384,
+  "checked_episode_background_costs": 16,
+  "condition_background": {
+    "change": "B",
+    "no_change": "A"
+  },
+  "background_axis": {
+    "B": 0,
+    "A": 1
+  },
+  "quality_equal": true,
+  "complete_logical_cost_equal": true,
+  "source_graphs_verified": 384,
+  "raw_aggregate_recomputed_with_frozen_scorer": true,
+  "all_nine_node_token_counts_recomputed": true,
+  "R1_main_results_unchanged": true,
+  "old_A_label_really_B": true,
+  "old_B_label_really_A": true
+}

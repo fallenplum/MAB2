@@ -1,0 +1,4261 @@
+{
+  "status": "PASS_ENGINEERING_REVIEW_REQUIRED",
+  "synthetic_only": true,
+  "benchmark_questions_read": 0,
+  "formal_candidate_rounds_started": 0,
+  "inference_calls": 52,
+  "calls_by_model": {
+    "qwen": 24,
+    "mistral": 28
+  },
+  "fresh_field_equalities": 572,
+  "format_failures": 0,
+  "format_by_model": {
+    "qwen": {
+      "n": 24,
+      "bad": 0
+    },
+    "mistral": {
+      "n": 28,
+      "bad": 0
+    }
+  },
+  "format_records": [
+    {
+      "model": "qwen",
+      "node": "r1:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w0",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w1",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r1:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w2",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "aggregate",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r1:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w0",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w1",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r1:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w2",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "aggregate",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r1:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w0",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w1",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r1:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w2",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "aggregate",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r1:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w0",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w0",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w1",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w1",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r1:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r2:w2",
+      "format_ok": true
+    },
+    {
+      "model": "qwen",
+      "node": "r3:w2",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r1:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r2:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "r3:w3",
+      "format_ok": true
+    },
+    {
+      "model": "mistral",
+      "node": "aggregate",
+      "format_ok": true
+    }
+  ],
+  "costs": {
+    "input_tokens": 12340,
+    "output_tokens": 1214,
+    "gpu_seconds": 73.32487670898436,
+    "calls": 52,
+    "model_elapsed_seconds": 73.41222493676469,
+    "resident_GPU_hours": null
+  },
+  "execution_costs": [
+    {
+      "calls": 13,
+      "call_count_scope": "attempted_backend_requests_including_rejections",
+      "planned_calls": 13,
+      "unattempted_calls": 0,
+      "returned_generations": 13,
+      "failed_requests_without_physical_record": 0,
+      "input_tokens": 3007,
+      "output_tokens": 327,
+      "model_elapsed_seconds": 20.155947626568377,
+      "gpu_seconds": 20.127404296875003,
+      "peak_allocated_bytes": 21278265856,
+      "received_message_tokens": 305,
+      "self_state_tokens": 0,
+      "known_cost_components": {
+        "input_tokens": 3007,
+        "output_tokens": 327,
+        "model_elapsed_seconds": 20.155947626568377,
+        "gpu_seconds": 20.127404296875003,
+        "peak_allocated_bytes": 21278265856
+      },
+      "known_cost_component_scope": "Only unambiguous reconciled components; conflicting or incomplete groups are excluded",
+      "known_cost_ranges": {
+        "input_tokens": {
+          "lower": 3007,
+          "upper": 3007,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "output_tokens": {
+          "lower": 327,
+          "upper": 327,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "model_elapsed_seconds": {
+          "lower": 20.155947626568377,
+          "upper": 20.155947626568377,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "gpu_seconds": {
+          "lower": 20.127404296875003,
+          "upper": 20.127404296875003,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "peak_allocated_bytes": {
+          "lower": 21278265856,
+          "upper": 21278265856,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        }
+      },
+      "request_cost_evidence": [
+        {
+          "slot_index": 0,
+          "node": "r1:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "e6c4282811c845b3a2af32f14a2f3c23",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 171,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 171,
+                  "observed_max": 171,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.9795244368724525,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.9795244368724525,
+                  "observed_max": 1.9795244368724525,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.9765228271484374,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.9765228271484374,
+                  "observed_max": 1.9765228271484374,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839079936,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839079936,
+                  "observed_max": 20839079936,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 1,
+          "node": "r2:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "10323824933c42a68d6c5694201e9bfd",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 171,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 171,
+                  "observed_max": 171,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.4797809589654207,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4797809589654207,
+                  "observed_max": 1.4797809589654207,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.477016845703125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.477016845703125,
+                  "observed_max": 1.477016845703125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839079936,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839079936,
+                  "observed_max": 20839079936,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 2,
+          "node": "r3:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "1698c6f161d94c0e82fcbf1b6be2c5ad",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 171,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 171,
+                  "observed_max": 171,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.5197757829446346,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.5197757829446346,
+                  "observed_max": 1.5197757829446346,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.517494384765625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.517494384765625,
+                  "observed_max": 1.517494384765625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839079936,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839079936,
+                  "observed_max": 20839079936,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 3,
+          "node": "r1:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "36c0329899394fbaaffe0d428d4a12e2",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 176,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 176,
+                  "observed_max": 176,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 27,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 27,
+                  "observed_max": 27,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.583365140017122,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.583365140017122,
+                  "observed_max": 1.583365140017122,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.58249169921875,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.58249169921875,
+                  "observed_max": 1.58249169921875,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863187968,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863187968,
+                  "observed_max": 20863187968,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 4,
+          "node": "r2:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "53411f44c4db49468a014bba53edf040",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 176,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 176,
+                  "observed_max": 176,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.4368998180143535,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4368998180143535,
+                  "observed_max": 1.4368998180143535,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.43418115234375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.43418115234375,
+                  "observed_max": 1.43418115234375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863187968,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863187968,
+                  "observed_max": 20863187968,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 5,
+          "node": "r3:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "8edb63b3cec64739a492db56d4513a36",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 176,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 176,
+                  "observed_max": 176,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.486377167981118,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.486377167981118,
+                  "observed_max": 1.486377167981118,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4857232666015625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4857232666015625,
+                  "observed_max": 1.4857232666015625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863187968,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863187968,
+                  "observed_max": 20863187968,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 6,
+          "node": "r1:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "6ade8c7320c94b65a8d4171c8e83cda6",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 170,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 170,
+                  "observed_max": 170,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 24,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 24,
+                  "observed_max": 24,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.4045101378578693,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4045101378578693,
+                  "observed_max": 1.4045101378578693,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4041903076171875,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4041903076171875,
+                  "observed_max": 1.4041903076171875,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839013888,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839013888,
+                  "observed_max": 20839013888,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 7,
+          "node": "r2:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "e367331d1f544fcfbdb59f07e008e62f",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 170,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 170,
+                  "observed_max": 170,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.5023837541230023,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.5023837541230023,
+                  "observed_max": 1.5023837541230023,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4997269287109376,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4997269287109376,
+                  "observed_max": 1.4997269287109376,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839013888,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839013888,
+                  "observed_max": 20839013888,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 8,
+          "node": "r3:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "32b53ba713114cbaa03c815ae35fd159",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 170,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 170,
+                  "observed_max": 170,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.527527263853699,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.527527263853699,
+                  "observed_max": 1.527527263853699,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.5243431396484375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.5243431396484375,
+                  "observed_max": 1.5243431396484375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839013888,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839013888,
+                  "observed_max": 20839013888,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 9,
+          "node": "r1:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "bd891649e881408d95fe683a56716d24",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 174,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 174,
+                  "observed_max": 174,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.365208385977894,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.365208385977894,
+                  "observed_max": 1.365208385977894,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.35917236328125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.35917236328125,
+                  "observed_max": 1.35917236328125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20862702592,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20862702592,
+                  "observed_max": 20862702592,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 10,
+          "node": "r2:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "29707103932b4166a3dd469124232894",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 174,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 174,
+                  "observed_max": 174,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.376907757949084,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.376907757949084,
+                  "observed_max": 1.376907757949084,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.37595849609375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.37595849609375,
+                  "observed_max": 1.37595849609375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20862702592,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20862702592,
+                  "observed_max": 20862702592,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 11,
+          "node": "r3:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "608697c4e62349dab87675917250a9cc",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 174,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 174,
+                  "observed_max": 174,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.337643814040348,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.337643814040348,
+                  "observed_max": 1.337643814040348,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3371153564453124,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3371153564453124,
+                  "observed_max": 1.3371153564453124,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20862702592,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20862702592,
+                  "observed_max": 20862702592,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 12,
+          "node": "aggregate",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "1a567c2a9e794f5494a954cd5a941440",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 934,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 934,
+                  "observed_max": 934,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 28,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 28,
+                  "observed_max": 28,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 2.156043207971379,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 2.156043207971379,
+                  "observed_max": 2.156043207971379,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 2.153467529296875,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 2.153467529296875,
+                  "observed_max": 2.153467529296875,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 21278265856,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 21278265856,
+                  "observed_max": 21278265856,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "cost_reconciliation": "same_call_id_states_once_if_complete_and_equal_else_unknown_v2",
+      "event_status_is_not_generation_multiplicity": true,
+      "returned_generation_cost": {
+        "calls": 13,
+        "input_tokens": 3007,
+        "output_tokens": 327,
+        "received_message_tokens": 305,
+        "self_state_tokens": 0,
+        "model_elapsed_seconds": 20.155947626568377,
+        "gpu_seconds": 20.127404296875003,
+        "peak_allocated_bytes": 21278265856
+      },
+      "returned_generation_cost_scope": "Raw returned Generation reports, not reconciled totals when evidence conflicts",
+      "cost_fields_complete": true,
+      "service_complete": true,
+      "resident_GPU_hours": null
+    },
+    {
+      "calls": 13,
+      "call_count_scope": "attempted_backend_requests_including_rejections",
+      "planned_calls": 13,
+      "unattempted_calls": 0,
+      "returned_generations": 13,
+      "failed_requests_without_physical_record": 0,
+      "input_tokens": 3007,
+      "output_tokens": 327,
+      "model_elapsed_seconds": 19.5321224455256,
+      "gpu_seconds": 19.51273937988281,
+      "peak_allocated_bytes": 21278265856,
+      "received_message_tokens": 305,
+      "self_state_tokens": 0,
+      "known_cost_components": {
+        "input_tokens": 3007,
+        "output_tokens": 327,
+        "model_elapsed_seconds": 19.5321224455256,
+        "gpu_seconds": 19.51273937988281,
+        "peak_allocated_bytes": 21278265856
+      },
+      "known_cost_component_scope": "Only unambiguous reconciled components; conflicting or incomplete groups are excluded",
+      "known_cost_ranges": {
+        "input_tokens": {
+          "lower": 3007,
+          "upper": 3007,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "output_tokens": {
+          "lower": 327,
+          "upper": 327,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "model_elapsed_seconds": {
+          "lower": 19.5321224455256,
+          "upper": 19.5321224455256,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "gpu_seconds": {
+          "lower": 19.51273937988281,
+          "upper": 19.51273937988281,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "peak_allocated_bytes": {
+          "lower": 21278265856,
+          "upper": 21278265856,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        }
+      },
+      "request_cost_evidence": [
+        {
+          "slot_index": 0,
+          "node": "r1:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "e152c2f2febf450ca799f45f01d3989f",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 171,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 171,
+                  "observed_max": 171,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.4849570428486913,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4849570428486913,
+                  "observed_max": 1.4849570428486913,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4828165283203125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4828165283203125,
+                  "observed_max": 1.4828165283203125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839079936,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839079936,
+                  "observed_max": 20839079936,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 1,
+          "node": "r2:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "a701791be5a8433087843ed83a127f03",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 171,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 171,
+                  "observed_max": 171,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.499478209996596,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.499478209996596,
+                  "observed_max": 1.499478209996596,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4990233154296875,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4990233154296875,
+                  "observed_max": 1.4990233154296875,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839079936,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839079936,
+                  "observed_max": 20839079936,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 2,
+          "node": "r3:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "43cd2a749c0b4385932f6b6cd47e817c",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 171,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 171,
+                  "observed_max": 171,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.5038855099119246,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.5038855099119246,
+                  "observed_max": 1.5038855099119246,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.501596923828125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.501596923828125,
+                  "observed_max": 1.501596923828125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839079936,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839079936,
+                  "observed_max": 20839079936,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 3,
+          "node": "r1:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "b95afc7062354cfb84c143678b45cb18",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 176,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 176,
+                  "observed_max": 176,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 27,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 27,
+                  "observed_max": 27,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.5518542579375207,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.5518542579375207,
+                  "observed_max": 1.5518542579375207,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.551298828125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.551298828125,
+                  "observed_max": 1.551298828125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863958016,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863958016,
+                  "observed_max": 20863958016,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 4,
+          "node": "r2:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "896b134d5feb4a409b6dcca32a60ac68",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 176,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 176,
+                  "observed_max": 176,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.387825455982238,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.387825455982238,
+                  "observed_max": 1.387825455982238,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3873642578125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3873642578125,
+                  "observed_max": 1.3873642578125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863958016,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863958016,
+                  "observed_max": 20863958016,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 5,
+          "node": "r3:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "83b7a5d2072d41268a8fbb6f24597101",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 176,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 176,
+                  "observed_max": 176,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.527365699177608,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.527365699177608,
+                  "observed_max": 1.527365699177608,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.5268126220703124,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.5268126220703124,
+                  "observed_max": 1.5268126220703124,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863958016,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863958016,
+                  "observed_max": 20863958016,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 6,
+          "node": "r1:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "5bd09c9b67ba45608362ed736f20b33a",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 170,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 170,
+                  "observed_max": 170,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 24,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 24,
+                  "observed_max": 24,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3881631849799305,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3881631849799305,
+                  "observed_max": 1.3881631849799305,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.38482421875,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.38482421875,
+                  "observed_max": 1.38482421875,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839013888,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839013888,
+                  "observed_max": 20839013888,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 7,
+          "node": "r2:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "cfb68aef8948426e978ac084068586e2",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 170,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 170,
+                  "observed_max": 170,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.472863145871088,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.472863145871088,
+                  "observed_max": 1.472863145871088,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4724537353515625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4724537353515625,
+                  "observed_max": 1.4724537353515625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839013888,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839013888,
+                  "observed_max": 20839013888,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 8,
+          "node": "r3:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "dca49e059b8147de84ee0ce50c8ea952",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 170,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 170,
+                  "observed_max": 170,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 26,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 26,
+                  "observed_max": 26,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.545671216910705,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.545671216910705,
+                  "observed_max": 1.545671216910705,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.5452000732421876,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.5452000732421876,
+                  "observed_max": 1.5452000732421876,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20839013888,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20839013888,
+                  "observed_max": 20839013888,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 9,
+          "node": "r1:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "f01fc936ce534dbea16022e389bc07cd",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 174,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 174,
+                  "observed_max": 174,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3581007381435484,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3581007381435484,
+                  "observed_max": 1.3581007381435484,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3577093505859374,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3577093505859374,
+                  "observed_max": 1.3577093505859374,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863533568,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863533568,
+                  "observed_max": 20863533568,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 10,
+          "node": "r2:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "610b50fa4d094136b6645bcef55c237a",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 174,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 174,
+                  "observed_max": 174,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.337852398864925,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.337852398864925,
+                  "observed_max": 1.337852398864925,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.335234619140625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.335234619140625,
+                  "observed_max": 1.335234619140625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863533568,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863533568,
+                  "observed_max": 20863533568,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 11,
+          "node": "r3:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "8202926deb2f422798897734f27046e8",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 174,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 174,
+                  "observed_max": 174,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.4110986760351807,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4110986760351807,
+                  "observed_max": 1.4110986760351807,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4060755615234375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4060755615234375,
+                  "observed_max": 1.4060755615234375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20863533568,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20863533568,
+                  "observed_max": 20863533568,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 12,
+          "node": "aggregate",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "70536b372a7b44c990113ce04a2c65cb",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 934,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 934,
+                  "observed_max": 934,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 28,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 28,
+                  "observed_max": 28,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 2.0630069088656455,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 2.0630069088656455,
+                  "observed_max": 2.0630069088656455,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 2.062329345703125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 2.062329345703125,
+                  "observed_max": 2.062329345703125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 21278265856,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 21278265856,
+                  "observed_max": 21278265856,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "cost_reconciliation": "same_call_id_states_once_if_complete_and_equal_else_unknown_v2",
+      "event_status_is_not_generation_multiplicity": true,
+      "returned_generation_cost": {
+        "calls": 13,
+        "input_tokens": 3007,
+        "output_tokens": 327,
+        "received_message_tokens": 305,
+        "self_state_tokens": 0,
+        "model_elapsed_seconds": 19.5321224455256,
+        "gpu_seconds": 19.51273937988281,
+        "peak_allocated_bytes": 21278265856
+      },
+      "returned_generation_cost_scope": "Raw returned Generation reports, not reconciled totals when evidence conflicts",
+      "cost_fields_complete": true,
+      "service_complete": true,
+      "resident_GPU_hours": null
+    },
+    {
+      "calls": 13,
+      "call_count_scope": "attempted_backend_requests_including_rejections",
+      "planned_calls": 13,
+      "unattempted_calls": 0,
+      "returned_generations": 13,
+      "failed_requests_without_physical_record": 0,
+      "input_tokens": 3163,
+      "output_tokens": 280,
+      "model_elapsed_seconds": 16.864026445662603,
+      "gpu_seconds": 16.842674438476564,
+      "peak_allocated_bytes": 21262148608,
+      "received_message_tokens": 264,
+      "self_state_tokens": 0,
+      "known_cost_components": {
+        "input_tokens": 3163,
+        "output_tokens": 280,
+        "model_elapsed_seconds": 16.864026445662603,
+        "gpu_seconds": 16.842674438476564,
+        "peak_allocated_bytes": 21262148608
+      },
+      "known_cost_component_scope": "Only unambiguous reconciled components; conflicting or incomplete groups are excluded",
+      "known_cost_ranges": {
+        "input_tokens": {
+          "lower": 3163,
+          "upper": 3163,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "output_tokens": {
+          "lower": 280,
+          "upper": 280,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "model_elapsed_seconds": {
+          "lower": 16.864026445662603,
+          "upper": 16.864026445662603,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "gpu_seconds": {
+          "lower": 16.842674438476564,
+          "upper": 16.842674438476564,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "peak_allocated_bytes": {
+          "lower": 21262148608,
+          "upper": 21262148608,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        }
+      },
+      "request_cost_evidence": [
+        {
+          "slot_index": 0,
+          "node": "r1:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "de2e63ab478a4d54ab3bf4544205748d",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 184,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 184,
+                  "observed_max": 184,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.155672175111249,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.155672175111249,
+                  "observed_max": 1.155672175111249,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1550595703125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1550595703125,
+                  "observed_max": 1.1550595703125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840879104,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840879104,
+                  "observed_max": 20840879104,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 1,
+          "node": "r2:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "78e5625cc95f41c5b968f269f639ec57",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 184,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 184,
+                  "observed_max": 184,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1806325518991798,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1806325518991798,
+                  "observed_max": 1.1806325518991798,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1800355224609376,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1800355224609376,
+                  "observed_max": 1.1800355224609376,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840879104,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840879104,
+                  "observed_max": 20840879104,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 2,
+          "node": "r3:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "66fead5667af4ca5bb36a696f4158f32",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 184,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 184,
+                  "observed_max": 184,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1781369170639664,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1781369170639664,
+                  "observed_max": 1.1781369170639664,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1740523681640624,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1740523681640624,
+                  "observed_max": 1.1740523681640624,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840879104,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840879104,
+                  "observed_max": 20840879104,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 3,
+          "node": "r1:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "fc5c982f277242809bcafb577eb19935",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 193,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 193,
+                  "observed_max": 193,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.2989939930848777,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.2989939930848777,
+                  "observed_max": 1.2989939930848777,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.2938548583984375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.2938548583984375,
+                  "observed_max": 1.2938548583984375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20869561344,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20869561344,
+                  "observed_max": 20869561344,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 4,
+          "node": "r2:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "91ee39674b0240efaf9ccf3ef2639587",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 193,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 193,
+                  "observed_max": 193,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.428330163937062,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.428330163937062,
+                  "observed_max": 1.428330163937062,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.42798876953125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.42798876953125,
+                  "observed_max": 1.42798876953125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20869561344,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20869561344,
+                  "observed_max": 20869561344,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 5,
+          "node": "r3:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "687ccdd9b828493ebe9f6f3d41a7c519",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 193,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 193,
+                  "observed_max": 193,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3556952790822834,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3556952790822834,
+                  "observed_max": 1.3556952790822834,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3550968017578124,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3550968017578124,
+                  "observed_max": 1.3550968017578124,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20869561344,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20869561344,
+                  "observed_max": 20869561344,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 6,
+          "node": "r1:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "1d28b9ee8a734e259feb3f54fadabaf3",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 183,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 183,
+                  "observed_max": 183,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1177720499690622,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1177720499690622,
+                  "observed_max": 1.1177720499690622,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1173675537109375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1173675537109375,
+                  "observed_max": 1.1173675537109375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840847872,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840847872,
+                  "observed_max": 20840847872,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 7,
+          "node": "r2:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "f1aa174868e1494687d324750bbc2a85",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 183,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 183,
+                  "observed_max": 183,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.167745797894895,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.167745797894895,
+                  "observed_max": 1.167745797894895,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.167247802734375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.167247802734375,
+                  "observed_max": 1.167247802734375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840847872,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840847872,
+                  "observed_max": 20840847872,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 8,
+          "node": "r3:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "cf943bbe4ee9463f8814db63b7418568",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 183,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 183,
+                  "observed_max": 183,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1982884649187326,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1982884649187326,
+                  "observed_max": 1.1982884649187326,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1924537353515625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1924537353515625,
+                  "observed_max": 1.1924537353515625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840847872,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840847872,
+                  "observed_max": 20840847872,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 9,
+          "node": "r1:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "2f908c60af7140578702f808500c2957",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 191,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 191,
+                  "observed_max": 191,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3420931978616863,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3420931978616863,
+                  "observed_max": 1.3420931978616863,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3416439208984374,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3416439208984374,
+                  "observed_max": 1.3416439208984374,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20867180544,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20867180544,
+                  "observed_max": 20867180544,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 10,
+          "node": "r2:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "f1be216278d247118b0579b0b6cfe6b1",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 191,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 191,
+                  "observed_max": 191,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3788530759047717,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3788530759047717,
+                  "observed_max": 1.3788530759047717,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3782353515625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3782353515625,
+                  "observed_max": 1.3782353515625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20867180544,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20867180544,
+                  "observed_max": 20867180544,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 11,
+          "node": "r3:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "1f4365f99655453abd485685094c165d",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 191,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 191,
+                  "observed_max": 191,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.4191791280172765,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4191791280172765,
+                  "observed_max": 1.4191791280172765,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.417454833984375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.417454833984375,
+                  "observed_max": 1.417454833984375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20867180544,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20867180544,
+                  "observed_max": 20867180544,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 12,
+          "node": "aggregate",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "429fc022758e4078b96265c8c22d21e3",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 910,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 910,
+                  "observed_max": 910,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 22,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 22,
+                  "observed_max": 22,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.6426336509175599,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.6426336509175599,
+                  "observed_max": 1.6426336509175599,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.642183349609375,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.642183349609375,
+                  "observed_max": 1.642183349609375,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 21262148608,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 21262148608,
+                  "observed_max": 21262148608,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "cost_reconciliation": "same_call_id_states_once_if_complete_and_equal_else_unknown_v2",
+      "event_status_is_not_generation_multiplicity": true,
+      "returned_generation_cost": {
+        "calls": 13,
+        "input_tokens": 3163,
+        "output_tokens": 280,
+        "received_message_tokens": 264,
+        "self_state_tokens": 0,
+        "model_elapsed_seconds": 16.864026445662603,
+        "gpu_seconds": 16.842674438476564,
+        "peak_allocated_bytes": 21262148608
+      },
+      "returned_generation_cost_scope": "Raw returned Generation reports, not reconciled totals when evidence conflicts",
+      "cost_fields_complete": true,
+      "service_complete": true,
+      "resident_GPU_hours": null
+    },
+    {
+      "calls": 13,
+      "call_count_scope": "attempted_backend_requests_including_rejections",
+      "planned_calls": 13,
+      "unattempted_calls": 0,
+      "returned_generations": 13,
+      "failed_requests_without_physical_record": 0,
+      "input_tokens": 3163,
+      "output_tokens": 280,
+      "model_elapsed_seconds": 16.860128419008106,
+      "gpu_seconds": 16.842058593750004,
+      "peak_allocated_bytes": 21262148608,
+      "received_message_tokens": 264,
+      "self_state_tokens": 0,
+      "known_cost_components": {
+        "input_tokens": 3163,
+        "output_tokens": 280,
+        "model_elapsed_seconds": 16.860128419008106,
+        "gpu_seconds": 16.842058593750004,
+        "peak_allocated_bytes": 21262148608
+      },
+      "known_cost_component_scope": "Only unambiguous reconciled components; conflicting or incomplete groups are excluded",
+      "known_cost_ranges": {
+        "input_tokens": {
+          "lower": 3163,
+          "upper": 3163,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "output_tokens": {
+          "lower": 280,
+          "upper": 280,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "model_elapsed_seconds": {
+          "lower": 16.860128419008106,
+          "upper": 16.860128419008106,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "gpu_seconds": {
+          "lower": 16.842058593750004,
+          "upper": 16.842058593750004,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        },
+        "peak_allocated_bytes": {
+          "lower": 21262148608,
+          "upper": 21262148608,
+          "scope": "nonnegative subtotal lower bound; null upper means unresolved"
+        }
+      },
+      "request_cost_evidence": [
+        {
+          "slot_index": 0,
+          "node": "r1:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "175eb8a9d58544e197dea220c3c9b2ad",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 184,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 184,
+                  "observed_max": 184,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1983376119751483,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1983376119751483,
+                  "observed_max": 1.1983376119751483,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1933826904296876,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1933826904296876,
+                  "observed_max": 1.1933826904296876,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840879104,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840879104,
+                  "observed_max": 20840879104,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 1,
+          "node": "r2:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "e1fbae4222d54a5097a392c53464ddd9",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 184,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 184,
+                  "observed_max": 184,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.193166560959071,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.193166560959071,
+                  "observed_max": 1.193166560959071,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1906939697265626,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1906939697265626,
+                  "observed_max": 1.1906939697265626,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840879104,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840879104,
+                  "observed_max": 20840879104,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 2,
+          "node": "r3:w0",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "4dd2965d6efb495d80ad651b1a21e950",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 184,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 184,
+                  "observed_max": 184,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1248376050498337,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1248376050498337,
+                  "observed_max": 1.1248376050498337,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.12426025390625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.12426025390625,
+                  "observed_max": 1.12426025390625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840879104,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840879104,
+                  "observed_max": 20840879104,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 3,
+          "node": "r1:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "7a5dfdcc14184ce3816cf81065f89e7a",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 193,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 193,
+                  "observed_max": 193,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3810003360267729,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3810003360267729,
+                  "observed_max": 1.3810003360267729,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.38048486328125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.38048486328125,
+                  "observed_max": 1.38048486328125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20869561344,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20869561344,
+                  "observed_max": 20869561344,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 4,
+          "node": "r2:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "f9398db3b98a47ba89bb34fe6f2e6a17",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 193,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 193,
+                  "observed_max": 193,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3156792239751667,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3156792239751667,
+                  "observed_max": 1.3156792239751667,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3122999267578126,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3122999267578126,
+                  "observed_max": 1.3122999267578126,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20869561344,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20869561344,
+                  "observed_max": 20869561344,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 5,
+          "node": "r3:w1",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "298d30e9e1e94105aa11ee82e98841ab",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 193,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 193,
+                  "observed_max": 193,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.385282444069162,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.385282444069162,
+                  "observed_max": 1.385282444069162,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3847745361328125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3847745361328125,
+                  "observed_max": 1.3847745361328125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20869561344,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20869561344,
+                  "observed_max": 20869561344,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 6,
+          "node": "r1:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "48da8593d2664bc4a46104e978be5b5f",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 183,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 183,
+                  "observed_max": 183,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1441231700591743,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1441231700591743,
+                  "observed_max": 1.1441231700591743,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.1435428466796875,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1435428466796875,
+                  "observed_max": 1.1435428466796875,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840847872,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840847872,
+                  "observed_max": 20840847872,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 7,
+          "node": "r2:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "1205b8830da34f56b032f6956c356bc9",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 183,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 183,
+                  "observed_max": 183,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.1540175168775022,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.1540175168775022,
+                  "observed_max": 1.1540175168775022,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.151200439453125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.151200439453125,
+                  "observed_max": 1.151200439453125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840847872,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840847872,
+                  "observed_max": 20840847872,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 8,
+          "node": "r3:w2",
+          "model": "qwen",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "2593e885f4a14104b33b591e7da2d475",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 183,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 183,
+                  "observed_max": 183,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 20,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20,
+                  "observed_max": 20,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.098773050121963,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.098773050121963,
+                  "observed_max": 1.098773050121963,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.098114501953125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.098114501953125,
+                  "observed_max": 1.098114501953125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20840847872,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20840847872,
+                  "observed_max": 20840847872,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 9,
+          "node": "r1:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "56d492a88a344b4e80658abd6df16a9b",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 191,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 191,
+                  "observed_max": 191,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.416217336896807,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.416217336896807,
+                  "observed_max": 1.416217336896807,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.4156544189453124,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.4156544189453124,
+                  "observed_max": 1.4156544189453124,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20867180544,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20867180544,
+                  "observed_max": 20867180544,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 10,
+          "node": "r2:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "8336599eb3c6408d8abb38ac5d18652d",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 191,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 191,
+                  "observed_max": 191,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.3241787641309202,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3241787641309202,
+                  "observed_max": 1.3241787641309202,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3236671142578125,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3236671142578125,
+                  "observed_max": 1.3236671142578125,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20867180544,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20867180544,
+                  "observed_max": 20867180544,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 11,
+          "node": "r3:w3",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "bb5be4c24d7047e283d7436cfc29a8cb",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 191,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 191,
+                  "observed_max": 191,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 23,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 23,
+                  "observed_max": 23,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.384035429917276,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.384035429917276,
+                  "observed_max": 1.384035429917276,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.3836728515625,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.3836728515625,
+                  "observed_max": 1.3836728515625,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 20867180544,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 20867180544,
+                  "observed_max": 20867180544,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "slot_index": 12,
+          "node": "aggregate",
+          "model": "mistral",
+          "physical_event_count": 1,
+          "groups": [
+            {
+              "call_id": "5fa9699b43994575a25668378fd9824e",
+              "record_sources": [
+                "returned_generation",
+                "physical_event_0"
+              ],
+              "event_statuses": [
+                "SUCCESS"
+              ],
+              "identity_issues": [],
+              "metrics": {
+                "input_tokens": {
+                  "resolved": 910,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 910,
+                  "observed_max": 910,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "output_tokens": {
+                  "resolved": 22,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 22,
+                  "observed_max": 22,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "model_elapsed_seconds": {
+                  "resolved": 1.740479368949309,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.740479368949309,
+                  "observed_max": 1.740479368949309,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "gpu_seconds": {
+                  "resolved": 1.7403101806640624,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 1.7403101806640624,
+                  "observed_max": 1.7403101806640624,
+                  "observed_range_is_not_a_truth_bound": true
+                },
+                "peak_allocated_bytes": {
+                  "resolved": 21262148608,
+                  "reported_count": 2,
+                  "missing_count": 0,
+                  "invalid_count": 0,
+                  "conflict": false,
+                  "observed_min": 21262148608,
+                  "observed_max": 21262148608,
+                  "observed_range_is_not_a_truth_bound": true
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "cost_reconciliation": "same_call_id_states_once_if_complete_and_equal_else_unknown_v2",
+      "event_status_is_not_generation_multiplicity": true,
+      "returned_generation_cost": {
+        "calls": 13,
+        "input_tokens": 3163,
+        "output_tokens": 280,
+        "received_message_tokens": 264,
+        "self_state_tokens": 0,
+        "model_elapsed_seconds": 16.860128419008106,
+        "gpu_seconds": 16.842058593750004,
+        "peak_allocated_bytes": 21262148608
+      },
+      "returned_generation_cost_scope": "Raw returned Generation reports, not reconciled totals when evidence conflicts",
+      "cost_fields_complete": true,
+      "service_complete": true,
+      "resident_GPU_hours": null
+    }
+  ],
+  "occupancy_completion_required_from": "RESIDENT_STATUS.json",
+  "no_accuracy_or_novelty_claim": true
+}
