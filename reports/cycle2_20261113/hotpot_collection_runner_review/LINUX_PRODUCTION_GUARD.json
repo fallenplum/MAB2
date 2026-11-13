@@ -1,0 +1,41 @@
+{
+  "script_sha256": "9bebce64a88b3a322cf9330b85bc463f15f01e39d3e5ca1646648886f051e757",
+  "guard_sha256": "666184a17aa880a7303fc8e767f4ced69cbb8b8a93f61890a77ac1b7c349d988",
+  "GPU_used": false,
+  "benchmark_read": false,
+  "scope": "actual Linux CPU process guards only; no collection admission",
+  "tests": [
+    {
+      "test": "real_parent_SIGKILL_terminates_separate_session_child",
+      "status": "PASS",
+      "child_final_state": "absent",
+      "zombie_is_not_running_but_may_not_be_reaped": false
+    },
+    {
+      "test": "actual_absolute_deadline_terminates_busy_loop",
+      "status": "PASS"
+    },
+    {
+      "test": "actual_kill_function_only_stops_its_owned_group",
+      "status": "PASS"
+    },
+    {
+      "test": "normal_exit_does_not_touch_other_owned_process",
+      "status": "PASS"
+    },
+    {
+      "test": "wrong_parent_fails_closed_before_exec",
+      "status": "PASS"
+    },
+    {
+      "test": "expired_deadline_fails_closed_before_exec",
+      "status": "PASS"
+    },
+    {
+      "test": "inherited_blocked_alarm_is_unblocked",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS_ACTUAL_PRODUCTION_GUARD_CPU_PROBE",
+  "wall_seconds": 0.9186071578878909
+}

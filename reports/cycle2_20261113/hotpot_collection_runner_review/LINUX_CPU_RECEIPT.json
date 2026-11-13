@@ -1,0 +1,34 @@
+{
+  "status": "PASS_CPU_ONLY_NOT_FREEZE_OR_ADMISSION",
+  "tests_run": 26,
+  "failures": 0,
+  "errors": 0,
+  "skipped": [],
+  "elapsed_seconds": 52.699328323826194,
+  "platform": "Linux-5.15.0-67-generic-x86_64-with-glibc2.31",
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]",
+  "source_sha256": {
+    "worker.py": "fc0bb7ca591018a64172cdaa832c885eb6846ef174e7d9a96316211673e36e19",
+    "runtime_factory.py": "36e3225fe246d43fa6f47bcd521099f3afac986d5bf51f2a49864eb81b743b8b",
+    "orchestration_core.py": "62806ee4ab096def68a39481e6f27126c064ab70c25f0f99a5da9c9fc2eee79f",
+    "storage.py": "df793fb520d89d43263a2c787f3ee55d91f4dc8991fa51492893a4719a9e47ed",
+    "test_pipeline.py": "71ff2e7ab54f96e3101333b869d279f7cd1d20ad3c3dffee20cde7cf406db0af",
+    "production_guard.py": "666184a17aa880a7303fc8e767f4ced69cbb8b8a93f61890a77ac1b7c349d988",
+    "parent.py": "6657150073dbbfc4a2f5ce1b872346f8cfb8b0b7bb5b1de491cab6120a9379fb",
+    "test_posix_guard.py": "0ccd23d35b14ca15fb661563fbb9bbf0713468f1d04072681c5fa29d3f2bf015",
+    "run_cpu_tests.py": "1d2dba3cbdef64e5f1c82094ba561ca7f5ec32f4039583961ded2566bd185d6e",
+    "plan_tools.py": "25bfed108ee61024ad91ec0a61a22557793488d8ef52827db60d31f3ea6205de",
+    "linux_production_guard_probe.py": "9bebce64a88b3a322cf9330b85bc463f15f01e39d3e5ca1646648886f051e757",
+    "test_orchestration.py": "4dd7f3b6ac714de5d24152af6479934f7be473f8d3653c40c86ac6f9b070454d"
+  },
+  "dependency_sha256": {
+    "MAB2_GEOMETRY": "661a1ac5acaef743a92067e743455b136b5109075014b3ceb6c4f0545506b049",
+    "MAB2_DURABLE_HELPER": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade"
+  },
+  "synthetic_only": true,
+  "models_loaded": false,
+  "benchmark_read": false,
+  "labels_read": false,
+  "GPU_calls": 0,
+  "GPU_hours": 0
+}

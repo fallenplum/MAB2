@@ -1,0 +1,42 @@
+{
+  "status": "PASS_INDEPENDENT_COLLECTION_CPU_REVIEW",
+  "tests_run": 30,
+  "passed": 28,
+  "skipped": 2,
+  "skip_details": [
+    [
+      "test_real_deadline_alarm_survives_exec (test_posix_guard.PosixGuardTests.test_real_deadline_alarm_survives_exec)",
+      "Production guards require Linux; Windows test is not equivalent"
+    ],
+    [
+      "test_real_parent_death_configuration_and_owned_group_kill (test_posix_guard.PosixGuardTests.test_real_parent_death_configuration_and_owned_group_kill)",
+      "Production guards require Linux; Windows test is not equivalent"
+    ]
+  ],
+  "failures": 0,
+  "errors": 0,
+  "additional_independent_tests": 4,
+  "source_snapshot_sha256": "8eca7837d990257f2234cac86b2590b69ce802cb0d7441ebb5b7f03e9da34ba8",
+  "source_sha256": {
+    "DESIGN.md": "d18fd662dbd42b91681dd209b428e47d43f77bf8b845c899b1ec86f5b1e51e07",
+    "orchestration_core.py": "62806ee4ab096def68a39481e6f27126c064ab70c25f0f99a5da9c9fc2eee79f",
+    "parent.py": "6657150073dbbfc4a2f5ce1b872346f8cfb8b0b7bb5b1de491cab6120a9379fb",
+    "plan_tools.py": "25bfed108ee61024ad91ec0a61a22557793488d8ef52827db60d31f3ea6205de",
+    "production_guard.py": "666184a17aa880a7303fc8e767f4ced69cbb8b8a93f61890a77ac1b7c349d988",
+    "README.md": "524065213deaa4e6900f6df99c94766181a5deb75a8b5b50333fde9bb9b5099e",
+    "run_cpu_tests.py": "1d2dba3cbdef64e5f1c82094ba561ca7f5ec32f4039583961ded2566bd185d6e",
+    "runtime_factory.py": "36e3225fe246d43fa6f47bcd521099f3afac986d5bf51f2a49864eb81b743b8b",
+    "storage.py": "df793fb520d89d43263a2c787f3ee55d91f4dc8991fa51492893a4719a9e47ed",
+    "test_orchestration.py": "4dd7f3b6ac714de5d24152af6479934f7be473f8d3653c40c86ac6f9b070454d",
+    "test_pipeline.py": "71ff2e7ab54f96e3101333b869d279f7cd1d20ad3c3dffee20cde7cf406db0af",
+    "test_posix_guard.py": "0ccd23d35b14ca15fb661563fbb9bbf0713468f1d04072681c5fa29d3f2bf015",
+    "worker.py": "fc0bb7ca591018a64172cdaa832c885eb6846ef174e7d9a96316211673e36e19"
+  },
+  "review_source_sha256": "5da12a490609cfb2e25c8e3eeb588b048c2ccdee9aea2f49c2de2289fe7d2f35",
+  "sources_unchanged": true,
+  "real_data_read": false,
+  "GPU_used": false,
+  "model_runtime_imported": false,
+  "scientific_admission": false,
+  "actual_Linux_guard_probe": "SEPARATE_ROOT_EXECUTION_REQUIRED"
+}

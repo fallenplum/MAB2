@@ -1,0 +1,41 @@
+# Hotpot 正式采集编排器独立审查
+
+**所审 snapshot002 通过独立CPU审核，未见剩余代码阻断问题；这不授予正式数据或GPU准入。** 30项用例中28项通过，2项Linux专属用例明确跳过，零失败、零错误。源码前后字节一致。新guard的真实Linux系统调用证据须单独闭环，不能用Windows结果替代。
+
+快照 SHA256：`8eca7837d990257f2234cac86b2590b69ce802cb0d7441ebb5b7f03e9da34ba8`。独立回执：`audit_001/RECEIPT.json`，SHA256 `1cc64a2d29f6bd2d6576c4a2cd3c6e98d833a5f0e6e33b835eac12615130f2c9`。详细测试日志与所有源哈希同时保留。本审查不修改作者源码、E工作树或Git，不读取真实题、标签、R1/S，不加载模型或使用GPU。
+
+## 数据、协议和权限
+
+编排固定384题、4224个终态，两颗明确seed、四条边各96题。selection、questions、length receipt、collector、科学协议及runtime均绑定来源。输入仅五个无标签字段；实际collector构造的完整payload须匹配按无末尾换行的graph canonical哈希，原输入行继续使用selection的带换行canonical哈希。两种哈希约定没有混用。
+
+长度准备必须声明实际服务器tokenizer等价、绑定两模型/tokenizer身份及collector源；本机粗略长度不能冒充这份证据。正式入口重新按selection/length计算计划并校验原序，实际运行的七个编排文件必须出现在源闭包。必需科学pin不得以空dict或缺项绕过，128/256、三轮、图mask、温度、种子和几何均与既有合同逐项一致。
+
+prepare产物不自动升级为执行plan。执行需独立冻结plan、资源授权及来源相符的admission。工程acceptance须另由root签发，绑定真实qualification、identity、resident关闭、plan、source manifest和closed review；证据在acceptance bundle内按相对路径解析，禁止逃逸。REVIEW_REQUIRED不是工程PASS，工程PASS也不是科学/GPU准入。模型和matrix/durable源码身份与acceptance明确一致。
+
+## 前8题屏障及费用
+
+按双方完整输入token的较大值和UTF-8 ID排序成8个48题层，固定PCG64种子每层抽1个prefix。剩余题保持冻结选入顺序，各worker执行固定子序列。prefix使用正式benchmark题时已经计入该正式轮次和费用，不能算免费工程题。
+
+全部8题/88终态和费用闭合后才生成预测；每条计时记录精确对应index、worker和长度层。按长度层观测与接收worker的已有节点最大耗时取较大值，并计入测得的非负wall残差，至少乘1.25。当前驻留包括模型装载、等待与屏障空转；预测同时检查逐卡、candidate和全局剩余预算。旧qualification事务只归属一次，不以并行墙钟代替各卡驻留之和。
+
+FORECAST和RELEASE均先完整fsync再原子无覆盖发布。child核同一attempt/plan及forecast SHA；错误attempt的释放不能触发第五个本worker单元。缺失、overflow、未知费用或不足余量时停止，不临时改N、cap、边或种子。8个代表的外推只是工程预测，不是未来吞吐尾部保证；外部负载变化和失去缓存的失败路径仍可能触发硬cap。
+
+## 持久化和失败
+
+每个请求采用已审核durable helper；原HF native日志I/O关闭、内存事件保留，生成返回后原文/native一起持久化。矩阵成功才发布完整不可覆盖产物和receipt；基础设施故障保留partial，沿异常链提取已返回但日志未完成的Generation，分别尝试保存各份证据，任何单项写失败不阻止尝试其余证据。持续磁盘故障或尚未返回/硬杀的文本不保证恢复，未知费用不是零。
+
+INPUT_REJECTED作为明确终态保留，不删题或自动重试；其余失败不能填为错答。顶层完成状态与逐条件状态必须一致，prefix不能通过隐藏overflow标记继续。采集器、monitor和cost profile不评分，也不把raw文本、答案或质量复制到公开进度摘要。
+
+parent首次发现单元时核receipt/raw并缓存摘要；末尾所有子进程退出后与首次receipt哈希再比，再完整核raw，避免MATRIX和receipt同时改写后被接受。最终封存前无需每0.25秒重复读取所有长prompt文件。未闭合进程的观察快照明确标为不稳定、驻留下界和未知，不签成完整归档。
+
+## 资源与Linux证据边界
+
+本次正式guard是独立新文件，SHA256 `666184a17aa880a7303fc8e767f4ced69cbb8b8a93f61890a77ac1b7c349d988`，不复用旧资格的固定1760秒上限。parent从Popen前起以monotonic累计每卡实际驻留至观察退出，超时/磁盘/worker失败仅终止自己创建且PGID相符的组；不按cap截断真实费用。child同时核父PID、PDEATHSIG和绝对deadline。模型线程、CUBLAS和离线环境明确固定。
+
+独立附带 `linux_production_guard_probe.py`（SHA256 `9bebce64a88b3a322cf9330b85bc463f15f01e39d3e5ca1646648886f051e757`）供root执行：真实父SIGKILL对子进程、忙循环ALRM、实际kill_owned_group、正常退出、父PID错配、过期deadline和继承屏蔽ALRM，共7项。主30秒硬timer、子最多10秒，异常情况下总界不超过40秒；只操作本次创建的PID/进程组，并对孙进程保留birth identity用于清理。该脚本只在本机做了语法检查，实际Linux回执另存；本报告不预先宣称通过。
+
+## 实际CPU验证
+
+除作者全部26项用例（24通过、2Linux跳过）外，本审核新增4项并通过：错误attempt释放不越过prefix；cost profile不复制任何原文/答案字段；COMPLETE字符串不能掩盖overflow计数；即使raw哈希有效，回执终态顺序改动也被拒绝。完整JSON路径包括prepare→冻结人工plan/admission→load→worker的192题固定人工子序列，以及factory配置、真实durable helper异常救援、父监督384/4224覆盖与各类故障。所有测试只用人工输入，未把测试完成称为真实采集完成。
+
+优势是数据、算子、预算、输出和权限分别绑定，完整失败与负面工程证据可保留。限制是CPU mock不证明实际双模型吞吐、长输入容量、Linux防护或正式完整覆盖；仍需真实资格、Linux探针及root冻结的科学/资源合同。置信度：对所审字节版本CPU路径和来源约束为高；未执行项目不作通过断言。
