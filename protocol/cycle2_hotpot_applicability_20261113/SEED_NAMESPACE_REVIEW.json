@@ -1,0 +1,20 @@
+{
+  "status": "NO_PRIOR_SCIENTIFIC_SEED_COLLISION_IN_FROZEN_PROJECT_SCOPE",
+  "old_branch_commit": "8f9b022b90641a49d828c3500e652d06ee35041c",
+  "numeric_seeds": [
+    26111301,
+    26111302,
+    261113101,
+    261113102,
+    261113103,
+    261113104
+  ],
+  "files_scanned": 109,
+  "scanned_source_manifest_sha256": "73db702c5b850dd767e13c336188a4a18f7055cddfc9a50baebbc551723c95aa",
+  "hits": [],
+  "standalone_global_seed_registry_found": false,
+  "scope": "Frozen prior project protocol/config/experiment text; external projects unknown",
+  "intentional_synthetic_generation_seed_reuse": "Current qualification uses the same two generation constants to test this operator, but its synthetic question IDs are distinct from hotpotqa_ official IDs; seed derivation also includes question ID and node. No synthetic result is scientific evidence.",
+  "derived_seed_collision_audit_after_selection_required": true,
+  "no_silent_seed_change": true
+}
