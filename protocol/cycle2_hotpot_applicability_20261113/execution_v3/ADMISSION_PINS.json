@@ -1,0 +1,6 @@
+{
+  "plan_sha256": "f1e9a857a171baadaa01e58a4e1eb0a4a30b51f19dd561be76a9da2a79134ada",
+  "admission_sha256": "6c7c6904789a1932f7493971008c5da7e6575a059f9c60312b5703a8a3774fff",
+  "budget_sha256": "2f77db82972d1cd008d10f4fb08708403cc4bccb587744b970cc628caed55c44",
+  "GPU_started": false
+}

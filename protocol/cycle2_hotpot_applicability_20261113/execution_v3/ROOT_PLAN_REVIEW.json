@@ -1,0 +1,13 @@
+{
+  "decision": "APPROVED_RESOURCE_ONLY_REBINDING_AFTER_ZERO_CALL_GUARD_REJECTION",
+  "prior_independent_review_sha256": "0938f75c8f133d8474eac6bd1c443466dcda1b43ce99c8e15620d157d2b133e4",
+  "prior_independent_checks": 172,
+  "prior_root_review_sha256": "913d71c9a2c81f0cc48c4917718792eaa28f995b89567fe6138d0ef3608500e3",
+  "resource_amendment_sha256": "7d5770096ffeeefae2379d60c2920b6c51ad6b8960cf9ea70ef33800181e1633",
+  "budget_sha256": "2f77db82972d1cd008d10f4fb08708403cc4bccb587744b970cc628caed55c44",
+  "source_runtime_data_schedule_seed_equal_to_v2": true,
+  "science_equal_except_budget_reference_and_resource_metadata": true,
+  "labels_read": false,
+  "real_model_calls_before_amendment": 0,
+  "requires_same_production_load_execution_plan_checks": true
+}

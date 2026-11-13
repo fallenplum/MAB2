@@ -1,0 +1,32 @@
+{
+  "status": "RESOURCE_PLACEMENT_ONLY_BEFORE_ANY_BENCHMARK_CALL",
+  "previous_admission_sha256": "cc696fd280f362b179fc81bd9b2a4ff15c6d09d9259ef18c75acf8d1949da8fb",
+  "failed_launch_receipt_sha256": "b99a512722733951d54fe620094680cd584f1b7a782c9053f6152c6c87b27f54",
+  "actual_resource_audit_sha256": "b8085320b5fd974bab105e8d68737e2b5ed834175e1ae54ae367149e5dccaa59",
+  "old_GPU_indices": [
+    0,
+    1,
+    2,
+    6
+  ],
+  "new_GPU_indices": [
+    1,
+    2,
+    4,
+    6
+  ],
+  "worker_caps_unchanged": [
+    43020,
+    43020,
+    43020,
+    43020
+  ],
+  "reservation_GPU_hours_unchanged": 47.8,
+  "formal_round_started": false,
+  "old_prelaunch_guard_exit_before_Popen": true,
+  "source_data_seeds_schedule_scientific_metrics_unchanged": true,
+  "shared_GPU_authorization": "User explicitly permits sharing memory-sufficient existing cards",
+  "minimum_free_memory_MiB": 40000,
+  "qualified_peak_allocated_bytes": 29294770688,
+  "limits": "Memory is a current admission check, not a future guarantee; existing jobs remain untouched. Contention enters measured prefix and residency."
+}
