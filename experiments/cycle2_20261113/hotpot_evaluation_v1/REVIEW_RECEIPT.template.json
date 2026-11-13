@@ -1,0 +1,35 @@
+{
+  "schema": "hotpot_closed_archive_score_release_v1",
+  "decision": "UNAPPROVED",
+  "bindings": {
+    "scientific_protocol_sha256": null,
+    "selection_manifest_sha256": null,
+    "plan_sha256": null,
+    "source_manifest_sha256": null,
+    "matrix_protocol_hash": null,
+    "graph_protocol_hash": null,
+    "independent12_protocol_hash": null,
+    "single_protocol_hash": null,
+    "scorer_sha256": null,
+    "statistics_sha256": null,
+    "frontier_sha256": null,
+    "selector_sha256": null,
+    "evaluation_adapter_sha256": null
+  },
+  "scientific_protocol_status": null,
+  "reviewed_scopes": [],
+  "unique_questions": null,
+  "terminal_conditions": null,
+  "runtime_failure_count": null,
+  "all_attempts_closed": false,
+  "physical_ledger_closed": false,
+  "label_vault_sha256": null,
+  "input_overflow_conditions": null,
+  "archive_metadata_sha256": {
+    "RAW_OUTPUT_MANIFEST.json": null,
+    "PARENT_RESIDENCE.json": null,
+    "ATTEMPT_RESULT.json": null
+  },
+  "units": [],
+  "template_only": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "CLOSED_ACTUAL_OCCUPANCY_NOT_SCIENTIFIC_OR_ENGINEERING_ACCEPTANCE",
+  "transaction_id": "C2_HOTPOT_MATRIX_ENGINEERING_QUALIFICATION:52674fdc9a58a9035e169be9115812ac71dbd8e6ad939442a001d07d19555745",
+  "resident_seconds": 642.057382708881,
+  "GPU_hours": 0.1783492729746892,
+  "resident_receipt_sha256": "1de2613bdea54648688f4156f024829e88b460b86ff2533ab102bfe1006d6484",
+  "plan_sha256": "52674fdc9a58a9035e169be9115812ac71dbd8e6ad939442a001d07d19555745",
+  "download_manifest_sha256": "097f6ab91441a478894534bde57a5b81651b52c2955f8d2bb61d0e0ddf6f066c",
+  "original_reserved_GPU_hours": 0.5,
+  "unused_released_GPU_hours": 0.32165072702531083,
+  "future_candidate_cap_attribution_once": true,
+  "formal_round_increment": 0,
+  "unix": 1794531389.7074306
+}

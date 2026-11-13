@@ -1,0 +1,6 @@
+{
+  "status": "CHECKER_ASSERTION_FAILED_BEFORE_ACCEPTANCE",
+  "source_sha256": "1ef21a5a27bbbbebe43a884d58016f46f24df7aa9906c5e06b8a41bee2d3cb41",
+  "cause": "Root checker expected lowercase ok, frozen HFBackend source uses SUCCESS; no experimental artifact changed.",
+  "engineering_acceptance_created": false
+}

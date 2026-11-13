@@ -1,0 +1,20 @@
+test_aggregate_slot_is_found_by_explicit_alias_and_index_not_list_position (test_evaluation_adapter.EvaluationTests.test_aggregate_slot_is_found_by_explicit_alias_and_index_not_list_position) ... ok
+test_cache_logical_cost_omission_rejected (test_evaluation_adapter.EvaluationTests.test_cache_logical_cost_omission_rejected) ... ok
+test_duplicate_selection_ids_rejected_even_with_new_review_hash (test_evaluation_adapter.EvaluationTests.test_duplicate_selection_ids_rejected_even_with_new_review_hash) ... ok
+test_existing_statistics_four_gates_called_without_modification (test_evaluation_adapter.EvaluationTests.test_existing_statistics_four_gates_called_without_modification) ... ok
+test_format_false_scores_zero_even_if_parsed_answer_matches_gold (test_evaluation_adapter.EvaluationTests.test_format_false_scores_zero_even_if_parsed_answer_matches_gold) ... ok
+test_infrastructure_does_not_become_zero_or_success_subset (test_evaluation_adapter.EvaluationTests.test_infrastructure_does_not_become_zero_or_success_subset) ... ok
+test_label_vault_exact_bytes_and_ids_required (test_evaluation_adapter.EvaluationTests.test_label_vault_exact_bytes_and_ids_required) ... ok
+test_labels_are_not_loaded_until_external_archive_review_succeeds (test_evaluation_adapter.EvaluationTests.test_labels_are_not_loaded_until_external_archive_review_succeeds) ... ok
+test_malformed_normalized_answer_rejected_without_raw_fallback (test_evaluation_adapter.EvaluationTests.test_malformed_normalized_answer_rejected_without_raw_fallback) ... ok
+test_missing_unit_duplicate_question_and_missing_terminal_rejected (test_evaluation_adapter.EvaluationTests.test_missing_unit_duplicate_question_and_missing_terminal_rejected) ... ok
+test_named_axes_selection_order_and_true_zero_q_single_cost (test_evaluation_adapter.EvaluationTests.test_named_axes_selection_order_and_true_zero_q_single_cost) ... ok
+test_overflow_cannot_be_used_to_hide_infrastructure_failure (test_evaluation_adapter.EvaluationTests.test_overflow_cannot_be_used_to_hide_infrastructure_failure) ... ok
+test_real_preflight_terminal_zero_keeps384_and_blocks_frontier (test_evaluation_adapter.EvaluationTests.test_real_preflight_terminal_zero_keeps384_and_blocks_frontier) ... ok
+test_scoring_rejects_post_binding_mutation (test_evaluation_adapter.EvaluationTests.test_scoring_rejects_post_binding_mutation) ... ok
+test_wrong_edge_seed_qid_protocol_and_node_hash_rejected (test_evaluation_adapter.EvaluationTests.test_wrong_edge_seed_qid_protocol_and_node_hash_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 43.039s
+
+OK

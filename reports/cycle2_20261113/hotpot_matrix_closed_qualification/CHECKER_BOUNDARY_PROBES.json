@@ -1,0 +1,28 @@
+{
+  "status": "PASS_CPU_CORRUPTION_PROBES",
+  "probes": [
+    {
+      "probe": "logical_cost_omission",
+      "status": "REJECTED_AS_REQUIRED",
+      "rejected_at": "matrix_total_logical/input_tokens"
+    },
+    {
+      "probe": "wrong_original_base",
+      "status": "REJECTED_AS_REQUIRED",
+      "rejected_at": "condition_original_base"
+    },
+    {
+      "probe": "internally_rehashed_prompt_leakage",
+      "status": "REJECTED_AS_REQUIRED",
+      "rejected_at": "independent_complete_prompt_reconstruction"
+    },
+    {
+      "probe": "source_pin_change",
+      "status": "REJECTED_AS_REQUIRED",
+      "rejected_at": "source_exact_13"
+    }
+  ],
+  "original_artifacts_mutated": false,
+  "reviewer_source_sha256": "f9f19d4e05ec02624c4bd37ac8ce8b65a171d094ef5b927a5e67f98ab567573f",
+  "probe_source_sha256": "4e09988f1c1d55c37d75c908fb4e201c068372ba866dc151d4faee39c2dc23de"
+}

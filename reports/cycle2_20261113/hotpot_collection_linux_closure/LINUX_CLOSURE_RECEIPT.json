@@ -1,0 +1,58 @@
+{
+  "status": "PASS_INDEPENDENT_LINUX_CPU_RECEIPT_CLOSURE",
+  "source_snapshot_sha256": "8eca7837d990257f2234cac86b2590b69ce802cb0d7441ebb5b7f03e9da34ba8",
+  "evidence_sha256": {
+    "RECEIPT.json": "a9bd0ae06e7d194a2820c05b0087ccaeda2df65685c8affd4708b44426133798",
+    "STDOUT.txt": "fe4343e129fd89d098e708d3f8b26d65f6cefb6b2199c8a16c82a0ad405b3539",
+    "GUARD_PROBE.json": "2c6a0492cfbbb1fc2246364dfc4533297a36d677143dddf2c514fb2e1f7c3719",
+    "FOLLOWUP_RECEIPT.json": "efbae00e9505353de6c95370ba000e376d31d13979342db971c84532164ecc62"
+  },
+  "run_tests": 26,
+  "run_failures": 0,
+  "run_errors": 0,
+  "run_skips": 0,
+  "run_seconds": 52.699328323826194,
+  "production_guard_tests": [
+    {
+      "test": "real_parent_SIGKILL_terminates_separate_session_child",
+      "status": "PASS",
+      "child_final_state": "absent",
+      "zombie_is_not_running_but_may_not_be_reaped": false
+    },
+    {
+      "test": "actual_absolute_deadline_terminates_busy_loop",
+      "status": "PASS"
+    },
+    {
+      "test": "actual_kill_function_only_stops_its_owned_group",
+      "status": "PASS"
+    },
+    {
+      "test": "normal_exit_does_not_touch_other_owned_process",
+      "status": "PASS"
+    },
+    {
+      "test": "wrong_parent_fails_closed_before_exec",
+      "status": "PASS"
+    },
+    {
+      "test": "expired_deadline_fails_closed_before_exec",
+      "status": "PASS"
+    },
+    {
+      "test": "inherited_blocked_alarm_is_unblocked",
+      "status": "PASS"
+    }
+  ],
+  "guard_seconds": 0.9186071578878909,
+  "guard_sha256": "666184a17aa880a7303fc8e767f4ced69cbb8b8a93f61890a77ac1b7c349d988",
+  "probe_sha256": "9bebce64a88b3a322cf9330b85bc463f15f01e39d3e5ca1646648886f051e757",
+  "review_script_sha256": "6b88a834a783d5e9263ff045030d97ccedba892087a71f08b5fb8f2465d2a489",
+  "reviewer_executed_remote_tests": false,
+  "reviewer_verified_returned_receipts_and_source_pins": true,
+  "remote_execution_by": "parent_agent",
+  "real_questions_or_labels_read": false,
+  "GPU_used": false,
+  "collection_admission_granted": false,
+  "transport_note": "Parent reports initial SSH read timeout; follow-up retrieves completed suite without rerunning it. This audit verifies supplied completed receipt and returned command evidence, not the original timeout."
+}

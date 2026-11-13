@@ -1,0 +1,6 @@
+{
+  "status": "CHECKER_KEY_ERROR_BEFORE_ACCEPTANCE",
+  "source_sha256": "f79d7abe9a4b6905bf8fde28d75d31e846ab3c6cf727f24c2b00478a97acb44c",
+  "cause": "Root checker assumed graph nodes key for separate control operators whose records use explicit slots; original artifacts unchanged.",
+  "engineering_acceptance_created": false
+}

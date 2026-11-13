@@ -1,0 +1,29 @@
+{
+  "status": "FIXED_PRIVATE_SELECTION_COMPLETE_NO_LABELS",
+  "stats": {
+    "duplicate_question_groups": 8,
+    "eligible_representatives": 88439,
+    "exposed_groups_removed": 2000,
+    "exposure_ids_matched_source": 2000,
+    "exposure_ids_not_in_this_train_source": 0,
+    "exposure_question_hashes_matched_source": 0,
+    "pretraining_contamination_guarantee": false,
+    "question_groups": 90439,
+    "questions_per_edge": {
+      "1": 96,
+      "5": 96,
+      "7": 96,
+      "9": 96
+    },
+    "selected_questions": 384,
+    "source_rows": 90447,
+    "unknown_cross_project_exposure": "UNKNOWN"
+  },
+  "questions_jsonl_sha256": "43a1edf8d00cecc15f9edff60e8763ce564d07cea54a1bc01d53d3a1b3ab8cb3",
+  "selection_manifest_sha256": "f64819c79fc233f7ae455d777bc6b51b2023fed7af92ae2ca6a43a9e3109105e",
+  "derived_namespace_keys": 9984,
+  "derived_seed_collisions": 0,
+  "GPU_calls": 0,
+  "labels_read": false,
+  "selected_ids_or_text_published": false
+}

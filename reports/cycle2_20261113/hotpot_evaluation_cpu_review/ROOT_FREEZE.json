@@ -1,0 +1,10 @@
+{
+  "status": "FROZEN_CPU_SCORING_ADAPTER_NO_REAL_LABEL_RELEASE",
+  "evaluation_sha256": "f8ba38be9ce1ef6bbfee66c17606685b117d25c52b947e66937ea5574a6105b8",
+  "original_working_manifest_sha256": "f1fdf79622087ea4c40dce145d60111fc5b37e7b5a53fb7b184bb24763e807a4",
+  "independent_review_sha256": "6eeaebfcd505077bbbaa49b987fd4762cece94e526e3ddfd0a458d00d8a492cb",
+  "CPU_tests_passed": 21,
+  "real_archive_exists": false,
+  "labels_read": false,
+  "real_label_release_authorized": false
+}

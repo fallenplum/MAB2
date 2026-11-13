@@ -1,0 +1,9 @@
+{
+  "status": "CHECKER_FRESH_EQUALITY_TOO_STRICT",
+  "source_sha256": "5aa04a6ab17f6e3efc6e55aeca1a6faad25ff04de9c3c6849fc158766ce6a348",
+  "cause": "output_digest includes generation call_id and timing; must verify each own digest separately and compare semantic fields without the integrity digest.",
+  "different_fields": {
+    "output_digest": 131
+  },
+  "engineering_acceptance_created": false
+}

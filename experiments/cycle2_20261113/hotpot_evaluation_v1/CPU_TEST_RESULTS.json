@@ -1,0 +1,15 @@
+{
+  "status": "PASS_CPU_ONLY_NOT_FROZEN",
+  "tests": 15,
+  "failures": 0,
+  "errors": 0,
+  "fixture_questions": 384,
+  "fixture_terminal_conditions": 4224,
+  "real_questions_read": 0,
+  "real_labels_read": 0,
+  "real_results_read": 0,
+  "gpu_calls": 0,
+  "statistics_helper_unchanged": true,
+  "adapter_sha256": "f8ba38be9ce1ef6bbfee66c17606685b117d25c52b947e66937ea5574a6105b8",
+  "real_label_release_authorized": false
+}

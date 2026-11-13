@@ -1,0 +1,32 @@
+{
+  "decision": "PASS_ROOT_INDEPENDENT_CLOSED_RECONCILIATION",
+  "root_additional_field_comparisons": 3308,
+  "independent_agent_audit_sha256": "3d4783417622e786896b243ffb321aae6927257be439f689c11754015186182e",
+  "independent_agent_check_count": 5571,
+  "physical_calls": 174,
+  "physical_by_model": {
+    "qwen": 80,
+    "mistral": 94
+  },
+  "logical_nodes": 262,
+  "conditions": 22,
+  "fresh_semantics_equal": true,
+  "physical_generation_sums": {
+    "input_tokens": 670168,
+    "output_tokens": 8682,
+    "gpu_seconds": 600.7702636718749,
+    "elapsed_seconds": 600.7886288166046
+  },
+  "resident_seconds": 642.057382708881,
+  "resident_GPU_hours": 0.1783492729746892,
+  "source_manifest_sha256": "adb89dd7f0640da9f46ccf9dcf49e3f1464cfcd0ff18f0dfc5708aea3f79a612",
+  "plan_sha256": "52674fdc9a58a9035e169be9115812ac71dbd8e6ad939442a001d07d19555745",
+  "qualification_original_status_unchanged": true,
+  "new_model_calls": 0,
+  "scientific_admission": false,
+  "limits": [
+    "Synthetic deterministic replay is not benchmark accuracy or proof of general graph-credit signal.",
+    "No GPU regeneration in this review; original raw Generation/native/durable records are reconciled.",
+    "Engineering acceptance alone cannot release real labels or allocate formal GPU budget."
+  ]
+}

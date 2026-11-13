@@ -1,0 +1,31 @@
+{
+  "status": "PASS_INDEPENDENT_CPU_SYNTHETIC_EVALUATION_REVIEW",
+  "tests_run": 21,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_seconds": 76.29700000000594,
+  "author_tests": 15,
+  "independent_tests": 6,
+  "source_manifest_sha256": "f1fdf79622087ea4c40dce145d60111fc5b37e7b5a53fb7b184bb24763e807a4",
+  "source_files_sha256": {
+    "check_preparation.py": "b8854d3a344ae8ecf816d356ce8b1c7f90cf9b0046f7ccd154fc5eb9de859ec3",
+    "CPU_TEST_RESULTS.json": "f80a414546fcdc3b31de471c4042ab9d8243cf4c918f9bec978295c46ef99ca6",
+    "CPU_TESTS.log": "961c87a7824a4bf50a21287d0813cbe29065245530443d520e9f1b2e9f86d8b9",
+    "evaluation_adapter.py": "f8ba38be9ce1ef6bbfee66c17606685b117d25c52b947e66937ea5574a6105b8",
+    "frozen_dependencies/applicability_statistics.py": "3417dc11bc583d72a2ec8c8cc139c6ee490aa039d8eb386c97f7e2aa52060bfe",
+    "frozen_dependencies/hotpot_support.py": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e",
+    "frozen_dependencies/point_frontier.py": "6f641a3ff9c00afc2b045bc08435e42c602df5756747c58a7852f017da7bf7f9",
+    "README.md": "2bf802622af1f7ce9ec602adc05629a971ef685043c973aa0ddbfb7a293c9ad7",
+    "REVIEW_RECEIPT.template.json": "d5d12fa9d531e2f0d73324b976dff003ae6f3625637ef73004b24316cfaefc94",
+    "test_evaluation_adapter.py": "a29da87ffc8912cdc7257b08d3a39466b04f14b6148e51b96731367918a04d85"
+  },
+  "review_script_sha256": "a2420e1520abf61ba4df57dda59308b0f6ec03085735fc71e71cf4babed84b4f",
+  "test_log_sha256": "10e5e1939864ebeecc46289ed156c270f1fc58d7ec1954d92b98a0be50c3953d",
+  "real_dataset_or_labels_read": false,
+  "models_loaded": false,
+  "GPU_used": false,
+  "external_review_authentication_claimed": false,
+  "scientific_or_compute_admission_granted": false,
+  "scope": "Artificial384/4224 schema only; external native/durable audit and trusted release provider remain prerequisites."
+}

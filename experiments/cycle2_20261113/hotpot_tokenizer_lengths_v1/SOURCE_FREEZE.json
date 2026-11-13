@@ -1,0 +1,9 @@
+{
+  "status": "FROZEN_TOKENIZER_ONLY_SOURCE",
+  "source_sha256": "848db2c11d2a68bd0ea3b479fa4400d43b2755b72fa330a592441791ebef3c7b",
+  "author_synthetic_tests": 8,
+  "root_synthetic_replay_tests": 8,
+  "GPU_calls": 0,
+  "labels_read": false,
+  "scope": "Server tokenizer only; source review and synthetic tests do not themselves certify real server lengths."
+}

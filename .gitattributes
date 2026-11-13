@@ -33,3 +33,15 @@ reports/cycle2_20261113/hotpot_matrix_qualification_cpu_review/** -text
 
 experiments/cycle2_20261113/hotpot_collection_runner_v1/** -text
 reports/cycle2_20261113/hotpot_collection_runner_review/** -text
+
+experiments/cycle2_20261113/hotpot_evaluation_v1/** -text
+
+reports/cycle2_20261113/hotpot_evaluation_cpu_review/** -text
+
+experiments/cycle2_20261113/hotpot_tokenizer_lengths_v1/** -text
+
+reports/cycle2_20261113/hotpot_matrix_closed_qualification/** -text
+
+reports/cycle2_20261113/hotpot_collection_linux_closure/** -text
+
+reports/cycle2_20261113/hotpot_selection_metadata/** -text
