@@ -1,0 +1,11 @@
+{
+  "GPU_calls": 0,
+  "elapsed_seconds": 87.34261197899468,
+  "full_artificial_receipt_sha256": "8564fd11566258b816017dbc26ce6019ac8858e5eb203c1390323823483a3412",
+  "labels_read": false,
+  "model_weights_loaded": false,
+  "real_questions_or_outputs_read": false,
+  "source_freeze_sha256": "270ddb8272ab9006961df5a426afb8d75ea06d208e1c1296eb891126720c0b61",
+  "status": "PASS_SERVER_CPU_ENVIRONMENT_ONLY",
+  "tokenizer_witness_check_sha256": "cf00e2517d8d5f08f8b60fa7dc61e30f1f0c7ec59a7e569d7640f177ca748e15"
+}

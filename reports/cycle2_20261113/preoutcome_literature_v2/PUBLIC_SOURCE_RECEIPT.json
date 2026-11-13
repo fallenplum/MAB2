@@ -1,0 +1,30 @@
+{
+  "current_hotpot_inputs_outputs_labels_read": false,
+  "files": {
+    "HYPOTHESES.md": "fd228e6bd7add22c38b2a28d63c4b7df72b79e25c0893a328d3f48cb24e39c9b",
+    "LITERATURE_TREE.md": "bc795cb0e33974c5dff71d7b352dcb97f21ca84d3dc5ebb205ec3fd49b90ac23",
+    "NOVELTY_MATRIX.md": "e3e06d152aefd8909459acd3cbb7a0a9a7512fb82d5f032c5f24b635ad5ab0ed",
+    "PAPERS.json": "6a80bc6fa066e4e0fbf6fe4d72549b317221046410934dcbb447fa2b301be8b0",
+    "REVIEW.md": "bd28580ff43d10291d3ee46f3958ad7330722cc633db4b474c368eb29289431e",
+    "ROOT_SCOPE_NOTE.md": "924a13aaceb509bb0a1a2c5c6a8bab08599023c7ecdbd4a2225b847ed3968363",
+    "SEARCH_LOG.json": "49c7b7479bfca0546bc0556a88527e03d34b145b2fdfcc6d87ae6f73ee6ca1d6",
+    "adversarial_topology_review.md": "ac7e28ef013dbe3b451d70b3b895c23300ea3a37c28b74cd88d0daf84f4f4380",
+    "adversarial_topology_search_log.json": "f51f4ae9f1e88822d706cb865fd482e9024518b795a43ca67fa34f506eb294be"
+  },
+  "new_GPU_hours": 0,
+  "new_formal_rounds": 0,
+  "original_review_receipt_sha256": "9cae5c75dd691119f6f1bf86f810a7abd6208310705ec85a4bc90ce3c8e445f6",
+  "primary_fulltext_files_published": false,
+  "publication_formatting": {
+    "change": "Remove trailing blank EOF lines only; original source files retained.",
+    "files": [
+      "adversarial_topology_review.md",
+      "adversarial_topology_search_log.json"
+    ]
+  },
+  "redactions": {
+    "adversarial_topology_search_log.json": "Two workstation skill-root paths replaced by LOCAL_SKILLS; skill names, versions, queries and source URLs unchanged."
+  },
+  "status": "PUBLIC_BOUNDED_REVIEW_NOT_GPU_ADMISSION",
+  "unix": 1794536444.662873
+}

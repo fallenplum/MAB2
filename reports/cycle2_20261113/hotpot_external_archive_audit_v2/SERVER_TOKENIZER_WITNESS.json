@@ -1,0 +1,36 @@
+{
+  "mistral": {
+    "artificial_chat_tokens": 16,
+    "artificial_text_tokens": 7,
+    "provenance": {
+      "backend_identity_sha256": "2a1bf75ba484482de0fc1af583645c00808570f2c0370a631b51bd6380b98020",
+      "chat_template_reexecuted": true,
+      "files_sha256": {
+        "config.json": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49",
+        "tokenizer.model": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+        "tokenizer_config.json": "0533dec9cfe319163801b6618d0f3ec9cfa126b6288e3df5deca6e32acb09cd2"
+      },
+      "synthetic_only": false,
+      "transformers": "4.54.0"
+    }
+  },
+  "qwen": {
+    "artificial_chat_tokens": 23,
+    "artificial_text_tokens": 6,
+    "provenance": {
+      "backend_identity_sha256": "46d0ac8f422bfd10a0271b039f4478637d53b68c7764d6137bb7f0b6e1648949",
+      "chat_template_reexecuted": true,
+      "files_sha256": {
+        "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+        "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      "synthetic_only": false,
+      "transformers": "4.54.0"
+    }
+  }
+}

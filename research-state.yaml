@@ -9,7 +9,7 @@ budget_gpu_hours_total: 160
 budget_gpu_hours_used: live_private_ledger
 formal_candidate_rounds_total: 5
 formal_candidate_rounds_started: 2
-next_action: monitor_blind_prefix_and_full_collection_then_audit_before_label_release
+next_action: monitor_full_collection_then_review_closed_CPU_audit_before_label_release
 candidate_failure: eliminate_candidate_and_continue
 direction_failure: freeze_direction_and_research_alternatives
 project_stop: explicit_project_level_conditions_only
@@ -21,3 +21,5 @@ answers_or_interim_scores_accessed: false
 closed_GPU_hours_at_admission: 14.64724894903626
 reserved_attempt_GPU_hours: 47.8
 candidate_cap_including_qualification_GPU_hours: 48
+postclosure_CPU_auditor: frozen_server_environment_verified
+automatic_label_release: false

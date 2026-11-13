@@ -1,0 +1,26 @@
+{
+  "status": "PASS_SCOPED_CURRENT_SOURCE_REVIEW_NO_AUTOMATIC_RELEASE",
+  "current_source_sha256": "ddbe8c9467451d2b24be261645c5c87cccb08f7a2c1b2f18265c5d6d50258d19",
+  "current_independent_targeted_checks": 40,
+  "current_targeted_failures": 0,
+  "blocking_findings": [],
+  "old_full_dual_contract_run_status": "FAILED_AUTHOR_SOURCE_CHANGED_DURING_REVIEW_NOT_COUNTED_AS_PASS",
+  "root_new_full_regression": "PENDING_SEPARATE_ROOT_RECEIPT",
+  "artifacts_sha256": {
+    "REVIEW.md": "48d42d7f09efcf2d7624949f8e787a825a39499284220ccf19b4f5dbd529418e",
+    "canonical_audit_001/RESULTS.json": "fa1eb2bea8dbb8b10485bbcd367fc13d28986ee13e63e458beae73d45800411f",
+    "audit_001/SOURCE_CHANGE_FAILURE.json": "f110d1ee3b65086bd2e909c17ff36dfa1e89c5cbbd5166528184b99228bf1213",
+    "audit_001/LINEAGE_TESTS.log": "84c9a772368bce3b5a72313d01730fdc40a226bebecb9a88b0cf2260fca9f0c1",
+    "audit_001/TYPE_EQUALITY_EDGE.json": "bbe5a1eb0fcef5a0a71e5e0183f430a2f52a02603f921cf62f000c72acc8ceaf",
+    "METADATA_CHECK_PROVENANCE.json": "14a3420a6012929cb6b7e1523f56dc5fd48dee5f8530597c24a080f1d2458fe9",
+    "independent_review.py": "9a165702498f516dfb3355445680074cabaa15265b01639e5bad06a054e0eb6a",
+    "check_canonical_lineage.py": "dbd16c2fc13264e96cd4d776cd0ae783174f3a65b06cb18b50172ef17fc0e631"
+  },
+  "real_outputs_read": false,
+  "real_questions_read": false,
+  "labels_read": false,
+  "GPU_hours": 0,
+  "label_extraction_authorized": false,
+  "scoring_authorized": false,
+  "publication_of_private_paths": false
+}

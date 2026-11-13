@@ -1,0 +1,186 @@
+{
+  "status": "PRIMARY_SOURCE_BOUNDED_REVIEW",
+  "date": "2026-11-13",
+  "own_primary_records": [
+    {
+      "id": "vouch2026",
+      "title": "VOUCH: Counterfactual Contracts for Multi-Agent Coordination",
+      "authors": [
+        "Abhay Bhandarkar",
+        "Vedanth Nanesha"
+      ],
+      "year": 2026,
+      "venue": "Findings of ACL: IJCNLP-AACL 2026",
+      "pages": "4345-4368",
+      "url": "https://aclanthology.org/2026.findings-aacl.222/",
+      "pdf": "https://aclanthology.org/2026.findings-aacl.222.pdf",
+      "depth": "Official PDF selected sections",
+      "read_sections": [
+        "title/abstract",
+        "3.1-3.7",
+        "C.10",
+        "C.19-C.22"
+      ],
+      "contribution_boundary": "Verification contracts and adaptive intervention selection pre-exist; verification is not task correctness. No experiment replication."
+    },
+    {
+      "id": "ats2026",
+      "title": "Active Teacher Selection for Reward Learning",
+      "authors": [
+        "Rachel Freedman",
+        "Justin Svegliato",
+        "Kyle Wray",
+        "Stuart Russell"
+      ],
+      "year": 2026,
+      "venue": "Transactions on Machine Learning Research (05/2026)",
+      "url": "https://openreview.net/forum?id=9OEy68av40",
+      "pdf": "https://openreview.net/pdf?id=9OEy68av40",
+      "depth": "Official PDF indexed title page, abstract and introduction excerpts only",
+      "read_sections": [
+        "indexed page 1",
+        "indexed introduction pages 2 and 4 references"
+      ],
+      "access_limitation": "Direct forum/PDF open returned browser-verification page; no challenge bypass, no full-text claim",
+      "contribution_boundary": "When/whom to query versus obtain service utility has explicit prior art. ATS algorithm proof details not verified here."
+    },
+    {
+      "id": "altt2025",
+      "title": "Adaptive Learn-then-Test: Statistically Valid and Efficient Hyperparameter Selection",
+      "authors": [
+        "Matteo Zecchin",
+        "Sangwoo Park",
+        "Osvaldo Simeone"
+      ],
+      "year": 2025,
+      "venue": "ICML 2025, PMLR 267",
+      "pages": "74018-74036",
+      "url": "https://proceedings.mlr.press/v267/zecchin25a.html",
+      "depth": "Official landing metadata/abstract reverified; previous local review retained",
+      "access_limitation": "Old PMLR PDF URL inaccessible; official Download PDF link returned unsupported application/octet-stream",
+      "contribution_boundary": "Sequential data-dependent MHT with e-processes and early termination is prior art; no claim of fresh full-text re-review."
+    },
+    {
+      "id": "zheng2020",
+      "title": "Sequential Bayesian Experimental Design with Variable Cost Structure",
+      "authors": [
+        "Sue Zheng",
+        "David Hayden",
+        "Jason Pacheco",
+        "John W. Fisher III"
+      ],
+      "year": 2020,
+      "venue": "NeurIPS 2020",
+      "url": "https://proceedings.neurips.cc/paper/2020/hash/2adee8815dd939548ee6b2772524b6f2-Abstract.html",
+      "pdf": "https://proceedings.neurips.cc/paper_files/paper/2020/file/2adee8815dd939548ee6b2772524b6f2-Paper.pdf",
+      "depth": "Official PDF selected sections",
+      "read_sections": [
+        "abstract",
+        "3.1 equations 7-9",
+        "3.2",
+        "4.1"
+      ],
+      "contribution_boundary": "Decision-bound improvement divided by state-dependent shared costs, and AE/LUCB comparisons are direct prior art."
+    },
+    {
+      "id": "caet2025",
+      "title": "Cost-Aware Optimal Pairwise Pure Exploration",
+      "authors": [
+        "Di Wu",
+        "Chengshuai Shi",
+        "Ruida Zhou",
+        "Cong Shen"
+      ],
+      "year": 2025,
+      "venue": "AISTATS 2025, PMLR 258",
+      "pages": "4492-4500",
+      "url": "https://proceedings.mlr.press/v258/wu25c.html",
+      "depth": "Official metadata and abstract",
+      "contribution_boundary": "Heterogeneous including zero-cost arms and pairwise exploration pre-exist; full algorithm details not freshly verified."
+    },
+    {
+      "id": "baiwrc2024",
+      "title": "Best Arm Identification with Resource Constraints",
+      "authors": [
+        "Zitian Li",
+        "Wang Chi Cheung"
+      ],
+      "year": 2024,
+      "venue": "AISTATS 2024, PMLR 238",
+      "pages": "253-261",
+      "url": "https://proceedings.mlr.press/v238/li24c.html",
+      "depth": "Official metadata and abstract reverified; previous local selected-section review retained",
+      "contribution_boundary": "Hard resource constraints and deterministic/stochastic resource consumption are prior art."
+    },
+    {
+      "id": "rlfa2023",
+      "title": "Risk-limiting financial audits via weighted sampling without replacement",
+      "authors": [
+        "Shubhanshu Shekhar",
+        "Ziyu Xu",
+        "Zachary Lipton",
+        "Pierre Liang",
+        "Aaditya Ramdas"
+      ],
+      "year": 2023,
+      "venue": "UAI 2023, PMLR 216",
+      "pages": "1932-1941",
+      "url": "https://proceedings.mlr.press/v216/shekhar23a.html",
+      "depth": "Official metadata and abstract reverified; earlier local review of sampling and control-variate construction",
+      "contribution_boundary": "Finite-bank side-information CS and control variates pre-exist; finite-bank guarantee is not future population guarantee."
+    }
+  ],
+  "additional_five_primary_records": "adversarial_topology_review.md and adversarial_topology_search_log.json",
+  "no_duplicate_study_count_claim": true,
+  "retained_preprints_not_upgraded": [
+    {
+      "id": "evosteer",
+      "url": "https://arxiv.org/html/2609.38661v2",
+      "venue": null,
+      "depth": "Prior local selected-section review, not freshly full-read",
+      "reason": "paired alpha-spending is a strong overlapping method"
+    },
+    {
+      "id": "shepherd",
+      "url": "https://arxiv.org/html/2605.10913v3",
+      "venue": null,
+      "depth": "Prior local selected-section review, not freshly full-read",
+      "reason": "affected-suffix replay and validation are overlapping systems principles"
+    }
+  ],
+  "screened_not_promoted": [
+    {
+      "title": "Counterfactual Graph for Multi-Agent LLM Calibration",
+      "url": "https://arxiv.org/abs/2605.30653",
+      "reason": "Abstract-only preprint lead; no venue confirmation; not a basis for exclusionary novelty claims"
+    },
+    {
+      "title": "Balance Risk and Reward: A Batched-Bandit Strategy for Automated Phased Release",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/f02a7dd6bd3d038b51d092d99e74c638-Paper-Conference.pdf",
+      "reason": "Official indexed first page; direct PDF timeout; less direct than ATS/aLTT for this bounded report"
+    },
+    {
+      "title": "epsilon-Best-Arm Identification in Pay-Per-Reward Multi-Armed Bandits",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/e449b9317dad920c0dd5ad0a2a2d5e49-Paper.pdf",
+      "reason": "Indexed first page only; different cost model, no algorithm-level claims"
+    },
+    {
+      "title": "Active Reinforcement Learning: Observing Rewards at a Cost",
+      "url": "https://owainevans.github.io/pdfs/activeRL_nips.pdf",
+      "reason": "Author PDF first-page lead; formal main-conference venue not confirmed; not labelled NeurIPS main"
+    }
+  ],
+  "software_provenance_only": {
+    "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+    "authors": [
+      "Timothy Kassis",
+      "Vinayak Agarwal",
+      "Yuhuan He",
+      "Darshil Patel",
+      "Aubrey M. Brueckner"
+    ],
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2609.00065",
+    "status": "arXiv preprint, not scientific support for MAB2 hypotheses"
+  }
+}

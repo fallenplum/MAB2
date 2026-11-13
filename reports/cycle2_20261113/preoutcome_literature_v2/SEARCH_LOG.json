@@ -1,0 +1,78 @@
+{
+  "scope": "targeted narrative incremental review, not systematic/exhaustive",
+  "window_start_utc": "2026-11-13T01:55:32Z",
+  "recorded_utc": "2026-11-13T02:14:14.699046+00:00",
+  "log_construction": "Exact executed query strings reconstructed from tool-call transcript; no database hit count or PRISMA total invented",
+  "actual_search_tool": "web__run.search_query",
+  "engine_provider_disclosed": false,
+  "google_attempt": {
+    "url": "https://www.google.com/search?q=active+learn+then+test+cost+aware+counterfactual+PMLR",
+    "result": "not accessible via this tool",
+    "google_success_claimed": false
+  },
+  "query_count_this_agent": 17,
+  "queries": [
+    "site.proceedings.mlr.press \"active\" \"learn then test\"",
+    "site.proceedings.neurips.cc \"feedback\" \"opportunity cost\" bandit",
+    "site.aclanthology.org \"counterfactual\" \"multi-agent\" communication",
+    "\"active learn then test\" PMLR",
+    "\"aLTT\" learn test risk control",
+    "\"opportunity cost\" \"feedback\" \"bandit\" neurips",
+    "\"cost-aware\" \"best arm\" \"shared\" PMLR",
+    "site.proceedings.mlr.press \"active\" \"reward\" \"query\" \"cost\" bandits",
+    "site.openreview.net \"Hidden-Utility\" \"bandit\"",
+    "site.aclanthology.org \"graph\" \"credit\" \"revalidation\"",
+    "site.proceedings.neurips.cc \"value of information\" \"metareasoning\"",
+    "\"Active teacher selection for reward learning\" \"2026\"",
+    "site.openreview.net/pdf \"9OEy68av40\" \"cost\"",
+    "\"Active teacher selection\" \"Rachel\"",
+    "site.aclanthology.org \"counterfactual\" \"communication\" \"disagreement\" pruning",
+    "site.proceedings.mlr.press \"G-Designer\" \"task\"",
+    "site.openreview.net \"Active Teacher Selection for Reward Learning\" \"opportunity\""
+  ],
+  "parallel_log": "adversarial_topology_search_log.json",
+  "primary_hosts": [
+    "aclanthology.org",
+    "proceedings.mlr.press",
+    "proceedings.neurips.cc",
+    "openreview.net"
+  ],
+  "reading_actions": [
+    "Official landing pages for metadata",
+    "Official PDF selected-section open/find",
+    "Indexed official PDF excerpts where direct access failed",
+    "Earlier local reviewed primary evidence explicitly retained"
+  ],
+  "not_performed": [
+    "Google Scholar API",
+    "Semantic Scholar API",
+    "18-provider API search",
+    "full citation snowballing",
+    "paper experiment replication",
+    "current Hotpot data access"
+  ],
+  "rejections": [
+    "ResearchGate, ScienceOpen, blogs, social posts and third-party mirrors were not used as scientific evidence",
+    "Preprint and under-review pages were not promoted to accepted venue",
+    "Duplicate G-Designer workshop version not treated as separate independent study",
+    "GTD author metadata discrepancy preserved in parallel review, no unresolved full-author BibTeX fabricated"
+  ],
+  "failures": [
+    {
+      "url": "https://openreview.net/pdf?id=9OEy68av40",
+      "reason": "browser challenge, no bypass"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v267/zecchin25a/zecchin25a.pdf",
+      "reason": "not accessible"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/zecchin25a/zecchin25a.pdf",
+      "reason": "unsupported application/octet-stream"
+    },
+    {
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/f02a7dd6bd3d038b51d092d99e74c638-Paper-Conference.pdf",
+      "reason": "timeout"
+    }
+  ]
+}

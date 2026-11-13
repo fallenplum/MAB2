@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "review_id": "outer_loop_preoutcome_topology_adversarial_v2",
+  "retrieval_date": "2026-11-13",
+  "time_zone": "Asia/Shanghai",
+  "review_type": "bounded_targeted_narrative_review_not_systematic",
+  "reviewer_count": 1,
+  "formal_paper_cap": 5,
+  "authorization": {
+    "read_current_benchmark": false,
+    "read_current_outputs": false,
+    "read_current_labels": false,
+    "read_collection_archives": false,
+    "read_new_main_results": false,
+    "run_models": false,
+    "use_gpu": false,
+    "modify_research_repository": false
+  },
+  "skills": [
+    {
+      "name": "paper-lookup",
+      "version_read": "2.4",
+      "entrypoint": "LOCAL_SKILLS/paper-lookup/SKILL.md"
+    },
+    {
+      "name": "literature-review",
+      "version_read": "1.11",
+      "entrypoint": "LOCAL_SKILLS/literature-review/SKILL.md",
+      "supporting_read": "references/core_workflow.md first 100 lines"
+    }
+  ],
+  "actual_search_tools": [
+    "web__run.search_query",
+    "web__run.open",
+    "web__run.find"
+  ],
+  "google": {
+    "attempted": true,
+    "url": "https://www.google.com/search?q=EvoSteer+Shepherd+multi+agent+topology",
+    "result": "not accessible via this tool",
+    "completed": false,
+    "dedicated_google_tool_found": false
+  },
+  "primary_hosts": [
+    "aclanthology.org",
+    "openreview.net",
+    "proceedings.mlr.press",
+    "papers.neurips.cc"
+  ],
+  "search_limitations": [
+    "Ranked web search; total database coverage and total returned-record population unknown.",
+    "No API export or exhaustive citation-graph crawl.",
+    "No PRISMA-complete search or independent second screening.",
+    "Discovery of other hosts was not used as final method evidence.",
+    "Parent independently reviews VOUCH and sequential validation; not counted as read here."
+  ],
+  "local_literature_only_read": [
+    "cycle2_20261113/literature/NOVELTY_MATRIX.md",
+    "cycle2_20261113/literature/LITERATURE_LEDGER.json relevant paper records"
+  ],
+  "queries": [
+    {
+      "q": "EvoSteer multi agent topology site:aclanthology.org OR site:openreview.net OR site:proceedings.mlr.press OR site:papers.neurips.cc",
+      "purpose": "formal venue and closest prior screening"
+    },
+    {
+      "q": "Shepherd multi agent topology site:aclanthology.org OR site:openreview.net OR site:proceedings.mlr.press OR site:papers.neurips.cc",
+      "purpose": "formal venue and closest prior screening"
+    },
+    {
+      "q": "AgentPrune DyLAN MacNet GPTSwarm site:aclanthology.org OR site:openreview.net OR site:proceedings.mlr.press OR site:papers.neurips.cc",
+      "purpose": "known prior screening"
+    },
+    {
+      "q": "\"EvoSteer\"",
+      "domains": [
+        "aclanthology.org",
+        "openreview.net",
+        "proceedings.mlr.press",
+        "papers.neurips.cc"
+      ]
+    },
+    {
+      "q": "\"Shepherd\" \"multi-agent\"",
+      "domains": [
+        "aclanthology.org",
+        "openreview.net",
+        "proceedings.mlr.press",
+        "papers.neurips.cc"
+      ]
+    },
+    {
+      "q": "\"AgentPrune\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"GPTSwarm\" \"DyLAN\" \"MacNet\"",
+      "domains": [
+        "aclanthology.org",
+        "openreview.net",
+        "proceedings.mlr.press"
+      ]
+    },
+    {
+      "q": "\"EvoSteer: Online Self-Evolving Graph Orchestration\" \"OpenReview\"",
+      "purpose": "unrestricted discovery; no external author-page claim used as formal venue evidence"
+    },
+    {
+      "q": "\"Shepherd: Enabling Programmable Meta-Agents\" \"OpenReview\"",
+      "purpose": "unrestricted discovery only"
+    },
+    {
+      "q": "\"AgentPrune\" \"Communication\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"Dynamic LLM-Agent Network\" \"DyLAN\"",
+      "domains": [
+        "aclanthology.org",
+        "openreview.net",
+        "proceedings.mlr.press"
+      ]
+    },
+    {
+      "q": "\"Cut the Crap\" \"openreview.net/forum\""
+    },
+    {
+      "q": "\"GPTSwarm\" \"proceedings.mlr.press\""
+    },
+    {
+      "q": "\"MacNet\" \"Scaling\" \"ICLR 2025\""
+    },
+    {
+      "q": "\"Cut the Crap: An Economical\" \"3.3\" \"3.4\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"G-Designer\" \"regularization\" \"training\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"Cut the Crap\" \"Q′\" \"pruning\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"Cut the Crap\" \"3.3\" \"one-shot\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"G-Designer\" \"4.4\" \"policy\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"Cut the Crap: An Economical\" \"Published as a conference paper at ICLR 2025\"",
+      "domains": [
+        "openreview.net"
+      ]
+    },
+    {
+      "q": "\"G-Designer\" \"#Training Token\" \"#Overall Token\"",
+      "domains": [
+        "openreview.net"
+      ]
+    }
+  ],
+  "queries_record_note": "Executed query strings reconstructed from tool-call history in this subtask. Search-engine result counts were not exported and are not fabricated.",
+  "included": [
+    {
+      "id": "CAPE_TCTE_EIB",
+      "title": "Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems",
+      "first_author": "Xu Shen",
+      "year": 2025,
+      "venue": "EMNLP 2025 main",
+      "pages": "12347-12361",
+      "doi": "10.18653/v1/2025.emnlp-main.623",
+      "landing": "https://aclanthology.org/2025.emnlp-main.623/",
+      "pdf": "https://aclanthology.org/2025.emnlp-main.623.pdf",
+      "pdf_pages": 15,
+      "reading_depth": "official full PDF accessible; selected sections read, not whole paper line-by-line",
+      "read_sections": [
+        "3.1",
+        "3.2",
+        "EIB-Learner overview",
+        "Appendix training algorithm fragments",
+        "Table 3 cost comparison"
+      ],
+      "estimand": "Fixed-graph agent-output intervention followed by final correctness-flip indicator; degree-weighted topology summary.",
+      "not_equivalent_to": "Signed paired edge-on/off credit or free online correctness signal."
+    },
+    {
+      "id": "GRAPH_GRPO",
+      "title": "Graph-GRPO: Stabilizing Multi-Agent Topology Learning via Group Relative Policy Optimization",
+      "first_author": "Yueyang Cang",
+      "year": 2026,
+      "venue": "Findings of ACL 2026",
+      "pages": "20222-20231",
+      "doi": "10.18653/v1/2026.findings-acl.1010",
+      "landing": "https://aclanthology.org/2026.findings-acl.1010/",
+      "pdf": "https://aclanthology.org/2026.findings-acl.1010v2.pdf",
+      "version": "2",
+      "revision_date": "2026-11-10",
+      "pdf_pages": 10,
+      "reading_depth": "official full PDF accessible; selected sections read",
+      "read_sections": [
+        "3.2",
+        "3.3",
+        "Algorithm 1",
+        "4.1",
+        "4.3",
+        "4.4",
+        "6"
+      ],
+      "estimand": "Mean reward conditional on edge presence, followed by cross-edge normalization.",
+      "baseline_warning": "Table baseline results attributed to Shen et al. 2025; not independently verified common-operator complete-cost reruns.",
+      "independent_counterexample": {
+        "type": "algebra_not_experiment",
+        "edge_distribution": "a,e independent Bernoulli(1/2)",
+        "quality": "Y=1-a",
+        "presence_scores": {
+          "a": 0,
+          "e": 0.5
+        },
+        "true_effect_of_e": 0,
+        "conclusion": "Positive relative score of irrelevant e is possible; does not disprove policy optimization performance."
+      }
+    },
+    {
+      "id": "GTD",
+      "title": "Dynamic Generation of Multi LLM Agents Communication Topologies with Graph Diffusion Models",
+      "first_author": "Eric Hanchen Jiang",
+      "year": 2026,
+      "venue": "ACL 2026 Long Papers",
+      "pages": "38042-38060",
+      "doi": "10.18653/v1/2026.acl-long.1764",
+      "landing": "https://aclanthology.org/2026.acl-long.1764/",
+      "pdf": "https://aclanthology.org/2026.acl-long.1764.pdf",
+      "pdf_pages": 19,
+      "reading_depth": "official full PDF accessible; selected sections read",
+      "read_sections": [
+        "proxy-guided method",
+        "5",
+        "6.2",
+        "7"
+      ],
+      "method": "Conditional discrete graph diffusion guided by lightweight multi-objective reward proxy.",
+      "metadata_discrepancy": {
+        "landing_second_third_authors": [
+          "Levina Li",
+          "Frank Wan"
+        ],
+        "pdf_second_third_authors": [
+          "Mengting Li",
+          "Guancheng Wan"
+        ],
+        "handling": "Use Jiang et al.; do not silently emit an asserted reconciled full bibliography."
+      }
+    },
+    {
+      "id": "AGENTPRUNE",
+      "title": "Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems",
+      "first_author": "Guibin Zhang",
+      "year": 2025,
+      "venue": "ICLR 2025",
+      "landing": "https://openreview.net/forum?id=LkzuPorQ5L",
+      "pdf": "https://openreview.net/pdf?id=LkzuPorQ5L",
+      "accepted_attachment": "https://openreview.net/notes/edits/attachment?id=sRP7zNXruO&name=pdf",
+      "reading_depth": "Official accepted title page and indexed official PDF method/experiment excerpts only; NOT full-text review.",
+      "method_scope_verified": "One-shot pruning of spatial-temporal message-passing graph.",
+      "limits": [
+        "Direct forum/PDF challenged browser.",
+        "Accepted attachment fetch returned content-too-large error (11595860 bytes).",
+        "Under-review version parameters not promoted into accepted-version claims."
+      ]
+    },
+    {
+      "id": "G_DESIGNER",
+      "title": "G-Designer: Architecting Multi-agent Communication Topologies via Graph Neural Networks",
+      "first_author": "Guibin Zhang",
+      "year": 2025,
+      "venue": "ICML 2025",
+      "series": "PMLR 267",
+      "pages": "76678-76692",
+      "landing": "https://proceedings.mlr.press/v267/zhang25cu.html",
+      "official_pdf_index": "https://openreview.net/pdf/ac2d69ee4852bf5e47910fa3e4da09a7322def18.pdf",
+      "pmlr_linked_pdf": "https://raw.githubusercontent.com/mlresearch/v267/main/assets/zhang25cu/zhang25cu.pdf",
+      "reading_depth": "PMLR metadata/abstract plus official ICML PDF indexed sections 5.2-5.4 and Table 2; NOT full-text review.",
+      "method_scope_verified": "Variational graph autoencoder with task virtual node; task-adaptive graph construction.",
+      "cost_scope_verified": "Table 2 explicitly reports training, inference, overall tokens and training/inference wall time.",
+      "version_warning": "Separate ICLR 2025 workshop PDF exists; not confused with ICML accepted paper."
+    }
+  ],
+  "screened_not_deep_read": [
+    {
+      "name": "GPTSwarm",
+      "url": "https://proceedings.mlr.press/v235/zhuge24a.html",
+      "status": "ICML 2024 verified; abstract screening only; earlier background, outside five-paper deep matrix."
+    },
+    {
+      "name": "DyLAN",
+      "url": "https://openreview.net/pdf?id=i43XCU54Br",
+      "status": "Located PDF marked under review ICLR 2024; no acceptance upgrade inferred."
+    },
+    {
+      "name": "MacNet",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/66a026c0d17040889b50f0dfa650e5e0-Abstract-Conference.html",
+      "status": "Official ICLR proceedings discovery only; not read for method claims; beyond four primary-host method-evidence scope."
+    },
+    {
+      "name": "EvoSteer",
+      "status": "Local existing ledger says arXiv preprint and venue null; this bounded primary-host search did not verify formal venue. Absence of a match is not evidence of no publication or no novelty overlap."
+    },
+    {
+      "name": "Shepherd",
+      "status": "Local existing ledger says arXiv preprint and venue null; this bounded primary-host search did not verify formal venue. Absence of a match is not evidence of no publication or no novelty overlap."
+    },
+    {
+      "name": "VOUCH",
+      "url": "https://aclanthology.org/2026.findings-aacl.222/",
+      "status": "Parent-provided neighbor under parent review; not read or counted by this subagent."
+    }
+  ],
+  "access_failures": [
+    {
+      "resource": "Google search webpage",
+      "error": "not accessible via this tool",
+      "fallback": "web__run search plus official primary hosts"
+    },
+    {
+      "resource": "AgentPrune full OpenReview PDF/forum",
+      "error": "browser challenge and accepted attachment content-too-large",
+      "fallback": "official accepted PDF indexed excerpts",
+      "full_text_read": false
+    },
+    {
+      "resource": "G-Designer PMLR-linked raw PDF",
+      "error": "web unsupported application/octetstream; local curl DNS resolution failed for raw.githubusercontent.com",
+      "fallback": "PMLR metadata and official OpenReview PDF indexed excerpts",
+      "download_succeeded": false,
+      "full_text_read": false
+    }
+  ],
+  "novelty_assessment": {
+    "already_prior": [
+      "task-conditioned topology generation",
+      "spatial-temporal pruning",
+      "graph value proxy",
+      "groupwise edge scoring",
+      "topology-conditioned information propagation diagnosis"
+    ],
+    "not_established_by_this_review": "No primary-paper absence proof; no claim that full credit-revalidation mechanism is novel.",
+    "remaining_hypothesis_count": 1,
+    "new_candidate_nominated": false,
+    "new_gpu_authorized": false
+  },
+  "evidence_scope": "Literature reasoning only; no numerical claim about current or new experiments; no independent reproduction of cited paper outcomes."
+}
