@@ -1,0 +1,11 @@
+{
+  "status": "FAILED_SYNTHETIC_TEST_ATTEMPT_001",
+  "tests": 10,
+  "failures": 1,
+  "source_sha256": "5f92a0afe93246c13bba6a8931453dbb2f67d62c6c146bf4dd3a3f14aee30801",
+  "test_sha256": "5999d45550dfd1572cbe001fffb61a4c6ffc93a0e5d43f7706a52f740e24bbcc",
+  "failure": "Fixture expected a strasse? after newline before question mark. Required whitespace-collapse normalizer correctly returns a strasse ?. Test expectation will be corrected; algorithm unchanged.",
+  "elapsed_unittest_seconds": 0.866,
+  "real_data_read": false,
+  "gpu_hours": 0
+}

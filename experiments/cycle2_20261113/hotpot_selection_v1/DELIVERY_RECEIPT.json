@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-11-12T23:43:22.100737+00:00",
+  "status": "PREPARATION_COMPLETE_NO_REAL_SELECTION",
+  "runtime": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "pyarrow": "23.0.0",
+    "unicode_database": "14.0.0"
+  },
+  "artifacts": {
+    "select_hotpot.py": {
+      "sha256": "5edc8dc62b349be49c2c939c9c3f93ba1a8795b3c6fc7c951aec3ab9cd3d8bfd",
+      "bytes": 18566
+    },
+    "test_select_hotpot.py": {
+      "sha256": "e245fc8e0d05ac9b67c52e1a11b80a99b0fb79db2bd717802d7bdf413dacf015",
+      "bytes": 12186
+    },
+    "README.md": {
+      "sha256": "b98783d60293270f990605a85a07d44dfc3ec13afd33ed558d1fc0ada4583d53",
+      "bytes": 6552
+    },
+    "SCHEMA_EXAMPLES.json": {
+      "sha256": "9ed6d3068e4f939d97c315bda3d1a5152f9f11fa6ad89462d2d13d61d4fc6e08",
+      "bytes": 2039
+    },
+    "requirements.txt": {
+      "sha256": "62c8e5f6369e009ef510e2ce444c2f8adcd5911238a21fd9f114118aa0c39a01",
+      "bytes": 30
+    },
+    "SYNTHETIC_TEST_ATTEMPT_001.json": {
+      "sha256": "deb54245c6d4e5636a5da1c694069650241bb5fc108bc9fce867778fe9fa11b6",
+      "bytes": 557
+    }
+  },
+  "tests": [
+    {
+      "attempt": 1,
+      "status": "FAIL",
+      "tests": 10,
+      "failures": 1,
+      "receipt": "SYNTHETIC_TEST_ATTEMPT_001.json",
+      "interpretation": "Incorrect test expectation about preserved whitespace before punctuation; fixed test only."
+    },
+    {
+      "attempt": 2,
+      "status": "PASS",
+      "tests": 10,
+      "unittest_seconds": 0.757,
+      "tool_command_seconds": 2.0557369,
+      "source_sha256": "5f92a0afe93246c13bba6a8931453dbb2f67d62c6c146bf4dd3a3f14aee30801",
+      "test_file_hash_retained": false
+    },
+    {
+      "attempt": 3,
+      "status": "PASS",
+      "tests": 12,
+      "unittest_seconds": 0.916,
+      "tool_command_seconds": 2.2908809,
+      "source_sha256": "5edc8dc62b349be49c2c939c9c3f93ba1a8795b3c6fc7c951aec3ab9cd3d8bfd",
+      "test_sha256": "e245fc8e0d05ac9b67c52e1a11b80a99b0fb79db2bd717802d7bdf413dacf015"
+    }
+  ],
+  "validation_scope": [
+    "Synthetic question-group representative and whole-group exposure checks.",
+    "Synthetic actual Parquet schema/hash/projection checks; projection guard asserts allowed five columns only.",
+    "Default preflight never invokes row decoder.",
+    "Independent expected immutable revision pin mismatch rejected.",
+    "Explicit admission binds source/protocol/exposure/source-code/output directory.",
+    "No overwrite, silent ID collapse, old-normalizer hash reuse, or context truncation."
+  ],
+  "boundaries": {
+    "real_parquet_opened": false,
+    "real_questions_selected": 0,
+    "real_question_or_label_rows_read": 0,
+    "synthetic_label_columns_created_for_projection_test": true,
+    "gpu_hours": 0,
+    "E_or_git_mutations": false,
+    "label_vault_created": false,
+    "online_revision_provenance_verified": false,
+    "actual_official_source_hashes_supplied_or_used": false,
+    "independent_code_review": "NOT_COMPLETED"
+  },
+  "handoff": "Parent supplies already audited official two-file byte pins, immutable revision, reviewed exposure manifest and frozen scientific protocol. Real selection still requires separately pinned private CPU-selection admission. GPU admission remains separate."
+}

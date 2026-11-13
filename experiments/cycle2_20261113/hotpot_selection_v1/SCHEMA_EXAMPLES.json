@@ -1,0 +1,56 @@
+{
+  "status": "SCHEMA_EXAMPLES_ONLY_NOT_AN_APPROVAL",
+  "source_example": {
+    "schema_version": "1.0",
+    "status": "CANDIDATE_NOT_FROZEN",
+    "dataset_id": "REQUIRED_FROM_UPSTREAM_AUDIT",
+    "revision": "REQUIRED_40HEX",
+    "config": "distractor",
+    "split": "train",
+    "source_audit_sha256": "REQUIRED_SHA256",
+    "read_columns": [
+      "id",
+      "question",
+      "context",
+      "type",
+      "level"
+    ],
+    "parquet_files": [
+      {
+        "path": "train-00000-of-00002.parquet",
+        "sha256": "REQUIRED_SHA256",
+        "num_rows": "REQUIRED_INTEGER"
+      },
+      {
+        "path": "train-00001-of-00002.parquet",
+        "sha256": "REQUIRED_SHA256",
+        "num_rows": "REQUIRED_INTEGER"
+      }
+    ]
+  },
+  "exposure_example": {
+    "schema_version": "1.0",
+    "id_namespace": "hotpot_raw",
+    "ids": [],
+    "question_group_hashes": [],
+    "question_normalizer": "nfkc_unicode_whitespace_casefold_v1",
+    "content_hashes": [],
+    "content_hash_algorithm": "canonical_question_context_json_utf8_sha256_v1",
+    "known_records_scope": "REQUIRED: merge and review all known records, including capacity probes; these empty example lists are not real coverage",
+    "unknown_cross_project_exposure": "UNKNOWN"
+  },
+  "admission_example": {
+    "schema_version": "1.0",
+    "action": "SELECT_HOTPOT_APPLICABILITY_384",
+    "decision": "NOT_APPROVED",
+    "source_descriptor_sha256": "REQUIRED_SHA256",
+    "protocol_sha256": "REQUIRED_SHA256",
+    "exposure_manifest_sha256": "REQUIRED_SHA256",
+    "selector_sha256": "REQUIRED_SHA256",
+    "output_directory": "REQUIRED_ABSOLUTE_NEW_PRIVATE_DIRECTORY",
+    "data_classification": "PRIVATE_NO_LABELS",
+    "gpu_authorized": false
+  },
+  "protocol_instruction": "Use the frozen full PROTO.json from hotpot_applicability_contract_stage, not a fabricated minimal example. GPU admission remains separate.",
+  "revision_instruction": "Pass the upstream audited immutable revision independently as --expected-revision; do not infer it from Parquet bytes."
+}
