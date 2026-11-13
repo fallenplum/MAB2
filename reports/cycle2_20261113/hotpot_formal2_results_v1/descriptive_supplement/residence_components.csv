@@ -1,0 +1,5 @@
+worker_index,physical_returned_requests,parent_observed_residence_seconds,observed_model_load_section_wall_seconds,sum_returned_backend_elapsed_seconds,unattributed_residence_balance_seconds,exact_barrier_wait_seconds,exact_GPU_initialization_seconds
+0,8352,28318.518219623016,32.48285455489531,27635.008196565555,651.0271685025655,unknown,unknown
+1,8352,30575.613469853066,32.22407767479308,29847.23437113664,696.1550210416317,unknown,unknown
+2,8352,29392.520100712078,29.195823508081958,28714.26295984327,649.0613173607271,unknown,unknown
+3,8352,28996.211029886035,28.880853705806658,28325.190537491813,642.1396386884153,unknown,unknown

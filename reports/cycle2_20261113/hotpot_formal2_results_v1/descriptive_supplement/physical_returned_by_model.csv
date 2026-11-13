@@ -1,0 +1,3 @@
+scope,model,calls,input_tokens,output_tokens,CUDA_event_seconds,model_elapsed_seconds,peak_allocated_bytes
+physical_returned_generations,qwen,14592,24724722,619181,40742.353171692,40763.820749190636,22953275392
+physical_returned_generations,mistral,18816,37062615,897195,73728.89228283681,73757.87531584664,28410411008

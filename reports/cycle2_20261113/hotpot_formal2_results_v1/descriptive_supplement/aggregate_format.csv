@@ -1,0 +1,12 @@
+condition,conditions,aggregate_format_ok,aggregate_format_failed,input_rejected_not_format_tested,format_denominator
+S1/A,384,384,0,0,384
+S1/B,384,382,2,0,384
+S1/NO_EDGE,384,383,1,0,384
+S1/A_MINUS_E,384,382,2,0,384
+S1/B_MINUS_E,384,383,1,0,384
+S1/INDEPENDENT12,384,381,3,0,384
+S1/SINGLE_M,384,340,44,0,384
+S2/A,384,383,1,0,384
+S2/B,384,381,3,0,384
+S2/A_MINUS_E,384,383,1,0,384
+S2/B_MINUS_E,384,383,1,0,384
