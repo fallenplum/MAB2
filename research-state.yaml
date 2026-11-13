@@ -17,6 +17,6 @@ paper_status: evidence_pending
 
 r1_status: original_point_gate_failed_negative_retained
 r2_status: G2_NO_GO_current_bank_and_quota
-r3_status: screen_not_admitted_independent_review_running
+r3_status: not_admitted_independent_replay_pass
 independent12_status: engineering_qualified_no_accuracy_claim
 budget_gpu_hours_verified: 14.468899676061572

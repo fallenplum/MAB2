@@ -43,3 +43,5 @@ service confirmation and repeated-learning confirmation require different units;
 five seeds cannot manufacture independent questions or banks.
 
 2026-11-13 closure: R1 full-minus-uniform -0.003125 (eight-episode exploratory 95% interval [-0.028125,0.016666667]); R2 risk ratio 3.450685654. Preserve both negatives. The descriptive architecture A/B label incident was repaired from 384 raw graphs in new run_002; original run_001 stays quarantined. Project remains ACTIVE and the new Hotpot applicability candidate is not admitted. See reports/cycle2_20261113/r1_completed_development.
+
+R3 closure: independently replayed all 2,072 trajectories and 170,580 purchases; gap_bundle/best baseline=1.005212858, including252 old-bank cost=1.001894537. Original NOT_ADMITTED gate remains. Offline oracle=0.726324935 only shows finite-bank certificate potential. No S/real GPU/token/future-service benefit is established.
