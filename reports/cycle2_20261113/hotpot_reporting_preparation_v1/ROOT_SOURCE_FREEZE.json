@@ -1,0 +1,30 @@
+{
+  "actual_hotpot_quality_read": false,
+  "author_manifest_sha256": "28220bd1db8781f2502499c3a36de20cfec6b307fbc8bf30b8409642f93e8d46",
+  "files": {
+    "experiments/cycle2_20261113/hotpot_reporting_v1/AUTHOR_SOURCE_MANIFEST.json": "28220bd1db8781f2502499c3a36de20cfec6b307fbc8bf30b8409642f93e8d46",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/FIGURE_CONTRACT.md": "8d51395d97291f5301220ef4cbf4b1147c5ddf430f2dff31bb445028dbdf4fdf",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/FROZEN_REPORTING_PLAN.md": "fc1ec977b51a08ba19b39236409ed1c3361f3f58a348cc6e33df4e050f6a4d31",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/QA_REPORT.md": "d38917f7863e5139ee9ef584191ad248f454b53edc2b07d1a7560aa322c9a547",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/README.md": "6d5ebb299a1baaadf0ae64d88ab7843644b65f2dfb6cfdff0319cfd6c0c5f1ff",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/check_preparation.py": "d067bd2d02d24a0c3591798f45e0037e64cc7d438ea25bc7c660b21b0009a5d9",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/check_render.py": "faabf05eb4e025846641130506281d89a2402887590ad4c8dd7dbd4272df730c",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/plotting.py": "9de4b9ebc7125a9e1eba80e13695a6ed6c74dcbcd83703a629eecd5aed8d114b",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/report_cli.py": "f5f248bc651576592baed069a6718c6e022d4636ee67f1280714a0d5518d1ff7",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/reporting.py": "839ccf19ac81b48eb1ef7f7a43e6a198e2d7cb4d7aca213621c786939eabc8ff",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/synthetic_fixture.py": "b216d2dfb628278faaf1811d6048a8f5ed988483e90ecbb8026121d7e0e843ce",
+    "experiments/cycle2_20261113/hotpot_reporting_v1/test_reporting.py": "4078acc42aef4abd4fc9493bf530e965f518622d5c452c55481dbbcd44836356",
+    "reports/cycle2_20261113/hotpot_reporting_preparation_v1/INDEPENDENT_REVIEW.md": "ce22b2b6393b79f2e058e9857e8616e7c757f58ffe61d180dc9fb6baad217516",
+    "reports/cycle2_20261113/hotpot_reporting_preparation_v1/INDEPENDENT_REVIEW_RECEIPT.json": "e783864bb10874ce0df9934dd96b59e60192d55f41df02b1fe61d1c97584fa57",
+    "reports/cycle2_20261113/hotpot_reporting_preparation_v1/ROOT_REVIEW.md": "7ac09ad9a37a88ac3779ce9cb61f73c853d459b4dacc310d5323fa76cca97075"
+  },
+  "full_cost_reporting_completed": false,
+  "independent_review_sha256": "e783864bb10874ce0df9934dd96b59e60192d55f41df02b1fe61d1c97584fa57",
+  "new_GPU_hours": 0,
+  "new_formal_rounds": 0,
+  "private_artifacts_published": false,
+  "root_actual_result_review_still_required": true,
+  "scientific_sources_changed": false,
+  "status": "ROOT_REVIEWED_PREOUTCOME_REPORTING_SOURCE_ONLY",
+  "unix": 1794548842.3125985
+}

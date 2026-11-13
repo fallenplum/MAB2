@@ -1,0 +1,57 @@
+{
+  "status": "PASS_SCOPED_REPORTING_ENGINEERING_REVIEW_WITH_NONBLOCKING_NOTE",
+  "created_utc": "2026-11-13T05:45:42.244539+00:00",
+  "source_manifest_sha256": "28220bd1db8781f2502499c3a36de20cfec6b307fbc8bf30b8409642f93e8d46",
+  "source_sha256": {
+    "FIGURE_CONTRACT.md": "8d51395d97291f5301220ef4cbf4b1147c5ddf430f2dff31bb445028dbdf4fdf",
+    "FROZEN_REPORTING_PLAN.md": "fc1ec977b51a08ba19b39236409ed1c3361f3f58a348cc6e33df4e050f6a4d31",
+    "QA_REPORT.md": "d38917f7863e5139ee9ef584191ad248f454b53edc2b07d1a7560aa322c9a547",
+    "README.md": "6d5ebb299a1baaadf0ae64d88ab7843644b65f2dfb6cfdff0319cfd6c0c5f1ff",
+    "check_preparation.py": "d067bd2d02d24a0c3591798f45e0037e64cc7d438ea25bc7c660b21b0009a5d9",
+    "check_render.py": "faabf05eb4e025846641130506281d89a2402887590ad4c8dd7dbd4272df730c",
+    "plotting.py": "9de4b9ebc7125a9e1eba80e13695a6ed6c74dcbcd83703a629eecd5aed8d114b",
+    "report_cli.py": "f5f248bc651576592baed069a6718c6e022d4636ee67f1280714a0d5518d1ff7",
+    "reporting.py": "839ccf19ac81b48eb1ef7f7a43e6a198e2d7cb4d7aca213621c786939eabc8ff",
+    "synthetic_fixture.py": "b216d2dfb628278faaf1811d6048a8f5ed988483e90ecbb8026121d7e0e843ce",
+    "test_reporting.py": "4078acc42aef4abd4fc9493bf530e965f518622d5c452c55481dbbcd44836356"
+  },
+  "blocking_findings": [],
+  "nonblocking_findings": [
+    {
+      "file": "plotting.py",
+      "line": 174,
+      "description": "Standalone figure02 should state original approximate Bonferroni bootstrap, four comparisons and family alpha .05; no claim of exact finite-sample coverage."
+    }
+  ],
+  "independent_numeric_assertions": 62,
+  "independent_plot_cli_checks": 10,
+  "author_suite_reused_not_rerun": {
+    "tests_passed": 9,
+    "receipt_sha256": "dde37bcbec1b08e4054e831610ee8bb23a1a2aa7771918c507881d025c778cf6"
+  },
+  "frozen_scorer_statistics_or_model_executed": false,
+  "real_hotpot_questions_outputs_labels_results_read": false,
+  "GPU_hours": 0,
+  "author_sources_modified": false,
+  "repository_modified": false,
+  "label_or_scoring_or_publication_or_GPU_authorization_granted": false,
+  "full_reporting_plan_or_actual_experiment_completed": false,
+  "unavailable_fields": [
+    "per-condition format counts",
+    "finish reasons",
+    "seven logical-condition cost rows",
+    "physical numeric ledger",
+    "length strata"
+  ],
+  "review_files": {
+    "finalize_review.py": "f57fad15fa0ddf2f7853bdf5e9160f53860d9d6934740893d1f37ee42e587514",
+    "NUMERIC_REVIEW_RECEIPT.json": "35d6083d09a46fff386fc7b1db8485819cb41e25fcc7c9621f686dcb20d32247",
+    "plot_boundary_checks.py": "8d9229859db4201933d8cd2aa4c56b7ee2b04bc686e8a28b10ca8bc71a392d44",
+    "plot_review.md": "e6149be09a84b86d0fd9e4ee96ffb13377163db415182ca6d6bd516c85f24540",
+    "plot_review_receipt.json": "663d7d905e59804571cd40e28c87e035e955ebab20ec11cff7ee481ddcfad9b2",
+    "plot_test_receipt.json": "31131a7275478dae72527e712886557a7426fea9c6c2e887a5e8cef104b119af",
+    "REVIEW.md": "ce22b2b6393b79f2e058e9857e8616e7c757f58ffe61d180dc9fb6baad217516",
+    "review_numeric_boundaries.py": "9aee4fbf496974b9df487b5e29f47c75f1c02870e6f378a416d828ab8dcb6b26"
+  },
+  "python": "3.11.14 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 18:30:03) [MSC v.1929 64 bit (AMD64)]"
+}
