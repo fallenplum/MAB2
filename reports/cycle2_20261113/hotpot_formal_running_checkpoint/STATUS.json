@@ -1,0 +1,20 @@
+{
+  "status": "RUNNING_PAID_BLIND_PREFIX_NOT_A_SCIENTIFIC_RESULT",
+  "first_request_observed_unix": 1794533555.6663613,
+  "questions": 384,
+  "conditions": 4224,
+  "workers": 4,
+  "formal_rounds_started": 2,
+  "formal_round_cap": 5,
+  "plan_sha256": "f1e9a857a171baadaa01e58a4e1eb0a4a30b51f19dd561be76a9da2a79134ada",
+  "admission_sha256": "6c7c6904789a1932f7493971008c5da7e6575a059f9c60312b5703a8a3774fff",
+  "closed_GPU_hours": 14.64724894903626,
+  "reserved_formal_attempt_GPU_hours": 47.8,
+  "global_cap_GPU_hours": 160,
+  "qualification_GPU_hours_in_current_48h_cap": 0.1783492729746892,
+  "answers_or_scores_accessed": false,
+  "source_preparation_independent_checks": 172,
+  "known_prelaunch_resource_change": "Idle-only launch guard rejected before Popen; resource placement v3 uses existing shared hardware under user authorization.",
+  "monitoring": "20-second prefix observations; every30min after full-cost forecast release; no app job automation",
+  "candidate_failure_does_not_stop_project": true
+}
