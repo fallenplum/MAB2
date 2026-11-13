@@ -1,0 +1,25 @@
+{
+  "status": "RESOURCE_ONLY_PREFIRSTCALL_AMENDMENT",
+  "prior_execution_contract_commit": "44f454e6b29af3385b77fa2c43452bad6bb87c3d",
+  "old_protocol_sha256": "be254c4f0a4ff9b2e7c8dc17ceb6d4f17ef2e4ac578eaceb6cd6337e869f6b58",
+  "old_worker_caps_seconds": [
+    43039,
+    43039,
+    43039,
+    43039
+  ],
+  "new_worker_caps_seconds": [
+    43020,
+    43020,
+    43020,
+    43020
+  ],
+  "candidate_cap_seconds_unchanged": 172800,
+  "prior_qualification_seconds_unchanged": 642.057382708881,
+  "shutdown_headroom_seconds": 77.94261729111895,
+  "formal_questions_executed": 0,
+  "scientific_results_seen": false,
+  "v1_deployed": false,
+  "v1_retained": true,
+  "limitations": "Extra headroom is conservative engineering allowance, not a proved exit-latency upper bound; actual residence is never clamped."
+}
