@@ -1,0 +1,9 @@
+{
+  "followup_current_source_sha256": "ddbe8c9467451d2b24be261645c5c87cccb08f7a2c1b2f18265c5d6d50258d19",
+  "loaded_old_source_sha256": "0425515a9a884f030302325bd4cef11adc307df6eb02b5c32441a650099c2624",
+  "original_failure_receipt_sha256": "f110d1ee3b65086bd2e909c17ff36dfa1e89c5cbbd5166528184b99228bf1213",
+  "original_failure_retained": true,
+  "reason": "Root tightened the scientific comparison while an independent old-source test was running; its final immutable-source check rejected the change.",
+  "scientific_results_changed": false,
+  "status": "NOT_COUNTED_AS_FULL_PASS"
+}

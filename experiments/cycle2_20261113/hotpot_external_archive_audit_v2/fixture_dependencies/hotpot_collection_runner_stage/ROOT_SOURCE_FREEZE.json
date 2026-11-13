@@ -1,0 +1,31 @@
+{
+  "status": "FROZEN_SOURCE_CPU_AND_LINUX_REVIEW_PASS_NOT_GPU_ADMISSION",
+  "original_snapshot_sha256": "8eca7837d990257f2234cac86b2590b69ce802cb0d7441ebb5b7f03e9da34ba8",
+  "source_files": {
+    "DESIGN.md": "d18fd662dbd42b91681dd209b428e47d43f77bf8b845c899b1ec86f5b1e51e07",
+    "orchestration_core.py": "62806ee4ab096def68a39481e6f27126c064ab70c25f0f99a5da9c9fc2eee79f",
+    "parent.py": "6657150073dbbfc4a2f5ce1b872346f8cfb8b0b7bb5b1de491cab6120a9379fb",
+    "plan_tools.py": "25bfed108ee61024ad91ec0a61a22557793488d8ef52827db60d31f3ea6205de",
+    "production_guard.py": "666184a17aa880a7303fc8e767f4ced69cbb8b8a93f61890a77ac1b7c349d988",
+    "README.md": "524065213deaa4e6900f6df99c94766181a5deb75a8b5b50333fde9bb9b5099e",
+    "run_cpu_tests.py": "1d2dba3cbdef64e5f1c82094ba561ca7f5ec32f4039583961ded2566bd185d6e",
+    "runtime_factory.py": "36e3225fe246d43fa6f47bcd521099f3afac986d5bf51f2a49864eb81b743b8b",
+    "storage.py": "df793fb520d89d43263a2c787f3ee55d91f4dc8991fa51492893a4719a9e47ed",
+    "test_orchestration.py": "4dd7f3b6ac714de5d24152af6479934f7be473f8d3653c40c86ac6f9b070454d",
+    "test_pipeline.py": "71ff2e7ab54f96e3101333b869d279f7cd1d20ad3c3dffee20cde7cf406db0af",
+    "test_posix_guard.py": "0ccd23d35b14ca15fb661563fbb9bbf0713468f1d04072681c5fa29d3f2bf015",
+    "worker.py": "fc0bb7ca591018a64172cdaa832c885eb6846ef174e7d9a96316211673e36e19"
+  },
+  "independent_CPU_receipt_sha256": "1cc64a2d29f6bd2d6576c4a2cd3c6e98d833a5f0e6e33b835eac12615130f2c9",
+  "Linux_CPU_receipt_sha256": "a9bd0ae06e7d194a2820c05b0087ccaeda2df65685c8affd4708b44426133798",
+  "Linux_production_guard_receipt_sha256": "2c6a0492cfbbb1fc2246364dfc4533297a36d677143dddf2c514fb2e1f7c3719",
+  "Linux_tests": 26,
+  "Linux_guard_checks": 7,
+  "initial_SSH_read_timeout_seconds": 45,
+  "original_CPU_run_seconds": 52.699328323826194,
+  "timeout_recovery": "Original remote CPU process completed without restart; reconnect read its closed receipt. Initial transport timeout retained privately.",
+  "synthetic_only": true,
+  "scientific_outcomes_seen": false,
+  "GPU_admission": false,
+  "limits": "CPU and process guard verification does not certify future benchmark completion, effects or budget fit."
+}

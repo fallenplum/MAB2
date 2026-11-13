@@ -53,3 +53,6 @@ protocol/cycle2_hotpot_applicability_20261113/execution_v2/** -text
 protocol/cycle2_hotpot_applicability_20261113/execution_v3/** -text
 
 reports/cycle2_20261113/hotpot_formal_running_checkpoint/** -text
+
+experiments/cycle2_20261113/hotpot_external_archive_audit_v2/** -text
+reports/cycle2_20261113/hotpot_external_archive_audit_v2/** -text

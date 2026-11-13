@@ -1,0 +1,8 @@
+{
+  "status": "PASS_CLI_DEFAULT_INPUT_ISOLATION",
+  "cases": 2,
+  "benchmark_or_labels_read": false,
+  "GPU_calls": 0,
+  "test_source_sha256": "fdbfc44562a0a24b8d61dfeca1f45f345e1a0229a091b278b0aac654c2fd0d9a",
+  "cli_source_sha256": "c2aab6b522e71d03ee8bed88e4a920296b6777ac90685e817e80fadc2a3b721f"
+}

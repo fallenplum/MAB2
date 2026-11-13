@@ -1,0 +1,28 @@
+{
+  "status": "TEMPLATE_UNAPPROVED_NO_REAL_IO",
+  "plan_sha256": null,
+  "admission_sha256": null,
+  "execution_protocol_sha256": null,
+  "scientific_design_key": "EXPLICIT_ORIGINAL_DESIGN_AUXILIARY_KEY",
+  "source_manifest_key": "EXPLICIT_AUXILIARY_KEY",
+  "source_manifest_sha256": null,
+  "runner_snapshot_key": "EXPLICIT_AUXILIARY_KEY",
+  "prior_ledger_key": "EXPLICIT_AUXILIARY_KEY",
+  "prior_ledger_sha256": null,
+  "label_vault_sha256": null,
+  "bindings": {
+    "scientific_protocol_sha256": null,
+    "selection_manifest_sha256": null,
+    "plan_sha256": null,
+    "source_manifest_sha256": null,
+    "matrix_protocol_hash": null,
+    "graph_protocol_hash": null,
+    "independent12_protocol_hash": null,
+    "single_protocol_hash": null,
+    "scorer_sha256": null,
+    "statistics_sha256": null,
+    "frontier_sha256": null,
+    "selector_sha256": null,
+    "evaluation_adapter_sha256": null
+  }
+}
