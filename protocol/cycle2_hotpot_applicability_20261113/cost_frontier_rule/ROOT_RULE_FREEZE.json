@@ -1,0 +1,19 @@
+{
+  "status": "FROZEN_PROSPECTIVE_DESCRIPTIVE_RULE_NO_BENCHMARK_ADMISSION",
+  "utc": "2026-11-13T00:21:38.088327+00:00",
+  "rule_source_sha256": {
+    "point_frontier.py": "6f641a3ff9c00afc2b045bc08435e42c602df5756747c58a7852f017da7bf7f9",
+    "test_point_frontier.py": "857afc658d42e5a38dda53453072e5f4f51cb499cab1b5765fcc4a2c8ed1d71d",
+    "PROSPECTIVE_RULE.md": "1411cad3d29fff2619b7754267270c9adf3c92b2d192a8bc16d5181d3befe800"
+  },
+  "original_candidate_protocol_sha256": "1fd8cc88719367ef06a40079a2601f32b70c11d4235ade044d8433298257759b",
+  "four_primary_EM_gates_unchanged": true,
+  "new_Hotpot_questions_selected": false,
+  "new_Hotpot_results_read": false,
+  "earlier_R1_results_already_known": true,
+  "independent_CPU_tests": 13,
+  "independent_receipt_sha256": "4f7e5663189e916db142e1f2f70613d2d4578e210eb5f6e62e2291b53267f769",
+  "source_reference_not_inference_evidence": true,
+  "new_GPU_calls": 0,
+  "scientific_admission": false
+}

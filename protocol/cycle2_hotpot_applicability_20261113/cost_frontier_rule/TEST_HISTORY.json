@@ -1,0 +1,9 @@
+{
+  "status": "CPU_PREPARATION_BEFORE_REAL_SELECTION",
+  "attempts": [
+    {"order": 1, "tests": 8, "passed": 8, "implementation": "initial prospective rule"},
+    {"order": 2, "tests": 10, "passed": 9, "errors": 1, "implementation": "independent review added impossible cost guards", "cause": "old synthetic tradeoff fixture assigned one input token to 2304 complete calls; new guard correctly rejected it", "repair": "fixture input tokens raised to 10000, retaining intended per-model cost tradeoff; valid-data rule unchanged"}
+  ],
+  "benchmark_data_read": false,
+  "new_model_calls": 0
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS_PROSPECTIVE_RULE_CPU_REVIEW",
+  "tests": 13,
+  "failures": 0,
+  "errors": 0,
+  "source_sha256": {
+    "point_frontier.py": "6f641a3ff9c00afc2b045bc08435e42c602df5756747c58a7852f017da7bf7f9",
+    "test_point_frontier.py": "857afc658d42e5a38dda53453072e5f4f51cb499cab1b5765fcc4a2c8ed1d71d",
+    "PROSPECTIVE_RULE.md": "1411cad3d29fff2619b7754267270c9adf3c92b2d192a8bc16d5181d3befe800"
+  },
+  "source_unchanged": true,
+  "real_data_read": false,
+  "new_GPU_hours": 0,
+  "scientific_admission": false,
+  "scope": "Author tests rerun plus three independent schema/coverage boundary tests; descriptive frontier only."
+}

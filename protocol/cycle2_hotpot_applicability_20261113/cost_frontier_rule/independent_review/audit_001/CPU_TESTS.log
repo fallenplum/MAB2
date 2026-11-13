@@ -1,0 +1,18 @@
+test_cache_discounted_call_geometry_rejected (test_point_frontier.Tests.test_cache_discounted_call_geometry_rejected) ... ok
+test_equal_quality_cheaper_single_witness (test_point_frontier.Tests.test_equal_quality_cheaper_single_witness) ... ok
+test_exact_equality_not_strict_dominance (test_point_frontier.Tests.test_exact_equality_not_strict_dominance) ... ok
+test_no_rounding_of_time (test_point_frontier.Tests.test_no_rounding_of_time) ... ok
+test_noninteger_quality_or_malformed_model_rejected (test_point_frontier.Tests.test_noninteger_quality_or_malformed_model_rejected) ... ok
+test_nonzero_calls_cannot_have_zero_inputs (test_point_frontier.Tests.test_nonzero_calls_cannot_have_zero_inputs) ... ok
+test_per_model_cost_tradeoff_not_hidden_by_sum (test_point_frontier.Tests.test_per_model_cost_tradeoff_not_hidden_by_sum) ... ok
+test_quality_tradeoff_not_rescued_by_cheaper_cost (test_point_frontier.Tests.test_quality_tradeoff_not_rescued_by_cheaper_cost) ... ok
+test_unknown_and_incomplete_not_free (test_point_frontier.Tests.test_unknown_and_incomplete_not_free) ... ok
+test_zero_calls_cannot_hide_positive_cost (test_point_frontier.Tests.test_zero_calls_cannot_hide_positive_cost) ... ok
+test_all_coverage_and_integrity_conditions_are_required (__main__.run.<locals>.IndependentBoundaries.test_all_coverage_and_integrity_conditions_are_required) ... ok
+test_nonfinite_measurement_is_rejected (__main__.run.<locals>.IndependentBoundaries.test_nonfinite_measurement_is_rejected) ... ok
+test_unknown_in_any_model_or_method_is_not_zero (__main__.run.<locals>.IndependentBoundaries.test_unknown_in_any_model_or_method_is_not_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.001s
+
+OK
