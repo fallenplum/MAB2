@@ -1,0 +1,13 @@
+{
+  "current_hotpot_read": false,
+  "decision": "Stop this fixed literal proxy; insufficient tune support; no general disagreement impossibility claim.",
+  "historical_results_unchanged": true,
+  "new_GPU_hours": 0,
+  "new_formal_rounds": 0,
+  "private_path_wrapper_excluded_from_public_package": true,
+  "prospective_freeze_sha256": "3c7d400ff7b973ed219ed93f6608e14cfe96d9fdc15f25f4a94e3a14d52c6348",
+  "provenance_checked": true,
+  "results_sha256": "18519af458576e6894b6c383fc2c46c9c672658b7dccefc6c936c237c6ec0f05",
+  "root_static_review": "Reviewed selected-row NPY decoding, signed pair orientation, cross-seed product and question-level grouping. No repeat real-data calculation.",
+  "status": "HISTORICAL_DIAGNOSTIC_NO_GPU_ADMISSION"
+}

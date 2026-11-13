@@ -1,0 +1,24 @@
+{
+  "GPU_hours": 0,
+  "elapsed_seconds": 1.5939999999973224,
+  "label_extraction_authorized": false,
+  "new_model_calls": 0,
+  "publication_authorized": false,
+  "real_dataset_or_archive_accessed": false,
+  "real_labels_read": false,
+  "returncode": 0,
+  "scoring_authorized": false,
+  "source_sha256": {
+    "check_preparation.py": "f49926d7cae8a8a92d4ac458af3139f9e7d577a59b6aa0ce18a09b5372079982",
+    "frozen_dependencies/evaluation_adapter.py": "f8ba38be9ce1ef6bbfee66c17606685b117d25c52b947e66937ea5574a6105b8",
+    "frozen_dependencies/frozen_dependencies/applicability_statistics.py": "3417dc11bc583d72a2ec8c8cc139c6ee490aa039d8eb386c97f7e2aa52060bfe",
+    "frozen_dependencies/frozen_dependencies/hotpot_support.py": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e",
+    "frozen_dependencies/frozen_dependencies/point_frontier.py": "6f641a3ff9c00afc2b045bc08435e42c602df5756747c58a7852f017da7bf7f9",
+    "postclosure.py": "8f701f52ac7fa15ea39f55f2beb877ce400774cc88484e7280c45da322ccb544",
+    "postclosure_cli.py": "cd19b1eb37acf6bda865d5172f2582bac7ea76d9e03ee394c87b1be3afa005c1",
+    "test_postclosure.py": "54224350c116cb96fc02b5dbf866cd8fb0b42a53bd2216d2e5579b457537fcad"
+  },
+  "source_unchanged": true,
+  "status": "PASS_ARTIFICIAL_CPU_PREPARATION",
+  "test_log_sha256": "d353831e8edb922c867d1e54f403eb513e99022dfdf7bcf99e71dfcf916da7ac"
+}

@@ -1,0 +1,29 @@
+{
+  "frozen_unix": 1794536694.1958802,
+  "scope": "One historical train/tune-only derived-cache CPU screen",
+  "source_sha256": {
+    "screen.py": "a510f3af4880601291e800707ae1cd399f3dc907fb080c3c55c5a6c510b7e7bd",
+    "test_screen.py": "11e36ee3237246eec036be6950c419860afd781c44edbd56941c9134da8cc115",
+    "run_once.py": "a721b24eb081fefaadf7d565c861d525fee7923980bfcd8dae568a73d82a6288",
+    "PROTOCOL.md": "9d7f72186f66d5aa8c7315203ce625240f0ba9bd0fa7a64d2a574acbb20a95f6"
+  },
+  "input_sha256": {
+    "d2": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+    "answer-cache": "2264edf673b50e1ec2f7a858b34ec33c1cb36620473285e969a6533395285759",
+    "response-result": "575e4823518b2fa16dba2d31601f8797205d5ec4359050acf457dfba8a3efd80",
+    "format-cache": "20f05a130271e136c50092c9c51d5c940bf7736f63881d9f7ec6db92dba17fc1",
+    "format-receipt": "2d02f5ebf7a579f15f10a95aa82e8f91be651a5f7a049cb3db1fe1388e55dbf1"
+  },
+  "input_bytes": {
+    "d2": 91897,
+    "answer-cache": 39831942,
+    "response-result": 3104,
+    "format-cache": 141552,
+    "format-receipt": 2595
+  },
+  "current_hotpot_access": false,
+  "actual_results_exist_before_freeze": false,
+  "independent_static_review": "risk_novelty_adversary: no statistical blocker; pins and external timeout required and implemented",
+  "hard_child_wall_timeout_seconds": 120,
+  "synthetic_test_receipt_sha256": "fa14b27b4dd8e05b6458cb0e96a218634ec7bab1cc7f5bcb40d97b511830a332"
+}

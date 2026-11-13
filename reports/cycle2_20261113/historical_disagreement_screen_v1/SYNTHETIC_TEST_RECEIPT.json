@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_anchor_reconstruction_and_receiver_other_edges (test_screen.ScreenTests.test_anchor_reconstruction_and_receiver_other_edges) ... ok\ntest_crossseed_not_naive_square_and_negative_kept (test_screen.ScreenTests.test_crossseed_not_naive_square_and_negative_kept) ... ok\ntest_literal_not_numeric_and_unknown (test_screen.ScreenTests.test_literal_not_numeric_and_unknown) ... ok\ntest_paired_question_equal_weight_and_repeatable (test_screen.ScreenTests.test_paired_question_equal_weight_and_repeatable) ... ok\ntest_single_stratum_kept_not_redefined (test_screen.ScreenTests.test_single_stratum_kept_not_redefined) ... ok\ntest_stream_rows_do_not_decode_excluded_nan_rows (test_screen.ScreenTests.test_stream_rows_do_not_decode_excluded_nan_rows) ... ok\ntest_unknown_retained_in_support_not_consensus (test_screen.ScreenTests.test_unknown_retained_in_support_not_consensus) ... ok\ntest_zero_variance_not_positive_or_negative_evidence (test_screen.ScreenTests.test_zero_variance_not_positive_or_negative_evidence) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.156s\n\nOK\n",
+  "source_hashes": {
+    "screen.py": "a510f3af4880601291e800707ae1cd399f3dc907fb080c3c55c5a6c510b7e7bd",
+    "test_screen.py": "11e36ee3237246eec036be6950c419860afd781c44edbd56941c9134da8cc115",
+    "run_once.py": "a721b24eb081fefaadf7d565c861d525fee7923980bfcd8dae568a73d82a6288",
+    "PROTOCOL.md": "9d7f72186f66d5aa8c7315203ce625240f0ba9bd0fa7a64d2a574acbb20a95f6"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "mab2_hotpot_postclosure_independent_review_v1",
+  "status": "PASS_ENGINEERING_PREPARATION_ONLY",
+  "reviewed_source_sha256": "8f701f52ac7fa15ea39f55f2beb877ce400774cc88484e7280c45da322ccb544",
+  "tests_run": 13,
+  "zero_reader_cases": 25,
+  "zero_vault_cases": 14,
+  "source_unchanged": true,
+  "review_md_sha256": "178e8b709da875ee82e80d090c0921389d2ccf4293e1accaa94fd4947b8ec42f",
+  "test_source_sha256": "ba582d4378be8e80b8251c8c72097413594312438b39acaa8b27f75bdfe96890",
+  "test_receipt_sha256": "68c1597c714a662c0d8b0ea74ead1d726f6a2aec706bec457fa73d70af25a5fa",
+  "test_log_sha256": "c3064115d2cab2373152e1e14b1e789a51a84ede06cccbe5725489e7eb0694fc",
+  "real_labels_read": false,
+  "real_dataset_or_archive_read": false,
+  "gpu_hours": 0,
+  "label_extraction_authorized": false,
+  "scoring_authorized": false,
+  "publication_authorized": false,
+  "blocking_findings": [],
+  "deployment_preconditions": [
+    "Root independently supplies both trusted approval hashes",
+    "Complete deployment manifest is externally frozen including CLI and helper bytes",
+    "Real archive audit and residence closure completed before first release"
+  ]
+}

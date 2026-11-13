@@ -1,0 +1,163 @@
+{
+  "status": "INSUFFICIENT_SUPPORT_FOR_FIXED_LITERAL_PROBE",
+  "primary_partition": "tune",
+  "reports": {
+    "train": {
+      "question_count": 200,
+      "z_counts": {
+        "-1": 48,
+        "0": 42,
+        "1": 110
+      },
+      "questions_with_both_receiver_change_classes": 155,
+      "primary_support_z0": 31,
+      "primary_support_z1": 85,
+      "primary_interaction": -0.013948306595365416,
+      "ci95_descriptive": [
+        -0.03379733171372165,
+        0.0026786404525967976
+      ],
+      "bootstrap_variance": 8.4648176000522e-05,
+      "inferential_support_guard": true,
+      "status": "INCONCLUSIVE",
+      "cells": {
+        "z-1_d0": {
+          "questions": 39,
+          "question_edge_cells": 101,
+          "question_equal_weight_mean": 0.003205128205128205,
+          "cell_weight_mean_descriptive": 0.0049504950495049506
+        },
+        "z-1_d1": {
+          "questions": 48,
+          "question_edge_cells": 475,
+          "question_equal_weight_mean": 0.003993055555555555,
+          "cell_weight_mean_descriptive": 0.0038596491228070173
+        },
+        "z0_d0": {
+          "questions": 31,
+          "question_edge_cells": 72,
+          "question_equal_weight_mean": -0.0035842293906810036,
+          "cell_weight_mean_descriptive": -0.0023148148148148147
+        },
+        "z0_d1": {
+          "questions": 42,
+          "question_edge_cells": 432,
+          "question_equal_weight_mean": 0.005385201218534551,
+          "cell_weight_mean_descriptive": 0.006172839506172839
+        },
+        "z1_d0": {
+          "questions": 85,
+          "question_edge_cells": 209,
+          "question_equal_weight_mean": 0.011601307189542482,
+          "cell_weight_mean_descriptive": 0.003987240829346093
+        },
+        "z1_d1": {
+          "questions": 110,
+          "question_edge_cells": 1111,
+          "question_equal_weight_mean": 0.006443220079583715,
+          "cell_weight_mean_descriptive": 0.006900690069006901
+        }
+      },
+      "theta_negative_cells": 89,
+      "theta_zero_cells": 2188,
+      "theta_positive_cells": 123,
+      "bootstrap_seed": 97531,
+      "bootstrap_repetitions": 2000
+    },
+    "tune": {
+      "question_count": 80,
+      "z_counts": {
+        "-1": 18,
+        "0": 16,
+        "1": 46
+      },
+      "questions_with_both_receiver_change_classes": 64,
+      "primary_support_z0": 13,
+      "primary_support_z1": 37,
+      "primary_interaction": 0.0067219317219317214,
+      "ci95_descriptive": [
+        -0.025669769419769423,
+        0.03983242420742417
+      ],
+      "bootstrap_variance": 0.0002771096206617576,
+      "inferential_support_guard": false,
+      "status": "INSUFFICIENT_SUPPORT_FOR_FIXED_LITERAL_PROBE",
+      "cells": {
+        "z-1_d0": {
+          "questions": 14,
+          "question_edge_cells": 37,
+          "question_equal_weight_mean": -0.0015873015873015875,
+          "cell_weight_mean_descriptive": 0.0
+        },
+        "z-1_d1": {
+          "questions": 18,
+          "question_edge_cells": 179,
+          "question_equal_weight_mean": -0.005809750948639839,
+          "cell_weight_mean_descriptive": -0.00558659217877095
+        },
+        "z0_d0": {
+          "questions": 13,
+          "question_edge_cells": 29,
+          "question_equal_weight_mean": -0.00641025641025641,
+          "cell_weight_mean_descriptive": -0.005747126436781609
+        },
+        "z0_d1": {
+          "questions": 16,
+          "question_edge_cells": 163,
+          "question_equal_weight_mean": 0.006234217171717172,
+          "cell_weight_mean_descriptive": 0.007157464212678936
+        },
+        "z1_d0": {
+          "questions": 37,
+          "question_edge_cells": 85,
+          "question_equal_weight_mean": 0.0,
+          "cell_weight_mean_descriptive": 3.2653618371328133e-19
+        },
+        "z1_d1": {
+          "questions": 46,
+          "question_edge_cells": 467,
+          "question_equal_weight_mean": 0.012739716000585563,
+          "cell_weight_mean_descriptive": 0.011420413990007138
+        }
+      },
+      "theta_negative_cells": 49,
+      "theta_zero_cells": 854,
+      "theta_positive_cells": 57,
+      "bootstrap_seed": 97532,
+      "bootstrap_repetitions": 2000
+    }
+  },
+  "input_sha256": {
+    "d2": "7639dad2581ea52536b7c274d33fd019ad726a9bce9e8e4ec6792c68b77f4963",
+    "answer_cache": "2264edf673b50e1ec2f7a858b34ec33c1cb36620473285e969a6533395285759",
+    "response_result": "575e4823518b2fa16dba2d31601f8797205d5ec4359050acf457dfba8a3efd80",
+    "format_cache": "20f05a130271e136c50092c9c51d5c940bf7736f63881d9f7ec6db92dba17fc1",
+    "format_receipt": "2d02f5ebf7a579f15f10a95aa82e8f91be651a5f7a049cb3db1fe1388e55dbf1"
+  },
+  "selected_questions": 280,
+  "excluded_question_quality_decoded": 0,
+  "selected_graph_rows": 7274,
+  "r1_invariance_comparisons": 145480,
+  "z_seed": 2701,
+  "target_seeds": [
+    2702,
+    2703,
+    2704,
+    2705
+  ],
+  "graph_transition": "qid-dependent original G2 anchor rule",
+  "theta_estimand": "cross-seed squared mean credit drift; may be negative",
+  "disagreement": "literal identity only; empty/format_bad -> unknown",
+  "no_raw_or_gold_or_current_hotpot_access": true,
+  "gpu_hours": 0,
+  "formal_candidates_started": 0,
+  "claim_limit": "Exploratory historical surrogate interaction, not action utility, causal mediation or active acquisition benefit.",
+  "wall_seconds": 0.6409999999887077,
+  "provenance": {
+    "source_sha256": "a510f3af4880601291e800707ae1cd399f3dc907fb080c3c55c5a6c510b7e7bd",
+    "protocol_sha256": "9d7f72186f66d5aa8c7315203ce625240f0ba9bd0fa7a64d2a574acbb20a95f6",
+    "started_unix": 1794536694.5918736,
+    "raw_paths_read": false,
+    "current_hotpot_read": false
+  }
+}
