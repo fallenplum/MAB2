@@ -1,0 +1,22 @@
+{
+  "decision": "APPROVED_FROZEN_PLAN_AFTER_INDEPENDENT_REVIEW",
+  "independent_review_sha256": "0938f75c8f133d8474eac6bd1c443466dcda1b43ce99c8e15620d157d2b133e4",
+  "prepared_plan_sha256": "789292750ded8e4bb4da94f0d421d68d3e82d85278de67769047be49f8f948a0",
+  "source_manifest_sha256": "7bfb68c7bedff24f983057b2cacb6b37b4a0e28ff74bb6cf8231cc95ca6c403f",
+  "scientific_protocol_sha256": "438d6110397b1b29b2c3968218d274ce16e5f135d444954ab5b4d9e6ba10ec48",
+  "budget_sha256": "06fbbb757d8e4e2eee32a0d3c54d49b051b1500f65d7615736a6f113a05b120f",
+  "bound_inputs_verified": 7,
+  "source_files_verified": 17,
+  "questions": 384,
+  "conditions": 4224,
+  "workers": 4,
+  "schedule_recomputed_exact": true,
+  "current_round_qualification_charged_once": true,
+  "R1_closed": true,
+  "labels_read": false,
+  "new_formal_results_seen": false,
+  "independent_review_scope": "Frozen source/data/runtime/budget bindings, not future experimental success.",
+  "frozen_plan_sha256": "07c1179adad2dbf147703ad8f7c7c2cd4383aa5c96785e8c32e32c3e9e8a991d",
+  "collection_admission_sha256": "cc696fd280f362b179fc81bd9b2a4ff15c6d09d9259ef18c75acf8d1949da8fb",
+  "GPU_started": false
+}
