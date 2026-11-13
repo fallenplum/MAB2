@@ -1,0 +1,94 @@
+{
+  "status": "ENGINEERING_ONLY_NO_BENCHMARK",
+  "protocol_id": "synthetic_long_context_full_matrix_174_v1",
+  "seed1": 26111301,
+  "seed2": 26111302,
+  "probe_edge": 1,
+  "fresh_repeats": 2,
+  "seed1_order": [
+    "A",
+    "B",
+    "NO_EDGE",
+    "A_MINUS_E",
+    "B_MINUS_E",
+    "INDEPENDENT12",
+    "SINGLE_M"
+  ],
+  "seed2_order": [
+    "A",
+    "B",
+    "A_MINUS_E",
+    "B_MINUS_E"
+  ],
+  "physical_calls_by_condition": [
+    13,
+    9,
+    9,
+    6,
+    4,
+    13,
+    1,
+    13,
+    9,
+    6,
+    4
+  ],
+  "successful_physical_calls": 174,
+  "successful_calls_by_model": {
+    "qwen": 80,
+    "mistral": 94
+  },
+  "logical_calls_per_matrix": 131,
+  "graph": {
+    "rounds": 3,
+    "n_workers": 4,
+    "message_tokens": 128,
+    "aggregate_tokens": 256,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "role_prompts": [
+      "Solve the question independently. Perform all detailed reasoning internally.",
+      "Check evidence, arithmetic and unsupported claims internally before answering.",
+      "Check the logical reasoning internally and correct inconsistent inferences.",
+      "Check counterexamples and alternative interpretations internally before answering."
+    ],
+    "max_input_tokens": 8192,
+    "executor_version": "unrolled_closed_input_v3"
+  },
+  "model_route": {
+    "workers": [
+      "qwen",
+      "mistral",
+      "qwen",
+      "mistral"
+    ],
+    "aggregate": "mistral"
+  },
+  "synthetic_input_sha256": "84de20fa16f107453811248a949359811fb31c34702dbbcce2f560a97c5fdd75",
+  "synthetic_input_design": "self-authored fictional two-hop QA with 47 distractor records; no benchmark source",
+  "synthetic_answer_scored": false,
+  "local_low_level_mistral_user_tokens": 3744,
+  "server_user_token_range": [
+    3500,
+    4000
+  ],
+  "no_truncation": true,
+  "all_conditions_full_context": true,
+  "failure_policy": "stop first noncomplete condition; no retry; missing cost null",
+  "physical_log": null,
+  "raw_generation_journal": "durable_backend_v1; private per-model START plus RETURNED or ERROR with native events",
+  "fresh_comparison": "semantics includes seeds/messages/fingerprints/parsed/wire/generation text and tokens/finish/cache/control identity; excludes call_id/time/peak; own integrity digest checked",
+  "guard": {
+    "parent_seconds": 1770,
+    "child_seconds": 1760,
+    "reserved_gpu_hours": 0.5,
+    "minimum_free_mib": 32000,
+    "compute_occupied_gpu_forbidden": true
+  },
+  "throughput_scope": "synthetic only; includes per-condition checkpoint I/O; no measured benchmark throughput",
+  "benchmark_questions_read": 0,
+  "formal_candidate_rounds_started": 0,
+  "scientific_admission": false,
+  "launch_authorized": false
+}

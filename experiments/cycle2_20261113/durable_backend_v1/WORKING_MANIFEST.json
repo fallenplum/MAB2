@@ -1,0 +1,12 @@
+{
+  "status": "PREPARED_CPU_VERIFIED_NOT_SEALED",
+  "files": {
+    "CPU_TEST_RESULTS.json": "ad9689d58a938bb37b2acdb7149383c01f7060f9bca01ef173a7ca72b8320274",
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "README.md": "e371ca17f63494eaa9072b29b8609cc73b4db55c08072a6f206d9cf722b010f9",
+    "test_durable_backend.py": "bbd70f24bbd327ccc8fd1fd96548a8686811bda36bbcbe4727ff092b490c607a"
+  },
+  "launch_authorized": false,
+  "budget_reserved": false,
+  "real_model_qualification_passed": false
+}

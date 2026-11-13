@@ -27,3 +27,6 @@ protocol/cycle2_hotpot_applicability_20261113/** -text
 experiments/cycle2_20261113/hotpot_selection_v1/** -text
 experiments/cycle2_20261113/hotpot_matrix_v1/** -text
 reports/cycle2_20261113/hotpot_matrix_cpu_review/** -text
+experiments/cycle2_20261113/hotpot_matrix_qualification_v1/** -text
+experiments/cycle2_20261113/durable_backend_v1/** -text
+reports/cycle2_20261113/hotpot_matrix_qualification_cpu_review/** -text

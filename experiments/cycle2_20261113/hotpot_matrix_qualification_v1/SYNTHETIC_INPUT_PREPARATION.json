@@ -1,0 +1,15 @@
+{
+  "synthetic_only": true,
+  "filler_records": 47,
+  "low_level_Mistral_complete_user_text_tokens": 3744,
+  "target": [
+    3500,
+    4000
+  ],
+  "within_target": true,
+  "tokenizer_json_sha256": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49",
+  "server_HF_runtime_equivalence": false,
+  "server_measurement_required": true,
+  "context_truncated": false,
+  "synthetic_input_sha256": "84de20fa16f107453811248a949359811fb31c34702dbbcce2f560a97c5fdd75"
+}

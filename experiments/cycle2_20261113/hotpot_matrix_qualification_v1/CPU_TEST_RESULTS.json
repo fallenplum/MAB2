@@ -1,0 +1,16 @@
+{
+  "status": "PASS_CPU_ONLY",
+  "tests": 21,
+  "failures": 0,
+  "errors": 0,
+  "gpu_calls": 0,
+  "benchmark_questions_read": 0,
+  "guard_original_bytes_verified": true,
+  "new_linux_guard_tests_run": 0,
+  "guard_existing_linux_tests_reused": 14,
+  "matrix_expected_success_calls": 174,
+  "logical_records": 262,
+  "source_manifest_sha256": "d0185e756a4ec69003751849d276223fe8f0b6473643d0f96b92d3c0bde2064c",
+  "not_sealed": true,
+  "real_model_qualification_passed": false
+}

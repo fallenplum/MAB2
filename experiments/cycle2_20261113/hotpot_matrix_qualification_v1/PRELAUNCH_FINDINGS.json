@@ -1,0 +1,22 @@
+{
+  "status": "PRELAUNCH_CPU_FINDINGS_FIXED_NOT_GPU_FAILURES",
+  "findings": [
+    {
+      "id": "JSON_CONFIG_TUPLE_LIST",
+      "observed": "After adding durable config identity checks, the 20-test CPU run failed because JSON role_prompts is a list whereas dataclasses.asdict(GraphConfig) preserves a tuple. Review also established that the original child config assertion and GraphConfig(**JSON) would fail before matrix inference.",
+      "original_checks": "protocol[graph] == dataclasses.asdict(GraphConfig(rounds=3)); GraphConfig(**protocol[graph])",
+      "repair": "Compare complete canonical digest; instantiate unchanged default GraphConfig(rounds=3). Durable audit compares canonical config.",
+      "regression": "test_complete_child_pipeline_with_mock_factory_and_json_configuration reads actual JSON files and calls complete production child() with only native HF constructor and source-root lookup mocked; all production fsync/replace and audits execute.",
+      "inference_identity_changed": false
+    },
+    {
+      "id": "WINDOWS_SANDBOX_TEMP_REPLACE",
+      "observed": "First full-child CPU test reached IDENTITY write but os.replace raised WinError 650 in the sandbox-mapped default temporary directory. Failure checkpoint replace encountered the same device error.",
+      "repair": "Test temporary directory moved inside the authorized C staging root. Production write/fsync/replace unchanged.",
+      "production_fsync_weakened": false
+    }
+  ],
+  "gpu_calls": 0,
+  "benchmark_questions_read": 0,
+  "earlier_19_test_pass_did_not_cover_complete_child_json_roundtrip": true
+}

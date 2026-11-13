@@ -1,0 +1,9 @@
+{
+  "status": "PASS_CPU_ONLY",
+  "helper_tests": 10,
+  "matrix_integration_tests_in_qualification": 11,
+  "gpu_calls": 0,
+  "source_sha256": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+  "real_model_qualification_passed": false,
+  "not_sealed": true
+}

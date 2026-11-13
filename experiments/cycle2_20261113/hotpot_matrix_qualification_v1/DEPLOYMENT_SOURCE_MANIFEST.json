@@ -1,0 +1,15 @@
+{
+  "experiments/cycle2_20261113/durable_backend_v1/durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+  "experiments/cycle2_20261113/hotpot_matrix_v1/matrix_executor.py": "016b175f75fca838c83f3c26073a656b901e3d2fda12133c917073304c67bb8c",
+  "experiments/cycle2_20261113/hotpot_matrix_v1/matrix_geometry.py": "e5bdc9e47d2564fb4338516da15ad183c4a935b6e778de34788fdfc33cb8fc46",
+  "experiments/cycle2_20261113/heterogeneous_qualification_v2/routed_executor.py": "0273aebcfba546fd7112c82937b8f27447d0eee87243fbd9c00137d107938625",
+  "experiments/cycle2_20261113/independent12_control_v2/independent12_executor.py": "d3ec41ca2df218592ef8b4dc06c7e26441ee2f0f20daad5b70c6df1ae10b9dbc",
+  "src/graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+  "src/graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+  "src/graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+  "experiments/cycle2_20261113/hotpot_matrix_qualification_v1/qualify_hotpot_matrix.py": "290e8e869b940ae4e028c0a9e2ce2d4bf987a034f6798f8320e10f9ba6a402e6",
+  "experiments/cycle2_20261113/hotpot_matrix_qualification_v1/matrix_qualification_audit.py": "b1daa6690275fafd1ee46302856e58c096ac5c73461bfc6bbaed06ea0a6ae59b",
+  "experiments/cycle2_20261113/hotpot_matrix_qualification_v1/gpu_job_guard.py": "f281ffca929966d923d82f7d61227ce5977731b3cb343c5279145d1af970265f",
+  "experiments/cycle2_20261113/hotpot_matrix_qualification_v1/PROTOCOL.json": "4d0e5e6efca56a500c9c05f4af7fcb734f0a11ccbd5dcd2987af47de3d7e56f8",
+  "experiments/cycle2_20261113/hotpot_matrix_qualification_v1/SYNTHETIC_INPUT.json": "84de20fa16f107453811248a949359811fb31c34702dbbcce2f560a97c5fdd75"
+}

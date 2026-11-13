@@ -1,0 +1,20 @@
+{
+  "status": "PASS_CPU_QUALIFICATION_PREPARATION_REVIEW",
+  "tests_run": 25,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "additional_independent_tests": 4,
+  "manifest_sha256": "a36c282ce8c5310ffc03f077125c05ef3e2dd0b536909c7e31a19a931cf1f695",
+  "helper_sha256": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+  "entry_sha256": "290e8e869b940ae4e028c0a9e2ce2d4bf987a034f6798f8320e10f9ba6a402e6",
+  "audit_sha256": "b1daa6690275fafd1ee46302856e58c096ac5c73461bfc6bbaed06ea0a6ae59b",
+  "review_code_sha256": "006b52249da7865e8d7c0703322f5e7c715866d80adeb31daef9d361f33ed51a",
+  "sources_unchanged": true,
+  "new_GPU_hours": 0,
+  "model_runtime_imported": false,
+  "benchmark_data_read": false,
+  "actual_174_call_qualification": "NOT_RUN_BY_THIS_REVIEW",
+  "actual_Linux_guard_execution": "NOT_RUN_BY_THIS_REVIEW; prior unchanged guard evidence is separate",
+  "scientific_admission": false
+}
