@@ -10,3 +10,5 @@
 修改只在本周期新文件；既有协议/结果只读。每轮协议提交先于结果；共享缓存与策略信息权限分别记账。
 使用research-rigor管理证据，autoresearch执行内外循环。新文件和续接状态均在用户项目根目录中落盘。
 运行中至少每30分钟检查真实作业；继续有用独立工作，失败不假装成功，审计报告不当项目最终完成。
+
+后续执行适用 protocol/cycle2_exogenous_paths_20261115/EXECUTION_AMENDMENT.md：新实验无置信区间/无仅为区间的bootstrap，历史冻结结果不变，发布仍为fallenplum/MAB2。

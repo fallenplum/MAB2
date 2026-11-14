@@ -1,0 +1,31 @@
+{
+  "bootstrap_runs": 0,
+  "new_GPU_hours": 0,
+  "operator_fix": "materialize iterator before per-model aggregation",
+  "source_pins": {
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "input_selection.py": "2a89cc559cf5555a6a2166e23b993d37360be27e52758d112caae5c0b628924c",
+    "point_statistics.py": "d4027bcf11c6b02769a288ca5b373698e014858ec3431abbb3f77aec74e882ef",
+    "test_input_selection.py": "d0a9a5ad1db4815aa192a428bda01f2c2e2237e021d465a836756c1996309c11",
+    "test_operator.py": "7f809a73adfe9b5630088f1f66d81a96483874277fbcba2b9037eead97df492f",
+    "test_point_statistics.py": "6b10df4c4d953eeb3276aa4db7dd40c669f448aacac6a842cdf799d7552a9820"
+  },
+  "tests": [
+    {
+      "exit_code": 0,
+      "log_sha256": "0eccd27d91e0e218a4ba5ff566214c1cb8b6ccaf370418d5e21331be2883f0f9",
+      "suite": "test_operator.py"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "7d4980533fb9ded4fe611c54f097468c3583a27125b4c3362d7bfb3a3b399d3c",
+      "suite": "test_point_statistics.py"
+    },
+    {
+      "exit_code": 0,
+      "log_sha256": "e426cf1e55a210285447223dc2ebe2cbce5f37e729dbd2c8a68b1007aae1d567",
+      "suite": "test_input_selection.py"
+    }
+  ],
+  "total_synthetic_tests": 14
+}

@@ -75,3 +75,7 @@ reports/cycle2_20261113/hotpot_reporting_preparation_v1/** -text
 experiments/cycle2_20261113/hotpot_actual_statistics_review_v1/** -text
 experiments/cycle2_20261113/hotpot_descriptive_supplement_v1/** -text
 reports/cycle2_20261113/hotpot_formal2_results_v1/** -text
+
+experiments/cycle2_20261113/exogenous_paths_v1/** -text
+protocol/cycle2_exogenous_paths_20261115/** -text
+reports/cycle2_20261113/exogenous_restart_20261115/** -text

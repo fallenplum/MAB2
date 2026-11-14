@@ -4,7 +4,7 @@ controller: private_project_root/AUTONOMOUS_RESEARCH_STATUS.json
 controller_visibility: private_operational_state_public_snapshot_below
 project_status: ACTIVE
 direction_status: CURRENT_B_FROZEN_NEGATIVE_OUTER_LOOP_ACTIVE
-branch: research/cycle2-hotpot-applicability-20261113
+branch: research/cycle2-exogenous-paths-20261113
 parent_commit: 2a7f4f101d37375ebfbf95fd5c095d0bc6610485
 budget_gpu_hours_total: 160
 budget_gpu_hours_used: 47.22582195461243
@@ -12,12 +12,12 @@ budget_gpu_hours_reserved: 0
 budget_gpu_hours_remaining: 112.77417804538757
 formal_candidate_rounds_total: 5
 formal_candidate_rounds_started: 2
-next_action: bounded_outer_loop_then_distinct_falsifiable_low_cost_diagnostic
+next_action: qualify_path_operator_and_complete_bounded_runner_before_GPU_admission
 candidate_failure: eliminate_candidate_and_continue
 direction_failure: freeze_direction_and_research_alternatives
 project_stop: explicit_project_level_conditions_only
 paper_status: evidence_pending
-active_candidate: null
+active_candidate: C2_FORMAL3_EXOGENOUS_PATH_SCREEN
 last_closed_candidate: C2_FORMAL2_HOTPOT_APPLICABILITY
 last_candidate_action: STOP_CURRENT_B_DIRECTION
 last_candidate_quality_gate: B_DISFAVORED
@@ -35,3 +35,7 @@ CPU_scoring_status: complete_root_and_independent_review_pass
 independent_statistics_checks_passed: 529
 complete_local_archive_files_verified: 1198
 new_GPU_admission: false
+new_experiment_intervals: false
+new_experiment_bootstrap: false
+current_candidate_status: CPU_ENGINEERING_PASS_NOT_GPU_ADMITTED
+publication_repository: fallenplum/MAB2
