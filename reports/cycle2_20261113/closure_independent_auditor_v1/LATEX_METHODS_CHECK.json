@@ -1,0 +1,14 @@
+{
+  "status": "METHODS_AND_REFERENCES_COMPILE_PASS",
+  "complete_manuscript": false,
+  "formal5_results_included": false,
+  "pages": 4,
+  "compiler": "pdfTeX 3.141592653-2.6-1.40.28 / MiKTeX 25.12",
+  "official_style_modified": false,
+  "optional_microtype": "absent; conditional package load used; no install needed",
+  "missing_citations": false,
+  "overfull_box_count": 1,
+  "render_review": "not yet final manuscript visual review",
+  "pdf_sha256": "089caa3a09fac2f0e5dbacdd6590b26342cbaf9b0b19f9e123f258cd33be7406",
+  "unix": 1794727311.4899752
+}

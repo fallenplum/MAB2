@@ -22,8 +22,10 @@ Every policy has the same 3,000,000-token ceiling per episode and seed.
 The ceiling may be nonbinding, so equal ceilings are not described as equal
 actual expenditure. For policy $\pi$, primary utility is
 \begin{equation}
- J(\pi)=\frac{1}{64}\sum_{x\in S}Y(x,G_\pi,s)
- -\lambda\frac{T_I(\pi)+T_C(\pi)+T_S(\pi)}{64}.
+ \begin{aligned}
+ J(\pi)&=\frac{1}{64}\sum_{x\in S}Y(x,G_\pi,s)\\
+ &\quad-\frac{\lambda}{64}\bigl(T_I(\pi)+T_C(\pi)+T_S(\pi)\bigr).
+ \end{aligned}
 \end{equation}
 Diagnostic request reuse is credited only to already purchased identical
 requests. Service charges include all live nodes of the selected graph,

@@ -1,0 +1,11 @@
+{
+  "status": "METHODS_COMPILE_NO_OVERFULL_BOXES",
+  "complete_manuscript": false,
+  "formal5_quality_read": false,
+  "overfull_boxes": 0,
+  "new_model_calls": 0,
+  "source_sha256": "25a8c6a39e70660835c1296b63cbfc20b14a1cf78bd8d3d06158fe515d09d3bc",
+  "pdf_sha256": "fee7e8cc8d4b3d6f9bf429aa2f71e309114e5f584ce511314a47ebe57ed1d0eb",
+  "old_layout_check_retained": true,
+  "unix": 1794727361.6850653
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SEVEN_ARTIFICIAL_RAW_SCORING_TESTS",
+  "tests": 7,
+  "real_answers_read": false,
+  "new_model_calls": 0,
+  "source_sha256": {
+    "audit_closure_raw_scoring.py": "973d3e05a1ef3a286c9946d5e7642f29f47ef1f6bff09144b7e4081f4018078b",
+    "test_audit_closure_raw_scoring.py": "06fe294efec8575f2361a4271459e9484323bb090efa5f8eef93809d675d348d"
+  }
+}
