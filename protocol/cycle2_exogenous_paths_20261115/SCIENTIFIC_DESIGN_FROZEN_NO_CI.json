@@ -1,0 +1,253 @@
+{
+  "baselines": {
+    "INDEPENDENT3_M": "U/V/R independently see entire original context and question; M sees all three messages AND entire original context; same 2Q+2M calls as graph",
+    "SINGLE_M": "Mistral sees entire original context and question, one call",
+    "SINGLE_Q": "Qwen sees entire original context and question, one call",
+    "full_information_restriction_allowed": false,
+    "future_central_conditional_router": "all legal actions including graph variants, same input/graph/history/feedback permissions and common real cost budget; requires separate training/service split, not claimed evaluated by screen",
+    "future_free_structure_baseline": "preserve the affected direct source->M edge after its alternate source->R path is removed"
+  },
+  "candidate": "C2_FORMAL3_EXOGENOUS_PATH_SCREEN",
+  "effective_user_instruction_date": "2026-11-14",
+  "engineering_acceptance_sha256": "016d1a581729081184a5658b7d608cee3097d1c44f4bef817b3d05459fbeb5d4",
+  "evidence_boundaries": {
+    "candidate_failure_not_project_stop": true,
+    "controlled_not_general_deployment_claim": true,
+    "gold_release": "after complete execution/archive/cost closure and root frozen scoring authorization",
+    "mechanism_positive_not_G3_automatic_admission": true,
+    "method_success_or_paper_eligibility_from_this_screen": false,
+    "must_prove_will_win_before_screen": false,
+    "new_screen_is_development_not_independent_confirmation": true,
+    "old_B_and_G2_results_immutable": true,
+    "real_deployment_incident_required_for_controlled_benchmark": false,
+    "toy_D0_is_not_an_empirical_admission_gate": true
+  },
+  "execution": {
+    "allowed_automatic_extensions": [],
+    "blind_cost_prefix": {
+      "all_18_conditions_required": true,
+      "allowed_observation": [
+        "resource ledger",
+        "input completeness",
+        "return status",
+        "engineering failure"
+      ],
+      "conservative_projection_rule": "For each of4 workers: 1.5 * entire elapsed time at its second completed question *24/2; release only if all forecasts<=6690 seconds. Includes loading in elapsed, not a coverage or completion guarantee.",
+      "if_cannot_complete_96_within_cap": "SAVE_PARTIAL_NO_POSTHOC_SAMPLE_SIZE_CHANGE",
+      "included_in_96_and_8_gpu_hours": true,
+      "n_questions": 8,
+      "quality_or_gold_release": false
+    },
+    "budget_reserved_by_this_draft": false,
+    "cache_accounting": "physical savings separate; every service condition pays full logical cost",
+    "configurations_per_seed": 9,
+    "final_outputs_per_question": 18,
+    "formal_assignment": "index modulo4; 24 questions each; first2 per worker form exactly first8 selected questions",
+    "formal_reservation_GPU_hours": 7.75,
+    "formal_round_index_if_root_reserves": 3,
+    "hard_cap_interpretation": "Parent enforces deadlines and records actual residence without clamping; shutdown allowance retained. Any cap overrun recorded and further compute stopped.",
+    "initialization_failures_retries_counted": true,
+    "label_release": "Only after all96 units closed, full archive hash verification, zero-GPU exact replay, actual cost closure and explicit root scoring release.",
+    "logical_calls_upper_bound": 5760,
+    "new_gpu_hour_hard_cap": 8,
+    "qualification_already_charged_GPU_hours": 0.11696458899163796,
+    "seeds_per_question": 2,
+    "total_final_outputs": 1728,
+    "worker_cap_seconds": 6750,
+    "worker_count": 4
+  },
+  "execution_authorized_by_this_file": false,
+  "frozen_date_Asia_Shanghai": "2026-11-15",
+  "future_service_design_reference_not_current_admission": {
+    "H": 32,
+    "delay": "available next service step",
+    "exit_action": "independent aggregation or centralized solving permitted for every policy",
+    "feedback": "explicit benchmark oracle, all counterfactual calls + label units + delay charged equally; no claim of real deployment free labels",
+    "fresh_independent_samples_required": true,
+    "paired_feedback_cap": 4
+  },
+  "generation": {
+    "dynamic_guard": "receiver tokenizer on every actual prompt, including full-context baselines",
+    "final_instruction": "same frozen short-answer instruction across all final outputs",
+    "final_max_new_tokens": 256,
+    "final_parser": "entire Generation.text.strip() passed to official EM/F1; no post-hoc extraction or JSON repair",
+    "input_token_limit": 8192,
+    "intermediate_json_required": false,
+    "intermediate_max_new_tokens": 128,
+    "overflow_policy": "preserve PARTIAL; no dropped/replacement questions or repeated inference to seek passing results",
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "truncate_input": false
+  },
+  "input_source_pins": {
+    "normalization_source_sha256": "5edc8dc62b349be49c2c939c9c3f93ba1a8795b3c6fc7c951aec3ab9cd3d8bfd",
+    "old_384_manifest_sha256": "f64819c79fc233f7ae455d777bc6b51b2023fed7af92ae2ca6a43a9e3109105e",
+    "old_exposures_sha256": "0d6a79d1f6dc0caa86d918bea9a007654fec0ba7746015953ed265a934354826",
+    "source_descriptor_sha256": "5cf1902c112089f8b787dc8bb1a6a46df285003fb9318e0134082f1c5d148456"
+  },
+  "models": {
+    "M": "mistral",
+    "R": "mistral",
+    "U": "qwen",
+    "V": "qwen",
+    "exact_model_and_tokenizer_pins": {
+      "mistral": "2a1bf75ba484482de0fc1af583645c00808570f2c0370a631b51bd6380b98020",
+      "qwen": "46d0ac8f422bfd10a0271b039f4478637d53b68c7764d6137bb7f0b6e1648949"
+    },
+    "new_or_larger_models": false
+  },
+  "official_answer_metric_source_sha256": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e",
+  "parent_commit": "88d62e6",
+  "population": {
+    "dataset": "HotpotQA",
+    "eligibility": {
+      "if_less_than_96": "STOP_INPUT_PREPARATION_NO_REPLACEMENT_DATASET_OR_POOL_EXPANSION",
+      "max_static_tokens": 7168,
+      "n_context_documents": 10,
+      "qualified_server_tokenizer": true,
+      "selection": "first 96 eligible in fixed randomized pool order",
+      "static_framed_prompts": "all six frozen operator capacity prompts",
+      "static_margin_is_dynamic_mathematical_guarantee": false
+    },
+    "exposure_match_keys": [
+      "id",
+      "question_norm_hash",
+      "content_hash"
+    ],
+    "exposure_union": [
+      "KNOWN_EXPOSURES_V2",
+      "unsealed_384_manifest"
+    ],
+    "input_pool_size": 512,
+    "n_questions": 96,
+    "normalization": "unchanged original normalization and deduplication rules",
+    "operator_projection": [
+      "id",
+      "question",
+      "context"
+    ],
+    "pool_rule": "PCG64 fixed 512 input-only candidates after exposure exclusion; never expand",
+    "sharding": {
+      "allocation": "alternate sorted documents into U/V, five each",
+      "gold_type_level_used": false,
+      "key": "SHA256(original document title UTF-8 bytes)",
+      "tie_break": "original context index",
+      "within_shard_order": "original context order"
+    },
+    "source_projection": "existing five input-only columns; no answer or supporting_facts",
+    "source_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+    "split": "train"
+  },
+  "proposal_label": "C1 in bounded outer-loop report; formal identifier is root candidate field",
+  "publication_repository": "fallenplum/MAB2",
+  "qualified_operator_protocol_sha256": "334fbdf6588a3a096290b4f3c7a1dc2ef86d5b29a65af9f21cbbddb48995b81f",
+  "recorded_date_Asia_Shanghai": "2026-11-15",
+  "schema_version": "mab2.exogenous_paths.point_screen.frozen.v1",
+  "scientific_question": "Relative conditional-credit change under prespecified exogenous loss of a substitute information path",
+  "seeds": {
+    "generation": [
+      26111311,
+      26111312
+    ],
+    "prefix": "first 8 final selected questions, no new randomization",
+    "sampling": 261113111,
+    "shock": 261113112
+  },
+  "source_pins": {
+    "evaluate_paths.py": "589fd86798c775c59cdea7d57e49c927163ff0252ae3fc7b0b9cb20f8754e35f",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "input_selection.py": "2a89cc559cf5555a6a2166e23b993d37360be27e52758d112caae5c0b628924c",
+    "path_qualification_capacity.py": "a43512426de018d050e041e0e0ed318ff16afe47f501ccac447585de4a40435c",
+    "path_runtime_v1.py": "1b4645a2de1c26adb05cb451a95b8c9a0a9c6f9416f1ff31f38fb9dff62aeb9f",
+    "path_runtime_v2.py": "3995f2b52fcf2de44ab773ca5356f09e821f3e6085273bc92dbb17ccd2cdee9f",
+    "path_runtime_v3.py": "2cd233a3c9ca4910843d5fe23082b897ad4fccf7e299882ff69bbccd727760a8",
+    "point_statistics.py": "d4027bcf11c6b02769a288ca5b373698e014858ec3431abbb3f77aec74e882ef",
+    "replay_path_archive.py": "bde91f7232807e9adea7c6d830776765d9bd33fbed6dd3398a71cdb3aa88448d",
+    "test_evaluate_paths.py": "c1adcf0025f929d3dea2a19c0dc4708320251d51c3c77960562621cefa03f425",
+    "test_input_selection.py": "d0a9a5ad1db4815aa192a428bda01f2c2e2237e021d465a836756c1996309c11",
+    "test_operator.py": "7f809a73adfe9b5630088f1f66d81a96483874277fbcba2b9037eead97df492f",
+    "test_path_runtime_v3.py": "a7522b0f32b4ee847f59f25e4f6570612b0703827360eee0519149df9853ce1d",
+    "test_point_statistics.py": "6b10df4c4d953eeb3276aa4db7dd40c669f448aacac6a842cdf799d7552a9820"
+  },
+  "statistics": {
+    "F1_or_subgroup_rescue": false,
+    "bootstrap_runs": 0,
+    "confidence_intervals": false,
+    "gamma": "EM(G)-EM(G-minus-e)",
+    "interpretation": "Empirical development filter only; not statistical significance or population guarantee",
+    "mandatory_outputs": [
+      "actual accuracy",
+      "paired point differences",
+      "corrections and breakages",
+      "task and seed breakdowns",
+      "credit changes for both edges",
+      "complete physical and logical cost",
+      "failures"
+    ],
+    "method_success_or_GPU_admission_from_screen": false,
+    "negative_action": "do not expand this instance automatically; preserve results and continue outer loop",
+    "primary_contrast": "mean_q,seed[(gamma(G1,e_aff)-gamma(G0,e_aff))-(gamma(G1,e_other)-gamma(G0,e_other))]",
+    "primary_metric": "official EM",
+    "prospective_empirical_retain_rule": [
+      "D >= 0.05",
+      "both seed mean D > 0",
+      "at least20 nonzero mean-seed question contrasts"
+    ]
+  },
+  "status": "FROZEN",
+  "topology": {
+    "base_edges": [
+      [
+        "U",
+        "R"
+      ],
+      [
+        "V",
+        "R"
+      ],
+      [
+        "R",
+        "M"
+      ],
+      [
+        "U",
+        "M"
+      ],
+      [
+        "V",
+        "M"
+      ]
+    ],
+    "candidate_final_context": "question + R message + permitted direct U/V messages; no raw documents",
+    "conditions": {
+      "G0": "base_edges",
+      "G0_MINUS_EU": "base_edges without U->M",
+      "G0_MINUS_EV": "base_edges without V->M",
+      "G1": "base_edges without prespecified shocked source->R",
+      "G1_MINUS_EU": "G1 without U->M",
+      "G1_MINUS_EV": "G1 without V->M"
+    },
+    "execution_order": [
+      "U_and_V_independent",
+      "R",
+      "M"
+    ],
+    "known_to_all_methods": true,
+    "probe_edges": {
+      "eU": [
+        "U",
+        "M"
+      ],
+      "eV": [
+        "V",
+        "M"
+      ]
+    },
+    "relay_context": "question + permitted U/V messages; no raw documents",
+    "shock": "remove U->R or V->R, exactly 48 questions each, independent PCG64 allocation",
+    "source_context": {
+      "U": "question + U shard",
+      "V": "question + V shard"
+    }
+  }
+}

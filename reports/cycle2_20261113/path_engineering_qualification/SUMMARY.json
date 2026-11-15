@@ -1,0 +1,16 @@
+{
+  "CPU_replay_checks": 1064,
+  "actual_GPU_hours_including_failed_fixture": 0.11696458899163796,
+  "bootstrap_runs": 0,
+  "failure": "Old synthetic long fixture had10155 Mistral prompt tokens and was rejected without truncation; retained and charged",
+  "new_experiment_confidence_intervals": false,
+  "new_fixture_max_static_tokens": 5755,
+  "old_scientific_results_unchanged": true,
+  "scientific_efficacy_claim": false,
+  "short_actual_regeneration_equalities": 336,
+  "source_and_model_identity_checked": true,
+  "status": "ROOT_ACCEPTED_SYNTHETIC_PATH_OPERATOR",
+  "valid_run_logical_calls": 120,
+  "valid_run_physical_calls": 64,
+  "valid_run_terminal_outputs": 36
+}
