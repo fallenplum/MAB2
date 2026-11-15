@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_DIAGNOSTIC_SCOPE_BEFORE_FORMAL_LABEL_RELEASE",
+  "role": "descriptive_development_anatomy_not_candidate_or_confirmation",
+  "new_model_calls": 0,
+  "new_formal_rounds": 0,
+  "primary_screen_unchanged": true,
+  "source_sha256": {
+    "diagnose_path_credit.py": "0ae9dcc316c1f01695cba77e2adac7307001befba863571632048c5dd7d51080",
+    "report_path_screen.py": "1fd2bb1da0139d3d95090e011a7024e018d82e9e958ac6d7da653fae8a670288"
+  },
+  "outputs": [
+    "affected and unaffected credit means by seed",
+    "both-zero/nonzero-union/same-sign/opposite-sign seed support",
+    "mean-credit sign reversals",
+    "same-question old-credit action anatomy with strict-negative and nonpositive tie rules",
+    "free protect-affected alternative with both fixed tie rules",
+    "evaluator-only current-menu oracle headroom",
+    "physical and full logical costs separately"
+  ],
+  "limitations": [
+    "Not disjoint I/C/S: do not infer online future-service gains",
+    "No unpurchased data available to any later policy",
+    "No post-hoc candidate rescue, no threshold sweep, no CI or bootstrap",
+    "All newly exposed questions remain development data"
+  ]
+}
