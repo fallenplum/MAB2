@@ -1,0 +1,10 @@
+{
+  "artificial_units": 2,
+  "baseline_logical_calls_checked": 120,
+  "benchmark_quality_claim": false,
+  "field_checks": 1200,
+  "new_archive_manifest_sha256": "06a8627b6d5d8fa827df25e7c1e17e7af66522ef13119faf2170325827a9543b",
+  "new_factorial_physical_calls": 148,
+  "prior_archive_manifest_sha256": "56a158e84185cb3a3d6ae2f8f4963cba095ea958932c77adbb453beecaeac489",
+  "status": "PASS_ACTUAL_REGENERATED_ORIGINAL_CONDITIONS"
+}

@@ -1,0 +1,9 @@
+{
+  "protocol_sha256": "d8b3cb3e856f49a9c26f2ce71d1682baaeae1a3c13038b7021f2f670ec4a54a8",
+  "qualification_total_GPU_hours": 0.06528831498445167,
+  "regeneration_sha256": "d02d4ccc747238ac8c1aff523fc38abd60174dbf74d15cc46fa472c795332648",
+  "replay_sha256": "ccce156325b9446598eda0f628220301d615ffa4df7ce80e4f1229b6fca7057e",
+  "scientific_efficacy_proven": false,
+  "status": "ROOT_ACCEPTED_SYNTHETIC_FACTORIAL_OPERATOR",
+  "tests_sha256": "95ef41825c410d99884b54fd557d58853f06be3a7cb66889ba5c36344aca7381"
+}

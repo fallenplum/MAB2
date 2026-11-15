@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_STDLIB_POINT_ARITHMETIC",
+  "checks": 237,
+  "human_independent_peer_review": false,
+  "GPU_hours": 0,
+  "bootstrap_runs": 0,
+  "gates": {
+    "gain_over_single_Q": false,
+    "gain_over_cheap_Q_vote": false,
+    "independent_aggregation_quality_screen": true,
+    "independent_aggregation_cost_screen": false,
+    "credit_signal_screen": false
+  },
+  "deliberate_corrupt_point_rejected": true
+}

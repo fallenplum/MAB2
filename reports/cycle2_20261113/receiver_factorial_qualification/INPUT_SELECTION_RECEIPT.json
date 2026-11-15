@@ -1,0 +1,19 @@
+{
+  "GPU_hours": 0,
+  "capacity_sha256": "3b43bb07864b0c7c9955794c473816d70fed10d68618e915c8f8876eb44587b0",
+  "contract_sha256": "ad3828c2af569390628a3542b2c92e7f16df583c7f7ef0a03fd958e9213d4e61",
+  "labels_read": false,
+  "manifest_sha256": "abfde84ad224be914371748dac264e4c2539c4bf1913266794f7d4786f32e086",
+  "official_test_opened": false,
+  "plan_sha256": "ec6671c2135a5f62f7eeff413b7f651047a997d82a2bbd71bbba79a29980397d",
+  "questions_sha256": "0517c92ca60ce9b889cf5b526a550a7fad63c71eacf6172f249f41182dd41863",
+  "runtime_hard_cap": 8192,
+  "static_cap": 7168,
+  "stats": {
+    "eligible_unexposed_pool_questions": 408,
+    "known_exposed_groups": 7953,
+    "selected_questions": 96
+  },
+  "status": "COMPLETE_PRIVATE_CAPACITY_SELECTION_NO_GPU_ADMISSION",
+  "unknown_cross_project_exposure": "UNKNOWN"
+}

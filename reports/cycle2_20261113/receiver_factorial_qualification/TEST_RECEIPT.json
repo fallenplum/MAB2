@@ -1,0 +1,20 @@
+[
+  {
+    "exit_code": 0,
+    "file": "test_factorial_operator.py",
+    "stderr": ".......\n----------------------------------------------------------------------\nRan 7 tests in 0.203s\n\nOK\n",
+    "stdout": ""
+  },
+  {
+    "exit_code": 0,
+    "file": "test_factorial_statistics.py",
+    "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.005s\n\nOK\n",
+    "stdout": ""
+  },
+  {
+    "exit_code": 0,
+    "file": "test_factorial_evaluate.py",
+    "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 2.471s\n\nOK\n",
+    "stdout": ""
+  }
+]

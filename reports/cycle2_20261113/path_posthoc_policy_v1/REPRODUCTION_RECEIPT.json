@@ -1,0 +1,7 @@
+{
+  "status": "PASS_EXACT_AGGREGATE_AND_515_TRAJECTORY_REPRODUCTION",
+  "original_executed_private_source_sha256": "0815fec88fcb37ce2f88c29a1dbecc125fe6a606de579aa1462adc3d1f337f01",
+  "public_executed_source_sha256": "4459f81ef2dabf6777b6a89e656369987c0dd4fe73ee7725826806c14ab6fa0b",
+  "new_model_calls": 0,
+  "confidence_intervals": false
+}
