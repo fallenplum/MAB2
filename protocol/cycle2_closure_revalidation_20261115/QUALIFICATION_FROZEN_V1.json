@@ -1,0 +1,30 @@
+{
+  "formal_round_increment": 0,
+  "logical_calls": 124,
+  "maximum_fresh_calls": 60,
+  "qualification_plan_sha256": "1b6bd58d2269b36a8cf132536dd533049a812bf4be64f513fd4bac6481813da0",
+  "requirements": [
+    "complete fixtures",
+    "native journals",
+    "exact request/tokenizer replay",
+    "dead-node absence and cost validity"
+  ],
+  "reserved_GPU_hours": 0.25,
+  "scientific_GPU_admission": false,
+  "scope": "Two artificial fixtures, two old engineering seeds; all active nodes have full raw context; skip exactly nodes outside final ancestor closure",
+  "source_sha256": {
+    "closure_operator.py": "9a0599425fe84d5d430a36d5c1279a9c30db02da596daec09a604edae03a5027",
+    "closure_runtime_v1.py": "b60e67620beb8a670a8cb004823cdc95d1c757f33b5b18f68584367722301d40",
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "factorial_operator.py": "f4fb07889c0ed1e05d9603db7bfc1b68519fd800464a428b713445008a1b20ad",
+    "graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+    "graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "replay_closure_archive.py": "1316c6ab6308e47c4552d450a6593bdb277fc51e4e946e09977175df5e29fb7f"
+  },
+  "status": "FROZEN_BEFORE_ACTUAL_CALLS",
+  "terminal_conditions": 36,
+  "tests_passed": 7,
+  "worker_cap_seconds": 840
+}

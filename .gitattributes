@@ -100,3 +100,6 @@ experiments/cycle2_20261113/bayes_revalidation_diagnostics_v1/** -text
 reports/cycle2_20261113/bayes_revalidation_diagnostics_v1/** -text
 
 reports/cycle2_20261113/receiver_formal4_results_v1/** -text
+
+experiments/cycle2_20261113/closure_revalidation_v1/** -text
+protocol/cycle2_closure_revalidation_20261115/** -text
