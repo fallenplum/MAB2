@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETE_DIAGNOSTIC_REPAIR_NOT_NEW_EXPERIMENT",
+  "result_sha256": "e9b45b8ee331d962e386cdb3560bb559850308a221ad22aa15ddf5c6a39da5b1",
+  "mapping_verification_sha256": "90ae7548c649d5970cfd6c560333caafa7545cf46d049ad269d981db4921c68f",
+  "new_score_calls": 1344,
+  "new_model_calls": 0,
+  "new_GPU_hours": 0
+}

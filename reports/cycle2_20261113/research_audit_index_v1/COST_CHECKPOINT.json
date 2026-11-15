@@ -1,0 +1,115 @@
+{
+  "status": "LIVE_CHECKPOINT_NOT_FINAL_COST",
+  "global_cap_GPU_occupancy_hours": 160,
+  "formal_round_cap": 5,
+  "formal_rounds_started": 4,
+  "actual_closed_GPU_occupancy_hours": 48.97751857975077,
+  "reserved_not_actual_GPU_hours": 7.75,
+  "unreserved_authorized_GPU_hours": 103.27248142024922,
+  "entries": [
+    {
+      "candidate": "C2_R1_DIRECT_PAIRED_REVALIDATION",
+      "formal_started": true,
+      "formal_admitted": true,
+      "phase": "DEVELOPMENT_COMPLETE_COST_CLOSED",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 24,
+      "used_gpu_hours_estimate": 14.307773255389378,
+      "plan_sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff"
+    },
+    {
+      "candidate": "C2_HETERO_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "formal_admitted": false,
+      "phase": "ENGINEERING_QUALIFICATION_COMPLETE_REPLAY_PASS",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 0.5,
+      "used_gpu_hours_estimate": 0.11611894417664088,
+      "plan_sha256": "279bec01c0a3516f3293990c8464deda78a240a6aed7bafb9ceafcd36016089c"
+    },
+    {
+      "candidate": "C2_INDEPENDENT12_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "formal_admitted": false,
+      "phase": "ENGINEERING_QUALIFICATION_COMPLETE_ROOT_RECONCILIATION_PASS",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 0.5,
+      "used_gpu_hours_estimate": 0.04500747649555301,
+      "plan_sha256": "f823cf9ed577860885dbdfd09111a65dbbfe214042098ca3ca6b1ad694513a6c"
+    },
+    {
+      "candidate": "C2_HOTPOT_MATRIX_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "formal_admitted": false,
+      "phase": "ENGINEERING_CLOSED_ROOT_AND_INDEPENDENT_REVIEW_ACCEPTED",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 0.5,
+      "used_gpu_hours_estimate": 0.1783492729746892,
+      "plan_sha256": "52674fdc9a58a9035e169be9115812ac71dbd8e6ad939442a001d07d19555745"
+    },
+    {
+      "candidate": "C2_FORMAL2_HOTPOT_APPLICABILITY",
+      "formal_started": true,
+      "formal_admitted": true,
+      "phase": "FORMAL_RESULT_CLOSED_B_DISFAVORED_L2_INCONCLUSIVE",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 47.8,
+      "used_gpu_hours_estimate": 32.57857300557617,
+      "plan_sha256": "f1e9a857a171baadaa01e58a4e1eb0a4a30b51f19dd561be76a9da2a79134ada"
+    },
+    {
+      "candidate": "C2_PATH_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "formal_admitted": false,
+      "phase": "COMPLETE_GPU_QUALIFICATION_PENDING_CPU_REPLAY",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 0.25,
+      "used_gpu_hours_estimate": 0.11696458899163796,
+      "plan_sha256": "b23bbcd96832a16894ba325d23a08425f5dc3ed8f13f6b1b9f9acd8c58840ae3"
+    },
+    {
+      "candidate": "C2_FORMAL3_EXOGENOUS_PATH_SCREEN",
+      "formal_started": true,
+      "formal_admitted": true,
+      "phase": "FORMAL3_MECHANISM_SCREEN_COMPLETE_RETAINED",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 7.75,
+      "used_gpu_hours_estimate": 1.5694437211622587,
+      "plan_sha256": "ad5dbb1b2008446fe70c81500b3dda99dff6a79ea762bd7648541ead6cabd599"
+    },
+    {
+      "candidate": "C2_RECEIVER_FACTORIAL_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "formal_admitted": false,
+      "phase": "CLOSED_PENDING_REPLAY",
+      "cost_closed": true,
+      "released": true,
+      "max_gpu_hours": 0.25,
+      "used_gpu_hours_estimate": 0.06528831498445167,
+      "plan_sha256": "be8608685e0bf5c1a1e02360e2436769cbd42bc2649af385eac3ac043096da81"
+    },
+    {
+      "candidate": "C2_FORMAL4_RECEIVER_MODEL_ACCESS",
+      "formal_started": true,
+      "formal_admitted": true,
+      "phase": "FORMAL4_RUNNING_BLIND_PREFIX_RELEASED",
+      "cost_closed": false,
+      "released": false,
+      "max_gpu_hours": 7.75,
+      "plan_sha256": "061f14f0adb87793229c6ef0713359c7a3a8ac164d5d7661c0547170313c8ce3"
+    }
+  ],
+  "source_budget_sha256": "836af47269499c8231d8a190209e59b657eb411074ed97706467bf9aa1e494d4",
+  "historical_G1_G2_full_occupancy_hours": null,
+  "historical_cost_source": "../historical_costs/ACCEPTED_SUMMARY_EXTRACTION.json",
+  "historical_and_new_budget_not_added_as_same_measure": true,
+  "agent_tokens_energy_human_and_money_costs": null,
+  "logical_policy_costs_separate_from_physical_collection": true
+}

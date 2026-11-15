@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": 33390,
+  "numeric_checks": 19729,
+  "max_absolute_error": 1.1102230246251565e-16,
+  "mismatches": [],
+  "replicas": 592,
+  "method_rows": 36,
+  "contrasts": 34,
+  "new_model_calls": 0,
+  "bootstrap_resamples": 10000,
+  "bootstrap_clusters": 8,
+  "scope": "independent scalar replay of already-scored development pilot; not independent scientific confirmation",
+  "limits": [
+    "Does not verify raw questions, gold correctness, scorer implementation, or raw graph execution.",
+    "Physical GPU accounting must be merged independently by the root budget ledger.",
+    "Scalar arithmetic is independent; bootstrap index generator is the protocol-specified NumPy generator.",
+    "Rank ties follow exact floating values and physical-edge ordering; disagreements fail rather than relax ties."
+  ],
+  "complete_receipt_sha256": "61360615cd8e279c5f531f7fb98b881d008bcffc3a0c7e2c9551d0eb5c69246b",
+  "official_result_sha256": "ca6ed37d35db760507fc157ff72ea791c70aa69060e8a9a0f5d96521592d76eb",
+  "replay_inputs_sha256": "d26c7facb77e4c92e4b5e1da6fb4a6661e2203f1acbe3826a18f1db3b23f6998",
+  "replay_source_sha256": "5bb8a4bad638b1bd0189a0dce6ee10cace4f08b7d7b4b1592766890a88be9026"
+}

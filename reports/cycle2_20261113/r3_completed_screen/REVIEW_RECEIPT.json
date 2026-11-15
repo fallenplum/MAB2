@@ -1,0 +1,35 @@
+{
+  "status": "PASS_INDEPENDENT_R3_TRACE_AND_ORACLE_REVIEW",
+  "original_decision_preserved": "NOT_ADMITTED_CURRENT_CERTIFICATE_ROUTE",
+  "trajectories_replayed": 2072,
+  "purchase_steps_replayed": 170580,
+  "oracle_formulations": 8,
+  "source_and_artifact_sha256": {
+    "REVIEW.md": "8b9acc528e610bd2fd0d26e7d3c045c65d0c86cfc7311d1b05446de09adb32aa",
+    "review_r3.py": "e27aa8a1e99ee088d40d15dec1d92102ca76a258bb6d5d1262c2883ed670a928",
+    "AUDIT_IMPLEMENTATION_FAILURES.json": "236019da47c0390407dce51ab9d6549ead491d8864456767c7a5aa3d91a7a8e8",
+    "audit_003/REVIEW_RESULTS.json": "ddef3d8268c296e66a5cd461b887a279c731021272461ed19b180179c0619185"
+  },
+  "new_GPU_hours": 0,
+  "S_data_read": false,
+  "scientific_route_admitted": false,
+  "scope": {
+    "new_GPU": 0,
+    "S_read": false,
+    "question_text_read": false,
+    "raw_scoring_rechecked": false,
+    "IC_npz_read": true,
+    "IC_exact_keys_decoded": [
+      "C_A_quality",
+      "dirty",
+      "A_masks",
+      "B_masks",
+      "editable_edges"
+    ],
+    "gap_priority_recomputed": true,
+    "gap_priority_limit": null,
+    "oracle_limit": "Independent row-pattern formulation but same scipy/HiGHS solver family; not formal theorem-prover certification.",
+    "random_limit": "256 seeded realizations, not exact all-permutations expectation.",
+    "cost_limit": "Structural calls only; old A bank adds252 equally; no real tokens/GPU/latency/future-service claim."
+  }
+}

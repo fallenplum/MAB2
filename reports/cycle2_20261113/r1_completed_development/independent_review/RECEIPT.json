@@ -1,0 +1,21 @@
+{
+  "schema": "independent_r1_final_scientific_review_receipt_v1",
+  "status": "COMPLETE_R1_MAIN_R2_REVIEW_WITH_ARCHITECTURE_REFERENCE_AB_LABELS_QUARANTINED",
+  "R1_progress_gate": "FAIL_PRIMARY_POINT_THRESHOLD",
+  "R2_gate": "NO_GO_G2_CURRENT_BANK_AND_QUOTA",
+  "project_status": "ACTIVE",
+  "independent_CPU_checks": 2721,
+  "new_GPU_hours": 0,
+  "new_model_calls": 0,
+  "new_scientific_gate": false,
+  "raw_question_gold_model_text_read": false,
+  "publication_boundary": "REPORT.md is aggregate-only; VERIFICATION.json contains private source paths and is not a public release",
+  "artifact_sha256": {
+    "verification_001/VERIFICATION.json": "25a9c8eb9b344a3daaa2e2926511b6967066e146602ccec3ce2d8f9f96a5e9a6",
+    "REPORT.md": "22c5a3d03a9aa824d0fa40a0076c4fab166e3a7ce25684799aef5c0d391e17e1",
+    "RELEASE_GATE_RECEIPT.json": "3ff06969e02ad58e207358947ce4f012b3b39774a6919664721ba0b2018051b6",
+    "REVIEW_PLAN.json": "06bff64513bc3d38d62e98912fc47151a10ca3d4999903efa21f244c28d131c3",
+    "verify_review.py": "475bcb4f0b1d07ca7eb75e290f435335e5b085416a32adc12d922f914ba34278",
+    "PRE_RELEASE_SOURCE_SHA256.json": "1cf9c2e80a9ca6e3fbfffdaa1b97009adb74e52cdb504e1d57d5c9ea3d7685d8"
+  }
+}

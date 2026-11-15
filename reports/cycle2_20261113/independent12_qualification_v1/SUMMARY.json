@@ -1,0 +1,27 @@
+{
+  "status": "QUALIFIED_SYNTHETIC_ENGINEERING_ONLY",
+  "physical_calls": 52,
+  "by_model": {
+    "qwen": 24,
+    "mistral": 28
+  },
+  "format_failures": 0,
+  "fresh_semantic_checks": 572,
+  "root_independent_checks": 1642,
+  "GPU_occupancy_hours": 0.04500747649555301,
+  "source_commit": "42a38b81fc745c9a382ee3ff88e149c89923f987",
+  "protocol_sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+  "new_formal_rounds": 0,
+  "not_accuracy_evidence": true,
+  "not_full_hotpot_matrix_qualification": true,
+  "logical_inputs_include_all_12_samples": true,
+  "known_limits": [
+    "Only two authored short synthetic fixtures",
+    "No full benchmark context/time guarantee",
+    "No real failure incident replay; failure behavior has CPU tests",
+    "Root arithmetic review did not retokenize the receiver inputs"
+  ],
+  "global_budget_closed_used_gpu_hours_at_this_receipt": 14.468899676061572,
+  "budget_remaining_is_not_new_permission": true,
+  "source_dependency_byte_policy": "Exact committed bytes match deployment manifest"
+}

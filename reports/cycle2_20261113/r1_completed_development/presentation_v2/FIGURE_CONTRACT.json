@@ -1,0 +1,19 @@
+{
+  "status": "PRESENTATION_ONLY_AFTER_ARCHITECTURE_DIAGNOSTIC_REPAIR",
+  "backend": "Python/matplotlib, preserving the original Python plotting workflow",
+  "claim": "Display the same nine predefined R1 change/k2 policies with complete logical token charges and future-service accuracy, without point overlap hiding methods.",
+  "archetype": "quantitative grid",
+  "panels": {
+    "a": "Horizontal complete logical input+output token bars across eight episodes",
+    "b": "Accuracy points on the same nine method rows"
+  },
+  "layout": "Shared categorical rows; same fixed method order as the original CSV; no sorting by results",
+  "source_data": "Copy the original r1_main_cost_quality.csv byte-for-byte and verify every numeric field against the bound final result",
+  "method_label_change": "no_graph_ablation display label becomes Priority w/o graph; this is priority-score ablation, not a no-edge architecture",
+  "statistics": "No new statistics, intervals, error bars, gates, inference or method selection",
+  "cost_scope": "Full logical I initialization + permitted C revalidation + S deployment; lower-cost reuse/stay retained; physical research occupancy separate",
+  "unit": "8 predefined learning episodes; 192 S questions; uniform exact policy expectation",
+  "fairness": "Shared conservative caps and paired-feedback quota for matched mechanism methods; actual expenditures are not forced equal",
+  "exports": ["SVG editable text", "PNG 300dpi", "PDF vector"],
+  "review_risks": ["label collision", "overlapping rows", "truncated cost scope", "confusing priority ablation with architecture removal", "rounded display values mistaken for source changes"]
+}

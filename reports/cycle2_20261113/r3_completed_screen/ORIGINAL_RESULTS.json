@@ -1,0 +1,1229 @@
+{
+  "status": "NOT_ADMITTED_CURRENT_CERTIFICATE_ROUTE",
+  "project_stop": false,
+  "new_gpu_hours": 0,
+  "formal_rounds_started": 0,
+  "evidence_class": "EXPLORATORY_R1_IC_REUSE_STRUCTURAL_COST_MODEL",
+  "mean_costs": {
+    "cheapest": 151.375,
+    "gap_unit": 143.875,
+    "gap_bundle": 144.625,
+    "random": 153.73876953125
+  },
+  "oracle_mean_cost": 104.5,
+  "oracle_ratio": 0.7263249348392702,
+  "bundle_ratio": 1.0052128583840139,
+  "including_old_bank_bundle_ratio": 1.001894537417114,
+  "gates": {
+    "complete_valid_oracles": true,
+    "nonstay_winners_at_least3": true,
+    "oracle_ratio_at_most_point80": true,
+    "bundle_ratio_at_most_point90": false,
+    "bundle_no_worse_than_gap_at_least6": false,
+    "including_bank_ratio_at_most_point97": false
+  },
+  "episodes": [
+    {
+      "episode": 0,
+      "bank_winner": 2,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 156,
+          "revealed": 84,
+          "action": 2
+        },
+        "gap_unit": {
+          "cost": 136,
+          "revealed": 70,
+          "action": 2
+        },
+        "gap_bundle": {
+          "cost": 136,
+          "revealed": 70,
+          "action": 2
+        },
+        "random": {
+          "cost": 151.31640625,
+          "min": 136,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 2,
+        "cost": 83,
+        "revealed": 34,
+        "mask": [
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    },
+    {
+      "episode": 1,
+      "bank_winner": 4,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 149,
+          "revealed": 80,
+          "action": 4
+        },
+        "gap_unit": {
+          "cost": 147,
+          "revealed": 78,
+          "action": 4
+        },
+        "gap_bundle": {
+          "cost": 147,
+          "revealed": 78,
+          "action": 4
+        },
+        "random": {
+          "cost": 153.921875,
+          "min": 143,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 4,
+        "cost": 118,
+        "revealed": 56,
+        "mask": [
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    },
+    {
+      "episode": 2,
+      "bank_winner": 3,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 152,
+          "revealed": 82,
+          "action": 3
+        },
+        "gap_unit": {
+          "cost": 147,
+          "revealed": 79,
+          "action": 3
+        },
+        "gap_bundle": {
+          "cost": 147,
+          "revealed": 79,
+          "action": 3
+        },
+        "random": {
+          "cost": 153.76953125,
+          "min": 145,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 3,
+        "cost": 108,
+        "revealed": 50,
+        "mask": [
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    },
+    {
+      "episode": 3,
+      "bank_winner": 3,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 152,
+          "revealed": 82,
+          "action": 3
+        },
+        "gap_unit": {
+          "cost": 144,
+          "revealed": 77,
+          "action": 3
+        },
+        "gap_bundle": {
+          "cost": 144,
+          "revealed": 77,
+          "action": 3
+        },
+        "random": {
+          "cost": 154.10546875,
+          "min": 142,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 3,
+        "cost": 116,
+        "revealed": 55,
+        "mask": [
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    },
+    {
+      "episode": 4,
+      "bank_winner": 0,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 147,
+          "revealed": 78,
+          "action": 0
+        },
+        "gap_unit": {
+          "cost": 141,
+          "revealed": 74,
+          "action": 0
+        },
+        "gap_bundle": {
+          "cost": 143,
+          "revealed": 75,
+          "action": 0
+        },
+        "random": {
+          "cost": 152.984375,
+          "min": 140,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 0,
+        "cost": 96,
+        "revealed": 42,
+        "mask": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    },
+    {
+      "episode": 5,
+      "bank_winner": 0,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 156,
+          "revealed": 84,
+          "action": 0
+        },
+        "gap_unit": {
+          "cost": 148,
+          "revealed": 78,
+          "action": 0
+        },
+        "gap_bundle": {
+          "cost": 148,
+          "revealed": 78,
+          "action": 0
+        },
+        "random": {
+          "cost": 154.78515625,
+          "min": 145,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 0,
+        "cost": 112,
+        "revealed": 52,
+        "mask": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    },
+    {
+      "episode": 6,
+      "bank_winner": 6,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 152,
+          "revealed": 82,
+          "action": 6
+        },
+        "gap_unit": {
+          "cost": 150,
+          "revealed": 81,
+          "action": 6
+        },
+        "gap_bundle": {
+          "cost": 152,
+          "revealed": 82,
+          "action": 6
+        },
+        "random": {
+          "cost": 154.484375,
+          "min": 148,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 6,
+        "cost": 99,
+        "revealed": 48,
+        "mask": [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    },
+    {
+      "episode": 7,
+      "bank_winner": 0,
+      "full_structural_calls": 156,
+      "old_bank_structural_calls": 252,
+      "methods": {
+        "cheapest": {
+          "cost": 147,
+          "revealed": 78,
+          "action": 0
+        },
+        "gap_unit": {
+          "cost": 138,
+          "revealed": 71,
+          "action": 0
+        },
+        "gap_bundle": {
+          "cost": 140,
+          "revealed": 72,
+          "action": 0
+        },
+        "random": {
+          "cost": 154.54296875,
+          "min": 145,
+          "max": 156,
+          "replicas": 256
+        }
+      },
+      "oracle": {
+        "status": "OPTIMAL_CERTIFICATE_VERIFIED",
+        "action": 0,
+        "cost": 104,
+        "revealed": 47,
+        "mask": [
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "mip_gap": 0.0
+      }
+    }
+  ],
+  "input_export_sha256": "85c9f171266c56bde04585ed2e4a0055181ef294e1f9ee8311d551990bcf821b",
+  "input_receipt_sha256": "e86462afc3826ef24187b0243cb43ba2fe194740ddb75e90e258934f66bf985f",
+  "input_provenance": {
+    "R1_collection_plan_sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff",
+    "R1_actions_file_sha256": "ed884a9e8697752743897eb025d06890300b0f96e37307b0f95f486a7b00aeb2",
+    "R1_action_payload_digest": "b76c78991f8327c6b2189bcd54f93f40457c907afc1f332bc103eb8c25a84802",
+    "npz_sha256": "85c9f171266c56bde04585ed2e4a0055181ef294e1f9ee8311d551990bcf821b",
+    "executor_protocol_hash": "5c52efae884ee59481f22396c46afd4830e1bc9b5abb0f803b39a373b7600426",
+    "model_identity_sha256": "46d0ac8f422bfd10a0271b039f4478637d53b68c7764d6137bb7f0b6e1648949",
+    "quality_scorer_sha256": "da315ade4be7362ca81fc7ed41252cdccaa9271dc32f9a20531356587bb5f37e",
+    "source_manifest_digest": "4ce8d4ae0bc74e1397cab04ca9fd2c1480b207c6c5a19d8382edacb9539fc9ec",
+    "analysis_source_sha256": {
+      "r1_adapter.py": "fc0deb7fbb5dc82ebe6c09ea743731805c3937c72b6021d3de9d71914d6c0afc",
+      "r1_policy.py": "1dfb0c74e7859fd39865b7b9136fbef979e12aa6b0a09b716bb8148da51cfad7"
+    },
+    "analysis_source_version": "8f9b022b90641a49d828c3500e652d06ee35041c",
+    "analysis_source_commit_bytes_verified": true,
+    "I_C_source_graphs_sha256": "7f8c506d818030d835c5fb4d28a3f4dd9fd4bbcd6ae4d9ee0b07035cfd521b50",
+    "IC_export_receipt_sha256": "e86462afc3826ef24187b0243cb43ba2fe194740ddb75e90e258934f66bf985f",
+    "raw_source_artifacts_reread_by_diagnostic": false,
+    "synthetic_fixture_mode": false
+  },
+  "source_commit": "7814373af9dc9ead3f530d8325829dcc59c96588",
+  "source_sha256": {
+    "certificate_core.py": "7a51981403ee3dfd646c743f6cca034ceb106fb0819c4db72e298a5b799f2421",
+    "run_screen.py": "86a9619a7958b993619d89dc75ea0a92191ac53a2e6dbf58215caf79f771a9e8",
+    "test_certificate_core.py": "86d67b4b4b74473aed652958effaea0aa84ffc3079eba942e7e1f27ca73857cd"
+  },
+  "protocol_sha256": "8347414dec92f6e8918a1a461ca4865a078f3291eb33053b40f88fe135c024e1",
+  "cpu_seconds": 65.21875,
+  "wall_seconds": 79.86989164352417,
+  "real_tokens_or_gpu_savings_claimed": false,
+  "future_quality_claimed": false,
+  "S_data_used": false
+}

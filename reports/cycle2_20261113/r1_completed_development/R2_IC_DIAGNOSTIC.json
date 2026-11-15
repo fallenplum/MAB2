@@ -1,0 +1,1008 @@
+{
+  "schema": "mab2_r2_ic_diagnostic_result_v1",
+  "contract_sha256": "3e85f15ff4c653f533d7f4483000c3fcf8c8c2f11013619d18d3d191f3e2ff02",
+  "r1_protocol_sha256": "5336eacc6713d4e444ddb631032409cd2718ad3b4aaee1387aff5baac40f5ecf",
+  "support": {
+    "nonzero_B_questions": 21,
+    "episodes_with_nonzero_B_variance": 8,
+    "mean_direct_risk": 0.009974747474747475,
+    "total_questions": 96,
+    "cells": 48,
+    "zero_target_variance_cells": 27,
+    "zero_drift_variance_cells": 17
+  },
+  "primary_risk": {
+    "ratio": 3.450685654008439,
+    "mean_transport_risk": 0.03441971801346801,
+    "mean_direct_risk": 0.009974747474747475,
+    "strict_bank_necessary_condition_cells": 21,
+    "v_A": [
+      [
+        0.0,
+        0.0,
+        0.08333333333333333,
+        0.0,
+        0.08333333333333331,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.08333333333333331,
+        0.08333333333333331,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0833333333333333,
+        0.08333333333333331,
+        0.08333333333333331,
+        0.08333333333333331,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.08333333333333331
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.08333333333333331
+      ],
+      [
+        0.0,
+        0.08333333333333331,
+        0.1515151515151515,
+        0.1515151515151515,
+        0.0,
+        0.08333333333333331
+      ],
+      [
+        0.0833333333333333,
+        0.0833333333333333,
+        0.08333333333333331,
+        0.0833333333333333,
+        0.0833333333333333,
+        0.0833333333333333
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "v_B": [
+      [
+        0.0833333333333333,
+        0.08333333333333331,
+        0.0,
+        0.0833333333333333,
+        0.08333333333333331,
+        0.0
+      ],
+      [
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.08333333333333333
+      ],
+      [
+        0.0,
+        0.0,
+        0.08333333333333333,
+        0.18181818181818182,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.08333333333333331,
+        0.08333333333333331,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0833333333333333,
+        0.0833333333333333,
+        0.0,
+        0.15151515151515144,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.18181818181818182,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.0,
+        0.08333333333333331
+      ],
+      [
+        0.0,
+        0.18181818181818182,
+        0.0,
+        0.0,
+        0.18181818181818182,
+        0.2651515151515152
+      ]
+    ],
+    "v_D": [
+      [
+        0.18181818181818182,
+        0.33333333333333326,
+        0.08333333333333331,
+        0.18181818181818182,
+        0.08333333333333331,
+        0.15151515151515146
+      ],
+      [
+        0.0,
+        0.18181818181818182,
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.0
+      ],
+      [
+        0.08333333333333331,
+        0.0,
+        0.08333333333333331,
+        0.18181818181818182,
+        0.08333333333333331,
+        0.0
+      ],
+      [
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.08333333333333331
+      ],
+      [
+        0.08333333333333331,
+        0.0833333333333333,
+        0.1515151515151515,
+        0.08333333333333333,
+        0.0833333333333333,
+        0.18181818181818182
+      ],
+      [
+        0.0,
+        0.0833333333333333,
+        0.18181818181818182,
+        0.0833333333333333,
+        0.4469696969696972,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.18181818181818182,
+        0.0,
+        0.0,
+        0.08333333333333331
+      ],
+      [
+        0.0,
+        0.08333333333333331,
+        0.0,
+        0.18181818181818182,
+        0.2651515151515152,
+        0.2651515151515152
+      ]
+    ],
+    "transport_risk_cells": [
+      [
+        0.06060606060606061,
+        0.11111111111111109,
+        0.03472222222222222,
+        0.06060606060606061,
+        0.03472222222222222,
+        0.05050505050505049
+      ],
+      [
+        0.0,
+        0.06060606060606061,
+        0.006944444444444443,
+        0.03472222222222222,
+        0.0,
+        0.0
+      ],
+      [
+        0.027777777777777773,
+        0.0069444444444444415,
+        0.03472222222222222,
+        0.06755050505050506,
+        0.03472222222222222,
+        0.0
+      ],
+      [
+        0.0,
+        0.027777777777777773,
+        0.0,
+        0.027777777777777773,
+        0.0,
+        0.03472222222222222
+      ],
+      [
+        0.027777777777777773,
+        0.027777777777777766,
+        0.0505050505050505,
+        0.03472222222222222,
+        0.027777777777777766,
+        0.06755050505050506
+      ],
+      [
+        0.0,
+        0.03472222222222221,
+        0.07323232323232323,
+        0.04040404040404039,
+        0.14898989898989906,
+        0.006944444444444443
+      ],
+      [
+        0.0069444444444444415,
+        0.0069444444444444415,
+        0.06755050505050506,
+        0.0069444444444444415,
+        0.0069444444444444415,
+        0.03472222222222222
+      ],
+      [
+        0.0,
+        0.027777777777777773,
+        0.0,
+        0.06060606060606061,
+        0.0883838383838384,
+        0.0883838383838384
+      ]
+    ],
+    "direct_risk_cells": [
+      [
+        0.01666666666666666,
+        0.016666666666666663,
+        0.0,
+        0.01666666666666666,
+        0.016666666666666663,
+        0.0
+      ],
+      [
+        0.0,
+        0.016666666666666663,
+        0.0,
+        0.016666666666666663,
+        0.0,
+        0.016666666666666666
+      ],
+      [
+        0.0,
+        0.0,
+        0.016666666666666666,
+        0.03636363636363636,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.016666666666666663,
+        0.016666666666666663,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.01666666666666666,
+        0.01666666666666666,
+        0.0,
+        0.030303030303030287,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.016666666666666663,
+        0.0,
+        0.03636363636363636,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.016666666666666663,
+        0.0,
+        0.0,
+        0.016666666666666663
+      ],
+      [
+        0.0,
+        0.03636363636363636,
+        0.0,
+        0.0,
+        0.03636363636363636,
+        0.05303030303030304
+      ]
+    ]
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 72031,
+    "ci90": [
+      2.39365166558856,
+      5.005887818808094
+    ],
+    "undefined_replicates": 0,
+    "undefined_fraction": 0.0,
+    "invalid_replicates_dropped": false,
+    "near_zero_denominator_threshold": 0.0001,
+    "interval_scope": "exploratory eight-episode nested bootstrap; no coverage guarantee"
+  },
+  "costs": {
+    "label": "初始化+反馈的实测token成本",
+    "includes_future_service": false,
+    "bank_episode_tokens": [
+      120431.0,
+      123433.0,
+      125611.0,
+      116073.0,
+      124155.0,
+      120240.0,
+      124911.0,
+      116201.0
+    ],
+    "transport_new_episode_tokens": [
+      55695.25,
+      55732.5,
+      57077.5,
+      60179.25,
+      52387.0,
+      56119.0,
+      57988.25,
+      54438.25
+    ],
+    "direct_new_episode_tokens": [
+      48994.58333333333,
+      49429.16666666667,
+      50862.5,
+      53109.16666666667,
+      46470.83333333333,
+      49437.08333333333,
+      51371.25,
+      48121.66666666667
+    ],
+    "transport_initialization_plus_feedback_tokens": [
+      176126.25,
+      179165.5,
+      182688.5,
+      176252.25,
+      176542.0,
+      176359.0,
+      182899.25,
+      170639.25
+    ],
+    "direct_initialization_plus_feedback_tokens": [
+      169425.5833333333,
+      172862.1666666667,
+      176473.5,
+      169182.1666666667,
+      170625.8333333333,
+      169677.0833333333,
+      176282.25,
+      164322.6666666667
+    ],
+    "initialization_plus_feedback_cost_weighted_risk_ratio": 3.590555111263265,
+    "incremental_cost_weighted_risk_ratio": 3.905826532364427,
+    "future_common_service_cap_added_sensitivity": {
+      "common_cap": 1800192,
+      "ratio": 3.462746164161715,
+      "measured_service_cost": false
+    },
+    "cold_direct_without_bank_episode_tokens": [
+      48994.58333333333,
+      49429.16666666667,
+      50862.5,
+      53109.16666666667,
+      46470.83333333333,
+      49437.08333333333,
+      51371.25,
+      48121.66666666667
+    ],
+    "continuous_from_scratch_coefficient_ratio": 6.009398025626606,
+    "joint_actual_calls_per_question": 37,
+    "standalone_cold_B_time_measured": false,
+    "same_actual_spend_claim": false
+  },
+  "decision": {
+    "episode_accuracy": {
+      "transport_beta1": [
+        0.6666666666666667,
+        0.25,
+        0.3333333333333333,
+        0.25,
+        0.5,
+        0.25,
+        0.3333333333333333,
+        0.41666666666666663
+      ],
+      "direct_C5": [
+        0.5833333333333333,
+        0.25,
+        0.3333333333333333,
+        0.25,
+        0.5,
+        0.25,
+        0.41666666666666663,
+        0.3333333333333333
+      ],
+      "old_bank": [
+        0.6666666666666667,
+        0.25,
+        0.3333333333333333,
+        0.25,
+        0.5,
+        0.25,
+        0.3333333333333333,
+        0.41666666666666663
+      ],
+      "cv_leave_one_episode_out": [
+        0.6666666666666667,
+        0.25,
+        0.3333333333333333,
+        0.25,
+        0.5,
+        0.25,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "beta_half": [
+        0.6666666666666667,
+        0.25,
+        0.3333333333333333,
+        0.25,
+        0.5,
+        0.25,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "beta_zero_C3": [
+        0.5833333333333333,
+        0.25,
+        0.3333333333333333,
+        0.25,
+        0.5,
+        0.25,
+        0.41666666666666663,
+        0.3333333333333333
+      ]
+    },
+    "mean_accuracy": {
+      "transport_beta1": 0.375,
+      "direct_C5": 0.3645833333333333,
+      "old_bank": 0.375,
+      "cv_leave_one_episode_out": 0.36458333333333337,
+      "beta_half": 0.36458333333333337,
+      "beta_zero_C3": 0.3645833333333333
+    },
+    "episode_transport_minus_direct": [
+      0.08333333333333348,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.08333333333333331,
+      0.08333333333333331
+    ],
+    "episode_transport_minus_old": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mean_transport_minus_direct": 0.010416666666666685,
+    "mean_transport_minus_old": 0.0,
+    "episodes_nonnegative_transport_minus_direct": 7,
+    "fold_actions_frozen_before_validation": [
+      {
+        "episode": 0,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 6,
+          "direct_C5": 2,
+          "old_bank": 5,
+          "cv_leave_one_episode_out": 6,
+          "beta_half": 6,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 5,
+          "transport_identity": 5,
+          "pooled_old_plus_new3": 5
+        }
+      },
+      {
+        "episode": 0,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 5,
+          "direct_C5": 0,
+          "old_bank": 5,
+          "cv_leave_one_episode_out": 5,
+          "beta_half": 5,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 5,
+          "transport_identity": 5,
+          "pooled_old_plus_new3": 4
+        }
+      },
+      {
+        "episode": 1,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 3,
+          "direct_C5": 0,
+          "old_bank": 3,
+          "cv_leave_one_episode_out": 3,
+          "beta_half": 3,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 3,
+          "transport_identity": 3,
+          "pooled_old_plus_new3": 3
+        }
+      },
+      {
+        "episode": 1,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 3,
+          "direct_C5": 4,
+          "old_bank": 3,
+          "cv_leave_one_episode_out": 3,
+          "beta_half": 3,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 3,
+          "transport_identity": 3,
+          "pooled_old_plus_new3": 3
+        }
+      },
+      {
+        "episode": 2,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 2,
+          "direct_C5": 0,
+          "old_bank": 2,
+          "cv_leave_one_episode_out": 2,
+          "beta_half": 2,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 2,
+          "transport_identity": 2,
+          "pooled_old_plus_new3": 2
+        }
+      },
+      {
+        "episode": 2,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 2,
+          "direct_C5": 0,
+          "old_bank": 2,
+          "cv_leave_one_episode_out": 2,
+          "beta_half": 2,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 2,
+          "transport_identity": 2,
+          "pooled_old_plus_new3": 3
+        }
+      },
+      {
+        "episode": 3,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 6,
+          "direct_C5": 0,
+          "old_bank": 6,
+          "cv_leave_one_episode_out": 6,
+          "beta_half": 6,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 6,
+          "transport_identity": 6,
+          "pooled_old_plus_new3": 6
+        }
+      },
+      {
+        "episode": 3,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 6,
+          "direct_C5": 0,
+          "old_bank": 6,
+          "cv_leave_one_episode_out": 6,
+          "beta_half": 6,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 6,
+          "transport_identity": 6,
+          "pooled_old_plus_new3": 6
+        }
+      },
+      {
+        "episode": 4,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 2,
+          "direct_C5": 0,
+          "old_bank": 0,
+          "cv_leave_one_episode_out": 6,
+          "beta_half": 6,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 0,
+          "transport_identity": 0,
+          "pooled_old_plus_new3": 0
+        }
+      },
+      {
+        "episode": 4,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 0,
+          "direct_C5": 0,
+          "old_bank": 0,
+          "cv_leave_one_episode_out": 0,
+          "beta_half": 0,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 0,
+          "transport_identity": 0,
+          "pooled_old_plus_new3": 1
+        }
+      },
+      {
+        "episode": 5,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 5,
+          "direct_C5": 5,
+          "old_bank": 3,
+          "cv_leave_one_episode_out": 5,
+          "beta_half": 5,
+          "beta_zero_C3": 5
+        },
+        "nochange_action_slots": {
+          "old_bank": 3,
+          "transport_identity": 3,
+          "pooled_old_plus_new3": 3
+        }
+      },
+      {
+        "episode": 5,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 4,
+          "direct_C5": 0,
+          "old_bank": 3,
+          "cv_leave_one_episode_out": 4,
+          "beta_half": 4,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 3,
+          "transport_identity": 3,
+          "pooled_old_plus_new3": 3
+        }
+      },
+      {
+        "episode": 6,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 3,
+          "direct_C5": 0,
+          "old_bank": 3,
+          "cv_leave_one_episode_out": 3,
+          "beta_half": 3,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 3,
+          "transport_identity": 3,
+          "pooled_old_plus_new3": 3
+        }
+      },
+      {
+        "episode": 6,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 6,
+          "direct_C5": 6,
+          "old_bank": 3,
+          "cv_leave_one_episode_out": 6,
+          "beta_half": 6,
+          "beta_zero_C3": 6
+        },
+        "nochange_action_slots": {
+          "old_bank": 3,
+          "transport_identity": 3,
+          "pooled_old_plus_new3": 6
+        }
+      },
+      {
+        "episode": 7,
+        "fold": 0,
+        "action_slots": {
+          "transport_beta1": 0,
+          "direct_C5": 0,
+          "old_bank": 0,
+          "cv_leave_one_episode_out": 0,
+          "beta_half": 0,
+          "beta_zero_C3": 0
+        },
+        "nochange_action_slots": {
+          "old_bank": 0,
+          "transport_identity": 0,
+          "pooled_old_plus_new3": 4
+        }
+      },
+      {
+        "episode": 7,
+        "fold": 1,
+        "action_slots": {
+          "transport_beta1": 4,
+          "direct_C5": 2,
+          "old_bank": 0,
+          "cv_leave_one_episode_out": 6,
+          "beta_half": 6,
+          "beta_zero_C3": 2
+        },
+        "nochange_action_slots": {
+          "old_bank": 0,
+          "transport_identity": 0,
+          "pooled_old_plus_new3": 2
+        }
+      }
+    ],
+    "cv_coefficients": [
+      {
+        "beta": 0.13986013986013984,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.05158730158730158,
+        "mean_within_cell_covariance": 0.009018759018759016,
+        "excluded_episode": 0,
+        "fit_episode_count": 7,
+        "clipped": false
+      },
+      {
+        "beta": 0.08863636363636361,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.06349206349206347,
+        "mean_within_cell_covariance": 0.0070346320346320315,
+        "excluded_episode": 1,
+        "fit_episode_count": 7,
+        "clipped": false
+      },
+      {
+        "beta": 0.09397590361445782,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.059884559884559874,
+        "mean_within_cell_covariance": 0.007034632034632032,
+        "excluded_episode": 2,
+        "fit_episode_count": 7,
+        "clipped": false
+      },
+      {
+        "beta": 0.08914956011730206,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.06150793650793649,
+        "mean_within_cell_covariance": 0.006854256854256852,
+        "excluded_episode": 3,
+        "fit_episode_count": 7,
+        "clipped": false
+      },
+      {
+        "beta": 0.07832167832167831,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.051587301587301584,
+        "mean_within_cell_covariance": 0.005050505050505049,
+        "excluded_episode": 4,
+        "fit_episode_count": 7,
+        "clipped": false
+      },
+      {
+        "beta": 0.1503030303030303,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.059523809523809514,
+        "mean_within_cell_covariance": 0.01118326118326118,
+        "excluded_episode": 5,
+        "fit_episode_count": 7,
+        "clipped": false
+      },
+      {
+        "beta": 0.11019283746556473,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.06547619047619047,
+        "mean_within_cell_covariance": 0.009018759018759016,
+        "excluded_episode": 6,
+        "fit_episode_count": 7,
+        "clipped": false
+      },
+      {
+        "beta": 0.09024390243902437,
+        "degenerate": false,
+        "mean_within_cell_variance": 0.05916305916305915,
+        "mean_within_cell_covariance": 0.006673881673881671,
+        "excluded_episode": 7,
+        "fit_episode_count": 7,
+        "clipped": false
+      }
+    ],
+    "all_R1_development_beta_proposal_only": {
+      "beta": 0.10481283422459892,
+      "degenerate": false,
+      "mean_within_cell_variance": 0.05902777777777777,
+      "mean_within_cell_covariance": 0.007733585858585856,
+      "excluded_episode": null,
+      "fit_episode_count": 8,
+      "clipped": false
+    },
+    "nochange_by_construction": {
+      "old_bank": [
+        0.6666666666666667,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.41666666666666663,
+        0.25,
+        0.41666666666666663,
+        0.3333333333333333
+      ],
+      "transport_identity": [
+        0.6666666666666667,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.41666666666666663,
+        0.25,
+        0.41666666666666663,
+        0.3333333333333333
+      ],
+      "pooled_old_plus_new3": [
+        0.5,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.41666666666666663,
+        0.25,
+        0.41666666666666663,
+        0.25
+      ]
+    },
+    "nochange_is_new_independent_drift_evidence": false,
+    "all_metrics_are_exploratory_R1_C_reuse": true
+  },
+  "gates": {
+    "G0": "PASS",
+    "G1": "PASS",
+    "G2": "NO_GO_CURRENT_BANK_AND_QUOTA",
+    "G3": "PASS",
+    "G4": "NOT_EVALUATED_RESOURCE_RECEIPT_REQUIRED",
+    "overall": "NO_GO_CURRENT_BANK_AND_QUOTA_OR_DECISION_VALUE",
+    "GPU_launch_authorized_by_this_program": false,
+    "project_stop": false
+  },
+  "secondary": {
+    "bank_projection": [
+      {
+        "m": 12,
+        "n_transport": 3,
+        "n_direct": 5,
+        "ratio": 3.450685654008439,
+        "bank_observed_at_this_size": true,
+        "gate_substitution_allowed": false
+      },
+      {
+        "m": 24,
+        "n_transport": 3,
+        "n_direct": 5,
+        "ratio": 3.286524261603375,
+        "bank_observed_at_this_size": false,
+        "gate_substitution_allowed": false
+      },
+      {
+        "m": 48,
+        "n_transport": 3,
+        "n_direct": 5,
+        "ratio": 3.204443565400844,
+        "bank_observed_at_this_size": false,
+        "gate_substitution_allowed": false
+      }
+    ],
+    "m12_n12_failure_boundary_ratio": 2.6613924050632916,
+    "dirty_slices": {
+      "dirty": {
+        "cells": 24,
+        "risk_ratio": 3.2542194092827006,
+        "is_validity_certificate": false
+      },
+      "non_dirty": {
+        "cells": 24,
+        "risk_ratio": 3.6471518987341778,
+        "is_validity_certificate": false
+      }
+    },
+    "same_panel_identity_max_error": 0.0
+  },
+  "evidence_scope": "R1 I/C reused development diagnostics, not new independent confirmation",
+  "S_access": false,
+  "new_model_calls": 0,
+  "new_formal_candidate_rounds": 0,
+  "limitations": [
+    "I-bank variance is estimated from only 12 questions per episode.",
+    "Eight graph episodes and six-row folds do not establish calibrated confidence guarantees.",
+    "Token cost diagnostic excludes actual future service cost; a later independent pilot must measure it.",
+    "Control-variate and paired-difference estimators are established methods, not new theory."
+  ],
+  "provenance": {
+    "R1_collection_plan_sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff",
+    "R1_actions_file_sha256": "ed884a9e8697752743897eb025d06890300b0f96e37307b0f95f486a7b00aeb2",
+    "R1_action_payload_digest": "b76c78991f8327c6b2189bcd54f93f40457c907afc1f332bc103eb8c25a84802",
+    "npz_sha256": "85c9f171266c56bde04585ed2e4a0055181ef294e1f9ee8311d551990bcf821b",
+    "executor_protocol_hash": "5c52efae884ee59481f22396c46afd4830e1bc9b5abb0f803b39a373b7600426",
+    "model_identity_sha256": "46d0ac8f422bfd10a0271b039f4478637d53b68c7764d6137bb7f0b6e1648949",
+    "quality_scorer_sha256": "da315ade4be7362ca81fc7ed41252cdccaa9271dc32f9a20531356587bb5f37e",
+    "source_manifest_digest": "4ce8d4ae0bc74e1397cab04ca9fd2c1480b207c6c5a19d8382edacb9539fc9ec",
+    "analysis_source_sha256": {
+      "r1_adapter.py": "fc0deb7fbb5dc82ebe6c09ea743731805c3937c72b6021d3de9d71914d6c0afc",
+      "r1_policy.py": "1dfb0c74e7859fd39865b7b9136fbef979e12aa6b0a09b716bb8148da51cfad7"
+    },
+    "analysis_source_version": "8f9b022b90641a49d828c3500e652d06ee35041c",
+    "analysis_source_commit_bytes_verified": true,
+    "I_C_source_graphs_sha256": "7f8c506d818030d835c5fb4d28a3f4dd9fd4bbcd6ae4d9ee0b07035cfd521b50",
+    "IC_export_receipt_sha256": "e86462afc3826ef24187b0243cb43ba2fe194740ddb75e90e258934f66bf985f",
+    "raw_source_artifacts_reread_by_diagnostic": false,
+    "synthetic_fixture_mode": false
+  },
+  "diagnostic_source_sha256": "edff2218f0d89569de7abbb6a304d64fce138a2f0fa244b8d3ee48bc7ade5665",
+  "input_mode": "R1_DEVELOPMENT_IC_ONLY"
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "independent_r1_final_scientific_review_plan_v1",
+  "created_utc": "2026-11-12T23:24:19Z",
+  "status": "FROZEN_REVIEW_SCOPE_BEFORE_FINAL_RESULTS_ACCESS",
+  "required_release_status": "POSTPROCESS_COMPLETE_ROOT_SCIENTIFIC_AND_VISUAL_REVIEW_REQUIRED",
+  "last_observed_status": "WAITING_FOR_ALL_RAW_OUTPUTS_AND_CLOSED_COSTS",
+  "results_metrics_read": false,
+  "new_scientific_gate": false,
+  "new_statistical_analysis_for_selection": false,
+  "allowed_post_release": [
+    "Complete development analysis summary and phase/hash receipts",
+    "Frozen R1 protocol and resource-only amendment",
+    "Independent scalar replay result and implementation",
+    "Frozen R2_IC diagnostic contract and result",
+    "CPU arithmetic reconstruction of reported aggregate statistics without raw question or answer access"
+  ],
+  "checks": [
+    "Protocol, source, freeze, completion and replay hash binding",
+    "Eight episode units; 192 S questions and uniform replicas do not create additional learning units",
+    "I-only purchase freeze, purchased-C-only updates, immutable actions before S",
+    "Uniform exact expectation over all 15 k2 or 6 k1 subsets, equal replica weights and no best-subset selection",
+    "Primary R1 point gain >=0.01 and candidate-source_only >=0; separate independent-confirmation budget feasibility",
+    "Same full logical token/score cap versus different actual spend; physical research cost distinguished from logical deployment counterfactual",
+    "No-change identity, all secondary controls and k1 are descriptive and cannot replace the primary",
+    "R2 G0-G4 each checked against frozen thresholds, including support, every bootstrap denominator, full initialization-plus-feedback token-risk ratio and decision value",
+    "Zero and near-zero variance retained; null ratios/intervals not interpreted as zero risk or benefit",
+    "Any theta notation mapped to an explicitly defined estimand; no import of later two-seed theta gates into R1/R2",
+    "Exploratory eight-cluster intervals and reused I/C evidence do not establish confirmatory coverage or future service improvement",
+    "Candidate failure or inconclusive finding does not terminate the project"
+  ],
+  "forbidden": [
+    "Pre-release results or intermediate S scores",
+    "Raw question/gold/model answer content copied or printed",
+    "E drive or Git mutation",
+    "GPU/model inference/benchmark execution",
+    "Post-hoc threshold changes or secondary-control winner substitution"
+  ],
+  "new_model_calls": 0,
+  "new_GPU_hours": 0
+}

@@ -41,3 +41,5 @@ variance/cost and decision behavior. Both remain unconfirmed. Exact replay or
 existing control-variate identities alone are not novelty claims. Conditional
 service confirmation and repeated-learning confirmation require different units;
 five seeds cannot manufacture independent questions or banks.
+
+2026-11-15 checkpoint: Formal1 and Formal2 negatives remain frozen. Formal3 controlled path D=0.0625 passes its point/support filter but graph service quality is below strong baselines. A posthoc disjoint I/C/S replay on those exposed 96 questions finds affected-edge refresh and zero-new-feedback structural protection have the same mean service accuracy. This is not a same-complete-cap result or confirmation. Formal4 is running blind on 96 new questions, holding upstream messages fixed in a receiver/access factorial with Qwen vote and matched independent aggregation controls. No positive method claim is established. Historical public R1/R2/R3 branch artifacts have been recovered byte-for-byte, without importing old controller states.

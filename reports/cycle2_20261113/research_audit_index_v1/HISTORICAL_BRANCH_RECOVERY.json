@@ -1,0 +1,168 @@
+{
+  "status": "COPIED_PUBLIC_ARCHIVES_BYTE_FOR_BYTE_FROM_HISTORICAL_COMMIT",
+  "source_commit": "7762ffd686957d099e388e5352103ea8dc320793",
+  "files": [
+    {
+      "path": "reports/cycle2_20261113/independent12_qualification_v1/QUALIFICATION.json",
+      "sha256": "bf4070a52bf00a74f232a98097f0e83c3d0b3edb3bc0839ef32743e409dcdbe4"
+    },
+    {
+      "path": "reports/cycle2_20261113/independent12_qualification_v1/ROOT_CLOSED_REVIEW.json",
+      "sha256": "b6c39a01ccb05840dac725fc6b5a760bc2ab40f5664071328abc375339566a4f"
+    },
+    {
+      "path": "reports/cycle2_20261113/independent12_qualification_v1/SUMMARY.json",
+      "sha256": "f700fec11de649e812f43e79492cb4621eed9102008e275a4c683a50f18e3bc1"
+    },
+    {
+      "path": "reports/cycle2_20261113/independent12_qualification_v1/review_independent12_closed.py",
+      "sha256": "dd8666c900c2ad35d21f0c0e01cc232623baf5fbd421b79bba0b0f2c06e67ca9"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/PUBLICATION_MANIFEST.json",
+      "sha256": "6c86cfe71b67174d8f0669d7c78ad336125554a0c3bcbea5af6b65752d1e64f2"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/R1_INDEPENDENT_REPLAY.json",
+      "sha256": "5c23a586f4837688069f7cc61332d6771119debe0d1bb63a2cdce745190427a3"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/R1_RESULTS.json",
+      "sha256": "ca6ed37d35db760507fc157ff72ea791c70aa69060e8a9a0f5d96521592d76eb"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/R2_IC_DIAGNOSTIC.json",
+      "sha256": "819ae44cc2fa2d60c0b52f1d64d7e723ef2af52498f040232e85a21e3976adcb"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/README.md",
+      "sha256": "17077228ed67c549aa9d998fbe5a8f4faf6bca281553d19a3efbad5df34eba01"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/ROOT_RESIDENT_COST_CLOSURE.json",
+      "sha256": "b386520a1223f48d99491f220b37a6014f91878790956fefbac7085c1a49d9e0"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/COMPLETE.json",
+      "sha256": "7393ce594af2a2e7021143072836c1d9b515a220c0dae2148b9dbf7edd0e7002"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/MAPPING_VERIFICATION.json",
+      "sha256": "90ae7548c649d5970cfd6c560333caafa7545cf46d049ad269d981db4921c68f"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/README.md",
+      "sha256": "72b019723a265ac997d6495022a0df73a2559022621fbec6521aa1ebe829d446"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/REPAIR_FREEZE.json",
+      "sha256": "74037041cbf81310ea2e2b508d0c86dc5424d4396ef00931d6cdeda1ec6aabc0"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/RESULTS.json",
+      "sha256": "e9b45b8ee331d962e386cdb3560bb559850308a221ad22aa15ddf5c6a39da5b1"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/axis_mapping.py",
+      "sha256": "55b8a2a2fdf92200dd06af44d163857ad79176e009aa4465597b0d4fa73feb4a"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/original_private/PROTOCOL.md",
+      "sha256": "d64c02045639b2a1abfe9636af902ab863234f172eeead43a7e9135c76ad1957"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/original_private/RESULTS.json",
+      "sha256": "9c90246d002462b6771b2e4997d5c042fd7f8330353c7ac3a29934e1f39562ba"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/original_private/reference.py",
+      "sha256": "b5e39dcb98af0b9c4aab0dd5e41e51c342d2426adcebb5285208e021109ba107"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/original_private/test_reference.py",
+      "sha256": "ffd5938e2fb6571651e36497e094ccc4c2dcd22d5e4dc1fda3e02d58f38da281"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/repair_reference.py",
+      "sha256": "c9d6636a831993cd5b9a366a5087d0e2a5400f6eea5b5410b3cd93b9a858d7c0"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/architecture_reference_repaired/test_axis_mapping.py",
+      "sha256": "ae783a3f618caa018042b27e658365f808b16290603dc36f9003ac964b9ba7b8"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/independent_review/ARCHITECTURE_REPAIR_ADDENDUM.md",
+      "sha256": "9a23c4b11687bb85b917b0b733194a683deed6636da9ffa035dc7ed8d8e61d48"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/independent_review/RECEIPT.json",
+      "sha256": "1a10d0ad43d14c4dc3c20e593d2c89b9ecfb3e3527f92475a0e94b3efeaac6ad"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/independent_review/RELEASE_GATE_RECEIPT.json",
+      "sha256": "3ff06969e02ad58e207358947ce4f012b3b39774a6919664721ba0b2018051b6"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/independent_review/REPORT.md",
+      "sha256": "22c5a3d03a9aa824d0fa40a0076c4fab166e3a7ce25684799aef5c0d391e17e1"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/independent_review/REVIEW_PLAN.json",
+      "sha256": "06bff64513bc3d38d62e98912fc47151a10ca3d4999903efa21f244c28d131c3"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/independent_review/VERIFICATION_PUBLIC_SUMMARY.json",
+      "sha256": "ac82a943f8caea543ed11350e96ef4946a3ed08b320750ffa48b7c8b0929e941"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/independent_review/verify_review.py",
+      "sha256": "475bcb4f0b1d07ca7eb75e290f435335e5b085416a32adc12d922f914ba34278"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/FIGURE_CONTRACT.json",
+      "sha256": "0a8f90e8f05b6b920ba59352240fd3918a3deb911c4fea278b137e3a416454be"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/README.md",
+      "sha256": "818d32408514fcfb5d86c3e3d7c59d40ffa736d0e3b3345d98e8c0871026bfc9"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/ROOT_VISUAL_REVIEW.json",
+      "sha256": "8c72ea031bd10333ad618fb41e485cd34481a1a2fe213359ebf6cfd72aa1d17d"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/VISUAL_QA.json",
+      "sha256": "e9f013630b797776af6211d0a9010601fc8210d2cff229c06a1b332cd0f53e8a"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/plot_r1_presentation_v2.py",
+      "sha256": "5e85e8d527f6fde27eaa24b9a1d9e977e7618f8b5285f1195d553d7a636f1432"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/rendered/FIGURE_MANIFEST.json",
+      "sha256": "4db6a0083b21f8fd5343580ccd2079c13c3dc2a87630f7c788749b67751989f1"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/rendered/r1_cost_quality_rows_v2.caption.txt",
+      "sha256": "a91be4f70c5be2268b8914bc7d0a650afd04274293cebd1e6b1e4d0e75517a63"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/rendered/r1_cost_quality_rows_v2.pdf",
+      "sha256": "7f34f2cad1b487d535328d3935fd15b737133aa5b5a5b5e7aef88708f7a26499"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/rendered/r1_cost_quality_rows_v2.png",
+      "sha256": "d7a6bdfcd1b03b7d1897f40130cf78131eb5445929f3bfc554d483e884a3f4e1"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/rendered/r1_cost_quality_rows_v2.svg",
+      "sha256": "1162eb66514505094095197770bdf4267ecfa89028931d2cfccb39bd1d31fcc5"
+    },
+    {
+      "path": "reports/cycle2_20261113/r1_completed_development/presentation_v2/rendered/r1_main_cost_quality.csv",
+      "sha256": "9f5ae0eda1c74175b6a7aadf290239b30ee297d219906ba97dc6e8d51b542593"
+    }
+  ],
+  "old_state_and_findings_not_overwritten": true,
+  "new_model_calls": 0
+}

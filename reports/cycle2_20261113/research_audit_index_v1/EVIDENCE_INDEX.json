@@ -1,0 +1,86 @@
+[
+  {
+    "stage": "G1/G2 original",
+    "path": "results/G1_STAGE_REPORT_20261104.md",
+    "sha256": "c78676e66e6fddcb2d5a041f79558ed589bd9404d94322f3eac1e113582701d2",
+    "bounded_conclusion": "Nonadditivity is not a valid predictor or online policy guarantee"
+  },
+  {
+    "stage": "G2 original",
+    "path": "results/G2_STAGE_REPORT_20261105.md",
+    "sha256": "52abb162ed176be9a2ee7b2415613b780bc2d71ee91aa77de17ecde98ecd1085",
+    "bounded_conclusion": "Frozen C2 prediction gate failed; no threshold changes"
+  },
+  {
+    "stage": "D2",
+    "path": "reports/autonomous_20261113/d2/D2_REPORT.md",
+    "sha256": "973a4189792264f4bf46088c88a24b2a999d8bdebd9a5f4c46a131a4f37e8dca",
+    "bounded_conclusion": "Intercept penalty induces baseline credit; C1_R1 action gain zero; no substitute winner"
+  },
+  {
+    "stage": "D3",
+    "path": "reports/autonomous_20261113/d3/D3_REPORT.md",
+    "sha256": "e7237dcd09415fc770ff14059d4152c87a998c2356e704b5267ac26e12572740",
+    "bounded_conclusion": "Graph-only order2 drift enrichment failed; candidate stop preserved"
+  },
+  {
+    "stage": "Format/sparsity",
+    "path": "reports/cycle2_20261113/g2_format_diagnostic/REPORT.md",
+    "sha256": "ca548229f8f81e84e214c842c96b6dacbd2e2588a1f5d708f0ba8bb6716c80c9",
+    "bounded_conclusion": "Clean outputs still have sparse observed credit; metric noise offset cannot reverse model ranking"
+  },
+  {
+    "stage": "Group edits",
+    "path": "reports/cycle2_20261113/group_intervention_diagnostic/REPORT.md",
+    "sha256": "819a7ff533c037d1b78862035081abfeffb32ce2e0a98b6d101e0c5756f64279",
+    "bounded_conclusion": "Selected near-zero singleton effects do not establish harmful joint deletion"
+  },
+  {
+    "stage": "Staged paid feedback",
+    "path": "reports/cycle2_20261113/staged_feedback_screen/REPORT.md",
+    "sha256": "2acec069f69fd1e1746ca6b07939cf37d6ae8549ae9c8b99b6b314f5e57ad50d",
+    "bounded_conclusion": "Complete base cost eliminates proposed screening advantage in tested class"
+  },
+  {
+    "stage": "Formal1 and R2",
+    "path": "reports/cycle2_20261113/r1_completed_development/README.md",
+    "sha256": "17077228ed67c549aa9d998fbe5a8f4faf6bca281553d19a3efbad5df34eba01",
+    "bounded_conclusion": "change/k2 fails point gate; independent-bank drift variance/cost gate fails"
+  },
+  {
+    "stage": "R3 CPU cache route",
+    "path": "reports/cycle2_20261113/r3_completed_screen/README.md",
+    "sha256": "38303f3e2e71d04d09056b425bbd4323d9f9be9b145750528ec1955986538dbb",
+    "bounded_conclusion": "Bundled purchase route fails; structural calls are not GPU or service utility"
+  },
+  {
+    "stage": "Formal2",
+    "path": "reports/cycle2_20261113/hotpot_formal2_results_v1/README.md",
+    "sha256": "7741668340618a8a3290358dbeafce374de45a314de9873e1d455776529f23d5",
+    "bounded_conclusion": "Current B worse than independent aggregation; sparse drift support insufficient"
+  },
+  {
+    "stage": "Formal3",
+    "path": "reports/cycle2_20261113/path_formal3_results_v1/ROOT_DECISION.json",
+    "sha256": "5d340f3d16436c8ab87ec2916b9f3e24b61bf3ab4c2c2be96b31ed9ab16ca5a8",
+    "bounded_conclusion": "Controlled path D filter passes; system gain unsupported"
+  },
+  {
+    "stage": "Formal3 posthoc I/C/S",
+    "path": "reports/cycle2_20261113/path_posthoc_policy_v1/REPORT.md",
+    "sha256": "cb2e2dced7b7399c794401dd9f789e450699d1d053eba716cd7012ad81b4908a",
+    "bounded_conclusion": "Targeted refresh equals zero-new-feedback protection; exposed development only"
+  },
+  {
+    "stage": "Formal4 contract",
+    "path": "protocol/cycle2_receiver_factorial_20261115/SCIENTIFIC_DESIGN_FROZEN_V1.json",
+    "sha256": "ad3828c2af569390628a3542b2c92e7f16df583c7f7ef0a03fd958e9213d4e61",
+    "bounded_conclusion": "Outcome still sealed at checkpoint; fixed receiver/access nominee and gates"
+  },
+  {
+    "stage": "Formal4 qualification",
+    "path": "reports/cycle2_20261113/receiver_factorial_qualification/ENGINEERING_ACCEPTANCE.json",
+    "sha256": "f4cfc23c661fd0c303d6921bfeae52b842b7f8e49bdda9ba0cc1de237461a0ad",
+    "bounded_conclusion": "Actual regeneration and CPU replay establish engineering only"
+  }
+]

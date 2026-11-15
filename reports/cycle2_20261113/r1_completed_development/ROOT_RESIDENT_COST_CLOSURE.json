@@ -1,0 +1,70 @@
+{
+  "status": "PASS_INDEPENDENT_RESIDENT_LEDGER_RECONCILIATION",
+  "unix": 1794526690.4114046,
+  "GPU_occupancy_hours": 14.307773255389378,
+  "phase_gpu_hours": {
+    "qualification": 0.5219523676144632,
+    "development": 13.785820887774914
+  },
+  "worker_ledgers": [
+    {
+      "worker_index": 0,
+      "resident_ledger_sha256": "2ce0b1b9f24b4c87ed157c2da21546561fd11ce5d7f00e31217db6b470e549a5",
+      "attempts": [
+        {
+          "phase": "qualification",
+          "resident_seconds": 548.511388015002,
+          "plan_sha256": "3a28656348ba295bd86b72e2503f1e32101fa1d41cc22a010e243e7404ae4ea2",
+          "reason": "CHILD_EXIT"
+        },
+        {
+          "phase": "development",
+          "resident_seconds": 16750.724953993922,
+          "plan_sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff",
+          "reason": "CHILD_EXIT"
+        }
+      ]
+    },
+    {
+      "worker_index": 1,
+      "resident_ledger_sha256": "ddf6d0b13c8df1f0ada3d48c25613971ac75bda6b7073b338d308721806123b5",
+      "attempts": [
+        {
+          "phase": "qualification",
+          "resident_seconds": 664.0345551189966,
+          "plan_sha256": "3a28656348ba295bd86b72e2503f1e32101fa1d41cc22a010e243e7404ae4ea2",
+          "reason": "CHILD_EXIT"
+        },
+        {
+          "phase": "development",
+          "resident_seconds": 16611.625823673792,
+          "plan_sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff",
+          "reason": "CHILD_EXIT"
+        }
+      ]
+    },
+    {
+      "worker_index": 2,
+      "resident_ledger_sha256": "5583f3e8de247bde8b38a572cf9486cdd7bfeb089e10ccdca962afd793e1763c",
+      "attempts": [
+        {
+          "phase": "qualification",
+          "resident_seconds": 666.4825802780688,
+          "plan_sha256": "3a28656348ba295bd86b72e2503f1e32101fa1d41cc22a010e243e7404ae4ea2",
+          "reason": "CHILD_EXIT"
+        },
+        {
+          "phase": "development",
+          "resident_seconds": 16266.604418321978,
+          "plan_sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff",
+          "reason": "CHILD_EXIT"
+        }
+      ]
+    }
+  ],
+  "unused_reservation_released_gpu_hours": 9.692226744610622,
+  "monotonic_supervisor_time_used": true,
+  "CUDA_event_time_is_separate": true,
+  "scientific_support_inferred_from_cost_closure": false,
+  "formal_candidate_rounds_started": 1
+}

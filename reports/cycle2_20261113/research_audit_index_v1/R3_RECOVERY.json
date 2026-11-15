@@ -1,0 +1,30 @@
+{
+  "source_commit": "acd4c2733be0157f9b41c9dfe3b4b26e33c969ad",
+  "files": [
+    {
+      "path": "reports/cycle2_20261113/r3_completed_screen/ORIGINAL_RESULTS.json",
+      "sha256": "5d138e69c0a9b7f3647f43c0ad8d62f9a21056a788a3666ed93a32999e0063b5"
+    },
+    {
+      "path": "reports/cycle2_20261113/r3_completed_screen/README.md",
+      "sha256": "38303f3e2e71d04d09056b425bbd4323d9f9be9b145750528ec1955986538dbb"
+    },
+    {
+      "path": "reports/cycle2_20261113/r3_completed_screen/REVIEW.md",
+      "sha256": "8b9acc528e610bd2fd0d26e7d3c045c65d0c86cfc7311d1b05446de09adb32aa"
+    },
+    {
+      "path": "reports/cycle2_20261113/r3_completed_screen/REVIEW_RECEIPT.json",
+      "sha256": "78f7c269b2400dcd2ff6637ec179a8f1a35ebfe9e47d7a5e20655ddccf24cc42"
+    },
+    {
+      "path": "reports/cycle2_20261113/r3_completed_screen/ROOT_PUBLIC_SUMMARY.json",
+      "sha256": "7f9563cdbbf1ff8216aec36d0ad3bc1309ae74015c1f2afa31d3f639d40f5375"
+    },
+    {
+      "path": "reports/cycle2_20261113/r3_completed_screen/review_r3.py",
+      "sha256": "e27aa8a1e99ee088d40d15dec1d92102ca76a258bb6d5d1262c2883ed670a928"
+    }
+  ],
+  "old_scientific_decisions_unchanged": true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "independent_CPU_checks": 2721,
+  "private_full_verification_sha256": "25a9c8eb9b344a3daaa2e2926511b6967066e146602ccec3ce2d8f9f96a5e9a6",
+  "summary_not_full_verification": true,
+  "private_absolute_paths_omitted": true,
+  "raw_questions_answers_predictions_released": false,
+  "source_receipt_sha256": "1a10d0ad43d14c4dc3c20e593d2c89b9ecfb3e3527f92475a0e94b3efeaac6ad"
+}

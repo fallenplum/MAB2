@@ -1,0 +1,62 @@
+{
+  "status": "RENDERED_PENDING_VISUAL_REVIEW",
+  "presentation_only": true,
+  "new_inference": false,
+  "new_statistics_or_gates": false,
+  "numeric_fields_exactly_checked": 45,
+  "source_csv_byte_identical": true,
+  "input_sha256": {
+    "source_csv": "9f5ae0eda1c74175b6a7aadf290239b30ee297d219906ba97dc6e8d51b542593",
+    "result": "ca6ed37d35db760507fc157ff72ea791c70aa69060e8a9a0f5d96521592d76eb",
+    "complete": "61360615cd8e279c5f531f7fb98b881d008bcffc3a0c7e2c9551d0eb5c69246b",
+    "independent_review": "5c23a586f4837688069f7cc61332d6771119debe0d1bb63a2cdce745190427a3",
+    "original_manifest": "e31b2005f87d1787c4aa2b06d3f3cc17a968cee8006508e9df2618a75f071f16",
+    "original_plot": "1a144f613594ff4541df58b441e44cc6046343708c8878308b2efa709c5ef34f"
+  },
+  "new_plot_source_sha256": "5e85e8d527f6fde27eaa24b9a1d9e977e7618f8b5285f1195d553d7a636f1432",
+  "original_plot_unchanged": true,
+  "fixed_method_order": [
+    "candidate",
+    "uniform_pair_expectation",
+    "cyclic_pair",
+    "max_uncertainty",
+    "no_graph_ablation",
+    "dirty_only",
+    "source_only",
+    "current_stay",
+    "full_revalidation_high_cost"
+  ],
+  "display_labels": [
+    "Full method (candidate)",
+    "Random (exact expectation)",
+    "Cyclic",
+    "Uncertainty",
+    "Priority w/o graph",
+    "Dirty only",
+    "Reuse source",
+    "Stay (B)",
+    "All edges (higher cost)"
+  ],
+  "exports": [
+    {
+      "name": "r1_cost_quality_rows_v2.svg",
+      "sha256": "1162eb66514505094095197770bdf4267ecfa89028931d2cfccb39bd1d31fcc5",
+      "bytes": 22923
+    },
+    {
+      "name": "r1_cost_quality_rows_v2.png",
+      "sha256": "d7a6bdfcd1b03b7d1897f40130cf78131eb5445929f3bfc554d483e884a3f4e1",
+      "bytes": 286535
+    },
+    {
+      "name": "r1_cost_quality_rows_v2.pdf",
+      "sha256": "7f34f2cad1b487d535328d3935fd15b737133aa5b5a5b5e7aef88708f7a26499",
+      "bytes": 24852
+    }
+  ],
+  "matplotlib_version": "3.10.8",
+  "numpy_version": "1.26.4",
+  "CPU_seconds": 0.53125,
+  "new_model_calls": 0,
+  "new_GPU_hours": 0
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS_ROOT_INDEPENDENT_JSON_RECONCILIATION",
+  "checks": 1642,
+  "physical_calls": 52,
+  "calls_by_model": {
+    "qwen": 24,
+    "mistral": 28
+  },
+  "fresh_semantic_equalities": 572,
+  "format_failures": 0,
+  "GPU_occupancy_hours": 0.04500747649555301,
+  "resident_seconds": 162.02691538399085,
+  "physical_totals": {
+    "input_tokens": 12340,
+    "output_tokens": 1214,
+    "gpu_seconds": 73.32487670898436,
+    "elapsed_seconds": 73.41222493676469
+  },
+  "source_commit": "42a38b81fc745c9a382ee3ff88e149c89923f987",
+  "plan_sha256": "f823cf9ed577860885dbdfd09111a65dbbfe214042098ca3ca6b1ad694513a6c",
+  "protocol_sha256": "6a3d48f29238fce24f9cf0dbc2e823efb4a8e1360db53021c876eb8fe343c0cf",
+  "resident_receipt_sha256": "306d3fc48db3ca14dac7f0b218d29922bd1648d420f6a141fdd9286cb798ab98",
+  "qualification_sha256": "bf4070a52bf00a74f232a98097f0e83c3d0b3edb3bc0839ef32743e409dcdbe4",
+  "review_source_sha256": "dd8666c900c2ad35d21f0c0e01cc232623baf5fbd421b79bba0b0f2c06e67ca9",
+  "scope": "Independent JSON/identity/arithmetic reconciliation; no models loaded or tokenizer counts recomputed; successful synthetic path only",
+  "not_accuracy_or_novelty_evidence": true,
+  "new_model_calls": 0,
+  "new_formal_rounds": 0
+}
