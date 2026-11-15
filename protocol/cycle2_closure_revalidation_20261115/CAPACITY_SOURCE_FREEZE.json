@@ -1,0 +1,13 @@
+{
+  "exposures_sha256": "77a67e4b6a82d2baf17ab233ea42210c67b98d38ed55046205076c329f48bc21",
+  "formal_admission": false,
+  "plan_sha256": "468d8f7f6268a04ba487d279556090dca96695a9fb3c5d908569f709280ddebc",
+  "pool_sha256": "c1dfbdf5fd26121e46bbf7eb4a0920acd624413f4820225646bfa16716364dbc",
+  "scope": "INPUT_ONLY_NO_LABEL_OR_MODEL_CALL",
+  "source_sha256": {
+    "closure_selection.py": "7dd6051c25f2f1b68ba8974ab9ae938734bce87b48317bd0b37564738bee508c",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "select_hotpot.py": "5edc8dc62b349be49c2c939c9c3f93ba1a8795b3c6fc7c951aec3ab9cd3d8bfd",
+    "tokenizer_lengths.py": "848db2c11d2a68bd0ea3b479fa4400d43b2755b72fa330a592441791ebef3c7b"
+  }
+}
