@@ -1,0 +1,17 @@
+{
+  "status": "METHODS_AND_SOURCE_PREPARATION_ONLY_FORMAL5_PENDING",
+  "not_completed_manuscript": true,
+  "formal5_quality_accessed": false,
+  "official_style_source": "https://github.com/acl-org/acl-style-files",
+  "style_modified": false,
+  "style_sha256": {
+    "acl.sty": "615a6437c6fe9b04b017e66f7249b7d0723e3e95e0eebdf494a9a104d0688e22",
+    "acl_natbib.bst": "e788f8ac6bc1a814923bddaa7725a1e0ee61e25abd21154cf4547aee5fc321fc"
+  },
+  "scientific_contract_sha256": "74ca03cab7efbaee896db9305640ba501d97ad15d83bfc420c7b20878ef46220",
+  "accountable_human_authors": "UNSPECIFIED",
+  "human_source_verification": "PENDING",
+  "publication_submission": "NOT_PERFORMED",
+  "AI_assistance": "Research agent prepared code, analyses, and draft text; no AI authorship",
+  "unix": 1794726743.3540878
+}

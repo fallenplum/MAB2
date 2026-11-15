@@ -1,0 +1,63 @@
+\section{Evaluation protocol}
+\label{sec:protocol}
+The final development experiment uses 640 previously unexposed HotpotQA
+distractor training questions \citep{hotpot}. Normalized question groups are
+excluded against the recorded exposure union before selection. Input-capacity
+checks select the first 640 eligible entries from a predetermined 1,024-question
+pool; no answers are used in this selection. Eight disjoint episodes balance
+the two shocks. Five fixed generation seeds are paired across all nine graph
+and baseline conditions. The planned matrix therefore has 28,800 terminal
+answers and 99,200 logical node calls. Exact request caching can reduce the
+physical generation count, which is reported separately.
+
+Intermediate and final output limits are 128 and 256 tokens. Generation uses
+temperature 0.7 and top-$p$ 0.9 with explicit per-node seeds. Static inputs
+must fit 7,168 tokens; runtime inputs must fit 8,192. The implementation does
+not silently truncate or retry failed requests. The qualified execution uses
+BF16, eager attention, PyTorch 2.9.1+cu128, and Transformers 4.54.0. Hash-pinned
+model files, tokenizer templates, source, and inputs define the execution.
+
+\paragraph{Complete resource accounting.}
+Every policy has the same 3,000,000-token ceiling per episode and seed.
+The ceiling may be nonbinding, so equal ceilings are not described as equal
+actual expenditure. For policy $\pi$, primary utility is
+\begin{equation}
+ J(\pi)=\frac{1}{64}\sum_{x\in S}Y(x,G_\pi,s)
+ -\lambda\frac{T_I(\pi)+T_C(\pi)+T_S(\pi)}{64}.
+\end{equation}
+Diagnostic request reuse is credited only to already purchased identical
+requests. Service charges include all live nodes of the selected graph,
+without discounts from the measurement archive. Tokens, calls, and measured
+kernel seconds are separated by stage and model. Actual GPU residence,
+including loading and waiting, is charged to the research budget separately.
+Oracle score observations and distinct labeled questions are counted, but
+their human or financial costs are unknown. Token utility does not establish
+total economic savings.
+
+\paragraph{Fixed admission criteria.}
+The nominee must improve utility by at least 0.005 over each of random,
+periodic, uncertainty, stale, protect-changed, fixed-price EVSI, and the three
+no-initialization static controls. Utility relative to random must be positive
+for at least four of five generation seeds. It must have nonnegative quality
+and utility differences from single Qwen, nonnegative utility difference from
+Qwen voting, at most a one-percentage-point quality deficit from independent
+aggregation, and at most 90\% of that baseline's complete token expenditure.
+All criteria are conjunctive. An ablation or control cannot replace a failed
+nominee. These are development filters, not significance or noninferiority
+tests. Passing would require a fresh same-method confirmation and another
+task before a positive-method paper claim.
+
+\paragraph{Statistics and verification.}
+We report exact match, token F1, paired differences, correction and breakage
+counts, all generation seeds, and episode aggregates. Five seeds reuse the
+same questions and are not five independent datasets. No confidence intervals
+or bootstrap runs are added in the current experiment. Sensitivity to four
+predeclared token weights is descriptive and cannot change the primary
+weight. Cumulative service plots use prefixes of the fixed 64-question policy,
+not policies reoptimized for each displayed horizon.
+All workers must exit and the immutable archive must pass hash checks before
+label release. CPU replay reconstructs prompts, seeds, request reuse, raw
+answers, and costs using recorded generations. A separate arithmetic
+implementation checks policy decisions and the resource ledger. Neither
+check is an independent stochastic rerun or human peer review. Official
+validation and test splits remain unopened.

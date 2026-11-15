@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ARTIFICIAL_RECONSTRUCTION_AND_CORRUPTION_DETECTION",
+  "tests": 4,
+  "additional_zero_gain_reconstruction_checks": 662536,
+  "checks": [
+    "varied gain acquisition",
+    "changed action rejected",
+    "changed cost rejected",
+    "changed summary rejected"
+  ],
+  "source_sha256": {
+    "audit_closure_independent.py": "7d723b33ee4060042e78642b299d727d491d079248448ebb59e0d46bbad6e2b4",
+    "test_audit_closure_independent.py": "2275f0e32738784fe0ddee07d7477ad30a761b57a18fe1d817fab6edb8629edc"
+  },
+  "real_answers_or_quality_read": false,
+  "human_independent_review": false,
+  "new_GPU_calls": 0,
+  "bootstrap_runs": 0,
+  "unix": 1794725852.0607915
+}

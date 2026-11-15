@@ -1,0 +1,104 @@
+\section{Graph-conditional revalidation}
+\label{sec:method}
+We distinguish a graph's predictive credit from the value of purchasing another
+measurement. For a question $x$, generation stream $s$, and communication graph
+$G$, let $Y(x,G,s)\in\{0,1\}$ be exact-match correctness. We use deletion gain
+\begin{equation}
+ d_e(x,G,s)=Y(x,G\setminus e,s)-Y(x,G,s).
+\end{equation}
+Positive deletion gain favors removing the edge. This sign is the opposite of
+an edge's contribution to correctness; the convention must not be reversed
+when comparing historical credit-prediction results. A graph change can alter
+$d_e$ without changing the edge $e$ itself. Neither a nonzero interaction nor a
+detectable credit change establishes that buying feedback is worthwhile.
+
+\paragraph{Controlled graph change.}
+The four nodes are $U,V,R,M$, with $M$ producing the answer. Nodes $U,V,M$ use
+Qwen2.5-3B-Instruct and $R$ uses Mistral-7B-Instruct-v0.3. Initially,
+\begin{align}
+ E_0=\{&U\!\to\!R,V\!\to\!R,R\!\to\!M,\nonumber\\
+       &U\!\to\!M,V\!\to\!M\}.
+\end{align}
+A predetermined exogenous shock removes either $U\to R$ or $V\to R$.
+The action menu keeps the resulting graph or deletes one direct edge,
+$e_U=U\to M$ or $e_V=V\to M$. Every executed node receives all ten raw
+documents in the distractor input. The operator executes exactly the terminal
+node and its ancestors. Thus deleting the affected direct edge also removes an
+unused source computation. This execution rule is shared by every method;
+dead-node elimination is not claimed as our contribution.
+
+\paragraph{Information separation.}
+Each episode has eight initialization questions $I$, eight feedback questions
+$C$, and 64 future service questions $S$. Initialization provides paired gains
+under $G_0$. A policy receives an outcome from $C$ only after selecting and
+paying for its paired counterfactual. All terminal decisions are fixed before
+the evaluator uses $S$. The experiment measures a full counterfactual archive
+once, but the policy interface conceals all unpurchased feedback. This is
+controlled cache replay, not a deployed online system. Benchmark reference
+answers serve as an idealized feedback oracle.
+
+\paragraph{A fixed working predictor.}
+For each editable edge we use a ternary model over $d_e\in\{-1,0,1\}$ with
+Dirichlet pseudocount $1/3$ per outcome, updated by all eight initialization
+observations. Purchased current-graph observations add one count. Old counts
+are retained without graph-dependent discounting. For counts $\alpha_{e,j}$,
+\begin{equation}
+ \mu_e=\frac{\alpha_{e,+1}-\alpha_{e,-1}}{\sum_j\alpha_{e,j}}.
+\end{equation}
+These are working estimates, not calibrated guarantees under graph shift.
+The model is deliberately simple and identical across acquisition strategies.
+The experiment does not propose a new predictor architecture.
+
+\paragraph{Graph-dependent service prices.}
+Let $c_0,c_U,c_V$ be mean token costs of the initial keep and deletion graphs,
+estimated only from $I$. Under the changed graph, the source-call price is
+subtracted from the affected deletion graph's forecast because that node is
+no longer an ancestor of $M$. No future service cost or outcome is used in
+this forecast. With fixed token weight $\lambda=0.005/1000$, the action values
+relative to keeping are
+\begin{equation}
+ u_0=0,\qquad u_e=\mu_e+\lambda(c_0-c_e).
+\end{equation}
+The maximum selects the terminal action; ties favor keep, then $U$, then $V$.
+The weight is a declared research tradeoff, not a monetary conversion.
+
+\paragraph{Acquisition and stopping.}
+Write $V(\alpha)=\max_a u_a(\alpha)$ and let
+\begin{equation}
+ \mathrm{EVSI}_e=\sum_{j=-1}^{1}
+ \frac{\alpha_{e,j}}{\sum_k\alpha_{e,k}}
+ V(\alpha+\mathbf{1}_{e,j})-V(\alpha).
+\end{equation}
+The proposed nominee ranks an available edge's next feedback question by
+$64\,\mathrm{EVSI}_e/\widehat m_{e,q}$, where $\widehat m_{e,q}$ is its
+forecast incremental token price. The price includes the current base graph
+and counterfactual final call; if that question's base execution has already
+been purchased, the base forecast is omitted. The forecasts use only $I$ and
+the paid cache state. Actual charged cost is determined by exact request
+fingerprints after purchase. The policy stops if its selected measurement has
+$64\,\mathrm{EVSI}_e\leq\lambda\widehat m_{e,q}$, or after eight purchases.
+EVSI, cost normalization, and stopping are established design principles
+\citep{diva}; the tested hypothesis concerns their incremental value with
+graph-dependent execution and feedback prices.
+
+\paragraph{Ablations and free controls.}
+The fixed-price EVSI control uses the same predictor and current service
+prices but always forecasts the full base-plus-counterfactual acquisition
+price. Other ablations remove cost normalization from the ranking or use
+old-graph service prices. Random, periodic, maximum-uncertainty, and
+changed-edge-first strategies each purchase eight pairs. Stale credit makes
+no purchase; protect-changed forbids deleting the affected direct edge;
+keep always keeps. All these maintenance methods pay initialization.
+Three additional static controls keep, delete the changed edge, or delete
+the other edge without paying initialization. They prevent free structural
+information from being mistaken for a benefit of paid revalidation.
+
+\paragraph{System baselines.}
+Single Qwen sees the full raw input. Qwen voting uses three full-context
+answer generations with normalized plurality and fixed tie order, returning
+the selected complete raw answer. Independent-three aggregation uses two
+Qwen sources and one Mistral source, all seeing the full input, followed by
+a full-context Qwen aggregator that reads their notes (four calls in total).
+The suffix Q in this baseline identifies its final model, not three
+homogeneous Qwen sources. Its prompts, model allocation, and seed rules were
+checked against the preceding engineering baseline.
