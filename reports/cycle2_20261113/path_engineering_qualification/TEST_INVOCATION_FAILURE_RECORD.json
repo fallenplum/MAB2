@@ -1,0 +1,14 @@
+{
+  "frozen_experiment_sources_modified": false,
+  "cause": "Plain discovery omitted required legacy input selector and scoring import path",
+  "repaired_tests": 23,
+  "errors": 2,
+  "tests_run_before_repair": 18,
+  "model_run_affected": false,
+  "repaired_entrypoint": "run_path_tests.py",
+  "errors_detail": [
+    "ModuleNotFoundError: No module named hotpot_support",
+    "AttributeError: module sys has no attribute argv_legacy"
+  ],
+  "status": "FAILED_TEST_INVOCATION_REPAIRED"
+}
