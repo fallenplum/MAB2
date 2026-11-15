@@ -1,0 +1,36 @@
+{
+  "acceptance": [
+    "all36 terminal outputs complete",
+    "no dynamic input rejection",
+    "native and durable request count reconcile",
+    "complete physical and logical ledgers",
+    "known model identity match",
+    "offline journal replay before formal admission"
+  ],
+  "bootstrap_runs": 0,
+  "budget_cap_GPU_hours": 0.25,
+  "confidence_intervals": false,
+  "failure": "preserve all outputs and actual residence; diagnose without changing any old scientific results",
+  "formal_round_increment": 0,
+  "includes_load_and_exit": true,
+  "logical_calls": 120,
+  "maximum_fresh_calls": 64,
+  "plan_sha256": "0b4e2b32feae66a0dc0496ac6102764f3012ff712e2b21022429a0bd48fbc0e5",
+  "seeds": [
+    26111311,
+    26111312
+  ],
+  "semantic_accuracy_not_scientific_evidence": true,
+  "source_sha256": {
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+    "graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "path_runtime_v1.py": "1b4645a2de1c26adb05cb451a95b8c9a0a9c6f9416f1ff31f38fb9dff62aeb9f"
+  },
+  "status": "FROZEN_ENGINEERING_ONLY",
+  "synthetic_payloads": 2,
+  "terminal_conditions": 36,
+  "worker_cap_seconds": 840
+}
