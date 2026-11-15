@@ -1,0 +1,141 @@
+{
+  "bootstrap_runs": 0,
+  "confidence_intervals_computed": false,
+  "groups": {
+    "affected": {
+      "change": {
+        "both_nonzero_same_sign": 2,
+        "both_zero": 75,
+        "mean_by_seed": [
+          0.041666666666666664,
+          0.03125
+        ],
+        "nonzero_union": 21,
+        "one_zero_one_nonzero": 15,
+        "opposite_signs": 4,
+        "seed_product_mean": -0.020833333333333332
+      },
+      "mean_seed_sign_flip_nonzero": 0,
+      "new": {
+        "both_nonzero_same_sign": 2,
+        "both_zero": 86,
+        "mean_by_seed": [
+          0.020833333333333332,
+          0.041666666666666664
+        ],
+        "nonzero_union": 10,
+        "one_zero_one_nonzero": 8,
+        "opposite_signs": 0,
+        "seed_product_mean": 0.020833333333333332
+      },
+      "old": {
+        "both_nonzero_same_sign": 0,
+        "both_zero": 79,
+        "mean_by_seed": [
+          -0.020833333333333332,
+          0.010416666666666666
+        ],
+        "nonzero_union": 17,
+        "one_zero_one_nonzero": 17,
+        "opposite_signs": 0,
+        "seed_product_mean": 0.0
+      },
+      "old_mean_zero_new_mean_nonzero": 5
+    },
+    "unaffected": {
+      "change": {
+        "both_nonzero_same_sign": 2,
+        "both_zero": 68,
+        "mean_by_seed": [
+          -0.010416666666666666,
+          -0.041666666666666664
+        ],
+        "nonzero_union": 28,
+        "one_zero_one_nonzero": 21,
+        "opposite_signs": 5,
+        "seed_product_mean": -0.03125
+      },
+      "mean_seed_sign_flip_nonzero": 0,
+      "new": {
+        "both_nonzero_same_sign": 5,
+        "both_zero": 68,
+        "mean_by_seed": [
+          -0.010416666666666666,
+          -0.010416666666666666
+        ],
+        "nonzero_union": 28,
+        "one_zero_one_nonzero": 22,
+        "opposite_signs": 1,
+        "seed_product_mean": 0.041666666666666664
+      },
+      "old": {
+        "both_nonzero_same_sign": 1,
+        "both_zero": 80,
+        "mean_by_seed": [
+          0.0,
+          0.03125
+        ],
+        "nonzero_union": 16,
+        "one_zero_one_nonzero": 15,
+        "opposite_signs": 0,
+        "seed_product_mean": 0.010416666666666666
+      },
+      "old_mean_zero_new_mean_nonzero": 16
+    }
+  },
+  "input_pins": {
+    "audit": "fb7fe80823c1eb88a9078525839e7dd8a0eee13a6a0dbd23d6523dbe62110012",
+    "private": "8109daeb9a6155da6c7101f8ebc3a10a92143dd0420e0aecf018f108941e21be",
+    "selection": "9f456b11c9031155a40dbf70968a5c922977d55d259ddd2bee4ae3f555f9ac86"
+  },
+  "limitations": [
+    "Old credits use both same-question G0 seeds; these are not disjoint I/C/S blocks.",
+    "No feedback acquisition or service cost is charged in the action diagnostic; it is not a budgeted policy result.",
+    "Observed zeros are noisy observations, not proof of zero true credit.",
+    "Two seeds cannot establish reliable per-question latent effects.",
+    "No threshold tuning, F1 rescue or change to the frozen primary screen."
+  ],
+  "new_GPU_calls": 0,
+  "oracle_initial_credit_action_diagnostics": {
+    "nonpositive_tie_deletes_protect_affected": {
+      "accuracy": 0.4114583333333333,
+      "breakages": 8,
+      "corrections": 18,
+      "deleted_questions": 87,
+      "delta_vs_G1": 0.052083333333333336,
+      "questions": 96,
+      "seed_observations": 192
+    },
+    "nonpositive_tie_deletes_stale": {
+      "accuracy": 0.390625,
+      "breakages": 8,
+      "corrections": 14,
+      "deleted_questions": 94,
+      "delta_vs_G1": 0.03125,
+      "questions": 96,
+      "seed_observations": 192
+    },
+    "strict_negative_protect_affected": {
+      "accuracy": 0.390625,
+      "breakages": 0,
+      "corrections": 6,
+      "deleted_questions": 7,
+      "delta_vs_G1": 0.03125,
+      "questions": 96,
+      "seed_observations": 192
+    },
+    "strict_negative_stale": {
+      "accuracy": 0.390625,
+      "breakages": 0,
+      "corrections": 6,
+      "deleted_questions": 13,
+      "delta_vs_G1": 0.03125,
+      "questions": 96,
+      "seed_observations": 192
+    }
+  },
+  "oracle_menu_is_evaluator_only": true,
+  "same_seed_current_menu_oracle_gain_over_G1": 0.10416666666666667,
+  "source_sha256": "0ae9dcc316c1f01695cba77e2adac7307001befba863571632048c5dd7d51080",
+  "status": "EXPLORATORY_DEVELOPMENT_ANATOMY_NOT_G3"
+}

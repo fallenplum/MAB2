@@ -1,0 +1,33 @@
+{
+  "D_by_seed": [
+    0.052083333333333336,
+    0.07291666666666667
+  ],
+  "limitations": [
+    "Current graph answers remain below strong full-context baselines",
+    "Individual credit changes are sparse and do not have established cross-seed reliability",
+    "Same-question anatomy is not an online I/C/S experiment",
+    "The 96 questions are now exposed development data"
+  ],
+  "mandatory_baselines": [
+    "zero feedback / keep all",
+    "random revalidation",
+    "periodic revalidation",
+    "maximum uncertainty",
+    "graph-change revalidation",
+    "free structural path protection",
+    "same-information central conditional routing",
+    "single Qwen",
+    "single Mistral",
+    "independent aggregation"
+  ],
+  "new_GPU_admission": false,
+  "next_action": "Audit oracle headroom and full-cost decision design; freeze one next candidate with disjoint initialization, feedback and service before fresh inference",
+  "nonzero_question_support": 27,
+  "primary_D": 0.0625,
+  "primary_screen_passed": true,
+  "project_stop": false,
+  "status": "RETAIN_CONTROLLED_PATH_MECHANISM_FOR_NEXT_CONTRACT_REVIEW",
+  "summary_sha256": "9176cd4cb94876e71f070fc9fd741c1db2ae408c3db7414594870fdd56cfe63b",
+  "system_gain_established": false
+}

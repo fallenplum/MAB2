@@ -1,0 +1,626 @@
+{
+  "D_by_seed": [
+    0.052083333333333336,
+    0.07291666666666667
+  ],
+  "D_by_shock": {
+    "U": 0.09375,
+    "V": 0.03125
+  },
+  "accuracy_by_condition_seed": {
+    "G0": [
+      0.3645833333333333,
+      0.3958333333333333
+    ],
+    "G0_MINUS_EU": [
+      0.3854166666666667,
+      0.3958333333333333
+    ],
+    "G0_MINUS_EV": [
+      0.3645833333333333,
+      0.3541666666666667
+    ],
+    "G1": [
+      0.375,
+      0.34375
+    ],
+    "G1_MINUS_EU": [
+      0.3854166666666667,
+      0.3125
+    ],
+    "G1_MINUS_EV": [
+      0.3541666666666667,
+      0.34375
+    ],
+    "INDEPENDENT3_M": [
+      0.5416666666666666,
+      0.6041666666666666
+    ],
+    "SINGLE_M": [
+      0.4270833333333333,
+      0.4583333333333333
+    ],
+    "SINGLE_Q": [
+      0.5104166666666666,
+      0.5104166666666666
+    ]
+  },
+  "automatic_GPU_admission": false,
+  "blank_final_outputs": 0,
+  "bootstrap_runs": 0,
+  "comparisons_by_seed": {
+    "G0_minus_INDEPENDENT3_M": [
+      {
+        "accuracy_a": 0.3645833333333333,
+        "accuracy_b": 0.5416666666666666,
+        "breakages": 25,
+        "corrections": 8,
+        "paired_difference": -0.17708333333333334,
+        "paired_observations": 96
+      },
+      {
+        "accuracy_a": 0.3958333333333333,
+        "accuracy_b": 0.6041666666666666,
+        "breakages": 25,
+        "corrections": 5,
+        "paired_difference": -0.20833333333333334,
+        "paired_observations": 96
+      }
+    ],
+    "G0_minus_SINGLE_M": [
+      {
+        "accuracy_a": 0.3645833333333333,
+        "accuracy_b": 0.4270833333333333,
+        "breakages": 13,
+        "corrections": 7,
+        "paired_difference": -0.0625,
+        "paired_observations": 96
+      },
+      {
+        "accuracy_a": 0.3958333333333333,
+        "accuracy_b": 0.4583333333333333,
+        "breakages": 16,
+        "corrections": 10,
+        "paired_difference": -0.0625,
+        "paired_observations": 96
+      }
+    ],
+    "G0_minus_SINGLE_Q": [
+      {
+        "accuracy_a": 0.3645833333333333,
+        "accuracy_b": 0.5104166666666666,
+        "breakages": 25,
+        "corrections": 11,
+        "paired_difference": -0.14583333333333334,
+        "paired_observations": 96
+      },
+      {
+        "accuracy_a": 0.3958333333333333,
+        "accuracy_b": 0.5104166666666666,
+        "breakages": 19,
+        "corrections": 8,
+        "paired_difference": -0.11458333333333333,
+        "paired_observations": 96
+      }
+    ],
+    "G1_minus_INDEPENDENT3_M": [
+      {
+        "accuracy_a": 0.375,
+        "accuracy_b": 0.5416666666666666,
+        "breakages": 26,
+        "corrections": 10,
+        "paired_difference": -0.16666666666666666,
+        "paired_observations": 96
+      },
+      {
+        "accuracy_a": 0.34375,
+        "accuracy_b": 0.6041666666666666,
+        "breakages": 31,
+        "corrections": 6,
+        "paired_difference": -0.2604166666666667,
+        "paired_observations": 96
+      }
+    ],
+    "G1_minus_SINGLE_M": [
+      {
+        "accuracy_a": 0.375,
+        "accuracy_b": 0.4270833333333333,
+        "breakages": 15,
+        "corrections": 10,
+        "paired_difference": -0.052083333333333336,
+        "paired_observations": 96
+      },
+      {
+        "accuracy_a": 0.34375,
+        "accuracy_b": 0.4583333333333333,
+        "breakages": 20,
+        "corrections": 9,
+        "paired_difference": -0.11458333333333333,
+        "paired_observations": 96
+      }
+    ],
+    "G1_minus_SINGLE_Q": [
+      {
+        "accuracy_a": 0.375,
+        "accuracy_b": 0.5104166666666666,
+        "breakages": 22,
+        "corrections": 9,
+        "paired_difference": -0.13541666666666666,
+        "paired_observations": 96
+      },
+      {
+        "accuracy_a": 0.34375,
+        "accuracy_b": 0.5104166666666666,
+        "breakages": 25,
+        "corrections": 9,
+        "paired_difference": -0.16666666666666666,
+        "paired_observations": 96
+      }
+    ]
+  },
+  "confidence_intervals_computed": false,
+  "cost_accounting": {
+    "candidate_GPU_hours": 1.6864083101538967,
+    "failed_qualification_attempts": 1,
+    "formal_actual_resident_GPU_hours": 1.5694437211622587,
+    "formal_native_failures": 0,
+    "full_logical_by_model": {
+      "mistral": {
+        "calls": 2880,
+        "gpu_seconds": 5201.253313323972,
+        "input_tokens": 1584344,
+        "model_elapsed_seconds": 5202.076756459195,
+        "output_tokens": 110204,
+        "peak_allocated_bytes": 25474863616,
+        "received_message_tokens": 339710
+      },
+      "qwen": {
+        "calls": 2880,
+        "gpu_seconds": 8704.249790344234,
+        "input_tokens": 2724882,
+        "model_elapsed_seconds": 8705.10378244007,
+        "output_tokens": 164332,
+        "peak_allocated_bytes": 22433505280,
+        "received_message_tokens": 0
+      }
+    },
+    "human_label_cost": null,
+    "monetary_cost": null,
+    "note": "Shared exact-request caching lowers physical collection cost, not the charged full logical service cost. Wall/residence and kernel measurements are distinct.",
+    "physical_by_model": {
+      "mistral": {
+        "calls": 2112,
+        "gpu_seconds": 2733.7342234802254,
+        "input_tokens": 1421704,
+        "model_elapsed_seconds": 2734.3265973948874,
+        "output_tokens": 54090
+      },
+      "qwen": {
+        "calls": 960,
+        "gpu_seconds": 2613.7052255249027,
+        "input_tokens": 1179272,
+        "model_elapsed_seconds": 2613.9855054209474,
+        "output_tokens": 48207
+      }
+    },
+    "prelaunch_placement_rejections": 1,
+    "qualification_actual_GPU_hours": 0.11696458899163796,
+    "terminal_conditions": 1728,
+    "unknown_backend_requests": 0
+  },
+  "credit_by_edge_seed": {
+    "change": [
+      [
+        0.010416666666666666,
+        0.020833333333333332
+      ],
+      [
+        0.03125,
+        -0.041666666666666664
+      ]
+    ],
+    "new": [
+      [
+        -0.010416666666666666,
+        0.020833333333333332
+      ],
+      [
+        0.03125,
+        0.0
+      ]
+    ],
+    "old": [
+      [
+        -0.020833333333333332,
+        0.0
+      ],
+      [
+        0.0,
+        0.041666666666666664
+      ]
+    ]
+  },
+  "descriptive_F1_by_condition_seed": {
+    "G0": [
+      0.47860449735449734,
+      0.45449735449735446
+    ],
+    "G0_MINUS_EU": [
+      0.4760506854256854,
+      0.47151124338624334
+    ],
+    "G0_MINUS_EV": [
+      0.4781432109557109,
+      0.45643655106970327
+    ],
+    "G1": [
+      0.4556210571835572,
+      0.4174603174603175
+    ],
+    "G1_MINUS_EU": [
+      0.44531550625300625,
+      0.37962136243386246
+    ],
+    "G1_MINUS_EV": [
+      0.45478820947570947,
+      0.43049918831168826
+    ],
+    "INDEPENDENT3_M": [
+      0.6944057914927982,
+      0.72515902194211
+    ],
+    "SINGLE_M": [
+      0.5778179885268299,
+      0.5936490831964968
+    ],
+    "SINGLE_Q": [
+      0.5906249999999998,
+      0.5869708994708994
+    ]
+  },
+  "finish_counts": {
+    "eos": 1728
+  },
+  "full_logical_cost_by_condition_model": {
+    "26111311/G0/mistral": {
+      "calls": 192,
+      "gpu_seconds": 409.179651611328,
+      "input_tokens": 57174,
+      "model_elapsed_seconds": 409.23977596336044,
+      "output_tokens": 9186,
+      "peak_allocated_bytes": 20990513152,
+      "received_message_tokens": 34339
+    },
+    "26111311/G0/qwen": {
+      "calls": 192,
+      "gpu_seconds": 623.084062011719,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 623.1416839717422,
+      "output_tokens": 11864,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111311/G0_MINUS_EU/mistral": {
+      "calls": 192,
+      "gpu_seconds": 403.4308596954346,
+      "input_tokens": 50226,
+      "model_elapsed_seconds": 403.48432305292226,
+      "output_tokens": 9100,
+      "peak_allocated_bytes": 20943315456,
+      "received_message_tokens": 28244
+    },
+    "26111311/G0_MINUS_EU/qwen": {
+      "calls": 192,
+      "gpu_seconds": 623.084062011719,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 623.1416839717422,
+      "output_tokens": 11864,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111311/G0_MINUS_EV/mistral": {
+      "calls": 192,
+      "gpu_seconds": 409.7931181488038,
+      "input_tokens": 49457,
+      "model_elapsed_seconds": 409.8497190605849,
+      "output_tokens": 9242,
+      "peak_allocated_bytes": 20943315456,
+      "received_message_tokens": 27507
+    },
+    "26111311/G0_MINUS_EV/qwen": {
+      "calls": 192,
+      "gpu_seconds": 623.084062011719,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 623.1416839717422,
+      "output_tokens": 11864,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111311/G1/mistral": {
+      "calls": 192,
+      "gpu_seconds": 276.53176267242435,
+      "input_tokens": 46626,
+      "model_elapsed_seconds": 276.5856958741788,
+      "output_tokens": 6208,
+      "peak_allocated_bytes": 20987779584,
+      "received_message_tokens": 24691
+    },
+    "26111311/G1/qwen": {
+      "calls": 192,
+      "gpu_seconds": 623.084062011719,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 623.1416839717422,
+      "output_tokens": 11864,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111311/G1_MINUS_EU/mistral": {
+      "calls": 192,
+      "gpu_seconds": 275.6208136138916,
+      "input_tokens": 39678,
+      "model_elapsed_seconds": 275.6771224208642,
+      "output_tokens": 6222,
+      "peak_allocated_bytes": 20926018560,
+      "received_message_tokens": 18596
+    },
+    "26111311/G1_MINUS_EU/qwen": {
+      "calls": 192,
+      "gpu_seconds": 623.084062011719,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 623.1416839717422,
+      "output_tokens": 11864,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111311/G1_MINUS_EV/mistral": {
+      "calls": 192,
+      "gpu_seconds": 274.72781674194334,
+      "input_tokens": 38909,
+      "model_elapsed_seconds": 274.7833599592559,
+      "output_tokens": 6202,
+      "peak_allocated_bytes": 20945701888,
+      "received_message_tokens": 17859
+    },
+    "26111311/G1_MINUS_EV/qwen": {
+      "calls": 192,
+      "gpu_seconds": 623.084062011719,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 623.1416839717422,
+      "output_tokens": 11864,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111311/INDEPENDENT3_M/mistral": {
+      "calls": 192,
+      "gpu_seconds": 492.0446842956542,
+      "input_tokens": 349418,
+      "model_elapsed_seconds": 492.1038236920722,
+      "output_tokens": 8649,
+      "peak_allocated_bytes": 25474863616,
+      "received_message_tokens": 20783
+    },
+    "26111311/INDEPENDENT3_M/qwen": {
+      "calls": 192,
+      "gpu_seconds": 641.5233483276369,
+      "input_tokens": 290562,
+      "model_elapsed_seconds": 641.5826785229146,
+      "output_tokens": 11732,
+      "peak_allocated_bytes": 22433505280,
+      "received_message_tokens": 0
+    },
+    "26111311/SINGLE_M/mistral": {
+      "calls": 96,
+      "gpu_seconds": 79.61803683471682,
+      "input_tokens": 162768,
+      "model_elapsed_seconds": 79.64840930374339,
+      "output_tokens": 755,
+      "peak_allocated_bytes": 24908760576,
+      "received_message_tokens": 0
+    },
+    "26111311/SINGLE_M/qwen": {
+      "calls": 0,
+      "gpu_seconds": 0,
+      "input_tokens": 0,
+      "model_elapsed_seconds": 0,
+      "output_tokens": 0,
+      "peak_allocated_bytes": 0,
+      "received_message_tokens": 0
+    },
+    "26111311/SINGLE_Q/mistral": {
+      "calls": 0,
+      "gpu_seconds": 0,
+      "input_tokens": 0,
+      "model_elapsed_seconds": 0,
+      "output_tokens": 0,
+      "peak_allocated_bytes": 0,
+      "received_message_tokens": 0
+    },
+    "26111311/SINGLE_Q/qwen": {
+      "calls": 96,
+      "gpu_seconds": 42.69583428955078,
+      "input_tokens": 144513,
+      "model_elapsed_seconds": 42.72092969017103,
+      "output_tokens": 486,
+      "peak_allocated_bytes": 22425651200,
+      "received_message_tokens": 0
+    },
+    "26111312/G0/mistral": {
+      "calls": 192,
+      "gpu_seconds": 388.36342835998533,
+      "input_tokens": 55545,
+      "model_elapsed_seconds": 388.41914482577704,
+      "output_tokens": 8708,
+      "peak_allocated_bytes": 20989599232,
+      "received_message_tokens": 32697
+    },
+    "26111312/G0/qwen": {
+      "calls": 192,
+      "gpu_seconds": 595.0248509521487,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 595.0819714320824,
+      "output_tokens": 11361,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111312/G0_MINUS_EU/mistral": {
+      "calls": 192,
+      "gpu_seconds": 388.75752947235105,
+      "input_tokens": 48749,
+      "model_elapsed_seconds": 388.80986481392756,
+      "output_tokens": 8752,
+      "peak_allocated_bytes": 20942545920,
+      "received_message_tokens": 26772
+    },
+    "26111312/G0_MINUS_EU/qwen": {
+      "calls": 192,
+      "gpu_seconds": 595.0248509521487,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 595.0819714320824,
+      "output_tokens": 11361,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111312/G0_MINUS_EV/mistral": {
+      "calls": 192,
+      "gpu_seconds": 387.47840828704864,
+      "input_tokens": 48253,
+      "model_elapsed_seconds": 387.5324723229278,
+      "output_tokens": 8730,
+      "peak_allocated_bytes": 20942545920,
+      "received_message_tokens": 26280
+    },
+    "26111312/G0_MINUS_EV/qwen": {
+      "calls": 192,
+      "gpu_seconds": 595.0248509521487,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 595.0819714320824,
+      "output_tokens": 11361,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111312/G1/mistral": {
+      "calls": 192,
+      "gpu_seconds": 287.29160926055914,
+      "input_tokens": 46317,
+      "model_elapsed_seconds": 287.3452440951951,
+      "output_tokens": 6431,
+      "peak_allocated_bytes": 21015469568,
+      "received_message_tokens": 24363
+    },
+    "26111312/G1/qwen": {
+      "calls": 192,
+      "gpu_seconds": 595.0248509521487,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 595.0819714320824,
+      "output_tokens": 11361,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111312/G1_MINUS_EU/mistral": {
+      "calls": 192,
+      "gpu_seconds": 283.65015724945084,
+      "input_tokens": 39521,
+      "model_elapsed_seconds": 283.70556146022864,
+      "output_tokens": 6398,
+      "peak_allocated_bytes": 20926018560,
+      "received_message_tokens": 18438
+    },
+    "26111312/G1_MINUS_EU/qwen": {
+      "calls": 192,
+      "gpu_seconds": 595.0248509521487,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 595.0819714320824,
+      "output_tokens": 11361,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111312/G1_MINUS_EV/mistral": {
+      "calls": 192,
+      "gpu_seconds": 286.688527381897,
+      "input_tokens": 39025,
+      "model_elapsed_seconds": 286.74180127470754,
+      "output_tokens": 6461,
+      "peak_allocated_bytes": 20942931968,
+      "received_message_tokens": 17946
+    },
+    "26111312/G1_MINUS_EV/qwen": {
+      "calls": 192,
+      "gpu_seconds": 595.0248509521487,
+      "input_tokens": 154561,
+      "model_elapsed_seconds": 595.0819714320824,
+      "output_tokens": 11361,
+      "peak_allocated_bytes": 21672827904,
+      "received_message_tokens": 0
+    },
+    "26111312/INDEPENDENT3_M/mistral": {
+      "calls": 192,
+      "gpu_seconds": 482.40131927490233,
+      "input_tokens": 349910,
+      "model_elapsed_seconds": 482.4525017149281,
+      "output_tokens": 8458,
+      "peak_allocated_bytes": 25425225728,
+      "received_message_tokens": 21195
+    },
+    "26111312/INDEPENDENT3_M/qwen": {
+      "calls": 192,
+      "gpu_seconds": 667.8974104003908,
+      "input_tokens": 290562,
+      "model_elapsed_seconds": 667.9570324334782,
+      "output_tokens": 12255,
+      "peak_allocated_bytes": 22433505280,
+      "received_message_tokens": 0
+    },
+    "26111312/SINGLE_M/mistral": {
+      "calls": 96,
+      "gpu_seconds": 75.67559042358398,
+      "input_tokens": 162768,
+      "model_elapsed_seconds": 75.69793662452139,
+      "output_tokens": 702,
+      "peak_allocated_bytes": 24908760576,
+      "received_message_tokens": 0
+    },
+    "26111312/SINGLE_M/qwen": {
+      "calls": 0,
+      "gpu_seconds": 0,
+      "input_tokens": 0,
+      "model_elapsed_seconds": 0,
+      "output_tokens": 0,
+      "peak_allocated_bytes": 0,
+      "received_message_tokens": 0
+    },
+    "26111312/SINGLE_Q/mistral": {
+      "calls": 0,
+      "gpu_seconds": 0,
+      "input_tokens": 0,
+      "model_elapsed_seconds": 0,
+      "output_tokens": 0,
+      "peak_allocated_bytes": 0,
+      "received_message_tokens": 0
+    },
+    "26111312/SINGLE_Q/qwen": {
+      "calls": 96,
+      "gpu_seconds": 43.47971954345701,
+      "input_tokens": 144513,
+      "model_elapsed_seconds": 43.50120937055908,
+      "output_tokens": 509,
+      "peak_allocated_bytes": 22425651200,
+      "received_message_tokens": 0
+    }
+  },
+  "method_success_claim": false,
+  "nonzero_question_support": 27,
+  "primary_D": 0.0625,
+  "project_stop": false,
+  "provenance": {
+    "actual_cost_closure_sha256": "da0bcdbc0d57f1f5ea8aed50e86561c273be1386dfee1ec772aaa5ce237663ee",
+    "archive_manifest_sha256": "f491934e4e44382e8bdc65357af961fe746952d5cefabe4ea1a4ead91ff9f15e",
+    "evaluation_summary_sha256": "0c2104eb2b547c81f9b0865684f57329902cdd3cf1610de4b5722f86c22e830e",
+    "independent_audit_sha256": "fb7fe80823c1eb88a9078525839e7dd8a0eee13a6a0dbd23d6523dbe62110012",
+    "report_source_sha256": "1fd2bb1da0139d3d95090e011a7024e018d82e9e958ac6d7da653fae8a670288"
+  },
+  "rule": "D>=0.05 AND both seed means positive AND at least20 nonzero question means",
+  "rule_is_empirical_development_filter_not_significance": true,
+  "screen_action": "RETAIN_MECHANISM_FOR_NEW_CONTRACT_REVIEW",
+  "status": "COMPLETE_DESCRIPTIVE_POINT_SCREEN",
+  "task": "HotpotQA distractor train, controlled evidence partition and path deletion"
+}

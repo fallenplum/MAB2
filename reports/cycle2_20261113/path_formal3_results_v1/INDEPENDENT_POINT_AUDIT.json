@@ -1,0 +1,16 @@
+{
+  "status": "PASS_INDEPENDENT_STDLIB_POINT_AUDIT",
+  "checked_equalities": 109,
+  "primary_D": 0.0625,
+  "nonzero_question_support": 27,
+  "independent_model_execution": false,
+  "independent_human_reviewer": false,
+  "bootstrap_runs": 0,
+  "new_model_calls": 0,
+  "source_sha256": "be2e8fdeed1d33b0f78298bc87daffe289ceb03f14348d21b5d47edbc6df417c",
+  "inputs_sha256": {
+    "selection": "9f456b11c9031155a40dbf70968a5c922977d55d259ddd2bee4ae3f555f9ac86",
+    "private": "8109daeb9a6155da6c7101f8ebc3a10a92143dd0420e0aecf018f108941e21be",
+    "summary": "0c2104eb2b547c81f9b0865684f57329902cdd3cf1610de4b5722f86c22e830e"
+  }
+}
