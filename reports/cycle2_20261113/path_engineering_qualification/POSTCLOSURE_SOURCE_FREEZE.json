@@ -1,0 +1,12 @@
+{
+  "status": "FROZEN_POSTCLOSURE_SOURCE_BEFORE_LABEL_RELEASE",
+  "labels_read": false,
+  "label_extraction_synthetic_tests": 4,
+  "independent_arithmetic_synthetic_checks": 109,
+  "tampered_primary_rejected": true,
+  "source_sha256": {
+    "extract_path_labels.py": "ad3e943dd65a11ee1924f76fa2cce676d51671f11315976ed0f7027e0aa3e0b6",
+    "test_extract_path_labels.py": "ca79941560c47247d2d4c6d9c70b9f23a7b129c0837534a18635b767233a41e6",
+    "audit_path_points.py": "be2e8fdeed1d33b0f78298bc87daffe289ceb03f14348d21b5d47edbc6df417c"
+  }
+}

@@ -3,7 +3,7 @@ cycle: cycle2_20261113
 controller: private_project_root/AUTONOMOUS_RESEARCH_STATUS.json
 controller_visibility: private_operational_state_public_snapshot_below
 project_status: ACTIVE
-direction_status: EXOGENOUS_PATH_SCREEN_ADMITTED_NOT_STARTED
+direction_status: EXOGENOUS_PATH_SCREEN_RUNNING_UNSCORED
 branch: research/cycle2-exogenous-paths-20261113
 parent_commit: 2a7f4f101d37375ebfbf95fd5c095d0bc6610485
 budget_gpu_hours_total: 160
@@ -11,7 +11,7 @@ budget_gpu_hours_used: 47.34278654360407
 budget_gpu_hours_reserved: 7.75
 budget_gpu_hours_remaining: 104.90721345639594
 formal_candidate_rounds_total: 5
-formal_candidate_rounds_started: 2
+formal_candidate_rounds_started: 3
 next_action: monitor_blind_prefix_then_complete_fixed_formal_screen
 candidate_failure: eliminate_candidate_and_continue
 direction_failure: freeze_direction_and_research_alternatives
@@ -37,5 +37,5 @@ complete_local_archive_files_verified: 1198
 new_GPU_admission: true
 new_experiment_intervals: false
 new_experiment_bootstrap: false
-current_candidate_status: FORMAL3_ADMITTED_NOT_STARTED
+current_candidate_status: FORMAL3_RUNNING_UNSCORED
 publication_repository: fallenplum/MAB2
