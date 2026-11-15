@@ -1,0 +1,31 @@
+{
+  "project_status": "STOP_PROJECT_FORMAL_ROUND_CAP_NEGATIVE",
+  "current_candidate": "C2_FORMAL5_CLOSURE_AWARE_REVALIDATION",
+  "candidate_action": "STOP_FORMAL5_CANDIDATE",
+  "frozen_gates": {
+    "independent3_Q_full_token_cost": false,
+    "independent3_Q_quality": true,
+    "single_Q_quality_and_utility": false,
+    "utility_over_all_maintenance_and_free_controls": false,
+    "utility_vs_random_positive_four_of_five_seeds": false,
+    "vote_Q3_utility": true
+  },
+  "formal_rounds_used": 5,
+  "formal_rounds_cap": 5,
+  "GPU_hours_used": 76.47691242367074,
+  "GPU_hours_cap": 160,
+  "sixth_candidate_authorized": false,
+  "best_validated_new_method": null,
+  "control_substituted_for_nominee": false,
+  "independent_confirmation_run": false,
+  "official_Hotpot_validation_test_opened": false,
+  "new_confidence_intervals_computed": false,
+  "new_bootstrap_runs": 0,
+  "paper_type": "evidence_bounded_negative_research_draft",
+  "submission_ready": false,
+  "human_independent_peer_review": false,
+  "summary_sha256": "60c17764b12a525192e03096c24d5ef38fbd3081f8f4222e722341916f3a306e",
+  "independent_point_audit_sha256": "6986af3d023ac509b6995449001507a42787f1d868d6d80e845f39f64fd51063",
+  "raw_scoring_audit_sha256": "99e4a71697fa666cb2b34e5b381a6165c07806f9c24a37b51c2d03feb3b53d42",
+  "review_unix": 1794775934.7407255
+}

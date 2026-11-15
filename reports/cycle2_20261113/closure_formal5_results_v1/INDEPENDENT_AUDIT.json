@@ -1,0 +1,23 @@
+{
+  "bootstrap_runs": 0,
+  "checks": 626080,
+  "gates": {
+    "independent3_Q_full_token_cost": false,
+    "independent3_Q_quality": true,
+    "single_Q_quality_and_utility": false,
+    "utility_over_all_maintenance_and_free_controls": false,
+    "utility_vs_random_positive_four_of_five_seeds": false,
+    "vote_Q3_utility": true
+  },
+  "human_independent_review": false,
+  "input_sha256": {
+    "private": "dea10c767ff0588d9774fc294863649fe2c012a6f090a9d1b5749145793bcb5e",
+    "selection": "638a4db97ea2bb1fc8eb55365e6207e582696dabb15b34a3c475f8f3a8ca69a2",
+    "summary": "60c17764b12a525192e03096c24d5ef38fbd3081f8f4222e722341916f3a306e"
+  },
+  "new_model_calls": 0,
+  "numpy_used_only_for_PCG64_baseline": true,
+  "rows": 1360,
+  "source_sha256": "7d723b33ee4060042e78642b299d727d491d079248448ebb59e0d46bbad6e2b4",
+  "status": "PASS_INDEPENDENT_COST_POLICY_AND_POINT_RECONSTRUCTION"
+}

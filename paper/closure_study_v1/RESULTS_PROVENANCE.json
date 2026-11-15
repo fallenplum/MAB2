@@ -1,0 +1,10 @@
+{
+  "status": "PASS_AGGREGATE_PAPER_TABLE_RECONCILIATION",
+  "summary_sha256": "60c17764b12a525192e03096c24d5ef38fbd3081f8f4222e722341916f3a306e",
+  "episode_rows": 1360,
+  "methods": 17,
+  "conditions": 2,
+  "new_model_calls": 0,
+  "bootstrap_runs": 0,
+  "human_verification": false
+}

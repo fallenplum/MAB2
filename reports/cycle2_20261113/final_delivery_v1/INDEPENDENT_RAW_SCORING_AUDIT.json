@@ -1,0 +1,152 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_SCORING_AND_VOTING",
+  "checks": 89692,
+  "questions": 640,
+  "terminal_answers": 28800,
+  "vote_decisions": 3200,
+  "all_condition_correct_by_seed": {
+    "G0": [
+      395,
+      379,
+      391,
+      395,
+      400
+    ],
+    "G0_MINUS_EU": [
+      404,
+      393,
+      400,
+      392,
+      398
+    ],
+    "G0_MINUS_EV": [
+      400,
+      390,
+      392,
+      397,
+      401
+    ],
+    "G1": [
+      392,
+      393,
+      401,
+      399,
+      398
+    ],
+    "G1_MINUS_EU": [
+      398,
+      397,
+      414,
+      401,
+      401
+    ],
+    "G1_MINUS_EV": [
+      403,
+      391,
+      391,
+      397,
+      396
+    ],
+    "INDEPENDENT3_Q": [
+      384,
+      384,
+      373,
+      382,
+      389
+    ],
+    "SINGLE_Q": [
+      367,
+      364,
+      364,
+      363,
+      362
+    ],
+    "VOTE_Q3": [
+      365,
+      368,
+      369,
+      366,
+      368
+    ]
+  },
+  "service_condition_correct_by_seed": {
+    "G0": [
+      312,
+      291,
+      303,
+      311,
+      313
+    ],
+    "G0_MINUS_EU": [
+      324,
+      303,
+      312,
+      305,
+      311
+    ],
+    "G0_MINUS_EV": [
+      319,
+      299,
+      304,
+      312,
+      310
+    ],
+    "G1": [
+      310,
+      306,
+      315,
+      314,
+      307
+    ],
+    "G1_MINUS_EU": [
+      314,
+      308,
+      326,
+      314,
+      310
+    ],
+    "G1_MINUS_EV": [
+      317,
+      305,
+      307,
+      315,
+      305
+    ],
+    "INDEPENDENT3_Q": [
+      305,
+      301,
+      293,
+      301,
+      310
+    ],
+    "SINGLE_Q": [
+      297,
+      295,
+      296,
+      294,
+      292
+    ],
+    "VOTE_Q3": [
+      295,
+      296,
+      299,
+      295,
+      297
+    ]
+  },
+  "blank_final_outputs": 0,
+  "finish_counts": {
+    "eos": 28800,
+    "length": 0
+  },
+  "new_model_calls": 0,
+  "bootstrap_runs": 0,
+  "human_independent_review": false,
+  "stdlib_only": true,
+  "input_sha256": {
+    "approval": "0badaac793cec0e6d8eea6459fbe37908a94dbb50de4468abeaf83e419df3914",
+    "private": "dea10c767ff0588d9774fc294863649fe2c012a6f090a9d1b5749145793bcb5e",
+    "summary": "60c17764b12a525192e03096c24d5ef38fbd3081f8f4222e722341916f3a306e"
+  },
+  "source_sha256": "973d3e05a1ef3a286c9946d5e7642f29f47ef1f6bff09144b7e4081f4018078b"
+}

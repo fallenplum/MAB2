@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+Method & $\lambda=0$ & $0.005/1000$ & $0.02/1000$ & $0.05/1000$ \\
+\midrule
+Closure EVSI (nominee) & 0.605078 & 0.567215 & 0.453627 & 0.226449 \\
+EVSI fixed price & 0.605078 & 0.567048 & 0.452957 & 0.224774 \\
+EVSI no cost ranking & 0.605078 & 0.567041 & 0.452930 & 0.224708 \\
+EVSI old graph cost & 0.608984 & 0.569451 & 0.450852 & 0.213653 \\
+Random & 0.605078 & 0.566282 & 0.449894 & 0.217118 \\
+Periodic & 0.603516 & 0.566172 & 0.454139 & 0.230074 \\
+Uncertainty & 0.605469 & 0.566661 & 0.450237 & 0.217388 \\
+Changed first & 0.607812 & 0.567563 & 0.446813 & 0.205314 \\
+Stale & 0.605078 & 0.571291 & 0.469928 & 0.267203 \\
+Protect changed & 0.616406 & 0.576462 & 0.456630 & 0.216965 \\
+Keep (with init.) & 0.606250 & 0.565966 & 0.445116 & 0.203415 \\
+Keep (no init.) & 0.606250 & 0.572537 & 0.471400 & 0.269125 \\
+Delete changed (no init.) & 0.601172 & 0.575727 & 0.499393 & 0.346725 \\
+Delete other (no init.) & 0.617969 & 0.584613 & 0.484547 & 0.284415 \\
+Single Qwen & 0.575781 & 0.568207 & 0.545483 & 0.500035 \\
+Vote Qwen (3) & 0.578906 & 0.556182 & 0.488009 & 0.351662 \\
+Independent 3 + Qwen & 0.589844 & 0.556352 & 0.455877 & 0.254927 \\
+\bottomrule
+\end{tabular}
+\caption{Predeclared descriptive utility sensitivity on the fixed graph-change policies. Policies are not retuned at other weights. The primary weight remains $0.005/1000$.}
+\label{tab:weights}
+\end{table*}

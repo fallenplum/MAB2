@@ -1,0 +1,5206 @@
+{
+  "all_condition_seed_accuracy": {
+    "G0": [
+      0.6171875,
+      0.5921875,
+      0.6109375,
+      0.6171875,
+      0.625
+    ],
+    "G0_MINUS_EU": [
+      0.63125,
+      0.6140625,
+      0.625,
+      0.6125,
+      0.621875
+    ],
+    "G0_MINUS_EV": [
+      0.625,
+      0.609375,
+      0.6125,
+      0.6203125,
+      0.6265625
+    ],
+    "G1": [
+      0.6125,
+      0.6140625,
+      0.6265625,
+      0.6234375,
+      0.621875
+    ],
+    "G1_MINUS_EU": [
+      0.621875,
+      0.6203125,
+      0.646875,
+      0.6265625,
+      0.6265625
+    ],
+    "G1_MINUS_EV": [
+      0.6296875,
+      0.6109375,
+      0.6109375,
+      0.6203125,
+      0.61875
+    ],
+    "INDEPENDENT3_Q": [
+      0.6,
+      0.6,
+      0.5828125,
+      0.596875,
+      0.6078125
+    ],
+    "SINGLE_Q": [
+      0.5734375,
+      0.56875,
+      0.56875,
+      0.5671875,
+      0.565625
+    ],
+    "VOTE_Q3": [
+      0.5703125,
+      0.575,
+      0.5765625,
+      0.571875,
+      0.575
+    ]
+  },
+  "automatic_method_or_paper_success": false,
+  "blank_final_outputs": 0,
+  "bootstrap_runs": 0,
+  "cache_replay_not_live_policy_deployment": true,
+  "cap_may_be_nonbinding_actual_costs_and_slack_reported": true,
+  "comparisons": {
+    "change": {
+      "DELETE_CHANGED_NO_INIT": {
+        "accuracy_difference": 0.00390625,
+        "token_ratio": 1.4880477549414408,
+        "utility_difference": -0.008511970703125038,
+        "utility_difference_by_seed": [
+          -0.0015860253906250232,
+          -0.012013125000000069,
+          -0.0059720312500000095,
+          -0.013149169921875092,
+          -0.009839501953124885
+        ]
+      },
+      "DELETE_OTHER_NO_INIT": {
+        "accuracy_difference": -0.012890624999999933,
+        "token_ratio": 1.1351377827749998,
+        "utility_difference": -0.017398191406250096,
+        "utility_difference_by_seed": [
+          -0.02688724609375004,
+          -0.021688222656250034,
+          -0.011718291015624938,
+          -0.015019765624999959,
+          -0.011677431640624958
+        ]
+      },
+      "EVSI_fixed_price": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 0.9955966518736288,
+        "utility_difference": 0.0001674609374999747,
+        "utility_difference_by_seed": [
+          0.00023931640624996753,
+          -1.8759765625042668e-05,
+          0.00020687500000005077,
+          0.0003027734374999591,
+          0.00010709960937504981
+        ]
+      },
+      "EVSI_no_cost_ranking": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 0.9954230418029978,
+        "utility_difference": 0.0001740937499998818,
+        "utility_difference_by_seed": [
+          0.00023931640624996753,
+          0.0,
+          0.00020687500000005077,
+          0.00031717773437500707,
+          0.00010709960937504981
+        ]
+      },
+      "EVSI_old_graph_cost": {
+        "accuracy_difference": -0.00390625,
+        "token_ratio": 0.9577506991511376,
+        "utility_difference": -0.002236001953125122,
+        "utility_difference_by_seed": [
+          0.00023931640624996753,
+          -0.002939511718749954,
+          -0.005727509765624972,
+          -0.0018887792968750317,
+          -0.0008635253906249529
+        ]
+      },
+      "INDEPENDENT3_Q": {
+        "accuracy_difference": 0.015234375000000022,
+        "token_ratio": 1.1305160076093943,
+        "utility_difference": 0.010863171874999855,
+        "utility_difference_by_seed": [
+          0.01033348632812503,
+          -0.0020291113281249995,
+          0.04117066406250003,
+          0.016376796874999933,
+          -0.011535976562499939
+        ]
+      },
+      "KEEP_NO_INIT": {
+        "accuracy_difference": -0.0011718749999999334,
+        "token_ratio": 1.123110887071194,
+        "utility_difference": -0.005322253906250074,
+        "utility_difference_by_seed": [
+          0.0008218164062500088,
+          -0.011567998046874917,
+          -0.0016002246093749228,
+          -0.008799765625000067,
+          -0.005465097656249918
+        ]
+      },
+      "SINGLE_Q": {
+        "accuracy_difference": 0.029296875,
+        "token_ratio": 4.99863906532306,
+        "utility_difference": -0.000991386718750209,
+        "utility_difference_by_seed": [
+          3.454101562505585e-05,
+          -0.016203671874999936,
+          0.009390585937500084,
+          0.004125966796874936,
+          -0.0023043554687499634
+        ]
+      },
+      "VOTE_Q3": {
+        "accuracy_difference": 0.026171875000000067,
+        "token_ratio": 1.6661770765237214,
+        "utility_difference": 0.011033388671874977,
+        "utility_difference_by_seed": [
+          0.019091289062500016,
+          -0.003006806640625026,
+          0.01868096679687503,
+          0.017322792968749945,
+          0.0030787011718750312
+        ]
+      },
+      "closure_EVSI": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 1.0,
+        "utility_difference": 0.0,
+        "utility_difference_by_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "graph_changed_first": {
+        "accuracy_difference": -0.0027343749999999556,
+        "token_ratio": 0.9406959676369415,
+        "utility_difference": -0.0003473945312499893,
+        "utility_difference_by_seed": [
+          0.00655204101562501,
+          -0.0038738378906250093,
+          -0.003588984374999993,
+          -0.003917246093749993,
+          0.003091054687500039
+        ]
+      },
+      "keep": {
+        "accuracy_difference": -0.0011718749999999334,
+        "token_ratio": 0.9399106692947191,
+        "utility_difference": 0.001248734374999838,
+        "utility_difference_by_seed": [
+          0.007398613281250022,
+          -0.005012890624999877,
+          0.004989853515624976,
+          -0.002216171875000006,
+          0.0010842675781250755
+        ]
+      },
+      "periodic": {
+        "accuracy_difference": 0.0015625000000000222,
+        "token_ratio": 1.0138921235446077,
+        "utility_difference": 0.0010437109374998865,
+        "utility_difference_by_seed": [
+          0.004262373046874934,
+          0.0015877343750000383,
+          -0.0029950488281249577,
+          0.0015630859374999861,
+          0.0008004101562500976
+        ]
+      },
+      "protect_changed": {
+        "accuracy_difference": -0.011328125000000022,
+        "token_ratio": 0.9478968396718678,
+        "utility_difference": -0.00924691015625001,
+        "utility_difference_by_seed": [
+          -0.018312119140625027,
+          -0.015133115234374994,
+          -0.005128212890624928,
+          -0.00843617187500001,
+          0.0007750683593751306
+        ]
+      },
+      "random": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 0.975948956948573,
+        "utility_difference": 0.0009330839843749716,
+        "utility_difference_by_seed": [
+          0.005428349609374994,
+          0.0012158984375000292,
+          -2.1845703125022986e-05,
+          -0.002797626953125021,
+          0.00084064453124999
+        ]
+      },
+      "stale": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 1.120619087802588,
+        "utility_difference": -0.004075416015625,
+        "utility_difference_by_seed": [
+          0.001106689453124976,
+          -0.008422314453125024,
+          -0.003219785156249988,
+          -0.007497851562499935,
+          -0.0023438183593749162
+        ]
+      },
+      "uncertainty": {
+        "accuracy_difference": -0.0003906249999999778,
+        "token_ratio": 0.9756460498448065,
+        "utility_difference": 0.0005545039062498924,
+        "utility_difference_by_seed": [
+          0.0004833203124998686,
+          0.0013828613281250401,
+          0.0006179296874999629,
+          0.0011415917968748968,
+          -0.0008531835937499732
+        ]
+      }
+    },
+    "no_change": {
+      "DELETE_CHANGED_NO_INIT": {
+        "accuracy_difference": -0.0031250000000000444,
+        "token_ratio": 1.2839166489781833,
+        "utility_difference": -0.012725777343749911,
+        "utility_difference_by_seed": [
+          -0.014887949218749919,
+          -0.014866572265624933,
+          -0.017323154296875032,
+          -0.009471572265624895,
+          -0.007079638671874999
+        ]
+      },
+      "DELETE_OTHER_NO_INIT": {
+        "accuracy_difference": 0.0011718749999999334,
+        "token_ratio": 1.283826628862266,
+        "utility_difference": -0.008426531249999925,
+        "utility_difference_by_seed": [
+          -0.005125927734374924,
+          -0.007057509765625025,
+          -0.001693261718750061,
+          -0.023135947265624957,
+          -0.005120009765624989
+        ]
+      },
+      "EVSI_fixed_price": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 0.9979506860025632,
+        "utility_difference": 8.915624999994431e-05,
+        "utility_difference_by_seed": [
+          0.0,
+          0.0,
+          0.00012543945312504245,
+          0.0003203417968750122,
+          0.0
+        ]
+      },
+      "EVSI_no_cost_ranking": {
+        "accuracy_difference": 0.0003906249999999778,
+        "token_ratio": 0.9979413673072374,
+        "utility_difference": 0.00048018750000000665,
+        "utility_difference_by_seed": [
+          0.0,
+          0.0019551562499999786,
+          0.00012543945312504245,
+          0.0003203417968750122,
+          0.0
+        ]
+      },
+      "EVSI_old_graph_cost": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 1.0,
+        "utility_difference": 0.0,
+        "utility_difference_by_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "INDEPENDENT3_Q": {
+        "accuracy_difference": 0.014453124999999956,
+        "token_ratio": 1.29632877221042,
+        "utility_difference": 0.00452857031249998,
+        "utility_difference_by_seed": [
+          0.021886425781250107,
+          -0.011281103515624946,
+          0.019481777343750006,
+          -0.0019764160156250377,
+          -0.005467832031250008
+        ]
+      },
+      "KEEP_NO_INIT": {
+        "accuracy_difference": 0.006640624999999956,
+        "token_ratio": 1.2704562237979498,
+        "utility_difference": -0.002601878906249966,
+        "utility_difference_by_seed": [
+          0.008908339843750168,
+          0.008921562500000091,
+          0.0006137988281250673,
+          -0.020830810546874967,
+          -0.010622285156250078
+        ]
+      },
+      "SINGLE_Q": {
+        "accuracy_difference": 0.028515624999999933,
+        "token_ratio": 5.731789376406735,
+        "utility_difference": -0.007325988281250084,
+        "utility_difference_by_seed": [
+          0.011587480468750133,
+          -0.025455664062499883,
+          -0.012298300781249938,
+          -0.014227246093750034,
+          0.003763789062499967
+        ]
+      },
+      "VOTE_Q3": {
+        "accuracy_difference": 0.025390625,
+        "token_ratio": 1.910555241462283,
+        "utility_difference": 0.004698787109375102,
+        "utility_difference_by_seed": [
+          0.030644228515625094,
+          -0.012258798828124973,
+          -0.003007919921874991,
+          -0.0010304199218750254,
+          0.009146845703124962
+        ]
+      },
+      "closure_EVSI": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 1.0,
+        "utility_difference": 0.0,
+        "utility_difference_by_seed": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "graph_changed_first": {
+        "accuracy_difference": -0.0011718750000000444,
+        "token_ratio": 0.9954807510851527,
+        "utility_difference": -0.0009747753906249601,
+        "utility_difference_by_seed": [
+          -0.0011872363281248965,
+          -0.0031245605468749327,
+          -0.0016400390624999872,
+          0.00034166992187500966,
+          0.0007362890625000063
+        ]
+      },
+      "keep": {
+        "accuracy_difference": 0.006640624999999956,
+        "token_ratio": 1.065567128655937,
+        "utility_difference": 0.003969109375000057,
+        "utility_difference_by_seed": [
+          0.01548513671875007,
+          0.01547666992187513,
+          0.007203876953124966,
+          -0.014247216796874906,
+          -0.004072919921874973
+        ]
+      },
+      "periodic": {
+        "accuracy_difference": -0.0007812500000000666,
+        "token_ratio": 0.9961990571184278,
+        "utility_difference": -0.0006155976562499665,
+        "utility_difference_by_seed": [
+          -0.001226630859374911,
+          -0.0031613183593749428,
+          0.0003172265624999948,
+          0.0002947949218750079,
+          0.0006979394531250183
+        ]
+      },
+      "protect_changed": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 1.0750372735398805,
+        "utility_difference": -0.003030441406249862,
+        "utility_difference_by_seed": [
+          -0.002457851562499891,
+          -0.002458749999999954,
+          -0.004869501953124966,
+          -0.002884257812500013,
+          -0.0024818457031250407
+        ]
+      },
+      "random": {
+        "accuracy_difference": -0.0007812500000000666,
+        "token_ratio": 0.9856369341376117,
+        "utility_difference": -0.00014857226562503545,
+        "utility_difference_by_seed": [
+          -4.253906249995776e-05,
+          0.0032555468750000705,
+          -0.0016400390624999872,
+          -0.003052119140624976,
+          0.0007362890625000063
+        ]
+      },
+      "stale": {
+        "accuracy_difference": 0.0,
+        "token_ratio": 1.0750372735398805,
+        "utility_difference": -0.003030441406249862,
+        "utility_difference_by_seed": [
+          -0.002457851562499891,
+          -0.002458749999999954,
+          -0.004869501953124966,
+          -0.002884257812500013,
+          -0.0024818457031250407
+        ]
+      },
+      "uncertainty": {
+        "accuracy_difference": -0.0003906250000000888,
+        "token_ratio": 0.9794284591369895,
+        "utility_difference": 0.0005212734374999695,
+        "utility_difference_by_seed": [
+          -0.00014409179687491225,
+          0.0014017187500000583,
+          -0.0011098046874999934,
+          0.0005958398437500012,
+          0.0018627050781250265
+        ]
+      }
+    }
+  },
+  "confidence_intervals_computed": false,
+  "development_filter_not_significance": true,
+  "finish_counts": {
+    "eos": 28800,
+    "length": 0
+  },
+  "five_seeds_not_independent_datasets": true,
+  "fixed_nominee": "closure_EVSI",
+  "full_token_cap": 3000000,
+  "gates": {
+    "independent3_Q_full_token_cost": false,
+    "independent3_Q_quality": true,
+    "single_Q_quality_and_utility": false,
+    "utility_over_all_maintenance_and_free_controls": false,
+    "utility_vs_random_positive_four_of_five_seeds": false,
+    "vote_Q3_utility": true
+  },
+  "label_feedback_is_benchmark_oracle": true,
+  "other_methods_not_substitute_winners": true,
+  "results": {
+    "change": {
+      "DELETE_CHANGED_NO_INIT": {
+        "F1": 0.7061709252626326,
+        "accuracy": 0.601171875,
+        "breakages_vs_keep": 84,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.54375,
+            "pairs": 0.0,
+            "utility": 0.517183171875
+          },
+          "1": {
+            "accuracy": 0.65,
+            "pairs": 0.0,
+            "utility": 0.624837625
+          },
+          "2": {
+            "accuracy": 0.565625,
+            "pairs": 0.0,
+            "utility": 0.541331796875
+          },
+          "3": {
+            "accuracy": 0.61875,
+            "pairs": 0.0,
+            "utility": 0.5921525625
+          },
+          "4": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.575129375
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.5757955625
+          },
+          "6": {
+            "accuracy": 0.60625,
+            "pairs": 0.0,
+            "utility": 0.579922375
+          },
+          "7": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.5994650625000001
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.599609375,
+            "pairs": 0.0,
+            "utility": 0.574124208984375
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 0.0,
+            "utility": 0.5644068359375001
+          },
+          "2": {
+            "accuracy": 0.611328125,
+            "pairs": 0.0,
+            "utility": 0.585912783203125
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5839195312500001
+          },
+          "4": {
+            "accuracy": 0.595703125,
+            "pairs": 0.0,
+            "utility": 0.5702725976562499
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 7680,
+          "kernel_seconds": 21928.336970367436,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 10794.189166259768,
+          "mistral_tokens": 4735803,
+          "qwen_calls": 5120,
+          "qwen_kernel_seconds": 11134.14780410766,
+          "qwen_tokens": 8291875,
+          "tokens": 13027678
+        },
+        "corrections_vs_keep": 71,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 325691.95,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 7680,
+            "kernel_seconds": 21928.336970367436,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 5120,
+            "qwen_kernel_seconds": 11134.14780410766,
+            "qwen_tokens": 8291875,
+            "tokens": 13027678
+          }
+        },
+        "total_calls": 7680,
+        "total_kernel_seconds": 21928.336970367436,
+        "total_tokens": 13027678,
+        "unused_token_budget": 2674308.05,
+        "utility": 0.57572719140625,
+        "utility_weight_sensitivity": {
+          "0": 0.601171875,
+          "0.005": 0.57572719140625,
+          "0.02": 0.49939314062499995,
+          "0.05": 0.34672503906249996
+        }
+      },
+      "DELETE_OTHER_NO_INIT": {
+        "F1": 0.7274368041099385,
+        "accuracy": 0.61796875,
+        "breakages_vs_keep": 48,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.575,
+            "pairs": 0.0,
+            "utility": 0.540160234375
+          },
+          "1": {
+            "accuracy": 0.659375,
+            "pairs": 0.0,
+            "utility": 0.6263901875
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 0.0,
+            "utility": 0.53691696875
+          },
+          "3": {
+            "accuracy": 0.640625,
+            "pairs": 0.0,
+            "utility": 0.6057777656250001
+          },
+          "4": {
+            "accuracy": 0.634375,
+            "pairs": 0.0,
+            "utility": 0.6017841562500001
+          },
+          "5": {
+            "accuracy": 0.615625,
+            "pairs": 0.0,
+            "utility": 0.583887546875
+          },
+          "6": {
+            "accuracy": 0.621875,
+            "pairs": 0.0,
+            "utility": 0.587349921875
+          },
+          "7": {
+            "accuracy": 0.628125,
+            "pairs": 0.0,
+            "utility": 0.594640515625
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.6328125,
+            "pairs": 0.0,
+            "utility": 0.5994254296875
+          },
+          "1": {
+            "accuracy": 0.607421875,
+            "pairs": 0.0,
+            "utility": 0.57408193359375
+          },
+          "2": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.5916590429687499
+          },
+          "3": {
+            "accuracy": 0.619140625,
+            "pairs": 0.0,
+            "utility": 0.5857901269531249
+          },
+          "4": {
+            "accuracy": 0.60546875,
+            "pairs": 0.0,
+            "utility": 0.57211052734375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10240,
+          "kernel_seconds": 31486.088319076534,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 10794.189166259768,
+          "mistral_tokens": 4735803,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 20691.899152816768,
+          "qwen_tokens": 12342130,
+          "tokens": 17077933
+        },
+        "corrections_vs_keep": 78,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 426948.325,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 31486.088319076534,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20691.899152816768,
+            "qwen_tokens": 12342130,
+            "tokens": 17077933
+          }
+        },
+        "total_calls": 10240,
+        "total_kernel_seconds": 31486.088319076534,
+        "total_tokens": 17077933,
+        "unused_token_budget": 2573051.675,
+        "utility": 0.584613412109375,
+        "utility_weight_sensitivity": {
+          "0": 0.61796875,
+          "0.005": 0.584613412109375,
+          "0.02": 0.48454739843750005,
+          "0.05": 0.28441537109375
+        }
+      },
+      "EVSI_fixed_price": {
+        "F1": 0.7129523867759977,
+        "accuracy": 0.605078125,
+        "breakages_vs_keep": 73,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 8.0,
+            "utility": 0.525922921875
+          },
+          "1": {
+            "accuracy": 0.640625,
+            "pairs": 5.2,
+            "utility": 0.603346421875
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 4.8,
+            "utility": 0.530325515625
+          },
+          "3": {
+            "accuracy": 0.621875,
+            "pairs": 8.0,
+            "utility": 0.58141140625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 7.8,
+            "utility": 0.5707336093750001
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 7.2,
+            "utility": 0.565902359375
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 4.4,
+            "utility": 0.573378109375
+          },
+          "7": {
+            "accuracy": 0.625,
+            "pairs": 5.0,
+            "utility": 0.585361734375
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.611328125,
+            "pairs": 7.5,
+            "utility": 0.5722988671875
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 5.875,
+            "utility": 0.552412470703125
+          },
+          "2": {
+            "accuracy": 0.6171875,
+            "pairs": 7.0,
+            "utility": 0.579733876953125
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 6.125,
+            "utility": 0.570467587890625
+          },
+          "4": {
+            "accuracy": 0.59765625,
+            "pairs": 5.0,
+            "utility": 0.56032599609375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 11476,
+          "kernel_seconds": 32491.617910369878,
+          "mistral_calls": 3046,
+          "mistral_kernel_seconds": 13096.892705078126,
+          "mistral_tokens": 5689292,
+          "qwen_calls": 8430,
+          "qwen_kernel_seconds": 19394.725205291747,
+          "qwen_tokens": 13782255,
+          "tokens": 19471547
+        },
+        "corrections_vs_keep": 70,
+        "mean_feedback_tokens": 38973.8,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 363706.225,
+        "pairs": 6.3,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 916,
+            "kernel_seconds": 2326.7646478576667,
+            "mistral_calls": 166,
+            "mistral_kernel_seconds": 731.116131958008,
+            "mistral_tokens": 311843,
+            "qwen_calls": 750,
+            "qwen_kernel_seconds": 1595.648515899658,
+            "qwen_tokens": 1247109,
+            "tokens": 1558952
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8640,
+            "kernel_seconds": 25507.24432243347,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 6080,
+            "qwen_kernel_seconds": 14713.055156173705,
+            "qwen_tokens": 9812446,
+            "tokens": 14548249
+          }
+        },
+        "total_calls": 11476,
+        "total_kernel_seconds": 32491.617910369878,
+        "total_tokens": 19471547,
+        "unused_token_budget": 2513211.325,
+        "utility": 0.5670477597656249,
+        "utility_weight_sensitivity": {
+          "0": 0.605078125,
+          "0.005": 0.5670477597656249,
+          "0.02": 0.4529566640625,
+          "0.05": 0.22477447265625
+        }
+      },
+      "EVSI_no_cost_ranking": {
+        "F1": 0.7129523867759977,
+        "accuracy": 0.605078125,
+        "breakages_vs_keep": 73,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 8.0,
+            "utility": 0.525922921875
+          },
+          "1": {
+            "accuracy": 0.640625,
+            "pairs": 5.2,
+            "utility": 0.603346421875
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 4.8,
+            "utility": 0.530325515625
+          },
+          "3": {
+            "accuracy": 0.621875,
+            "pairs": 8.0,
+            "utility": 0.58141140625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.5707105625
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 7.2,
+            "utility": 0.565902359375
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 4.4,
+            "utility": 0.573378109375
+          },
+          "7": {
+            "accuracy": 0.625,
+            "pairs": 5.2,
+            "utility": 0.58533171875
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.611328125,
+            "pairs": 7.5,
+            "utility": 0.5722988671875
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 6.0,
+            "utility": 0.5523937109375
+          },
+          "2": {
+            "accuracy": 0.6171875,
+            "pairs": 7.0,
+            "utility": 0.579733876953125
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 6.25,
+            "utility": 0.57045318359375
+          },
+          "4": {
+            "accuracy": 0.59765625,
+            "pairs": 5.0,
+            "utility": 0.56032599609375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 11478,
+          "kernel_seconds": 32492.88813671876,
+          "mistral_calls": 3046,
+          "mistral_kernel_seconds": 13096.892705078126,
+          "mistral_tokens": 5689292,
+          "qwen_calls": 8432,
+          "qwen_kernel_seconds": 19395.995431640622,
+          "qwen_tokens": 13785651,
+          "tokens": 19474943
+        },
+        "corrections_vs_keep": 70,
+        "mean_feedback_tokens": 39058.7,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 363706.225,
+        "pairs": 6.35,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 918,
+            "kernel_seconds": 2328.0348742065435,
+            "mistral_calls": 166,
+            "mistral_kernel_seconds": 731.116131958008,
+            "mistral_tokens": 311843,
+            "qwen_calls": 752,
+            "qwen_kernel_seconds": 1596.9187422485352,
+            "qwen_tokens": 1250505,
+            "tokens": 1562348
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8640,
+            "kernel_seconds": 25507.24432243347,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 6080,
+            "qwen_kernel_seconds": 14713.055156173705,
+            "qwen_tokens": 9812446,
+            "tokens": 14548249
+          }
+        },
+        "total_calls": 11478,
+        "total_kernel_seconds": 32492.88813671876,
+        "total_tokens": 19474943,
+        "unused_token_budget": 2513126.425,
+        "utility": 0.567041126953125,
+        "utility_weight_sensitivity": {
+          "0": 0.605078125,
+          "0.005": 0.567041126953125,
+          "0.02": 0.45293013281249994,
+          "0.05": 0.22470814453124993
+        }
+      },
+      "EVSI_old_graph_cost": {
+        "F1": 0.7159220586875001,
+        "accuracy": 0.608984375,
+        "breakages_vs_keep": 66,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.5625,
+            "pairs": 8.0,
+            "utility": 0.519504796875
+          },
+          "1": {
+            "accuracy": 0.646875,
+            "pairs": 5.2,
+            "utility": 0.606474078125
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 4.8,
+            "utility": 0.530325515625
+          },
+          "3": {
+            "accuracy": 0.63125,
+            "pairs": 8.0,
+            "utility": 0.5891417499999999
+          },
+          "4": {
+            "accuracy": 0.6125,
+            "pairs": 7.8,
+            "utility": 0.57249828125
+          },
+          "5": {
+            "accuracy": 0.609375,
+            "pairs": 7.2,
+            "utility": 0.5740436093750001
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 4.4,
+            "utility": 0.573378109375
+          },
+          "7": {
+            "accuracy": 0.63125,
+            "pairs": 5.0,
+            "utility": 0.590243640625
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.611328125,
+            "pairs": 7.5,
+            "utility": 0.5722988671875
+          },
+          "1": {
+            "accuracy": 0.595703125,
+            "pairs": 5.875,
+            "utility": 0.55533322265625
+          },
+          "2": {
+            "accuracy": 0.625,
+            "pairs": 7.0,
+            "utility": 0.58566826171875
+          },
+          "3": {
+            "accuracy": 0.61328125,
+            "pairs": 6.125,
+            "utility": 0.572659140625
+          },
+          "4": {
+            "accuracy": 0.599609375,
+            "pairs": 5.0,
+            "utility": 0.56129662109375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 11964,
+          "kernel_seconds": 34290.219243835454,
+          "mistral_calls": 3040,
+          "mistral_kernel_seconds": 13076.632603027345,
+          "mistral_tokens": 5677201,
+          "qwen_calls": 8924,
+          "qwen_kernel_seconds": 21213.5866408081,
+          "qwen_tokens": 14563773,
+          "tokens": 20240974
+        },
+        "corrections_vs_keep": 73,
+        "mean_feedback_tokens": 37856.025,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 384059.675,
+        "pairs": 6.3,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 892,
+            "kernel_seconds": 2244.8211796875003,
+            "mistral_calls": 160,
+            "mistral_kernel_seconds": 710.8560299072269,
+            "mistral_tokens": 299752,
+            "qwen_calls": 732,
+            "qwen_kernel_seconds": 1533.9651497802734,
+            "qwen_tokens": 1214489,
+            "tokens": 1514241
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 9152,
+            "kernel_seconds": 27387.78912406922,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 6592,
+            "qwen_kernel_seconds": 16593.599957809445,
+            "qwen_tokens": 10626584,
+            "tokens": 15362387
+          }
+        },
+        "total_calls": 11964,
+        "total_kernel_seconds": 34290.219243835454,
+        "total_tokens": 20240974,
+        "unused_token_budget": 2493975.65,
+        "utility": 0.56945122265625,
+        "utility_weight_sensitivity": {
+          "0": 0.608984375,
+          "0.005": 0.56945122265625,
+          "0.02": 0.45085176562499996,
+          "0.05": 0.21365285156249997
+        }
+      },
+      "INDEPENDENT3_Q": {
+        "F1": 0.7052006247136419,
+        "accuracy": 0.58984375,
+        "breakages_vs_keep": 220,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.528125,
+            "pairs": 0.0,
+            "utility": 0.49314274999999996
+          },
+          "1": {
+            "accuracy": 0.6375,
+            "pairs": 0.0,
+            "utility": 0.6043992656249999
+          },
+          "2": {
+            "accuracy": 0.53125,
+            "pairs": 0.0,
+            "utility": 0.4992473437499999
+          },
+          "3": {
+            "accuracy": 0.584375,
+            "pairs": 0.0,
+            "utility": 0.549451390625
+          },
+          "4": {
+            "accuracy": 0.634375,
+            "pairs": 0.0,
+            "utility": 0.60162934375
+          },
+          "5": {
+            "accuracy": 0.565625,
+            "pairs": 0.0,
+            "utility": 0.5337482187500001
+          },
+          "6": {
+            "accuracy": 0.5875,
+            "pairs": 0.0,
+            "utility": 0.552819609375
+          },
+          "7": {
+            "accuracy": 0.65,
+            "pairs": 0.0,
+            "utility": 0.61637846875
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.595703125,
+            "pairs": 0.0,
+            "utility": 0.5622046972656249
+          },
+          "1": {
+            "accuracy": 0.587890625,
+            "pairs": 0.0,
+            "utility": 0.554422822265625
+          },
+          "2": {
+            "accuracy": 0.572265625,
+            "pairs": 0.0,
+            "utility": 0.538770087890625
+          },
+          "3": {
+            "accuracy": 0.587890625,
+            "pairs": 0.0,
+            "utility": 0.554393564453125
+          },
+          "4": {
+            "accuracy": 0.60546875,
+            "pairs": 0.0,
+            "utility": 0.571969072265625
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10240,
+          "kernel_seconds": 33867.51713192749,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 13000.940838256836,
+          "mistral_tokens": 4577889,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 20866.57629367065,
+          "qwen_tokens": 12569862,
+          "tokens": 17147751
+        },
+        "corrections_vs_keep": 178,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 428693.775,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 33867.51713192749,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 13000.940838256836,
+            "mistral_tokens": 4577889,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20866.57629367065,
+            "qwen_tokens": 12569862,
+            "tokens": 17147751
+          }
+        },
+        "total_calls": 10240,
+        "total_kernel_seconds": 33867.51713192749,
+        "total_tokens": 17147751,
+        "unused_token_budget": 2571306.225,
+        "utility": 0.5563520488281251,
+        "utility_weight_sensitivity": {
+          "0": 0.58984375,
+          "0.005": 0.5563520488281251,
+          "0.02": 0.45587694531250006,
+          "0.05": 0.25492673828125
+        }
+      },
+      "KEEP_NO_INIT": {
+        "F1": 0.7124525339608977,
+        "accuracy": 0.60625,
+        "breakages_vs_keep": 0,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.55,
+            "pairs": 0.0,
+            "utility": 0.51481015625
+          },
+          "1": {
+            "accuracy": 0.6625,
+            "pairs": 0.0,
+            "utility": 0.6291597656250001
+          },
+          "2": {
+            "accuracy": 0.55625,
+            "pairs": 0.0,
+            "utility": 0.5240601874999999
+          },
+          "3": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.589797328125
+          },
+          "4": {
+            "accuracy": 0.6125,
+            "pairs": 0.0,
+            "utility": 0.579550578125
+          },
+          "5": {
+            "accuracy": 0.60625,
+            "pairs": 0.0,
+            "utility": 0.57417203125
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5744783906250001
+          },
+          "7": {
+            "accuracy": 0.628125,
+            "pairs": 0.0,
+            "utility": 0.594271359375
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.60546875,
+            "pairs": 0.0,
+            "utility": 0.5717163671875
+          },
+          "1": {
+            "accuracy": 0.59765625,
+            "pairs": 0.0,
+            "utility": 0.5639617089843749
+          },
+          "2": {
+            "accuracy": 0.615234375,
+            "pairs": 0.0,
+            "utility": 0.5815409765624999
+          },
+          "3": {
+            "accuracy": 0.61328125,
+            "pairs": 0.0,
+            "utility": 0.579570126953125
+          },
+          "4": {
+            "accuracy": 0.599609375,
+            "pairs": 0.0,
+            "utility": 0.565898193359375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10240,
+          "kernel_seconds": 31541.780189956673,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 10794.189166259768,
+          "mistral_tokens": 4735803,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 20747.591023696907,
+          "qwen_tokens": 12525010,
+          "tokens": 17260813
+        },
+        "corrections_vs_keep": 0,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 431520.325,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 31541.780189956673,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20747.591023696907,
+            "qwen_tokens": 12525010,
+            "tokens": 17260813
+          }
+        },
+        "total_calls": 10240,
+        "total_kernel_seconds": 31541.780189956673,
+        "total_tokens": 17260813,
+        "unused_token_budget": 2568479.675,
+        "utility": 0.572537474609375,
+        "utility_weight_sensitivity": {
+          "0": 0.60625,
+          "0.005": 0.572537474609375,
+          "0.02": 0.47139989843749996,
+          "0.05": 0.26912474609375
+        }
+      },
+      "SINGLE_Q": {
+        "F1": 0.6553885612057642,
+        "accuracy": 0.57578125,
+        "breakages_vs_keep": 345,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.4375,
+            "pairs": 0.0,
+            "utility": 0.429572640625
+          },
+          "1": {
+            "accuracy": 0.615625,
+            "pairs": 0.0,
+            "utility": 0.6081499375
+          },
+          "2": {
+            "accuracy": 0.59375,
+            "pairs": 0.0,
+            "utility": 0.586544484375
+          },
+          "3": {
+            "accuracy": 0.61875,
+            "pairs": 0.0,
+            "utility": 0.6108185781250001
+          },
+          "4": {
+            "accuracy": 0.575,
+            "pairs": 0.0,
+            "utility": 0.5676051249999999
+          },
+          "5": {
+            "accuracy": 0.596875,
+            "pairs": 0.0,
+            "utility": 0.589671453125
+          },
+          "6": {
+            "accuracy": 0.56875,
+            "pairs": 0.0,
+            "utility": 0.560894359375
+          },
+          "7": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.59239628125
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.580078125,
+            "pairs": 0.0,
+            "utility": 0.5725036425781249
+          },
+          "1": {
+            "accuracy": 0.576171875,
+            "pairs": 0.0,
+            "utility": 0.5685973828124999
+          },
+          "2": {
+            "accuracy": 0.578125,
+            "pairs": 0.0,
+            "utility": 0.5705501660156249
+          },
+          "3": {
+            "accuracy": 0.57421875,
+            "pairs": 0.0,
+            "utility": 0.56664439453125
+          },
+          "4": {
+            "accuracy": 0.5703125,
+            "pairs": 0.0,
+            "utility": 0.562737451171875
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 2560,
+          "kernel_seconds": 1377.6432011566167,
+          "mistral_calls": 0,
+          "mistral_kernel_seconds": 0,
+          "mistral_tokens": 0,
+          "qwen_calls": 2560,
+          "qwen_kernel_seconds": 1377.6432011566167,
+          "qwen_tokens": 3878217,
+          "tokens": 3878217
+        },
+        "corrections_vs_keep": 267,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 96955.425,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 2560,
+            "kernel_seconds": 1377.6432011566167,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 2560,
+            "qwen_kernel_seconds": 1377.6432011566167,
+            "qwen_tokens": 3878217,
+            "tokens": 3878217
+          }
+        },
+        "total_calls": 2560,
+        "total_kernel_seconds": 1377.6432011566167,
+        "total_tokens": 3878217,
+        "unused_token_budget": 2903044.575,
+        "utility": 0.5682066074218751,
+        "utility_weight_sensitivity": {
+          "0": 0.57578125,
+          "0.005": 0.5682066074218751,
+          "0.02": 0.5454826796875001,
+          "0.05": 0.5000348242187499
+        }
+      },
+      "VOTE_Q3": {
+        "F1": 0.6589529983193257,
+        "accuracy": 0.57890625,
+        "breakages_vs_keep": 342,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.446875,
+            "pairs": 0.0,
+            "utility": 0.42309165625
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.6025738281249999
+          },
+          "2": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.578383640625
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5855787031249999
+          },
+          "4": {
+            "accuracy": 0.58125,
+            "pairs": 0.0,
+            "utility": 0.5590649375
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 0.0,
+            "utility": 0.5690144531250001
+          },
+          "6": {
+            "accuracy": 0.56875,
+            "pairs": 0.0,
+            "utility": 0.5451841249999999
+          },
+          "7": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5865633125
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.576171875,
+            "pairs": 0.0,
+            "utility": 0.55344689453125
+          },
+          "1": {
+            "accuracy": 0.578125,
+            "pairs": 0.0,
+            "utility": 0.555400517578125
+          },
+          "2": {
+            "accuracy": 0.583984375,
+            "pairs": 0.0,
+            "utility": 0.56125978515625
+          },
+          "3": {
+            "accuracy": 0.576171875,
+            "pairs": 0.0,
+            "utility": 0.553447568359375
+          },
+          "4": {
+            "accuracy": 0.580078125,
+            "pairs": 0.0,
+            "utility": 0.55735439453125
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 7680,
+          "kernel_seconds": 4147.100310287476,
+          "mistral_calls": 0,
+          "mistral_kernel_seconds": 0,
+          "mistral_tokens": 0,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 4147.100310287476,
+          "qwen_tokens": 11634902,
+          "tokens": 11634902
+        },
+        "corrections_vs_keep": 272,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 290872.55,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 7680,
+            "kernel_seconds": 4147.100310287476,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 4147.100310287476,
+            "qwen_tokens": 11634902,
+            "tokens": 11634902
+          }
+        },
+        "total_calls": 7680,
+        "total_kernel_seconds": 4147.100310287476,
+        "total_tokens": 11634902,
+        "unused_token_budget": 2709127.45,
+        "utility": 0.5561818320312499,
+        "utility_weight_sensitivity": {
+          "0": 0.57890625,
+          "0.005": 0.5561818320312499,
+          "0.02": 0.488008578125,
+          "0.05": 0.35166207031249996
+        }
+      },
+      "closure_EVSI": {
+        "F1": 0.7129523867759977,
+        "accuracy": 0.605078125,
+        "breakages_vs_keep": 73,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 8.0,
+            "utility": 0.5262034375
+          },
+          "1": {
+            "accuracy": 0.640625,
+            "pairs": 5.2,
+            "utility": 0.603346421875
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 4.8,
+            "utility": 0.5305677812499999
+          },
+          "3": {
+            "accuracy": 0.621875,
+            "pairs": 8.0,
+            "utility": 0.58141140625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.571073046875
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 7.2,
+            "utility": 0.56617721875
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 4.4,
+            "utility": 0.573378109375
+          },
+          "7": {
+            "accuracy": 0.625,
+            "pairs": 5.2,
+            "utility": 0.58556434375
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.611328125,
+            "pairs": 7.5,
+            "utility": 0.57253818359375
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 6.0,
+            "utility": 0.5523937109375
+          },
+          "2": {
+            "accuracy": 0.6171875,
+            "pairs": 7.0,
+            "utility": 0.579940751953125
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 6.25,
+            "utility": 0.570770361328125
+          },
+          "4": {
+            "accuracy": 0.59765625,
+            "pairs": 5.0,
+            "utility": 0.560433095703125
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 11430,
+          "kernel_seconds": 32340.836890899667,
+          "mistral_calls": 3034,
+          "mistral_kernel_seconds": 13051.19260888672,
+          "mistral_tokens": 5665411,
+          "qwen_calls": 8396,
+          "qwen_kernel_seconds": 19289.644282012934,
+          "qwen_tokens": 13720396,
+          "tokens": 19385807
+        },
+        "corrections_vs_keep": 70,
+        "mean_feedback_tokens": 36830.3,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 363706.225,
+        "pairs": 6.35,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 870,
+            "kernel_seconds": 2175.983628387451,
+            "mistral_calls": 154,
+            "mistral_kernel_seconds": 685.4160357666017,
+            "mistral_tokens": 287962,
+            "qwen_calls": 716,
+            "qwen_kernel_seconds": 1490.5675926208496,
+            "qwen_tokens": 1185250,
+            "tokens": 1473212
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8640,
+            "kernel_seconds": 25507.24432243347,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 6080,
+            "qwen_kernel_seconds": 14713.055156173705,
+            "qwen_tokens": 9812446,
+            "tokens": 14548249
+          }
+        },
+        "total_calls": 11430,
+        "total_kernel_seconds": 32340.836890899667,
+        "total_tokens": 19385807,
+        "unused_token_budget": 2515354.825,
+        "utility": 0.5672152207031249,
+        "utility_weight_sensitivity": {
+          "0": 0.605078125,
+          "0.005": 0.5672152207031249,
+          "0.02": 0.4536265078125,
+          "0.05": 0.22644908203124997
+        }
+      },
+      "graph_changed_first": {
+        "F1": 0.7141814224304286,
+        "accuracy": 0.6078125,
+        "breakages_vs_keep": 71,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 8.0,
+            "utility": 0.524403203125
+          },
+          "1": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.6083163437500001
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 8.0,
+            "utility": 0.527581875
+          },
+          "3": {
+            "accuracy": 0.63125,
+            "pairs": 8.0,
+            "utility": 0.58752921875
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.569715390625
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 8.0,
+            "utility": 0.56359175
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.5698480781249999
+          },
+          "7": {
+            "accuracy": 0.63125,
+            "pairs": 8.0,
+            "utility": 0.5895150625000001
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.60546875,
+            "pairs": 8.0,
+            "utility": 0.565986142578125
+          },
+          "1": {
+            "accuracy": 0.595703125,
+            "pairs": 8.0,
+            "utility": 0.556267548828125
+          },
+          "2": {
+            "accuracy": 0.625,
+            "pairs": 8.0,
+            "utility": 0.583529736328125
+          },
+          "3": {
+            "accuracy": 0.615234375,
+            "pairs": 8.0,
+            "utility": 0.574687607421875
+          },
+          "4": {
+            "accuracy": 0.59765625,
+            "pairs": 8.0,
+            "utility": 0.557342041015625
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 12096,
+          "kernel_seconds": 34310.2489569397,
+          "mistral_calls": 3200,
+          "mistral_kernel_seconds": 13800.674874267579,
+          "mistral_tokens": 5992707,
+          "qwen_calls": 8896,
+          "qwen_kernel_seconds": 20509.574082672116,
+          "qwen_tokens": 14615234,
+          "tokens": 20607941
+        },
+        "corrections_vs_keep": 75,
+        "mean_feedback_tokens": 69761.05,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 361328.825,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 1600,
+            "kernel_seconds": 4378.56840713501,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1434.8983011474609,
+            "mistral_tokens": 615258,
+            "qwen_calls": 1280,
+            "qwen_kernel_seconds": 2943.6701059875477,
+            "qwen_tokens": 2175184,
+            "tokens": 2790442
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8576,
+            "kernel_seconds": 25274.071609725954,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 6016,
+            "qwen_kernel_seconds": 14479.882443466186,
+            "qwen_tokens": 9717350,
+            "tokens": 14453153
+          }
+        },
+        "total_calls": 12096,
+        "total_kernel_seconds": 34310.2489569397,
+        "total_tokens": 20607941,
+        "unused_token_budget": 2484801.475,
+        "utility": 0.5675626152343749,
+        "utility_weight_sensitivity": {
+          "0": 0.6078125,
+          "0.005": 0.5675626152343749,
+          "0.02": 0.44681296093749995,
+          "0.05": 0.20531365234374999
+        }
+      },
+      "keep": {
+        "F1": 0.7124525339608977,
+        "accuracy": 0.60625,
+        "breakages_vs_keep": 0,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.55,
+            "pairs": 0.0,
+            "utility": 0.5087554531249999
+          },
+          "1": {
+            "accuracy": 0.6625,
+            "pairs": 0.0,
+            "utility": 0.6227470937499999
+          },
+          "2": {
+            "accuracy": 0.55625,
+            "pairs": 0.0,
+            "utility": 0.5173046874999999
+          },
+          "3": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.583146203125
+          },
+          "4": {
+            "accuracy": 0.6125,
+            "pairs": 0.0,
+            "utility": 0.5725684375
+          },
+          "5": {
+            "accuracy": 0.60625,
+            "pairs": 0.0,
+            "utility": 0.56764428125
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.568237578125
+          },
+          "7": {
+            "accuracy": 0.628125,
+            "pairs": 0.0,
+            "utility": 0.58732815625
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.60546875,
+            "pairs": 0.0,
+            "utility": 0.5651395703125
+          },
+          "1": {
+            "accuracy": 0.59765625,
+            "pairs": 0.0,
+            "utility": 0.5574066015624999
+          },
+          "2": {
+            "accuracy": 0.615234375,
+            "pairs": 0.0,
+            "utility": 0.5749508984375
+          },
+          "3": {
+            "accuracy": 0.61328125,
+            "pairs": 0.0,
+            "utility": 0.572986533203125
+          },
+          "4": {
+            "accuracy": 0.599609375,
+            "pairs": 0.0,
+            "utility": 0.559348828125
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 12160,
+          "kernel_seconds": 36199.3891300354,
+          "mistral_calls": 2880,
+          "mistral_kernel_seconds": 12365.776573120114,
+          "mistral_tokens": 5377449,
+          "qwen_calls": 9280,
+          "qwen_kernel_seconds": 23833.612556915286,
+          "qwen_tokens": 15247710,
+          "tokens": 20625159
+        },
+        "corrections_vs_keep": 0,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 431520.325,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0.0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0.0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0.0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 31541.780189956673,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20747.591023696907,
+            "qwen_tokens": 12525010,
+            "tokens": 17260813
+          }
+        },
+        "total_calls": 12160,
+        "total_kernel_seconds": 36199.3891300354,
+        "total_tokens": 20625159,
+        "unused_token_budget": 2484371.025,
+        "utility": 0.5659664863281251,
+        "utility_weight_sensitivity": {
+          "0": 0.60625,
+          "0.005": 0.5659664863281251,
+          "0.02": 0.4451159453124999,
+          "0.05": 0.20341486328124997
+        }
+      },
+      "periodic": {
+        "F1": 0.7109950094778095,
+        "accuracy": 0.603515625,
+        "breakages_vs_keep": 78,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 8.0,
+            "utility": 0.5267356249999999
+          },
+          "1": {
+            "accuracy": 0.64375,
+            "pairs": 8.0,
+            "utility": 0.607671
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 8.0,
+            "utility": 0.530030703125
+          },
+          "3": {
+            "accuracy": 0.61875,
+            "pairs": 8.0,
+            "utility": 0.58067221875
+          },
+          "4": {
+            "accuracy": 0.60625,
+            "pairs": 8.0,
+            "utility": 0.569988546875
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 8.0,
+            "utility": 0.566177953125
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.5719291249999999
+          },
+          "7": {
+            "accuracy": 0.615625,
+            "pairs": 8.0,
+            "utility": 0.57616690625
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.60546875,
+            "pairs": 8.0,
+            "utility": 0.568275810546875
+          },
+          "1": {
+            "accuracy": 0.587890625,
+            "pairs": 8.0,
+            "utility": 0.5508059765625
+          },
+          "2": {
+            "accuracy": 0.619140625,
+            "pairs": 8.0,
+            "utility": 0.58293580078125
+          },
+          "3": {
+            "accuracy": 0.607421875,
+            "pairs": 8.0,
+            "utility": 0.569207275390625
+          },
+          "4": {
+            "accuracy": 0.59765625,
+            "pairs": 8.0,
+            "utility": 0.559632685546875
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 11264,
+          "kernel_seconds": 31283.265834640515,
+          "mistral_calls": 3040,
+          "mistral_kernel_seconds": 13024.83494946289,
+          "mistral_tokens": 5676219,
+          "qwen_calls": 8224,
+          "qwen_kernel_seconds": 18258.430885177615,
+          "qwen_tokens": 13443968,
+          "tokens": 19120187
+        },
+        "corrections_vs_keep": 71,
+        "mean_feedback_tokens": 40367.75,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 353528.275,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 960,
+            "kernel_seconds": 2105.16844229126,
+            "mistral_calls": 160,
+            "mistral_kernel_seconds": 659.0583763427735,
+            "mistral_tokens": 298770,
+            "qwen_calls": 800,
+            "qwen_kernel_seconds": 1446.110065948486,
+            "qwen_tokens": 1315940,
+            "tokens": 1614710
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8384,
+            "kernel_seconds": 24520.48845227051,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 5824,
+            "qwen_kernel_seconds": 13726.29928601074,
+            "qwen_tokens": 9405328,
+            "tokens": 14141131
+          }
+        },
+        "total_calls": 11264,
+        "total_kernel_seconds": 31283.265834640515,
+        "total_tokens": 19120187,
+        "unused_token_budget": 2521995.325,
+        "utility": 0.566171509765625,
+        "utility_weight_sensitivity": {
+          "0": 0.603515625,
+          "0.005": 0.566171509765625,
+          "0.02": 0.4541391640625,
+          "0.05": 0.23007447265624997
+        }
+      },
+      "protect_changed": {
+        "F1": 0.7257868329873112,
+        "accuracy": 0.61640625,
+        "breakages_vs_keep": 47,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.575,
+            "pairs": 0.0,
+            "utility": 0.53410553125
+          },
+          "1": {
+            "accuracy": 0.65625,
+            "pairs": 0.0,
+            "utility": 0.6167801875000001
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 0.0,
+            "utility": 0.53016146875
+          },
+          "3": {
+            "accuracy": 0.63125,
+            "pairs": 0.0,
+            "utility": 0.5896816249999999
+          },
+          "4": {
+            "accuracy": 0.634375,
+            "pairs": 0.0,
+            "utility": 0.594802015625
+          },
+          "5": {
+            "accuracy": 0.615625,
+            "pairs": 0.0,
+            "utility": 0.5773597968749999
+          },
+          "6": {
+            "accuracy": 0.621875,
+            "pairs": 0.0,
+            "utility": 0.5811091093749999
+          },
+          "7": {
+            "accuracy": 0.628125,
+            "pairs": 0.0,
+            "utility": 0.5876973124999999
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.630859375,
+            "pairs": 0.0,
+            "utility": 0.590850302734375
+          },
+          "1": {
+            "accuracy": 0.607421875,
+            "pairs": 0.0,
+            "utility": 0.567526826171875
+          },
+          "2": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.5850689648437499
+          },
+          "3": {
+            "accuracy": 0.619140625,
+            "pairs": 0.0,
+            "utility": 0.579206533203125
+          },
+          "4": {
+            "accuracy": 0.599609375,
+            "pairs": 0.0,
+            "utility": 0.5596580273437499
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 12160,
+          "kernel_seconds": 36148.44926434327,
+          "mistral_calls": 2880,
+          "mistral_kernel_seconds": 12365.776573120114,
+          "mistral_tokens": 5377449,
+          "qwen_calls": 9280,
+          "qwen_kernel_seconds": 23782.67269122314,
+          "qwen_tokens": 15073940,
+          "tokens": 20451389
+        },
+        "corrections_vs_keep": 73,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 427176.075,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0.0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0.0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0.0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 31490.840324264525,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20696.65115800476,
+            "qwen_tokens": 12351240,
+            "tokens": 17087043
+          }
+        },
+        "total_calls": 12160,
+        "total_kernel_seconds": 36148.44926434327,
+        "total_tokens": 20451389,
+        "unused_token_budget": 2488715.275,
+        "utility": 0.5764621308593749,
+        "utility_weight_sensitivity": {
+          "0": 0.61640625,
+          "0.005": 0.5764621308593749,
+          "0.02": 0.45662977343750005,
+          "0.05": 0.21696505859375
+        }
+      },
+      "random": {
+        "F1": 0.7126634482839342,
+        "accuracy": 0.605078125,
+        "breakages_vs_keep": 74,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 8.0,
+            "utility": 0.5263486562499999
+          },
+          "1": {
+            "accuracy": 0.640625,
+            "pairs": 8.0,
+            "utility": 0.60232575
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 8.0,
+            "utility": 0.529318125
+          },
+          "3": {
+            "accuracy": 0.621875,
+            "pairs": 8.0,
+            "utility": 0.5817925156249999
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.5711515781250001
+          },
+          "5": {
+            "accuracy": 0.603125,
+            "pairs": 8.0,
+            "utility": 0.56699384375
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.5714774374999999
+          },
+          "7": {
+            "accuracy": 0.621875,
+            "pairs": 8.0,
+            "utility": 0.5808491874999999
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.60546875,
+            "pairs": 8.0,
+            "utility": 0.567109833984375
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 8.0,
+            "utility": 0.5511778125
+          },
+          "2": {
+            "accuracy": 0.6171875,
+            "pairs": 8.0,
+            "utility": 0.57996259765625
+          },
+          "3": {
+            "accuracy": 0.615234375,
+            "pairs": 8.0,
+            "utility": 0.57356798828125
+          },
+          "4": {
+            "accuracy": 0.59765625,
+            "pairs": 8.0,
+            "utility": 0.5595924511718751
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 11712,
+          "kernel_seconds": 33124.741366439834,
+          "mistral_calls": 3072,
+          "mistral_kernel_seconds": 13231.205595947265,
+          "mistral_tokens": 5739415,
+          "qwen_calls": 8640,
+          "qwen_kernel_seconds": 19893.535770492552,
+          "qwen_tokens": 14124131,
+          "tokens": 19863546
+        },
+        "corrections_vs_keep": 71,
+        "mean_feedback_tokens": 46362.325,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 366117.675,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 1088,
+            "kernel_seconds": 2727.8541658325194,
+            "mistral_calls": 192,
+            "mistral_kernel_seconds": 865.4290228271483,
+            "mistral_tokens": 361966,
+            "qwen_calls": 896,
+            "qwen_kernel_seconds": 1862.4251430053707,
+            "qwen_tokens": 1492527,
+            "tokens": 1854493
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8704,
+            "kernel_seconds": 25739.278260528565,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 6144,
+            "qwen_kernel_seconds": 14945.089094268798,
+            "qwen_tokens": 9908904,
+            "tokens": 14644707
+          }
+        },
+        "total_calls": 11712,
+        "total_kernel_seconds": 33124.741366439834,
+        "total_tokens": 19863546,
+        "unused_token_budget": 2503411.35,
+        "utility": 0.5662821367187499,
+        "utility_weight_sensitivity": {
+          "0": 0.605078125,
+          "0.005": 0.5662821367187499,
+          "0.02": 0.4498941718749999,
+          "0.05": 0.21711824218749998
+        }
+      },
+      "stale": {
+        "F1": 0.7118439969304153,
+        "accuracy": 0.605078125,
+        "breakages_vs_keep": 77,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 0.0,
+            "utility": 0.529688640625
+          },
+          "1": {
+            "accuracy": 0.646875,
+            "pairs": 0.0,
+            "utility": 0.613724234375
+          },
+          "2": {
+            "accuracy": 0.56875,
+            "pairs": 0.0,
+            "utility": 0.53318103125
+          },
+          "3": {
+            "accuracy": 0.61875,
+            "pairs": 0.0,
+            "utility": 0.5855014374999999
+          },
+          "4": {
+            "accuracy": 0.60625,
+            "pairs": 0.0,
+            "utility": 0.572854015625
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.5692678124999999
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5751732031250001
+          },
+          "7": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.59093471875
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.60546875,
+            "pairs": 0.0,
+            "utility": 0.571431494140625
+          },
+          "1": {
+            "accuracy": 0.59375,
+            "pairs": 0.0,
+            "utility": 0.560816025390625
+          },
+          "2": {
+            "accuracy": 0.6171875,
+            "pairs": 0.0,
+            "utility": 0.583160537109375
+          },
+          "3": {
+            "accuracy": 0.611328125,
+            "pairs": 0.0,
+            "utility": 0.5782682128906249
+          },
+          "4": {
+            "accuracy": 0.59765625,
+            "pairs": 0.0,
+            "utility": 0.5627769140625
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10176,
+          "kernel_seconds": 28728.922766143798,
+          "mistral_calls": 2880,
+          "mistral_kernel_seconds": 12365.776573120114,
+          "mistral_tokens": 5377449,
+          "qwen_calls": 7296,
+          "qwen_kernel_seconds": 16363.146193023686,
+          "qwen_tokens": 11921745,
+          "tokens": 17299194
+        },
+        "corrections_vs_keep": 74,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 348371.2,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0.0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0.0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0.0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8256,
+            "kernel_seconds": 24071.313826065067,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 5696,
+            "qwen_kernel_seconds": 13277.124659805295,
+            "qwen_tokens": 9199045,
+            "tokens": 13934848
+          }
+        },
+        "total_calls": 10176,
+        "total_kernel_seconds": 28728.922766143798,
+        "total_tokens": 17299194,
+        "unused_token_budget": 2567520.15,
+        "utility": 0.5712906367187499,
+        "utility_weight_sensitivity": {
+          "0": 0.605078125,
+          "0.005": 0.5712906367187499,
+          "0.02": 0.4699281718749999,
+          "0.05": 0.2672032421875
+        }
+      },
+      "uncertainty": {
+        "F1": 0.7131536178366038,
+        "accuracy": 0.60546875,
+        "breakages_vs_keep": 72,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.565625,
+            "pairs": 8.0,
+            "utility": 0.526199640625
+          },
+          "1": {
+            "accuracy": 0.640625,
+            "pairs": 8.0,
+            "utility": 0.60167871875
+          },
+          "2": {
+            "accuracy": 0.571875,
+            "pairs": 8.0,
+            "utility": 0.5329684531249999
+          },
+          "3": {
+            "accuracy": 0.621875,
+            "pairs": 8.0,
+            "utility": 0.58141365625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.570895203125
+          },
+          "5": {
+            "accuracy": 0.6,
+            "pairs": 8.0,
+            "utility": 0.5654632812499999
+          },
+          "6": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.57121725
+          },
+          "7": {
+            "accuracy": 0.625,
+            "pairs": 8.0,
+            "utility": 0.5834495312500001
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.611328125,
+            "pairs": 8.0,
+            "utility": 0.5720548632812501
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 8.0,
+            "utility": 0.551010849609375
+          },
+          "2": {
+            "accuracy": 0.6171875,
+            "pairs": 8.0,
+            "utility": 0.579322822265625
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.5696287695312501
+          },
+          "4": {
+            "accuracy": 0.599609375,
+            "pairs": 8.0,
+            "utility": 0.561286279296875
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 11688,
+          "kernel_seconds": 33000.317000991825,
+          "mistral_calls": 3098,
+          "mistral_kernel_seconds": 13354.63448754883,
+          "mistral_tokens": 5793514,
+          "qwen_calls": 8590,
+          "qwen_kernel_seconds": 19645.682513442996,
+          "qwen_tokens": 14076199,
+          "tokens": 19869713
+        },
+        "corrections_vs_keep": 70,
+        "mean_feedback_tokens": 51341.95,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 361292.225,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 1192,
+            "kernel_seconds": 3063.441206542969,
+            "mistral_calls": 218,
+            "mistral_kernel_seconds": 988.8579144287107,
+            "mistral_tokens": 416065,
+            "qwen_calls": 974,
+            "qwen_kernel_seconds": 2074.583292114258,
+            "qwen_tokens": 1637613,
+            "tokens": 2053678
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 8576,
+            "kernel_seconds": 25279.26685437012,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 10794.189166259768,
+            "mistral_tokens": 4735803,
+            "qwen_calls": 6016,
+            "qwen_kernel_seconds": 14485.07768811035,
+            "qwen_tokens": 9715886,
+            "tokens": 14451689
+          }
+        },
+        "total_calls": 11688,
+        "total_kernel_seconds": 33000.317000991825,
+        "total_tokens": 19869713,
+        "unused_token_budget": 2503257.175,
+        "utility": 0.566660716796875,
+        "utility_weight_sensitivity": {
+          "0": 0.60546875,
+          "0.005": 0.566660716796875,
+          "0.02": 0.45023661718749997,
+          "0.05": 0.21738841796874997
+        }
+      }
+    },
+    "no_change": {
+      "DELETE_CHANGED_NO_INIT": {
+        "F1": 0.7171799181519227,
+        "accuracy": 0.607421875,
+        "breakages_vs_keep": 43,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.55625,
+            "pairs": 0.0,
+            "utility": 0.520953265625
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.591549359375
+          },
+          "2": {
+            "accuracy": 0.559375,
+            "pairs": 0.0,
+            "utility": 0.527106796875
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 0.0,
+            "utility": 0.5771927812500001
+          },
+          "4": {
+            "accuracy": 0.653125,
+            "pairs": 0.0,
+            "utility": 0.620069640625
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 0.0,
+            "utility": 0.55845515625
+          },
+          "6": {
+            "accuracy": 0.60625,
+            "pairs": 0.0,
+            "utility": 0.571232578125
+          },
+          "7": {
+            "accuracy": 0.65625,
+            "pairs": 0.0,
+            "utility": 0.6222915937500001
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.6328125,
+            "pairs": 0.0,
+            "utility": 0.598979072265625
+          },
+          "1": {
+            "accuracy": 0.591796875,
+            "pairs": 0.0,
+            "utility": 0.558008291015625
+          },
+          "2": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.57557501953125
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 0.0,
+            "utility": 0.5618887207031249
+          },
+          "4": {
+            "accuracy": 0.607421875,
+            "pairs": 0.0,
+            "utility": 0.57358087890625
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10240,
+          "kernel_seconds": 32532.331115905756,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 11815.832252258304,
+          "mistral_tokens": 4956304,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 20716.498863647455,
+          "qwen_tokens": 12357221,
+          "tokens": 17313525
+        },
+        "corrections_vs_keep": 68,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 432838.125,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32532.331115905756,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20716.498863647455,
+            "qwen_tokens": 12357221,
+            "tokens": 17313525
+          }
+        },
+        "total_calls": 10240,
+        "total_kernel_seconds": 32532.331115905756,
+        "total_tokens": 17313525,
+        "unused_token_budget": 2567161.875,
+        "utility": 0.573606396484375,
+        "utility_weight_sensitivity": {
+          "0": 0.607421875,
+          "0.005": 0.573606396484375,
+          "0.02": 0.47215996093749996,
+          "0.05": 0.26926708984375003
+        }
+      },
+      "DELETE_OTHER_NO_INIT": {
+        "F1": 0.7154263265465723,
+        "accuracy": 0.603125,
+        "breakages_vs_keep": 47,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.55,
+            "pairs": 0.0,
+            "utility": 0.514707109375
+          },
+          "1": {
+            "accuracy": 0.628125,
+            "pairs": 0.0,
+            "utility": 0.594667109375
+          },
+          "2": {
+            "accuracy": 0.565625,
+            "pairs": 0.0,
+            "utility": 0.533358734375
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 0.0,
+            "utility": 0.577183984375
+          },
+          "4": {
+            "accuracy": 0.621875,
+            "pairs": 0.0,
+            "utility": 0.5888145
+          },
+          "5": {
+            "accuracy": 0.59375,
+            "pairs": 0.0,
+            "utility": 0.561575578125
+          },
+          "6": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.5649814375
+          },
+          "7": {
+            "accuracy": 0.653125,
+            "pairs": 0.0,
+            "utility": 0.61916875
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.623046875,
+            "pairs": 0.0,
+            "utility": 0.58921705078125
+          },
+          "1": {
+            "accuracy": 0.583984375,
+            "pairs": 0.0,
+            "utility": 0.5501992285156251
+          },
+          "2": {
+            "accuracy": 0.59375,
+            "pairs": 0.0,
+            "utility": 0.559945126953125
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.575553095703125
+          },
+          "4": {
+            "accuracy": 0.60546875,
+            "pairs": 0.0,
+            "utility": 0.57162125
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10240,
+          "kernel_seconds": 32553.470017990112,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 11815.832252258304,
+          "mistral_tokens": 4956304,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 20737.637765731808,
+          "qwen_tokens": 12358435,
+          "tokens": 17314739
+        },
+        "corrections_vs_keep": 61,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 432868.475,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32553.470017990112,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20737.637765731808,
+            "qwen_tokens": 12358435,
+            "tokens": 17314739
+          }
+        },
+        "total_calls": 10240,
+        "total_kernel_seconds": 32553.470017990112,
+        "total_tokens": 17314739,
+        "unused_token_budget": 2567131.525,
+        "utility": 0.569307150390625,
+        "utility_weight_sensitivity": {
+          "0": 0.603125,
+          "0.005": 0.569307150390625,
+          "0.02": 0.46785360156249994,
+          "0.05": 0.26494650390625
+        }
+      },
+      "EVSI_fixed_price": {
+        "F1": 0.7164588362320886,
+        "accuracy": 0.604296875,
+        "breakages_vs_keep": 45,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.54375,
+            "pairs": 7.4,
+            "utility": 0.49893862499999997
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 6.4,
+            "utility": 0.582098578125
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 4.8,
+            "utility": 0.51156371875
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 7.0,
+            "utility": 0.567129046875
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.6033350312500001
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 8.0,
+            "utility": 0.5481835937499999
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 4.2,
+            "utility": 0.559963171875
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 6.4,
+            "utility": 0.6151199374999999
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.584091123046875
+          },
+          "1": {
+            "accuracy": 0.5859375,
+            "pairs": 6.0,
+            "utility": 0.5431417187500001
+          },
+          "2": {
+            "accuracy": 0.6015625,
+            "pairs": 6.625,
+            "utility": 0.5581264257812499
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 7.0,
+            "utility": 0.552096806640625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 5.0,
+            "utility": 0.566501240234375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13081,
+          "kernel_seconds": 39612.97975909423,
+          "mistral_calls": 3045,
+          "mistral_kernel_seconds": 14216.60999627686,
+          "mistral_tokens": 5925078,
+          "qwen_calls": 10036,
+          "qwen_kernel_seconds": 25396.369762817394,
+          "qwen_tokens": 16349693,
+          "tokens": 22274771
+        },
+        "corrections_vs_keep": 62,
+        "mean_feedback_tokens": 39827.525,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432933.1,
+        "pairs": 6.525,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 921,
+            "kernel_seconds": 2424.3877733764643,
+            "mistral_calls": 165,
+            "mistral_kernel_seconds": 829.1903371582031,
+            "mistral_tokens": 327128,
+            "qwen_calls": 756,
+            "qwen_kernel_seconds": 1595.1974362182618,
+            "qwen_tokens": 1265973,
+            "tokens": 1593101
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32530.983045639037,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20715.150793380733,
+            "qwen_tokens": 12361020,
+            "tokens": 17317324
+          }
+        },
+        "total_calls": 13081,
+        "total_kernel_seconds": 39612.97975909423,
+        "total_tokens": 22274771,
+        "unused_token_budget": 2443130.725,
+        "utility": 0.5607914628906251,
+        "utility_weight_sensitivity": {
+          "0": 0.604296875,
+          "0.005": 0.5607914628906251,
+          "0.02": 0.43027522656249995,
+          "0.05": 0.16924275390625
+        }
+      },
+      "EVSI_no_cost_ranking": {
+        "F1": 0.7164416907869541,
+        "accuracy": 0.60390625,
+        "breakages_vs_keep": 45,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.54375,
+            "pairs": 7.4,
+            "utility": 0.49893862499999997
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 6.4,
+            "utility": 0.582098578125
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 4.8,
+            "utility": 0.51156371875
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 7.0,
+            "utility": 0.5671251249999999
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.6033350312500001
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 8.0,
+            "utility": 0.5481835937499999
+          },
+          "6": {
+            "accuracy": 0.6,
+            "pairs": 4.2,
+            "utility": 0.5568388437499999
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 6.4,
+            "utility": 0.6151199374999999
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.584091123046875
+          },
+          "1": {
+            "accuracy": 0.583984375,
+            "pairs": 6.0,
+            "utility": 0.5411865625000001
+          },
+          "2": {
+            "accuracy": 0.6015625,
+            "pairs": 6.625,
+            "utility": 0.5581264257812499
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 7.0,
+            "utility": 0.552096806640625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 5.0,
+            "utility": 0.566501240234375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13081,
+          "kernel_seconds": 39612.83524679565,
+          "mistral_calls": 3045,
+          "mistral_kernel_seconds": 14216.60999627686,
+          "mistral_tokens": 5925078,
+          "qwen_calls": 10036,
+          "qwen_kernel_seconds": 25396.225250518808,
+          "qwen_tokens": 16349901,
+          "tokens": 22274979
+        },
+        "corrections_vs_keep": 61,
+        "mean_feedback_tokens": 39826.525,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432939.3,
+        "pairs": 6.525,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 921,
+            "kernel_seconds": 2424.3858905639645,
+            "mistral_calls": 165,
+            "mistral_kernel_seconds": 829.1903371582031,
+            "mistral_tokens": 327128,
+            "qwen_calls": 756,
+            "qwen_kernel_seconds": 1595.195553405762,
+            "qwen_tokens": 1265933,
+            "tokens": 1593061
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32530.840416152954,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20715.00816389465,
+            "qwen_tokens": 12361268,
+            "tokens": 17317572
+          }
+        },
+        "total_calls": 13081,
+        "total_kernel_seconds": 39612.83524679565,
+        "total_tokens": 22274979,
+        "unused_token_budget": 2443125.525,
+        "utility": 0.560400431640625,
+        "utility_weight_sensitivity": {
+          "0": 0.60390625,
+          "0.005": 0.560400431640625,
+          "0.02": 0.42988297656249996,
+          "0.05": 0.16884806640625
+        }
+      },
+      "EVSI_old_graph_cost": {
+        "F1": 0.7164588362320886,
+        "accuracy": 0.604296875,
+        "breakages_vs_keep": 45,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.54375,
+            "pairs": 7.4,
+            "utility": 0.49893862499999997
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 6.4,
+            "utility": 0.582098578125
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 4.8,
+            "utility": 0.51156371875
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 7.0,
+            "utility": 0.567129046875
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.603535734375
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 8.0,
+            "utility": 0.5484641562499999
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 4.2,
+            "utility": 0.559963171875
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 6.4,
+            "utility": 0.6153519218750001
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.584091123046875
+          },
+          "1": {
+            "accuracy": 0.5859375,
+            "pairs": 6.0,
+            "utility": 0.5431417187500001
+          },
+          "2": {
+            "accuracy": 0.6015625,
+            "pairs": 6.625,
+            "utility": 0.558251865234375
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 7.0,
+            "utility": 0.5524171484375
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 5.0,
+            "utility": 0.566501240234375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13057,
+          "kernel_seconds": 39522.06919329833,
+          "mistral_calls": 3039,
+          "mistral_kernel_seconds": 14187.569862731936,
+          "mistral_tokens": 5912284,
+          "qwen_calls": 10018,
+          "qwen_kernel_seconds": 25334.49933056641,
+          "qwen_tokens": 16316839,
+          "tokens": 22229123
+        },
+        "corrections_vs_keep": 62,
+        "mean_feedback_tokens": 38686.325,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432933.1,
+        "pairs": 6.525,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 897,
+            "kernel_seconds": 2333.4772075805663,
+            "mistral_calls": 159,
+            "mistral_kernel_seconds": 800.1502036132814,
+            "mistral_tokens": 314334,
+            "qwen_calls": 738,
+            "qwen_kernel_seconds": 1533.3270039672852,
+            "qwen_tokens": 1233119,
+            "tokens": 1547453
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32530.983045639037,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20715.150793380733,
+            "qwen_tokens": 12361020,
+            "tokens": 17317324
+          }
+        },
+        "total_calls": 13057,
+        "total_kernel_seconds": 39522.06919329833,
+        "total_tokens": 22229123,
+        "unused_token_budget": 2444271.925,
+        "utility": 0.560880619140625,
+        "utility_weight_sensitivity": {
+          "0": 0.604296875,
+          "0.005": 0.560880619140625,
+          "0.02": 0.43063185156249995,
+          "0.05": 0.17013431640624999
+        }
+      },
+      "INDEPENDENT3_Q": {
+        "F1": 0.7052006247136419,
+        "accuracy": 0.58984375,
+        "breakages_vs_keep": 211,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.528125,
+            "pairs": 0.0,
+            "utility": 0.49314274999999996
+          },
+          "1": {
+            "accuracy": 0.6375,
+            "pairs": 0.0,
+            "utility": 0.6043992656249999
+          },
+          "2": {
+            "accuracy": 0.53125,
+            "pairs": 0.0,
+            "utility": 0.4992473437499999
+          },
+          "3": {
+            "accuracy": 0.584375,
+            "pairs": 0.0,
+            "utility": 0.549451390625
+          },
+          "4": {
+            "accuracy": 0.634375,
+            "pairs": 0.0,
+            "utility": 0.60162934375
+          },
+          "5": {
+            "accuracy": 0.565625,
+            "pairs": 0.0,
+            "utility": 0.5337482187500001
+          },
+          "6": {
+            "accuracy": 0.5875,
+            "pairs": 0.0,
+            "utility": 0.552819609375
+          },
+          "7": {
+            "accuracy": 0.65,
+            "pairs": 0.0,
+            "utility": 0.61637846875
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.595703125,
+            "pairs": 0.0,
+            "utility": 0.5622046972656249
+          },
+          "1": {
+            "accuracy": 0.587890625,
+            "pairs": 0.0,
+            "utility": 0.554422822265625
+          },
+          "2": {
+            "accuracy": 0.572265625,
+            "pairs": 0.0,
+            "utility": 0.538770087890625
+          },
+          "3": {
+            "accuracy": 0.587890625,
+            "pairs": 0.0,
+            "utility": 0.554393564453125
+          },
+          "4": {
+            "accuracy": 0.60546875,
+            "pairs": 0.0,
+            "utility": 0.571969072265625
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10240,
+          "kernel_seconds": 33867.51713192749,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 13000.940838256836,
+          "mistral_tokens": 4577889,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 20866.57629367065,
+          "qwen_tokens": 12569862,
+          "tokens": 17147751
+        },
+        "corrections_vs_keep": 191,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 428693.775,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 33867.51713192749,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 13000.940838256836,
+            "mistral_tokens": 4577889,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20866.57629367065,
+            "qwen_tokens": 12569862,
+            "tokens": 17147751
+          }
+        },
+        "total_calls": 10240,
+        "total_kernel_seconds": 33867.51713192749,
+        "total_tokens": 17147751,
+        "unused_token_budget": 2571306.225,
+        "utility": 0.5563520488281251,
+        "utility_weight_sensitivity": {
+          "0": 0.58984375,
+          "0.005": 0.5563520488281251,
+          "0.02": 0.45587694531250006,
+          "0.05": 0.25492673828125
+        }
+      },
+      "KEEP_NO_INIT": {
+        "F1": 0.7096792595386164,
+        "accuracy": 0.59765625,
+        "breakages_vs_keep": 0,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.55,
+            "pairs": 0.0,
+            "utility": 0.514353015625
+          },
+          "1": {
+            "accuracy": 0.61875,
+            "pairs": 0.0,
+            "utility": 0.5849366406250001
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 0.0,
+            "utility": 0.5205025
+          },
+          "3": {
+            "accuracy": 0.60625,
+            "pairs": 0.0,
+            "utility": 0.57058453125
+          },
+          "4": {
+            "accuracy": 0.634375,
+            "pairs": 0.0,
+            "utility": 0.6009627031250001
+          },
+          "5": {
+            "accuracy": 0.578125,
+            "pairs": 0.0,
+            "utility": 0.5456099218749999
+          },
+          "6": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.5646116875
+          },
+          "7": {
+            "accuracy": 0.640625,
+            "pairs": 0.0,
+            "utility": 0.606298984375
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5751827832031249
+          },
+          "1": {
+            "accuracy": 0.568359375,
+            "pairs": 0.0,
+            "utility": 0.53422015625
+          },
+          "2": {
+            "accuracy": 0.591796875,
+            "pairs": 0.0,
+            "utility": 0.5576380664062499
+          },
+          "3": {
+            "accuracy": 0.607421875,
+            "pairs": 0.0,
+            "utility": 0.573247958984375
+          },
+          "4": {
+            "accuracy": 0.611328125,
+            "pairs": 0.0,
+            "utility": 0.5771235253906251
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 10240,
+          "kernel_seconds": 32587.593794845587,
+          "mistral_calls": 2560,
+          "mistral_kernel_seconds": 11815.832252258304,
+          "mistral_tokens": 4956304,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 20771.76154258728,
+          "qwen_tokens": 12540657,
+          "tokens": 17496961
+        },
+        "corrections_vs_keep": 0,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 437424.025,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32587.593794845587,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20771.76154258728,
+            "qwen_tokens": 12540657,
+            "tokens": 17496961
+          }
+        },
+        "total_calls": 10240,
+        "total_kernel_seconds": 32587.593794845587,
+        "total_tokens": 17496961,
+        "unused_token_budget": 2562575.975,
+        "utility": 0.563482498046875,
+        "utility_weight_sensitivity": {
+          "0": 0.59765625,
+          "0.005": 0.563482498046875,
+          "0.02": 0.4609612421875,
+          "0.05": 0.25591873046874997
+        }
+      },
+      "SINGLE_Q": {
+        "F1": 0.6553885612057642,
+        "accuracy": 0.57578125,
+        "breakages_vs_keep": 350,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.4375,
+            "pairs": 0.0,
+            "utility": 0.429572640625
+          },
+          "1": {
+            "accuracy": 0.615625,
+            "pairs": 0.0,
+            "utility": 0.6081499375
+          },
+          "2": {
+            "accuracy": 0.59375,
+            "pairs": 0.0,
+            "utility": 0.586544484375
+          },
+          "3": {
+            "accuracy": 0.61875,
+            "pairs": 0.0,
+            "utility": 0.6108185781250001
+          },
+          "4": {
+            "accuracy": 0.575,
+            "pairs": 0.0,
+            "utility": 0.5676051249999999
+          },
+          "5": {
+            "accuracy": 0.596875,
+            "pairs": 0.0,
+            "utility": 0.589671453125
+          },
+          "6": {
+            "accuracy": 0.56875,
+            "pairs": 0.0,
+            "utility": 0.560894359375
+          },
+          "7": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.59239628125
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.580078125,
+            "pairs": 0.0,
+            "utility": 0.5725036425781249
+          },
+          "1": {
+            "accuracy": 0.576171875,
+            "pairs": 0.0,
+            "utility": 0.5685973828124999
+          },
+          "2": {
+            "accuracy": 0.578125,
+            "pairs": 0.0,
+            "utility": 0.5705501660156249
+          },
+          "3": {
+            "accuracy": 0.57421875,
+            "pairs": 0.0,
+            "utility": 0.56664439453125
+          },
+          "4": {
+            "accuracy": 0.5703125,
+            "pairs": 0.0,
+            "utility": 0.562737451171875
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 2560,
+          "kernel_seconds": 1377.6432011566167,
+          "mistral_calls": 0,
+          "mistral_kernel_seconds": 0,
+          "mistral_tokens": 0,
+          "qwen_calls": 2560,
+          "qwen_kernel_seconds": 1377.6432011566167,
+          "qwen_tokens": 3878217,
+          "tokens": 3878217
+        },
+        "corrections_vs_keep": 294,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 96955.425,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 2560,
+            "kernel_seconds": 1377.6432011566167,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 2560,
+            "qwen_kernel_seconds": 1377.6432011566167,
+            "qwen_tokens": 3878217,
+            "tokens": 3878217
+          }
+        },
+        "total_calls": 2560,
+        "total_kernel_seconds": 1377.6432011566167,
+        "total_tokens": 3878217,
+        "unused_token_budget": 2903044.575,
+        "utility": 0.5682066074218751,
+        "utility_weight_sensitivity": {
+          "0": 0.57578125,
+          "0.005": 0.5682066074218751,
+          "0.02": 0.5454826796875001,
+          "0.05": 0.5000348242187499
+        }
+      },
+      "VOTE_Q3": {
+        "F1": 0.6589529983193257,
+        "accuracy": 0.57890625,
+        "breakages_vs_keep": 348,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.446875,
+            "pairs": 0.0,
+            "utility": 0.42309165625
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.6025738281249999
+          },
+          "2": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.578383640625
+          },
+          "3": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5855787031249999
+          },
+          "4": {
+            "accuracy": 0.58125,
+            "pairs": 0.0,
+            "utility": 0.5590649375
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 0.0,
+            "utility": 0.5690144531250001
+          },
+          "6": {
+            "accuracy": 0.56875,
+            "pairs": 0.0,
+            "utility": 0.5451841249999999
+          },
+          "7": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5865633125
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.576171875,
+            "pairs": 0.0,
+            "utility": 0.55344689453125
+          },
+          "1": {
+            "accuracy": 0.578125,
+            "pairs": 0.0,
+            "utility": 0.555400517578125
+          },
+          "2": {
+            "accuracy": 0.583984375,
+            "pairs": 0.0,
+            "utility": 0.56125978515625
+          },
+          "3": {
+            "accuracy": 0.576171875,
+            "pairs": 0.0,
+            "utility": 0.553447568359375
+          },
+          "4": {
+            "accuracy": 0.580078125,
+            "pairs": 0.0,
+            "utility": 0.55735439453125
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 7680,
+          "kernel_seconds": 4147.100310287476,
+          "mistral_calls": 0,
+          "mistral_kernel_seconds": 0,
+          "mistral_tokens": 0,
+          "qwen_calls": 7680,
+          "qwen_kernel_seconds": 4147.100310287476,
+          "qwen_tokens": 11634902,
+          "tokens": 11634902
+        },
+        "corrections_vs_keep": 300,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 0.0,
+        "mean_service_tokens": 290872.55,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 0,
+            "kernel_seconds": 0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "service": {
+            "calls": 7680,
+            "kernel_seconds": 4147.100310287476,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0,
+            "mistral_tokens": 0,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 4147.100310287476,
+            "qwen_tokens": 11634902,
+            "tokens": 11634902
+          }
+        },
+        "total_calls": 7680,
+        "total_kernel_seconds": 4147.100310287476,
+        "total_tokens": 11634902,
+        "unused_token_budget": 2709127.45,
+        "utility": 0.5561818320312499,
+        "utility_weight_sensitivity": {
+          "0": 0.57890625,
+          "0.005": 0.5561818320312499,
+          "0.02": 0.488008578125,
+          "0.05": 0.35166207031249996
+        }
+      },
+      "closure_EVSI": {
+        "F1": 0.7164588362320886,
+        "accuracy": 0.604296875,
+        "breakages_vs_keep": 45,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.54375,
+            "pairs": 7.4,
+            "utility": 0.49893862499999997
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 6.4,
+            "utility": 0.582098578125
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 4.8,
+            "utility": 0.51156371875
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 7.0,
+            "utility": 0.567129046875
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.603535734375
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 8.0,
+            "utility": 0.5484641562499999
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 4.2,
+            "utility": 0.559963171875
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 6.4,
+            "utility": 0.6153519218750001
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.584091123046875
+          },
+          "1": {
+            "accuracy": 0.5859375,
+            "pairs": 6.0,
+            "utility": 0.5431417187500001
+          },
+          "2": {
+            "accuracy": 0.6015625,
+            "pairs": 6.625,
+            "utility": 0.558251865234375
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 7.0,
+            "utility": 0.5524171484375
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 5.0,
+            "utility": 0.566501240234375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13057,
+          "kernel_seconds": 39522.06919329833,
+          "mistral_calls": 3039,
+          "mistral_kernel_seconds": 14187.569862731936,
+          "mistral_tokens": 5912284,
+          "qwen_calls": 10018,
+          "qwen_kernel_seconds": 25334.49933056641,
+          "qwen_tokens": 16316839,
+          "tokens": 22229123
+        },
+        "corrections_vs_keep": 62,
+        "mean_feedback_tokens": 38686.325,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432933.1,
+        "pairs": 6.525,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 897,
+            "kernel_seconds": 2333.4772075805663,
+            "mistral_calls": 159,
+            "mistral_kernel_seconds": 800.1502036132814,
+            "mistral_tokens": 314334,
+            "qwen_calls": 738,
+            "qwen_kernel_seconds": 1533.3270039672852,
+            "qwen_tokens": 1233119,
+            "tokens": 1547453
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32530.983045639037,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20715.150793380733,
+            "qwen_tokens": 12361020,
+            "tokens": 17317324
+          }
+        },
+        "total_calls": 13057,
+        "total_kernel_seconds": 39522.06919329833,
+        "total_tokens": 22229123,
+        "unused_token_budget": 2444271.925,
+        "utility": 0.560880619140625,
+        "utility_weight_sensitivity": {
+          "0": 0.604296875,
+          "0.005": 0.560880619140625,
+          "0.02": 0.43063185156249995,
+          "0.05": 0.17013431640624999
+        }
+      },
+      "graph_changed_first": {
+        "F1": 0.7177283674820887,
+        "accuracy": 0.60546875,
+        "breakages_vs_keep": 44,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.546875,
+            "pairs": 8.0,
+            "utility": 0.502704703125
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 8.0,
+            "utility": 0.581912796875
+          },
+          "2": {
+            "accuracy": 0.559375,
+            "pairs": 8.0,
+            "utility": 0.516793828125
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 8.0,
+            "utility": 0.56738846875
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.6039163437499999
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 8.0,
+            "utility": 0.5484641562499999
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 8.0,
+            "utility": 0.5585754843749999
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 8.0,
+            "utility": 0.615087375
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.585278359375
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 8.0,
+            "utility": 0.546266279296875
+          },
+          "2": {
+            "accuracy": 0.603515625,
+            "pairs": 8.0,
+            "utility": 0.559891904296875
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 8.0,
+            "utility": 0.552075478515625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.565764951171875
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13120,
+          "kernel_seconds": 39556.98670480347,
+          "mistral_calls": 3040,
+          "mistral_kernel_seconds": 14195.533565490725,
+          "mistral_tokens": 5914065,
+          "qwen_calls": 10080,
+          "qwen_kernel_seconds": 25361.453139312744,
+          "qwen_tokens": 16415973,
+          "tokens": 22330038
+        },
+        "corrections_vs_keep": 64,
+        "mean_feedback_tokens": 41313.025,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432829.275,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 960,
+            "kernel_seconds": 2370.457607528687,
+            "mistral_calls": 160,
+            "mistral_kernel_seconds": 808.1139063720703,
+            "mistral_tokens": 316115,
+            "qwen_calls": 800,
+            "qwen_kernel_seconds": 1562.3437011566164,
+            "qwen_tokens": 1336406,
+            "tokens": 1652521
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32528.920157196048,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20713.08790493774,
+            "qwen_tokens": 12356867,
+            "tokens": 17313171
+          }
+        },
+        "total_calls": 13120,
+        "total_kernel_seconds": 39556.98670480347,
+        "total_tokens": 22330038,
+        "unused_token_budget": 2441749.05,
+        "utility": 0.56185539453125,
+        "utility_weight_sensitivity": {
+          "0": 0.60546875,
+          "0.005": 0.56185539453125,
+          "0.02": 0.4310153281249999,
+          "0.05": 0.1693351953125
+        }
+      },
+      "keep": {
+        "F1": 0.7096792595386164,
+        "accuracy": 0.59765625,
+        "breakages_vs_keep": 0,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.55,
+            "pairs": 0.0,
+            "utility": 0.5082983125
+          },
+          "1": {
+            "accuracy": 0.61875,
+            "pairs": 0.0,
+            "utility": 0.5785239687499999
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 0.0,
+            "utility": 0.513747
+          },
+          "3": {
+            "accuracy": 0.60625,
+            "pairs": 0.0,
+            "utility": 0.56393340625
+          },
+          "4": {
+            "accuracy": 0.634375,
+            "pairs": 0.0,
+            "utility": 0.5939805625
+          },
+          "5": {
+            "accuracy": 0.578125,
+            "pairs": 0.0,
+            "utility": 0.539082171875
+          },
+          "6": {
+            "accuracy": 0.6,
+            "pairs": 0.0,
+            "utility": 0.5583708749999999
+          },
+          "7": {
+            "accuracy": 0.640625,
+            "pairs": 0.0,
+            "utility": 0.5993557812500001
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.568605986328125
+          },
+          "1": {
+            "accuracy": 0.568359375,
+            "pairs": 0.0,
+            "utility": 0.5276650488281249
+          },
+          "2": {
+            "accuracy": 0.591796875,
+            "pairs": 0.0,
+            "utility": 0.55104798828125
+          },
+          "3": {
+            "accuracy": 0.607421875,
+            "pairs": 0.0,
+            "utility": 0.5666643652343749
+          },
+          "4": {
+            "accuracy": 0.611328125,
+            "pairs": 0.0,
+            "utility": 0.57057416015625
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 12160,
+          "kernel_seconds": 37245.202734924314,
+          "mistral_calls": 2880,
+          "mistral_kernel_seconds": 13387.41965911865,
+          "mistral_tokens": 5597950,
+          "qwen_calls": 9280,
+          "qwen_kernel_seconds": 23857.783075805666,
+          "qwen_tokens": 15263357,
+          "tokens": 20861307
+        },
+        "corrections_vs_keep": 0,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 437424.025,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0.0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0.0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0.0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32587.593794845587,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20771.76154258728,
+            "qwen_tokens": 12540657,
+            "tokens": 17496961
+          }
+        },
+        "total_calls": 12160,
+        "total_kernel_seconds": 37245.202734924314,
+        "total_tokens": 20861307,
+        "unused_token_budget": 2478467.325,
+        "utility": 0.556911509765625,
+        "utility_weight_sensitivity": {
+          "0": 0.59765625,
+          "0.005": 0.556911509765625,
+          "0.02": 0.4346772890624999,
+          "0.05": 0.19020884765624996
+        }
+      },
+      "periodic": {
+        "F1": 0.7176260609344695,
+        "accuracy": 0.605078125,
+        "breakages_vs_keep": 44,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.54375,
+            "pairs": 8.0,
+            "utility": 0.49935403124999994
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 8.0,
+            "utility": 0.5821621875
+          },
+          "2": {
+            "accuracy": 0.559375,
+            "pairs": 8.0,
+            "utility": 0.5171855937500001
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 8.0,
+            "utility": 0.567307625
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.6039334218750001
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 8.0,
+            "utility": 0.548801359375
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 8.0,
+            "utility": 0.558580453125
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 8.0,
+            "utility": 0.6146450625
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.58531775390625
+          },
+          "1": {
+            "accuracy": 0.58984375,
+            "pairs": 8.0,
+            "utility": 0.546303037109375
+          },
+          "2": {
+            "accuracy": 0.6015625,
+            "pairs": 8.0,
+            "utility": 0.557934638671875
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 8.0,
+            "utility": 0.552122353515625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.56580330078125
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13120,
+          "kernel_seconds": 39370.55937799073,
+          "mistral_calls": 3040,
+          "mistral_kernel_seconds": 14116.167192565914,
+          "mistral_tokens": 5910754,
+          "qwen_calls": 10080,
+          "qwen_kernel_seconds": 25254.3921854248,
+          "qwen_tokens": 16403183,
+          "tokens": 22313937
+        },
+        "corrections_vs_keep": 63,
+        "mean_feedback_tokens": 40798.15,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432941.625,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 960,
+            "kernel_seconds": 2182.552934127808,
+            "mistral_calls": 160,
+            "mistral_kernel_seconds": 728.7475334472658,
+            "mistral_tokens": 312804,
+            "qwen_calls": 800,
+            "qwen_kernel_seconds": 1453.805400680542,
+            "qwen_tokens": 1319122,
+            "tokens": 1631926
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32530.397503784177,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20714.565251525877,
+            "qwen_tokens": 12361361,
+            "tokens": 17317665
+          }
+        },
+        "total_calls": 13120,
+        "total_kernel_seconds": 39370.55937799073,
+        "total_tokens": 22313937,
+        "unused_token_budget": 2442151.575,
+        "utility": 0.561496216796875,
+        "utility_weight_sensitivity": {
+          "0": 0.605078125,
+          "0.005": 0.561496216796875,
+          "0.02": 0.43075049218749994,
+          "0.05": 0.16925904296875
+        }
+      },
+      "protect_changed": {
+        "F1": 0.7164588362320886,
+        "accuracy": 0.604296875,
+        "breakages_vs_keep": 47,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.546875,
+            "pairs": 0.0,
+            "utility": 0.505529015625
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.58512940625
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 0.0,
+            "utility": 0.5141031875000001
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 0.0,
+            "utility": 0.570543328125
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 0.0,
+            "utility": 0.606840984375
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 0.0,
+            "utility": 0.55192775
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 0.0,
+            "utility": 0.5618704374999999
+          },
+          "7": {
+            "accuracy": 0.65625,
+            "pairs": 0.0,
+            "utility": 0.615344375
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.626953125,
+            "pairs": 0.0,
+            "utility": 0.5865489746093749
+          },
+          "1": {
+            "accuracy": 0.5859375,
+            "pairs": 0.0,
+            "utility": 0.54560046875
+          },
+          "2": {
+            "accuracy": 0.603515625,
+            "pairs": 0.0,
+            "utility": 0.5631213671874999
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 0.0,
+            "utility": 0.55530140625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5689830859375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 12160,
+          "kernel_seconds": 37187.54613053893,
+          "mistral_calls": 2880,
+          "mistral_kernel_seconds": 13387.41965911865,
+          "mistral_tokens": 5597950,
+          "qwen_calls": 9280,
+          "qwen_kernel_seconds": 23800.126471420288,
+          "qwen_tokens": 15079587,
+          "tokens": 20677537
+        },
+        "corrections_vs_keep": 64,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432829.775,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0.0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0.0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0.0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32529.937190460205,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20714.1049382019,
+            "qwen_tokens": 12356887,
+            "tokens": 17313191
+          }
+        },
+        "total_calls": 12160,
+        "total_kernel_seconds": 37187.54613053893,
+        "total_tokens": 20677537,
+        "unused_token_budget": 2483061.575,
+        "utility": 0.5639110605468749,
+        "utility_weight_sensitivity": {
+          "0": 0.604296875,
+          "0.005": 0.5639110605468749,
+          "0.02": 0.44275361718749995,
+          "0.05": 0.20043873046874996
+        }
+      },
+      "random": {
+        "F1": 0.7173178068583825,
+        "accuracy": 0.605078125,
+        "breakages_vs_keep": 45,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.546875,
+            "pairs": 8.0,
+            "utility": 0.50213709375
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 8.0,
+            "utility": 0.5815108125
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 8.0,
+            "utility": 0.5102258281250001
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 8.0,
+            "utility": 0.56693565625
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.6035085468749999
+          },
+          "5": {
+            "accuracy": 0.596875,
+            "pairs": 8.0,
+            "utility": 0.55425240625
+          },
+          "6": {
+            "accuracy": 0.6,
+            "pairs": 8.0,
+            "utility": 0.5550053125
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 8.0,
+            "utility": 0.614657875
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.584133662109375
+          },
+          "1": {
+            "accuracy": 0.583984375,
+            "pairs": 8.0,
+            "utility": 0.539886171875
+          },
+          "2": {
+            "accuracy": 0.603515625,
+            "pairs": 8.0,
+            "utility": 0.559891904296875
+          },
+          "3": {
+            "accuracy": 0.599609375,
+            "pairs": 8.0,
+            "utility": 0.555469267578125
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.565764951171875
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13248,
+          "kernel_seconds": 40016.3535514984,
+          "mistral_calls": 3072,
+          "mistral_kernel_seconds": 14350.316883972171,
+          "mistral_tokens": 5977627,
+          "qwen_calls": 10176,
+          "qwen_kernel_seconds": 25666.036667526252,
+          "qwen_tokens": 16575427,
+          "tokens": 22553054
+        },
+        "corrections_vs_keep": 64,
+        "mean_feedback_tokens": 46891.375,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432826.325,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 1088,
+            "kernel_seconds": 2829.198469116211,
+            "mistral_calls": 192,
+            "mistral_kernel_seconds": 962.8972248535158,
+            "mistral_tokens": 379677,
+            "qwen_calls": 896,
+            "qwen_kernel_seconds": 1866.301244262695,
+            "qwen_tokens": 1495978,
+            "tokens": 1875655
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32529.54614230347,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20713.713890045165,
+            "qwen_tokens": 12356749,
+            "tokens": 17313053
+          }
+        },
+        "total_calls": 13248,
+        "total_kernel_seconds": 40016.3535514984,
+        "total_tokens": 22553054,
+        "unused_token_budget": 2436173.65,
+        "utility": 0.5610291914062501,
+        "utility_weight_sensitivity": {
+          "0": 0.605078125,
+          "0.005": 0.5610291914062501,
+          "0.02": 0.42888239062499994,
+          "0.05": 0.1645887890625
+        }
+      },
+      "stale": {
+        "F1": 0.7164588362320886,
+        "accuracy": 0.604296875,
+        "breakages_vs_keep": 47,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.546875,
+            "pairs": 0.0,
+            "utility": 0.505529015625
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 0.0,
+            "utility": 0.58512940625
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 0.0,
+            "utility": 0.5141031875000001
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 0.0,
+            "utility": 0.570543328125
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 0.0,
+            "utility": 0.606840984375
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 0.0,
+            "utility": 0.55192775
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 0.0,
+            "utility": 0.5618704374999999
+          },
+          "7": {
+            "accuracy": 0.65625,
+            "pairs": 0.0,
+            "utility": 0.615344375
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.626953125,
+            "pairs": 0.0,
+            "utility": 0.5865489746093749
+          },
+          "1": {
+            "accuracy": 0.5859375,
+            "pairs": 0.0,
+            "utility": 0.54560046875
+          },
+          "2": {
+            "accuracy": 0.603515625,
+            "pairs": 0.0,
+            "utility": 0.5631213671874999
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 0.0,
+            "utility": 0.55530140625
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 0.0,
+            "utility": 0.5689830859375
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 12160,
+          "kernel_seconds": 37187.54613053893,
+          "mistral_calls": 2880,
+          "mistral_kernel_seconds": 13387.41965911865,
+          "mistral_tokens": 5597950,
+          "qwen_calls": 9280,
+          "qwen_kernel_seconds": 23800.126471420288,
+          "qwen_tokens": 15079587,
+          "tokens": 20677537
+        },
+        "corrections_vs_keep": 64,
+        "mean_feedback_tokens": 0.0,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432829.775,
+        "pairs": 0.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 0,
+            "kernel_seconds": 0.0,
+            "mistral_calls": 0,
+            "mistral_kernel_seconds": 0.0,
+            "mistral_tokens": 0,
+            "qwen_calls": 0,
+            "qwen_kernel_seconds": 0.0,
+            "qwen_tokens": 0,
+            "tokens": 0
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32529.937190460205,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20714.1049382019,
+            "qwen_tokens": 12356887,
+            "tokens": 17313191
+          }
+        },
+        "total_calls": 12160,
+        "total_kernel_seconds": 37187.54613053893,
+        "total_tokens": 20677537,
+        "unused_token_budget": 2483061.575,
+        "utility": 0.5639110605468749,
+        "utility_weight_sensitivity": {
+          "0": 0.604296875,
+          "0.005": 0.5639110605468749,
+          "0.02": 0.44275361718749995,
+          "0.05": 0.20043873046874996
+        }
+      },
+      "uncertainty": {
+        "F1": 0.7168494612320886,
+        "accuracy": 0.6046875,
+        "breakages_vs_keep": 44,
+        "by_episode": {
+          "0": {
+            "accuracy": 0.546875,
+            "pairs": 8.0,
+            "utility": 0.501848765625
+          },
+          "1": {
+            "accuracy": 0.625,
+            "pairs": 8.0,
+            "utility": 0.5812085
+          },
+          "2": {
+            "accuracy": 0.553125,
+            "pairs": 8.0,
+            "utility": 0.509475078125
+          },
+          "3": {
+            "accuracy": 0.6125,
+            "pairs": 8.0,
+            "utility": 0.566572203125
+          },
+          "4": {
+            "accuracy": 0.646875,
+            "pairs": 8.0,
+            "utility": 0.6036290781249999
+          },
+          "5": {
+            "accuracy": 0.590625,
+            "pairs": 8.0,
+            "utility": 0.5484641562499999
+          },
+          "6": {
+            "accuracy": 0.603125,
+            "pairs": 8.0,
+            "utility": 0.5575482031249999
+          },
+          "7": {
+            "accuracy": 0.659375,
+            "pairs": 8.0,
+            "utility": 0.61412878125
+          }
+        },
+        "by_generation_seed": {
+          "0": {
+            "accuracy": 0.62890625,
+            "pairs": 8.0,
+            "utility": 0.58423521484375
+          },
+          "1": {
+            "accuracy": 0.5859375,
+            "pairs": 8.0,
+            "utility": 0.54174
+          },
+          "2": {
+            "accuracy": 0.603515625,
+            "pairs": 8.0,
+            "utility": 0.559361669921875
+          },
+          "3": {
+            "accuracy": 0.595703125,
+            "pairs": 8.0,
+            "utility": 0.55182130859375
+          },
+          "4": {
+            "accuracy": 0.609375,
+            "pairs": 8.0,
+            "utility": 0.56463853515625
+          }
+        },
+        "complete_cost_totals": {
+          "calls": 13320,
+          "kernel_seconds": 40204.75744334411,
+          "mistral_calls": 3090,
+          "mistral_kernel_seconds": 14432.262723327636,
+          "mistral_tokens": 6017087,
+          "qwen_calls": 10230,
+          "qwen_kernel_seconds": 25772.49472001648,
+          "qwen_tokens": 16678928,
+          "tokens": 22696015
+        },
+        "corrections_vs_keep": 62,
+        "mean_feedback_tokens": 50458.075,
+        "mean_initial_tokens": 84108.65,
+        "mean_service_tokens": 432833.65,
+        "pairs": 8.0,
+        "stage_cost_totals": {
+          "feedback": {
+            "calls": 1160,
+            "kernel_seconds": 3017.1016368408214,
+            "mistral_calls": 210,
+            "mistral_kernel_seconds": 1044.8430642089845,
+            "mistral_tokens": 419137,
+            "qwen_calls": 950,
+            "qwen_kernel_seconds": 1972.2585726318355,
+            "qwen_tokens": 1599186,
+            "tokens": 2018323
+          },
+          "initial": {
+            "calls": 1920,
+            "kernel_seconds": 4657.608940078735,
+            "mistral_calls": 320,
+            "mistral_kernel_seconds": 1571.5874068603518,
+            "mistral_tokens": 641646,
+            "qwen_calls": 1600,
+            "qwen_kernel_seconds": 3086.021533218384,
+            "qwen_tokens": 2722700,
+            "tokens": 3364346
+          },
+          "service": {
+            "calls": 10240,
+            "kernel_seconds": 32530.04686642456,
+            "mistral_calls": 2560,
+            "mistral_kernel_seconds": 11815.832252258304,
+            "mistral_tokens": 4956304,
+            "qwen_calls": 7680,
+            "qwen_kernel_seconds": 20714.214614166256,
+            "qwen_tokens": 12357042,
+            "tokens": 17313346
+          }
+        },
+        "total_calls": 13320,
+        "total_kernel_seconds": 40204.75744334411,
+        "total_tokens": 22696015,
+        "unused_token_budget": 2432599.625,
+        "utility": 0.5603593457031251,
+        "utility_weight_sensitivity": {
+          "0": 0.6046875,
+          "0.005": 0.5603593457031251,
+          "0.02": 0.4273748828124999,
+          "0.05": 0.16140595703125
+        }
+      }
+    }
+  },
+  "scoring_labels_financial_cost_unknown": true,
+  "screen_action": "STOP_FORMAL5_CANDIDATE",
+  "service_condition_seed_accuracy": {
+    "G0": [
+      0.609375,
+      0.568359375,
+      0.591796875,
+      0.607421875,
+      0.611328125
+    ],
+    "G0_MINUS_EU": [
+      0.6328125,
+      0.591796875,
+      0.609375,
+      0.595703125,
+      0.607421875
+    ],
+    "G0_MINUS_EV": [
+      0.623046875,
+      0.583984375,
+      0.59375,
+      0.609375,
+      0.60546875
+    ],
+    "G1": [
+      0.60546875,
+      0.59765625,
+      0.615234375,
+      0.61328125,
+      0.599609375
+    ],
+    "G1_MINUS_EU": [
+      0.61328125,
+      0.6015625,
+      0.63671875,
+      0.61328125,
+      0.60546875
+    ],
+    "G1_MINUS_EV": [
+      0.619140625,
+      0.595703125,
+      0.599609375,
+      0.615234375,
+      0.595703125
+    ],
+    "INDEPENDENT3_Q": [
+      0.595703125,
+      0.587890625,
+      0.572265625,
+      0.587890625,
+      0.60546875
+    ],
+    "SINGLE_Q": [
+      0.580078125,
+      0.576171875,
+      0.578125,
+      0.57421875,
+      0.5703125
+    ],
+    "VOTE_Q3": [
+      0.576171875,
+      0.578125,
+      0.583984375,
+      0.576171875,
+      0.580078125
+    ]
+  },
+  "status": "COMPLETE_FIXED_ICS_DEVELOPMENT_REPLAY",
+  "task": "HotpotQA distractor train; all active nodes full context; eight disjoint I8/C8/S64 episodes",
+  "utility_token_weight": 5e-06,
+  "utility_weight_is_declared_tradeoff_not_money": true
+}

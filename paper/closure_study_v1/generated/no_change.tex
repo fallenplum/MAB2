@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & EM (\%) & F1 (\%) & Utility & Tokens / $S$ item & Pairs & Correct / break \\
+\midrule
+Closure EVSI (nominee) & 60.430 & 71.646 & 0.560881 & 8683.25 & 6.525 & 62 / 45 \\
+EVSI fixed price & 60.430 & 71.646 & 0.560791 & 8701.08 & 6.525 & 62 / 45 \\
+EVSI no cost ranking & 60.391 & 71.644 & 0.560400 & 8701.16 & 6.525 & 61 / 45 \\
+EVSI old graph cost & 60.430 & 71.646 & 0.560881 & 8683.25 & 6.525 & 62 / 45 \\
+Random & 60.508 & 71.732 & 0.561029 & 8809.79 & 8.000 & 64 / 45 \\
+Periodic & 60.508 & 71.763 & 0.561496 & 8716.38 & 8.000 & 63 / 44 \\
+Uncertainty & 60.469 & 71.685 & 0.560359 & 8865.63 & 8.000 & 62 / 44 \\
+Changed first & 60.547 & 71.773 & 0.561855 & 8722.67 & 8.000 & 64 / 44 \\
+Stale & 60.430 & 71.646 & 0.563911 & 8077.16 & 0.000 & 64 / 47 \\
+Protect changed & 60.430 & 71.646 & 0.563911 & 8077.16 & 0.000 & 64 / 47 \\
+Keep (with init.) & 59.766 & 70.968 & 0.556912 & 8148.95 & 0.000 & 0 / 0 \\
+Keep (no init.) & 59.766 & 70.968 & 0.563482 & 6834.75 & 0.000 & 0 / 0 \\
+Delete changed (no init.) & 60.742 & 71.718 & 0.573606 & 6763.10 & 0.000 & 68 / 43 \\
+Delete other (no init.) & 60.312 & 71.543 & 0.569307 & 6763.57 & 0.000 & 61 / 47 \\
+Single Qwen & 57.578 & 65.539 & 0.568207 & 1514.93 & 0.000 & 294 / 350 \\
+Vote Qwen (3) & 57.891 & 65.895 & 0.556182 & 4544.88 & 0.000 & 300 / 348 \\
+Independent 3 + Qwen & 58.984 & 70.520 & 0.556352 & 6698.34 & 0.000 & 191 / 211 \\
+\bottomrule
+\end{tabular}
+\caption{No-change service results. Each method has 512 distinct service questions and 2,560 question--seed observations. Tokens include initialization and feedback; pairs are per episode--seed. Corrections/breakages use the matched keep output. No uncertainty intervals are shown.}
+\label{tab:no_change}
+\end{table*}

@@ -1,0 +1,70 @@
+\section{Results}
+\label{sec:results}
+\input{generated/change}
+\input{generated/seeds}
+\paragraph{Complete execution and verification.}
+All 640 questions completed with 28,800 terminal answers, 99,200 logical
+node calls, and 47,640 physical generations after exact request reuse.
+All terminal answers were nonempty and ended at an end-of-sequence token.
+The archived collection contains 1,942 hash-verified files. Request replay
+matched 913,924 fields; separate implementations passed 626,080
+policy/cost/point checks and 89,692 raw scoring/voting checks. These checks
+use recorded generations and do not constitute new stochastic replications.
+Formal collection consumed 25.210263 GPU residence hours, with a separately
+charged 0.066123-hour qualification.
+
+\paragraph{The nominee fails the frozen admission rule.}
+Table~\ref{tab:change} reports every strategy under graph change.
+Closure EVSI and random revalidation both achieve 60.5078125\% exact match.
+The utility difference is only $+0.000933084$, below the required $+0.005$.
+It is positive for three of five seeds, below the required four
+(Table~\ref{tab:seeds}). The nominee is worse in utility than stale credit
+by 0.004075416, protect-changed by 0.009246910, and no-initialization keep
+by 0.005322254. Thus acquiring feedback has not established incremental
+value beyond inexpensive decisions in this setting.
+
+Relative to single Qwen, the nominee gains 2.929688 percentage points (pp)
+in exact match but uses 4.998639 times the complete tokens, yielding a
+utility difference of $-0.000991387$. Relative to independent-three
+aggregation, it gains 1.523438 pp, but its token ratio is 1.130516 rather
+than the required at most 0.90. The independent-aggregation quality and
+voting-utility gates pass; the other four gates fail. We retain the frozen
+stop decision and do not promote a better-looking control.
+
+\paragraph{Ablations do not establish the proposed mechanism's value.}
+Fixed-price EVSI and EVSI without cost-normalized ranking have exactly
+the same aggregate exact match as the nominee. The nominee's utility
+advantages are $+0.000167461$ and $+0.000174094$, respectively. Using
+old-graph service prices produces higher exact match and higher utility
+than the nominee here; the nominee's utility difference is
+$-0.002236002$. These are descriptive comparisons, not evidence that
+the old-price ablation is a newly validated method.
+
+The nominee corrects 70 keep errors but breaks 73 keep successes across
+2,560 paired question--seed observations. Its net correctness change from
+keep is therefore $-3/2560$. These output-level counterfactual counts do
+not identify the true expected sign of each edge's credit.
+
+\paragraph{No-change and cost controls.}
+Without the exogenous shock, the nominee reaches 60.429688\% exact match
+and utility 0.560880619 (Appendix Table~\ref{tab:no_change}). Its utility is
+0.003030441 below stale credit. The observed result therefore does not
+support a robust advantage outside the shock condition either.
+No-initialization deletion of the other direct edge is the strongest
+point estimate in Table~\ref{tab:change}, but it is an already specified
+control, not a replacement winner or independently confirmed policy.
+
+The nominee pays 3,364,346 initialization tokens, 1,473,212 feedback tokens,
+and 14,548,249 service tokens across its 40 graph-change episode--seed runs.
+The total is 19,385,807 tokens, or 7,572.58 per service observation.
+Its mean feedback count is 6.35 pairs, compared with eight for random.
+Figure~\ref{fig:cost} displays all seed points and utility differences.
+Appendix Table~\ref{tab:weights} reports the predeclared weight sensitivity
+without changing the primary weight or selecting a new policy.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/paper_points.pdf}
+\caption{Graph-change point estimates and nominee-minus-comparator utility. Diamonds show mean exact match; small points show all five seeds. The dashed line marks the required $+0.005$ gain for the designated maintenance/free controls; other system gates differ. Complete utility charges initialization, feedback, and service. There are no confidence intervals.}
+\label{fig:cost}
+\end{figure*}

@@ -1,0 +1,86 @@
+{
+  "claims": [
+    {
+      "id": "C01",
+      "claim": "Final candidate fails four of six frozen gates",
+      "evidence_path": "reports/cycle2_20261113/closure_formal5_results_v1/SUMMARY.json",
+      "evidence_sha256": "60c17764b12a525192e03096c24d5ef38fbd3081f8f4222e722341916f3a306e",
+      "locator": "gates",
+      "limit": "development decision only",
+      "agent_checked": true,
+      "human_verified": false
+    },
+    {
+      "id": "C02",
+      "claim": "640 questions, 28800 terminal answers, 47640 physical generations",
+      "evidence_path": "reports/cycle2_20261113/final_delivery_v1/CPU_REPLAY_RECEIPT.json",
+      "evidence_sha256": "e8fd097b0c0409f70eaaad71f9e9e00dfb97a075eaf18241fbf45ecaece9e5ab",
+      "locator": "completed_units,nonempty_final_outputs,original_physical_calls_replayed",
+      "limit": "recorded-generation replay",
+      "agent_checked": true,
+      "human_verified": false
+    },
+    {
+      "id": "C03",
+      "claim": "Closure and random have equal EM; utility difference +0.000933084",
+      "evidence_path": "reports/cycle2_20261113/closure_formal5_results_v1/SUMMARY.json",
+      "evidence_sha256": "60c17764b12a525192e03096c24d5ef38fbd3081f8f4222e722341916f3a306e",
+      "locator": "comparisons.change.random",
+      "limit": "no population significance claim",
+      "agent_checked": true,
+      "human_verified": false
+    },
+    {
+      "id": "C04",
+      "claim": "All method and seed tables reconcile",
+      "evidence_path": "paper/closure_study_v1/RESULTS_PROVENANCE.json",
+      "evidence_sha256": "df4ba2ccd1dbfafc4ba9d0833523af443e6d7ea7dc42e7b4ef3c3bfb1e8f7bf0",
+      "locator": "status",
+      "limit": "public aggregate reconstruction",
+      "agent_checked": true,
+      "human_verified": false
+    },
+    {
+      "id": "C05",
+      "claim": "Five candidate cap reached; residence 76.476912 GPUh",
+      "evidence_path": "reports/cycle2_20261113/final_delivery_v1/COST_LEDGER.json",
+      "evidence_sha256": "67bb2bc1ac63f900cf01913aced5149a78fc8fd77dc08597b92daf3046198acc",
+      "locator": "formal_candidate_rounds_completed,GPU_hours_total",
+      "limit": "prior G1/G2 residence excluded and unknown",
+      "agent_checked": true,
+      "human_verified": false
+    },
+    {
+      "id": "C06",
+      "claim": "Historical prediction and controlled-path negatives",
+      "evidence_path": "paper/closure_study_v1/HISTORICAL_POINT_PROVENANCE.json",
+      "evidence_sha256": "003313c4e9c335f99d073f91f9a614ae03785031c1b01462c30898af40ac9ca5",
+      "locator": "source hashes and points",
+      "limit": "not final candidate replications",
+      "agent_checked": true,
+      "human_verified": false
+    },
+    {
+      "id": "C07",
+      "claim": "Raw scoring and voting independently implemented",
+      "evidence_path": "reports/cycle2_20261113/final_delivery_v1/INDEPENDENT_RAW_SCORING_AUDIT.json",
+      "evidence_sha256": "99e4a71697fa666cb2b34e5b381a6165c07806f9c24a37b51c2d03feb3b53d42",
+      "locator": "checks,status",
+      "limit": "not independent human review",
+      "agent_checked": true,
+      "human_verified": false
+    },
+    {
+      "id": "C08",
+      "claim": "No new effective method established",
+      "evidence_path": "reports/cycle2_20261113/final_delivery_v1/SCIENTIFIC_DECISION.json",
+      "evidence_sha256": "46291e39e4ed536aa72c651d70a7fd667f4f84562801e0e27c074cd13f2e1d9a",
+      "locator": "best_validated_new_method",
+      "limit": "bounded five-route result, not impossibility",
+      "agent_checked": true,
+      "human_verified": false
+    }
+  ],
+  "literature_claims": "literature/cycle2_20261113/consolidated_20261115/BIBLIOGRAPHIC_LEDGER.json plus decision_value_foundation_20261115/RECORD.json",
+  "human_source_verification_pending": true
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS_COMPILE_AND_VISUAL_REVIEW",
+  "pages": 11,
+  "all_pages_visually_reviewed": true,
+  "unchanged_pages_from_v2": [
+    1,
+    2,
+    3,
+    4,
+    11
+  ],
+  "revised_pages_reviewed": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "overfull_boxes": 0,
+  "undefined_references": 0,
+  "official_style_unchanged": true,
+  "shell_escape": false,
+  "automatic_package_installation": false,
+  "retained_failure": "v1 duplicate bibliography-style declaration; corrected before final build",
+  "remaining_warning": "epstopdf shell escape disabled; PDF figures embedded successfully",
+  "pdf_sha256": "a1d3b55d2a8940a7a390cd761f6db62cdecfa369b4a00759d445a32d371207a0",
+  "source_hashes": {
+    "main.tex": "03e6c3444bb1f7025a965507c42d43504339eedc278c80515105057b5ea7a915",
+    "sections/method.tex": "11d063e11eb8183f4a74c2ac30520911e2e4265b7d5d60f3c7fac53ee328e003",
+    "sections/protocol.tex": "8229cd32745d3d60ecb3feb45b7e67ad23955aa48dc00ef2eb9ce6831997cb14",
+    "sections/related_work.tex": "f52e10c2e21a5995a3949ae8add7501656a2e5a1233412106d5fa1e124607c09",
+    "sections/history.tex": "78d4aef77777832ead2ac7f0193c9660f2f39b18bb47de13b2d5710d7804dcb1",
+    "sections/limitations.tex": "1f9a0af70b450eb5e7bdd5836034dcb279c255db512fa5ae1ad855fa94b7b713",
+    "sections/introduction.tex": "6714336d6db64bf74c74ef874c26bea84cbbf11b4dcdc26468d7794f052231bb",
+    "sections/results.tex": "eb84d2963a0b1bf6996d81e9c1879c853364a101b89438816ee5b598e0f843a0",
+    "sections/discussion.tex": "d35b003f9059f25c123b3dcc87878f46b45f34cf378c386c9bb6e9c8cfb66599",
+    "sections/declarations.tex": "0a6dfa14f99a4baa4851549f3563f80c0d0a1fdb1c4cf96871e212515ad4b761",
+    "sections/supplement.tex": "1d3086f06c5f8c8082acfe02c83425893f642fd9e9fdcb2ba2f104c9fd7cdfe9",
+    "generated/change.tex": "82754dbfb8c6b707d4d5575d09ba3ae93516e68001f991cd684dbe1d8180b180",
+    "generated/no_change.tex": "44b47de72c1b5773235fd7bc74cdfffcef34b20a582f571940beb62adadfb28d",
+    "generated/seeds.tex": "f6b9e3ba253f1fc7143f57e5de8ff2201f511697efaaedb07321735167b43c67",
+    "generated/weights.tex": "db8f47191ee78f310fa38375d5a057f21ed142cab73682c1ca3e36bdc8ec24f9",
+    "references.bib": "d42ef38ada57dfb77d82764d937dd48e8cda66e1408a4caaed2eb19055534c83"
+  },
+  "human_visual_review": false,
+  "review_scope": "research agent inspected rendered pages, not human approval"
+}

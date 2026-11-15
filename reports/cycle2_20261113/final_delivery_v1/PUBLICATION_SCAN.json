@@ -1,0 +1,8 @@
+{
+  "status": "PASS_BOUNDED_PUBLIC_ARTIFACT_SCAN",
+  "files_checked": 61,
+  "credential_host_absolute_private_path_hits": 0,
+  "raw_questions_answers_exported": false,
+  "scope": "listed delivery directories and public state; no claim of universal secret detection",
+  "summary_sha256": "60c17764b12a525192e03096c24d5ef38fbd3081f8f4222e722341916f3a306e"
+}

@@ -1,59 +1,26 @@
 {
-  "schema": "mab2_autoresearch_project_state_v2",
+  "schema": "mab2_final_research_state_v1",
   "cycle_id": "cycle2_20261113",
-  "created_utc": "2026-11-12T18:10:28.159302+00:00",
-  "branch": "research/autoresearch-cycle2-20261113",
-  "parent_commit": "2a7f4f101d37375ebfbf95fd5c095d0bc6610485",
-  "project": {
-    "status": "ACTIVE",
-    "stop": null,
-    "goal": "Evidence-supported graph-conditional communication-credit maintenance and budgeted feedback, with ACL-style draft at the evidence boundary",
-    "completed": false
-  },
-  "direction": {
-    "id": "DIRECT_FEEDBACK_AND_EVIDENCE_TRANSFER",
-    "status": "ACTIVE"
-  },
-  "active_candidate": "C2_R1_DIRECT_PAIRED_REVALIDATION",
-  "historical_candidates": [
-    {
-      "id": "D2_C1_R1",
-      "status": "REJECTED",
-      "immutable": true
-    },
-    {
-      "id": "D3_graph_only_order2_R3",
-      "status": "STOP_CURRENT_CANDIDATE_ROUTE",
-      "immutable": true
-    }
-  ],
-  "candidate_queue": [
-    {
-      "id": "C2_R1_DIRECT_PAIRED_REVALIDATION",
-      "status": "FORMAL_COLLECTING"
-    },
-    {
-      "id": "C2_R2_SELECTIVE_CREDIT_INVALIDATION",
-      "status": "LITERATURE_AND_MECHANISM_REVIEW",
-      "mechanism_under_review": "Independent old bank plus paired four-world drift; compare noise times true incremental cost and frozen control-variate baseline"
-    },
-    {
-      "id": "C2_R3_EXECUTION_LOCALITY_ACQUISITION",
-      "status": "LITERATURE_AND_MECHANISM_REVIEW"
-    }
-  ],
-  "next_action": "Complete fixed R1 generation; maintain 30-minute resource checks; prepare R2 diagnostics independently",
-  "continuity": {
-    "mode": "current task plus durable checkpoints; no finite-job app automation",
-    "poll_running_jobs_minutes": 30,
-    "candidate_failure_action": "record, eliminate, choose or derive next candidate without user approval",
-    "direction_failure_action": "freeze direction, run outer-loop primary literature and mechanism analysis, form distinct hypotheses",
-    "project_stop_requires": "enumerated project-level condition with evidence and remaining alternatives"
-  },
-  "sealed_test_accessed": false,
-  "paper_status": "EVIDENCE_PENDING",
-  "scientific_claims_confirmed": [],
-  "last_verified_utc": "2026-11-12T18:36:56.509844+00:00",
-  "runtime_receipt": "artifacts/private/cycle2_20261113/R1_DEPLOY_RECEIPT.json",
-  "qualification_acceptance": "results/cycle2/r1_direct_feedback_20261113/QUALIFICATION_ACCEPTED.json"
+  "project_status": "STOP_PROJECT_FORMAL_ROUND_CAP_NEGATIVE",
+  "stop_reason": "5_of_5_formal_candidates_completed",
+  "branch": "research/cycle2-closure-revalidation-20261115",
+  "publication_repository": "fallenplum/MAB2",
+  "GPU_hours_used": 76.47691242367074,
+  "GPU_hours_cap": 160,
+  "GPU_hours_reserved": 0,
+  "formal_rounds_completed": 5,
+  "formal_rounds_cap": 5,
+  "active_candidate": null,
+  "last_candidate": "C2_FORMAL5_CLOSURE_AWARE_REVALIDATION",
+  "last_candidate_action": "STOP_FORMAL5_CANDIDATE",
+  "new_GPU_admission": false,
+  "best_validated_new_method": null,
+  "paper_status": "COMPLETE_NEGATIVE_WORKING_DRAFT_NOT_SUBMISSION_READY",
+  "official_Hotpot_validation_test_opened": false,
+  "independent_positive_method_confirmation": false,
+  "human_independent_peer_review": false,
+  "delivery_status": "ARTIFACTS_COMPLETE_REMOTE_PUBLICATION_VERIFICATION_PENDING",
+  "next_action": "verify_publication_then_report_final_results",
+  "final_report": "reports/cycle2_20261113/final_delivery_v1/FINAL_AUDIT_ZH.md",
+  "updated_unix": 1794776337.3260772
 }

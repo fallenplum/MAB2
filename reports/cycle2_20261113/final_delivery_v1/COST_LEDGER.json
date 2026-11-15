@@ -1,0 +1,106 @@
+{
+  "scope": "Cycle2 worker GPU residence including qualification, load and waiting; historical G1/G2 excluded",
+  "GPU_hours_total": 76.47691242367074,
+  "GPU_hours_cap": 160,
+  "GPU_hours_unused": 83.52308757632926,
+  "formal_candidate_rounds_completed": 5,
+  "formal_candidate_rounds_cap": 5,
+  "reserved_GPU_hours": 0,
+  "stop_reason": "FORMAL_CANDIDATE_ROUND_CAP_REACHED",
+  "entries": [
+    {
+      "candidate": "C2_R1_DIRECT_PAIRED_REVALIDATION",
+      "formal_started": true,
+      "max_gpu_hours": 24,
+      "used_gpu_hours_estimate": 14.307773255389378,
+      "cost_closed": true,
+      "plan_sha256": "24c108292dbdfb95970edc509e776b5f94b92a7dcc56d780696cbe48b8e6a3ff"
+    },
+    {
+      "candidate": "C2_HETERO_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "max_gpu_hours": 0.5,
+      "used_gpu_hours_estimate": 0.11611894417664088,
+      "cost_closed": true,
+      "plan_sha256": "279bec01c0a3516f3293990c8464deda78a240a6aed7bafb9ceafcd36016089c"
+    },
+    {
+      "candidate": "C2_INDEPENDENT12_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "max_gpu_hours": 0.5,
+      "used_gpu_hours_estimate": 0.04500747649555301,
+      "cost_closed": true,
+      "plan_sha256": "f823cf9ed577860885dbdfd09111a65dbbfe214042098ca3ca6b1ad694513a6c"
+    },
+    {
+      "candidate": "C2_HOTPOT_MATRIX_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "max_gpu_hours": 0.5,
+      "used_gpu_hours_estimate": 0.1783492729746892,
+      "cost_closed": true,
+      "plan_sha256": "52674fdc9a58a9035e169be9115812ac71dbd8e6ad939442a001d07d19555745"
+    },
+    {
+      "candidate": "C2_FORMAL2_HOTPOT_APPLICABILITY",
+      "formal_started": true,
+      "max_gpu_hours": 47.8,
+      "used_gpu_hours_estimate": 32.57857300557617,
+      "cost_closed": true,
+      "plan_sha256": "f1e9a857a171baadaa01e58a4e1eb0a4a30b51f19dd561be76a9da2a79134ada"
+    },
+    {
+      "candidate": "C2_PATH_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "max_gpu_hours": 0.25,
+      "used_gpu_hours_estimate": 0.11696458899163796,
+      "cost_closed": true,
+      "plan_sha256": "b23bbcd96832a16894ba325d23a08425f5dc3ed8f13f6b1b9f9acd8c58840ae3"
+    },
+    {
+      "candidate": "C2_FORMAL3_EXOGENOUS_PATH_SCREEN",
+      "formal_started": true,
+      "max_gpu_hours": 7.75,
+      "used_gpu_hours_estimate": 1.5694437211622587,
+      "cost_closed": true,
+      "plan_sha256": "ad5dbb1b2008446fe70c81500b3dda99dff6a79ea762bd7648541ead6cabd599"
+    },
+    {
+      "candidate": "C2_RECEIVER_FACTORIAL_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "max_gpu_hours": 0.25,
+      "used_gpu_hours_estimate": 0.06528831498445167,
+      "cost_closed": true,
+      "plan_sha256": "be8608685e0bf5c1a1e02360e2436769cbd42bc2649af385eac3ac043096da81"
+    },
+    {
+      "candidate": "C2_FORMAL4_RECEIVER_MODEL_ACCESS",
+      "formal_started": true,
+      "max_gpu_hours": 7.75,
+      "used_gpu_hours_estimate": 2.2230072743969505,
+      "cost_closed": true,
+      "plan_sha256": "061f14f0adb87793229c6ef0713359c7a3a8ac164d5d7661c0547170313c8ce3"
+    },
+    {
+      "candidate": "C2_CLOSURE_ENGINEERING_QUALIFICATION",
+      "formal_started": false,
+      "max_gpu_hours": 0.25,
+      "used_gpu_hours_estimate": 0.0661232537121719,
+      "cost_closed": true,
+      "plan_sha256": "581c9d1d9c5c6ee490b81d201f1d791a3ae8dee675db348300cf9ee97a9b87e3"
+    },
+    {
+      "candidate": "C2_FORMAL5_CLOSURE_AWARE_REVALIDATION",
+      "formal_started": true,
+      "max_gpu_hours": 47.75,
+      "used_gpu_hours_estimate": 25.21026331581085,
+      "cost_closed": true,
+      "plan_sha256": "7d10a94e5b099727367c0f5cdb1f99902554bf76bbc8cc4e30db536cf655fe5a"
+    }
+  ],
+  "historical_G1_G2_full_residence": null,
+  "historical_G2_formal_CUDA_event_hours": 105.227730055,
+  "CUDA_events_not_added_to_residence": true,
+  "CPU_agent_energy_financial_human_costs_complete": false,
+  "unknown_costs_imputed": false,
+  "raw_private_ledger_sha256": "66178742aa694e50b5ab94c85166587e5791a52815fb91547887a519a20a134c"
+}

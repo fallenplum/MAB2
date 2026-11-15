@@ -1,0 +1,11 @@
+{
+  "bootstrap_runs": 0,
+  "episode_seed_rows": 1360,
+  "frozen_screen_action": "STOP_FORMAL5_CANDIDATE",
+  "new_model_calls": 0,
+  "private_question_records_exported": false,
+  "question_seed_observations_per_method_condition": 2560,
+  "source_sha256": "6c4315585fcfbb3e85386ccad5627725cbd8fa2ce9d79fddb3743e6a95bdcc60",
+  "status": "AGGREGATE_REPORT_GENERATED",
+  "unique_service_questions": 512
+}

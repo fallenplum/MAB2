@@ -1,0 +1,43 @@
+\section{Additional final-candidate results}
+Tables~\ref{tab:no_change} and~\ref{tab:weights} retain the complete
+no-change comparison and predeclared cost sensitivity. Figure~\ref{fig:prefix}
+shows descriptive prefixes of the same fixed policies.
+\input{generated/no_change}
+\input{generated/weights}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/cumulative_service.pdf}
+\caption{Descriptive prefixes of the fixed $H=64$ graph-change policies. The horizontal axis includes all initialization and paid feedback before the first service item; the vertical axis is the mean cumulative number of correct service answers per episode--seed. Policies are not retrained or reoptimized at each prefix. These curves do not establish an optimized equal-spend frontier.}
+\label{fig:prefix}
+\end{figure*}
+
+\section{Reproduction boundary}
+The public aggregate generator reconstructs both 17-method tables,
+all five nominee seed points, and the four-weight sensitivity table from
+the frozen summary. It reconciles 1,360 episode--seed rows against totals.
+The historical generator binds its tables to seven historical source
+files by SHA-256. No generator fits a model or resamples data.
+
+The portable experiment bundle passes 36 artificial tests. With authorized
+access to private archives, the request auditor reconstructs prompts,
+seeds, cache decisions, and stored outputs without model calls. The
+independent raw scorer recomputes normalization, exact match, token F1,
+and all 3,200 voting decisions; the independent policy auditor rebuilds
+paid ledgers and fixed gates. These checks verify limited implementation
+properties. They do not regenerate stochastic outputs, supply a new
+evaluation cohort, or constitute human review.
+
+The public cost ledger has 11 closed entries: five formal candidates and
+six separate engineering qualifications. Cycle GPU residence sums across
+workers, including loading and waiting. Historical G2 CUDA-event time
+is a separate measurement and is not added to residence or recharged to
+this cycle. Unknown human, financial, energy, and complete agent-execution
+costs are not imputed as zero. Per-policy logical charges must not be
+summed across mutually exclusive policies and interpreted as actual
+collection expenditure.
+
+The released code and aggregate artifacts support computational inspection
+without exposing raw question-level records. Full private replay requires
+the corresponding owner-controlled archive, selection record, approval
+files, and pinned model/tokenizer environment. This privacy boundary limits
+what an unaffiliated reader can reproduce from public Git alone.

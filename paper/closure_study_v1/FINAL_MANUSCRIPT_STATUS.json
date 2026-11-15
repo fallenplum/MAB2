@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETE_NEGATIVE_WORKING_DRAFT",
+  "supersedes_status_only": "PREPARATION.json",
+  "pages": 11,
+  "submitted": false,
+  "submission_ready": false,
+  "human_authors_pending": true,
+  "human_source_verification_pending": true,
+  "evidence": "reports/cycle2_20261113/final_delivery_v1/CLAIM_EVIDENCE.json",
+  "pdf_sha256": "a1d3b55d2a8940a7a390cd761f6db62cdecfa369b4a00759d445a32d371207a0"
+}

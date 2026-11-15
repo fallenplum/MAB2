@@ -1,0 +1,48 @@
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,booktabs,graphicx}
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage{url}
+\title{When Changed Edge Credit Does Not Pay for Revalidation:\\A Bounded Study of Small-Model Collaboration}
+\author{Author information pending human approval\\Internal research draft; not a submitted manuscript}
+\begin{document}
+\maketitle
+\begin{abstract}
+Graph evolution can change an edge's contribution to collaborative reasoning,
+but this does not establish that purchasing fresh feedback improves later
+decisions after accounting for its cost. We study this distinction through
+a bounded sequence of five research candidates, preserving unsuccessful
+routes. The final development experiment evaluates a fixed, simple
+credit predictor with closure-aware expected-value-of-information sampling
+against matched maintenance strategies, free structural controls, and
+single-model and ensemble baselines. On 640 previously unexposed HotpotQA
+training questions with five generation seeds, it produces 28,800 terminal
+answers; 512 distinct questions are reserved for within-episode service
+evaluation. Under graph change, the nominee and random revalidation both
+achieve 60.508\% exact match. The nominee's complete-token utility advantage
+over random is 0.000933, below the frozen 0.005 development threshold,
+and its utility is lower than retaining stale credit. Four of six admission
+criteria fail. The research cycle ends at its five-candidate cap after
+76.477 GPU residence hours, without establishing a new effective method.
+The resulting negative evidence separates conditional-credit mechanisms,
+feedback decision value, and complete measured costs; it does not imply
+that graph-conditioned maintenance is generally ineffective.
+\end{abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/method}
+\input{sections/protocol}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/limitations}
+\input{sections/declarations}
+\bibliography{references}
+\clearpage
+\appendix
+\input{sections/history}
+\input{sections/supplement}
+\end{document}

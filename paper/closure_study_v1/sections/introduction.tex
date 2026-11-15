@@ -1,0 +1,42 @@
+\section{Introduction}
+Communication edges are useful only through their effects on downstream
+answers. In a team of small language models, those effects depend on which
+other messages remain available. A topology edit can therefore invalidate
+a previously measured edge credit. The practical question is not simply
+whether credit changes, but whether a limited feedback budget can identify
+changes that alter useful decisions and recover more service value than
+the feedback costs.
+
+Three claims must be distinguished. A predictor may estimate conditional
+credit more accurately; a graph change may measurably affect credit; and a
+policy may profit from buying new measurements. None entails the next.
+For sparse credit outcomes, predicting zero can minimize aggregate squared
+error while missing decision-relevant events. Conversely, even a clear
+credit change may already be handled by a free structural rule, leaving
+little value for paid revalidation.
+
+We investigate these distinctions in a bounded research cycle rather than
+presenting an unqualified new optimization method. The original credit
+prediction study failed its gate. Diagnostic controls identified a constant
+response artifact from intercept regularization, yet a fixed corrected
+predictor did not improve exposed editing decisions. Subsequent controlled
+path experiments detected topology-sensitive credit while their nominated
+graphs underperformed inexpensive system baselines. These observations
+motivated a final candidate that explicitly prices initialization,
+counterfactual feedback, and graph execution.
+
+The final hypothesis was that graph-dependent execution costs and already
+purchased request reuse could make decision-focused revalidation outperform
+both ordinary acquisition and free controls. We fixed the predictor, data
+partition, candidate, cost weight, baselines, and admission criteria before
+revealing the new cohort's scores. All methods share exact omission of
+nodes outside the answer node's ancestor set. This execution principle is
+not attributed to the proposed acquisition policy.
+
+Our evidence is negative: the final nominee fails four of six conjunctive
+development criteria. The bounded contribution is a reproducible failure
+analysis and evaluation design, including paid-information accounting,
+strong inexpensive controls, and separate numerical reconstruction. We do
+not claim a successful new method, external state-of-the-art performance,
+or a general impossibility result. Appendix~\ref{app:history} retains the
+historical decisions instead of selecting only favorable experiments.
