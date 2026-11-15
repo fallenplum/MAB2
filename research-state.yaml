@@ -38,4 +38,6 @@ new_GPU_admission: false
 next_new_candidate_admission: false
 new_experiment_intervals: false
 new_experiment_bootstrap: false
-next_action: verify_publication_and_deliver_negative_results
+delivery_status: COMPLETE_NEGATIVE_RESULTS_PUBLISHED_AND_VERIFIED
+next_action: none_project_cap_reached
+artifact_commit: 0df1ca9e7253e26d152edb0fd3eb3fbbff3cb31b

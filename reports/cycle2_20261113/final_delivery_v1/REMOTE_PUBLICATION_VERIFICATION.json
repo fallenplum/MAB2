@@ -1,0 +1,323 @@
+{
+  "status": "PASS_REMOTE_GIT_BLOB_VERIFICATION",
+  "repository": "fallenplum/MAB2",
+  "branch": "research/cycle2-closure-revalidation-20261115",
+  "artifact_commit": "0df1ca9e7253e26d152edb0fd3eb3fbbff3cb31b",
+  "tree_truncated": false,
+  "files_verified": 62,
+  "verified_files": [
+    {
+      "path": ".gitattributes",
+      "sha": "94822526a23a3b2d3a6504dde046a5e4aac82b17",
+      "size": 4824
+    },
+    {
+      "path": "AUTONOMOUS_RESEARCH_STATUS.json",
+      "sha": "a619a9852675aafd32bc364f1dc4b44b22dd7191",
+      "size": 1149
+    },
+    {
+      "path": "literature/cycle2_20261113/final_20261116/TREE_AND_NOVELTY.md",
+      "sha": "67257ebf93fa3af825c47a92408f0cd65d8ed1e9",
+      "size": 2696
+    },
+    {
+      "path": "paper/closure_study_v1/FINAL_MANUSCRIPT_STATUS.json",
+      "sha": "2318ad770b98bbfb0bd972f347d18dec27e9230f",
+      "size": 405
+    },
+    {
+      "path": "paper/closure_study_v1/HISTORICAL_POINT_PROVENANCE.json",
+      "sha": "3af0a963f9d59d3768c1c681499967edad870ed6",
+      "size": 1915
+    },
+    {
+      "path": "paper/closure_study_v1/MAB2_negative_study_draft.pdf",
+      "sha": "2b801cccbdbe87b2410daecefd052151d8d55539",
+      "size": 287095
+    },
+    {
+      "path": "paper/closure_study_v1/PREPARATION.json",
+      "sha": "422c0f8d2f083671b621d0002dd436ce65a6cd82",
+      "size": 815
+    },
+    {
+      "path": "paper/closure_study_v1/README.md",
+      "sha": "66500b60c71e9d7cc79b5c04be677e10c4d31a0f",
+      "size": 1224
+    },
+    {
+      "path": "paper/closure_study_v1/RESULTS_PROVENANCE.json",
+      "sha": "55284a2b9c7cd4de69027177e14347f924793759",
+      "size": 296
+    },
+    {
+      "path": "paper/closure_study_v1/acl.sty",
+      "sha": "df95edfec6a1cd17f494bc1e16487699ade6bfbd",
+      "size": 11616
+    },
+    {
+      "path": "paper/closure_study_v1/acl_natbib.bst",
+      "sha": "f1e913f8683357152ee2e40f3c8ff7228fcbef06",
+      "size": 45443
+    },
+    {
+      "path": "paper/closure_study_v1/figures/cumulative_service.pdf",
+      "sha": "1cf5ff0d96fc205418398d2cff54101d7820e99e",
+      "size": 19734
+    },
+    {
+      "path": "paper/closure_study_v1/figures/paper_points.pdf",
+      "sha": "0051418560622416861b7959bad3819759ca7a16",
+      "size": 26486
+    },
+    {
+      "path": "paper/closure_study_v1/figures/paper_points.png",
+      "sha": "a2560946a25c2d2cd466b13e023158b2df7a18f2",
+      "size": 116076
+    },
+    {
+      "path": "paper/closure_study_v1/figures/paper_points.svg",
+      "sha": "dc44bbc9556fc47c893a4fb8c8734e72e7dddc32",
+      "size": 46571
+    },
+    {
+      "path": "paper/closure_study_v1/figures/service_points.pdf",
+      "sha": "cfc48861aad7cca25bcbaf78837354f90a85d3df",
+      "size": 29328
+    },
+    {
+      "path": "paper/closure_study_v1/generate_figure.py",
+      "sha": "e38871c47d84f9c50795d6e11cf63932abeb1e83",
+      "size": 2302
+    },
+    {
+      "path": "paper/closure_study_v1/generate_history.py",
+      "sha": "5d112d734356d8c534d5475499f67311e2c81f07",
+      "size": 6807
+    },
+    {
+      "path": "paper/closure_study_v1/generate_results.py",
+      "sha": "509b165f25dd018c766b43c02d6eba63f5b006cc",
+      "size": 4566
+    },
+    {
+      "path": "paper/closure_study_v1/generated/change.tex",
+      "sha": "d393a97d73039a8f345f96f7cba74fe95a28d3b3",
+      "size": 1806
+    },
+    {
+      "path": "paper/closure_study_v1/generated/no_change.tex",
+      "sha": "ce0ef26468022025c5f3aa81b6ce47cabe5f93ef",
+      "size": 1806
+    },
+    {
+      "path": "paper/closure_study_v1/generated/seeds.tex",
+      "sha": "926d32cd8e2068f36f367c5672a30ee25578e24a",
+      "size": 486
+    },
+    {
+      "path": "paper/closure_study_v1/generated/weights.tex",
+      "sha": "8c82a17d45da470a9bc3fd3ca975afa81ec9ae25",
+      "size": 1451
+    },
+    {
+      "path": "paper/closure_study_v1/main.tex",
+      "sha": "b569d1a08704585e2f5f9c14f9f4fb20d77e10a6",
+      "size": 2260
+    },
+    {
+      "path": "paper/closure_study_v1/references.bib",
+      "sha": "b09b5a4c0f80078676f271603ef7f0de9700262c",
+      "size": 4723
+    },
+    {
+      "path": "paper/closure_study_v1/sections/declarations.tex",
+      "sha": "704e842b01cd5262aa5617026aacc282244c6335",
+      "size": 824
+    },
+    {
+      "path": "paper/closure_study_v1/sections/discussion.tex",
+      "sha": "7535ae66e4a1b33e60f77efde8b7f0bc726a53cf",
+      "size": 1774
+    },
+    {
+      "path": "paper/closure_study_v1/sections/history.tex",
+      "sha": "971e017926d0460cd580402016ad228a53ec623d",
+      "size": 3617
+    },
+    {
+      "path": "paper/closure_study_v1/sections/introduction.tex",
+      "sha": "ad6f00013df76ff0f651710b42e43f34c8eac334",
+      "size": 2591
+    },
+    {
+      "path": "paper/closure_study_v1/sections/limitations.tex",
+      "sha": "79a6bcb772c53dbbf9e179b1294b4f3597f7abdd",
+      "size": 3828
+    },
+    {
+      "path": "paper/closure_study_v1/sections/method.tex",
+      "sha": "57645cef5337949a3aee9ade401def7d055df03d",
+      "size": 6000
+    },
+    {
+      "path": "paper/closure_study_v1/sections/protocol.tex",
+      "sha": "a2dbdb21543d0054b2361ef81cef0c04cf734d11",
+      "size": 4054
+    },
+    {
+      "path": "paper/closure_study_v1/sections/related_work.tex",
+      "sha": "87685fcecadda19a8c03e677d6315d517d19315a",
+      "size": 2533
+    },
+    {
+      "path": "paper/closure_study_v1/sections/results.tex",
+      "sha": "372cd97da5a50c971cddb34f7aa9eae514d6ca40",
+      "size": 4210
+    },
+    {
+      "path": "paper/closure_study_v1/sections/supplement.tex",
+      "sha": "237a5b6d856d797ef4f79d616af8c49d05b76b7b",
+      "size": 2638
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/COST_CLOSURE.json",
+      "sha": "0b76225c81ceeac22c8ef9229b00d22496c6ff81",
+      "size": 559
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/CUMULATIVE_SERVICE_POINTS.csv",
+      "sha": "2ac227995db085f1952ce77de415b2d1a5bd0775",
+      "size": 139040
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/EPISODE_SEED_AGGREGATES.csv",
+      "sha": "a2de92e7164874664c58f6555e703e0ddb1def6d",
+      "size": 544242
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/INDEPENDENT_AUDIT.json",
+      "sha": "acad7c4fc3072473d64a6560e233f3f4731287d3",
+      "size": 914
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/METHOD_POINTS.csv",
+      "sha": "56d257129fde1ef5c98cf5c43745923880596559",
+      "size": 4926
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/REPORT.md",
+      "sha": "228be8ae222504684557636eb2a4dae8296105e6",
+      "size": 10994
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/REPORTING_RECEIPT.json",
+      "sha": "e2f658b7bbccbab373a2c4712dd885f0bdb1a761",
+      "size": 411
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/SUMMARY.json",
+      "sha": "1ed14efeea6aec85f31498cb4aab6b4df543a806",
+      "size": 157711
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/cumulative_service.pdf",
+      "sha": "1cf5ff0d96fc205418398d2cff54101d7820e99e",
+      "size": 19734
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/cumulative_service.png",
+      "sha": "85f781d59d762a28c4a9000119c1f1a0358cee2f",
+      "size": 151487
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/cumulative_service.svg",
+      "sha": "df1ac994c5d7c686ac72ee19eb6d6a3a7ff1cf95",
+      "size": 24870
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/service_points.pdf",
+      "sha": "cfc48861aad7cca25bcbaf78837354f90a85d3df",
+      "size": 29328
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/service_points.png",
+      "sha": "3268d72e6a405018a31b9c6b4dc4c0ca5468f3dc",
+      "size": 129025
+    },
+    {
+      "path": "reports/cycle2_20261113/closure_formal5_results_v1/service_points.svg",
+      "sha": "c5816a8f7f6d5385c9f2292ea2ac63251bf98f3c",
+      "size": 68823
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/AUTHOR_SIDE_REVIEW.md",
+      "sha": "410b8a62520ba45043376cf39c543ae9e4977273",
+      "size": 3176
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/CLAIM_EVIDENCE.json",
+      "sha": "339fa84b13588cb049db93785a89369b0ff1f9e8",
+      "size": 3747
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/COST_LEDGER.json",
+      "sha": "c021f28976e78658257f8ea3546ddb15fdcd9b75",
+      "size": 4034
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/CPU_REPLAY_RECEIPT.json",
+      "sha": "de774c05e377e2667cc645b5db0fb9dc2a8661d0",
+      "size": 732
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/FINAL_AUDIT_ZH.md",
+      "sha": "1ab43b9c8e700d5057b0c2341fafbf7a9f798ca7",
+      "size": 9532
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/INDEPENDENT_RAW_SCORING_AUDIT.json",
+      "sha": "ed7a7cd85dd7003aa968874563bd5d9786ccc309",
+      "size": 2378
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/LATEX_FINAL_CHECK.json",
+      "sha": "dcfb677b88f1b4017b3eb826888e3a87a576f9e9",
+      "size": 2366
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/PUBLICATION_SCAN.json",
+      "sha": "f6a0f8756fdbf7959f28801bb42572fa12a9cd96",
+      "size": 364
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/README.md",
+      "sha": "d915704a419d5b08a30cd0d94b4ab0331c37d8e8",
+      "size": 961
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/REPRODUCTION.md",
+      "sha": "cf2f92278d2a70a39e0e6a01d4a622be21f55284",
+      "size": 2072
+    },
+    {
+      "path": "reports/cycle2_20261113/final_delivery_v1/SCIENTIFIC_DECISION.json",
+      "sha": "d2aacb7fde89ac9152682aa35999b0dfe9176053",
+      "size": 1334
+    },
+    {
+      "path": "research-log.md",
+      "sha": "7bdecaf6f6bd92c3da9d0f28afd52158f78463a0",
+      "size": 5041
+    },
+    {
+      "path": "research-state.yaml",
+      "sha": "83dd5fb0cf02dff991958ebeb7b100b25c94833b",
+      "size": 1669
+    }
+  ],
+  "method": "GitHub connector recursive Git tree; every local blob byte hash matched remote, scientific decision additionally fetched as raw text",
+  "pdf_binary_downloaded": false,
+  "unix": 1794776690.6407807
+}

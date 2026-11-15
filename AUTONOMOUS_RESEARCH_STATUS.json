@@ -19,8 +19,9 @@
   "official_Hotpot_validation_test_opened": false,
   "independent_positive_method_confirmation": false,
   "human_independent_peer_review": false,
-  "delivery_status": "ARTIFACTS_COMPLETE_REMOTE_PUBLICATION_VERIFICATION_PENDING",
-  "next_action": "verify_publication_then_report_final_results",
+  "delivery_status": "COMPLETE_NEGATIVE_RESULTS_PUBLISHED_AND_VERIFIED",
+  "next_action": "none_project_cap_reached",
   "final_report": "reports/cycle2_20261113/final_delivery_v1/FINAL_AUDIT_ZH.md",
-  "updated_unix": 1794776337.3260772
+  "updated_unix": 1794776690.7216501,
+  "artifact_commit": "0df1ca9e7253e26d152edb0fd3eb3fbbff3cb31b"
 }
