@@ -1,0 +1,9 @@
+{
+  "new_plan_sha256": "581c9d1d9c5c6ee490b81d201f1d791a3ae8dee675db348300cf9ee97a9b87e3",
+  "old_plan_sha256": "1b6bd58d2269b36a8cf132536dd533049a812bf4be64f513fd4bac6481813da0",
+  "prior_GPU_hours": 0,
+  "reason": "Original device occupied by unrelated active job; use verified idle device",
+  "resource_receipt_sha256": "ec62f6fff1737b66ffe69fe7a8cd56b031ef6fc035f5b03138db7a505ac6d9c3",
+  "scientific_or_operator_change": false,
+  "status": "PREFIRSTCALL_RESOURCE_ONLY_AMENDMENT"
+}
