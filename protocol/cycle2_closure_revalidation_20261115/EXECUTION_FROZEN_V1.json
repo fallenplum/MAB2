@@ -1,0 +1,47 @@
+{
+  "GPU_indices": [
+    4,
+    5
+  ],
+  "RNG_streams": 12800,
+  "aggregate_worker_cap_GPU_hours": 47.5,
+  "bootstrap": false,
+  "distinct_RNG_streams": 12800,
+  "engineering_acceptance_sha256": "42b0bd180813248f814b425de836c89546da970654a04b20cb31140fbfce2b89",
+  "formal_round_if_started": 5,
+  "full_logical_calls": 99200,
+  "global_used_GPU_hours": 51.2666491078599,
+  "intervals": false,
+  "labels_opened": false,
+  "maximum_fresh_calls": 48000,
+  "other_jobs_not_modified": true,
+  "plan_sha256": "7d10a94e5b099727367c0f5cdb1f99902554bf76bbc8cc4e30db536cf655fe5a",
+  "questions": 640,
+  "reserved_GPU_hours": 47.75,
+  "resource_receipt_sha256": "05304bebf166296fde30531f16cc123768275121d35aefd7efc5fdd5c9d816e9",
+  "scientific_contract_sha256": "74ca03cab7efbaee896db9305640ba501d97ad15d83bfc420c7b20878ef46220",
+  "seeds": [
+    26111571,
+    26111572,
+    26111573,
+    26111574,
+    26111575
+  ],
+  "selected_exposure_intersection": 0,
+  "selection_manifest_sha256": "638a4db97ea2bb1fc8eb55365e6207e582696dabb15b34a3c475f8f3a8ca69a2",
+  "shared_GPU_authorized": true,
+  "source_sha256": {
+    "closure_operator.py": "9a0599425fe84d5d430a36d5c1279a9c30db02da596daec09a604edae03a5027",
+    "closure_runtime_v2.py": "3ee6a71f6a5975cede93d6ec20e5d7b87f5da50c6208b2088a1b738c07097af7",
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "factorial_operator.py": "f4fb07889c0ed1e05d9603db7bfc1b68519fd800464a428b713445008a1b20ad",
+    "graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+    "graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "replay_closure_archive.py": "1316c6ab6308e47c4552d450a6593bdb277fc51e4e946e09977175df5e29fb7f"
+  },
+  "status": "ADMITTED_BEFORE_FIRST_FORMAL5_CALL",
+  "terminal_outputs": 28800,
+  "worker_cap_seconds": 85500
+}
