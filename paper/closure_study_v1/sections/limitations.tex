@@ -1,0 +1,61 @@
+\section*{Limitations}
+This study evaluates a bounded set of hypotheses, not the proposition that
+all graph-conditioned credit maintenance is ineffective or effective.
+Earlier candidate decisions are retained, including unsuccessful routes.
+The current design uses one task, two model checkpoints, a small fixed
+graph menu, and a single exogenous topology change per episode. It does not
+evaluate long trajectories with repeated graph edits, adversarial drift,
+model replacement, or generalization to a second task. A terminal decision
+that reverses an initial deletion preference is a restoration proxy, not
+an observed delete-and-restore deployment trajectory.
+The service graph is selected once per episode after a bounded calibration
+window. The periodic baseline schedules feedback within that window; it
+is not a continuously interleaved production refresh policy.
+
+All active nodes in the current candidate receive the same full raw
+document context. This isolates communication and execution-cost effects
+within that access regime; it does not represent agents holding mutually
+private evidence. Earlier partial-context experiments are separate cohorts
+and cannot establish a causal advantage for the common-context regime.
+The model weights may have encountered benchmark material during
+pretraining, which our exclusion ledger cannot establish or rule out.
+
+The Dirichlet model is an intentionally simple decision statistic. It
+retains old counts and does not infer the true amount of graph-induced
+distribution shift. Its marginal edge distributions do not model every
+dependence arising from shared questions and baseline executions. The
+one-step expected value calculation is not a proof of optimal multi-step
+sampling. A graph-topology signal can exist while providing no additional
+decision value beyond a static protection rule.
+
+Gold benchmark scoring supplies feedback in replay. Human labeling time,
+human financial cost, and production feedback availability were not
+measured. Token utility uses a declared research tradeoff, not a monetary
+conversion or a common physical price for different model sizes. Kernel
+time and GPU residence are separately reported; neither establishes
+latency, energy, or monetary savings in an online system. Exact-request
+caching reduces data-collection work, while the policy ledger separately
+charges the requests each policy would purchase. This is counterfactual
+replay, not a live policy deployment.
+
+The common token cap is an upper bound and may be nonbinding. Equal caps
+must not be described as equal realized spending. No-initialization static
+controls deliberately test whether paying for maintenance is necessary.
+Service-prefix curves retain the originally fixed horizon and do not
+estimate policies optimized for every shorter horizon.
+
+Repeated generation seeds share question groups and are not additional
+independent data samples. We report question support, paired point
+differences, correction and breakage counts, and episode and seed
+breakdowns. The new experiment uses no confidence intervals or bootstrap;
+its frozen numerical gates are resource-allocation criteria, not tests of
+statistical significance or population noninferiority. Previous exposed
+data and post-hoc analyses cannot supply independent confirmation.
+
+The literature review records whether claims were checked in an abstract
+or in specific paper sections. Published graph-optimization systems were
+not all independently reimplemented in this study. Comparisons with
+internal baselines therefore cannot establish superiority over the full
+external state of the art. Computational replays and a separate arithmetic
+implementation establish limited verification scope, not independent
+human peer review or submission readiness.

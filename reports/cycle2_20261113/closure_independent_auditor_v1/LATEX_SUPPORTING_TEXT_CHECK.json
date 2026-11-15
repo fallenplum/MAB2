@@ -1,0 +1,16 @@
+{
+  "status": "SUPPORTING_TEXT_COMPILED_FORMAL5_PENDING",
+  "overfull_boxes": 0,
+  "undefined_references": 0,
+  "pdf_sha256": "984e5c1f502a2cad96e661496505257cf84e158e5f82d51bdb63bf9a6b5abacb",
+  "complete_manuscript": false,
+  "results_read": false,
+  "pages_rendered_and_viewed": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "independent_human_review": false,
+  "minor_scope_clarification_after_compile": "Official validation/test sentence narrowed explicitly to HotpotQA; final full-manuscript compile remains required"
+}

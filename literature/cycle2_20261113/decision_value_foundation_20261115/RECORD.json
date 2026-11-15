@@ -1,0 +1,26 @@
+{
+  "key": "frazier2008knowledge",
+  "title": "A Knowledge-Gradient Policy for Sequential Information Collection",
+  "authors": [
+    "Peter I. Frazier",
+    "Warren B. Powell",
+    "Savas Dayanik"
+  ],
+  "year": 2008,
+  "journal": "SIAM Journal on Control and Optimization",
+  "volume": 47,
+  "number": 5,
+  "pages": "2410--2439",
+  "doi": "10.1137/070693424",
+  "publisher_url": "https://epubs.siam.org/doi/10.1137/070693424",
+  "author_hosted_pdf": "https://optimallearning.princeton.edu/Papers/FrazierPowellDayanik_KnowledgeGradientSICON.pdf",
+  "actual_read_scope": [
+    "publisher metadata and abstract",
+    "PDF pages 2410--2412: assumptions, single-step KG definition, distinction from selection-probability objectives"
+  ],
+  "full_paper_deep_read": false,
+  "proofs_reverified": false,
+  "human_verification": false,
+  "search_route": "web search and direct primary-source open; not claimed as Google",
+  "experiment_outcomes_read": false
+}

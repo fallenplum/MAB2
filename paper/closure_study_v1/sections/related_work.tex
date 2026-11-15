@@ -28,3 +28,12 @@ evidence; it is not a theorem that a finite single LLM dominates every
 multi-agent implementation. Accordingly, raw-evidence access and inexpensive
 single-model and ensemble baselines are explicit controls in this study.
 These cited benchmark results have not been independently reproduced here.
+
+\paragraph{Decision value of feedback.}
+Choosing observations by the expected improvement in the best posterior
+terminal decision is established knowledge-gradient methodology
+\citep{frazier2008knowledge}. That work studies independent normal
+populations with known common variance. Our ternary paired outcomes and
+graph-dependent query costs do not satisfy that setting, and we do not
+inherit its optimality guarantees. The one-step information-value criterion
+is an implementation foundation, not a novelty claim.
