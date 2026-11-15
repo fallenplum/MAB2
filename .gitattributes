@@ -81,3 +81,7 @@ protocol/cycle2_exogenous_paths_20261115/** -text
 reports/cycle2_20261113/exogenous_restart_20261115/** -text
 reports/cycle2_20261113/path_engineering_qualification/** -text
 reports/cycle2_20261113/path_formal3_results_v1/** -text
+
+experiments/cycle2_20261113/receiver_factorial_v1/** -text
+protocol/cycle2_receiver_factorial_20261115/** -text
+reports/cycle2_20261113/receiver_factorial_v1/** -text

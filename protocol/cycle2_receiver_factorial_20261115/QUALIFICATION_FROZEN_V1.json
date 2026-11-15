@@ -1,0 +1,32 @@
+{
+  "conditions_per_seed": 29,
+  "formal_round_increment": 0,
+  "frozen_upstream": true,
+  "full_logical_calls": 436,
+  "maximum_fresh_calls": 148,
+  "new_scientific_GPU_admission": false,
+  "qualification_plan_sha256": "be8608685e0bf5c1a1e02360e2436769cbd42bc2649af385eac3ac043096da81",
+  "qualification_required": [
+    "all synthetic units complete",
+    "native/request/token/cost checks",
+    "exact CPU replay",
+    "original-condition repeated generations checked against earlier synthetic fixture"
+  ],
+  "reserved_GPU_hours": 0.25,
+  "scope": "two artificial inputs only; no benchmark labels, no scientific nomination",
+  "seeds": 2,
+  "source_sha256": {
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "factorial_operator.py": "f4fb07889c0ed1e05d9603db7bfc1b68519fd800464a428b713445008a1b20ad",
+    "factorial_runtime_v1.py": "47d5d8df1bf9d39c9f3ba485d7aa00e5712f72648517accf7fb43cddc04c7f75",
+    "graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+    "graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "replay_factorial_archive.py": "735f73ae356eb6bc0b1991fa296cfcb80265d727a1cf9e9ca7ceab0a1871b31b"
+  },
+  "status": "FROZEN_BEFORE_ACTUAL_CALLS",
+  "terminal_conditions": 116,
+  "total_global_GPU_cap": 160,
+  "worker_cap_seconds": 840
+}
