@@ -1,0 +1,23 @@
+{
+  "status": "FROZEN_ENGINEERING_FIXTURE_REPAIR_BEFORE_RETRY",
+  "prior_actual_GPU_hours": 0.0694561210072263,
+  "same_total_qualification_cap_GPU_hours": 0.25,
+  "remaining_reservation_GPU_hours": 0.1805438789927737,
+  "new_worker_cap_seconds": 600,
+  "formal_round_increment": 0,
+  "old_attempt_retained": true,
+  "failure": "synthetic full-context prompt exceeded cap for Mistral; no truncation or score imputation",
+  "old_measured_input_tokens": 10155,
+  "new_max_static_prompt_tokens": 5755,
+  "static_check_not_dynamic_guarantee": true,
+  "source_sha256": {
+    "path_runtime_v2.py": "3995f2b52fcf2de44ab773ca5356f09e821f3e6085273bc92dbb17ccd2cdee9f",
+    "path_qualification_capacity.py": "a43512426de018d050e041e0e0ed318ff16afe47f501ccac447585de4a40435c",
+    "replay_path_archive.py": "bde91f7232807e9adea7c6d830776765d9bd33fbed6dd3398a71cdb3aa88448d"
+  },
+  "operator_changed": false,
+  "plan_sha256": "3e6e8bf4830acb06fa1056a22ff51135dcccc7f297fcdecbc47727a324e0ac4a",
+  "repeat_short_fixture_for_actual_regeneration_check": true,
+  "new_long_fixture": "12 repetitions instead of22; artificial_long_v2_12",
+  "GPU_or_scientific_efficacy_claim": false
+}
