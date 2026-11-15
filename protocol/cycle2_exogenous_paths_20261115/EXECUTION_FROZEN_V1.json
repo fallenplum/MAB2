@@ -1,0 +1,42 @@
+{
+  "GPU_indices_are_execution_placement_not_scientific_factor": true,
+  "automatic_label_release": false,
+  "automatic_quality_peeking": false,
+  "blind_cost_multiplier": 1.5,
+  "blind_prefix_questions": 8,
+  "bootstrap_runs": 0,
+  "candidate_cap_including_qualification": 8,
+  "confidence_intervals": false,
+  "engineering_acceptance_sha256": "016d1a581729081184a5658b7d608cee3097d1c44f4bef817b3d05459fbeb5d4",
+  "formal_round_if_started": 3,
+  "global_cap_GPU_hours": 160,
+  "global_formal_round_cap": 5,
+  "global_used_GPU_hours": 47.34278654360407,
+  "logical_calls": 5760,
+  "plan_sha256": "ad5dbb1b2008446fe70c81500b3dda99dff6a79ea762bd7648541ead6cabd599",
+  "planned_GPU_indices": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "private_questions_labels_and_host_not_published": true,
+  "qualification_cost_recharged": false,
+  "questions": 96,
+  "reserved_formal_GPU_hours": 7.75,
+  "scientific_contract_sha256": "c4ed5c4d31a904bad073afa45fe1a6534783bb326635b4d3aa239a59b5dae5b0",
+  "selection_manifest_sha256": "9f456b11c9031155a40dbf70968a5c922977d55d259ddd2bee4ae3f555f9ac86",
+  "source_sha256": {
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+    "graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1",
+    "path_runtime_v3.py": "2cd233a3c9ca4910843d5fe23082b897ad4fccf7e299882ff69bbccd727760a8"
+  },
+  "status": "ROOT_ADMITTED_BEFORE_FIRST_FORMAL_CALL",
+  "terminal_conditions": 1728,
+  "unique_derived_streams": 768,
+  "worker_cap_seconds": 6750,
+  "worker_count": 4
+}
