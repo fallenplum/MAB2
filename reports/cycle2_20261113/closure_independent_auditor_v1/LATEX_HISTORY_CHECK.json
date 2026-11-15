@@ -1,0 +1,14 @@
+{
+  "status": "HISTORICAL_APPENDIX_COMPILED_AND_PAGES_VISUALLY_CHECKED",
+  "pdf_sha256": "46d2c84445c1771aaebc63acafb97904a829dbe9981d1cc3f561f3bf54eef9e2",
+  "pages_rendered_and_viewed": [
+    4,
+    5
+  ],
+  "overfull_boxes": 0,
+  "unresolved_references": 0,
+  "formal5_results_read": false,
+  "complete_manuscript": false,
+  "independent_human_review": false,
+  "historical_provenance_sha256": "003313c4e9c335f99d073f91f9a614ae03785031c1b01462c30898af40ac9ca5"
+}

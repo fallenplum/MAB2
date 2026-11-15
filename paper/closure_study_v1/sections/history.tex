@@ -1,0 +1,64 @@
+\section{Historical diagnostics and unsuccessful routes}
+\label{app:history}
+These results explain the sequence of research decisions; they are not
+additional independent replications of the final candidate. Earlier exposed
+evaluation questions remain development data. We retain each original
+candidate decision and do not replace a failed nominee with a better-looking
+control. The following tables reproduce aggregate point estimates only.
+
+\paragraph{Prediction error did not establish editing value.}
+The original G2 experiment used 200 training, 80 tuning and 120 held-out
+GSM8K questions, five generation seeds, two anchor graphs and 12 edges.
+Its cross-seed squared-risk estimates were 0.001416882 for the edgewise constant
+baseline, 0.001541436 for the first-order predictor, and 0.002195856 for the second-order
+predictor. Thus the second-order model failed its frozen prediction gate.
+These are cross-seed risk estimates, not ordinary empirical MSE values.
+Subsequent D2 controls showed that penalizing the intercept can induce
+spurious positive edge credit even for a graph-independent constant response.
+This is a property of the original objective, not evidence that the original
+implementation violated its contract. Removing the intercept penalty reduced
+risk, but the fixed D2 nominee achieved 0.000 percentage points of editing
+gain on the already exposed evaluation block. It edited 238 of 240 anchors
+and therefore did not acquire useful abstention merely by reducing risk.
+The D3 graph-only second-order nominee likewise failed its separate
+drift-enrichment gate (point estimate -0.001736111).
+
+\paragraph{Mechanism evidence is distinct from system quality.}
+The controlled-path experiments C3 and C4 each used a new 96-question
+development cohort and two generation seeds. Their topology-sensitive
+credit filters passed, yet their frozen graph nominees were worse than
+their single-model and independent-aggregation controls (Table~\ref{tab:prior}).
+C4 varied receiver identity and access to raw context; the table reports
+the preselected full-context Qwen receiver, without selecting a different
+factorial cell after outcomes. C3 used a Mistral terminal receiver, whereas
+C4's nominated terminal receiver was Qwen. Cohorts and operators differ;
+the two rows do not estimate the effect of the receiver change.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrr}
+\hline
+Stage & Graph EM & Single Q & Indep. & $D$ \\
+\hline
+C3 & 35.94 & 51.04 & 57.29 & 0.0625 \\
+C4 & 50.52 & 58.85 & 67.71 & 0.1042 \\
+\hline
+\end{tabular}
+\caption{Historical within-cohort comparisons. EM is a percentage;
+$D$ is the frozen topology-sensitive credit contrast in its original
+proportion units. The independent aggregator is Mistral in C3 and Qwen
+in C4. Nonzero question support is 27/96 and 21/96, respectively.
+Each row averages two generation seeds on the same question cohort;
+seeds are not additional independent question samples.}
+\label{tab:prior}
+\end{table}
+
+\paragraph{Feedback must beat inexpensive structural controls.}
+Post-hoc replay on exposed C3 outputs found that affected-edge refresh
+could match a zero-new-feedback protection rule without improving it.
+This diagnostic motivated including protection and no-initialization
+static actions in the later contract; it does not confirm that contract.
+An execution audit also found disconnected source calls in the old operator.
+Eliminating those calls is ordinary dead-code elimination and is shared
+by every applicable method in the new operator. Accounting savings from
+old traces are not measured runtime speedups of the new implementation.

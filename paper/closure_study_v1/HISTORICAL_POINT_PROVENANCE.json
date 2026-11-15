@@ -1,0 +1,49 @@
+{
+  "status": "HISTORICAL_POINTS_ONLY_FORMAL5_NOT_READ",
+  "source_sha256": {
+    "results/G2_STAGE_SUMMARY_20261105.json": "a3f00980f6a5ba838a80c2a9757ee3d6d4ddd44bf202d34e08ce96125a5aad10",
+    "reports/autonomous_20261113/d3/D3_RESULTS.json": "92447d84ed3bcb9aedf9e449b9e99d0f77ef59783ce7f10d61e3e3501c11d94f",
+    "reports/cycle2_20261113/path_formal3_results_v1/SUMMARY.json": "eb9b142a7c51af6dca5b3b2314112ba4afe2be976905ec2611e9df5dedf1c00e",
+    "reports/cycle2_20261113/receiver_formal4_results_v1/SUMMARY.json": "dc97561cc2f5c38c21eb960b1bfa8632ec8ff677d1616e1df6791c84b5f9787a",
+    "reports/cycle2_20261113/path_posthoc_policy_v1/SUMMARY.json": "47f37eb5aa93be1c2bfa59ef313ead1fe31c4d540eb5af7d00c603ab165e1545",
+    "reports/cycle2_20261113/dead_node_cost_diagnostic_v1/SUMMARY.json": "6dac63a46f570535f7c57788802df8c017be47008815dcf2add2053f4d29fa1c",
+    "reports/autonomous_20261113/d2/method_metrics.csv": "7ed679f6fedffd282a0dd74b17ab22e9acfca0fda0a031c671c5f4a5bf748220"
+  },
+  "G2_cross_seed_risk": {
+    "B0": 0.0014168819444444446,
+    "C1": 0.0015414357592971341,
+    "C2": 0.002195855955813739
+  },
+  "D2_fixed_nominee_exposed_action_gain": 0.0,
+  "D2_fixed_nominee_exposed_actions": {
+    "additions": 12,
+    "deletions": 226,
+    "stays": 2
+  },
+  "D3_fixed_nominee_exposed_enrichment": -0.0017361111111111114,
+  "C3": {
+    "questions": 96,
+    "generation_seeds": 2,
+    "D": 0.0625,
+    "support": 27,
+    "accuracy": {
+      "G1": 0.359375,
+      "SINGLE_Q": 0.5104166666666666,
+      "INDEPENDENT3_M": 0.5729166666666666
+    }
+  },
+  "C4": {
+    "questions": 96,
+    "generation_seeds": 2,
+    "D": 0.10416666666666667,
+    "support": 21,
+    "accuracy": {
+      "G1__Q_FULL": 0.5052083333333334,
+      "SINGLE_Q": 0.5885416666666667,
+      "INDEPENDENT3_Q": 0.6770833333333333
+    }
+  },
+  "new_CI_computations": 0,
+  "bootstrap_runs": 0,
+  "cross_cohort_comparison_valid": false
+}
