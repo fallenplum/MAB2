@@ -1,0 +1,189 @@
+{
+  "acquisition": {
+    "ablations": [
+      "no cost ranking",
+      "old graph service costs"
+    ],
+    "candidate": "H=64 times expected increase in maximum posterior-mean action utility, divided by forecast paid-marginal feedback tokens; stop when H*EVSI <= lambda*forecast_tokens",
+    "free_controls": "fixed methods receive no I/C and pay none; maintenance controls all pay the same I bank",
+    "lambda_per_token": 5e-06,
+    "max_edge_question_pairs": 8,
+    "ordinary_EVSI": "same current service prices and predictor, fixed base+counterfactual price instead of already-paid marginal closure price",
+    "q_order": "next unused per-edge C slot, except fixed periodic q=0,2,4,6 with U/V each",
+    "tie_break": "keep then U then V for actions; U then V for acquisition"
+  },
+  "budget": {
+    "candidate_cap_GPU_hours": 48,
+    "formal_reservation_GPU_hours": 47.75,
+    "global_GPU_hours": 160,
+    "global_formal_rounds": 5,
+    "max_worker_sum_GPU_hours": 47.5,
+    "prefix": "Two questions per worker; no quality read; release only if 1.5x full elapsed projection stays within worker cap minus60s",
+    "qualification_actual_GPU_hours": 0.0661232537121719
+  },
+  "candidate": "C2_FORMAL5_CLOSURE_AWARE_REVALIDATION",
+  "conditions_per_seed": 9,
+  "cost": {
+    "I_C_cache": "Deduplicate only exact requests within actually purchased I/C bundles; evaluator-generated cache confers no free observations",
+    "cap_nonbinding_possible": true,
+    "complete_token_cap_per_episode_seed_policy": 3000000,
+    "conservative_bound": {
+      "C_max": 334848,
+      "I_max": 402432,
+      "S_max": 2138112,
+      "total": 2875392
+    },
+    "feedback_oracle": "Benchmark gold; monetary/human acquisition cost unknown, not imputed as zero",
+    "primary_utility": "S mean exact match - 0.005 * all I+C+S tokens / (1000*64)",
+    "replay_is_not": "Live deployment or external-human-feedback validation",
+    "report": [
+      "I/C/S by model tokens, kernel seconds, calls",
+      "GPU residence incl load/failures",
+      "gold-question and score-observation counts",
+      "unused cap",
+      "corrections/breakages and restoration vs stale"
+    ],
+    "sensitivity_weights_per_1000_tokens": [
+      0,
+      0.005,
+      0.02,
+      0.05
+    ],
+    "service_cache": "Each service graph pays every executed node; no discount from global experimental cache",
+    "weight_is": "Declared development tradeoff; not monetary cost or externally justified willingness to pay"
+  },
+  "fixed_nominee": "closure_EVSI",
+  "formal_round": 5,
+  "formal_terminal_outputs": 28800,
+  "full_logical_calls": 99200,
+  "hypothesis": "Current terminal-ancestor service costs and already-paid feedback closure costs improve decision-value revalidation on a common full-context DAG, beyond generic VOI and zero-feedback structural controls.",
+  "maximum_fresh_calls": 48000,
+  "new_bootstrap": false,
+  "new_confidence_intervals": false,
+  "new_regime_not_old_candidate_rescue": "All active agents observe all raw documents; exact dead-node elimination is shared by every method; old G2/D2/D3/R1/formal2/formal4 failures unchanged.",
+  "no_change_control": "Repeat same fixed policies on G0 C/S; no graph change flag. DELETE_CHANGED/OTHER names map U/V for no-change only. Primary gate uses change condition only.",
+  "nominal_graphs": [
+    "G0",
+    "G0_MINUS_EU",
+    "G0_MINUS_EV",
+    "G1",
+    "G1_MINUS_EU",
+    "G1_MINUS_EV"
+  ],
+  "official_validation_test_opened": false,
+  "operator": {
+    "all_active_nodes_raw_documents": 10,
+    "final_cap": 256,
+    "intermediate_cap": 128,
+    "model_route": {
+      "M": "Qwen2.5-3B-Instruct",
+      "R": "Mistral-7B-Instruct-v0.3",
+      "U": "Qwen2.5-3B-Instruct",
+      "V": "Qwen2.5-3B-Instruct"
+    },
+    "no_silent_retry": true,
+    "no_truncation": true,
+    "nodes": [
+      "U",
+      "V",
+      "R",
+      "M"
+    ],
+    "runtime_input_cap": 8192,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "policy_methods": [
+    "closure_EVSI",
+    "EVSI_fixed_price",
+    "EVSI_no_cost_ranking",
+    "EVSI_old_graph_cost",
+    "random",
+    "periodic",
+    "uncertainty",
+    "graph_changed_first",
+    "stale",
+    "protect_changed",
+    "keep"
+  ],
+  "policy_seed": "generation_seed + 1000; five generation seeds are repeated measurements, not five independent datasets",
+  "population": {
+    "C_per_episode": 8,
+    "I_per_episode": 8,
+    "S_per_episode": 64,
+    "episodes": 8,
+    "known_prior_exposed_groups_excluded": 8049,
+    "pretraining_contamination_guarantee": false,
+    "questions_sha256": "db51007a53dfc878f807c8ff4b03363e2185d65d4d6761f942629f377d61114e",
+    "selected_questions": 640,
+    "selection_sha256": "638a4db97ea2bb1fc8eb55365e6207e582696dabb15b34a3c475f8f3a8ca69a2",
+    "source_exposed_groups_matching_train": 2576,
+    "task": "HotpotQA distractor train",
+    "unknown_cross_project_exposure": "UNKNOWN"
+  },
+  "predictor": {
+    "credit_orientation": "EM(delete edge)-EM(keep graph)",
+    "graph_change_prior_discount": false,
+    "old_I_observations_retained": 8,
+    "outcomes": [
+      -1,
+      0,
+      1
+    ],
+    "prior_per_category": 0.3333333333333333,
+    "update": "Add only purchased C outcome counts; no S argument to policy"
+  },
+  "primary_gates_conjunction": {
+    "independent3_Q": "accuracy difference >= -0.01 AND complete token ratio <=0.90",
+    "random_seed_support": "positive utility difference in at least four of five generation seeds",
+    "single_Q": "nonnegative quality AND utility difference",
+    "utility_gain_over_each": "at least +0.005 vs random, periodic, uncertainty, stale, protect_changed, EVSI_fixed_price, KEEP_NO_INIT, DELETE_CHANGED_NO_INIT, DELETE_OTHER_NO_INIT",
+    "vote_Q3": "nonnegative utility difference"
+  },
+  "seeds": [
+    26111571,
+    26111572,
+    26111573,
+    26111574,
+    26111575
+  ],
+  "service_price_forecast": "I mean G0 / G0-minus-U / G0-minus-V tokens; subtract mean I cost of disconnected source only for its G1 direct-edge deletion. No new C/S unpurchased costs are used. It is a forecast, not exact future cost.",
+  "source_sha256": {
+    "closure_operator.py": "9a0599425fe84d5d430a36d5c1279a9c30db02da596daec09a604edae03a5027",
+    "closure_policy.py": "fbe610da0b1b71dd41c9fbca69d63a5f69544a554aec247fc59220689a59903d",
+    "closure_replay_policies.py": "1cc876b809ece37b3fe5ef4776746953dec86b394c0948587aeecbba23fcc7b5",
+    "closure_runtime_v2.py": "3ee6a71f6a5975cede93d6ec20e5d7b87f5da50c6208b2088a1b738c07097af7",
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "evaluate_closure.py": "8a07560b034b4b94afb73e5a0b0d4121641a7557c38cfa515edd221c691ea3c3",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "extract_closure_labels.py": "0b3e149622b2efd93f8ddbabbe28ca421b7af46d355dddafff0d12f95f9104a9",
+    "factorial_operator.py": "f4fb07889c0ed1e05d9603db7bfc1b68519fd800464a428b713445008a1b20ad",
+    "hotpot_support.py": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e",
+    "replay_closure_archive.py": "1316c6ab6308e47c4552d450a6593bdb277fc51e4e946e09977175df5e29fb7f"
+  },
+  "static_controls": [
+    "KEEP_NO_INIT",
+    "DELETE_CHANGED_NO_INIT",
+    "DELETE_OTHER_NO_INIT"
+  ],
+  "statistics": "Question-disjoint episodes are independent sampling units; report eight episode and five seed point decompositions. Gates are empirical development filters, not significance or population noninferiority.",
+  "status": "FROZEN_BEFORE_ANY_FORMAL5_MODEL_CALL",
+  "stopping": {
+    "candidate_failure": "Any primary gate fails: STOP_FORMAL5_CANDIDATE; do not promote a control or adjust weights/thresholds",
+    "candidate_pass": "Only retain same frozen method for independent confirmation; no paper success. Require fresh Hotpot reproduction plus a second task with five seeds before positive final claims.",
+    "conditional_confirmation_scope": "Same algorithm and utility fixed; new task adapter and independent inputs must be preregistered before their outcomes. No substantive sixth algorithm candidate.",
+    "project": "After fifth completed candidate, no sixth candidate under current authorization; preserve negative results and finish audit/manuscript. GPU cap remains 160 without reset."
+  },
+  "system_baselines": [
+    "SINGLE_Q",
+    "VOTE_Q3",
+    "INDEPENDENT3_Q"
+  ],
+  "unix": 1794724526.4629397,
+  "validation": {
+    "actual_regenerated_baseline_fields": 320,
+    "engineering_acceptance_sha256": "42b0bd180813248f814b425de836c89546da970654a04b20cb31140fbfce2b89",
+    "engineering_replay_fields": 1148,
+    "unit_tests_passed": 25
+  }
+}
