@@ -1,0 +1,9 @@
+{
+  "actual_GPU_hours": 0.0661232537121719,
+  "actual_cost_closed": true,
+  "archive_manifest_sha256": "eafda498608f6469ef9958d1c53dbe03ee4eaf835d3488ccb1af020129a0d20e",
+  "benchmark_labels_read": false,
+  "formal_round_increment": 0,
+  "plan_sha256": "581c9d1d9c5c6ee490b81d201f1d791a3ae8dee675db348300cf9ee97a9b87e3",
+  "status": "QUALIFICATION_ACTUAL_COST_CLOSED"
+}

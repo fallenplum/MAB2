@@ -1,0 +1,14 @@
+{
+  "actual_physical_requests": [
+    30,
+    27
+  ],
+  "correct_assertion": "At most 30; exact-input cache may additionally deduplicate equal generated notes",
+  "cost_already_closed_no_recharge": true,
+  "frozen_maximum_fresh_calls": 60,
+  "next_check": "CPU exact request/cache/native journal replay required",
+  "old_assertion": "Exactly 30 fresh requests per synthetic unit",
+  "planned_logical_calls": 124,
+  "scientific_or_execution_change": false,
+  "status": "CORRECT_POSTCLOSURE_EXPECTATION_NOT_EXECUTION"
+}

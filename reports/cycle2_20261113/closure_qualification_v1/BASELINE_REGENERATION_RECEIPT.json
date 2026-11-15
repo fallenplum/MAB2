@@ -1,0 +1,7 @@
+{
+  "artificial_inputs": 2,
+  "benchmark_quality_claim": false,
+  "field_checks": 320,
+  "source_archive_sha256": "eafda498608f6469ef9958d1c53dbe03ee4eaf835d3488ccb1af020129a0d20e",
+  "status": "PASS_REGENERATED_BASELINES"
+}

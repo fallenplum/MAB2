@@ -1,0 +1,35 @@
+{
+  "all_active_nodes_full_raw_context": true,
+  "assignment_seed": 261115702,
+  "candidate": "C2_FORMAL5_CLOSURE_AWARE_REVALIDATION",
+  "episode_roles": {
+    "C": 8,
+    "I": 8,
+    "S": 64
+  },
+  "episodes": 8,
+  "exclusions": "Prior exposure union plus formal3 and formal4 by ID, normalized question and exact question-context hash",
+  "formal_admission": false,
+  "generation_seeds": [
+    26111571,
+    26111572,
+    26111573,
+    26111574,
+    26111575
+  ],
+  "labels_read": false,
+  "new_bootstrap": false,
+  "new_intervals": false,
+  "official_validation_test_opened": false,
+  "pool_questions": 1024,
+  "pool_selector_sha256": "0e8534e17eb9e348d4f6feb36ab2c0d8821e54cc085d497e5aaa5614641c496c",
+  "runtime_max_tokens": 8192,
+  "sampling_seed": 261115701,
+  "scientific_policy_status": "DRAFT_NOT_FROZEN",
+  "selected_questions": 640,
+  "selection": "First 640 input-only capacity-qualified unexposed groups in fixed random pool; no resampling if insufficient",
+  "shock": "Four U and four V episodes, PCG64 assignment permutation; constant within I/C/S episode; I evaluated at G0",
+  "static_max_tokens": 7168,
+  "status": "FROZEN_INPUT_ONLY",
+  "task": "HotpotQA distractor train"
+}

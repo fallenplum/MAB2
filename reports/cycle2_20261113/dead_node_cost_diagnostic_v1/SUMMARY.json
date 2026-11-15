@@ -1,0 +1,26 @@
+{
+  "status": "COMPLETE_COST_ONLY_EXPOSED_DIAGNOSTIC",
+  "observations": 192,
+  "questions": 96,
+  "generation_seeds": 2,
+  "condition": "G1 minus affected direct edge; Q_FULL receiver",
+  "dead_nodes_per_condition": 1,
+  "original_calls_per_condition": 4,
+  "compiled_calls_per_condition": 3,
+  "cost_sums": {
+    "total_tokens": 696549,
+    "dead_tokens": 170058,
+    "total_kernel": 1702.562993019103,
+    "dead_kernel": 575.748379295349
+  },
+  "potential_token_fraction_saved": 0.24414362808646628,
+  "potential_kernel_fraction_saved": 0.3381656841221434,
+  "no_claim_of_measured_compiled_latency": true,
+  "new_GPU_hours": 0,
+  "new_model_calls": 0,
+  "labels_read": false,
+  "quality_improvement_from_compiler": false,
+  "interpretation": "Request/graph-level redundant call; exact output preservation requires node-seed and side-effect-free backend assumptions. Same compiler must serve every policy. Does not rescue formal4.",
+  "source_sha256": "c9857f77bed753fd3e59ac4f1362bdec1983286eccb2ed7e9352711f9d6f07c2",
+  "archive_manifest_sha256": "6873e0b42c8170c861151d007fc3150450552de61ed78e0c1409a2e41bc81338"
+}

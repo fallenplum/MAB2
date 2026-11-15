@@ -1,0 +1,14 @@
+{
+  "actual_GPU_hours": 0.0661232537121719,
+  "actual_regeneration_checks": 320,
+  "benchmark_labels_read": false,
+  "logical_calls": 124,
+  "operator_source_sha256": "9a0599425fe84d5d430a36d5c1279a9c30db02da596daec09a604edae03a5027",
+  "physical_calls": 57,
+  "plan_sha256": "581c9d1d9c5c6ee490b81d201f1d791a3ae8dee675db348300cf9ee97a9b87e3",
+  "replay_checks": 1148,
+  "replay_receipt_sha256": "8c61ea1467a84ba6eccf8df168d9c95232f1a9c236010e674e025038e4efe4d2",
+  "scientific_admission": false,
+  "status": "ACCEPTED_ENGINEERING_ONLY",
+  "unit_tests": 7
+}
