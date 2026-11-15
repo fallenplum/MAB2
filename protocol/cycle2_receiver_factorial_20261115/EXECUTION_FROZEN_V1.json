@@ -1,0 +1,43 @@
+{
+  "GPU_indices": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "blind_cost_multiplier": 1.5,
+  "blind_prefix_questions": 8,
+  "confidence_intervals": false,
+  "engineering_acceptance_sha256": "f4cfc23c661fd0c303d6921bfeae52b842b7f8e49bdda9ba0cc1de237461a0ad",
+  "exposure_count_clarification": "Contract 2480 denotes prior groups matching this Hotpot source; global exposure union has 7953 groups including other tasks. Selection excludes the complete union, not only 2480. No relaxation or new quality information.",
+  "formal_round_if_started": 4,
+  "full_logical_calls": 20928,
+  "generation_seeds": [
+    26111541,
+    26111542
+  ],
+  "global_exposure_union_groups": 7953,
+  "global_used_GPU_hours": 48.97751857975078,
+  "labels_read": false,
+  "max_fresh_calls": 7104,
+  "plan_sha256": "061f14f0adb87793229c6ef0713359c7a3a8ac164d5d7661c0547170313c8ce3",
+  "qualification_already_charged": 0.06528831498445167,
+  "questions": 96,
+  "reserved_GPU_hours": 7.75,
+  "scientific_contract_sha256": "ad3828c2af569390628a3542b2c92e7f16df583c7f7ef0a03fd958e9213d4e61",
+  "selected_intersection_with_exposure_union": 0,
+  "selection_manifest_sha256": "abfde84ad224be914371748dac264e4c2539c4bf1913266794f7d4786f32e086",
+  "source_sha256": {
+    "durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "factorial_operator.py": "f4fb07889c0ed1e05d9603db7bfc1b68519fd800464a428b713445008a1b20ad",
+    "factorial_runtime_v1.py": "47d5d8df1bf9d39c9f3ba485d7aa00e5712f72648517accf7fb43cddc04c7f75",
+    "graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "graph_credit/backend.py": "284cfd5acc8c970b7525e498174466e4662bfe1b35a1235ae230bdf2e7e0e2ed",
+    "graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1"
+  },
+  "status": "ROOT_ADMITTED_BEFORE_FIRST_FORMAL_CALL",
+  "terminal_conditions": 5568,
+  "unique_rng_streams": 768,
+  "worker_cap_seconds": 6750
+}
