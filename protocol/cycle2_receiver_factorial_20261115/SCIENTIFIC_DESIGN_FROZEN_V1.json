@@ -1,0 +1,97 @@
+{
+  "bootstrap_runs": 0,
+  "budget": {
+    "candidate_total_GPU_hours": 8,
+    "formal_reservation_GPU_hours": 7.75,
+    "formal_round_if_started": 4,
+    "formal_round_limit": 5,
+    "global_GPU_hours": 160
+  },
+  "candidate": "C2_FORMAL4_RECEIVER_MODEL_ACCESS",
+  "capacity": {
+    "dynamic_max": 8192,
+    "final_max_new": 256,
+    "intermediate_max_new": 128,
+    "overflow": "Stop fixed attempt, no replacement or silent retry",
+    "static_max": 7168
+  },
+  "cost": "All U/V/R/M calls counted for every logical service even when measurement cache reuses; GPU residency charged once including loading/failures; feedback/init not yet evaluated",
+  "engineering_acceptance_sha256": "f4cfc23c661fd0c303d6921bfeae52b842b7f8e49bdda9ba0cc1de237461a0ad",
+  "fixed_nominee": "G1__Q_FULL",
+  "gate_conjunction": {
+    "complete_logical_cost_vs_independent3_Q": "token ratio <=0.85 AND GPU kernel ratio <=0.90",
+    "credit_Q_FULL": "D >=0.05, both seeds >0, >=20 nonzero question-mean D",
+    "independent3_Q": "mean >= -0.01, each seed >= -0.03",
+    "single_Q": "mean >= +0.02, both seeds > 0, >=20 nonzero question-mean contrasts",
+    "vote_Q3": "mean >= +0.02, both seeds >0"
+  },
+  "gates_are": "Prospective empirical development filters; not significance, population noninferiority, or proof of method benefit",
+  "hypotheses": [
+    "Holding all upstream messages fixed, final raw-context access changes quality and credit shift.",
+    "Holding upstream messages and access fixed, receiver Q versus M changes quality.",
+    "A fixed nominated graph can retain useful differential credit while matching a costlier independent aggregation and beating cheap controls."
+  ],
+  "no_CI": true,
+  "population": {
+    "dataset": "HotpotQA distractor train",
+    "input_pool_size": 512,
+    "known_exposed_groups_excluded": 2480,
+    "n_questions": 96,
+    "official_test": "SEALED",
+    "selection": "First 96 unexposed groups in original fixed pool order passing all seven static capacities; no pool expansion",
+    "unknown_cross_project_or_pretraining_exposure": "UNKNOWN"
+  },
+  "primary_measure": "Official normalized exact match, paired question and seed decomposition",
+  "purpose": "Foundation/operator diagnosis for graph-conditional credit, not an innovative predictor or validated online policy",
+  "release": "No gold before fixed complete archive, actual cost closure, exact CPU replay and hash-bound root label release; all selected data becomes development after scoring",
+  "secondary": "Other cells, factorial interactions, corrections/breakages, F1, per-seed quality and all full costs; no substitute winner",
+  "seeds": {
+    "generation": [
+      26111541,
+      26111542
+    ],
+    "original_sampling": 261113111,
+    "shock": 261115401
+  },
+  "source_sha256": {
+    "evaluate_factorial.py": "1ebcf261f34237fbc9bada45a461a23d335f2cdab02ef247e0f6afeb029af266",
+    "extract_factorial_labels.py": "e4cd5f7843dee658357c1d234e19a4d132750b23dab2623afa5af726d972c572",
+    "factorial_operator.py": "f4fb07889c0ed1e05d9603db7bfc1b68519fd800464a428b713445008a1b20ad",
+    "factorial_runtime_v1.py": "47d5d8df1bf9d39c9f3ba485d7aa00e5712f72648517accf7fb43cddc04c7f75",
+    "factorial_selection.py": "1aa94114231bccdc76aa64a8fb9adcbd29c0cc0e8258ce56bf2d745a2cc0f433",
+    "factorial_statistics.py": "9fba9a4b5ded7dd9b6e8dd4cc3e6a83bf325a2cf974f29e08a941f53953f2e2a",
+    "replay_factorial_archive.py": "735f73ae356eb6bc0b1991fa296cfcb80265d727a1cf9e9ca7ceab0a1871b31b",
+    "test_factorial_evaluate.py": "401af5fcc1ecb9ef817f84c65b16dff70d23ca8a3f9f492b782954bfd1d44617",
+    "test_factorial_operator.py": "2db9668313a19d7a0666e9e20d6fb7dfaf270a78a0872edff3ff11485339d246",
+    "test_factorial_statistics.py": "6c2caafa6ec3172393c9e0cc60d137757ec7e8343993f81e3524233a66719d3f"
+  },
+  "status": "FROZEN",
+  "stopping": "Candidate failure ends nominee; outer loop continues within project limits. No old metric or old exposure changes.",
+  "treatments": {
+    "baselines": [
+      "SINGLE_Q",
+      "SINGLE_M",
+      "INDEPENDENT3_M",
+      "INDEPENDENT3_Q",
+      "VOTE_Q3"
+    ],
+    "final_raw_access": [
+      false,
+      true
+    ],
+    "graph_conditions": [
+      "G0",
+      "G0_MINUS_EU",
+      "G0_MINUS_EV",
+      "G1",
+      "G1_MINUS_EU",
+      "G1_MINUS_EV"
+    ],
+    "receiver": [
+      "Mistral-7B-Instruct-v0.3",
+      "Qwen2.5-3B-Instruct"
+    ],
+    "upstream": "Identical Q/Q/M source and relay requests shared across four cells",
+    "vote": "Three Q full-context short-answer samples, normalized plurality, M/U/V tie order, raw selected text"
+  }
+}

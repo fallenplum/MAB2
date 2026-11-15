@@ -1,0 +1,10 @@
+{
+  "labels_read": false,
+  "model_calls_before_fix": 0,
+  "new_formal_round": false,
+  "new_selector_sha256": "3d8773b348eeb72747bfc7bf4091d0f957db1ab95e575929adcc65407ad74aeb",
+  "old_selector_sha256": "1aa94114231bccdc76aa64a8fb9adcbd29c0cc0e8258ce56bf2d745a2cc0f433",
+  "reason": "Runtime input pin includes trailing newline; selector v1 manifest omitted it. Detected by source review before any formal model call. V1 retained; V2 repeats CPU-only selection with identical scientific ordering and criteria. Helper source hashes now checked explicitly.",
+  "scientific_contract_sha256": "ad3828c2af569390628a3542b2c92e7f16df583c7f7ef0a03fd958e9213d4e61",
+  "status": "PREFORMAL_ENGINEERING_CORRECTION"
+}
