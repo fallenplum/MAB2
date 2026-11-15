@@ -1,0 +1,6780 @@
+{
+  "status": "COMPLETE_POSTHOC_MIXTURE_DIAGNOSTIC",
+  "summary": [
+    {
+      "condition": "change",
+      "method": "graph_mixture_EVSI",
+      "mean_gain": 0.0,
+      "mean_pairs": 16.375,
+      "episode_points": [
+        0.0,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        -0.16666666666666666,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "no_graph_mixture_EVSI",
+      "mean_gain": -0.041666666666666664,
+      "mean_pairs": 22.225,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        -0.16666666666666666,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "valid_EVSI",
+      "mean_gain": 0.0625,
+      "mean_pairs": 2.75,
+      "episode_points": [
+        0.0,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.0,
+        0.0,
+        0.0,
+        0.16666666666666666,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "fresh_EVSI",
+      "mean_gain": -0.016666666666666666,
+      "mean_pairs": 20.625,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.13333333333333333,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "graph_mixture_variance",
+      "mean_gain": 0.0,
+      "mean_pairs": 24.0,
+      "episode_points": [
+        0.0,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        -0.16666666666666666,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "graph_mixture_random",
+      "mean_gain": 0.008333333333333333,
+      "mean_pairs": 24.0,
+      "episode_points": [
+        0.0,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        -0.1,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "stale",
+      "mean_gain": -0.041666666666666664,
+      "mean_pairs": 0.0,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        -0.16666666666666666,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "protect_dirty",
+      "mean_gain": 0.020833333333333332,
+      "mean_pairs": 0.0,
+      "episode_points": [
+        0.0,
+        0.16666666666666666,
+        0.16666666666666666,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "change",
+      "method": "stay",
+      "mean_gain": 0.0,
+      "mean_pairs": 0.0,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "graph_mixture_EVSI",
+      "mean_gain": 0.0375,
+      "mean_pairs": 11.575,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.03333333333333333
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "no_graph_mixture_EVSI",
+      "mean_gain": -0.029166666666666664,
+      "mean_pairs": 21.275,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        -0.06666666666666667
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "valid_EVSI",
+      "mean_gain": 0.041666666666666664,
+      "mean_pairs": 2.725,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "fresh_EVSI",
+      "mean_gain": -0.008333333333333333,
+      "mean_pairs": 21.425,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.06666666666666667
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "graph_mixture_variance",
+      "mean_gain": -0.029166666666666664,
+      "mean_pairs": 24.0,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        -0.06666666666666667
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "graph_mixture_random",
+      "mean_gain": 0.0041666666666666675,
+      "mean_pairs": 24.0,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.26666666666666666,
+        0.0,
+        0.0,
+        0.0,
+        -0.13333333333333333,
+        -0.1
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "stale",
+      "mean_gain": -0.020833333333333332,
+      "mean_pairs": 0.0,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        0.0
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "protect_dirty",
+      "mean_gain": -0.020833333333333332,
+      "mean_pairs": 0.0,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.16666666666666666,
+        0.0
+      ]
+    },
+    {
+      "condition": "no_change",
+      "method": "stay",
+      "mean_gain": 0.0,
+      "mean_pairs": 0.0,
+      "episode_points": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 10,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 17,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": 1,
+      "pairs": 8,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 19,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": 4,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 10,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": 4,
+      "pairs": 16,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 17,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": 1,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": 1,
+      "pairs": 8,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 15,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 21,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 22,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 19,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 15,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 19,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 4,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 0,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 3,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 3,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 3,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 3,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 3,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 1,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 1,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 16,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 2,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 13,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 13,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 13,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 13,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 13,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 2,
+      "pairs": 6,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.3333333333333333
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 1,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 2,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 15,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": 2,
+      "pairs": 9,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 11,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": 2,
+      "pairs": 9,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 12,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 15,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": 2,
+      "pairs": 9,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": 2,
+      "pairs": 9,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 12,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": 5,
+      "pairs": 12,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 5,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 3,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 17,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 22,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 17,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 22,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 22,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 20,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 16,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 14,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 4,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 14,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": 4,
+      "pairs": 5,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": 4,
+      "pairs": 5,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 4,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": 4,
+      "pairs": 5,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 14,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": 4,
+      "pairs": 23,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 4,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 5,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 1,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 12,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 12,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 20,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 19,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 4,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 20,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 7,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 3,
+      "pairs": 3,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 21,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 5,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 18,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": 5,
+      "pairs": 13,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": 5,
+      "pairs": 6,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": 2,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 5,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": 2,
+      "pairs": 0,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 6,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 19,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 21,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 20,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 19,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 23,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115601,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115602,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "no_graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 22,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "fresh_EVSI",
+      "action": 3,
+      "pairs": 22,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_variance",
+      "action": 3,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "graph_mixture_random",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115603,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 10,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "no_graph_mixture_EVSI",
+      "action": 3,
+      "pairs": 10,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "fresh_EVSI",
+      "action": 3,
+      "pairs": 10,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_variance",
+      "action": 3,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115604,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_EVSI",
+      "action": null,
+      "pairs": 18,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "no_graph_mixture_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "valid_EVSI",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "fresh_EVSI",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_variance",
+      "action": null,
+      "pairs": 24,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "graph_mixture_random",
+      "action": 3,
+      "pairs": 24,
+      "gain": -0.16666666666666666
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stale",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "protect_dirty",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    },
+    {
+      "episode": 7,
+      "condition": "no_change",
+      "seed": 261115605,
+      "method": "stay",
+      "action": null,
+      "pairs": 0,
+      "gain": 0.0
+    }
+  ],
+  "same_full_cost_cap": false,
+  "hypothetical_penalty_not_measured_cost": true,
+  "new_GPU_hours": 0,
+  "bootstrap_runs": 0,
+  "automatic_admission": false
+}

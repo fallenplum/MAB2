@@ -1,0 +1,14 @@
+{
+  "actual_GPU_hours": 2.2230072743969505,
+  "actual_cost_closed": true,
+  "archive_files_verified": 328,
+  "archive_manifest_sha256": "6873e0b42c8170c861151d007fc3150450552de61ed78e0c1409a2e41bc81338",
+  "archive_status": "COMPLETE_UNSCORED",
+  "complete_questions": 96,
+  "labels_or_quality_read": false,
+  "plan_sha256": "061f14f0adb87793229c6ef0713359c7a3a8ac164d5d7661c0547170313c8ce3",
+  "qualification_recharged": false,
+  "reservation_exceeded": false,
+  "status": "ROOT_REVIEWED_ACTUAL_RESIDENCE_COST",
+  "unix": 1794721960.520157
+}

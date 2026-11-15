@@ -1,0 +1,19 @@
+{
+  "status": "PASS_INDEPENDENT_STDLIB_POINT_ARITHMETIC",
+  "checks": 237,
+  "human_independent_peer_review": false,
+  "GPU_hours": 0,
+  "bootstrap_runs": 0,
+  "gates": {
+    "gain_over_single_Q": false,
+    "gain_over_cheap_Q_vote": false,
+    "independent_aggregation_quality_screen": false,
+    "independent_aggregation_cost_screen": true,
+    "credit_signal_screen": true
+  },
+  "input_sha256": {
+    "private": "ea44507e9f221b2f4619366d4fcf0ee1162ae5d1f953484e0221d986f5a7b5e9",
+    "summary": "dc97561cc2f5c38c21eb960b1bfa8632ec8ff677d1616e1df6791c84b5f9787a",
+    "selection": "abfde84ad224be914371748dac264e4c2539c4bf1913266794f7d4786f32e086"
+  }
+}

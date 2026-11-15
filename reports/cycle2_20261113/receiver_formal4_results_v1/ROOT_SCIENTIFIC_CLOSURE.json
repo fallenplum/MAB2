@@ -1,0 +1,48 @@
+{
+  "action": "DO_NOT_EXPAND_NOMINEE_WITHOUT_NEW_HYPOTHESIS",
+  "actual_GPU_hours": 2.2230072743969505,
+  "archive_manifest_sha256": "6873e0b42c8170c861151d007fc3150450552de61ed78e0c1409a2e41bc81338",
+  "arithmetic_audit_sha256": "2201c3fc7447572c1851f612c6cc70d17250e8d8018abfefad53756f9fd3e28f",
+  "candidate": "C2_FORMAL4_RECEIVER_MODEL_ACCESS",
+  "candidate_GPU_hours_including_qualification": 2.288295589381402,
+  "credit_signal": {
+    "D": 0.10416666666666667,
+    "D_by_seed": [
+      0.14583333333333334,
+      0.0625
+    ],
+    "affected_credit_change_by_seed": [
+      0.08333333333333333,
+      0.041666666666666664
+    ],
+    "nonzero_question_support": 21,
+    "unaffected_credit_change_by_seed": [
+      -0.0625,
+      -0.020833333333333332
+    ]
+  },
+  "gates": {
+    "credit_signal_screen": true,
+    "gain_over_cheap_Q_vote": false,
+    "gain_over_single_Q": false,
+    "independent_aggregation_cost_screen": true,
+    "independent_aggregation_quality_screen": false
+  },
+  "independent_human_review": false,
+  "new_bootstrap": false,
+  "new_confidence_intervals": false,
+  "next_action": "OUTER_LOOP_INFORMATION_BOTTLENECK_AND_DECISION_REVALIDATION",
+  "nominee": "G1__Q_FULL",
+  "official_validation_test_opened": false,
+  "point_arithmetic_checks": 237,
+  "project_status": "ACTIVE",
+  "project_stop": false,
+  "quality_mean": 0.5052083333333334,
+  "replay_field_checks": 180584,
+  "revealed_question_role": "EXPOSED_DEVELOPMENT_NOT_FRESH_CONFIRMATION",
+  "substitute_winner": false,
+  "summary_sha256": "dc97561cc2f5c38c21eb960b1bfa8632ec8ff677d1616e1df6791c84b5f9787a",
+  "thresholds_changed": false,
+  "unix": 1794722283.7607598,
+  "visual_review": "Three panels inspected; axes, all plotted baselines, and seed points legible"
+}

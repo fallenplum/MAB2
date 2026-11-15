@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_BEFORE_THIS_DIAGNOSTIC",
+  "data_role": "All R1 I/C already exposed development; never fresh confirmation",
+  "nominee": "graph_EVSI",
+  "retention_dirty": 0.25,
+  "retention_clean": 1,
+  "categorical_pseudocount": 0.3333333333333333,
+  "fixed_pairs_max": 24,
+  "hypothetical_pair_penalty": 0.05,
+  "fixed_service_horizon": 24,
+  "C_split": "first six acquisition; last six evaluation; no S accessed",
+  "methods": [
+    "graph_EVSI",
+    "no_graph_EVSI",
+    "fresh_EVSI",
+    "variance",
+    "random",
+    "stale",
+    "protect_dirty",
+    "stay"
+  ],
+  "seeds": [
+    261115601,
+    261115602,
+    261115603,
+    261115604,
+    261115605
+  ],
+  "hyperparameter_search": false,
+  "new_GPU": false,
+  "confidence_intervals": false,
+  "formal_admission": false,
+  "input_sha256": "d26c7facb77e4c92e4b5e1da6fb4a6661e2203f1acbe3826a18f1db3b23f6998"
+}

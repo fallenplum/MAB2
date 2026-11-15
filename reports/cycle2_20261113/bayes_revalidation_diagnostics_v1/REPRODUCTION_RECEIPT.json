@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "diagnostic": "fractional_prior",
+      "exact_result_match": true,
+      "result_sha256": "25be2d3d983ed811186a44371922ba1d5713fcea262e985ff6110c3035670197"
+    },
+    {
+      "diagnostic": "validity_mixture",
+      "exact_result_match": true,
+      "result_sha256": "8480a8412382a60a2198e0081f5b8793b1bb1d70eed55d29912b6a1fbb77b04b"
+    }
+  ],
+  "new_GPU_hours": 0,
+  "same_exposed_data_not_independent_confirmation": true
+}
