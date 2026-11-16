@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETE_INPUT_ONLY_LONG_CONTEXT_AUDIT",
+  "records": 503,
+  "groups": 447,
+  "domain_coverage": {
+    "Long In-context Learning": {
+      "total": 81,
+      "eligible": 0
+    },
+    "Single-Document QA": {
+      "total": 175,
+      "eligible": 46
+    },
+    "Multi-Document QA": {
+      "total": 125,
+      "eligible": 24
+    },
+    "Long-dialogue History Understanding": {
+      "total": 39,
+      "eligible": 0
+    },
+    "Code Repository Understanding": {
+      "total": 50,
+      "eligible": 0
+    },
+    "Long Structured Data Understanding": {
+      "total": 33,
+      "eligible": 0
+    }
+  },
+  "eligible_distinct_groups": {
+    "single": 44,
+    "multi": 23
+  },
+  "mixed_domain_groups_excluded": 0,
+  "eligible_pilot_question_count": 0,
+  "feasible": false,
+  "official_raw_sha256": "15d61c22d92c96900b3c4948b6aeea218d3214b676a65df48e7b8555604c7fe2",
+  "metadata_sha256": "fd1f8340c331c0dc7fd8ceaea8ad2c5f01ce3950ecdfbd825b4db0c3c69aa6fb",
+  "vault_sha256": "520f9a52ede4077809e13dedd7c9b1659d88d23c2bdccfa9d13990fe98d5d7eb",
+  "answers_displayed": false,
+  "answer_values_used_for_selection": false,
+  "new_model_calls": 0,
+  "new_GPU_hours": 0,
+  "cpu_wall_seconds": 23.198386299947742,
+  "source_sha256": "e2159ef79f6d7a9202553054fe91f1593110129033858aa768369a9ab9663920"
+}

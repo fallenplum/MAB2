@@ -1,0 +1,3 @@
+corpus,split,unit,min_groups,labels_used
+Qasper,original_train,paper,96,false
+LongBench_v2,single_document_reserved,context,32,false
