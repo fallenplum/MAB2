@@ -1,0 +1,91 @@
+{
+  "status": "INPUT_ONLY_SELECTIVE_NOTE_PLAN_NO_NEW_INFERENCE",
+  "unix": 1794836290.5071235,
+  "tasks": [
+    "hotpot",
+    "2wiki"
+  ],
+  "questions_per_task": 96,
+  "seeds": [
+    26111671,
+    26111672
+  ],
+  "variants": {
+    "G1_SELECTIVE": [
+      "G1",
+      "selective"
+    ],
+    "G1_RANDOM_MATCH": [
+      "G1",
+      "random"
+    ],
+    "FLAT_SELECTIVE": [
+      "FLAT_ANNOTATION",
+      "selective"
+    ],
+    "INDEPENDENT_SELECTIVE": [
+      "INDEPENDENT3_Q",
+      "selective"
+    ]
+  },
+  "logical_terminal_entries": 1536,
+  "new_unique_requests": 669,
+  "counts": {
+    "hotpot/G1_SELECTIVE": {
+      "entries": 192,
+      "cache_hits": 102,
+      "removed_notes": 196
+    },
+    "hotpot/G1_RANDOM_MATCH": {
+      "entries": 192,
+      "cache_hits": 104,
+      "removed_notes": 196
+    },
+    "hotpot/FLAT_SELECTIVE": {
+      "entries": 192,
+      "cache_hits": 54,
+      "removed_notes": 193
+    },
+    "hotpot/INDEPENDENT_SELECTIVE": {
+      "entries": 192,
+      "cache_hits": 155,
+      "removed_notes": 38
+    },
+    "2wiki/G1_SELECTIVE": {
+      "entries": 192,
+      "cache_hits": 72,
+      "removed_notes": 377
+    },
+    "2wiki/G1_RANDOM_MATCH": {
+      "entries": 192,
+      "cache_hits": 82,
+      "removed_notes": 377
+    },
+    "2wiki/FLAT_SELECTIVE": {
+      "entries": 192,
+      "cache_hits": 51,
+      "removed_notes": 360
+    },
+    "2wiki/INDEPENDENT_SELECTIVE": {
+      "entries": 192,
+      "cache_hits": 106,
+      "removed_notes": 118
+    }
+  },
+  "generation_equivalence_fields": [
+    "question_fingerprint",
+    "node",
+    "model",
+    "model_identity_sha256",
+    "messages",
+    "seed",
+    "max_new_tokens",
+    "config"
+  ],
+  "source_sha256": "fc21a75cfd3591c4c8d3c0e78bf9a2f3960015814e156cf5e6acdc7cb7d893d4",
+  "abstention_source_sha256": "c4a847649463579e1def2bb208f47a64a3534999aaa573e5fb0b07c36f4166e0",
+  "requests_sha256": "65913d7252189bcf7b2d6c31ed1c2d1b63106e633141b79ee9b5f5916284d9aa",
+  "entries_sha256": "3b922144e6cd64a0a82c9184b5b62d5e15cbef17138e66a3f83e4e2f0080e3ee",
+  "uses_gold_for_selection": false,
+  "new_GPU_calls": 0
+}
