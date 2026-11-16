@@ -1,0 +1,11 @@
+{
+  "status": "PASS_ARTIFICIAL_SCALAR_AUDIT_AND_CORRUPTION_REJECTION",
+  "tables": 21,
+  "scalar_checks": 2625,
+  "corruptions_rejected": 63,
+  "new_GPU_calls": 0,
+  "unix": 1794833552.0816014,
+  "source_sha256": "dfe350393876558f5b191b29aa61b5b7dce08c287a95842ef1186172cef3dc16",
+  "test_sha256": "46c315ecd1db0566f656160c408abfc304c1ae98f6cd41cad070014b8a6bd0f6",
+  "benchmark_quality_read": false
+}
