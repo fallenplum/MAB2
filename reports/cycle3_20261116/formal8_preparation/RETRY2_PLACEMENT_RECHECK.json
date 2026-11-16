@@ -1,0 +1,18 @@
+{
+  "status": "RESOURCE_PLACEMENT_ONLY_BEFORE_ANY_RETRY_CALL",
+  "previous_gpus": [
+    2,
+    5
+  ],
+  "new_gpus": [
+    1,
+    3
+  ],
+  "previous_plan_sha256": "1406781aa19b07d0fc85c945528905ceaec9119f8200437081c450134697818d",
+  "plan_sha256": "b6733274119023397a4578a0e58033ecf9c4b408e8fc835140d22491c86edbff",
+  "deployment_probe_sha256": "76bf398e97d76f36c22f5878cb8294988c0f94f44c1efbb92c0d85520345b6cf",
+  "scientific_fields_unchanged": true,
+  "minimum_free_MiB": 35000,
+  "previous_placement_started": false,
+  "reason": "Fresh prelaunch probe finds2/5 acquired by other jobs;1/3 remain above qualified memory threshold; no other process changed"
+}
