@@ -1,0 +1,10 @@
+{
+  "project_status": "ACTIVE",
+  "stage": "D15_NEGATIVE_D16_CROSSED_RNG_PREPARING",
+  "unix": 1794839165.4238238,
+  "used_GPU_hours": 88.90976747201256,
+  "reserved_GPU_hours": 0,
+  "D15": "NEGATIVE_BOTH_TASKS",
+  "D16": "PROTOCOL_PREPARED_NOT_ADMITTED",
+  "next_action": "Prepare input-only crossed seed requests, freeze scorer/runtime, reserve <=2GPUh, execute and audit. All prior failures retained."
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_SCALAR_FACTORIAL_AUDIT",
+  "numeric_checks": 18640,
+  "logical_raw_outcomes": 6144,
+  "shared_official_normalizer": true,
+  "summary_sha256": "29641649546538d73329af088955dd8eb0eb36215b8dd90fd899ce275dacff4e",
+  "source_sha256": "7c77b9620e51d97a76e427f2e040cf6392ec4e287886c7ef108ca3af021e951d"
+}

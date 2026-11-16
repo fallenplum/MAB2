@@ -1,0 +1,12 @@
+{
+  "project_status": "ACTIVE",
+  "stage": "D15_STAR_FACTORIAL_RUNNING_UNSCORED",
+  "unix": 1794838591.927549,
+  "expected_new_requests": 2181,
+  "logical_outcomes": 6144,
+  "actual_prior_GPU_hours": 88.60054736724089,
+  "reserved_GPU_hours": 2,
+  "execution_plan_sha256": "d508285fdc85bdf64a3e0a55f01f73e1ceb8aee9b4c736aa9652b067da84e0e3",
+  "next_action": "Monitor full completion; sync hashes; close cost; audit execution; score frozen D15; scalar raw audit; continue outer loop.",
+  "prior_D14_nominee": "NEGATIVE_UNCHANGED"
+}

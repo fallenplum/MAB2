@@ -1,0 +1,11 @@
+{
+  "status": "PASS_COMPLETE_TERMINAL_EXECUTION",
+  "requests": 2181,
+  "actual_GPU_hours": 0.3092201047716662,
+  "physical_tokens": 2973831,
+  "peak_allocated_bytes": 7641689088,
+  "exact_qualification_matches": 0,
+  "archive_sha256": "99d826256815642e73cc44d93c40fa3194e2592d87e100c9e736305d7ef01108",
+  "plan_sha256": "d508285fdc85bdf64a3e0a55f01f73e1ceb8aee9b4c736aa9652b067da84e0e3",
+  "quality_scored": false
+}

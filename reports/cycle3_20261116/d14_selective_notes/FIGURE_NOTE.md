@@ -1,0 +1,1 @@
+Each point averages96 shared question groups and two generation seeds. No confidence intervals. Logical service tokens retain every original producer, including filtered notes; added physical collection cost is separate in the cost JSON. G1_SELECTIVE failed the frozen D14 gates. The improved independent baseline is an exploratory observation, not independent confirmation.

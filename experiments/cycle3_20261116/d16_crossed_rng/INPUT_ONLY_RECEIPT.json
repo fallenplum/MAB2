@@ -1,0 +1,21 @@
+{
+  "status": "INPUT_ONLY_CROSSED_RNG_NO_LABELS",
+  "logical_outcomes": 12288,
+  "unique_new_requests": 6694,
+  "cache_entries": 3687,
+  "questions_per_task": 96,
+  "tasks": 2,
+  "source_seeds": [
+    26111671,
+    26111672
+  ],
+  "terminal_seeds": [
+    26111671,
+    26111672,
+    261116161,
+    261116162
+  ],
+  "entries_sha256": "88eba0492d42f2b073280c92811ba2898fe5a8c1f41d998f5ad8bc3ac6388f48",
+  "requests_sha256": "af90595aeae09810e096fa0129c0d6c40c7f0538997c89e6b41c587a10787718",
+  "source_sha256": "1aea2c3947116836a53c21fb9b915016e6b17e20012591e746f50cdbb2178dbe"
+}

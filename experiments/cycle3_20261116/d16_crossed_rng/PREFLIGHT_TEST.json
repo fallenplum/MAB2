@@ -1,0 +1,14 @@
+{
+  "status": "PASS_CROSSED_RNG_CPU_PREFLIGHT",
+  "credit_tensor_shape": [
+    96,
+    2,
+    4,
+    2
+  ],
+  "zero_variance_correlation_undefined": true,
+  "SS_identity_verified": true,
+  "interaction_detected_in_artificial_table": true,
+  "worker_supervisor_identical_to_qualified_backend": true,
+  "new_model_calls": 0
+}

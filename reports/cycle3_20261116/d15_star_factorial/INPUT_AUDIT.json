@@ -1,0 +1,9 @@
+{
+  "status": "PASS_INDEPENDENT_STAR_INPUT_AND_CACHE_AUDIT",
+  "logical_entries": 6144,
+  "cache_entries": 2013,
+  "unique_new_requests": 2181,
+  "producer_cost_charged_before_filter": true,
+  "gold_used": false,
+  "source_sha256": "4732482476ab3657d744e614f360fbbe8c43d7f68f629d9c61bb3bba9caa76cd"
+}

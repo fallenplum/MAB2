@@ -1,0 +1,13 @@
+cell,task,role,conditions,unit,metric,threshold,artifact
+hotpot_terminal_half_current_correlation,hotpot,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,terminal_half_current_correlation,>=0.30,D16 SUMMARY.json plus independent audit
+hotpot_terminal_half_shift_correlation,hotpot,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,terminal_half_shift_correlation,>=0.20,D16 SUMMARY.json plus independent audit
+hotpot_source_half_current_correlation,hotpot,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,source_half_current_correlation,>=0.30,D16 SUMMARY.json plus independent audit
+hotpot_source_half_shift_correlation,hotpot,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,source_half_shift_correlation,>=0.20,D16 SUMMARY.json plus independent audit
+hotpot_transfer_oracle_utility_gain,hotpot,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,transfer_oracle_utility_gain,mean>=0.005 and both directions>0,D16 SUMMARY.json plus independent audit
+hotpot_ANOVA_decomposition,hotpot,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,ANOVA_decomposition,sum components=within-grid SS,D16 SUMMARY.json plus independent audit
+2wiki_terminal_half_current_correlation,2wiki,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,terminal_half_current_correlation,>=0.30,D16 SUMMARY.json plus independent audit
+2wiki_terminal_half_shift_correlation,2wiki,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,terminal_half_shift_correlation,>=0.20,D16 SUMMARY.json plus independent audit
+2wiki_source_half_current_correlation,2wiki,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,source_half_current_correlation,>=0.30,D16 SUMMARY.json plus independent audit
+2wiki_source_half_shift_correlation,2wiki,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,source_half_shift_correlation,>=0.20,D16 SUMMARY.json plus independent audit
+2wiki_transfer_oracle_utility_gain,2wiki,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,transfer_oracle_utility_gain,mean>=0.005 and both directions>0,D16 SUMMARY.json plus independent audit
+2wiki_ANOVA_decomposition,2wiki,exposed diagnostic,2source x4terminal x8filtered masks,96 independent question groups,ANOVA_decomposition,sum components=within-grid SS,D16 SUMMARY.json plus independent audit

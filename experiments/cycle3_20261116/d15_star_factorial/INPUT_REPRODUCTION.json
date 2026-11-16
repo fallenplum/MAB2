@@ -1,0 +1,8 @@
+{
+  "status": "PASS_PORTABLE_INPUT_REPRODUCTION",
+  "entries_sha256": "f97b6968463189c7a52d80b08c8d6d2580b8aa0ca1798990e48bc6b8e3903b2a",
+  "requests_sha256": "c3fd03b917f9cd17e51be7fdc7370256ffb543047042b62be57a76808329ea85",
+  "portable_planner_sha256": "5f9d29e9a999d0a95eab1ec3c654b746ebe56ce382b422d6b5da68dca51d4527",
+  "original_private_planner_sha256": "6bc71a67adad7c97000f1fb3ef7ac1fcea29f82767560187dee8a583e511d6c3",
+  "new_model_calls": 0
+}
