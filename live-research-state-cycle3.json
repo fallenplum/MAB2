@@ -1,15 +1,14 @@
 {
-  "project_status": "ACTIVE",
-  "formal10": "PILOT_NATIVE_INFERENCE_RUNNING",
-  "formal10_formal_admitted": true,
+  "project_status": "SERVER_EXPERIMENTS_PAUSED_BY_USER",
+  "automatic_server_resume": false,
+  "formal10": "PARTIAL_6_OF_16_USER_PAUSE_NOT_SCIENTIFIC_FAILURE",
+  "formal_candidates_admitted": 10,
   "formal_candidates_started": 10,
   "effective_method": false,
-  "total_closed_GPU_hours": 90.58563198690818,
-  "independent_confirmation_tasks_sealed": 128,
-  "next": "MONITOR_FROZEN_COLLECTION_THEN_CLOSE_COST_AUDIT_RELEASE_PILOT_HIDDEN_TESTS",
-  "formal_candidates_admitted": 10,
-  "workers": 2,
-  "reserved_GPU_hours": 7.500000000000001,
-  "scientific_scores_inspected": false,
-  "actual_current_run_GPU_hours_pending": true
+  "total_closed_GPU_hours": 91.92283282198599,
+  "reserved_GPU_hours": 0,
+  "confirmation_tasks_sealed": 128,
+  "hidden_scoring_released": false,
+  "resident_profile_acceptance_pending": true,
+  "next": "WAIT_FOR_EXPLICIT_SERVER_RESUME; retain completed units and fixed protocol; create a versioned resume plan and reserve remaining budget before restarting"
 }

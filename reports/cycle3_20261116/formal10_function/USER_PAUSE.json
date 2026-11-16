@@ -1,0 +1,22 @@
+{
+  "status": "USER_REQUESTED_SERVER_PAUSE",
+  "server_project_workers_remaining": 0,
+  "automatic_resume": false,
+  "completed_formal_tasks": 6,
+  "planned_formal_tasks": 16,
+  "incomplete_or_unstarted_formal_tasks": 10,
+  "formal_partial_actual_GPU_hours": 1.2005165533230562,
+  "resident_qualification_actual_GPU_hours": 0.13668428175474723,
+  "resident_qualification_status": "COMPLETE_RAW_ARCHIVE_CROSS_PROFILE_AUDIT_PENDING",
+  "resident_profile_accepted": false,
+  "all_archives_hash_verified": true,
+  "total_closed_GPU_hours": 91.92283282198599,
+  "reserved_GPU_hours": 0,
+  "global_cap_GPU_hours": 160,
+  "scientific_hidden_scores_inspected": false,
+  "formal10_scientific_failure_declared": false,
+  "D26_executed": false,
+  "independent_confirmation_tasks_sealed": 128,
+  "unfinished_generation_token_counts": "Some interrupted requests have START without RETURNED; output-token counts are unknown, not zero. All elapsed GPU task residence is charged.",
+  "next": "WAIT_FOR_EXPLICIT_SERVER_RESUME; retain completed units and fixed protocol; create a versioned resume plan and reserve remaining budget before restarting"
+}
