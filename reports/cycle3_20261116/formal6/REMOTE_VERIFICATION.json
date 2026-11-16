@@ -1,0 +1,13 @@
+{
+  "repository": "fallenplum/MAB2",
+  "branch": "research/cycle3-credit-transport-20261116",
+  "status": "MATCH_LOCAL_COMMIT_REMOTE_BLOBS",
+  "verified": {
+    "COST_CLOSURE.json": "7324edd65c51b53307a7bcf96b79b1c34fe89ba7",
+    "CPU_REPLAY.json": "3e9c78d6414802c8a804fe7a06a99ce89cfbcde4",
+    "INDEPENDENT_EXECUTION_AUDIT.json": "f76c4555946a6c41c2445f4a2efc5e6791b3c771",
+    "INDEPENDENT_SCORING_AUDIT.json": "1c48d7f5dfee8fe01fee1aebf71a1ce4b9e17a84",
+    "REPORT.md": "77bcfb882231286b6e7dbaed436eb3626223f74a",
+    "SUMMARY.json": "e43aa86075d41cefada1ce385a7ad29d1921d17a"
+  }
+}

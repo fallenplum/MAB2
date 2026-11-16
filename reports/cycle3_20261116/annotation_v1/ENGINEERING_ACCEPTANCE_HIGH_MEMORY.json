@@ -1,0 +1,14 @@
+{
+  "status": "PASS_ENGINEERING_ONLY",
+  "actual_engineering_GPU_hours": 0.3067202026183562,
+  "replay_sha256": "5050cecefcab33186a524609919fca8a4e744b8f268ebc54d9bf206df0c6fa24",
+  "independent_audit_sha256": "8cb78e21f113db9b8bc711b2167e0ecea5819080f761b7ca2c5b3a30e3d87cfe",
+  "residency_comparison": {
+    "status": "PASS_COMPLETED_TRACE_RESIDENCY_INVARIANCE",
+    "completed_conditions": 44,
+    "field_checks": 1248,
+    "benchmark_labels_read": false
+  },
+  "formal_prepared_not_started": true,
+  "quality_claim": false
+}
