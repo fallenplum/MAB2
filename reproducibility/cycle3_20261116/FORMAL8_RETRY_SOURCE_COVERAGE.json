@@ -1,0 +1,7 @@
+{
+  "status": "PASS_CURRENT_RETRY_ALL_SOURCE_PINS_COVERED",
+  "execution_pins": 22,
+  "source_archive_sha256": "d7c59f316416e25ce25e05492018b50dc18a75e040a1ce2d9659458df1444a27",
+  "private_plan_distributed": false,
+  "experiment_complete": false
+}
