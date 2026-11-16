@@ -6,6 +6,7 @@ def read(p):return json.loads(Path(p).read_bytes())
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def main():
  p=argparse.ArgumentParser();p.add_argument('--archive',required=True);p.add_argument('--scores',required=True);p.add_argument('--scorer',required=True);p.add_argument('--out',required=True);a=p.parse_args();root=Path(a.archive);scores=Path(a.scores);out=Path(a.out);summary=read(scores/'SUMMARY.json');assert summary['status']=='STOP_FORMAL10_APPLICABILITY_ROUTE','Conditional diagnostic only after preserved failure'
+ assert sha(a.scorer)==summary['source_sha256'],'Parent cost source changed'
  spec=importlib.util.spec_from_file_location('fixed_service_cost',a.scorer);mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
  table=read(scores/'PRIVATE_DECISION_TABLE.json')['records'];index={(r['question'],r['seed'],r['condition']):r for r in table};arms=['G1','G1_MINUS_EU','G1_MINUS_EV'];records=[];choices=[]
  for f in sorted(root.glob('worker_*/unit_*/MATRIX.json')):
@@ -18,6 +19,10 @@ def main():
      rows=[raw[arm]] if frontier=='FREE_PRESELECTION_ORACLE' or arm=='G1' else [raw['G1'],raw[arm]];c=mod.cost(rows);z=index[(q,seed,arm)];u=z['quality']-c['tokens']/200000-c['visible_execution_seconds']/10000;candidates.append(dict(question=q,seed=seed,frontier=frontier,arm=arm,quality=z['quality'],utility=u,order=i,**c))
     winner=max(candidates,key=lambda z:(z['utility'],-z['order']));records.append(winner);choices.extend(candidates)
  assert len(records)==96
+ bounds={(z['question'],z['seed'],z['frontier']):z['utility'] for z in records}
+ assert len(bounds)==96
+ for q,s,frontier in bounds:
+  assert bounds[(q,s,'FREE_PRESELECTION_ORACLE')]+1e-12>=bounds[(q,s,'G1_OBSERVED_ORACLE')],'Nested oracle bound violated'
  results={}
  for frontier in ['G1_OBSERVED_ORACLE','FREE_PRESELECTION_ORACLE']:
   rs=[z for z in records if z['frontier']==frontier];comparisons={}

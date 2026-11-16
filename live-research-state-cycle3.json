@@ -1,14 +1,15 @@
 {
   "project_status": "ACTIVE",
-  "formal10": "PILOT_RUNNING_LOADING_AND_INFERENCE",
+  "formal10": "PILOT_NATIVE_INFERENCE_RUNNING",
   "formal10_formal_admitted": true,
-  "formal_candidates_started": 9,
+  "formal_candidates_started": 10,
   "effective_method": false,
   "total_closed_GPU_hours": 90.58563198690818,
   "independent_confirmation_tasks_sealed": 128,
   "next": "MONITOR_FROZEN_COLLECTION_THEN_CLOSE_COST_AUDIT_RELEASE_PILOT_HIDDEN_TESTS",
   "formal_candidates_admitted": 10,
   "workers": 2,
-  "reserved_GPU_hours": 7.5,
-  "scientific_scores_inspected": false
+  "reserved_GPU_hours": 7.500000000000001,
+  "scientific_scores_inspected": false,
+  "actual_current_run_GPU_hours_pending": true
 }
