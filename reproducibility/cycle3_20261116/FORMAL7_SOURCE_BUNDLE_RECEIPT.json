@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SOURCE_ONLY_ZIP_CRC_AND_ALL_SHA256",
+  "files": 29,
+  "execution_pins": 22,
+  "archive_sha256": "b978d4ef3cef7183e76327af8d6c2f70490119db6b53c960ef92b53f7662402e",
+  "archive_bytes": 90914,
+  "private_inputs_or_outputs_included": false,
+  "credentials_or_host_addresses_detected": false,
+  "byte_exact_line_endings_preserved": true,
+  "execution_reproduction_claim": false
+}

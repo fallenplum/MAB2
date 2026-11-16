@@ -1,0 +1,26 @@
+{
+  "title": "Wrong but Useful: Trajectory Value Beyond Answer Correctness in Multi-Agent Messages",
+  "version": "2608.14375v2",
+  "date": "2026-10-31",
+  "authors": [
+    "Chih-Hsuan Yang",
+    "Anjir Ahmed Chowdhury",
+    "Cheng-Hau Yang",
+    "Weijian Zheng",
+    "Fernando Llorente",
+    "Xiaolong Ma",
+    "Xinyang Li",
+    "Eliu A. Huerta",
+    "Feng Yan",
+    "Ian T. Foster",
+    "Rajeev Thakur"
+  ],
+  "url": "https://arxiv.org/html/2608.14375v2",
+  "doi": "10.48550/arXiv.2608.14375",
+  "venue_status": "arXiv preprint; no acceptance inferred from project naming",
+  "retrieved": "2026-11-16",
+  "discovery": "C3 v4 reference to v1; checked latest arXiv metadata and v2 primary text",
+  "scope": "abstract, method definition, practical predictor discussion, AppendixE budget and AppendixH; not full reproduction",
+  "code_url": "https://github.com/ChihHsuan-Yang/AAAI_Wrong-but-Useful",
+  "source_questions_used_in_MAB2": false
+}

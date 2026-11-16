@@ -6,29 +6,23 @@
   "prior_cycle_stopped_at_cap": true,
   "continuation_authority": "User requested continued autoresearch after five-round closure on 2026-11-16",
   "GPU_total": 160,
-  "GPU_used": 79.46150483125443,
-  "GPU_reserved": 8,
-  "active_stage": "FORMAL7_RUNNING_BLINDED_COLLECTION",
-  "next_action": "Monitor existing formal7; do not relaunch; no labels before complete archive and replay",
+  "GPU_used": 80.15202540584443,
+  "GPU_reserved": 7.415332519352798,
+  "active_stage": "FORMAL7_RETRY_RUNNING_BLINDED_COLLECTION",
+  "next_action": "Observe existing retry; full archive cost closure, exact CPU replay, independent audit and all8 prior prefix comparison before labels",
   "GPU_jobs": [
     {
-      "candidate": "C3_FORMAL7_EVIDENCE_PRESERVING_ANNOTATIONS",
+      "candidate": "C3_FORMAL7_EVIDENCE_PRESERVING_ANNOTATIONS_RETRY2",
       "pids": [
-        1022645,
-        1022646,
-        1022647,
-        1022648
+        1087536
       ],
       "gpus": [
-        0,
-        2,
-        5,
-        7
+        4
       ]
     }
   ],
-  "last_update_unix": 1794818942.5198498,
-  "stage": "FORMAL7_RUNNING_BLINDED_COLLECTION",
+  "last_update_unix": 1794823350.6572254,
+  "stage": "FORMAL7_RETRY_RUNNING_BLINDED_COLLECTION",
   "D6": "NEGATIVE",
   "D7": "NEGATIVE",
   "new_GPU_started": true,
@@ -38,29 +32,34 @@
   ],
   "formal_candidate_rounds_started": 7,
   "completed_questions_at_observation": 0,
-  "watch_exec_session_id": 61723,
-  "formal_private_directory": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\annotation_formal7_v1",
-  "formal_archive_expected": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\annotation_formal7_v1\\monitor\\archive",
-  "post_collection_helper": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_annotation_post.py",
+  "watch_exec_session_id": 7171,
+  "formal_private_directory": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\annotation_formal7_v2",
+  "formal_archive_expected": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\annotation_formal7_v2\\monitor\\archive",
+  "post_collection_helper": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_annotation_retry_post.py",
   "active_operator": "annotation_operator.py",
-  "active_runtime": "annotation_runtime_v3.py",
+  "active_runtime": "annotation_runtime_v4.py",
   "active_evaluator": "evaluate.py",
   "active_replay": "replay_annotation_archive.py",
   "next_steps": [
-    "Observe four workers and blinded cost prefix; no labels before full96-unit closure",
+    "Observe retry and blinded cost prefix; no labels before full96-unit closure; compare all8 previous prefix outputs",
     "Close actual residence cost; verify archive SHA; CPU replay and independent permission/cost audit",
     "Hash-bound label release and fixed-gate scoring; independent raw scoring audit",
     "Preserve outcome, update outer loop, continue within inherited160GPUh cap"
   ],
-  "latest_published_commit": "54ba4e2cf4016848a4c6afe5c40b9bae7d0eaa1b",
+  "latest_published_commit": "f14b86c",
   "no_benchmark_labels_read": false,
   "D8": "COMPLETE_EXPOSED_DIAGNOSTIC",
   "D9": "COMPLETE_EXPOSED_DIAGNOSTIC",
-  "second_dataset": "AUTHOR_TRAIN_INPUT_AUDITED_LABELS_UNOPENED",
+  "second_dataset": "CORRECTED_AUTHOR_TRAIN_INPUT_AUDITED_LABEL_VALUES_NOT_USED",
   "active_raw_scoring_auditor": "audit_raw_scoring.py",
   "replay_async_helper": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_annotation_replay_async.py",
   "Formal6_admission": false,
-  "active_qualification": "annotation_qualification_v2",
+  "active_qualification": "annotation_qualification_v3b",
   "no_current_benchmark_labels_read": true,
-  "D10": "EXPLORATORY_SUPPORT_OMISSION_DIAGNOSTIC"
+  "D10": "EXPLORATORY_SUPPORT_OMISSION_DIAGNOSTIC",
+  "prefix_comparison_helper": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_compare_formal7_prefix.py",
+  "postcollection_exec_session_id": 72467,
+  "postcollection_controller": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_formal7_autopost.py",
+  "postcollection_status": "WAITING_FOR_HASH_VERIFIED_ARCHIVE",
+  "D11": "FROZEN_PENDING_FORMAL7_SCORING"
 }

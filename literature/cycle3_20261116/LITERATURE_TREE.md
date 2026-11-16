@@ -11,3 +11,5 @@ This is a mechanism map, not a claim of exhaustive retrieval. Preserve the histo
 Cycle3 D6 and D7 already reject simple input/prefix-feature transfer routes under their fixed exploratory gates. Formal6 tests a different evidence representation while preserving the project question. Its result is pending and cannot support a final policy, novelty or ACL-readiness claim.
 
 The remaining candidate contribution, if supported, would be a decision-relevant maintenance rule that uses graph-induced evidence changes to spend scarce counterfactual feedback better than free structural rules and standard sampling, with shared execution optimizations and all costs charged. This statement is a falsifiable target, not a result.
+
+- Context-dependent message value: [Wrong but Useful v2](https://arxiv.org/html/2608.14375v2), discovered through C3 backward citation; versioned record and estimand audit retained. No author-code reproduction or venue acceptance claimed.

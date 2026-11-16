@@ -1,0 +1,58 @@
+{
+  "status": "CORRECTED_TRAIN_INPUT_AUDIT_COMPLETE",
+  "source_sha256": "b318dbafbfed51a8029718fa59be8b616600cbff675a3b587694b28c5eedfc13",
+  "source_script_sha256": "c330d06f9f632d3f132cac256f5d7453a122da6db2ac0beaa70b13de4d13930e",
+  "rows": 167454,
+  "unique_question_groups": 167453,
+  "context_document_count_histogram": {
+    "10": 167454
+  },
+  "field_presence_counts": {
+    "_id": 167454,
+    "type": 167454,
+    "question": 167454,
+    "context": 167454,
+    "entity_ids": 167454,
+    "supporting_facts": 167454,
+    "evidences": 167454,
+    "answer": 167454,
+    "evidences_id": 167454,
+    "answer_id": 167454
+  },
+  "supervision_field_types_only": {
+    "answer:str": 167454,
+    "answer_id:NoneType": 88647,
+    "evidences:list": 167454,
+    "evidences_id:list": 167454,
+    "supporting_facts:list": 167454,
+    "answer_id:str": 78807
+  },
+  "context_character_quantiles": {
+    "min": 497.0,
+    "p50": 3005.0,
+    "p90": 5404.0,
+    "max": 31196.0
+  },
+  "prior_mirror_sha256": "a0f464f1604edf40ad990b605c61c03d56911c106d09ad32becf6afcf3201d52",
+  "inputs_identical_to_mirror": 0,
+  "inputs_changed_from_mirror": 167454,
+  "new_ids_vs_mirror": 0,
+  "mirror_ids_absent": 0,
+  "normalized_question_changes_on_shared_ids": 0,
+  "exact_question_overlap_with_known_MAB2_exposures": 0,
+  "exposure_union_sha256": "14fd578f44d45bd3d2a866c67e1860be72d62b7756d031ec2dd1b7ec6cbe104d",
+  "retained_input_fields": [
+    "_id",
+    "question",
+    "context"
+  ],
+  "supervision_values_decoded_transiently_by_JSON_parser": true,
+  "supervision_values_inspected_or_emitted": false,
+  "labels_scored": false,
+  "alias_file_parsed": false,
+  "official_dev_test_members_opened": false,
+  "semantic_overlap": "NOT_ASSESSED",
+  "unknown_cross_project_exposure": "UNKNOWN",
+  "new_GPU_hours": 0,
+  "elapsed_seconds": 33.66566801071167
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS_SYNTHETIC_ANSWER_EM_F1_ALIAS_MAX_CONFORMANCE",
+  "repository": "Alab-NII/2wikimultihop",
+  "commit": "13800e5be57df1b4040b9b1588c6c811779e69e9",
+  "url": "https://raw.githubusercontent.com/Alab-NII/2wikimultihop/13800e5be57df1b4040b9b1588c6c811779e69e9/2wikimultihop_evaluate_v1.1.py",
+  "source_sha256": "7c09ee2ec98c7ecb57df79eb68dba22eb381ab58d50e730dfcefafb4dda31458",
+  "synthetic_cases": 12,
+  "scalar_checks": 24,
+  "official_file_io_executed": false,
+  "benchmark_labels_read": false,
+  "scope": "Answer EM/F1 only; no support/evidence/joint score claim. Preserve full precision internally, presentation may round. Alias set is canonical answer plus official aliases and demonyms by answer_id.",
+  "upstream_code_redistributed": false,
+  "new_GPU_hours": 0
+}

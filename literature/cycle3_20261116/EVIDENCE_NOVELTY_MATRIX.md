@@ -9,3 +9,5 @@
 | Filtered-feedback marginal credit | Variance/cost-aware query allocation | Downstream graph decision value under sparse changing credit | Standard acquisition formula alone cannot support novelty |
 
 Sources and precise reading coverage are in PRIMARY_RECORDS.json and COMMUNICATION_PRIMARY_RECORDS.json. No claim of exhaustive search or author-code reproduction. Engineering success, raw compression, cache equality, or one pilot gate pass must not be presented as an ACL contribution.
+
+Added nearest-work entry: [Wrong but Useful v2](https://arxiv.org/html/2608.14375v2) studies fixed-pool receiver value separately from proposal correctness; its practical selector remains limited. MAB2 must demonstrate graph-evolution maintenance on new questions with complete feedback cost. No policy success is inferred from this paper.

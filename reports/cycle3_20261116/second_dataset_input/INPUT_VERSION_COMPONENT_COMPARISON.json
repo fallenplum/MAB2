@@ -1,0 +1,27 @@
+{
+  "status": "INPUT_VERSION_COMPONENT_COMPARISON_COMPLETE",
+  "records": 167454,
+  "equal_records_by_component": {
+    "question_raw": 167454,
+    "context_raw": 0,
+    "ordered_titles": 0,
+    "context_joined_sentences": 0,
+    "context_whitespace_normalized": 0,
+    "context_whitespace_normalized_unordered": 106590,
+    "sentence_counts": 2465
+  },
+  "changed_records_by_component": {
+    "question_raw": 0,
+    "context_raw": 167454,
+    "ordered_titles": 167454,
+    "context_joined_sentences": 167454,
+    "context_whitespace_normalized": 167454,
+    "context_whitespace_normalized_unordered": 60864,
+    "sentence_counts": 164989
+  },
+  "supervision_used": false,
+  "JSON_record_parser_transiently_decodes_discarded_label_values": true,
+  "content_emitted": false,
+  "new_GPU_calls": 0,
+  "source_sha256": "37530f2c49393d736c55ef7a809f076a1ba5ece08fcf389b4a2180da2b656bbd"
+}

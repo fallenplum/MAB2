@@ -1,0 +1,32 @@
+{
+  "source": "https://www.dropbox.com/s/ms2m13252h6xubs/data_ids_april7.zip?dl=1",
+  "archive_bytes": 258968175,
+  "archive_tail_sha256": "e187a0978f4a18ac9cb701fc9f2566ffa337a7012dfaab6e02dc2862b806bcb0",
+  "started_unix": 1794821708.451757,
+  "status": "SELECTED_AUTHOR_TRAIN_AND_ALIAS_HASHED_UNOPENED",
+  "labels_parsed": false,
+  "dev_test_members_opened": false,
+  "full_archive_downloaded": false,
+  "downloaded": [
+    {
+      "member": "train.json",
+      "bytes": 707810660,
+      "sha256": "b318dbafbfed51a8029718fa59be8b616600cbff675a3b587694b28c5eedfc13",
+      "zip_CRC_verified": true,
+      "validated_prior_partial_bytes": 436207616
+    },
+    {
+      "member": "id_aliases.json",
+      "bytes": 17501406,
+      "sha256": "f08ffcb6c2cefca9bdbe86b4248d6ad7a7743762d3f7264c14ff0bae85726fb6",
+      "zip_CRC_verified": true,
+      "validated_prior_partial_bytes": 0
+    }
+  ],
+  "prior_partial_preserved": true,
+  "finished_unix": 1794822015.9608002,
+  "elapsed_seconds": 307.5090432167053,
+  "successful_range_bytes": 221839918,
+  "retry_failures": 0,
+  "failed_transfer_bytes": "UNKNOWN_NOT_IMPUTED"
+}

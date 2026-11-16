@@ -1,0 +1,162 @@
+{
+  "status": "PASS_ARITHMETIC_RECONCILIATION_ACTUAL_COST_PENDING",
+  "cap_GPU_hours": 160,
+  "closed_actual_GPU_hours": 80.15202540584443,
+  "active_reserved_GPU_hours": 7.415332519352798,
+  "unreserved_remaining_GPU_hours": 72.43264207480277,
+  "prior_cycle_closed_GPU_hours": 76.47691242367074,
+  "formal7_engineering_actual_GPU_hours": 0.3067202026183562,
+  "formal7_formal_actual_closed_GPU_hours": 0.5846674806472018,
+  "formal7_active_reserved_GPU_hours": 7.415332519352798,
+  "formal_candidates_admitted": 7,
+  "formal_candidates_started": 7,
+  "candidate_retry_not_new_scientific_round": true,
+  "old_five_round_cap_scope": "Old five-round cap closed Cycle2; continuation authorized; cumulative160GPUh remains binding",
+  "closed_entries": [
+    {
+      "candidate": "C2_R1_DIRECT_PAIRED_REVALIDATION",
+      "actual_GPU_hours": 14.307773255389378,
+      "reservation_GPU_hours": 24,
+      "status": "DEVELOPMENT_COMPLETE_COST_CLOSED",
+      "qualification_only": null
+    },
+    {
+      "candidate": "C2_HETERO_ENGINEERING_QUALIFICATION",
+      "actual_GPU_hours": 0.11611894417664088,
+      "reservation_GPU_hours": 0.5,
+      "status": "ENGINEERING_QUALIFICATION_COMPLETE_REPLAY_PASS",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C2_INDEPENDENT12_ENGINEERING_QUALIFICATION",
+      "actual_GPU_hours": 0.04500747649555301,
+      "reservation_GPU_hours": 0.5,
+      "status": "ENGINEERING_QUALIFICATION_COMPLETE_ROOT_RECONCILIATION_PASS",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C2_HOTPOT_MATRIX_ENGINEERING_QUALIFICATION",
+      "actual_GPU_hours": 0.1783492729746892,
+      "reservation_GPU_hours": 0.5,
+      "status": "ENGINEERING_CLOSED_ROOT_AND_INDEPENDENT_REVIEW_ACCEPTED",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C2_FORMAL2_HOTPOT_APPLICABILITY",
+      "actual_GPU_hours": 32.57857300557617,
+      "reservation_GPU_hours": 47.8,
+      "status": "FORMAL_RESULT_CLOSED_B_DISFAVORED_L2_INCONCLUSIVE",
+      "qualification_only": null
+    },
+    {
+      "candidate": "C2_PATH_ENGINEERING_QUALIFICATION",
+      "actual_GPU_hours": 0.11696458899163796,
+      "reservation_GPU_hours": 0.25,
+      "status": "COMPLETE_GPU_QUALIFICATION_PENDING_CPU_REPLAY",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C2_FORMAL3_EXOGENOUS_PATH_SCREEN",
+      "actual_GPU_hours": 1.5694437211622587,
+      "reservation_GPU_hours": 7.75,
+      "status": "FORMAL3_MECHANISM_SCREEN_COMPLETE_RETAINED",
+      "qualification_only": null
+    },
+    {
+      "candidate": "C2_RECEIVER_FACTORIAL_ENGINEERING_QUALIFICATION",
+      "actual_GPU_hours": 0.06528831498445167,
+      "reservation_GPU_hours": 0.25,
+      "status": "CLOSED_PENDING_REPLAY",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C2_FORMAL4_RECEIVER_MODEL_ACCESS",
+      "actual_GPU_hours": 2.2230072743969505,
+      "reservation_GPU_hours": 7.75,
+      "status": "FORMAL4_NEGATIVE_QUALITY_CREDIT_SIGNAL_RETAINED",
+      "qualification_only": null
+    },
+    {
+      "candidate": "C2_CLOSURE_ENGINEERING_QUALIFICATION",
+      "actual_GPU_hours": 0.0661232537121719,
+      "reservation_GPU_hours": 0.25,
+      "status": "ENGINEERING_ACCEPTED",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C2_FORMAL5_CLOSURE_AWARE_REVALIDATION",
+      "actual_GPU_hours": 25.21026331581085,
+      "reservation_GPU_hours": 47.75,
+      "status": "SCORED_AUDITED_STOP_FORMAL5_CANDIDATE",
+      "qualification_only": null
+    },
+    {
+      "candidate": "C3_EVIDENCE_INDEXED_ENGINEERING",
+      "actual_GPU_hours": 0.16976051528472452,
+      "reservation_GPU_hours": 0.25,
+      "status": "ENGINEERING_OOM_PARTIAL_RETAINED",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C3_EVIDENCE_ENGINEERING_PLACEMENT_V2",
+      "actual_GPU_hours": 0.03917674276809622,
+      "reservation_GPU_hours": 0.25,
+      "status": "STOPPED_OWN_WORKER_AFTER_PRIOR_FORMAT_DIAGNOSIS",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C3_EVIDENCE_RANK_ENGINEERING_V3",
+      "actual_GPU_hours": 0.07890505556191783,
+      "reservation_GPU_hours": 0.25,
+      "status": "COMPLETE_UNSCORED",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C3_FORMAL6_EVIDENCE_RANK_APPLICABILITY",
+      "actual_GPU_hours": 2.4958829852934126,
+      "reservation_GPU_hours": 7.5,
+      "status": "COMPLETE_UNSCORED",
+      "qualification_only": null
+    },
+    {
+      "candidate": "C3_ANNOTATION_ENGINEERING_V1",
+      "actual_GPU_hours": 0.06139995548557231,
+      "reservation_GPU_hours": 0.25,
+      "status": "ENGINEERING_OOM_PRESERVED",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C3_ANNOTATION_ENGINEERING_V2",
+      "actual_GPU_hours": 0.1394671531899884,
+      "reservation_GPU_hours": 0.25,
+      "status": "COMPLETE_UNSCORED",
+      "qualification_only": true
+    },
+    {
+      "candidate": "C3_FORMAL7_EVIDENCE_PRESERVING_ANNOTATIONS",
+      "actual_GPU_hours": 0.5846674806472018,
+      "reservation_GPU_hours": 8,
+      "status": "PARTIAL_OR_FAILED",
+      "qualification_only": null
+    },
+    {
+      "candidate": "C3_ANNOTATION_ENGINEERING_V3",
+      "actual_GPU_hours": 0.10585309394279546,
+      "reservation_GPU_hours": 0.25,
+      "status": "COMPLETE_UNSCORED",
+      "qualification_only": true
+    }
+  ],
+  "active_entries": [
+    {
+      "candidate": "C3_FORMAL7_EVIDENCE_PRESERVING_ANNOTATIONS_RETRY2",
+      "reserved_GPU_hours": 7.415332519352798,
+      "actual_cost_pending": true,
+      "status": "RETRY_RUNNING_BLINDED_COLLECTION"
+    }
+  ],
+  "live_running_estimates_charged": false,
+  "source_archives_reaudited_here": false,
+  "limitation": "Reconciles ledger arithmetic and unchanged prior-cycle aggregate; archive-level cost evidence remains in each closure receipt. Active reservations are not actual spend.",
+  "ledger_sha256": "39c50822a0764f8976e18b8670536f561a84e7e8a3d2253f68919bd544d6bc78"
+}
