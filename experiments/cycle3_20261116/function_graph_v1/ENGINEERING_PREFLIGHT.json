@@ -1,0 +1,27 @@
+{
+  "status": "CPU_PREFLIGHT_PASS_GPU_QUALIFICATION_PENDING",
+  "operator_unit_tests": 4,
+  "independent_input_checks": 11968,
+  "artificial_sandbox_checks": 11,
+  "function_adapter_cases": 12,
+  "author_comparison_pairs": 196,
+  "qualification_long_question_tokens": 9996,
+  "source_sha256": {
+    "experiments/cycle3_20261116/function_graph_v1/function_operator.py": "1400e381abd153f3e99727b0e83b379cc4d1660f88e35278213b370bb32d6895",
+    "experiments/cycle3_20261116/function_graph_v1/function_backend.py": "d335f9bf0a60aca2cf408200ab9006c471e3f2a68849fa2a61c092454fce7097",
+    "experiments/cycle3_20261116/function_graph_v1/runtime.py": "01dbe8afccad1266b9bd2629dcb68ce27c76740ef3ed43e7a63d035cd527a9c1",
+    "experiments/cycle3_20261116/function_graph_v1/function_adapter.py": "5fab65368f9be088a466f8ec8e874b38388c40bdfd3f111adc86a6cc24b85ad2",
+    "experiments/cycle3_20261116/function_graph_v1/code_sandbox.py": "db983eee9857ffb9ee2ee10db0ba63d85f7e36ed9088912ca1ea00fc243d5411",
+    "experiments/cycle2_20261113/exogenous_paths_v1/exogenous_path_operator.py": "3fa96ce0aef2410bab8cd4bb43a4060023ed561f398252d1099240b02abfbbd0",
+    "experiments/cycle2_20261113/durable_backend_v1/durable_backend.py": "0f39b5e1926fcc0670158e27783d1b0793436f6cb111d71a476a7794116aeade",
+    "src/graph_credit/__init__.py": "b0720c82632ad92e72487a3afadedd418cd44a4ca9ebc00d69c7405829800cdd",
+    "src/graph_credit/executor.py": "85acab26b3b713900e8099a5d77197af698525f57c2d9d07d1193c68b2c383b1"
+  },
+  "GPU_admitted": false,
+  "allocator_cap_GiB": 20,
+  "minimum_free_GiB": 24,
+  "idle_model_placement": "CPU",
+  "qualified_function_score_replay_required": true,
+  "local_server_model_file_identity_required": true,
+  "qualification_plan_sha256": "924d93fa104f9381062fcf2d15b932172adfb30216790deb9a2cbbbacb399019"
+}

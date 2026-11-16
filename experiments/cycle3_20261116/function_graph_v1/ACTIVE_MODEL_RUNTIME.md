@@ -1,0 +1,3 @@
+# Shared-GPU engineering revision before first qualification
+
+Live process inspection found every GPU executing jobs and maximum free memory below32GiB. User authorizes sharing. Use one active model resident on GPU, idle model on CPU; evict idle before restoring active, including sequential model loading. Bound this process allocator to20GiB, require24GiB free at worker admission and6GiB before each request. All transfers, loading and waiting count toward measured GPU occupancy. Other jobs remain untouched. This changes placement only, not weights/prompts/seeds; artificial long-input and exact generation replay must pass before formal data. It is not a quality improvement or a relaxed scientific gate.
