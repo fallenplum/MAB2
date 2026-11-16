@@ -1,0 +1,113 @@
+{
+  "status": "PRIMARY_IDENTITY_VERIFIED_SCOPED_NEIGHBOR_REVIEW",
+  "review_type": "targeted single-reviewer narrative update, not exhaustive systematic review",
+  "retrieved_unix": 1794852838.84718,
+  "records": [
+    {
+      "title": "S*: Test Time Scaling for Code Generation",
+      "authors": [
+        "Dacheng Li",
+        "Shiyi Cao",
+        "Chengkun Cao",
+        "Xiuyu Li",
+        "Shangyin Tan",
+        "Kurt Keutzer",
+        "Jiarong Xing",
+        "Joseph E. Gonzalez",
+        "Ion Stoica"
+      ],
+      "arxiv_id": "2502.14382v1",
+      "arxiv_first_posted": "2025-02-20T09:18:53Z",
+      "venue": "Findings of EMNLP 2025",
+      "doi": "10.18653/v1/2025.findings-emnlp.865",
+      "primary_url": "https://aclanthology.org/2025.findings-emnlp.865/",
+      "html_url": "https://arxiv.org/html/2502.14382v1",
+      "read_scope": "Publisher metadata/abstract and arXiv v1 method3.1/Algorithm1; not full-paper review",
+      "relevance": "Parallel candidates, public-test-driven repair with early stopping, and execution-grounded pairwise input synthesis already exist. Strong later comparator; current BOK3/REPAIR3 are simpler screening controls, not an S* reproduction.",
+      "independently_reproduced": false
+    },
+    {
+      "title": "Adaptive Test-Time Compute Allocation with Evolving In-Context Demonstrations",
+      "authors": [
+        "Bowen Zuo",
+        "Dongruo Zhou",
+        "Yinglun Zhu"
+      ],
+      "arxiv_id": "2604.21018v1",
+      "arxiv_first_posted": "2026-04-22T19:07:29Z",
+      "venue": "Findings of ACL 2026",
+      "doi": "10.18653/v1/2026.findings-acl.1754",
+      "primary_url": "https://aclanthology.org/2026.findings-acl.1754/",
+      "html_url": "https://arxiv.org/html/2604.21018v1",
+      "read_scope": "Publisher metadata/abstract; arXiv v1 sections4.2 and5.3; not full-paper review",
+      "relevance": "Adaptive allocation and evolving demonstration reuse are established. Main coverage experiments use an oracle correctness reward; selected ablations use other feedback. Preserve information parity: do not import final hidden correctness into online allocation.",
+      "independently_reproduced": false
+    },
+    {
+      "title": "RSI-Anything: Unlocking Recursive Self-Improvement with World Models",
+      "authors": [
+        "Taoyong Cui",
+        "Pinxian Zeng",
+        "Wanghan Xu",
+        "Hao Xiao",
+        "Shuhan Xue",
+        "Qiang Gao",
+        "Wanli Ouyang",
+        "Pheng Ann Heng",
+        "Zhenfei Yin",
+        "Yingcheng Wu",
+        "Ling Yang"
+      ],
+      "arxiv_id": "2610.13912v1",
+      "arxiv_first_posted": "2026-10-09T17:50:30Z",
+      "venue": "arXiv preprint; peer-reviewed venue not verified",
+      "doi": null,
+      "primary_url": "https://arxiv.org/html/2610.13912v1",
+      "html_url": "https://arxiv.org/html/2610.13912v1",
+      "read_scope": "Abstract, sections2.1-2.3,3.1,5,6.1; not full-paper review",
+      "relevance": "Predictive action selection, predictor reliability checks and feedback adaptation already have close precedent. Coding experiments keep the coder fixed and rank four repairs before execution. Matched test usage alone does not establish matched total generation/training cost. Graph-conditional edge maintenance still requires separate evidence and attribution.",
+      "independently_reproduced": false
+    },
+    {
+      "title": "FTDI: A budget-aware self-healing framework for LLM multi-agent code generation",
+      "authors": [
+        "Sixue Men",
+        "Zhe-Ming Lu",
+        "Hao Luo",
+        "Yangming Zheng"
+      ],
+      "doi": "10.1016/j.eswa.2026.134164",
+      "venue": "Expert Systems with Applications",
+      "print_issue_date": [
+        2027,
+        1
+      ],
+      "DOI_registration_date": "2026-08-26T14:55:51Z",
+      "online_publication_date_verified": false,
+      "primary_url": "https://doi.org/10.1016/j.eswa.2026.134164",
+      "author_source": "https://github.com/UMENZZE/FTDI-Framework/tree/8496730e6a124be7c76adfce8c33b10d59ff9c21",
+      "read_scope": "Crossref identity, publisher-indexed abstract/introduction, author README. Publisher full-text open returned403. Code implementation not yet audited.",
+      "relevance": "Budget gating, static failure diagnosis, tiered repair and historical typed repair priors already address multi-agent coding recovery under injected faults. Generic diagnostic feedback plus budget control is not new. Synthetic fault injection differs from graph-edit-induced credit invalidation; that distinction needs empirical evidence.",
+      "independently_reproduced": false
+    }
+  ],
+  "provenance": {
+    "arxiv_endpoint": "https://export.arxiv.org/api/query",
+    "arxiv_params": {
+      "id_list": "2502.14382,2610.13912,2604.21018"
+    },
+    "arxiv_raw_sha256": "ba911a7b190ec84fce0fd246f874be4aa82182d8ac6d57015eb8b11e90214ca5",
+    "crossref_endpoint": "https://api.crossref.org/works/10.1016%2Fj.eswa.2026.134164",
+    "crossref_raw_sha256": "5298f1d20596a62cba428b5e31edb56cd16527bf7011a13d6432ab51f23f1442",
+    "Google_attempt": "https://www.google.com/search?q=%22FTDI%22+%22budget-aware%22",
+    "Google_result": "Not accessible through available web tool; fallback web search and primary APIs used; no Google coverage claimed"
+  },
+  "queries": [
+    "site.aclanthology.org code generation test time scaling execution feedback adaptive sampling 2025 S*",
+    "site.openreview.net multi agent code generation execution feedback budget counterfactual credit 2026",
+    "site.arxiv.org code generation adaptive test time compute visible tests best of n repair budget",
+    "\"S*: Test Time Scaling for Code Generation\" arxiv",
+    "\"FTDI\" \"budget-aware\" self-healing",
+    "\"RSI-Anything\" \"CodeContests\""
+  ]
+}
