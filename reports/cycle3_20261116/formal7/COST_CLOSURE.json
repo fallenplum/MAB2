@@ -1,0 +1,14 @@
+{
+  "actual_cost_closed": true,
+  "actual_GPU_hours": 4.6871139699927555,
+  "current_attempt_GPU_hours": 4.102446489345554,
+  "prior_attempt_GPU_hours": 0.5846674806472018,
+  "archive_manifest_sha256": "7e5a34c426169d34669c82fc6e68010ce9c833dac69e5707e5bec8c0f70391c3",
+  "residence_seconds_by_worker": [
+    14768.807361643994
+  ],
+  "idle_model_transfer_seconds": 4801.359151726123,
+  "idle_model_transfers": 2244,
+  "transfer_seconds_already_included_in_residency": true,
+  "unknown_costs_imputed": false
+}

@@ -1,0 +1,186 @@
+{
+  "status": "EXPLORATORY_EXACT_TERMINAL_NOTE_INTERVENTION",
+  "questions": 96,
+  "question_seed_observations": 192,
+  "matched_controls": {
+    "G0": {
+      "matched": 192,
+      "total": 192,
+      "EM_sum": 92.0,
+      "single_EM_sum": 108.0,
+      "corrections": 23,
+      "destructions": 39,
+      "paid_prefix_ignore_tokens_sum": 901956.0,
+      "paid_prefix_ignore_EM_sum": 108.0,
+      "matched_EM": 0.4791666666666667,
+      "matched_single_EM": 0.5625,
+      "paired_EM_delta": -0.08333333333333333,
+      "paid_prefix_ignore_service_tokens": 4697.6875,
+      "paid_prefix_ignore_service_utility": 0.5390115624999999
+    },
+    "G0_MINUS_EU": {
+      "matched": 192,
+      "total": 192,
+      "EM_sum": 94.0,
+      "single_EM_sum": 108.0,
+      "corrections": 21,
+      "destructions": 35,
+      "paid_prefix_ignore_tokens_sum": 901956.0,
+      "paid_prefix_ignore_EM_sum": 108.0,
+      "matched_EM": 0.4895833333333333,
+      "matched_single_EM": 0.5625,
+      "paired_EM_delta": -0.07291666666666667,
+      "paid_prefix_ignore_service_tokens": 4697.6875,
+      "paid_prefix_ignore_service_utility": 0.5390115624999999
+    },
+    "G0_MINUS_EV": {
+      "matched": 192,
+      "total": 192,
+      "EM_sum": 95.0,
+      "single_EM_sum": 108.0,
+      "corrections": 23,
+      "destructions": 36,
+      "paid_prefix_ignore_tokens_sum": 901956.0,
+      "paid_prefix_ignore_EM_sum": 108.0,
+      "matched_EM": 0.4947916666666667,
+      "matched_single_EM": 0.5625,
+      "paired_EM_delta": -0.06770833333333333,
+      "paid_prefix_ignore_service_tokens": 4697.6875,
+      "paid_prefix_ignore_service_utility": 0.5390115624999999
+    },
+    "G1": {
+      "matched": 192,
+      "total": 192,
+      "EM_sum": 97.0,
+      "single_EM_sum": 108.0,
+      "corrections": 20,
+      "destructions": 31,
+      "paid_prefix_ignore_tokens_sum": 791250.0,
+      "paid_prefix_ignore_EM_sum": 108.0,
+      "matched_EM": 0.5052083333333334,
+      "matched_single_EM": 0.5625,
+      "paired_EM_delta": -0.057291666666666664,
+      "paid_prefix_ignore_service_tokens": 4121.09375,
+      "paid_prefix_ignore_service_utility": 0.54189453125
+    },
+    "G1_MINUS_EU": {
+      "matched": 96,
+      "total": 192,
+      "EM_sum": 48.0,
+      "single_EM_sum": 48.0,
+      "corrections": 12,
+      "destructions": 12,
+      "paid_prefix_ignore_tokens_sum": 401458.0,
+      "paid_prefix_ignore_EM_sum": 48.0,
+      "matched_EM": 0.5,
+      "matched_single_EM": 0.5,
+      "paired_EM_delta": 0.0,
+      "paid_prefix_ignore_service_tokens": 4181.854166666667,
+      "paid_prefix_ignore_service_utility": 0.4790907291666667
+    },
+    "G1_MINUS_EV": {
+      "matched": 96,
+      "total": 192,
+      "EM_sum": 54.0,
+      "single_EM_sum": 60.0,
+      "corrections": 5,
+      "destructions": 11,
+      "paid_prefix_ignore_tokens_sum": 389792.0,
+      "paid_prefix_ignore_EM_sum": 60.0,
+      "matched_EM": 0.5625,
+      "matched_single_EM": 0.625,
+      "paired_EM_delta": -0.0625,
+      "paid_prefix_ignore_service_tokens": 4060.3333333333335,
+      "paid_prefix_ignore_service_utility": 0.6046983333333333
+    },
+    "FLAT_ANNOTATION": {
+      "matched": 192,
+      "total": 192,
+      "EM_sum": 100.0,
+      "single_EM_sum": 108.0,
+      "corrections": 24,
+      "destructions": 32,
+      "paid_prefix_ignore_tokens_sum": 685170.0,
+      "paid_prefix_ignore_EM_sum": 108.0,
+      "matched_EM": 0.5208333333333334,
+      "matched_single_EM": 0.5625,
+      "paired_EM_delta": -0.041666666666666664,
+      "paid_prefix_ignore_service_tokens": 3568.59375,
+      "paid_prefix_ignore_service_utility": 0.54465703125
+    },
+    "SINGLE_M": {
+      "matched": 0,
+      "total": 192,
+      "EM_sum": 0.0,
+      "single_EM_sum": 0.0,
+      "corrections": 0,
+      "destructions": 0,
+      "paid_prefix_ignore_tokens_sum": 0.0,
+      "paid_prefix_ignore_EM_sum": 0.0
+    },
+    "INDEPENDENT3_Q": {
+      "matched": 0,
+      "total": 192,
+      "EM_sum": 0.0,
+      "single_EM_sum": 0.0,
+      "corrections": 0,
+      "destructions": 0,
+      "paid_prefix_ignore_tokens_sum": 0.0,
+      "paid_prefix_ignore_EM_sum": 0.0
+    },
+    "VOTE_Q3": {
+      "matched": 0,
+      "total": 192,
+      "EM_sum": 0.0,
+      "single_EM_sum": 0.0,
+      "corrections": 0,
+      "destructions": 0,
+      "paid_prefix_ignore_tokens_sum": 0.0,
+      "paid_prefix_ignore_EM_sum": 0.0
+    }
+  },
+  "G1_literal_note_copy_associations": {
+    "correction": {
+      "observations": 20,
+      "answer_copied_from_any_note": 20,
+      "answer_copied_from_R_note": 14,
+      "multiword_answer_copied_from_any_note": 9
+    },
+    "destruction": {
+      "observations": 31,
+      "answer_copied_from_any_note": 29,
+      "answer_copied_from_R_note": 17,
+      "multiword_answer_copied_from_any_note": 13
+    },
+    "both_correct": {
+      "observations": 77,
+      "answer_copied_from_any_note": 68,
+      "answer_copied_from_R_note": 58,
+      "multiword_answer_copied_from_any_note": 42
+    },
+    "both_wrong": {
+      "observations": 64,
+      "answer_copied_from_any_note": 50,
+      "answer_copied_from_R_note": 37,
+      "multiword_answer_copied_from_any_note": 36
+    }
+  },
+  "source_sha256": "784cd54f3523ea2222c8c5dbf63c1b477b29443ce3106972edd6526175f9b3ae",
+  "scoring_summary_sha256": "e555b1158ca69ed8a1e68fa73c82fbec9afcd0155530a06f1ee01257aae39a10",
+  "formal_gates_unchanged": {
+    "complete_matrix": true,
+    "fixed_G1_quality": false,
+    "credit_shift_support": true,
+    "cross_seed_reliability": false,
+    "service_economic_signal": false
+  },
+  "new_GPU_calls": 0,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "limits": [
+    "Matching changes only terminal evidence_notes while preserving exact remaining request fields, model and RNG. It does not identify which note or semantic mechanism caused a change.",
+    "Substring association is not semantic contradiction verification or causal mediation; single-word matches can be incidental.",
+    "Ignoring notes after generating their prefix retains every prefix token. It cannot be charged as a free single-model service.",
+    "All data are exposed development; no formal gate is rescued and no policy efficacy is established."
+  ]
+}

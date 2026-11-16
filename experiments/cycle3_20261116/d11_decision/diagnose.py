@@ -50,7 +50,7 @@ def main():
                 for key,value in costs.items():obs[name][key]+=value
                 obs[name]['score_observations']+=3
                 private.append(dict(index=i,seed=seed,diagnostic=name,source_seed=source_seed,source_graph=t,chosen_action=int(choices[name][i,j]),paid_observation_cost=costs,oracle_not_deployable=True))
-    result.update(prerequisite_observation_costs=obs,formal7_admission=summary['admission'],formal7_gates_unchanged=summary['gates'],archive_manifest_sha256=sha(arc/'ARCHIVE_MANIFEST.json'),source_sha256=sha(__file__))
+    result.update(prerequisite_observation_costs=obs,formal7_admission=summary['admission'],formal7_gates_unchanged=summary['gates'],archive_manifest_sha256=sha(arc/'ARCHIVE_MANIFEST.json'),source_sha256=sha(Path(__file__)))
     out.mkdir(parents=True);(out/'SUMMARY.json').write_text(json.dumps(result,indent=2)+'\n');(out/'PRIVATE_PROVENANCE.json').write_text(json.dumps(private,indent=2)+'\n');print(json.dumps(dict(status=result['status'],new_GPU_calls=0,formal7_admission_unchanged=summary['admission'])))
 
 if __name__=='__main__':main()

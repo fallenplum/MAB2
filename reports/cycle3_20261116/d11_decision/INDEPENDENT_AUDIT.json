@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_SCALAR_D11_DECISION_AUDIT",
+  "checks": 125,
+  "questions": 96,
+  "summary_sha256": "8a683c7ba84c0eb987ace7cb6c38657181535abd0beff25ee580ed8ef3a6c69a",
+  "scoring_summary_sha256": "e555b1158ca69ed8a1e68fa73c82fbec9afcd0155530a06f1ee01257aae39a10",
+  "source_sha256": "dfe350393876558f5b191b29aa61b5b7dce08c287a95842ef1186172cef3dc16",
+  "scope": "Decision choices, means, directions and realized headroom; prerequisite-call cost ledger is outside this scalar audit",
+  "new_GPU_calls": 0
+}

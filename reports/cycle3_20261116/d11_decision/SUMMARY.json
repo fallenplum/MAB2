@@ -1,0 +1,242 @@
+{
+  "status": "EXPLORATORY_DECISION_HEADROOM_NOT_CONFIRMATION",
+  "questions": 96,
+  "question_seed_count": 192,
+  "actions": [
+    "KEEP",
+    "DELETE_AFFECTED",
+    "DELETE_OTHER"
+  ],
+  "strategies": {
+    "KEEP": {
+      "EM": 0.5052083333333334,
+      "F1": 0.6006696428571429,
+      "service_tokens": 4331.046875,
+      "service_utility": 0.48355309895833337,
+      "EM_by_seed": [
+        0.4791666666666667,
+        0.53125
+      ],
+      "utility_by_seed": [
+        0.457449375,
+        0.5096568229166668
+      ],
+      "action_counts": [
+        192,
+        0,
+        0
+      ],
+      "corrections_vs_keep": 0,
+      "destructions_vs_keep": 0,
+      "available_without_feedback": true
+    },
+    "DELETE_AFFECTED": {
+      "EM": 0.4583333333333333,
+      "F1": 0.5504960317460318,
+      "service_tokens": 3220.0677083333335,
+      "service_utility": 0.4422329947916667,
+      "EM_by_seed": [
+        0.4583333333333333,
+        0.4583333333333333
+      ],
+      "utility_by_seed": [
+        0.44219364583333337,
+        0.4422723437500001
+      ],
+      "action_counts": [
+        0,
+        192,
+        0
+      ],
+      "corrections_vs_keep": 13,
+      "destructions_vs_keep": 22,
+      "available_without_feedback": true
+    },
+    "DELETE_OTHER": {
+      "EM": 0.53125,
+      "F1": 0.610391865079365,
+      "service_tokens": 4268.942708333333,
+      "service_utility": 0.5099052864583333,
+      "EM_by_seed": [
+        0.5104166666666666,
+        0.5520833333333334
+      ],
+      "utility_by_seed": [
+        0.48900776041666677,
+        0.5308028124999997
+      ],
+      "action_counts": [
+        0,
+        0,
+        192
+      ],
+      "corrections_vs_keep": 9,
+      "destructions_vs_keep": 4,
+      "available_without_feedback": true
+    },
+    "STALE_OLD_GRAPH_ORACLE_TRANSFER": {
+      "EM": 0.5052083333333334,
+      "F1": 0.5916418650793651,
+      "service_tokens": 3724.65625,
+      "service_utility": 0.4865850520833333,
+      "EM_by_seed": [
+        0.4895833333333333,
+        0.5208333333333334
+      ],
+      "utility_by_seed": [
+        0.47102453124999993,
+        0.5021455729166665
+      ],
+      "action_counts": [
+        0,
+        98,
+        94
+      ],
+      "corrections_vs_keep": 12,
+      "destructions_vs_keep": 12,
+      "available_without_feedback": false
+    },
+    "CURRENT_PERFECT_INFORMATION_ORACLE": {
+      "EM": 0.6041666666666666,
+      "F1": 0.682093253968254,
+      "service_tokens": 3374.2916666666665,
+      "service_utility": 0.5872952083333334,
+      "EM_by_seed": [
+        0.59375,
+        0.6145833333333334
+      ],
+      "utility_by_seed": [
+        0.57689234375,
+        0.5976980729166667
+      ],
+      "action_counts": [
+        2,
+        164,
+        26
+      ],
+      "corrections_vs_keep": 19,
+      "destructions_vs_keep": 0,
+      "available_without_feedback": false
+    },
+    "ALTERNATE_SEED_ORACLE_TRANSFER": {
+      "EM": 0.53125,
+      "F1": 0.616468253968254,
+      "service_tokens": 3374.0677083333335,
+      "service_utility": 0.5143796614583334,
+      "EM_by_seed": [
+        0.5208333333333334,
+        0.5416666666666666
+      ],
+      "utility_by_seed": [
+        0.50386265625,
+        0.5248966666666667
+      ],
+      "action_counts": [
+        2,
+        164,
+        26
+      ],
+      "corrections_vs_keep": 15,
+      "destructions_vs_keep": 10,
+      "available_without_feedback": false
+    }
+  },
+  "net_edge_direction": {
+    "affected": {
+      "old_credit": {
+        "positive": 5,
+        "zero": 177,
+        "negative": 10
+      },
+      "current_credit": {
+        "positive": 22,
+        "zero": 157,
+        "negative": 13
+      },
+      "stale_net_direction_errors": 19,
+      "errors_by_seed": [
+        10,
+        9
+      ],
+      "wrong_delete": 18,
+      "wrong_keep": 1,
+      "mean_binary_decision_regret": 0.09327981770833334,
+      "regret_by_seed": [
+        0.10361020833333334,
+        0.08294942708333332
+      ]
+    },
+    "other": {
+      "old_credit": {
+        "positive": 7,
+        "zero": 178,
+        "negative": 7
+      },
+      "current_credit": {
+        "positive": 4,
+        "zero": 179,
+        "negative": 9
+      },
+      "stale_net_direction_errors": 6,
+      "errors_by_seed": [
+        3,
+        3
+      ],
+      "wrong_delete": 1,
+      "wrong_keep": 5,
+      "mean_binary_decision_regret": 0.005216354166666666,
+      "regret_by_seed": [
+        1.0625000000000218e-05,
+        0.010422083333333332
+      ]
+    }
+  },
+  "old_new_optimal_action_disagreements": 93,
+  "oracle_headroom_vs_fixed": {
+    "KEEP": 0.103742109375,
+    "DELETE_AFFECTED": 0.14506221354166665,
+    "DELETE_OTHER": 0.07738992187500005
+  },
+  "oracle_headroom_vs_single_Q": 0.032499348958333396,
+  "fixed_pairwise_utility_points": {
+    "KEEP minus DELETE_AFFECTED": 0.04132010416666665,
+    "KEEP minus DELETE_OTHER": -0.026352187499999957,
+    "DELETE_AFFECTED minus KEEP": -0.04132010416666665,
+    "DELETE_AFFECTED minus DELETE_OTHER": -0.0676722916666666,
+    "DELETE_OTHER minus KEEP": 0.026352187499999957,
+    "DELETE_OTHER minus DELETE_AFFECTED": 0.0676722916666666
+  },
+  "retrospective_best_constant_is_unavailable": true,
+  "retrospective_best_constant": "DELETE_OTHER",
+  "formal_gates_overridden": false,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "new_GPU_calls": 0,
+  "limitation": "Old-graph and alternate-seed gold-dependent choices are unavailable diagnostic oracles, not deployed policies. Service utility excludes their prerequisite observations; those are reported separately. Positive headroom is not acquisition efficacy.",
+  "prerequisite_observation_costs": {
+    "STALE_OLD_GRAPH_ORACLE_TRANSFER": {
+      "calls": 1152,
+      "input_tokens": 1549445,
+      "output_tokens": 40797,
+      "gold_questions_per_seed": 96,
+      "score_observations": 576
+    },
+    "ALTERNATE_SEED_ORACLE_TRANSFER": {
+      "calls": 1152,
+      "input_tokens": 1353661,
+      "output_tokens": 40518,
+      "gold_questions_per_seed": 96,
+      "score_observations": 576
+    }
+  },
+  "formal7_admission": false,
+  "formal7_gates_unchanged": {
+    "complete_matrix": true,
+    "fixed_G1_quality": false,
+    "credit_shift_support": true,
+    "cross_seed_reliability": false,
+    "service_economic_signal": false
+  },
+  "archive_manifest_sha256": "7e5a34c426169d34669c82fc6e68010ce9c833dac69e5707e5bec8c0f70391c3",
+  "source_sha256": "1b2c05a82371fb98b95c38369290f9b4657aa4a4aa6cc447f966c49167bfb5fe"
+}

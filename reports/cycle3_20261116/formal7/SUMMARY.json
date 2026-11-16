@@ -1,0 +1,392 @@
+{
+  "gates": {
+    "complete_matrix": true,
+    "fixed_G1_quality": false,
+    "credit_shift_support": true,
+    "cross_seed_reliability": false,
+    "service_economic_signal": false
+  },
+  "admission": false,
+  "conditions": {
+    "G0": {
+      "EM": 0.4791666666666667,
+      "F1": 0.5665513728013728,
+      "service_tokens": 4908.713541666667,
+      "service_utility": 0.4546230989583333,
+      "EM_by_seed": [
+        0.4270833333333333,
+        0.53125
+      ],
+      "utility_by_seed": [
+        0.4025056250000001,
+        0.5067405729166667
+      ]
+    },
+    "G0_MINUS_EU": {
+      "EM": 0.4895833333333333,
+      "F1": 0.5760003306878306,
+      "service_tokens": 4844.057291666667,
+      "service_utility": 0.465363046875,
+      "EM_by_seed": [
+        0.4895833333333333,
+        0.4895833333333333
+      ],
+      "utility_by_seed": [
+        0.46533343749999995,
+        0.46539265625000015
+      ]
+    },
+    "G0_MINUS_EV": {
+      "EM": 0.4947916666666667,
+      "F1": 0.585639880952381,
+      "service_tokens": 4843.458333333333,
+      "service_utility": 0.470574375,
+      "EM_by_seed": [
+        0.4479166666666667,
+        0.5416666666666666
+      ],
+      "utility_by_seed": [
+        0.42367244791666686,
+        0.5174763020833334
+      ]
+    },
+    "G1": {
+      "EM": 0.5052083333333334,
+      "F1": 0.6006696428571429,
+      "service_tokens": 4331.046875,
+      "service_utility": 0.48355309895833337,
+      "EM_by_seed": [
+        0.4791666666666667,
+        0.53125
+      ],
+      "utility_by_seed": [
+        0.457449375,
+        0.5096568229166668
+      ]
+    },
+    "G1_MINUS_EU": {
+      "EM": 0.4895833333333333,
+      "F1": 0.5734126984126984,
+      "service_tokens": 3737.9947916666665,
+      "service_utility": 0.470893359375,
+      "EM_by_seed": [
+        0.46875,
+        0.5104166666666666
+      ],
+      "utility_by_seed": [
+        0.45000838541666655,
+        0.49177833333333343
+      ]
+    },
+    "G1_MINUS_EV": {
+      "EM": 0.5,
+      "F1": 0.5874751984126984,
+      "service_tokens": 3751.015625,
+      "service_utility": 0.48124492187499995,
+      "EM_by_seed": [
+        0.5,
+        0.5
+      ],
+      "utility_by_seed": [
+        0.4811930208333335,
+        0.4812968229166666
+      ]
+    },
+    "FLAT_ANNOTATION": {
+      "EM": 0.5208333333333334,
+      "F1": 0.6015140241702742,
+      "service_tokens": 3792.0260416666665,
+      "service_utility": 0.5018732031250001,
+      "EM_by_seed": [
+        0.5104166666666666,
+        0.53125
+      ],
+      "utility_by_seed": [
+        0.4914458333333332,
+        0.5123005729166669
+      ]
+    },
+    "SINGLE_Q": {
+      "EM": 0.5625,
+      "F1": 0.6298859126984128,
+      "service_tokens": 1540.828125,
+      "service_utility": 0.554795859375,
+      "EM_by_seed": [
+        0.5833333333333334,
+        0.5416666666666666
+      ],
+      "utility_by_seed": [
+        0.5756291666666667,
+        0.5339625520833334
+      ]
+    },
+    "SINGLE_M": {
+      "EM": 0.4895833333333333,
+      "F1": 0.612117040968892,
+      "service_tokens": 1736.4583333333333,
+      "service_utility": 0.48090104166666664,
+      "EM_by_seed": [
+        0.4895833333333333,
+        0.4895833333333333
+      ],
+      "utility_by_seed": [
+        0.4809004166666666,
+        0.4809016666666668
+      ]
+    },
+    "INDEPENDENT3_Q": {
+      "EM": 0.6041666666666666,
+      "F1": 0.7026576602863367,
+      "service_tokens": 6522.208333333333,
+      "service_utility": 0.571555625,
+      "EM_by_seed": [
+        0.625,
+        0.5833333333333334
+      ],
+      "utility_by_seed": [
+        0.5923816666666667,
+        0.5507295833333334
+      ]
+    },
+    "VOTE_Q3": {
+      "EM": 0.6041666666666666,
+      "F1": 0.6671626984126983,
+      "service_tokens": 4412.21875,
+      "service_utility": 0.5821055729166666,
+      "EM_by_seed": [
+        0.5833333333333334,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5612711979166664,
+        0.6029399479166664
+      ]
+    }
+  },
+  "paired_G1_comparisons": {
+    "G0": {
+      "EM_delta": 0.026041666666666668,
+      "corrections": 15,
+      "destructions": 10
+    },
+    "G0_MINUS_EU": {
+      "EM_delta": 0.015625,
+      "corrections": 17,
+      "destructions": 14
+    },
+    "G0_MINUS_EV": {
+      "EM_delta": 0.010416666666666666,
+      "corrections": 17,
+      "destructions": 15
+    },
+    "G1": {
+      "EM_delta": 0.0,
+      "corrections": 0,
+      "destructions": 0
+    },
+    "G1_MINUS_EU": {
+      "EM_delta": 0.015625,
+      "corrections": 11,
+      "destructions": 8
+    },
+    "G1_MINUS_EV": {
+      "EM_delta": 0.005208333333333333,
+      "corrections": 15,
+      "destructions": 14
+    },
+    "FLAT_ANNOTATION": {
+      "EM_delta": -0.015625,
+      "corrections": 15,
+      "destructions": 18
+    },
+    "SINGLE_Q": {
+      "EM_delta": -0.057291666666666664,
+      "corrections": 20,
+      "destructions": 31
+    },
+    "SINGLE_M": {
+      "EM_delta": 0.015625,
+      "corrections": 27,
+      "destructions": 24
+    },
+    "INDEPENDENT3_Q": {
+      "EM_delta": -0.09895833333333333,
+      "corrections": 17,
+      "destructions": 36
+    },
+    "VOTE_Q3": {
+      "EM_delta": -0.09895833333333333,
+      "corrections": 17,
+      "destructions": 36
+    }
+  },
+  "current_credit_seed_correlation": 0.25204394316941936,
+  "credit_shift_seed_correlation": 0.19263274217821538,
+  "credit_shift_fraction": 0.13802083333333334,
+  "credit_shift_by_seed": [
+    0.171875,
+    0.10416666666666667
+  ],
+  "credit_shift_by_edge": [
+    0.13020833333333334,
+    0.14583333333333334
+  ],
+  "distinct_shift_questions": 39,
+  "service_utility_gain_vs_single_Q": -0.07124276041666666,
+  "service_utility_gain_by_seed": [
+    -0.11817979166666669,
+    -0.02430572916666668
+  ],
+  "seeds": [
+    26111671,
+    26111672
+  ],
+  "independent_question_count": 96,
+  "question_seed_count": 192,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "claim": "Foundation applicability only; no active feedback efficacy, independent replication or novelty established",
+  "cost_limitation": "Service utility excludes development and feedback acquisition; physical collection costs are reported separately",
+  "evidence_ID_equality_certificates_used": false,
+  "type_breakdown": {
+    "bridge": {
+      "questions": 78,
+      "conditions": {
+        "G0": {
+          "EM": 0.4807692307692308,
+          "F1": 0.5605418605418605,
+          "service_tokens": 4988.929487179487
+        },
+        "G0_MINUS_EU": {
+          "EM": 0.4807692307692308,
+          "F1": 0.5708892958892958,
+          "service_tokens": 4924.153846153846
+        },
+        "G0_MINUS_EV": {
+          "EM": 0.5,
+          "F1": 0.5872405372405373,
+          "service_tokens": 4920.98717948718
+        },
+        "G1": {
+          "EM": 0.5192307692307693,
+          "F1": 0.6115079365079366,
+          "service_tokens": 4407.147435897436
+        },
+        "G1_MINUS_EU": {
+          "EM": 0.4935897435897436,
+          "F1": 0.5753968253968254,
+          "service_tokens": 3812.8141025641025
+        },
+        "G1_MINUS_EV": {
+          "EM": 0.5128205128205128,
+          "F1": 0.6016788766788767,
+          "service_tokens": 3817.7371794871797
+        },
+        "FLAT_ANNOTATION": {
+          "EM": 0.5128205128205128,
+          "F1": 0.6057095682095681,
+          "service_tokens": 3850.6666666666665
+        },
+        "SINGLE_Q": {
+          "EM": 0.5641025641025641,
+          "F1": 0.6282356532356532,
+          "service_tokens": 1564.8461538461538
+        },
+        "SINGLE_M": {
+          "EM": 0.47435897435897434,
+          "F1": 0.6166226829018842,
+          "service_tokens": 1765.25
+        },
+        "INDEPENDENT3_Q": {
+          "EM": 0.6217948717948718,
+          "F1": 0.7248521630874573,
+          "service_tokens": 6622.99358974359
+        },
+        "VOTE_Q3": {
+          "EM": 0.6153846153846154,
+          "F1": 0.6741147741147742,
+          "service_tokens": 4484.192307692308
+        }
+      }
+    },
+    "comparison": {
+      "questions": 18,
+      "conditions": {
+        "G0": {
+          "EM": 0.4722222222222222,
+          "F1": 0.5925925925925927,
+          "service_tokens": 4561.111111111111
+        },
+        "G0_MINUS_EU": {
+          "EM": 0.5277777777777778,
+          "F1": 0.5981481481481481,
+          "service_tokens": 4496.972222222223
+        },
+        "G0_MINUS_EV": {
+          "EM": 0.4722222222222222,
+          "F1": 0.5787037037037037,
+          "service_tokens": 4507.5
+        },
+        "G1": {
+          "EM": 0.4444444444444444,
+          "F1": 0.5537037037037037,
+          "service_tokens": 4001.277777777778
+        },
+        "G1_MINUS_EU": {
+          "EM": 0.4722222222222222,
+          "F1": 0.5648148148148149,
+          "service_tokens": 3413.777777777778
+        },
+        "G1_MINUS_EV": {
+          "EM": 0.4444444444444444,
+          "F1": 0.5259259259259259,
+          "service_tokens": 3461.8888888888887
+        },
+        "FLAT_ANNOTATION": {
+          "EM": 0.5555555555555556,
+          "F1": 0.5833333333333334,
+          "service_tokens": 3537.9166666666665
+        },
+        "SINGLE_Q": {
+          "EM": 0.5555555555555556,
+          "F1": 0.6370370370370371,
+          "service_tokens": 1436.75
+        },
+        "SINGLE_M": {
+          "EM": 0.5555555555555556,
+          "F1": 0.5925925925925926,
+          "service_tokens": 1611.6944444444443
+        },
+        "INDEPENDENT3_Q": {
+          "EM": 0.5277777777777778,
+          "F1": 0.6064814814814814,
+          "service_tokens": 6085.472222222223
+        },
+        "VOTE_Q3": {
+          "EM": 0.5555555555555556,
+          "F1": 0.6370370370370371,
+          "service_tokens": 4100.333333333333
+        }
+      }
+    }
+  },
+  "task": "HotpotQA train distractor",
+  "archive_manifest_sha256": "7e5a34c426169d34669c82fc6e68010ce9c833dac69e5707e5bec8c0f70391c3",
+  "approval_sha256": "d53a2ede631df579d4085084556d6654dd0b7029690760470bd08caf16681229",
+  "source_sha256": "17e24ed111dac792891c51d7510223173eb806006a8160fdfdd1287820af6973",
+  "complete_trace_replay": true,
+  "physical_GPU_hours": 4.6871139699927555,
+  "baseline_routes": {
+    "INDEPENDENT3_Q": {
+      "U": "qwen",
+      "V": "qwen",
+      "R": "mistral",
+      "M": "qwen"
+    },
+    "VOTE_Q3": {
+      "M": "qwen",
+      "U": "qwen",
+      "V": "qwen"
+    }
+  }
+}

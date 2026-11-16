@@ -1,0 +1,10 @@
+{
+  "status": "PASS_ALL_PREVIOUS_COMPLETED_PREFIX_FIELDS",
+  "questions": 4,
+  "terminal_conditions": 88,
+  "field_checks": 2500,
+  "benchmark_labels_read": false,
+  "new_GPU_calls": 0,
+  "prior_manifest_sha256": "5c780145c88bb1c6b04a3f02e4ec642c02b6039e006d6f4a19dd4bcdc630650a",
+  "retry_manifest_sha256": "a7f94ae75a25582e7714f3a6e9dc3a645597b5418bcc3473fb78baa832528b55"
+}

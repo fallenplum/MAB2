@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CPU_EXACT_CLOSED_ARCHIVE_REPLAY",
+  "completed_units": 96,
+  "logical_calls_replayed": 6912,
+  "original_physical_calls_replayed": 4028,
+  "field_equalities": 81122,
+  "nonempty_final_outputs": 2112,
+  "new_GPU_hours": 0,
+  "new_model_calls": 0,
+  "labels_read": false,
+  "scores_computed": false,
+  "bootstrap_runs": 0,
+  "plan_sha256": "30e0097aa9814afa00f7b55f2ed0960ccf6e2fe314a1250fcea644eee473a5a1",
+  "archive_manifest_sha256": "7e5a34c426169d34669c82fc6e68010ce9c833dac69e5707e5bec8c0f70391c3",
+  "source_sha256": "6d13377e833c3de12c40a4a73db4c3b84425dcec8333c8177353d1775ddfda0d",
+  "limitation": "Replay uses recorded generations; it does not regenerate stochastic tokens or establish efficacy"
+}

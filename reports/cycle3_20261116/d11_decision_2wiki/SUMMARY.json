@@ -1,0 +1,256 @@
+{
+  "status": "EXPLORATORY_DECISION_HEADROOM_NOT_CONFIRMATION",
+  "questions": 96,
+  "question_seed_count": 192,
+  "actions": [
+    "KEEP",
+    "DELETE_AFFECTED",
+    "DELETE_OTHER"
+  ],
+  "strategies": {
+    "KEEP": {
+      "EM": 0.359375,
+      "F1": 0.3970260642135642,
+      "service_tokens": 3109.6302083333335,
+      "service_utility": 0.3438268489583334,
+      "EM_by_seed": [
+        0.3333333333333333,
+        0.3854166666666667
+      ],
+      "utility_by_seed": [
+        0.3177748437499999,
+        0.36987885416666666
+      ],
+      "action_counts": [
+        192,
+        0,
+        0
+      ],
+      "corrections_vs_keep": 0,
+      "destructions_vs_keep": 0,
+      "available_without_feedback": true
+    },
+    "DELETE_AFFECTED": {
+      "EM": 0.3177083333333333,
+      "F1": 0.3544487847222222,
+      "service_tokens": 2311.4739583333335,
+      "service_utility": 0.30615096354166665,
+      "EM_by_seed": [
+        0.2916666666666667,
+        0.34375
+      ],
+      "utility_by_seed": [
+        0.28011604166666676,
+        0.3321858854166665
+      ],
+      "action_counts": [
+        0,
+        192,
+        0
+      ],
+      "corrections_vs_keep": 11,
+      "destructions_vs_keep": 19,
+      "available_without_feedback": true
+    },
+    "DELETE_OTHER": {
+      "EM": 0.4010416666666667,
+      "F1": 0.4548979326832588,
+      "service_tokens": 3060.4010416666665,
+      "service_utility": 0.3857396614583333,
+      "EM_by_seed": [
+        0.4270833333333333,
+        0.375
+      ],
+      "utility_by_seed": [
+        0.4117780208333332,
+        0.3597013020833335
+      ],
+      "action_counts": [
+        0,
+        0,
+        192
+      ],
+      "corrections_vs_keep": 13,
+      "destructions_vs_keep": 5,
+      "available_without_feedback": true
+    },
+    "STALE_OLD_GRAPH_ORACLE_TRANSFER": {
+      "EM": 0.3541666666666667,
+      "F1": 0.4024702077436452,
+      "service_tokens": 2676.9114583333335,
+      "service_utility": 0.34078210937500003,
+      "EM_by_seed": [
+        0.3645833333333333,
+        0.34375
+      ],
+      "utility_by_seed": [
+        0.3511478645833334,
+        0.3304163541666666
+      ],
+      "action_counts": [
+        4,
+        90,
+        98
+      ],
+      "corrections_vs_keep": 11,
+      "destructions_vs_keep": 12,
+      "available_without_feedback": false
+    },
+    "CURRENT_PERFECT_INFORMATION_ORACLE": {
+      "EM": 0.453125,
+      "F1": 0.4796875,
+      "service_tokens": 2400.875,
+      "service_utility": 0.44112062499999993,
+      "EM_by_seed": [
+        0.4479166666666667,
+        0.4583333333333333
+      ],
+      "utility_by_seed": [
+        0.43585671875000015,
+        0.4463845312499998
+      ],
+      "action_counts": [
+        2,
+        166,
+        24
+      ],
+      "corrections_vs_keep": 18,
+      "destructions_vs_keep": 0,
+      "available_without_feedback": false
+    },
+    "ALTERNATE_SEED_ORACLE_TRANSFER": {
+      "EM": 0.3697916666666667,
+      "F1": 0.40722966269841265,
+      "service_tokens": 2398.9895833333335,
+      "service_utility": 0.35779671874999996,
+      "EM_by_seed": [
+        0.3541666666666667,
+        0.3854166666666667
+      ],
+      "utility_by_seed": [
+        0.34223125000000015,
+        0.37336218749999994
+      ],
+      "action_counts": [
+        2,
+        166,
+        24
+      ],
+      "corrections_vs_keep": 11,
+      "destructions_vs_keep": 9,
+      "available_without_feedback": false
+    }
+  },
+  "net_edge_direction": {
+    "affected": {
+      "old_credit": {
+        "positive": 8,
+        "zero": 174,
+        "negative": 10
+      },
+      "current_credit": {
+        "positive": 19,
+        "zero": 162,
+        "negative": 11
+      },
+      "stale_net_direction_errors": 23,
+      "errors_by_seed": [
+        8,
+        15
+      ],
+      "wrong_delete": 16,
+      "wrong_keep": 7,
+      "mean_binary_decision_regret": 0.09877255208333334,
+      "regret_by_seed": [
+        0.06230395833333335,
+        0.13524114583333333
+      ]
+    },
+    "other": {
+      "old_credit": {
+        "positive": 9,
+        "zero": 169,
+        "negative": 14
+      },
+      "current_credit": {
+        "positive": 5,
+        "zero": 174,
+        "negative": 13
+      },
+      "stale_net_direction_errors": 12,
+      "errors_by_seed": [
+        4,
+        8
+      ],
+      "wrong_delete": 4,
+      "wrong_keep": 8,
+      "mean_binary_decision_regret": 0.015628567708333332,
+      "regret_by_seed": [
+        0.010421770833333335,
+        0.02083536458333333
+      ]
+    }
+  },
+  "old_new_optimal_action_disagreements": 106,
+  "oracle_headroom_vs_fixed": {
+    "KEEP": 0.09729377604166656,
+    "DELETE_AFFECTED": 0.13496966145833328,
+    "DELETE_OTHER": 0.055380963541666606
+  },
+  "oracle_headroom_vs_single_Q": -0.11592731770833342,
+  "fixed_pairwise_utility_points": {
+    "KEEP minus DELETE_AFFECTED": 0.03767588541666672,
+    "KEEP minus DELETE_OTHER": -0.04191281249999995,
+    "DELETE_AFFECTED minus KEEP": -0.03767588541666672,
+    "DELETE_AFFECTED minus DELETE_OTHER": -0.07958869791666667,
+    "DELETE_OTHER minus KEEP": 0.04191281249999995,
+    "DELETE_OTHER minus DELETE_AFFECTED": 0.07958869791666667
+  },
+  "retrospective_best_constant_is_unavailable": true,
+  "retrospective_best_constant": "DELETE_OTHER",
+  "formal_gates_overridden": false,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "new_GPU_calls": 0,
+  "limitation": "Old-graph and alternate-seed gold-dependent choices are unavailable diagnostic oracles, not deployed policies. Service utility excludes their prerequisite observations; those are reported separately. Positive headroom is not acquisition efficacy.",
+  "realized_oracle_service_headroom_vs_all_fixed_controls": {
+    "G0": 0.10462588541666662,
+    "G0_MINUS_EU": 0.10959934895833329,
+    "G0_MINUS_EV": 0.06269979166666656,
+    "G1": 0.09729377604166656,
+    "G1_MINUS_EU": 0.11627072916666664,
+    "G1_MINUS_EV": 0.07407989583333324,
+    "FLAT_ANNOTATION": -0.0033663541666666963,
+    "SINGLE_Q": -0.11592731770833342,
+    "SINGLE_M": 0.04094190104166656,
+    "INDEPENDENT3_Q": -0.1450009895833334,
+    "VOTE_Q3": -0.11648812500000005
+  },
+  "oracle_bound_scope": "Optimistic realized96x2 menu only; ignores acquisition costs and cannot establish a population or deployable policy bound",
+  "prerequisite_observation_costs": {
+    "STALE_OLD_GRAPH_ORACLE_TRANSFER": {
+      "calls": 1152,
+      "input_tokens": 1112988,
+      "output_tokens": 34711,
+      "gold_questions_per_seed": 96,
+      "score_observations": 576
+    },
+    "ALTERNATE_SEED_ORACLE_TRANSFER": {
+      "calls": 1152,
+      "input_tokens": 970290,
+      "output_tokens": 31954,
+      "gold_questions_per_seed": 96,
+      "score_observations": 576
+    }
+  },
+  "formal8_admission": false,
+  "formal8_gates_unchanged": {
+    "complete_matrix": true,
+    "fixed_G1_quality": false,
+    "credit_shift_support": true,
+    "cross_seed_reliability": false,
+    "service_economic_signal": false
+  },
+  "archive_manifest_sha256": "a7f94ae75a25582e7714f3a6e9dc3a645597b5418bcc3473fb78baa832528b55",
+  "source_sha256": "c394b7969b263e3023a96e3407b4005ca5ab4033a00a403d6bcecea291a14d79"
+}

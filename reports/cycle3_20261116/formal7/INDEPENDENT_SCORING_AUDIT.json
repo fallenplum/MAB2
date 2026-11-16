@@ -1,0 +1,18 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_SCORING_AND_GATES",
+  "checks": 2314,
+  "raw_terminal_outputs": 2112,
+  "question_groups": 96,
+  "gates": {
+    "complete_matrix": true,
+    "fixed_G1_quality": false,
+    "credit_shift_support": true,
+    "cross_seed_reliability": false,
+    "service_economic_signal": false
+  },
+  "shared_evaluator_imported": false,
+  "shared_operator_imported": false,
+  "new_GPU_hours": 0,
+  "bootstrap_runs": 0,
+  "source_sha256": "7a431cd9d2f24bbb8cb80a6753d3c1c6ba23e5eb210b2efc200e604a7f2efdfc"
+}

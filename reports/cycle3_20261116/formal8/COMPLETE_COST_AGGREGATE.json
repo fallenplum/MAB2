@@ -1,0 +1,13 @@
+{
+  "formal_attempt1_GPU_hours": 0.26990622433141753,
+  "formal_retry_GPU_hours": 3.861683001709235,
+  "formal_all_attempts_GPU_hours": 4.131589226040653,
+  "engineering_all_attempts_GPU_hours": 0.07251662403138147,
+  "candidate_complete_GPU_hours": 4.204105850072034,
+  "global_closed_GPU_hours": 84.35613125591647,
+  "global_reserved_GPU_hours": 7.415332519352799,
+  "global_cap_GPU_hours": 160,
+  "transfer_and_loading_included_in_residency": true,
+  "service_utility_is_not_full_feedback_utility": true,
+  "unknown_costs_imputed": false
+}

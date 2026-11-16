@@ -52,7 +52,7 @@ def main():
                 private.append(dict(index=i,seed=seed,diagnostic=name,source_seed=source_seed,source_graph=t,chosen_action=int(choices[name][i,j]),paid_observation_cost=costs,oracle_not_deployable=True))
     result['realized_oracle_service_headroom_vs_all_fixed_controls']={name:result['strategies']['CURRENT_PERFECT_INFORMATION_ORACLE']['service_utility']-v['service_utility'] for name,v in summary['conditions'].items()}
     result['oracle_bound_scope']='Optimistic realized96x2 menu only; ignores acquisition costs and cannot establish a population or deployable policy bound'
-    result.update(prerequisite_observation_costs=obs,formal8_admission=summary['admission'],formal8_gates_unchanged=summary['gates'],archive_manifest_sha256=sha(arc/'ARCHIVE_MANIFEST.json'),source_sha256=sha(__file__))
+    result.update(prerequisite_observation_costs=obs,formal8_admission=summary['admission'],formal8_gates_unchanged=summary['gates'],archive_manifest_sha256=sha(arc/'ARCHIVE_MANIFEST.json'),source_sha256=sha(Path(__file__)))
     out.mkdir(parents=True);(out/'SUMMARY.json').write_text(json.dumps(result,indent=2)+'\n');(out/'PRIVATE_PROVENANCE.json').write_text(json.dumps(private,indent=2)+'\n');print(json.dumps(dict(status=result['status'],new_GPU_calls=0,formal8_admission_unchanged=summary['admission'])))
 
 if __name__=='__main__':main()

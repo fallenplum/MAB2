@@ -1,0 +1,452 @@
+{
+  "gates": {
+    "complete_matrix": true,
+    "fixed_G1_quality": false,
+    "credit_shift_support": true,
+    "cross_seed_reliability": false,
+    "service_economic_signal": false
+  },
+  "admission": false,
+  "conditions": {
+    "G0": {
+      "EM": 0.3541666666666667,
+      "F1": 0.41957814754689754,
+      "service_tokens": 3534.3854166666665,
+      "service_utility": 0.3364947395833333,
+      "EM_by_seed": [
+        0.3333333333333333,
+        0.375
+      ],
+      "utility_by_seed": [
+        0.3156047916666666,
+        0.35738468749999996
+      ]
+    },
+    "G0_MINUS_EU": {
+      "EM": 0.3489583333333333,
+      "F1": 0.41940006265664165,
+      "service_tokens": 3487.4114583333335,
+      "service_utility": 0.33152127604166665,
+      "EM_by_seed": [
+        0.3645833333333333,
+        0.3333333333333333
+      ],
+      "utility_by_seed": [
+        0.34709869791666664,
+        0.31594385416666665
+      ]
+    },
+    "G0_MINUS_EV": {
+      "EM": 0.3958333333333333,
+      "F1": 0.46008184523809526,
+      "service_tokens": 3482.5,
+      "service_utility": 0.3784208333333334,
+      "EM_by_seed": [
+        0.3958333333333333,
+        0.3958333333333333
+      ],
+      "utility_by_seed": [
+        0.37836854166666645,
+        0.37847312499999997
+      ]
+    },
+    "G1": {
+      "EM": 0.359375,
+      "F1": 0.3970260642135642,
+      "service_tokens": 3109.6302083333335,
+      "service_utility": 0.3438268489583334,
+      "EM_by_seed": [
+        0.3333333333333333,
+        0.3854166666666667
+      ],
+      "utility_by_seed": [
+        0.3177748437499999,
+        0.36987885416666666
+      ]
+    },
+    "G1_MINUS_EU": {
+      "EM": 0.3385416666666667,
+      "F1": 0.3803471918706293,
+      "service_tokens": 2738.3541666666665,
+      "service_utility": 0.3248498958333333,
+      "EM_by_seed": [
+        0.34375,
+        0.3333333333333333
+      ],
+      "utility_by_seed": [
+        0.33006557291666677,
+        0.31963421875
+      ]
+    },
+    "G1_MINUS_EV": {
+      "EM": 0.3802083333333333,
+      "F1": 0.4289995255348516,
+      "service_tokens": 2633.5208333333335,
+      "service_utility": 0.3670407291666667,
+      "EM_by_seed": [
+        0.375,
+        0.3854166666666667
+      ],
+      "utility_by_seed": [
+        0.3618284895833334,
+        0.3722529687500001
+      ]
+    },
+    "FLAT_ANNOTATION": {
+      "EM": 0.4583333333333333,
+      "F1": 0.4875270562770562,
+      "service_tokens": 2769.2708333333335,
+      "service_utility": 0.44448697916666663,
+      "EM_by_seed": [
+        0.4479166666666667,
+        0.46875
+      ],
+      "utility_by_seed": [
+        0.4340529166666667,
+        0.45492104166666675
+      ]
+    },
+    "SINGLE_Q": {
+      "EM": 0.5625,
+      "F1": 0.6356971153846154,
+      "service_tokens": 1090.4114583333333,
+      "service_utility": 0.5570479427083334,
+      "EM_by_seed": [
+        0.5625,
+        0.5625
+      ],
+      "utility_by_seed": [
+        0.5570481770833335,
+        0.5570477083333335
+      ]
+    },
+    "SINGLE_M": {
+      "EM": 0.40625,
+      "F1": 0.5312812669583503,
+      "service_tokens": 1214.2552083333333,
+      "service_utility": 0.40017872395833337,
+      "EM_by_seed": [
+        0.4270833333333333,
+        0.3854166666666667
+      ],
+      "utility_by_seed": [
+        0.42101281249999994,
+        0.3793446354166667
+      ]
+    },
+    "INDEPENDENT3_Q": {
+      "EM": 0.609375,
+      "F1": 0.6765717302312697,
+      "service_tokens": 4650.677083333333,
+      "service_utility": 0.5861216145833333,
+      "EM_by_seed": [
+        0.5520833333333334,
+        0.6666666666666666
+      ],
+      "utility_by_seed": [
+        0.5288581249999997,
+        0.6433851041666664
+      ]
+    },
+    "VOTE_Q3": {
+      "EM": 0.5729166666666666,
+      "F1": 0.6504540598290599,
+      "service_tokens": 3061.5833333333335,
+      "service_utility": 0.55760875,
+      "EM_by_seed": [
+        0.5729166666666666,
+        0.5729166666666666
+      ],
+      "utility_by_seed": [
+        0.55760921875,
+        0.5576082812499998
+      ]
+    }
+  },
+  "paired_G1_comparisons": {
+    "G0": {
+      "EM_delta": 0.005208333333333333,
+      "corrections": 15,
+      "destructions": 14
+    },
+    "G0_MINUS_EU": {
+      "EM_delta": 0.010416666666666666,
+      "corrections": 20,
+      "destructions": 18
+    },
+    "G0_MINUS_EV": {
+      "EM_delta": -0.036458333333333336,
+      "corrections": 12,
+      "destructions": 19
+    },
+    "G1": {
+      "EM_delta": 0.0,
+      "corrections": 0,
+      "destructions": 0
+    },
+    "G1_MINUS_EU": {
+      "EM_delta": 0.020833333333333332,
+      "corrections": 14,
+      "destructions": 10
+    },
+    "G1_MINUS_EV": {
+      "EM_delta": -0.020833333333333332,
+      "corrections": 10,
+      "destructions": 14
+    },
+    "FLAT_ANNOTATION": {
+      "EM_delta": -0.09895833333333333,
+      "corrections": 16,
+      "destructions": 35
+    },
+    "SINGLE_Q": {
+      "EM_delta": -0.203125,
+      "corrections": 10,
+      "destructions": 49
+    },
+    "SINGLE_M": {
+      "EM_delta": -0.046875,
+      "corrections": 24,
+      "destructions": 33
+    },
+    "INDEPENDENT3_Q": {
+      "EM_delta": -0.25,
+      "corrections": 17,
+      "destructions": 65
+    },
+    "VOTE_Q3": {
+      "EM_delta": -0.21354166666666666,
+      "corrections": 10,
+      "destructions": 51
+    }
+  },
+  "current_credit_seed_correlation": 0.1731828094975206,
+  "credit_shift_seed_correlation": 0.19675377782886996,
+  "credit_shift_fraction": 0.15364583333333334,
+  "credit_shift_by_seed": [
+    0.13541666666666666,
+    0.171875
+  ],
+  "credit_shift_by_edge": [
+    0.140625,
+    0.16666666666666666
+  ],
+  "distinct_shift_questions": 32,
+  "service_utility_gain_vs_single_Q": -0.21322109374999998,
+  "service_utility_gain_by_seed": [
+    -0.2392733333333333,
+    -0.18716885416666665
+  ],
+  "seeds": [
+    26111671,
+    26111672
+  ],
+  "independent_question_count": 96,
+  "question_seed_count": 192,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "claim": "Foundation applicability only; no active feedback efficacy, independent replication or novelty established",
+  "cost_limitation": "Service utility excludes development and feedback acquisition; physical collection costs are reported separately",
+  "evidence_ID_equality_certificates_used": false,
+  "type_breakdown": {
+    "bridge_comparison": {
+      "questions": 16,
+      "conditions": {
+        "G0": {
+          "EM": 0.65625,
+          "F1": 0.65625,
+          "service_tokens": 3394.28125
+        },
+        "G0_MINUS_EU": {
+          "EM": 0.6875,
+          "F1": 0.6875,
+          "service_tokens": 3336.84375
+        },
+        "G0_MINUS_EV": {
+          "EM": 0.78125,
+          "F1": 0.78125,
+          "service_tokens": 3341.34375
+        },
+        "G1": {
+          "EM": 0.625,
+          "F1": 0.625,
+          "service_tokens": 3019.5625
+        },
+        "G1_MINUS_EU": {
+          "EM": 0.71875,
+          "F1": 0.71875,
+          "service_tokens": 2708.0
+        },
+        "G1_MINUS_EV": {
+          "EM": 0.78125,
+          "F1": 0.78125,
+          "service_tokens": 2570.875
+        },
+        "FLAT_ANNOTATION": {
+          "EM": 0.6875,
+          "F1": 0.6875,
+          "service_tokens": 2676.75
+        },
+        "SINGLE_Q": {
+          "EM": 0.8125,
+          "F1": 0.8125,
+          "service_tokens": 1014.0
+        },
+        "SINGLE_M": {
+          "EM": 0.6875,
+          "F1": 0.7076719576719577,
+          "service_tokens": 1129.125
+        },
+        "INDEPENDENT3_Q": {
+          "EM": 0.65625,
+          "F1": 0.65625,
+          "service_tokens": 4378.96875
+        },
+        "VOTE_Q3": {
+          "EM": 0.84375,
+          "F1": 0.84375,
+          "service_tokens": 2831.5625
+        }
+      }
+    },
+    "comparison": {
+      "questions": 27,
+      "conditions": {
+        "G0": {
+          "EM": 0.5185185185185185,
+          "F1": 0.5429894179894179,
+          "service_tokens": 3356.6111111111113
+        },
+        "G0_MINUS_EU": {
+          "EM": 0.5,
+          "F1": 0.5299127448250255,
+          "service_tokens": 3306.5185185185187
+        },
+        "G0_MINUS_EV": {
+          "EM": 0.5185185185185185,
+          "F1": 0.5312169312169311,
+          "service_tokens": 3312.5925925925926
+        },
+        "G1": {
+          "EM": 0.5185185185185185,
+          "F1": 0.5291005291005291,
+          "service_tokens": 2971.5925925925926
+        },
+        "G1_MINUS_EU": {
+          "EM": 0.46296296296296297,
+          "F1": 0.48658108866442196,
+          "service_tokens": 2600.1666666666665
+        },
+        "G1_MINUS_EV": {
+          "EM": 0.5,
+          "F1": 0.5244708994708994,
+          "service_tokens": 2529.0
+        },
+        "FLAT_ANNOTATION": {
+          "EM": 0.6296296296296297,
+          "F1": 0.6402116402116401,
+          "service_tokens": 2624.8333333333335
+        },
+        "SINGLE_Q": {
+          "EM": 0.6666666666666666,
+          "F1": 0.6666666666666666,
+          "service_tokens": 1019.1481481481482
+        },
+        "SINGLE_M": {
+          "EM": 0.6111111111111112,
+          "F1": 0.6234567901234568,
+          "service_tokens": 1134.4814814814815
+        },
+        "INDEPENDENT3_Q": {
+          "EM": 0.7592592592592593,
+          "F1": 0.7861212861212861,
+          "service_tokens": 4357.518518518518
+        },
+        "VOTE_Q3": {
+          "EM": 0.6851851851851852,
+          "F1": 0.6851851851851852,
+          "service_tokens": 2847.6111111111113
+        }
+      }
+    },
+    "compositional": {
+      "questions": 53,
+      "conditions": {
+        "G0": {
+          "EM": 0.1792452830188679,
+          "F1": 0.28526014865637506,
+          "service_tokens": 3667.245283018868
+        },
+        "G0_MINUS_EU": {
+          "EM": 0.16981132075471697,
+          "F1": 0.28216531895777175,
+          "service_tokens": 3625.0188679245284
+        },
+        "G0_MINUS_EV": {
+          "EM": 0.2169811320754717,
+          "F1": 0.3268867924528302,
+          "service_tokens": 3611.669811320755
+        },
+        "G1": {
+          "EM": 0.19811320754716982,
+          "F1": 0.26092052601486565,
+          "service_tokens": 3207.1415094339623
+        },
+        "G1_MINUS_EU": {
+          "EM": 0.16037735849056603,
+          "F1": 0.2240686985970005,
+          "service_tokens": 2817.9150943396226
+        },
+        "G1_MINUS_EV": {
+          "EM": 0.19811320754716982,
+          "F1": 0.2740233993515372,
+          "service_tokens": 2705.6792452830186
+        },
+        "FLAT_ANNOTATION": {
+          "EM": 0.3018867924528302,
+          "F1": 0.34937515314873807,
+          "service_tokens": 2870.7830188679245
+        },
+        "SINGLE_Q": {
+          "EM": 0.4339622641509434,
+          "F1": 0.5665457184325109,
+          "service_tokens": 1149.7830188679245
+        },
+        "SINGLE_M": {
+          "EM": 0.2169811320754717,
+          "F1": 0.4310739051305089,
+          "service_tokens": 1280.5943396226414
+        },
+        "INDEPENDENT3_Q": {
+          "EM": 0.5188679245283019,
+          "F1": 0.6268983278665502,
+          "service_tokens": 4882.047169811321
+        },
+        "VOTE_Q3": {
+          "EM": 0.4339622641509434,
+          "F1": 0.5744073536526366,
+          "service_tokens": 3240.0283018867926
+        }
+      }
+    }
+  },
+  "task": "2WikiMultihopQA corrected train, answer-only alias-aware EM/F1",
+  "archive_manifest_sha256": "a7f94ae75a25582e7714f3a6e9dc3a645597b5418bcc3473fb78baa832528b55",
+  "approval_sha256": "c8973564a883b1c3572c4b8cac3b69f8e6a2ae16aa8982bdf692f32bb3d336bb",
+  "source_sha256": "a5bf95e3745ba8af8034b0a24f487935f0242e9f4a90708d93a9f0b2daf68acb",
+  "complete_trace_replay": true,
+  "physical_GPU_hours": 4.131589226040653,
+  "baseline_routes": {
+    "INDEPENDENT3_Q": {
+      "U": "qwen",
+      "V": "qwen",
+      "R": "mistral",
+      "M": "qwen"
+    },
+    "VOTE_Q3": {
+      "M": "qwen",
+      "U": "qwen",
+      "V": "qwen"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "unix": 1794834977.2846804,
+  "status": "PROVENANCE_IO_REPAIR_ONLY",
+  "observed_error": "Formal8 diagnosis raised AttributeError: str has no attribute read_bytes when hashing __file__",
+  "effect": "No diagnosis output was written; no scientific calculation, scoring rule, formal gate, input or selection changed",
+  "formal8_scoring_already_revealed": true,
+  "formal7_scoring_revealed": false,
+  "changes": [
+    {
+      "file": "diagnose.py",
+      "before_sha256": "56ad5871dc07fcf61d76b0fb518c117d65f13194fbe3c26e6d009d4208da5130",
+      "after_sha256": "1b2c05a82371fb98b95c38369290f9b4657aa4a4aa6cc447f966c49167bfb5fe",
+      "replacement": "sha(__file__) -> sha(Path(__file__))"
+    },
+    {
+      "file": "diagnose_second_task.py",
+      "before_sha256": "da41e76ebcaa9fad27aa5cdec509ac65da31f26d3307a5e7c6eab3ca39227623",
+      "after_sha256": "c394b7969b263e3023a96e3407b4005ca5ab4033a00a403d6bcecea291a14d79",
+      "replacement": "sha(__file__) -> sha(Path(__file__))"
+    }
+  ],
+  "new_GPU_calls": 0
+}
