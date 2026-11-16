@@ -1,0 +1,17 @@
+{
+  "status": "ENGINEERING_FAILURE_NOT_SCIENTIFIC_RESULT",
+  "failure": "Long artificial fixture second seed Mistral relay eager softmax OOM after first-seed matrix completed",
+  "actual_GPU_hours": 0.06139995548557231,
+  "completed_fixture_units": 1,
+  "failed_allocation_GiB": 4.26,
+  "free_GiB": 1.74,
+  "own_allocated_GiB": 20.39,
+  "own_reserved_unallocated_GiB": 8.61,
+  "other_processes_GiB": [
+    8.24,
+    8.05
+  ],
+  "quality_labels_read": false,
+  "archive_manifest_sha256": "6eb91ef2018c478c91c01cedec680828ef417ced3b676f64c9806fcc0cf89f09",
+  "fix_proposed": "Symmetric inactive-model CPU residency and empty unused CUDA cache before active model placement; identical artificial replay required"
+}

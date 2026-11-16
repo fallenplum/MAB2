@@ -1,0 +1,8 @@
+{
+  "status": "PASS_ARTIFICIAL_RECONSTRUCTION_AND_TYPE_CORRUPTION_TEST",
+  "checks": 2314,
+  "benchmark_data": false,
+  "new_GPU_hours": 0,
+  "corrupted_type_metric_rejected": true,
+  "fixture": "Repeated engineering-only traces with synthetic references; not a scientific dataset"
+}

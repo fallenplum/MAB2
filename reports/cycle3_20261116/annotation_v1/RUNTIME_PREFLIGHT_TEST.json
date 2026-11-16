@@ -1,0 +1,6 @@
+{
+  "status": "PASS_MOCK_PRELAUNCH_REJECTION_ZERO_COST_NO_CHILDREN",
+  "GPU_calls": 0,
+  "worker_function_unchanged": true,
+  "source_sha256": "d75fb07be61045915411683ed0886bb9ac7659d3bd7c2124b1c12344db4255f8"
+}
