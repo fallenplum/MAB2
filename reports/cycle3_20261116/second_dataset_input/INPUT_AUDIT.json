@@ -1,0 +1,33 @@
+{
+  "status": "INPUT_ONLY_AUDIT_COMPLETE",
+  "dataset": "xanhho/2WikiMultihopQA",
+  "revision": "612bc5039a457880d9e7d84c3b0a4cf154b70e4f",
+  "source_sha256": "a0f464f1604edf40ad990b605c61c03d56911c106d09ad32becf6afcf3201d52",
+  "rows": 167454,
+  "unique_ids": 167454,
+  "unique_question_groups": 167453,
+  "context_document_count_histogram": {
+    "10": 167454
+  },
+  "formats": {
+    "json": 167454
+  },
+  "context_character_quantiles": {
+    "min": 497.0,
+    "p50": 3005.0,
+    "p90": 5404.0,
+    "max": 31196.0
+  },
+  "exact_question_overlap_with_known_MAB2_exposures": 0,
+  "projected_columns": [
+    "_id",
+    "question",
+    "context"
+  ],
+  "labels_projected": false,
+  "dev_test_downloaded": false,
+  "unknown_cross_project_exposure": "UNKNOWN",
+  "semantic_paraphrase_overlap": "NOT_ASSESSED",
+  "new_GPU_hours": 0,
+  "source_script_sha256": "a3330140e9938ab931365113b557e0864a7386432a7f68a368746720c14d1692"
+}

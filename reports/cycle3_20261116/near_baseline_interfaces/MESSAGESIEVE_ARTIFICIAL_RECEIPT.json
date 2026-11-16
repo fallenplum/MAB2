@@ -1,0 +1,44 @@
+{
+  "status": "PASS_ARTIFICIAL_INTERFACE_INVARIANTS",
+  "upstream_commit": "580728b9251467009c702ccbfc7c1f65f887b967",
+  "source_pins": {
+    "masbench/methods/messagesieve/__init__.py": "7e44cde25f1da28d55245904efc30b1525a9884a04cfed2ac26d445bf29ab81e",
+    "masbench/methods/messagesieve/card.py": "55e4e43ce6871dc5bf960ed494efe25aabeb7813b9702ecc5b19019586d88f23",
+    "masbench/methods/messagesieve/gate.py": "7de87d01ad67637caca859a86154625d0e445fd57fddd6abc41b8b2afabdf1a0",
+    "masbench/methods/messagesieve/relation.py": "295a2fb7b51dfde83cd215b01fde198911bb21a0086c3c7a148f8da028823e40",
+    "masbench/methods/messagesieve/view.py": "e256f4c903223e9056948bc9b13fd0f6b85fc78a095f2a24275fa7892163866e"
+  },
+  "fixtures": {
+    "answer_evidence": {
+      "input_messages": 2,
+      "kept": 2,
+      "parsed_answers": [
+        true,
+        true
+      ],
+      "low_content": [
+        false,
+        false
+      ],
+      "judge_preserved": true
+    },
+    "document_id_lists": {
+      "input_messages": 2,
+      "kept": 1,
+      "parsed_answers": [
+        false,
+        false
+      ],
+      "low_content": [
+        true,
+        true
+      ],
+      "judge_preserved": true
+    }
+  },
+  "new_model_calls": 0,
+  "new_GPU_hours": 0,
+  "benchmark_labels_read": false,
+  "efficacy_inference": false,
+  "import_limitation": "Normal upstream package import failed on Windows resource module. Namespace-only loader bypasses package initializers; unchanged routing modules run, not the full MAS runtime."
+}

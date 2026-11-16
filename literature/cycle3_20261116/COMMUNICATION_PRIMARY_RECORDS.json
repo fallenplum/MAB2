@@ -11,9 +11,10 @@
     "year": 2026,
     "venue": "EMNLP",
     "url": "https://aclanthology.org/2026.emnlp-main.2179/",
-    "read_scope": "Primary metadata and abstract; implementation not reproduced",
+    "read_scope": "Primary metadata, methods3, appendixA and relevant experimental protocol; pinned code interface reviewed and artificial CPU check, no task performance reproduction",
     "finding": "Fixed-graph, message-instance pruning via lightweight state cards and local comparisons; no extra selector training or model call.",
-    "implication": "Mandatory near baseline for claims about free message filtering; graph-conditioned feedback is a distinct claim requiring evidence."
+    "implication": "Mandatory near baseline for claims about free message filtering; graph-conditioned feedback is a distinct claim requiring evidence.",
+    "code": "https://github.com/NianhaoYou/MessageSieve/tree/580728b9251467009c702ccbfc7c1f65f887b967"
   },
   {
     "title": "What Should Agents Say? Action-state Communication for Efficient Multi-Agent Systems",

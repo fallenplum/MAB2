@@ -1,0 +1,10 @@
+{
+  "branch": "research/cycle3-credit-transport-20261116",
+  "commit_prefix": "b77b00e",
+  "verified_unix": 1794814624.962748,
+  "method": "GitHub plugin returned blob SHA equals local git object SHA",
+  "files": {
+    "experiments/cycle3_20261116/d8_allocation/diagnose.py": "ce6d784cd7b3002ca072d8bad92a36b5ea3f8afe",
+    "experiments/cycle3_20261116/d9_reliability/diagnose.py": "3bf53d3f7a9a6c31824b73064fd2ff28c6bc0d84"
+  }
+}
