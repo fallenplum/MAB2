@@ -1,0 +1,82 @@
+{
+  "verified_date": "2026-11-17",
+  "provider": "Primary web pages and GitHub connector; no Google-specific API available",
+  "records": [
+    {
+      "title": "AgentConductor: Topology Evolution for Multi-Agent Competition-Level Code Generation",
+      "authors": [
+        "Siyu Wang",
+        "Ruotian Lu",
+        "Zhihao Yang",
+        "Yuchao Wang",
+        "Yanzhou Zhang",
+        "Lei Xu",
+        "Qimin Xu",
+        "Guojun Yin",
+        "Cailian Chen",
+        "Xinping Guan"
+      ],
+      "year": 2026,
+      "venue": "ICML",
+      "volume": 306,
+      "pages": "128828-128848",
+      "url": "https://proceedings.mlr.press/v306/wang26fk.html",
+      "arxiv": "2602.17100v1",
+      "read_coverage": "Publisher metadata/abstract; arXiv sections2.1-2.3,4, AppendixC selected paragraphs; not full paper. No explicit hidden-test separation found by literal search, which does not establish its absence.",
+      "established": "Learned layered-DAG orchestration evolves within one coding problem using execution feedback and density-aware rewards.",
+      "novelty_constraint": "Execution-feedback-driven graph evolution is already covered; merely adding code execution cannot be a contribution."
+    },
+    {
+      "title": "LEMON: Learning Executable Multi-Agent Orchestration via Counterfactual Reinforcement Learning",
+      "authors": [
+        "Xudong Chen",
+        "Yixin Liu",
+        "Hua Wei",
+        "Kaize Ding"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint; conference status not verified",
+      "url": "https://arxiv.org/abs/2605.14483",
+      "version": "v1",
+      "read_coverage": "Abstract; section3.4, AppendixC andD.7-D.8; not full paper.",
+      "established": "Localized dependency/role/capacity edits supply contrastive RL updates; mutation-family sampling adapts from past absolute reward contrasts; exact node-context caching avoids unchanged computations.",
+      "novelty_constraint": "Adaptive sampling of counterfactual edits and dependency-aware caching are not by themselves new. Inference-time maintenance with fixed workers requires a distinct question and equal-cost evidence."
+    },
+    {
+      "title": "CANTANTE: Optimizing Agentic Systems via Contrastive Credit Attribution",
+      "authors": [
+        "Tom Zehle"
+      ],
+      "year": 2026,
+      "venue": "arXiv preprint; conference status not verified",
+      "url": "https://arxiv.org/abs/2605.13295",
+      "version": "v1",
+      "read_coverage": "Abstract; section3.2 overview,4.4 selected discussion, AppendixB.3-B.4; not full paper.",
+      "established": "Contrasts traces of multiple joint prompt configurations for per-agent optimizer updates. Its MBPP loop explicitly uses one visible test and holds two back for scoring.",
+      "novelty_constraint": "Visible/hidden test separation and execution-supported agent credit optimization are established. Our small-model choice or different dataset alone is not a gap."
+    },
+    {
+      "title": "Measuring Coding Challenge Competence With APPS",
+      "authors": [
+        "Dan Hendrycks",
+        "Steven Basart",
+        "Saurav Kadavath",
+        "Mantas Mazeika",
+        "Akul Arora",
+        "Ethan Guo",
+        "Collin Burns",
+        "Samir Puranik",
+        "Horace He",
+        "Dawn Song",
+        "Jacob Steinhardt"
+      ],
+      "year": 2021,
+      "venue": "NeurIPS as cited in author repository; publisher independently not checked in this stage",
+      "url": "https://github.com/hendrycks/apps/tree/362aedc3c71cd7d9bd2fc96a6c80e11dbc38c7a5",
+      "read_coverage": "Author README; linked Hugging Face dataset card and loader read fully; paper not read.",
+      "dataset_revision": "21e74ddf8de1a21436da12e3e653065c5213e9d1",
+      "train_sha256": "45e82ef22ed8e7c0c04d881a21b923e9dd233157896b0b8d5b3493e887499cae",
+      "limitation": "Original TRAIN potentially overlaps pretraining. Cache-disjoint does not mean contamination-free. Dataset card warns about insufficient test coverage."
+    }
+  ]
+}
