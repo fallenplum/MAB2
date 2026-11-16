@@ -1,0 +1,5 @@
+# D7: generation-prefix decision diagnostic — negative
+
+The preregistered two model families and two target variants all failed the fixed gate. Paired service-utility differences versus training-selected constant delete-other were -0.00412963125 (ridge current), -0.0057025203125 (ridge old transfer), -0.0041048359375 (tree current), and -0.0034756984375 (tree old transfer). Positive folds were 2/8, 4/8, 1/8 and 1/8; positive seeds 2/5, 2/5, 0/5 and 0/5. None met +0.005, six positive folds and four positive seeds.
+
+All observed prefix calls were charged even if later pruning would make a source dead. These are exposed-development diagnostics, not fresh independent tests; no additional GPU inference was run. Exact linear old-plus-residual identity discrepancy was 1.94e-16, so this reparameterization is not a new mechanism. Freeze this simple feature family without hyperparameter fishing. Retain all arrays privately and the full aggregate SUMMARY.json publicly. Continue a different mechanism: indexed original evidence and graph-conditioned evidence coverage.

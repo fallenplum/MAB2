@@ -1,0 +1,1302 @@
+{
+  "status": "COMPLETE_EXPLORATORY_PREFIX_STATE_DIAGNOSTIC",
+  "new_GPU_hours": 0,
+  "new_model_calls": 0,
+  "no_terminal_answer_in_features": true,
+  "questions": 640,
+  "question_seed_rows": 3200,
+  "groups_per_fold": 80,
+  "results": {
+    "train_best_constant": {
+      "accuracy": 0.6315625,
+      "prefix_paid_service_utility": 0.5979661796875,
+      "tokens_per_question": 6719.2640625,
+      "accuracy_by_seed": [
+        0.6390625,
+        0.6234375,
+        0.6359375,
+        0.63125,
+        0.628125
+      ],
+      "utility_by_seed": [
+        0.6054435703124997,
+        0.589848,
+        0.6023455781250002,
+        0.5976481953125006,
+        0.5945455546875
+      ],
+      "action_counts": [
+        0,
+        0,
+        3200
+      ]
+    },
+    "ridge_current_prefix": {
+      "accuracy": 0.6275,
+      "prefix_paid_service_utility": 0.5938365484374999,
+      "tokens_per_question": 6732.6903125,
+      "accuracy_by_seed": [
+        0.6265625,
+        0.625,
+        0.6328125,
+        0.6203125,
+        0.6328125
+      ],
+      "utility_by_seed": [
+        0.5928745546875002,
+        0.5913441562500001,
+        0.5991458828124998,
+        0.5866511406250002,
+        0.5991670078125009
+      ],
+      "action_counts": [
+        759,
+        690,
+        1751
+      ]
+    },
+    "ridge_old_prefix_transfer": {
+      "accuracy": 0.6259375,
+      "prefix_paid_service_utility": 0.592263659375,
+      "tokens_per_question": 6734.768125,
+      "accuracy_by_seed": [
+        0.6296875,
+        0.615625,
+        0.6375,
+        0.6171875,
+        0.6296875
+      ],
+      "utility_by_seed": [
+        0.5959821718749999,
+        0.581959375,
+        0.6038320937500002,
+        0.5835067031249999,
+        0.5960379531250004
+      ],
+      "action_counts": [
+        800,
+        1032,
+        1368
+      ]
+    },
+    "tree_current_prefix": {
+      "accuracy": 0.6275,
+      "prefix_paid_service_utility": 0.59386134375,
+      "tokens_per_question": 6727.73125,
+      "accuracy_by_seed": [
+        0.628125,
+        0.6203125,
+        0.6328125,
+        0.63125,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5944637499999998,
+        0.58668153125,
+        0.5991791562500003,
+        0.5976068359375004,
+        0.5913754453125
+      ],
+      "action_counts": [
+        423,
+        352,
+        2425
+      ]
+    },
+    "tree_old_prefix_transfer": {
+      "accuracy": 0.628125,
+      "prefix_paid_service_utility": 0.5944904812499999,
+      "tokens_per_question": 6726.90375,
+      "accuracy_by_seed": [
+        0.634375,
+        0.61875,
+        0.6328125,
+        0.6265625,
+        0.628125
+      ],
+      "utility_by_seed": [
+        0.6007204999999998,
+        0.5851228203125004,
+        0.5991750859375004,
+        0.5929238984375003,
+        0.5945101015624996
+      ],
+      "action_counts": [
+        313,
+        122,
+        2765
+      ]
+    },
+    "fixed_0": {
+      "accuracy": 0.6196875,
+      "prefix_paid_service_utility": 0.585730746875,
+      "tokens_per_question": 6791.350625,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6140625,
+        0.6265625,
+        0.6234375,
+        0.621875
+      ],
+      "utility_by_seed": [
+        0.5785165468749994,
+        0.5801140078125002,
+        0.5926112734375001,
+        0.5894692421874994,
+        0.5879426640624997
+      ],
+      "action_counts": [
+        3200,
+        0,
+        0
+      ]
+    },
+    "fixed_1": {
+      "accuracy": 0.615,
+      "prefix_paid_service_utility": 0.5814028734375001,
+      "tokens_per_question": 6719.4253125,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6078125,
+        0.621875,
+        0.615625,
+        0.6171875
+      ],
+      "utility_by_seed": [
+        0.5788778437500003,
+        0.574221328125,
+        0.5882864531250002,
+        0.5820112734374998,
+        0.5836174687500012
+      ],
+      "action_counts": [
+        0,
+        3200,
+        0
+      ]
+    },
+    "fixed_2": {
+      "accuracy": 0.6315625,
+      "prefix_paid_service_utility": 0.5979661796875,
+      "tokens_per_question": 6719.2640625,
+      "accuracy_by_seed": [
+        0.6390625,
+        0.6234375,
+        0.6359375,
+        0.63125,
+        0.628125
+      ],
+      "utility_by_seed": [
+        0.6054435703124997,
+        0.589848,
+        0.6023455781250002,
+        0.5976481953125006,
+        0.5945455546875
+      ],
+      "action_counts": [
+        0,
+        0,
+        3200
+      ]
+    },
+    "same_seed_oracle_non_deployable": {
+      "accuracy": 0.664375,
+      "prefix_paid_service_utility": 0.6308354125,
+      "tokens_per_question": 6707.9175,
+      "accuracy_by_seed": [
+        0.6671875,
+        0.653125,
+        0.6765625,
+        0.665625,
+        0.659375
+      ],
+      "utility_by_seed": [
+        0.6336205156250005,
+        0.6195944531250002,
+        0.6430319843750001,
+        0.6320731875000002,
+        0.6258569218750007
+      ],
+      "action_counts": [
+        24,
+        1701,
+        1475
+      ]
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "method": "train_best_constant",
+      "accuracy": 0.62,
+      "prefix_paid_service_utility": 0.5855986625,
+      "tokens_per_question": 6880.2675,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.6625,
+        0.575,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.5780268749999999,
+        0.5656608749999998,
+        0.6281243125,
+        0.5406089374999999,
+        0.6155723125000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.6125,
+      "prefix_paid_service_utility": 0.578030575,
+      "tokens_per_question": 6893.885,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6125,
+        0.65,
+        0.575,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.5529891250000001,
+        0.5781007500000002,
+        0.615516625,
+        0.5405430624999998,
+        0.6030033125
+      ],
+      "action_counts": [
+        107,
+        101,
+        192
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.5775,
+      "prefix_paid_service_utility": 0.5430261749999999,
+      "tokens_per_question": 6894.765,
+      "accuracy_by_seed": [
+        0.5625,
+        0.5625,
+        0.625,
+        0.525,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5279261249999999,
+        0.5280720625,
+        0.590557875,
+        0.49053112499999996,
+        0.5780436874999998
+      ],
+      "action_counts": [
+        101,
+        138,
+        161
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "tree_current_prefix",
+      "accuracy": 0.6175,
+      "prefix_paid_service_utility": 0.5830840374999999,
+      "tokens_per_question": 6883.1925,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.65,
+        0.5875,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.5655141249999999,
+        0.5656636875,
+        0.6156025625000001,
+        0.5530905000000002,
+        0.6155493125000001
+      ],
+      "action_counts": [
+        20,
+        13,
+        367
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.6175,
+      "prefix_paid_service_utility": 0.5830902125,
+      "tokens_per_question": 6881.9575,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.65,
+        0.5875,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.5530108125,
+        0.5656731874999998,
+        0.6156051875000002,
+        0.5531030000000001,
+        0.6280588750000001
+      ],
+      "action_counts": [
+        22,
+        21,
+        357
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "train_best_constant",
+      "accuracy": 0.6825,
+      "prefix_paid_service_utility": 0.6493265375,
+      "tokens_per_question": 6634.6925,
+      "accuracy_by_seed": [
+        0.7,
+        0.6625,
+        0.6875,
+        0.7,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.6667792500000003,
+        0.6293693749999998,
+        0.6542903749999999,
+        0.6668597500000002,
+        0.6293339374999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.675,
+      "prefix_paid_service_utility": 0.6417658749999999,
+      "tokens_per_question": 6646.825,
+      "accuracy_by_seed": [
+        0.675,
+        0.6625,
+        0.6875,
+        0.6875,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.64171775,
+        0.6293216874999998,
+        0.6541981875,
+        0.6543132500000001,
+        0.6292784999999996
+      ],
+      "action_counts": [
+        75,
+        66,
+        259
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.685,
+      "prefix_paid_service_utility": 0.6517623374999999,
+      "tokens_per_question": 6647.5325,
+      "accuracy_by_seed": [
+        0.6875,
+        0.6625,
+        0.7125,
+        0.7,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.6542098750000002,
+        0.6293216874999998,
+        0.67919925,
+        0.6667995624999999,
+        0.6292813125000001
+      ],
+      "action_counts": [
+        82,
+        112,
+        206
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "tree_current_prefix",
+      "accuracy": 0.67,
+      "prefix_paid_service_utility": 0.6368001,
+      "tokens_per_question": 6639.98,
+      "accuracy_by_seed": [
+        0.6625,
+        0.6625,
+        0.6625,
+        0.725,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.6292469375000003,
+        0.6293303749999999,
+        0.6292636875000002,
+        0.6918407500000003,
+        0.6043187499999998
+      ],
+      "action_counts": [
+        16,
+        138,
+        246
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.6825,
+      "prefix_paid_service_utility": 0.6493198874999999,
+      "tokens_per_question": 6636.0225,
+      "accuracy_by_seed": [
+        0.7,
+        0.6625,
+        0.6875,
+        0.7,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.6667693125000003,
+        0.6293637499999997,
+        0.6542878124999998,
+        0.6668504375000002,
+        0.6293281249999998
+      ],
+      "action_counts": [
+        8,
+        6,
+        386
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "train_best_constant",
+      "accuracy": 0.6,
+      "prefix_paid_service_utility": 0.5674250625,
+      "tokens_per_question": 6514.9875,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.6,
+        0.575,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5674210000000001,
+        0.5674234374999998,
+        0.5674631250000002,
+        0.5423933125,
+        0.5924244375
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.6025,
+      "prefix_paid_service_utility": 0.569879775,
+      "tokens_per_question": 6524.045,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6,
+        0.575,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.5548707500000001,
+        0.5673718749999999,
+        0.5674060624999999,
+        0.5423642500000001,
+        0.6173859375
+      ],
+      "action_counts": [
+        73,
+        73,
+        254
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.61,
+      "prefix_paid_service_utility": 0.5773467,
+      "tokens_per_question": 6530.66,
+      "accuracy_by_seed": [
+        0.6125,
+        0.5875,
+        0.6375,
+        0.5875,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5798428124999999,
+        0.5548499999999998,
+        0.6048721250000002,
+        0.5548310625000002,
+        0.5923375000000003
+      ],
+      "action_counts": [
+        94,
+        156,
+        150
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "tree_current_prefix",
+      "accuracy": 0.6,
+      "prefix_paid_service_utility": 0.567424325,
+      "tokens_per_question": 6515.135,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6125,
+        0.575,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.554927625,
+        0.5674236874999997,
+        0.5799521250000002,
+        0.5423926875000001,
+        0.5924255
+      ],
+      "action_counts": [
+        11,
+        36,
+        353
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.5875,
+      "prefix_paid_service_utility": 0.5548243624999999,
+      "tokens_per_question": 6535.1275,
+      "accuracy_by_seed": [
+        0.5875,
+        0.5875,
+        0.5875,
+        0.5625,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5548231875,
+        0.5548286875,
+        0.5548458125000001,
+        0.5297870000000001,
+        0.579837125
+      ],
+      "action_counts": [
+        90,
+        9,
+        301
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "train_best_constant",
+      "accuracy": 0.6525,
+      "prefix_paid_service_utility": 0.6176287375,
+      "tokens_per_question": 6974.2525,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.625,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6650658124999999,
+        0.6151205625000002,
+        0.5901183749999999,
+        0.5776468124999999,
+        0.6401921249999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.6475,
+      "prefix_paid_service_utility": 0.6125592125,
+      "tokens_per_question": 6988.1575,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.6,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6649924374999999,
+        0.6150621875000002,
+        0.5650473125,
+        0.577561625,
+        0.6401324999999998
+      ],
+      "action_counts": [
+        102,
+        99,
+        199
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.6475,
+      "prefix_paid_service_utility": 0.612549375,
+      "tokens_per_question": 6990.125,
+      "accuracy_by_seed": [
+        0.7,
+        0.6375,
+        0.6125,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6649832499999999,
+        0.6025676875000001,
+        0.5775291874999999,
+        0.577560125,
+        0.6401066249999998
+      ],
+      "action_counts": [
+        105,
+        106,
+        189
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "tree_current_prefix",
+      "accuracy": 0.6525,
+      "prefix_paid_service_utility": 0.6175711125,
+      "tokens_per_question": 6985.7775,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.6125,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6775105625,
+        0.6150897500000001,
+        0.577544375,
+        0.5775975,
+        0.6401133749999999
+      ],
+      "action_counts": [
+        72,
+        34,
+        294
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.6475,
+      "prefix_paid_service_utility": 0.612622725,
+      "tokens_per_question": 6975.455,
+      "accuracy_by_seed": [
+        0.7,
+        0.6375,
+        0.6125,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6650649999999999,
+        0.6026140625000003,
+        0.5776078124999999,
+        0.5776368749999999,
+        0.6401898749999997
+      ],
+      "action_counts": [
+        0,
+        19,
+        381
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "train_best_constant",
+      "accuracy": 0.61,
+      "prefix_paid_service_utility": 0.5772483125000001,
+      "tokens_per_question": 6550.3375,
+      "accuracy_by_seed": [
+        0.575,
+        0.6,
+        0.6625,
+        0.625,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.54222025,
+        0.5672463750000001,
+        0.6297168750000001,
+        0.592246,
+        0.5548120624999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.6175,
+      "prefix_paid_service_utility": 0.584667025,
+      "tokens_per_question": 6566.595,
+      "accuracy_by_seed": [
+        0.6,
+        0.625,
+        0.6625,
+        0.6125,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5671219999999997,
+        0.592168,
+        0.6296445625000003,
+        0.5796625625,
+        0.5547379999999998
+      ],
+      "action_counts": [
+        106,
+        82,
+        212
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.605,
+      "prefix_paid_service_utility": 0.572196975,
+      "tokens_per_question": 6560.605,
+      "accuracy_by_seed": [
+        0.5375,
+        0.6125,
+        0.6625,
+        0.6,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5046636249999998,
+        0.5796996875,
+        0.6296624375,
+        0.5671804999999998,
+        0.5797786249999999
+      ],
+      "action_counts": [
+        92,
+        152,
+        156
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "tree_current_prefix",
+      "accuracy": 0.6025,
+      "prefix_paid_service_utility": 0.5697425875000001,
+      "tokens_per_question": 6551.4825,
+      "accuracy_by_seed": [
+        0.6,
+        0.575,
+        0.65,
+        0.6125,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.5672001875,
+        0.5422375624999999,
+        0.617231,
+        0.5797424375,
+        0.5423017499999998
+      ],
+      "action_counts": [
+        16,
+        81,
+        303
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.6075,
+      "prefix_paid_service_utility": 0.574724275,
+      "tokens_per_question": 6555.145,
+      "accuracy_by_seed": [
+        0.575,
+        0.6,
+        0.6625,
+        0.6125,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5421988124999999,
+        0.567232625,
+        0.6296801875000001,
+        0.5797125625,
+        0.5547971874999998
+      ],
+      "action_counts": [
+        22,
+        14,
+        364
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "train_best_constant",
+      "accuracy": 0.595,
+      "prefix_paid_service_utility": 0.5625604,
+      "tokens_per_question": 6487.92,
+      "accuracy_by_seed": [
+        0.625,
+        0.6125,
+        0.5375,
+        0.6,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5925629999999998,
+        0.5800745624999999,
+        0.5050490624999999,
+        0.5675611875000001,
+        0.5675541875
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.58,
+      "prefix_paid_service_utility": 0.5475263375,
+      "tokens_per_question": 6494.7325,
+      "accuracy_by_seed": [
+        0.5875,
+        0.5875,
+        0.5625,
+        0.575,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5550192500000001,
+        0.5550020000000001,
+        0.5300410624999998,
+        0.5425576874999999,
+        0.5550116875
+      ],
+      "action_counts": [
+        77,
+        117,
+        206
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.5975,
+      "prefix_paid_service_utility": 0.5649683375,
+      "tokens_per_question": 6506.3325,
+      "accuracy_by_seed": [
+        0.6375,
+        0.5875,
+        0.55,
+        0.6125,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.6049609375000001,
+        0.5549706875000001,
+        0.5174766875,
+        0.5799643125,
+        0.5674690624999998
+      ],
+      "action_counts": [
+        115,
+        101,
+        184
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "tree_current_prefix",
+      "accuracy": 0.5975,
+      "prefix_paid_service_utility": 0.5650236875,
+      "tokens_per_question": 6495.2625,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6125,
+        0.55,
+        0.6125,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5800403124999998,
+        0.5800255625000001,
+        0.5175195625000002,
+        0.5800082499999999,
+        0.56752475
+      ],
+      "action_counts": [
+        49,
+        23,
+        328
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.595,
+      "prefix_paid_service_utility": 0.5625464125,
+      "tokens_per_question": 6490.7175,
+      "accuracy_by_seed": [
+        0.625,
+        0.6125,
+        0.5375,
+        0.6,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5925451874999998,
+        0.5800475625000001,
+        0.5050435,
+        0.56755175,
+        0.5675440624999999
+      ],
+      "action_counts": [
+        9,
+        11,
+        380
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "train_best_constant",
+      "accuracy": 0.625,
+      "prefix_paid_service_utility": 0.5907337375,
+      "tokens_per_question": 6853.2525,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6125,
+        0.6375,
+        0.6875,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5532741250000002,
+        0.5781748124999998,
+        0.6033252500000001,
+        0.6531891875,
+        0.5657053125000002
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.6225,
+      "prefix_paid_service_utility": 0.588154725,
+      "tokens_per_question": 6869.055,
+      "accuracy_by_seed": [
+        0.575,
+        0.625,
+        0.625,
+        0.6625,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5407172499999999,
+        0.5905921249999998,
+        0.5907437500000001,
+        0.6281093125,
+        0.5906111875000003
+      ],
+      "action_counts": [
+        103,
+        76,
+        221
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.6125,
+      "prefix_paid_service_utility": 0.57818285,
+      "tokens_per_question": 6863.43,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.625,
+        0.625,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5532205000000001,
+        0.5656058125,
+        0.5907982500000002,
+        0.5906363125,
+        0.5906533750000001
+      ],
+      "action_counts": [
+        66,
+        137,
+        197
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "tree_current_prefix",
+      "accuracy": 0.62,
+      "prefix_paid_service_utility": 0.585699775,
+      "tokens_per_question": 6860.045,
+      "accuracy_by_seed": [
+        0.575,
+        0.6125,
+        0.6375,
+        0.675,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5407462500000001,
+        0.578131375,
+        0.6033060625000002,
+        0.6406505625000001,
+        0.565664625
+      ],
+      "action_counts": [
+        46,
+        0,
+        354
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.6175,
+      "prefix_paid_service_utility": 0.58323505,
+      "tokens_per_question": 6852.99,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6375,
+        0.6625,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5532932500000001,
+        0.5656757499999998,
+        0.6033199375000001,
+        0.6281906875,
+        0.5656956250000003
+      ],
+      "action_counts": [
+        12,
+        25,
+        363
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "train_best_constant",
+      "accuracy": 0.6675,
+      "prefix_paid_service_utility": 0.6332079875,
+      "tokens_per_question": 6858.4025,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.675,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.67819825,
+        0.6157140000000001,
+        0.64067725,
+        0.6406803750000003,
+        0.5907700625000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        400
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "ridge_current_prefix",
+      "accuracy": 0.6625,
+      "prefix_paid_service_utility": 0.6281088625,
+      "tokens_per_question": 6878.2275,
+      "accuracy_by_seed": [
+        0.7,
+        0.6375,
+        0.675,
+        0.6625,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.6655678750000001,
+        0.6031346250000001,
+        0.6405695,
+        0.6280973750000002,
+        0.6031749375
+      ],
+      "action_counts": [
+        116,
+        76,
+        208
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "ridge_old_prefix_transfer",
+      "accuracy": 0.6725,
+      "prefix_paid_service_utility": 0.638076525,
+      "tokens_per_question": 6884.695,
+      "accuracy_by_seed": [
+        0.7125,
+        0.675,
+        0.675,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.6780502500000003,
+        0.6405873750000002,
+        0.6405609374999999,
+        0.6405506250000002,
+        0.5906334374999999
+      ],
+      "action_counts": [
+        145,
+        130,
+        125
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "tree_current_prefix",
+      "accuracy": 0.66,
+      "prefix_paid_service_utility": 0.625545125,
+      "tokens_per_question": 6890.975,
+      "accuracy_by_seed": [
+        0.675,
+        0.65,
+        0.6875,
+        0.65,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.6405240000000003,
+        0.6155502500000001,
+        0.6530138750000002,
+        0.6155320000000002,
+        0.6031055
+      ],
+      "action_counts": [
+        193,
+        27,
+        180
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "tree_old_prefix_transfer",
+      "accuracy": 0.67,
+      "prefix_paid_service_utility": 0.6355609249999999,
+      "tokens_per_question": 6887.815,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.6875,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.6780584375,
+        0.6155469375000001,
+        0.6530104375000001,
+        0.6405588750000002,
+        0.5906299375
+      ],
+      "action_counts": [
+        150,
+        17,
+        233
+      ]
+    }
+  ],
+  "gates": {
+    "ridge_current_prefix": {
+      "difference": -0.004129631250000099,
+      "positive_folds": 2,
+      "positive_seeds": 2,
+      "pass": false
+    },
+    "ridge_old_prefix_transfer": {
+      "difference": -0.005702520312499959,
+      "positive_folds": 4,
+      "positive_seeds": 2,
+      "pass": false
+    },
+    "tree_current_prefix": {
+      "difference": -0.004104835937499995,
+      "positive_folds": 1,
+      "positive_seeds": 0,
+      "pass": false
+    },
+    "tree_old_prefix_transfer": {
+      "difference": -0.0034756984375000632,
+      "positive_folds": 1,
+      "positive_seeds": 0,
+      "pass": false
+    }
+  },
+  "same_design_linear_identity_max_error": 1.942890293094024e-16,
+  "all_old_new_training_graph_collection_tokens": 54375236,
+  "training_feedback_cost_included_in_reported_service_utility": false,
+  "service_prefix_even_dead_nodes_charged": true,
+  "unseen_dataset_confirmation": false,
+  "source_sha256": "0ca8eb54e5641f5080db31bbf17e287be196e5c51144abec6d59753b31273733",
+  "wall_seconds": 14.704252481460571
+}

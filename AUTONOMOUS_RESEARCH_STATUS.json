@@ -9,7 +9,11 @@
   "GPU_used": 76.47691242367074,
   "GPU_reserved": 0,
   "active_stage": "D6_EXPLORATORY_CPU_DIAGNOSTIC",
-  "next_action": "commit_protocol_then_diagnose",
+  "next_action": "qualify frozen evidence operator; then fresh 96-question applicability",
   "GPU_jobs": [],
-  "last_update_unix": 1794808261.299205
+  "last_update_unix": 1794808261.299205,
+  "stage": "EVIDENCE_INDEXED_ENGINEERING_PREPARATION",
+  "D6": "NEGATIVE",
+  "D7": "NEGATIVE",
+  "new_GPU_started": false
 }
