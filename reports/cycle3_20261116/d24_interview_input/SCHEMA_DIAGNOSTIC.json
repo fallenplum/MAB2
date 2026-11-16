@@ -1,0 +1,55 @@
+{
+  "counts": [
+    {
+      "schema": [
+        "interview",
+        "",
+        "under4"
+      ],
+      "tasks": 5
+    },
+    {
+      "schema": [
+        "interview",
+        "list-list",
+        "under4"
+      ],
+      "tasks": 1107
+    },
+    {
+      "schema": [
+        "interview",
+        "malformed_json"
+      ],
+      "tasks": 195
+    },
+    {
+      "schema": [
+        "interview",
+        "str-str",
+        "atleast4"
+      ],
+      "tasks": 5
+    },
+    {
+      "schema": [
+        "interview",
+        "str-str",
+        "under4"
+      ],
+      "tasks": 130
+    },
+    {
+      "schema": [
+        "introductory",
+        "str-str",
+        "under4"
+      ],
+      "tasks": 134
+    }
+  ],
+  "official_evaluator_blob": "25414d2a5371729f00e9be888c66b236d17b86c2",
+  "read_lines": "122-299",
+  "note": "Author STDIO evaluator joins list-of-lines. D23/D24 plain-string inclusion is a restricted interface, not exhaustive APPS test-count evidence.",
+  "model_calls": 0
+}

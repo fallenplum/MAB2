@@ -1,0 +1,3 @@
+# Source-format scope clarification
+
+Author evaluator blob25414d2a5371729f00e9be888c66b236d17b86c2(lines122-299read) supports both plain strings and lists of lines for STDIO. D23/D24 intentionally selected plain strings; that subset alone cannot prove all APPSSTDIO lacks tests. A separate schema-only diagnostic now confirms the omitted1107interview list/list tasks also have fewer than4raw cases. Thus adding the author line-join normalization would not resolve the128group/four-case deficit. The frozen decisions stand; no model outputs were inspected. The source's call-based return comparison and numeric dictionary conversion are separately implemented/tested for D25, with runtime differences explicitly disclosed.
