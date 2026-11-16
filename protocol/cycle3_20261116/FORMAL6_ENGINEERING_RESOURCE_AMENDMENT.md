@@ -1,0 +1,7 @@
+# Resource-only amendment after artificial OOM
+
+Attempt001 completed the short artificial fixture, then failed at the long fixture: Mistral eager softmax requested4.05GiB while Qwen and Mistral both resided on a shared A6000. All outputs and failure traces are retained; actual residence611.13778550250083s (0.16976051528472452GPUh) is charged. No benchmark answers or formal outputs were observed.
+
+Attempt002 retains identical weights, bf16/eager attention, prompts, seeds, input limits, parsing and scientific gates. Before each physical Mistral request, move the idle Qwen weights to CPU; restore them to the same CUDA device before a Qwen request. Empty unused CUDA cache after transfer. Do not change Mistral placement or quantize. Record every transfer, elapsed host time and target; all transfers count in full worker GPU residency. Native model-call latency excludes transfer, so do not claim end-to-end speedup from it. Require exact agreement with all completed short-fixture answers and requests from attempt001, as well as full archive replay.
+
+Engineering cumulative allocation increases from0.25 to0.5GPUh; attempt002 itself reserves0.25 with worker840s. Formal allocation decreases from7.75 to7.5GPUh; aggregate worker hard cap7.25h plus termination margin. Entire route remains <=8GPUh and global <=160; no formal count reset, no threshold changes. If the repeated bounded qualification still fails, diagnose environment before any formal admission.
