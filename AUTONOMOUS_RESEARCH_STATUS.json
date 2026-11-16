@@ -6,15 +6,13 @@
   "prior_cycle_stopped_at_cap": true,
   "continuation_authority": "User requested continued autoresearch after five-round closure on 2026-11-16",
   "GPU_total": 160,
-  "GPU_used": 76.76475473728547,
-  "GPU_reserved": 7.5,
-  "active_stage": "FORMAL6_RUNNING_UNSCORED",
-  "next_action": "Observe existing Formal6 workers until closure; close actual cost, CPU replay, independent audit, then fixed scoring and D8/D9; do not launch a duplicate",
-  "GPU_jobs": [
-    "C3_FORMAL6_EVIDENCE_RANK_APPLICABILITY"
-  ],
-  "last_update_unix": 1794814976.9376433,
-  "stage": "FORMAL6_RUNNING_UNSCORED",
+  "GPU_used": 79.26063772257888,
+  "GPU_reserved": 0.25,
+  "active_stage": "FORMAL7_ENGINEERING_PREPARED",
+  "next_action": "Launch bounded artificial qualification, replay and independently audit; freeze scorer before new formal admission",
+  "GPU_jobs": [],
+  "last_update_unix": 1794817303.1543362,
+  "stage": "FORMAL7_ENGINEERING_PREPARED",
   "D6": "NEGATIVE",
   "D7": "NEGATIVE",
   "new_GPU_started": true,
@@ -23,10 +21,12 @@
     "attempt002 stopped during loading to avoid known interface failure"
   ],
   "formal_candidate_rounds_started": 6,
-  "completed_questions_at_observation": 73,
-  "no_benchmark_labels_read": true,
+  "completed_questions_at_observation": 96,
+  "no_benchmark_labels_read": false,
   "latest_published_commit": "b77b00e",
-  "D8": "PREREGISTERED_UNSCORED",
-  "D9": "PREREGISTERED_UNSCORED",
-  "second_dataset": "AUTHOR_TRAIN_INPUT_AUDITED_LABELS_UNOPENED"
+  "D8": "COMPLETE_EXPOSED_DIAGNOSTIC",
+  "D9": "COMPLETE_EXPOSED_DIAGNOSTIC",
+  "second_dataset": "AUTHOR_TRAIN_INPUT_AUDITED_LABELS_UNOPENED",
+  "Formal6_admission": false,
+  "active_qualification": "annotation_qualification_v1"
 }

@@ -1,0 +1,237 @@
+{
+  "status": "COMPLETE_EXPOSED_CPU_DIAGNOSTIC",
+  "question_groups": 96,
+  "seeds": 2,
+  "features": 20,
+  "methods": {
+    "train_constant": {
+      "EM": 0.453125,
+      "service_utility": 0.43845664062499995,
+      "service_tokens": 2933.671875,
+      "utility_gain": 0.0,
+      "positive_folds": 0,
+      "fold_gains": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed_gains": [
+        0.0,
+        0.0
+      ],
+      "EM_by_seed": [
+        0.46875,
+        0.4375
+      ],
+      "corrections": 0,
+      "destructions": 0,
+      "action_counts": [
+        96,
+        0,
+        0
+      ],
+      "registered_model_signal_gate": null
+    },
+    "ridge": {
+      "EM": 0.3958333333333333,
+      "service_utility": 0.38177046875000004,
+      "service_tokens": 2812.5729166666665,
+      "utility_gain": -0.05668617187499999,
+      "positive_folds": 1,
+      "fold_gains": [
+        0.031763281250000004,
+        -0.03025625,
+        -0.15525843749999998,
+        -0.06236125000000001,
+        -0.06194484375,
+        -0.06205953125000001
+      ],
+      "seed_gains": [
+        -0.061902708333333334,
+        -0.05146963541666669
+      ],
+      "EM_by_seed": [
+        0.40625,
+        0.3854166666666667
+      ],
+      "corrections": 2,
+      "destructions": 13,
+      "action_counts": [
+        50,
+        9,
+        37
+      ],
+      "registered_model_signal_gate": false
+    },
+    "tree": {
+      "EM": 0.4010416666666667,
+      "service_utility": 0.38737773437500006,
+      "service_tokens": 2732.7864583333335,
+      "utility_gain": -0.05107890625,
+      "positive_folds": 0,
+      "fold_gains": [
+        -0.03031875,
+        -0.030218125000000002,
+        -0.0618315625,
+        -0.06147640624999999,
+        -0.06222515625,
+        -0.060403437500000004
+      ],
+      "seed_gains": [
+        -0.07190208333333334,
+        -0.030255729166666665
+      ],
+      "EM_by_seed": [
+        0.3958333333333333,
+        0.40625
+      ],
+      "corrections": 1,
+      "destructions": 11,
+      "action_counts": [
+        44,
+        19,
+        33
+      ],
+      "registered_model_signal_gate": false
+    },
+    "lexical_delete": {
+      "EM": 0.3958333333333333,
+      "service_utility": 0.383319453125,
+      "service_tokens": 2502.7760416666665,
+      "utility_gain": -0.0551371875,
+      "positive_folds": 2,
+      "fold_gains": [
+        0.002355625000000007,
+        0.0020721874999999924,
+        -0.09212078124999998,
+        -0.029538906249999997,
+        -0.1853303125,
+        -0.028260937499999993
+      ],
+      "seed_gains": [
+        -0.060334895833333325,
+        -0.04993947916666666
+      ],
+      "EM_by_seed": [
+        0.40625,
+        0.3854166666666667
+      ],
+      "corrections": 5,
+      "destructions": 16,
+      "action_counts": [
+        0,
+        46,
+        50
+      ],
+      "registered_model_signal_gate": null
+    },
+    "fixed_keep": {
+      "EM": 0.453125,
+      "service_utility": 0.43845664062499995,
+      "service_tokens": 2933.671875,
+      "utility_gain": 0.0,
+      "positive_folds": 0,
+      "fold_gains": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "seed_gains": [
+        0.0,
+        0.0
+      ],
+      "EM_by_seed": [
+        0.46875,
+        0.4375
+      ],
+      "corrections": 0,
+      "destructions": 0,
+      "action_counts": [
+        96,
+        0,
+        0
+      ],
+      "registered_model_signal_gate": null
+    },
+    "fixed_delete_affected": {
+      "EM": 0.3177083333333333,
+      "service_utility": 0.30703018229166673,
+      "service_tokens": 2135.6302083333335,
+      "utility_gain": -0.13142645833333333,
+      "positive_folds": 0,
+      "fold_gains": [
+        -0.02743046874999999,
+        -0.05897843750000001,
+        -0.34017765625,
+        -0.05848906250000001,
+        -0.18249453125,
+        -0.12098859375000001
+      ],
+      "seed_gains": [
+        -0.1626738541666666,
+        -0.10017906250000001
+      ],
+      "EM_by_seed": [
+        0.3020833333333333,
+        0.3333333333333333
+      ],
+      "corrections": 4,
+      "destructions": 30,
+      "action_counts": [
+        0,
+        96,
+        0
+      ],
+      "registered_model_signal_gate": null
+    },
+    "fixed_delete_other": {
+      "EM": 0.421875,
+      "service_utility": 0.4079355989583333,
+      "service_tokens": 2787.8802083333335,
+      "utility_gain": -0.030521041666666675,
+      "positive_folds": 3,
+      "fold_gains": [
+        0.0006648437499999979,
+        -0.030541718750000005,
+        0.0006509375000000178,
+        -0.0930534375,
+        0.0007150000000000005,
+        -0.06156187500000001
+      ],
+      "seed_gains": [
+        -0.030505520833333327,
+        -0.030536562499999993
+      ],
+      "EM_by_seed": [
+        0.4375,
+        0.40625
+      ],
+      "corrections": 6,
+      "destructions": 12,
+      "action_counts": [
+        0,
+        0,
+        96
+      ],
+      "registered_model_signal_gate": null
+    }
+  },
+  "new_GPU_hours": 0,
+  "bootstrap_runs": 0,
+  "interpretation": "Service-only exploratory signal; does not override Formal6 failure or establish feedback-budget gain",
+  "training_cost_included_in_service_utility": false,
+  "independent_confirmation": false,
+  "pins": {
+    "questions": "a6ce5d36d5a99285e645cb4277fad6232264a7ffcbd2e49b77f8e235c79980a3",
+    "selection": "8c3458b5bca4540435d60b4d66145503d5af89f8e1469346c3ed692c8291f1e2",
+    "arrays": "20bdd1c0eeb04b39a00a46beb9ee0119ad87d31994ee53b00d4f60aaa4e0deae",
+    "scoring_audit": "53ffb46339f8fcfcae5dfb29410009a01ce0cc73bd2978eebff3348e238558ec",
+    "source": "c522546340093a5806dd902b9026d69353a5c349d6e1ac179e6971aa10fb5643"
+  }
+}

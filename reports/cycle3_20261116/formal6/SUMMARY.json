@@ -1,0 +1,388 @@
+{
+  "gates": {
+    "selector_valid": true,
+    "fixed_G1_quality": false,
+    "credit_shift_support": true,
+    "certificate_coverage": true
+  },
+  "admission": false,
+  "claim": "Applicability only; no active-policy efficacy or independent replication established",
+  "conditions": {
+    "G0": {
+      "EM": 0.4583333333333333,
+      "F1": 0.5440914780548701,
+      "service_tokens": 3173.5625,
+      "service_utility": 0.4424655208333333,
+      "EM_by_seed": [
+        0.4791666666666667,
+        0.4375
+      ],
+      "utility_by_seed": [
+        0.4632921875000002,
+        0.42163885416666663
+      ]
+    },
+    "G0_MINUS_EU": {
+      "EM": 0.4635416666666667,
+      "F1": 0.5460702783946952,
+      "service_tokens": 2995.2760416666665,
+      "service_utility": 0.4485652864583333,
+      "EM_by_seed": [
+        0.4895833333333333,
+        0.4375
+      ],
+      "utility_by_seed": [
+        0.4746054687499998,
+        0.42252510416666667
+      ]
+    },
+    "G0_MINUS_EV": {
+      "EM": 0.4427083333333333,
+      "F1": 0.5161467229813885,
+      "service_tokens": 2996.5364583333335,
+      "service_utility": 0.4277256510416667,
+      "EM_by_seed": [
+        0.4583333333333333,
+        0.4270833333333333
+      ],
+      "utility_by_seed": [
+        0.4433592187499999,
+        0.4120920833333333
+      ]
+    },
+    "G1": {
+      "EM": 0.453125,
+      "F1": 0.5362604106514327,
+      "service_tokens": 2933.671875,
+      "service_utility": 0.43845664062499995,
+      "EM_by_seed": [
+        0.46875,
+        0.4375
+      ],
+      "utility_by_seed": [
+        0.45401369791666674,
+        0.42289958333333355
+      ]
+    },
+    "G1_MINUS_EU": {
+      "EM": 0.3489583333333333,
+      "F1": 0.4339903760956392,
+      "service_tokens": 2452.3177083333335,
+      "service_utility": 0.33669674479166667,
+      "EM_by_seed": [
+        0.3541666666666667,
+        0.34375
+      ],
+      "utility_by_seed": [
+        0.3418603645833332,
+        0.331533125
+      ]
+    },
+    "G1_MINUS_EV": {
+      "EM": 0.390625,
+      "F1": 0.45862820745306293,
+      "service_tokens": 2471.1927083333335,
+      "service_utility": 0.3782690364583334,
+      "EM_by_seed": [
+        0.3854166666666667,
+        0.3958333333333333
+      ],
+      "utility_by_seed": [
+        0.3729876562500001,
+        0.38355041666666695
+      ]
+    },
+    "FLAT_EVIDENCE": {
+      "EM": 0.453125,
+      "F1": 0.5386036725802957,
+      "service_tokens": 2754.6354166666665,
+      "service_utility": 0.4393518229166667,
+      "EM_by_seed": [
+        0.4583333333333333,
+        0.4479166666666667
+      ],
+      "utility_by_seed": [
+        0.44454218750000024,
+        0.43416145833333347
+      ]
+    },
+    "SINGLE_Q": {
+      "EM": 0.5052083333333334,
+      "F1": 0.5967955850103199,
+      "service_tokens": 1567.1979166666667,
+      "service_utility": 0.49737234374999995,
+      "EM_by_seed": [
+        0.5104166666666666,
+        0.5
+      ],
+      "utility_by_seed": [
+        0.5025793229166666,
+        0.4921653645833333
+      ]
+    },
+    "SINGLE_M": {
+      "EM": 0.5052083333333334,
+      "F1": 0.6303849611575375,
+      "service_tokens": 1763.0677083333333,
+      "service_utility": 0.4963929947916667,
+      "EM_by_seed": [
+        0.5,
+        0.5104166666666666
+      ],
+      "utility_by_seed": [
+        0.49118536458333323,
+        0.5016006249999999
+      ]
+    },
+    "INDEPENDENT3_Q": {
+      "EM": 0.6197916666666666,
+      "F1": 0.7270160285052993,
+      "service_tokens": 6613.479166666667,
+      "service_utility": 0.5867242708333333,
+      "EM_by_seed": [
+        0.6145833333333334,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.58152078125,
+        0.5919277604166667
+      ]
+    },
+    "VOTE_Q3": {
+      "EM": 0.5,
+      "F1": 0.6194518350103199,
+      "service_tokens": 4491.369791666667,
+      "service_utility": 0.4775431510416667,
+      "EM_by_seed": [
+        0.5208333333333334,
+        0.4791666666666667
+      ],
+      "utility_by_seed": [
+        0.4983752604166667,
+        0.4567110416666668
+      ]
+    }
+  },
+  "paired_G1_comparisons": {
+    "G0": {
+      "EM_delta": -0.005208333333333333,
+      "corrections": 3,
+      "destructions": 4
+    },
+    "G0_MINUS_EU": {
+      "EM_delta": -0.010416666666666666,
+      "corrections": 8,
+      "destructions": 10
+    },
+    "G0_MINUS_EV": {
+      "EM_delta": 0.010416666666666666,
+      "corrections": 13,
+      "destructions": 11
+    },
+    "G1": {
+      "EM_delta": 0.0,
+      "corrections": 0,
+      "destructions": 0
+    },
+    "G1_MINUS_EU": {
+      "EM_delta": 0.10416666666666667,
+      "corrections": 22,
+      "destructions": 2
+    },
+    "G1_MINUS_EV": {
+      "EM_delta": 0.0625,
+      "corrections": 20,
+      "destructions": 8
+    },
+    "FLAT_EVIDENCE": {
+      "EM_delta": 0.0,
+      "corrections": 6,
+      "destructions": 6
+    },
+    "SINGLE_Q": {
+      "EM_delta": -0.052083333333333336,
+      "corrections": 13,
+      "destructions": 23
+    },
+    "SINGLE_M": {
+      "EM_delta": -0.052083333333333336,
+      "corrections": 26,
+      "destructions": 36
+    },
+    "INDEPENDENT3_Q": {
+      "EM_delta": -0.16666666666666666,
+      "corrections": 13,
+      "destructions": 45
+    },
+    "VOTE_Q3": {
+      "EM_delta": -0.046875,
+      "corrections": 14,
+      "destructions": 23
+    }
+  },
+  "credit_shift_fraction": 0.09635416666666667,
+  "credit_shift_by_seed": [
+    0.11979166666666667,
+    0.07291666666666667
+  ],
+  "credit_shift_by_edge": [
+    0.109375,
+    0.08333333333333333
+  ],
+  "distinct_shift_questions": 22,
+  "certificate_fraction": 0.21875,
+  "certificate_violations": 0,
+  "selection_valid_rate": 0.9895833333333334,
+  "seeds": [
+    26111661,
+    26111662
+  ],
+  "independent_question_count": 96,
+  "question_seed_count": 192,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "cost_limitation": "Service utilities exclude collection training cost and cannot establish net policy gain; full physical collection ledger reported separately",
+  "budget_projection_fraction_logical": 0.023177083333333334,
+  "mean_raw_ranking_length_logical": 1.7598958333333334,
+  "baseline_routes": {
+    "INDEPENDENT3_Q": {
+      "U": "qwen",
+      "V": "qwen",
+      "R": "mistral",
+      "M": "qwen"
+    },
+    "VOTE_Q3": {
+      "M": "qwen",
+      "U": "qwen",
+      "V": "qwen"
+    }
+  },
+  "task": "HotpotQA train distractor",
+  "type_breakdown": {
+    "bridge": {
+      "questions": 75,
+      "conditions": {
+        "G0": {
+          "EM": 0.44666666666666666,
+          "F1": 0.5373259807991225,
+          "service_tokens": 3286.8533333333335
+        },
+        "G0_MINUS_EU": {
+          "EM": 0.44666666666666666,
+          "F1": 0.5314144007896544,
+          "service_tokens": 3094.1066666666666
+        },
+        "G0_MINUS_EV": {
+          "EM": 0.4533333333333333,
+          "F1": 0.526223360971733,
+          "service_tokens": 3102.786666666667
+        },
+        "G1": {
+          "EM": 0.44,
+          "F1": 0.5273022145227226,
+          "service_tokens": 3022.38
+        },
+        "G1_MINUS_EU": {
+          "EM": 0.32666666666666666,
+          "F1": 0.41906323695797376,
+          "service_tokens": 2501.266666666667
+        },
+        "G1_MINUS_EV": {
+          "EM": 0.3933333333333333,
+          "F1": 0.4572663277621427,
+          "service_tokens": 2552.66
+        },
+        "FLAT_EVIDENCE": {
+          "EM": 0.4266666666666667,
+          "F1": 0.5236349231250007,
+          "service_tokens": 2833.78
+        },
+        "SINGLE_Q": {
+          "EM": 0.47333333333333333,
+          "F1": 0.5678983488132094,
+          "service_tokens": 1616.3933333333334
+        },
+        "SINGLE_M": {
+          "EM": 0.5,
+          "F1": 0.6295594169483147,
+          "service_tokens": 1820.2466666666667
+        },
+        "INDEPENDENT3_Q": {
+          "EM": 0.6,
+          "F1": 0.7245805164867831,
+          "service_tokens": 6812.286666666667
+        },
+        "VOTE_Q3": {
+          "EM": 0.46,
+          "F1": 0.5857872377020984,
+          "service_tokens": 4638.933333333333
+        }
+      }
+    },
+    "comparison": {
+      "questions": 21,
+      "conditions": {
+        "G0": {
+          "EM": 0.5,
+          "F1": 0.5682539682539682,
+          "service_tokens": 2768.9523809523807
+        },
+        "G0_MINUS_EU": {
+          "EM": 0.5238095238095238,
+          "F1": 0.5984126984126984,
+          "service_tokens": 2642.309523809524
+        },
+        "G0_MINUS_EV": {
+          "EM": 0.40476190476190477,
+          "F1": 0.4801587301587301,
+          "service_tokens": 2617.0714285714284
+        },
+        "G1": {
+          "EM": 0.5,
+          "F1": 0.5682539682539682,
+          "service_tokens": 2616.8571428571427
+        },
+        "G1_MINUS_EU": {
+          "EM": 0.42857142857142855,
+          "F1": 0.48730158730158724,
+          "service_tokens": 2277.5
+        },
+        "G1_MINUS_EV": {
+          "EM": 0.38095238095238093,
+          "F1": 0.46349206349206346,
+          "service_tokens": 2180.2380952380954
+        },
+        "FLAT_EVIDENCE": {
+          "EM": 0.5476190476190477,
+          "F1": 0.5920634920634921,
+          "service_tokens": 2471.9761904761904
+        },
+        "SINGLE_Q": {
+          "EM": 0.6190476190476191,
+          "F1": 0.7,
+          "service_tokens": 1391.5
+        },
+        "SINGLE_M": {
+          "EM": 0.5238095238095238,
+          "F1": 0.6333333333333334,
+          "service_tokens": 1558.857142857143
+        },
+        "INDEPENDENT3_Q": {
+          "EM": 0.6904761904761905,
+          "F1": 0.7357142857142857,
+          "service_tokens": 5903.452380952381
+        },
+        "VOTE_Q3": {
+          "EM": 0.6428571428571429,
+          "F1": 0.7396825396825396,
+          "service_tokens": 3964.3571428571427
+        }
+      }
+    }
+  },
+  "archive_manifest_sha256": "77dac948a8ed3bfbb957a799469e17409186a8f6962fbb7ebd6f3eb4b0f1210d",
+  "approval_sha256": "a84d11d5b40063a66e07fdd7f940c47cba6bf6b06ae54a51a6e9703dc0e6c9b3",
+  "source_sha256": "b98dbaf2b7fdb484c4cf045ef9b9dc4ec37f04044d813c479d283692d6c6dbd4",
+  "complete_trace_replay": true,
+  "physical_GPU_hours": 2.4958829852934126
+}

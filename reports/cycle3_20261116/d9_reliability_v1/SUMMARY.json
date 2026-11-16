@@ -1,0 +1,105 @@
+{
+  "status": "COMPLETE_EXPOSED_RELIABILITY_DIAGNOSTIC",
+  "question_groups": 96,
+  "seeds": 2,
+  "old_credit": {
+    "realizations": 384,
+    "nonzero": 34,
+    "question_edge_pairs": 192,
+    "either_seed_nonzero": 23,
+    "both_seeds_nonzero": 11,
+    "same_nonzero_sign": 11,
+    "opposite_nonzero_sign": 0,
+    "seed_correlation": 0.651477647128638
+  },
+  "new_credit": {
+    "realizations": 384,
+    "nonzero": 52,
+    "question_edge_pairs": 192,
+    "either_seed_nonzero": 34,
+    "both_seeds_nonzero": 18,
+    "same_nonzero_sign": 18,
+    "opposite_nonzero_sign": 0,
+    "seed_correlation": 0.6823933685894246
+  },
+  "credit_shift": {
+    "realizations": 384,
+    "nonzero": 37,
+    "question_edge_pairs": 192,
+    "either_seed_nonzero": 26,
+    "both_seeds_nonzero": 11,
+    "same_nonzero_sign": 11,
+    "opposite_nonzero_sign": 0,
+    "seed_correlation": 0.5501921070928594
+  },
+  "oracle_references": {
+    "same_seed_oracle": {
+      "EM": 0.5,
+      "service_utility": 0.48876934895833335,
+      "utility_by_seed": [
+        0.5094250520833333,
+        0.46811364583333326
+      ],
+      "EM_by_seed": [
+        0.5208333333333334,
+        0.4791666666666667
+      ],
+      "action_counts": [
+        13,
+        157,
+        22
+      ],
+      "gain_over_retrospective_fixed": 0.05031270833333334
+    },
+    "other_seed_oracle": {
+      "EM": 0.4583333333333333,
+      "service_utility": 0.44710234374999996,
+      "utility_by_seed": [
+        0.43673958333333324,
+        0.45746510416666664
+      ],
+      "EM_by_seed": [
+        0.4479166666666667,
+        0.46875
+      ],
+      "action_counts": [
+        13,
+        157,
+        22
+      ],
+      "gain_over_retrospective_fixed": 0.008645703125000001
+    },
+    "pooled_best_fixed_retrospective": {
+      "EM": 0.453125,
+      "service_utility": 0.43845664062499995,
+      "utility_by_seed": [
+        0.45401369791666674,
+        0.42289958333333355
+      ],
+      "EM_by_seed": [
+        0.46875,
+        0.4375
+      ],
+      "action_counts": [
+        192,
+        0,
+        0
+      ]
+    }
+  },
+  "limitations": [
+    "Descriptive exposed-pilot results; no formal gate override or independent confirmation",
+    "Two seeds give a limited reliability view, not a variance-component estimate",
+    "Oracles consume unavailable labels; no deployment or full-cost effectiveness claim",
+    "Pooled best fixed is retrospective and optimistically selected"
+  ],
+  "new_GPU_hours": 0,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "pins": {
+    "arrays": "20bdd1c0eeb04b39a00a46beb9ee0119ad87d31994ee53b00d4f60aaa4e0deae",
+    "selection": "8c3458b5bca4540435d60b4d66145503d5af89f8e1469346c3ed692c8291f1e2",
+    "audit": "53ffb46339f8fcfcae5dfb29410009a01ce0cc73bd2978eebff3348e238558ec",
+    "source": "d4eeca8267b89d7dd24d56036bf15d5c235d4ae271e40c8a3c73370320f9895c"
+  }
+}
