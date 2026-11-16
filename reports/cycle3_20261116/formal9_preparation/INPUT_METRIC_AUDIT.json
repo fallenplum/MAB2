@@ -1,0 +1,15 @@
+{
+  "status": "PASS_INDEPENDENT_INPUT_AND_METRIC_AUDIT",
+  "paper_groups": 109,
+  "pilot_exact_text_papers": 16,
+  "split_and_selection_replayed": true,
+  "BM25_replayed_papers": 16,
+  "dense_ranking_replayed": false,
+  "official_metric_artificial_pairs": 1000,
+  "checks": 1080,
+  "answers_used": false,
+  "new_GPU_hours": 0,
+  "capacity_correction_sha256": "32ca67e08d776975109266db45e4e9379ebb81e764d26aba8290531e2f781b63",
+  "source_sha256": "ad5a752667af6686fbddb6beb7a949acdbbc8d5c5ad27a1e1aeaff02a929e828",
+  "official_evaluator_git_blob": "daa0e48d32c55e6cd23d21e0d6254a35bc359ae4"
+}

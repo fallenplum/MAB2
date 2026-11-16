@@ -1,0 +1,22 @@
+{
+  "status": "QUALIFIED_FORMAL_PILOT_PREPARED_NOT_STARTED",
+  "papers": 16,
+  "seeds": [
+    26111691,
+    26111692
+  ],
+  "conditions": 12,
+  "logical_answers": 384,
+  "logical_node_calls": 1088,
+  "reserved_proposal_GPU_hours": 3.5,
+  "route_all_attempts_cap_GPU_hours": 8,
+  "qualification_actual_GPU_hours": 0.1002948510180512,
+  "qualified_operator_protocol_sha256": "411d419bdf1b7bc9c6ba5a68491a84b7a4aefdfb78a6c20ff01880102343822b",
+  "inputs_sha256": "16c4be1528341e5075af80ec8be9aa389be8a372f21686231e5191da9c4913d0",
+  "selection_sha256": "70199f1bedecc5ebb89742d6e90bae16da2102a4aa1faacd0af67dae94081a0e",
+  "partition_sha256": "0210a8e9b9f96ad01522f48a16b330db8e3e12c1034dafb1bf9725c37f765dc6",
+  "pilot_gold_sha256": "a3afd97e3dd72562c39a901dcd721e4c1ff28882b564d86c2a4f27a04eea6f6c",
+  "independent_confirmation_papers_still_sealed": 64,
+  "transfer_groups_still_sealed": 44,
+  "quality_seen": false
+}

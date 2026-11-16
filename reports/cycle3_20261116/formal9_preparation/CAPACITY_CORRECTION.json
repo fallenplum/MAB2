@@ -1,0 +1,17 @@
+{
+  "status": "PASS_CORRECTED_INPUT_CAPACITY",
+  "supersedes_capacity_only": "19b2586e1d22ad106677fd5e12a7e23d828b5c2cba41a31cdea993db8812a2be",
+  "reason": "Local transformers5.12 chat template returns a mapping by default; len(mapping) counted keys. Explicit return_dict=False plus token-list assertion fixes measurement. Server4.54 backend remains separate qualified path.",
+  "input_tokens_max_by_model": {
+    "qwen": 22040,
+    "mistral": 24656
+  },
+  "capacity_sha256": "beff7d43c8bf4b2854e0b8cb2f765bb52bbb1b639462d32c0b17986d1e503627",
+  "inputs_sha256": "16c4be1528341e5075af80ec8be9aa389be8a372f21686231e5191da9c4913d0",
+  "partition_sha256": "0210a8e9b9f96ad01522f48a16b330db8e3e12c1034dafb1bf9725c37f765dc6",
+  "selection_sha256": "70199f1bedecc5ebb89742d6e90bae16da2102a4aa1faacd0af67dae94081a0e",
+  "new_GPU_hours": 0,
+  "answers_seen": false,
+  "old_receipt_preserved": true,
+  "source_sha256": "9176c7e9fb20d00f4ffd889b1f9fae9bc7fffc723d0a79c950e70b04e4631308"
+}

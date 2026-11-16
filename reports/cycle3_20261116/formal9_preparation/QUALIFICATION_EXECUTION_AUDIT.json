@@ -1,0 +1,15 @@
+{
+  "status": "PASS_RAW_EXECUTION_AND_COST_AUDIT",
+  "mode": "qualification",
+  "units": 3,
+  "physical_success_requests": 102,
+  "logical_node_calls": 204,
+  "physical_tokens": 452321,
+  "peak_allocated_bytes": 24295728640,
+  "scalar_checks": 4308,
+  "prior_successful_generations_matched": 96,
+  "actual_GPU_hours": 0.060287164141643895,
+  "archive_sha256": "781bd439d98ee33ee3d670781ed4043be014de5671bd8f642af527b6a10b9f36",
+  "source_sha256": "02ae531c458703b1e93e48dfe53a2be36972d454b133f56caae0a6e01ec08b7a",
+  "gold_accessed": false
+}
