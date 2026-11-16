@@ -1,0 +1,80 @@
+{
+  "checked_date": "2026-11-16",
+  "provider": "available web search and primary pages; not a Google-specific API",
+  "records": [
+    {
+      "id": "C3_v4",
+      "title": "The Trace Is the State: Exact Credit Assignment for LLM Agent Teams",
+      "authors": [
+        "Yanjun Chen",
+        "Yirong Sun",
+        "Hanlin Wang",
+        "Jinghan Wang",
+        "Xinming Zhang",
+        "Xiaoyu Shen",
+        "Wenjie Li",
+        "Wei Zhang"
+      ],
+      "date": "2026-10-07",
+      "url": "https://arxiv.org/abs/2603.06859v4",
+      "project": "https://eit-east-lab.github.io/C3/",
+      "read_scope": "Official version metadata/abstract and author project page; not full paper/code reproduction.",
+      "note": "Current title differs from v1 search results. Executes trace-prefix message substitutions and downstream reward continuations. Generic counterfactual execution and fixed-trace credit are not MAB2 novelty."
+    },
+    {
+      "id": "CAGE_CAL_v1",
+      "title": "Counterfactual Graph for Multi-Agent LLM Calibration",
+      "authors": [
+        "Jiatan Huang",
+        "Mingchen Li",
+        "Ziming Li",
+        "Sunjae Kwon",
+        "Hong Yu",
+        "Chuxu Zhang"
+      ],
+      "date": "2026-05-28",
+      "url": "https://arxiv.org/html/2605.30653v1",
+      "read_scope": "Official abstract, sections3/5.1/5.2 and appendicesD.5/F.1; not full methods or reproduction.",
+      "note": "Calibrates matched communication and no-communication panels. F.1 executes all candidate topologies before choosing confidence maximum. A budgeted acquisition claim must compare with charged all-topology selection and heuristic votes."
+    },
+    {
+      "id": "EIB_EMNLP2025",
+      "title": "Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems",
+      "authors": [
+        "Xu Shen",
+        "Yixin Liu",
+        "Yiwei Dai",
+        "Yili Wang",
+        "Rui Miao",
+        "Yue Tan",
+        "Shirui Pan",
+        "Xin Wang"
+      ],
+      "doi": "10.18653/v1/2025.emnlp-main.623",
+      "url": "https://aclanthology.org/2025.emnlp-main.623/",
+      "read_scope": "Official metadata/abstract only.",
+      "note": "Causal error/beneficial-information propagation and topology design already studied; not reproduced."
+    },
+    {
+      "id": "HiddenBench_v4",
+      "title": "Systematic Failures in Collective Reasoning under Distributed Information in Multi-Agent LLMs",
+      "authors": [
+        "Yuxuan Li",
+        "Aoi Naito",
+        "Hirokazu Shirado"
+      ],
+      "date": "2026-05-13",
+      "url": "https://arxiv.org/html/2505.11556v4",
+      "read_scope": "Official metadata/abstract and selected sections3/4/6.4.",
+      "note": "65-task distributed-information benchmark; official metadata says accepted ICML2026. Structured exchange-then-decide is an existing control. Not yet downloaded or run. Small task count limits independent splits."
+    },
+    {
+      "id": "LongBench_v2",
+      "title": "LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks",
+      "doi": "10.18653/v1/2025.acl-long.183",
+      "url": "https://aclanthology.org/2025.acl-long.183/",
+      "read_scope": "Official metadata/abstract only.",
+      "note": "503 multiple-choice long-context items over six categories. Potential future stress domain, not evidence for current method; context-budget and retrieval controls required."
+    }
+  ]
+}

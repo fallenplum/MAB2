@@ -1,0 +1,16 @@
+{
+  "status": "PASS_INDEPENDENT_D18_COST_CHOICE_AND_REFIT_AUDIT",
+  "numeric_checks": 1922,
+  "complete_scalar_decision_and_cost_replay": true,
+  "refit_folds_per_task": 1,
+  "refit_models_per_fold": 3,
+  "question_groups": 192,
+  "python": "3.11.14",
+  "numpy": "1.26.4",
+  "sklearn": "1.7.2",
+  "torch": "2.4.1+cu121",
+  "transformers": "5.12.1",
+  "cpu_wall_seconds": 2.0247196999844164,
+  "summary_sha256": "7cb8c02629ee68d3ecda5563d3b21ae5da892602d80f7fe2a34aedb56b7b00f4",
+  "source_sha256": "b84a229dbb38e76769957c2eac390936f8a5fb566c0dc40ecb1aecc33c9ff230"
+}

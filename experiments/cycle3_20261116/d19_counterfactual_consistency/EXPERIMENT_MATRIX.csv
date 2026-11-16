@@ -1,0 +1,3 @@
+task,question_groups,source_realizations,terminal_anchors,methods
+hotpot,96,2,4,8
+2wiki,96,2,4,8
