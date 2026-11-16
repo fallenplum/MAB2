@@ -1,0 +1,5 @@
+# Resource availability supplement, before any high-memory formal retry
+
+The high-memory qualification preflight on GPU0 rejected admission with zero GPU work after other projects occupied additional memory. The unchanged qualification moved to GPU4, whose current free-memory snapshot exceeded38000MiB. This confirms that a two-card placement is not guaranteed.
+
+For the same Formal7 retry, permit one or two distinct currently memory-qualified cards. Select solely by current processes and free-memory guard before model calls, never outcomes. One-card execution uses the identical96-question schedule and seeds; two-card execution uses48 fixed questions per worker. Aggregate residency and same-route8GPUh limits remain unchanged after subtracting every prior formal attempt. The existing runtime already supports both counts. Do not wait for a second card while one sufficient card can execute within the measured prefix budget. No extra paid resources, other-process interruption, metric changes or benchmark labels are involved.

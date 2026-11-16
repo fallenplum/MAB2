@@ -1,0 +1,19 @@
+{
+  "status": "BLINDED_PREFIX_COST_REJECTED",
+  "actual_GPU_hours": 0.5846674806472018,
+  "completed_questions": 8,
+  "quality_seen": false,
+  "labels_released": false,
+  "project_stop": false,
+  "scientific_outcome": "NOT_EVALUATED",
+  "prefix_stop": {
+    "projected_seconds_by_worker": [
+      7813.229440604802,
+      8002.582416754682,
+      9368.659267057199,
+      7372.227884885855
+    ],
+    "quality_seen": false
+  },
+  "archive_manifest_sha256": "8fd289ac12a5528ed8df9e5c641ee2cae525910c15c23969d0bfcd4c6f0e0b00"
+}
