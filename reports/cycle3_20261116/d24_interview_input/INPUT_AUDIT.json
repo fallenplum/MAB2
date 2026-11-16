@@ -1,0 +1,27 @@
+{
+  "status": "FAIL_FEASIBILITY_OR_COVERAGE",
+  "original_train_rows": 5000,
+  "eligible_tasks": 5,
+  "eligible_independent_groups": 5,
+  "required_groups": 128,
+  "exclusion_counts": {
+    "cached_or_documentation_overlap_group": 3,
+    "fewer_than_four_distinct_pairs": 1240,
+    "invalid_or_function_io": 752,
+    "not_interview": 3000
+  },
+  "cache_files": 700,
+  "cache_rows": 548059,
+  "unique_prompt_fields": 41060,
+  "unparsed_cache_files": 0,
+  "all_local_cache_coverage": "all JSON files under supplied bench-release root",
+  "overlap_rule": "normalized equality/substring or 5-word-gram containment>=0.8; union same canonical URL and near-duplicate prompts",
+  "pretraining_contamination_audited": false,
+  "official_test_downloaded": false,
+  "solutions_executed": false,
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "elapsed_seconds": 152.51600000000326,
+  "source_sha256": "70728553cc98ea476e416bd45fee91257031549519eb8f0f97c6120f1f53ba4a",
+  "train_sha256": "45e82ef22ed8e7c0c04d881a21b923e9dd233157896b0b8d5b3493e887499cae"
+}

@@ -1,9 +1,9 @@
 {
   "project_status": "ACTIVE",
-  "formal9": "FAILED_FROZEN_GATES_RETAINED",
-  "D22": "DIRECTION_FROZEN",
-  "D23": "INPUT_FAIL_ISOLATION_PASS",
-  "next": "D24_INTERVIEW_STDIO_INPUT_FEASIBILITY",
+  "D23": "STDIO_INTRO_FAIL",
+  "D24": "STDIO_INTERVIEW_FAIL_DIRECTION_FROZEN",
+  "next": "D25_FUNCTION_INPUT_AND_ADAPTER_FEASIBILITY",
+  "formal_candidates_started": 9,
   "effective_method": false,
   "new_GPU_reserved": 0
 }

@@ -1,0 +1,5 @@
+# D24 failed; APPS STDIO exploration frozen
+
+Only5eligible original TRAIN interview STDIO groups meet the frozen rules, below128. Exclusions:3000not-interview,1240fewer than four valid distinct pairs,752invalid/functionIO,3cached/documentation overlap groups. Full700cache files and548059records were rechecked; no unparsed files. No model or solution execution,0GPUhours. Preserve D23/D24 thresholds and results. Do not move to competition difficulty or APPS TEST to rescue this STDIO substrate.
+
+D25 is a separately implemented function-call substrate, original TRAIN introductory population, justified because2505introductory tasks expose a function entrypoint. The existing STDIO-only operator is inapplicable. Whether function tasks have sufficient distinct cases is unknown before D25 counting; a pass requires the same128groups/four-case/two-hidden-case evidence minimum plus supported JSON arguments/returns, and a new independently checked invocation adapter. No function problem is relabeled as STDIO; no performance has been observed. If it fails, freeze APPS training-substrate exploration entirely.
