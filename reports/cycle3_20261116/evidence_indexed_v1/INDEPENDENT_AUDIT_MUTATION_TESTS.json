@@ -1,0 +1,23 @@
+{
+  "status": "PASS_FOUR_HASH_CONSISTENT_CORRUPTION_TESTS",
+  "cases": [
+    {
+      "case": "cost",
+      "rejected": true
+    },
+    {
+      "case": "seed",
+      "rejected": true
+    },
+    {
+      "case": "evidence",
+      "rejected": true
+    },
+    {
+      "case": "vote",
+      "rejected": true
+    }
+  ],
+  "benchmark_data_used": false,
+  "new_GPU_hours": 0
+}
