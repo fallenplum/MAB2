@@ -1,0 +1,26 @@
+{
+  "status": "RESOURCE_ONLY_PREFIRSTCALL_AMENDMENT",
+  "formal8_GPU_started": false,
+  "quality_seen": false,
+  "previous_plan_sha256": "ed1f1a5162b33f2bda0bbe84604abf764d1e13455b2e654d735ec46699d6218e",
+  "plan_sha256": "b34c44f11550b8d6d894c8faeb00bc8c5802465c844f223e5151f5caf983d937",
+  "runtime": "annotation_runtime_v3.py",
+  "runtime_sha256": "d75fb07be61045915411683ed0886bb9ac7659d3bd7c2124b1c12344db4255f8",
+  "gpus": [
+    0,
+    2
+  ],
+  "per_worker_minimum_free_MiB": 28000,
+  "aggregate_cap_seconds": 27900,
+  "total_GPU_cap": 8,
+  "immutable_scientific_fields": [
+    "operator",
+    "models",
+    "inputs",
+    "seeds",
+    "prompts",
+    "gates",
+    "alias_scoring"
+  ],
+  "engineering_source": "Existing annotation_qualification_v2 and v3b; no new GPU qualification calls"
+}
