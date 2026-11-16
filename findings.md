@@ -1,49 +1,7 @@
-# Current understanding
+# Cycle3：从失败机制重新研究
 
-G1 supports nonadditive interaction in the frozen small-model role system.
-G2 C2 risk exceeds B0; D1 supplies no reliable decision advantage and C2 leverage
-error-ranking AUC is approximately0.501. These do not establish online benefits.
+旧五轮未建立有效新方法，旧分支保留完整结论。当前重点不是降低全局信用MSE或改造更大预测器，而是判断决策信息是否存在、是否跨题/时间可复用，以及付费获得信息是否优于免费结构规则。
 
-## Hypotheses to test
+待检验的不同方向：池化/上下文信用；变更残差信号的可辨识性；输出一致性的低成本复用证书；若均无信号，重新设计具有实际异质通信需求的图与任务，而不是继续同一小图上的阈值调优。
 
-Strong regularization of the baseline quality level may induce positive credit.
-Training quality levels may emphasize nuisance offsets rather than credit
-directions. Sparse noisy feedback may limit both prediction and acquisition.
-These are hypotheses, not conclusions. D2 tests them without new model calls.
-
-## Lessons and constraints
-
-Preserve negatives. A predictor is an implementation tool. Same-budget credit
-maintenance is the scientific target. Exposed test data never become confirmation.
-No small-model pool heterogeneity or multi-task benefit has been established yet.
-
-## Open questions
-
-Can a useful decision signal survive independent confirmation? Can acquired
-counterfactual feedback correct future edits more efficiently than simple
-policies once all costs are included? Nearest-neighbor novelty remains provisional.
-
-2026-11-13 D3: fixed graph-only order2 nominee enrichment -0.001736111, 95% exploratory question CI [-0.005833333,0.002222222]. STOP_CURRENT_CANDIDATE_ROUTE. No fallback, new inference or full paper. Independent arithmetic replay passed; this does not establish equivalence or universal impossibility.
-
-Cycle2 outer-loop question: can directly purchased paired feedback, selective evidence invalidation or execution-locality-aware acquisition improve future graph decisions without depending on accurate graph-value prediction? These are separate untested candidates, not rescues of D3.
-
-Cycle2 diagnostic update (historical train/tune only): format failures do not
-explain all sparse credit. Of format-clean single-seed tune pairs, 94.84% still
-have zero observed credit. Cross-seed product risk equals squared error against
-the five-seed mean minus sample variance/5; this model-independent correction
-cannot reverse predictor rankings. These descriptive facts do not identify a
-causal format effect or prove that true conditional credit is zero. Full report:
-reports/cycle2_20261113/g2_format_diagnostic/REPORT.md.
-
-The active R1 tests whether fixed, purchased paired feedback can improve future
-decisions. R2 asks whether an independent old bank plus measured drift has useful
-variance/cost and decision behavior. Both remain unconfirmed. Exact replay or
-existing control-variate identities alone are not novelty claims. Conditional
-service confirmation and repeated-learning confirmation require different units;
-five seeds cannot manufacture independent questions or banks.
-
-2026-11-15 checkpoint: Formal1 and Formal2 negatives remain frozen. Formal3 controlled path D=0.0625 passes its point/support filter but graph service quality is below strong baselines. A posthoc disjoint I/C/S replay on those exposed 96 questions finds affected-edge refresh and zero-new-feedback structural protection have the same mean service accuracy. This is not a same-complete-cap result or confirmation. Formal4 is running blind on 96 new questions, holding upstream messages fixed in a receiver/access factorial with Qwen vote and matched independent aggregation controls. No positive method claim is established. Historical public R1/R2/R3 branch artifacts have been recovered byte-for-byte, without importing old controller states.
-
-
-## Formal4 closed: credit shift survives, quality nomination fails
-96 fresh development questions, two seeds, 29 fixed configurations. Nominee Q_FULL EM 50.521%, single Q 58.854%, independent3 Q 67.708%. D=0.104167 (21 question supports) passes mechanism filter; quality gates fail. Cost 2.2230072744 GPUh plus 0.065288315 qualification; 237 independent arithmetic checks, 180584 replay fields. Candidate ends, project remains ACTIVE with one formal slot. No substitute winner, no test access, no intervals.
+所有本轮旧数据结果标为探索，协议D6固定于执行前。文献查询发现直接反事实延续、背景条件边际贡献和非平稳窗口选择均已有邻近工作，必须先阅读相关方法界限，不能将其重命名为创新。
