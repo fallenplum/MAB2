@@ -1,0 +1,9 @@
+{
+  "status": "PASS_INDEPENDENT_D19_RAW_POLICY_AND_COST_AUDIT",
+  "policy_records": 12288,
+  "numeric_checks": 68298,
+  "shared_official_normalizer": true,
+  "all_requested_cells_and_votes_replayed": true,
+  "summary_sha256": "c96e576d933c30fb0d2c829bf9ec8778017e155c4d3add6c100b5da379406bcd",
+  "source_sha256": "8faa9a20835a9c0fce3da444d5334b12c0357a6db66e0b81b8fb1d3309dbdf83"
+}

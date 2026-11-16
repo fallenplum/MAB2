@@ -1,0 +1,11 @@
+{
+  "project_status": "ACTIVE",
+  "stage": "D19_NEGATIVE_D20_INPUT_ONLY_LONG_CONTEXT_FEASIBILITY",
+  "unix": 1794843339.2506921,
+  "used_GPU_hours": 89.82938377699845,
+  "reserved_GPU_hours": 0,
+  "remaining_GPU_hours": 70.17061622300155,
+  "active_GPU_workers": 0,
+  "effective_method_established": false,
+  "next_action": "Input-only official LongBench-v2 schema, context lengths and grouping; preserve holdout labels; then freeze a distinct mechanism pilot only if support is adequate."
+}

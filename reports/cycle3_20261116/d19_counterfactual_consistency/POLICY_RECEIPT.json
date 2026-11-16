@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETE_GOLD_FREE_POLICY_REPLAY",
+  "service_simulations": 1536,
+  "methods": [
+    "ADAPT_GRAPH",
+    "KEEP_CURRENT",
+    "SAME_GRAPH_SC",
+    "NO_NOTE_SC",
+    "NO_NOTE_SINGLE",
+    "FIXED",
+    "RANDOM_ORDER_GRAPH",
+    "ALL_GRAPH_VOTE"
+  ],
+  "policy_records": 12288,
+  "early_full_vote_equivalence_checks": 1536,
+  "trace_sha256": "843c1184da7c559d65a46b94a9fb95f05e2c2d9d68f639b430bdf0175deb191c",
+  "source_sha256": "9ff83d53fd01da912cf780435ace8a1b85f04fc8155f1808a33e1a7b38ca316a",
+  "normalizer_sha256": "60d056c6c74080ff1186762074b6fb85b9ea7e229143bedd74299d87a1864c0e",
+  "new_model_calls": 0,
+  "new_GPU_hours": 0,
+  "terminal_outputs_used_only_when_queried": true,
+  "service_gold_used": false
+}
