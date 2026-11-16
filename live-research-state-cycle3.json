@@ -1,8 +1,11 @@
 {
   "project_status": "ACTIVE",
-  "D25": "INPUT_AND_ARTIFICIAL_ADAPTER_PASS",
-  "next": "FORMAL10_OPERATOR_TESTS_INPUT_PARTITION_AND_GPU_QUALIFICATION",
+  "formal10": "ARTIFICIAL_GPU_QUALIFICATION_RUNNING",
+  "formal10_formal_admitted": false,
   "formal_candidates_started": 9,
   "effective_method": false,
-  "new_GPU_reserved": 0
+  "reserved_GPU_hours": 0.5,
+  "qualification_source_commit": "88e672e3ad0067b06979448ae42a0475d2a58446",
+  "independent_confirmation_tasks_sealed": 128,
+  "next": "CLOSE_AND_AUDIT_QUALIFICATION_THEN_ADMIT_FROZEN_PILOT"
 }
