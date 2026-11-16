@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-16",
+  "created_unix": 1794830770.8886137,
+  "stage": "FORMAL7_AND_FORMAL8_BLINDED",
+  "search_tool": "web.run; search provider not exposed as a selectable Google engine",
+  "queries": [
+    "multi agent debate majority voting strong baseline communication cost empirical 2025 2026 site:arxiv.org",
+    "\"Should we be going MAD\" site:proceedings.mlr.press"
+  ],
+  "scope": "Targeted supplementary search, not exhaustive or systematic coverage",
+  "records": [
+    {
+      "id": "smit2024",
+      "title": "Should we be going MAD? A Look at Multi-Agent Debate Strategies for LLMs",
+      "authors": [
+        "Andries Petrus Smit",
+        "Nathan Grinsztajn",
+        "Paul Duckworth",
+        "Thomas D Barrett",
+        "Arnu Pretorius"
+      ],
+      "venue": "ICML 2024, PMLR235:45883-45905",
+      "url": "https://proceedings.mlr.press/v235/smit24a.html",
+      "depth": "Official proceedings metadata and abstract; not full-paper assessment",
+      "finding": "Reported comparisons motivate retaining self-consistency and independent ensembling, and show sensitivity to protocol tuning. This does not establish failure of all communication."
+    },
+    {
+      "id": "choi2025v2",
+      "title": "Debate or Vote: Which Yields Better Decisions in Multi-Agent Large Language Models?",
+      "authors_as_v2_html": [
+        "Hyeong Kyu Choi",
+        "Xiaojin Zhu",
+        "Sharon Li"
+      ],
+      "version": "2508.17536v2, 2025-10-23",
+      "url": "https://arxiv.org/html/2508.17536v2",
+      "depth": "Introduction, DCM definitions, Theorem2, proof and AppendixD.3.1-D.3.2 excerpt; no author-code reproduction",
+      "finding": "Voting is a strong empirical control. The martingale theorem requires a DCM count-update model and equality of mean neighbor and focal correctness beliefs. It cannot be imported as a universal impossibility theorem for heterogeneous, evidence-asymmetric graph edits."
+    },
+    {
+      "id": "zhu2026v3",
+      "title": "Demystifying Multi-Agent Debate: The Role of Confidence and Diversity",
+      "authors": [
+        "Xiaochen Zhu",
+        "Caiqi Zhang",
+        "Yizhou Chi",
+        "Tom Stafford",
+        "Nigel Collier",
+        "Andreas Vlachos"
+      ],
+      "version": "2601.19921v3, 2026-06-03",
+      "url": "https://arxiv.org/html/2601.19921v3",
+      "depth": "Metadata, Sections3-5 and displayed Table1; no appendix-wide or code reproduction claim",
+      "finding": "Diversity selection samples a larger candidate pool. Confidence expression and usage are trained with RL. These are not free uncertainty signals; importing either requires charging additional sampling or training. Their confidence target is answer correctness, distinct from conditional edge-deletion benefit."
+    },
+    {
+      "id": "bertalanic2026v1",
+      "title": "The Cost of Consensus: Isolated Self-Correction Prevails Over Unguided Homogeneous Multi-Agent Debate",
+      "authors": [
+        "Blaž Bertalanič",
+        "Carolina Fortuna"
+      ],
+      "version": "2605.00914v1, 2026-04-29",
+      "related_doi": "10.1145/3786335.3813137",
+      "url": "https://arxiv.org/abs/2605.00914v1",
+      "depth": "Author arXiv metadata, abstract and HTML table of contents only; DOI venue not independently resolved",
+      "finding": "The reported controlled study separates conformity, contextual fragility and voting loss, with isolated self-correction and unrelated-rationale controls. Its conclusions concern the studied unguided teams; they do not prove graph-conditioned credit maintenance is impossible."
+    }
+  ],
+  "formal_protocol_changes": false,
+  "new_GPU_calls": 0
+}
