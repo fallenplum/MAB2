@@ -1,0 +1,9 @@
+{
+  "status": "PASS_INDEPENDENT_PERMISSION_RNG_VOTE_COST_AUDIT",
+  "units": 2,
+  "logical_calls": 144,
+  "checks": 1734,
+  "labels_read": false,
+  "new_GPU_hours": 0,
+  "shared_operator_imported": false
+}

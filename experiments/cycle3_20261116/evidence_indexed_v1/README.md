@@ -1,0 +1,17 @@
+# Evidence-indexed applicability experiment
+
+Current executable interface: evidence_operator_v2.py. Runtime: evidence_runtime_v3.py. Exact CPU replay: replay_evidence_archive_v2.py. Fixed scoring: evaluate_v2.py. Earlier files are preserved failed/superseded engineering versions, not alternative winners.
+
+Dependencies are the frozen Cycle2 exogenous_paths_v1, receiver_factorial_v1, closure_revalidation_v1 and durable_backend_v1 modules, plus src/graph_credit/backend.py. Add these directories and this directory to PYTHONPATH when invoking standalone scripts. CPU tests: test_evidence_operator_v2.py and test_applicability_gates.py. The former checks allowed evidence, raw strings, graph ancestors, deterministic budget projection, invalid output handling and exact request certificates; the latter checks meaningful rejection counterexamples.
+
+The native environment used for collection is Python3.11.9, torch2.9.1+cu128 and transformers4.54.0 with bf16/eager attention and explicit RNG settings. Model/tokenizer files are hash-pinned in private plans. Use existing licensed model downloads; weights are not part of this repository. Qwen weights move to CPU while Mistral executes; transfer time is logged and included in GPU worker residence. This placement does not authorize changing dtype, attention implementation or prompts.
+
+The controlling experiment contract is protocol/cycle3_20261116/FORMAL6_EVIDENCE_APPLICABILITY_V1.md together with its input-schema, resource and rank-budget amendments. Read all three amendments: strict max-two raw generation failed; ranked valid IDs with deterministic first-two forwarding is the new interface. No formal benchmark outcome was observed when these changes were frozen.
+
+Inference receives only id, question and original context. Selection also retains task metadata for reporting but never passes labels or supporting facts into the operator. Formal scope is96 new train questions x2 seeds x11 terminal conditions. Official validation/test stay sealed. Every baseline shares exact caching and terminal-ancestor elimination. Missing/failed calls cannot be filled with zeros or silently retried.
+
+Authorized exact reproduction requires the private source descriptor, prior-exposure union, selected-input manifest, model manifest and run plan under the experiment root. Public SHA receipts establish provenance but do not replace those inputs. Raw questions, gold answers, full matrices, host addresses and credentials are intentionally private. A public-only rerun on a newly selected sample is a new experiment, not exact reproduction of the frozen sample.
+
+After complete collection: verify every archive SHA; close actual load-to-exit GPU residency including failures and transfers; replay all recorded requests on CPU; independently audit information access; then release only selected train answers and score with the frozen evaluator. The supplied replay does not regenerate stochastic tokens and is not independent experimental replication. Positive applicability still requires a separately frozen active-policy experiment and fresh confirmation before any effective-method claim.
+
+Baseline naming: INDEPENDENT3_Q means three independent full-context sources Qwen/Qwen/Mistral with a Qwen final receiver; it does not mean all sources use Qwen. VOTE_Q3 uses three Qwen final-answer calls on the M/U/V RNG streams with normalized plurality and deterministic tie order. Both retain their original frozen implementation.

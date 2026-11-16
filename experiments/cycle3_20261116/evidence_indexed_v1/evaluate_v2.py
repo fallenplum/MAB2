@@ -68,6 +68,7 @@ def main():
     assert seen==set(range(96));result=summarize(em,f1,tokens,cert,violations,valid,SCHEDULE,seeds)
     inputs=[json.loads(s) for s in Path(approval['pins']['questions']['path']).read_bytes().splitlines()]
     result['budget_projection_fraction_logical']=float(np.mean(projections));result['mean_raw_ranking_length_logical']=float(np.mean(rank_lengths))
+    result['baseline_routes']={'INDEPENDENT3_Q':{'U':'qwen','V':'qwen','R':'mistral','M':'qwen'},'VOTE_Q3':{'M':'qwen','U':'qwen','V':'qwen'}}
     result['task']='HotpotQA train distractor';result['type_breakdown']={}
     for group in sorted(set(v['type'] for v in inputs)):
         mask=np.array([v['type']==group for v in inputs]);result['type_breakdown'][group]=dict(questions=int(mask.sum()),conditions={name:dict(EM=float(em[mask,:,z].mean()),F1=float(f1[mask,:,z].mean()),service_tokens=float(tokens[mask,:,z].mean())) for z,name in enumerate(SCHEDULE)})

@@ -1,0 +1,38 @@
+{
+  "repository": "https://github.com/iNLP-Lab/PACT",
+  "access": "GitHub connector primary source",
+  "files": [
+    {
+      "path": "README.md",
+      "type": "file",
+      "sha": "7d5b6e74fb509084d99527ed6f554f211ae1f794"
+    },
+    {
+      "path": "data.py",
+      "type": "file",
+      "sha": "78deb6a08ced34e5c1836fdfcb15093f7b138d5f"
+    },
+    {
+      "path": "models.py",
+      "type": "file",
+      "sha": "12eea6bc391619faf4d116629f24c94539aa6805"
+    },
+    {
+      "path": "prompts.py",
+      "type": "file",
+      "sha": "dd5a33a70419e5ba2ba7a149c10ce6ad0606b5ef"
+    },
+    {
+      "path": "utils.py",
+      "type": "file",
+      "sha": "352301426b5db55f395c484552994806cf0227d1"
+    },
+    {
+      "path": "methods/pact.py",
+      "sha": "663e02cac3cb464c7b95e1b1072b97c5f3554f60",
+      "type": "file"
+    }
+  ],
+  "code_executed": false,
+  "license_metadata": null
+}

@@ -1,0 +1,63 @@
+{
+  "repository": "fallenplum/MAB2",
+  "commit": "e2bb119b93396e67f9a9395df1a9f1fc01d5417c",
+  "verified_files": [
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/capacity_probe.py",
+      "blob": "d80363cfe41f82a9bbd1b9bdbce8aded74a16451"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/evaluate.py",
+      "blob": "ac8cb5e88fdd4b638f6f3e118a76a795b195cf28"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/evaluate_v2.py",
+      "blob": "d581ea0f20bd9810dbe0a40953222b3c00858942"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/evidence_operator.py",
+      "blob": "d69310d8e89fe1f998947d628a973debd163e364"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/evidence_operator_v2.py",
+      "blob": "9bc5eb3371647ec57ca4039babd4ae91bf6e9a53"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/evidence_runtime.py",
+      "blob": "61aba4a4c81b707d867c082c4943db43424f5409"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/evidence_runtime_v2.py",
+      "blob": "e4f2e7ec73df3008442739fbfd67ec1996c9105f"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/evidence_runtime_v3.py",
+      "blob": "8cc018add8d2afdb5030ce6931013d12da5b3c1b"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/extract_labels.py",
+      "blob": "6d67f805f0205d4589dd3bc83d3c5a9d7ab7393a"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/replay_evidence_archive.py",
+      "blob": "fef17df98435db9278b1535b2f6f320ce02c37a0"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/replay_evidence_archive_v2.py",
+      "blob": "aef4ae430b87594e4674f5ec84d1c71cf1bddb8d"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/select_inputs.py",
+      "blob": "c3da5ec7ab580da9de6d6f618109b56ed7269768"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/test_evidence_operator.py",
+      "blob": "ac3fd0fb3ad1443dc0c6cb1d6e2aa844ae15d041"
+    },
+    {
+      "path": "experiments/cycle3_20261116/evidence_indexed_v1/test_evidence_operator_v2.py",
+      "blob": "c59b14b9a9e54166e6df42f004ced68b83b69d90"
+    }
+  ],
+  "status": "PASS_REMOTE_BLOB_MATCH"
+}

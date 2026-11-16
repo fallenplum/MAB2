@@ -1,0 +1,33 @@
+[
+  {
+    "id": "D6",
+    "scope": "EXPOSED_CPU_DIAGNOSTIC",
+    "decision": "REJECT_SIMPLE_INPUT_TRANSFER",
+    "GPU_hours": 0
+  },
+  {
+    "id": "D7",
+    "scope": "EXPOSED_CPU_DIAGNOSTIC",
+    "decision": "REJECT_SIMPLE_PREFIX_FEATURES",
+    "GPU_hours": 0
+  },
+  {
+    "id": "EVIDENCE_STRICT_INTERFACE",
+    "scope": "ARTIFICIAL_ENGINEERING",
+    "decision": "FAILED_CARDINALITY_AND_MEMORY",
+    "formal": false
+  },
+  {
+    "id": "EVIDENCE_RANK_INTERFACE",
+    "scope": "ARTIFICIAL_ENGINEERING",
+    "decision": "PASS_ENGINEERING_ONLY",
+    "formal": false
+  },
+  {
+    "id": "FORMAL6",
+    "scope": "FRESH_APPLICABILITY_PILOT",
+    "decision": "RUNNING_UNSCORED",
+    "formal": true,
+    "novel_method_established": false
+  }
+]
