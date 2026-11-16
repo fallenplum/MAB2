@@ -1,0 +1,502 @@
+{
+  "status": "COMPLETE_EXPOSED_LEGAL_DECISION_DIAGNOSTIC",
+  "tasks": {
+    "hotpot": {
+      "transfers": [
+        {
+          "selection_half": 0,
+          "evaluation_half": 1,
+          "best_fixed_policy": 3,
+          "fixed_policy_utilities": [
+            0.5930476822916667,
+            0.5953244791666665,
+            0.588675286458333,
+            0.6119275911458334
+          ],
+          "methods": {
+            "fresh": {
+              "utility": 0.677210390625,
+              "EM": 0.6927083333333334,
+              "mask_counts": [
+                0,
+                40,
+                48,
+                0,
+                8,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 29,
+              "destructions_vs_fixed": 5,
+              "evaluation_cells": 384
+            },
+            "stale": {
+              "utility": 0.6536109895833334,
+              "EM": 0.6692708333333334,
+              "mask_counts": [
+                0,
+                38,
+                45,
+                0,
+                12,
+                1,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 24,
+              "destructions_vs_fixed": 9,
+              "evaluation_cells": 384
+            },
+            "best_fixed": {
+              "utility": 0.6119275911458334,
+              "EM": 0.6302083333333334,
+              "mask_counts": [
+                0,
+                25,
+                37,
+                34,
+                0,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 0,
+              "destructions_vs_fixed": 0,
+              "evaluation_cells": 384
+            },
+            "cross_question_fixed": {
+              "utility": 0.5703896354166668,
+              "EM": 0.5885416666666666,
+              "mask_counts": [
+                0,
+                29,
+                17,
+                18,
+                20,
+                12,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 8,
+              "destructions_vs_fixed": 24,
+              "evaluation_cells": 384
+            },
+            "all_submask_oracle": {
+              "utility": 0.7044605338541667,
+              "EM": 0.7135416666666666,
+              "mask_counts": [
+                77,
+                12,
+                6,
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 37,
+              "destructions_vs_fixed": 5,
+              "evaluation_cells": 384
+            },
+            "keep": {
+              "utility": 0.5930476822916667,
+              "EM": 0.6171875,
+              "mask_counts": [
+                0,
+                0,
+                0,
+                34,
+                0,
+                25,
+                37,
+                0
+              ],
+              "corrections_vs_fixed": 15,
+              "destructions_vs_fixed": 20,
+              "evaluation_cells": 384
+            }
+          },
+          "gain_vs_stale": 0.02359940104166658,
+          "gain_vs_best_fixed": 0.0652827994791666
+        },
+        {
+          "selection_half": 1,
+          "evaluation_half": 0,
+          "best_fixed_policy": 3,
+          "fixed_policy_utilities": [
+            0.5956514843750002,
+            0.6083453645833332,
+            0.6016957421874997,
+            0.6119272395833335
+          ],
+          "methods": {
+            "fresh": {
+              "utility": 0.6850222916666667,
+              "EM": 0.7005208333333334,
+              "mask_counts": [
+                0,
+                41,
+                48,
+                0,
+                7,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 29,
+              "destructions_vs_fixed": 2,
+              "evaluation_cells": 384
+            },
+            "stale": {
+              "utility": 0.6640616145833333,
+              "EM": 0.6796875,
+              "mask_counts": [
+                0,
+                40,
+                45,
+                0,
+                10,
+                1,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 24,
+              "destructions_vs_fixed": 5,
+              "evaluation_cells": 384
+            },
+            "best_fixed": {
+              "utility": 0.6119272395833334,
+              "EM": 0.6302083333333334,
+              "mask_counts": [
+                0,
+                25,
+                37,
+                34,
+                0,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 0,
+              "destructions_vs_fixed": 0,
+              "evaluation_cells": 384
+            },
+            "cross_question_fixed": {
+              "utility": 0.5729933854166667,
+              "EM": 0.5911458333333334,
+              "mask_counts": [
+                0,
+                29,
+                17,
+                18,
+                20,
+                12,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 7,
+              "destructions_vs_fixed": 22,
+              "evaluation_cells": 384
+            },
+            "all_submask_oracle": {
+              "utility": 0.7072577083333335,
+              "EM": 0.7161458333333334,
+              "mask_counts": [
+                79,
+                11,
+                4,
+                0,
+                2,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 41,
+              "destructions_vs_fixed": 8,
+              "evaluation_cells": 384
+            },
+            "keep": {
+              "utility": 0.595651484375,
+              "EM": 0.6197916666666666,
+              "mask_counts": [
+                0,
+                0,
+                0,
+                34,
+                0,
+                25,
+                37,
+                0
+              ],
+              "corrections_vs_fixed": 16,
+              "destructions_vs_fixed": 20,
+              "evaluation_cells": 384
+            }
+          },
+          "gain_vs_stale": 0.02096067708333338,
+          "gain_vs_best_fixed": 0.07309505208333333
+        }
+      ],
+      "mean_gains": {
+        "gain_vs_stale": 0.02228003906249998,
+        "gain_vs_best_fixed": 0.06918892578124997
+      },
+      "necessary_headroom_passed": true,
+      "legal_action_count": 3
+    },
+    "2wiki": {
+      "transfers": [
+        {
+          "selection_half": 0,
+          "evaluation_half": 1,
+          "best_fixed_policy": 3,
+          "fixed_policy_utilities": [
+            0.6079346354166665,
+            0.5852951171874999,
+            0.5702105338541662,
+            0.6177589453125
+          ],
+          "methods": {
+            "fresh": {
+              "utility": 0.7099876953125,
+              "EM": 0.7213541666666666,
+              "mask_counts": [
+                0,
+                38,
+                41,
+                4,
+                10,
+                0,
+                3,
+                0
+              ],
+              "corrections_vs_fixed": 37,
+              "destructions_vs_fixed": 2,
+              "evaluation_cells": 384
+            },
+            "stale": {
+              "utility": 0.6634001171875,
+              "EM": 0.6744791666666666,
+              "mask_counts": [
+                0,
+                39,
+                44,
+                3,
+                10,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 25,
+              "destructions_vs_fixed": 8,
+              "evaluation_cells": 384
+            },
+            "best_fixed": {
+              "utility": 0.6177589453125001,
+              "EM": 0.6302083333333334,
+              "mask_counts": [
+                0,
+                29,
+                39,
+                28,
+                0,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 0,
+              "destructions_vs_fixed": 0,
+              "evaluation_cells": 384
+            },
+            "cross_question_fixed": {
+              "utility": 0.6022866276041667,
+              "EM": 0.6171875,
+              "mask_counts": [
+                0,
+                13,
+                20,
+                28,
+                0,
+                16,
+                19,
+                0
+              ],
+              "corrections_vs_fixed": 4,
+              "destructions_vs_fixed": 9,
+              "evaluation_cells": 384
+            },
+            "all_submask_oracle": {
+              "utility": 0.7354609765625,
+              "EM": 0.7421875,
+              "mask_counts": [
+                75,
+                6,
+                9,
+                3,
+                1,
+                0,
+                2,
+                0
+              ],
+              "corrections_vs_fixed": 45,
+              "destructions_vs_fixed": 2,
+              "evaluation_cells": 384
+            },
+            "keep": {
+              "utility": 0.6079346354166666,
+              "EM": 0.625,
+              "mask_counts": [
+                0,
+                0,
+                0,
+                28,
+                0,
+                29,
+                39,
+                0
+              ],
+              "corrections_vs_fixed": 12,
+              "destructions_vs_fixed": 14,
+              "evaluation_cells": 384
+            }
+          },
+          "gain_vs_stale": 0.04658757812499992,
+          "gain_vs_best_fixed": 0.09222874999999986
+        },
+        {
+          "selection_half": 1,
+          "evaluation_half": 0,
+          "best_fixed_policy": 3,
+          "fixed_policy_utilities": [
+            0.605330794270833,
+            0.5852950911458332,
+            0.5702106901041663,
+            0.61776015625
+          ],
+          "methods": {
+            "fresh": {
+              "utility": 0.7099513151041666,
+              "EM": 0.7213541666666666,
+              "mask_counts": [
+                0,
+                39,
+                41,
+                4,
+                8,
+                0,
+                4,
+                0
+              ],
+              "corrections_vs_fixed": 37,
+              "destructions_vs_fixed": 2,
+              "evaluation_cells": 384
+            },
+            "stale": {
+              "utility": 0.6608078255208333,
+              "EM": 0.671875,
+              "mask_counts": [
+                0,
+                38,
+                46,
+                3,
+                9,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 23,
+              "destructions_vs_fixed": 7,
+              "evaluation_cells": 384
+            },
+            "best_fixed": {
+              "utility": 0.61776015625,
+              "EM": 0.6302083333333334,
+              "mask_counts": [
+                0,
+                29,
+                39,
+                28,
+                0,
+                0,
+                0,
+                0
+              ],
+              "corrections_vs_fixed": 0,
+              "destructions_vs_fixed": 0,
+              "evaluation_cells": 384
+            },
+            "cross_question_fixed": {
+              "utility": 0.599682890625,
+              "EM": 0.6145833333333334,
+              "mask_counts": [
+                0,
+                13,
+                20,
+                28,
+                0,
+                16,
+                19,
+                0
+              ],
+              "corrections_vs_fixed": 3,
+              "destructions_vs_fixed": 9,
+              "evaluation_cells": 384
+            },
+            "all_submask_oracle": {
+              "utility": 0.7352766666666666,
+              "EM": 0.7421875,
+              "mask_counts": [
+                73,
+                6,
+                9,
+                3,
+                2,
+                0,
+                3,
+                0
+              ],
+              "corrections_vs_fixed": 49,
+              "destructions_vs_fixed": 6,
+              "evaluation_cells": 384
+            },
+            "keep": {
+              "utility": 0.6053307942708334,
+              "EM": 0.6223958333333334,
+              "mask_counts": [
+                0,
+                0,
+                0,
+                28,
+                0,
+                29,
+                39,
+                0
+              ],
+              "corrections_vs_fixed": 12,
+              "destructions_vs_fixed": 15,
+              "evaluation_cells": 384
+            }
+          },
+          "gain_vs_stale": 0.049143489583333366,
+          "gain_vs_best_fixed": 0.09219115885416662
+        }
+      ],
+      "mean_gains": {
+        "gain_vs_stale": 0.04786553385416664,
+        "gain_vs_best_fixed": 0.09220995442708324
+      },
+      "necessary_headroom_passed": true,
+      "legal_action_count": 3
+    }
+  },
+  "necessary_screen_both_tasks": true,
+  "new_model_calls": 0,
+  "new_GPU_hours": 0,
+  "independent_confirmation": false,
+  "oracle_feedback_cost_excluded": true,
+  "confidence_intervals": false,
+  "bootstrap_runs": 0,
+  "input_sha256": "22fecd3f03d7a9c00791be1156fbc7b2936a51778768add4cb6c33be6118557e",
+  "source_sha256": "088fd1c2a8e3a0ed61af3144eac6ee5aaed0d9dc5c6ee2284143aa0a448a47b4"
+}

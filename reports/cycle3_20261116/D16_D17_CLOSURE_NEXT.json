@@ -1,0 +1,12 @@
+{
+  "project_status": "ACTIVE",
+  "stage": "D16_NEGATIVE_D17_ORACLE_HEADROOM_POSITIVE_D18_DESIGN",
+  "unix": 1794841595.0896692,
+  "used_GPU_hours": 89.82938377699845,
+  "reserved_GPU_hours": 8.881784197001252e-16,
+  "remaining_GPU_hours": 70.17061622300155,
+  "D16": "FAILED_BOTH_TASKS",
+  "D17": "NECESSARY_ORACLE_HEADROOM_ONLY",
+  "effective_method_established": false,
+  "next_action": "Cross-question message-conditioned decision foundation with all observed prefixes paid; then budgeted feedback policy if supported."
+}

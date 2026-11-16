@@ -1,0 +1,7 @@
+{
+  "status": "PASS_INDEPENDENT_SCALAR_LEGAL_DECISION_AUDIT",
+  "numeric_checks": 124,
+  "all_choices_legal": true,
+  "summary_sha256": "aec98f63e03cb813dfe0d65bd763a774a1d5320abaaf2c321eb88c72bc49247c",
+  "new_model_calls": 0
+}

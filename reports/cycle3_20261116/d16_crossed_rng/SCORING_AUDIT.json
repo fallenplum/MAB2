@@ -1,0 +1,8 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_SCALAR_CROSSED_AUDIT",
+  "numeric_checks": 36910,
+  "raw_logical_outcomes": 12288,
+  "shared_official_normalizer": true,
+  "summary_sha256": "fe449bfba326105bfb6a50b7ea0a9d5bb6492a52583f2816360aacc8b0e76d2b",
+  "source_sha256": "592f53419006eba58335208a3e3e790035f80efa9f5d55b145cc24d212bc9eca"
+}

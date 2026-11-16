@@ -1,0 +1,3 @@
+task,folds,source_realizations,models,role
+hotpot,6,2,constant_questionRidge_messageRidge_messageExtraTrees,exposed_cross_question
+2wiki,6,2,constant_questionRidge_messageRidge_messageExtraTrees,exposed_cross_question

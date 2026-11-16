@@ -1,0 +1,9 @@
+# D17: positive necessary headroom, not an effective method
+
+Frozen legal single-edit diagnostic passed on both exposed development tasks. Fresh-feedback oracle mean utility gains over stale-feedback oracle are.022280(Hotpot) and.047866(2Wiki); gains over the retrospectively best fixed legal policy are.069189 and.092210. Each transfer direction is positive. All choices exclude the shocked edge, and124 independent scalar checks passed. No new model calls orGPU cost.
+
+This supports further policy design despite failed global credit-stability screens; it does NOT rescue D15/D16 or prove novelty, independent generalization, or practical budgeted benefit. The oracle observes gold on the same question's other terminal half; a real policy must learn/acquire feedback on separate questions and pay for it. Every source required to make a message-conditioned decision must be generated and charged even if its edge is then pruned. The diagnostic's nominal chosen-graph token cost is optimistic for such a policy. Fixed source averaging is not a free ensemble.
+
+Next: exposed-data cross-question diagnostic of realized-message decision features, using a simple fixed predictor and strong static/question-only controls. All seeds of one question remain in the same fold. Recompute service costs with all observed source messages paid. Any eventual active policy needs a separate contract, fully charged acquisition/repetition, random/periodic/uncertainty controls and fresh confirmation. No complex predictor is claimed as the contribution.
+
+Advantages: direct decision target, legal action constraints, old-feedback control, zero new inference. Risks: oracle labels, excluded acquisition, only96 questions per task and small topology. Positive evidence currently concerns necessary decision headroom only.
