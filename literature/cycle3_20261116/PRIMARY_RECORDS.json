@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-16",
+  "records": [
+    {
+      "title": "The Trace Is the State: Exact Credit Assignment for LLM Agent Teams",
+      "authors": [
+        "Yanjun Chen",
+        "Yirong Sun",
+        "Hanlin Wang",
+        "Jinghan Wang",
+        "Xinming Zhang",
+        "Xiaoyu Shen",
+        "Wenjie Li",
+        "Wei Zhang"
+      ],
+      "year": 2026,
+      "version": "2603.06859v4",
+      "url": "https://arxiv.org/html/2603.06859v4",
+      "scope": "metadata abstract sections2.1-2.2 and6; not full proof or reproduction",
+      "relevance": "Executed downstream counterfactuals and trace sufficiency are already explicit; execution reuse alone cannot be new."
+    },
+    {
+      "title": "Marginal-Contribution Policy Gradients under Filtered Feedback for Multi-Agent LLMs",
+      "authors": [
+        "Elai Ben-Gal",
+        "Stela Tong"
+      ],
+      "year": 2026,
+      "version": "2604.22785v2",
+      "url": "https://arxiv.org/html/2604.22785v2",
+      "scope": "metadata abstract sections6.1 and7 equations19-22; no code reproduction",
+      "relevance": "Background-conditioned contributions and inverse propensity correction with cost-aware exact-evaluation allocation exist. Gradient-error optimality does not establish our service decision benefit."
+    },
+    {
+      "title": "Model Assessment and Selection under Temporal Distribution Shift",
+      "authors": [
+        "Elise Han",
+        "Chengpiao Huang",
+        "Kaizheng Wang"
+      ],
+      "year": 2024,
+      "venue": "ICML",
+      "url": "https://proceedings.mlr.press/v235/han24b.html",
+      "scope": "publisher metadata and abstract only; PDF web fetch failed",
+      "relevance": "Adaptive rolling windows and pairwise model comparison preclude claiming generic temporal reuse as new."
+    },
+    {
+      "title": "Transfer learning in latent contextual bandits with covariate shift through causal transportability",
+      "authors": [
+        "Mingwei Deng",
+        "Ville Kyrki",
+        "Dominik Baumann"
+      ],
+      "year": 2025,
+      "venue": "CLeaR",
+      "url": "https://proceedings.mlr.press/v275/deng25a.html",
+      "scope": "publisher metadata and abstract only",
+      "relevance": "Negative transfer and causal transport are known; our graph intervention is not automatically mere covariate shift."
+    },
+    {
+      "title": "Unifying Clustered and Non-stationary Bandits",
+      "authors": [
+        "Chuanhao Li",
+        "Qingyun Wu",
+        "Hongning Wang"
+      ],
+      "year": 2021,
+      "venue": "AISTATS",
+      "url": "https://proceedings.mlr.press/v130/li21c.html",
+      "scope": "publisher metadata and abstract only",
+      "relevance": "Homogeneity-based sharing and change detection are established baseline principles."
+    }
+  ],
+  "human_verified": false,
+  "google_attempt": "Direct Google search URL inaccessible; web discovery and primary sources used",
+  "systematic_exhaustiveness_claim": false
+}

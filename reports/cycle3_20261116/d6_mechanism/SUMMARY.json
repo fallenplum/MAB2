@@ -1,0 +1,2879 @@
+{
+  "status": "COMPLETE_EXPLORATORY_D6",
+  "questions": 640,
+  "seeds": 5,
+  "new_model_calls": 0,
+  "new_GPU_hours": 0,
+  "bootstrap_runs": 0,
+  "all_data_previously_exposed": true,
+  "not_independent_confirmation": true,
+  "service_only_metrics_not_full_training_cost_gain": true,
+  "action_names": [
+    "keep",
+    "delete_affected",
+    "delete_other",
+    "single_Q",
+    "independent3_Q"
+  ],
+  "results": {
+    "train_best_constant_graph": {
+      "accuracy": 0.6315625,
+      "service_utility": 0.5979661796875,
+      "tokens_per_service_question": 6719.2640625,
+      "accuracy_by_seed": [
+        0.6390625,
+        0.6234375,
+        0.6359375,
+        0.63125,
+        0.628125
+      ],
+      "utility_by_seed": [
+        0.6054435703124997,
+        0.589848,
+        0.6023455781250002,
+        0.5976481953125006,
+        0.5945455546875
+      ],
+      "action_counts": [
+        0,
+        0,
+        640,
+        0,
+        0
+      ]
+    },
+    "train_best_constant_system": {
+      "accuracy": 0.6315625,
+      "service_utility": 0.5979661796875,
+      "tokens_per_service_question": 6719.2640625,
+      "accuracy_by_seed": [
+        0.6390625,
+        0.6234375,
+        0.6359375,
+        0.63125,
+        0.628125
+      ],
+      "utility_by_seed": [
+        0.6054435703124997,
+        0.589848,
+        0.6023455781250002,
+        0.5976481953125006,
+        0.5945455546875
+      ],
+      "action_counts": [
+        0,
+        0,
+        640,
+        0,
+        0
+      ]
+    },
+    "old_train_best_constant_graph": {
+      "accuracy": 0.6315625,
+      "service_utility": 0.5979661796875,
+      "tokens_per_service_question": 6719.2640625,
+      "accuracy_by_seed": [
+        0.6390625,
+        0.6234375,
+        0.6359375,
+        0.63125,
+        0.628125
+      ],
+      "utility_by_seed": [
+        0.6054435703124997,
+        0.589848,
+        0.6023455781250002,
+        0.5976481953125006,
+        0.5945455546875
+      ],
+      "action_counts": [
+        0,
+        0,
+        640,
+        0,
+        0
+      ]
+    },
+    "metadata_direct_graph": {
+      "accuracy": 0.6253125,
+      "service_utility": 0.5921933421875,
+      "tokens_per_service_question": 6623.8315625,
+      "accuracy_by_seed": [
+        0.6328125,
+        0.6203125,
+        0.625,
+        0.6265625,
+        0.621875
+      ],
+      "utility_by_seed": [
+        0.5996656953124997,
+        0.587197171875,
+        0.5918890234374998,
+        0.5934317031250006,
+        0.5887831171875002
+      ],
+      "action_counts": [
+        60,
+        41,
+        539,
+        0,
+        0
+      ]
+    },
+    "metadata_direct_system": {
+      "accuracy": 0.616875,
+      "service_utility": 0.587509090625,
+      "tokens_per_service_question": 5873.181875,
+      "accuracy_by_seed": [
+        0.61875,
+        0.6171875,
+        0.615625,
+        0.6140625,
+        0.61875
+      ],
+      "utility_by_seed": [
+        0.5893621718749993,
+        0.5878161406249995,
+        0.5862665546874997,
+        0.5846972890625008,
+        0.5894032968749998
+      ],
+      "action_counts": [
+        54,
+        29,
+        438,
+        102,
+        17
+      ]
+    },
+    "metadata_old_credit_transfer_graph": {
+      "accuracy": 0.619375,
+      "service_utility": 0.590396546875,
+      "tokens_per_service_question": 5795.690625,
+      "accuracy_by_seed": [
+        0.621875,
+        0.6140625,
+        0.625,
+        0.6140625,
+        0.621875
+      ],
+      "utility_by_seed": [
+        0.5928683671875001,
+        0.5850891093750001,
+        0.5960212421875009,
+        0.585078171875,
+        0.5929258437499998
+      ],
+      "action_counts": [
+        2,
+        386,
+        252,
+        0,
+        0
+      ]
+    },
+    "metadata_old_plus_shift_graph": {
+      "accuracy": 0.6253125,
+      "service_utility": 0.5921778,
+      "tokens_per_service_question": 6626.94,
+      "accuracy_by_seed": [
+        0.6328125,
+        0.6203125,
+        0.625,
+        0.6265625,
+        0.621875
+      ],
+      "utility_by_seed": [
+        0.5996498593749997,
+        0.5871821875000001,
+        0.5918731562499998,
+        0.5934168906250007,
+        0.5887669062500002
+      ],
+      "action_counts": [
+        58,
+        40,
+        542,
+        0,
+        0
+      ]
+    },
+    "tfidf_direct_graph": {
+      "accuracy": 0.62375,
+      "service_utility": 0.5919146796875,
+      "tokens_per_service_question": 6367.0640625,
+      "accuracy_by_seed": [
+        0.6328125,
+        0.615625,
+        0.628125,
+        0.621875,
+        0.6203125
+      ],
+      "utility_by_seed": [
+        0.6009525937499998,
+        0.5837901562500001,
+        0.5962939062500001,
+        0.5900335625000005,
+        0.5885031796874999
+      ],
+      "action_counts": [
+        67,
+        145,
+        428,
+        0,
+        0
+      ]
+    },
+    "tfidf_direct_system": {
+      "accuracy": 0.6140625,
+      "service_utility": 0.587284875,
+      "tokens_per_service_question": 5355.525,
+      "accuracy_by_seed": [
+        0.6296875,
+        0.6078125,
+        0.6109375,
+        0.609375,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.6029054140625,
+        0.5810259999999998,
+        0.5841553749999995,
+        0.5826104375000001,
+        0.5857271484375001
+      ],
+      "action_counts": [
+        45,
+        97,
+        318,
+        142,
+        38
+      ]
+    },
+    "tfidf_old_credit_transfer_graph": {
+      "accuracy": 0.6225,
+      "service_utility": 0.5934557203125,
+      "tokens_per_service_question": 5808.8559375,
+      "accuracy_by_seed": [
+        0.6296875,
+        0.6109375,
+        0.634375,
+        0.621875,
+        0.615625
+      ],
+      "utility_by_seed": [
+        0.6006221484375006,
+        0.5819025234375006,
+        0.6053327187500003,
+        0.5928181015625003,
+        0.5866031093749997
+      ],
+      "action_counts": [
+        14,
+        366,
+        260,
+        0,
+        0
+      ]
+    },
+    "tfidf_old_plus_shift_graph": {
+      "accuracy": 0.62375,
+      "service_utility": 0.5919290328125,
+      "tokens_per_service_question": 6364.1934375,
+      "accuracy_by_seed": [
+        0.6328125,
+        0.615625,
+        0.628125,
+        0.621875,
+        0.6203125
+      ],
+      "utility_by_seed": [
+        0.6009672890624997,
+        0.5838035,
+        0.5963085000000001,
+        0.5900478203125005,
+        0.5885180546874998
+      ],
+      "action_counts": [
+        67,
+        146,
+        427,
+        0,
+        0
+      ]
+    },
+    "fixed_0": {
+      "accuracy": 0.6196875,
+      "service_utility": 0.585730746875,
+      "tokens_per_service_question": 6791.350625,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6140625,
+        0.6265625,
+        0.6234375,
+        0.621875
+      ],
+      "utility_by_seed": [
+        0.5785165468749994,
+        0.5801140078125002,
+        0.5926112734375001,
+        0.5894692421874994,
+        0.5879426640624997
+      ],
+      "action_counts": [
+        640,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fixed_1": {
+      "accuracy": 0.615,
+      "service_utility": 0.5893721468750001,
+      "tokens_per_service_question": 5125.570625,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6078125,
+        0.621875,
+        0.615625,
+        0.6171875
+      ],
+      "utility_by_seed": [
+        0.5868478359375006,
+        0.5821878828125001,
+        0.5962593281250005,
+        0.5899758046874997,
+        0.5915898828125005
+      ],
+      "action_counts": [
+        0,
+        640,
+        0,
+        0,
+        0
+      ]
+    },
+    "fixed_2": {
+      "accuracy": 0.6315625,
+      "service_utility": 0.5979661796875,
+      "tokens_per_service_question": 6719.2640625,
+      "accuracy_by_seed": [
+        0.6390625,
+        0.6234375,
+        0.6359375,
+        0.63125,
+        0.628125
+      ],
+      "utility_by_seed": [
+        0.6054435703124997,
+        0.589848,
+        0.6023455781250002,
+        0.5976481953125006,
+        0.5945455546875
+      ],
+      "action_counts": [
+        0,
+        0,
+        640,
+        0,
+        0
+      ]
+    },
+    "fixed_3": {
+      "accuracy": 0.56875,
+      "service_utility": 0.561120203125,
+      "tokens_per_service_question": 1525.959375,
+      "accuracy_by_seed": [
+        0.5734375,
+        0.56875,
+        0.56875,
+        0.5671875,
+        0.565625
+      ],
+      "utility_by_seed": [
+        0.5658077890624997,
+        0.5611202499999995,
+        0.5611201796874998,
+        0.5595579140624999,
+        0.5579948828124996
+      ],
+      "action_counts": [
+        0,
+        0,
+        0,
+        640,
+        0
+      ]
+    },
+    "fixed_4": {
+      "accuracy": 0.5975,
+      "service_utility": 0.563762515625,
+      "tokens_per_service_question": 6747.496875,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.5828125,
+        0.596875,
+        0.6078125
+      ],
+      "utility_by_seed": [
+        0.5662544140625,
+        0.5662792421875,
+        0.5490580078124999,
+        0.5631308515625002,
+        0.5740900624999997
+      ],
+      "action_counts": [
+        0,
+        0,
+        0,
+        0,
+        640
+      ]
+    },
+    "oracle_question_mean_graph_non_deployable": {
+      "accuracy": 0.658125,
+      "service_utility": 0.6310582515625,
+      "tokens_per_service_question": 5413.3496875,
+      "accuracy_by_seed": [
+        0.653125,
+        0.6484375,
+        0.6734375,
+        0.6609375,
+        0.6546875
+      ],
+      "utility_by_seed": [
+        0.6260349453125009,
+        0.6213775390625003,
+        0.6463790859375005,
+        0.6338535703124999,
+        0.6276461171875004
+      ],
+      "action_counts": [
+        23,
+        527,
+        90,
+        0,
+        0
+      ]
+    },
+    "oracle_question_mean_system_non_deployable": {
+      "accuracy": 0.74375,
+      "service_utility": 0.7296778828124999,
+      "tokens_per_service_question": 2814.4234375,
+      "accuracy_by_seed": [
+        0.7515625,
+        0.7390625,
+        0.7484375,
+        0.7453125,
+        0.734375
+      ],
+      "utility_by_seed": [
+        0.7374765234374996,
+        0.7250080624999995,
+        0.7343732265624998,
+        0.731229101562499,
+        0.7203025
+      ],
+      "action_counts": [
+        3,
+        104,
+        33,
+        453,
+        47
+      ]
+    },
+    "oracle_other_four_seeds_graph_non_deployable": {
+      "accuracy": 0.6209375,
+      "service_utility": 0.594068453125
+    }
+  },
+  "fold_results": [
+    {
+      "fold": 0,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.62,
+      "service_utility": 0.5855986625,
+      "tokens_per_service_question": 6880.2675,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.6625,
+        0.575,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.5780268749999999,
+        0.5656608749999998,
+        0.6281243125,
+        0.5406089374999999,
+        0.6155723125000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "train_best_constant_system",
+      "accuracy": 0.62,
+      "service_utility": 0.5855986625,
+      "tokens_per_service_question": 6880.2675,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.6625,
+        0.575,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.5780268749999999,
+        0.5656608749999998,
+        0.6281243125,
+        0.5406089374999999,
+        0.6155723125000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.62,
+      "service_utility": 0.5855986625,
+      "tokens_per_service_question": 6880.2675,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.6625,
+        0.575,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.5780268749999999,
+        0.5656608749999998,
+        0.6281243125,
+        0.5406089374999999,
+        0.6155723125000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.5975,
+      "service_utility": 0.5648824125,
+      "tokens_per_service_question": 6523.5175,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.6125,
+        0.5625,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5673119999999998,
+        0.5674565625000001,
+        0.5799110000000003,
+        0.5298545,
+        0.5798780000000001
+      ],
+      "action_counts": [
+        10,
+        18,
+        52
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "metadata_direct_system",
+      "accuracy": 0.5925,
+      "service_utility": 0.5668337125,
+      "tokens_per_service_question": 5133.2575,
+      "accuracy_by_seed": [
+        0.6,
+        0.5875,
+        0.5875,
+        0.575,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5742805624999998,
+        0.5618529374999999,
+        0.5618734375000001,
+        0.5493291875,
+        0.5868324375
+      ],
+      "action_counts": [
+        7,
+        15,
+        35,
+        22,
+        1
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.5825,
+      "service_utility": 0.5523939625,
+      "tokens_per_service_question": 6021.2075,
+      "accuracy_by_seed": [
+        0.575,
+        0.5875,
+        0.6,
+        0.5625,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5448420624999999,
+        0.5574359999999999,
+        0.5699059375000004,
+        0.532363375,
+        0.5574224375
+      ],
+      "action_counts": [
+        0,
+        44,
+        36
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.5975,
+      "service_utility": 0.5648824125,
+      "tokens_per_service_question": 6523.5175,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.6125,
+        0.5625,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5673119999999998,
+        0.5674565625000001,
+        0.5799110000000003,
+        0.5298545,
+        0.5798780000000001
+      ],
+      "action_counts": [
+        10,
+        18,
+        52
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.605,
+      "service_utility": 0.572803825,
+      "tokens_per_service_question": 6439.235,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6375,
+        0.5625,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.5552273750000001,
+        0.5678766249999999,
+        0.6053496250000002,
+        0.5303138749999998,
+        0.6052516250000002
+      ],
+      "action_counts": [
+        9,
+        23,
+        48
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.5675,
+      "service_utility": 0.5403419875000001,
+      "tokens_per_service_question": 5431.6025,
+      "accuracy_by_seed": [
+        0.55,
+        0.55,
+        0.5875,
+        0.5375,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5227919375,
+        0.522863875,
+        0.5603729375000003,
+        0.5103678125,
+        0.5853133750000001
+      ],
+      "action_counts": [
+        7,
+        15,
+        39,
+        18,
+        1
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.6025,
+      "service_utility": 0.5727610625,
+      "tokens_per_service_question": 5947.7875,
+      "accuracy_by_seed": [
+        0.5625,
+        0.6,
+        0.65,
+        0.575,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5326987499999998,
+        0.5703155000000001,
+        0.6202928750000001,
+        0.545226125,
+        0.5952720625000002
+      ],
+      "action_counts": [
+        0,
+        46,
+        34
+      ]
+    },
+    {
+      "fold": 0,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.605,
+      "service_utility": 0.572803825,
+      "tokens_per_service_question": 6439.235,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6375,
+        0.5625,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.5552273750000001,
+        0.5678766249999999,
+        0.6053496250000002,
+        0.5303138749999998,
+        0.6052516250000002
+      ],
+      "action_counts": [
+        9,
+        23,
+        48
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.6825,
+      "service_utility": 0.6493265375,
+      "tokens_per_service_question": 6634.6925,
+      "accuracy_by_seed": [
+        0.7,
+        0.6625,
+        0.6875,
+        0.7,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.6667792500000003,
+        0.6293693749999998,
+        0.6542903749999999,
+        0.6668597500000002,
+        0.6293339374999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "train_best_constant_system",
+      "accuracy": 0.6825,
+      "service_utility": 0.6493265375,
+      "tokens_per_service_question": 6634.6925,
+      "accuracy_by_seed": [
+        0.7,
+        0.6625,
+        0.6875,
+        0.7,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.6667792500000003,
+        0.6293693749999998,
+        0.6542903749999999,
+        0.6668597500000002,
+        0.6293339374999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.6825,
+      "service_utility": 0.6493265375,
+      "tokens_per_service_question": 6634.6925,
+      "accuracy_by_seed": [
+        0.7,
+        0.6625,
+        0.6875,
+        0.7,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.6667792500000003,
+        0.6293693749999998,
+        0.6542903749999999,
+        0.6668597500000002,
+        0.6293339374999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.6775,
+      "service_utility": 0.6449181125,
+      "tokens_per_service_question": 6516.3775,
+      "accuracy_by_seed": [
+        0.6875,
+        0.6625,
+        0.6625,
+        0.7,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6548577500000001,
+        0.6299571249999999,
+        0.6298874999999999,
+        0.667446625,
+        0.6424415625
+      ],
+      "action_counts": [
+        10,
+        6,
+        64
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "metadata_direct_system",
+      "accuracy": 0.66,
+      "service_utility": 0.6315335875,
+      "tokens_per_service_question": 5693.2825,
+      "accuracy_by_seed": [
+        0.6625,
+        0.6625,
+        0.6125,
+        0.6875,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6340060625,
+        0.6340474999999999,
+        0.5839853749999998,
+        0.6590890624999999,
+        0.6465399374999998
+      ],
+      "action_counts": [
+        10,
+        5,
+        43,
+        14,
+        8
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.6825,
+      "service_utility": 0.6537860500000001,
+      "tokens_per_service_question": 5742.79,
+      "accuracy_by_seed": [
+        0.675,
+        0.6625,
+        0.7,
+        0.7,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6462363125,
+        0.6338059374999999,
+        0.6712435624999998,
+        0.6713504375,
+        0.6462939999999999
+      ],
+      "action_counts": [
+        0,
+        45,
+        35
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.6775,
+      "service_utility": 0.6449181125,
+      "tokens_per_service_question": 6516.3775,
+      "accuracy_by_seed": [
+        0.6875,
+        0.6625,
+        0.6625,
+        0.7,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6548577500000001,
+        0.6299571249999999,
+        0.6298874999999999,
+        0.667446625,
+        0.6424415625
+      ],
+      "action_counts": [
+        10,
+        6,
+        64
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.6725,
+      "service_utility": 0.6410522249999999,
+      "tokens_per_service_question": 6289.555,
+      "accuracy_by_seed": [
+        0.6875,
+        0.65,
+        0.675,
+        0.7,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.6559986250000003,
+        0.6185814999999999,
+        0.6435293749999997,
+        0.6685863750000001,
+        0.6185652499999998
+      ],
+      "action_counts": [
+        5,
+        18,
+        57
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.6625,
+      "service_utility": 0.6376106125,
+      "tokens_per_service_question": 4977.8775,
+      "accuracy_by_seed": [
+        0.675,
+        0.6375,
+        0.65,
+        0.6875,
+        0.6625
+      ],
+      "utility_by_seed": [
+        0.6501126875000002,
+        0.6126123124999999,
+        0.6250769374999998,
+        0.6626429374999999,
+        0.6376081874999999
+      ],
+      "action_counts": [
+        4,
+        12,
+        37,
+        23,
+        4
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.6825,
+      "service_utility": 0.6530643125000001,
+      "tokens_per_service_question": 5887.1375,
+      "accuracy_by_seed": [
+        0.675,
+        0.675,
+        0.7125,
+        0.7,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.6455317500000003,
+        0.6456009999999999,
+        0.6830067499999999,
+        0.6706099999999999,
+        0.6205720625
+      ],
+      "action_counts": [
+        2,
+        38,
+        40
+      ]
+    },
+    {
+      "fold": 1,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.6725,
+      "service_utility": 0.6410522249999999,
+      "tokens_per_service_question": 6289.555,
+      "accuracy_by_seed": [
+        0.6875,
+        0.65,
+        0.675,
+        0.7,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.6559986250000003,
+        0.6185814999999999,
+        0.6435293749999997,
+        0.6685863750000001,
+        0.6185652499999998
+      ],
+      "action_counts": [
+        5,
+        18,
+        57
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.6,
+      "service_utility": 0.5674250625,
+      "tokens_per_service_question": 6514.9875,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.6,
+        0.575,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5674210000000001,
+        0.5674234374999998,
+        0.5674631250000002,
+        0.5423933125,
+        0.5924244375
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "train_best_constant_system",
+      "accuracy": 0.6,
+      "service_utility": 0.5674250625,
+      "tokens_per_service_question": 6514.9875,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.6,
+        0.575,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5674210000000001,
+        0.5674234374999998,
+        0.5674631250000002,
+        0.5423933125,
+        0.5924244375
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.6,
+      "service_utility": 0.5674250625,
+      "tokens_per_service_question": 6514.9875,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.6,
+        0.575,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5674210000000001,
+        0.5674234374999998,
+        0.5674631250000002,
+        0.5423933125,
+        0.5924244375
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.59,
+      "service_utility": 0.557537775,
+      "tokens_per_service_question": 6492.445,
+      "accuracy_by_seed": [
+        0.5875,
+        0.5875,
+        0.5875,
+        0.575,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.55503575,
+        0.555032625,
+        0.5550758750000002,
+        0.5425020625000001,
+        0.5800425625
+      ],
+      "action_counts": [
+        4,
+        1,
+        75
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "metadata_direct_system",
+      "accuracy": 0.575,
+      "service_utility": 0.5453121375,
+      "tokens_per_service_question": 5937.5725,
+      "accuracy_by_seed": [
+        0.55,
+        0.575,
+        0.5875,
+        0.5625,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5203198124999999,
+        0.5452996249999998,
+        0.5578443125,
+        0.5327860625000002,
+        0.5703108749999999
+      ],
+      "action_counts": [
+        4,
+        1,
+        63,
+        10,
+        2
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.605,
+      "service_utility": 0.5780372,
+      "tokens_per_service_question": 5392.56,
+      "accuracy_by_seed": [
+        0.6,
+        0.575,
+        0.6375,
+        0.575,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.5730187499999999,
+        0.5480265625,
+        0.6106,
+        0.5480145000000003,
+        0.6105261875000003
+      ],
+      "action_counts": [
+        0,
+        60,
+        20
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.59,
+      "service_utility": 0.5574058375,
+      "tokens_per_service_question": 6518.8325,
+      "accuracy_by_seed": [
+        0.5875,
+        0.5875,
+        0.5875,
+        0.575,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.554901875,
+        0.5549044375,
+        0.5549421250000002,
+        0.54237325,
+        0.5799075
+      ],
+      "action_counts": [
+        4,
+        0,
+        76
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.595,
+      "service_utility": 0.563711225,
+      "tokens_per_service_question": 6257.755,
+      "accuracy_by_seed": [
+        0.6,
+        0.5875,
+        0.6,
+        0.5625,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5687166874999999,
+        0.5561844374999998,
+        0.5687426875000001,
+        0.531166375,
+        0.5937459375
+      ],
+      "action_counts": [
+        7,
+        13,
+        60
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.5875,
+      "service_utility": 0.5591594625,
+      "tokens_per_service_question": 5668.1075,
+      "accuracy_by_seed": [
+        0.6,
+        0.575,
+        0.5875,
+        0.5625,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.57166125,
+        0.5466167499999999,
+        0.559203125,
+        0.5341496250000001,
+        0.5841665624999999
+      ],
+      "action_counts": [
+        4,
+        9,
+        46,
+        11,
+        10
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.6025,
+      "service_utility": 0.5752887375,
+      "tokens_per_service_question": 5442.2525,
+      "accuracy_by_seed": [
+        0.6,
+        0.575,
+        0.625,
+        0.575,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.5727804999999999,
+        0.5477728749999999,
+        0.5978352499999999,
+        0.5477515625000002,
+        0.6103035000000003
+      ],
+      "action_counts": [
+        3,
+        55,
+        22
+      ]
+    },
+    {
+      "fold": 2,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.595,
+      "service_utility": 0.563711225,
+      "tokens_per_service_question": 6257.755,
+      "accuracy_by_seed": [
+        0.6,
+        0.5875,
+        0.6,
+        0.5625,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5687166874999999,
+        0.5561844374999998,
+        0.5687426875000001,
+        0.531166375,
+        0.5937459375
+      ],
+      "action_counts": [
+        7,
+        13,
+        60
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.6525,
+      "service_utility": 0.6176287375,
+      "tokens_per_service_question": 6974.2525,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.625,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6650658124999999,
+        0.6151205625000002,
+        0.5901183749999999,
+        0.5776468124999999,
+        0.6401921249999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "train_best_constant_system",
+      "accuracy": 0.6525,
+      "service_utility": 0.6176287375,
+      "tokens_per_service_question": 6974.2525,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.625,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6650658124999999,
+        0.6151205625000002,
+        0.5901183749999999,
+        0.5776468124999999,
+        0.6401921249999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.6525,
+      "service_utility": 0.6176287375,
+      "tokens_per_service_question": 6974.2525,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.625,
+        0.6125,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6650658124999999,
+        0.6151205625000002,
+        0.5901183749999999,
+        0.5776468124999999,
+        0.6401921249999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.655,
+      "service_utility": 0.6200971375000001,
+      "tokens_per_service_question": 6980.5725,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.625,
+        0.6125,
+        0.6875
+      ],
+      "utility_by_seed": [
+        0.6650308749999999,
+        0.6150888750000003,
+        0.5900856875,
+        0.5776124374999999,
+        0.6526678124999997
+      ],
+      "action_counts": [
+        7,
+        0,
+        73
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "metadata_direct_system",
+      "accuracy": 0.6525,
+      "service_utility": 0.6189290000000001,
+      "tokens_per_service_question": 6714.2,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.625,
+        0.6,
+        0.675
+      ],
+      "utility_by_seed": [
+        0.6788436874999999,
+        0.6164193750000002,
+        0.5914296875,
+        0.5664538125,
+        0.6414984374999997
+      ],
+      "action_counts": [
+        7,
+        0,
+        65,
+        5,
+        3
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.6425,
+      "service_utility": 0.6119923749999999,
+      "tokens_per_service_question": 6101.525,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.6,
+        0.6125,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.6694450625,
+        0.619523625,
+        0.5694426875000002,
+        0.5820035625,
+        0.6195469375
+      ],
+      "action_counts": [
+        0,
+        44,
+        36
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.655,
+      "service_utility": 0.6200971375000001,
+      "tokens_per_service_question": 6980.5725,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.625,
+        0.6125,
+        0.6875
+      ],
+      "utility_by_seed": [
+        0.6650308749999999,
+        0.6150888750000003,
+        0.5900856875,
+        0.5776124374999999,
+        0.6526678124999997
+      ],
+      "action_counts": [
+        7,
+        0,
+        73
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.645,
+      "service_utility": 0.6120261,
+      "tokens_per_service_question": 6594.78,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.6125,
+        0.6,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.6794537499999999,
+        0.6170296250000002,
+        0.579475125,
+        0.5670598750000001,
+        0.617112125
+      ],
+      "action_counts": [
+        12,
+        19,
+        49
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.6275,
+      "service_utility": 0.5980130250000001,
+      "tokens_per_service_question": 5897.395,
+      "accuracy_by_seed": [
+        0.7,
+        0.6375,
+        0.6,
+        0.5625,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.670451125,
+        0.6080066875000003,
+        0.570479375,
+        0.5330695000000001,
+        0.6080584374999999
+      ],
+      "action_counts": [
+        8,
+        12,
+        39,
+        14,
+        7
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.6475,
+      "service_utility": 0.6173400000000001,
+      "tokens_per_service_question": 6032.0,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.6125,
+        0.625,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.6697943125000002,
+        0.6198505625,
+        0.582307125,
+        0.5948583125000002,
+        0.6198896875
+      ],
+      "action_counts": [
+        2,
+        46,
+        32
+      ]
+    },
+    {
+      "fold": 3,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.645,
+      "service_utility": 0.6120261,
+      "tokens_per_service_question": 6594.78,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.6125,
+        0.6,
+        0.65
+      ],
+      "utility_by_seed": [
+        0.6794537499999999,
+        0.6170296250000002,
+        0.579475125,
+        0.5670598750000001,
+        0.617112125
+      ],
+      "action_counts": [
+        12,
+        19,
+        49
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.61,
+      "service_utility": 0.5772483125000001,
+      "tokens_per_service_question": 6550.3375,
+      "accuracy_by_seed": [
+        0.575,
+        0.6,
+        0.6625,
+        0.625,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.54222025,
+        0.5672463750000001,
+        0.6297168750000001,
+        0.592246,
+        0.5548120624999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "train_best_constant_system",
+      "accuracy": 0.61,
+      "service_utility": 0.5772483125000001,
+      "tokens_per_service_question": 6550.3375,
+      "accuracy_by_seed": [
+        0.575,
+        0.6,
+        0.6625,
+        0.625,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.54222025,
+        0.5672463750000001,
+        0.6297168750000001,
+        0.592246,
+        0.5548120624999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.61,
+      "service_utility": 0.5772483125000001,
+      "tokens_per_service_question": 6550.3375,
+      "accuracy_by_seed": [
+        0.575,
+        0.6,
+        0.6625,
+        0.625,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.54222025,
+        0.5672463750000001,
+        0.6297168750000001,
+        0.592246,
+        0.5548120624999998
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.6125,
+      "service_utility": 0.5798853625,
+      "tokens_per_service_question": 6522.9275,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6125,
+        0.6625,
+        0.625,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.554845,
+        0.5798846875000001,
+        0.6298601875000001,
+        0.5923835625,
+        0.5424533749999998
+      ],
+      "action_counts": [
+        10,
+        2,
+        68
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "metadata_direct_system",
+      "accuracy": 0.6,
+      "service_utility": 0.5716076250000001,
+      "tokens_per_service_question": 5678.475,
+      "accuracy_by_seed": [
+        0.5625,
+        0.6125,
+        0.65,
+        0.6,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.534078875,
+        0.5841270625000001,
+        0.6215774375000002,
+        0.5716148125,
+        0.5466399375
+      ],
+      "action_counts": [
+        10,
+        1,
+        55,
+        14,
+        0
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.5825,
+      "service_utility": 0.5556708499999999,
+      "tokens_per_service_question": 5365.83,
+      "accuracy_by_seed": [
+        0.55,
+        0.5625,
+        0.65,
+        0.575,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.5231116874999999,
+        0.5356769374999999,
+        0.6231439375000003,
+        0.5481585,
+        0.5482631874999999
+      ],
+      "action_counts": [
+        0,
+        62,
+        18
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.6125,
+      "service_utility": 0.5798853625,
+      "tokens_per_service_question": 6522.9275,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6125,
+        0.6625,
+        0.625,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.554845,
+        0.5798846875000001,
+        0.6298601875000001,
+        0.5923835625,
+        0.5424533749999998
+      ],
+      "action_counts": [
+        10,
+        2,
+        68
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.6,
+      "service_utility": 0.56974265,
+      "tokens_per_service_question": 6051.47,
+      "accuracy_by_seed": [
+        0.5625,
+        0.6,
+        0.65,
+        0.6125,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.5322183125000001,
+        0.5697536249999999,
+        0.6197184374999999,
+        0.58222625,
+        0.5447966249999999
+      ],
+      "action_counts": [
+        10,
+        26,
+        44
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.6175,
+      "service_utility": 0.5926214125,
+      "tokens_per_service_question": 4975.7175,
+      "accuracy_by_seed": [
+        0.5875,
+        0.625,
+        0.625,
+        0.65,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5626144375,
+        0.6001346249999999,
+        0.6000732500000001,
+        0.6251311875000002,
+        0.5751535624999999
+      ],
+      "action_counts": [
+        6,
+        19,
+        32,
+        19,
+        4
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.5975,
+      "service_utility": 0.5701267375,
+      "tokens_per_service_question": 5474.6525,
+      "accuracy_by_seed": [
+        0.5875,
+        0.575,
+        0.6625,
+        0.6,
+        0.5625
+      ],
+      "utility_by_seed": [
+        0.5600820625,
+        0.5476715,
+        0.6350923125000002,
+        0.5725968125,
+        0.5351909999999999
+      ],
+      "action_counts": [
+        2,
+        56,
+        22
+      ]
+    },
+    {
+      "fold": 4,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.6,
+      "service_utility": 0.56974265,
+      "tokens_per_service_question": 6051.47,
+      "accuracy_by_seed": [
+        0.5625,
+        0.6,
+        0.65,
+        0.6125,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.5322183125000001,
+        0.5697536249999999,
+        0.6197184374999999,
+        0.58222625,
+        0.5447966249999999
+      ],
+      "action_counts": [
+        10,
+        26,
+        44
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.595,
+      "service_utility": 0.5625604,
+      "tokens_per_service_question": 6487.92,
+      "accuracy_by_seed": [
+        0.625,
+        0.6125,
+        0.5375,
+        0.6,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5925629999999998,
+        0.5800745624999999,
+        0.5050490624999999,
+        0.5675611875000001,
+        0.5675541875
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "train_best_constant_system",
+      "accuracy": 0.595,
+      "service_utility": 0.5625604,
+      "tokens_per_service_question": 6487.92,
+      "accuracy_by_seed": [
+        0.625,
+        0.6125,
+        0.5375,
+        0.6,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5925629999999998,
+        0.5800745624999999,
+        0.5050490624999999,
+        0.5675611875000001,
+        0.5675541875
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.595,
+      "service_utility": 0.5625604,
+      "tokens_per_service_question": 6487.92,
+      "accuracy_by_seed": [
+        0.625,
+        0.6125,
+        0.5375,
+        0.6,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5925629999999998,
+        0.5800745624999999,
+        0.5050490624999999,
+        0.5675611875000001,
+        0.5675541875
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.585,
+      "service_utility": 0.5530923499999999,
+      "tokens_per_service_question": 6381.53,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.5375,
+        0.5875,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5805909374999999,
+        0.5680951249999999,
+        0.5055936875,
+        0.5555819375000001,
+        0.5556000625
+      ],
+      "action_counts": [
+        8,
+        5,
+        67
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "metadata_direct_system",
+      "accuracy": 0.5825,
+      "service_utility": 0.5540524124999999,
+      "tokens_per_service_question": 5689.5175,
+      "accuracy_by_seed": [
+        0.6,
+        0.6,
+        0.5375,
+        0.5875,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.571569,
+        0.5715420625000001,
+        0.509057375,
+        0.5590433125000001,
+        0.5590503125
+      ],
+      "action_counts": [
+        6,
+        2,
+        61,
+        11,
+        0
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.595,
+      "service_utility": 0.5664566999999999,
+      "tokens_per_service_question": 5708.66,
+      "accuracy_by_seed": [
+        0.6,
+        0.5875,
+        0.5625,
+        0.6125,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.5714301875,
+        0.5589789999999999,
+        0.5339575,
+        0.5839386249999999,
+        0.5839781874999999
+      ],
+      "action_counts": [
+        2,
+        41,
+        37
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.585,
+      "service_utility": 0.5530923499999999,
+      "tokens_per_service_question": 6381.53,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.5375,
+        0.5875,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5805909374999999,
+        0.5680951249999999,
+        0.5055936875,
+        0.5555819375000001,
+        0.5556000625
+      ],
+      "action_counts": [
+        8,
+        5,
+        67
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.595,
+      "service_utility": 0.5641247,
+      "tokens_per_service_question": 6175.06,
+      "accuracy_by_seed": [
+        0.625,
+        0.6125,
+        0.5375,
+        0.6125,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.59412225,
+        0.581613,
+        0.506617125,
+        0.5816209375000001,
+        0.5566501875000001
+      ],
+      "action_counts": [
+        8,
+        15,
+        57
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.6025,
+      "service_utility": 0.577915,
+      "tokens_per_service_question": 4917.0,
+      "accuracy_by_seed": [
+        0.65,
+        0.6125,
+        0.5625,
+        0.6125,
+        0.575
+      ],
+      "utility_by_seed": [
+        0.6254057499999999,
+        0.5879099375000001,
+        0.537884625,
+        0.5879525625,
+        0.5504221249999999
+      ],
+      "action_counts": [
+        4,
+        11,
+        40,
+        22,
+        3
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.59,
+      "service_utility": 0.5616589624999999,
+      "tokens_per_service_question": 5668.2075,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.55,
+        0.6,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5841341250000001,
+        0.5716738124999999,
+        0.5216574375,
+        0.5716574375000001,
+        0.5591720000000001
+      ],
+      "action_counts": [
+        1,
+        41,
+        38
+      ]
+    },
+    {
+      "fold": 5,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.595,
+      "service_utility": 0.564239525,
+      "tokens_per_service_question": 6152.095,
+      "accuracy_by_seed": [
+        0.625,
+        0.6125,
+        0.5375,
+        0.6125,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5942398124999999,
+        0.58171975,
+        0.506733875,
+        0.5817350000000001,
+        0.5567691875
+      ],
+      "action_counts": [
+        8,
+        16,
+        56
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.625,
+      "service_utility": 0.5907337375,
+      "tokens_per_service_question": 6853.2525,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6125,
+        0.6375,
+        0.6875,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5532741250000002,
+        0.5781748124999998,
+        0.6033252500000001,
+        0.6531891875,
+        0.5657053125000002
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "train_best_constant_system",
+      "accuracy": 0.625,
+      "service_utility": 0.5907337375,
+      "tokens_per_service_question": 6853.2525,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6125,
+        0.6375,
+        0.6875,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5532741250000002,
+        0.5781748124999998,
+        0.6033252500000001,
+        0.6531891875,
+        0.5657053125000002
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.625,
+      "service_utility": 0.5907337375,
+      "tokens_per_service_question": 6853.2525,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6125,
+        0.6375,
+        0.6875,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5532741250000002,
+        0.5781748124999998,
+        0.6033252500000001,
+        0.6531891875,
+        0.5657053125000002
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.62,
+      "service_utility": 0.5860058499999999,
+      "tokens_per_service_question": 6798.83,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6375,
+        0.675,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.55354,
+        0.5659440625,
+        0.6035915625000002,
+        0.6409679375,
+        0.5659856875000002
+      ],
+      "action_counts": [
+        4,
+        4,
+        72
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "metadata_direct_system",
+      "accuracy": 0.6125,
+      "service_utility": 0.5802521,
+      "tokens_per_service_question": 6449.58,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.65,
+        0.6375,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.5552863124999999,
+        0.5676949374999999,
+        0.6178233750000002,
+        0.6052148125,
+        0.5552410625
+      ],
+      "action_counts": [
+        4,
+        1,
+        65,
+        7,
+        3
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.61,
+      "service_utility": 0.5789586999999999,
+      "tokens_per_service_question": 6208.26,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6,
+        0.6375,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.5564883124999999,
+        0.5688958124999998,
+        0.5690466875,
+        0.606402625,
+        0.5939600625
+      ],
+      "action_counts": [
+        0,
+        36,
+        44
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.62,
+      "service_utility": 0.58601345,
+      "tokens_per_service_question": 6797.31,
+      "accuracy_by_seed": [
+        0.5875,
+        0.6,
+        0.6375,
+        0.675,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5535471875000001,
+        0.565952375,
+        0.6035983750000001,
+        0.6409782500000001,
+        0.5659910625000002
+      ],
+      "action_counts": [
+        2,
+        4,
+        74
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.62,
+      "service_utility": 0.5871656625,
+      "tokens_per_service_question": 6566.8675,
+      "accuracy_by_seed": [
+        0.5875,
+        0.5875,
+        0.6375,
+        0.675,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.554701625,
+        0.5546043749999999,
+        0.6047646250000002,
+        0.6421128124999999,
+        0.5796448750000001
+      ],
+      "action_counts": [
+        9,
+        15,
+        56
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.615,
+      "service_utility": 0.5864899875,
+      "tokens_per_service_question": 5702.0025,
+      "accuracy_by_seed": [
+        0.6125,
+        0.6,
+        0.625,
+        0.6375,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.5840485,
+        0.5714477499999999,
+        0.5965651875000001,
+        0.6089581874999999,
+        0.5714303125000002
+      ],
+      "action_counts": [
+        7,
+        9,
+        42,
+        14,
+        8
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.605,
+      "service_utility": 0.574565525,
+      "tokens_per_service_question": 6086.895,
+      "accuracy_by_seed": [
+        0.5875,
+        0.55,
+        0.6,
+        0.6625,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.557115875,
+        0.5195111874999998,
+        0.5696467499999999,
+        0.6320321250000001,
+        0.5945216875
+      ],
+      "action_counts": [
+        2,
+        38,
+        40
+      ]
+    },
+    {
+      "fold": 6,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.62,
+      "service_utility": 0.5871656625,
+      "tokens_per_service_question": 6566.8675,
+      "accuracy_by_seed": [
+        0.5875,
+        0.5875,
+        0.6375,
+        0.675,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.554701625,
+        0.5546043749999999,
+        0.6047646250000002,
+        0.6421128124999999,
+        0.5796448750000001
+      ],
+      "action_counts": [
+        9,
+        15,
+        56
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "train_best_constant_graph",
+      "accuracy": 0.6675,
+      "service_utility": 0.6332079875,
+      "tokens_per_service_question": 6858.4025,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.675,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.67819825,
+        0.6157140000000001,
+        0.64067725,
+        0.6406803750000003,
+        0.5907700625000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "train_best_constant_system",
+      "accuracy": 0.6675,
+      "service_utility": 0.6332079875,
+      "tokens_per_service_question": 6858.4025,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.675,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.67819825,
+        0.6157140000000001,
+        0.64067725,
+        0.6406803750000003,
+        0.5907700625000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        80,
+        0,
+        0
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "old_train_best_constant_graph",
+      "accuracy": 0.6675,
+      "service_utility": 0.6332079875,
+      "tokens_per_service_question": 6858.4025,
+      "accuracy_by_seed": [
+        0.7125,
+        0.65,
+        0.675,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.67819825,
+        0.6157140000000001,
+        0.64067725,
+        0.6406803750000003,
+        0.5907700625000001
+      ],
+      "action_counts": [
+        0,
+        0,
+        80
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "metadata_direct_graph",
+      "accuracy": 0.665,
+      "service_utility": 0.6311277375,
+      "tokens_per_service_question": 6774.4525,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.675,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.6661132500000001,
+        0.6161183125,
+        0.6411066875,
+        0.6411045625000001,
+        0.5911958750000001
+      ],
+      "action_counts": [
+        7,
+        5,
+        68
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "metadata_direct_system",
+      "accuracy": 0.66,
+      "service_utility": 0.63155215,
+      "tokens_per_service_question": 5689.57,
+      "accuracy_by_seed": [
+        0.675,
+        0.65,
+        0.675,
+        0.6625,
+        0.6375
+      ],
+      "utility_by_seed": [
+        0.6465130624999998,
+        0.621545625,
+        0.6465414375,
+        0.6340472500000001,
+        0.609113375
+      ],
+      "action_counts": [
+        6,
+        4,
+        51,
+        19,
+        0
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "metadata_old_credit_transfer_graph",
+      "accuracy": 0.655,
+      "service_utility": 0.6258765375,
+      "tokens_per_service_question": 5824.6925,
+      "accuracy_by_seed": [
+        0.6875,
+        0.6875,
+        0.65,
+        0.6375,
+        0.6125
+      ],
+      "utility_by_seed": [
+        0.6583745625000001,
+        0.6583690000000002,
+        0.6208296250000003,
+        0.6083937500000001,
+        0.5834157499999998
+      ],
+      "action_counts": [
+        0,
+        54,
+        26
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "metadata_old_plus_shift_graph",
+      "accuracy": 0.665,
+      "service_utility": 0.6311277375,
+      "tokens_per_service_question": 6774.4525,
+      "accuracy_by_seed": [
+        0.7,
+        0.65,
+        0.675,
+        0.675,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.6661132500000001,
+        0.6161183125,
+        0.6411066875,
+        0.6411045625000001,
+        0.5911958750000001
+      ],
+      "action_counts": [
+        7,
+        5,
+        68
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "tfidf_direct_graph",
+      "accuracy": 0.6575,
+      "service_utility": 0.62469105,
+      "tokens_per_service_question": 6561.79,
+      "accuracy_by_seed": [
+        0.7,
+        0.6375,
+        0.675,
+        0.65,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.6671821250000002,
+        0.6046780625000002,
+        0.6421542499999997,
+        0.6171820000000001,
+        0.5922588125
+      ],
+      "action_counts": [
+        7,
+        16,
+        57
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "tfidf_direct_system",
+      "accuracy": 0.6325,
+      "service_utility": 0.6061275125000001,
+      "tokens_per_service_question": 5274.4975,
+      "accuracy_by_seed": [
+        0.6625,
+        0.625,
+        0.65,
+        0.625,
+        0.6
+      ],
+      "utility_by_seed": [
+        0.6361576250000001,
+        0.5986160625000001,
+        0.6235875624999998,
+        0.5986116875000003,
+        0.5736646249999999
+      ],
+      "action_counts": [
+        5,
+        10,
+        43,
+        21,
+        1
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "tfidf_old_credit_transfer_graph",
+      "accuracy": 0.6525,
+      "service_utility": 0.622840425,
+      "tokens_per_service_question": 5931.915,
+      "accuracy_by_seed": [
+        0.7125,
+        0.6625,
+        0.6625,
+        0.6375,
+        0.5875
+      ],
+      "utility_by_seed": [
+        0.6828398125000001,
+        0.6328237500000002,
+        0.6328232500000002,
+        0.6078124375000001,
+        0.5579028749999999
+      ],
+      "action_counts": [
+        2,
+        46,
+        32
+      ]
+    },
+    {
+      "fold": 7,
+      "method": "tfidf_old_plus_shift_graph",
+      "accuracy": 0.6575,
+      "service_utility": 0.62469105,
+      "tokens_per_service_question": 6561.79,
+      "accuracy_by_seed": [
+        0.7,
+        0.6375,
+        0.675,
+        0.65,
+        0.625
+      ],
+      "utility_by_seed": [
+        0.6671821250000002,
+        0.6046780625000002,
+        0.6421542499999997,
+        0.6171820000000001,
+        0.5922588125
+      ],
+      "action_counts": [
+        7,
+        16,
+        57
+      ]
+    }
+  ],
+  "diagnostics": {
+    "credit_nonzero_seed_fraction": 0.05390625,
+    "credit_any_nonzero_question_fraction": 0.3078125,
+    "old_new_mean_credit_correlation": 0.3376010008323233,
+    "credit_cross_seed_0_vs_remaining": 0.13199481386827647,
+    "shift_cross_seed_0_vs_remaining": 0.016472332614592737,
+    "credit_mean_absolute": 0.04578125,
+    "shift_mean_absolute": 0.053750000000000006,
+    "receiver_message_exact_equal_count": 118,
+    "receiver_message_pairs": 3200,
+    "equal_message_fingerprint_violation_count": 0,
+    "message_token_set_distance_vs_absolute_credit_shift": 0.11936533970193308,
+    "linear_direct_vs_residual_max_abs": 0.0008894499562704938
+  },
+  "cpu_screen_gates": {
+    "metadata_direct_graph": {
+      "difference": -0.0057728375000000165,
+      "positive_folds": 2,
+      "pass": false
+    },
+    "metadata_old_credit_transfer_graph": {
+      "difference": -0.0075696328125000045,
+      "positive_folds": 3,
+      "pass": false
+    },
+    "metadata_old_plus_shift_graph": {
+      "difference": -0.0057883796875000115,
+      "positive_folds": 2,
+      "pass": false
+    },
+    "tfidf_direct_graph": {
+      "difference": -0.0060514999999999874,
+      "positive_folds": 1,
+      "pass": false
+    },
+    "tfidf_old_credit_transfer_graph": {
+      "difference": -0.004510459374999942,
+      "positive_folds": 2,
+      "pass": false
+    },
+    "tfidf_old_plus_shift_graph": {
+      "difference": -0.00603714687500001,
+      "positive_folds": 1,
+      "pass": false
+    }
+  },
+  "wall_seconds": 102.71155285835266,
+  "source_sha256": "e977f2f4d7ff39f3457e94a1c3d7be58147df4db60ca71d28660eb30b28ca6aa",
+  "input_sha256": "dea10c767ff0588d9774fc294863649fe2c012a6f090a9d1b5749145793bcb5e"
+}
