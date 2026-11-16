@@ -1,0 +1,14 @@
+{
+  "status": "BLIND_RESOURCE_STOP_PRESERVED",
+  "complete_questions": 4,
+  "terminal_conditions": 88,
+  "actual_GPU_hours": 0.26990622433141753,
+  "transfer_seconds": 480.6226561854128,
+  "transfer_seconds_already_charged": true,
+  "archive_manifest_sha256": "5c780145c88bb1c6b04a3f02e4ec642c02b6039e006d6f4a19dd4bcdc630650a",
+  "scientific_quality_seen": false,
+  "new_qualification_reserved": 0.25,
+  "measured_peak_MiB": 25875.08544921875,
+  "requalification_minimum_free_MiB": 35000,
+  "Formal8_total_cap_unchanged": 8
+}

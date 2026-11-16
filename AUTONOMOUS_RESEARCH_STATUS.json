@@ -6,8 +6,8 @@
   "prior_cycle_stopped_at_cap": true,
   "continuation_authority": "User requested continued autoresearch after five-round closure on 2026-11-16",
   "GPU_total": 160,
-  "GPU_used": 80.15202540584443,
-  "GPU_reserved": 7.415332519352798,
+  "GPU_used": 80.42193163017585,
+  "GPU_reserved": 7.665332519352798,
   "active_stage": "FORMAL7_RETRY_RUNNING_BLINDED_COLLECTION",
   "next_action": "Observe existing retry; full archive cost closure, exact CPU replay, independent audit and all8 prior prefix comparison before labels",
   "GPU_jobs": [
@@ -21,7 +21,7 @@
       ]
     }
   ],
-  "last_update_unix": 1794823350.6572254,
+  "last_update_unix": 1794825460.710573,
   "stage": "FORMAL7_RETRY_RUNNING_BLINDED_COLLECTION",
   "D6": "NEGATIVE",
   "D7": "NEGATIVE",
@@ -30,7 +30,7 @@
     "attempt001 OOM and strict cardinality rejection",
     "attempt002 stopped during loading to avoid known interface failure"
   ],
-  "formal_candidate_rounds_started": 7,
+  "formal_candidate_rounds_started": 8,
   "completed_questions_at_observation": 0,
   "watch_exec_session_id": 7171,
   "formal_private_directory": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\annotation_formal7_v2",
@@ -46,7 +46,7 @@
     "Hash-bound label release and fixed-gate scoring; independent raw scoring audit",
     "Preserve outcome, update outer loop, continue within inherited160GPUh cap"
   ],
-  "latest_published_commit": "f14b86c",
+  "latest_published_commit": "19851b5654c584dba83c0a3a88e05195a98254a7",
   "no_benchmark_labels_read": false,
   "D8": "COMPLETE_EXPOSED_DIAGNOSTIC",
   "D9": "COMPLETE_EXPOSED_DIAGNOSTIC",
@@ -61,5 +61,26 @@
   "postcollection_exec_session_id": 72467,
   "postcollection_controller": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_formal7_autopost.py",
   "postcollection_status": "WAITING_FOR_HASH_VERIFIED_ARCHIVE",
-  "D11": "FROZEN_PENDING_FORMAL7_SCORING"
+  "D11": "FROZEN_PENDING_FORMAL7_SCORING",
+  "parallel_second_task": {
+    "candidate": "C3_FORMAL8_2WIKI_OPERATOR_TRANSFER",
+    "status": "ATTEMPT1_BLIND_RESOURCE_STOP_REQUALIFICATION_PENDING",
+    "formal_directory": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\wiki_annotation_formal8_v1",
+    "gpus": [
+      0,
+      2
+    ],
+    "plan_sha256": "b34c44f11550b8d6d894c8faeb00bc8c5802465c844f223e5151f5caf983d937",
+    "new_GPU_reservation": 8,
+    "scientific_operator_unchanged": true,
+    "worker_pids": [
+      1271970,
+      1271971
+    ],
+    "watch_exec_session_id": 33435,
+    "first_attempt_GPU_hours": 0.26990622433141753,
+    "qualification_directory": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\wiki_annotation_qualification_v1",
+    "postcollection_exec_session_id": 56039,
+    "postcollection_status": "EXPECTED_STOP_AFTER_PARTIAL_COST_CLOSURE"
+  }
 }

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_CROSS_PROCESS_BUDGET_LOCK",
+  "writers": 4,
+  "transactions": 80,
+  "lost_updates": 0,
+  "real_budget_modified": false
+}
