@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CONSERVATIVE_TOKENIZER_BOUND",
+  "rows": 96,
+  "checks": 192,
+  "maximum_bound": 4108,
+  "failures": [],
+  "new_GPU_hours": 0,
+  "labels_read": false,
+  "questions_sha256": "a6ce5d36d5a99285e645cb4277fad6232264a7ffcbd2e49b77f8e235c79980a3",
+  "limitation": "Subset tokenization is not strictly monotone; exact per-call admission remains mandatory"
+}

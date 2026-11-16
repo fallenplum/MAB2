@@ -1,0 +1,3 @@
+# Pre-inference input schema clarification
+
+The first input-only selection failed before writing any selected dataset because some official train rows do not contain exactly ten documents. No answers were projected, no formal inference started, and no scientific outcomes were seen. The frozen 3/3/4 operator requires ten documents. Eligibility now explicitly requires exactly ten original documents before deterministic PCG64 selection. Do not truncate, pad or choose rows using outcomes. Exclusion union and sampling seed remain unchanged. This is input-schema eligibility, not a post-outcome replacement. Failed selection had zero GPU hours.

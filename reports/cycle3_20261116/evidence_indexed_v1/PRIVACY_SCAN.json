@@ -1,0 +1,7 @@
+{
+  "status": "PASS_BOUNDED_PRIVACY_SCAN",
+  "files": 26,
+  "new_private_inputs_checked": 96,
+  "credential_patterns_checked": true,
+  "scope": "Current-cycle changed and untracked text files; not a proof for arbitrary secrets"
+}

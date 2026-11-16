@@ -7,13 +7,15 @@
   "continuation_authority": "User requested continued autoresearch after five-round closure on 2026-11-16",
   "GPU_total": 160,
   "GPU_used": 76.47691242367074,
-  "GPU_reserved": 0,
-  "active_stage": "D6_EXPLORATORY_CPU_DIAGNOSTIC",
-  "next_action": "qualify frozen evidence operator; then fresh 96-question applicability",
-  "GPU_jobs": [],
-  "last_update_unix": 1794808261.299205,
-  "stage": "EVIDENCE_INDEXED_ENGINEERING_PREPARATION",
+  "GPU_reserved": 0.25,
+  "active_stage": "EVIDENCE_QUALIFICATION_RUNNING",
+  "next_action": "close and replay artificial qualification then admit formal6 on frozen96 fresh inputs",
+  "GPU_jobs": [
+    "C3_EVIDENCE_INDEXED_ENGINEERING"
+  ],
+  "last_update_unix": 1794810218.1350029,
+  "stage": "EVIDENCE_QUALIFICATION_RUNNING",
   "D6": "NEGATIVE",
   "D7": "NEGATIVE",
-  "new_GPU_started": false
+  "new_GPU_started": true
 }

@@ -1,11 +1,11 @@
 schema: mab2_cycle3_state_v1
 cycle: cycle3_20261116
 project_status: ACTIVE
-direction_status: EVIDENCE_INDEXED_ENGINEERING_PREPARATION
+direction_status: EVIDENCE_QUALIFICATION_RUNNING
 branch: research/cycle3-credit-transport-20261116
 budget_gpu_hours_total: 160
 budget_gpu_hours_used: 76.47691242367074
-budget_gpu_hours_reserved: 0
+budget_gpu_hours_reserved: 0.25
 historical_formal_candidates_completed: 5
 cycle3_formal_candidates_started: 0
 new_GPU_admission: false
