@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_CROSSED_INPUT_AUDIT",
+  "logical_outcomes": 12288,
+  "unique_new_requests": 6694,
+  "exact_cache_entries": 3687,
+  "only_terminal_seed_changed": true,
+  "all_included_producers_charged": true,
+  "gold_used": false,
+  "source_sha256": "7681700911a8c1d5995f29eed83a4b35d7dfd384ae740e42652b46578951518d"
+}

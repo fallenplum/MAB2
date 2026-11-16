@@ -1,0 +1,14 @@
+{
+  "project_status": "ACTIVE",
+  "stage": "D16_CROSSED_RNG_RUNNING_UNSCORED",
+  "unix": 1794839707.7167017,
+  "started_local": "2026-11-16 22:31 Asia/Shanghai",
+  "new_requests": 6694,
+  "logical_outcomes": 12288,
+  "used_GPU_hours": 88.90976747201256,
+  "reserved_GPU_hours": 2.000000000000001,
+  "plan_sha256": "dcd96ea018bd28b18b648dba937d9d0320fa40474602cc0a30940ac52c86edb3",
+  "source_sha256": "fe2f1dc2909654bd582605dabf57a3ef3aa1c424c507da1a9e5d50a1cd9287aa",
+  "next_action": "Maintain active-turn watcher; synchronize all15 archive files; close actual cost with d16_control; run shared terminal audit, frozen score, independent scalar audit; continue outer loop. D14/D15 failed and stay failed.",
+  "formal_round_increment": 0
+}

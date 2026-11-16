@@ -1,0 +1,9 @@
+{
+  "status": "PASS_ARTIFICIAL_CROSSED_GATE_FIXTURES",
+  "all_zero_rejected": true,
+  "stable_complementary_case_passed": true,
+  "terminal_half_reversal_rejected": true,
+  "source_reversal_rejected": true,
+  "artificial_only": true,
+  "new_model_calls": 0
+}

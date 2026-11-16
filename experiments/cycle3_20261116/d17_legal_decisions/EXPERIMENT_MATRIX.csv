@@ -1,0 +1,5 @@
+task,selection_half,evaluation_half,primary_actions,comparators
+hotpot,0,1,single_legal_edit,stale_and_best_fixed
+hotpot,1,0,single_legal_edit,stale_and_best_fixed
+2wiki,0,1,single_legal_edit,stale_and_best_fixed
+2wiki,1,0,single_legal_edit,stale_and_best_fixed

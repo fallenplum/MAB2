@@ -1,0 +1,25 @@
+{
+  "status": "PASS_D14_D15_D16_ALL_ATTEMPT_CAPS",
+  "diagnostics": {
+    "C3_D14_": {
+      "closed_actual_GPU_hours": 0.1419696219788683,
+      "reserved_GPU_hours": 0,
+      "all_attempt_cap_GPU_hours": 2
+    },
+    "C3_D15_": {
+      "closed_actual_GPU_hours": 0.3092201047716662,
+      "reserved_GPU_hours": 0,
+      "all_attempt_cap_GPU_hours": 2
+    },
+    "C3_D16_": {
+      "closed_actual_GPU_hours": 0,
+      "reserved_GPU_hours": 2,
+      "all_attempt_cap_GPU_hours": 2
+    }
+  },
+  "global_closed_actual_GPU_hours": 88.90976747201256,
+  "global_reserved_GPU_hours": 2.000000000000001,
+  "global_cap_GPU_hours": 160,
+  "ledger_sha256": "a4a2a333cd5e7b26dc670d970f8d7ef2b26f0814e9986c0cfbdbb7dff47a5219",
+  "live_cost_imputed": false
+}
