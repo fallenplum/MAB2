@@ -6,13 +6,29 @@
   "prior_cycle_stopped_at_cap": true,
   "continuation_authority": "User requested continued autoresearch after five-round closure on 2026-11-16",
   "GPU_total": 160,
-  "GPU_used": 79.26063772257888,
-  "GPU_reserved": 0.25,
-  "active_stage": "FORMAL7_ENGINEERING_PREPARED",
-  "next_action": "Launch bounded artificial qualification, replay and independently audit; freeze scorer before new formal admission",
-  "GPU_jobs": [],
-  "last_update_unix": 1794817303.1543362,
-  "stage": "FORMAL7_ENGINEERING_PREPARED",
+  "GPU_used": 79.46150483125443,
+  "GPU_reserved": 8,
+  "active_stage": "FORMAL7_RUNNING_BLINDED_COLLECTION",
+  "next_action": "Monitor existing formal7; do not relaunch; no labels before complete archive and replay",
+  "GPU_jobs": [
+    {
+      "candidate": "C3_FORMAL7_EVIDENCE_PRESERVING_ANNOTATIONS",
+      "pids": [
+        1022645,
+        1022646,
+        1022647,
+        1022648
+      ],
+      "gpus": [
+        0,
+        2,
+        5,
+        7
+      ]
+    }
+  ],
+  "last_update_unix": 1794818942.5198498,
+  "stage": "FORMAL7_RUNNING_BLINDED_COLLECTION",
   "D6": "NEGATIVE",
   "D7": "NEGATIVE",
   "new_GPU_started": true,
@@ -20,13 +36,31 @@
     "attempt001 OOM and strict cardinality rejection",
     "attempt002 stopped during loading to avoid known interface failure"
   ],
-  "formal_candidate_rounds_started": 6,
-  "completed_questions_at_observation": 96,
+  "formal_candidate_rounds_started": 7,
+  "completed_questions_at_observation": 0,
+  "watch_exec_session_id": 61723,
+  "formal_private_directory": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\annotation_formal7_v1",
+  "formal_archive_expected": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\annotation_formal7_v1\\monitor\\archive",
+  "post_collection_helper": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_annotation_post.py",
+  "active_operator": "annotation_operator.py",
+  "active_runtime": "annotation_runtime_v3.py",
+  "active_evaluator": "evaluate.py",
+  "active_replay": "replay_annotation_archive.py",
+  "next_steps": [
+    "Observe four workers and blinded cost prefix; no labels before full96-unit closure",
+    "Close actual residence cost; verify archive SHA; CPU replay and independent permission/cost audit",
+    "Hash-bound label release and fixed-gate scoring; independent raw scoring audit",
+    "Preserve outcome, update outer loop, continue within inherited160GPUh cap"
+  ],
+  "latest_published_commit": "54ba4e2cf4016848a4c6afe5c40b9bae7d0eaa1b",
   "no_benchmark_labels_read": false,
-  "latest_published_commit": "b77b00e",
   "D8": "COMPLETE_EXPOSED_DIAGNOSTIC",
   "D9": "COMPLETE_EXPOSED_DIAGNOSTIC",
   "second_dataset": "AUTHOR_TRAIN_INPUT_AUDITED_LABELS_UNOPENED",
+  "active_raw_scoring_auditor": "audit_raw_scoring.py",
+  "replay_async_helper": "E:\\图结构演化\\artifacts\\private\\cycle3_20261116\\assembly_helpers\\_mab2_annotation_replay_async.py",
   "Formal6_admission": false,
-  "active_qualification": "annotation_qualification_v1"
+  "active_qualification": "annotation_qualification_v2",
+  "no_current_benchmark_labels_read": true,
+  "D10": "EXPLORATORY_SUPPORT_OMISSION_DIAGNOSTIC"
 }
