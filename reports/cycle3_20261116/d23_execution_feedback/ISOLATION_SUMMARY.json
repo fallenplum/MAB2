@@ -1,0 +1,85 @@
+{
+  "status": "PASS_ARTIFICIAL_EXECUTION_ISOLATION",
+  "source_sha256": "6b3aa946984238deceac2a55c9f5863192de8df3eb11b78cdc6cab7363b80382",
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "writable_sandbox_paths": [],
+  "python": "system3.8",
+  "limits": {
+    "cpu_seconds": 2,
+    "wall_seconds": 4,
+    "virtual_memory_MiB": 384,
+    "processes": 1,
+    "output_file_MiB": 1,
+    "retained_output_KiB": 64
+  },
+  "scope": "STDIO Python standard library only; no host project mounts; all namespaces unshared; seccomp blocks child processes/exec and namespace changes; no claim against kernel vulnerabilities",
+  "checks": [
+    {
+      "test": "stdio",
+      "passed": true,
+      "status": "OK",
+      "elapsed_seconds": 0.07884335098788142
+    },
+    {
+      "test": "filesystem",
+      "passed": true,
+      "status": "OK",
+      "elapsed_seconds": 0.03209818713366985
+    },
+    {
+      "test": "environment",
+      "passed": true,
+      "status": "OK",
+      "elapsed_seconds": 0.032173736952245235
+    },
+    {
+      "test": "network",
+      "passed": true,
+      "status": "OK",
+      "elapsed_seconds": 0.0320457189809531
+    },
+    {
+      "test": "process",
+      "passed": true,
+      "status": "OK",
+      "elapsed_seconds": 0.032055848045274615
+    },
+    {
+      "test": "readonly",
+      "passed": true,
+      "status": "OK",
+      "elapsed_seconds": 0.03203087206929922
+    },
+    {
+      "test": "stdlib",
+      "passed": true,
+      "status": "OK",
+      "elapsed_seconds": 0.03217348689213395
+    },
+    {
+      "test": "memory",
+      "passed": true,
+      "status": "RUNTIME_ERROR",
+      "elapsed_seconds": 0.03223231597803533
+    },
+    {
+      "test": "cpu",
+      "passed": true,
+      "status": "RUNTIME_ERROR",
+      "elapsed_seconds": 2.0173155958764255
+    },
+    {
+      "test": "wall",
+      "passed": true,
+      "status": "TIMEOUT",
+      "elapsed_seconds": 4.001316937152296
+    },
+    {
+      "test": "output",
+      "passed": true,
+      "status": "OUTPUT_LIMIT",
+      "elapsed_seconds": 0.06474500289186835
+    }
+  ]
+}

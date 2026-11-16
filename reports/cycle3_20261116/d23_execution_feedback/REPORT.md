@@ -1,0 +1,7 @@
+# D23: data feasibility failed, execution isolation passed
+
+The frozen APPS original TRAIN introductory STDIO population has0eligible groups, below128. All700local benchmark cache files were parsed,548059records and41060unique prompt fields, with no unsupported schemas. Of2639introductory tasks,2505are function-entrypoint problems excluded by the frozen operator;134are STDIO but lack four distinct valid pairs. This is a substrate feasibility failure, not an algorithm result. Do not weaken the four-pair or128-group gate or relabel function tasks as STDIO. No reference code, model or held-out test was executed.
+
+Separately11artificial sandbox checks passed with network/process/filesystem restrictions and CPU/RAM/wall/output bounds. This establishes only tested engineering capabilities. Zero GPU hours used. Before attributing failure to missing data, a schema-only diagnostic confirmed2505function/134STDIO; the first diagnostic hit Python's long-integer parser guard, then a read-only parse_int=str schema diagnostic completed without changing the frozen audit output.
+
+Next D24 is a new, explicitly different population: original TRAIN interview-level STDIO programming tasks, same128group/four-case/capacity/exposure rules. Difficulty is not silently pooled or relabeled; higher code difficulty and weak case coverage remain risks. If D24 also fails, freeze this APPS STDIO substrate rather than trying competition difficulty or lowering gates. No formal candidate/GPU inference is authorized solely by these feasibility passes.

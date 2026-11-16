@@ -1,10 +1,9 @@
 {
   "project_status": "ACTIVE",
   "formal9": "FAILED_FROZEN_GATES_RETAINED",
-  "D22": "FAILED_OPTIMISTIC_SUNK_COST_SCREEN_DIRECTION_FROZEN",
-  "next": "D23_EXECUTION_FEEDBACK_INPUT_NOVELTY_ISOLATION_AUDIT",
+  "D22": "DIRECTION_FROZEN",
+  "D23": "INPUT_FAIL_ISOLATION_PASS",
+  "next": "D24_INTERVIEW_STDIO_INPUT_FEASIBILITY",
   "effective_method": false,
-  "new_GPU_reserved": 0,
-  "confirmation_papers_sealed": 64,
-  "transfer_groups_sealed": 44
+  "new_GPU_reserved": 0
 }
