@@ -1,0 +1,77 @@
+{
+  "status": "PASS_FUNCTION_ADAPTER_ARTIFICIAL",
+  "comparison_checks": 196,
+  "source_sha256": "ab9e615b940931143ef61e8159e4a6140183ba0c048c7a95ad588994e53a1e8c",
+  "official_evaluator_blob": "25414d2a5371729f00e9be888c66b236d17b86c2",
+  "gold_in_execution_environment": false,
+  "limitations": [
+    "Author return-comparison permissiveness retained; not proof of full evaluator runtime parity.",
+    "Standard library prelude supplied; author numpy prelude omitted.",
+    "Fresh namespace/process for each case; author keeps module alive across cases.",
+    "Bounded Python3.8 sandbox may reject programs accepted with other dependencies or runtime limits."
+  ],
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "checks": [
+    {
+      "test": "module",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "class",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "string",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "bool",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "tuple",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "nested_tuple",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "numeric_dict_keys",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "singleton_expected",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "false_positive_control",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "exception",
+      "passed": true,
+      "status": "RUNTIME_ERROR"
+    },
+    {
+      "test": "stdout_noise",
+      "passed": true,
+      "status": "OK"
+    },
+    {
+      "test": "stdlib",
+      "passed": true,
+      "status": "OK"
+    }
+  ]
+}

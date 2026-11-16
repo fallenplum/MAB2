@@ -1,8 +1,7 @@
 {
   "project_status": "ACTIVE",
-  "D23": "STDIO_INTRO_FAIL",
-  "D24": "STDIO_INTERVIEW_FAIL_DIRECTION_FROZEN",
-  "next": "D25_FUNCTION_INPUT_AND_ADAPTER_FEASIBILITY",
+  "D25": "INPUT_AND_ARTIFICIAL_ADAPTER_PASS",
+  "next": "FORMAL10_OPERATOR_TESTS_INPUT_PARTITION_AND_GPU_QUALIFICATION",
   "formal_candidates_started": 9,
   "effective_method": false,
   "new_GPU_reserved": 0
