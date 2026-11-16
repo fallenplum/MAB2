@@ -1,0 +1,22 @@
+{
+  "status": "PASS_ARTIFICIAL_MEMORY_REQUALIFICATION",
+  "GPU_hours": 0.07251662403138147,
+  "minimum_free_MiB": 35000,
+  "comparison": {
+    "status": "PASS_ALL_PREVIOUS_ARTIFICIAL_SCIENTIFIC_FIELDS",
+    "conditions": 44,
+    "field_checks": 1248,
+    "benchmark_labels_used": false
+  },
+  "replay_sha256": "7353e93c67e0c4f8dd6447d2ca32d19a3fdfe04dd1a0f1e7f2334b0e87928c66",
+  "independent_audit_sha256": "8cb78e21f113db9b8bc711b2167e0ecea5819080f761b7ca2c5b3a30e3d87cfe",
+  "benchmark_quality_seen": false,
+  "prior_formal_GPU_hours": 0.26990622433141753,
+  "remaining_formal_GPU_hours": 7.657577151637201,
+  "gpus": [
+    0,
+    2
+  ],
+  "worker_cap_seconds": 13333,
+  "retry_plan_sha256": "1496980ee1c75a40370ccdd62e8d016b95bb6e22bcaf497a3ef558ca0c7fbdd9"
+}

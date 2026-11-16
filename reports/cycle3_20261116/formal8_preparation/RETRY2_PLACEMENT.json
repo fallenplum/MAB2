@@ -1,0 +1,17 @@
+{
+  "status": "RESOURCE_PLACEMENT_ONLY_BEFORE_RETRY_FIRST_CALL",
+  "previous_gpus": [
+    0,
+    2
+  ],
+  "new_gpus": [
+    2,
+    5
+  ],
+  "previous_plan_sha256": "1496980ee1c75a40370ccdd62e8d016b95bb6e22bcaf497a3ef558ca0c7fbdd9",
+  "plan_sha256": "1406781aa19b07d0fc85c945528905ceaec9119f8200437081c450134697818d",
+  "resource_probe_sha256": "2b90b5a00085b29eee33f8cbd469fc2119110ce129c8b077b7a5a004714c5dad",
+  "prelaunch_resource_guard_retained": true,
+  "scientific_fields_unchanged": true,
+  "reason": "New read-only resource snapshot shows substantially more available memory on2/5; deployment rechecks current state"
+}
