@@ -1,0 +1,12 @@
+{
+  "status": "PASS_ENGINEERING_ONLY",
+  "selector_valid": 80,
+  "selector_total": 80,
+  "budget_projection": 46,
+  "permission_raw_string_checks": 672,
+  "certified_pairs": 0,
+  "certificate_violations": 0,
+  "quality_claim": false,
+  "replay_receipt_sha256": "7026aa0fd755ea57c8aa68374689d4602437c2d3609ebb531b2a6369ce8e5590",
+  "actual_GPU_hours": 0.07890505556191783
+}

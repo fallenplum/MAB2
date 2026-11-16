@@ -1,0 +1,29 @@
+{
+  "attempt1": {
+    "status": "OOM_AND_STRICT_CARDINALITY_FAILURE",
+    "GPU_hours": 0.16976051528472452,
+    "completed_artificial_units": 1,
+    "invalid_logical_selections": 26,
+    "total_logical_selections": 40
+  },
+  "attempt2": {
+    "status": "EARLY_STOP_DURING_LOADING_AFTER_KNOWN_INTERFACE_FAILURE",
+    "GPU_hours": 0.03917674276809622
+  },
+  "attempt3": {
+    "status": "PASS_ENGINEERING_ONLY",
+    "GPU_hours": 0.07890505556191783,
+    "completed_artificial_units": 2,
+    "terminal_conditions": 44,
+    "logical_calls": 144,
+    "physical_calls": 74,
+    "exact_replay_field_checks": 2124
+  },
+  "scientific_efficacy_established": false,
+  "formal6": {
+    "questions": 96,
+    "seeds": 2,
+    "conditions": 11,
+    "status": "RUNNING_UNSCORED"
+  }
+}

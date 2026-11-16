@@ -1,0 +1,48 @@
+[
+  {
+    "title": "MessageSieve: Runtime Message Pruning for Accurate and Efficient LLM-Based Multi-Agent Communication",
+    "authors": [
+      "Nianhao You",
+      "Yubo Dong",
+      "Jun Wang",
+      "Hehe Fan",
+      "Yi Yang"
+    ],
+    "year": 2026,
+    "venue": "EMNLP",
+    "url": "https://aclanthology.org/2026.emnlp-main.2179/",
+    "read_scope": "Primary metadata and abstract; implementation not reproduced",
+    "finding": "Fixed-graph, message-instance pruning via lightweight state cards and local comparisons; no extra selector training or model call.",
+    "implication": "Mandatory near baseline for claims about free message filtering; graph-conditioned feedback is a distinct claim requiring evidence."
+  },
+  {
+    "title": "What Should Agents Say? Action-state Communication for Efficient Multi-Agent Systems",
+    "authors": [
+      "Chen Huang",
+      "Yuhao Wu",
+      "Wenxuan Zhang"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint v1",
+    "url": "https://arxiv.org/html/2606.05304v1",
+    "read_scope": "Primary metadata, abstract, sections3-5 and main tables; code not reproduced",
+    "finding": "PACT projects messages into action/state/result records. Split-evidence experiments include HotpotQA and 2Wiki; generic summaries and conclusion-only messages have topology-dependent limitations.",
+    "implication": "Split evidence and preserving grounded communication are established, not novel here. Need matched PACT control before a broad system claim."
+  },
+  {
+    "title": "CompAct: Compressing Retrieved Documents Actively for Question Answering",
+    "authors": [
+      "Chanwoong Yoon",
+      "Taewhoo Lee",
+      "Hyeon Hwang",
+      "Minbyul Jeong",
+      "Jaewoo Kang"
+    ],
+    "year": 2024,
+    "venue": "EMNLP",
+    "url": "https://aclanthology.org/2024.emnlp-main.1194/",
+    "read_scope": "Primary metadata and abstract only",
+    "finding": "Active document compression for multihop QA retains task-relevant information.",
+    "implication": "Evidence compression alone is not a new contribution. Full method still needs reading before claiming an implementation match."
+  }
+]

@@ -6,16 +6,22 @@
   "prior_cycle_stopped_at_cap": true,
   "continuation_authority": "User requested continued autoresearch after five-round closure on 2026-11-16",
   "GPU_total": 160,
-  "GPU_used": 76.47691242367074,
-  "GPU_reserved": 0.25,
-  "active_stage": "EVIDENCE_QUALIFICATION_RUNNING",
-  "next_action": "close and replay artificial qualification then admit formal6 on frozen96 fresh inputs",
+  "GPU_used": 76.76475473728547,
+  "GPU_reserved": 7.5,
+  "active_stage": "FORMAL6_RUNNING_UNSCORED",
+  "next_action": "launch 2 shared GPUs, monitor no-label prefix, complete and close cost before scoring",
   "GPU_jobs": [
-    "C3_EVIDENCE_INDEXED_ENGINEERING"
+    "C3_FORMAL6_EVIDENCE_RANK_APPLICABILITY"
   ],
-  "last_update_unix": 1794810218.1350029,
-  "stage": "EVIDENCE_QUALIFICATION_RUNNING",
+  "last_update_unix": 1794811577.0122333,
+  "stage": "FORMAL6_RUNNING_UNSCORED",
   "D6": "NEGATIVE",
   "D7": "NEGATIVE",
-  "new_GPU_started": true
+  "new_GPU_started": true,
+  "engineering_failures": [
+    "attempt001 OOM and strict cardinality rejection",
+    "attempt002 stopped during loading to avoid known interface failure"
+  ],
+  "formal_candidate_rounds_started": 6,
+  "completed_questions_at_observation": 1
 }
