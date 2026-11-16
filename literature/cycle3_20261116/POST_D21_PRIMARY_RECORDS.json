@@ -1,0 +1,48 @@
+{
+  "verified_date": "2026-11-17",
+  "lookup_provider": "web primary-page open and GitHub connector; no Google-specific API used",
+  "records": [
+    {
+      "title": "A Dataset of Information-Seeking Questions and Answers Anchored in Research Papers",
+      "authors": [
+        "Pradeep Dasigi",
+        "Kyle Lo",
+        "Iz Beltagy",
+        "Arman Cohan",
+        "Noah A. Smith",
+        "Matt Gardner"
+      ],
+      "year": 2021,
+      "venue": "NAACL",
+      "doi": "10.18653/v1/2021.naacl-main.365",
+      "url": "https://aclanthology.org/2021.naacl-main.365/",
+      "read_coverage": "Official metadata and abstract; author repository README and complete evaluator.py. Full paper not read in this stage.",
+      "code": "https://github.com/allenai/qasper-led-baseline/tree/afd0fb96bf78ce8cd8157639c6f6a6995e4f9089",
+      "evaluator_git_blob": "daa0e48d32c55e6cd23d21e0d6254a35bc359ae4",
+      "relevance": "Original paper-grounded questions with reference evidence. F1 evaluator verified on1000 artificial pairs. Provides evaluation substrate, not new-method evidence."
+    },
+    {
+      "title": "LongBench v2: Towards Deeper Understanding and Reasoning on Realistic Long-context Multitasks",
+      "authors": [
+        "Yushi Bai",
+        "Shangqing Tu",
+        "Jiajie Zhang",
+        "Hao Peng",
+        "Xiaozhi Wang",
+        "Xin Lv",
+        "Shulin Cao",
+        "Jiazheng Xu",
+        "Lei Hou",
+        "Yuxiao Dong",
+        "Jie Tang",
+        "Juanzi Li"
+      ],
+      "year": 2025,
+      "venue": "ACL",
+      "doi": "10.18653/v1/2025.acl-long.183",
+      "url": "https://aclanthology.org/2025.acl-long.183/",
+      "read_coverage": "Official metadata, abstract, project page and README; full paper not read in this stage.",
+      "relevance": "Separate transfer corpus. Our feasible44 single-document context groups are a length-limited subset, not the full503-question benchmark; cannot generalize to8k–2M-word scope."
+    }
+  ]
+}
