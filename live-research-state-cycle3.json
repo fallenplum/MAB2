@@ -1,8 +1,10 @@
 {
   "project_status": "ACTIVE",
   "formal9": "FAILED_FROZEN_GATES_RETAINED",
-  "next": "D22_OPTIMISTIC_SUNK_COST_CEILING",
+  "D22": "FAILED_OPTIMISTIC_SUNK_COST_SCREEN_DIRECTION_FROZEN",
+  "next": "D23_EXECUTION_FEEDBACK_INPUT_NOVELTY_ISOLATION_AUDIT",
   "effective_method": false,
+  "new_GPU_reserved": 0,
   "confirmation_papers_sealed": 64,
   "transfer_groups_sealed": 44
 }

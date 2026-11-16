@@ -1,0 +1,54 @@
+{
+  "passed": false,
+  "gates": {
+    "mean_headroom_all_controls": false,
+    "mean_headroom_best_fixed": true,
+    "seed_consistency": false,
+    "raw_quality": true,
+    "paired_paper_support": true
+  },
+  "oracle_utility": 0.34275987803683383,
+  "oracle_F1": 0.4297609717868338,
+  "oracle_tokens": 17400.21875,
+  "oracle_gain_by_control": {
+    "FLAT": 0.03245043015758543,
+    "SINGLE_Q": 0.04582001049109963,
+    "SINGLE_M": 0.1731593674976719,
+    "BM25": 0.019557935694332305,
+    "DENSE": -0.011687503713445839,
+    "VOTE_Q3": 0.17521101931722569
+  },
+  "oracle_gain_over_best_fixed": 0.0406505371373895,
+  "best_fixed_legal_action": "keep",
+  "seed_gains": {
+    "DENSE": [
+      -0.07806672767964795,
+      0.05469172025275626
+    ],
+    "FLAT": [
+      -0.044838144946808496,
+      0.10973900526197938
+    ],
+    "best_fixed": [
+      0.009621118421052637,
+      0.07167995585372634
+    ]
+  },
+  "paired_paper_support": 13,
+  "selected_action_counts": {
+    "keep": 3,
+    "delete_U": 13,
+    "delete_V": 16
+  },
+  "status": "FREEZE_CURRENT_PREFIX_DELETION_DIRECTION",
+  "papers": 16,
+  "seeds": 2,
+  "all_observed_prefix_cost_paid": true,
+  "oracle_feedback_cost_omitted": true,
+  "new_GPU_hours": 0,
+  "new_model_calls": 0,
+  "independent_confirmation": false,
+  "source_sha256": "9bc056d10873c11db0556ae5614afcf4c04323f1b16e71c12690dbc083dc0c1f",
+  "parent_summary_sha256": "ee892857612d968348e5e6b4cbf7a78898c341224ad098c75fb30c0b51f4fe64",
+  "cpu_main_wall_seconds": 0.21519779996015131
+}

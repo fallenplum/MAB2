@@ -1,0 +1,5 @@
+# D22A necessary headroom screen failed
+
+Even a gold-informed selector over current keep/delete-U/delete-V, paying all already observed G1 source/relay costs and omitting every feedback-acquisition charge, has utility.3427598780 versus dense retrieval.3544473818 (delta-.0116875037). Its mean F1 is.4297609718, but this does not offset the complete prefix cost. Gains over dense differ across seeds(-.0780667277,+.0546917203); the necessary screen fails. All96 legal raw terminal actions and costs were independently checked against the author scorer.
+
+Freeze the current long-document within-question direct-edge revalidation direction. Do not run the proposed crossed-terminal extension on this sample, lower the cost penalty, release the64 confirmation papers, or reinterpret Formal9 as passed. This is a direction failure, not a project stop. Next conduct a source/exposure/execution-feasibility audit for tasks with observable executable feedback, remaining inside multi-small-model graph-conditional credit maintenance. No new candidate or GPU run is admitted by that audit.

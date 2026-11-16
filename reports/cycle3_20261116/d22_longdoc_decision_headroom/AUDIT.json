@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_SUNK_COST_CEILING_AUDIT",
+  "raw_terminal_actions": 96,
+  "paired_services": 32,
+  "scalar_checks": 16,
+  "prefix_sunk_cost_paid": true,
+  "official_scorer_used": true,
+  "summary_sha256": "ac0816442838e22af2c2416f632286837f617f5628164c71959f87084b5510c7",
+  "source_sha256": "2523c170d7429118e6e571133eefa558f3a343af90f5751af624eb41e2a4f8ed"
+}
