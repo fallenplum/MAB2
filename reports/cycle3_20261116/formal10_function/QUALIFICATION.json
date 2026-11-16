@@ -1,0 +1,25 @@
+{
+  "status": "PASS_RAW_FUNCTION_EXECUTION_AUDIT",
+  "units": 3,
+  "scalar_checks": 6214,
+  "physical_requests": 123,
+  "logical_calls": 261,
+  "program_records": 108,
+  "physical_visible_execution_seconds": 2.225335934665054,
+  "actual_GPU_hours": 0.29420670439133473,
+  "local_tokenizer_counts_checked": true,
+  "hidden_labels_accessed": false,
+  "archive_sha256": "cceed7617666a7f0b373ba337d7d68781199cfd7b39de16e36e57bc32f366c5e",
+  "source_sha256": "cc263b71143388c6101c5b820286b01615959f3915d2f55ef03d8e6139c378af",
+  "replay": {
+    "scalar_checks": 636,
+    "status": "PASS_EXACT_SEEDED_REPLAY"
+  },
+  "qualification_only": true,
+  "scientific_samples_inferred": 0,
+  "independent_confirmation_tasks_sealed": 128,
+  "qualification_source_commit": "88e672e3ad0067b06979448ae42a0475d2a58446",
+  "public_source_commit": "689ce9b03d8f3e201805722fc6bccf8229b222ba",
+  "total_closed_GPU_hours": 90.58563198690818,
+  "remaining_GPU_hours": 69.41436801309182
+}

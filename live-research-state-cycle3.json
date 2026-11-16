@@ -1,11 +1,10 @@
 {
   "project_status": "ACTIVE",
-  "formal10": "ARTIFICIAL_GPU_QUALIFICATION_RUNNING",
+  "formal10": "QUALIFIED_PILOT_READY_FOR_ADMISSION",
   "formal10_formal_admitted": false,
   "formal_candidates_started": 9,
   "effective_method": false,
-  "reserved_GPU_hours": 0.5,
-  "qualification_source_commit": "88e672e3ad0067b06979448ae42a0475d2a58446",
+  "total_closed_GPU_hours": 90.58563198690818,
   "independent_confirmation_tasks_sealed": 128,
-  "next": "CLOSE_AND_AUDIT_QUALIFICATION_THEN_ADMIT_FROZEN_PILOT"
+  "next": "ADMIT_AND_RUN_FROZEN_PILOT_THEN_AUDIT_AND_SCORE"
 }
