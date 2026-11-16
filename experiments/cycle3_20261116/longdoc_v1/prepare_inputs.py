@@ -8,6 +8,10 @@ from transformers import AutoTokenizer,AutoModel
 
 def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def h(text):return hashlib.sha256(text.encode()).hexdigest()
+def chat_count(tokenizer,prompt):
+    ids=tokenizer.apply_chat_template(prompt,tokenize=True,add_generation_prompt=True,return_dict=False)
+    assert isinstance(ids,list) and all(type(v) is int for v in ids) and len(ids)>0
+    return len(ids)
 def write(path,value):
     with Path(path).open('x',encoding='utf-8') as f:json.dump(value,f,ensure_ascii=False,indent=2)
 def segment(text,tokenizer):
@@ -40,7 +44,7 @@ def main():
         v=np.concatenate(vectors);scores=v[1:]@v[0];dense=[segments[j]['id'] for j in sorted(range(len(segments)),key=lambda j:(-float(scores[j]),j))[:18]];payload=validate(dict(id=part['question_id'],question=question,segments=segments,retrieval={'BM25':bm25(question,segments),'DENSE':dense}));raw=json.dumps(payload,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\n';rows.append(raw);selection.append(dict(index=i,input_sha256=h(raw),removed_upstream='U' if i%2==0 else 'V',paper_group_sha256=part['group_sha256']))
         full=messages(payload,[x['id'] for x in segments],True)
         for name,tokenizer in [('qwen',qt),('mistral',mt)]:
-            count=len(tokenizer.apply_chat_template(full,tokenize=True,add_generation_prompt=True));caps.append(dict(index=i,model=name,input_tokens=count,complete_text_preserved=True,accepted=count<=32000 and count+256<=32768))
+            count=chat_count(tokenizer,full);caps.append(dict(index=i,model=name,input_tokens=count,complete_text_preserved=True,accepted=count<=32000 and count+256<=32768))
     with (run/'PILOT_INPUTS.jsonl').open('x',encoding='utf-8',newline='\n') as f:f.write(''.join(rows))
     write(run/'SELECTION.json',{'questions':selection});write(run/'PRIVATE_CAPACITY.json',caps)
     result=dict(status='PASS_INPUT_PREPARATION' if all(v['accepted'] for v in caps) else 'BLOCKED_INPUT_CAPACITY',pilot_papers=16,development_papers=29,confirmation_papers=64,formal_inputs=16,input_tokens_max_by_model={n:max(v['input_tokens'] for v in caps if v['model']==n) for n in ['qwen','mistral']},max_retokenized_segment_tokens=maxsegment,dense_texts_truncated_at512=truncated,all_text_preserved=True,answers_used=False,new_GPU_hours=0,cpu_main_wall_seconds=time.perf_counter()-t,partition_sha256=sha(run/'PRIVATE_PARTITION.json'),inputs_sha256=sha(run/'PILOT_INPUTS.jsonl'),selection_sha256=sha(run/'SELECTION.json'),capacity_sha256=sha(run/'PRIVATE_CAPACITY.json'),source_sha256=sha(__file__),encoder_pins={str(f.relative_to(Path(args.encoder))):sha(f) for f in Path(args.encoder).rglob('*') if f.is_file() and f.name!='README.md'})

@@ -1,0 +1,21 @@
+{
+  "status": "PASS_CPU_ENGINEERING_PREFLIGHT_ONLY",
+  "artificial_units": 3,
+  "short_seeded_replay": true,
+  "artificial_long_full_tokens": {
+    "qwen": 23561,
+    "mistral": 29647
+  },
+  "real_pilot_full_max_tokens": {
+    "qwen": 22040,
+    "mistral": 24656
+  },
+  "all_real_data_unscored": true,
+  "formal_inputs_sha256": "16c4be1528341e5075af80ec8be9aa389be8a372f21686231e5191da9c4913d0",
+  "partition_sha256": "0210a8e9b9f96ad01522f48a16b330db8e3e12c1034dafb1bf9725c37f765dc6",
+  "test_count": 4,
+  "official_metric_artificial_tests": true,
+  "zero_quality_gate_rejected": true,
+  "invalid_selection_gate_rejected": true,
+  "new_GPU_hours": 0
+}
