@@ -1,0 +1,12 @@
+condition,seeds,questions,role,primary_metric,cost,artifact
+G0,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+G0_MINUS_EU,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+G0_MINUS_EV,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+G1,26111671|26111672,96,fixed nominee,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+G1_MINUS_EU,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+G1_MINUS_EV,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+FLAT_ANNOTATION,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+SINGLE_Q,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+SINGLE_M,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+INDEPENDENT3_Q,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json
+VOTE_Q3,26111671|26111672,96,frozen control/counterfactual,alias-aware answer EM,all logical service tokens plus actual collection occupancy,closed MATRIX.json and SUMMARY.json

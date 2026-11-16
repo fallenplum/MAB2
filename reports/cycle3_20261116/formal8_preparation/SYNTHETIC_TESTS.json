@@ -1,0 +1,10 @@
+{
+  "status": "PASS_FORMAL8_SYNTHETIC_ALIAS_EXTRACTION_AND_GATE_TESTS",
+  "official_alias_EM_F1_checks": 2000,
+  "independent_implementation_checks": 2000,
+  "synthetic_extraction_cases": 4,
+  "unchanged_gate_random_array_cases": 20,
+  "benchmark_labels_used": false,
+  "new_GPU_calls": 0,
+  "official_scorer_sha256": "7c09ee2ec98c7ecb57df79eb68dba22eb381ab58d50e730dfcefafb4dda31458"
+}

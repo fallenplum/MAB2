@@ -1,0 +1,15 @@
+{
+  "status": "SCIENTIFIC_FILES_FROZEN_BEFORE_FIRST_FORMAL8_CALL",
+  "files": {
+    "experiments/cycle3_20261116/annotation_2wiki_v1/evaluate.py": "a5bf95e3745ba8af8034b0a24f487935f0242e9f4a90708d93a9f0b2daf68acb",
+    "experiments/cycle3_20261116/annotation_2wiki_v1/alias_metrics.py": "881448df8ee4976dc812e81f5f5fcf3cb973d4e8deaf080fe03e3bbc980ab81d",
+    "experiments/cycle3_20261116/annotation_2wiki_v1/audit_raw_scoring.py": "88e185fa012f8b2f89b64c82cd8085b30109bfa794cc7a504342da6818bbc6bc",
+    "experiments/cycle3_20261116/annotation_2wiki_v1/input_json.py": "c330d06f9f632d3f132cac256f5d7453a122da6db2ac0beaa70b13de4d13930e",
+    "experiments/cycle3_20261116/annotation_2wiki_v1/extract_labels.py": "da0bffde4f298ee0df8ff047f577be9ca978ef46bbf7d8675c5298c86b060c7b",
+    "experiments/cycle3_20261116/annotation_2wiki_v1/test_alias_metrics.py": "b398394783e485a92a22b17bb0ad0c3ae283ad33d2599347335cffa9a6a93f93",
+    "experiments/cycle3_20261116/annotation_2wiki_v1/select_pool.py": "220c478900fcf9a7b410af47cc42cf8f0e0efa8a88f5eacb4be7c0c1d24cc278",
+    "protocol/cycle3_20261116/FORMAL8_2WIKI_TRANSFER.md": "8b324862fc9ae3fadf79962e10e2defaa6c6000d141c92a6bf46f11727cef89b",
+    "protocol/cycle3_20261116/FORMAL8_MATRIX.csv": "c6127769eeb817d0e1741a9d33cfba5da7c059df407c0b600040dd45dafeee2f"
+  },
+  "formal7_quality_seen": false
+}
