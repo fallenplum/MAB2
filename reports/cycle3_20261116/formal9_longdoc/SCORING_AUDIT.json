@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_OFFICIAL_RAW_SCORING_AUDIT",
+  "raw_answers": 384,
+  "metric_source": "author evaluator blob daa0e48d32c55e6cd23d21e0d6254a35bc359ae4",
+  "scalar_checks": 124,
+  "gates_identical": true,
+  "summary_sha256": "ee892857612d968348e5e6b4cbf7a78898c341224ad098c75fb30c0b51f4fe64",
+  "source_sha256": "e32d63eee4b4c47235d5f35c00694d4865f6f405ba50af82f7f0c7fa6b636a7b",
+  "confirmation_labels_accessed": false
+}

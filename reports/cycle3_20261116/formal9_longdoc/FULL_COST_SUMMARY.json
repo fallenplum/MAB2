@@ -1,0 +1,636 @@
+{
+  "status": "COMPLETE_FULL_LOGICAL_SERVICE_COST",
+  "conditions": {
+    "G0": {
+      "qwen_calls": {
+        "mean": 3.0,
+        "total": 96,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 11939.25,
+        "total": 382056,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 70.59375,
+        "total": 2259,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 4.719992390106199,
+        "total": 151.03975648339838,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 4.713430932044983,
+        "total": 150.82978982543946,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 7257.625,
+        "total": 232244,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 32.34375,
+        "total": 1035,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 3.218994223170739,
+        "total": 103.00781514146365,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 3.216902851104737,
+        "total": 102.94089123535159,
+        "services": 32
+      }
+    },
+    "G0_MINUS_EU": {
+      "qwen_calls": {
+        "mean": 3.0,
+        "total": 96,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 10921.84375,
+        "total": 349499,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 69.0625,
+        "total": 2210,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 4.541951543484174,
+        "total": 145.34244939149357,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 4.53555883026123,
+        "total": 145.13788256835937,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 7257.625,
+        "total": 232244,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 32.34375,
+        "total": 1035,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 3.218994223170739,
+        "total": 103.00781514146365,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 3.216902851104737,
+        "total": 102.94089123535159,
+        "services": 32
+      }
+    },
+    "G0_MINUS_EV": {
+      "qwen_calls": {
+        "mean": 3.0,
+        "total": 96,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 11015.1875,
+        "total": 352486,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 69.25,
+        "total": 2216,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 4.550431802585081,
+        "total": 145.61381768272258,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 4.543850823402405,
+        "total": 145.40322634887696,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 7257.625,
+        "total": 232244,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 32.34375,
+        "total": 1035,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 3.218994223170739,
+        "total": 103.00781514146365,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 3.216902851104737,
+        "total": 102.94089123535159,
+        "services": 32
+      }
+    },
+    "G1": {
+      "qwen_calls": {
+        "mean": 3.0,
+        "total": 96,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 12337.5,
+        "total": 394800,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 66.8125,
+        "total": 2138,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 4.607147852271737,
+        "total": 147.4287312726956,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 4.600469291687011,
+        "total": 147.21501733398435,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 5953.15625,
+        "total": 190501,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 41.46875,
+        "total": 1327,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 3.339854195022781,
+        "total": 106.87533424072899,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 3.3379492874145504,
+        "total": 106.81437719726561,
+        "services": 32
+      }
+    },
+    "G1_MINUS_EU": {
+      "qwen_calls": {
+        "mean": 2.5,
+        "total": 80,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 8905.0625,
+        "total": 284962,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 50.59375,
+        "total": 1619,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 3.443981990974862,
+        "total": 110.20742371119559,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 3.4384555225372315,
+        "total": 110.03057672119141,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 5953.15625,
+        "total": 190501,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 41.46875,
+        "total": 1327,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 3.339854195022781,
+        "total": 106.87533424072899,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 3.3379492874145504,
+        "total": 106.81437719726561,
+        "services": 32
+      }
+    },
+    "G1_MINUS_EV": {
+      "qwen_calls": {
+        "mean": 2.5,
+        "total": 80,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 9305.5625,
+        "total": 297778,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 53.875,
+        "total": 1724,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 3.6241177530246205,
+        "total": 115.97176809678786,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 3.618604404449463,
+        "total": 115.79534094238282,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 5953.15625,
+        "total": 190501,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 41.46875,
+        "total": 1327,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 3.339854195022781,
+        "total": 106.87533424072899,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 3.3379492874145504,
+        "total": 106.81437719726561,
+        "services": 32
+      }
+    },
+    "FLAT": {
+      "qwen_calls": {
+        "mean": 3.0,
+        "total": 96,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 12634.0625,
+        "total": 404290,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 69.15625,
+        "total": 2213,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 4.70210372521251,
+        "total": 150.4673192068003,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 4.695822696685791,
+        "total": 150.26632629394533,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 4523.75,
+        "total": 144760,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 37.65625,
+        "total": 1205,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 2.8497041591472225,
+        "total": 91.19053309271112,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 2.847479946136475,
+        "total": 91.1193582763672,
+        "services": 32
+      }
+    },
+    "SINGLE_Q": {
+      "qwen_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 12685.75,
+        "total": 405944,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 5.3125,
+        "total": 170,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 1.7566163932278869,
+        "total": 56.21172458329238,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 1.7545240135192877,
+        "total": 56.144768432617205,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      }
+    },
+    "SINGLE_M": {
+      "qwen_calls": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 13772.6875,
+        "total": 440726,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 19.40625,
+        "total": 621,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 4.639712336676894,
+        "total": 148.4707947736606,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 4.637376556396485,
+        "total": 148.39604980468752,
+        "services": 32
+      }
+    },
+    "BM25": {
+      "qwen_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 4989.4375,
+        "total": 159662,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 6.4375,
+        "total": 206,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 0.9432882983601303,
+        "total": 30.18522554752417,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 0.9412061386108398,
+        "total": 30.118596435546873,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      }
+    },
+    "DENSE": {
+      "qwen_calls": {
+        "mean": 1.0,
+        "total": 32,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 4963.0,
+        "total": 158816,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 4.96875,
+        "total": 159,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 0.8385871963546379,
+        "total": 26.83479028334841,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 0.8361810054779053,
+        "total": 26.75779217529297,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      }
+    },
+    "VOTE_Q3": {
+      "qwen_calls": {
+        "mean": 3.0,
+        "total": 96,
+        "services": 32
+      },
+      "qwen_input_tokens": {
+        "mean": 38057.25,
+        "total": 1217832,
+        "services": 32
+      },
+      "qwen_output_tokens": {
+        "mean": 17.0,
+        "total": 544,
+        "services": 32
+      },
+      "qwen_elapsed_seconds": {
+        "mean": 5.292978600147762,
+        "total": 169.3753152047284,
+        "services": 32
+      },
+      "qwen_gpu_seconds": {
+        "mean": 5.285662231445315,
+        "total": 169.14119140625007,
+        "services": 32
+      },
+      "mistral_calls": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_input_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_output_tokens": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_elapsed_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      },
+      "mistral_gpu_seconds": {
+        "mean": 0.0,
+        "total": 0,
+        "services": 32
+      }
+    }
+  },
+  "actual_collection_resident_GPU_hours": 0.36174665450034404,
+  "qualification_resident_GPU_hours": 0.1002948510180512,
+  "cache_reuse_nominal_nodes_charged": true,
+  "nominal_elapsed_timings_from_cached_physical_requests": true,
+  "latency_limitation": "Shared-GPU per-request timings are observed once per exact request and reused for nominal accounting, not independently remeasured end-to-end latency. Residency includes loading, idle waiting and placement.",
+  "token_scalar_utility_does_not_weight_model_FLOPs": true,
+  "source_sha256": "b2efd385c8c1a488da126659f1fffa78682510a4cb70b1b54dbecc9330bdf454"
+}
