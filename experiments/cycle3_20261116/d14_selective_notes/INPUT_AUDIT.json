@@ -1,0 +1,8 @@
+{
+  "status": "PASS_INDEPENDENT_INPUT_CACHE_PREFIX_RECONSTRUCTION",
+  "logical_entries": 1536,
+  "exact_cache_entries": 726,
+  "unique_new_requests": 669,
+  "uses_labels": false,
+  "source_sha256": "c88076f73abfa0a0babc65554f20582207e6ea579a8f55d1a3c081ce5523b00f"
+}

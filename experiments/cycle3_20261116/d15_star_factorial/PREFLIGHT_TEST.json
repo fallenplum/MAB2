@@ -1,0 +1,9 @@
+{
+  "status": "PASS_CPU_PREFLIGHT",
+  "logical_credit_table_tests": 1,
+  "zero_variance_rejected": true,
+  "expected_requests": 2181,
+  "worker_supervisor_AST_identical_to_qualified_D14": true,
+  "invalid_request_count_rejected": true,
+  "new_model_calls": 0
+}

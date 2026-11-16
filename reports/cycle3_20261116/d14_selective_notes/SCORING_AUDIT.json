@@ -1,0 +1,9 @@
+{
+  "status": "PASS_INDEPENDENT_SCALAR_RAW_SCORING",
+  "numeric_checks": 112,
+  "question_seed_variant_observations": 1536,
+  "tasks": 2,
+  "scoring_summary_sha256": "bab4708b38a01ef1e870122f0902560d61df9c705bcd3748a7f197d8dba362fd",
+  "source_sha256": "663ebee3c7cc6dd297219076d1a93dcfd9166466d494ea618aa9cb1f3c38be03",
+  "shared_official_answer_normalizer": true
+}

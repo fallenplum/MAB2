@@ -1,0 +1,10 @@
+{
+  "project_status": "ACTIVE",
+  "stage": "D14_NEGATIVE_D15_INPUT_PLANNING",
+  "updated_unix": 1794837952.6586742,
+  "global_used_GPU_hours": 88.60054736724089,
+  "reserved_GPU_hours": 0,
+  "D14_nominee": "FAILED_BOTH_TASKS",
+  "D15": "EXPOSED_DIAGNOSTIC_NOT_ADMITTED",
+  "next_action": "Prepare complete RAW/FILTERED star-factorial, freeze code and plan, admit within2GPUh, execute/audit/score."
+}

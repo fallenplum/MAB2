@@ -1,0 +1,10 @@
+{
+  "project_status": "ACTIVE",
+  "stage": "D14_SELECTIVE_NOTE_COLLECTION_RUNNING",
+  "d14_status": "669_REQUESTS_TWO_GPU_RUNNING_UNSCORED",
+  "used_GPU_hours": 88.4649689011498,
+  "reserved_GPU_hours": 1.800000000000001,
+  "updated_unix": 1794837631.1578035,
+  "next_action": "Finish hash-verified collection, close actual cost, independently audit, score fixed gates, then outer loop.",
+  "historical_registry_unchanged": true
+}

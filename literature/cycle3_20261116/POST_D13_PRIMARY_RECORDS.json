@@ -1,0 +1,38 @@
+{
+  "access_date": "2026-11-16",
+  "search_provider": "Available web search; provider not selectable as Google",
+  "records": [
+    {
+      "id": "consilience_2608_20564v1",
+      "title": "Consilience: Conformally Calibrated Communication Control for Hidden-Profile Multi-Agent Reasoning",
+      "url": "https://arxiv.org/html/2608.20564v1",
+      "status": "arXiv preprint; venue not verified",
+      "read_depth": "Abstract, sections3.1.3 and AppendixA, held-out subsectionC.1 and assignment analysisD",
+      "summary": "The method evaluates all admissible counterfactual branches for its realized surrogate regret. Its round-wise conformal statement requires exchangeability under the fixed deployed policy; it is neither final-answer correctness nor simultaneous trajectory coverage. The committed branch must not be resampled. Hidden-profile communication and action routing are close prior art. Our potential distinction must be measured savings in limited feedback after graph changes, with all counterfactual costs counted; no such advantage is established.",
+      "relevance": "Direct novelty and full-cost boundary; conformal intervals are not added to MAB2."
+    },
+    {
+      "id": "heterogeneity_2502_08788v3",
+      "title": "Stop Overvaluing Multi-Agent Debate -- We Must Rethink Evaluation and Embrace Model Heterogeneity",
+      "url": "https://arxiv.org/abs/2502.08788v3",
+      "read_depth": "Official metadata/abstract; HTML v3 omitted main body, not full methods",
+      "summary": "Strong single-agent and self-consistency controls and heterogeneous composition are existing concerns. Version3 title differs from original search-index title. Changing model assignment alone is not a new contribution."
+    },
+    {
+      "id": "cortexdebate_acl2025",
+      "title": "CortexDebate: Debating Sparsely and Equally for Multi-Agent Debate",
+      "url": "https://aclanthology.org/2025.findings-acl.495/",
+      "doi": "10.18653/v1/2025.findings-acl.495",
+      "read_depth": "Official metadata and abstract only",
+      "summary": "Trust-based sparse adaptive communication already exists; generic useful-edge pruning is not a novel claim."
+    },
+    {
+      "id": "evidence_perez2019",
+      "title": "Finding Generalizable Evidence by Learning to Convince Q&A Models",
+      "url": "https://aclanthology.org/D19-1244/",
+      "doi": "10.18653/v1/D19-1244",
+      "read_depth": "Official metadata and abstract only",
+      "summary": "Training agents to select persuasive evidence sentences predates LLM collaboration; extractive evidence selection alone is not novel."
+    }
+  ]
+}
