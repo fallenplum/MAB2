@@ -1,0 +1,15 @@
+{
+  "status": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
+  "scalar_checks": 3329,
+  "old_actual_GPU_hours": 0.29420670439133473,
+  "new_actual_GPU_hours": 0.13668428175474723,
+  "old_placement_seconds": 371.6036348605994,
+  "new_placement_seconds": 0,
+  "old_physical_tokens": 478386,
+  "new_physical_tokens": 478386,
+  "old_archive_sha256": "cceed7617666a7f0b373ba337d7d68781199cfd7b39de16e36e57bc32f366c5e",
+  "new_archive_sha256": "415f0b722b2f7e88a47c8744aa565a2c62f666108d914b408fc5373962af3979",
+  "scientific_samples": 0,
+  "source_sha256": "f4af613d8dedc938655b55d7099860089451c17562642b85f185996f65e271db",
+  "limitation": "Nonrandomized concurrent-load timing; exact artificial outputs establish execution equivalence only, not general throughput or scientific effectiveness. Current formal pilot unchanged."
+}

@@ -1,7 +1,7 @@
 {
-  "project_status": "SERVER_EXPERIMENTS_PAUSED_BY_USER",
+  "project_status": "RESUME_AUTHORIZED_WAITING_FOR_SERVER_CAPACITY",
   "automatic_server_resume": false,
-  "formal10": "PARTIAL_6_OF_16_USER_PAUSE_NOT_SCIENTIFIC_FAILURE",
+  "formal10": "RESUME_COVERAGE_VERIFIED_6_OF_16",
   "formal_candidates_admitted": 10,
   "formal_candidates_started": 10,
   "effective_method": false,
@@ -9,6 +9,10 @@
   "reserved_GPU_hours": 0,
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": false,
-  "resident_profile_acceptance_pending": true,
-  "next": "WAIT_FOR_EXPLICIT_SERVER_RESUME; retain completed units and fixed protocol; create a versioned resume plan and reserve remaining budget before restarting"
+  "resident_profile_acceptance_pending": false,
+  "next": "RECHECK_STORAGE_AND_DEVICES_BEFORE_BINDING_PLAN_AND_RESERVING_GPU_HOURS",
+  "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
+  "remaining_formal_tasks": 10,
+  "eligible_server_outputs_at_check": 0,
+  "eligible_GPUs_at_check": 0
 }
