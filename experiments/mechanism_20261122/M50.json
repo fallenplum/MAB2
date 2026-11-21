@@ -1,0 +1,750 @@
+{
+  "models": {
+    "0": {
+      "summary": {
+        "official_parseable": 0.9934895833333334,
+        "below_cap": 0.9986979166666666,
+        "strict_parseable": 0.92578125,
+        "full_positive_label_count": 0.08333333333333333,
+        "gold_keep": 0.0,
+        "material": 0.041666666666666664,
+        "full_quality_on": 0.8536921536817766,
+        "full_quality_off": 0.8554524467110726,
+        "full_tokens": 16181.708333333334,
+        "full_all_mismatch": 0.0,
+        "full_numeric_set_mismatch": 0.0,
+        "full_gold_mismatch": 0.0,
+        "full_conditional_label_mismatch": 0.0,
+        "full_terminal_calls": 16.0,
+        "full_prefix_calls": 6.0,
+        "joint_tokens": 1067.0416666666667,
+        "joint_all_mismatch": 0.0,
+        "joint_numeric_set_mismatch": 0.0,
+        "joint_gold_mismatch": 0.0,
+        "joint_conditional_label_mismatch": 0.0,
+        "joint_terminal_calls": 0.5208333333333334,
+        "joint_prefix_calls": 3.1041666666666665,
+        "row_first_tokens": 1159.5,
+        "row_first_all_mismatch": 0.0,
+        "row_first_numeric_set_mismatch": 0.0,
+        "row_first_gold_mismatch": 0.0,
+        "row_first_conditional_label_mismatch": 0.0,
+        "row_first_terminal_calls": 0.5208333333333334,
+        "row_first_prefix_calls": 3.5625,
+        "eager_tokens": 1616.3541666666667,
+        "nested_tokens": 1244.0416666666667,
+        "unpriced_tokens": 1067.0416666666667
+      },
+      "grades": {
+        "lower": {
+          "official_parseable": 0.9921875,
+          "below_cap": 1.0,
+          "strict_parseable": 0.9583333333333334,
+          "full_positive_label_count": 0.0,
+          "gold_keep": 0.0,
+          "material": 0.0,
+          "full_quality_on": 0.9583192086772394,
+          "full_quality_off": 0.9583327344312819,
+          "full_tokens": 15516.0,
+          "full_all_mismatch": 0.0,
+          "full_numeric_set_mismatch": 0.0,
+          "full_gold_mismatch": 0.0,
+          "full_conditional_label_mismatch": 0.0,
+          "full_terminal_calls": 16.0,
+          "full_prefix_calls": 6.0,
+          "joint_tokens": 827.7083333333334,
+          "joint_all_mismatch": 0.0,
+          "joint_numeric_set_mismatch": 0.0,
+          "joint_gold_mismatch": 0.0,
+          "joint_conditional_label_mismatch": 0.0,
+          "joint_terminal_calls": 0.3333333333333333,
+          "joint_prefix_calls": 3.0416666666666665,
+          "row_first_tokens": 891.0833333333334,
+          "row_first_all_mismatch": 0.0,
+          "row_first_numeric_set_mismatch": 0.0,
+          "row_first_gold_mismatch": 0.0,
+          "row_first_conditional_label_mismatch": 0.0,
+          "row_first_terminal_calls": 0.3333333333333333,
+          "row_first_prefix_calls": 3.375,
+          "eager_tokens": 1365.9583333333333,
+          "nested_tokens": 898.125,
+          "unpriced_tokens": 827.7083333333334
+        },
+        "upper": {
+          "official_parseable": 0.9947916666666666,
+          "below_cap": 0.9973958333333334,
+          "strict_parseable": 0.8932291666666666,
+          "full_positive_label_count": 0.16666666666666666,
+          "gold_keep": 0.0,
+          "material": 0.08333333333333333,
+          "full_quality_on": 0.7490650986863138,
+          "full_quality_off": 0.7525721589908635,
+          "full_tokens": 16847.416666666668,
+          "full_all_mismatch": 0.0,
+          "full_numeric_set_mismatch": 0.0,
+          "full_gold_mismatch": 0.0,
+          "full_conditional_label_mismatch": 0.0,
+          "full_terminal_calls": 16.0,
+          "full_prefix_calls": 6.0,
+          "joint_tokens": 1306.375,
+          "joint_all_mismatch": 0.0,
+          "joint_numeric_set_mismatch": 0.0,
+          "joint_gold_mismatch": 0.0,
+          "joint_conditional_label_mismatch": 0.0,
+          "joint_terminal_calls": 0.7083333333333334,
+          "joint_prefix_calls": 3.1666666666666665,
+          "row_first_tokens": 1427.9166666666667,
+          "row_first_all_mismatch": 0.0,
+          "row_first_numeric_set_mismatch": 0.0,
+          "row_first_gold_mismatch": 0.0,
+          "row_first_conditional_label_mismatch": 0.0,
+          "row_first_terminal_calls": 0.7083333333333334,
+          "row_first_prefix_calls": 3.75,
+          "eager_tokens": 1866.75,
+          "nested_tokens": 1589.9583333333333,
+          "unpriced_tokens": 1306.375
+        }
+      },
+      "blocks": [
+        {
+          "wall": {
+            "full": 161.70867959409952,
+            "joint": 23.354930109344423,
+            "row_first": 17.969814035110176
+          },
+          "order": [
+            "full",
+            "joint",
+            "row_first"
+          ],
+          "foreign": false,
+          "logical_joint": 1034.875,
+          "logical_row_first": 1153.875
+        },
+        {
+          "wall": {
+            "full": 152.73965004784986,
+            "joint": 33.715176852885634,
+            "row_first": 34.053826566785574
+          },
+          "order": [
+            "full",
+            "row_first",
+            "joint"
+          ],
+          "foreign": false,
+          "logical_joint": 1425.625,
+          "logical_row_first": 1527.625
+        },
+        {
+          "wall": {
+            "full": 128.81623168615624,
+            "joint": 0.4892006563022733,
+            "row_first": 0.4865847369655967
+          },
+          "order": [
+            "joint",
+            "full",
+            "row_first"
+          ],
+          "foreign": false,
+          "logical_joint": 543.0,
+          "logical_row_first": 543.0
+        },
+        {
+          "wall": {
+            "full": 140.99486882984638,
+            "joint": 28.993367987219244,
+            "row_first": 29.42992855189368
+          },
+          "order": [
+            "joint",
+            "row_first",
+            "full"
+          ],
+          "foreign": false,
+          "logical_joint": 1530.625,
+          "logical_row_first": 1631.25
+        },
+        {
+          "wall": {
+            "full": 148.58055447461084,
+            "joint": 12.947740836068988,
+            "row_first": 13.421751764137298
+          },
+          "order": [
+            "row_first",
+            "full",
+            "joint"
+          ],
+          "foreign": false,
+          "logical_joint": 770.75,
+          "logical_row_first": 848.0
+        },
+        {
+          "wall": {
+            "full": 168.0930226650089,
+            "joint": 23.80873035499826,
+            "row_first": 24.032441335730255
+          },
+          "order": [
+            "row_first",
+            "joint",
+            "full"
+          ],
+          "foreign": false,
+          "logical_joint": 1097.375,
+          "logical_row_first": 1253.25
+        }
+      ],
+      "costs": {
+        "full": {
+          "logical_prefill": 604506,
+          "slots_prefill": 673152,
+          "logical_decode": 172216,
+          "slots_decode": 226472,
+          "logical_calls": 1056,
+          "batches": 132,
+          "wall_seconds": 900.9330072975717
+        },
+        "joint": {
+          "logical_prefill": 45249,
+          "slots_prefill": 136176,
+          "logical_decode": 5969,
+          "slots_decode": 30304,
+          "logical_calls": 174,
+          "batches": 36,
+          "wall_seconds": 123.30914679681882
+        },
+        "row_first": {
+          "logical_prefill": 49665,
+          "slots_prefill": 154112,
+          "logical_decode": 5991,
+          "slots_decode": 28960,
+          "logical_calls": 196,
+          "batches": 47,
+          "wall_seconds": 119.39434699062258
+        }
+      },
+      "saving_vs_strongest": 0.0,
+      "speed_vs_row_first": -0.032788820449796585,
+      "gates": {
+        "qualification": true,
+        "logical": false,
+        "hardware": false
+      }
+    },
+    "1": {
+      "summary": {
+        "official_parseable": 0.8125,
+        "below_cap": 0.9674479166666666,
+        "strict_parseable": 0.73828125,
+        "full_positive_label_count": 0.22916666666666666,
+        "gold_keep": 0.125,
+        "material": 0.14583333333333334,
+        "full_quality_on": 0.561611608676137,
+        "full_quality_off": 0.5229196916829936,
+        "full_tokens": 16241.208333333334,
+        "full_all_mismatch": 0.0,
+        "full_numeric_set_mismatch": 0.0,
+        "full_gold_mismatch": 0.0,
+        "full_conditional_label_mismatch": 0.0,
+        "full_terminal_calls": 16.0,
+        "full_prefix_calls": 6.0,
+        "joint_tokens": 2382.4166666666665,
+        "joint_all_mismatch": 0.0,
+        "joint_numeric_set_mismatch": 0.0,
+        "joint_gold_mismatch": 0.0,
+        "joint_conditional_label_mismatch": 0.0,
+        "joint_terminal_calls": 1.9583333333333333,
+        "joint_prefix_calls": 3.4166666666666665,
+        "row_first_tokens": 2653.5625,
+        "row_first_all_mismatch": 0.0,
+        "row_first_numeric_set_mismatch": 0.0,
+        "row_first_gold_mismatch": 0.0,
+        "row_first_conditional_label_mismatch": 0.0,
+        "row_first_terminal_calls": 1.9583333333333333,
+        "row_first_prefix_calls": 4.958333333333333,
+        "eager_tokens": 2847.125,
+        "nested_tokens": 2832.875,
+        "unpriced_tokens": 2378.1041666666665
+      },
+      "grades": {
+        "lower": {
+          "official_parseable": 0.8645833333333334,
+          "below_cap": 0.9869791666666666,
+          "strict_parseable": 0.78125,
+          "full_positive_label_count": 0.20833333333333334,
+          "gold_keep": 0.20833333333333334,
+          "material": 0.25,
+          "full_quality_on": 0.7125124257000426,
+          "full_quality_off": 0.6602269094072325,
+          "full_tokens": 15540.291666666666,
+          "full_all_mismatch": 0.0,
+          "full_numeric_set_mismatch": 0.0,
+          "full_gold_mismatch": 0.0,
+          "full_conditional_label_mismatch": 0.0,
+          "full_terminal_calls": 16.0,
+          "full_prefix_calls": 6.0,
+          "joint_tokens": 2716.625,
+          "joint_all_mismatch": 0.0,
+          "joint_numeric_set_mismatch": 0.0,
+          "joint_gold_mismatch": 0.0,
+          "joint_conditional_label_mismatch": 0.0,
+          "joint_terminal_calls": 2.4166666666666665,
+          "joint_prefix_calls": 3.5833333333333335,
+          "row_first_tokens": 3014.0416666666665,
+          "row_first_all_mismatch": 0.0,
+          "row_first_numeric_set_mismatch": 0.0,
+          "row_first_gold_mismatch": 0.0,
+          "row_first_conditional_label_mismatch": 0.0,
+          "row_first_terminal_calls": 2.4166666666666665,
+          "row_first_prefix_calls": 5.375,
+          "eager_tokens": 3130.2083333333335,
+          "nested_tokens": 3452.5833333333335,
+          "unpriced_tokens": 2722.875
+        },
+        "upper": {
+          "official_parseable": 0.7604166666666666,
+          "below_cap": 0.9479166666666666,
+          "strict_parseable": 0.6953125,
+          "full_positive_label_count": 0.25,
+          "gold_keep": 0.041666666666666664,
+          "material": 0.041666666666666664,
+          "full_quality_on": 0.41071079165223123,
+          "full_quality_off": 0.38561247395875453,
+          "full_tokens": 16942.125,
+          "full_all_mismatch": 0.0,
+          "full_numeric_set_mismatch": 0.0,
+          "full_gold_mismatch": 0.0,
+          "full_conditional_label_mismatch": 0.0,
+          "full_terminal_calls": 16.0,
+          "full_prefix_calls": 6.0,
+          "joint_tokens": 2048.2083333333335,
+          "joint_all_mismatch": 0.0,
+          "joint_numeric_set_mismatch": 0.0,
+          "joint_gold_mismatch": 0.0,
+          "joint_conditional_label_mismatch": 0.0,
+          "joint_terminal_calls": 1.5,
+          "joint_prefix_calls": 3.25,
+          "row_first_tokens": 2293.0833333333335,
+          "row_first_all_mismatch": 0.0,
+          "row_first_numeric_set_mismatch": 0.0,
+          "row_first_gold_mismatch": 0.0,
+          "row_first_conditional_label_mismatch": 0.0,
+          "row_first_terminal_calls": 1.5,
+          "row_first_prefix_calls": 4.541666666666667,
+          "eager_tokens": 2564.0416666666665,
+          "nested_tokens": 2213.1666666666665,
+          "unpriced_tokens": 2033.3333333333333
+        }
+      },
+      "blocks": [
+        {
+          "wall": {
+            "full": 266.87856354471296,
+            "joint": 89.9786522788927,
+            "row_first": 79.5854772599414
+          },
+          "order": [
+            "full",
+            "joint",
+            "row_first"
+          ],
+          "foreign": false,
+          "logical_joint": 2330.125,
+          "logical_row_first": 2612.875
+        },
+        {
+          "wall": {
+            "full": 240.58996616583318,
+            "joint": 32.60879221186042,
+            "row_first": 33.57500058412552
+          },
+          "order": [
+            "full",
+            "row_first",
+            "joint"
+          ],
+          "foreign": false,
+          "logical_joint": 1961.25,
+          "logical_row_first": 2316.75
+        },
+        {
+          "wall": {
+            "full": 202.0840897220187,
+            "joint": 70.20363593893126,
+            "row_first": 60.00111781898886
+          },
+          "order": [
+            "joint",
+            "full",
+            "row_first"
+          ],
+          "foreign": false,
+          "logical_joint": 2462.5,
+          "logical_row_first": 2575.0
+        },
+        {
+          "wall": {
+            "full": 193.1619565859437,
+            "joint": 41.32662670407444,
+            "row_first": 33.883512552361935
+          },
+          "order": [
+            "joint",
+            "row_first",
+            "full"
+          ],
+          "foreign": false,
+          "logical_joint": 1687.0,
+          "logical_row_first": 1831.0
+        },
+        {
+          "wall": {
+            "full": 221.930377303157,
+            "joint": 97.2262402176857,
+            "row_first": 74.35265766317025
+          },
+          "order": [
+            "row_first",
+            "full",
+            "joint"
+          ],
+          "foreign": false,
+          "logical_joint": 3733.875,
+          "logical_row_first": 4141.25
+        },
+        {
+          "wall": {
+            "full": 259.70347412116826,
+            "joint": 67.21971331676468,
+            "row_first": 60.77632075175643
+          },
+          "order": [
+            "row_first",
+            "joint",
+            "full"
+          ],
+          "foreign": false,
+          "logical_joint": 2119.75,
+          "logical_row_first": 2444.5
+        }
+      ],
+      "costs": {
+        "full": {
+          "logical_prefill": 632430,
+          "slots_prefill": 709152,
+          "logical_decode": 147148,
+          "slots_decode": 215048,
+          "logical_calls": 1056,
+          "batches": 132,
+          "wall_seconds": 1384.3484274428338
+        },
+        "joint": {
+          "logical_prefill": 98545,
+          "slots_prefill": 294152,
+          "logical_decode": 15811,
+          "slots_decode": 60320,
+          "logical_calls": 258,
+          "batches": 66,
+          "wall_seconds": 398.5636606682092
+        },
+        "row_first": {
+          "logical_prefill": 111486,
+          "slots_prefill": 257632,
+          "logical_decode": 15885,
+          "slots_decode": 51608,
+          "logical_calls": 332,
+          "batches": 64,
+          "wall_seconds": 342.1740866303444
+        }
+      },
+      "saving_vs_strongest": -0.0018134193028409573,
+      "speed_vs_row_first": -0.164797909137939,
+      "gates": {
+        "qualification": false,
+        "logical": false,
+        "hardware": false
+      }
+    },
+    "2": {
+      "summary": {
+        "official_parseable": 1.0,
+        "below_cap": 0.9921875,
+        "strict_parseable": 0.9583333333333334,
+        "full_positive_label_count": 0.20833333333333334,
+        "gold_keep": 0.10416666666666667,
+        "material": 0.14583333333333334,
+        "full_quality_on": 0.9102783708934519,
+        "full_quality_off": 0.9101993411264132,
+        "full_tokens": 15893.291666666666,
+        "full_all_mismatch": 0.0,
+        "full_numeric_set_mismatch": 0.0,
+        "full_gold_mismatch": 0.0,
+        "full_conditional_label_mismatch": 0.0,
+        "full_terminal_calls": 16.0,
+        "full_prefix_calls": 6.0,
+        "joint_tokens": 4948.104166666667,
+        "joint_all_mismatch": 0.0,
+        "joint_numeric_set_mismatch": 0.0,
+        "joint_gold_mismatch": 0.0,
+        "joint_conditional_label_mismatch": 0.0,
+        "joint_terminal_calls": 4.104166666666667,
+        "joint_prefix_calls": 5.8125,
+        "row_first_tokens": 4980.395833333333,
+        "row_first_all_mismatch": 0.0,
+        "row_first_numeric_set_mismatch": 0.0,
+        "row_first_gold_mismatch": 0.0,
+        "row_first_conditional_label_mismatch": 0.0,
+        "row_first_terminal_calls": 4.104166666666667,
+        "row_first_prefix_calls": 5.979166666666667,
+        "eager_tokens": 4983.791666666667,
+        "nested_tokens": 8841.0,
+        "unpriced_tokens": 5019.770833333333
+      },
+      "grades": {
+        "lower": {
+          "official_parseable": 1.0,
+          "below_cap": 1.0,
+          "strict_parseable": 0.9895833333333334,
+          "full_positive_label_count": 0.20833333333333334,
+          "gold_keep": 0.125,
+          "material": 0.16666666666666666,
+          "full_quality_on": 0.9710703888265545,
+          "full_quality_off": 0.9709547345654804,
+          "full_tokens": 15139.666666666666,
+          "full_all_mismatch": 0.0,
+          "full_numeric_set_mismatch": 0.0,
+          "full_gold_mismatch": 0.0,
+          "full_conditional_label_mismatch": 0.0,
+          "full_terminal_calls": 16.0,
+          "full_prefix_calls": 6.0,
+          "joint_tokens": 4258.875,
+          "joint_all_mismatch": 0.0,
+          "joint_numeric_set_mismatch": 0.0,
+          "joint_gold_mismatch": 0.0,
+          "joint_conditional_label_mismatch": 0.0,
+          "joint_terminal_calls": 3.6666666666666665,
+          "joint_prefix_calls": 5.708333333333333,
+          "row_first_tokens": 4307.916666666667,
+          "row_first_all_mismatch": 0.0,
+          "row_first_numeric_set_mismatch": 0.0,
+          "row_first_gold_mismatch": 0.0,
+          "row_first_conditional_label_mismatch": 0.0,
+          "row_first_terminal_calls": 3.6666666666666665,
+          "row_first_prefix_calls": 5.958333333333333,
+          "eager_tokens": 4314.708333333333,
+          "nested_tokens": 8163.041666666667,
+          "unpriced_tokens": 4268.541666666667
+        },
+        "upper": {
+          "official_parseable": 1.0,
+          "below_cap": 0.984375,
+          "strict_parseable": 0.9270833333333334,
+          "full_positive_label_count": 0.20833333333333334,
+          "gold_keep": 0.08333333333333333,
+          "material": 0.125,
+          "full_quality_on": 0.8494863529603496,
+          "full_quality_off": 0.8494439476873458,
+          "full_tokens": 16646.916666666668,
+          "full_all_mismatch": 0.0,
+          "full_numeric_set_mismatch": 0.0,
+          "full_gold_mismatch": 0.0,
+          "full_conditional_label_mismatch": 0.0,
+          "full_terminal_calls": 16.0,
+          "full_prefix_calls": 6.0,
+          "joint_tokens": 5637.333333333333,
+          "joint_all_mismatch": 0.0,
+          "joint_numeric_set_mismatch": 0.0,
+          "joint_gold_mismatch": 0.0,
+          "joint_conditional_label_mismatch": 0.0,
+          "joint_terminal_calls": 4.541666666666667,
+          "joint_prefix_calls": 5.916666666666667,
+          "row_first_tokens": 5652.875,
+          "row_first_all_mismatch": 0.0,
+          "row_first_numeric_set_mismatch": 0.0,
+          "row_first_gold_mismatch": 0.0,
+          "row_first_conditional_label_mismatch": 0.0,
+          "row_first_terminal_calls": 4.541666666666667,
+          "row_first_prefix_calls": 6.0,
+          "eager_tokens": 5652.875,
+          "nested_tokens": 9518.958333333334,
+          "unpriced_tokens": 5771.0
+        }
+      },
+      "blocks": [
+        {
+          "wall": {
+            "full": 192.84216866316274,
+            "joint": 92.27418239181861,
+            "row_first": 79.14532883884385
+          },
+          "order": [
+            "full",
+            "joint",
+            "row_first"
+          ],
+          "foreign": false,
+          "logical_joint": 4580.0,
+          "logical_row_first": 4627.25
+        },
+        {
+          "wall": {
+            "full": 165.7434122650884,
+            "joint": 130.1501423222944,
+            "row_first": 119.65482141869143
+          },
+          "order": [
+            "full",
+            "row_first",
+            "joint"
+          ],
+          "foreign": false,
+          "logical_joint": 5818.375,
+          "logical_row_first": 5844.0
+        },
+        {
+          "wall": {
+            "full": 147.95983880897984,
+            "joint": 45.62693032016978,
+            "row_first": 37.840139915701
+          },
+          "order": [
+            "joint",
+            "full",
+            "row_first"
+          ],
+          "foreign": false,
+          "logical_joint": 3654.0,
+          "logical_row_first": 3701.75
+        },
+        {
+          "wall": {
+            "full": 178.04254550300539,
+            "joint": 111.41849642805755,
+            "row_first": 90.51515970705077
+          },
+          "order": [
+            "joint",
+            "row_first",
+            "full"
+          ],
+          "foreign": false,
+          "logical_joint": 4678.25,
+          "logical_row_first": 4701.0
+        },
+        {
+          "wall": {
+            "full": 188.57633903995156,
+            "joint": 127.4722366980277,
+            "row_first": 112.04676646925509
+          },
+          "order": [
+            "row_first",
+            "full",
+            "joint"
+          ],
+          "foreign": false,
+          "logical_joint": 5466.125,
+          "logical_row_first": 5490.0
+        },
+        {
+          "wall": {
+            "full": 212.2305407030508,
+            "joint": 132.61134633608162,
+            "row_first": 119.99688709201291
+          },
+          "order": [
+            "row_first",
+            "joint",
+            "full"
+          ],
+          "foreign": false,
+          "logical_joint": 5491.875,
+          "logical_row_first": 5518.375
+        }
+      ],
+      "costs": {
+        "full": {
+          "logical_prefill": 604506,
+          "slots_prefill": 673152,
+          "logical_decode": 158372,
+          "slots_decode": 203528,
+          "logical_calls": 1056,
+          "batches": 132,
+          "wall_seconds": 1085.3948449832387
+        },
+        "joint": {
+          "logical_prefill": 192915,
+          "slots_prefill": 388784,
+          "logical_decode": 44594,
+          "slots_decode": 119456,
+          "logical_calls": 476,
+          "batches": 94,
+          "wall_seconds": 639.5533344964497
+        },
+        "row_first": {
+          "logical_prefill": 194457,
+          "slots_prefill": 322816,
+          "logical_decode": 44602,
+          "slots_decode": 104744,
+          "logical_calls": 484,
+          "batches": 76,
+          "wall_seconds": 559.199103441555
+        }
+      },
+      "saving_vs_strongest": 0.006483755056283069,
+      "speed_vs_row_first": -0.14369520723541873,
+      "gates": {
+        "qualification": true,
+        "logical": false,
+        "hardware": false
+      }
+    }
+  },
+  "cost": {
+    "actual_GPU_hours": 1.5551525459686917,
+    "exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "global_actual": 97.00940975074752
+  },
+  "workers": [
+    {
+      "questions": 48,
+      "prompt_preparation_seconds": 0.8806170960888267,
+      "padded_widths": [
+        252,
+        782
+      ],
+      "native_system": true,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    },
+    {
+      "questions": 48,
+      "prompt_preparation_seconds": 0.7033449560403824,
+      "padded_widths": [
+        249,
+        830
+      ],
+      "native_system": true,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    },
+    {
+      "questions": 48,
+      "prompt_preparation_seconds": 0.8665527100674808,
+      "padded_widths": [
+        252,
+        782
+      ],
+      "native_system": true,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    }
+  ]
+}
