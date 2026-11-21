@@ -1,0 +1,26 @@
+{
+  "records": 96,
+  "source": {
+    "observed_prior_queries": 1170,
+    "scope": "exact normalized cross-source and documented ARC cache checks, no general pretraining guarantee",
+    "skipped_prior_matches": {
+      "arc": 0,
+      "obqa": 0
+    },
+    "sources": {
+      "arc": {
+        "rows": 1119,
+        "sha256": "e488c1587ffdcfc8443f916c53488a95cd471c5790e0746c6bfe4cecf20962cb",
+        "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Challenge/train-00000-of-00001.parquet"
+      },
+      "obqa": {
+        "rows": 4957,
+        "sha256": "98148f8a54e62eb862346a75192d5fb824d6cbb68f2f59aecd793d39ecb5cd8b",
+        "url": "https://huggingface.co/datasets/allenai/openbookqa/resolve/388097ea7776314e93a529163e0fea805b8a6454/main/train-00000-of-00001.parquet"
+      }
+    }
+  },
+  "input_sha256": "fc32b17fe77ecc3b93e3c0695234d921b2a47c60d2b217a1e69f56a78d96dbed",
+  "gold_sha256": "d6f20184c8506bf22d3560041009a6f17c2ffb193547267b9c2add6b5644ba63",
+  "worker_sha256": "fb9c9a17dccf73c3dc85a3a82e36db341283a175c5c328fa8ee72831e47754c9"
+}
