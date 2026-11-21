@@ -1,0 +1,78 @@
+{
+  "cells": {
+    "lower_0": {
+      "gold_optimum": 664.25,
+      "all_label_optimum": 827.7083333333334,
+      "joint": 827.7083333333334,
+      "row_first": 891.0833333333334,
+      "unpriced": 827.7083333333334,
+      "nested": 898.125,
+      "one_query_or_more_available_savings": 0.0,
+      "gold_disclosure_can_save": 0.125,
+      "instances": 24,
+      "best_fixed_ratio": 1.0
+    },
+    "upper_0": {
+      "gold_optimum": 971.9166666666666,
+      "all_label_optimum": 1297.7083333333333,
+      "joint": 1306.375,
+      "row_first": 1427.9166666666667,
+      "unpriced": 1306.375,
+      "nested": 1589.9583333333333,
+      "one_query_or_more_available_savings": 0.0,
+      "gold_disclosure_can_save": 0.25,
+      "instances": 24,
+      "best_fixed_ratio": 1.0066784395569113
+    },
+    "lower_1": {
+      "gold_optimum": 1695.625,
+      "all_label_optimum": 2505.1666666666665,
+      "joint": 2716.625,
+      "row_first": 3014.0416666666665,
+      "unpriced": 2722.875,
+      "nested": 3452.5833333333335,
+      "one_query_or_more_available_savings": 0.25,
+      "gold_disclosure_can_save": 0.6666666666666666,
+      "instances": 24,
+      "best_fixed_ratio": 1.0844088882975185
+    },
+    "upper_1": {
+      "gold_optimum": 1197.3333333333333,
+      "all_label_optimum": 1957.8333333333333,
+      "joint": 2048.2083333333335,
+      "row_first": 2293.0833333333335,
+      "unpriced": 2033.3333333333333,
+      "nested": 2213.1666666666665,
+      "one_query_or_more_available_savings": 0.08333333333333333,
+      "gold_disclosure_can_save": 0.5,
+      "instances": 24,
+      "best_fixed_ratio": 1.0385630373712438
+    },
+    "lower_2": {
+      "gold_optimum": 2607.5,
+      "all_label_optimum": 3898.8333333333335,
+      "joint": 4258.875,
+      "row_first": 4307.916666666667,
+      "unpriced": 4268.541666666667,
+      "nested": 8163.041666666667,
+      "one_query_or_more_available_savings": 0.25,
+      "gold_disclosure_can_save": 0.875,
+      "instances": 24,
+      "best_fixed_ratio": 1.0923460009404522
+    },
+    "upper_2": {
+      "gold_optimum": 3233.6666666666665,
+      "all_label_optimum": 5330.75,
+      "joint": 5637.333333333333,
+      "row_first": 5652.875,
+      "unpriced": 5771.0,
+      "nested": 9518.958333333334,
+      "one_query_or_more_available_savings": 0.3333333333333333,
+      "gold_disclosure_can_save": 1.0,
+      "instances": 24,
+      "best_fixed_ratio": 1.0575122324876112
+    }
+  },
+  "added_gpu_hours": 0,
+  "opposite_precision_guards_matched": true
+}
