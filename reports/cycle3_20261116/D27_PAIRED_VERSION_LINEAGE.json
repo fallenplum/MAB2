@@ -1,0 +1,49 @@
+{
+  "source_groups": 164,
+  "variants": {
+    "subtle": {
+      "rows": 100,
+      "unique_valid_parents": 100,
+      "unmatched": 0,
+      "ambiguous_parent_groups": 0,
+      "parent_value_shapes": {
+        "str": 100
+      },
+      "sha256": "0b38871e0eadc7b8f5ae8038feac5496655412d4e68ca580cad8bd2c81b036b1"
+    },
+    "verbose": {
+      "rows": 164,
+      "unique_valid_parents": 0,
+      "unmatched": 164,
+      "ambiguous_parent_groups": 0,
+      "parent_value_shapes": {
+        "NoneType": 164
+      },
+      "sha256": "97b6a7cb69b9f5a9c83301a98e54c681a5ff3c3beae92115d59c50fcaf8955e2"
+    },
+    "concise": {
+      "rows": 164,
+      "unique_valid_parents": 0,
+      "unmatched": 164,
+      "ambiguous_parent_groups": 0,
+      "parent_value_shapes": {
+        "NoneType": 164
+      },
+      "sha256": "d84771c5857e080ae310724e1e75784a46a8a9beea80d9b6427426634a885ddc"
+    }
+  },
+  "one_to_one_all_three": 0,
+  "subtle_verbose_intersection": 0,
+  "subtle_concise_intersection": 0,
+  "source_sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+  "score_or_solution_used": false,
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "limit": "Identifier linkage only. Exposure, license scope for redistribution, pretraining contamination and decision effect are not established.",
+  "source_urls": {
+    "EvoEval_subtle.jsonl.gz": "https://github.com/evo-eval/evoeval_release/releases/download/v0.1.0/EvoEval_subtle.jsonl.gz",
+    "EvoEval_verbose.jsonl.gz": "https://github.com/evo-eval/evoeval_release/releases/download/v0.1.0/EvoEval_verbose.jsonl.gz",
+    "EvoEval_concise.jsonl.gz": "https://github.com/evo-eval/evoeval_release/releases/download/v0.1.0/EvoEval_concise.jsonl.gz",
+    "HumanEval.jsonl.gz": "https://raw.githubusercontent.com/openai/human-eval/b9453e8f1865df0a0057a1383767caa400acfbcf/data/HumanEval.jsonl.gz"
+  }
+}
