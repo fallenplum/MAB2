@@ -1,0 +1,53 @@
+{
+  "cells": {
+    "lower_0": {
+      "gold_optimum": 1082.25,
+      "all_label_optimum": 1611.546875,
+      "joint": 1670.3671875,
+      "row_first": 1908.9453125,
+      "unpriced": 1667.390625,
+      "nested": 2320.921875,
+      "one_query_or_more_available_savings": 0.046875,
+      "gold_disclosure_can_save": 0.453125,
+      "instances": 128,
+      "best_fixed_ratio": 1.034652265389426
+    },
+    "upper_0": {
+      "gold_optimum": 1042.7109375,
+      "all_label_optimum": 1572.3046875,
+      "joint": 1594.7890625,
+      "row_first": 1814.828125,
+      "unpriced": 1612.90625,
+      "nested": 2277.9296875,
+      "one_query_or_more_available_savings": 0.0390625,
+      "gold_disclosure_can_save": 0.4453125,
+      "instances": 128,
+      "best_fixed_ratio": 1.0143002658319047
+    },
+    "lower_1": {
+      "gold_optimum": 1082.3203125,
+      "all_label_optimum": 1637.4921875,
+      "joint": 1691.9765625,
+      "row_first": 1930.5625,
+      "unpriced": 1690.796875,
+      "nested": 2364.84375,
+      "one_query_or_more_available_savings": 0.0625,
+      "gold_disclosure_can_save": 0.46875,
+      "instances": 128,
+      "best_fixed_ratio": 1.0325526362244095
+    },
+    "upper_1": {
+      "gold_optimum": 1122.890625,
+      "all_label_optimum": 1594.328125,
+      "joint": 1646.015625,
+      "row_first": 1866.0546875,
+      "unpriced": 1668.5859375,
+      "nested": 2386.984375,
+      "one_query_or_more_available_savings": 0.0546875,
+      "gold_disclosure_can_save": 0.4296875,
+      "instances": 128,
+      "best_fixed_ratio": 1.0324196124935072
+    }
+  },
+  "added_gpu_hours": 0
+}
