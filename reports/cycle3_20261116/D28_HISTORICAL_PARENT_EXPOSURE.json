@@ -1,0 +1,14 @@
+{
+  "project_cache_files": 22,
+  "historical_records": 3608,
+  "unique_normalized_prompt_fields": 326,
+  "original_parents_covered": 164,
+  "paired_families": 100,
+  "paired_families_with_observed_ancestor": 100,
+  "paired_families_not_matched_in_this_subset": 0,
+  "cached_predictions_or_gold_used": false,
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "source_registry_sha256": "60305de32fdbc4cfe4c22f44e30ce1d3328d960f40789c9130d5ec33d855fdd0",
+  "scope": "Only pre-existing HumanEval/test cache entries. Exact full normalized ancestor prompt containment. An unmatched family is not a clean certificate."
+}
