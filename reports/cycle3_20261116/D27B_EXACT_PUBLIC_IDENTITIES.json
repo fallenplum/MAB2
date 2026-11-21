@@ -1,0 +1,20 @@
+{
+  "variant_counts": {
+    "verbose": {
+      "published_ids": 164,
+      "identical_full_task_ids": 164,
+      "same_entry_point_on_identical_ids": 164
+    },
+    "concise": {
+      "published_ids": 164,
+      "identical_full_task_ids": 164,
+      "same_entry_point_on_identical_ids": 164
+    }
+  },
+  "four_version_one_to_one_parent_groups": 100,
+  "comparison": "Exact full source task_id and entry_point for both rephrasings; explicit parent for subtle.",
+  "labels_used": false,
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "independent_model_effect_established": false
+}
