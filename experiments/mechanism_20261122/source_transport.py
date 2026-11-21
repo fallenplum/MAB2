@@ -84,13 +84,12 @@ def compare(s,new,base,cond,labels,rc,tc,prices,gold,init_old,price_new,price_ba
         source_tv=drift.sum()/2,all_set_agrees=True)
 
 
-def score(folder,phase):
+def cases(folder,phase):
     from passage_score import normalized
     questions=json.loads((folder/'INPUT.json').read_bytes())
     keys=json.loads((folder/'SEALED.json').read_bytes())
     models=[{r['key']:r for r in map(json.loads,(folder/f'WORKER{i}.jsonl').read_bytes().splitlines())} for i in range(3)]
     assert all(set(m)==set(keys) for m in models)
-    groups=defaultdict(list)
     for task in questions:
         key=task['key']; rows=[w[key] for w in models]
         for team in range(3):
@@ -112,9 +111,15 @@ def score(folder,phase):
                     np.reshape([v['prefill']+v['decode'] for v in cells],(4,4)),
                     np.reshape([v['prefill']+cap for v in cells],(4,4)),gold,
                     tok[a][0]+tok[b][1]+2,tok[replacement][0]+1,tok[b][1]+1]
-            row=compare(*common)
-            groups[f'team{team}'].append(row)
-            if phase=='m50':groups[f'team{team}_{task["task"]}'].append(row)
+            yield team,task.get('task'),common
+
+
+def score(folder,phase):
+    groups=defaultdict(list)
+    for team,task,common in cases(folder,phase):
+        row=compare(*common)
+        groups[f'team{team}'].append(row)
+        if phase=='m50':groups[f'team{team}_{task}'].append(row)
     out={}
     for group,rows in groups.items():
         agg={k:float(np.mean([x[k] for x in rows])) for k in rows[0]}
