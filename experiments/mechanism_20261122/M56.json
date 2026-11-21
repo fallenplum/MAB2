@@ -1,0 +1,2224 @@
+{
+  "cells": {
+    "0_1": {
+      "means": {
+        "old_cost": 829.83984375,
+        "new_source": 137.296875,
+        "room": 1966.05078125,
+        "drift": 0.2807125361133401,
+        "warm_sum": 345.21875,
+        "old_order": 452.61328125,
+        "cold_sum": 784.4375,
+        "cold_full": 927.7109375,
+        "margin": 0.3828125,
+        "cached": 0.53515625
+      },
+      "n": 256,
+      "changed": 36,
+      "stable_needs": 89,
+      "safe_skip_gain": 0.15234375,
+      "repair_saving": 0.5599155445781212,
+      "order_saving": 0.23727657958556647,
+      "true_quality_on": 0.5260226860264741,
+      "true_quality_off": 0.5344463509229769,
+      "stale": {
+        "available": 0,
+        "purchased": 0,
+        "audits_completed": 0,
+        "all_regret": 0.001581671131683143,
+        "true_regret": 0.00015838325969132522,
+        "wrong_sets": 36,
+        "wrong_true": 6,
+        "false_drop": 2,
+        "false_keep": 4,
+        "fixed_true": 0,
+        "broken_true": 0,
+        "full_cost": 247587
+      },
+      "zero_cost_reweight": {
+        "available": 0,
+        "purchased": 0,
+        "audits_completed": 137,
+        "all_regret": 0.0014600495490061146,
+        "true_regret": 0.00015838325969132522,
+        "wrong_sets": 30,
+        "wrong_true": 6,
+        "false_drop": 2,
+        "false_keep": 4,
+        "fixed_true": 0,
+        "broken_true": 0,
+        "full_cost": 247587
+      },
+      "budgets": {
+        "0.05_periodic": {
+          "mean": {
+            "available": 25165.0,
+            "purchased": 25127.0,
+            "audits_completed": 181.0,
+            "all_regret": 0.001349108109876688,
+            "true_regret": 0.00011939367497048281,
+            "wrong_sets": 26.0,
+            "wrong_true": 5.0,
+            "false_drop": 2.0,
+            "false_keep": 3.0,
+            "fixed_true": 1.0,
+            "broken_true": 0.0,
+            "full_cost": 272714.0
+          },
+          "replicates": [
+            {
+              "available": 25165,
+              "purchased": 25127,
+              "audits_completed": 181,
+              "all_regret": 0.001349108109876688,
+              "true_regret": 0.00011939367497048281,
+              "wrong_sets": 26,
+              "wrong_true": 5,
+              "false_drop": 2,
+              "false_keep": 3,
+              "fixed_true": 1,
+              "broken_true": 0,
+              "full_cost": 272714
+            }
+          ]
+        },
+        "0.05_random": {
+          "mean": {
+            "available": 25165.0,
+            "purchased": 25137.6,
+            "audits_completed": 181.8,
+            "all_regret": 0.0009794316462824473,
+            "true_regret": 0.00012717743885095616,
+            "wrong_sets": 23.2,
+            "wrong_true": 5.2,
+            "false_drop": 2.0,
+            "false_keep": 3.2,
+            "fixed_true": 0.8,
+            "broken_true": 0.0,
+            "full_cost": 272724.6
+          },
+          "replicates": [
+            {
+              "available": 25165,
+              "purchased": 25151,
+              "audits_completed": 184,
+              "all_regret": 0.0009091996076094291,
+              "true_regret": 8.033332493116477e-05,
+              "wrong_sets": 21,
+              "wrong_true": 4,
+              "false_drop": 2,
+              "false_keep": 2,
+              "fixed_true": 2,
+              "broken_true": 0,
+              "full_cost": 272738
+            },
+            {
+              "available": 25165,
+              "purchased": 25164,
+              "audits_completed": 178,
+              "all_regret": 0.0013490455930454837,
+              "true_regret": 0.00015838325969132522,
+              "wrong_sets": 26,
+              "wrong_true": 6,
+              "false_drop": 2,
+              "false_keep": 4,
+              "fixed_true": 0,
+              "broken_true": 0,
+              "full_cost": 272751
+            },
+            {
+              "available": 25165,
+              "purchased": 25150,
+              "audits_completed": 178,
+              "all_regret": 0.0006546546983143718,
+              "true_regret": 0.00011939367497048281,
+              "wrong_sets": 22,
+              "wrong_true": 5,
+              "false_drop": 2,
+              "false_keep": 3,
+              "fixed_true": 1,
+              "broken_true": 0,
+              "full_cost": 272737
+            },
+            {
+              "available": 25165,
+              "purchased": 25110,
+              "audits_completed": 180,
+              "all_regret": 0.0011908802097154415,
+              "true_regret": 0.00011939367497048281,
+              "wrong_sets": 25,
+              "wrong_true": 5,
+              "false_drop": 2,
+              "false_keep": 3,
+              "fixed_true": 1,
+              "broken_true": 0,
+              "full_cost": 272697
+            },
+            {
+              "available": 25165,
+              "purchased": 25113,
+              "audits_completed": 189,
+              "all_regret": 0.0007933781227275102,
+              "true_regret": 0.00015838325969132522,
+              "wrong_sets": 22,
+              "wrong_true": 6,
+              "false_drop": 2,
+              "false_keep": 4,
+              "fixed_true": 0,
+              "broken_true": 0,
+              "full_cost": 272700
+            }
+          ]
+        },
+        "0.05_drift": {
+          "mean": {
+            "available": 25165.0,
+            "purchased": 25122.0,
+            "audits_completed": 184.0,
+            "all_regret": 0.0001200376168491893,
+            "true_regret": 1.1413518883691867e-05,
+            "wrong_sets": 4.0,
+            "wrong_true": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "fixed_true": 5.0,
+            "broken_true": 0.0,
+            "full_cost": 272709.0
+          },
+          "replicates": [
+            {
+              "available": 25165,
+              "purchased": 25122,
+              "audits_completed": 184,
+              "all_regret": 0.0001200376168491893,
+              "true_regret": 1.1413518883691867e-05,
+              "wrong_sets": 4,
+              "wrong_true": 1,
+              "false_drop": 1,
+              "false_keep": 0,
+              "fixed_true": 5,
+              "broken_true": 0,
+              "full_cost": 272709
+            }
+          ]
+        },
+        "0.05_width": {
+          "mean": {
+            "available": 25165.0,
+            "purchased": 25097.0,
+            "audits_completed": 161.0,
+            "all_regret": 9.336970933856302e-05,
+            "true_regret": 0.00011939367497048281,
+            "wrong_sets": 17.0,
+            "wrong_true": 5.0,
+            "false_drop": 2.0,
+            "false_keep": 3.0,
+            "fixed_true": 1.0,
+            "broken_true": 0.0,
+            "full_cost": 272684.0
+          },
+          "replicates": [
+            {
+              "available": 25165,
+              "purchased": 25097,
+              "audits_completed": 161,
+              "all_regret": 9.336970933856302e-05,
+              "true_regret": 0.00011939367497048281,
+              "wrong_sets": 17,
+              "wrong_true": 5,
+              "false_drop": 2,
+              "false_keep": 3,
+              "fixed_true": 1,
+              "broken_true": 0,
+              "full_cost": 272684
+            }
+          ]
+        },
+        "0.05_regret": {
+          "mean": {
+            "available": 25165.0,
+            "purchased": 25162.0,
+            "audits_completed": 161.0,
+            "all_regret": 8.800947848631557e-05,
+            "true_regret": 0.00011939367497048281,
+            "wrong_sets": 18.0,
+            "wrong_true": 5.0,
+            "false_drop": 2.0,
+            "false_keep": 3.0,
+            "fixed_true": 1.0,
+            "broken_true": 0.0,
+            "full_cost": 272749.0
+          },
+          "replicates": [
+            {
+              "available": 25165,
+              "purchased": 25162,
+              "audits_completed": 161,
+              "all_regret": 8.800947848631557e-05,
+              "true_regret": 0.00011939367497048281,
+              "wrong_sets": 18,
+              "wrong_true": 5,
+              "false_drop": 2,
+              "false_keep": 3,
+              "fixed_true": 1,
+              "broken_true": 0,
+              "full_cost": 272749
+            }
+          ]
+        },
+        "0.1_periodic": {
+          "mean": {
+            "available": 50330.0,
+            "purchased": 50257.0,
+            "audits_completed": 242.0,
+            "all_regret": 3.7258817974928725e-05,
+            "true_regret": 6.153723268094189e-05,
+            "wrong_sets": 8.0,
+            "wrong_true": 2.0,
+            "false_drop": 0.0,
+            "false_keep": 2.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 297844.0
+          },
+          "replicates": [
+            {
+              "available": 50330,
+              "purchased": 50257,
+              "audits_completed": 242,
+              "all_regret": 3.7258817974928725e-05,
+              "true_regret": 6.153723268094189e-05,
+              "wrong_sets": 8,
+              "wrong_true": 2,
+              "false_drop": 0,
+              "false_keep": 2,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 297844
+            }
+          ]
+        },
+        "0.1_random": {
+          "mean": {
+            "available": 50330.0,
+            "purchased": 50268.4,
+            "audits_completed": 246.0,
+            "all_regret": 2.642677306937521e-05,
+            "true_regret": 1.9085185171326553e-05,
+            "wrong_sets": 4.0,
+            "wrong_true": 0.8,
+            "false_drop": 0.2,
+            "false_keep": 0.6,
+            "fixed_true": 5.2,
+            "broken_true": 0.0,
+            "full_cost": 297855.4
+          },
+          "replicates": [
+            {
+              "available": 50330,
+              "purchased": 50265,
+              "audits_completed": 249,
+              "all_regret": 5.036790287686646e-05,
+              "true_regret": 0.0,
+              "wrong_sets": 4,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 297852
+            },
+            {
+              "available": 50330,
+              "purchased": 50230,
+              "audits_completed": 245,
+              "all_regret": 2.6586302047466224e-05,
+              "true_regret": 5.047386892300991e-05,
+              "wrong_sets": 5,
+              "wrong_true": 2,
+              "false_drop": 1,
+              "false_keep": 1,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 297817
+            },
+            {
+              "available": 50330,
+              "purchased": 50301,
+              "audits_completed": 246,
+              "all_regret": 1.635935785001332e-05,
+              "true_regret": 2.2476028466811427e-05,
+              "wrong_sets": 4,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 5,
+              "broken_true": 0,
+              "full_cost": 297888
+            },
+            {
+              "available": 50330,
+              "purchased": 50289,
+              "audits_completed": 243,
+              "all_regret": 2.5270448280868152e-05,
+              "true_regret": 2.2476028466811427e-05,
+              "wrong_sets": 4,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 5,
+              "broken_true": 0,
+              "full_cost": 297876
+            },
+            {
+              "available": 50330,
+              "purchased": 50257,
+              "audits_completed": 247,
+              "all_regret": 1.3549854291661894e-05,
+              "true_regret": 0.0,
+              "wrong_sets": 3,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 297844
+            }
+          ]
+        },
+        "0.1_drift": {
+          "mean": {
+            "available": 50330.0,
+            "purchased": 50322.0,
+            "audits_completed": 241.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 297909.0
+          },
+          "replicates": [
+            {
+              "available": 50330,
+              "purchased": 50322,
+              "audits_completed": 241,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 297909
+            }
+          ]
+        },
+        "0.1_width": {
+          "mean": {
+            "available": 50330.0,
+            "purchased": 50233.0,
+            "audits_completed": 245.0,
+            "all_regret": 9.595037161258092e-06,
+            "true_regret": 3.3889547350503294e-05,
+            "wrong_sets": 4.0,
+            "wrong_true": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 297820.0
+          },
+          "replicates": [
+            {
+              "available": 50330,
+              "purchased": 50233,
+              "audits_completed": 245,
+              "all_regret": 9.595037161258092e-06,
+              "true_regret": 3.3889547350503294e-05,
+              "wrong_sets": 4,
+              "wrong_true": 2,
+              "false_drop": 1,
+              "false_keep": 1,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 297820
+            }
+          ]
+        },
+        "0.1_regret": {
+          "mean": {
+            "available": 50330.0,
+            "purchased": 50268.0,
+            "audits_completed": 240.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 297855.0
+          },
+          "replicates": [
+            {
+              "available": 50330,
+              "purchased": 50268,
+              "audits_completed": 240,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 297855
+            }
+          ]
+        },
+        "0.25_periodic": {
+          "mean": {
+            "available": 125827.0,
+            "purchased": 53228.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 300815.0
+          },
+          "replicates": [
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            }
+          ]
+        },
+        "0.25_random": {
+          "mean": {
+            "available": 125827.0,
+            "purchased": 53228.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 300815.0
+          },
+          "replicates": [
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            },
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            },
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            },
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            },
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            }
+          ]
+        },
+        "0.25_drift": {
+          "mean": {
+            "available": 125827.0,
+            "purchased": 53228.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 300815.0
+          },
+          "replicates": [
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            }
+          ]
+        },
+        "0.25_width": {
+          "mean": {
+            "available": 125827.0,
+            "purchased": 53228.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 300815.0
+          },
+          "replicates": [
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            }
+          ]
+        },
+        "0.25_regret": {
+          "mean": {
+            "available": 125827.0,
+            "purchased": 53228.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 300815.0
+          },
+          "replicates": [
+            {
+              "available": 125827,
+              "purchased": 53228,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 300815
+            }
+          ]
+        }
+      },
+      "active_gate": false
+    },
+    "0_2": {
+      "means": {
+        "old_cost": 829.83984375,
+        "new_source": 152.87109375,
+        "room": 1966.05078125,
+        "drift": 0.4824602620872848,
+        "warm_sum": 537.9140625,
+        "old_order": 787.54296875,
+        "cold_sum": 942.05078125,
+        "cold_full": 1085.32421875,
+        "margin": 0.1640625,
+        "cached": 0.25
+      },
+      "n": 256,
+      "changed": 59,
+      "stable_needs": 137,
+      "safe_skip_gain": 0.0859375,
+      "repair_saving": 0.4289967449671387,
+      "order_saving": 0.3169717922137185,
+      "true_quality_on": 0.5251553952460667,
+      "true_quality_off": 0.5323240682468604
+    },
+    "1_1": {
+      "means": {
+        "old_cost": 1097.015625,
+        "new_source": 124.31640625,
+        "room": 1727.1640625,
+        "drift": 0.19912048129416893,
+        "warm_sum": 290.1484375,
+        "old_order": 362.88671875,
+        "cold_sum": 993.2421875,
+        "cold_full": 1145.80859375,
+        "margin": 0.22265625,
+        "cached": 0.5390625
+      },
+      "n": 256,
+      "changed": 28,
+      "stable_needs": 95,
+      "safe_skip_gain": 0.31640625,
+      "repair_saving": 0.7078774531010343,
+      "order_saving": 0.20044349239496662,
+      "true_quality_on": 0.5084551663838912,
+      "true_quality_off": 0.5321837228886261,
+      "stale": {
+        "available": 0,
+        "purchased": 0,
+        "audits_completed": 0,
+        "all_regret": 0.0006447064201357009,
+        "true_regret": 0.00046191293535672505,
+        "wrong_sets": 28,
+        "wrong_true": 6,
+        "false_drop": 3,
+        "false_keep": 3,
+        "fixed_true": 0,
+        "broken_true": 0,
+        "full_cost": 312661
+      },
+      "zero_cost_reweight": {
+        "available": 0,
+        "purchased": 0,
+        "audits_completed": 138,
+        "all_regret": 0.0006118675602710687,
+        "true_regret": 0.00042660800112761285,
+        "wrong_sets": 20,
+        "wrong_true": 5,
+        "false_drop": 3,
+        "false_keep": 2,
+        "fixed_true": 1,
+        "broken_true": 0,
+        "full_cost": 312661
+      },
+      "budgets": {
+        "0.05_periodic": {
+          "mean": {
+            "available": 22107.0,
+            "purchased": 22091.0,
+            "audits_completed": 193.0,
+            "all_regret": 0.0005601964206798393,
+            "true_regret": 0.00032162529658068045,
+            "wrong_sets": 13.0,
+            "wrong_true": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "fixed_true": 3.0,
+            "broken_true": 0.0,
+            "full_cost": 334752.0
+          },
+          "replicates": [
+            {
+              "available": 22107,
+              "purchased": 22091,
+              "audits_completed": 193,
+              "all_regret": 0.0005601964206798393,
+              "true_regret": 0.00032162529658068045,
+              "wrong_sets": 13,
+              "wrong_true": 3,
+              "false_drop": 2,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 334752
+            }
+          ]
+        },
+        "0.05_random": {
+          "mean": {
+            "available": 22107.0,
+            "purchased": 22055.0,
+            "audits_completed": 192.4,
+            "all_regret": 0.00044765288243271814,
+            "true_regret": 0.0002553823897271534,
+            "wrong_sets": 12.4,
+            "wrong_true": 3.0,
+            "false_drop": 1.8,
+            "false_keep": 1.2,
+            "fixed_true": 3.0,
+            "broken_true": 0.0,
+            "full_cost": 334716.0
+          },
+          "replicates": [
+            {
+              "available": 22107,
+              "purchased": 22009,
+              "audits_completed": 191,
+              "all_regret": 0.0005160018987562915,
+              "true_regret": 0.00020320445238638198,
+              "wrong_sets": 14,
+              "wrong_true": 3,
+              "false_drop": 2,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 334670
+            },
+            {
+              "available": 22107,
+              "purchased": 22079,
+              "audits_completed": 196,
+              "all_regret": 0.00045004496187069114,
+              "true_regret": 0.00020320445238638198,
+              "wrong_sets": 13,
+              "wrong_true": 3,
+              "false_drop": 2,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 334740
+            },
+            {
+              "available": 22107,
+              "purchased": 22016,
+              "audits_completed": 189,
+              "all_regret": 0.00030607689463167144,
+              "true_regret": 0.00022725245070164202,
+              "wrong_sets": 10,
+              "wrong_true": 3,
+              "false_drop": 1,
+              "false_keep": 2,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 334677
+            },
+            {
+              "available": 22107,
+              "purchased": 22071,
+              "audits_completed": 195,
+              "all_regret": 0.0004867970338165663,
+              "true_regret": 0.00032162529658068045,
+              "wrong_sets": 12,
+              "wrong_true": 3,
+              "false_drop": 2,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 334732
+            },
+            {
+              "available": 22107,
+              "purchased": 22100,
+              "audits_completed": 191,
+              "all_regret": 0.0004793436230883705,
+              "true_regret": 0.00032162529658068045,
+              "wrong_sets": 13,
+              "wrong_true": 3,
+              "false_drop": 2,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 334761
+            }
+          ]
+        },
+        "0.05_drift": {
+          "mean": {
+            "available": 22107.0,
+            "purchased": 22087.0,
+            "audits_completed": 193.0,
+            "all_regret": 3.375174967075647e-05,
+            "true_regret": 3.848901960411146e-06,
+            "wrong_sets": 3.0,
+            "wrong_true": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "fixed_true": 5.0,
+            "broken_true": 0.0,
+            "full_cost": 334748.0
+          },
+          "replicates": [
+            {
+              "available": 22107,
+              "purchased": 22087,
+              "audits_completed": 193,
+              "all_regret": 3.375174967075647e-05,
+              "true_regret": 3.848901960411146e-06,
+              "wrong_sets": 3,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 5,
+              "broken_true": 0,
+              "full_cost": 334748
+            }
+          ]
+        },
+        "0.05_width": {
+          "mean": {
+            "available": 22107.0,
+            "purchased": 22016.0,
+            "audits_completed": 163.0,
+            "all_regret": 3.492987923314375e-05,
+            "true_regret": 3.848901960411146e-06,
+            "wrong_sets": 8.0,
+            "wrong_true": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "fixed_true": 5.0,
+            "broken_true": 0.0,
+            "full_cost": 334677.0
+          },
+          "replicates": [
+            {
+              "available": 22107,
+              "purchased": 22016,
+              "audits_completed": 163,
+              "all_regret": 3.492987923314375e-05,
+              "true_regret": 3.848901960411146e-06,
+              "wrong_sets": 8,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 5,
+              "broken_true": 0,
+              "full_cost": 334677
+            }
+          ]
+        },
+        "0.05_regret": {
+          "mean": {
+            "available": 22107.0,
+            "purchased": 22100.0,
+            "audits_completed": 166.0,
+            "all_regret": 7.955142275987416e-06,
+            "true_regret": 3.848901960411146e-06,
+            "wrong_sets": 4.0,
+            "wrong_true": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "fixed_true": 5.0,
+            "broken_true": 0.0,
+            "full_cost": 334761.0
+          },
+          "replicates": [
+            {
+              "available": 22107,
+              "purchased": 22100,
+              "audits_completed": 166,
+              "all_regret": 7.955142275987416e-06,
+              "true_regret": 3.848901960411146e-06,
+              "wrong_sets": 4,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 5,
+              "broken_true": 0,
+              "full_cost": 334761
+            }
+          ]
+        },
+        "0.1_periodic": {
+          "mean": {
+            "available": 44215.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.1_random": {
+          "mean": {
+            "available": 44215.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.1_drift": {
+          "mean": {
+            "available": 44215.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.1_width": {
+          "mean": {
+            "available": 44215.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.1_regret": {
+          "mean": {
+            "available": 44215.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 44215,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.25_periodic": {
+          "mean": {
+            "available": 110538.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.25_random": {
+          "mean": {
+            "available": 110538.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            },
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.25_drift": {
+          "mean": {
+            "available": 110538.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.25_width": {
+          "mean": {
+            "available": 110538.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        },
+        "0.25_regret": {
+          "mean": {
+            "available": 110538.0,
+            "purchased": 42453.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 6.0,
+            "broken_true": 0.0,
+            "full_cost": 355114.0
+          },
+          "replicates": [
+            {
+              "available": 110538,
+              "purchased": 42453,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 6,
+              "broken_true": 0,
+              "full_cost": 355114
+            }
+          ]
+        }
+      },
+      "active_gate": false
+    },
+    "1_2": {
+      "means": {
+        "old_cost": 1097.015625,
+        "new_source": 142.765625,
+        "room": 1727.1640625,
+        "drift": 0.21347930904900908,
+        "warm_sum": 380.4140625,
+        "old_order": 471.5703125,
+        "cold_sum": 1106.96484375,
+        "cold_full": 1259.53125,
+        "margin": 0.16015625,
+        "cached": 0.4140625
+      },
+      "n": 256,
+      "changed": 39,
+      "stable_needs": 116,
+      "safe_skip_gain": 0.25390625,
+      "repair_saving": 0.656344946591715,
+      "order_saving": 0.19330362320041083,
+      "true_quality_on": 0.5228232143984146,
+      "true_quality_off": 0.5430147781829886
+    },
+    "2_1": {
+      "means": {
+        "old_cost": 1334.3046875,
+        "new_source": 137.296875,
+        "room": 1243.73046875,
+        "drift": 0.21264101292351173,
+        "warm_sum": 267.88671875,
+        "old_order": 277.125,
+        "cold_sum": 1252.08984375,
+        "cold_full": 1404.65625,
+        "margin": 0.13671875,
+        "cached": 0.5703125
+      },
+      "n": 256,
+      "changed": 17,
+      "stable_needs": 97,
+      "safe_skip_gain": 0.43359375,
+      "repair_saving": 0.7860483254558784,
+      "order_saving": 0.033336152458276924,
+      "true_quality_on": 0.5126629385448177,
+      "true_quality_off": 0.5245411011915981,
+      "stale": {
+        "available": 0,
+        "purchased": 0,
+        "audits_completed": 0,
+        "all_regret": 0.0008437980270137012,
+        "true_regret": 0.0018453315610638932,
+        "wrong_sets": 17,
+        "wrong_true": 4,
+        "false_drop": 1,
+        "false_keep": 3,
+        "fixed_true": 0,
+        "broken_true": 0,
+        "full_cost": 376730
+      },
+      "zero_cost_reweight": {
+        "available": 0,
+        "purchased": 0,
+        "audits_completed": 146,
+        "all_regret": 0.00028318639799047515,
+        "true_regret": 7.665800827083132e-05,
+        "wrong_sets": 9,
+        "wrong_true": 1,
+        "false_drop": 0,
+        "false_keep": 1,
+        "fixed_true": 3,
+        "broken_true": 0,
+        "full_cost": 376730
+      },
+      "budgets": {
+        "0.05_periodic": {
+          "mean": {
+            "available": 15919.0,
+            "purchased": 15877.0,
+            "audits_completed": 188.0,
+            "all_regret": 7.868936280673778e-05,
+            "true_regret": 7.665800827083132e-05,
+            "wrong_sets": 6.0,
+            "wrong_true": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "fixed_true": 3.0,
+            "broken_true": 0.0,
+            "full_cost": 392607.0
+          },
+          "replicates": [
+            {
+              "available": 15919,
+              "purchased": 15877,
+              "audits_completed": 188,
+              "all_regret": 7.868936280673778e-05,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 6,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 392607
+            }
+          ]
+        },
+        "0.05_random": {
+          "mean": {
+            "available": 15919.0,
+            "purchased": 15887.4,
+            "audits_completed": 193.8,
+            "all_regret": 0.00015437564739416743,
+            "true_regret": 7.665800827083132e-05,
+            "wrong_sets": 6.2,
+            "wrong_true": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "fixed_true": 3.0,
+            "broken_true": 0.0,
+            "full_cost": 392617.4
+          },
+          "replicates": [
+            {
+              "available": 15919,
+              "purchased": 15882,
+              "audits_completed": 194,
+              "all_regret": 0.00028191990492866786,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 8,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 392612
+            },
+            {
+              "available": 15919,
+              "purchased": 15915,
+              "audits_completed": 193,
+              "all_regret": 7.868936280673778e-05,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 6,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 392645
+            },
+            {
+              "available": 15919,
+              "purchased": 15871,
+              "audits_completed": 193,
+              "all_regret": 0.0002696146779395852,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 7,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 392601
+            },
+            {
+              "available": 15919,
+              "purchased": 15898,
+              "audits_completed": 196,
+              "all_regret": 7.527015547819114e-05,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 5,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 392628
+            },
+            {
+              "available": 15919,
+              "purchased": 15871,
+              "audits_completed": 193,
+              "all_regret": 6.638413581765514e-05,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 5,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 392601
+            }
+          ]
+        },
+        "0.05_drift": {
+          "mean": {
+            "available": 15919.0,
+            "purchased": 15899.0,
+            "audits_completed": 192.0,
+            "all_regret": 6.0608170448876516e-05,
+            "true_regret": 0.0,
+            "wrong_sets": 3.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 392629.0
+          },
+          "replicates": [
+            {
+              "available": 15919,
+              "purchased": 15899,
+              "audits_completed": 192,
+              "all_regret": 6.0608170448876516e-05,
+              "true_regret": 0.0,
+              "wrong_sets": 3,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 392629
+            }
+          ]
+        },
+        "0.05_width": {
+          "mean": {
+            "available": 15919.0,
+            "purchased": 15858.0,
+            "audits_completed": 173.0,
+            "all_regret": 6.346227057267978e-06,
+            "true_regret": 0.0,
+            "wrong_sets": 3.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 392588.0
+          },
+          "replicates": [
+            {
+              "available": 15919,
+              "purchased": 15858,
+              "audits_completed": 173,
+              "all_regret": 6.346227057267978e-06,
+              "true_regret": 0.0,
+              "wrong_sets": 3,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 392588
+            }
+          ]
+        },
+        "0.05_regret": {
+          "mean": {
+            "available": 15919.0,
+            "purchased": 15861.0,
+            "audits_completed": 176.0,
+            "all_regret": 3.6591875415101604e-07,
+            "true_regret": 0.0,
+            "wrong_sets": 1.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 392591.0
+          },
+          "replicates": [
+            {
+              "available": 15919,
+              "purchased": 15861,
+              "audits_completed": 176,
+              "all_regret": 3.6591875415101604e-07,
+              "true_regret": 0.0,
+              "wrong_sets": 1,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 392591
+            }
+          ]
+        },
+        "0.1_periodic": {
+          "mean": {
+            "available": 31839.0,
+            "purchased": 31808.0,
+            "audits_completed": 249.0,
+            "all_regret": 1.42960662751636e-05,
+            "true_regret": 7.665800827083132e-05,
+            "wrong_sets": 1.0,
+            "wrong_true": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "fixed_true": 3.0,
+            "broken_true": 0.0,
+            "full_cost": 408538.0
+          },
+          "replicates": [
+            {
+              "available": 31839,
+              "purchased": 31808,
+              "audits_completed": 249,
+              "all_regret": 1.42960662751636e-05,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 1,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 408538
+            }
+          ]
+        },
+        "0.1_random": {
+          "mean": {
+            "available": 31839.0,
+            "purchased": 31800.0,
+            "audits_completed": 248.8,
+            "all_regret": 1.156467485035195e-05,
+            "true_regret": 3.066320330833253e-05,
+            "wrong_sets": 1.8,
+            "wrong_true": 0.4,
+            "false_drop": 0.0,
+            "false_keep": 0.4,
+            "fixed_true": 3.6,
+            "broken_true": 0.0,
+            "full_cost": 408530.0
+          },
+          "replicates": [
+            {
+              "available": 31839,
+              "purchased": 31833,
+              "audits_completed": 248,
+              "all_regret": 2.8288105990214046e-05,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 2,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 408563
+            },
+            {
+              "available": 31839,
+              "purchased": 31754,
+              "audits_completed": 248,
+              "all_regret": 5.079733995460702e-06,
+              "true_regret": 0.0,
+              "wrong_sets": 2,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 408484
+            },
+            {
+              "available": 31839,
+              "purchased": 31756,
+              "audits_completed": 250,
+              "all_regret": 1.4661985029314616e-05,
+              "true_regret": 7.665800827083132e-05,
+              "wrong_sets": 2,
+              "wrong_true": 1,
+              "false_drop": 0,
+              "false_keep": 1,
+              "fixed_true": 3,
+              "broken_true": 0,
+              "full_cost": 408486
+            },
+            {
+              "available": 31839,
+              "purchased": 31825,
+              "audits_completed": 249,
+              "all_regret": 4.713815241309686e-06,
+              "true_regret": 0.0,
+              "wrong_sets": 1,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 408555
+            },
+            {
+              "available": 31839,
+              "purchased": 31832,
+              "audits_completed": 249,
+              "all_regret": 5.079733995460702e-06,
+              "true_regret": 0.0,
+              "wrong_sets": 2,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 408562
+            }
+          ]
+        },
+        "0.1_drift": {
+          "mean": {
+            "available": 31839.0,
+            "purchased": 31822.0,
+            "audits_completed": 251.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 408552.0
+          },
+          "replicates": [
+            {
+              "available": 31839,
+              "purchased": 31822,
+              "audits_completed": 251,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 408552
+            }
+          ]
+        },
+        "0.1_width": {
+          "mean": {
+            "available": 31839.0,
+            "purchased": 31790.0,
+            "audits_completed": 248.0,
+            "all_regret": 3.6591875415101604e-07,
+            "true_regret": 0.0,
+            "wrong_sets": 1.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 408520.0
+          },
+          "replicates": [
+            {
+              "available": 31839,
+              "purchased": 31790,
+              "audits_completed": 248,
+              "all_regret": 3.6591875415101604e-07,
+              "true_regret": 0.0,
+              "wrong_sets": 1,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 408520
+            }
+          ]
+        },
+        "0.1_regret": {
+          "mean": {
+            "available": 31839.0,
+            "purchased": 31782.0,
+            "audits_completed": 246.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 408512.0
+          },
+          "replicates": [
+            {
+              "available": 31839,
+              "purchased": 31782,
+              "audits_completed": 246,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 408512
+            }
+          ]
+        },
+        "0.25_periodic": {
+          "mean": {
+            "available": 79598.0,
+            "purchased": 33431.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 410161.0
+          },
+          "replicates": [
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            }
+          ]
+        },
+        "0.25_random": {
+          "mean": {
+            "available": 79598.0,
+            "purchased": 33431.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 410161.0
+          },
+          "replicates": [
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            },
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            },
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            },
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            },
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            }
+          ]
+        },
+        "0.25_drift": {
+          "mean": {
+            "available": 79598.0,
+            "purchased": 33431.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 410161.0
+          },
+          "replicates": [
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            }
+          ]
+        },
+        "0.25_width": {
+          "mean": {
+            "available": 79598.0,
+            "purchased": 33431.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 410161.0
+          },
+          "replicates": [
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            }
+          ]
+        },
+        "0.25_regret": {
+          "mean": {
+            "available": 79598.0,
+            "purchased": 33431.0,
+            "audits_completed": 256.0,
+            "all_regret": 0.0,
+            "true_regret": 0.0,
+            "wrong_sets": 0.0,
+            "wrong_true": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "fixed_true": 4.0,
+            "broken_true": 0.0,
+            "full_cost": 410161.0
+          },
+          "replicates": [
+            {
+              "available": 79598,
+              "purchased": 33431,
+              "audits_completed": 256,
+              "all_regret": 0.0,
+              "true_regret": 0.0,
+              "wrong_sets": 0,
+              "wrong_true": 0,
+              "false_drop": 0,
+              "false_keep": 0,
+              "fixed_true": 4,
+              "broken_true": 0,
+              "full_cost": 410161
+            }
+          ]
+        }
+      },
+      "active_gate": false
+    },
+    "2_2": {
+      "means": {
+        "old_cost": 1334.3046875,
+        "new_source": 152.87109375,
+        "room": 1243.73046875,
+        "drift": 0.30240841745316643,
+        "warm_sum": 371.5703125,
+        "old_order": 415.62890625,
+        "cold_sum": 1373.5390625,
+        "cold_full": 1526.10546875,
+        "margin": 0.078125,
+        "cached": 0.34375
+      },
+      "n": 256,
+      "changed": 22,
+      "stable_needs": 149,
+      "safe_skip_gain": 0.265625,
+      "repair_saving": 0.7294796175481904,
+      "order_saving": 0.10600464281350741,
+      "true_quality_on": 0.5089359088808609,
+      "true_quality_off": 0.5207732274524651
+    }
+  },
+  "gates": {
+    "change": true,
+    "proof_expiry": true,
+    "coverage": true,
+    "cheaper": true,
+    "reprioritization": true,
+    "active": false
+  },
+  "cost": {
+    "actual_GPU_hours": 0.11318919738133748,
+    "exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "global_actual": 95.45425720477883
+  },
+  "workers": [
+    {
+      "questions": 256,
+      "requests": 6144,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    },
+    {
+      "questions": 256,
+      "requests": 6144,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    },
+    {
+      "questions": 256,
+      "requests": 6144,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    }
+  ],
+  "collection_tokens": [
+    {
+      "prompt": 793716,
+      "completion": 6144
+    },
+    {
+      "prompt": 709790,
+      "completion": 6144
+    },
+    {
+      "prompt": 793716,
+      "completion": 6144
+    }
+  ]
+}
