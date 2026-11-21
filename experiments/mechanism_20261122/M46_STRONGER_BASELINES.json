@@ -1,0 +1,53 @@
+{
+  "posthoc_sensitivity": true,
+  "cells": {
+    "lower_0_registered": {
+      "joint": 1357.59375,
+      "row_first": 1597.96875,
+      "nested": 2027.2421875,
+      "unpriced": 1374.7890625
+    },
+    "lower_0_official": {
+      "joint": 1319.28125,
+      "row_first": 1559.65625,
+      "nested": 1995.3984375,
+      "unpriced": 1295.796875
+    },
+    "lower_1_registered": {
+      "joint": 1351.875,
+      "row_first": 1595.09375,
+      "nested": 2054.5703125,
+      "unpriced": 1337.2421875
+    },
+    "lower_1_official": {
+      "joint": 1302.28125,
+      "row_first": 1545.5,
+      "nested": 1982.25,
+      "unpriced": 1287.6484375
+    },
+    "upper_0_registered": {
+      "joint": 1362.2109375,
+      "row_first": 1578.453125,
+      "nested": 2035.8671875,
+      "unpriced": 1389.4609375
+    },
+    "upper_0_official": {
+      "joint": 1264.953125,
+      "row_first": 1486.40625,
+      "nested": 1946.0546875,
+      "unpriced": 1283.875
+    },
+    "upper_1_registered": {
+      "joint": 1417.1328125,
+      "row_first": 1631.546875,
+      "nested": 2080.28125,
+      "unpriced": 1413.453125
+    },
+    "upper_1_official": {
+      "joint": 1416.5703125,
+      "row_first": 1638.0234375,
+      "nested": 2117.171875,
+      "unpriced": 1428.484375
+    }
+  }
+}
