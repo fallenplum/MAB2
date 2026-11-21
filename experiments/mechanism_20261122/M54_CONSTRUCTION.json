@@ -1,0 +1,15 @@
+{
+  "verified_k": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "exact_subset_enumeration": true,
+  "known_prefix": true,
+  "cost_per_terminal_query": 1,
+  "threshold": "1/(2k)",
+  "known_target_cost": "k",
+  "all_target_cost": "2k"
+}
