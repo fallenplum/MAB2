@@ -1,0 +1,66 @@
+{
+  "branch": "mechanism-20261122",
+  "predecessor": "4c30b49645d7d021f093feda1f8947bf69e797c9",
+  "status": "ACTIVE",
+  "old_negative_results_preserved": true,
+  "charged_before_cycle": 93.37976313880533,
+  "charged_this_cycle": 0.4225626643498739,
+  "cumulative_gpu_hours": 93.8023258031552,
+  "reserved_gpu_hours": 4,
+  "cap_gpu_hours": 160,
+  "formal_jobs": {
+    "M38": {
+      "status": "closed",
+      "charged_gpu_hours": 0.08954695807562935,
+      "exit_codes": [
+        0,
+        0
+      ]
+    },
+    "M40": {
+      "status": "closed",
+      "charged_gpu_hours": 0.035782155527008905,
+      "exit_codes": [
+        0,
+        0
+      ]
+    },
+    "M41": {
+      "status": "closed",
+      "charged_gpu_hours": 0.06743342644638485,
+      "exit_codes": [
+        0,
+        0
+      ]
+    },
+    "M43": {
+      "status": "closed",
+      "charged_gpu_hours": 0.17279226077927484,
+      "exit_codes": [
+        0,
+        0
+      ]
+    },
+    "M45": {
+      "status": "closed",
+      "charged_gpu_hours": 0.05700786352157593,
+      "exit_codes": [
+        0,
+        0
+      ]
+    },
+    "M46": {
+      "status": "in_flight"
+    },
+    "M48": {
+      "status": "in_flight"
+    }
+  },
+  "active_jobs": [
+    "M46",
+    "M48"
+  ],
+  "status_is_last_verified_snapshot": true,
+  "sealed_original_tests_accessed": false,
+  "evaluation_level": "M38/M40 development; M43 and M45 matched fresh ARC and CommonsenseQA panel; M46 external open numeric task; M48 hardware replication subset; M49 external SciQ single-use"
+}
