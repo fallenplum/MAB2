@@ -10,7 +10,7 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": true,
   "resident_profile_acceptance_pending": false,
-  "next": "FREEZE_CURRENT_CODING_ACTION_SPACE",
+  "next": "D31_TEMPORAL_TRAIN_SOURCE_FEASIBILITY",
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 0,
   "eligible_server_outputs_at_check": null,
@@ -23,5 +23,10 @@
   "formal10_storage": "LOCAL_DURABLE_WITH_BOUNDED_SERVER_SPOOL",
   "local_output_admitted": true,
   "pilot_tasks_scored": 16,
-  "independent_confirmation": false
+  "independent_confirmation": false,
+  "D27": "100_FOUR_VERSION_FAMILIES",
+  "D28": "100_OF_100_HAVE_EXPOSED_ANCESTORS",
+  "D29": "NO_CERTIFIED_REPAIR_OR_RESAMPLE_HEADROOM",
+  "D30": "FREEZE_EXPOSED_APPS_POLICY_SEARCH",
+  "active_GPU_workers": 0
 }
