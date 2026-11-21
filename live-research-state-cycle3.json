@@ -10,7 +10,7 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": true,
   "resident_profile_acceptance_pending": false,
-  "next": "SYNTHESIZE_CROSS_ROUTE_EVIDENCE_AND_SCOPE",
+  "next": "D33_FIXED_REAL_VOTE_TRANSPORT_REPLAY",
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 0,
   "eligible_server_outputs_at_check": null,
