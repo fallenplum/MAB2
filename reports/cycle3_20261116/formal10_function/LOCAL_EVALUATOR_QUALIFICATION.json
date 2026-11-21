@@ -1,0 +1,23 @@
+{
+  "isolation_checks": 11,
+  "adapter_cases": 12,
+  "comparison_checks": 196,
+  "artificial_visible_replay": {
+    "programs": 10,
+    "cases": 20,
+    "mismatches": 0,
+    "hidden_access": false,
+    "artificial_examples_only": true
+  },
+  "bundle": {
+    "sha256": "032defb07d29ce0c89c30f8b28d0b31b25d2e9e5ee44cfa667bfc4e8602a3106",
+    "compressed_bytes": 20507085,
+    "members": 735,
+    "generated_programs_executed": false
+  },
+  "source_adapter_sha256": "5fab65368f9be088a466f8ec8e874b38388c40bdfd3f111adc86a6cc24b85ad2",
+  "source_sandbox_sha256": "db983eee9857ffb9ee2ee10db0ba63d85f7e36ed9088912ca1ea00fc243d5411",
+  "qualified": true,
+  "hidden_data_accessed": false,
+  "real_roundtrip_bytes": 1048576
+}
