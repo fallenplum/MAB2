@@ -1,0 +1,1344 @@
+{
+  "status": "NO_QUALIFIED_VOTE_TRANSPORT_SIGNAL",
+  "model_files": {
+    "Llama-3.1-8B-Instruct": "120d30ca67b5a002d9df55053e2c3d45b29ac8335a7148cd219fb62baedf0a17",
+    "gemma-2-9b-it": "87b03a847f7130525e08715847d3bafb3ee23d32f359b12a261ef161a9273ea8",
+    "granite-3.3-8b-instruct": "6cf7c43b110d0c00b51e7f4d416447ebd071119a27713cf4a5214bef26443213",
+    "glm-4-9b-chat": "c8ae78bcfbf322f3d062bdaa268ea13189322754a16583295c930da12a67612b",
+    "internlm3-8b-instruct": "f1def600447491d2102e5438d8128a430ea84ef8b4d037cf8d5d63bbc0507bb0",
+    "Qwen3-8B": "4af5a585579033ff6d3fa40efe133069c56783dbb382c0cdebaa43979ae3f414"
+  },
+  "questions": 1267,
+  "duplicate_control_groups": 488,
+  "largest_group": 10,
+  "folds": [
+    {
+      "fold": 0,
+      "historical": 422,
+      "pool": 422,
+      "service": 423,
+      "pool_pivotal": 94,
+      "pool_strata": 7,
+      "historical_recorded_cost": 0.063995088,
+      "pool_recorded_cost": 0.07015631600000001,
+      "by_method": {
+        "historical_exact_replay": {
+          "action": 3,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 804955,
+          "history_tokens": 1150260,
+          "pool_tokens": 0,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.8250005319148936,
+          "full_utility": 0.8114040780141843,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "historical_best_single": {
+          "action": 5,
+          "accuracy": 0.8368794326241135,
+          "service_tokens": 480218,
+          "history_tokens": 1150260,
+          "pool_tokens": 0,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.8312030969267139,
+          "full_utility": 0.8176066430260047,
+          "service_recorded_cost": 0.060862996,
+          "service_calls": 423
+        },
+        "single_Qwen3": {
+          "action": 5,
+          "accuracy": 0.8368794326241135,
+          "service_tokens": 480218,
+          "history_tokens": 0,
+          "pool_tokens": 0,
+          "historical_labels": 0,
+          "new_labels": 0,
+          "service_utility": 0.8312030969267139,
+          "full_utility": 0.8312030969267139,
+          "service_recorded_cost": 0.060862996,
+          "service_calls": 423
+        },
+        "reuse_old_graph_action": {
+          "action": 4,
+          "accuracy": 0.817966903073286,
+          "service_tokens": 1017578,
+          "history_tokens": 1150260,
+          "pool_tokens": 0,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.805938794326241,
+          "full_utility": 0.7923423404255319,
+          "service_recorded_cost": 0.06312279999999999,
+          "service_calls": 2115
+        },
+        "current_model_no_labels": {
+          "action": 3,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 804955,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.8250005319148936,
+          "full_utility": 0.7972378605200945,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "hindsight_fixed_action": {
+          "action": 3,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 804955,
+          "history_tokens": 0,
+          "pool_tokens": 0,
+          "historical_labels": 0,
+          "new_labels": 0,
+          "service_utility": 0.8250005319148936,
+          "full_utility": 0.8250005319148936,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "random_17": {
+          "action": 4,
+          "accuracy": 0.817966903073286,
+          "service_tokens": 1017578,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.805938794326241,
+          "full_utility": 0.778176122931442,
+          "service_recorded_cost": 0.06312279999999999,
+          "service_calls": 2115
+        },
+        "random_31": {
+          "action": 4,
+          "accuracy": 0.817966903073286,
+          "service_tokens": 1017578,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.805938794326241,
+          "full_utility": 0.778176122931442,
+          "service_recorded_cost": 0.06312279999999999,
+          "service_calls": 2115
+        },
+        "random_47": {
+          "action": 0,
+          "accuracy": 0.7565011820330969,
+          "service_tokens": 699018,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7482385579196217,
+          "full_utility": 0.7204758865248226,
+          "service_recorded_cost": 0.060862996,
+          "service_calls": 846
+        },
+        "periodic_17": {
+          "action": 2,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 825074,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8247627186761229,
+          "full_utility": 0.7970000472813239,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "periodic_31": {
+          "action": 3,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 804955,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8250005319148936,
+          "full_utility": 0.7972378605200945,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "periodic_47": {
+          "action": 1,
+          "accuracy": 0.8321513002364066,
+          "service_tokens": 785585,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8228654255319149,
+          "full_utility": 0.7951027541371158,
+          "service_recorded_cost": 0.0631228,
+          "service_calls": 1269
+        },
+        "uncertainty_17": {
+          "action": 2,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 825074,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8247627186761229,
+          "full_utility": 0.7970000472813239,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "uncertainty_31": {
+          "action": 2,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 825074,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8247627186761229,
+          "full_utility": 0.7970000472813239,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "uncertainty_47": {
+          "action": 1,
+          "accuracy": 0.8321513002364066,
+          "service_tokens": 785585,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8228654255319149,
+          "full_utility": 0.7951027541371158,
+          "service_recorded_cost": 0.0631228,
+          "service_calls": 1269
+        },
+        "current_pivotal_17": {
+          "action": 2,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 825074,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8247627186761229,
+          "full_utility": 0.7970000472813239,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "current_pivotal_31": {
+          "action": 4,
+          "accuracy": 0.817966903073286,
+          "service_tokens": 1017578,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.805938794326241,
+          "full_utility": 0.778176122931442,
+          "service_recorded_cost": 0.06312279999999999,
+          "service_calls": 2115
+        },
+        "current_pivotal_47": {
+          "action": 3,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 804955,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8250005319148936,
+          "full_utility": 0.7972378605200945,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "graph_transport_17": {
+          "action": 2,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 825074,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8247627186761229,
+          "full_utility": 0.7970000472813239,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        },
+        "graph_transport_31": {
+          "action": 4,
+          "accuracy": 0.817966903073286,
+          "service_tokens": 1017578,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.805938794326241,
+          "full_utility": 0.778176122931442,
+          "service_recorded_cost": 0.06312279999999999,
+          "service_calls": 2115
+        },
+        "graph_transport_47": {
+          "action": 3,
+          "accuracy": 0.83451536643026,
+          "service_tokens": 804955,
+          "history_tokens": 1150260,
+          "pool_tokens": 1198462,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.8250005319148936,
+          "full_utility": 0.7972378605200945,
+          "service_recorded_cost": 0.06086299600000001,
+          "service_calls": 1269
+        }
+      },
+      "paired": {
+        "graph_transport_17": {
+          "random_17": {
+            "corrected": 18,
+            "damaged": 11,
+            "tied": 394
+          },
+          "periodic_17": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 423
+          },
+          "current_pivotal_17": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 423
+          },
+          "uncertainty_17": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 423
+          },
+          "historical_exact_replay": {
+            "corrected": 19,
+            "damaged": 19,
+            "tied": 385
+          },
+          "historical_best_single": {
+            "corrected": 24,
+            "damaged": 25,
+            "tied": 374
+          },
+          "single_Qwen3": {
+            "corrected": 24,
+            "damaged": 25,
+            "tied": 374
+          }
+        },
+        "graph_transport_31": {
+          "random_31": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 423
+          },
+          "periodic_31": {
+            "corrected": 15,
+            "damaged": 22,
+            "tied": 386
+          },
+          "current_pivotal_31": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 423
+          },
+          "uncertainty_31": {
+            "corrected": 11,
+            "damaged": 18,
+            "tied": 394
+          },
+          "historical_exact_replay": {
+            "corrected": 15,
+            "damaged": 22,
+            "tied": 386
+          },
+          "historical_best_single": {
+            "corrected": 24,
+            "damaged": 32,
+            "tied": 367
+          },
+          "single_Qwen3": {
+            "corrected": 24,
+            "damaged": 32,
+            "tied": 367
+          }
+        },
+        "graph_transport_47": {
+          "random_47": {
+            "corrected": 46,
+            "damaged": 13,
+            "tied": 364
+          },
+          "periodic_47": {
+            "corrected": 21,
+            "damaged": 20,
+            "tied": 382
+          },
+          "current_pivotal_47": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 423
+          },
+          "uncertainty_47": {
+            "corrected": 21,
+            "damaged": 20,
+            "tied": 382
+          },
+          "historical_exact_replay": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 423
+          },
+          "historical_best_single": {
+            "corrected": 22,
+            "damaged": 23,
+            "tied": 378
+          },
+          "single_Qwen3": {
+            "corrected": 22,
+            "damaged": 23,
+            "tied": 378
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "historical": 422,
+      "pool": 423,
+      "service": 422,
+      "pool_pivotal": 99,
+      "pool_strata": 7,
+      "historical_recorded_cost": 0.07015631600000001,
+      "pool_recorded_cost": 0.06558317500000001,
+      "by_method": {
+        "historical_exact_replay": {
+          "action": 3,
+          "accuracy": 0.7890995260663507,
+          "service_tokens": 784598,
+          "history_tokens": 1198462,
+          "pool_tokens": 0,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.7798033412322275,
+          "full_utility": 0.7656035545023696,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "historical_best_single": {
+          "action": 5,
+          "accuracy": 0.8056872037914692,
+          "service_tokens": 466152,
+          "history_tokens": 1198462,
+          "pool_tokens": 0,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.8001640758293839,
+          "full_utility": 0.7859642890995261,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 422
+        },
+        "single_Qwen3": {
+          "action": 5,
+          "accuracy": 0.8056872037914692,
+          "service_tokens": 466152,
+          "history_tokens": 0,
+          "pool_tokens": 0,
+          "historical_labels": 0,
+          "new_labels": 0,
+          "service_utility": 0.8001640758293839,
+          "full_utility": 0.8001640758293839,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 422
+        },
+        "reuse_old_graph_action": {
+          "action": 4,
+          "accuracy": 0.7772511848341233,
+          "service_tokens": 995317,
+          "history_tokens": 1198462,
+          "pool_tokens": 0,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.7654583293838862,
+          "full_utility": 0.7512585426540285,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 2110
+        },
+        "current_model_no_labels": {
+          "action": 3,
+          "accuracy": 0.7890995260663507,
+          "service_tokens": 784598,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 0,
+          "service_utility": 0.7798033412322275,
+          "full_utility": 0.7519000473933649,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "hindsight_fixed_action": {
+          "action": 3,
+          "accuracy": 0.7890995260663507,
+          "service_tokens": 784598,
+          "history_tokens": 0,
+          "pool_tokens": 0,
+          "historical_labels": 0,
+          "new_labels": 0,
+          "service_utility": 0.7798033412322275,
+          "full_utility": 0.7798033412322275,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "random_17": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "random_31": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "random_47": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "periodic_17": {
+          "action": 3,
+          "accuracy": 0.7890995260663507,
+          "service_tokens": 784598,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7798033412322275,
+          "full_utility": 0.7519000473933649,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "periodic_31": {
+          "action": 2,
+          "accuracy": 0.7511848341232228,
+          "service_tokens": 802885,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7416719786729858,
+          "full_utility": 0.7137686848341233,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "periodic_47": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "uncertainty_17": {
+          "action": 2,
+          "accuracy": 0.7511848341232228,
+          "service_tokens": 802885,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7416719786729858,
+          "full_utility": 0.7137686848341233,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "uncertainty_31": {
+          "action": 3,
+          "accuracy": 0.7890995260663507,
+          "service_tokens": 784598,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7798033412322275,
+          "full_utility": 0.7519000473933649,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "uncertainty_47": {
+          "action": 2,
+          "accuracy": 0.7511848341232228,
+          "service_tokens": 802885,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7416719786729858,
+          "full_utility": 0.7137686848341233,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "current_pivotal_17": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "current_pivotal_31": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "current_pivotal_47": {
+          "action": 3,
+          "accuracy": 0.7890995260663507,
+          "service_tokens": 784598,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7798033412322275,
+          "full_utility": 0.7519000473933649,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        },
+        "graph_transport_17": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "graph_transport_31": {
+          "action": 1,
+          "accuracy": 0.7701421800947867,
+          "service_tokens": 765426,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7610731516587678,
+          "full_utility": 0.7331698578199052,
+          "service_recorded_cost": 0.06121438300000001,
+          "service_calls": 1266
+        },
+        "graph_transport_47": {
+          "action": 3,
+          "accuracy": 0.7890995260663507,
+          "service_tokens": 784598,
+          "history_tokens": 1198462,
+          "pool_tokens": 1156576,
+          "historical_labels": 422,
+          "new_labels": 24,
+          "service_utility": 0.7798033412322275,
+          "full_utility": 0.7519000473933649,
+          "service_recorded_cost": 0.058948359000000006,
+          "service_calls": 1266
+        }
+      },
+      "paired": {
+        "graph_transport_17": {
+          "random_17": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "periodic_17": {
+            "corrected": 19,
+            "damaged": 27,
+            "tied": 376
+          },
+          "current_pivotal_17": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "uncertainty_17": {
+            "corrected": 21,
+            "damaged": 13,
+            "tied": 388
+          },
+          "historical_exact_replay": {
+            "corrected": 19,
+            "damaged": 27,
+            "tied": 376
+          },
+          "historical_best_single": {
+            "corrected": 20,
+            "damaged": 35,
+            "tied": 367
+          },
+          "single_Qwen3": {
+            "corrected": 20,
+            "damaged": 35,
+            "tied": 367
+          }
+        },
+        "graph_transport_31": {
+          "random_31": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "periodic_31": {
+            "corrected": 21,
+            "damaged": 13,
+            "tied": 388
+          },
+          "current_pivotal_31": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "uncertainty_31": {
+            "corrected": 19,
+            "damaged": 27,
+            "tied": 376
+          },
+          "historical_exact_replay": {
+            "corrected": 19,
+            "damaged": 27,
+            "tied": 376
+          },
+          "historical_best_single": {
+            "corrected": 20,
+            "damaged": 35,
+            "tied": 367
+          },
+          "single_Qwen3": {
+            "corrected": 20,
+            "damaged": 35,
+            "tied": 367
+          }
+        },
+        "graph_transport_47": {
+          "random_47": {
+            "corrected": 27,
+            "damaged": 19,
+            "tied": 376
+          },
+          "periodic_47": {
+            "corrected": 27,
+            "damaged": 19,
+            "tied": 376
+          },
+          "current_pivotal_47": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "uncertainty_47": {
+            "corrected": 32,
+            "damaged": 16,
+            "tied": 374
+          },
+          "historical_exact_replay": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "historical_best_single": {
+            "corrected": 16,
+            "damaged": 23,
+            "tied": 383
+          },
+          "single_Qwen3": {
+            "corrected": 16,
+            "damaged": 23,
+            "tied": 383
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "historical": 423,
+      "pool": 422,
+      "service": 422,
+      "pool_pivotal": 96,
+      "pool_strata": 7,
+      "historical_recorded_cost": 0.06558317500000001,
+      "pool_recorded_cost": 0.063995088,
+      "by_method": {
+        "historical_exact_replay": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 1156576,
+          "pool_tokens": 0,
+          "historical_labels": 423,
+          "new_labels": 0,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.8082004028436018,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "historical_best_single": {
+          "action": 5,
+          "accuracy": 0.8412322274881516,
+          "service_tokens": 510965,
+          "history_tokens": 1156576,
+          "pool_tokens": 0,
+          "historical_labels": 423,
+          "new_labels": 0,
+          "service_utility": 0.8351781398104265,
+          "full_utility": 0.8214746327014217,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 422
+        },
+        "single_Qwen3": {
+          "action": 5,
+          "accuracy": 0.8412322274881516,
+          "service_tokens": 510965,
+          "history_tokens": 0,
+          "pool_tokens": 0,
+          "historical_labels": 0,
+          "new_labels": 0,
+          "service_utility": 0.8351781398104265,
+          "full_utility": 0.8351781398104265,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 422
+        },
+        "reuse_old_graph_action": {
+          "action": 4,
+          "accuracy": 0.8080568720379147,
+          "service_tokens": 1042948,
+          "history_tokens": 1156576,
+          "pool_tokens": 0,
+          "historical_labels": 423,
+          "new_labels": 0,
+          "service_utility": 0.7956996682464454,
+          "full_utility": 0.7819961611374407,
+          "service_recorded_cost": 0.067365291,
+          "service_calls": 2110
+        },
+        "current_model_no_labels": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 0,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.7945717298578199,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "hindsight_fixed_action": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 0,
+          "pool_tokens": 0,
+          "historical_labels": 0,
+          "new_labels": 0,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.8219039099526066,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "random_17": {
+          "action": 1,
+          "accuracy": 0.8222748815165877,
+          "service_tokens": 812794,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8126446208530805,
+          "full_utility": 0.7853124407582939,
+          "service_recorded_cost": 0.06736529100000001,
+          "service_calls": 1266
+        },
+        "random_31": {
+          "action": 2,
+          "accuracy": 0.8127962085308057,
+          "service_tokens": 851534,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8027069431279621,
+          "full_utility": 0.7753747630331753,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "random_47": {
+          "action": 0,
+          "accuracy": 0.7582938388625592,
+          "service_tokens": 726345,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.7496878554502369,
+          "full_utility": 0.7223556753554502,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 844
+        },
+        "periodic_17": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.7945717298578199,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "periodic_31": {
+          "action": 4,
+          "accuracy": 0.8080568720379147,
+          "service_tokens": 1042948,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.7956996682464454,
+          "full_utility": 0.7683674881516587,
+          "service_recorded_cost": 0.067365291,
+          "service_calls": 2110
+        },
+        "periodic_47": {
+          "action": 1,
+          "accuracy": 0.8222748815165877,
+          "service_tokens": 812794,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8126446208530805,
+          "full_utility": 0.7853124407582939,
+          "service_recorded_cost": 0.06736529100000001,
+          "service_calls": 1266
+        },
+        "uncertainty_17": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.7945717298578199,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "uncertainty_31": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.7945717298578199,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "uncertainty_47": {
+          "action": 1,
+          "accuracy": 0.8222748815165877,
+          "service_tokens": 812794,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8126446208530805,
+          "full_utility": 0.7853124407582939,
+          "service_recorded_cost": 0.06736529100000001,
+          "service_calls": 1266
+        },
+        "current_pivotal_17": {
+          "action": 4,
+          "accuracy": 0.8080568720379147,
+          "service_tokens": 1042948,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.7956996682464454,
+          "full_utility": 0.7683674881516587,
+          "service_recorded_cost": 0.067365291,
+          "service_calls": 2110
+        },
+        "current_pivotal_31": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.7945717298578199,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "current_pivotal_47": {
+          "action": 4,
+          "accuracy": 0.8080568720379147,
+          "service_tokens": 1042948,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.7956996682464454,
+          "full_utility": 0.7683674881516587,
+          "service_recorded_cost": 0.067365291,
+          "service_calls": 2110
+        },
+        "graph_transport_17": {
+          "action": 4,
+          "accuracy": 0.8080568720379147,
+          "service_tokens": 1042948,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.7956996682464454,
+          "full_utility": 0.7683674881516587,
+          "service_recorded_cost": 0.067365291,
+          "service_calls": 2110
+        },
+        "graph_transport_31": {
+          "action": 3,
+          "accuracy": 0.8317535545023697,
+          "service_tokens": 831310,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.8219039099526066,
+          "full_utility": 0.7945717298578199,
+          "service_recorded_cost": 0.065109687,
+          "service_calls": 1266
+        },
+        "graph_transport_47": {
+          "action": 4,
+          "accuracy": 0.8080568720379147,
+          "service_tokens": 1042948,
+          "history_tokens": 1156576,
+          "pool_tokens": 1150260,
+          "historical_labels": 423,
+          "new_labels": 24,
+          "service_utility": 0.7956996682464454,
+          "full_utility": 0.7683674881516587,
+          "service_recorded_cost": 0.067365291,
+          "service_calls": 2110
+        }
+      },
+      "paired": {
+        "graph_transport_17": {
+          "random_17": {
+            "corrected": 10,
+            "damaged": 16,
+            "tied": 396
+          },
+          "periodic_17": {
+            "corrected": 11,
+            "damaged": 21,
+            "tied": 390
+          },
+          "current_pivotal_17": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "uncertainty_17": {
+            "corrected": 11,
+            "damaged": 21,
+            "tied": 390
+          },
+          "historical_exact_replay": {
+            "corrected": 11,
+            "damaged": 21,
+            "tied": 390
+          },
+          "historical_best_single": {
+            "corrected": 17,
+            "damaged": 31,
+            "tied": 374
+          },
+          "single_Qwen3": {
+            "corrected": 17,
+            "damaged": 31,
+            "tied": 374
+          }
+        },
+        "graph_transport_31": {
+          "random_31": {
+            "corrected": 26,
+            "damaged": 18,
+            "tied": 378
+          },
+          "periodic_31": {
+            "corrected": 21,
+            "damaged": 11,
+            "tied": 390
+          },
+          "current_pivotal_31": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "uncertainty_31": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "historical_exact_replay": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "historical_best_single": {
+            "corrected": 22,
+            "damaged": 26,
+            "tied": 374
+          },
+          "single_Qwen3": {
+            "corrected": 22,
+            "damaged": 26,
+            "tied": 374
+          }
+        },
+        "graph_transport_47": {
+          "random_47": {
+            "corrected": 43,
+            "damaged": 22,
+            "tied": 357
+          },
+          "periodic_47": {
+            "corrected": 10,
+            "damaged": 16,
+            "tied": 396
+          },
+          "current_pivotal_47": {
+            "corrected": 0,
+            "damaged": 0,
+            "tied": 422
+          },
+          "uncertainty_47": {
+            "corrected": 10,
+            "damaged": 16,
+            "tied": 396
+          },
+          "historical_exact_replay": {
+            "corrected": 11,
+            "damaged": 21,
+            "tied": 390
+          },
+          "historical_best_single": {
+            "corrected": 17,
+            "damaged": 31,
+            "tied": 374
+          },
+          "single_Qwen3": {
+            "corrected": 17,
+            "damaged": 31,
+            "tied": 374
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "historical_exact_replay": {
+      "accuracy": 0.8184688239936859,
+      "service_utility": 0.8089152999210736,
+      "full_utility": 0.7950822375690607
+    },
+    "historical_best_single": {
+      "accuracy": 0.8279400157853196,
+      "service_utility": 0.8221888910812943,
+      "full_utility": 0.8083558287292818
+    },
+    "single_Qwen3": {
+      "accuracy": 0.8279400157853196,
+      "service_utility": 0.8221888910812943,
+      "full_utility": 0.8221888910812943
+    },
+    "reuse_old_graph_action": {
+      "accuracy": 0.8011049723756906,
+      "service_utility": 0.7890456077348066,
+      "full_utility": 0.775212545382794
+    },
+    "current_model_no_labels": {
+      "accuracy": 0.8184688239936859,
+      "service_utility": 0.8089152999210736,
+      "full_utility": 0.7812491752170482
+    },
+    "hindsight_fixed_action": {
+      "accuracy": 0.8184688239936859,
+      "service_utility": 0.8089152999210736,
+      "full_utility": 0.8089152999210736
+    },
+    "random_17": {
+      "accuracy": 0.8034727703235991,
+      "service_utility": 0.7932288950276243,
+      "full_utility": 0.7655627703235991
+    },
+    "random_31": {
+      "accuracy": 0.8003157063930545,
+      "service_utility": 0.789918950276243,
+      "full_utility": 0.7622528255722179
+    },
+    "random_47": {
+      "accuracy": 0.7616416732438832,
+      "service_utility": 0.7529960970797159,
+      "full_utility": 0.7253299723756905
+    },
+    "periodic_17": {
+      "accuracy": 0.8184688239936859,
+      "service_utility": 0.8088359037095502,
+      "full_utility": 0.7811697790055249
+    },
+    "periodic_31": {
+      "accuracy": 0.797947908445146,
+      "service_utility": 0.7874870244672455,
+      "full_utility": 0.7598208997632202
+    },
+    "periodic_47": {
+      "accuracy": 0.8082083662194159,
+      "service_utility": 0.7988800118389896,
+      "full_utility": 0.7712138871349645
+    },
+    "uncertainty_17": {
+      "accuracy": 0.8058405682715075,
+      "service_utility": 0.7961354814522494,
+      "full_utility": 0.7684693567482243
+    },
+    "uncertainty_31": {
+      "accuracy": 0.8184688239936859,
+      "service_utility": 0.8088359037095502,
+      "full_utility": 0.7811697790055249
+    },
+    "uncertainty_47": {
+      "accuracy": 0.8018942383583267,
+      "service_utility": 0.7924180584056827,
+      "full_utility": 0.7647519337016575
+    },
+    "current_pivotal_17": {
+      "accuracy": 0.8042620363062352,
+      "service_utility": 0.7938695816890292,
+      "full_utility": 0.766203456985004
+    },
+    "current_pivotal_31": {
+      "accuracy": 0.8066298342541437,
+      "service_utility": 0.7963128887134964,
+      "full_utility": 0.7686467640094712
+    },
+    "current_pivotal_47": {
+      "accuracy": 0.8105761641673244,
+      "service_utility": 0.8001874467245462,
+      "full_utility": 0.7725213220205209
+    },
+    "graph_transport_17": {
+      "accuracy": 0.8042620363062352,
+      "service_utility": 0.7938695816890292,
+      "full_utility": 0.766203456985004
+    },
+    "graph_transport_31": {
+      "accuracy": 0.8066298342541437,
+      "service_utility": 0.7963128887134964,
+      "full_utility": 0.7686467640094712
+    },
+    "graph_transport_47": {
+      "accuracy": 0.8105761641673244,
+      "service_utility": 0.8001874467245462,
+      "full_utility": 0.7725213220205209
+    }
+  },
+  "paired_deltas": [
+    {
+      "seed": 17,
+      "delta_vs_best_matched": -0.01496632202052084,
+      "delta_vs_best_cheap": -0.05598543409629031
+    },
+    {
+      "seed": 31,
+      "delta_vs_best_matched": -0.012523014996053683,
+      "delta_vs_best_cheap": -0.05354212707182315
+    },
+    {
+      "seed": 47,
+      "delta_vs_best_matched": 0.0,
+      "delta_vs_best_cheap": -0.04966756906077341
+    }
+  ],
+  "token_price": 5e-06,
+  "selected_labels_per_fold": 24,
+  "seeds": [
+    17,
+    31,
+    47
+  ],
+  "new_GPU_hours": 0,
+  "scope": "exposed cached official validation set; independent upstream outputs; deterministic terminal graph; no measured new inference, no independent confirmation",
+  "CPU_wall_seconds": 1.4457463000435382
+}

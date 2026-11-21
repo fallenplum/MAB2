@@ -10,7 +10,7 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": true,
   "resident_profile_acceptance_pending": false,
-  "next": "D33_FIXED_REAL_VOTE_TRANSPORT_REPLAY",
+  "next": "CROSS_ROUTE_EVIDENCE_REVIEW",
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 0,
   "eligible_server_outputs_at_check": null,
@@ -30,5 +30,6 @@
   "D30": "FREEZE_EXPOSED_APPS_POLICY_SEARCH",
   "active_GPU_workers": 0,
   "D31": "TRAIN_ONLY_SOURCE_STRUCTURE_VERIFIED",
-  "D32": "NO_QUALIFIED_TEMPORAL_RETRIEVAL_MECHANISM"
+  "D32": "NO_QUALIFIED_TEMPORAL_RETRIEVAL_MECHANISM",
+  "D33": "NO_QUALIFIED_VOTE_TRANSPORT_SIGNAL"
 }
