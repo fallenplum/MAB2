@@ -1,0 +1,50 @@
+{
+  "0_1": {
+    "initial_certificate": 0.8359375,
+    "infinite_radius": 0.39453125,
+    "fails_within_one_point": 0.08984375,
+    "fails_within_five_points": 0.2421875,
+    "no_note_expired": 0.0078125,
+    "no_note_tv_distance": 0.0599689958640203,
+    "no_note_retained_via_radius": 0.8203125,
+    "shuffled_expired": 0.0234375,
+    "shuffled_tv_distance": 0.08029356209650064,
+    "shuffled_retained_via_radius": 0.80859375,
+    "temp_0.7_cert": 0.8359375,
+    "temp_1.0_cert": 0.8359375,
+    "temp_1.3_cert": 0.8359375,
+    "questions": 256
+  },
+  "1_2": {
+    "initial_certificate": 0.42578125,
+    "infinite_radius": 0.078125,
+    "fails_within_one_point": 0.0234375,
+    "fails_within_five_points": 0.078125,
+    "no_note_expired": 0.0,
+    "no_note_tv_distance": 0.06046365024580331,
+    "no_note_retained_via_radius": 0.41796875,
+    "shuffled_expired": 0.01171875,
+    "shuffled_tv_distance": 0.0852151928930018,
+    "shuffled_retained_via_radius": 0.41015625,
+    "temp_0.7_cert": 0.4296875,
+    "temp_1.0_cert": 0.42578125,
+    "temp_1.3_cert": 0.41796875,
+    "questions": 256
+  },
+  "2_0": {
+    "initial_certificate": 0.92578125,
+    "infinite_radius": 0.875,
+    "fails_within_one_point": 0.01953125,
+    "fails_within_five_points": 0.02734375,
+    "no_note_expired": 0.015625,
+    "no_note_tv_distance": 0.06661480110202564,
+    "no_note_retained_via_radius": 0.91015625,
+    "shuffled_expired": 0.01953125,
+    "shuffled_tv_distance": 0.09268050513655413,
+    "shuffled_retained_via_radius": 0.90625,
+    "temp_0.7_cert": 0.94140625,
+    "temp_1.0_cert": 0.92578125,
+    "temp_1.3_cert": 0.91015625,
+    "questions": 256
+  }
+}
