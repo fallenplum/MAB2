@@ -21,7 +21,7 @@ def bounds_table(source,base,means,labels,rcost,tcost,targets):
     return result
 
 
-def optimal(source,base,means,labels,rcost,tcost,targets,feasible,tau=.01):
+def optimal(source,base,means,labels,rcost,tcost,targets,feasible,tau=.01,tolerance=1e-12):
     assert len(source)==4
     tables=bounds_table(source,base,means,labels,rcost,tcost,targets)
     w=source[:,None]*(means-base)
@@ -43,7 +43,7 @@ def optimal(source,base,means,labels,rcost,tcost,targets,feasible,tau=.01):
         if cap==0:continue
         val=rval[:cap]+lval[i]
         # Strict keep and non-strict drop. A numerical guard only removes borderline certificates.
-        ok=np.all(np.where(yes,val>cutoff+1e-12,val>=cutoff+1e-12),axis=1)
+        ok=np.all(np.where(yes,val>cutoff+tolerance,val>=cutoff+tolerance),axis=1)
         if np.any(ok):best=int(cost+right[np.flatnonzero(ok)[0]])
     if best>feasible:raise ArithmeticError('Feasible greedy certificate not recovered; check equality tolerance.')
     return best
