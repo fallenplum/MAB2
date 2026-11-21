@@ -1,0 +1,58 @@
+{
+  "hotpot": {
+    "source_conditioned_edge_units": 384,
+    "questions": 96,
+    "lower": 0.12174479166666667,
+    "upper": 0.154296875,
+    "common_seed_support": 0.13020833333333334,
+    "independent_prompt_seed_support": 0.13700358072916666,
+    "mean_absolute_marginal_interaction": 0.130859375,
+    "fraction_positive_lower": 0.1953125,
+    "fraction_width_at_least_quarter": 0.052083333333333336,
+    "allocation": {
+      "repeat_terminal": {
+        "finite_grid_MSE": 0.05919053819444445,
+        "mean_tokens": 9368.341145833334,
+        "risk_times_mean_tokens": 554.5171544110334
+      },
+      "repeat_source": {
+        "finite_grid_MSE": 0.006022135416666667,
+        "mean_tokens": 12526.341145833334,
+        "risk_times_mean_tokens": 75.43532265557184
+      },
+      "vary_both": {
+        "finite_grid_MSE": 0.004937065972222222,
+        "mean_tokens": 12580.731770833334,
+        "risk_times_mean_tokens": 62.111902731436274
+      }
+    }
+  },
+  "2wiki": {
+    "source_conditioned_edge_units": 384,
+    "questions": 96,
+    "lower": 0.12662760416666666,
+    "upper": 0.13671875,
+    "common_seed_support": 0.12955729166666666,
+    "independent_prompt_seed_support": 0.13216145833333334,
+    "mean_absolute_marginal_interaction": 0.12890625,
+    "fraction_positive_lower": 0.16666666666666666,
+    "fraction_width_at_least_quarter": 0.018229166666666668,
+    "allocation": {
+      "repeat_terminal": {
+        "finite_grid_MSE": 0.050835503472222224,
+        "mean_tokens": 6201.14453125,
+        "risk_times_mean_tokens": 315.2383043501112
+      },
+      "repeat_source": {
+        "finite_grid_MSE": 0.00244140625,
+        "mean_tokens": 8351.134114583334,
+        "risk_times_mean_tokens": 20.38851102193197
+      },
+      "vary_both": {
+        "finite_grid_MSE": 0.002875434027777778,
+        "mean_tokens": 8475.009114583334,
+        "risk_times_mean_tokens": 24.369329593799737
+      }
+    }
+  }
+}
