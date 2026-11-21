@@ -1,0 +1,19 @@
+{
+  "revision": "c544dd6a1858c02c6d5d371d23c6e6ff55e0be21",
+  "source": "https://github.com/yanweiyue/AgentPrune",
+  "path": "AgentPrune/graph/graph.py",
+  "file_hash": "32e42dbeb7d9f3d19ba2ff3842461bf0b41b0bb8e103de05808c3ce7f429c846",
+  "official_defaults": {
+    "arun": "'all connected'",
+    "run": "'all connected'"
+  },
+  "invoked_public_method_outputs": {
+    "all": [
+      "sender",
+      "relay"
+    ],
+    "last": [
+      "relay"
+    ]
+  }
+}
