@@ -1,0 +1,14 @@
+{
+  "status": "PASS_RAW_FUNCTION_EXECUTION_AUDIT",
+  "units": 16,
+  "scalar_checks": 34117,
+  "physical_requests": 708,
+  "logical_calls": 1428,
+  "program_records": 612,
+  "physical_visible_execution_seconds": 62.245838643284515,
+  "actual_GPU_hours": 2.6574468701424,
+  "local_tokenizer_counts_checked": true,
+  "hidden_labels_accessed": false,
+  "archive_sha256": "25fe52755bf11697a7a848df3a1311f67b10c8b180e3db14150de0ad25a3ff74",
+  "source_sha256": "cc263b71143388c6101c5b820286b01615959f3915d2f55ef03d8e6139c378af"
+}

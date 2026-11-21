@@ -1,0 +1,636 @@
+{
+  "status": "STOP_FORMAL10_APPLICABILITY_ROUTE",
+  "gates": {
+    "coverage": true,
+    "all_strong_utility": false,
+    "raw_quality": false,
+    "seed_consistency": false,
+    "current_credit_support": false,
+    "credit_shift_support": false,
+    "visible_credit_decision_signal": false
+  },
+  "passed": false,
+  "tasks": 16,
+  "seeds": 3,
+  "conditions": {
+    "BOK3": {
+      "quality": 0.4791666666666667,
+      "case_accuracy": 0.6242254273504273,
+      "visible": 0.7604166666666666,
+      "utility": 0.47104717660695233,
+      "tokens": 1616.5833333333333,
+      "visible_execution_seconds": 0.3657339304772904,
+      "unique_generation_calls": 3.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.3125,
+          "utility": 0.30426053618584764,
+          "tokens": 1640.4375
+        },
+        "261117102": {
+          "quality": 0.5625,
+          "utility": 0.5544537007318265,
+          "tokens": 1601.75
+        },
+        "261117103": {
+          "quality": 0.5625,
+          "utility": 0.5544272929031828,
+          "tokens": 1607.5625
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "nominal_gpu_seconds": 0,
+          "nominal_elapsed_seconds": 0
+        },
+        "mistral": {
+          "calls": 144,
+          "input_tokens": 56340,
+          "output_tokens": 21256,
+          "nominal_gpu_seconds": 892.5109096679689,
+          "nominal_elapsed_seconds": 892.7076368981507
+        }
+      }
+    },
+    "BOK3_EARLY": {
+      "quality": 0.4791666666666667,
+      "case_accuracy": 0.6242254273504273,
+      "visible": 0.7604166666666666,
+      "utility": 0.4742601899938302,
+      "tokens": 976.8333333333334,
+      "visible_execution_seconds": 0.22310006169815702,
+      "unique_generation_calls": 1.7291666666666667,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.3125,
+          "utility": 0.30750644869274024,
+          "tokens": 994.1875
+        },
+        "261117102": {
+          "quality": 0.5625,
+          "utility": 0.5577395063652738,
+          "tokens": 947.6875
+        },
+        "261117103": {
+          "quality": 0.5625,
+          "utility": 0.5575346149234764,
+          "tokens": 988.625
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "nominal_gpu_seconds": 0,
+          "nominal_elapsed_seconds": 0
+        },
+        "mistral": {
+          "calls": 83,
+          "input_tokens": 33703,
+          "output_tokens": 13185,
+          "nominal_gpu_seconds": 550.8928282470703,
+          "nominal_elapsed_seconds": 551.0054561190773
+        }
+      }
+    },
+    "G0": {
+      "quality": 0.3333333333333333,
+      "case_accuracy": 0.466025641025641,
+      "visible": 0.59375,
+      "utility": 0.31712129996121213,
+      "tokens": 3238.2083333333335,
+      "visible_execution_seconds": 0.20991705454556117,
+      "unique_generation_calls": 4.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.3125,
+          "utility": 0.29630032744636964,
+          "tokens": 3232.4375
+        },
+        "261117102": {
+          "quality": 0.375,
+          "utility": 0.358769131539569,
+          "tokens": 3243.5625
+        },
+        "261117103": {
+          "quality": 0.3125,
+          "utility": 0.2962944408976976,
+          "tokens": 3238.625
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 144,
+          "input_tokens": 73243,
+          "output_tokens": 26764,
+          "nominal_gpu_seconds": 1231.4753886718747,
+          "nominal_elapsed_seconds": 1231.6625363000203
+        },
+        "mistral": {
+          "calls": 48,
+          "input_tokens": 48664,
+          "output_tokens": 6763,
+          "nominal_gpu_seconds": 293.9211027832032,
+          "nominal_elapsed_seconds": 293.97484882804565
+        }
+      }
+    },
+    "G0_MINUS_EU": {
+      "quality": 0.3333333333333333,
+      "case_accuracy": 0.4745726495726495,
+      "visible": 0.5625,
+      "utility": 0.3182025754123739,
+      "tokens": 3023.5833333333335,
+      "visible_execution_seconds": 0.1284125429277386,
+      "unique_generation_calls": 4.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.3125,
+          "utility": 0.2974200999678925,
+          "tokens": 3013.375
+        },
+        "261117102": {
+          "quality": 0.375,
+          "utility": 0.3598253767307897,
+          "tokens": 3032.3125
+        },
+        "261117103": {
+          "quality": 0.3125,
+          "utility": 0.2973622495384395,
+          "tokens": 3025.0625
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 144,
+          "input_tokens": 73243,
+          "output_tokens": 26764,
+          "nominal_gpu_seconds": 1231.4753886718747,
+          "nominal_elapsed_seconds": 1231.6625363000203
+        },
+        "mistral": {
+          "calls": 48,
+          "input_tokens": 38373,
+          "output_tokens": 6752,
+          "nominal_gpu_seconds": 288.48270129394524,
+          "nominal_elapsed_seconds": 288.5426292261109
+        }
+      }
+    },
+    "G0_MINUS_EV": {
+      "quality": 0.3125,
+      "case_accuracy": 0.4573450854700854,
+      "visible": 0.5625,
+      "utility": 0.2973659960941922,
+      "tokens": 3022.6041666666665,
+      "visible_execution_seconds": 0.2098307247457948,
+      "unique_generation_calls": 4.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.25,
+          "utility": 0.23488283640627924,
+          "tokens": 3015.9375
+        },
+        "261117102": {
+          "quality": 0.375,
+          "utility": 0.3598563402266221,
+          "tokens": 3026.125
+        },
+        "261117103": {
+          "quality": 0.3125,
+          "utility": 0.29735881164967487,
+          "tokens": 3025.75
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 144,
+          "input_tokens": 73243,
+          "output_tokens": 26764,
+          "nominal_gpu_seconds": 1231.4753886718747,
+          "nominal_elapsed_seconds": 1231.6625363000203
+        },
+        "mistral": {
+          "calls": 48,
+          "input_tokens": 38404,
+          "output_tokens": 6674,
+          "nominal_gpu_seconds": 284.3118291015625,
+          "nominal_elapsed_seconds": 284.35758420592174
+        }
+      }
+    },
+    "G1": {
+      "quality": 0.3333333333333333,
+      "case_accuracy": 0.4791399572649573,
+      "visible": 0.5520833333333334,
+      "utility": 0.3182637773671554,
+      "tokens": 3008.5,
+      "visible_execution_seconds": 0.27055966177916463,
+      "unique_generation_calls": 4.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.375,
+          "utility": 0.35989842817491147,
+          "tokens": 3012.8125
+        },
+        "261117102": {
+          "quality": 0.375,
+          "utility": 0.35991407538396947,
+          "tokens": 3011.0625
+        },
+        "261117103": {
+          "quality": 0.25,
+          "utility": 0.23497882854258526,
+          "tokens": 3001.625
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 144,
+          "input_tokens": 62972,
+          "output_tokens": 26563,
+          "nominal_gpu_seconds": 1227.1688618164062,
+          "nominal_elapsed_seconds": 1227.3555568489246
+        },
+        "mistral": {
+          "calls": 48,
+          "input_tokens": 48525,
+          "output_tokens": 6348,
+          "nominal_gpu_seconds": 273.51201123046883,
+          "nominal_elapsed_seconds": 273.56378481769934
+        }
+      }
+    },
+    "G1_MINUS_EU": {
+      "quality": 0.3541666666666667,
+      "case_accuracy": 0.5090010683760683,
+      "visible": 0.5833333333333334,
+      "utility": 0.3414783568373929,
+      "tokens": 2534.25,
+      "visible_execution_seconds": 0.17059829273785,
+      "unique_generation_calls": 3.5,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.375,
+          "utility": 0.36228538096346746,
+          "tokens": 2540.3125
+        },
+        "261117102": {
+          "quality": 0.4375,
+          "utility": 0.42479754360255817,
+          "tokens": 2535.4375
+        },
+        "261117103": {
+          "quality": 0.25,
+          "utility": 0.23735214594615303,
+          "tokens": 2527.0
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 120,
+          "input_tokens": 54794,
+          "output_tokens": 21955,
+          "nominal_gpu_seconds": 1010.1976015625002,
+          "nominal_elapsed_seconds": 1010.3440444122534
+        },
+        "mistral": {
+          "calls": 48,
+          "input_tokens": 38234,
+          "output_tokens": 6661,
+          "nominal_gpu_seconds": 286.37997460937504,
+          "nominal_elapsed_seconds": 286.4322083515581
+        }
+      }
+    },
+    "G1_MINUS_EV": {
+      "quality": 0.3333333333333333,
+      "case_accuracy": 0.45379273504273504,
+      "visible": 0.5416666666666666,
+      "utility": 0.32073496179600186,
+      "tokens": 2516.25,
+      "visible_execution_seconds": 0.17121537331452905,
+      "unique_generation_calls": 3.5,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.375,
+          "utility": 0.36246788062829177,
+          "tokens": 2503.8125
+        },
+        "261117102": {
+          "quality": 0.375,
+          "utility": 0.3622316012782796,
+          "tokens": 2548.625
+        },
+        "261117103": {
+          "quality": 0.25,
+          "utility": 0.23750540348143434,
+          "tokens": 2496.3125
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 120,
+          "input_tokens": 53546,
+          "output_tokens": 21955,
+          "nominal_gpu_seconds": 1015.564920410156,
+          "nominal_elapsed_seconds": 1015.7210902557708
+        },
+        "mistral": {
+          "calls": 48,
+          "input_tokens": 38265,
+          "output_tokens": 7014,
+          "nominal_gpu_seconds": 298.4614958496095,
+          "nominal_elapsed_seconds": 298.52431359887123
+        }
+      }
+    },
+    "REPAIR3": {
+      "quality": 0.4583333333333333,
+      "case_accuracy": 0.609642094017094,
+      "visible": 0.6875,
+      "utility": 0.45178212724860595,
+      "tokens": 1306.9791666666667,
+      "visible_execution_seconds": 0.16310251394073325,
+      "unique_generation_calls": 1.75,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.25,
+          "utility": 0.2437183034627335,
+          "tokens": 1253.125
+        },
+        "261117102": {
+          "quality": 0.5625,
+          "utility": 0.5558188191289847,
+          "tokens": 1332.6875
+        },
+        "261117103": {
+          "quality": 0.5625,
+          "utility": 0.5558092591540995,
+          "tokens": 1335.125
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "nominal_gpu_seconds": 0,
+          "nominal_elapsed_seconds": 0
+        },
+        "mistral": {
+          "calls": 84,
+          "input_tokens": 48474,
+          "output_tokens": 14261,
+          "nominal_gpu_seconds": 591.0213927001953,
+          "nominal_elapsed_seconds": 591.1206940361299
+        }
+      }
+    },
+    "REUSE_HISTORY6": {
+      "quality": 0.3541666666666667,
+      "case_accuracy": 0.5076923076923077,
+      "visible": 0.65625,
+      "utility": 0.30965897894196764,
+      "tokens": 8887.270833333334,
+      "visible_execution_seconds": 0.7133355803234736,
+      "unique_generation_calls": 10.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.375,
+          "utility": 0.33061128428741676,
+          "tokens": 8858.1875
+        },
+        "261117102": {
+          "quality": 0.375,
+          "utility": 0.330321495606025,
+          "tokens": 8921.75
+        },
+        "261117103": {
+          "quality": 0.3125,
+          "utility": 0.26804415693246114,
+          "tokens": 8881.875
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 192,
+          "input_tokens": 101007,
+          "output_tokens": 34905,
+          "nominal_gpu_seconds": 1606.3365112304687,
+          "nominal_elapsed_seconds": 1606.5921394280158
+        },
+        "mistral": {
+          "calls": 288,
+          "input_tokens": 250465,
+          "output_tokens": 40212,
+          "nominal_gpu_seconds": 1725.0691148681635,
+          "nominal_elapsed_seconds": 1725.395369028207
+        }
+      }
+    },
+    "SINGLE_C": {
+      "quality": 0.4166666666666667,
+      "case_accuracy": 0.5610309829059829,
+      "visible": 0.65625,
+      "utility": 0.41394833333333336,
+      "tokens": 543.6666666666666,
+      "visible_execution_seconds": 0.0,
+      "unique_generation_calls": 1.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.25,
+          "utility": 0.247313125,
+          "tokens": 537.375
+        },
+        "261117102": {
+          "quality": 0.5,
+          "utility": 0.497251875,
+          "tokens": 549.625
+        },
+        "261117103": {
+          "quality": 0.5,
+          "utility": 0.49727999999999994,
+          "tokens": 544.0
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "nominal_gpu_seconds": 0,
+          "nominal_elapsed_seconds": 0
+        },
+        "mistral": {
+          "calls": 48,
+          "input_tokens": 18780,
+          "output_tokens": 7316,
+          "nominal_gpu_seconds": 307.0624830322265,
+          "nominal_elapsed_seconds": 307.1287063257769
+        }
+      }
+    },
+    "SINGLE_Q": {
+      "quality": 0.14583333333333334,
+      "case_accuracy": 0.23958333333333334,
+      "visible": 0.3125,
+      "utility": 0.14319614583333332,
+      "tokens": 527.4375,
+      "visible_execution_seconds": 0.0,
+      "unique_generation_calls": 1.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.1875,
+          "utility": 0.184884375,
+          "tokens": 523.125
+        },
+        "261117102": {
+          "quality": 0.0625,
+          "utility": 0.0598275,
+          "tokens": 534.5
+        },
+        "261117103": {
+          "quality": 0.1875,
+          "utility": 0.1848765625,
+          "tokens": 524.6875
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 48,
+          "input_tokens": 18780,
+          "output_tokens": 6537,
+          "nominal_gpu_seconds": 298.36189672851566,
+          "nominal_elapsed_seconds": 298.418637243798
+        },
+        "mistral": {
+          "calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "nominal_gpu_seconds": 0,
+          "nominal_elapsed_seconds": 0
+        }
+      }
+    },
+    "VS_GRAPH": {
+      "quality": 0.3333333333333333,
+      "case_accuracy": 0.49337606837606834,
+      "visible": 0.6041666666666666,
+      "utility": 0.30885687022148706,
+      "tokens": 4887.125,
+      "visible_execution_seconds": 0.40838111846339115,
+      "unique_generation_calls": 6.0,
+      "by_seed": {
+        "261117101": {
+          "quality": 0.375,
+          "utility": 0.3505522858362735,
+          "tokens": 4879.4375
+        },
+        "261117102": {
+          "quality": 0.375,
+          "utility": 0.35038557710128543,
+          "tokens": 4913.5
+        },
+        "261117103": {
+          "quality": 0.25,
+          "utility": 0.22563274772690206,
+          "tokens": 4868.4375
+        }
+      },
+      "model_cost_totals": {
+        "qwen": {
+          "calls": 144,
+          "input_tokens": 62972,
+          "output_tokens": 26563,
+          "nominal_gpu_seconds": 1227.1688618164062,
+          "nominal_elapsed_seconds": 1227.3555568489246
+        },
+        "mistral": {
+          "calls": 144,
+          "input_tokens": 125024,
+          "output_tokens": 20023,
+          "nominal_gpu_seconds": 858.353481689453,
+          "nominal_elapsed_seconds": 858.5203067681286
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "SINGLE_Q": {
+      "quality_difference": 0.1875,
+      "utility_difference": 0.16566072438815363,
+      "improved": 12,
+      "harmed": 3,
+      "equal": 33,
+      "utility_by_seed": {
+        "261117101": 0.16566791083627352,
+        "261117102": 0.29055807710128545,
+        "261117103": 0.040756185226902025
+      }
+    },
+    "SINGLE_C": {
+      "quality_difference": -0.08333333333333333,
+      "utility_difference": -0.10509146311184632,
+      "improved": 5,
+      "harmed": 9,
+      "equal": 34,
+      "utility_by_seed": {
+        "261117101": 0.10323916083627353,
+        "261117102": -0.14686629789871455,
+        "261117103": -0.271647252273098
+      }
+    },
+    "BOK3": {
+      "quality_difference": -0.14583333333333334,
+      "utility_difference": -0.16219030638546525,
+      "improved": 4,
+      "harmed": 11,
+      "equal": 33,
+      "utility_by_seed": {
+        "261117101": 0.04629174965042594,
+        "261117102": -0.2040681236305411,
+        "261117103": -0.32879454517628065
+      }
+    },
+    "BOK3_EARLY": {
+      "quality_difference": -0.14583333333333334,
+      "utility_difference": -0.16540331977234315,
+      "improved": 4,
+      "harmed": 11,
+      "equal": 33,
+      "utility_by_seed": {
+        "261117101": 0.043045837143533286,
+        "261117102": -0.20735392926398838,
+        "261117103": -0.33190186719657444
+      }
+    },
+    "REPAIR3": {
+      "quality_difference": -0.125,
+      "utility_difference": -0.14292525702711892,
+      "improved": 4,
+      "harmed": 10,
+      "equal": 34,
+      "utility_by_seed": {
+        "261117101": 0.10683398237354008,
+        "261117102": -0.2054332420276993,
+        "261117103": -0.3301765114271975
+      }
+    }
+  },
+  "credit": {
+    "nonzero_current_events": 1,
+    "nonzero_current_tasks": 1,
+    "nonzero_shift_tasks": 2,
+    "visible_hidden_sign_agreement": 0.0
+  },
+  "independent_confirmation": false,
+  "confirmation_labels_accessed": false,
+  "confidence_intervals_computed": false,
+  "source_sha256": "f06d472a631beda887b23df5a4f44376f21ef59e69345fc957f77e1dc37a50fc",
+  "limitation": "Controlled APPS TRAIN function subset. Limited hidden suites, possible pretraining contamination, model-specific token utility and cached timing limitations apply. All physical collection and qualification occupancy reported separately."
+}

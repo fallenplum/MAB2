@@ -1,0 +1,59 @@
+{
+  "segments": [
+    {
+      "segment": "artificial_single_active",
+      "status": "COMPLETE_UNSCORED",
+      "actual_GPU_hours": 0.29420670439133473
+    },
+    {
+      "segment": "artificial_resident",
+      "status": "COMPLETE_UNSCORED",
+      "actual_GPU_hours": 0.13668428175474723
+    },
+    {
+      "segment": "pilot_interrupted",
+      "status": "PARTIAL_OR_FAILED",
+      "actual_GPU_hours": 1.2005165533230562
+    },
+    {
+      "segment": "pilot_resumed",
+      "status": "COMPLETE_UNSCORED",
+      "actual_GPU_hours": 1.4569303168193437
+    }
+  ],
+  "actual_GPU_hours": 3.088337856288482,
+  "model_physical_journals": {
+    "mistral": {
+      "HEADER": 8,
+      "START": 664,
+      "RETURNED": 662,
+      "input_tokens": 961487,
+      "output_tokens": 80537,
+      "gpu_seconds": 3777.54021533203,
+      "elapsed_seconds": 3778.4347803792916,
+      "unresolved_calls": 2
+    },
+    "qwen": {
+      "HEADER": 8,
+      "START": 353,
+      "RETURNED": 353,
+      "input_tokens": 489266,
+      "output_tokens": 54832,
+      "gpu_seconds": 2628.930049438478,
+      "elapsed_seconds": 2629.452602731064,
+      "unresolved_calls": 0
+    }
+  },
+  "loading_worker_seconds": 1245.7651982444804,
+  "placement_worker_seconds": 2295.1249560564756,
+  "complete_matrix_visible_execution_seconds": 66.64866352127865,
+  "incomplete_matrix_visible_seconds_and_unreturned_tokens_are_unknown": true,
+  "global_actual_GPU_hours": 93.37976313880533,
+  "budget_GPU_hours": 160,
+  "hidden_reference_CPU_seconds": 173.0774626899996,
+  "hidden_wall_seconds": 198.41732455099998,
+  "model_aliases": {
+    "qwen": "Qwen2.5-3B-Instruct",
+    "mistral": "Qwen2.5-Coder-7B-Instruct"
+  }
+}

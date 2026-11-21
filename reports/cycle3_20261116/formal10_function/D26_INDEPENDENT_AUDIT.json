@@ -1,0 +1,11 @@
+{
+  "status": "PASS_INDEPENDENT_D26_COST_AND_DECISION_RECONSTRUCTION",
+  "recomputed_choices": 288,
+  "verified_selections": 96,
+  "frontier_passes": {
+    "G1_OBSERVED_ORACLE": false,
+    "FREE_PRESELECTION_ORACLE": false
+  },
+  "model_calls": 0,
+  "GPU_hours": 0
+}

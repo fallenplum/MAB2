@@ -1,0 +1,169 @@
+{
+  "status": "FREEZE_CURRENT_CODING_ACTION_SPACE",
+  "diagnostic": "D26",
+  "conditional_parent": "FORMAL10_FAILED_UNCHANGED",
+  "exploratory": true,
+  "oracle_gold_used_for_selection": true,
+  "independent_confirmation": false,
+  "implementable_method": false,
+  "effective_method": false,
+  "tasks": 16,
+  "seeds": 3,
+  "frontiers": {
+    "G1_OBSERVED_ORACLE": {
+      "quality": 0.3541666666666667,
+      "utility": 0.339004236764399,
+      "tokens": 3027.0208333333335,
+      "comparisons": {
+        "SINGLE_Q": {
+          "utility_difference": 0.19580809093106558,
+          "quality_difference": 0.20833333333333334,
+          "improved": 13,
+          "harmed": 3,
+          "utility_by_seed": {
+            "261117101": 0.17501405317491153,
+            "261117102": 0.3623079535756999,
+            "261117103": 0.05010226604258525
+          }
+        },
+        "SINGLE_C": {
+          "utility_difference": -0.07494409656893443,
+          "quality_difference": -0.0625,
+          "improved": 5,
+          "harmed": 8,
+          "utility_by_seed": {
+            "261117101": 0.11258530317491151,
+            "261117102": -0.07511642142430008,
+            "261117103": -0.2623011714574147
+          }
+        },
+        "BOK3": {
+          "utility_difference": -0.13204293984255336,
+          "quality_difference": -0.125,
+          "improved": 4,
+          "harmed": 10,
+          "utility_by_seed": {
+            "261117101": 0.05563789198906392,
+            "261117102": -0.1323182471561266,
+            "261117103": -0.3194484643605975
+          }
+        },
+        "BOK3_EARLY": {
+          "utility_difference": -0.1352559532294313,
+          "quality_difference": -0.125,
+          "improved": 4,
+          "harmed": 10,
+          "utility_by_seed": {
+            "261117101": 0.05239197948217128,
+            "261117102": -0.13560405278957388,
+            "261117103": -0.3225557863808913
+          }
+        },
+        "REPAIR3": {
+          "utility_difference": -0.11277789048420701,
+          "quality_difference": -0.10416666666666667,
+          "improved": 4,
+          "harmed": 9,
+          "utility_by_seed": {
+            "261117101": 0.11618012471217805,
+            "261117102": -0.1336833655532848,
+            "261117103": -0.32083043061151434
+          }
+        }
+      },
+      "gates": {
+        "mean_headroom": false,
+        "quality": false,
+        "seed_consistency": false,
+        "nonzero_credit_support": false
+      },
+      "all_gates": false,
+      "selected_action_counts": {
+        "G1": 47,
+        "G1_MINUS_EU": 1,
+        "G1_MINUS_EV": 0
+      }
+    },
+    "FREE_PRESELECTION_ORACLE": {
+      "quality": 0.3541666666666667,
+      "utility": 0.3429402292674499,
+      "tokens": 2241.875,
+      "comparisons": {
+        "SINGLE_Q": {
+          "utility_difference": 0.19974408343411662,
+          "quality_difference": 0.20833333333333334,
+          "improved": 13,
+          "harmed": 3,
+          "utility_by_seed": {
+            "261117101": 0.17890318980326644,
+            "261117102": 0.366404404208553,
+            "261117103": 0.05392465629053041
+          }
+        },
+        "SINGLE_C": {
+          "utility_difference": -0.07100810406588338,
+          "quality_difference": -0.0625,
+          "improved": 5,
+          "harmed": 8,
+          "utility_by_seed": {
+            "261117101": 0.11647443980326644,
+            "261117102": -0.07101997079144698,
+            "261117103": -0.2584787812094696
+          }
+        },
+        "BOK3": {
+          "utility_difference": -0.12810694733950231,
+          "quality_difference": -0.125,
+          "improved": 4,
+          "harmed": 10,
+          "utility_by_seed": {
+            "261117101": 0.05952702861741885,
+            "261117102": -0.12822179652327348,
+            "261117103": -0.3156260741126523
+          }
+        },
+        "BOK3_EARLY": {
+          "utility_difference": -0.13131996072638022,
+          "quality_difference": -0.125,
+          "improved": 4,
+          "harmed": 10,
+          "utility_by_seed": {
+            "261117101": 0.05628111611052619,
+            "261117102": -0.1315076021567208,
+            "261117103": -0.31873339613294616
+          }
+        },
+        "REPAIR3": {
+          "utility_difference": -0.108841897981156,
+          "quality_difference": -0.10416666666666667,
+          "improved": 4,
+          "harmed": 9,
+          "utility_by_seed": {
+            "261117101": 0.12006926134053295,
+            "261117102": -0.12958691492043173,
+            "261117103": -0.31700804036356917
+          }
+        }
+      },
+      "gates": {
+        "mean_headroom": false,
+        "quality": false,
+        "seed_consistency": false,
+        "nonzero_credit_support": false
+      },
+      "all_gates": false,
+      "selected_action_counts": {
+        "G1": 0,
+        "G1_MINUS_EU": 24,
+        "G1_MINUS_EV": 24
+      }
+    }
+  },
+  "model_calls": 0,
+  "GPU_hours": 0,
+  "confidence_intervals_computed": false,
+  "source_sha256": "2eb1e130f6f289f4f20438078a6ff4f6ebedfa4b1701b59490f3ea7aaa64e21b",
+  "scorer_sha256": "f06d472a631beda887b23df5a4f44376f21ef59e69345fc957f77e1dc37a50fc",
+  "parent_summary_sha256": "5cae031d8126e865b2bb444e10f7166be58b9b551c04e3111e77ad94c23c043d",
+  "limitation": "Gold oracle optimistically grants free knowledge of all counterfactual success, charges only the stated required service calls and visible executions, and excludes the extra cost of acquiring that knowledge. Positive headroom is necessary opportunity only, not evidence of an observable policy or of novelty. Parent failure and sealed independent partitions remain unchanged."
+}
