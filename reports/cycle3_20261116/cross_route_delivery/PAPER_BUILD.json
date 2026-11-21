@@ -1,0 +1,16 @@
+{
+  "PDF_pages": 5,
+  "characters_per_page": [
+    3803,
+    4716,
+    4341,
+    3498,
+    1700
+  ],
+  "unique_external_source_links": 11,
+  "unresolved_references": 0,
+  "overfull_horizontal_boxes": 0,
+  "pdf_sha256": "3378d845f1408028744de5acfcdb3fae5b2eb6c7d7f2a008b70205d7e3e70f6d",
+  "tex_sha256": "843102e3ae3783e22158c7ecbaedb6a200979b8b638a0105aeb4c3c41a93e945",
+  "compiler": "MiKTeX pdfTeX 25.12, two passes with no shell escape"
+}

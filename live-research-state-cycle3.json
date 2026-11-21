@@ -1,5 +1,5 @@
 {
-  "project_status": "ACTIVE_OUTER_LOOP",
+  "project_status": "NEGATIVE_DELIVERY_WITHIN_REGISTERED_RESEARCH_SCOPE",
   "automatic_server_resume": false,
   "formal10": "STOP_FORMAL10_APPLICABILITY_ROUTE",
   "formal_candidates_admitted": 10,
@@ -10,7 +10,7 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": true,
   "resident_profile_acceptance_pending": false,
-  "next": "CROSS_ROUTE_EVIDENCE_REVIEW",
+  "next": null,
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 0,
   "eligible_server_outputs_at_check": null,
@@ -34,5 +34,10 @@
   "D33": "NO_QUALIFIED_VOTE_TRANSPORT_SIGNAL",
   "D34": "STRUCTURAL_ATTRIBUTION_NOT_QUALIFIED",
   "D35": "ADMIT_PAID_POLICY_DEVELOPMENT",
-  "D36": "NO_PAID_CROSS_QUESTION_GAIN"
+  "D36": "NO_PAID_CROSS_QUESTION_GAIN",
+  "project_stop_basis": "SCIENTIFIC_SCOPE_EXHAUSTED_FOR_REGISTERED_ACTIONS_AND_FEEDBACK_REGIMES",
+  "open_admitted_candidates": 0,
+  "remaining_GPU_hours": 66.62023686119467,
+  "paper_status": "NEGATIVE_RESULTS_AUTHOR_DRAFT",
+  "paper_submitted": false
 }

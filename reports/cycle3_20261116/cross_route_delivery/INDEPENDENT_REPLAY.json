@@ -1,0 +1,6 @@
+{
+  "status": "PASS_INDEPENDENT_SCALAR_REPLAY",
+  "checks": 4346,
+  "policy_fold_rows": 288,
+  "scope": "reconstructed purchases, choices, unique request charges, service accuracy and paired outcomes; no fit or independent new deployment"
+}
