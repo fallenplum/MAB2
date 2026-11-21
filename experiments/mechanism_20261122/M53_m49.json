@@ -1,0 +1,35 @@
+{
+  "cells": {
+    "sciq_0_1_2": {
+      "gold_tokens": 328.14453125,
+      "all_tokens": 336.2734375,
+      "extra_tokens": 8.12890625,
+      "extra_required": 0.07421875,
+      "gold_last": 0.92578125,
+      "first_tokens": 324.37109375,
+      "ratio": 1.0247723349800608,
+      "instances": 256
+    },
+    "sciq_1_2_0": {
+      "gold_tokens": 427.08984375,
+      "all_tokens": 476.23046875,
+      "extra_tokens": 49.140625,
+      "extra_required": 0.4296875,
+      "gold_last": 0.5703125,
+      "first_tokens": 407.015625,
+      "ratio": 1.1150592216582065,
+      "instances": 256
+    },
+    "sciq_2_0_1": {
+      "gold_tokens": 373.39453125,
+      "all_tokens": 381.44921875,
+      "extra_tokens": 8.0546875,
+      "extra_required": 0.046875,
+      "gold_last": 0.953125,
+      "first_tokens": 371.671875,
+      "ratio": 1.0215715197355344,
+      "instances": 256
+    }
+  },
+  "added_gpu_hours": 0
+}
