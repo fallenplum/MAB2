@@ -1,0 +1,195 @@
+{
+  "status": "FREEZE_EXPOSED_APPS_POLICY_SEARCH",
+  "tasks": 16,
+  "seeds": 3,
+  "current_nonzero_tasks": 0,
+  "shift_nonzero_tasks": 0,
+  "current_nonzero_events": 0,
+  "shift_nonzero_events": 0,
+  "results": {
+    "FEASIBLE": {
+      "quality": 0.4791666666666667,
+      "controls": {
+        "BOK3_EARLY": {
+          "quality_difference": 0,
+          "utility_difference": -0.000330911356105063,
+          "improved": 1,
+          "harmed": 1,
+          "utility_by_seed": {
+            "261117101": -0.06263833167033271,
+            "261117102": -0.00034825225818872725,
+            "261117103": 0.06199384986020625
+          }
+        },
+        "REPAIR3": {
+          "quality_difference": 0.020833333333333332,
+          "utility_difference": 0.022147151389119192,
+          "improved": 1,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.001149813559674076,
+            "261117102": 0.001572434978100355,
+            "261117103": 0.06371920562958315
+          }
+        },
+        "C_Q_B1": {
+          "quality_difference": 0.020833333333333332,
+          "utility_difference": 0.020587765210501385,
+          "improved": 1,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": -0.0001623060697945766,
+            "261117102": -0.00022149256751756267,
+            "261117103": 0.06214709426881629
+          }
+        },
+        "C_B1_Q": {
+          "quality_difference": 0.020833333333333332,
+          "utility_difference": 0.02047169939326472,
+          "improved": 1,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": -0.0001623060697945766,
+            "261117102": -0.0003823126980813645,
+            "261117103": 0.06195971694767009
+          }
+        },
+        "C_Q": {
+          "quality_difference": 0.0625,
+          "utility_difference": 0.06111876877180116,
+          "improved": 3,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": -0.0013287591011091717,
+            "261117102": 0.06121109356414643,
+            "261117103": 0.12347397185236622
+          }
+        },
+        "D29_RULE": {
+          "quality_difference": -0.020833333333333332,
+          "utility_difference": -0.020874751831819405,
+          "improved": 0,
+          "harmed": 1,
+          "utility_by_seed": {
+            "261117101": -0.062465088757481434,
+            "261117102": 2.4997751887713296e-05,
+            "261117103": -0.0001841644898644907
+          }
+        },
+        "SINGLE_C": {
+          "quality_difference": 0.0625,
+          "utility_difference": 0.05998094530439179,
+          "improved": 3,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": -0.002445007977592467,
+            "261117102": 0.06013937910708511,
+            "261117103": 0.12224846478368272
+          }
+        }
+      },
+      "gates": {
+        "utility": false,
+        "quality": false,
+        "seed_consistency": false,
+        "current_credit_tasks": false,
+        "changed_credit_tasks": false
+      },
+      "passed": false
+    },
+    "ORACLE": {
+      "quality": 0.5,
+      "controls": {
+        "BOK3_EARLY": {
+          "quality_difference": 0.020833333333333332,
+          "utility_difference": 0.021791824363799728,
+          "improved": 1,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.000994926378816308,
+            "261117102": 0.0009587874367731273,
+            "261117103": 0.06342175927580974
+          }
+        },
+        "REPAIR3": {
+          "quality_difference": 0.041666666666666664,
+          "utility_difference": 0.044269887109023985,
+          "improved": 2,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.06478307160882309,
+            "261117102": 0.0028794746730622096,
+            "261117103": 0.06514711504518665
+          }
+        },
+        "C_Q_B1": {
+          "quality_difference": 0.041666666666666664,
+          "utility_difference": 0.042710500930406174,
+          "improved": 2,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.06347095197935444,
+            "261117102": 0.001085547127444292,
+            "261117103": 0.06357500368441979
+          }
+        },
+        "C_B1_Q": {
+          "quality_difference": 0.041666666666666664,
+          "utility_difference": 0.04259443511316951,
+          "improved": 2,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.06347095197935444,
+            "261117102": 0.0009247269968804901,
+            "261117103": 0.0633876263632736
+          }
+        },
+        "C_Q": {
+          "quality_difference": 0.08333333333333333,
+          "utility_difference": 0.08324150449170595,
+          "improved": 4,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.06230449894803984,
+            "261117102": 0.06251813325910828,
+            "261117103": 0.12490188126796972
+          }
+        },
+        "D29_RULE": {
+          "quality_difference": 0,
+          "utility_difference": 0.001247983888085387,
+          "improved": 0,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.001168169291667582,
+            "261117102": 0.0013320374468495679,
+            "261117103": 0.0012437449257390108
+          }
+        },
+        "SINGLE_C": {
+          "quality_difference": 0.08333333333333333,
+          "utility_difference": 0.08210368102429658,
+          "improved": 4,
+          "harmed": 0,
+          "utility_by_seed": {
+            "261117101": 0.061188250071556545,
+            "261117102": 0.061446418802046966,
+            "261117103": 0.12367637419928622
+          }
+        }
+      },
+      "gates": {
+        "utility": false,
+        "quality": true,
+        "seed_consistency": true,
+        "current_credit_tasks": false,
+        "changed_credit_tasks": false
+      },
+      "passed": false
+    }
+  },
+  "independent": false,
+  "new_GPU_hours": 0,
+  "new_model_calls": 0,
+  "score_sha256": "5cae031d8126e865b2bb444e10f7166be58b9b551c04e3111e77ad94c23c043d"
+}
