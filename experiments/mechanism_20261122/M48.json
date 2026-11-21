@@ -1,0 +1,367 @@
+{
+  "cells": {
+    "lower_0": {
+      "all_trials": {
+        "questions": 24,
+        "totals": {
+          "full": {
+            "decision": 1.0,
+            "tokens": 356075.0,
+            "prefill": 297984.0,
+            "decode": 58091.0,
+            "seqs": 528.0,
+            "wall_seconds": 148.69854010315612,
+            "skip": 0.0,
+            "diameter_would_skip": 14.0
+          },
+          "anchored": {
+            "decision": 1.0,
+            "tokens": 166298.0,
+            "prefill": 141760.0,
+            "decode": 24538.0,
+            "seqs": 304.0,
+            "wall_seconds": 64.73681013053283,
+            "skip": 14.0,
+            "diameter_would_skip": 14.0
+          },
+          "weighted": {
+            "decision": 1.0,
+            "tokens": 39315.0,
+            "prefill": 36704.0,
+            "decode": 2611.0,
+            "seqs": 160.0,
+            "wall_seconds": 8.378299018833786,
+            "skip": 23.0,
+            "diameter_would_skip": 14.0
+          }
+        },
+        "weighted_vs_full": 0.9436558085034221,
+        "weighted_vs_anchored": 0.8705790569238722,
+        "weighted_wall_wins": 17,
+        "mismatches": 0
+      },
+      "uncontended": {
+        "questions": 24,
+        "totals": {
+          "full": {
+            "decision": 1.0,
+            "tokens": 356075.0,
+            "prefill": 297984.0,
+            "decode": 58091.0,
+            "seqs": 528.0,
+            "wall_seconds": 148.69854010315612,
+            "skip": 0.0,
+            "diameter_would_skip": 14.0
+          },
+          "anchored": {
+            "decision": 1.0,
+            "tokens": 166298.0,
+            "prefill": 141760.0,
+            "decode": 24538.0,
+            "seqs": 304.0,
+            "wall_seconds": 64.73681013053283,
+            "skip": 14.0,
+            "diameter_would_skip": 14.0
+          },
+          "weighted": {
+            "decision": 1.0,
+            "tokens": 39315.0,
+            "prefill": 36704.0,
+            "decode": 2611.0,
+            "seqs": 160.0,
+            "wall_seconds": 8.378299018833786,
+            "skip": 23.0,
+            "diameter_would_skip": 14.0
+          }
+        },
+        "weighted_vs_full": 0.9436558085034221,
+        "weighted_vs_anchored": 0.8705790569238722,
+        "weighted_wall_wins": 17,
+        "mismatches": 0
+      },
+      "other_process_count": 0,
+      "passed": true
+    },
+    "upper_0": {
+      "all_trials": {
+        "questions": 24,
+        "totals": {
+          "full": {
+            "decision": 1.0,
+            "tokens": 357003.0,
+            "prefill": 297742.0,
+            "decode": 59261.0,
+            "seqs": 528.0,
+            "wall_seconds": 149.0484023336321,
+            "skip": 0.0,
+            "diameter_would_skip": 15.0
+          },
+          "anchored": {
+            "decision": 1.0,
+            "tokens": 150262.0,
+            "prefill": 128030.0,
+            "decode": 22232.0,
+            "seqs": 288.0,
+            "wall_seconds": 57.26788629218936,
+            "skip": 15.0,
+            "diameter_would_skip": 15.0
+          },
+          "weighted": {
+            "decision": 1.0,
+            "tokens": 68074.0,
+            "prefill": 60302.0,
+            "decode": 7772.0,
+            "seqs": 192.0,
+            "wall_seconds": 20.778088929131627,
+            "skip": 21.0,
+            "diameter_would_skip": 15.0
+          }
+        },
+        "weighted_vs_full": 0.8605950241410729,
+        "weighted_vs_anchored": 0.6371773034695449,
+        "weighted_wall_wins": 11,
+        "mismatches": 0
+      },
+      "uncontended": {
+        "questions": 24,
+        "totals": {
+          "full": {
+            "decision": 1.0,
+            "tokens": 357003.0,
+            "prefill": 297742.0,
+            "decode": 59261.0,
+            "seqs": 528.0,
+            "wall_seconds": 149.0484023336321,
+            "skip": 0.0,
+            "diameter_would_skip": 15.0
+          },
+          "anchored": {
+            "decision": 1.0,
+            "tokens": 150262.0,
+            "prefill": 128030.0,
+            "decode": 22232.0,
+            "seqs": 288.0,
+            "wall_seconds": 57.26788629218936,
+            "skip": 15.0,
+            "diameter_would_skip": 15.0
+          },
+          "weighted": {
+            "decision": 1.0,
+            "tokens": 68074.0,
+            "prefill": 60302.0,
+            "decode": 7772.0,
+            "seqs": 192.0,
+            "wall_seconds": 20.778088929131627,
+            "skip": 21.0,
+            "diameter_would_skip": 15.0
+          }
+        },
+        "weighted_vs_full": 0.8605950241410729,
+        "weighted_vs_anchored": 0.6371773034695449,
+        "weighted_wall_wins": 11,
+        "mismatches": 0
+      },
+      "other_process_count": 0,
+      "passed": true
+    },
+    "lower_1": {
+      "all_trials": {
+        "questions": 24,
+        "totals": {
+          "full": {
+            "decision": 5.0,
+            "tokens": 362536.0,
+            "prefill": 311496.0,
+            "decode": 51040.0,
+            "seqs": 528.0,
+            "wall_seconds": 300.96649524290115,
+            "skip": 0.0,
+            "diameter_would_skip": 3.0
+          },
+          "anchored": {
+            "decision": 5.0,
+            "tokens": 317794.0,
+            "prefill": 273968.0,
+            "decode": 43826.0,
+            "seqs": 480.0,
+            "wall_seconds": 266.5474850158207,
+            "skip": 3.0,
+            "diameter_would_skip": 3.0
+          },
+          "weighted": {
+            "decision": 5.0,
+            "tokens": 303114.0,
+            "prefill": 261848.0,
+            "decode": 41266.0,
+            "seqs": 464.0,
+            "wall_seconds": 265.8179610967636,
+            "skip": 4.0,
+            "diameter_would_skip": 3.0
+          }
+        },
+        "weighted_vs_full": 0.11678553826322158,
+        "weighted_vs_anchored": 0.002736937919387228,
+        "weighted_wall_wins": 13,
+        "mismatches": 0
+      },
+      "uncontended": {
+        "questions": 16,
+        "totals": {
+          "full": {
+            "decision": 2.0,
+            "tokens": 241361.0,
+            "prefill": 208148.0,
+            "decode": 33213.0,
+            "seqs": 352.0,
+            "wall_seconds": 182.55326875438914,
+            "skip": 0.0,
+            "diameter_would_skip": 3.0
+          },
+          "anchored": {
+            "decision": 2.0,
+            "tokens": 196619.0,
+            "prefill": 170620.0,
+            "decode": 25999.0,
+            "seqs": 304.0,
+            "wall_seconds": 148.73614738183096,
+            "skip": 3.0,
+            "diameter_would_skip": 3.0
+          },
+          "weighted": {
+            "decision": 2.0,
+            "tokens": 196619.0,
+            "prefill": 170620.0,
+            "decode": 25999.0,
+            "seqs": 304.0,
+            "wall_seconds": 147.83518304349855,
+            "skip": 3.0,
+            "diameter_would_skip": 3.0
+          }
+        },
+        "weighted_vs_full": 0.19018057549876577,
+        "weighted_vs_anchored": 0.006057467227650326,
+        "weighted_wall_wins": 8,
+        "mismatches": 0
+      },
+      "other_process_count": 8,
+      "passed": false
+    },
+    "upper_1": {
+      "all_trials": {
+        "questions": 24,
+        "totals": {
+          "full": {
+            "decision": 4.0,
+            "tokens": 364455.0,
+            "prefill": 311936.0,
+            "decode": 52519.0,
+            "seqs": 528.0,
+            "wall_seconds": 270.3260495979339,
+            "skip": 0.0,
+            "diameter_would_skip": 8.0
+          },
+          "anchored": {
+            "decision": 4.0,
+            "tokens": 251461.0,
+            "prefill": 215776.0,
+            "decode": 35685.0,
+            "seqs": 400.0,
+            "wall_seconds": 185.32561000389978,
+            "skip": 8.0,
+            "diameter_would_skip": 8.0
+          },
+          "weighted": {
+            "decision": 4.0,
+            "tokens": 251461.0,
+            "prefill": 215776.0,
+            "decode": 35685.0,
+            "seqs": 400.0,
+            "wall_seconds": 185.3726232261397,
+            "skip": 8.0,
+            "diameter_would_skip": 8.0
+          }
+        },
+        "weighted_vs_full": 0.31426281891126895,
+        "weighted_vs_anchored": -0.00025367903679862636,
+        "weighted_wall_wins": 10,
+        "mismatches": 0
+      },
+      "uncontended": {
+        "questions": 24,
+        "totals": {
+          "full": {
+            "decision": 4.0,
+            "tokens": 364455.0,
+            "prefill": 311936.0,
+            "decode": 52519.0,
+            "seqs": 528.0,
+            "wall_seconds": 270.3260495979339,
+            "skip": 0.0,
+            "diameter_would_skip": 8.0
+          },
+          "anchored": {
+            "decision": 4.0,
+            "tokens": 251461.0,
+            "prefill": 215776.0,
+            "decode": 35685.0,
+            "seqs": 400.0,
+            "wall_seconds": 185.32561000389978,
+            "skip": 8.0,
+            "diameter_would_skip": 8.0
+          },
+          "weighted": {
+            "decision": 4.0,
+            "tokens": 251461.0,
+            "prefill": 215776.0,
+            "decode": 35685.0,
+            "seqs": 400.0,
+            "wall_seconds": 185.3726232261397,
+            "skip": 8.0,
+            "diameter_would_skip": 8.0
+          }
+        },
+        "weighted_vs_full": 0.31426281891126895,
+        "weighted_vs_anchored": -0.00025367903679862636,
+        "weighted_wall_wins": 10,
+        "mismatches": 0
+      },
+      "other_process_count": 0,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "cost": {
+    "actual_GPU_hours": 0.552160380019082,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "global_actual": 95.21489405232785
+  },
+  "workers": [
+    {
+      "questions": 48,
+      "template_mode": "native",
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0",
+      "warmup": {
+        "wall_seconds": 5.490941359195858,
+        "seqs": 22,
+        "prefill": 11122,
+        "decode": 1487
+      }
+    },
+    {
+      "questions": 48,
+      "template_mode": "native",
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0",
+      "warmup": {
+        "wall_seconds": 10.909227579832077,
+        "seqs": 22,
+        "prefill": 11571,
+        "decode": 1052
+      }
+    }
+  ]
+}
