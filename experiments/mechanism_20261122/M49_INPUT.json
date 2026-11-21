@@ -1,0 +1,7 @@
+{
+  "train_url": "https://huggingface.co/datasets/allenai/sciq/resolve/2c94ad3e1aafab77146f384e23536f97a4849815/data/train-00000-of-00001.parquet",
+  "train_sha256": "19644360954006d06e9ad3df07bddb34f8535c081b831d48f604603c713ac167",
+  "input_sha256": "aedcf7f15ffaa861c49bd2ba40ca6b0734ae2ff58df9b61ff68bfe891b95a117",
+  "label_sha256": "7e075b658942276777b1adb22d621007cd28f631ce985212fa9d8471679cdbad",
+  "questions": 256
+}
