@@ -1,0 +1,46 @@
+{
+  "lower_0": {
+    "outputs": 1280,
+    "only_official_correct": 294,
+    "only_registered_correct": 0,
+    "both_correct": 329,
+    "official_errors": 0,
+    "relay_decision_disagreements": 11,
+    "relay_cases": 128,
+    "registered_forced_cert": 3,
+    "official_forced_cert": 3
+  },
+  "upper_0": {
+    "outputs": 1280,
+    "only_official_correct": 290,
+    "only_registered_correct": 1,
+    "both_correct": 210,
+    "official_errors": 0,
+    "relay_decision_disagreements": 14,
+    "relay_cases": 128,
+    "registered_forced_cert": 3,
+    "official_forced_cert": 3
+  },
+  "lower_1": {
+    "outputs": 1280,
+    "only_official_correct": 193,
+    "only_registered_correct": 9,
+    "both_correct": 632,
+    "official_errors": 0,
+    "relay_decision_disagreements": 6,
+    "relay_cases": 128,
+    "registered_forced_cert": 3,
+    "official_forced_cert": 2
+  },
+  "upper_1": {
+    "outputs": 1280,
+    "only_official_correct": 193,
+    "only_registered_correct": 22,
+    "both_correct": 384,
+    "official_errors": 0,
+    "relay_decision_disagreements": 7,
+    "relay_cases": 128,
+    "registered_forced_cert": 3,
+    "official_forced_cert": 3
+  }
+}
