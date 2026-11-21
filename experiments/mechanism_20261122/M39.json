@@ -1,0 +1,58 @@
+{
+  "arc_0": {
+    "zero_drift_MSE": 0.041796473047918836,
+    "product_MSE": 0.04618757150586648,
+    "prob_add_MSE": 0.0333412709955165,
+    "scale_sq": 0.03242868455172282,
+    "cross_term": -0.03681978300967046,
+    "stale_regret": 0.01921094564906536,
+    "product_regret": 0.018774102386929514,
+    "prob_add_regret": 0.01909837596457861,
+    "logit_interaction_rms": 3.255136896261187,
+    "absolute_drift": 0.07255245700138262,
+    "abs_residual": 0.057088647657522806,
+    "risk_skill": -0.10505906689574829
+  },
+  "arc_1": {
+    "zero_drift_MSE": 0.057609346293601434,
+    "product_MSE": 0.10718747632197458,
+    "prob_add_MSE": 0.041068247738669905,
+    "scale_sq": 0.05576468797097236,
+    "cross_term": -0.10534281799934549,
+    "stale_regret": 0.007296828494769505,
+    "product_regret": 0.007841815955606736,
+    "prob_add_regret": 0.007259332992217368,
+    "logit_interaction_rms": 2.367927055527687,
+    "absolute_drift": 0.10544706998232867,
+    "abs_residual": 0.13630214714501457,
+    "risk_skill": -0.8605917827239726
+  },
+  "obqa_0": {
+    "zero_drift_MSE": 0.08876977804636486,
+    "product_MSE": 0.058932295715276584,
+    "prob_add_MSE": 0.07114553398693936,
+    "scale_sq": 0.018082467454248723,
+    "cross_term": 0.011755014876839555,
+    "stale_regret": 0.031667877285288554,
+    "product_regret": 0.03166322604497046,
+    "prob_add_regret": 0.03117546737815709,
+    "logit_interaction_rms": 3.6628058095712337,
+    "absolute_drift": 0.10761714172354576,
+    "abs_residual": 0.07428006011056093,
+    "risk_skill": 0.3361220787947
+  },
+  "obqa_1": {
+    "zero_drift_MSE": 0.05489916641357512,
+    "product_MSE": 0.14163234683991596,
+    "prob_add_MSE": 0.04868027597968441,
+    "scale_sq": 0.09847253429802767,
+    "cross_term": -0.18520571472436856,
+    "stale_regret": 0.015729599201463537,
+    "product_regret": 0.01464406767266878,
+    "prob_add_regret": 0.005887565526864977,
+    "logit_interaction_rms": 2.8859039844757066,
+    "absolute_drift": 0.10056134085891875,
+    "abs_residual": 0.1926194523206722,
+    "risk_skill": -1.5798633402363285
+  }
+}
