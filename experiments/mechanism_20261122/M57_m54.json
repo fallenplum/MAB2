@@ -1,0 +1,38 @@
+{
+  "cells": {
+    "team0": {
+      "n": 128,
+      "strict_better": 12,
+      "same": 116,
+      "strict_worse": 0,
+      "warm": 577.7890625,
+      "memo": 601.7109375,
+      "previous": 1375.15625,
+      "increment_gain": 0.03975642373959676,
+      "total_gain": 0.012100901442070211
+    },
+    "team1": {
+      "n": 128,
+      "strict_better": 16,
+      "same": 112,
+      "strict_worse": 0,
+      "warm": 1265.0,
+      "memo": 1295.8125,
+      "previous": 1627.59375,
+      "increment_gain": 0.023778517339507088,
+      "total_gain": 0.010539930945280052
+    },
+    "team2": {
+      "n": 128,
+      "strict_better": 3,
+      "same": 125,
+      "strict_worse": 0,
+      "warm": 317.6484375,
+      "memo": 322.5234375,
+      "previous": 2281.65625,
+      "increment_gain": 0.015115180582806476,
+      "total_gain": 0.001871990640046839
+    }
+  },
+  "added_gpu_hours": 0
+}
