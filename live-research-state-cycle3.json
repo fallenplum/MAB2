@@ -1,5 +1,5 @@
 {
-  "project_status": "RESUME_AUTHORIZED_WAITING_FOR_SERVER_CAPACITY",
+  "project_status": "RESUME_AUTHORIZED_WAITING_FOR_PERSISTENT_OUTPUT",
   "automatic_server_resume": false,
   "formal10": "RESUME_COVERAGE_VERIFIED_6_OF_16",
   "formal_candidates_admitted": 10,
@@ -10,9 +10,13 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": false,
   "resident_profile_acceptance_pending": false,
-  "next": "RECHECK_STORAGE_AND_DEVICES_BEFORE_BINDING_PLAN_AND_RESERVING_GPU_HOURS",
+  "next": "VERIFY_PROJECT_WRITABLE_OUTPUT_THEN_REFRESH_GPU_ADMISSION_AND_RESERVE",
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 10,
   "eligible_server_outputs_at_check": 0,
-  "eligible_GPUs_at_check": 0
+  "eligible_GPUs_at_check": 8,
+  "idle_GPUs_at_check": 6,
+  "minimum_output_bytes": 8589934592,
+  "output_volume_free_bytes_at_check": 1462616064,
+  "resource_checked_at": "2026-11-21T17:10:02.891226+08:00"
 }

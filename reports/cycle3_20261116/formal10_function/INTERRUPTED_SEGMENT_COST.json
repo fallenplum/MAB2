@@ -1,0 +1,25 @@
+{
+  "archive_sha256": "e4595add3b52eadc53f1efce28fdbd5e10c32f696543ab07833cbbd91d9724f5",
+  "status": "PARTIAL_OR_FAILED",
+  "completed_tasks": 6,
+  "complete_conditions": 180,
+  "matrix_requests_matched": 264,
+  "actual_GPU_hours_including_interruption": 1.2005165533230562,
+  "physical_journal_counts": {
+    "completed_tasks": {
+      "started": 264,
+      "input_tokens": 135985,
+      "output_tokens": 38997,
+      "returned": 264
+    },
+    "interrupted_tasks": {
+      "started": 63,
+      "input_tokens": 51597,
+      "output_tokens": 11612,
+      "returned": 61,
+      "unresolved_starts": 2
+    }
+  },
+  "token_coverage": "Returned generations only. Token counts for unresolved calls are unknown.",
+  "hidden_scores_accessed": false
+}
