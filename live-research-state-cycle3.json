@@ -10,7 +10,7 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": true,
   "resident_profile_acceptance_pending": false,
-  "next": "CROSS_ROUTE_EVIDENCE_REVIEW",
+  "next": "EVALUATE_RESEARCH_SCOPE_AND_EVIDENCE",
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 0,
   "eligible_server_outputs_at_check": null,
@@ -31,5 +31,6 @@
   "active_GPU_workers": 0,
   "D31": "TRAIN_ONLY_SOURCE_STRUCTURE_VERIFIED",
   "D32": "NO_QUALIFIED_TEMPORAL_RETRIEVAL_MECHANISM",
-  "D33": "NO_QUALIFIED_VOTE_TRANSPORT_SIGNAL"
+  "D33": "NO_QUALIFIED_VOTE_TRANSPORT_SIGNAL",
+  "D34": "STRUCTURAL_ATTRIBUTION_NOT_QUALIFIED"
 }
