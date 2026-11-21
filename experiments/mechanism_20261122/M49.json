@@ -1,0 +1,3586 @@
+{
+  "cells": {
+    "0_1_2_no_note": {
+      "conditions": {
+        "natural_K": 0.03636001549194188,
+        "other_sender_K": 0.03657676766390392,
+        "cpt_diameter": 0.28832472397488706,
+        "maximal_single": 0.283482278862099,
+        "uniform_K": 0.11727632913125045,
+        "natural_abs_credit": 0.005986062036776061,
+        "forced_any": 0.1796875,
+        "forced_and_certified": 0.09765625,
+        "natural_mass_strong": 0.023499823342760937,
+        "observable_overlap": 0.2265625,
+        "source_replacement_decision_changed": 0.03515625,
+        "source_replacement_certificate_changed": 0.06640625,
+        "difference_saturated_by_rare": 0.37890625,
+        "alternative_actual_quality_change": -0.0007761884776608675,
+        "natural_cert": 0.84765625,
+        "uniform_cert": 0.46875,
+        "forced_correct_and_cert": 0.0078125,
+        "forced_wrong_and_cert": 0.08984375,
+        "harmful_forced_and_cert": 0.08984375,
+        "source_correct_prob": 0.9148223902406503,
+        "null_source_mass": 0.023499823342760937
+      },
+      "support_questions": 25,
+      "mechanism_passed": true,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 39619.0
+          },
+          "random": {
+            "regret": 0.0002478022029737761,
+            "accuracy": 0.9042653818908042,
+            "net": 0.9039626475158042,
+            "wrong": 1.25,
+            "false_drop": 0.75,
+            "false_keep": 0.5,
+            "variable_tokens": 38745.0,
+            "all_tokens": 236129.0,
+            "available_variable_tokens": 39619.0
+          },
+          "diameter": {
+            "regret": 8.265569118921997e-05,
+            "accuracy": 0.9043621690275888,
+            "net": 0.9041277940275888,
+            "wrong": 2.0,
+            "false_drop": 2.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38176.0,
+            "all_tokens": 235560.0,
+            "available_variable_tokens": 39619.0
+          },
+          "uncertainty": {
+            "regret": 3.7709003380272497e-05,
+            "accuracy": 0.9044461782153977,
+            "net": 0.9041727407153977,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38352.0,
+            "all_tokens": 235736.0,
+            "available_variable_tokens": 39619.0
+          },
+          "margin": {
+            "regret": 0.0004327079270020529,
+            "accuracy": 0.904129304291776,
+            "net": 0.903777741791776,
+            "wrong": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "variable_tokens": 38544.0,
+            "all_tokens": 235928.0,
+            "available_variable_tokens": 39619.0
+          },
+          "bound": {
+            "regret": 3.7709003380272497e-05,
+            "accuracy": 0.9044461782153977,
+            "net": 0.9041727407153977,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38368.0,
+            "all_tokens": 235752.0,
+            "available_variable_tokens": 39619.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 99048.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 99048.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 99048.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 99048.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 99048.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 99048.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 198096.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 198096.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 198096.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 198096.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 198096.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 198096.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.0005153636181912729,
+            "accuracy": 0.9039685236005868,
+            "net": 0.9036950861005868,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 197384.0,
+            "available_variable_tokens": 396192.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 396192.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 396192.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 396192.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 396192.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.904522949718778,
+            "net": 0.904210449718778,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 60112.0,
+            "all_tokens": 257496.0,
+            "available_variable_tokens": 396192.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blocks": [
+        5,
+        5,
+        10,
+        5
+      ]
+    },
+    "0_1_2_true_note": {
+      "conditions": {
+        "natural_K": 0.04524602196004558,
+        "other_sender_K": 0.048416614936507375,
+        "cpt_diameter": 0.28832472397488706,
+        "maximal_single": 0.283482278862099,
+        "uniform_K": 0.11727632913125045,
+        "natural_abs_credit": 0.009802674268760895,
+        "forced_any": 0.1796875,
+        "forced_and_certified": 0.09375,
+        "natural_mass_strong": 0.027574908479436992,
+        "observable_overlap": 0.22265625,
+        "source_replacement_decision_changed": 0.0234375,
+        "source_replacement_certificate_changed": 0.05859375,
+        "difference_saturated_by_rare": 0.3671875,
+        "alternative_actual_quality_change": -0.001301022323333995,
+        "natural_cert": 0.8359375,
+        "uniform_cert": 0.46875,
+        "forced_correct_and_cert": 0.00390625,
+        "forced_wrong_and_cert": 0.08984375,
+        "harmful_forced_and_cert": 0.08984375,
+        "source_correct_prob": 0.9498410101164316,
+        "null_source_mass": 0.027574908479436992
+      },
+      "support_questions": 24,
+      "mechanism_passed": true,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 39619.0
+          },
+          "random": {
+            "regret": 0.0003562249792971881,
+            "accuracy": 0.9177356538166825,
+            "net": 0.9171326264729325,
+            "wrong": 1.6875,
+            "false_drop": 0.625,
+            "false_keep": 1.0625,
+            "variable_tokens": 38694.0,
+            "all_tokens": 259185.0,
+            "available_variable_tokens": 39619.0
+          },
+          "diameter": {
+            "regret": 9.908165612159561e-05,
+            "accuracy": 0.9179757072961081,
+            "net": 0.9173897697961081,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 39616.0,
+            "all_tokens": 260107.0,
+            "available_variable_tokens": 39619.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38400.0,
+            "all_tokens": 258891.0,
+            "available_variable_tokens": 39619.0
+          },
+          "margin": {
+            "regret": 0.0008061731898185094,
+            "accuracy": 0.9172686157624113,
+            "net": 0.9166826782624112,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 38768.0,
+            "all_tokens": 259259.0,
+            "available_variable_tokens": 39619.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 39584.0,
+            "all_tokens": 260075.0,
+            "available_variable_tokens": 39619.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 99048.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 99048.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 99048.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 99048.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 99048.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 99048.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 198096.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 198096.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 198096.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 198096.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 198096.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 198096.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.0009052548459401049,
+            "accuracy": 0.9171695341062897,
+            "net": 0.9165835966062896,
+            "wrong": 4.0,
+            "false_drop": 2.0,
+            "false_keep": 2.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 396192.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 396192.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 396192.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 396192.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 396192.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9180747889522297,
+            "net": 0.9174888514522297,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 64640.0,
+            "all_tokens": 285131.0,
+            "available_variable_tokens": 396192.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blocks": [
+        4,
+        5,
+        10,
+        5
+      ]
+    },
+    "0_1_2_shuffled_note": {
+      "conditions": {
+        "natural_K": 0.041626571781761525,
+        "other_sender_K": 0.05485572346720752,
+        "cpt_diameter": 0.28832472397488706,
+        "maximal_single": 0.283482278862099,
+        "uniform_K": 0.11727632913125045,
+        "natural_abs_credit": 0.007264331596920841,
+        "forced_any": 0.1796875,
+        "forced_and_certified": 0.078125,
+        "natural_mass_strong": 0.03254692772400483,
+        "observable_overlap": 0.20703125,
+        "source_replacement_decision_changed": 0.02734375,
+        "source_replacement_certificate_changed": 0.10546875,
+        "difference_saturated_by_rare": 0.359375,
+        "alternative_actual_quality_change": -0.004190186659918974,
+        "natural_cert": 0.828125,
+        "uniform_cert": 0.46875,
+        "forced_correct_and_cert": 0.0078125,
+        "forced_wrong_and_cert": 0.0703125,
+        "harmful_forced_and_cert": 0.0703125,
+        "source_correct_prob": 0.8942677639075313,
+        "null_source_mass": 0.03254692772400483
+      },
+      "support_questions": 20,
+      "mechanism_passed": true,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 39619.0
+          },
+          "random": {
+            "regret": 0.000287295714640901,
+            "accuracy": 0.9052892715672127,
+            "net": 0.9049279434422128,
+            "wrong": 1.0,
+            "false_drop": 0.375,
+            "false_keep": 0.625,
+            "variable_tokens": 38922.0,
+            "all_tokens": 259413.0,
+            "available_variable_tokens": 39619.0
+          },
+          "diameter": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 39328.0,
+            "all_tokens": 259819.0,
+            "available_variable_tokens": 39619.0
+          },
+          "uncertainty": {
+            "regret": 4.49466853840524e-05,
+            "accuracy": 0.9054827924714697,
+            "net": 0.9051702924714695,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38400.0,
+            "all_tokens": 258891.0,
+            "available_variable_tokens": 39619.0
+          },
+          "margin": {
+            "regret": 0.00043270513219501017,
+            "accuracy": 0.9051731590246587,
+            "net": 0.9047825340246587,
+            "wrong": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "variable_tokens": 39616.0,
+            "all_tokens": 260107.0,
+            "available_variable_tokens": 39619.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38288.0,
+            "all_tokens": 258779.0,
+            "available_variable_tokens": 39619.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 99048.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 99048.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 99048.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 99048.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 99048.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 99048.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 198096.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 198096.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 198096.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 198096.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 198096.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 198096.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.00047765181757906255,
+            "accuracy": 0.9050891498392746,
+            "net": 0.9047375873392746,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 220491.0,
+            "available_variable_tokens": 396192.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 396192.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 396192.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 396192.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 396192.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9055668016568537,
+            "net": 0.9052152391568536,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 67600.0,
+            "all_tokens": 288091.0,
+            "available_variable_tokens": 396192.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blocks": [
+        4,
+        4,
+        8,
+        4
+      ]
+    },
+    "1_2_0_no_note": {
+      "conditions": {
+        "natural_K": 0.037195234782849,
+        "other_sender_K": 0.03749509238423558,
+        "cpt_diameter": 0.10421647015336383,
+        "maximal_single": 0.09090536137033506,
+        "uniform_K": 0.05716974078877175,
+        "natural_abs_credit": 0.006057731193328919,
+        "forced_any": 0.09375,
+        "forced_and_certified": 0.015625,
+        "natural_mass_strong": 0.01798062154492384,
+        "observable_overlap": 0.01171875,
+        "source_replacement_decision_changed": 0.01953125,
+        "source_replacement_certificate_changed": 0.05078125,
+        "difference_saturated_by_rare": 0.29296875,
+        "alternative_actual_quality_change": -0.0008088827143561174,
+        "natural_cert": 0.4375,
+        "uniform_cert": 0.17578125,
+        "forced_correct_and_cert": 0.0,
+        "forced_wrong_and_cert": 0.015625,
+        "harmful_forced_and_cert": 0.015625,
+        "source_correct_prob": 0.8772224650250395,
+        "null_source_mass": 0.01798062154492384
+      },
+      "support_questions": 4,
+      "mechanism_passed": false,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 39619.0
+          },
+          "random": {
+            "regret": 0.0004628778302716743,
+            "accuracy": 0.9184888273603159,
+            "net": 0.918286190641566,
+            "wrong": 5.0625,
+            "false_drop": 4.4375,
+            "false_keep": 0.625,
+            "variable_tokens": 39150.0,
+            "all_tokens": 257062.0,
+            "available_variable_tokens": 39619.0
+          },
+          "diameter": {
+            "regret": 0.0003021434746802179,
+            "accuracy": 0.9187203624971574,
+            "net": 0.9184469249971574,
+            "wrong": 4.0,
+            "false_drop": 3.0,
+            "false_keep": 1.0,
+            "variable_tokens": 38288.0,
+            "all_tokens": 256200.0,
+            "available_variable_tokens": 39619.0
+          },
+          "uncertainty": {
+            "regret": 0.00016206975712264624,
+            "accuracy": 0.918899498714715,
+            "net": 0.918586998714715,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 39312.0,
+            "all_tokens": 257224.0,
+            "available_variable_tokens": 39619.0
+          },
+          "margin": {
+            "regret": 0.0004584602903387827,
+            "accuracy": 0.9185640456814987,
+            "net": 0.9182906081814989,
+            "wrong": 4.0,
+            "false_drop": 3.0,
+            "false_keep": 1.0,
+            "variable_tokens": 38336.0,
+            "all_tokens": 256248.0,
+            "available_variable_tokens": 39619.0
+          },
+          "bound": {
+            "regret": 0.0003312059170399864,
+            "accuracy": 0.9186522375547976,
+            "net": 0.9184178625547976,
+            "wrong": 5.0,
+            "false_drop": 4.0,
+            "false_keep": 1.0,
+            "variable_tokens": 38688.0,
+            "all_tokens": 256600.0,
+            "available_variable_tokens": 39619.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 99048.0
+          },
+          "random": {
+            "regret": 0.00027670401149284326,
+            "accuracy": 0.9187482433665948,
+            "net": 0.9184723644603447,
+            "wrong": 3.1875,
+            "false_drop": 2.5625,
+            "false_keep": 0.625,
+            "variable_tokens": 98511.0,
+            "all_tokens": 316423.0,
+            "available_variable_tokens": 99048.0
+          },
+          "diameter": {
+            "regret": 3.0226432783718278e-05,
+            "accuracy": 0.9190704045390539,
+            "net": 0.918718842039054,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 98960.0,
+            "all_tokens": 316872.0,
+            "available_variable_tokens": 99048.0
+          },
+          "uncertainty": {
+            "regret": 0.00016206975712264624,
+            "accuracy": 0.918899498714715,
+            "net": 0.918586998714715,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 98528.0,
+            "all_tokens": 316440.0,
+            "available_variable_tokens": 99048.0
+          },
+          "margin": {
+            "regret": 0.00043851015537649517,
+            "accuracy": 0.9186230583164612,
+            "net": 0.9183105583164611,
+            "wrong": 3.0,
+            "false_drop": 2.0,
+            "false_keep": 1.0,
+            "variable_tokens": 99040.0,
+            "all_tokens": 316952.0,
+            "available_variable_tokens": 99048.0
+          },
+          "bound": {
+            "regret": 5.476551878613752e-05,
+            "accuracy": 0.9189286779530514,
+            "net": 0.9186943029530514,
+            "wrong": 3.0,
+            "false_drop": 3.0,
+            "false_keep": 0.0,
+            "variable_tokens": 98160.0,
+            "all_tokens": 316072.0,
+            "available_variable_tokens": 99048.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 198096.0
+          },
+          "random": {
+            "regret": 6.631385747074331e-05,
+            "accuracy": 0.9190221100831168,
+            "net": 0.9186827546143669,
+            "wrong": 0.6875,
+            "false_drop": 0.5,
+            "false_keep": 0.1875,
+            "variable_tokens": 197328.0,
+            "all_tokens": 415240.0,
+            "available_variable_tokens": 198096.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 197952.0,
+            "all_tokens": 415864.0,
+            "available_variable_tokens": 198096.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 197920.0,
+            "all_tokens": 415832.0,
+            "available_variable_tokens": 198096.0
+          },
+          "margin": {
+            "regret": 0.00027644039825384893,
+            "accuracy": 0.9188241905735838,
+            "net": 0.9184726280735838,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 197328.0,
+            "all_tokens": 415240.0,
+            "available_variable_tokens": 198096.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 196928.0,
+            "all_tokens": 414840.0,
+            "available_variable_tokens": 198096.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.0004932756741626327,
+            "accuracy": 0.9184511052976749,
+            "net": 0.918255792797675,
+            "wrong": 6.0,
+            "false_drop": 5.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 217912.0,
+            "available_variable_tokens": 396192.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 219568.0,
+            "all_tokens": 437480.0,
+            "available_variable_tokens": 396192.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 219568.0,
+            "all_tokens": 437480.0,
+            "available_variable_tokens": 396192.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 219568.0,
+            "all_tokens": 437480.0,
+            "available_variable_tokens": 396192.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 219568.0,
+            "all_tokens": 437480.0,
+            "available_variable_tokens": 396192.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9191006309718376,
+            "net": 0.9187490684718376,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 219568.0,
+            "all_tokens": 437480.0,
+            "available_variable_tokens": 396192.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.00020716143876792697,
+        0.0004875227326985512,
+        0.00032545297557590495,
+        0.00030550284061361743,
+        1.995013496228753e-05,
+        0.00018777283354901527,
+        0.000172346054944077,
+        0.0004539369339814334,
+        0.0004829993763412019,
+        0.00016206975712264624,
+        5.752941464081494e-06,
+        0.00017809899640815847,
+        0.00043851015537649517,
+        0.0002014084973038455,
+        0.0003312059170399864,
+        0.00046757259773626367
+      ],
+      "blocks": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    "1_2_0_true_note": {
+      "conditions": {
+        "natural_K": 0.036576066526413514,
+        "other_sender_K": 0.03834902135620774,
+        "cpt_diameter": 0.10421647015336383,
+        "maximal_single": 0.09090536137033506,
+        "uniform_K": 0.05716974078877175,
+        "natural_abs_credit": 0.006128209297585655,
+        "forced_any": 0.09375,
+        "forced_and_certified": 0.015625,
+        "natural_mass_strong": 0.017855380033969692,
+        "observable_overlap": 0.01171875,
+        "source_replacement_decision_changed": 0.03125,
+        "source_replacement_certificate_changed": 0.02734375,
+        "difference_saturated_by_rare": 0.28125,
+        "alternative_actual_quality_change": 0.001333290898848386,
+        "natural_cert": 0.42578125,
+        "uniform_cert": 0.17578125,
+        "forced_correct_and_cert": 0.0,
+        "forced_wrong_and_cert": 0.015625,
+        "harmful_forced_and_cert": 0.015625,
+        "source_correct_prob": 0.9023557695667208,
+        "null_source_mass": 0.017855380033969692
+      },
+      "support_questions": 4,
+      "mechanism_passed": false,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 39619.0
+          },
+          "random": {
+            "regret": 0.0021497799348313192,
+            "accuracy": 0.9289539098820488,
+            "net": 0.9286462926945488,
+            "wrong": 5.75,
+            "false_drop": 4.9375,
+            "false_keep": 0.8125,
+            "variable_tokens": 39126.0,
+            "all_tokens": 283220.0,
+            "available_variable_tokens": 39619.0
+          },
+          "diameter": {
+            "regret": 0.00011312088814773083,
+            "accuracy": 0.9310735767412324,
+            "net": 0.9306829517412323,
+            "wrong": 4.0,
+            "false_drop": 3.0,
+            "false_keep": 1.0,
+            "variable_tokens": 38288.0,
+            "all_tokens": 282382.0,
+            "available_variable_tokens": 39619.0
+          },
+          "uncertainty": {
+            "regret": 0.0024828191325879166,
+            "accuracy": 0.9287038784967923,
+            "net": 0.9283132534967922,
+            "wrong": 2.0,
+            "false_drop": 2.0,
+            "false_keep": 0.0,
+            "variable_tokens": 39088.0,
+            "all_tokens": 283182.0,
+            "available_variable_tokens": 39619.0
+          },
+          "margin": {
+            "regret": 0.0025301651379650405,
+            "accuracy": 0.9286565324914151,
+            "net": 0.928265907491415,
+            "wrong": 4.0,
+            "false_drop": 3.0,
+            "false_keep": 1.0,
+            "variable_tokens": 38480.0,
+            "all_tokens": 282574.0,
+            "available_variable_tokens": 39619.0
+          },
+          "bound": {
+            "regret": 5.479821595163493e-05,
+            "accuracy": 0.9310928369134284,
+            "net": 0.9307412744134285,
+            "wrong": 3.0,
+            "false_drop": 3.0,
+            "false_keep": 0.0,
+            "variable_tokens": 39008.0,
+            "all_tokens": 283102.0,
+            "available_variable_tokens": 39619.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 99048.0
+          },
+          "random": {
+            "regret": 0.0013867698314955195,
+            "accuracy": 0.9297901621728846,
+            "net": 0.9294093027978846,
+            "wrong": 3.625,
+            "false_drop": 2.9375,
+            "false_keep": 0.6875,
+            "variable_tokens": 98374.0,
+            "all_tokens": 342468.0,
+            "available_variable_tokens": 99048.0
+          },
+          "diameter": {
+            "regret": 1.9950157250805588e-05,
+            "accuracy": 0.9312058099721293,
+            "net": 0.9307761224721293,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 97712.0,
+            "all_tokens": 341806.0,
+            "available_variable_tokens": 99048.0
+          },
+          "uncertainty": {
+            "regret": 0.0013200412370711525,
+            "accuracy": 0.929905718892309,
+            "net": 0.9294760313923089,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 98944.0,
+            "all_tokens": 343038.0,
+            "available_variable_tokens": 99048.0
+          },
+          "margin": {
+            "regret": 0.0013474370851974705,
+            "accuracy": 0.9299173855441827,
+            "net": 0.9294486355441827,
+            "wrong": 2.0,
+            "false_drop": 1.0,
+            "false_keep": 1.0,
+            "variable_tokens": 98992.0,
+            "all_tokens": 343086.0,
+            "available_variable_tokens": 99048.0
+          },
+          "bound": {
+            "regret": 5.479821595163493e-05,
+            "accuracy": 0.9310928369134284,
+            "net": 0.9307412744134285,
+            "wrong": 3.0,
+            "false_drop": 3.0,
+            "false_keep": 0.0,
+            "variable_tokens": 98400.0,
+            "all_tokens": 342494.0,
+            "available_variable_tokens": 99048.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 198096.0
+          },
+          "random": {
+            "regret": 0.0003192269875788127,
+            "accuracy": 0.9309309472043013,
+            "net": 0.9304768456418013,
+            "wrong": 0.875,
+            "false_drop": 0.625,
+            "false_keep": 0.25,
+            "variable_tokens": 197363.0,
+            "all_tokens": 441457.0,
+            "available_variable_tokens": 198096.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 198064.0,
+            "all_tokens": 442158.0,
+            "available_variable_tokens": 198096.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 197904.0,
+            "all_tokens": 441998.0,
+            "available_variable_tokens": 198096.0
+          },
+          "margin": {
+            "regret": 2.7395848126318082e-05,
+            "accuracy": 0.9312764892812537,
+            "net": 0.9307686767812537,
+            "wrong": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 1.0,
+            "variable_tokens": 198096.0,
+            "all_tokens": 442190.0,
+            "available_variable_tokens": 198096.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 197184.0,
+            "all_tokens": 441278.0,
+            "available_variable_tokens": 198096.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.0026250018805321837,
+            "accuracy": 0.9284445082488479,
+            "net": 0.928171070748848,
+            "wrong": 7.0,
+            "false_drop": 6.0,
+            "false_keep": 1.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 396192.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 224256.0,
+            "all_tokens": 468350.0,
+            "available_variable_tokens": 396192.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 224256.0,
+            "all_tokens": 468350.0,
+            "available_variable_tokens": 396192.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 224256.0,
+            "all_tokens": 468350.0,
+            "available_variable_tokens": 396192.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 224256.0,
+            "all_tokens": 468350.0,
+            "available_variable_tokens": 396192.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.93126482262938,
+            "net": 0.93079607262938,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 224256.0,
+            "all_tokens": 468350.0,
+            "available_variable_tokens": 396192.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.002605051723281378,
+        0.0013964491022448121,
+        0.0012391857606904237,
+        0.0012518284391796139,
+        0.0012701125847602015,
+        0.001275898783664495,
+        0.001219235603439618,
+        0.0025685441726093295,
+        0.0026250018805321837,
+        0.0024828191325879166,
+        5.786198904293381e-06,
+        0.001325827435975446,
+        0.0013474370851974705,
+        0.0014364876288603203,
+        8.219406407795302e-05,
+        5.6457707922854043e-05
+      ],
+      "blocks": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    "1_2_0_shuffled_note": {
+      "conditions": {
+        "natural_K": 0.04177473210556973,
+        "other_sender_K": 0.04021266366935816,
+        "cpt_diameter": 0.10421647015336383,
+        "maximal_single": 0.09090536137033506,
+        "uniform_K": 0.05716974078877175,
+        "natural_abs_credit": 0.006133526741358563,
+        "forced_any": 0.09375,
+        "forced_and_certified": 0.015625,
+        "natural_mass_strong": 0.017882180800106312,
+        "observable_overlap": 0.01171875,
+        "source_replacement_decision_changed": 0.02734375,
+        "source_replacement_certificate_changed": 0.05078125,
+        "difference_saturated_by_rare": 0.27734375,
+        "alternative_actual_quality_change": -0.0015788299338608583,
+        "natural_cert": 0.421875,
+        "uniform_cert": 0.17578125,
+        "forced_correct_and_cert": 0.0,
+        "forced_wrong_and_cert": 0.015625,
+        "harmful_forced_and_cert": 0.015625,
+        "source_correct_prob": 0.8509667050496855,
+        "null_source_mass": 0.017882180800106312
+      },
+      "support_questions": 4,
+      "mechanism_passed": false,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 39619.0
+          },
+          "random": {
+            "regret": 0.0005902719375417892,
+            "accuracy": 0.9192280660139938,
+            "net": 0.9189912496077437,
+            "wrong": 4.9375,
+            "false_drop": 4.9375,
+            "false_keep": 0.0,
+            "variable_tokens": 39075.0,
+            "all_tokens": 283169.0,
+            "available_variable_tokens": 39619.0
+          },
+          "diameter": {
+            "regret": 0.00035278275287100566,
+            "accuracy": 0.9195021762924145,
+            "net": 0.9192287387924145,
+            "wrong": 4.0,
+            "false_drop": 4.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38288.0,
+            "all_tokens": 282382.0,
+            "available_variable_tokens": 39619.0
+          },
+          "uncertainty": {
+            "regret": 0.0002938679955365798,
+            "accuracy": 0.9196782785497489,
+            "net": 0.919287653549749,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 39088.0,
+            "all_tokens": 283182.0,
+            "available_variable_tokens": 39619.0
+          },
+          "margin": {
+            "regret": 0.0006408677358769391,
+            "accuracy": 0.9192140913094087,
+            "net": 0.9189406538094086,
+            "wrong": 4.0,
+            "false_drop": 4.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38336.0,
+            "all_tokens": 282430.0,
+            "available_variable_tokens": 39619.0
+          },
+          "bound": {
+            "regret": 0.00035288724562503585,
+            "accuracy": 0.9195020717996605,
+            "net": 0.9192286342996605,
+            "wrong": 4.0,
+            "false_drop": 4.0,
+            "false_keep": 0.0,
+            "variable_tokens": 38736.0,
+            "all_tokens": 282830.0,
+            "available_variable_tokens": 39619.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 99048.0
+          },
+          "random": {
+            "regret": 0.00043602165679644013,
+            "accuracy": 0.9194433514509892,
+            "net": 0.9191454998884891,
+            "wrong": 3.375,
+            "false_drop": 3.375,
+            "false_keep": 0.0,
+            "variable_tokens": 98588.0,
+            "all_tokens": 342682.0,
+            "available_variable_tokens": 99048.0
+          },
+          "diameter": {
+            "regret": 1.9972709750681436e-05,
+            "accuracy": 0.919952173835535,
+            "net": 0.9195615488355349,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 97952.0,
+            "all_tokens": 342046.0,
+            "available_variable_tokens": 99048.0
+          },
+          "uncertainty": {
+            "regret": 0.0002938679955365798,
+            "accuracy": 0.9196782785497489,
+            "net": 0.919287653549749,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 98848.0,
+            "all_tokens": 342942.0,
+            "available_variable_tokens": 99048.0
+          },
+          "margin": {
+            "regret": 0.0005919377497689152,
+            "accuracy": 0.9193411462955166,
+            "net": 0.9189895837955167,
+            "wrong": 2.0,
+            "false_drop": 2.0,
+            "false_keep": 0.0,
+            "variable_tokens": 99040.0,
+            "all_tokens": 343134.0,
+            "available_variable_tokens": 99048.0
+          },
+          "bound": {
+            "regret": 5.481749139270041e-05,
+            "accuracy": 0.9198392040538929,
+            "net": 0.9195267040538929,
+            "wrong": 3.0,
+            "false_drop": 3.0,
+            "false_keep": 0.0,
+            "variable_tokens": 98400.0,
+            "all_tokens": 342494.0,
+            "available_variable_tokens": 99048.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 198096.0
+          },
+          "random": {
+            "regret": 0.00013868642897424272,
+            "accuracy": 0.9198432257413114,
+            "net": 0.9194428351163113,
+            "wrong": 0.75,
+            "false_drop": 0.75,
+            "false_keep": 0.0,
+            "variable_tokens": 197390.0,
+            "all_tokens": 441484.0,
+            "available_variable_tokens": 198096.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 198096.0,
+            "all_tokens": 442190.0,
+            "available_variable_tokens": 198096.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 198000.0,
+            "all_tokens": 442094.0,
+            "available_variable_tokens": 198096.0
+          },
+          "margin": {
+            "regret": 0.0002980697542323355,
+            "accuracy": 0.9196740767910532,
+            "net": 0.9192834517910533,
+            "wrong": 1.0,
+            "false_drop": 1.0,
+            "false_keep": 0.0,
+            "variable_tokens": 196784.0,
+            "all_tokens": 440878.0,
+            "available_variable_tokens": 198096.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 197312.0,
+            "all_tokens": 441406.0,
+            "available_variable_tokens": 198096.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.000675712517518958,
+            "accuracy": 0.9191011215277667,
+            "net": 0.9189058090277666,
+            "wrong": 6.0,
+            "false_drop": 6.0,
+            "false_keep": 0.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 244094.0,
+            "available_variable_tokens": 396192.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 225808.0,
+            "all_tokens": 469902.0,
+            "available_variable_tokens": 396192.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 225808.0,
+            "all_tokens": 469902.0,
+            "available_variable_tokens": 396192.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 225808.0,
+            "all_tokens": 469902.0,
+            "available_variable_tokens": 396192.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 225808.0,
+            "all_tokens": 469902.0,
+            "available_variable_tokens": 396192.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9200112090452855,
+            "net": 0.9195815215452856,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 225808.0,
+            "all_tokens": 469902.0,
+            "available_variable_tokens": 396192.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.0003560887997010504,
+        1.9972709750681436e-05,
+        0.0006119104595195967,
+        0.0006266780386569039,
+        0.0006409722286309693,
+        8.377476775004275e-05,
+        0.00032713152334370803,
+        0.0006408677358769391,
+        0.0006699295049883117,
+        0.00036187181223169677,
+        0.0006266780386569039,
+        3.484478164201897e-05,
+        5.801904546871492e-05,
+        0.0006499567952376302,
+        0.0006176934720502431,
+        0.0006499567952376302
+      ],
+      "blocks": [
+        0,
+        1,
+        2,
+        1
+      ]
+    },
+    "2_0_1_no_note": {
+      "conditions": {
+        "natural_K": 0.03145105793396312,
+        "other_sender_K": 0.006159012514178334,
+        "cpt_diameter": 0.08533427052214448,
+        "maximal_single": 0.08390185312129994,
+        "uniform_K": 0.03295878822063651,
+        "natural_abs_credit": 0.008020835432859991,
+        "forced_any": 0.04296875,
+        "forced_and_certified": 0.0,
+        "natural_mass_strong": 0.01287835931033349,
+        "observable_overlap": 0.0078125,
+        "source_replacement_decision_changed": 0.01171875,
+        "source_replacement_certificate_changed": 0.0625,
+        "difference_saturated_by_rare": 0.01171875,
+        "alternative_actual_quality_change": 0.0006622811508760478,
+        "natural_cert": 0.91015625,
+        "uniform_cert": 0.90234375,
+        "forced_correct_and_cert": 0.0,
+        "forced_wrong_and_cert": 0.0,
+        "harmful_forced_and_cert": 0.0,
+        "source_correct_prob": 0.9010197946077311,
+        "null_source_mass": 0.01287835931033349
+      },
+      "support_questions": 0,
+      "mechanism_passed": false,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 31408.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 31408.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 31408.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 31408.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 31408.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 31408.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 78520.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 78520.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 78520.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 78520.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 78520.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 78520.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 157040.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 157040.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 157040.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 157040.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 157040.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 157040.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.0005919916249966221,
+            "accuracy": 0.9067885031522365,
+            "net": 0.9065541281522363,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 202516.0,
+            "available_variable_tokens": 314080.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 314080.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 314080.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 314080.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 314080.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.907302369777233,
+            "net": 0.907146119777233,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 27264.0,
+            "all_tokens": 229780.0,
+            "available_variable_tokens": 314080.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blocks": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "2_0_1_true_note": {
+      "conditions": {
+        "natural_K": 0.030775494685922108,
+        "other_sender_K": 0.032164331313761285,
+        "cpt_diameter": 0.08533427052214448,
+        "maximal_single": 0.08390185312129994,
+        "uniform_K": 0.03295878822063651,
+        "natural_abs_credit": 0.01056228784671662,
+        "forced_any": 0.04296875,
+        "forced_and_certified": 0.015625,
+        "natural_mass_strong": 0.01563925779198575,
+        "observable_overlap": 0.0234375,
+        "source_replacement_decision_changed": 0.0078125,
+        "source_replacement_certificate_changed": 0.02734375,
+        "difference_saturated_by_rare": 0.02734375,
+        "alternative_actual_quality_change": 0.0017284723008267335,
+        "natural_cert": 0.92578125,
+        "uniform_cert": 0.90234375,
+        "forced_correct_and_cert": 0.0,
+        "forced_wrong_and_cert": 0.015625,
+        "harmful_forced_and_cert": 0.015625,
+        "source_correct_prob": 0.9636830988771208,
+        "null_source_mass": 0.015639257791985748
+      },
+      "support_questions": 4,
+      "mechanism_passed": false,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 31408.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 31408.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 31408.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 31408.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 31408.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 31408.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 78520.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 78520.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 78520.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 78520.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 78520.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 78520.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 157040.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 157040.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 157040.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 157040.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 157040.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 157040.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.00035750794152086894,
+            "accuracy": 0.9220794536457014,
+            "net": 0.9218060161457013,
+            "wrong": 5.0,
+            "false_drop": 1.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 314080.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 314080.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 314080.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 314080.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 314080.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9223197740872223,
+            "net": 0.9221635240872224,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 22688.0,
+            "all_tokens": 248311.0,
+            "available_variable_tokens": 314080.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blocks": [
+        0,
+        1,
+        3,
+        0
+      ]
+    },
+    "2_0_1_shuffled_note": {
+      "conditions": {
+        "natural_K": 0.030740357416369848,
+        "other_sender_K": 0.012603973478000116,
+        "cpt_diameter": 0.08533427052214448,
+        "maximal_single": 0.08390185312129994,
+        "uniform_K": 0.03295878822063651,
+        "natural_abs_credit": 0.00733864427163056,
+        "forced_any": 0.04296875,
+        "forced_and_certified": 0.0,
+        "natural_mass_strong": 0.012073356215187236,
+        "observable_overlap": 0.00390625,
+        "source_replacement_decision_changed": 0.01171875,
+        "source_replacement_certificate_changed": 0.0703125,
+        "difference_saturated_by_rare": 0.0078125,
+        "alternative_actual_quality_change": 0.001324741253221343,
+        "natural_cert": 0.90625,
+        "uniform_cert": 0.90234375,
+        "forced_correct_and_cert": 0.0,
+        "forced_wrong_and_cert": 0.0,
+        "harmful_forced_and_cert": 0.0,
+        "source_correct_prob": 0.8724956723298105,
+        "null_source_mass": 0.012073356215187236
+      },
+      "support_questions": 0,
+      "mechanism_passed": false,
+      "allocation_passed": false,
+      "budget_curves": {
+        "0.0": {
+          "stale": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "random": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "diameter": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "uncertainty": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "margin": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          },
+          "bound": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 0.0
+          }
+        },
+        "0.1": {
+          "stale": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 31408.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 31408.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 31408.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 31408.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 31408.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 31408.0
+          }
+        },
+        "0.25": {
+          "stale": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 78520.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 78520.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 78520.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 78520.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 78520.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 78520.0
+          }
+        },
+        "0.5": {
+          "stale": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 157040.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 157040.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 157040.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 157040.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 157040.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 157040.0
+          }
+        },
+        "1.0": {
+          "stale": {
+            "regret": 0.0005751766786019584,
+            "accuracy": 0.9014131179319463,
+            "net": 0.9011787429319463,
+            "wrong": 6.0,
+            "false_drop": 2.0,
+            "false_keep": 4.0,
+            "variable_tokens": 0.0,
+            "all_tokens": 225623.0,
+            "available_variable_tokens": 314080.0
+          },
+          "random": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 314080.0
+          },
+          "diameter": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 314080.0
+          },
+          "uncertainty": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 314080.0
+          },
+          "margin": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 314080.0
+          },
+          "bound": {
+            "regret": 0.0,
+            "accuracy": 0.9019101696105483,
+            "net": 0.9017539196105483,
+            "wrong": 0.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "variable_tokens": 28480.0,
+            "all_tokens": 254103.0,
+            "available_variable_tokens": 314080.0
+          }
+        }
+      },
+      "quarter_random_seed_regrets": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "blocks": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "independent_mechanism_passed": false,
+  "budget_mechanism_passed": false,
+  "cost": {
+    "actual_GPU_hours": 0.147042811844084,
+    "exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "global_actual": 94.66273367230876
+  },
+  "workers": [
+    {
+      "questions": 256,
+      "sequences": 7168,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    },
+    {
+      "questions": 256,
+      "sequences": 7168,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    },
+    {
+      "questions": 256,
+      "sequences": 7168,
+      "torch": "2.9.1+cu128",
+      "transformers": "4.54.0"
+    }
+  ],
+  "collection_input_tokens": [
+    699614,
+    562068,
+    699614
+  ]
+}
