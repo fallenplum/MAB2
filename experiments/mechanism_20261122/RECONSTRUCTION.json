@@ -1,0 +1,29 @@
+{
+  "panels": {
+    "blind": {
+      "frozen_input_matches": true,
+      "frozen_reference_matches": true
+    },
+    "passage": {
+      "frozen_input_matches": true,
+      "frozen_reference_matches": true
+    }
+  },
+  "independent_integer_completion_tests": 36,
+  "fixture_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "active_states": 2,
+  "observation_masks_per_case": 1024
+}

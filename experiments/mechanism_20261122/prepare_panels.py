@@ -1,5 +1,5 @@
 """Rebuild the two independent input manifests without exposing task instances in the repository."""
-import argparse,ast,collections,hashlib,json,re,unicodedata
+import argparse,ast,collections,hashlib,json,re,string,unicodedata
 from decimal import Decimal
 from pathlib import Path
 
@@ -110,6 +110,60 @@ def science(args):
     return data,gold,receipt
 
 
+def blind(args):
+    historical,_,_ = numeric(args)
+    old = {r['key'] for r in historical}
+    rows = []
+    for item in read(args.train).values():
+        raw = str(item.get('answer','')).strip().replace(',','')
+        if item.get('choices') or item.get('ques_type')!='free_text' or not re.fullmatch(r'-?\d+(?:\.\d+)?',raw):
+            continue
+        table, question = item.get('table'), item['question']
+        if not isinstance(table,str) or not table.strip() or len(table)>2400 or len(question)>800:
+            continue
+        title=item.get('table_title') or ''
+        stem=(title+'\n' if title else '')+table+'\n'+question
+        key=text_hash(' '.join(stem.lower().split()))
+        rows.append((key,'lower' if int(item['grade'])<=4 else 'upper',stem,item.get('unit') or '',str(Decimal(raw))))
+    counts=collections.Counter(r[0] for r in rows)
+    strata=[sorted((r for r in rows if r[1]==tag and r[0] not in old and counts[r[0]]==1),
+                   key=lambda r:text_hash('M50-blind-audit|'+r[0]))[:24] for tag in ('lower','upper')]
+    selected=[r for pair in zip(*strata) for r in pair]
+    receipt=read(STAGE/'M50_INPUT.json')
+    for name,method in [('utilities.py','extract_prediction'),('run_gpt3.py','normalize_answer')]:
+        source=(args.promptpg/name).read_text(encoding='utf8')
+        node=next(n for n in ast.parse(source).body if getattr(n,'name','')==method)
+        raw=(ast.get_source_segment(source,node)+'\n').encode()
+        assert digest(raw)==receipt['extras'][name]
+        dest=args.output/name
+        if dest.exists():assert dest.read_bytes()==raw
+        dest.write_bytes(raw)
+    return [dict(key=k,task=t,stem=s,unit=u) for k,t,s,u,y in selected],{k:y for k,t,s,u,y in selected},receipt
+
+
+def passage(args):
+    import pyarrow.parquet as pq
+    receipt=read(STAGE/'M54_INPUT.json')
+    assert digest(args.train.read_bytes())==receipt['train_sha256']
+    def normalized(text):
+        lower=''.join(c for c in text.lower() if c not in string.punctuation)
+        return ' '.join(re.sub(r'\b(a|an|the)\b',' ',lower).split())
+    questions={normalized(row['stem']) for p in args.prior for row in read(p)}
+    titles=set();contexts=set();inputs=[];gold={}
+    for row in sorted(pq.read_table(args.train).to_pylist(),key=lambda r:text_hash('M54-retrieved-evidence|'+r['id'])):
+        words=row['context'].split();n=len(words);q=normalized(row['question'])
+        answers={normalized(v) for v in row['answers']['text']}
+        if not 80<=n<=260 or len(answers)!=1 or answers & {'','noevidence','invalid'}:
+            continue
+        if row['title'] in titles or row['context'] in contexts or q in questions:continue
+        key=text_hash(q+'|'+row['context'])
+        sections=[' '.join(words[i*n//4:(i+1)*n//4]) for i in range(4)]
+        inputs.append(dict(key=key,question=row['question'],sections=sections));gold[key]=answers.pop()
+        titles.add(row['title']);questions.add(q);contexts.add(row['context'])
+        if len(inputs)==128:break
+    return inputs,gold,receipt
+
+
 def main():
     p=argparse.ArgumentParser()
     sub=p.add_subparsers(dest='panel',required=True)
@@ -122,9 +176,13 @@ def main():
     n.add_argument('--train',type=Path,required=True);n.add_argument('--agentprune',type=Path,required=True)
     sc=sub.add_parser('science');sc.add_argument('--train',type=Path,required=True)
     sc.add_argument('--prior',type=Path,action='append',default=[])
-    for s in (c,n,sc):s.add_argument('--output',type=Path,required=True)
+    b=sub.add_parser('blind')
+    for key in ('train','agentprune','promptpg'):b.add_argument('--'+key,type=Path,required=True)
+    e=sub.add_parser('passage');e.add_argument('--train',type=Path,required=True)
+    e.add_argument('--prior',type=Path,action='append',default=[])
+    for s in (c,n,sc,b,e):s.add_argument('--output',type=Path,required=True)
     args=p.parse_args();args.output.mkdir(exist_ok=True,parents=True)
-    inputs,gold,record={'choice':choice,'numeric':numeric,'science':science}[args.panel](args)
+    inputs,gold,record={'choice':choice,'numeric':numeric,'science':science,'blind':blind,'passage':passage}[args.panel](args)
     pending=[('INPUT.json',inputs,'input_sha256'),('SEALED.json',gold,'label_sha256')]
     for name,value,key in pending:
         if digest(json.dumps(value,ensure_ascii=False,sort_keys=True).encode())!=record[key]:
