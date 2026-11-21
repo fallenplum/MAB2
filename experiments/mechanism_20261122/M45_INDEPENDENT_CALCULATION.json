@@ -1,0 +1,6 @@
+{
+  "questions": 256,
+  "role_reader_realizations": 1024,
+  "largest_aggregate_discrepancy": 6.938893903907228e-17,
+  "verified_by": "separate laws and exhaustive enumeration of binary reward functions; no primary scoring imports"
+}
