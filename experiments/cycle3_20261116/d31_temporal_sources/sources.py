@@ -56,7 +56,12 @@ def read_all(path):
             with zipfile.ZipFile(io.BytesIO(raw)) as z:
                 ns=[x for x in z.namelist() if 'train' in x and x.endswith('.json') and not x.startswith('__MACOSX')]; assert len(ns)==1
                 raw=z.read(ns[0])
-    return json.loads(raw)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError as exc:
+        if exc.msg != 'Extra data':
+            raise
+        return [json.loads(line) for line in raw.splitlines() if line.strip()]
 
 def audit(directory):
     inventory={}

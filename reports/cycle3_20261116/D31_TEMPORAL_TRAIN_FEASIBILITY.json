@@ -1,0 +1,77 @@
+{
+  "sources": {
+    "situated_train.jsonl": {
+      "sha256": "e9d837cb75fd1fa35a1609e6397b20ab0ba2f73bda524e2ed8f5a41cab8c1084",
+      "outer_type": "list",
+      "count": 6009,
+      "first_row_field_names": [
+        "answer",
+        "any_answer",
+        "date",
+        "date_type",
+        "edited_question",
+        "id",
+        "question"
+      ]
+    },
+    "situated_raw_train.jsonl": {
+      "sha256": "3e0a9df82f48ab3530d49cb9eeaa705a61366532794a7efc8215636ef483a7d4",
+      "outer_type": "list",
+      "count": 2904,
+      "first_row_field_names": [
+        "context_answer_pairs",
+        "cur_answers",
+        "id",
+        "is_dependent",
+        "nq_answers",
+        "prev_answers",
+        "question",
+        "timelines"
+      ]
+    },
+    "timeqa_annotated_train.json": {
+      "sha256": "99eec0514569ecbdea087ae3751a1e7d5ae0e45fcf82f9b4e9226f30967939b5",
+      "outer_type": "list",
+      "count": 320,
+      "first_row_field_names": [
+        "index",
+        "link",
+        "paras",
+        "questions",
+        "type"
+      ]
+    },
+    "timeqa_easy_train.json.gzip": {
+      "sha256": "3625d59504d4b7b8a2f9aa18c70990615a691d9e8791324e6e57152165b3847f",
+      "outer_type": "list",
+      "count": 1171,
+      "first_row_field_names": [
+        "context",
+        "end",
+        "from",
+        "idx",
+        "paragraphs",
+        "question",
+        "targets"
+      ]
+    }
+  },
+  "situated_question_groups": 2667,
+  "situated_multi_date_groups": 981,
+  "situated_groups_disjoint_literal_aliases_across_dates": 668,
+  "date_type_counts": {
+    "sampled_year": 2077,
+    "start": 1680,
+    "orig": 1656,
+    "sampled_date": 596
+  },
+  "other_split_reads": 0,
+  "GPU_hours": 0,
+  "timeqa_unique_pages": 318,
+  "timeqa_page_relation_groups": 320,
+  "situated_raw_rows_with_named_evidence_field": 0,
+  "timeqa_articles_are_retrospective": true,
+  "evidence_snapshot_pair_verified": false,
+  "project_exposure_status": "NOT_CERTIFIED",
+  "status": "TRAIN_ONLY_SOURCE_STRUCTURE_VERIFIED"
+}
