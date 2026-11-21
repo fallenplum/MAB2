@@ -4,9 +4,9 @@
   "status": "ACTIVE",
   "old_negative_results_preserved": true,
   "charged_before_cycle": 93.37976313880533,
-  "charged_this_cycle": 0.4225626643498739,
-  "cumulative_gpu_hours": 93.8023258031552,
-  "reserved_gpu_hours": 4,
+  "charged_this_cycle": 1.8351309135225087,
+  "cumulative_gpu_hours": 95.21489405232785,
+  "reserved_gpu_hours": 9,
   "cap_gpu_hours": 160,
   "formal_jobs": {
     "M38": {
@@ -50,17 +50,42 @@
       ]
     },
     "M46": {
-      "status": "in_flight"
+      "status": "closed",
+      "charged_gpu_hours": 0.7133650573094686,
+      "exit_codes": [
+        0,
+        0
+      ]
     },
     "M48": {
+      "status": "closed",
+      "charged_gpu_hours": 0.552160380019082,
+      "exit_codes": [
+        0,
+        0
+      ]
+    },
+    "M49": {
+      "status": "closed",
+      "charged_gpu_hours": 0.147042811844084,
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M50": {
+      "status": "in_flight"
+    },
+    "M54": {
       "status": "in_flight"
     }
   },
   "active_jobs": [
-    "M46",
-    "M48"
+    "M50",
+    "M54"
   ],
   "status_is_last_verified_snapshot": true,
   "sealed_original_tests_accessed": false,
-  "evaluation_level": "M38/M40 development; M43 and M45 matched fresh ARC and CommonsenseQA panel; M46 external open numeric task; M48 hardware replication subset; M49 external SciQ single-use"
+  "evaluation_level": "M43/M45 matched ARC and CommonsenseQA. M46 exploratory TabMWP, M48 physical subset replication, M49 independent SciQ, M50 independent TabMWP with delayed feedback, M54 independent distinct-article SQuAD. Role permutations reuse questions."
 }
