@@ -92,6 +92,24 @@ def numeric(args):
     return inputs,gold,record
 
 
+def science(args):
+    import pyarrow.parquet as pq
+    receipt=read(STAGE/'M49_INPUT.json');assert digest(args.train.read_bytes())==receipt['train_sha256']
+    rows=pq.read_table(args.train).to_pylist();counts=collections.Counter(norm(row['question']) for row in rows)
+    past={norm(row['stem']) for p in args.prior for row in read(p)}
+    data=[];gold={};supports=set()
+    for row in sorted(rows,key=lambda r:text_hash('M49-SciQ-source-support|'+norm(r['question']))):
+        q=norm(row['question']);sup=norm(row['support'])
+        options=[row[k].strip() for k in ('correct_answer','distractor1','distractor2','distractor3')]
+        if counts[q]!=1 or q in past or sup in supports or not 20<=len(row['support'].split())<=200 or len(set(map(norm,options)))!=4 or not all(options):continue
+        supports.add(sup);key=text_hash(q);opts=sorted(options,key=lambda v:text_hash(key+'|'+norm(v)))
+        data.append(dict(key=key,stem=row['question'],options=opts,support=row['support']));gold[key]=opts.index(options[0])
+        if len(data)==256:break
+    ix=sorted(range(len(data)),key=lambda i:(len(data[i]['support'].split()),data[i]['key']))
+    for i,j in zip(ix[::2],ix[1::2]):data[i]['control']=data[j]['support'];data[j]['control']=data[i]['support']
+    return data,gold,receipt
+
+
 def main():
     p=argparse.ArgumentParser()
     sub=p.add_subparsers(dest='panel',required=True)
@@ -102,9 +120,11 @@ def main():
     c.add_argument('--prior',type=Path,action='append',default=[])
     n=sub.add_parser('numeric')
     n.add_argument('--train',type=Path,required=True);n.add_argument('--agentprune',type=Path,required=True)
-    for s in (c,n):s.add_argument('--output',type=Path,required=True)
+    sc=sub.add_parser('science');sc.add_argument('--train',type=Path,required=True)
+    sc.add_argument('--prior',type=Path,action='append',default=[])
+    for s in (c,n,sc):s.add_argument('--output',type=Path,required=True)
     args=p.parse_args();args.output.mkdir(exist_ok=True,parents=True)
-    inputs,gold,record=(choice if args.panel=='choice' else numeric)(args)
+    inputs,gold,record={'choice':choice,'numeric':numeric,'science':science}[args.panel](args)
     pending=[('INPUT.json',inputs,'input_sha256'),('SEALED.json',gold,'label_sha256')]
     for name,value,key in pending:
         if digest(json.dumps(value,ensure_ascii=False,sort_keys=True).encode())!=record[key]:
