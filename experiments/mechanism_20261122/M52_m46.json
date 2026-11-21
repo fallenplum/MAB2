@@ -1,0 +1,377 @@
+{
+  "cells": {
+    "lower_0_0.005": {
+      "gold": 1182.578125,
+      "hardest": 1398.4140625,
+      "all_numeric": 1798.359375,
+      "hard_minus_gold": 215.8359375,
+      "simultaneous_extra": 399.9453125,
+      "gold_reached": 0.921875,
+      "strict_extra": 0.4140625,
+      "true_gold_easier": 0.3359375,
+      "valid_categories": 4.6875,
+      "joint": 1847.609375,
+      "row_first": 2103.9375,
+      "nested": 2610.7890625,
+      "unpriced": 1854.5546875,
+      "hardest_share_of_premium": 0.3505074854097945,
+      "premium": 0.5207108409856642,
+      "joint_to_minimum": 1.0273860723749946,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 10,
+          "gold": 1254.7,
+          "all_numeric": 1729.3
+        },
+        "True": {
+          "instances": 118,
+          "gold": 1176.4661016949153,
+          "all_numeric": 1804.2118644067796
+        }
+      }
+    },
+    "lower_0_0.01": {
+      "gold": 1082.25,
+      "hardest": 1306.5625,
+      "all_numeric": 1603.453125,
+      "hard_minus_gold": 224.3125,
+      "simultaneous_extra": 296.890625,
+      "gold_reached": 0.921875,
+      "strict_extra": 0.328125,
+      "true_gold_easier": 0.3203125,
+      "valid_categories": 4.6875,
+      "joint": 1670.3671875,
+      "row_first": 1908.9453125,
+      "nested": 2320.921875,
+      "unpriced": 1667.390625,
+      "hardest_share_of_premium": 0.43037443415175225,
+      "premium": 0.4815921690921692,
+      "joint_to_minimum": 1.0417312246031514,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 10,
+          "gold": 1004.8,
+          "all_numeric": 1269.9
+        },
+        "True": {
+          "instances": 118,
+          "gold": 1088.8135593220338,
+          "all_numeric": 1631.7203389830509
+        }
+      }
+    },
+    "lower_0_0.02": {
+      "gold": 1037.546875,
+      "hardest": 1243.515625,
+      "all_numeric": 1526.3828125,
+      "hard_minus_gold": 205.96875,
+      "simultaneous_extra": 282.8671875,
+      "gold_reached": 0.921875,
+      "strict_extra": 0.2890625,
+      "true_gold_easier": 0.3046875,
+      "valid_categories": 4.6875,
+      "joint": 1571.5234375,
+      "row_first": 1793.703125,
+      "nested": 2167.4140625,
+      "unpriced": 1570.34375,
+      "hardest_share_of_premium": 0.421345351680491,
+      "premium": 0.4711458819631644,
+      "joint_to_minimum": 1.029573593616444,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 10,
+          "gold": 983.6,
+          "all_numeric": 1334.2
+        },
+        "True": {
+          "instances": 118,
+          "gold": 1042.1186440677966,
+          "all_numeric": 1542.6694915254238
+        }
+      }
+    },
+    "upper_0_0.005": {
+      "gold": 1124.546875,
+      "hardest": 1419.2734375,
+      "all_numeric": 1744.6015625,
+      "hard_minus_gold": 294.7265625,
+      "simultaneous_extra": 325.328125,
+      "gold_reached": 0.84375,
+      "strict_extra": 0.3671875,
+      "true_gold_easier": 0.34375,
+      "valid_categories": 4.703125,
+      "joint": 1782.015625,
+      "row_first": 2008.25,
+      "nested": 2638.0390625,
+      "unpriced": 1792.3125,
+      "hardest_share_of_premium": 0.47532349717136846,
+      "premium": 0.5513818065609759,
+      "joint_to_minimum": 1.021445620194439,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 20,
+          "gold": 1156.45,
+          "all_numeric": 1602.55
+        },
+        "True": {
+          "instances": 108,
+          "gold": 1118.638888888889,
+          "all_numeric": 1770.9074074074074
+        }
+      }
+    },
+    "upper_0_0.01": {
+      "gold": 1042.7109375,
+      "hardest": 1254.6015625,
+      "all_numeric": 1572.3046875,
+      "hard_minus_gold": 211.890625,
+      "simultaneous_extra": 317.703125,
+      "gold_reached": 0.84375,
+      "strict_extra": 0.34375,
+      "true_gold_easier": 0.296875,
+      "valid_categories": 4.703125,
+      "joint": 1594.7890625,
+      "row_first": 1814.828125,
+      "nested": 2277.9296875,
+      "unpriced": 1612.90625,
+      "hardest_share_of_premium": 0.40010031273971797,
+      "premium": 0.5079008294185079,
+      "joint_to_minimum": 1.0143002658319047,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 20,
+          "gold": 1056.5,
+          "all_numeric": 1457.9
+        },
+        "True": {
+          "instances": 108,
+          "gold": 1040.1574074074074,
+          "all_numeric": 1593.4907407407406
+        }
+      }
+    },
+    "upper_0_0.02": {
+      "gold": 972.71875,
+      "hardest": 1144.3671875,
+      "all_numeric": 1419.6328125,
+      "hard_minus_gold": 171.6484375,
+      "simultaneous_extra": 275.265625,
+      "gold_reached": 0.84375,
+      "strict_extra": 0.296875,
+      "true_gold_easier": 0.265625,
+      "valid_categories": 4.703125,
+      "joint": 1430.625,
+      "row_first": 1625.53125,
+      "nested": 2055.4140625,
+      "unpriced": 1426.3515625,
+      "hardest_share_of_premium": 0.38407481863473475,
+      "premium": 0.4594483888585472,
+      "joint_to_minimum": 1.0077429793135328,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 20,
+          "gold": 946.8,
+          "all_numeric": 1259.2
+        },
+        "True": {
+          "instances": 108,
+          "gold": 977.5185185185185,
+          "all_numeric": 1449.3425925925926
+        }
+      }
+    },
+    "lower_1_0.005": {
+      "gold": 1150.1796875,
+      "hardest": 1386.34375,
+      "all_numeric": 1816.78125,
+      "hard_minus_gold": 236.1640625,
+      "simultaneous_extra": 430.4375,
+      "gold_reached": 0.890625,
+      "strict_extra": 0.453125,
+      "true_gold_easier": 0.4375,
+      "valid_categories": 3.109375,
+      "joint": 1877.4921875,
+      "row_first": 2124.484375,
+      "nested": 2639.34375,
+      "unpriced": 1882.0859375,
+      "hardest_share_of_premium": 0.3542806914737767,
+      "premium": 0.5795629758937122,
+      "joint_to_minimum": 1.0334167569706039,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 14,
+          "gold": 1115.7142857142858,
+          "all_numeric": 1524.7142857142858
+        },
+        "True": {
+          "instances": 114,
+          "gold": 1154.4122807017543,
+          "all_numeric": 1852.6491228070176
+        }
+      }
+    },
+    "lower_1_0.01": {
+      "gold": 1082.3203125,
+      "hardest": 1261.9375,
+      "all_numeric": 1601.90625,
+      "hard_minus_gold": 179.6171875,
+      "simultaneous_extra": 339.96875,
+      "gold_reached": 0.890625,
+      "strict_extra": 0.3828125,
+      "true_gold_easier": 0.390625,
+      "valid_categories": 3.109375,
+      "joint": 1691.9765625,
+      "row_first": 1930.5625,
+      "nested": 2364.84375,
+      "unpriced": 1690.796875,
+      "hardest_share_of_premium": 0.34569293457831507,
+      "premium": 0.48006669698347726,
+      "joint_to_minimum": 1.056226956165506,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 14,
+          "gold": 984.0,
+          "all_numeric": 1245.4285714285713
+        },
+        "True": {
+          "instances": 114,
+          "gold": 1094.3947368421052,
+          "all_numeric": 1645.6842105263158
+        }
+      }
+    },
+    "lower_1_0.02": {
+      "gold": 1036.6875,
+      "hardest": 1193.171875,
+      "all_numeric": 1498.625,
+      "hard_minus_gold": 156.484375,
+      "simultaneous_extra": 305.453125,
+      "gold_reached": 0.890625,
+      "strict_extra": 0.34375,
+      "true_gold_easier": 0.359375,
+      "valid_categories": 3.109375,
+      "joint": 1586.5703125,
+      "row_first": 1812.3515625,
+      "nested": 2189.4296875,
+      "unpriced": 1585.390625,
+      "hardest_share_of_premium": 0.33875659585982953,
+      "premium": 0.4455899198167239,
+      "joint_to_minimum": 1.058684002001835,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 14,
+          "gold": 901.8571428571429,
+          "all_numeric": 1100.5
+        },
+        "True": {
+          "instances": 114,
+          "gold": 1053.2456140350878,
+          "all_numeric": 1547.517543859649
+        }
+      }
+    },
+    "upper_1_0.005": {
+      "gold": 1227.7890625,
+      "hardest": 1423.3203125,
+      "all_numeric": 1709.3203125,
+      "hard_minus_gold": 195.53125,
+      "simultaneous_extra": 286.0,
+      "gold_reached": 0.765625,
+      "strict_extra": 0.328125,
+      "true_gold_easier": 0.3125,
+      "valid_categories": 3.46875,
+      "joint": 1802.546875,
+      "row_first": 2028.78125,
+      "nested": 2671.28125,
+      "unpriced": 1812.03125,
+      "hardest_share_of_premium": 0.40606139269258223,
+      "premium": 0.3921937934676789,
+      "joint_to_minimum": 1.0545401361103874,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 30,
+          "gold": 1120.9,
+          "all_numeric": 1490.0333333333333
+        },
+        "True": {
+          "instances": 98,
+          "gold": 1260.5102040816328,
+          "all_numeric": 1776.4489795918366
+        }
+      }
+    },
+    "upper_1_0.01": {
+      "gold": 1122.890625,
+      "hardest": 1281.921875,
+      "all_numeric": 1538.8359375,
+      "hard_minus_gold": 159.03125,
+      "simultaneous_extra": 256.9140625,
+      "gold_reached": 0.765625,
+      "strict_extra": 0.296875,
+      "true_gold_easier": 0.2890625,
+      "valid_categories": 3.46875,
+      "joint": 1646.015625,
+      "row_first": 1866.0546875,
+      "nested": 2386.984375,
+      "unpriced": 1668.5859375,
+      "hardest_share_of_premium": 0.38233692079412485,
+      "premium": 0.37042371112502614,
+      "joint_to_minimum": 1.069649846931782,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 30,
+          "gold": 957.0,
+          "all_numeric": 1229.0
+        },
+        "True": {
+          "instances": 98,
+          "gold": 1173.6734693877552,
+          "all_numeric": 1633.6836734693877
+        }
+      }
+    },
+    "upper_1_0.02": {
+      "gold": 1033.171875,
+      "hardest": 1173.03125,
+      "all_numeric": 1353.578125,
+      "hard_minus_gold": 139.859375,
+      "simultaneous_extra": 180.546875,
+      "gold_reached": 0.765625,
+      "strict_extra": 0.21875,
+      "true_gold_easier": 0.2421875,
+      "valid_categories": 3.46875,
+      "joint": 1440.578125,
+      "row_first": 1636.8984375,
+      "nested": 2066.453125,
+      "unpriced": 1436.3046875,
+      "hardest_share_of_premium": 0.4365063883741344,
+      "premium": 0.3101190206130999,
+      "joint_to_minimum": 1.0642740883537845,
+      "instances": 128,
+      "by_reachability": {
+        "False": {
+          "instances": 30,
+          "gold": 921.6333333333333,
+          "all_numeric": 1193.6333333333334
+        },
+        "True": {
+          "instances": 98,
+          "gold": 1067.3163265306123,
+          "all_numeric": 1402.5408163265306
+        }
+      }
+    }
+  },
+  "added_gpu_hours": 0
+}
