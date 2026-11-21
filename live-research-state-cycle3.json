@@ -10,7 +10,7 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": true,
   "resident_profile_acceptance_pending": false,
-  "next": "FROZEN_PAID_CROSS_QUESTION_DEVELOPMENT",
+  "next": "CROSS_ROUTE_EVIDENCE_REVIEW",
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 0,
   "eligible_server_outputs_at_check": null,
@@ -33,5 +33,6 @@
   "D32": "NO_QUALIFIED_TEMPORAL_RETRIEVAL_MECHANISM",
   "D33": "NO_QUALIFIED_VOTE_TRANSPORT_SIGNAL",
   "D34": "STRUCTURAL_ATTRIBUTION_NOT_QUALIFIED",
-  "D35": "ADMIT_PAID_POLICY_DEVELOPMENT"
+  "D35": "ADMIT_PAID_POLICY_DEVELOPMENT",
+  "D36": "NO_PAID_CROSS_QUESTION_GAIN"
 }
