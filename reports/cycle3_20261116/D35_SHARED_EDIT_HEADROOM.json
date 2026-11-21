@@ -1,0 +1,284 @@
+{
+  "status": "ADMIT_PAID_POLICY_DEVELOPMENT",
+  "tasks": {
+    "hotpot": {
+      "folds": [
+        {
+          "groups": 24,
+          "shock_counts": [
+            9,
+            4,
+            11
+          ]
+        },
+        {
+          "groups": 24,
+          "shock_counts": [
+            12,
+            5,
+            7
+          ]
+        },
+        {
+          "groups": 24,
+          "shock_counts": [
+            10,
+            8,
+            6
+          ]
+        },
+        {
+          "groups": 24,
+          "shock_counts": [
+            6,
+            8,
+            10
+          ]
+        }
+      ],
+      "methods": {
+        "keep": {
+          "EM": 0.6184895833333334,
+          "utility": 0.5943495833333333,
+          "service_tokens": 4828.0,
+          "delta_by_fold_vs_old_by_shock": [
+            0.08402442708333334,
+            -0.04744919270833333,
+            0.08190432291666667,
+            0.005027916666666674
+          ],
+          "corrections_vs_old_by_shock": 73,
+          "harms_vs_old_by_shock": 40,
+          "source_terminal_observations": 768
+        },
+        "no_note": {
+          "EM": 0.6067708333333334,
+          "utility": 0.5994165755208334,
+          "service_tokens": 1470.8515625,
+          "delta_by_fold_vs_old_by_shock": [
+            0.06360583333333332,
+            0.08963531250000001,
+            -0.020642005208333338,
+            0.011176302083333332
+          ],
+          "corrections_vs_old_by_shock": 56,
+          "harms_vs_old_by_shock": 32,
+          "source_terminal_observations": 768
+        },
+        "old_global": {
+          "EM": 0.5690104166666666,
+          "utility": 0.5532387109375,
+          "service_tokens": 3154.3411458333335,
+          "delta_by_fold_vs_old_by_shock": [
+            0.07280544270833332,
+            -0.09825955729166667,
+            -0.020642005208333338,
+            0.005160104166666672
+          ],
+          "corrections_vs_old_by_shock": 48,
+          "harms_vs_old_by_shock": 53,
+          "source_terminal_observations": 768
+        },
+        "old_by_shock": {
+          "EM": 0.5755208333333334,
+          "utility": 0.5634727148437499,
+          "service_tokens": 2409.6236979166665,
+          "delta_by_fold_vs_old_by_shock": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "corrections_vs_old_by_shock": 0,
+          "harms_vs_old_by_shock": 0,
+          "source_terminal_observations": 768
+        },
+        "train_current_by_shock": {
+          "EM": 0.55859375,
+          "utility": 0.5469884440104167,
+          "service_tokens": 2321.0611979166665,
+          "delta_by_fold_vs_old_by_shock": [
+            0.03259526041666667,
+            -0.0029471093750000044,
+            -0.020642005208333338,
+            -0.07494322916666667
+          ],
+          "corrections_vs_old_by_shock": 25,
+          "harms_vs_old_by_shock": 38,
+          "source_terminal_observations": 768
+        },
+        "hindsight_by_shock": {
+          "EM": 0.7083333333333334,
+          "utility": 0.6946506640625,
+          "service_tokens": 2736.5338541666665,
+          "delta_by_fold_vs_old_by_shock": [
+            0.17432364583333335,
+            0.09061953125000001,
+            0.20545388020833336,
+            0.05431473958333333
+          ],
+          "corrections_vs_old_by_shock": 115,
+          "harms_vs_old_by_shock": 13,
+          "source_terminal_observations": 768
+        },
+        "hindsight_per_question": {
+          "EM": 0.7317708333333334,
+          "utility": 0.7226205664062499,
+          "service_tokens": 1830.0533854166667,
+          "delta_by_fold_vs_old_by_shock": [
+            0.18718742187499995,
+            0.10456625000000001,
+            0.24139940104166666,
+            0.10343833333333334
+          ],
+          "corrections_vs_old_by_shock": 124,
+          "harms_vs_old_by_shock": 4,
+          "source_terminal_observations": 768
+        }
+      },
+      "oracle_delta_vs_strongest_cheap": 0.0952340885416666,
+      "passed": true
+    },
+    "2wiki": {
+      "folds": [
+        {
+          "groups": 24,
+          "shock_counts": [
+            9,
+            9,
+            6
+          ]
+        },
+        {
+          "groups": 24,
+          "shock_counts": [
+            12,
+            4,
+            8
+          ]
+        },
+        {
+          "groups": 24,
+          "shock_counts": [
+            10,
+            11,
+            3
+          ]
+        },
+        {
+          "groups": 24,
+          "shock_counts": [
+            8,
+            5,
+            11
+          ]
+        }
+      ],
+      "methods": {
+        "keep": {
+          "EM": 0.6236979166666666,
+          "utility": 0.6066327148437499,
+          "service_tokens": 3413.0403645833335,
+          "delta_by_fold_vs_old_by_shock": [
+            0.04534999999999998,
+            0.019069843749999996,
+            -0.027205494791666663,
+            -0.023741484375000007
+          ],
+          "corrections_vs_old_by_shock": 52,
+          "harms_vs_old_by_shock": 45,
+          "source_terminal_observations": 768
+        },
+        "no_note": {
+          "EM": 0.5729166666666666,
+          "utility": 0.5678132552083334,
+          "service_tokens": 1020.6822916666666,
+          "delta_by_fold_vs_old_by_shock": [
+            0.026262239583333347,
+            -0.16221955729166668,
+            -0.0037765104166666633,
+            -0.0020711458333333432
+          ],
+          "corrections_vs_old_by_shock": 52,
+          "harms_vs_old_by_shock": 84,
+          "source_terminal_observations": 768
+        },
+        "old_global": {
+          "EM": 0.625,
+          "utility": 0.6117016861979166,
+          "service_tokens": 2659.6627604166665,
+          "delta_by_fold_vs_old_by_shock": [
+            0.09701401041666667,
+            0.0026038541666666653,
+            -0.04212763020833332,
+            -0.023741484375000007
+          ],
+          "corrections_vs_old_by_shock": 46,
+          "harms_vs_old_by_shock": 38,
+          "source_terminal_observations": 768
+        },
+        "old_by_shock": {
+          "EM": 0.6145833333333334,
+          "utility": 0.6032644986979167,
+          "service_tokens": 2263.7669270833335,
+          "delta_by_fold_vs_old_by_shock": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "corrections_vs_old_by_shock": 0,
+          "harms_vs_old_by_shock": 0,
+          "source_terminal_observations": 768
+        },
+        "train_current_by_shock": {
+          "EM": 0.6458333333333334,
+          "utility": 0.6331835091145833,
+          "service_tokens": 2529.96484375,
+          "delta_by_fold_vs_old_by_shock": [
+            0.11775942708333333,
+            0.02120838541666666,
+            0.019955833333333332,
+            -0.03924760416666666
+          ],
+          "corrections_vs_old_by_shock": 36,
+          "harms_vs_old_by_shock": 12,
+          "source_terminal_observations": 768
+        },
+        "hindsight_by_shock": {
+          "EM": 0.6731770833333334,
+          "utility": 0.6626468945312499,
+          "service_tokens": 2106.0377604166665,
+          "delta_by_fold_vs_old_by_shock": [
+            0.1557940625,
+            0.02120838541666666,
+            0.03614369791666667,
+            0.024383437499999994
+          ],
+          "corrections_vs_old_by_shock": 66,
+          "harms_vs_old_by_shock": 21,
+          "source_terminal_observations": 768
+        },
+        "hindsight_per_question": {
+          "EM": 0.7526041666666666,
+          "utility": 0.7457168359375,
+          "service_tokens": 1377.4661458333333,
+          "delta_by_fold_vs_old_by_shock": [
+            0.2483203125,
+            0.04923544270833333,
+            0.11458210937500002,
+            0.157671484375
+          ],
+          "corrections_vs_old_by_shock": 106,
+          "harms_vs_old_by_shock": 0,
+          "source_terminal_observations": 768
+        }
+      },
+      "oracle_delta_vs_strongest_cheap": 0.05094520833333327,
+      "passed": true
+    }
+  },
+  "input_sha256": "22fecd3f03d7a9c00791be1156fbc7b2936a51778768add4cb6c33be6118557e",
+  "GPU_hours": 0,
+  "independent": false
+}
