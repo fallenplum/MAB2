@@ -1,0 +1,67 @@
+{
+  "status": "NO_QUALIFIED_TEMPORAL_RETRIEVAL_MECHANISM",
+  "eligible_articles": 272,
+  "selected_articles": 64,
+  "scorable_articles": 46,
+  "unscorable_articles": 18,
+  "scope_disagreement": 5,
+  "pair_budget": 5,
+  "old_paid_pairs": 46,
+  "static_correct": {
+    "LEX": 16,
+    "DATE": 21,
+    "JOINT": 22,
+    "new_keep": 22,
+    "new_drop": 23,
+    "old_keep": 22,
+    "old_drop": 16
+  },
+  "stale_correct": 22,
+  "full_hindsight_correct": 23,
+  "true_repairable_tasks": 1,
+  "topology_only_credit_changes_current_time": 9,
+  "time_only_credit_changes_old_topology": 10,
+  "interaction_count": 10,
+  "policies": {
+    "graph_change": {
+      "correct": 23,
+      "repairs": 1,
+      "pair_acquisitions": 5
+    },
+    "time_change": {
+      "correct": 23,
+      "repairs": 1,
+      "pair_acquisitions": 5
+    },
+    "uncertainty": {
+      "correct": 23,
+      "repairs": 1,
+      "pair_acquisitions": 5
+    },
+    "random_17": {
+      "correct": 23,
+      "repairs": 1,
+      "pair_acquisitions": 5
+    },
+    "random_31": {
+      "correct": 23,
+      "repairs": 1,
+      "pair_acquisitions": 5
+    },
+    "random_47": {
+      "correct": 23,
+      "repairs": 1,
+      "pair_acquisitions": 5
+    },
+    "periodic": {
+      "correct": 23,
+      "repairs": 1,
+      "pair_acquisitions": 5
+    }
+  },
+  "CPU_wall_seconds": 0.10679130000062287,
+  "GPU_hours": 0,
+  "model_calls": 0,
+  "unit": "one family per article, annotated supporting paragraph at rank 1; no answer generation",
+  "independent_confirmation": false
+}

@@ -10,7 +10,7 @@
   "confirmation_tasks_sealed": 128,
   "hidden_scoring_released": true,
   "resident_profile_acceptance_pending": false,
-  "next": "D32_FROZEN_RETRIEVAL_MECHANISM_SCREEN",
+  "next": "SYNTHESIZE_CROSS_ROUTE_EVIDENCE_AND_SCOPE",
   "resident_profile_audit": "PASS_EXACT_CROSS_PROFILE_ARTIFICIAL_EQUIVALENCE",
   "remaining_formal_tasks": 0,
   "eligible_server_outputs_at_check": null,
@@ -29,5 +29,6 @@
   "D29": "NO_CERTIFIED_REPAIR_OR_RESAMPLE_HEADROOM",
   "D30": "FREEZE_EXPOSED_APPS_POLICY_SEARCH",
   "active_GPU_workers": 0,
-  "D31": "TRAIN_ONLY_SOURCE_STRUCTURE_VERIFIED"
+  "D31": "TRAIN_ONLY_SOURCE_STRUCTURE_VERIFIED",
+  "D32": "NO_QUALIFIED_TEMPORAL_RETRIEVAL_MECHANISM"
 }
