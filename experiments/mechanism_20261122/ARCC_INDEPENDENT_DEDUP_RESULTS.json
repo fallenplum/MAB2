@@ -1,0 +1,32 @@
+{
+  "schema": "arcc_independent_deduplicated_v2",
+  "worker_count": 10,
+  "protocol": {
+    "radius": "fixed q=0.9 calibrated on key-mod-5 development split",
+    "worker": "deduplicate identical prompts before batched forward passes",
+    "qwen14_environment": "dg-env Python 3.10, torch 2.11.0, transformers 5.8.1",
+    "llama_environment": "dg-env Python 3.10, torch 2.11.0, transformers 5.8.1",
+    "legacy_non_deduplicated_outputs_excluded": true
+  },
+  "mean": {
+    "stale": {"decision_exact": 0.9203125, "answer_action_exact": 0.91640625, "answer_accuracy": 0.25390625, "tokens": 0.0, "queries": 0.0},
+    "tcr_guard": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.271875, "tokens": 276.7515625, "queries": 2.46015625},
+    "cold_restart": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.271875, "tokens": 1396.92734375, "queries": 12.97421875},
+    "answer_region_changed_q09": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "answer_accuracy": 0.31612903225806455, "tokens": 142.6, "queries": 1.067741935483871},
+    "answer_region_all_q09": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "answer_accuracy": 0.31612903225806455, "tokens": 162.2935483870968, "queries": 1.1838709677419355}
+  },
+  "cells": [
+    {"worker": "arcc_qwen25_dedup_r1.jsonl", "stale_action": 0.9453125, "tcr_tokens": 186.140625, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.3548387096774194, "all_tokens": 163.5483870967742, "all_queries": 1.096774193548387},
+    {"worker": "arcc_qwen25_dedup_r2.jsonl", "stale_action": 0.9453125, "tcr_tokens": 186.140625, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.3548387096774194, "all_tokens": 163.5483870967742, "all_queries": 1.096774193548387},
+    {"worker": "arcc_qwen25_dedup_r4.jsonl", "stale_action": 0.796875, "tcr_tokens": 489.2265625, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.25806451612903225, "all_tokens": 428.258064516129, "all_queries": 3.0},
+    {"worker": "arcc_qwen25_dedup_iface.jsonl", "stale_action": 0.9453125, "tcr_tokens": 186.140625, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.3548387096774194, "all_tokens": 163.5483870967742, "all_queries": 1.096774193548387},
+    {"worker": "arcc_qwen14_dedup_v310_r1.jsonl", "stale_action": 0.78125, "tcr_tokens": 151.375, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.1935483870967742, "all_tokens": 112.64516129032258, "all_queries": 1.0},
+    {"worker": "arcc_qwen14_dedup_v310b_r2.jsonl", "stale_action": 1.0, "tcr_tokens": 166.2734375, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.25806451612903225, "all_tokens": 5.193548387096774, "all_queries": 0.03225806451612903},
+    {"worker": "arcc_qwen14_dedup_v310b_r4.jsonl", "stale_action": 0.8203125, "tcr_tokens": 453.3984375, "all_decision": 0.967741935483871, "all_action": 1.0, "all_accuracy": 0.2903225806451613, "all_tokens": 313.2903225806452, "all_queries": 2.774193548387097},
+    {"worker": "arcc_qwen14_dedup_v310b_iface.jsonl", "stale_action": 1.0, "tcr_tokens": 146.1953125, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.25806451612903225, "all_tokens": 0.0, "all_queries": 0.0},
+    {"worker": "arcc_llama1b_dedup_v310_r1.jsonl", "stale_action": 0.9765625, "tcr_tokens": 378.890625, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.41935483870967744, "all_tokens": 135.03225806451613, "all_queries": 0.9032258064516129},
+    {"worker": "arcc_llama1b_dedup_v310_iface.jsonl", "stale_action": 0.953125, "tcr_tokens": 423.734375, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.41935483870967744, "all_tokens": 137.8709677419355, "all_queries": 0.8387096774193549}
+  ],
+  "interpretation": "Across ten corrected independent cells, all-row answer-region q=.9 preserves final answer action exactly and reduces relay tokens by 41.4% relative to TCR guard on average. One Qwen-14B rows4 cell retains a decision-boundary miss at 0.9677 decision exactness, so the result is an action-safety and cost mechanism claim rather than unconditional edge-decision exactness."
+}
+

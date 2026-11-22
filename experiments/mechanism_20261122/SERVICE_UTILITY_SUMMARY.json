@@ -1,0 +1,3889 @@
+{
+  "schema": "mab2_service_utility_v1",
+  "cells": [
+    {
+      "cell": "m60_conditional_dedup_commonsense",
+      "worker": "WORKER0",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 5.25,
+          "queries": 0.0625
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 100.9375,
+          "queries": 1.125
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1478.375,
+          "queries": 17.3125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4375,
+          "tokens": 80.3125,
+          "queries": 0.875
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4375,
+          "tokens": 85.5625,
+          "queries": 0.9375
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_commonsense",
+      "worker": "WORKER1",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9375,
+          "tokens": 3.5625,
+          "queries": 0.0625
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 113.25,
+          "queries": 2.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 918.625,
+          "queries": 16.1875
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 21.5,
+          "queries": 0.3125
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 21.5,
+          "queries": 0.3125
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_qasc",
+      "worker": "WORKER0",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 0.9523809523809523,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 1.0,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 1.0,
+          "tokens": 69.04761904761905,
+          "queries": 0.7142857142857143
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 1.0,
+          "tokens": 108.61904761904762,
+          "queries": 1.1428571428571428
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8095238095238095,
+          "tokens": 61.80952380952381,
+          "queries": 0.6190476190476191
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 136.66666666666666,
+          "queries": 1.380952380952381
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1637.3809523809523,
+          "queries": 16.142857142857142
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 57.095238095238095,
+          "queries": 0.5714285714285714
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 70.61904761904762,
+          "queries": 0.7142857142857143
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_qasc",
+      "worker": "WORKER1",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 40.04761904761905,
+          "queries": 0.6190476190476191
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 24.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.7619047619047619,
+          "tokens": 27.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 135.0952380952381,
+          "queries": 1.9523809523809523
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1180.5238095238096,
+          "queries": 16.428571428571427
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 80.14285714285714,
+          "queries": 1.1428571428571428
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 80.14285714285714,
+          "queries": 1.1428571428571428
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows2_commonsense",
+      "worker": "WORKER0",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 33.6875,
+          "queries": 0.375
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.25,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 201.9375,
+          "queries": 2.25
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.25,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1467.5,
+          "queries": 17.25
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.25,
+          "tokens": 171.0625,
+          "queries": 1.875
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.25,
+          "tokens": 176.3125,
+          "queries": 1.9375
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows2_commonsense",
+      "worker": "WORKER1",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 35.875,
+          "queries": 0.5
+        },
+        "tcr_guard": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 179.4375,
+          "queries": 3.125
+        },
+        "cold_restart": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 867.375,
+          "queries": 15.4375
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 31.4375,
+          "queries": 0.4375
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 35.875,
+          "queries": 0.5
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows2_qasc",
+      "worker": "WORKER0",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8571428571428571,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 69.04761904761905,
+          "queries": 0.7142857142857143
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 108.61904761904762,
+          "queries": 1.1428571428571428
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8095238095238095,
+          "tokens": 94.80952380952381,
+          "queries": 0.9523809523809523
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 263.8095238095238,
+          "queries": 2.6666666666666665
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1632.6190476190477,
+          "queries": 16.19047619047619
+        },
+        "answer_region_q09": {
+          "decision_exact": 0.9523809523809523,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 124.52380952380952,
+          "queries": 1.2380952380952381
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 161.52380952380952,
+          "queries": 1.619047619047619
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows2_qasc",
+      "worker": "WORKER1",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7619047619047619,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 40.04761904761905,
+          "queries": 0.6190476190476191
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 24.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.6190476190476191,
+          "tokens": 82.19047619047619,
+          "queries": 1.1428571428571428
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 261.23809523809524,
+          "queries": 3.761904761904762
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1217.095238095238,
+          "queries": 17.142857142857142
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 154.76190476190476,
+          "queries": 2.1904761904761907
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 154.76190476190476,
+          "queries": 2.1904761904761907
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows2_sciq",
+      "worker": "WORKER0",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 60.0,
+          "queries": 0.7391304347826086
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 59.82608695652174,
+          "queries": 0.7391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 27.304347826086957,
+          "queries": 0.30434782608695654
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 236.17391304347825,
+          "queries": 2.6956521739130435
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1452.0,
+          "queries": 15.956521739130435
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 181.95652173913044,
+          "queries": 1.9565217391304348
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 186.0,
+          "queries": 2.0
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows2_sciq",
+      "worker": "WORKER1",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.8260869565217391,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 36.17391304347826,
+          "queries": 0.6956521739130435
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 42.91304347826087,
+          "queries": 0.8260869565217391
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.782608695652174,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 32.56521739130435,
+          "queries": 0.5217391304347826
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.782608695652174,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 170.30434782608697,
+          "queries": 2.9565217391304346
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.782608695652174,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1013.8695652173913,
+          "queries": 16.434782608695652
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 60.34782608695652,
+          "queries": 0.9565217391304348
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 60.34782608695652,
+          "queries": 0.9565217391304348
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows4_commonsense",
+      "worker": "WORKER0",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.5625,
+          "decision_exact": 0.9375,
+          "tokens": 110.5,
+          "queries": 1.25
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.3125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 418.5,
+          "queries": 4.75
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.3125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1363.1875,
+          "queries": 16.125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 335.875,
+          "queries": 3.75
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 346.625,
+          "queries": 3.875
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows4_commonsense",
+      "worker": "WORKER1",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9375,
+          "tokens": 70.25,
+          "queries": 1.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 338.0625,
+          "queries": 5.9375
+        },
+        "cold_restart": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 891.9375,
+          "queries": 16.1875
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 61.5,
+          "queries": 0.875
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 65.8125,
+          "queries": 0.9375
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows4_qasc",
+      "worker": "WORKER0",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 69.04761904761905,
+          "queries": 0.7142857142857143
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 108.61904761904762,
+          "queries": 1.1428571428571428
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 221.85714285714286,
+          "queries": 2.2857142857142856
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 523.5238095238095,
+          "queries": 5.333333333333333
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1629.7142857142858,
+          "queries": 16.38095238095238
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 294.0952380952381,
+          "queries": 3.0
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 318.3809523809524,
+          "queries": 3.238095238095238
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows4_qasc",
+      "worker": "WORKER1",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.5238095238095238,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.47619047619047616,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.47619047619047616,
+          "tokens": 40.04761904761905,
+          "queries": 0.6190476190476191
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.47619047619047616,
+          "tokens": 24.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 0.7619047619047619,
+          "decision_exact": 0.5238095238095238,
+          "tokens": 202.1904761904762,
+          "queries": 2.857142857142857
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 429.2857142857143,
+          "queries": 6.190476190476191
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1114.1904761904761,
+          "queries": 15.80952380952381
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 273.2857142857143,
+          "queries": 3.9523809523809526
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 273.2857142857143,
+          "queries": 3.9523809523809526
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows4_sciq",
+      "worker": "WORKER0",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 60.0,
+          "queries": 0.7391304347826086
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 59.82608695652174,
+          "queries": 0.7391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.34782608695652173,
+          "answer_action_exact": 0.8260869565217391,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 77.0,
+          "queries": 0.8695652173913043
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.43478260869565216,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 423.5652173913044,
+          "queries": 4.869565217391305
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.43478260869565216,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1265.0434782608695,
+          "queries": 15.217391304347826
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 334.30434782608694,
+          "queries": 3.782608695652174
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 334.30434782608694,
+          "queries": 3.782608695652174
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_rows4_sciq",
+      "worker": "WORKER1",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.8260869565217391,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.782608695652174,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.782608695652174,
+          "tokens": 36.17391304347826,
+          "queries": 0.6956521739130435
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.782608695652174,
+          "tokens": 42.91304347826087,
+          "queries": 0.8260869565217391
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8695652173913043,
+          "tokens": 98.73913043478261,
+          "queries": 1.6521739130434783
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 322.7391304347826,
+          "queries": 5.6521739130434785
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 877.3478260869565,
+          "queries": 16.217391304347824
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 117.82608695652173,
+          "queries": 1.9130434782608696
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 117.82608695652173,
+          "queries": 1.9130434782608696
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_sciq",
+      "worker": "WORKER0",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 42.17391304347826,
+          "queries": 0.5217391304347826
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 70.30434782608695,
+          "queries": 0.8695652173913043
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 70.1304347826087,
+          "queries": 0.8695652173913043
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 35.26086956521739,
+          "queries": 0.391304347826087
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.30434782608695654,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 142.17391304347825,
+          "queries": 1.6521739130434783
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.30434782608695654,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1526.0869565217392,
+          "queries": 16.08695652173913
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.30434782608695654,
+          "tokens": 103.17391304347827,
+          "queries": 1.0434782608695652
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.30434782608695654,
+          "tokens": 107.21739130434783,
+          "queries": 1.0869565217391304
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_dedup_sciq",
+      "worker": "WORKER1",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.782608695652174,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 36.17391304347826,
+          "queries": 0.6956521739130435
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 42.91304347826087,
+          "queries": 0.8260869565217391
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 28.82608695652174,
+          "queries": 0.4782608695652174
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 112.26086956521739,
+          "queries": 2.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1103.1739130434783,
+          "queries": 16.869565217391305
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 30.17391304347826,
+          "queries": 0.4782608695652174
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 30.17391304347826,
+          "queries": 0.4782608695652174
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_commonsense",
+      "worker": "WORKER0",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 5.25,
+          "queries": 0.0625
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 100.9375,
+          "queries": 1.125
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1478.375,
+          "queries": 17.3125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4375,
+          "tokens": 80.3125,
+          "queries": 0.875
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4375,
+          "tokens": 85.5625,
+          "queries": 0.9375
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_commonsense",
+      "worker": "WORKER1",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9375,
+          "tokens": 3.5625,
+          "queries": 0.0625
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 113.25,
+          "queries": 2.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 918.625,
+          "queries": 16.1875
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 21.5,
+          "queries": 0.3125
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 21.5,
+          "queries": 0.3125
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_commonsense",
+      "worker": "WORKER2",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 71.75,
+          "queries": 1.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 125.125,
+          "queries": 1.8125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.625,
+          "tokens": 114.25,
+          "queries": 1.625
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.625,
+          "tokens": 120.0,
+          "queries": 1.6875
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_qasc",
+      "worker": "WORKER0",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 0.9523809523809523,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 1.0,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 1.0,
+          "tokens": 69.04761904761905,
+          "queries": 0.7142857142857143
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9047619047619048,
+          "decision_exact": 1.0,
+          "tokens": 108.61904761904762,
+          "queries": 1.1428571428571428
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8095238095238095,
+          "tokens": 61.80952380952381,
+          "queries": 0.6190476190476191
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 136.66666666666666,
+          "queries": 1.380952380952381
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1637.3809523809523,
+          "queries": 16.142857142857142
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 57.095238095238095,
+          "queries": 0.5714285714285714
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 70.61904761904762,
+          "queries": 0.7142857142857143
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_qasc",
+      "worker": "WORKER1",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 40.04761904761905,
+          "queries": 0.6190476190476191
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 24.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.7619047619047619,
+          "tokens": 27.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 135.0952380952381,
+          "queries": 1.9523809523809523
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1180.5238095238096,
+          "queries": 16.428571428571427
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 80.14285714285714,
+          "queries": 1.1428571428571428
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 80.14285714285714,
+          "queries": 1.1428571428571428
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_qasc",
+      "worker": "WORKER2",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 7.714285714285714,
+          "queries": 0.09523809523809523
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 11.238095238095237,
+          "queries": 0.14285714285714285
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 11.238095238095237,
+          "queries": 0.14285714285714285
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 84.52380952380952,
+          "queries": 1.0476190476190477
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 113.23809523809524,
+          "queries": 1.380952380952381
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 116.57142857142857,
+          "queries": 1.3333333333333333
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 126.95238095238095,
+          "queries": 1.4761904761904763
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_commonsense",
+      "worker": "WORKER0",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 33.6875,
+          "queries": 0.375
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.25,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 201.9375,
+          "queries": 2.25
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.25,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1467.5,
+          "queries": 17.25
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.25,
+          "tokens": 171.0625,
+          "queries": 1.875
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.25,
+          "tokens": 176.3125,
+          "queries": 1.9375
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_commonsense",
+      "worker": "WORKER1",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 35.875,
+          "queries": 0.5
+        },
+        "tcr_guard": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 179.4375,
+          "queries": 3.125
+        },
+        "cold_restart": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 867.375,
+          "queries": 15.4375
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 31.4375,
+          "queries": 0.4375
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 35.875,
+          "queries": 0.5
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_commonsense",
+      "worker": "WORKER2",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 143.5,
+          "queries": 2.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 1.0,
+          "tokens": 124.75,
+          "queries": 1.8125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.625,
+          "tokens": 125.9375,
+          "queries": 1.8125
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.625,
+          "tokens": 140.75,
+          "queries": 2.0
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_qasc",
+      "worker": "WORKER0",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8571428571428571,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 69.04761904761905,
+          "queries": 0.7142857142857143
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 108.61904761904762,
+          "queries": 1.1428571428571428
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8095238095238095,
+          "tokens": 94.80952380952381,
+          "queries": 0.9523809523809523
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 263.8095238095238,
+          "queries": 2.6666666666666665
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1632.6190476190477,
+          "queries": 16.19047619047619
+        },
+        "answer_region_q09": {
+          "decision_exact": 0.9523809523809523,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 124.52380952380952,
+          "queries": 1.2380952380952381
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 161.52380952380952,
+          "queries": 1.619047619047619
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_qasc",
+      "worker": "WORKER1",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7619047619047619,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 40.04761904761905,
+          "queries": 0.6190476190476191
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 24.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.6190476190476191,
+          "tokens": 82.19047619047619,
+          "queries": 1.1428571428571428
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 261.23809523809524,
+          "queries": 3.761904761904762
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1217.095238095238,
+          "queries": 17.142857142857142
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 154.76190476190476,
+          "queries": 2.1904761904761907
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 154.76190476190476,
+          "queries": 2.1904761904761907
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_qasc",
+      "worker": "WORKER2",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 7.714285714285714,
+          "queries": 0.09523809523809523
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 11.047619047619047,
+          "queries": 0.14285714285714285
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 11.238095238095237,
+          "queries": 0.14285714285714285
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 165.04761904761904,
+          "queries": 2.0476190476190474
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 113.23809523809524,
+          "queries": 1.380952380952381
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 118.04761904761905,
+          "queries": 1.380952380952381
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 146.71428571428572,
+          "queries": 1.7619047619047619
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_sciq",
+      "worker": "WORKER0",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 60.0,
+          "queries": 0.7391304347826086
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 59.82608695652174,
+          "queries": 0.7391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 27.304347826086957,
+          "queries": 0.30434782608695654
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 236.17391304347825,
+          "queries": 2.6956521739130435
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1452.0,
+          "queries": 15.956521739130435
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 181.95652173913044,
+          "queries": 1.9565217391304348
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 186.0,
+          "queries": 2.0
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_sciq",
+      "worker": "WORKER1",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.8260869565217391,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 36.17391304347826,
+          "queries": 0.6956521739130435
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 42.91304347826087,
+          "queries": 0.8260869565217391
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.782608695652174,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 32.56521739130435,
+          "queries": 0.5217391304347826
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.782608695652174,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 170.30434782608697,
+          "queries": 2.9565217391304346
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.782608695652174,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1013.8695652173913,
+          "queries": 16.434782608695652
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 60.34782608695652,
+          "queries": 0.9565217391304348
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 60.34782608695652,
+          "queries": 0.9565217391304348
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows2_sciq",
+      "worker": "WORKER2",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 8.869565217391305,
+          "queries": 0.08695652173913043
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 22.043478260869566,
+          "queries": 0.30434782608695654
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 16.565217391304348,
+          "queries": 0.17391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 147.08695652173913,
+          "queries": 2.0434782608695654
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 199.65217391304347,
+          "queries": 1.9565217391304348
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 123.78260869565217,
+          "queries": 1.4782608695652173
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 147.65217391304347,
+          "queries": 1.826086956521739
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_commonsense",
+      "worker": "WORKER0",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.4375,
+          "decision_exact": 0.875,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.5625,
+          "decision_exact": 0.9375,
+          "tokens": 110.5,
+          "queries": 1.25
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.3125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 418.5,
+          "queries": 4.75
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.3125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1363.1875,
+          "queries": 16.125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 335.875,
+          "queries": 3.75
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 346.625,
+          "queries": 3.875
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_commonsense",
+      "worker": "WORKER1",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 0.8125,
+          "decision_exact": 0.75,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.9375,
+          "tokens": 70.25,
+          "queries": 1.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 338.0625,
+          "queries": 5.9375
+        },
+        "cold_restart": {
+          "answer_accuracy": 1.0,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 891.9375,
+          "queries": 16.1875
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 61.5,
+          "queries": 0.875
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 65.8125,
+          "queries": 0.9375
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_commonsense",
+      "worker": "WORKER2",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.625,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 8.375,
+          "queries": 0.125
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 281.0,
+          "queries": 4.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.5,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 121.625,
+          "queries": 1.875
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5,
+          "tokens": 193.9375,
+          "queries": 2.8125
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5,
+          "tokens": 207.5625,
+          "queries": 3.0
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_qasc",
+      "worker": "WORKER0",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 69.04761904761905,
+          "queries": 0.7142857142857143
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 108.61904761904762,
+          "queries": 1.1428571428571428
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.7142857142857143,
+          "tokens": 221.85714285714286,
+          "queries": 2.2857142857142856
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 523.5238095238095,
+          "queries": 5.333333333333333
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1629.7142857142858,
+          "queries": 16.38095238095238
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 294.0952380952381,
+          "queries": 3.0
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 318.3809523809524,
+          "queries": 3.238095238095238
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_qasc",
+      "worker": "WORKER1",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.5238095238095238,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.47619047619047616,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.47619047619047616,
+          "tokens": 40.04761904761905,
+          "queries": 0.6190476190476191
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 0.5238095238095238,
+          "decision_exact": 0.47619047619047616,
+          "tokens": 24.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 0.7619047619047619,
+          "decision_exact": 0.5238095238095238,
+          "tokens": 202.1904761904762,
+          "queries": 2.857142857142857
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 429.2857142857143,
+          "queries": 6.190476190476191
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.5238095238095238,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1114.1904761904761,
+          "queries": 15.80952380952381
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 273.2857142857143,
+          "queries": 3.9523809523809526
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 273.2857142857143,
+          "queries": 3.9523809523809526
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_qasc",
+      "worker": "WORKER2",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 1.0,
+          "tokens": 7.238095238095238,
+          "queries": 0.09523809523809523
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 1.0,
+          "tokens": 10.761904761904763,
+          "queries": 0.14285714285714285
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 1.0,
+          "tokens": 10.952380952380953,
+          "queries": 0.14285714285714285
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 0.8095238095238095,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 316.0952380952381,
+          "queries": 4.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.6666666666666666,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 107.19047619047619,
+          "queries": 1.4285714285714286
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 173.28571428571428,
+          "queries": 2.1904761904761907
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 206.38095238095238,
+          "queries": 2.619047619047619
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_sciq",
+      "worker": "WORKER0",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 60.0,
+          "queries": 0.7391304347826086
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.7391304347826086,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 59.82608695652174,
+          "queries": 0.7391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.34782608695652173,
+          "answer_action_exact": 0.8260869565217391,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 77.0,
+          "queries": 0.8695652173913043
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.43478260869565216,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 423.5652173913044,
+          "queries": 4.869565217391305
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.43478260869565216,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1265.0434782608695,
+          "queries": 15.217391304347826
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 334.30434782608694,
+          "queries": 3.782608695652174
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 334.30434782608694,
+          "queries": 3.782608695652174
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_sciq",
+      "worker": "WORKER1",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.8260869565217391,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.782608695652174,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.782608695652174,
+          "tokens": 36.17391304347826,
+          "queries": 0.6956521739130435
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.782608695652174,
+          "tokens": 42.91304347826087,
+          "queries": 0.8260869565217391
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 0.8695652173913043,
+          "tokens": 98.73913043478261,
+          "queries": 1.6521739130434783
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 322.7391304347826,
+          "queries": 5.6521739130434785
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 877.3478260869565,
+          "queries": 16.217391304347824
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 117.82608695652173,
+          "queries": 1.9130434782608696
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 117.82608695652173,
+          "queries": 1.9130434782608696
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_rows4_sciq",
+      "worker": "WORKER2",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 0.6086956521739131,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 0.6086956521739131,
+          "decision_exact": 1.0,
+          "tokens": 5.869565217391305,
+          "queries": 0.08695652173913043
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 0.6086956521739131,
+          "decision_exact": 1.0,
+          "tokens": 19.043478260869566,
+          "queries": 0.30434782608695654
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 0.6086956521739131,
+          "decision_exact": 1.0,
+          "tokens": 11.73913043478261,
+          "queries": 0.17391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 0.6521739130434783,
+          "decision_exact": 1.0,
+          "tokens": 3.260869565217391,
+          "queries": 0.043478260869565216
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.43478260869565216,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 276.2608695652174,
+          "queries": 4.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.43478260869565216,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 104.30434782608695,
+          "queries": 1.608695652173913
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 195.69565217391303,
+          "queries": 2.869565217391304
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 220.34782608695653,
+          "queries": 3.217391304347826
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_sciq",
+      "worker": "WORKER0",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 42.17391304347826,
+          "queries": 0.5217391304347826
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 70.30434782608695,
+          "queries": 0.8695652173913043
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 1.0,
+          "tokens": 70.1304347826087,
+          "queries": 0.8695652173913043
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.9130434782608695,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 35.26086956521739,
+          "queries": 0.391304347826087
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.30434782608695654,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 142.17391304347825,
+          "queries": 1.6521739130434783
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.30434782608695654,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1526.0869565217392,
+          "queries": 16.08695652173913
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.30434782608695654,
+          "tokens": 103.17391304347827,
+          "queries": 1.0434782608695652
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.30434782608695654,
+          "tokens": 107.21739130434783,
+          "queries": 1.0869565217391304
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_sciq",
+      "worker": "WORKER1",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.782608695652174,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 36.17391304347826,
+          "queries": 0.6956521739130435
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 42.91304347826087,
+          "queries": 0.8260869565217391
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 28.82608695652174,
+          "queries": 0.4782608695652174
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 112.26086956521739,
+          "queries": 2.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1103.1739130434783,
+          "queries": 16.869565217391305
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 30.17391304347826,
+          "queries": 0.4782608695652174
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 30.17391304347826,
+          "queries": 0.4782608695652174
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_llama3_sciq",
+      "worker": "WORKER2",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 10.695652173913043,
+          "queries": 0.08695652173913043
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 23.869565217391305,
+          "queries": 0.30434782608695654
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 16.565217391304348,
+          "queries": 0.17391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 81.26086956521739,
+          "queries": 1.0869565217391304
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.6086956521739131,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 204.95652173913044,
+          "queries": 1.9565217391304348
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 109.69565217391305,
+          "queries": 1.1304347826086956
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 112.73913043478261,
+          "queries": 1.173913043478261
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_server_commonsense",
+      "worker": "WORKER0",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.4375,
+          "answer_action_exact": 0.75,
+          "decision_exact": 1.0,
+          "tokens": 5.25,
+          "queries": 0.0625
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 0.875,
+          "decision_exact": 1.0,
+          "tokens": 95.9375,
+          "queries": 1.0625
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.3125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1479.375,
+          "queries": 17.3125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 232.4375,
+          "queries": 2.5
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 250.875,
+          "queries": 2.6875
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_server_commonsense",
+      "worker": "WORKER1",
+      "task": "commonsense",
+      "n": 16,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 110.0,
+          "queries": 1.9375
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 925.875,
+          "queries": 16.3125
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 27.125,
+          "queries": 0.375
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 36.0625,
+          "queries": 0.5
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_server_qasc",
+      "worker": "WORKER0",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.9523809523809523,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.9523809523809523,
+          "tokens": 69.04761904761905,
+          "queries": 0.7142857142857143
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.2857142857142857,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.9523809523809523,
+          "tokens": 108.61904761904762,
+          "queries": 1.1428571428571428
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 0.8571428571428571,
+          "decision_exact": 0.7619047619047619,
+          "tokens": 61.80952380952381,
+          "queries": 0.6190476190476191
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 0.8571428571428571,
+          "decision_exact": 0.9523809523809523,
+          "tokens": 136.66666666666666,
+          "queries": 1.380952380952381
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.3333333333333333,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1625.3333333333333,
+          "queries": 16.047619047619047
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 156.1904761904762,
+          "queries": 1.5238095238095237
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 194.85714285714286,
+          "queries": 1.9047619047619047
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_server_qasc",
+      "worker": "WORKER1",
+      "task": "qasc",
+      "n": 21,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.42857142857142855,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.8571428571428571,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.42857142857142855,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.42857142857142855,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 40.04761904761905,
+          "queries": 0.6190476190476191
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.42857142857142855,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.9047619047619048,
+          "tokens": 24.857142857142858,
+          "queries": 0.38095238095238093
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.42857142857142855,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 0.7619047619047619,
+          "tokens": 23.238095238095237,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.42857142857142855,
+          "answer_action_exact": 0.9523809523809523,
+          "decision_exact": 1.0,
+          "tokens": 135.0952380952381,
+          "queries": 1.9523809523809523
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.38095238095238093,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1198.5714285714287,
+          "queries": 16.666666666666668
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 106.33333333333333,
+          "queries": 1.5238095238095237
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 120.95238095238095,
+          "queries": 1.7142857142857142
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_server_sciq",
+      "worker": "WORKER0",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 1.0,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 1.0,
+          "tokens": 60.0,
+          "queries": 0.7391304347826086
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 1.0,
+          "tokens": 59.82608695652174,
+          "queries": 0.7391304347826086
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.391304347826087,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 0.9130434782608695,
+          "tokens": 31.47826086956522,
+          "queries": 0.34782608695652173
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.30434782608695654,
+          "answer_action_exact": 0.782608695652174,
+          "decision_exact": 1.0,
+          "tokens": 135.30434782608697,
+          "queries": 1.565217391304348
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.4782608695652174,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1532.0434782608695,
+          "queries": 16.17391304347826
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4782608695652174,
+          "tokens": 317.5217391304348,
+          "queries": 2.5652173913043477
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4782608695652174,
+          "tokens": 338.7391304347826,
+          "queries": 2.6956521739130435
+        }
+      }
+    },
+    {
+      "cell": "m60_conditional_server_sciq",
+      "worker": "WORKER1",
+      "task": "sciq",
+      "n": 23,
+      "methods": {
+        "stale": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.782608695652174,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "random_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 36.17391304347826,
+          "queries": 0.6956521739130435
+        },
+        "periodic_recheck": {
+          "answer_accuracy": 0.8695652173913043,
+          "answer_action_exact": 0.9565217391304348,
+          "decision_exact": 0.9565217391304348,
+          "tokens": 42.91304347826087,
+          "queries": 0.8260869565217391
+        },
+        "tcr_bound": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 28.82608695652174,
+          "queries": 0.4782608695652174
+        },
+        "tcr_guard": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 112.26086956521739,
+          "queries": 2.0
+        },
+        "cold_restart": {
+          "answer_accuracy": 0.8260869565217391,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "tokens": 1102.8260869565217,
+          "queries": 16.869565217391305
+        },
+        "answer_region_q09": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 57.0,
+          "queries": 0.6956521739130435
+        },
+        "answer_region_q10": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 72.6086956521739,
+          "queries": 0.8260869565217391
+        }
+      }
+    }
+  ],
+  "n_cells": 51,
+  "summary": {
+    "answer_region_q09": {
+      "decision_exact": 0.9981325863678805,
+      "answer_action_exact": 1.0,
+      "answer_accuracy": 0.552125197905249,
+      "tokens": 141.06983264320218,
+      "queries": 1.6964285714285714
+    },
+    "answer_region_q10": {
+      "decision_exact": 1.0,
+      "answer_action_exact": 1.0,
+      "answer_accuracy": 0.552125197905249,
+      "tokens": 150.8968000243576,
+      "queries": 1.8086154751755772
+    },
+    "cold_restart": {
+      "answer_accuracy": 0.552125197905249,
+      "answer_action_exact": 0.9950980392156863,
+      "decision_exact": 1.0,
+      "tokens": 1065.6901006779524,
+      "queries": 13.751973977996995
+    },
+    "max_uncertainty": {
+      "answer_accuracy": 0.5513031299476312,
+      "answer_action_exact": 0.8498457353956075,
+      "decision_exact": 0.9060711241018147,
+      "tokens": 18.134981528843426,
+      "queries": 0.24942150773352822
+    },
+    "periodic_recheck": {
+      "answer_accuracy": 0.5513031299476312,
+      "answer_action_exact": 0.8498457353956075,
+      "decision_exact": 0.9060711241018147,
+      "tokens": 34.36106036617546,
+      "queries": 0.4477327162749157
+    },
+    "random_recheck": {
+      "answer_accuracy": 0.5513031299476312,
+      "answer_action_exact": 0.8498457353956075,
+      "decision_exact": 0.9060711241018147,
+      "tokens": 30.49993910607721,
+      "queries": 0.4113587463971096
+    },
+    "stale": {
+      "answer_accuracy": 0.5513031299476312,
+      "answer_action_exact": 0.8498457353956075,
+      "decision_exact": 0.8863008971704622,
+      "tokens": 0.0,
+      "queries": 0.0
+    },
+    "tcr_bound": {
+      "answer_accuracy": 0.5725043640644664,
+      "answer_action_exact": 0.9106178703365404,
+      "decision_exact": 0.9005754475703324,
+      "tokens": 52.182504161084715,
+      "queries": 0.655302338326635
+    },
+    "tcr_guard": {
+      "answer_accuracy": 0.5508743352413429,
+      "answer_action_exact": 0.9895516177485487,
+      "decision_exact": 0.9990662931839401,
+      "tokens": 221.759075731742,
+      "queries": 2.97495737425405
+    }
+  },
+  "by_task": {
+    "commonsense": {
+      "answer_region_q09": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6176470588235294,
+        "tokens": 123.35661764705883,
+        "queries": 1.4926470588235294
+      },
+      "answer_region_q10": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6176470588235294,
+        "tokens": 130.50735294117646,
+        "queries": 1.5808823529411764
+      },
+      "cold_restart": {
+        "answer_accuracy": 0.6176470588235294,
+        "answer_action_exact": 0.9852941176470589,
+        "decision_exact": 1.0,
+        "tokens": 985.3382352941177,
+        "queries": 13.889705882352942
+      },
+      "max_uncertainty": {
+        "answer_accuracy": 0.6323529411764706,
+        "answer_action_exact": 0.8088235294117647,
+        "decision_exact": 0.9264705882352942,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "periodic_recheck": {
+        "answer_accuracy": 0.6323529411764706,
+        "answer_action_exact": 0.8088235294117647,
+        "decision_exact": 0.9264705882352942,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "random_recheck": {
+        "answer_accuracy": 0.6323529411764706,
+        "answer_action_exact": 0.8088235294117647,
+        "decision_exact": 0.9264705882352942,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "stale": {
+        "answer_accuracy": 0.6323529411764706,
+        "answer_action_exact": 0.8088235294117647,
+        "decision_exact": 0.9264705882352942,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "tcr_bound": {
+        "answer_accuracy": 0.6764705882352942,
+        "answer_action_exact": 0.8676470588235294,
+        "decision_exact": 0.9779411764705882,
+        "tokens": 31.28676470588235,
+        "queries": 0.39338235294117646
+      },
+      "tcr_guard": {
+        "answer_accuracy": 0.6213235294117647,
+        "answer_action_exact": 0.9926470588235294,
+        "decision_exact": 1.0,
+        "tokens": 200.37867647058823,
+        "queries": 2.8455882352941178
+      }
+    },
+    "qasc": {
+      "answer_region_q09": {
+        "decision_exact": 0.9943977591036415,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4453781512605042,
+        "tokens": 155.19047619047618,
+        "queries": 1.8907563025210086
+      },
+      "answer_region_q10": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4453781512605042,
+        "tokens": 171.36974789915965,
+        "queries": 2.070028011204482
+      },
+      "cold_restart": {
+        "answer_accuracy": 0.4453781512605042,
+        "answer_action_exact": 1.0,
+        "decision_exact": 1.0,
+        "tokens": 1175.3305322128851,
+        "queries": 13.711484593837532
+      },
+      "max_uncertainty": {
+        "answer_accuracy": 0.3949579831932773,
+        "answer_action_exact": 0.8711484593837535,
+        "decision_exact": 0.8403361344537814,
+        "tokens": 25.568627450980394,
+        "queries": 0.3109243697478991
+      },
+      "periodic_recheck": {
+        "answer_accuracy": 0.3949579831932773,
+        "answer_action_exact": 0.8711484593837535,
+        "decision_exact": 0.8403361344537814,
+        "tokens": 56.92717086834734,
+        "queries": 0.6526610644257703
+      },
+      "random_recheck": {
+        "answer_accuracy": 0.3949579831932773,
+        "answer_action_exact": 0.8711484593837535,
+        "decision_exact": 0.8403361344537814,
+        "tokens": 46.865546218487395,
+        "queries": 0.5742296918767508
+      },
+      "stale": {
+        "answer_accuracy": 0.3949579831932773,
+        "answer_action_exact": 0.8711484593837535,
+        "decision_exact": 0.8347338935574229,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "tcr_bound": {
+        "answer_accuracy": 0.4425770308123249,
+        "answer_action_exact": 0.938375350140056,
+        "decision_exact": 0.7647058823529411,
+        "tokens": 86.26330532212884,
+        "queries": 1.0252100840336134
+      },
+      "tcr_guard": {
+        "answer_accuracy": 0.44817927170868344,
+        "answer_action_exact": 0.988795518207283,
+        "decision_exact": 0.9971988795518207,
+        "tokens": 255.0980392156863,
+        "queries": 3.1176470588235294
+      }
+    },
+    "sciq": {
+      "answer_region_q09": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5933503836317136,
+        "tokens": 144.6624040920716,
+        "queries": 1.7058823529411762
+      },
+      "answer_region_q10": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5933503836317136,
+        "tokens": 150.8132992327366,
+        "queries": 1.774936061381074
+      },
+      "cold_restart": {
+        "answer_accuracy": 0.5933503836317136,
+        "answer_action_exact": 1.0,
+        "decision_exact": 1.0,
+        "tokens": 1036.4015345268542,
+        "queries": 13.65473145780051
+      },
+      "max_uncertainty": {
+        "answer_accuracy": 0.6265984654731458,
+        "answer_action_exact": 0.8695652173913043,
+        "decision_exact": 0.9514066496163683,
+        "tokens": 28.836317135549873,
+        "queries": 0.43734015345268545
+      },
+      "periodic_recheck": {
+        "answer_accuracy": 0.6265984654731458,
+        "answer_action_exact": 0.8695652173913043,
+        "decision_exact": 0.9514066496163683,
+        "tokens": 46.15601023017902,
+        "queries": 0.6905370843989769
+      },
+      "random_recheck": {
+        "answer_accuracy": 0.6265984654731458,
+        "answer_action_exact": 0.8695652173913043,
+        "decision_exact": 0.9514066496163683,
+        "tokens": 44.63427109974424,
+        "queries": 0.6598465473145779
+      },
+      "stale": {
+        "answer_accuracy": 0.6265984654731458,
+        "answer_action_exact": 0.8695652173913043,
+        "decision_exact": 0.8976982097186701,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "tcr_bound": {
+        "answer_accuracy": 0.5984654731457801,
+        "answer_action_exact": 0.9258312020460359,
+        "decision_exact": 0.9590792838874681,
+        "tokens": 38.99744245524297,
+        "queries": 0.547314578005115
+      },
+      "tcr_guard": {
+        "answer_accuracy": 0.5831202046035805,
+        "answer_action_exact": 0.9872122762148337,
+        "decision_exact": 1.0,
+        "tokens": 209.80051150895144,
+        "queries": 2.9616368286445014
+      }
+    }
+  }
+}
