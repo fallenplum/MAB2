@@ -1,0 +1,2625 @@
+{
+  "schema": "m60_dedup_server_density_summary_v1",
+  "models": [
+    "Qwen-0.5B",
+    "Qwen-14B"
+  ],
+  "tasks": [
+    "qasc",
+    "sciq",
+    "commonsense"
+  ],
+  "densities": {
+    "rows1": {
+      "aggregate": {
+        "stale": {
+          "n": 768,
+          "action_error": 0.022135416666666668,
+          "exact_set": 0.93359375,
+          "false_drop": 0.04296875,
+          "false_keep": 0.028645833333333332,
+          "queries": 0.0,
+          "tokens": 0.0
+        },
+        "warm_reweighted": {
+          "n": 768,
+          "action_error": 0.013020833333333334,
+          "exact_set": 0.96875,
+          "false_drop": 0.016927083333333332,
+          "false_keep": 0.015625,
+          "queries": 0.3880208333333333,
+          "tokens": 31.5703125
+        },
+        "max_uncertainty": {
+          "n": 768,
+          "action_error": 0.013020833333333334,
+          "exact_set": 0.96875,
+          "false_drop": 0.016927083333333332,
+          "false_keep": 0.015625,
+          "queries": 0.3880208333333333,
+          "tokens": 31.5703125
+        },
+        "random_recheck": {
+          "n": 768,
+          "action_error": 0.013020833333333334,
+          "exact_set": 0.96875,
+          "false_drop": 0.016927083333333332,
+          "false_keep": 0.015625,
+          "queries": 0.6041666666666666,
+          "tokens": 48.360677083333336
+        },
+        "periodic_recheck": {
+          "n": 768,
+          "action_error": 0.013020833333333334,
+          "exact_set": 0.96875,
+          "false_drop": 0.016927083333333332,
+          "false_keep": 0.015625,
+          "queries": 0.6796875,
+          "tokens": 55.1015625
+        },
+        "tcr_guard": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 1.7447916666666667,
+          "tokens": 131.48567708333334
+        },
+        "tcr_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 1.7747395833333333,
+          "tokens": 132.94921875
+        },
+        "cold_restart": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.265625,
+          "tokens": 1295.34765625
+        },
+        "cold_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.302083333333332,
+          "tokens": 1296.1028645833333
+        },
+        "tcr_density_gate_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 1.7747395833333333,
+          "tokens": 132.94921875
+        }
+      },
+      "panel_team": {
+        "qasc": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9140625,
+              "false_drop": 0.078125,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.8515625,
+              "tokens": 82.3984375
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.8515625,
+              "tokens": 82.3984375
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.2734375,
+              "tokens": 122.2890625
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.4453125,
+              "tokens": 139.28125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.8515625,
+              "tokens": 82.3984375
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.875,
+              "tokens": 182.171875
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.875,
+              "tokens": 181.875
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.8046875,
+              "false_drop": 0.1953125,
+              "false_keep": 0.0,
+              "queries": 0.59375,
+              "tokens": 58.171875
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.8046875,
+              "false_drop": 0.1953125,
+              "false_keep": 0.0,
+              "queries": 0.59375,
+              "tokens": 58.171875
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.875,
+              "tokens": 182.171875
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.875,
+              "tokens": 181.875
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.65625,
+              "tokens": 1655.3125
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.6171875,
+              "tokens": 1651.0546875
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8046875,
+              "false_drop": 0.140625,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8359375,
+              "false_drop": 0.09375,
+              "false_keep": 0.078125,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8359375,
+              "false_drop": 0.09375,
+              "false_keep": 0.078125,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8359375,
+              "false_drop": 0.09375,
+              "false_keep": 0.078125,
+              "queries": 0.46875,
+              "tokens": 31.2734375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8359375,
+              "false_drop": 0.09375,
+              "false_keep": 0.078125,
+              "queries": 0.4453125,
+              "tokens": 29.6328125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8359375,
+              "false_drop": 0.09375,
+              "false_keep": 0.078125,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9296875,
+              "tokens": 132.359375
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.8828125,
+              "tokens": 129.2109375
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.1171875,
+              "exact_set": 0.7265625,
+              "false_drop": 0.2734375,
+              "false_keep": 0.0,
+              "queries": 0.5078125,
+              "tokens": 34.3125
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.1171875,
+              "exact_set": 0.7265625,
+              "false_drop": 0.2734375,
+              "false_keep": 0.0,
+              "queries": 0.5078125,
+              "tokens": 34.3125
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9296875,
+              "tokens": 132.359375
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.8828125,
+              "tokens": 129.2109375
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.1875,
+              "tokens": 1136.609375
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.0,
+              "tokens": 1124.6015625
+            }
+          }
+        },
+        "sciq": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9609375,
+              "false_drop": 0.03125,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0,
+              "queries": 0.8125,
+              "tokens": 67.7578125
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0,
+              "queries": 0.8125,
+              "tokens": 67.7578125
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0,
+              "queries": 1.265625,
+              "tokens": 103.9609375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0,
+              "queries": 1.546875,
+              "tokens": 127.625
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0,
+              "queries": 0.8125,
+              "tokens": 67.7578125
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.8671875,
+              "tokens": 163.0234375
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9375,
+              "tokens": 168.03125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.4375,
+              "tokens": 39.3671875
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.4375,
+              "tokens": 39.3671875
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.8671875,
+              "tokens": 163.0234375
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9375,
+              "tokens": 168.03125
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.609375,
+              "tokens": 1548.4921875
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.8046875,
+              "tokens": 1560.640625
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.6171875,
+              "tokens": 32.640625
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.640625,
+              "tokens": 34.0703125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9609375,
+              "tokens": 112.828125
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9921875,
+              "tokens": 114.2578125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0625,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.3203125,
+              "tokens": 19.5
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0625,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.3203125,
+              "tokens": 19.5
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9609375,
+              "tokens": 112.828125
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.9921875,
+              "tokens": 114.2578125
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.8046875,
+              "tokens": 1160.2578125
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.9921875,
+              "tokens": 1169.671875
+            }
+          }
+        },
+        "commonsense": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0,
+              "false_keep": 0.0078125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.09375,
+              "tokens": 98.2578125
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.078125,
+              "tokens": 96.9375
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0,
+              "queries": 0.1640625,
+              "tokens": 14.546875
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9921875,
+              "false_drop": 0.0078125,
+              "false_keep": 0.0,
+              "queries": 0.1640625,
+              "tokens": 14.546875
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.09375,
+              "tokens": 98.2578125
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.078125,
+              "tokens": 96.9375
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.8828125,
+              "tokens": 1349.828125
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.7890625,
+              "tokens": 1341.90625
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.7421875,
+              "tokens": 100.2734375
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.8828125,
+              "tokens": 107.3828125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.9609375,
+              "false_drop": 0.0390625,
+              "false_keep": 0.0,
+              "queries": 0.1484375,
+              "tokens": 9.4453125
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.9609375,
+              "false_drop": 0.0390625,
+              "false_keep": 0.0,
+              "queries": 0.1484375,
+              "tokens": 9.4453125
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.7421875,
+              "tokens": 100.2734375
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 1.8828125,
+              "tokens": 107.3828125
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.453125,
+              "tokens": 921.5859375
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.609375,
+              "tokens": 928.7421875
+            }
+          }
+        }
+      }
+    },
+    "rows2": {
+      "aggregate": {
+        "stale": {
+          "n": 768,
+          "action_error": 0.049479166666666664,
+          "exact_set": 0.8723958333333334,
+          "false_drop": 0.07682291666666667,
+          "false_keep": 0.07682291666666667,
+          "queries": 0.0,
+          "tokens": 0.0
+        },
+        "warm_reweighted": {
+          "n": 768,
+          "action_error": 0.04296875,
+          "exact_set": 0.8893229166666666,
+          "false_drop": 0.061197916666666664,
+          "false_keep": 0.07552083333333333,
+          "queries": 0.3854166666666667,
+          "tokens": 31.174479166666668
+        },
+        "max_uncertainty": {
+          "n": 768,
+          "action_error": 0.04296875,
+          "exact_set": 0.8893229166666666,
+          "false_drop": 0.061197916666666664,
+          "false_keep": 0.07552083333333333,
+          "queries": 0.3854166666666667,
+          "tokens": 31.174479166666668
+        },
+        "random_recheck": {
+          "n": 768,
+          "action_error": 0.04296875,
+          "exact_set": 0.8893229166666666,
+          "false_drop": 0.061197916666666664,
+          "false_keep": 0.07552083333333333,
+          "queries": 0.5911458333333334,
+          "tokens": 47.205729166666664
+        },
+        "periodic_recheck": {
+          "n": 768,
+          "action_error": 0.04296875,
+          "exact_set": 0.8893229166666666,
+          "false_drop": 0.061197916666666664,
+          "false_keep": 0.07552083333333333,
+          "queries": 0.6666666666666666,
+          "tokens": 53.829427083333336
+        },
+        "tcr_guard": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 2.9713541666666665,
+          "tokens": 224.97916666666666
+        },
+        "tcr_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 2.9791666666666665,
+          "tokens": 224.80078125
+        },
+        "cold_restart": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.131510416666668,
+          "tokens": 1254.48046875
+        },
+        "cold_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.161458333333332,
+          "tokens": 1255.2955729166667
+        },
+        "tcr_density_gate_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.161458333333332,
+          "tokens": 1255.2955729166667
+        }
+      },
+      "panel_team": {
+        "qasc": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.890625,
+              "false_drop": 0.078125,
+              "false_keep": 0.03125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9375,
+              "false_drop": 0.015625,
+              "false_keep": 0.046875,
+              "queries": 0.8671875,
+              "tokens": 83.7578125
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9375,
+              "false_drop": 0.015625,
+              "false_keep": 0.046875,
+              "queries": 0.8671875,
+              "tokens": 83.7578125
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9375,
+              "false_drop": 0.015625,
+              "false_keep": 0.046875,
+              "queries": 1.265625,
+              "tokens": 121.609375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9375,
+              "false_drop": 0.015625,
+              "false_keep": 0.046875,
+              "queries": 1.4453125,
+              "tokens": 139.28125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9375,
+              "false_drop": 0.015625,
+              "false_keep": 0.046875,
+              "queries": 0.8671875,
+              "tokens": 83.7578125
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 2.90625,
+              "tokens": 283.234375
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 2.859375,
+              "tokens": 278.328125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.8671875,
+              "false_drop": 0.1328125,
+              "false_keep": 0.0,
+              "queries": 1.0703125,
+              "tokens": 105.0390625
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.8671875,
+              "false_drop": 0.1328125,
+              "false_keep": 0.0,
+              "queries": 1.0703125,
+              "tokens": 105.0390625
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.4296875,
+              "tokens": 1623.140625
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.375,
+              "tokens": 1616.5
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.4296875,
+              "tokens": 1623.140625
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.375,
+              "tokens": 1616.5
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.140625,
+              "exact_set": 0.6328125,
+              "false_drop": 0.234375,
+              "false_keep": 0.2578125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.140625,
+              "exact_set": 0.6171875,
+              "false_drop": 0.2265625,
+              "false_keep": 0.28125,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.140625,
+              "exact_set": 0.6171875,
+              "false_drop": 0.2265625,
+              "false_keep": 0.28125,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.140625,
+              "exact_set": 0.6171875,
+              "false_drop": 0.2265625,
+              "false_keep": 0.28125,
+              "queries": 0.46875,
+              "tokens": 31.2734375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.140625,
+              "exact_set": 0.6171875,
+              "false_drop": 0.2265625,
+              "false_keep": 0.28125,
+              "queries": 0.4453125,
+              "tokens": 29.6328125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.140625,
+              "exact_set": 0.6171875,
+              "false_drop": 0.2265625,
+              "false_keep": 0.28125,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 3.5859375,
+              "tokens": 245.828125
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 3.53125,
+              "tokens": 242.2734375
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.1875,
+              "exact_set": 0.625,
+              "false_drop": 0.375,
+              "false_keep": 0.0,
+              "queries": 1.3125,
+              "tokens": 88.8125
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.1875,
+              "exact_set": 0.625,
+              "false_drop": 0.375,
+              "false_keep": 0.0,
+              "queries": 1.3125,
+              "tokens": 88.8125
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.515625,
+              "tokens": 1147.6796875
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.234375,
+              "tokens": 1128.765625
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.515625,
+              "tokens": 1147.6796875
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.234375,
+              "tokens": 1128.765625
+            }
+          }
+        },
+        "sciq": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9453125,
+              "false_drop": 0.0390625,
+              "false_keep": 0.015625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.96875,
+              "false_drop": 0.015625,
+              "false_keep": 0.015625,
+              "queries": 0.78125,
+              "tokens": 64.0234375
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.96875,
+              "false_drop": 0.015625,
+              "false_keep": 0.015625,
+              "queries": 0.78125,
+              "tokens": 64.0234375
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.96875,
+              "false_drop": 0.015625,
+              "false_keep": 0.015625,
+              "queries": 1.1953125,
+              "tokens": 97.7109375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.96875,
+              "false_drop": 0.015625,
+              "false_keep": 0.015625,
+              "queries": 1.46875,
+              "tokens": 119.9921875
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.96875,
+              "false_drop": 0.015625,
+              "false_keep": 0.015625,
+              "queries": 0.78125,
+              "tokens": 64.0234375
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 2.921875,
+              "tokens": 256.8984375
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 2.9296875,
+              "tokens": 257.53125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.015625,
+              "exact_set": 0.953125,
+              "false_drop": 0.046875,
+              "false_keep": 0.0,
+              "queries": 0.6015625,
+              "tokens": 53.8515625
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.015625,
+              "exact_set": 0.953125,
+              "false_drop": 0.046875,
+              "false_keep": 0.0,
+              "queries": 0.6015625,
+              "tokens": 53.8515625
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.5546875,
+              "tokens": 1465.625
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.8046875,
+              "tokens": 1485.4609375
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.5546875,
+              "tokens": 1465.625
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.8046875,
+              "tokens": 1485.4609375
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.03125,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0,
+              "false_keep": 0.0703125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9765625,
+              "false_drop": 0.0,
+              "false_keep": 0.0234375,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9765625,
+              "false_drop": 0.0,
+              "false_keep": 0.0234375,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9765625,
+              "false_drop": 0.0,
+              "false_keep": 0.0234375,
+              "queries": 0.6171875,
+              "tokens": 32.640625
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9765625,
+              "false_drop": 0.0,
+              "false_keep": 0.0234375,
+              "queries": 0.640625,
+              "tokens": 34.0703125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9765625,
+              "false_drop": 0.0,
+              "false_keep": 0.0234375,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 3.0859375,
+              "tokens": 181.296875
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 3.09375,
+              "tokens": 181.7890625
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0625,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.34375,
+              "tokens": 21.1171875
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0625,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.34375,
+              "tokens": 21.1171875
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.46875,
+              "tokens": 1065.09375
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.65625,
+              "tokens": 1075.140625
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.46875,
+              "tokens": 1065.09375
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.65625,
+              "tokens": 1075.140625
+            }
+          }
+        },
+        "commonsense": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9609375,
+              "false_drop": 0.015625,
+              "false_keep": 0.0234375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9609375,
+              "false_drop": 0.015625,
+              "false_keep": 0.0234375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9609375,
+              "false_drop": 0.015625,
+              "false_keep": 0.0234375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9609375,
+              "false_drop": 0.015625,
+              "false_keep": 0.0234375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9609375,
+              "false_drop": 0.015625,
+              "false_keep": 0.0234375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 0.9609375,
+              "false_drop": 0.015625,
+              "false_keep": 0.0234375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 2.3125,
+              "tokens": 207.296875
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 2.3125,
+              "tokens": 207.0
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9140625,
+              "false_drop": 0.0859375,
+              "false_keep": 0.0,
+              "queries": 0.609375,
+              "tokens": 55.3828125
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0078125,
+              "exact_set": 0.9140625,
+              "false_drop": 0.0859375,
+              "false_keep": 0.0,
+              "queries": 0.609375,
+              "tokens": 55.3828125
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.6875,
+              "tokens": 1328.2890625
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.6484375,
+              "tokens": 1325.3046875
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.6875,
+              "tokens": 1328.2890625
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.6484375,
+              "tokens": 1325.3046875
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.109375,
+              "exact_set": 0.875,
+              "false_drop": 0.09375,
+              "false_keep": 0.0625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.109375,
+              "exact_set": 0.875,
+              "false_drop": 0.09375,
+              "false_keep": 0.0625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.109375,
+              "exact_set": 0.875,
+              "false_drop": 0.09375,
+              "false_keep": 0.0625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.109375,
+              "exact_set": 0.875,
+              "false_drop": 0.09375,
+              "false_keep": 0.0625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.109375,
+              "exact_set": 0.875,
+              "false_drop": 0.09375,
+              "false_keep": 0.0625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.109375,
+              "exact_set": 0.875,
+              "false_drop": 0.09375,
+              "false_keep": 0.0625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 3.015625,
+              "tokens": 175.3203125
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 3.1484375,
+              "tokens": 181.8828125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.0703125,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.546875,
+              "tokens": 35.2734375
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.0703125,
+              "exact_set": 0.9296875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0,
+              "queries": 0.546875,
+              "tokens": 35.2734375
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.1328125,
+              "tokens": 897.0546875
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.25,
+              "tokens": 900.6015625
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.1328125,
+              "tokens": 897.0546875
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.25,
+              "tokens": 900.6015625
+            }
+          }
+        }
+      }
+    },
+    "rows4": {
+      "aggregate": {
+        "stale": {
+          "n": 768,
+          "action_error": 0.11979166666666667,
+          "exact_set": 0.765625,
+          "false_drop": 0.1640625,
+          "false_keep": 0.15234375,
+          "queries": 0.0,
+          "tokens": 0.0
+        },
+        "warm_reweighted": {
+          "n": 768,
+          "action_error": 0.11848958333333333,
+          "exact_set": 0.7708333333333334,
+          "false_drop": 0.15364583333333334,
+          "false_keep": 0.15364583333333334,
+          "queries": 0.3854166666666667,
+          "tokens": 31.174479166666668
+        },
+        "max_uncertainty": {
+          "n": 768,
+          "action_error": 0.11848958333333333,
+          "exact_set": 0.7708333333333334,
+          "false_drop": 0.15364583333333334,
+          "false_keep": 0.15364583333333334,
+          "queries": 0.3854166666666667,
+          "tokens": 31.174479166666668
+        },
+        "random_recheck": {
+          "n": 768,
+          "action_error": 0.11848958333333333,
+          "exact_set": 0.7708333333333334,
+          "false_drop": 0.15364583333333334,
+          "false_keep": 0.15364583333333334,
+          "queries": 0.5911458333333334,
+          "tokens": 47.205729166666664
+        },
+        "periodic_recheck": {
+          "n": 768,
+          "action_error": 0.11848958333333333,
+          "exact_set": 0.7708333333333334,
+          "false_drop": 0.15364583333333334,
+          "false_keep": 0.15364583333333334,
+          "queries": 0.6666666666666666,
+          "tokens": 53.76953125
+        },
+        "tcr_guard": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 5.618489583333333,
+          "tokens": 420.2734375
+        },
+        "tcr_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 5.602864583333333,
+          "tokens": 419.1028645833333
+        },
+        "cold_restart": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.040364583333332,
+          "tokens": 1183.80078125
+        },
+        "cold_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.123697916666668,
+          "tokens": 1188.9791666666667
+        },
+        "tcr_density_gate_token": {
+          "n": 768,
+          "action_error": 0.0,
+          "exact_set": 1.0,
+          "false_drop": 0.0,
+          "false_keep": 0.0,
+          "queries": 16.123697916666668,
+          "tokens": 1188.9791666666667
+        }
+      },
+      "panel_team": {
+        "qasc": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.0546875,
+              "exact_set": 0.796875,
+              "false_drop": 0.1484375,
+              "false_keep": 0.1015625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.046875,
+              "exact_set": 0.8203125,
+              "false_drop": 0.1015625,
+              "false_keep": 0.125,
+              "queries": 0.8671875,
+              "tokens": 83.7578125
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.046875,
+              "exact_set": 0.8203125,
+              "false_drop": 0.1015625,
+              "false_keep": 0.125,
+              "queries": 0.8671875,
+              "tokens": 83.7578125
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.046875,
+              "exact_set": 0.8203125,
+              "false_drop": 0.1015625,
+              "false_keep": 0.125,
+              "queries": 1.265625,
+              "tokens": 121.609375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.046875,
+              "exact_set": 0.8203125,
+              "false_drop": 0.1015625,
+              "false_keep": 0.125,
+              "queries": 1.4453125,
+              "tokens": 139.28125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.046875,
+              "exact_set": 0.8203125,
+              "false_drop": 0.1015625,
+              "false_keep": 0.125,
+              "queries": 0.8671875,
+              "tokens": 83.7578125
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.28125,
+              "tokens": 508.9375
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.265625,
+              "tokens": 507.203125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.015625,
+              "exact_set": 0.7734375,
+              "false_drop": 0.2265625,
+              "false_keep": 0.0,
+              "queries": 2.03125,
+              "tokens": 195.7578125
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.015625,
+              "exact_set": 0.7734375,
+              "false_drop": 0.2265625,
+              "false_keep": 0.0,
+              "queries": 2.03125,
+              "tokens": 195.7578125
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.34375,
+              "tokens": 1592.3046875
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.3671875,
+              "tokens": 1594.6875
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.34375,
+              "tokens": 1592.3046875
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.3671875,
+              "tokens": 1594.6875
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.3125,
+              "exact_set": 0.40625,
+              "false_drop": 0.5,
+              "false_keep": 0.375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.328125,
+              "exact_set": 0.3828125,
+              "false_drop": 0.4921875,
+              "false_keep": 0.390625,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.328125,
+              "exact_set": 0.3828125,
+              "false_drop": 0.4921875,
+              "false_keep": 0.390625,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.328125,
+              "exact_set": 0.3828125,
+              "false_drop": 0.4921875,
+              "false_keep": 0.390625,
+              "queries": 0.46875,
+              "tokens": 31.2734375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.328125,
+              "exact_set": 0.3828125,
+              "false_drop": 0.4921875,
+              "false_keep": 0.390625,
+              "queries": 0.4453125,
+              "tokens": 29.6328125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.328125,
+              "exact_set": 0.3828125,
+              "false_drop": 0.4921875,
+              "false_keep": 0.390625,
+              "queries": 0.2890625,
+              "tokens": 19.5
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 6.34375,
+              "tokens": 429.78125
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 6.2109375,
+              "tokens": 420.9609375
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.2734375,
+              "exact_set": 0.4375,
+              "false_drop": 0.5625,
+              "false_keep": 0.0,
+              "queries": 3.28125,
+              "tokens": 219.203125
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.2734375,
+              "exact_set": 0.4375,
+              "false_drop": 0.5625,
+              "false_keep": 0.0,
+              "queries": 3.28125,
+              "tokens": 219.203125
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.1328125,
+              "tokens": 1102.8984375
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.921875,
+              "tokens": 1088.6796875
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.1328125,
+              "tokens": 1102.8984375
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.921875,
+              "tokens": 1088.6796875
+            }
+          }
+        },
+        "sciq": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.046875,
+              "exact_set": 0.8671875,
+              "false_drop": 0.0546875,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.875,
+              "false_drop": 0.0390625,
+              "false_keep": 0.09375,
+              "queries": 0.78125,
+              "tokens": 64.0234375
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.875,
+              "false_drop": 0.0390625,
+              "false_keep": 0.09375,
+              "queries": 0.78125,
+              "tokens": 64.0234375
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.875,
+              "false_drop": 0.0390625,
+              "false_keep": 0.09375,
+              "queries": 1.1953125,
+              "tokens": 97.7109375
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.875,
+              "false_drop": 0.0390625,
+              "false_keep": 0.09375,
+              "queries": 1.46875,
+              "tokens": 119.6328125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0390625,
+              "exact_set": 0.875,
+              "false_drop": 0.0390625,
+              "false_keep": 0.09375,
+              "queries": 0.78125,
+              "tokens": 64.0234375
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.2109375,
+              "tokens": 456.7578125
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.203125,
+              "tokens": 455.9921875
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.015625,
+              "exact_set": 0.9140625,
+              "false_drop": 0.0859375,
+              "false_keep": 0.0,
+              "queries": 1.2265625,
+              "tokens": 108.0
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.015625,
+              "exact_set": 0.9140625,
+              "false_drop": 0.0859375,
+              "false_keep": 0.0,
+              "queries": 1.2265625,
+              "tokens": 108.0
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.25,
+              "tokens": 1287.7265625
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.4296875,
+              "tokens": 1302.21875
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.25,
+              "tokens": 1287.7265625
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.4296875,
+              "tokens": 1302.21875
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.09375,
+              "exact_set": 0.8515625,
+              "false_drop": 0.0625,
+              "false_keep": 0.125,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.0859375,
+              "exact_set": 0.875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0859375,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.0859375,
+              "exact_set": 0.875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0859375,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.0859375,
+              "exact_set": 0.875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0859375,
+              "queries": 0.6171875,
+              "tokens": 32.640625
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.0859375,
+              "exact_set": 0.875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0859375,
+              "queries": 0.640625,
+              "tokens": 34.0703125
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.0859375,
+              "exact_set": 0.875,
+              "false_drop": 0.0703125,
+              "false_keep": 0.0859375,
+              "queries": 0.375,
+              "tokens": 19.765625
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.703125,
+              "tokens": 331.7890625
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.7265625,
+              "tokens": 333.2109375
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.09375,
+              "exact_set": 0.8828125,
+              "false_drop": 0.1171875,
+              "false_keep": 0.0,
+              "queries": 1.15625,
+              "tokens": 69.421875
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.09375,
+              "exact_set": 0.8828125,
+              "false_drop": 0.1171875,
+              "false_keep": 0.0,
+              "queries": 1.15625,
+              "tokens": 69.421875
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.1328125,
+              "tokens": 891.4609375
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.4140625,
+              "tokens": 906.9375
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.1328125,
+              "tokens": 891.4609375
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.4140625,
+              "tokens": 906.9375
+            }
+          }
+        },
+        "commonsense": {
+          "0": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8203125,
+              "false_drop": 0.109375,
+              "false_keep": 0.140625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8203125,
+              "false_drop": 0.109375,
+              "false_keep": 0.140625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8203125,
+              "false_drop": 0.109375,
+              "false_keep": 0.140625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8203125,
+              "false_drop": 0.109375,
+              "false_keep": 0.140625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8203125,
+              "false_drop": 0.109375,
+              "false_keep": 0.140625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.8203125,
+              "false_drop": 0.109375,
+              "false_keep": 0.140625,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.1953125,
+              "tokens": 453.5703125
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.234375,
+              "tokens": 456.6328125
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.7734375,
+              "false_drop": 0.2265625,
+              "false_keep": 0.0,
+              "queries": 1.671875,
+              "tokens": 148.7109375
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.078125,
+              "exact_set": 0.7734375,
+              "false_drop": 0.2265625,
+              "false_keep": 0.0,
+              "queries": 1.671875,
+              "tokens": 148.7109375
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.7109375,
+              "tokens": 1317.1328125
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.8359375,
+              "tokens": 1326.515625
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.7109375,
+              "tokens": 1317.1328125
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 15.8359375,
+              "tokens": 1326.515625
+            }
+          },
+          "1": {
+            "stale": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.8515625,
+              "false_drop": 0.109375,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "warm_reweighted": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.8515625,
+              "false_drop": 0.109375,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "max_uncertainty": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.8515625,
+              "false_drop": 0.109375,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "random_recheck": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.8515625,
+              "false_drop": 0.109375,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "periodic_recheck": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.8515625,
+              "false_drop": 0.109375,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "source_only_ctdr": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.8515625,
+              "false_drop": 0.109375,
+              "false_keep": 0.0859375,
+              "queries": 0.0,
+              "tokens": 0.0
+            },
+            "tcr_guard": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.9765625,
+              "tokens": 340.8046875
+            },
+            "tcr_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 5.9765625,
+              "tokens": 340.6171875
+            },
+            "tcr_bound": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.859375,
+              "false_drop": 0.140625,
+              "false_keep": 0.0,
+              "queries": 1.2109375,
+              "tokens": 76.28125
+            },
+            "tcr_bound_token": {
+              "n": 128,
+              "action_error": 0.1328125,
+              "exact_set": 0.859375,
+              "false_drop": 0.140625,
+              "false_keep": 0.0,
+              "queries": 1.2109375,
+              "tokens": 76.28125
+            },
+            "tcr_density_gate": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.671875,
+              "tokens": 911.28125
+            },
+            "tcr_density_gate_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.7734375,
+              "tokens": 914.8359375
+            },
+            "cold_restart": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.671875,
+              "tokens": 911.28125
+            },
+            "cold_token": {
+              "n": 128,
+              "action_error": 0.0,
+              "exact_set": 1.0,
+              "false_drop": 0.0,
+              "false_keep": 0.0,
+              "queries": 16.7734375,
+              "tokens": 914.8359375
+            }
+          }
+        }
+      }
+    }
+  },
+  "interpretation": "Post-fix worker outputs. Changed-row metadata derives from frozen prompt edit; no answer labels are used by method."
+}
