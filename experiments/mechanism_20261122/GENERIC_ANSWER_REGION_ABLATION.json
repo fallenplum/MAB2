@@ -1,0 +1,2347 @@
+{
+  "schema": "generic_answer_region_ablation_v1",
+  "cell_count": 51,
+  "quantile": 0.9,
+  "mean": {
+    "graph_conditioned": {
+      "decision_exact": 0.9981325863678805,
+      "answer_action_exact": 1.0,
+      "answer_accuracy": 0.552125197905249,
+      "tokens": 141.06983264320218,
+      "queries": 1.6964285714285714
+    },
+    "pooled_radius": {
+      "decision_exact": 0.9981325863678805,
+      "answer_action_exact": 1.0,
+      "answer_accuracy": 0.552125197905249,
+      "tokens": 253.24018339219748,
+      "queries": 2.764122315592904
+    },
+    "pooled_uniform_priority": {
+      "decision_exact": 1.0,
+      "answer_action_exact": 1.0,
+      "answer_accuracy": 0.552125197905249,
+      "tokens": 264.647858056266,
+      "queries": 2.8958840782689887
+    },
+    "masked_graph_conditioned": {
+      "decision_exact": 0.9971988795518208,
+      "answer_action_exact": 0.9904853245646084,
+      "answer_accuracy": 0.5499406284252831,
+      "tokens": 119.99988836114154,
+      "queries": 1.490406669914343
+    },
+    "masked_pooled_radius": {
+      "decision_exact": 0.9971988795518208,
+      "answer_action_exact": 0.9904853245646084,
+      "answer_accuracy": 0.5499406284252831,
+      "tokens": 122.78687380749402,
+      "queries": 1.5222389680509885
+    },
+    "masked_pooled_uniform_priority": {
+      "decision_exact": 0.9971988795518208,
+      "answer_action_exact": 0.9904853245646084,
+      "answer_accuracy": 0.5499406284252831,
+      "tokens": 126.64293833475419,
+      "queries": 1.5665697438395647
+    }
+  },
+  "cells": [
+    {
+      "worker": "m60_conditional_dedup_commonsense\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 348.4375,
+        "queries": 3.6875
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 369.625,
+        "queries": 3.9375
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_commonsense\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 90.5,
+        "queries": 1.25
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 90.5,
+        "queries": 1.25
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_qasc\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 57.095238095238095,
+        "queries": 0.5714285714285714
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 212.9047619047619,
+        "queries": 2.0476190476190474
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 239.04761904761904,
+        "queries": 2.3333333333333335
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 43.38095238095238,
+        "queries": 0.42857142857142855
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 43.38095238095238,
+        "queries": 0.42857142857142855
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 43.38095238095238,
+        "queries": 0.42857142857142855
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_qasc\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 80.14285714285714,
+        "queries": 1.1428571428571428
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 300.0,
+        "queries": 3.9523809523809526
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 300.0,
+        "queries": 3.9523809523809526
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows2_commonsense\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 171.0625,
+        "queries": 1.875
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 348.6875,
+        "queries": 3.75
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 358.6875,
+        "queries": 3.875
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 171.0625,
+        "queries": 1.875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 171.0625,
+        "queries": 1.875
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 181.5,
+        "queries": 2.0
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows2_commonsense\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 31.4375,
+        "queries": 0.4375
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 73.625,
+        "queries": 1.0
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 73.625,
+        "queries": 1.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 31.4375,
+        "queries": 0.4375
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 35.875,
+        "queries": 0.5
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 35.875,
+        "queries": 0.5
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows2_qasc\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 124.52380952380952,
+        "queries": 1.2380952380952381
+      },
+      "pooled_radius": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 298.85714285714283,
+        "queries": 2.9047619047619047
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 315.9047619047619,
+        "queries": 3.0952380952380953
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 115.47619047619048,
+        "queries": 1.1428571428571428
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 135.14285714285714,
+        "queries": 1.3333333333333333
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 144.1904761904762,
+        "queries": 1.4285714285714286
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows2_qasc\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 154.76190476190476,
+        "queries": 2.1904761904761907
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 294.4761904761905,
+        "queries": 4.0
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 294.4761904761905,
+        "queries": 4.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows2_sciq\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 181.95652173913044,
+        "queries": 1.9565217391304348
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 432.39130434782606,
+        "queries": 3.6956521739130435
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 432.39130434782606,
+        "queries": 3.6956521739130435
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 167.8695652173913,
+        "queries": 1.8695652173913044
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 167.8695652173913,
+        "queries": 1.8695652173913044
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 171.91304347826087,
+        "queries": 1.9130434782608696
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows2_sciq\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 188.0,
+        "queries": 1.9130434782608696
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 188.0,
+        "queries": 1.9130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows4_commonsense\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 357.0,
+        "queries": 4.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 357.0,
+        "queries": 4.0
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows4_commonsense\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 61.5,
+        "queries": 0.875
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 65.8125,
+        "queries": 0.9375
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 70.25,
+        "queries": 1.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 61.5,
+        "queries": 0.875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 65.8125,
+        "queries": 0.9375
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 70.25,
+        "queries": 1.0
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows4_qasc\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 294.0952380952381,
+        "queries": 3.0
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 318.57142857142856,
+        "queries": 3.238095238095238
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 346.9047619047619,
+        "queries": 3.5238095238095237
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 294.0952380952381,
+        "queries": 3.0
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 318.57142857142856,
+        "queries": 3.238095238095238
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 346.9047619047619,
+        "queries": 3.5238095238095237
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows4_qasc\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 276.2857142857143,
+        "queries": 4.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 276.2857142857143,
+        "queries": 4.0
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows4_sciq\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 338.0869565217391,
+        "queries": 3.8260869565217392
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 338.0869565217391,
+        "queries": 3.8260869565217392
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_rows4_sciq\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_sciq\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 103.17391304347827,
+        "queries": 1.0434782608695652
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 466.69565217391306,
+        "queries": 3.5217391304347827
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 484.7826086956522,
+        "queries": 3.652173913043478
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      }
+    },
+    {
+      "worker": "m60_conditional_dedup_sciq\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 218.7391304347826,
+        "queries": 1.8695652173913044
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 223.08695652173913,
+        "queries": 1.9130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_commonsense\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 348.4375,
+        "queries": 3.6875
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 369.625,
+        "queries": 3.9375
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_commonsense\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 90.5,
+        "queries": 1.25
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 90.5,
+        "queries": 1.25
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 21.5,
+        "queries": 0.3125
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_commonsense\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 114.25,
+        "queries": 1.625
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 202.3125,
+        "queries": 2.75
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 217.1875,
+        "queries": 2.9375
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 47.875,
+        "queries": 0.6875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 47.875,
+        "queries": 0.6875
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 47.875,
+        "queries": 0.6875
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_qasc\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 57.095238095238095,
+        "queries": 0.5714285714285714
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 212.9047619047619,
+        "queries": 2.0476190476190474
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 239.04761904761904,
+        "queries": 2.3333333333333335
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 43.38095238095238,
+        "queries": 0.42857142857142855
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 43.38095238095238,
+        "queries": 0.42857142857142855
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 43.38095238095238,
+        "queries": 0.42857142857142855
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_qasc\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 80.14285714285714,
+        "queries": 1.1428571428571428
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 300.0,
+        "queries": 3.9523809523809526
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 300.0,
+        "queries": 3.9523809523809526
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_qasc\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 116.57142857142857,
+        "queries": 1.3333333333333333
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 148.47619047619048,
+        "queries": 1.7142857142857142
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 171.38095238095238,
+        "queries": 2.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 39.142857142857146,
+        "queries": 0.47619047619047616
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 39.142857142857146,
+        "queries": 0.47619047619047616
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 39.142857142857146,
+        "queries": 0.47619047619047616
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_commonsense\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 171.0625,
+        "queries": 1.875
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 348.6875,
+        "queries": 3.75
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 358.6875,
+        "queries": 3.875
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 171.0625,
+        "queries": 1.875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 171.0625,
+        "queries": 1.875
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 181.5,
+        "queries": 2.0
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_commonsense\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 31.4375,
+        "queries": 0.4375
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 73.625,
+        "queries": 1.0
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 73.625,
+        "queries": 1.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 31.4375,
+        "queries": 0.4375
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 35.875,
+        "queries": 0.5
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 35.875,
+        "queries": 0.5
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_commonsense\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 125.9375,
+        "queries": 1.8125
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 203.6875,
+        "queries": 2.8125
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 246.875,
+        "queries": 3.375
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 82.3125,
+        "queries": 1.1875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 82.3125,
+        "queries": 1.1875
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 82.3125,
+        "queries": 1.1875
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_qasc\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 124.52380952380952,
+        "queries": 1.2380952380952381
+      },
+      "pooled_radius": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 298.85714285714283,
+        "queries": 2.9047619047619047
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 315.9047619047619,
+        "queries": 3.0952380952380953
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 115.47619047619048,
+        "queries": 1.1428571428571428
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 135.14285714285714,
+        "queries": 1.3333333333333333
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 144.1904761904762,
+        "queries": 1.4285714285714286
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_qasc\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 154.76190476190476,
+        "queries": 2.1904761904761907
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 294.4761904761905,
+        "queries": 4.0
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 294.4761904761905,
+        "queries": 4.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_qasc\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 118.04761904761905,
+        "queries": 1.380952380952381
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 173.66666666666666,
+        "queries": 2.0476190476190474
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 215.85714285714286,
+        "queries": 2.5714285714285716
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 67.0,
+        "queries": 0.8095238095238095
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 67.0,
+        "queries": 0.8095238095238095
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 67.0,
+        "queries": 0.8095238095238095
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_sciq\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 181.95652173913044,
+        "queries": 1.9565217391304348
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 432.39130434782606,
+        "queries": 3.6956521739130435
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 432.39130434782606,
+        "queries": 3.6956521739130435
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 167.8695652173913,
+        "queries": 1.8695652173913044
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 167.8695652173913,
+        "queries": 1.8695652173913044
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 171.91304347826087,
+        "queries": 1.9130434782608696
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_sciq\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 188.0,
+        "queries": 1.9130434782608696
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 188.0,
+        "queries": 1.9130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 60.34782608695652,
+        "queries": 0.9565217391304348
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows2_sciq\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 123.78260869565217,
+        "queries": 1.4782608695652173
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 267.2173913043478,
+        "queries": 2.608695652173913
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 304.1304347826087,
+        "queries": 3.130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 85.26086956521739,
+        "queries": 1.2173913043478262
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 97.1304347826087,
+        "queries": 1.391304347826087
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 100.04347826086956,
+        "queries": 1.434782608695652
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_commonsense\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 357.0,
+        "queries": 4.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 335.875,
+        "queries": 3.75
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 357.0,
+        "queries": 4.0
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_commonsense\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 61.5,
+        "queries": 0.875
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 65.8125,
+        "queries": 0.9375
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 70.25,
+        "queries": 1.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 61.5,
+        "queries": 0.875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 65.8125,
+        "queries": 0.9375
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 70.25,
+        "queries": 1.0
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_commonsense\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5,
+        "tokens": 193.9375,
+        "queries": 2.8125
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5,
+        "tokens": 203.375,
+        "queries": 2.9375
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5,
+        "tokens": 214.1875,
+        "queries": 3.0625
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5,
+        "tokens": 193.9375,
+        "queries": 2.8125
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5,
+        "tokens": 203.375,
+        "queries": 2.9375
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5,
+        "tokens": 214.1875,
+        "queries": 3.0625
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_qasc\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 294.0952380952381,
+        "queries": 3.0
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 318.57142857142856,
+        "queries": 3.238095238095238
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 346.9047619047619,
+        "queries": 3.5238095238095237
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 294.0952380952381,
+        "queries": 3.0
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 318.57142857142856,
+        "queries": 3.238095238095238
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 346.9047619047619,
+        "queries": 3.5238095238095237
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_qasc\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 276.2857142857143,
+        "queries": 4.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 273.2857142857143,
+        "queries": 3.9523809523809526
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 276.2857142857143,
+        "queries": 4.0
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_qasc\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 173.28571428571428,
+        "queries": 2.1904761904761907
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 173.28571428571428,
+        "queries": 2.1904761904761907
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 184.76190476190476,
+        "queries": 2.3333333333333335
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 173.28571428571428,
+        "queries": 2.1904761904761907
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 173.28571428571428,
+        "queries": 2.1904761904761907
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 184.76190476190476,
+        "queries": 2.3333333333333335
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_sciq\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 338.0869565217391,
+        "queries": 3.8260869565217392
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 334.30434782608694,
+        "queries": 3.782608695652174
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 338.0869565217391,
+        "queries": 3.8260869565217392
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_sciq\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 117.82608695652173,
+        "queries": 1.9130434782608696
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_rows4_sciq\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 195.69565217391303,
+        "queries": 2.869565217391304
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 210.7391304347826,
+        "queries": 3.0869565217391304
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 213.7826086956522,
+        "queries": 3.130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 195.69565217391303,
+        "queries": 2.869565217391304
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 210.7391304347826,
+        "queries": 3.0869565217391304
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 213.7826086956522,
+        "queries": 3.130434782608696
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_sciq\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 103.17391304347827,
+        "queries": 1.0434782608695652
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 466.69565217391306,
+        "queries": 3.5217391304347827
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 484.7826086956522,
+        "queries": 3.652173913043478
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_sciq\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 218.7391304347826,
+        "queries": 1.8695652173913044
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 223.08695652173913,
+        "queries": 1.9130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      }
+    },
+    {
+      "worker": "m60_conditional_llama3_sciq\\WORKER2.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 109.69565217391305,
+        "queries": 1.1304347826086956
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 286.6521739130435,
+        "queries": 2.5217391304347827
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 305.0869565217391,
+        "queries": 2.739130434782609
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 51.52173913043478,
+        "queries": 0.7391304347826086
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 51.52173913043478,
+        "queries": 0.7391304347826086
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 51.52173913043478,
+        "queries": 0.7391304347826086
+      }
+    },
+    {
+      "worker": "m60_conditional_server_commonsense\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 232.4375,
+        "queries": 2.5
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 343.25,
+        "queries": 3.625
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 369.625,
+        "queries": 3.9375
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.875,
+        "answer_accuracy": 0.375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.875,
+        "answer_accuracy": 0.375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.875,
+        "answer_accuracy": 0.375,
+        "tokens": 80.3125,
+        "queries": 0.875
+      }
+    },
+    {
+      "worker": "m60_conditional_server_commonsense\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 27.125,
+        "queries": 0.375
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 75.3125,
+        "queries": 1.0
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 75.3125,
+        "queries": 1.0
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 17.9375,
+        "queries": 0.25
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 17.9375,
+        "queries": 0.25
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 17.9375,
+        "queries": 0.25
+      }
+    },
+    {
+      "worker": "m60_conditional_server_qasc\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 156.1904761904762,
+        "queries": 1.5238095238095237
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 207.9047619047619,
+        "queries": 2.0
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 228.76190476190476,
+        "queries": 2.238095238095238
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 0.9047619047619048,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 38.904761904761905,
+        "queries": 0.38095238095238093
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 0.9047619047619048,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 38.904761904761905,
+        "queries": 0.38095238095238093
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 0.9047619047619048,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 38.904761904761905,
+        "queries": 0.38095238095238093
+      }
+    },
+    {
+      "worker": "m60_conditional_server_qasc\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 106.33333333333333,
+        "queries": 1.5238095238095237
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 300.0,
+        "queries": 3.9523809523809526
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 300.0,
+        "queries": 3.9523809523809526
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.9523809523809523,
+        "answer_accuracy": 0.42857142857142855,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.9523809523809523,
+        "answer_accuracy": 0.42857142857142855,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.9523809523809523,
+        "answer_accuracy": 0.42857142857142855,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      }
+    },
+    {
+      "worker": "m60_conditional_server_sciq\\WORKER0.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4782608695652174,
+        "tokens": 317.5217391304348,
+        "queries": 2.5652173913043477
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4782608695652174,
+        "tokens": 462.6521739130435,
+        "queries": 3.5217391304347827
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4782608695652174,
+        "tokens": 474.04347826086956,
+        "queries": 3.608695652173913
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.782608695652174,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.782608695652174,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.782608695652174,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 81.91304347826087,
+        "queries": 0.9130434782608695
+      }
+    },
+    {
+      "worker": "m60_conditional_server_sciq\\WORKER1.jsonl",
+      "graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 57.0,
+        "queries": 0.6956521739130435
+      },
+      "pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 218.7391304347826,
+        "queries": 1.8695652173913044
+      },
+      "pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 223.08695652173913,
+        "queries": 1.9130434782608696
+      },
+      "masked_graph_conditioned": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "masked_pooled_radius": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      },
+      "masked_pooled_uniform_priority": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 30.17391304347826,
+        "queries": 0.4782608695652174
+      }
+    }
+  ],
+  "interpretation": "Pooled-radius removes row-specific graph-conditioned drift calibration. Pooled-uniform-priority additionally removes source-aware cost ranking. The masked controls use the same trusted changed-row mask. The all-row gap includes a zero-radius interface-invariance assumption for rows with no observed calibration drift."
+}

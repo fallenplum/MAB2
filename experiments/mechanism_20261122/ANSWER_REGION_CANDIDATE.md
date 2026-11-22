@@ -21,11 +21,11 @@ answer action while allowing individual edge decisions to remain unresolved.
 
 - Calibration uses questions with `hash(key) mod 5 < 3`.
 - The selection split is used only for development diagnostics.
-- The reported primary candidate uses a fixed calibrated TV radius (`q=0.9`)
-  selected before the independent test and revalidates all four relay rows. It
-  does not rely on an oracle changed-row mask. The maximum-radius `q=1.0`
-  policy is retained as a safety control, while the graph-edit descendant mask
-  is a secondary diagnostic.
+- The reported primary candidate uses a fixed maximum calibrated TV radius
+  (`q=1.0`) selected before the independent test and revalidates all four relay
+  rows. It does not rely on an oracle changed-row mask. The `q=0.9` policy is a
+  lower-cost frontier, while the graph-edit descendant mask is a secondary
+  diagnostic.
 - The all-row policy is compared with the descendant-mask policy to expose
   whether graph-localized metadata is actually safe for the model interface.
 - Metrics are decision exactness, final-answer action exactness, answer
@@ -37,12 +37,12 @@ answer action while allowing individual edge decisions to remain unresolved.
 
 The corrected independent ARCC cohort has ten cells spanning Qwen2.5-0.5B,
 Qwen-14B, and Llama-3.2-1B, with one-, two-, four-row drift and interface drift.
-The all-row q=0.9 policy reaches mean decision exactness 0.9968, answer-action
-exactness 1.0, answer accuracy 0.3161, and 162.29 relay tokens. TCR guard reaches
-1.0, 1.0, 0.2719, and 276.75 tokens. Cold restart costs 1396.93 tokens. The
-all-row controller therefore saves 41.4% relative to TCR guard on this independent
-cohort while preserving the final answer action. One Qwen-14B four-row cell has
-decision exactness 0.9677, which remains an explicit boundary failure.
+The all-row q=1.0 policy reaches decision exactness 1.0, answer-action exactness
+1.0, answer accuracy 0.3161, and 167.06 relay tokens. TCR guard reaches 1.0,
+1.0, 0.2719, and 276.75 tokens. Cold restart costs 1396.93 tokens. The primary
+all-row controller therefore saves 39.6% relative to TCR guard on this independent
+cohort while preserving both final answer actions and edge decisions. The q=0.9
+frontier saves 41.4% and has one Qwen-14B four-row decision exactness of 0.9677.
 
 The independent outputs were regenerated with a deduplicating worker after a
 batch-position artifact was found in the earlier worker. Earlier non-deduplicated
@@ -50,10 +50,26 @@ figures are excluded from the claim. The all-row fallback is the primary policy.
 The descendant-mask policy remains a secondary diagnostic because interface drift
 can change rows outside the declared graph edit mask.
 
+A hidden-interface panel makes this boundary measurable. When row 3 changes its
+relay interface without a matching evidence edit, the fact-only mask falls to
+0.871 answer-action exactness. Adding the interface fingerprint restores exact
+action and decision recovery at 291.16 tokens for `q=1.0`, compared with 345.79
+tokens for TCR guard. The deployable method therefore uses graph-conditioned
+drift radii together with interface-fingerprint gating and a conservative
+fallback.
+
 The historical 51-cell all-row q=0.9 evaluation gives 0.9981 decision exactness,
 1.0 answer-action exactness, 0.5521 answer accuracy, and 141.1 tokens. At q=1.0
 it gives exact decision recovery at 150.9 tokens. The corresponding full
 graph-plus-answer certificate averages 0.999, 0.990, 0.551, and 221.8 tokens.
+
+The orthogonal all-row ablation isolates the mechanism. Replacing row-conditional
+radii with one pooled radius increases relay cost from 141.07 to 253.24 tokens,
+and removing source-aware token priority increases it to 264.65 tokens, while
+answer-action exactness remains 1.0. A strict sensitivity that assigns a
+conservative radius to rows without calibration observations costs 270.26 tokens.
+This is why the deployable policy gates row-conditioned transport on an interface
+fingerprint and falls back when the fingerprint is missing or changed.
 
 Answer accuracy does not improve because the policy preserves the model's
 selected action. The evidence supports a cost reduction for certified action

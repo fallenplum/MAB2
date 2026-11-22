@@ -1,0 +1,77 @@
+{
+  "schema": "answer_region_margin_stratification_v1",
+  "bins": [
+    {
+      "q": 0.9,
+      "margin_low": 0.0,
+      "margin_high": 0.01,
+      "n": 522,
+      "tokens": 200.595785440613,
+      "queries": 2.375478927203065,
+      "action_exact": 1.0
+    },
+    {
+      "q": 1.0,
+      "margin_low": 0.0,
+      "margin_high": 0.01,
+      "n": 522,
+      "tokens": 208.30842911877394,
+      "queries": 2.475095785440613,
+      "action_exact": 1.0
+    },
+    {
+      "q": 0.9,
+      "margin_low": 0.01,
+      "margin_high": 0.05,
+      "n": 173,
+      "tokens": 154.0520231213873,
+      "queries": 1.9479768786127167,
+      "action_exact": 1.0
+    },
+    {
+      "q": 1.0,
+      "margin_low": 0.01,
+      "margin_high": 0.05,
+      "n": 173,
+      "tokens": 168.48554913294797,
+      "queries": 2.1040462427745665,
+      "action_exact": 1.0
+    },
+    {
+      "q": 0.9,
+      "margin_low": 0.05,
+      "margin_high": 0.1,
+      "n": 75,
+      "tokens": 162.52,
+      "queries": 1.96,
+      "action_exact": 1.0
+    },
+    {
+      "q": 1.0,
+      "margin_low": 0.05,
+      "margin_high": 0.1,
+      "n": 75,
+      "tokens": 185.81333333333333,
+      "queries": 2.1866666666666665,
+      "action_exact": 1.0
+    },
+    {
+      "q": 0.9,
+      "margin_low": 0.1,
+      "margin_high": Infinity,
+      "n": 37,
+      "tokens": 53.189189189189186,
+      "queries": 0.6486486486486487,
+      "action_exact": 1.0
+    },
+    {
+      "q": 1.0,
+      "margin_low": 0.1,
+      "margin_high": Infinity,
+      "n": 37,
+      "tokens": 103.35135135135135,
+      "queries": 1.162162162162162,
+      "action_exact": 1.0
+    }
+  ]
+}

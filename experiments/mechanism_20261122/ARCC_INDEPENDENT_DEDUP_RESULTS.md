@@ -11,8 +11,9 @@ This table uses the corrected worker that evaluates identical prompts once befor
 | cold restart | 1.0000 | 1.0000 | 0.2719 | 1396.93 | 12.974 |
 | answer-region, changed-row mask | 0.9968 | 1.0000 | 0.3161 | 142.60 | 1.068 |
 | answer-region, all rows | 0.9968 | 1.0000 | 0.3161 | 162.29 | 1.184 |
+| answer-region, all rows, q=1.0 | 1.0000 | 1.0000 | 0.3161 | 167.06 | 1.223 |
 
-The all-row controller reduces relay tokens by 41.4% relative to TCR guard while preserving the final answer action in every independent cell. It does not improve model knowledge accuracy. One Qwen-14B four-row cell has decision exactness 0.9677, so the claim is limited to action safety and cost reduction.
+The all-row q=1.0 controller reduces relay tokens by 39.6% relative to TCR guard while preserving both the final answer action and edge decisions in every independent cell. The q=0.9 frontier reduces tokens by 41.4% and has one Qwen-14B four-row decision exactness of 0.9677. The controller does not improve model knowledge accuracy. The primary claim is action safety and cost reduction.
 
 ## Cell boundary
 

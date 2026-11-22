@@ -66,6 +66,11 @@ def main(model_path, input_path, output_path):
             new_interfaces = row.get("new_relay_interface")
             if not isinstance(new_interfaces, list) or len(new_interfaces) != 4:
                 new_interfaces = ["", "", "", ""]
+            # Interface changes invalidate the corresponding cached relay row
+            # even when the evidence text itself is unchanged.
+            changed_rows = sorted(set(changed_rows) | {
+                index for index, interface in enumerate(new_interfaces) if interface
+            })
             new_relay = [source_problem + "\nEvidence: " + new_facts[index] +
                          new_interfaces[index] +
                          ("\nFirst researcher proposes hypothesis " + chr(65 + i) + "." if i >= 0 else "") +

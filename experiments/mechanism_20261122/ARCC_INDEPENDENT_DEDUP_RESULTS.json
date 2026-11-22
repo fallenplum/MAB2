@@ -13,7 +13,8 @@
     "tcr_guard": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.271875, "tokens": 276.7515625, "queries": 2.46015625},
     "cold_restart": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.271875, "tokens": 1396.92734375, "queries": 12.97421875},
     "answer_region_changed_q09": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "answer_accuracy": 0.31612903225806455, "tokens": 142.6, "queries": 1.067741935483871},
-    "answer_region_all_q09": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "answer_accuracy": 0.31612903225806455, "tokens": 162.2935483870968, "queries": 1.1838709677419355}
+    "answer_region_all_q09": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "answer_accuracy": 0.31612903225806455, "tokens": 162.2935483870968, "queries": 1.1838709677419355},
+    "answer_region_all_q10": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.31612903225806455, "tokens": 167.06451612903226, "queries": 1.2225806451612904}
   },
   "cells": [
     {"worker": "arcc_qwen25_dedup_r1.jsonl", "stale_action": 0.9453125, "tcr_tokens": 186.140625, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.3548387096774194, "all_tokens": 163.5483870967742, "all_queries": 1.096774193548387},
@@ -27,6 +28,6 @@
     {"worker": "arcc_llama1b_dedup_v310_r1.jsonl", "stale_action": 0.9765625, "tcr_tokens": 378.890625, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.41935483870967744, "all_tokens": 135.03225806451613, "all_queries": 0.9032258064516129},
     {"worker": "arcc_llama1b_dedup_v310_iface.jsonl", "stale_action": 0.953125, "tcr_tokens": 423.734375, "all_decision": 1.0, "all_action": 1.0, "all_accuracy": 0.41935483870967744, "all_tokens": 137.8709677419355, "all_queries": 0.8387096774193549}
   ],
-  "interpretation": "Across ten corrected independent cells, all-row answer-region q=.9 preserves final answer action exactly and reduces relay tokens by 41.4% relative to TCR guard on average. One Qwen-14B rows4 cell retains a decision-boundary miss at 0.9677 decision exactness, so the result is an action-safety and cost mechanism claim rather than unconditional edge-decision exactness."
+  "interpretation": "Across ten corrected independent cells, all-row answer-region q=1.0 preserves both final answer actions and edge decisions exactly while reducing relay tokens by 39.6% relative to TCR guard on average. The q=0.9 frontier saves 41.4% and has one Qwen-14B rows4 decision-boundary miss at 0.9677. The result is an action-safety and cost mechanism claim rather than an accuracy-improvement claim."
 }
 

@@ -103,9 +103,34 @@ safety with a residual decision-boundary failure rather than unconditional
 exactness. Historical held-out service traces show the same quality-preserving
 cost pattern.
 
+The 51-cell orthogonal ablation isolates the graph-conditioned components. With
+all four rows exposed to the certificate, a row-specific radius with
+source-aware token priority uses 141.07 relay tokens on average. Replacing the
+row-specific radii with one pooled radius raises the cost to 253.24 tokens at
+the same 1.0 answer-action exactness. This larger gap includes a zero-radius
+interface-invariance assumption for rows with no observed calibration drift.
+Under the same trusted changed-row mask, the row-specific radius uses 120.00
+tokens versus 122.79 for a pooled radius, and source-aware priority lowers the
+pooled control from 126.64 to 122.79 tokens. The component effects are therefore
+separated from the graph-mask prior. This cost pattern is an empirical
+mechanism result, not an accuracy improvement.
+
+The historical radius frontier gives 127.72, 134.05, 141.07, 143.67, and
+150.90 relay tokens at (q=0.5,0.75,0.9,0.95,1.0), respectively. Final answer
+action exactness stays at 1.0 across the frontier, while decision exactness
+reaches 1.0 at (q=1.0). This provides a fixed cost-safety operating curve
+without tuning on the held-out rows.
+
 The evidence does not establish improved answer accuracy. It supports a
 mechanism claim about graph-density-induced stale-credit failure and a
 decision-region reduction in feedback cost. Independent interface-drift cells
 are required before treating a descendant mask as safe without the all-row
 fallback.
+
+The hidden-interface panel makes this boundary causal. A fact-only mask under
+an undeclared row-3 interface change falls to 0.871 answer-action exactness.
+Including the interface fingerprint restores exact action and decision recovery
+at 291.16 relay tokens for \(q=1.0\), compared with 345.79 for TCR guard. The
+fingerprint is therefore part of the safety condition, rather than metadata
+used only for logging.
 
