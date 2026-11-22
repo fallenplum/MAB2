@@ -163,3 +163,8 @@ A question-disjoint service-answer selector was evaluated on private sealed labe
 ## 2026-11-23: real conditional interval transfer
 
 A question-disjoint transfer calibrated row-wise maximum historical TV drift on the training split and applied the conditional interval to held-out M60 outputs. Decision exactness was 98.41%/100%/100% for QASC/SciQ/CommonsenseQA, compared with warm 98.41%/95.65%/95.83% and explicit max-uncertainty 98.41%/95.65%/100%. Mean tokens were 230.33/206.99/209.75, about twice max-uncertainty at 99.48/89.48/90.75. QASC exposed a false-safe case under an empirical training radius. The result supports the soundness-cost tradeoff and rejects empirical-radius calibration as a final algorithm.
+
+
+## 2026-11-23: tightened conditional TV interval
+
+The conditional interval was tightened from per-cell bounds to the group-probability TV bound. Since the grouped mass change is at most the row TV radius, each label contribution receives only s_i delta. On the same 12 synthetic cells the robust policy stayed exact at 1.0. At drift 0.1, average queries were 0.483/1.536/3.866 for one/two/four edited rows. At drift 0.4 they were 0.818/1.958/4.0. Source-only exactness remained 83.44%/72.12%/59.84% for one/two/four rows at drift 0.4. The tighter bound improves the formal mechanism but still has no demonstrated task-level cost advantage.
