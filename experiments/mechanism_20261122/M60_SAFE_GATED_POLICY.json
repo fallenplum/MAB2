@@ -1,0 +1,282 @@
+{
+  "schema": "m60_safe_gated_budget_policy_v1",
+  "n_runs": 9,
+  "results": [
+    {
+      "seed": 7,
+      "target_task": "qasc",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.1,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 99.47619048,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 24.20634921,
+        "queries": 0.253968254
+      }
+    },
+    {
+      "seed": 19,
+      "target_task": "qasc",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.1,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 99.47619048,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 27.3015873,
+        "queries": 0.285714286
+      }
+    },
+    {
+      "seed": 43,
+      "target_task": "qasc",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.1,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 99.47619048,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9841269841,
+        "answer_accuracy": 0.2698412698,
+        "tokens": 27.3015873,
+        "queries": 0.285714286
+      }
+    },
+    {
+      "seed": 7,
+      "target_task": "sciq",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.1,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9565217391,
+        "answer_accuracy": 0.652173913,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 0.9565217391,
+        "answer_accuracy": 0.6231884058,
+        "tokens": 89.47826087,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9710144928,
+        "answer_accuracy": 0.5942028986,
+        "tokens": 18.49275362,
+        "queries": 0.202898551
+      }
+    },
+    {
+      "seed": 19,
+      "target_task": "sciq",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.1,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9565217391,
+        "answer_accuracy": 0.652173913,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 0.9565217391,
+        "answer_accuracy": 0.6231884058,
+        "tokens": 89.47826087,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9710144928,
+        "answer_accuracy": 0.5942028986,
+        "tokens": 18.57971014,
+        "queries": 0.202898551
+      }
+    },
+    {
+      "seed": 43,
+      "target_task": "sciq",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.1,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9565217391,
+        "answer_accuracy": 0.652173913,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 0.9565217391,
+        "answer_accuracy": 0.6231884058,
+        "tokens": 89.47826087,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9710144928,
+        "answer_accuracy": 0.5942028986,
+        "tokens": 18.63768116,
+        "queries": 0.202898551
+      }
+    },
+    {
+      "seed": 7,
+      "target_task": "commonsense",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.0,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9583333333,
+        "answer_accuracy": 0.4375,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 1.0,
+        "answer_accuracy": 0.4583333333,
+        "tokens": 90.75,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9583333333,
+        "answer_accuracy": 0.5625,
+        "tokens": 30.375,
+        "queries": 0.333333333
+      }
+    },
+    {
+      "seed": 19,
+      "target_task": "commonsense",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.0,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9583333333,
+        "answer_accuracy": 0.4375,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 1.0,
+        "answer_accuracy": 0.4583333333,
+        "tokens": 90.75,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9583333333,
+        "answer_accuracy": 0.5625,
+        "tokens": 30.375,
+        "queries": 0.333333333
+      }
+    },
+    {
+      "seed": 43,
+      "target_task": "commonsense",
+      "params": {
+        "margin_gate": 0.01,
+        "drift_gate": 0.0,
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "warm": {
+        "decision_exact": 0.9583333333,
+        "answer_accuracy": 0.4375,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "decision_exact": 1.0,
+        "answer_accuracy": 0.4583333333,
+        "tokens": 90.75,
+        "queries": 1.0
+      },
+      "safe_gated": {
+        "decision_exact": 0.9583333333,
+        "answer_accuracy": 0.5625,
+        "tokens": 32.27083333,
+        "queries": 0.354166667
+      }
+    }
+  ],
+  "summary": {
+    "qasc": {
+      "safe_answer_mean": 0.2698412698,
+      "warm_answer": 0.2698412698,
+      "safe_tokens_mean": 26.26984127,
+      "warm_exact": 0.9841269841,
+      "safe_exact": 0.9841269841
+    },
+    "sciq": {
+      "safe_answer_mean": 0.5942028986,
+      "warm_answer": 0.652173913,
+      "safe_tokens_mean": 18.57004831,
+      "warm_exact": 0.9565217391,
+      "safe_exact": 0.9710144928
+    },
+    "commonsense": {
+      "safe_answer_mean": 0.5625,
+      "warm_answer": 0.4375,
+      "safe_tokens_mean": 31.00694444,
+      "warm_exact": 0.9583333333,
+      "safe_exact": 0.9583333333
+    }
+  },
+  "interpretation": "Graph-drift and decision-boundary gated learned row revalidation. Hyperparameters are selected on non-target development tasks. The candidate reaches the cold answer level on Commonsense with a small token budget, but loses to warm on SciQ and has no QASC gain. It is therefore task-dependent exploratory evidence, not a robust final method."
+}
