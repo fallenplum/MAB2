@@ -109,7 +109,7 @@ def metrics(pred, target, gold):
 
 def run(manifest, output_path):
     alphas = (0.25, 0.50)
-    row_sets = {"A": (0,), "ABCD": (0, 1, 2, 3)}
+    row_sets = {"A": (1,), "ABCD": (0, 1, 2, 3)}
     rows_out = []
     for panel, folder_name in manifest["panels"].items():
         folder = Path(folder_name)
@@ -171,3 +171,4 @@ def run(manifest, output_path):
 if __name__ == "__main__":
     manifest = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     run(manifest, manifest["output"])
+

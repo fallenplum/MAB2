@@ -2,16 +2,16 @@
 
 ## 结果
 
-在 M60 四个冻结面板的 2304 个题目×团队单元上，对 relay 行做固定的条件通道漂移模拟。该结果是低成本机制诊断，不是新的独立模型确认。
+在 M60 四个冻结面板的 2304 个题目×团队单元上，对 relay 行做固定的条件通道漂移模拟。该结果是低成本机制诊断，不是新的独立模型确认。行索引按接口 schema 解释，A 为 advised A 行，no-advice 行没有被误标为 A。
 
 | 漂移 | source-only CTDR decision error | TCR-row decision error | TCR-row token | cold token |
 |---|---:|---:|---:|---:|
-| alpha=0.25, A | 0.0009 | 0 | 161.17 | 490.53 |
+| alpha=0.25, A | 0.0017 | 0 | 140.15 | 490.27 |
 | alpha=0.25, A-D | 0.0061 | 0 | 301.46 | 477.26 |
-| alpha=0.50, A | 0.0026 | 0 | 158.64 | 485.19 |
+| alpha=0.50, A | 0.0048 | 0 | 137.74 | 485.11 |
 | alpha=0.50, A-D | 0.0143 | 0 | 291.13 | 455.64 |
 
-Source-only CTDR 保留 0.4783 的 safe rate，但在条件通道变化时仍有决策集合错误。TCR-row 只重查已知受影响 relay 行，复用合法 terminal labels，在四种模拟条件下恢复完整 decision set。它相对 cold restart 节省约 34%–67% 的 post-edit token，具体百分比随条件变化而变。
+Source-only CTDR 保留 0.4783 的 safe rate，但在条件通道变化时仍有决策集合错误。TCR-row 只重查已知受影响 relay 行，复用合法 terminal labels，在四种模拟条件下恢复完整 decision set。它相对 cold restart 节省约 38%–72% 的 post-edit token，具体百分比随条件变化而变。
 
 ## 科学含义
 
