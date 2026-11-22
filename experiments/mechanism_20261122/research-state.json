@@ -1,12 +1,12 @@
 {
   "branch": "mechanism-20261122",
   "predecessor": "4c30b49645d7d021f093feda1f8947bf69e797c9",
-  "status": "ACTIVE",
+  "status": "EVALUATING",
   "old_negative_results_preserved": true,
   "charged_before_cycle": 93.37976313880533,
-  "charged_this_cycle": 1.8351309135225087,
-  "cumulative_gpu_hours": 95.21489405232785,
-  "reserved_gpu_hours": 9,
+  "charged_this_cycle": 3.8876585646470394,
+  "cumulative_gpu_hours": 97.26742170345237,
+  "reserved_gpu_hours": 0,
   "cap_gpu_hours": 160,
   "formal_jobs": {
     "M38": {
@@ -75,16 +75,43 @@
       ]
     },
     "M50": {
-      "status": "in_flight"
+      "status": "closed",
+      "charged_gpu_hours": 1.5551525459686917,
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
     },
     "M54": {
-      "status": "in_flight"
+      "status": "closed",
+      "charged_gpu_hours": 0.1261739550696479,
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M56": {
+      "status": "closed",
+      "charged_gpu_hours": 0.11318919738133748,
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
+    },
+    "M59": {
+      "status": "closed",
+      "charged_gpu_hours": 0.2580119527048535,
+      "exit_codes": [
+        0,
+        0,
+        0
+      ]
     }
   },
-  "active_jobs": [
-    "M50",
-    "M54"
-  ],
+  "active_jobs": [],
   "status_is_last_verified_snapshot": true,
   "sealed_original_tests_accessed": false,
   "evaluation_level": "M43/M45 matched ARC and CommonsenseQA. M46 exploratory TabMWP, M48 physical subset replication, M49 independent SciQ, M50 independent TabMWP with delayed feedback, M54 independent distinct-article SQuAD. Role permutations reuse questions."
