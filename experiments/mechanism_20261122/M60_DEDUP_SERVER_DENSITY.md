@@ -21,3 +21,7 @@ The old M60 radius and generic decision ranking are not credited as independent 
 This is not yet an ACL Main claim. The remaining evidence gap is an independent task family with graph manifests and conditional-channel drift controls, plus a replay that derives the mask from those manifests rather than post-hoc row metadata.
 
 
+## Equal-budget controls
+
+Random and periodic rechecks were capped at the per-unit TCR token budget. Their exact-set rates were 95.833% and 94.792% for one-row edits, 88.281% and 87.370% for two-row edits, and 76.953% and 76.823% for four-row edits. TCR remained at 100% in all three panels. These controls spend less than the cap when the next legal action would exceed it, and are reported separately from adaptive-to-decision costs.
+
