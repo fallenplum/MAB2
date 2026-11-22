@@ -73,9 +73,24 @@ def main(model_path, input_path, output_path):
                          for i, j in itertools.product(range(4), repeat=2)]
             seq = [code(v) for v in source + old_relay + new_relay + terminals]
             microbatch = max(1, int(os.environ.get("MAB2_MICROBATCH", "2")))
+            # Evaluate each distinct prompt once.  Several old/new relay rows
+            # are intentionally identical under a source-only edit.  Reusing
+            # the exact logits prevents batch-position or padding-kernel
+            # differences from being mistaken for conditional drift.
+            unique_keys = []
+            unique_index = {}
+            inverse = []
+            for ids in seq:
+                key = tuple(ids)
+                index = unique_index.get(key)
+                if index is None:
+                    index = len(unique_keys)
+                    unique_index[key] = index
+                    unique_keys.append(ids)
+                inverse.append(index)
             logits_parts = []
-            for start in range(0, len(seq), microbatch):
-                batch = seq[start:start + microbatch]
+            for start in range(0, len(unique_keys), microbatch):
+                batch = unique_keys[start:start + microbatch]
                 max_len = max(len(ids) for ids in batch)
                 input_ids = torch.full((len(batch), max_len), int(pad_id), dtype=torch.long)
                 attention_mask = torch.zeros((len(batch), max_len), dtype=torch.long)
@@ -86,7 +101,8 @@ def main(model_path, input_path, output_path):
                 pos = (x["attention_mask"].long().cumsum(1) - 1).clamp_min(0)
                 logits_parts.append(model(**x, position_ids=pos, use_cache=False).logits[:, -1].float().cpu())
                 del x, pos, input_ids, attention_mask
-            logits = torch.cat(logits_parts, dim=0)
+            unique_logits = torch.cat(logits_parts, dim=0)
+            logits = unique_logits[torch.as_tensor(inverse, dtype=torch.long)]
             probs = logits[:11, source_ids].softmax(1).tolist()
             labels = logits[11:, [v[0] for v in label_ids]].argmax(1).tolist()
             full = {str(i): probs[i] for i in range(11)}
@@ -101,3 +117,5 @@ def main(model_path, input_path, output_path):
 
 if __name__ == "__main__":
     main(*sys.argv[1:])
+
+
