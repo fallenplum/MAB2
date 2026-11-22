@@ -50,13 +50,14 @@ figures are excluded from the claim. The all-row fallback is the primary policy.
 The descendant-mask policy remains a secondary diagnostic because interface drift
 can change rows outside the declared graph edit mask.
 
-A hidden-interface panel makes this boundary measurable. When row 3 changes its
-relay interface without a matching evidence edit, the fact-only mask falls to
-0.871 answer-action exactness. Adding the interface fingerprint restores exact
-action and decision recovery at 291.16 tokens for `q=1.0`, compared with 345.79
-tokens for TCR guard. The deployable method therefore uses graph-conditioned
-drift radii together with interface-fingerprint gating and a conservative
-fallback.
+A hidden-interface panel across Qwen2.5-0.5B, Qwen-14B, and Llama-3.2-1B makes
+this boundary measurable. When row 3 changes its relay interface without a
+matching evidence edit, the fact-only mask loses answer-action exactness on
+Qwen2.5 and Llama. Adding the interface fingerprint restores exact answer
+actions for all three models at `q=1.0`, with 15.8%--66.4% lower relay cost
+than TCR guard. Qwen-14B retains one decision-boundary miss. The deployable
+method therefore uses graph-conditioned drift radii together with
+interface-fingerprint gating and a conservative fallback.
 
 The historical 51-cell all-row q=0.9 evaluation gives 0.9981 decision exactness,
 1.0 answer-action exactness, 0.5521 answer accuracy, and 141.1 tokens. At q=1.0

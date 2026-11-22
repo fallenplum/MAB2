@@ -127,10 +127,12 @@ decision-region reduction in feedback cost. Independent interface-drift cells
 are required before treating a descendant mask as safe without the all-row
 fallback.
 
-The hidden-interface panel makes this boundary causal. A fact-only mask under
-an undeclared row-3 interface change falls to 0.871 answer-action exactness.
-Including the interface fingerprint restores exact action and decision recovery
-at 291.16 relay tokens for \(q=1.0\), compared with 345.79 for TCR guard. The
-fingerprint is therefore part of the safety condition, rather than metadata
-used only for logging.
+The hidden-interface panel makes this boundary causal across Qwen2.5-0.5B,
+Qwen-14B, and Llama-3.2-1B. A fact-only mask under an undeclared row-3
+interface change loses answer-action exactness on Qwen2.5 and Llama. Including
+the interface fingerprint restores exact answer actions for all three models
+at q=1.0, with 15.8%--66.4% lower relay cost than TCR guard. Qwen-14B retains
+one decision-boundary miss, so the claim is stated at the answer-action level.
+The fingerprint is part of the safety condition, rather than metadata used only
+for logging.
 

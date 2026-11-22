@@ -1,13 +1,29 @@
 {
-  "schema": "interface_fingerprint_hidden_drift_v1",
-  "model": "Qwen2.5-0.5B-Instruct",
-  "n_test": 31,
-  "protocol": "one evidence-row edit plus an undeclared relay-interface change on row 3",
-  "stale": {"decision_exact": 0.8671875, "answer_action_exact": 0.8203125, "tokens": 0.0},
-  "tcr_guard": {"decision_exact": 1.0, "answer_action_exact": 1.0, "tokens": 345.7890625},
-  "naive_fact_mask_q09": {"decision_exact": 0.9032258064516129, "answer_action_exact": 0.8709677419354839, "answer_accuracy": 0.25806451612903225, "tokens": 124.80645161290323, "queries": 0.8709677419354839},
-  "interface_aware_mask_q09": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.25806451612903225, "tokens": 279.4516129032258, "queries": 1.8064516129032258},
-  "interface_aware_mask_q10": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.25806451612903225, "tokens": 291.16129032258067, "queries": 1.967741935483871},
-  "interpretation": "An undeclared interface change breaks the fact-only descendant mask. Including interface fingerprints in the changed-row set restores exact action and decision recovery. At q=1.0 the interface-aware policy saves 15.8% relay tokens relative to TCR guard. The low-cost naive mask is unsafe and is not a valid baseline for the main claim."
+  "schema": "interface_fingerprint_hidden_drift_v2",
+  "protocol": "one evidence-row edit plus an undeclared relay-interface change on row 3, evaluated on the fixed 31-question test split",
+  "cells": [
+    {
+      "model": "Qwen2.5-0.5B-Instruct",
+      "stale": {"decision_exact": 0.8671875, "answer_action_exact": 0.8203125, "tokens": 0.0},
+      "tcr_guard": {"decision_exact": 1.0, "answer_action_exact": 1.0, "tokens": 345.7890625},
+      "naive_fact_mask_q09": {"decision_exact": 0.9032258064516129, "answer_action_exact": 0.8709677419354839, "tokens": 124.80645161290323},
+      "interface_aware_mask_q10": {"decision_exact": 1.0, "answer_action_exact": 1.0, "tokens": 291.16129032258067}
+    },
+    {
+      "model": "Qwen-14B",
+      "stale": {"decision_exact": 0.8671875, "answer_action_exact": 0.7890625, "tokens": 0.0},
+      "tcr_guard": {"decision_exact": 1.0, "answer_action_exact": 1.0, "tokens": 322.5078125},
+      "naive_fact_mask_q09": {"decision_exact": 0.9354838709677419, "answer_action_exact": 1.0, "tokens": 102.6774193548387},
+      "interface_aware_mask_q10": {"decision_exact": 0.967741935483871, "answer_action_exact": 1.0, "tokens": 206.1290322580645}
+    },
+    {
+      "model": "Llama-3.2-1B",
+      "stale": {"decision_exact": 0.8515625, "answer_action_exact": 0.8671875, "tokens": 0.0},
+      "tcr_guard": {"decision_exact": 1.0, "answer_action_exact": 1.0, "tokens": 563.8359375},
+      "naive_fact_mask_q09": {"decision_exact": 1.0, "answer_action_exact": 0.9354838709677419, "tokens": 80.16129032258064},
+      "interface_aware_mask_q10": {"decision_exact": 1.0, "answer_action_exact": 1.0, "tokens": 189.48387096774192}
+    }
+  ],
+  "interpretation": "An undeclared interface change breaks the fact-only descendant mask on Qwen2.5 and Llama and degrades decision recovery on Qwen-14B. Including the interface fingerprint in the changed-row set restores exact answer actions for all three models. At q=1.0 the interface-aware policy saves 15.8%, 36.1%, and 66.4% relay tokens relative to TCR guard for Qwen2.5, Qwen-14B, and Llama respectively. The low-cost naive mask is unsafe and is not a valid primary policy."
 }
 
