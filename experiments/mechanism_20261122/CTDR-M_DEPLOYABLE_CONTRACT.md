@@ -18,6 +18,8 @@ Stale、Warm/Reweighted、Source-TV、Random、Periodic、Max-Uncertainty 和 Fu
 4. 语义相同但格式或 token 顺序变化，要求保守复检。
 5. 缺失 manifest 字段，要求回退全重查。
 
+若图编辑传播到未直接列出的 relay 行，必须通过下游可达关系或该行的上游消息签名变化进入并集。漏标的传播行属于失败样本，报告定位召回和 full-restart fallback 比例，不把 oracle mask 当作主方法输入。
+
 主指标是 exact decision-set mismatch、误删、误留、增量 token、padding token 和 wall-clock。按项目约定不运行置信区间或 bootstrap。
 
 ## 预注册门

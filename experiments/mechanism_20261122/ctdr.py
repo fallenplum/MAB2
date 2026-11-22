@@ -1,4 +1,13 @@
-"""Conservative certificate transport for source-only graph edits."""
+"""Conservative certificate transport for source-only graph edits.
+
+The implemented radius is deliberately conservative for nonnegative source
+weights. For a general credit value ``Delta_y = sum_i s_i q_i(y)``, the
+transport bound must retain absolute weights,
+``sum_i |s'_i-s_i| |q_i| + sum_i |s'_i| |q'_i-q_i|``. A TV shorthand is valid
+only when the conditional representation and its normalization make that
+substitution sound. Conditional relay drift therefore uses explicit row
+revalidation instead of this source-only radius.
+"""
 import numpy as np
 from blind_scheduler import Audit
 
