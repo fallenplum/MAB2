@@ -1,0 +1,30 @@
+{
+  "schema": "m60_max_uncertainty_density_replay_v1",
+  "panel": "three_model_fact_drift_density_replay",
+  "question_model_units_per_density": 1152,
+  "results": {
+    "rows1": {
+      "warm_reweighted": {"exact_set": 0.9791666666666666, "action_error": 0.008680555555555556, "tokens": 23.216145833333332, "queries": 0.2795138888888889},
+      "max_uncertainty": {"exact_set": 0.9791666666666666, "action_error": 0.008680555555555556, "tokens": 23.3515625, "queries": 0.28125},
+      "tcr_guard": {"exact_set": 1.0, "action_error": 0.0, "tokens": 114.01128472222223, "queries": 1.5121527777777777},
+      "tcr_token": {"exact_set": 1.0, "action_error": 0.0, "tokens": 115.26302083333333, "queries": 1.5399305555555556},
+      "cold_token": {"exact_set": 1.0, "action_error": 0.0, "tokens": 920.0138888888889, "queries": 11.519097222222221}
+    },
+    "rows2": {
+      "warm_reweighted": {"exact_set": 0.9262152777777778, "action_error": 0.028645833333333332, "tokens": 22.672743055555556, "queries": 0.2777777777777778},
+      "max_uncertainty": {"exact_set": 0.9262152777777778, "action_error": 0.028645833333333332, "tokens": 22.80815972222222, "queries": 0.2795138888888889},
+      "tcr_guard": {"exact_set": 1.0, "action_error": 0.0, "tokens": 200.43576388888889, "queries": 2.6597222222222223},
+      "tcr_token": {"exact_set": 1.0, "action_error": 0.0, "tokens": 200.60069444444446, "queries": 2.671875},
+      "cold_token": {"exact_set": 1.0, "action_error": 0.0, "tokens": 892.0546875, "queries": 11.42361111111111}
+    },
+    "rows4": {
+      "warm_reweighted": {"exact_set": 0.8446180555555556, "action_error": 0.0798611111111111, "tokens": 22.297743055555556, "queries": 0.2777777777777778},
+      "max_uncertainty": {"exact_set": 0.8446180555555556, "action_error": 0.0798611111111111, "tokens": 22.43315972222222, "queries": 0.2795138888888889},
+      "tcr_guard": {"exact_set": 1.0, "action_error": 0.0, "tokens": 377.57378472222223, "queries": 5.09375},
+      "tcr_token": {"exact_set": 1.0, "action_error": 0.0, "tokens": 376.85590277777777, "queries": 5.084201388888889},
+      "cold_token": {"exact_set": 1.0, "action_error": 0.0, "tokens": 832.8897569444445, "queries": 11.34982638888889}
+    }
+  },
+  "interpretation": "The corrected maximum-uncertainty baseline remains almost identical to warm replay on the existing three-model fact-drift density panels. Full CTDR remains exact-set 1.0. This is a correction and reproducibility result, not independent confirmation."
+}
+
