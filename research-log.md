@@ -132,3 +132,8 @@ The panel used fixed pretrained models and no fine-tuning because this candidate
 ## 2026-11-23: independent cohort availability audit
 
 The authorized local asset search found no QASC, SciQ or CommonsenseQA cohort beyond the existing M60 inputs. The server-side public dataset download remains blocked by network unreachability. Historical HotPot and other routing-project datasets were not reused because their protocol and exposure histories do not match the current M60 independent-task contract. The independent task-quality gate therefore remains open.
+
+
+## 2026-11-23: source-only transport property check
+
+A 500-case synthetic source-only replay with a 0.1% normalized source perturbation found 431 cases where the transport guard declared safety and zero false-safe decision sets. This is an implementation property check under the finite source-only contract, not a task-quality or independent-generalization result.
