@@ -31,8 +31,8 @@ def intervals(source, base, old_relay, labels, changed, delta):
         contribution = source[row_index] * (old_relay[row_index] - base)
         for label in range(4):
             mask = labels[row_index] == label
-            low[label] += contribution[mask].sum() - source[row_index] * radius * mask.sum()
-            high[label] += contribution[mask].sum() + source[row_index] * radius * mask.sum()
+            low[label] += contribution[mask].sum() - source[row_index] * radius
+            high[label] += contribution[mask].sum() + source[row_index] * radius
     return low, high
 
 
