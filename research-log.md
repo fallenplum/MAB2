@@ -115,3 +115,8 @@ The former M60 scorer routed max_uncertainty to warm replay. The policy is now e
 ## 2026-11-23: changed-row provenance attribution replay
 
 The scorer now supports graph-manifest, worker row-metadata, token-fingerprint and all-row masks. On the same-input three-model interface-drift stress panel, graph-manifest, row-metadata and fingerprint modes were exactly identical for Full CTDR at one, two and four changed-row densities. Guard tokens were 170.2092/307.5851/587.8151 for all three provenance modes. Refreshing all rows preserved exact-set recovery but cost 487.0234/517.0365/587.8151 tokens. This isolates graph-mask provenance and finite-panel attribution. It does not provide independent task quality or service evidence.
+
+
+## 2026-11-23: corrected maximum-uncertainty replay on historical density panels
+
+The three-model fact-drift density panels were rescored with the explicit maximum-uncertainty policy. Exact-set values remained 0.979167/0.926215/0.844618 for one/two/four changed relay rows, matching warm replay. Mean max-uncertainty tokens were 23.3516/22.8082/22.4332. Full CTDR token-aware exact-set remained 1.0. These panels are historical development evidence and do not count as independent confirmation.
