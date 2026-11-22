@@ -1,0 +1,23 @@
+{
+  "questions_per_panel": 128,
+  "source": "new stems excluded from M60 panel manifests",
+  "private_labels": "not included",
+  "schema": "conditional_relay_public_receipts_v1",
+  "models": 3,
+  "sciq": {
+    "schema": "conditional_relay_input_v1",
+    "questions": 128,
+    "input_sha256": "0e23c4a87fa375a700473e35a30bc7493183012f270d9c06678382c131ca05e1",
+    "label_sha256": "e018f89656bbb62d77f925cf61b7e5c7bd73c22c0be20e4b5218e2e38ed77f24",
+    "edit": "delete second_fact only for advised A relay row",
+    "sealed": "private"
+  },
+  "qasc": {
+    "schema": "conditional_relay_input_v1",
+    "questions": 128,
+    "input_sha256": "0a531394ebdeedd82c947d2c0e1b4647a2886ec727fb333643e7e904d9b181c9",
+    "label_sha256": "48844b62ff694bafdf5449bbad0e8a54259b32d2af244b553fbb137f13999a95",
+    "edit": "delete second_fact only for advised A relay row",
+    "sealed": "private"
+  }
+}
