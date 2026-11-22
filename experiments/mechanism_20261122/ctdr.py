@@ -1,6 +1,6 @@
 """Conservative certificate transport for source-only graph edits."""
 import numpy as np
-from _mab2_blind_scheduler import Audit
+from blind_scheduler import Audit
 
 TAU=0.01
 

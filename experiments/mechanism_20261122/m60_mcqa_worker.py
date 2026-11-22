@@ -27,3 +27,4 @@ def main(model_path,input_path,output_path):
     print(json.dumps(dict(questions=len(rows),n_options=n,requests=len(rows)*len(seq),torch=torch.__version__,transformers=transformers.__version__)),flush=True)
 
 if __name__=='__main__':main(*sys.argv[1:])
+

@@ -1,0 +1,21 @@
+{
+  "sha256": "6360F9E870CADB844B6A6741FA12FBAF63A4682E80ACFEB619B918E1D0149230",
+  "worker": "m60_mcqa_worker.py",
+  "status": "audit_branch_formal_bytes",
+  "source_rows": [
+    "old_source",
+    "new_source",
+    "base_control"
+  ],
+  "terminal_shape": [
+    4,
+    4
+  ],
+  "schema": "m60_worker_identity_v1",
+  "relay_rows": [
+    "none",
+    "A",
+    "B",
+    "C"
+  ]
+}
