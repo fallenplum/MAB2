@@ -100,3 +100,8 @@ A server replay on 59.174.162.173:10021 evaluated frozen source distributions an
 For one changed relay row, TCR token exact-set was 1.0 at 171.05 post-edit tokens versus 1.0 at 952.71 cold-token cost. Warm/source-only exact-set was 0.9618. For two changed rows, TCR token exact-set was 1.0 at 307.79 tokens versus 960.12 cold, while warm/source-only was 0.9097. For four changed rows, TCR token exact-set was 1.0 at 586.94 tokens versus 994.26 cold, while warm/source-only was 0.8177. The worst-case interval shortcut remained negative at exact-set 0.9158, 0.8837, and 0.8229 for one, two, and four changed rows. Random and periodic controls matched warm replay on these stress panels and did not recover the full decision set.
 
 The interface-drift controls support the finite-interface claim that a changed relay signature must enter the revalidation mask. They do not establish independent-cohort generalization, end-to-end answer quality, or wall-clock acceleration. New model inference was run only on the authorized server GPUs. No sealed test was opened and no confidence intervals or bootstrap were run.
+
+
+## 2026-11-23 — independent-cohort acquisition check
+
+The server-side attempt to load public QASC and SciQ validation data from Hugging Face failed because the execution environment has no outbound network route. No token was used in the failed attempt and no new cohort was admitted. The interface-drift panels therefore remain same-input stress controls. The project remains active with the independent sealed service-quality gate open.
