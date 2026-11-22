@@ -1,0 +1,17 @@
+{
+  "schema": "m60_real_service_policy_audit_v1",
+  "status": "EXPLORATORY_TRANSFER_COMPLETE_NO_ROBUST_WINNER",
+  "data": "private real-label M60 conditional panels, three tasks, three edit densities",
+  "protocol": "train on two tasks, question-disjoint test on the held-out task, three seeds",
+  "decision_impact_policy_cross_task": {
+    "qasc": {"policy_top1_answer_accuracy_mean": 0.2698, "max_uncertainty_answer_accuracy": 0.2698, "policy_tokens_mean": 99.38, "max_uncertainty_tokens": 99.48},
+    "sciq": {"policy_top1_answer_accuracy_mean": 0.5556, "max_uncertainty_answer_accuracy": 0.6232, "policy_tokens_mean": 88.96, "max_uncertainty_tokens": 89.48},
+    "commonsense": {"policy_top1_answer_accuracy_mean": 0.5486, "max_uncertainty_answer_accuracy": 0.4583, "policy_tokens_mean": 90.37, "max_uncertainty_tokens": 90.75}
+  },
+  "answer_aligned_policy": "did_not_stably_outperform_max_uncertainty",
+  "answer_delta_regressor": "did_not_stably_outperform_max_uncertainty",
+  "conclusion": "The learned selector has a task-dependent signal. It improves the held-out CommonsenseQA transfer cell but loses on SciQ and ties on QASC. No robust service-quality winner is established.",
+  "acl_gate": "open",
+  "limitations": ["The panels use the existing M60 conditional interface and do not constitute a new sealed benchmark.", "No claim of ACL Main readiness is made."]
+}
+
