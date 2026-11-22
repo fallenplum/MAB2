@@ -12,7 +12,9 @@ from ctdr import safe_transport, truth
 from m60_module_ablation import decision_rank_next
 
 TAU = 0.01
-METHODS = ("stale", "warm_reweighted", "source_only_ctdr", "tcr_guard", "tcr_token", "cold_restart", "cold_token")
+METHODS = ("stale", "warm_reweighted", "source_only_ctdr", "tcr_guard", "tcr_token",
+           "tcr_bound", "tcr_bound_token", "tcr_density_gate", "tcr_density_gate_token",
+           "cold_restart", "cold_token")
 
 
 def price_arrays(tokens, token_aware):
@@ -86,6 +88,89 @@ def guarded(old_source, new_source, base, old_relay, new_relay, labels, tokens, 
     return set(audit.decision() or []), actions
 
 
+def bounded_decision(audit, unknown_rows, labels, label_count):
+    """Return a decision only when every unresolved row has a safe bound."""
+    pending = np.where(audit.known[:, None] & ~audit.seen, audit.w, 0.0)
+    pending_low = float(np.minimum(pending, 0.0).sum())
+    pending_high = float(np.maximum(pending, 0.0).sum())
+    row_low = np.zeros(label_count, dtype=float)
+    row_high = np.zeros(label_count, dtype=float)
+    for index in unknown_rows:
+        weight = float(audit.source[index])
+        base_mass = np.zeros(label_count, dtype=float)
+        present = np.zeros(label_count, dtype=bool)
+        for hypothesis, label in enumerate(labels[index]):
+            base_mass[int(label)] += audit.base[hypothesis]
+            present[int(label)] = True
+        row_low -= weight * base_mass
+        row_high += weight * (present.astype(float) - base_mass)
+    low = pending_low + row_low
+    high = pending_high + row_high
+    observed = np.zeros(label_count, dtype=float)
+    for label, value in audit.observed.items():
+        if 0 <= int(label) < label_count:
+            observed[int(label)] = float(value)
+    keep = observed + low > TAU + 1e-12
+    drop = observed + high < TAU - 1e-12
+    return set(np.flatnonzero(keep)) if np.all(keep | drop) else None
+
+
+def bounded_guard(old_source, new_source, base, old_relay, new_relay, labels,
+                  tokens, history, changed_rows, token_aware):
+    """Guard transport with worst-case conditional-row intervals.
+
+    Changed rows are queried only when their worst-case contribution can still
+    cross the action threshold. This is a conservative optimization over
+    unconditional row revalidation.
+    """
+    row_prices, cell_prices = price_arrays(tokens, token_aware)
+    audit = Audit(new_source, base, row_prices, cell_prices, "joint", tau=TAU)
+    changed = set(changed_rows)
+    old_rows = {int(i): value for (i, j), value in history if j is None}
+    old_cells = {}
+    for (i, j), value in history:
+        if j is not None:
+            old_cells.setdefault(int(i), []).append(((int(i), int(j)), value))
+    for i in range(4):
+        if i not in changed and i in old_rows:
+            audit.update((i, None), old_rows[i])
+            for action, value in old_cells.get(i, ()):
+                audit.update(action, value)
+    actions = []
+    unknown = set(changed)
+    pred = bounded_decision(audit, unknown, labels, 8)
+    while pred is None:
+        if unknown:
+            scores = {i: float(audit.source[i]) / max(float(row_prices[i]), 1e-12)
+                      for i in unknown}
+            i = max(scores, key=scores.get)
+            audit.update((i, None), new_relay[i])
+            actions.append((i, None))
+            unknown.remove(i)
+            for action, value in old_cells.get(i, ()):
+                audit.update(action, value)
+        else:
+            action = decision_rank_next(audit, 8) if token_aware else audit.next()
+            if action is None:
+                break
+            i, j = action
+            value = new_relay[i] if j is None else int(labels[i, j])
+            audit.update(action, value)
+            actions.append(action)
+        pred = bounded_decision(audit, unknown, labels, 8) if unknown else set(audit.decision() or [])
+    return set(pred or []), actions
+
+
+def density_gate(old_source, new_source, base, old_relay, new_relay, labels,
+                 tokens, history, changed_rows, token_aware):
+    """Use transport only for a singleton edit, otherwise cold restart."""
+    if len(tuple(changed_rows)) <= 1:
+        return guarded(old_source, new_source, base, old_relay, new_relay, labels,
+                       tokens, history, changed_rows, token_aware)
+    return replay(new_source, new_source, base, new_relay, labels, tokens,
+                  token_aware=token_aware)
+
+
 def summarize(items):
     n = len(items)
     return {"n": n,
@@ -122,6 +207,10 @@ def run(manifest):
                     "source_only_ctdr": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history, radius=True),
                     "tcr_guard": guarded(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, False),
                     "tcr_token": guarded(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, True),
+                    "tcr_bound": bounded_guard(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, False),
+                    "tcr_bound_token": bounded_guard(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, True),
+                    "tcr_density_gate": density_gate(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, False),
+                    "tcr_density_gate_token": density_gate(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, True),
                     "cold_restart": replay(new_source, new_source, base, new_relay, labels, row["tokens"]),
                     "cold_token": replay(new_source, new_source, base, new_relay, labels, row["tokens"], token_aware=True),
                 }

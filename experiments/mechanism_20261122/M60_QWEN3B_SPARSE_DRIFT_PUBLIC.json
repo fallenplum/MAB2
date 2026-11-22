@@ -1,0 +1,183 @@
+{
+  "schema": "m60_qwen3b_sparse_drift_public_v1",
+  "model_family": "Qwen2.5-3B-Instruct",
+  "panels": [
+    "QASC",
+    "SciQ",
+    "Commonsense"
+  ],
+  "questions_per_variant": 384,
+  "variants": {
+    "rows1": {
+      "warm_reweighted": {
+        "n": 384,
+        "action_error": 0.0078125,
+        "exact_set": 0.9791666666666666,
+        "false_drop": 0.015625,
+        "false_keep": 0.013020833333333334,
+        "queries": 0.6875,
+        "tokens": 67.59895833333333
+      },
+      "source_only_ctdr": {
+        "n": 384,
+        "action_error": 0.0078125,
+        "exact_set": 0.9791666666666666,
+        "false_drop": 0.015625,
+        "false_keep": 0.013020833333333334,
+        "queries": 0.6875,
+        "tokens": 67.59895833333333
+      },
+      "tcr_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.6510416666666667,
+        "tokens": 156.61197916666666
+      },
+      "tcr_density_gate_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.6510416666666667,
+        "tokens": 156.61197916666666
+      },
+      "tcr_bound_token": {
+        "n": 384,
+        "action_error": 0.026041666666666668,
+        "exact_set": 0.9270833333333334,
+        "false_drop": 0.07291666666666667,
+        "false_keep": 0.005208333333333333,
+        "queries": 0.08333333333333333,
+        "tokens": 7.895833333333333
+      },
+      "cold_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.515625,
+        "tokens": 259.5729166666667
+      }
+    },
+    "rows2": {
+      "warm_reweighted": {
+        "n": 384,
+        "action_error": 0.015625,
+        "exact_set": 0.9661458333333334,
+        "false_drop": 0.0234375,
+        "false_keep": 0.020833333333333332,
+        "queries": 0.6875,
+        "tokens": 66.84635416666667
+      },
+      "source_only_ctdr": {
+        "n": 384,
+        "action_error": 0.015625,
+        "exact_set": 0.9661458333333334,
+        "false_drop": 0.0234375,
+        "false_keep": 0.020833333333333332,
+        "queries": 0.6875,
+        "tokens": 66.84635416666667
+      },
+      "tcr_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.6927083333333335,
+        "tokens": 252.6328125
+      },
+      "tcr_density_gate_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.546875,
+        "tokens": 256.1197916666667
+      },
+      "tcr_bound_token": {
+        "n": 384,
+        "action_error": 0.028645833333333332,
+        "exact_set": 0.9192708333333334,
+        "false_drop": 0.08072916666666667,
+        "false_keep": 0.0026041666666666665,
+        "queries": 0.2109375,
+        "tokens": 20.036458333333332
+      },
+      "cold_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.546875,
+        "tokens": 256.1197916666667
+      }
+    },
+    "rows4": {
+      "warm_reweighted": {
+        "n": 384,
+        "action_error": 0.033854166666666664,
+        "exact_set": 0.9244791666666666,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.057291666666666664,
+        "queries": 0.6875,
+        "tokens": 64.66145833333333
+      },
+      "source_only_ctdr": {
+        "n": 384,
+        "action_error": 0.033854166666666664,
+        "exact_set": 0.9244791666666666,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.057291666666666664,
+        "queries": 0.6875,
+        "tokens": 64.66145833333333
+      },
+      "tcr_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.669270833333333,
+        "tokens": 428.1510416666667
+      },
+      "tcr_density_gate_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.5911458333333335,
+        "tokens": 240.54947916666666
+      },
+      "tcr_bound_token": {
+        "n": 384,
+        "action_error": 0.028645833333333332,
+        "exact_set": 0.9036458333333334,
+        "false_drop": 0.09635416666666667,
+        "false_keep": 0.0,
+        "queries": 0.59375,
+        "tokens": 55.700520833333336
+      },
+      "cold_token": {
+        "n": 384,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.5911458333333335,
+        "tokens": 240.54947916666666
+      }
+    }
+  },
+  "density_gate": "singleton transport; two-or-more changed rows fall back to cold_token",
+  "status": "exploratory_single_model_pilot",
+  "interpretation": "TCR remains exact on this pilot, but unconditional row revalidation loses its token advantage by two changed rows. The density-gated rule is a development candidate, not independent confirmation. bounded_interval_candidate_is_failed=true"
+}

@@ -69,3 +69,9 @@ Formal6 has96 fresh input-only train questions,2 generation seeds and11 terminal
 评分器修正了聚合样本数口径，`aggregate.n` 现在表示所有面板和 worker 的总题数。服务器 59.174.160.105:10021 仍以5秒 TCP 超时，三团队正式推理尚未开始。
 
 同一 Qwen3B 的 QASC/SciQ 输出随后用修正后的 worker 重跑，三任务回放不再依赖 manifest 级 `changed_rows`，而是读取每条 worker 记录中由新旧 relay 输入差分生成的行掩码。结果与先前三任务聚合一致，表明评分器路径已切换到 metadata-only 行定位。该验证仍只有一个模型家族和一个 checkpoint，不能替代服务器上的独立团队实验。
+
+## 2026-11-22 稀疏编辑密度试跑
+
+在同一三任务单模型开发集上完成双行和四行 conditional drift worker，共新增20736次 forward 请求和约0.52098 GPU小时。单行 TCR token 为156.61，冷 token 为259.57。双行 TCR token 为252.63，冷 token 为256.12。四行 TCR token 为428.15，冷 token 为240.55。TCR 在三种密度上 exact-set 均为100%，但成本优势只在单行编辑保留。冻结一个开发候选规则，单行使用 transport，双行及以上回退冷重启，回放中 exact-set 仍为100%。
+
+尝试的 worst-case conditional-row interval shortcut 在单、双、四行上分别产生2.60%、2.86%、2.86%的 action error，因此淘汰并保留为负结果。上述密度结论仍只来自一个 Qwen3B checkpoint，不能作为跨模型主结果。

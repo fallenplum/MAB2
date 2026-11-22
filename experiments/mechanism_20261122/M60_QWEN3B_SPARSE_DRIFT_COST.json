@@ -1,0 +1,13 @@
+{
+  "schema": "m60_qwen3b_sparse_drift_cost_v1",
+  "model": "Qwen2.5-3B-Instruct",
+  "device": "local_rtx_4060",
+  "variants": ["rows1", "rows2", "rows4"],
+  "panels": ["QASC", "SciQ", "Commonsense"],
+  "forward_requests": 20736,
+  "gpu_hours_increment": 0.52098,
+  "gpu_hours_cycle_total": 0.88003,
+  "accounting": "six full workers for two-row and four-row variants; one-row outputs were reused from metadata pilot",
+  "confidence_intervals": false,
+  "status": "exploratory_single_model_pilot_only"
+}

@@ -48,14 +48,16 @@ def main(model_path, input_path, output_path):
                          ("\nFirst researcher proposes hypothesis " + chr(65 + i) + "." if i >= 0 else "") +
                          "\nChoose the best hypothesis. Return A, B, C or D."
                          for i in (-1, 0, 1, 2)]
-            new_fact = row.get("second_fact_new", row.get("second_fact", ""))
-            changed_rows = [index for index, advice in enumerate((-1, 0, 1, 2))
-                            if (new_fact if advice == 0 else row.get("second_fact", ""))
-                            != row.get("second_fact", "")]
-            new_relay = [source_problem + "\nEvidence: " + (new_fact if i == 0 else row.get("second_fact", "")) +
+            old_fact = row.get("second_fact", "")
+            new_fact = row.get("second_fact_new", old_fact)
+            new_facts = row.get("second_facts_new")
+            if not isinstance(new_facts, list) or len(new_facts) != 4:
+                new_facts = [old_fact, new_fact, old_fact, old_fact]
+            changed_rows = [index for index, fact in enumerate(new_facts) if fact != old_fact]
+            new_relay = [source_problem + "\nEvidence: " + new_facts[index] +
                          ("\nFirst researcher proposes hypothesis " + chr(65 + i) + "." if i >= 0 else "") +
                          "\nChoose the best hypothesis. Return A, B, C or D."
-                         for i in (-1, 0, 1, 2)]
+                         for index, i in enumerate((-1, 0, 1, 2))]
             terminals = [problem + "\nFirst researcher proposes hypothesis " + chr(65 + i) +
                          ".\nSecond researcher proposes hypothesis " + chr(65 + j) +
                          ".\nReturn only the best answer letter."
