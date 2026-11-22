@@ -35,3 +35,7 @@ A wrong graph manifest replacing the true rows1 relay-1 edit with relay 0 reduce
 
 No sealed test was opened. No confidence intervals or bootstrap were run, as required by the project contract.
 
+## Three-checkpoint density replication
+
+Adding Llama-3-8B-Instruct to every density yields 1,152 question–model units per density. Warm exact-set rates are 97.917%, 92.622%, and 84.462% for one, two, and four changed rows. TCR token remains 100.000% exact with 115.26, 200.60, and 376.86 tokens. Cold token costs are 920.01, 892.05, and 832.89 tokens, giving 87.5%, 77.5%, and 54.7% savings. These values are separate from the two-checkpoint table and are the current cross-model replication.
+
