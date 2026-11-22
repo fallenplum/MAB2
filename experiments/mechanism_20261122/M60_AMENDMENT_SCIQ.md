@@ -5,3 +5,5 @@
 ARC 面板没有 support 字段。其 source 和 edited prompts 相同，因此只作为 null control 保留，不纳入正向机制聚合，也不用于候选选择。
 
 该说明是任务范围内的数据覆盖扩展，不修改原有门槛，不使用封存标签进行算法调参。
+
+在本次 source-edge edit 的 worker 中，conditional relay prompt 与 old/new source 状态相同，因此 $q_i^{1'}=q_i^1$，原合同 transport bound 中的 conditional-channel TV 项为零。论文将该正式候选明确限定为这一可验证子情形，没有把 source-only 结果外推到 conditional-channel drift。
