@@ -151,3 +151,10 @@ A 500-case synthetic source-only replay with a 0.1% normalized source perturbati
 ## 2026-11-23: real-label service-quality pilot
 
 本地私有 M60 条件输出带有真实封存答案标签，完成了三任务留一任务训练与评估。决策影响标签的学习复检策略在 CommonsenseQA 留出集 top-1 平均答案准确率 0.5486，高于最大不确定性 0.4583，平均 token 90.37 对 90.75；在 SciQ 为 0.5556，低于最大不确定性 0.6232；在 QASC 两者均为 0.2698。答案对齐分类器和答案增益回归器没有稳定超过最大不确定性。该结果显示任务依赖信号，但未形成跨任务服务质量优势，候选仍未达到 ACL 主会证据门。
+
+
+## 2026-11-23: conditional-drift-safe interval and service selector
+
+A finite-row synthetic sweep evaluated a conditional-drift-safe interval with 5,000 instances per cell across one, two and four edited rows and drift radii 0.0, 0.1, 0.4 and 1.0. Source-only transport remained overconfident and its exact decision recovery fell to 65.92% for one row, 45.70% for two rows and 23.52% for four rows at drift 1.0. The conditional interval kept exact recovery at 100% in all twelve cells by querying the edit mask whenever the interval was undecidable. Its average query count grew from 0.418 to 0.921 for one-row edits, 1.366 to 1.992 for two-row edits and 3.736 to 4.000 for four-row edits as drift increased. This establishes a soundness and cost tradeoff mechanism, not task-level quality.
+
+A question-disjoint service-answer selector was evaluated on private sealed labels with inference features restricted to new source statistics, old relay statistics, row position, density and token cost. It did not use unqueried new relay outputs. Across three seeds, QASC was 0.2698 versus explicit max-uncertainty 0.2698, SciQ was 0.5966 versus 0.6232, and CommonsenseQA was 0.5243 versus 0.4583. The task-dependent pattern is retained as a negative candidate result. An independent ARCC cohort was prepared but not run because the remote filesystem had only about 1.5 GiB free and no cached worker models. The project remains ACTIVE and no ACL Main claim is promoted.
