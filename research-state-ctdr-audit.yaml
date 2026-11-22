@@ -8,8 +8,8 @@ budget_gpu_hours_total: 160
 budget_gpu_hours_used_before_cycle: 98.18703800305508
 budget_gpu_hours_reserved: 0
 new_model_calls_this_cycle: 245376
-new_gpu_hours_this_cycle: 17.2
-budget_gpu_hours_used_after_pilot: 115.38703800305508
+new_gpu_hours_this_cycle: 8.6
+budget_gpu_hours_used_after_pilot: 106.78703800305508
 new_confidence_intervals: false
 new_bootstrap: false
 sealed_test_opened: false
@@ -50,3 +50,4 @@ interface_drift_rows4_cold_token_cost: 994.2569444444445
 interface_drift_warm_exact: [0.9618055555555556, 0.9097222222222222, 0.8177083333333334]
 interface_drift_panel_independence: same_input_stress_control
 hf_dataset_download_server: blocked_network_unreachable
+gpu_hour_accounting: conservative_same_protocol_batch_estimate
