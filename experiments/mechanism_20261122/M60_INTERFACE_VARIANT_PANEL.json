@@ -1,0 +1,40 @@
+{
+  "schema": "m60_interface_variant_panel_v1",
+  "protocol": {
+    "variants": {
+      "short": "Protocol v2.",
+      "semantic": "You are a reviewer. Re-evaluate this relay under the updated graph context and return one hypothesis token."
+    },
+    "densities": [1, 2, 4],
+    "models": ["Qwen-0.5B", "Qwen-14B", "Llama-3-8B-Instruct"],
+    "tasks": ["QASC", "SciQ", "Commonsense"],
+    "question_model_units_per_panel": 1152,
+    "gpu_worker_jobs_completed": 54,
+    "same_input_control": true,
+    "sealed_labels_used_for_policy_selection": false,
+    "confidence_intervals": false
+  },
+  "results": {
+    "short": {
+      "rows1": {"stale": [0.959201, 0.010417, 0.0], "warm": [0.986111, 0.006076, 23.442708], "max_uncertainty": [0.986111, 0.006076, 23.442708], "tcr_guard": [1.0, 0.0, 145.274306], "tcr_token": [1.0, 0.0, 146.917535], "tcr_bound": [0.929688, 0.027778, 30.138021], "cold_token": [1.0, 0.0, 940.799479]},
+      "rows2": {"stale": [0.943576, 0.015625, 0.0], "warm": [0.961806, 0.011285, 23.469618], "max_uncertainty": [0.961806, 0.011285, 23.469618], "tcr_guard": [1.0, 0.0, 262.380208], "tcr_token": [1.0, 0.0, 263.690104], "tcr_bound": [0.914062, 0.034722, 55.328125], "cold_token": [1.0, 0.0, 942.045139]},
+      "rows4": {"stale": [0.897569, 0.041667, 0.0], "warm": [0.909722, 0.039062, 23.684896], "max_uncertainty": [0.909722, 0.039062, 23.684896], "tcr_guard": [1.0, 0.0, 502.102431], "tcr_token": [1.0, 0.0, 502.190972], "tcr_bound": [0.876736, 0.054688, 126.301215], "cold_token": [1.0, 0.0, 941.251736]}
+    },
+    "semantic": {
+      "rows1": {"stale": [0.927083, 0.022569, 0.0], "warm": [0.947917, 0.016493, 22.827257], "max_uncertainty": [0.947917, 0.016493, 22.827257], "tcr_guard": [1.0, 0.0, 177.863715], "tcr_token": [1.0, 0.0, 178.637153], "tcr_bound": [0.918403, 0.034722, 34.273438], "cold_token": [1.0, 0.0, 958.167535]},
+      "rows2": {"stale": [0.850694, 0.054688, 0.0], "warm": [0.858507, 0.050347, 22.9375], "max_uncertainty": [0.858507, 0.050347, 23.0625], "tcr_guard": [1.0, 0.0, 325.688368], "tcr_token": [1.0, 0.0, 325.440104], "tcr_bound": [0.87934, 0.055556, 67.688368], "cold_token": [1.0, 0.0, 966.534722]},
+      "rows4": {"stale": [0.774306, 0.106771, 0.0], "warm": [0.773438, 0.106771, 23.279514], "max_uncertainty": [0.773438, 0.106771, 23.404514], "tcr_guard": [1.0, 0.0, 628.22309], "tcr_token": [1.0, 0.0, 628.144965], "tcr_bound": [0.81684, 0.101562, 157.516493], "cold_token": [1.0, 0.0, 1019.838542]}
+    }
+  },
+  "tuple_definition": ["exact_set", "action_error", "mean_incremental_tokens"],
+  "interpretation": {
+    "mechanism_signal": "Full CTDR with the graph-descendant mask and signature guard recovers the exact finite audit decision set for both interface variants and all three edit densities. The conservative bounded shortcut fails at 7.0% to 18.4% action error across panels, so the certificate guard is the reliable route in this stress family.",
+    "drift_sensitivity": "The semantic suffix produces larger stale and warm errors as edit density increases, while Full CTDR remains exact. Relative to cold token replay, Full CTDR token savings are approximately 84.4%, 72.0%, and 46.6% for short rows1/2/4, and 81.5%, 66.3%, and 38.4% for semantic rows1/2/4.",
+    "limits": [
+      "All panels reuse the existing 128-question cohort and therefore are same-input mechanism controls.",
+      "The result evaluates finite audit decision recovery and token accounting, not final answer accuracy, latency or deployment quality.",
+      "The run uses fixed pretrained models. No new backbone fine-tuning was introduced because the current frozen candidate has no registered training objective."
+    ]
+  }
+}
+
