@@ -26,8 +26,11 @@ def main(model_path, input_path, output_path):
     assert all(len(v) == 1 for v in label_ids)
 
     def code(text):
-        encoded = tok.apply_chat_template([{"role": "user", "content": text}], tokenize=True,
-                                           add_generation_prompt=True)
+        if getattr(tok, "chat_template", None):
+            encoded = tok.apply_chat_template([{"role": "user", "content": text}], tokenize=True,
+                                               add_generation_prompt=True)
+        else:
+            encoded = tok.encode(text, add_special_tokens=True)
         if hasattr(encoded, "input_ids"):
             return encoded.input_ids
         if isinstance(encoded, dict):
