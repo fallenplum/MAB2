@@ -1,0 +1,69 @@
+{
+  "schema": "m60_sequential_conditional_revalidation_v1",
+  "results": [
+    {
+      "n": 5000,
+      "rows_changed": 1,
+      "drift": 0.1,
+      "exact": 1.0,
+      "queries": 0.4962
+    },
+    {
+      "n": 5000,
+      "rows_changed": 1,
+      "drift": 0.4,
+      "exact": 1.0,
+      "queries": 0.8214
+    },
+    {
+      "n": 5000,
+      "rows_changed": 1,
+      "drift": 1.0,
+      "exact": 1.0,
+      "queries": 0.9206
+    },
+    {
+      "n": 5000,
+      "rows_changed": 2,
+      "drift": 0.1,
+      "exact": 1.0,
+      "queries": 1.087
+    },
+    {
+      "n": 5000,
+      "rows_changed": 2,
+      "drift": 0.4,
+      "exact": 1.0,
+      "queries": 1.6602
+    },
+    {
+      "n": 5000,
+      "rows_changed": 2,
+      "drift": 1.0,
+      "exact": 1.0,
+      "queries": 1.851
+    },
+    {
+      "n": 5000,
+      "rows_changed": 4,
+      "drift": 0.1,
+      "exact": 1.0,
+      "queries": 2.443
+    },
+    {
+      "n": 5000,
+      "rows_changed": 4,
+      "drift": 0.4,
+      "exact": 1.0,
+      "queries": 3.437
+    },
+    {
+      "n": 5000,
+      "rows_changed": 4,
+      "drift": 1.0,
+      "exact": 1.0,
+      "queries": 3.7082
+    }
+  ],
+  "interpretation": "Synthetic sequential safe revalidation under a known conditional TV radius. It is a mechanism experiment and does not establish task-level answer quality."
+}
