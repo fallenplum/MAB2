@@ -135,6 +135,6 @@
   "status_is_last_verified_snapshot": true,
   "sealed_original_tests_accessed": false,
   "evaluation_level": "Formal positive evidence is QASC/SciQ only: four disjoint input panels, 192 questions each, three shared question sets with three model teams per panel. ARC was a no-evidence null control and is excluded. The 2304 aggregate is question-team evaluations, not independent questions.",
-  "release_commit": "ad70d08db327915a3a698c4f60c4b1a5f9d097e0",
+  "release_commit": "2cd0c202df13b2c0ace8e2131dbb5ef9bf857bf7",
   "release_verified": true
 }
