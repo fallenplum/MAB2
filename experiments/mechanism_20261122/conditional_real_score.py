@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import random
 import sys
 from pathlib import Path
@@ -17,6 +18,20 @@ METHODS = ("stale", "warm_reweighted", "max_uncertainty", "random_recheck", "per
            "source_only_ctdr", "tcr_guard", "tcr_token",
            "tcr_bound", "tcr_bound_token", "tcr_density_gate", "tcr_density_gate_token",
            "cold_restart", "cold_token")
+
+
+def inferred_changed_rows(row, fallback):
+    """Infer affected relay rows from frozen interface fingerprints.
+
+    The scorer never uses gold labels or a fresh audit to obtain this mask.
+    A missing or malformed fingerprint falls back to the conservative supplied
+    manifest mask and is recorded by the caller as a compatibility path.
+    """
+    old = row.get("old_relay_fingerprints")
+    new = row.get("new_relay_fingerprints")
+    if isinstance(old, list) and isinstance(new, list) and len(old) == len(new):
+        return tuple(i for i, (before, after) in enumerate(zip(old, new)) if before != after)
+    return tuple(int(i) for i in fallback)
 
 
 def price_arrays(tokens, token_aware):
@@ -227,7 +242,8 @@ def run(manifest):
             rows = [json.loads(line) for line in (folder / f"WORKER{worker}.jsonl").read_bytes().splitlines()]
             methods = {name: [] for name in METHODS}
             for row in rows:
-                changed_rows = tuple(int(i) for i in row.get("changed_rows", manifest_changed_rows))
+                fallback_rows = row.get("changed_rows", manifest_changed_rows)
+                changed_rows = inferred_changed_rows(row, fallback_rows)
                 parsed = validate_conditional_full(row["full"])
                 old_source, new_source, base = parsed["source"]
                 old_relay, new_relay = parsed["old_relay"], parsed["new_relay"]
@@ -280,3 +296,5 @@ if __name__ == "__main__":
     public["interpretation"] = "Real conditional worker replay. Gold is used only for reporting."
     output.with_name("M60_CONDITIONAL_REAL_PUBLIC.json").write_text(json.dumps(public, indent=2), encoding="utf-8")
     print(json.dumps(result["aggregate"], indent=2))
+
+
