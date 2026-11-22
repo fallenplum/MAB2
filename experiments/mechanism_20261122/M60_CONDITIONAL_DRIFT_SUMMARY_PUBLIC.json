@@ -1,0 +1,523 @@
+{
+  "interpretation": {
+    "scope": "offline synthetic replay using frozen M60 worker outputs",
+    "positive": "When one relay row is declared changed, a guard that requeries only changed rows preserves exact decision sets and costs less than cold restart",
+    "limitation": "Synthetic channel transforms are mechanism diagnostics and do not establish real model generalization"
+  },
+  "scenarios": {
+    "0p25": {
+      "stale": {
+        "action_error": 0.0646701388888889,
+        "exact_set": 0.8459201388888888,
+        "false_drop": 0.06336805555555555,
+        "false_keep": 0.0013020833333333333,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 149
+      },
+      "source_only_ctdr": {
+        "action_error": 0.03211805555555555,
+        "exact_set": 0.9131944444444444,
+        "false_drop": 0.024739583333333332,
+        "false_keep": 0.007378472222222222,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 74
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 5.979600694444445,
+        "tokens": 759.5295138888889,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 5.976996527777778,
+        "tokens": 759.3420138888889,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 5.847222222222222,
+        "tokens": 601.8975694444445,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "k2": {
+      "stale": {
+        "action_error": 0.058159722222222224,
+        "exact_set": 0.8546006944444444,
+        "false_drop": 0.05164930555555555,
+        "false_keep": 0.006510416666666667,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 134
+      },
+      "source_only_ctdr": {
+        "action_error": 0.039496527777777776,
+        "exact_set": 0.9084201388888888,
+        "false_drop": 0.019965277777777776,
+        "false_keep": 0.01953125,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 91
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 3.6671006944444446,
+        "tokens": 443.53168402777777,
+        "drift_rows": 2.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 3.6723090277777777,
+        "tokens": 441.8728298611111,
+        "drift_rows": 2.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 5.291666666666667,
+        "tokens": 556.6753472222222,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "k1": {
+      "stale": {
+        "action_error": 0.054253472222222224,
+        "exact_set": 0.8802083333333334,
+        "false_drop": 0.050347222222222224,
+        "false_keep": 0.00390625,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 125
+      },
+      "source_only_ctdr": {
+        "action_error": 0.019097222222222224,
+        "exact_set": 0.9552951388888888,
+        "false_drop": 0.010416666666666666,
+        "false_keep": 0.008680555555555556,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 44
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.39453125,
+        "tokens": 273.15321180555554,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.408420138888889,
+        "tokens": 271.66840277777777,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.997395833333333,
+        "tokens": 531.4318576388889,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "row1": {
+      "stale": {
+        "action_error": 0.050347222222222224,
+        "exact_set": 0.8736979166666666,
+        "false_drop": 0.04774305555555555,
+        "false_keep": 0.0026041666666666665,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 116
+      },
+      "source_only_ctdr": {
+        "action_error": 0.021267361111111112,
+        "exact_set": 0.9483506944444444,
+        "false_drop": 0.010850694444444444,
+        "false_keep": 0.010416666666666666,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 49
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.2222222222222223,
+        "tokens": 268.9474826388889,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.252170138888889,
+        "tokens": 268.30772569444446,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.837239583333333,
+        "tokens": 518.9852430555555,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "row0": {
+      "stale": {
+        "action_error": 0.054253472222222224,
+        "exact_set": 0.8802083333333334,
+        "false_drop": 0.050347222222222224,
+        "false_keep": 0.00390625,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 125
+      },
+      "source_only_ctdr": {
+        "action_error": 0.019097222222222224,
+        "exact_set": 0.9552951388888888,
+        "false_drop": 0.010416666666666666,
+        "false_keep": 0.008680555555555556,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 44
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.39453125,
+        "tokens": 273.15321180555554,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.408420138888889,
+        "tokens": 271.66840277777777,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.997395833333333,
+        "tokens": 531.4318576388889,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "1": {
+      "stale": {
+        "action_error": 0.06901041666666667,
+        "exact_set": 0.8107638888888888,
+        "false_drop": 0.05859375,
+        "false_keep": 0.010416666666666666,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 159
+      },
+      "source_only_ctdr": {
+        "action_error": 0.0763888888888889,
+        "exact_set": 0.8246527777777778,
+        "false_drop": 0.03993055555555555,
+        "false_keep": 0.036458333333333336,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 176
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 6.319010416666667,
+        "tokens": 790.4279513888889,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 6.316840277777778,
+        "tokens": 790.2165798611111,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 5.940538194444445,
+        "tokens": 611.1197916666666,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "row2": {
+      "stale": {
+        "action_error": 0.04600694444444445,
+        "exact_set": 0.8810763888888888,
+        "false_drop": 0.045572916666666664,
+        "false_keep": 0.00043402777777777775,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 106
+      },
+      "source_only_ctdr": {
+        "action_error": 0.016927083333333332,
+        "exact_set": 0.94921875,
+        "false_drop": 0.008680555555555556,
+        "false_keep": 0.008246527777777778,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 39
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.2144097222222223,
+        "tokens": 267.11631944444446,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.232204861111111,
+        "tokens": 265.8220486111111,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.802517361111111,
+        "tokens": 514.8919270833334,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "0p5": {
+      "stale": {
+        "action_error": 0.0681423611111111,
+        "exact_set": 0.8346354166666666,
+        "false_drop": 0.0646701388888889,
+        "false_keep": 0.003472222222222222,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 157
+      },
+      "source_only_ctdr": {
+        "action_error": 0.044270833333333336,
+        "exact_set": 0.8888888888888888,
+        "false_drop": 0.030381944444444444,
+        "false_keep": 0.013888888888888888,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 102
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 6.171440972222222,
+        "tokens": 777.0941840277778,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 6.1796875,
+        "tokens": 777.8971354166666,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 6.008246527777778,
+        "tokens": 616.6749131944445,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    },
+    "row3": {
+      "stale": {
+        "action_error": 0.052083333333333336,
+        "exact_set": 0.8732638888888888,
+        "false_drop": 0.049479166666666664,
+        "false_keep": 0.0026041666666666665,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 120
+      },
+      "source_only_ctdr": {
+        "action_error": 0.023003472222222224,
+        "exact_set": 0.9348958333333334,
+        "false_drop": 0.012586805555555556,
+        "false_keep": 0.010416666666666666,
+        "queries": 0.9453125,
+        "tokens": 98.20572916666667,
+        "drift_rows": 0.0,
+        "n": 2304,
+        "mismatch": 53
+      },
+      "tcr_guard": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.3645833333333335,
+        "tokens": 279.1614583333333,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "tcr_token": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.3819444444444446,
+        "tokens": 277.8072916666667,
+        "drift_rows": 1.0,
+        "n": 2304,
+        "mismatch": 0
+      },
+      "cold_restart": {
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.938368055555555,
+        "tokens": 526.5520833333334,
+        "drift_rows": 4.0,
+        "n": 2304,
+        "mismatch": 0
+      }
+    }
+  },
+  "schema": "m60_conditional_drift_summary_public_v1"
+}
