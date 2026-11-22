@@ -105,3 +105,8 @@ The interface-drift controls support the finite-interface claim that a changed r
 ## 2026-11-23 — independent-cohort acquisition check
 
 The server-side attempt to load public QASC and SciQ validation data from Hugging Face failed because the execution environment has no outbound network route. No token was used in the failed attempt and no new cohort was admitted. The interface-drift panels therefore remain same-input stress controls. The project remains active with the independent sealed service-quality gate open.
+
+
+## 2026-11-23: explicit max-uncertainty baseline correction
+
+The former M60 scorer routed max_uncertainty to warm replay. The policy is now explicit and deterministic, ranking legal unresolved row/cell audits by the current audit mass and cell-weight magnitude. A same-input three-model interface-drift replay was rerun for one, two and four changed relay rows. Exact-set results were 0.961806/0.909722/0.817708 for explicit max-uncertainty and identical to warm replay at all three densities, with mean token costs 22.8828/23.5564/23.5720 versus 22.8828/23.3030/23.3056. Full CTDR signature-guard replay remains exact-set 1.0 at 170.2092/307.5851/587.8151 tokens. This closes an attribution defect but is not independent task-quality evidence. Independent cohort and service-quality gates remain open.
