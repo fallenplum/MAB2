@@ -10,14 +10,17 @@
     {"model": "Qwen-0.5B", "rows": 4, "stale": [0.859375, 0.789062, 0.250000, 0.0, 0.0], "relay_refresh": [0.671875, 0.898438, 0.296875, 395.976562, 3.0], "max_uncertainty": [0.867188, 0.789062, 0.250000, 59.757812, 0.546875], "tcr_guard": [0.968750, 0.898438, 0.296875, 484.601562, 3.804688], "tcr_bound": [0.859375, 0.828125, 0.273438, 130.546875, 0.984375]},
     {"model": "Qwen-14B", "rows": 1, "stale": [0.992188, 0.953125, 0.265625, 0.0, 0.0], "relay_refresh": [0.945312, 1.000000, 0.265625, 102.992188, 1.0], "max_uncertainty": [1.000000, 0.953125, 0.265625, 13.164062, 0.164062], "tcr_guard": [1.000000, 1.000000, 0.265625, 141.539062, 1.5], "tcr_bound": [0.992188, 0.960938, 0.273438, 3.843750, 0.039062]},
     {"model": "Qwen-14B", "rows": 2, "stale": [0.992188, 0.953125, 0.265625, 0.0, 0.0], "relay_refresh": [0.945312, 1.000000, 0.265625, 102.992188, 1.0], "max_uncertainty": [1.000000, 0.953125, 0.265625, 13.164062, 0.164062], "tcr_guard": [1.000000, 1.000000, 0.265625, 141.539062, 1.5], "tcr_bound": [0.992188, 0.960938, 0.273438, 3.843750, 0.039062]},
-    {"model": "Qwen-14B", "rows": 4, "stale": [0.960938, 0.906250, 0.265625, 0.0, 0.0], "relay_refresh": [0.914062, 1.000000, 0.273438, 308.976562, 3.0], "max_uncertainty": [0.953125, 0.906250, 0.265625, 13.164062, 0.164062], "tcr_guard": [1.000000, 1.000000, 0.273438, 386.054688, 4.007812], "tcr_bound": [0.968750, 0.921875, 0.265625, 36.554688, 0.375000]}
+    {"model": "Qwen-14B", "rows": 4, "stale": [0.960938, 0.906250, 0.265625, 0.0, 0.0], "relay_refresh": [0.914062, 1.000000, 0.273438, 308.976562, 3.0], "max_uncertainty": [0.953125, 0.906250, 0.265625, 13.164062, 0.164062], "tcr_guard": [1.000000, 1.000000, 0.273438, 386.054688, 4.007812], "tcr_bound": [0.968750, 0.921875, 0.265625, 36.554688, 0.375000]},
+    {"model": "Qwen-0.5B", "rows": 1, "interface_drift": true, "stale": [0.867188, 0.882812, 0.257812, 0.0, 0.0], "relay_refresh": [0.648438, 1.000000, 0.289062, 148.0, 1.0], "max_uncertainty": [0.953125, 0.882812, 0.257812, 53.2, 0.48], "tcr_guard": [1.000000, 1.000000, 0.289062, 227.2, 1.73], "tcr_bound": [0.890625, 0.929688, 0.273438, 42.3, 0.29]},
+    {"model": "Qwen-14B", "rows": 1, "interface_drift": true, "stale": [0.984375, 0.960938, 0.265625, 0.0, 0.0], "relay_refresh": [0.937500, 1.000000, 0.265625, 119.0, 1.0], "max_uncertainty": [0.992188, 0.960938, 0.265625, 13.2, 0.16], "tcr_guard": [1.000000, 1.000000, 0.265625, 186.2, 1.84], "tcr_bound": [0.976562, 0.968750, 0.273438, 4.5, 0.04]}
   ],
   "metric_order": "decision_exact, answer_action_exact, answer_accuracy, tokens, queries",
   "notes": [
     "Qwen-0.5B and Qwen2.5-0.5B produced identical aggregates in this worker configuration and are represented once.",
     "Rows 2 is numerically identical to rows 1 for these models because the added relay changes did not alter their emitted probabilities.",
     "relay_refresh updates changed relay rows and deliberately reports no graph certificate. It isolates downstream answer-action maintenance from certificate completion.",
-    "The two malformed numeric answer keys were corrected explicitly from 1-based values 2 and 4 to indices 1 and 3."
+    "The two malformed numeric answer keys were corrected explicitly from 1-based values 2 and 4 to indices 1 and 3.",
+    "The two interface_drift cells add a changed relay protocol string on row 1 and use the same independent ARCC questions."
   ]
 }
 

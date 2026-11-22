@@ -63,7 +63,11 @@ def main(model_path, input_path, output_path):
             if not isinstance(new_facts, list) or len(new_facts) != 4:
                 new_facts = [old_fact, new_fact, old_fact, old_fact]
             changed_rows = [index for index, fact in enumerate(new_facts) if fact != old_fact]
+            new_interfaces = row.get("new_relay_interface")
+            if not isinstance(new_interfaces, list) or len(new_interfaces) != 4:
+                new_interfaces = ["", "", "", ""]
             new_relay = [source_problem + "\nEvidence: " + new_facts[index] +
+                         new_interfaces[index] +
                          ("\nFirst researcher proposes hypothesis " + chr(65 + i) + "." if i >= 0 else "") +
                          "\nChoose the best hypothesis. Return A, B, C or D."
                          for index, i in enumerate((-1, 0, 1, 2))]
