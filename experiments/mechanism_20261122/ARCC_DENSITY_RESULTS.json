@@ -1,0 +1,23 @@
+{
+  "schema": "arcc_density_public_v1",
+  "n_questions_per_cell": 128,
+  "gold_mode": "corrected",
+  "gold_corrections": 2,
+  "metrics": ["decision_exact", "answer_action_exact", "answer_accuracy", "tokens", "queries"],
+  "cells": [
+    {"model": "Qwen-0.5B", "rows": 1, "stale": [0.898438, 0.859375, 0.250000, 0.0, 0.0], "relay_refresh": [0.640625, 0.898438, 0.257812, 131.992188, 1.0], "max_uncertainty": [0.945312, 0.859375, 0.250000, 58.875000, 0.539062], "tcr_guard": [0.960938, 0.898438, 0.257812, 186.359375, 1.507812], "tcr_bound": [0.882812, 0.882812, 0.257812, 44.406250, 0.335938]},
+    {"model": "Qwen-0.5B", "rows": 2, "stale": [0.898438, 0.859375, 0.250000, 0.0, 0.0], "relay_refresh": [0.640625, 0.898438, 0.257812, 131.992188, 1.0], "max_uncertainty": [0.945312, 0.859375, 0.250000, 58.875000, 0.539062], "tcr_guard": [0.960938, 0.898438, 0.257812, 186.359375, 1.507812], "tcr_bound": [0.882812, 0.882812, 0.257812, 44.406250, 0.335938]},
+    {"model": "Qwen-0.5B", "rows": 4, "stale": [0.859375, 0.789062, 0.250000, 0.0, 0.0], "relay_refresh": [0.671875, 0.898438, 0.296875, 395.976562, 3.0], "max_uncertainty": [0.867188, 0.789062, 0.250000, 59.757812, 0.546875], "tcr_guard": [0.968750, 0.898438, 0.296875, 484.601562, 3.804688], "tcr_bound": [0.859375, 0.828125, 0.273438, 130.546875, 0.984375]},
+    {"model": "Qwen-14B", "rows": 1, "stale": [0.992188, 0.953125, 0.265625, 0.0, 0.0], "relay_refresh": [0.945312, 1.000000, 0.265625, 102.992188, 1.0], "max_uncertainty": [1.000000, 0.953125, 0.265625, 13.164062, 0.164062], "tcr_guard": [1.000000, 1.000000, 0.265625, 141.539062, 1.5], "tcr_bound": [0.992188, 0.960938, 0.273438, 3.843750, 0.039062]},
+    {"model": "Qwen-14B", "rows": 2, "stale": [0.992188, 0.953125, 0.265625, 0.0, 0.0], "relay_refresh": [0.945312, 1.000000, 0.265625, 102.992188, 1.0], "max_uncertainty": [1.000000, 0.953125, 0.265625, 13.164062, 0.164062], "tcr_guard": [1.000000, 1.000000, 0.265625, 141.539062, 1.5], "tcr_bound": [0.992188, 0.960938, 0.273438, 3.843750, 0.039062]},
+    {"model": "Qwen-14B", "rows": 4, "stale": [0.960938, 0.906250, 0.265625, 0.0, 0.0], "relay_refresh": [0.914062, 1.000000, 0.273438, 308.976562, 3.0], "max_uncertainty": [0.953125, 0.906250, 0.265625, 13.164062, 0.164062], "tcr_guard": [1.000000, 1.000000, 0.273438, 386.054688, 4.007812], "tcr_bound": [0.968750, 0.921875, 0.265625, 36.554688, 0.375000]}
+  ],
+  "metric_order": "decision_exact, answer_action_exact, answer_accuracy, tokens, queries",
+  "notes": [
+    "Qwen-0.5B and Qwen2.5-0.5B produced identical aggregates in this worker configuration and are represented once.",
+    "Rows 2 is numerically identical to rows 1 for these models because the added relay changes did not alter their emitted probabilities.",
+    "relay_refresh updates changed relay rows and deliberately reports no graph certificate. It isolates downstream answer-action maintenance from certificate completion.",
+    "The two malformed numeric answer keys were corrected explicitly from 1-based values 2 and 4 to indices 1 and 3."
+  ]
+}
+
