@@ -1,0 +1,23 @@
+{
+  "schema": "arcc_answer_region_only_independent_v1",
+  "metric_order": ["decision_exact", "answer_action_exact", "answer_accuracy", "tokens", "queries"],
+  "independent_cells": [
+    {"worker": "arcc_llama1b", "rows": 1, "decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.645161, "tokens": 79.741935, "queries": 0.548387},
+    {"worker": "arcc_llama1b_iface", "rows": 1, "decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.645161, "tokens": 88.516129, "queries": 0.548387},
+    {"worker": "arcc_qwen14", "rows": 1, "decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.322581, "tokens": 51.129032, "queries": 0.451613},
+    {"worker": "arcc_qwen14_iface", "rows": 1, "decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.290323, "tokens": 58.354839, "queries": 0.451613},
+    {"worker": "arcc_qwen14_r2", "rows": 2, "decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.322581, "tokens": 51.129032, "queries": 0.451613},
+    {"worker": "arcc_qwen14_r4", "rows": 4, "decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.322581, "tokens": 150.193548, "queries": 1.322581},
+    {"worker": "arcc_qwen25", "rows": 1, "decision_exact": 0.935484, "answer_action_exact": 0.903226, "answer_accuracy": 0.290323, "tokens": 117.935484, "queries": 0.806452},
+    {"worker": "arcc_qwen25_iface", "rows": 1, "decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.258065, "tokens": 157.645161, "queries": 1.0},
+    {"worker": "arcc_qwen25_r2", "rows": 2, "decision_exact": 0.935484, "answer_action_exact": 0.903226, "answer_accuracy": 0.290323, "tokens": 117.935484, "queries": 0.806452},
+    {"worker": "arcc_qwen25_r4", "rows": 4, "decision_exact": 0.967742, "answer_action_exact": 0.774194, "answer_accuracy": 0.290323, "tokens": 388.451613, "queries": 2.709677}
+  ],
+  "independent_mean": {"decision_exact": 0.983871, "answer_action_exact": 0.958065, "answer_accuracy": 0.367742, "tokens": 126.103226, "queries": 0.9096775},
+  "independent_changed_mask_q09": {"decision_exact": 0.983871, "answer_action_exact": 0.958065, "answer_accuracy": 0.367742, "tokens": 132.803226, "queries": 0.958065},
+  "independent_all_row_q09": {"decision_exact": 0.995037, "answer_action_exact": 1.0, "answer_accuracy": 0.349876, "tokens": 252.977667, "queries": 1.816377},
+  "historical_51_cell_mean_q05": {"decision_exact": 0.995, "answer_action_exact": 0.991, "answer_accuracy": 0.55, "tokens": 108.2, "queries": 1.35},
+  "historical_51_cell_mean_q09": {"decision_exact": 0.997, "answer_action_exact": 0.99, "answer_accuracy": 0.55, "tokens": 120.0, "queries": 1.49},
+  "interpretation": "The answer-region-only policy matches the final answer action of the full graph-plus-answer certificate on the independent ARCC cells while using fewer relay queries. Answer accuracy is unchanged because the policy preserves the selected action and does not improve the underlying model's task knowledge."
+}
+

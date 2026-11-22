@@ -1,0 +1,2147 @@
+{
+  "schema": "arcc_answer_safe_historical_v1",
+  "cells": [
+    {
+      "cohort": "m60_conditional_dedup_commonsense",
+      "worker": "WORKER0",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 85.5625,
+        "queries": 0.9375
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.875,
+          "answer_accuracy": 0.5,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.875,
+          "answer_accuracy": 0.5,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4375,
+          "tokens": 100.9375,
+          "queries": 1.125
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.875,
+          "answer_accuracy": 0.5,
+          "tokens": 5.25,
+          "queries": 0.0625
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_commonsense",
+      "worker": "WORKER1",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 61.75,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 113.25,
+          "queries": 2.0
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9375,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 3.5625,
+          "queries": 0.0625
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_qasc",
+      "worker": "WORKER0",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 90.95238095238095,
+        "queries": 0.9047619047619048
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9523809523809523,
+          "answer_action_exact": 0.9047619047619048,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9047619047619048,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 136.66666666666666,
+          "queries": 1.380952380952381
+        },
+        "tcr_bound": {
+          "decision_exact": 0.8095238095238095,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 61.80952380952381,
+          "queries": 0.6190476190476191
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_qasc",
+      "worker": "WORKER1",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 135.0952380952381,
+          "queries": 1.9523809523809523
+        },
+        "tcr_bound": {
+          "decision_exact": 0.7619047619047619,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 27.857142857142858,
+          "queries": 0.38095238095238093
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows2_commonsense",
+      "worker": "WORKER0",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 176.3125,
+        "queries": 1.9375
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.25,
+          "tokens": 201.9375,
+          "queries": 2.25
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 33.6875,
+          "queries": 0.375
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows2_commonsense",
+      "worker": "WORKER1",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 123.5,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 179.4375,
+          "queries": 3.125
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 35.875,
+          "queries": 0.5
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows2_qasc",
+      "worker": "WORKER0",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 186.33333333333334,
+        "queries": 1.8571428571428572
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.8571428571428571,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 263.8095238095238,
+          "queries": 2.6666666666666665
+        },
+        "tcr_bound": {
+          "decision_exact": 0.8095238095238095,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 94.80952380952381,
+          "queries": 0.9523809523809523
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows2_qasc",
+      "worker": "WORKER1",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.7619047619047619,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 261.23809523809524,
+          "queries": 3.761904761904762
+        },
+        "tcr_bound": {
+          "decision_exact": 0.6190476190476191,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 82.19047619047619,
+          "queries": 1.1428571428571428
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows2_sciq",
+      "worker": "WORKER0",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 179.1304347826087,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 236.17391304347825,
+          "queries": 2.6956521739130435
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 27.304347826086957,
+          "queries": 0.30434782608695654
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows2_sciq",
+      "worker": "WORKER1",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 121.1304347826087,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.8260869565217391,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9130434782608695,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 170.30434782608697,
+          "queries": 2.9565217391304346
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 32.56521739130435,
+          "queries": 0.5217391304347826
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows4_commonsense",
+      "worker": "WORKER0",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 357.0,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.875,
+          "answer_action_exact": 0.4375,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.875,
+          "answer_action_exact": 0.4375,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 418.5,
+          "queries": 4.75
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9375,
+          "answer_action_exact": 0.5625,
+          "answer_accuracy": 0.4375,
+          "tokens": 110.5,
+          "queries": 1.25
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows4_commonsense",
+      "worker": "WORKER1",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 241.0,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 338.0625,
+          "queries": 5.9375
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9375,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 70.25,
+          "queries": 1.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows4_qasc",
+      "worker": "WORKER0",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 383.6666666666667,
+        "queries": 3.9047619047619047
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 523.5238095238095,
+          "queries": 5.333333333333333
+        },
+        "tcr_bound": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 221.85714285714286,
+          "queries": 2.2857142857142856
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows4_qasc",
+      "worker": "WORKER1",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 276.2857142857143,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.5238095238095238,
+          "answer_action_exact": 0.5238095238095238,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.47619047619047616,
+          "answer_action_exact": 0.5238095238095238,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 429.2857142857143,
+          "queries": 6.190476190476191
+        },
+        "tcr_bound": {
+          "decision_exact": 0.5238095238095238,
+          "answer_action_exact": 0.7619047619047619,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 202.1904761904762,
+          "queries": 2.857142857142857
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows4_sciq",
+      "worker": "WORKER0",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 352.2608695652174,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9130434782608695,
+          "answer_action_exact": 0.7391304347826086,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.7391304347826086,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 423.5652173913044,
+          "queries": 4.869565217391305
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.8260869565217391,
+          "answer_accuracy": 0.34782608695652173,
+          "tokens": 77.0,
+          "queries": 0.8695652173913043
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_rows4_sciq",
+      "worker": "WORKER1",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 236.2608695652174,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.8260869565217391,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.782608695652174,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 322.7391304347826,
+          "queries": 5.6521739130434785
+        },
+        "tcr_bound": {
+          "decision_exact": 0.8695652173913043,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 98.73913043478261,
+          "queries": 1.6521739130434783
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_sciq",
+      "worker": "WORKER0",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 89.56521739130434,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 42.17391304347826,
+          "queries": 0.5217391304347826
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.30434782608695654,
+          "tokens": 142.17391304347825,
+          "queries": 1.6521739130434783
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9130434782608695,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 35.26086956521739,
+          "queries": 0.391304347826087
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_dedup_sciq",
+      "worker": "WORKER1",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 60.56521739130435,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.782608695652174,
+          "answer_action_exact": 0.9565217391304348,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9565217391304348,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 112.26086956521739,
+          "queries": 2.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 28.82608695652174,
+          "queries": 0.4782608695652174
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_commonsense",
+      "worker": "WORKER0",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.4375,
+        "tokens": 85.5625,
+        "queries": 0.9375
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.875,
+          "answer_accuracy": 0.5,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.875,
+          "answer_accuracy": 0.5,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.4375,
+          "tokens": 100.9375,
+          "queries": 1.125
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.875,
+          "answer_accuracy": 0.5,
+          "tokens": 5.25,
+          "queries": 0.0625
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_commonsense",
+      "worker": "WORKER1",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 61.75,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 113.25,
+          "queries": 2.0
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9375,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 3.5625,
+          "queries": 0.0625
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_commonsense",
+      "worker": "WORKER2",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 53.625,
+        "queries": 0.75
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9375,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9375,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.625,
+          "tokens": 71.75,
+          "queries": 1.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9375,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_qasc",
+      "worker": "WORKER0",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 90.95238095238095,
+        "queries": 0.9047619047619048
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9523809523809523,
+          "answer_action_exact": 0.9047619047619048,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9047619047619048,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 136.66666666666666,
+          "queries": 1.380952380952381
+        },
+        "tcr_bound": {
+          "decision_exact": 0.8095238095238095,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 61.80952380952381,
+          "queries": 0.6190476190476191
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_qasc",
+      "worker": "WORKER1",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 135.0952380952381,
+          "queries": 1.9523809523809523
+        },
+        "tcr_bound": {
+          "decision_exact": 0.7619047619047619,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 27.857142857142858,
+          "queries": 0.38095238095238093
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_qasc",
+      "worker": "WORKER2",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 49.523809523809526,
+        "queries": 0.6190476190476191
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 7.714285714285714,
+          "queries": 0.09523809523809523
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 84.52380952380952,
+          "queries": 1.0476190476190477
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_commonsense",
+      "worker": "WORKER0",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25,
+        "tokens": 176.3125,
+        "queries": 1.9375
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.25,
+          "tokens": 201.9375,
+          "queries": 2.25
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 33.6875,
+          "queries": 0.375
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_commonsense",
+      "worker": "WORKER1",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 123.5,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 179.4375,
+          "queries": 3.125
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 35.875,
+          "queries": 0.5
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_commonsense",
+      "worker": "WORKER2",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.625,
+        "tokens": 97.125,
+        "queries": 1.375
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9375,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9375,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.625,
+          "tokens": 143.5,
+          "queries": 2.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9375,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_qasc",
+      "worker": "WORKER0",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2857142857142857,
+        "tokens": 186.33333333333334,
+        "queries": 1.8571428571428572
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.8571428571428571,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 263.8095238095238,
+          "queries": 2.6666666666666665
+        },
+        "tcr_bound": {
+          "decision_exact": 0.8095238095238095,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 94.80952380952381,
+          "queries": 0.9523809523809523
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_qasc",
+      "worker": "WORKER1",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 141.14285714285714,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.7619047619047619,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 261.23809523809524,
+          "queries": 3.761904761904762
+        },
+        "tcr_bound": {
+          "decision_exact": 0.6190476190476191,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 82.19047619047619,
+          "queries": 1.1428571428571428
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_qasc",
+      "worker": "WORKER2",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 95.66666666666667,
+        "queries": 1.1904761904761905
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 7.714285714285714,
+          "queries": 0.09523809523809523
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 165.04761904761904,
+          "queries": 2.0476190476190474
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_sciq",
+      "worker": "WORKER0",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.391304347826087,
+        "tokens": 179.1304347826087,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 236.17391304347825,
+          "queries": 2.6956521739130435
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 27.304347826086957,
+          "queries": 0.30434782608695654
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_sciq",
+      "worker": "WORKER1",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.782608695652174,
+        "tokens": 121.1304347826087,
+        "queries": 2.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.8260869565217391,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9130434782608695,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 170.30434782608697,
+          "queries": 2.9565217391304346
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.782608695652174,
+          "tokens": 32.56521739130435,
+          "queries": 0.5217391304347826
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows2_sciq",
+      "worker": "WORKER2",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 109.1304347826087,
+        "queries": 1.565217391304348
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 8.869565217391305,
+          "queries": 0.08695652173913043
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 147.08695652173913,
+          "queries": 2.0434782608695654
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_commonsense",
+      "worker": "WORKER0",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.3125,
+        "tokens": 357.0,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.875,
+          "answer_action_exact": 0.4375,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.875,
+          "answer_action_exact": 0.4375,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3125,
+          "tokens": 418.5,
+          "queries": 4.75
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9375,
+          "answer_action_exact": 0.5625,
+          "answer_accuracy": 0.4375,
+          "tokens": 110.5,
+          "queries": 1.25
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_commonsense",
+      "worker": "WORKER1",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 1.0,
+        "tokens": 241.0,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.75,
+          "answer_action_exact": 0.8125,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 338.0625,
+          "queries": 5.9375
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9375,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 1.0,
+          "tokens": 70.25,
+          "queries": 1.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_commonsense",
+      "worker": "WORKER2",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5,
+        "tokens": 215.8125,
+        "queries": 3.125
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.625,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5,
+          "tokens": 281.0,
+          "queries": 4.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.625,
+          "tokens": 8.375,
+          "queries": 0.125
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_qasc",
+      "worker": "WORKER0",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.38095238095238093,
+        "tokens": 383.6666666666667,
+        "queries": 3.9047619047619047
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 523.5238095238095,
+          "queries": 5.333333333333333
+        },
+        "tcr_bound": {
+          "decision_exact": 0.7142857142857143,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 221.85714285714286,
+          "queries": 2.2857142857142856
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_qasc",
+      "worker": "WORKER1",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.5238095238095238,
+        "tokens": 276.2857142857143,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.5238095238095238,
+          "answer_action_exact": 0.5238095238095238,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.47619047619047616,
+          "answer_action_exact": 0.5238095238095238,
+          "answer_accuracy": 0.38095238095238093,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 429.2857142857143,
+          "queries": 6.190476190476191
+        },
+        "tcr_bound": {
+          "decision_exact": 0.5238095238095238,
+          "answer_action_exact": 0.7619047619047619,
+          "answer_accuracy": 0.5238095238095238,
+          "tokens": 202.1904761904762,
+          "queries": 2.857142857142857
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_qasc",
+      "worker": "WORKER2",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6666666666666666,
+        "tokens": 230.66666666666666,
+        "queries": 2.9523809523809526
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 7.238095238095238,
+          "queries": 0.09523809523809523
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 316.0952380952381,
+          "queries": 4.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.8095238095238095,
+          "answer_accuracy": 0.6666666666666666,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_sciq",
+      "worker": "WORKER0",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 352.2608695652174,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9130434782608695,
+          "answer_action_exact": 0.7391304347826086,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.7391304347826086,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 423.5652173913044,
+          "queries": 4.869565217391305
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.8260869565217391,
+          "answer_accuracy": 0.34782608695652173,
+          "tokens": 77.0,
+          "queries": 0.8695652173913043
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_sciq",
+      "worker": "WORKER1",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 236.2608695652174,
+        "queries": 4.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.8260869565217391,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.782608695652174,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 322.7391304347826,
+          "queries": 5.6521739130434785
+        },
+        "tcr_bound": {
+          "decision_exact": 0.8695652173913043,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 98.73913043478261,
+          "queries": 1.6521739130434783
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_rows4_sciq",
+      "worker": "WORKER2",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.43478260869565216,
+        "tokens": 231.7826086956522,
+        "queries": 3.391304347826087
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.6086956521739131,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.6086956521739131,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 5.869565217391305,
+          "queries": 0.08695652173913043
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.43478260869565216,
+          "tokens": 276.2608695652174,
+          "queries": 4.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.6521739130434783,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 3.260869565217391,
+          "queries": 0.043478260869565216
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_sciq",
+      "worker": "WORKER0",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 89.56521739130434,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 42.17391304347826,
+          "queries": 0.5217391304347826
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.30434782608695654,
+          "tokens": 142.17391304347825,
+          "queries": 1.6521739130434783
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9130434782608695,
+          "answer_action_exact": 0.9130434782608695,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 35.26086956521739,
+          "queries": 0.391304347826087
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_sciq",
+      "worker": "WORKER1",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 60.56521739130435,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.782608695652174,
+          "answer_action_exact": 0.9565217391304348,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9565217391304348,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 112.26086956521739,
+          "queries": 2.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 28.82608695652174,
+          "queries": 0.4782608695652174
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_llama3_sciq",
+      "worker": "WORKER2",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.6086956521739131,
+        "tokens": 54.56521739130435,
+        "queries": 0.782608695652174
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 10.695652173913043,
+          "queries": 0.08695652173913043
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 81.26086956521739,
+          "queries": 1.0869565217391304
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.6086956521739131,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_server_commonsense",
+      "worker": "WORKER0",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.875,
+        "answer_accuracy": 0.375,
+        "tokens": 85.5625,
+        "queries": 0.9375
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.875,
+          "answer_accuracy": 0.375,
+          "tokens": 95.9375,
+          "queries": 1.0625
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.75,
+          "answer_accuracy": 0.4375,
+          "tokens": 5.25,
+          "queries": 0.0625
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_server_commonsense",
+      "worker": "WORKER1",
+      "n": 16,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8125,
+        "tokens": 61.75,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 110.0,
+          "queries": 1.9375
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8125,
+          "tokens": 0.0,
+          "queries": 0.0
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_server_qasc",
+      "worker": "WORKER0",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 0.9523809523809523,
+        "answer_action_exact": 0.8571428571428571,
+        "answer_accuracy": 0.3333333333333333,
+        "tokens": 90.95238095238095,
+        "queries": 0.9047619047619048
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9523809523809523,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.2857142857142857,
+          "tokens": 37.095238095238095,
+          "queries": 0.38095238095238093
+        },
+        "tcr_guard": {
+          "decision_exact": 0.9523809523809523,
+          "answer_action_exact": 0.8571428571428571,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 136.66666666666666,
+          "queries": 1.380952380952381
+        },
+        "tcr_bound": {
+          "decision_exact": 0.7619047619047619,
+          "answer_action_exact": 0.8571428571428571,
+          "answer_accuracy": 0.3333333333333333,
+          "tokens": 61.80952380952381,
+          "queries": 0.6190476190476191
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_server_qasc",
+      "worker": "WORKER1",
+      "n": 21,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.9523809523809523,
+        "answer_accuracy": 0.42857142857142855,
+        "tokens": 70.57142857142857,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.8571428571428571,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.42857142857142855,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9047619047619048,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.42857142857142855,
+          "tokens": 21.761904761904763,
+          "queries": 0.3333333333333333
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.42857142857142855,
+          "tokens": 135.0952380952381,
+          "queries": 1.9523809523809523
+        },
+        "tcr_bound": {
+          "decision_exact": 0.7619047619047619,
+          "answer_action_exact": 0.9523809523809523,
+          "answer_accuracy": 0.42857142857142855,
+          "tokens": 23.238095238095237,
+          "queries": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_server_sciq",
+      "worker": "WORKER0",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 0.782608695652174,
+        "answer_accuracy": 0.30434782608695654,
+        "tokens": 89.56521739130434,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 35.30434782608695,
+          "queries": 0.43478260869565216
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.30434782608695654,
+          "tokens": 135.30434782608697,
+          "queries": 1.565217391304348
+        },
+        "tcr_bound": {
+          "decision_exact": 0.9130434782608695,
+          "answer_action_exact": 0.782608695652174,
+          "answer_accuracy": 0.391304347826087,
+          "tokens": 31.47826086956522,
+          "queries": 0.34782608695652173
+        }
+      }
+    },
+    {
+      "cohort": "m60_conditional_server_sciq",
+      "worker": "WORKER1",
+      "n": 23,
+      "answer_safe": {
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.8260869565217391,
+        "tokens": 60.56521739130435,
+        "queries": 1.0
+      },
+      "baselines": {
+        "stale": {
+          "decision_exact": 0.782608695652174,
+          "answer_action_exact": 0.9565217391304348,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 0.0,
+          "queries": 0.0
+        },
+        "max_uncertainty": {
+          "decision_exact": 0.9565217391304348,
+          "answer_action_exact": 0.9565217391304348,
+          "answer_accuracy": 0.8695652173913043,
+          "tokens": 29.130434782608695,
+          "queries": 0.5652173913043478
+        },
+        "tcr_guard": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 112.26086956521739,
+          "queries": 2.0
+        },
+        "tcr_bound": {
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.8260869565217391,
+          "tokens": 28.82608695652174,
+          "queries": 0.4782608695652174
+        }
+      }
+    }
+  ]
+}
