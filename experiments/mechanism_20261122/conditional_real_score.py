@@ -104,7 +104,7 @@ def run(manifest):
         folder = Path(folder_name)
         sealed = json.loads((folder / "SEALED.json").read_bytes())
         panel_out = {}
-        for worker in range(3):
+        for worker in manifest.get("workers", [0, 1, 2]):
             rows = [json.loads(line) for line in (folder / f"WORKER{worker}.jsonl").read_bytes().splitlines()]
             methods = {name: [] for name in METHODS}
             for row in rows:
@@ -135,9 +135,11 @@ def run(manifest):
         outputs[panel] = panel_out
     aggregate = {}
     for method in METHODS:
-        vals = [outputs[p][str(w)][method] for p in outputs for w in range(3)]
+        vals = [outputs[p][str(w)][method] for p in outputs for w in manifest.get("workers", [0, 1, 2])]
         n = sum(v["n"] for v in vals)
-        aggregate[method] = {k: sum(v[k] * v["n"] for v in vals) / n for k in vals[0]}
+        aggregate[method] = {"n": n}
+        aggregate[method].update({k: sum(v[k] * v["n"] for v in vals) / n
+                                  for k in vals[0] if k != "n"})
     return {"schema": "m60_conditional_real_replay_v2", "panels": list(manifest["panels"]),
             "changed_rows": list(changed_rows), "aggregate": aggregate, "panel_team": outputs}
 

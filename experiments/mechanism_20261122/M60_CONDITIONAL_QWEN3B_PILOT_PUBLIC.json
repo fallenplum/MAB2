@@ -1,0 +1,212 @@
+{
+  "schema": "m60_conditional_qwen3b_pilot_v1",
+  "model_family": "Qwen2.5-3B-Instruct",
+  "panels": [
+    "QASC-Qwen3B-pilot",
+    "SciQ-Qwen3B-pilot"
+  ],
+  "total_questions": 256,
+  "workers": 1,
+  "changed_rows": [
+    1
+  ],
+  "aggregate": {
+    "stale": {
+      "n": 256,
+      "action_error": 0.03515625,
+      "exact_set": 0.89453125,
+      "false_drop": 0.05859375,
+      "false_keep": 0.0625,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    "warm_reweighted": {
+      "n": 256,
+      "action_error": 0.0078125,
+      "exact_set": 0.9765625,
+      "false_drop": 0.01953125,
+      "false_keep": 0.01171875,
+      "queries": 1.03125,
+      "tokens": 101.3984375
+    },
+    "source_only_ctdr": {
+      "n": 256,
+      "action_error": 0.0078125,
+      "exact_set": 0.9765625,
+      "false_drop": 0.01953125,
+      "false_keep": 0.01171875,
+      "queries": 1.03125,
+      "tokens": 101.3984375
+    },
+    "tcr_guard": {
+      "n": 256,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.94921875,
+      "tokens": 187.8828125
+    },
+    "tcr_token": {
+      "n": 256,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.94921875,
+      "tokens": 187.69921875
+    },
+    "cold_restart": {
+      "n": 256,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 2.90234375,
+      "tokens": 311.34765625
+    },
+    "cold_token": {
+      "n": 256,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 2.8984375,
+      "tokens": 310.59765625
+    }
+  },
+  "panel_metrics": {
+    "QASC-Qwen3B-pilot": {
+      "stale": {
+        "n": 128,
+        "action_error": 0.03125,
+        "exact_set": 0.84375,
+        "false_drop": 0.0859375,
+        "false_keep": 0.09375,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "warm_reweighted": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 0.9765625,
+        "false_drop": 0.015625,
+        "false_keep": 0.0078125,
+        "queries": 1.515625,
+        "tokens": 150.5390625
+      },
+      "source_only_ctdr": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 0.9765625,
+        "false_drop": 0.015625,
+        "false_keep": 0.0078125,
+        "queries": 1.515625,
+        "tokens": 150.5390625
+      },
+      "tcr_guard": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.4453125,
+        "tokens": 240.9296875
+      },
+      "tcr_token": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 2.453125,
+        "tokens": 241.2265625
+      },
+      "cold_restart": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.1953125,
+        "tokens": 419.109375
+      },
+      "cold_token": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 4.1796875,
+        "tokens": 416.9609375
+      }
+    },
+    "SciQ-Qwen3B-pilot": {
+      "stale": {
+        "n": 128,
+        "action_error": 0.0390625,
+        "exact_set": 0.9453125,
+        "false_drop": 0.03125,
+        "false_keep": 0.03125,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "warm_reweighted": {
+        "n": 128,
+        "action_error": 0.015625,
+        "exact_set": 0.9765625,
+        "false_drop": 0.0234375,
+        "false_keep": 0.015625,
+        "queries": 0.546875,
+        "tokens": 52.2578125
+      },
+      "source_only_ctdr": {
+        "n": 128,
+        "action_error": 0.015625,
+        "exact_set": 0.9765625,
+        "false_drop": 0.0234375,
+        "false_keep": 0.015625,
+        "queries": 0.546875,
+        "tokens": 52.2578125
+      },
+      "tcr_guard": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.453125,
+        "tokens": 134.8359375
+      },
+      "tcr_token": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.4453125,
+        "tokens": 134.171875
+      },
+      "cold_restart": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.609375,
+        "tokens": 203.5859375
+      },
+      "cold_token": {
+        "n": 128,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.6171875,
+        "tokens": 204.234375
+      }
+    }
+  },
+  "status": "exploratory_single_model_pilot",
+  "interpretation": "Gold labels are used only for reporting. This pilot is not independent multi-team confirmation and does not establish ACL-level evidence."
+}

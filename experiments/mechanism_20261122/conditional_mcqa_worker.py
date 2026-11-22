@@ -1,5 +1,6 @@
 import itertools
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -23,8 +24,13 @@ def main(model_path, input_path, output_path):
     assert all(len(v) == 1 for v in label_ids)
 
     def code(text):
-        return tok.apply_chat_template([{"role": "user", "content": text}], tokenize=True,
-                                       add_generation_prompt=True)
+        encoded = tok.apply_chat_template([{"role": "user", "content": text}], tokenize=True,
+                                           add_generation_prompt=True)
+        if hasattr(encoded, "input_ids"):
+            return encoded.input_ids
+        if isinstance(encoded, dict):
+            return encoded["input_ids"]
+        return encoded
 
     with torch.inference_mode(), Path(output_path).open("x", encoding="utf8") as out:
         for row in rows:
@@ -52,11 +58,23 @@ def main(model_path, input_path, output_path):
                          ".\nReturn only the best answer letter."
                          for i, j in itertools.product(range(4), repeat=2)]
             seq = [code(v) for v in source + old_relay + new_relay + terminals]
-            x = tok.pad({"input_ids": seq}, return_tensors="pt").to("cuda:0")
-            pos = (x.attention_mask.long().cumsum(1) - 1).clamp_min(0)
-            logits = model(**x, position_ids=pos, use_cache=False).logits[:, -1]
-            probs = logits[:11, source_ids].float().softmax(1).cpu().tolist()
-            labels = logits[11:, [v[0] for v in label_ids]].argmax(1).cpu().tolist()
+            microbatch = max(1, int(os.environ.get("MAB2_MICROBATCH", "2")))
+            logits_parts = []
+            for start in range(0, len(seq), microbatch):
+                batch = seq[start:start + microbatch]
+                max_len = max(len(ids) for ids in batch)
+                input_ids = torch.full((len(batch), max_len), int(tok.pad_token_id), dtype=torch.long)
+                attention_mask = torch.zeros((len(batch), max_len), dtype=torch.long)
+                for row_index, ids in enumerate(batch):
+                    input_ids[row_index, -len(ids):] = torch.as_tensor(ids, dtype=torch.long)
+                    attention_mask[row_index, -len(ids):] = 1
+                x = {"input_ids": input_ids.to("cuda:0"), "attention_mask": attention_mask.to("cuda:0")}
+                pos = (x["attention_mask"].long().cumsum(1) - 1).clamp_min(0)
+                logits_parts.append(model(**x, position_ids=pos, use_cache=False).logits[:, -1].float().cpu())
+                del x, pos, input_ids, attention_mask
+            logits = torch.cat(logits_parts, dim=0)
+            probs = logits[:11, source_ids].softmax(1).tolist()
+            labels = logits[11:, [v[0] for v in label_ids]].argmax(1).tolist()
             full = {str(i): probs[i] for i in range(11)}
             full.update({str(11 + i): labels[i] for i in range(len(labels))})
             out.write(json.dumps({"key": row["key"], "full": full,
