@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times,latexsym,amsmath,amssymb,booktabs,graphicx,microtype,url}
+\title{The Price of Delayed Feedback in Evolving Language-Model Communication Graphs}
+\author{Research draft for author review}
+\begin{document}
+\maketitle
+\begin{abstract}
+Communication credit is usually treated as a scalar attached to an edge. After a graph changes, however, a controller must decide which old measurements remain usable and which new measurements to buy. We study a concrete distinction between three costs: the cost of certifying the actually relevant answer, the cost of certifying the hardest possible answer, and the cost of one transcript that is valid for every possible answer. For a finite four-row communication interface, we derive an exact, instance-wise certificate search and give a tight construction in which all single-answer certificates cost $k$ queries while a common certificate costs $2k$. The construction is deliberately a mechanism diagnostic rather than a new general query-complexity theorem. Across independent open numerical and extractive-question-answering panels, the observed certificate gap is positive but heterogeneous. A gold-blind scheduler reproduces the exhaustive decision set on the numerical panel, while a fresh upstream-edge deletion panel shows stale graph decisions and substantial room for revalidation. Active allocation fails to beat the registered controls on the QASC panel. These results support a narrower claim: graph evolution can invalidate the sufficiency of old credit, but neither edge-change magnitude nor generic uncertainty alone identifies the cheapest repair. We release the contracts, exact finite search, negative controls, and separated cost ledgers.
+\end{abstract}
+\section{Introduction}
+Multi-agent language-model systems often expose a directed communication graph. An edge may be removed, restored, or replaced after historical feedback has been collected. The usual scalar credit question asks whether an edge helped a task. The operational question is different: after an edit, what is the cheapest new evidence that justifies the next graph decision?
+
+We make this distinction explicit. Let $y$ denote a possible final answer and let $C_y$ be the minimum cost of a transcript that certifies the sign of the edge credit for $y$. Let $C_h=\max_y C_y$ and let $C_{\rm all}$ be the minimum cost of one transcript that certifies every possible $y$. In general $C_h<C_{\rm all}$ because individually cheap certificates can be incompatible. This is relevant when the system must commit before knowing which answer will be used, or when an audit is intended for reuse. It is not a claim that every deployment should certify all labels.
+
+Our contributions are bounded and falsifiable.
+\begin{itemize}
+\item We formalize the three certificate targets and solve the finite four-row problem exactly by enumerating row states and terminal observations.
+\item We provide an exhaustive $k\le5$ construction with $C_y=k$ and $C_{\rm all}=2k$, and validate the solver against integer brute force.
+\item We test the mechanism on independent TabMWP, SQuAD, and QASC panels with strong fixed controls, a gold-blind scheduler, and disclosed negative results.
+\item We measure graph-edit transport. Reusing an old transcript can reduce token cost, yet the old decision can be wrong or unprovable after an upstream edge is removed.
+\end{itemize}
+
+\section{Problem and exact certificate search}
+For four relay rows, let $s_i$ be source probabilities, $b_i$ the no-advice row, $m_i$ the advised row, and $r_{ij}(y)$ the indicator that the terminal output equals $y$. The edge credit for $y$ is
+\begin{equation}
+\Delta_y=\sum_i s_i\sum_j(m_{ij}-b_i)r_{ij}(y).
+\end{equation}
+Each row can be purchased as a distribution query, and each terminal cell as an output query. Unknown distributions range over the probability simplex and unknown terminal indicators range over $\{0,1\}$. Thus extrema of an unobserved row are attained at simplex vertices, so the remaining uncertainty interval is computed exactly. We search all row masks, combine two pairs of rows, and retain the lowest-cost transcript whose interval is entirely above or below threshold $\tau$ for every requested target. Opposite floating-point tolerances are checked on the main threshold.
+
+\paragraph{Tight finite construction.}
+One known source row has a uniform conditional distribution over $k$ positive states; without the edge it is uniform over $k$ disjoint negative states. Each positive state and its matched negative state produce the same unique answer string. All true credits are zero and $0<\tau<1/k$. For one target, $k$ inspections suffice. To certify all targets, all $k$ positive and all $k$ matched negative states are necessary, giving $2k$. This is an instance construction, not a universal factor-two theorem.
+
+\section{Experiments}
+All experiments use frozen input manifests, answer keys inaccessible to model workers, and per-stage token ledgers. We do not report confidence intervals under the registered project protocol.
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule Panel & $n$ & Main target & Best observation & Result \\
+\midrule
+TabMWP M50 & 48 & all numeric labels & joint & exact set match; 2/3 parse gates \\
+SQuAD M54 & 128 & all extractive labels & joint & heterogeneous; all gates not uniform \\
+QASC M56 & 256 & upstream edge removal & regret scheduler & active gate failed \\
+\bottomrule
+\end{tabular}
+\caption{Primary independent panels. Counts are questions, not role permutations.}
+\end{table}
+
+\paragraph{TabMWP.}
+The 48-question gold-blind panel uses 512-token numerical generations and the official parser. The exhaustive, row-first, and joint schedulers agree on every reported answer set for all three checkpoints. Official parseability is .993, .813, and 1.000. The joint scheduler is not a universal winner: its logical token average is 1,067 for one checkpoint, while the physical batch and wall-clock controls remain distinct. The M50 hardware qualification did not pass uniformly, so we treat this as a decision-equivalence result rather than a deployment-speed claim.
+
+\paragraph{SQuAD.}
+The 128-question panel uses one distinct article per question, four contiguous sections, three cyclic heterogeneous teams, and 32-token extractive answers. At $\tau=.01$, the premium $C_{\rm all}/C_{\rm gold}-1$ is 7.1\%, 19.0\%, and 41.0\% after averaging the three role assignments in the released cells, while the common-certificate share ranges from .542 to .599. The exact aggregates and threshold sensitivities are released in M54. These are instance-conditional token lower bounds and do not establish an online policy advantage.
+
+\paragraph{Graph editing and QASC.}
+Removing an upstream evidence edge changes the all-label decision set in 36, 28, and 17 of 256 questions across the three QASC teams in the held-out scoring cells. Old decisions remain unprovable without additional evidence on 89, 95, and 97 questions. A stale policy has 6, 5, and 1 wrong true-label decisions in the three teams. A fixed-budget regret scheduler did not pass the preregistered active gate. The disjoint physical M59 replication preserved exact decisions across cold, memoized, and pre-filled modes, but its first implementation did not show a deployable latency advantage over the registered baselines. This negative result rules out replacing graph-conditioned maintenance with an uncertainty heuristic without further evidence.
+
+\section{Related work and novelty boundary}
+Communication pruning and topology explanation work studies which agents or edges to retain, including AgentDropout and causal topology explanation. Decision-region determination and adaptive testing provide established ways to stop when a decision is identified. Our setting combines a signed, graph-conditioned finite credit table with multiple possible output labels and reports the gap between one-label and all-label certificates. We do not claim priority over stochastic Boolean-function evaluation, adaptive decision-region determination, or causal edge attribution. The empirical contribution is the controlled distinction between these certificate targets in language-model graph audits.
+
+\section{Limitations}
+The interface has four relay rows and exact-match labels. The SQuAD and QASC panels reuse questions across role permutations, so role permutations are not independent datasets. M50 and M54 are black-box finite panels rather than full end-to-end trained graph optimizers. Token cost is a declared accounting unit, not a vendor price or FLOP-normalized latency. The physical M50 qualification and the QASC active gate contain negative results. We have not shown a state-of-the-art accuracy improvement over public multi-agent systems, and this manuscript must not make that claim.
+
+\section{Conclusion}
+Graph evolution creates a measurable distinction between an old decision that is still true, an old decision that is newly certifiable, and an old decision whose certificate must be rebuilt. The exact finite analysis and independent panels support the mechanism claim under the tested interface. They do not support a universal active strategy or a claim of superior end-to-end collaboration. A credible future method must predict which historical certificates survive an edit and must be compared against strong memoized and stale-credit controls at equal cost.
+
+\section*{Reproducibility}
+The companion MAB2 branch contains contracts, sanitized manifests, exact solver code, reconstruction tests, and per-panel ledgers. Private question-level arrays, answer keys, model weights, and credentials remain outside the public release. This is an author-side draft and has not received independent human review.
+
+\begin{thebibliography}{9}
+\bibitem[Deshpande et~al.(2016)]{deshpande} A.~Deshpande, L.~Liu, and K.~H.~T.~et~al. 2016. Stochastic Boolean function evaluation.
+\bibitem[Javdani et~al.(2014)]{javdani} S.~Javdani, Y.~Chen, A.~Karbasi, A.~Krause, D.~Bagnell, and S.~Srinivasa. 2014. Near optimal Bayesian active learning for decision making. AISTATS.
+\bibitem[Zhuge et~al.(2025)]{agentdropout} M.~Zhuge et~al. 2025. AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration. ACL.
+\bibitem[Li et~al.(2026)]{e2} J.~Li et~al. 2026. Discovering efficient and explainable communication topologies for LLM-based multi-agent systems via causal inference. arXiv:2608.12921.
+\bibitem[Tritthart and Zehle(2026)]{cats} F.~Tritthart and T.~Zehle. 2026. Credit where credit is due: Contrastive attribution topology search for multi-agent systems. arXiv:2610.29292.
+\bibitem[Rajpurkar et~al.(2016)]{squad} P.~Rajpurkar, J.~Zhang, K.~Lopyrev, and P.~Liang. 2016. SQuAD: 100,000+ questions for machine comprehension of text. EMNLP.
+\end{thebibliography}
+\end{document}
