@@ -38,16 +38,16 @@ def graph_manifest_changed_rows(manifest):
     """Compute affected relay rows from a frozen graph edit manifest."""
     graph = manifest.get("graph_manifest")
     if not isinstance(graph, dict):
-        return None
+        return tuple(range(4))
     edits = graph.get("edited_edges")
     descendants = graph.get("edge_to_relay_descendants")
     if not isinstance(edits, list) or not isinstance(descendants, dict):
-        return None
+        return tuple(range(4))
     rows = set()
     for edge in edits:
         values = descendants.get(str(edge), ())
         if not isinstance(values, list):
-            return None
+            return tuple(range(4))
         rows.update(int(value) for value in values)
     return tuple(sorted(rows))
 
