@@ -1,0 +1,59 @@
+{
+  "schema": "frozen_graph_edit_manifest_v1",
+  "relay_rows": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "panels": {
+    "rows1": {
+      "edited_edges": [
+        "source_to_relay_1"
+      ],
+      "edge_to_relay_descendants": {
+        "source_to_relay_1": [
+          1
+        ]
+      }
+    },
+    "rows2": {
+      "edited_edges": [
+        "source_to_relay_1",
+        "source_to_relay_3"
+      ],
+      "edge_to_relay_descendants": {
+        "source_to_relay_1": [
+          1
+        ],
+        "source_to_relay_3": [
+          3
+        ]
+      }
+    },
+    "rows4": {
+      "edited_edges": [
+        "source_to_relay_0",
+        "source_to_relay_1",
+        "source_to_relay_2",
+        "source_to_relay_3"
+      ],
+      "edge_to_relay_descendants": {
+        "source_to_relay_0": [
+          0
+        ],
+        "source_to_relay_1": [
+          1
+        ],
+        "source_to_relay_2": [
+          2
+        ],
+        "source_to_relay_3": [
+          3
+        ]
+      }
+    }
+  },
+  "uses_answer_keys": false,
+  "description": "Public schema only. Private question inputs and prompt fingerprints remain outside the repository."
+}
