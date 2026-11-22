@@ -1,0 +1,241 @@
+{
+  "schema": "conditional_relay_drift_diagnostic_v1",
+  "aggregate": {
+    "0.25:A": {
+      "stale": {
+        "n": 2304,
+        "decision_error": 0.06987847222222222,
+        "exact_set": 0.9301215277777778,
+        "false_drop": 0.04600694444444445,
+        "false_keep": 0.035590277777777776,
+        "gold_membership_error": 0.030815972222222224,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "safe_rate": 0.0
+      },
+      "source_only_ctdr": {
+        "n": 2304,
+        "decision_error": 0.0008680555555555555,
+        "exact_set": 0.9991319444444444,
+        "false_drop": 0.00043402777777777775,
+        "false_keep": 0.00043402777777777775,
+        "gold_membership_error": 0.0,
+        "queries": 0.9435763888888888,
+        "tokens": 98.03862847222223,
+        "safe_rate": 0.4782986111111111
+      },
+      "tcr_row": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 1.4071180555555556,
+        "tokens": 161.171875,
+        "safe_rate": 0.0
+      },
+      "tcr_ranking": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 1.4427083333333333,
+        "tokens": 160.87673611111111,
+        "safe_rate": 0.0
+      },
+      "cold_restart": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 4.510850694444445,
+        "tokens": 490.52821180555554,
+        "safe_rate": 0.0
+      }
+    },
+    "0.25:ABCD": {
+      "stale": {
+        "n": 2304,
+        "decision_error": 0.06944444444444445,
+        "exact_set": 0.9305555555555556,
+        "false_drop": 0.04210069444444445,
+        "false_keep": 0.0390625,
+        "gold_membership_error": 0.030381944444444444,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "safe_rate": 0.0
+      },
+      "source_only_ctdr": {
+        "n": 2304,
+        "decision_error": 0.006076388888888889,
+        "exact_set": 0.9939236111111112,
+        "false_drop": 0.0,
+        "false_keep": 0.006076388888888889,
+        "gold_membership_error": 0.001736111111111111,
+        "queries": 0.9136284722222222,
+        "tokens": 95.30208333333333,
+        "safe_rate": 0.4782986111111111
+      },
+      "tcr_row": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 2.390625,
+        "tokens": 301.4635416666667,
+        "safe_rate": 0.0
+      },
+      "tcr_ranking": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 2.4344618055555554,
+        "tokens": 302.51258680555554,
+        "safe_rate": 0.0
+      },
+      "cold_restart": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 4.365017361111111,
+        "tokens": 477.26171875,
+        "safe_rate": 0.0
+      }
+    },
+    "0.5:A": {
+      "stale": {
+        "n": 2304,
+        "decision_error": 0.06987847222222222,
+        "exact_set": 0.9301215277777778,
+        "false_drop": 0.04513888888888889,
+        "false_keep": 0.03602430555555555,
+        "gold_membership_error": 0.03125,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "safe_rate": 0.0
+      },
+      "source_only_ctdr": {
+        "n": 2304,
+        "decision_error": 0.0026041666666666665,
+        "exact_set": 0.9973958333333334,
+        "false_drop": 0.0013020833333333333,
+        "false_keep": 0.001736111111111111,
+        "gold_membership_error": 0.0008680555555555555,
+        "queries": 0.9366319444444444,
+        "tokens": 97.45095486111111,
+        "safe_rate": 0.4782986111111111
+      },
+      "tcr_row": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 1.37890625,
+        "tokens": 158.63845486111111,
+        "safe_rate": 0.0
+      },
+      "tcr_ranking": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 1.4088541666666667,
+        "tokens": 157.84114583333334,
+        "safe_rate": 0.0
+      },
+      "cold_restart": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 4.450520833333333,
+        "tokens": 485.1892361111111,
+        "safe_rate": 0.0
+      }
+    },
+    "0.5:ABCD": {
+      "stale": {
+        "n": 2304,
+        "decision_error": 0.06987847222222222,
+        "exact_set": 0.9301215277777778,
+        "false_drop": 0.03689236111111111,
+        "false_keep": 0.044270833333333336,
+        "gold_membership_error": 0.029079861111111112,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "safe_rate": 0.0
+      },
+      "source_only_ctdr": {
+        "n": 2304,
+        "decision_error": 0.014322916666666666,
+        "exact_set": 0.9856770833333334,
+        "false_drop": 0.00043402777777777775,
+        "false_keep": 0.013888888888888888,
+        "gold_membership_error": 0.004340277777777778,
+        "queries": 0.8693576388888888,
+        "tokens": 91.41276041666667,
+        "safe_rate": 0.4782986111111111
+      },
+      "tcr_row": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 2.2886284722222223,
+        "tokens": 291.12543402777777,
+        "safe_rate": 0.0
+      },
+      "tcr_ranking": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 2.310763888888889,
+        "tokens": 291.2712673611111,
+        "safe_rate": 0.0
+      },
+      "cold_restart": {
+        "n": 2304,
+        "decision_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "gold_membership_error": 0.0,
+        "queries": 4.12890625,
+        "tokens": 455.64149305555554,
+        "safe_rate": 0.0
+      }
+    }
+  },
+  "n_rows": 46080,
+  "panels": [
+    "SciQ-A",
+    "QASC-B",
+    "SciQ-B",
+    "QASC-A"
+  ],
+  "note": "Synthetic conditional drift on frozen M60 model-side vectors; not independent confirmation."
+}
