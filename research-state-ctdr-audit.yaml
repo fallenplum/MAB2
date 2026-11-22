@@ -1,0 +1,18 @@
+schema: mab2_ctdr_audit_cycle_v1
+cycle: ctdr-audit-20261122
+parent_cycle: cycle3_20261116
+branch: ctdr-audit-20261122
+question: graph-conditioned credit certificate transport after graph edits
+status: ACTIVE_DIAGNOSTIC_CONTINUE
+budget_gpu_hours_total: 160
+budget_gpu_hours_used_before_cycle: 98.18703800305508
+budget_gpu_hours_reserved: 0
+new_model_calls_this_cycle: 0
+new_confidence_intervals: false
+new_bootstrap: false
+sealed_test_opened: false
+current_candidate: source_only_ctdr
+candidate_status: FAILED_INDEPENDENT_ATTRIBUTION
+next_direction: conditional_relay_drift_and_conflict_revalidation
+stop_rule: project_stop_only_on_budget_permission_environment_or_scope_condition
+acceptance: independent_full_method_gain_against_warm_reweighted_no_radius_token_ranking_and_cold_restart

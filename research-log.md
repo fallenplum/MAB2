@@ -47,3 +47,11 @@ Evidence-indexed communication is now an applicability experiment. Strict max-tw
 Formal6 has96 fresh input-only train questions,2 generation seeds and11 terminal conditions. It runs on two shared existing A6000 GPUs with7.5GPUh reservation; cumulative closed cost76.7647547373GPUh before this formal run. Both workers passed the no-quality throughput prefix guard. Benchmark answers remain closed. Later scoring is gated on complete hash archive, actual cost closure and CPU replay. PACT primary-code review identified gold-informed evidence allocation and different extraction/accounting; matched adaptations must be reported explicitly. No active-policy or ACL-ready claim is supported yet. Continue beyond a candidate failure under the remaining project budget.
 
 2026-11-16: Formal7/8 fully closed and independently scored; both failed3 fixed gates. D11 scalar audit passed125 checks per task. D12 exact terminal-note intervention is exploratory; no new GPU calls. Candidate route frozen, project ACTIVE; remaining71.541422GPUh. See ANNOTATION_OUTER_LOOP.md and repair provenance.
+
+## 2026-11-22 M60 审计周期
+
+用户复核指出，M60 的约 80% 节省存在历史 transcript 复用与新 source 重加权的竞争解释。独立离线回放在四面板、三 team、2304 个题目×团队单元上确认 Warm Restart、Reweighted Audit 和 CTDR without Radius 完全相同，post-edit 平均 98.2057 token，action error 0，exact set 1。当前 radius gate 的 safe rate 为 0.4783，但在 safe 为真时普通 Audit.decision 已可判定。实际 token 价格的 warm replay 为 96.6341 token，决策区域排序为 99.2448 token，因此当前 Full CTDR 没有独立成本优势。
+
+正式 worker 已恢复并核验 SHA-256。七行概率接口解释为三 source 行和四 relay 行 `[none,A,B,C]`，四列是 A-D hypotheses，终端为 4×4。审计分支增加了 schema assertion、可复现 replay 入口、成本分相和新合同。该候选路线保留为失败的独立归因候选，不终止整个研究。
+
+下一轮转向条件 relay 通道漂移和冲突驱动复检。只有在同一历史 transcript、同一预算、同一任务输入下，Full 方法相对 Warm/Reweighted、No-radius、token ranking 与冷重启都显示稳定独立收益，才恢复算法贡献主张。
