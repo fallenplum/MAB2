@@ -59,3 +59,8 @@ interface_drift_rows2_max_uncertainty_exact: 0.9097222222222222
 interface_drift_rows4_max_uncertainty_exact: 0.8177083333333334
 interface_drift_max_uncertainty_tokens: [22.8828125, 23.55642361111111, 23.57204861111111]
 max_uncertainty_attribution_status: corrected_same_input_control_no_independent_confirmation
+
+mask_provenance_modes_tested: [graph_manifest, fingerprint, row_metadata, all_rows]
+mask_provenance_equivalent: true
+mask_all_rows_guard_tokens: [487.0234375, 517.0364583333333, 587.8151041666666]
+mask_provenance_status: finite_panel_attribution_supported_independent_task_gate_open
