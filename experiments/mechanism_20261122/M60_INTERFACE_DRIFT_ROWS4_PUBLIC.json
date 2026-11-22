@@ -1,0 +1,62 @@
+{
+  "schema": "m60_interface_drift_public_v1",
+  "panel": "rows4",
+  "tasks": [
+    "qasc",
+    "sciq",
+    "commonsense"
+  ],
+  "models": [
+    "Qwen-0.5B",
+    "Qwen-14B",
+    "Llama-3-8B-Instruct"
+  ],
+  "n_question_model_units": 1152,
+  "changed_rows": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "source_distribution": "fixed",
+  "new_relay_change": "protocol-v2 suffix on graph-descendant relay rows",
+  "aggregate": {
+    "warm_reweighted": {
+      "n": 1152,
+      "exact_set": 0.8177083333333334,
+      "tokens": 23.305555555555557
+    },
+    "tcr_guard": {
+      "n": 1152,
+      "exact_set": 1.0,
+      "tokens": 587.8151041666666
+    },
+    "tcr_token": {
+      "n": 1152,
+      "exact_set": 1.0,
+      "tokens": 586.9418402777778
+    },
+    "cold_token": {
+      "n": 1152,
+      "exact_set": 1.0,
+      "tokens": 994.2569444444445
+    },
+    "random_recheck": {
+      "n": 1152,
+      "exact_set": 0.8177083333333334,
+      "tokens": 38.14756944444444
+    },
+    "periodic_recheck": {
+      "n": 1152,
+      "exact_set": 0.8177083333333334,
+      "tokens": 40.940104166666664
+    },
+    "tcr_bound": {
+      "n": 1152,
+      "exact_set": 0.8229166666666666,
+      "tokens": 144.72222222222223
+    }
+  },
+  "cost_scope": "post_edit_logical_query_tokens_only",
+  "independence": "same-input stress control; not an independent question cohort"
+}
