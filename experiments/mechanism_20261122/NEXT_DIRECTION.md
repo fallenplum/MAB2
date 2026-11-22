@@ -55,6 +55,8 @@
 | 因果边归因 | EIB-Learner、E2-Explainer、CATS | 不再宣称因果归因新颖性。差异是证书传输与预算化再验证 |
 | runtime message pruning | MessageSieve 按消息实例裁剪 | MAB2 的决策是保留/删除通信边的证书维护，需用同成本 action utility 对照 |
 
+近邻竞争还包括 Graph-GRPO 的组相对拓扑信用、Nash-CredMAS 的 doubly-robust 信用与预算分配，以及 MessageSieve 的训练无关运行时消息裁剪。CTDR 必须把比较对象限定为 post-edit decision-region maintenance，不能声称发明一般通信剪枝或一般不确定性路由。相关工作包括 [Graph-GRPO](https://aclanthology.org/2026.findings-acl.1010/)、[Nash-CredMAS](https://aclanthology.org/2026.findings-acl.1975/)、[MessageSieve](https://aclanthology.org/2026.emnlp-main.2179/) 和 [EIB-Learner](https://aclanthology.org/2025.emnlp-main.623/)。
+
 ## 研究停止条件
 
 若 CTDR 在三任务上不能在固定预算同时降低错误图编辑和反馈成本，方向应降级为机制观察论文。不能用 retrospective gold-optimum 或已暴露开发题目挽救算法门。
