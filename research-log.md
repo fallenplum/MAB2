@@ -86,3 +86,8 @@ The server at 59.174.162.173:10021 completed a two-checkpoint replay on QASC, Sc
 The token-aware transport/revalidation method recovered the exact finite audit decision set on all three densities. Weighted over 768 question–model units per density, TCR token costs were 132.95, 224.80, and 419.10 logical tokens for one, two, and four changed rows. Cold token costs were 1296.10, 1255.30, and 1188.98. Warm reweighted exact-set rates were 96.875%, 88.932%, and 77.083%. The multi-row density gate conservatively fell back to cold restart, so it does not establish adaptive savings for multi-row edits.
 
 This supports a development mechanism result only. The next confirmatory route is a fresh graph-manifest panel with conditional-channel drift, missing-signature fallback, and task-level service quality. No sealed test was opened and no confidence intervals or bootstrap were run.
+
+
+## 2026-11-22 — graph-mask falsification control
+
+The scorer now derives the affected relay mask from the frozen graph manifest descendant union. Removing the manifest fails closed to all four relay rows. Deliberately replacing the rows1 manifest edit (relay 1) with relay 0 reduced TCR exact-set recovery to 96.875% over 768 question–model units, while cold restart remained 100%. This negative control rules out treating an arbitrary row mask as a valid mechanism input.
