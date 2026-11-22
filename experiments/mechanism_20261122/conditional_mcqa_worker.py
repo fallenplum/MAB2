@@ -12,11 +12,13 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 def main(model_path, input_path, output_path):
     rows = json.loads(Path(input_path).read_bytes())
     assert len(rows) == 128
-    tok = AutoTokenizer.from_pretrained(model_path, local_files_only=True)
+    tok = AutoTokenizer.from_pretrained(model_path, local_files_only=True,
+                                        trust_remote_code=True)
     tok.padding_side = "left"
     tok.pad_token = tok.eos_token
     model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16,
-                                                  local_files_only=True).to("cuda:0").eval()
+                                                  local_files_only=True,
+                                                  trust_remote_code=True).to("cuda:0").eval()
     n = len(rows[0]["options"])
     assert n in (4, 8)
     source_ids = [tok.encode(chr(65 + i), add_special_tokens=False)[0] for i in range(4)]
