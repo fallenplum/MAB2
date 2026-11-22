@@ -1,0 +1,20 @@
+{
+  "schema": "graph_conditioned_revalidation_policy_training_v1",
+  "status": "EXPLORATORY_GPU_COMPLETE_PAIRWISE_PENDING",
+  "training": {
+    "hardware": "3x A6000",
+    "seeds": [7, 19, 43],
+    "features": "old/new source distributions, base distribution, old relay distribution, entropy, margin, row token price, graph-change mask",
+    "target": "whether replacing one old relay row prevents a changed finite decision set",
+    "independent_task_quality": false
+  },
+  "heldout_summary": {
+    "cross_task_short_top1": {"policy_exact_mean": 0.9560, "max_uncertainty_exact": 0.9514, "policy_tokens_mean": 83.76, "max_uncertainty_tokens": 83.73},
+    "density_rows4_top1": {"policy_exact_mean": 0.9370, "max_uncertainty_exact": 0.9167, "policy_tokens_mean": 110.53, "max_uncertainty_tokens": 106.89},
+    "interface_semantic_top1": {"policy_exact_mean": 0.9247, "max_uncertainty_exact": 0.9259, "policy_tokens_mean": 126.39, "max_uncertainty_tokens": 126.34},
+    "cross_task_short_top2": {"policy_exact_mean": 0.9792, "max_uncertainty_exact": 0.9792, "policy_tokens_mean": 140.13, "max_uncertainty_tokens": 140.35}
+  },
+  "interpretation": "The learned row selector shows a small cross-task gain at top-1 and a density-panel gain, but no stable interface gain and no consistent same-budget dominance. This is a candidate signal, not ACL-level evidence.",
+  "next": "Pairwise ranking objective, independent task-flow collection, and end-to-end answer-quality evaluation under matched token budgets."
+}
+
