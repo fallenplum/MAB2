@@ -2621,5 +2621,6 @@
       }
     }
   },
-  "interpretation": "Post-fix worker outputs. Changed-row metadata derives from frozen prompt edit; no answer labels are used by method."
+  "interpretation": "Post-fix worker outputs. Changed-row metadata derives from frozen prompt edit; no answer labels are used by method.",
+  "mask_source": "frozen_graph_manifest_descendant_union"
 }
