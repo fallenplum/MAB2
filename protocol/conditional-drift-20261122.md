@@ -1,27 +1,24 @@
-# 条件 relay 漂移诊断合同
+# 条件 relay 通道漂移诊断合同
 
-## 目的
+## 假设
 
-测试 source-only certificate transport 在 relay conditional channel 发生变化时是否会复用失效的旧 row 观测，并测试按受影响 relay 行重验证的 TCR 机制是否能在同一反馈预算下恢复正确决策。
+source-only CTDR 只在 relay 条件核不变时安全。若图编辑改变一个或多个 relay 行，复用旧 relay 观测可能造成错误 keep/delete。一个条件感知守卫在检测到变化的行后重新查询这些行，并复用仍合法的 terminal 观测，应恢复准确决策。局部变化时它应少于冷重启成本，所有行都变化时不应承诺节省。
 
-## 固定构造
+## 数据和限制
 
-使用 M60 四个脱敏面板的模型侧 vectors 和旧图 transcript，仅作机制诊断，不作为新的独立任务确认。新图 source 使用冻结的 `new_source`。对 relay 行使用固定变换
-
-`cond_new[i] = (1-alpha) * cond_old[i] + alpha * base`
-
-其中 `alpha` 取 0.25 和 0.50，受影响行集合分别为 `{A}` 和 `{A,B,C,D}`。终端标签保持冻结，以隔离 conditional channel 漂移。每个条件的 target 使用 `cond_new` 重新计算。
+使用四个 M60 冻结面板的既有 worker 输出，2304 个题目×团队单元。没有新增模型推理。对 relay 概率列执行预先固定的循环变换，生成强度 0.25、0.5、1.0，以及只改变单行和双行的稀疏场景。该阶段是机制诊断，不能作为真实模型条件漂移的独立确认。
 
 ## 对照
 
-- stale，完全复用旧图 decision。
-- source-only CTDR，复用全部旧 row 和 cell 观测，只使用 source 漂移半径。
-- TCR-row，知道受影响行集合，重查这些 row 的新 conditional distribution，复用其合法 terminal labels，再用 Audit.next。
-- TCR-ranking，TCR-row 初始化后按决策区域宽度除以真实 token 价格排序。
-- cold restart，新图全部重新审计。
+- stale，零新增查询，直接复用旧 relay 观测。
+- source-only CTDR，使用现有 source-TV 半径并假设 relay 条件不变。
+- TCR guard，重查发生变化的 relay 行，复用合法 terminal 观测。
+- TCR token，在 TCR guard 上加入记录 token 价格的决策区域排序。
+- cold restart，从空审计器重新查询新条件核。
 
-## 预注册指标
+## 验收门
 
-action error、exact decision-set、false drop、false keep、post-edit token cost、相对 cold restart 的 token saving、按 alpha 和受影响行集合分解。不得使用 gold 选择行集合或调参。若 source-only CTDR 在受影响行集合下错误而 TCR-row 在至少一个 alpha 和两个面板上修复，进入真实条件通道模型推理。若 TCR 不优于 cold 或只在单一面板有效，冻结该候选并转向机制负结果。
-
-该诊断不改变 M60 正式结果，也不打开 sealed test。
+- 任何条件变化场景中，TCR 的 exact decision set mismatch 必须为零。
+- 单行或双行变化场景中，TCR post-edit token 应低于 cold restart。
+- 所有四行变化场景中，若 TCR 高于冷重启，记录为效率失败，不通过正算法门。
+- source-only CTDR 的错误率用于验证其适用范围，不能作为 TCR 调参信号。
