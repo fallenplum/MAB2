@@ -15,10 +15,11 @@ def main(model_path, input_path, output_path):
     tok = AutoTokenizer.from_pretrained(model_path, local_files_only=True,
                                         trust_remote_code=True)
     tok.padding_side = "left"
-    if tok.pad_token_id is None:
-        tok.pad_token = tok.eos_token if tok.eos_token is not None else tok.unk_token
-    if tok.pad_token_id is None:
-        tok.pad_token_id = 0
+    pad_id = tok.pad_token_id
+    if pad_id is None:
+        pad_id = tok.eos_token_id if tok.eos_token_id is not None else tok.unk_token_id
+    if pad_id is None:
+        pad_id = 0
     model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16,
                                                   local_files_only=True,
                                                   trust_remote_code=True).to("cuda:0").eval()
@@ -76,7 +77,7 @@ def main(model_path, input_path, output_path):
             for start in range(0, len(seq), microbatch):
                 batch = seq[start:start + microbatch]
                 max_len = max(len(ids) for ids in batch)
-                input_ids = torch.full((len(batch), max_len), int(tok.pad_token_id), dtype=torch.long)
+                input_ids = torch.full((len(batch), max_len), int(pad_id), dtype=torch.long)
                 attention_mask = torch.zeros((len(batch), max_len), dtype=torch.long)
                 for row_index, ids in enumerate(batch):
                     input_ids[row_index, -len(ids):] = torch.as_tensor(ids, dtype=torch.long)
