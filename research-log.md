@@ -127,3 +127,8 @@ The three-model fact-drift density panels were rescored with the explicit maximu
 The server ran 54 fixed-model worker jobs across short-protocol and semantic-reviewer relay suffixes, three edit densities, three tasks and three models. Full CTDR recovered the exact finite audit set in every panel. Token-aware mean costs were 146.9175/263.6901/502.1910 for the short suffix and 178.6372/325.4401/628.1450 for the semantic suffix, compared with cold-token costs 940.7995/942.0451/941.2517 and 958.1675/966.5347/1019.8385. Warm and explicit max-uncertainty replay degraded with semantic drift, while the conservative bounded shortcut retained nonzero action error. This is a same-input robustness panel, not independent task-quality evidence.
 
 The panel used fixed pretrained models and no fine-tuning because this candidate route has no registered training objective. Conservative accounting adds 51.6 GPU-hours to the prior 8.6 GPU-hours in this cycle, taking the 160 GPU-hour project budget estimate to 158.387038 hours. No further formal GPU candidate is scheduled without a new budget authorization. CPU analysis, provenance checks and independent-cohort recovery remain active.
+
+
+## 2026-11-23: independent cohort availability audit
+
+The authorized local asset search found no QASC, SciQ or CommonsenseQA cohort beyond the existing M60 inputs. The server-side public dataset download remains blocked by network unreachability. Historical HotPot and other routing-project datasets were not reused because their protocol and exposure histories do not match the current M60 independent-task contract. The independent task-quality gate therefore remains open.
