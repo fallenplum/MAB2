@@ -21,9 +21,10 @@ answer action while allowing individual edge decisions to remain unresolved.
 
 - Calibration uses questions with `hash(key) mod 5 < 3`.
 - The selection split is used only for development diagnostics.
-- The reported primary candidate uses a fixed `q=0.9` calibration quantile and
-  revalidates all four relay rows. It does not rely on an oracle changed-row
-  mask. The graph-edit descendant mask is a secondary cost optimization.
+- The reported primary candidate uses the maximum calibrated TV radius
+  (`q=1.0`) and revalidates all four relay rows. It does not rely on an oracle
+  changed-row mask. The graph-edit descendant mask is a secondary cost
+  optimization, while `q=0.9` is reported as a lower-cost frontier point.
 - The all-row policy is compared with the descendant-mask policy to expose
   whether graph-localized metadata is actually safe for the model interface.
 - Metrics are decision exactness, final-answer action exactness, answer
@@ -35,16 +36,16 @@ answer action while allowing individual edge decisions to remain unresolved.
 
 The independent ARCC cohort has ten cells spanning Qwen2.5-0.5B, Qwen-14B,
 and Llama-3.2-1B, with one-, two-, four-row drift and interface drift. The
-all-row q=0.9 policy reaches decision exactness 0.995037, answer-action
-exactness 1.0, answer accuracy 0.349876, and 252.977667 relay tokens. The
+all-row maximum-radius policy reaches decision exactness 1.0, answer-action
+exactness 1.0, answer accuracy 0.349876, and 270.707196 relay tokens. The
 matched full graph-plus-answer certificate reaches 0.975187, 0.935484,
 0.349876, and 301.972705 tokens. The descendant-mask q=0.9 optimization is
 cheaper at 132.803226 tokens but falls to 0.958065 action exactness because
 the model-side relay outputs can change outside the declared edit mask. This
 is retained as a negative boundary result rather than hidden.
 
-The historical 51-cell all-row q=0.9 evaluation gives 0.998133 decision
-exactness, 1.0 answer-action exactness, 0.552125 answer accuracy, and 141.07
+The historical 51-cell all-row maximum-radius evaluation gives 1.0 decision
+exactness, 1.0 answer-action exactness, 0.552125 answer accuracy, and 150.90
 tokens. The corresponding full graph-plus-answer certificate averages 0.999,
 0.990, 0.551, and 221.8 tokens.
 

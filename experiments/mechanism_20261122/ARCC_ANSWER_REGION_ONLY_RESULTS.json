@@ -16,9 +16,11 @@
   "independent_mean": {"decision_exact": 0.983871, "answer_action_exact": 0.958065, "answer_accuracy": 0.367742, "tokens": 126.103226, "queries": 0.9096775},
   "independent_changed_mask_q09": {"decision_exact": 0.983871, "answer_action_exact": 0.958065, "answer_accuracy": 0.367742, "tokens": 132.803226, "queries": 0.958065},
   "independent_all_row_q09": {"decision_exact": 0.995037, "answer_action_exact": 1.0, "answer_accuracy": 0.349876, "tokens": 252.977667, "queries": 1.816377},
+  "independent_all_row_q10": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.349876, "tokens": 270.707196, "queries": 1.950372},
   "historical_51_cell_mean_q05": {"decision_exact": 0.995, "answer_action_exact": 0.991, "answer_accuracy": 0.55, "tokens": 108.2, "queries": 1.35},
   "historical_51_cell_mean_q09": {"decision_exact": 0.997, "answer_action_exact": 0.99, "answer_accuracy": 0.55, "tokens": 120.0, "queries": 1.49},
   "historical_51_cell_all_row_q09": {"decision_exact": 0.998133, "answer_action_exact": 1.0, "answer_accuracy": 0.552125, "tokens": 141.069833, "queries": 1.696429},
+  "historical_51_cell_all_row_q10": {"decision_exact": 1.0, "answer_action_exact": 1.0, "answer_accuracy": 0.552125, "tokens": 150.8968, "queries": 1.808615},
   "interpretation": "The all-row answer-region-only policy matches or exceeds the final answer action of the full graph-plus-answer certificate on the independent ARCC cells while using fewer relay queries. The cheaper descendant-mask variant is retained as a negative boundary because model-side relay outputs can change outside the declared edit mask. Answer accuracy is unchanged because the policy preserves the selected action and does not improve the underlying model's task knowledge."
 }
 
