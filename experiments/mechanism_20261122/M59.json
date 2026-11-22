@@ -1,0 +1,67 @@
+{
+  "cells": {
+    "0": {
+      "n": 18,
+      "mean": {
+        "cold_cost": 6371.666666666667,
+        "old_cost": 7503.777777777777,
+        "full_cost": 23898.333333333332,
+        "cold_time": 2.0472259533384607,
+        "old_time": 2.331405487946338,
+        "full_time": 2.8839528584697596,
+        "cold_total": 114690.0,
+        "memo_total": 114690.0
+      },
+      "exact_equivalence": true,
+      "memo_logical_saving": 0.0,
+      "warm_logical_saving": 0.0,
+      "memo_wall_saving": 0.0,
+      "warm_wall_saving": 0.0
+    },
+    "1": {
+      "n": 18,
+      "mean": {
+        "cold_cost": 5879.222222222223,
+        "old_cost": 6869.388888888889,
+        "full_cost": 21249.055555555555,
+        "cold_time": 4.048906845402801,
+        "old_time": 4.132111742316435,
+        "full_time": 5.7813132896295025,
+        "cold_total": 105826.0,
+        "memo_total": 105826.0
+      },
+      "exact_equivalence": true,
+      "memo_logical_saving": 0.0,
+      "warm_logical_saving": 0.0,
+      "memo_wall_saving": 0.0,
+      "warm_wall_saving": 0.0
+    },
+    "2": {
+      "n": 18,
+      "mean": {
+        "cold_cost": 14088.055555555555,
+        "old_cost": 14644.555555555555,
+        "full_cost": 23898.333333333332,
+        "cold_time": 6.256674215714964,
+        "old_time": 6.556520512715603,
+        "full_time": 5.461800777767268,
+        "cold_total": 253585.0,
+        "memo_total": 253585.0
+      },
+      "exact_equivalence": true,
+      "memo_logical_saving": 0.0,
+      "warm_logical_saving": 0.0,
+      "memo_wall_saving": 0.0,
+      "warm_wall_saving": 0.0
+    }
+  },
+  "cost": {
+    "actual_GPU_hours": 0.2580119527048535,
+    "exit_codes": [
+      0,
+      0,
+      0
+    ],
+    "global_actual": 97.26742170345237
+  }
+}
