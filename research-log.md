@@ -168,3 +168,8 @@ A question-disjoint transfer calibrated row-wise maximum historical TV drift on 
 ## 2026-11-23: tightened conditional TV interval
 
 The conditional interval was tightened from per-cell bounds to the group-probability TV bound. Since the grouped mass change is at most the row TV radius, each label contribution receives only s_i delta. On the same 12 synthetic cells the robust policy stayed exact at 1.0. At drift 0.1, average queries were 0.483/1.536/3.866 for one/two/four edited rows. At drift 0.4 they were 0.818/1.958/4.0. Source-only exactness remained 83.44%/72.12%/59.84% for one/two/four rows at drift 0.4. The tighter bound improves the formal mechanism but still has no demonstrated task-level cost advantage.
+
+
+## 2026-11-23: sequential conditional revalidation
+
+A cost-aware sequential interval policy was added. It queries the unresolved edited row with the largest conditional-width per token and stops when all graph decisions are certified. On 5,000 synthetic instances per cell, exact recovery remained 1.0 across one, two and four edited rows and drift 0.1, 0.4 and 1.0. A question-disjoint real-output transfer reduced tokens relative to full-mask repair from 230.33 to 94.92 on QASC, 206.99 to 81.00 on SciQ and 209.75 to 79.79 on CommonsenseQA. It matched full-mask answer accuracy on SciQ and QASC and was lower on CommonsenseQA, while max-uncertainty retained higher SciQ and QASC answer accuracy. An answer-region extension matched full-mask answer accuracy on all three tasks at 131.63/114.01/132.94 tokens. These are development transfer results with empirical radii, not independent service confirmation or a cross-task quality win.
