@@ -117,6 +117,20 @@ def baseline_recheck(new_source, base, new_relay, labels, tokens, history, polic
             remaining = set(legal)
             action = next((candidate for candidate in periodic
                            if candidate in remaining), legal[0])
+        elif policy == "max_uncertainty":
+            row_candidates = [(int(i), None) for i in np.flatnonzero(~audit.known)]
+            cell_candidates = [(int(i), int(j)) for i, j in np.argwhere(audit.known[:, None] & ~audit.seen)]
+            candidates = row_candidates + cell_candidates
+            if not candidates:
+                break
+            scores = []
+            for i, j in candidates:
+                if j is None:
+                    score = 2.0 * float(audit.source[i]) * (1.0 - float(audit.base.min()))
+                else:
+                    score = abs(float(audit.w[i, j]))
+                scores.append((score, (-i, -1 if j is None else -j)))
+            action = candidates[max(range(len(candidates)), key=lambda index: scores[index])]
         else:
             action = audit.next()
             if action is None:
@@ -273,7 +287,9 @@ def run(manifest):
                 result = {
                     "stale": (set(np.flatnonzero(truth(old_source, base, old_relay, labels, tau=TAU))), []),
                     "warm_reweighted": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history),
-                    "max_uncertainty": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history),
+                    "max_uncertainty": baseline_recheck(new_source, base, new_relay, labels,
+                                                         row["tokens"], history, "max_uncertainty",
+                                                         int(row["key"][:8], 16)),
                     "random_recheck": baseline_recheck(new_source, base, new_relay, labels, row["tokens"], history, "random", int(row["key"][:8], 16)),
                     "periodic_recheck": baseline_recheck(new_source, base, new_relay, labels, row["tokens"], history, "periodic"),
                     "source_only_ctdr": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history, radius=True),
