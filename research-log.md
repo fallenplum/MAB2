@@ -110,3 +110,8 @@ The server-side attempt to load public QASC and SciQ validation data from Huggin
 ## 2026-11-23: explicit max-uncertainty baseline correction
 
 The former M60 scorer routed max_uncertainty to warm replay. The policy is now explicit and deterministic, ranking legal unresolved row/cell audits by the current audit mass and cell-weight magnitude. A same-input three-model interface-drift replay was rerun for one, two and four changed relay rows. Exact-set results were 0.961806/0.909722/0.817708 for explicit max-uncertainty and identical to warm replay at all three densities, with mean token costs 22.8828/23.5564/23.5720 versus 22.8828/23.3030/23.3056. Full CTDR signature-guard replay remains exact-set 1.0 at 170.2092/307.5851/587.8151 tokens. This closes an attribution defect but is not independent task-quality evidence. Independent cohort and service-quality gates remain open.
+
+
+## 2026-11-23: changed-row provenance attribution replay
+
+The scorer now supports graph-manifest, worker row-metadata, token-fingerprint and all-row masks. On the same-input three-model interface-drift stress panel, graph-manifest, row-metadata and fingerprint modes were exactly identical for Full CTDR at one, two and four changed-row densities. Guard tokens were 170.2092/307.5851/587.8151 for all three provenance modes. Refreshing all rows preserved exact-set recovery but cost 487.0234/517.0365/587.8151 tokens. This isolates graph-mask provenance and finite-panel attribution. It does not provide independent task quality or service evidence.
