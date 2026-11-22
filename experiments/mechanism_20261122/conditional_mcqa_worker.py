@@ -15,7 +15,10 @@ def main(model_path, input_path, output_path):
     tok = AutoTokenizer.from_pretrained(model_path, local_files_only=True,
                                         trust_remote_code=True)
     tok.padding_side = "left"
-    tok.pad_token = tok.eos_token
+    if tok.pad_token_id is None:
+        tok.pad_token = tok.eos_token if tok.eos_token is not None else tok.unk_token
+    if tok.pad_token_id is None:
+        tok.pad_token_id = 0
     model = AutoModelForCausalLM.from_pretrained(model_path, torch_dtype=torch.bfloat16,
                                                   local_files_only=True,
                                                   trust_remote_code=True).to("cuda:0").eval()
