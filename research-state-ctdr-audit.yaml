@@ -51,3 +51,11 @@ interface_drift_warm_exact: [0.9618055555555556, 0.9097222222222222, 0.817708333
 interface_drift_panel_independence: same_input_stress_control
 hf_dataset_download_server: blocked_network_unreachable
 gpu_hour_accounting: conservative_same_protocol_batch_estimate
+
+max_uncertainty_policy: explicit_audit_mass_and_cell_weight_rank
+max_uncertainty_alias_fixed: true
+interface_drift_rows1_max_uncertainty_exact: 0.9618055555555556
+interface_drift_rows2_max_uncertainty_exact: 0.9097222222222222
+interface_drift_rows4_max_uncertainty_exact: 0.8177083333333334
+interface_drift_max_uncertainty_tokens: [22.8828125, 23.55642361111111, 23.57204861111111]
+max_uncertainty_attribution_status: corrected_same_input_control_no_independent_confirmation
