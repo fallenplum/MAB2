@@ -67,8 +67,8 @@ def interval(row, radius):
         )
         for label in range(label_count):
             mask = row["labels"][row_index] == label
-            low[label] += contribution[mask].sum() - row["source"][row_index] * row_radius * mask.sum()
-            high[label] += contribution[mask].sum() + row["source"][row_index] * row_radius * mask.sum()
+            low[label] += contribution[mask].sum() - row["source"][row_index] * row_radius
+            high[label] += contribution[mask].sum() + row["source"][row_index] * row_radius
     return low, high
 
 
