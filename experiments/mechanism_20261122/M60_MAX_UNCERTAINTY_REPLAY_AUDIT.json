@@ -1,0 +1,60 @@
+{
+  "schema": "m60_max_uncertainty_replay_audit_v1",
+  "protocol": {
+    "panel_type": "same_input_interface_drift_stress_control",
+    "question_model_units_per_density": 1152,
+    "models": ["Qwen-0.5B", "Qwen-14B", "Llama-3-8B"],
+    "tasks": ["QASC", "SciQ", "Commonsense"],
+    "sealed_labels_used_for_tuning": false,
+    "confidence_intervals": false,
+    "purpose": "Replace the former max_uncertainty alias with an explicit uncertainty-ranked replay baseline and quantify attribution changes."
+  },
+  "results": {
+    "rows1": {
+      "changed_relay_rows": [0],
+      "stale": {"exact_set": 0.9418402777777778, "action_error": 0.013888888888888888, "queries": 0.0, "tokens": 0.0},
+      "warm_reweighted": {"exact_set": 0.9618055555555556, "action_error": 0.010416666666666666, "queries": 0.2769097222222222, "tokens": 22.8828125},
+      "max_uncertainty": {"exact_set": 0.9618055555555556, "action_error": 0.010416666666666666, "queries": 0.2769097222222222, "tokens": 22.8828125},
+      "random_recheck": {"exact_set": 0.9618055555555556, "action_error": 0.010416666666666666, "queries": 0.4730902777777778, "tokens": 37.95746527777778},
+      "periodic_recheck": {"exact_set": 0.9618055555555556, "action_error": 0.010416666666666666, "queries": 0.4782986111111111, "tokens": 39.857638888888886},
+      "tcr_guard": {"exact_set": 1.0, "action_error": 0.0, "queries": 1.6310763888888888, "tokens": 170.20920138888889},
+      "tcr_token": {"exact_set": 1.0, "action_error": 0.0, "queries": 1.6545138888888888, "tokens": 171.05034722222223},
+      "tcr_bound": {"exact_set": 0.9157986111111112, "action_error": 0.026041666666666668, "queries": 0.2508680555555556, "tokens": 32.8828125},
+      "cold_token": {"exact_set": 1.0, "action_error": 0.0, "queries": 11.552083333333334, "tokens": 952.7144097222222}
+    },
+    "rows2": {
+      "changed_relay_rows": [1, 3],
+      "stale": {"exact_set": 0.8967013888888888, "action_error": 0.043402777777777776, "queries": 0.0, "tokens": 0.0},
+      "warm_reweighted": {"exact_set": 0.9097222222222222, "action_error": 0.03993055555555555, "queries": 0.2795138888888889, "tokens": 23.30295138888889},
+      "max_uncertainty": {"exact_set": 0.9097222222222222, "action_error": 0.03993055555555555, "queries": 0.2821180555555556, "tokens": 23.55642361111111},
+      "random_recheck": {"exact_set": 0.9097222222222222, "action_error": 0.03993055555555555, "queries": 0.4765625, "tokens": 38.520833333333336},
+      "periodic_recheck": {"exact_set": 0.9097222222222222, "action_error": 0.03993055555555555, "queries": 0.4809027777777778, "tokens": 40.32725694444444},
+      "tcr_guard": {"exact_set": 1.0, "action_error": 0.0, "queries": 2.8411458333333335, "tokens": 307.58506944444446},
+      "tcr_token": {"exact_set": 1.0, "action_error": 0.0, "queries": 2.8524305555555554, "tokens": 307.7890625},
+      "tcr_bound": {"exact_set": 0.8836805555555556, "action_error": 0.046875, "queries": 0.5190972222222222, "tokens": 62.666666666666664},
+      "cold_token": {"exact_set": 1.0, "action_error": 0.0, "queries": 11.50607638888889, "tokens": 960.1223958333334}
+    },
+    "rows4": {
+      "changed_relay_rows": [0, 1, 2, 3],
+      "stale": {"exact_set": 0.8142361111111112, "action_error": 0.0876736111111111, "queries": 0.0, "tokens": 0.0},
+      "warm_reweighted": {"exact_set": 0.8177083333333334, "action_error": 0.09288194444444445, "queries": 0.2760416666666667, "tokens": 23.305555555555557},
+      "max_uncertainty": {"exact_set": 0.8177083333333334, "action_error": 0.09288194444444445, "queries": 0.2786458333333333, "tokens": 23.57204861111111},
+      "random_recheck": {"exact_set": 0.8177083333333334, "action_error": 0.09288194444444445, "queries": 0.4652777777777778, "tokens": 38.14756944444444},
+      "periodic_recheck": {"exact_set": 0.8177083333333334, "action_error": 0.09288194444444445, "queries": 0.4809027777777778, "tokens": 40.940104166666664},
+      "tcr_guard": {"exact_set": 1.0, "action_error": 0.0, "queries": 5.401909722222222, "tokens": 587.8151041666666},
+      "tcr_token": {"exact_set": 1.0, "action_error": 0.0, "queries": 5.393229166666667, "tokens": 586.9418402777778},
+      "tcr_bound": {"exact_set": 0.8229166666666666, "action_error": 0.09114583333333333, "queries": 1.2508680555555556, "tokens": 144.72222222222223},
+      "cold_token": {"exact_set": 1.0, "action_error": 0.0, "queries": 11.64670138888889, "tokens": 994.2569444444445}
+    }
+  },
+  "interpretation": {
+    "finding": "The explicit max_uncertainty baseline is numerically indistinguishable from warm replay on rows1 and rows4 and differs only slightly on rows2. The previous alias did not create a false positive for CTDR, but it did invalidate any claim that the former baseline was an independent uncertainty policy.",
+    "attribution": "On this same-input stress panel, Full CTDR still reaches exact-set recovery while warm, explicit max-uncertainty, random and periodic replay remain below 1.0. This is attribution evidence only. It is not an independent task-quality result.",
+    "limitations": [
+      "The panel reuses the existing 128-question cohort and is therefore not an independent confirmation.",
+      "The explicit score is an audit-uncertainty heuristic over the fixed finite interface, not a learned calibrated uncertainty model.",
+      "No wall-clock or GPU accounting is inferred from these CPU replay costs."
+    ]
+  }
+}
+
