@@ -1,7 +1,7 @@
 {
   "branch": "mechanism-20261122",
   "predecessor": "4c30b49645d7d021f093feda1f8947bf69e797c9",
-  "status": "FORMAL_EVIDENCE_COMPLETE_PENDING_RELEASE",
+  "status": "RELEASED_FORMAL_EVIDENCE",
   "old_negative_results_preserved": true,
   "charged_before_cycle": 93.37976313880533,
   "charged_this_cycle": 4.807274864249749,
@@ -134,5 +134,7 @@
   "active_jobs": [],
   "status_is_last_verified_snapshot": true,
   "sealed_original_tests_accessed": false,
-  "evaluation_level": "Formal positive evidence is QASC/SciQ only: four disjoint input panels, 192 questions each, three shared question sets with three model teams per panel. ARC was a no-evidence null control and is excluded. The 2304 aggregate is question-team evaluations, not independent questions."
+  "evaluation_level": "Formal positive evidence is QASC/SciQ only: four disjoint input panels, 192 questions each, three shared question sets with three model teams per panel. ARC was a no-evidence null control and is excluded. The 2304 aggregate is question-team evaluations, not independent questions.",
+  "release_commit": "ad70d08db327915a3a698c4f60c4b1a5f9d097e0",
+  "release_verified": true
 }
