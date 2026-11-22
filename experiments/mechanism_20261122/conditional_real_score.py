@@ -34,6 +34,24 @@ def inferred_changed_rows(row, fallback):
     return tuple(int(i) for i in fallback)
 
 
+def graph_manifest_changed_rows(manifest):
+    """Compute affected relay rows from a frozen graph edit manifest."""
+    graph = manifest.get("graph_manifest")
+    if not isinstance(graph, dict):
+        return None
+    edits = graph.get("edited_edges")
+    descendants = graph.get("edge_to_relay_descendants")
+    if not isinstance(edits, list) or not isinstance(descendants, dict):
+        return None
+    rows = set()
+    for edge in edits:
+        values = descendants.get(str(edge), ())
+        if not isinstance(values, list):
+            return None
+        rows.update(int(value) for value in values)
+    return tuple(sorted(rows))
+
+
 def price_arrays(tokens, token_aware):
     if not token_aware:
         return np.ones(4), np.ones((4, 4))
@@ -242,8 +260,9 @@ def run(manifest):
             rows = [json.loads(line) for line in (folder / f"WORKER{worker}.jsonl").read_bytes().splitlines()]
             methods = {name: [] for name in METHODS}
             for row in rows:
-                fallback_rows = row.get("changed_rows", manifest_changed_rows)
-                changed_rows = inferred_changed_rows(row, fallback_rows)
+                graph_rows = graph_manifest_changed_rows(manifest)
+                fallback_rows = graph_rows if graph_rows is not None else row.get("changed_rows", manifest_changed_rows)
+                changed_rows = tuple(int(i) for i in fallback_rows)
                 parsed = validate_conditional_full(row["full"])
                 old_source, new_source, base = parsed["source"]
                 old_relay, new_relay = parsed["old_relay"], parsed["new_relay"]
