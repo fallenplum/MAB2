@@ -61,3 +61,9 @@ Formal6 has96 fresh input-only train questions,2 generation seeds and11 terminal
 固定向量诊断已完成。把 A advised relay 行或全部 relay 行按预先固定强度混向 base 后，source-only CTDR 的 decision-set error 为 0.17%–1.43%，TCR-row 在所有四个组合上 exact set=1。单行重查的 post-edit token 约 138–140，冷重启约 485–490。全部行变化时 TCR 仍正确，但成本不优于冷重启，表明方法的可行范围是稀疏条件漂移而不是无条件重查。
 
 该诊断使用冻结 M60 vectors，不能作为独立模型确认。新的 QASC/SciQ 各128题已完成去重和 hash 固定，conditional worker、27字段 schema 和 scorer 已通过语法及假接口回放测试。服务器 59.174.160.105:10021 当前仍不可达，真实 GPU 推理尚未启动。
+
+## 2026-11-22 Qwen3B 条件漂移试跑
+
+本地 RTX 4060 完成 QASC 和 SciQ 各128题的单模型 Qwen2.5-3B-Instruct 条件 worker，合计 6912 次 forward 请求，实际 GPU 占用约0.15468小时。统一回放结果在256题上显示 stale exact-set 89.45%，warm/reweighted 与 source-only CTDR 均97.66%，TCR guard/token 均100%，冷重启100%。TCR token 平均187.70 token，冷 token 310.60 token。该结果只是一模型两任务探索性试跑，不能作为独立多团队确认或 ACL 主会证据。
+
+评分器修正了聚合样本数口径，`aggregate.n` 现在表示所有面板和 worker 的总题数。服务器 59.174.160.105:10021 仍以5秒 TCP 超时，三团队正式推理尚未开始。
