@@ -1,5 +1,5 @@
 {
-  "schema": "m60_qwen3b_sparse_drift_public_v1",
+  "schema": "m60_qwen3b_sparse_drift_public_v2",
   "model_family": "Qwen2.5-3B-Instruct",
   "panels": [
     "QASC",
@@ -17,6 +17,33 @@
         "false_keep": 0.013020833333333334,
         "queries": 0.6875,
         "tokens": 67.59895833333333
+      },
+      "max_uncertainty": {
+        "n": 384,
+        "action_error": 0.0078125,
+        "exact_set": 0.9791666666666666,
+        "false_drop": 0.015625,
+        "false_keep": 0.013020833333333334,
+        "queries": 0.6875,
+        "tokens": 67.59895833333333
+      },
+      "random_recheck": {
+        "n": 384,
+        "action_error": 0.0026041666666666665,
+        "exact_set": 0.9895833333333334,
+        "false_drop": 0.005208333333333333,
+        "false_keep": 0.0078125,
+        "queries": 2.0,
+        "tokens": 194.1796875
+      },
+      "periodic_recheck": {
+        "n": 384,
+        "action_error": 0.0026041666666666665,
+        "exact_set": 0.9895833333333334,
+        "false_drop": 0.005208333333333333,
+        "false_keep": 0.0078125,
+        "queries": 1.765625,
+        "tokens": 172.88541666666666
       },
       "source_only_ctdr": {
         "n": 384,
@@ -74,6 +101,33 @@
         "queries": 0.6875,
         "tokens": 66.84635416666667
       },
+      "max_uncertainty": {
+        "n": 384,
+        "action_error": 0.015625,
+        "exact_set": 0.9661458333333334,
+        "false_drop": 0.0234375,
+        "false_keep": 0.020833333333333332,
+        "queries": 0.6875,
+        "tokens": 66.84635416666667
+      },
+      "random_recheck": {
+        "n": 384,
+        "action_error": 0.0026041666666666665,
+        "exact_set": 0.984375,
+        "false_drop": 0.010416666666666666,
+        "false_keep": 0.0078125,
+        "queries": 1.9453125,
+        "tokens": 187.93489583333334
+      },
+      "periodic_recheck": {
+        "n": 384,
+        "action_error": 0.0026041666666666665,
+        "exact_set": 0.984375,
+        "false_drop": 0.010416666666666666,
+        "false_keep": 0.0078125,
+        "queries": 1.6796875,
+        "tokens": 164.41145833333334
+      },
       "source_only_ctdr": {
         "n": 384,
         "action_error": 0.015625,
@@ -130,6 +184,33 @@
         "queries": 0.6875,
         "tokens": 64.66145833333333
       },
+      "max_uncertainty": {
+        "n": 384,
+        "action_error": 0.033854166666666664,
+        "exact_set": 0.9244791666666666,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.057291666666666664,
+        "queries": 0.6875,
+        "tokens": 64.66145833333333
+      },
+      "random_recheck": {
+        "n": 384,
+        "action_error": 0.015625,
+        "exact_set": 0.9505208333333334,
+        "false_drop": 0.036458333333333336,
+        "false_keep": 0.033854166666666664,
+        "queries": 1.8854166666666667,
+        "tokens": 177.7890625
+      },
+      "periodic_recheck": {
+        "n": 384,
+        "action_error": 0.015625,
+        "exact_set": 0.9505208333333334,
+        "false_drop": 0.036458333333333336,
+        "false_keep": 0.033854166666666664,
+        "queries": 1.640625,
+        "tokens": 154.734375
+      },
       "source_only_ctdr": {
         "n": 384,
         "action_error": 0.033854166666666664,
@@ -179,5 +260,5 @@
   },
   "density_gate": "singleton transport; two-or-more changed rows fall back to cold_token",
   "status": "exploratory_single_model_pilot",
-  "interpretation": "TCR remains exact on this pilot, but unconditional row revalidation loses its token advantage by two changed rows. The density-gated rule is a development candidate, not independent confirmation. bounded_interval_candidate_is_failed=true"
+  "interpretation": "Gold labels are used only for reporting. TCR preserves exact decisions in this pilot. The worst-case interval candidate is failed. No independent multi-model claim is made."
 }

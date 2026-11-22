@@ -75,3 +75,5 @@ Formal6 has96 fresh input-only train questions,2 generation seeds and11 terminal
 在同一三任务单模型开发集上完成双行和四行 conditional drift worker，共新增20736次 forward 请求和约0.52098 GPU小时。单行 TCR token 为156.61，冷 token 为259.57。双行 TCR token 为252.63，冷 token 为256.12。四行 TCR token 为428.15，冷 token 为240.55。TCR 在三种密度上 exact-set 均为100%，但成本优势只在单行编辑保留。冻结一个开发候选规则，单行使用 transport，双行及以上回退冷重启，回放中 exact-set 仍为100%。
 
 尝试的 worst-case conditional-row interval shortcut 在单、双、四行上分别产生2.60%、2.86%、2.86%的 action error，因此淘汰并保留为负结果。上述密度结论仍只来自一个 Qwen3B checkpoint，不能作为跨模型主结果。
+
+随机、周期和最大不确定性基线已在同一旧 transcript、同一新图和同一 replay scorer 中补齐。单行面板中 TCR token 156.61，周期 172.89，随机 194.18，冷重启 259.57。双行面板 TCR 252.63，周期 164.41，随机 187.93，冷重启 256.12。四行面板 TCR 428.15，周期 154.73，随机 177.79，冷重启 240.55。TCR 的优势因此限定为稀疏 singleton edit 的 exact certificate repair，不能扩展成一般编辑密度下的成本优势。

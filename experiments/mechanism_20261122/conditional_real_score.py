@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import random
 import sys
 from pathlib import Path
 
@@ -12,7 +13,8 @@ from ctdr import safe_transport, truth
 from m60_module_ablation import decision_rank_next
 
 TAU = 0.01
-METHODS = ("stale", "warm_reweighted", "source_only_ctdr", "tcr_guard", "tcr_token",
+METHODS = ("stale", "warm_reweighted", "max_uncertainty", "random_recheck", "periodic_recheck",
+           "source_only_ctdr", "tcr_guard", "tcr_token",
            "tcr_bound", "tcr_bound_token", "tcr_density_gate", "tcr_density_gate_token",
            "cold_restart", "cold_token")
 
@@ -59,6 +61,38 @@ def replay(old_source, new_source, base, relay, labels, tokens, history=(), radi
         actions.append(action)
         if radius:
             safe, *_ = safe_transport(old_source, new_source, audit, base, tau=TAU, label_count=8)
+    return set(audit.decision() or []), actions
+
+
+def baseline_recheck(new_source, base, new_relay, labels, tokens, history, policy, seed=0):
+    audit = Audit(new_source, base, np.ones(4), np.ones((4, 4)), "joint", tau=TAU)
+    for action, value in history:
+        audit.update(action, value)
+    rng = random.Random(seed)
+    actions = []
+    periodic = [(i, None) for i in range(4)]
+    periodic.extend((i, j) for i in range(4) for j in range(4))
+    while audit.decision() is None:
+        rows = [(int(i), None) for i in np.flatnonzero(~audit.known)]
+        cells = [(int(i), int(j)) for i, j in np.argwhere(audit.known[:, None] & ~audit.seen)]
+        legal = rows + cells
+        if not legal:
+            break
+        if policy == "random":
+            action = rng.choice(legal)
+        elif policy == "periodic":
+            remaining = set(legal)
+            action = next((candidate for candidate in periodic
+                           if candidate in remaining), legal[0])
+        else:
+            action = audit.next()
+            if action is None:
+                break
+            action = tuple(action)
+        i, j = action
+        value = new_relay[i] if j is None else int(labels[i, j])
+        audit.update(action, value)
+        actions.append(action)
     return set(audit.decision() or []), actions
 
 
@@ -204,6 +238,9 @@ def run(manifest):
                 result = {
                     "stale": (set(np.flatnonzero(truth(old_source, base, old_relay, labels, tau=TAU))), []),
                     "warm_reweighted": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history),
+                    "max_uncertainty": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history),
+                    "random_recheck": baseline_recheck(new_source, base, new_relay, labels, row["tokens"], history, "random", int(row["key"][:8], 16)),
+                    "periodic_recheck": baseline_recheck(new_source, base, new_relay, labels, row["tokens"], history, "periodic"),
                     "source_only_ctdr": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history, radius=True),
                     "tcr_guard": guarded(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, False),
                     "tcr_token": guarded(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, True),
