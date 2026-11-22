@@ -52,6 +52,20 @@ def graph_manifest_changed_rows(manifest):
     return tuple(sorted(rows))
 
 
+def resolve_changed_rows(manifest, row):
+    """Resolve the changed-row mask using the manifest-selected provenance."""
+    mode = manifest.get("changed_rows_mode", "graph_manifest")
+    fallback = tuple(int(i) for i in manifest.get("changed_rows", [1]))
+    if mode == "fingerprint":
+        return inferred_changed_rows(row, fallback)
+    if mode == "row_metadata":
+        values = row.get("changed_rows")
+        return tuple(int(i) for i in values) if isinstance(values, list) else fallback
+    if mode == "all_rows":
+        return tuple(range(4))
+    return graph_manifest_changed_rows(manifest)
+
+
 def price_arrays(tokens, token_aware):
     if not token_aware:
         return np.ones(4), np.ones((4, 4))
@@ -274,9 +288,7 @@ def run(manifest):
             rows = [json.loads(line) for line in (folder / f"WORKER{worker}.jsonl").read_bytes().splitlines()]
             methods = {name: [] for name in METHODS}
             for row in rows:
-                graph_rows = graph_manifest_changed_rows(manifest)
-                fallback_rows = graph_rows if graph_rows is not None else row.get("changed_rows", manifest_changed_rows)
-                changed_rows = tuple(int(i) for i in fallback_rows)
+                changed_rows = resolve_changed_rows(manifest, row)
                 parsed = validate_conditional_full(row["full"])
                 old_source, new_source, base = parsed["source"]
                 old_relay, new_relay = parsed["old_relay"], parsed["new_relay"]
@@ -319,7 +331,9 @@ def run(manifest):
         aggregate[method].update({k: sum(v[k] * v["n"] for v in vals) / n
                                   for k in vals[0] if k != "n"})
     return {"schema": "m60_conditional_real_replay_v2", "panels": list(manifest["panels"]),
-            "changed_rows": list(manifest_changed_rows), "aggregate": aggregate, "panel_team": outputs}
+            "changed_rows": list(manifest_changed_rows),
+            "changed_rows_mode": manifest.get("changed_rows_mode", "graph_manifest"),
+            "aggregate": aggregate, "panel_team": outputs}
 
 
 if __name__ == "__main__":
@@ -327,7 +341,7 @@ if __name__ == "__main__":
     result = run(manifest)
     output = Path(manifest["output"])
     output.write_text(json.dumps(result, indent=2), encoding="utf-8")
-    public = {k: result[k] for k in ("schema", "panels", "changed_rows", "aggregate")}
+    public = {k: result[k] for k in ("schema", "panels", "changed_rows", "changed_rows_mode", "aggregate")}
     public["interpretation"] = "Real conditional worker replay. Gold is used only for reporting."
     output.with_name("M60_CONDITIONAL_REAL_PUBLIC.json").write_text(json.dumps(public, indent=2), encoding="utf-8")
     print(json.dumps(result["aggregate"], indent=2))
