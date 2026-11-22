@@ -1,0 +1,20 @@
+{
+  "schema": "m60_gpu_budget_ledger_v1",
+  "budget_gpu_hours_total": 160.0,
+  "budget_gpu_hours_used_before_cycle": 98.18703800305508,
+  "prior_cycle_gpu_hours": 8.6,
+  "new_interface_variant_conservative_gpu_hours": 51.6,
+  "estimated_used_after_variant_panel": 158.38703800305508,
+  "estimated_remaining_gpu_hours": 1.612961996944918,
+  "variant_jobs": 54,
+  "worker_requests_per_job": 3456,
+  "variant_worker_requests": 186624,
+  "new_model_calls_this_cycle": 432000,
+  "accounting_basis": "conservative same-protocol batch estimate scaled from the previously registered interface panel",
+  "formal_gpu_scheduling": "paused_at_budget_boundary",
+  "unverified": [
+    "The estimate is not a per-process scheduler trace and should not be presented as exact wall-clock GPU accounting.",
+    "No additional paid compute or external permission was used."
+  ]
+}
+
