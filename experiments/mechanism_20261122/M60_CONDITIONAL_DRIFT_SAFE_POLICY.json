@@ -19,9 +19,9 @@
       "source_only_safe_rate": 1.0,
       "source_only_exact": 0.9634,
       "source_only_queries": 0.0,
-      "robust_safe_rate": 0.5824,
+      "robust_safe_rate": 0.5168,
       "robust_exact": 1.0,
-      "robust_queries": 0.4176
+      "robust_queries": 0.4832
     },
     {
       "n": 5000,
@@ -30,9 +30,9 @@
       "source_only_safe_rate": 1.0,
       "source_only_exact": 0.8344,
       "source_only_queries": 0.0,
-      "robust_safe_rate": 0.1864,
+      "robust_safe_rate": 0.1816,
       "robust_exact": 1.0,
-      "robust_queries": 0.8136
+      "robust_queries": 0.8184
     },
     {
       "n": 5000,
@@ -41,9 +41,9 @@
       "source_only_safe_rate": 1.0,
       "source_only_exact": 0.6592,
       "source_only_queries": 0.0,
-      "robust_safe_rate": 0.0794,
+      "robust_safe_rate": 0.0752,
       "robust_exact": 1.0,
-      "robust_queries": 0.9206
+      "robust_queries": 0.9248
     },
     {
       "n": 5000,
@@ -63,9 +63,9 @@
       "source_only_safe_rate": 1.0,
       "source_only_exact": 0.9338,
       "source_only_queries": 0.0,
-      "robust_safe_rate": 0.317,
+      "robust_safe_rate": 0.2318,
       "robust_exact": 1.0,
-      "robust_queries": 1.366
+      "robust_queries": 1.5364
     },
     {
       "n": 5000,
@@ -74,9 +74,9 @@
       "source_only_safe_rate": 1.0,
       "source_only_exact": 0.7212,
       "source_only_queries": 0.0,
-      "robust_safe_rate": 0.024,
+      "robust_safe_rate": 0.0208,
       "robust_exact": 1.0,
-      "robust_queries": 1.952
+      "robust_queries": 1.9584
     },
     {
       "n": 5000,
@@ -85,9 +85,9 @@
       "source_only_safe_rate": 1.0,
       "source_only_exact": 0.457,
       "source_only_queries": 0.0,
-      "robust_safe_rate": 0.0042,
+      "robust_safe_rate": 0.0044,
       "robust_exact": 1.0,
-      "robust_queries": 1.9916
+      "robust_queries": 1.9912
     },
     {
       "n": 5000,
@@ -107,9 +107,9 @@
       "source_only_safe_rate": 1.0,
       "source_only_exact": 0.886,
       "source_only_queries": 0.0,
-      "robust_safe_rate": 0.066,
+      "robust_safe_rate": 0.0334,
       "robust_exact": 1.0,
-      "robust_queries": 3.736
+      "robust_queries": 3.8664
     },
     {
       "n": 5000,
