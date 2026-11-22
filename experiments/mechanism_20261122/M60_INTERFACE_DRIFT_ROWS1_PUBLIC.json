@@ -1,0 +1,151 @@
+{
+  "schema": "m60_interface_drift_public_v1",
+  "panel": "rows1",
+  "tasks": [
+    "qasc",
+    "sciq",
+    "commonsense"
+  ],
+  "models": [
+    "Qwen-0.5B",
+    "Qwen-14B",
+    "Llama-3-8B-Instruct"
+  ],
+  "n_question_model_units": 1152,
+  "changed_rows": [
+    1
+  ],
+  "source_distribution": "fixed",
+  "new_relay_change": "protocol-v2 suffix on graph-descendant relay row 1",
+  "aggregate": {
+    "stale": {
+      "n": 1152,
+      "action_error": 0.013888888888888888,
+      "exact_set": 0.9418402777777778,
+      "false_drop": 0.03211805555555555,
+      "false_keep": 0.030381944444444444,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    "warm_reweighted": {
+      "n": 1152,
+      "action_error": 0.010416666666666666,
+      "exact_set": 0.9618055555555556,
+      "false_drop": 0.017361111111111112,
+      "false_keep": 0.0234375,
+      "queries": 0.2769097222222222,
+      "tokens": 22.8828125
+    },
+    "max_uncertainty": {
+      "n": 1152,
+      "action_error": 0.010416666666666666,
+      "exact_set": 0.9618055555555556,
+      "false_drop": 0.017361111111111112,
+      "false_keep": 0.0234375,
+      "queries": 0.2769097222222222,
+      "tokens": 22.8828125
+    },
+    "random_recheck": {
+      "n": 1152,
+      "action_error": 0.010416666666666666,
+      "exact_set": 0.9618055555555556,
+      "false_drop": 0.017361111111111112,
+      "false_keep": 0.0234375,
+      "queries": 0.4730902777777778,
+      "tokens": 37.95746527777778
+    },
+    "periodic_recheck": {
+      "n": 1152,
+      "action_error": 0.010416666666666666,
+      "exact_set": 0.9618055555555556,
+      "false_drop": 0.017361111111111112,
+      "false_keep": 0.0234375,
+      "queries": 0.4782986111111111,
+      "tokens": 39.857638888888886
+    },
+    "source_only_ctdr": {
+      "n": 1152,
+      "action_error": 0.010416666666666666,
+      "exact_set": 0.9618055555555556,
+      "false_drop": 0.017361111111111112,
+      "false_keep": 0.0234375,
+      "queries": 0.2769097222222222,
+      "tokens": 22.8828125
+    },
+    "tcr_guard": {
+      "n": 1152,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.6310763888888888,
+      "tokens": 170.20920138888889
+    },
+    "tcr_token": {
+      "n": 1152,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.6545138888888888,
+      "tokens": 171.05034722222223
+    },
+    "tcr_bound": {
+      "n": 1152,
+      "action_error": 0.026041666666666668,
+      "exact_set": 0.9157986111111112,
+      "false_drop": 0.0842013888888889,
+      "false_keep": 0.0,
+      "queries": 0.2508680555555556,
+      "tokens": 32.8828125
+    },
+    "tcr_bound_token": {
+      "n": 1152,
+      "action_error": 0.026041666666666668,
+      "exact_set": 0.9157986111111112,
+      "false_drop": 0.0842013888888889,
+      "false_keep": 0.0,
+      "queries": 0.2508680555555556,
+      "tokens": 32.8828125
+    },
+    "tcr_density_gate": {
+      "n": 1152,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.6310763888888888,
+      "tokens": 170.20920138888889
+    },
+    "tcr_density_gate_token": {
+      "n": 1152,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.6545138888888888,
+      "tokens": 171.05034722222223
+    },
+    "cold_restart": {
+      "n": 1152,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 11.475694444444445,
+      "tokens": 949.3897569444445
+    },
+    "cold_token": {
+      "n": 1152,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 11.552083333333334,
+      "tokens": 952.7144097222222
+    }
+  },
+  "cost_scope": "post_edit_logical_query_tokens_only",
+  "gold_scope": "used only for held-out reporting by server scorer; no gold-driven mask or scheduling",
+  "independence": "same-input stress control; not an independent question cohort"
+}
