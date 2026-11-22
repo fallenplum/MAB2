@@ -1,0 +1,138 @@
+{
+  "schema": "m60_conditional_drift_safe_policy_v1",
+  "results": [
+    {
+      "n": 5000,
+      "rows_changed": 1,
+      "drift": 0.0,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 1.0,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 1.0,
+      "robust_exact": 1.0,
+      "robust_queries": 0.0
+    },
+    {
+      "n": 5000,
+      "rows_changed": 1,
+      "drift": 0.1,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.9634,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.5824,
+      "robust_exact": 1.0,
+      "robust_queries": 0.4176
+    },
+    {
+      "n": 5000,
+      "rows_changed": 1,
+      "drift": 0.4,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.8344,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.1864,
+      "robust_exact": 1.0,
+      "robust_queries": 0.8136
+    },
+    {
+      "n": 5000,
+      "rows_changed": 1,
+      "drift": 1.0,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.6592,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.0794,
+      "robust_exact": 1.0,
+      "robust_queries": 0.9206
+    },
+    {
+      "n": 5000,
+      "rows_changed": 2,
+      "drift": 0.0,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 1.0,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 1.0,
+      "robust_exact": 1.0,
+      "robust_queries": 0.0
+    },
+    {
+      "n": 5000,
+      "rows_changed": 2,
+      "drift": 0.1,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.9338,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.317,
+      "robust_exact": 1.0,
+      "robust_queries": 1.366
+    },
+    {
+      "n": 5000,
+      "rows_changed": 2,
+      "drift": 0.4,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.7212,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.024,
+      "robust_exact": 1.0,
+      "robust_queries": 1.952
+    },
+    {
+      "n": 5000,
+      "rows_changed": 2,
+      "drift": 1.0,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.457,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.0042,
+      "robust_exact": 1.0,
+      "robust_queries": 1.9916
+    },
+    {
+      "n": 5000,
+      "rows_changed": 4,
+      "drift": 0.0,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 1.0,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 1.0,
+      "robust_exact": 1.0,
+      "robust_queries": 0.0
+    },
+    {
+      "n": 5000,
+      "rows_changed": 4,
+      "drift": 0.1,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.886,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.066,
+      "robust_exact": 1.0,
+      "robust_queries": 3.736
+    },
+    {
+      "n": 5000,
+      "rows_changed": 4,
+      "drift": 0.4,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.5984,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.0,
+      "robust_exact": 1.0,
+      "robust_queries": 4.0
+    },
+    {
+      "n": 5000,
+      "rows_changed": 4,
+      "drift": 1.0,
+      "source_only_safe_rate": 1.0,
+      "source_only_exact": 0.2352,
+      "source_only_queries": 0.0,
+      "robust_safe_rate": 0.0,
+      "robust_exact": 1.0,
+      "robust_queries": 4.0
+    }
+  ],
+  "interpretation": "The robust interval is a finite-row soundness mechanism under a known conditional TV radius. It is synthetic and does not establish task-level answer quality."
+}
