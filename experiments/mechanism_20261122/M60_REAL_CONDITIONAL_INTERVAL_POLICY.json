@@ -1,0 +1,111 @@
+{
+  "schema": "m60_real_conditional_interval_policy_v1",
+  "results": [
+    {
+      "task": "qasc",
+      "train": 321,
+      "test": 63,
+      "radius": {
+        "_rows1:1": 0.15537607669830322,
+        "_rows2:1": 0.9999995231628418,
+        "_rows2:3": 0.9999281764030457,
+        "_rows4:0": 0.9999988079071045,
+        "_rows4:1": 0.9999995231628418,
+        "_rows4:2": 0.9999676942825317,
+        "_rows4:3": 0.9999281764030457
+      },
+      "warm": {
+        "n": 63,
+        "decision_exact": 0.9841269841269841,
+        "answer_accuracy": 0.2698412698412698,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "n": 63,
+        "decision_exact": 0.9841269841269841,
+        "answer_accuracy": 0.2698412698412698,
+        "tokens": 99.47619047619048,
+        "queries": 1.0
+      },
+      "conditional_interval": {
+        "n": 63,
+        "decision_exact": 0.9841269841269841,
+        "answer_accuracy": 0.25396825396825395,
+        "tokens": 230.33333333333334,
+        "queries": 2.3333333333333335
+      }
+    },
+    {
+      "task": "sciq",
+      "train": 315,
+      "test": 69,
+      "radius": {
+        "_rows1:1": 0.6814152002334595,
+        "_rows2:1": 0.9999960660934448,
+        "_rows2:3": 0.9999992251396179,
+        "_rows4:0": 0.9999998807907104,
+        "_rows4:1": 0.9999960660934448,
+        "_rows4:2": 0.9999971389770508,
+        "_rows4:3": 0.9999992251396179
+      },
+      "warm": {
+        "n": 69,
+        "decision_exact": 0.9565217391304348,
+        "answer_accuracy": 0.6521739130434783,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "n": 69,
+        "decision_exact": 0.9565217391304348,
+        "answer_accuracy": 0.6231884057971014,
+        "tokens": 89.47826086956522,
+        "queries": 1.0
+      },
+      "conditional_interval": {
+        "n": 69,
+        "decision_exact": 1.0,
+        "answer_accuracy": 0.5217391304347826,
+        "tokens": 206.9855072463768,
+        "queries": 2.3333333333333335
+      }
+    },
+    {
+      "task": "commonsense",
+      "train": 336,
+      "test": 48,
+      "radius": {
+        "_rows1:1": 0.3849408030509949,
+        "_rows2:1": 0.9999990463256836,
+        "_rows2:3": 0.9994939565658569,
+        "_rows4:0": 0.9996542930603027,
+        "_rows4:1": 0.9999990463256836,
+        "_rows4:2": 0.9998701810836792,
+        "_rows4:3": 0.9994939565658569
+      },
+      "warm": {
+        "n": 48,
+        "decision_exact": 0.9583333333333334,
+        "answer_accuracy": 0.4375,
+        "tokens": 0.0,
+        "queries": 0.0
+      },
+      "uncertainty": {
+        "n": 48,
+        "decision_exact": 1.0,
+        "answer_accuracy": 0.4583333333333333,
+        "tokens": 90.75,
+        "queries": 1.0
+      },
+      "conditional_interval": {
+        "n": 48,
+        "decision_exact": 1.0,
+        "answer_accuracy": 0.5208333333333334,
+        "tokens": 209.75,
+        "queries": 2.3333333333333335
+      }
+    }
+  ],
+  "interpretation": "Question-disjoint development transfer of a conditional-drift-safe interval calibrated from training rows. This is a cost-soundness diagnostic, not independent confirmation."
+}
