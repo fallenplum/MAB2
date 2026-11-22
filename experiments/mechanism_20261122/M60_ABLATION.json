@@ -1,0 +1,19 @@
+{
+  "schema": "m60_ctdr_ablation_v1",
+  "n": 2304,
+  "no_transport_no_margin": {
+    "equivalent_to": "stale_reuse",
+    "action_error": 0.030815972222222224,
+    "exact_set": 0.9305555555555556
+  },
+  "no_selective_ranking": {
+    "periodic_action_error": 0.06944444444444445,
+    "random_action_error": 0.06944444444444445,
+    "ctdr_action_error": 0.0
+  },
+  "transport_full": {
+    "action_error": 0.0,
+    "exact_set": 1.0
+  },
+  "interpretation": "The action-margin transport component is necessary for the observed gain. The selective query ranking is also necessary at the matched incremental budget. No answer key was used by any ablation."
+}

@@ -1,11 +1,11 @@
 {
   "branch": "mechanism-20261122",
   "predecessor": "4c30b49645d7d021f093feda1f8947bf69e797c9",
-  "status": "EVALUATING",
+  "status": "FORMAL_EVIDENCE_COMPLETE_PENDING_RELEASE",
   "old_negative_results_preserved": true,
   "charged_before_cycle": 93.37976313880533,
-  "charged_this_cycle": 3.8876585646470394,
-  "cumulative_gpu_hours": 97.26742170345237,
+  "charged_this_cycle": 4.807274864249749,
+  "cumulative_gpu_hours": 98.18703800305508,
   "reserved_gpu_hours": 0,
   "cap_gpu_hours": 160,
   "formal_jobs": {
@@ -109,10 +109,30 @@
         0,
         0
       ]
+    },
+    "M60_CTDR": {
+      "status": "formal_evidence_complete",
+      "evaluation_level": "four disjoint input panels (QASC-A/B, SciQ-A/B), 192 questions, three teams, 2304 question-team evaluations",
+      "aggregate": {
+        "ctdr_action_error": 0.0,
+        "ctdr_exact_set": 1.0,
+        "stale_action_error": 0.030815972222222224,
+        "max_uncertainty_action_error": 0.06901041666666667,
+        "periodic_action_error": 0.06944444444444445,
+        "random_action_error": 0.06944444444444445,
+        "ctdr_tokens": 98.20572916666667,
+        "full_tokens": 493.16449652777777,
+        "pooled_token_saving": 0.8008661818559455,
+        "mean_panel_token_saving": 0.7961357803174756,
+        "ctdr_safe_rate": 0.4782986111111111
+      },
+      "synthetic_soundness": "200/200 exact finite-interface decision sets",
+      "null_control": "ARC excluded from positive aggregate because source and edited prompts are identical",
+      "sealed_original_tests_accessed": false
     }
   },
   "active_jobs": [],
   "status_is_last_verified_snapshot": true,
   "sealed_original_tests_accessed": false,
-  "evaluation_level": "M43/M45 matched ARC and CommonsenseQA. M46 exploratory TabMWP, M48 physical subset replication, M49 independent SciQ, M50 independent TabMWP with delayed feedback, M54 independent distinct-article SQuAD. Role permutations reuse questions."
+  "evaluation_level": "Formal positive evidence is QASC/SciQ only: four disjoint input panels, 192 questions each, three shared question sets with three model teams per panel. ARC was a no-evidence null control and is excluded. The 2304 aggregate is question-team evaluations, not independent questions."
 }

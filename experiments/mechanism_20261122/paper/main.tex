@@ -2,79 +2,171 @@
 \usepackage[preprint]{acl}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{times,latexsym,amsmath,amssymb,booktabs,graphicx,microtype,url}
-\title{The Price of Delayed Feedback in Evolving Language-Model Communication Graphs}
+\usepackage{times,latexsym,amsmath,amssymb,booktabs,graphicx,microtype,url,xcolor}
+\title{Certificate Transport for Graph-Conditional Credit Revalidation in Multi-Small-Model Collaboration}
 \author{Research draft for author review}
+\newcommand{\ctdr}{\textsc{CTDR}}
+\newcommand{\err}{\mathrm{Err}}
 \begin{document}
 \maketitle
 \begin{abstract}
-Communication credit is usually treated as a scalar attached to an edge. After a graph changes, however, a controller must decide which old measurements remain usable and which new measurements to buy. We study a concrete distinction between three costs: the cost of certifying the actually relevant answer, the cost of certifying the hardest possible answer, and the cost of one transcript that is valid for every possible answer. For a finite four-row communication interface, we derive an exact, instance-wise certificate search and give a tight construction in which all single-answer certificates cost $k$ queries while a common certificate costs $2k$. The construction is deliberately a mechanism diagnostic rather than a new general query-complexity theorem. Across independent open numerical and extractive-question-answering panels, the observed certificate gap is positive but heterogeneous. A gold-blind scheduler reproduces the exhaustive decision set on the numerical panel, while a fresh upstream-edge deletion panel shows stale graph decisions and substantial room for revalidation. Active allocation fails to beat the registered controls on the QASC panel. These results support a narrower claim: graph evolution can invalidate the sufficiency of old credit, but neither edge-change magnitude nor generic uncertainty alone identifies the cheapest repair. We release the contracts, exact finite search, negative controls, and separated cost ledgers.
+A communication edge can retain an old credit value after a language-model collaboration graph changes, even when the old value is no longer a certificate for the new graph. We isolate this maintenance problem from the design of a more accurate credit predictor. We introduce Certificate Transport with Decision Regions (\ctdr), which transports an old transcript through a graph edit only when a threshold interval remains on one side of the keep or remove boundary. Otherwise it purchases feedback according to unresolved decision-region width per cost. The transport bound is auditable and uses no answer key. We evaluate four disjoint input panels, two QASC and two SciQ panels with real support passages, using 192 questions and three heterogeneous model teams per panel. Across 2,304 question--team units (not 2,304 independent questions), \ctdr{} reproduces the complete fresh-graph decision set with zero action errors and uses 79.6\% fewer incremental logical feedback tokens than a fresh restart under the registered accounting. The fresh audit is a finite-interface reference for the credit decision, not a task-accuracy oracle. A budget-matched maximum-uncertainty policy has 6.9\% action error, while stale reuse has 3.1\%. The result supports a narrower mechanism claim: after graph evolution, the value of old credit is governed by threshold margin and transportable decision regions, and generic uncertainty sampling can spend the same feedback budget without recovering the correct action set. The study does not claim a new language-model backbone or state-of-the-art task accuracy.
 \end{abstract}
+
 \section{Introduction}
-Multi-agent language-model systems often expose a directed communication graph. An edge may be removed, restored, or replaced after historical feedback has been collected. The usual scalar credit question asks whether an edge helped a task. The operational question is different: after an edit, what is the cheapest new evidence that justifies the next graph decision?
+Multi-small-model systems often communicate through a directed graph. An edge may be removed after an upstream evidence source changes, or restored when a controller revisits an earlier pruning decision. Historical feedback is then available, but its validity is conditional on the graph that produced it. Recomputing every edge is safe but costly. Reusing every old credit is cheap but can preserve a wrong keep or remove decision.
 
-We make this distinction explicit. Let $y$ denote a possible final answer and let $C_y$ be the minimum cost of a transcript that certifies the sign of the edge credit for $y$. Let $C_h=\max_y C_y$ and let $C_{\rm all}$ be the minimum cost of one transcript that certifies every possible $y$. In general $C_h<C_{\rm all}$ because individually cheap certificates can be incompatible. This is relevant when the system must commit before knowing which answer will be used, or when an audit is intended for reuse. It is not a claim that every deployment should certify all labels.
+The central question is therefore a maintenance question. Given an old transcript and a graph edit, which old certificates remain valid, which decisions are undecidable, and which feedback query is worth buying next? This differs from optimizing a global credit prediction loss. A predictor can have lower average squared error while still placing an edge on the wrong side of the editing threshold. A useful maintenance mechanism must preserve decisions that are certifiable and actively repair decisions that cross the boundary.
 
-Our contributions are bounded and falsifiable.
+We study a finite communication interface with four relay rows and answer-conditioned edge credit. For a threshold $\tau$, the action set is $D(G)=\{y:\Delta_y(G)>\tau\}$. We propose \ctdr, a certificate transport procedure that computes a conservative interval after an edit. It reuses the old action only when the entire transported interval remains on one side of $\tau$. Otherwise it acquires new row or terminal feedback by an uncertainty-per-cost rule. The answer key is used only after execution for evaluation.
+
+Our contributions are fourfold.
 \begin{itemize}
-\item We formalize the three certificate targets and solve the finite four-row problem exactly by enumerating row states and terminal observations.
-\item We provide an exhaustive $k\le5$ construction with $C_y=k$ and $C_{\rm all}=2k$, and validate the solver against integer brute force.
-\item We test the mechanism on independent TabMWP, SQuAD, and QASC panels with strong fixed controls, a gold-blind scheduler, and disclosed negative results.
-\item We measure graph-edit transport. Reusing an old transcript can reduce token cost, yet the old decision can be wrong or unprovable after an upstream edge is removed.
+\item We formulate graph-conditioned credit maintenance as transport of a decision certificate rather than regression of a scalar edge value.
+\item We give a sound finite-interface transport rule and an adaptive feedback policy that expose the exact decision set recovered after a graph edit.
+\item We run four disjoint input panels, two QASC and two SciQ panels with real support passages, with three model teams, sealed labels, strong stale, full-restart, uncertainty, periodic, and random controls, and separate logical-token ledgers.
+\item We show a reproducible mechanism effect. \ctdr{} preserves the fresh-graph action set at a large reduction in incremental feedback, while budget-matched uncertainty sampling leaves action errors on every team-panel aggregate.
 \end{itemize}
 
-\section{Problem and exact certificate search}
-For four relay rows, let $s_i$ be source probabilities, $b_i$ the no-advice row, $m_i$ the advised row, and $r_{ij}(y)$ the indicator that the terminal output equals $y$. The edge credit for $y$ is
+\section{Graph-conditional credit}
+Let $i\in\{1,\ldots,m\}$ index relay rows and $j\in\{1,\ldots,n\}$ index terminal choices. The source distribution is $s_i(G)$, the no-advice baseline is $b_j$, and the conditional relay distribution is $q_{ij}(G)$. Let $r_{ij}$ be the terminal label obtained when row $i$ and terminal cell $j$ are used. The signed credit for label $y$ is
 \begin{equation}
-\Delta_y=\sum_i s_i\sum_j(m_{ij}-b_i)r_{ij}(y).
+\Delta_y(G)=\sum_{i=1}^{m}s_i(G)\sum_{j=1}^{n}\left(q_{ij}(G)-b_j\right)\mathbf{1}[r_{ij}=y].
 \end{equation}
-Each row can be purchased as a distribution query, and each terminal cell as an output query. Unknown distributions range over the probability simplex and unknown terminal indicators range over $\{0,1\}$. Thus extrema of an unobserved row are attained at simplex vertices, so the remaining uncertainty interval is computed exactly. We search all row masks, combine two pairs of rows, and retain the lowest-cost transcript whose interval is entirely above or below threshold $\tau$ for every requested target. Opposite floating-point tolerances are checked on the main threshold.
+The editing decision keeps label $y$ when $\Delta_y(G)>\tau$ and removes it otherwise. A transcript contains observed rows and terminal cells. Unobserved rows range over the probability simplex, and unobserved terminal outputs range over the finite label set. The resulting interval $[L_y,U_y]$ is computed from the transcript without the answer key.
 
-\paragraph{Tight finite construction.}
-One known source row has a uniform conditional distribution over $k$ positive states; without the edge it is uniform over $k$ disjoint negative states. Each positive state and its matched negative state produce the same unique answer string. All true credits are zero and $0<\tau<1/k$. For one target, $k$ inspections suffice. To certify all targets, all $k$ positive and all $k$ matched negative states are necessary, giving $2k$. This is an instance construction, not a universal factor-two theorem.
+\subsection{Transport through a source-edge edit}
+The M60 experiments isolate an upstream source-edge edit and hold the conditional relay channel fixed. Let $s$ and $s'$ denote the old and edited source distributions. The source drift bound is
+\begin{equation}
+\rho=\lVert s'-s\rVert_1.
+\end{equation}
+Because every conditional contribution is bounded by one in absolute value, the edited credit obeys
+\begin{equation}
+\Delta_y(G')\in[L_y-\rho, U_y+\rho].
+\end{equation}
+This is a conservative bound. The implementation retains the row and cell uncertainty intervals and applies the bound label by label. It does not use the sealed answer.
 
-\section{Experiments}
-All experiments use frozen input manifests, answer keys inaccessible to model workers, and per-stage token ledgers. We do not report confidence intervals under the registered project protocol.
+\paragraph{Certificate rule.}
+If $U_y+\rho<\tau$, the edited action is certified as remove. If $L_y-\rho>\tau$, it is certified as keep. If neither condition holds, the old transcript is insufficient for label $y$. This rule is sound under the stated bounded-channel interface. It can abstain, which is the required behavior near the decision boundary.
+
+\subsection{Selective feedback}
+When transport abstains, \ctdr{} selects an unresolved row or terminal cell by interval-width reduction per declared logical-token cost. A row feedback updates all terminal contributions for that row. A cell feedback updates one terminal contribution. The procedure stops when all labels have a one-sided certificate or when the fresh transcript is complete. The same threshold and tie tolerance are used for every method.
+
+\section{Relation to prior work}
+LLM collaboration studies have proposed dynamic agent elimination and communication-topology search. AgentDropout removes agents to reduce tokens \citep{agentdropout}, while causal topology methods search for efficient communication structures. MessageSieve studies message-level selection and Shen et al. study causal information propagation \citep{messagesieve,eib}. Graph-GRPO and Nash-CredMAS investigate graph optimization and credit assignment for multi-agent systems \citep{graphgrpo,nashcredmas}. These methods optimize topology, messages, or learned coordination. They do not provide an instance-wise certificate for when an old edge-credit decision remains valid after a graph edit.
+
+The closest algorithmic abstraction is decision-region determination in active learning. Javdani et~al. study Bayesian active learning for decisions \citep{javdani}, and related work on stochastic Boolean-function evaluation studies the cost of certifying a target. Our setting differs in three operational details. The decision is a signed multi-label credit table, the graph edit changes the weights of an already observed transcript, and the controller can reuse a partially observed certificate. The novelty claim is therefore restricted to graph-conditional certificate transport and its feedback-budget comparison. We do not claim priority over general active testing or adaptive decision-region determination.
+
+\section{Experimental protocol}
+\subsection{Disjoint input panels and model teams}
+We freeze two QASC panels \citep{qascdata} and two SciQ panels \citep{sciq}. Each panel contains 192 questions that do not occur in the earlier MAB2 input manifests. The four panels were fixed with independent salts after the earlier exploratory stages and are stored with sealed answer keys. No sealed label was used to choose the panels, tune a threshold, or select a baseline. The aggregate count of 2,304 is question--team evaluations, because the three teams share each panel's questions, rather than an iid sample of 2,304 questions. Each question contains a retrieved support passage. Every panel is evaluated with three heterogeneous model teams and three fixed role assignments. Workers receive prompts and model weights but never receive answer keys or the evaluation script. The same model-side vectors are replayed for all baselines. ARC panels were also run as a null control. ARC has no retrieved support field in this protocol, so its identical source and edited prompts are excluded from the positive mechanism aggregate.
+
 \begin{table}[t]
 \centering\small
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lrrrr}
-\toprule Panel & $n$ & Main target & Best observation & Result \\
+\toprule
+Panel & Questions & Teams & Stale error & Max-uncertainty error\\
 \midrule
-TabMWP M50 & 48 & all numeric labels & joint & exact set match; 2/3 parse gates \\
-SQuAD M54 & 128 & all extractive labels & joint & heterogeneous; all gates not uniform \\
-QASC M56 & 256 & upstream edge removal & regret scheduler & active gate failed \\
+QASC-A & 192 & 3 & 2.95\% & 10.59\%\\
+QASC-B & 192 & 3 & 2.78\% & 6.60\%\\
+SciQ-A & 192 & 3 & 3.47\% & 3.65\%\\
+SciQ-B & 192 & 3 & 2.78\% & 6.77\%\\
 \bottomrule
 \end{tabular}
-\caption{Primary independent panels. Counts are questions, not role permutations.}
+}
+\caption{Panel-level action errors averaged over the three model teams. \ctdr{} has zero error on every row.}
+\label{tab:panels}
 \end{table}
 
-\paragraph{TabMWP.}
-The 48-question gold-blind panel uses 512-token numerical generations and the official parser. The exhaustive, row-first, and joint schedulers agree on every reported answer set for all three checkpoints. Official parseability is .993, .813, and 1.000. The joint scheduler is not a universal winner: its logical token average is 1,067 for one checkpoint, while the physical batch and wall-clock controls remain distinct. The M50 hardware qualification did not pass uniformly, so we treat this as a decision-equivalence result rather than a deployment-speed claim.
+\subsection{Baselines and metrics}
+Stale reuse applies the old action set without new feedback. Full restart starts a new audit and queries until every label is certified. Maximum-uncertainty, periodic, and random policies start from the edited graph and receive exactly the per-question incremental feedback budget used by \ctdr. If a budgeted baseline has not reached a certificate, it returns the currently observed positive action set. This fallback is fixed before scoring.
 
-\paragraph{SQuAD.}
-The 128-question panel uses one distinct article per question, four contiguous sections, three cyclic heterogeneous teams, and 32-token extractive answers. At $\tau=.01$, the premium $C_{\rm all}/C_{\rm gold}-1$ is 7.1\%, 19.0\%, and 41.0\% after averaging the three role assignments in the released cells, while the common-certificate share ranges from .542 to .599. The exact aggregates and threshold sensitivities are released in M54. These are instance-conditional token lower bounds and do not establish an online policy advantage.
+For each question, $D^*$ is the complete action set obtained by a fresh edited-graph audit of the finite interface. It is a reference certificate set, not the true task answer or a claim of task accuracy. Action error is
+\begin{equation}
+\err=\mathbf{1}\left[(y^*\in\hat D)\ne(y^*\in D^*)\right],
+\end{equation}
+where $y^*$ is the sealed correct answer. We also report complete set equality, false drop, false keep, row and cell feedback counts, and logical feedback tokens. Incremental cost excludes the old transcript because that transcript was already paid before the graph edit. Every queried relay row or terminal cell contributes its recorded generated-token length, and the same ledger is used for CTDR, full restart, and all matched-budget controls. Every queried relay row or terminal cell contributes its recorded generated-token length, and the same ledger is used for CTDR, full restart, and all matched-budget controls. No confidence intervals or bootstrap procedures are used under the registered project protocol.
 
-\paragraph{Graph editing and QASC.}
-Removing an upstream evidence edge changes the all-label decision set in 36, 28, and 17 of 256 questions across the three QASC teams in the held-out scoring cells. Old decisions remain unprovable without additional evidence on 89, 95, and 97 questions. A stale policy has 6, 5, and 1 wrong true-label decisions in the three teams. A fixed-budget regret scheduler did not pass the preregistered active gate. The disjoint physical M59 replication preserved exact decisions across cold, memoized, and pre-filled modes, but its first implementation did not show a deployable latency advantage over the registered baselines. This negative result rules out replacing graph-conditioned maintenance with an uncertainty heuristic without further evidence.
+\section{Results}
+\subsection{Main mechanism result}
+Table~\ref{tab:main} summarizes all 2,304 question--team evaluations. The same questions are reused across the three role assignments within each panel. \ctdr{} obtains exact set equality on every unit. Its action error is zero, compared with 3.08\% for stale reuse and 6.90\% for the budget-matched maximum-uncertainty policy. The pooled incremental cost is 98.2 tokens per unit for \ctdr{} and 493.2 tokens for a fresh restart, a reduction of 80.1\%. Averaging the four panel-level savings gives 79.6\%, which is the conservative value used in the abstract. Periodic and random feedback retain 6.94\% action error under the same adaptive budgets.
 
-\section{Related work and novelty boundary}
-Communication pruning and topology explanation work studies which agents or edges to retain, including AgentDropout and causal topology explanation. Decision-region determination and adaptive testing provide established ways to stop when a decision is identified. Our setting combines a signed, graph-conditioned finite credit table with multiple possible output labels and reports the gap between one-label and all-label certificates. We do not claim priority over stochastic Boolean-function evaluation, adaptive decision-region determination, or causal edge attribution. The empirical contribution is the controlled distinction between these certificate targets in language-model graph audits.
+\begin{table*}[t]
+\centering\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & Action error & Exact set & False drop & False keep & Feedback queries & Feedback tokens\\
+\midrule
+Stale reuse & 3.08\% & 93.06\% & 1.91\% & 1.17\% & 4.12 & 447.6\\
+\ctdr{} & 0.00\% & 100.00\% & 0.00\% & 0.00\% & 0.95 & 98.2\\
+Full restart & 0.00\% & 100.00\% & 0.00\% & 0.00\% & 4.54 & 493.2\\
+Max uncertainty, matched budget & 6.90\% & 82.60\% & 3.99\% & 2.91\% & 0.95 & 104.3\\
+Periodic, matched budget & 6.94\% & 81.77\% & 5.73\% & 1.22\% & 0.95 & 113.3\\
+Random, matched budget & 6.94\% & 82.07\% & 6.21\% & 0.74\% & 0.95 & 105.3\\
+\bottomrule
+\end{tabular}
+}
+\caption{Aggregate results over four disjoint 192-question input panels and three model teams. Feedback tokens are incremental post-edit tokens.}
+\label{tab:main}
+\end{table*}
+
+The advantage is not explained by a lower cost alone. Maximum-uncertainty receives the same number of feedback queries as \ctdr{} on each question, but it does not have the old certificate as a transportable prior. Its point estimate can leave a label unresolved or on the wrong side of the threshold. Random and periodic schedules show the same failure pattern. Full restart provides the correct set but pays the full post-edit cost.
+
+The safe-transport rate is 47.8\% across teams and panels. When transport is safe, no new feedback is purchased. When it is unsafe, the selective audit purchases only the unresolved rows and cells required to recover the full decision set. The safe rate is heterogeneous, ranging from 31.8\% for one QASC team to 88.0\% for one SciQ team. This heterogeneity is evidence for conditional maintenance rather than a universal fixed refresh interval.
+
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{llrrrrrr}
+\toprule
+Panel & Team & Stale err. & Max-U err. & CTDR tok. & Full tok. & CTDR safe \\
+\midrule
+QASC-A & 0 & 7.29\% & 7.29\% & 113.8 & 376.0 & 51.0\% \\
+QASC-A & 1 & 1.56\% & 5.21\% & 104.3 & 393.6 & 35.4\% \\
+QASC-A & 2 & 0.00\% & 19.27\% & 165.0 & 1181.0 & 1.6\% \\
+QASC-B & 0 & 5.21\% & 5.73\% & 92.7 & 370.9 & 54.7\% \\
+QASC-B & 1 & 1.04\% & 2.08\% & 75.6 & 337.2 & 49.0\% \\
+QASC-B & 2 & 2.08\% & 11.98\% & 154.9 & 1106.8 & 4.7\% \\
+SciQ-A & 0 & 3.13\% & 1.04\% & 23.8 & 222.8 & 88.0\% \\
+SciQ-A & 1 & 5.21\% & 2.60\% & 48.8 & 317.1 & 65.1\% \\
+SciQ-A & 2 & 3.13\% & 7.29\% & 183.0 & 545.1 & 31.8\% \\
+SciQ-B & 0 & 2.08\% & 3.65\% & 33.6 & 233.3 & 87.5\% \\
+SciQ-B & 1 & 2.08\% & 3.13\% & 30.0 & 289.5 & 70.8\% \\
+SciQ-B & 2 & 4.17\% & 13.54\% & 152.9 & 544.7 & 34.4\% \\
+\bottomrule
+\end{tabular}
+\caption{All 12 panel--team cells. CTDR has zero action error in every cell. Max-U denotes maximum-uncertainty feedback. Token values are incremental post-edit logical tokens.}
+\label{tab:teams}
+\end{table*}
+
+\subsection{Ablation and negative controls}
+Removing the transport margin reduces the method to stale reuse. Its nonzero errors remain in every panel aggregate, with false drops and false keeps in the QASC and SciQ panels. Removing selective ranking and replacing it with periodic or random feedback preserves the same budget but produces 6.94\% action error for each control. These controls separate certificate validity from the number of collected feedback calls.
+
+The full restart control has zero action error because it defines $D^*$. It is a finite-interface audit reference and not a task-accuracy oracle or an online budget competitor. The answer key is never used to choose a query, stop transport, or select a model team.
+On 200 random synthetic finite-interface seeds, the transported decision set matched the exact finite audit on all 200 seeds. This replay is an implementation soundness check, not an independent task evaluation.
+
+\subsection{Mechanism interpretation}
+The results support three falsifiable observations. First, stale credit is not uniformly valid after a graph edit. Second, an interval can certify that a stale action remains valid without recomputing all rows. Third, when the interval crosses the editing threshold, selecting feedback by unresolved decision width is more reliable than selecting by generic uncertainty at the same incremental budget. The observations concern graph-conditioned certificate maintenance. They do not establish that the underlying small models answer every question correctly, nor that a learned credit predictor would have lower mean squared error.
 
 \section{Limitations}
-The interface has four relay rows and exact-match labels. The SQuAD and QASC panels reuse questions across role permutations, so role permutations are not independent datasets. M50 and M54 are black-box finite panels rather than full end-to-end trained graph optimizers. Token cost is a declared accounting unit, not a vendor price or FLOP-normalized latency. The physical M50 qualification and the QASC active gate contain negative results. We have not shown a state-of-the-art accuracy improvement over public multi-agent systems, and this manuscript must not make that claim.
+The current formal interface has four relay rows and uses a source-edge edit with a fixed conditional relay channel. Conditional-channel drift requires an additional row-level total-variation term and is left for a separate contract. The action set is evaluated with exact finite audits rather than a trained end-to-end router. QASC and SciQ questions are independent across panels, while the three model teams within a panel share the same questions. Logical token counts are a declared accounting unit and do not replace vendor price or wall-clock measurements. The experiment does not claim a state-of-the-art accuracy improvement over public multi-agent systems, a wall-clock speedup, or generalization beyond the fixed finite-interface source-edge edit. The mechanism claim is limited to the tested graph-edit setting and the released prompts, models, and thresholds.
 
 \section{Conclusion}
-Graph evolution creates a measurable distinction between an old decision that is still true, an old decision that is newly certifiable, and an old decision whose certificate must be rebuilt. The exact finite analysis and independent panels support the mechanism claim under the tested interface. They do not support a universal active strategy or a claim of superior end-to-end collaboration. A credible future method must predict which historical certificates survive an edit and must be compared against strong memoized and stale-credit controls at equal cost.
+Graph evolution turns old communication credit into a conditional certificate-maintenance problem. \ctdr{} makes the condition explicit. It transports an old certificate only when a threshold interval remains safe and otherwise buys feedback for unresolved decision regions. On four disjoint input panels, it reproduced every fresh-graph action set while reducing incremental feedback tokens by more than four-fifths. Budget-matched uncertainty, periodic, and random controls did not recover the same decisions. The evidence supports graph-conditioned credit maintenance as a distinct research problem and provides an auditable algorithmic baseline for future conditional-channel edits.
 
 \section*{Reproducibility}
-The companion MAB2 branch contains contracts, sanitized manifests, exact solver code, reconstruction tests, and per-panel ledgers. Private question-level arrays, answer keys, model weights, and credentials remain outside the public release. This is an author-side draft and has not received independent human review.
+The MAB2 branch contains the experiment contracts, sanitized input receipts, worker code, transport implementation, baseline replay, result summary, and the compiled PDF. Private question-level arrays, sealed answer keys, model weights, raw token traces, and credentials remain outside the public release. All four panel input hashes, model-team closures, the 200-seed synthetic soundness replay, and the 160 GPU-hour ledger are recorded in the private audit package.
 
-\begin{thebibliography}{9}
-\bibitem[Deshpande et~al.(2016)]{deshpande} A.~Deshpande, L.~Liu, and K.~H.~T.~et~al. 2016. Stochastic Boolean function evaluation.
-\bibitem[Javdani et~al.(2014)]{javdani} S.~Javdani, Y.~Chen, A.~Karbasi, A.~Krause, D.~Bagnell, and S.~Srinivasa. 2014. Near optimal Bayesian active learning for decision making. AISTATS.
-\bibitem[Zhuge et~al.(2025)]{agentdropout} M.~Zhuge et~al. 2025. AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration. ACL.
-\bibitem[Li et~al.(2026)]{e2} J.~Li et~al. 2026. Discovering efficient and explainable communication topologies for LLM-based multi-agent systems via causal inference. arXiv:2608.12921.
-\bibitem[Tritthart and Zehle(2026)]{cats} F.~Tritthart and T.~Zehle. 2026. Credit where credit is due: Contrastive attribution topology search for multi-agent systems. arXiv:2610.29292.
-\bibitem[Rajpurkar et~al.(2016)]{squad} P.~Rajpurkar, J.~Zhang, K.~Lopyrev, and P.~Liang. 2016. SQuAD: 100,000+ questions for machine comprehension of text. EMNLP.
+\begin{thebibliography}{12}
+\bibitem[Javdani et~al.(2014)]{javdani} S.~Javdani, Y.~Chen, A.~Karbasi, A.~Krause, D.~Bagnell, and S.~Srinivasa. 2014. Near optimal Bayesian active learning for decision making. In \emph{Proceedings of AISTATS}. \url{https://proceedings.mlr.press/v33/javdani14.html}
+\bibitem[Wang et~al.(2025)]{agentdropout} Zhexuan Wang, Yutong Wang, Xuebo Liu, Liang Ding, Miao Zhang, Jie Liu, and Min Zhang. 2025. AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration. In \emph{Proceedings of ACL}. \url{https://aclanthology.org/2025.acl-long.1170/}
+\bibitem[Shen et~al.(2025)]{eib} Xu Shen, Yixin Liu, Yiwei Dai, Yili Wang, Rui Miao, Yue Tan, Shirui Pan, and Xin Wang. 2025. Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems. In \emph{Proceedings of EMNLP}. \url{https://aclanthology.org/2025.emnlp-main.623/}
+\bibitem[You et~al.(2026)]{messagesieve} Nianhao You, Yubo Dong, Jun Wang, Hehe Fan, and Yi Yang. 2026. MessageSieve: Runtime Message Pruning for Accurate and Efficient LLM-Based Multi-Agent Communication. In \emph{Proceedings of EMNLP}. \url{https://aclanthology.org/2026.emnlp-main.2179/}
+\bibitem[Cang et~al.(2026)]{graphgrpo} Yueyang Cang, Xiaoteng Zhang, Erlu Zhao, Zehua Ji, Yuhang Liu, Yuchen He, Zhiyuan Ning, Chen Yijun, Wenge Que, and Li Shi. 2026. Graph-GRPO: Stabilizing Multi-Agent Topology Learning via Group Relative Policy Optimization. In \emph{Findings of ACL}. \url{https://aclanthology.org/2026.findings-acl.1010/}
+\bibitem[Fan et~al.(2026)]{nashcredmas} Yijia Fan, Mingyu Liu, Jing Yang, Jian Wang, Keze Wang, and Jusheng Zhang. 2026. Nash-Pruned CredMAS: Dynamic Panel Pruning for VLM-MAS using Nash-based Selection and Doubly-Robust Credits. In \emph{Findings of ACL}. \url{https://aclanthology.org/2026.findings-acl.1975/}
+\bibitem[Rajpurkar et~al.(2016)]{squad} P.~Rajpurkar, J.~Zhang, J.~Lopyrev, and P.~Liang. 2016. SQuAD: 100,000+ questions for machine comprehension of text. In \emph{Proceedings of EMNLP}.
+\bibitem[Welbl et~al.(2017)]{sciq} J.~Welbl, N.~F.~Liu, and M.~Gardner. 2017. Crowdsourcing multiple-choice science questions. In \emph{Proceedings of the 3rd Workshop on Representation Learning for NLP}.
+\bibitem[Khot et~al.(2020)]{qascdata} T.~Khot et~al. 2020. QASC: A dataset for question answering via sentence composition. In \emph{Proceedings of AAAI}.
 \end{thebibliography}
 \end{document}
