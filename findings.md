@@ -15,3 +15,9 @@ M60 的冷重启节省主要由历史观测复用与新图 source 重加权产�
 ## 仍开放的问题
 
 图编辑若同时改变 relay 条件通道，旧 transcript 的 source-only 传输半径可能失效。需要用冻结历史和独立条件漂移构造检验冲突驱动复检是否能减少错误删留，且不把理论已有的付费测试重新包装为新颖算法。
+
+## 条件漂移候选
+
+Synthetic replay 只用于诊断机制，不能替代真实模型输出。它显示局部 relay channel drift 可以使 source-only certificate 产生 decision-set error，而针对声明受影响行的 TCR revalidation 可恢复 exact set。全部行漂移时局部重查不再有成本优势，候选方法需要包含稀疏变化检测或冷重启切换。
+
+真实条件 worker 已完成输入去重和 scorer 准备，服务器端口当前不可达，项目保持 ACTIVE，不将外部连通性问题伪装成实验完成。

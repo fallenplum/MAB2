@@ -55,3 +55,9 @@ Formal6 has96 fresh input-only train questions,2 generation seeds and11 terminal
 正式 worker 已恢复并核验 SHA-256。七行概率接口解释为三 source 行和四 relay 行 `[none,A,B,C]`，四列是 A-D hypotheses，终端为 4×4。审计分支增加了 schema assertion、可复现 replay 入口、成本分相和新合同。该候选路线保留为失败的独立归因候选，不终止整个研究。
 
 下一轮转向条件 relay 通道漂移和冲突驱动复检。只有在同一历史 transcript、同一预算、同一任务输入下，Full 方法相对 Warm/Reweighted、No-radius、token ranking 与冷重启都显示稳定独立收益，才恢复算法贡献主张。
+
+## 2026-11-22 条件 relay 漂移诊断
+
+固定向量诊断已完成。把 A advised relay 行或全部 relay 行按预先固定强度混向 base 后，source-only CTDR 的 decision-set error 为 0.17%–1.43%，TCR-row 在所有四个组合上 exact set=1。单行重查的 post-edit token 约 138–140，冷重启约 485–490。全部行变化时 TCR 仍正确，但成本不优于冷重启，表明方法的可行范围是稀疏条件漂移而不是无条件重查。
+
+该诊断使用冻结 M60 vectors，不能作为独立模型确认。新的 QASC/SciQ 各128题已完成去重和 hash 固定，conditional worker、27字段 schema 和 scorer 已通过语法及假接口回放测试。服务器 59.174.160.105:10021 当前仍不可达，真实 GPU 推理尚未启动。
