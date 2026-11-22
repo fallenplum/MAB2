@@ -77,3 +77,12 @@ Formal6 has96 fresh input-only train questions,2 generation seeds and11 terminal
 尝试的 worst-case conditional-row interval shortcut 在单、双、四行上分别产生2.60%、2.86%、2.86%的 action error，因此淘汰并保留为负结果。上述密度结论仍只来自一个 Qwen3B checkpoint，不能作为跨模型主结果。
 
 随机、周期和最大不确定性基线已在同一旧 transcript、同一新图和同一 replay scorer 中补齐。单行面板中 TCR token 156.61，周期 172.89，随机 194.18，冷重启 259.57。双行面板 TCR 252.63，周期 164.41，随机 187.93，冷重启 256.12。四行面板 TCR 428.15，周期 154.73，随机 177.79，冷重启 240.55。TCR 的优势因此限定为稀疏 singleton edit 的 exact certificate repair，不能扩展成一般编辑密度下的成本优势。
+
+
+## 2026-11-22 — deduplicated worker and density audit
+
+The server at 59.174.162.173:10021 completed a two-checkpoint replay on QASC, SciQ, and Commonsense with one-, two-, and four-row conditional edits. The worker was corrected to evaluate each distinct prompt once and reuse identical old/new relay logits. Before this correction, identical source-only prompts produced different batch outputs and caused false CTDR errors. After correction, fingerprint-derived affected-row masks matched the frozen edit metadata on all 2,304 question–model units.
+
+The token-aware transport/revalidation method recovered the exact finite audit decision set on all three densities. Weighted over 768 question–model units per density, TCR token costs were 132.95, 224.80, and 419.10 logical tokens for one, two, and four changed rows. Cold token costs were 1296.10, 1255.30, and 1188.98. Warm reweighted exact-set rates were 96.875%, 88.932%, and 77.083%. The multi-row density gate conservatively fell back to cold restart, so it does not establish adaptive savings for multi-row edits.
+
+This supports a development mechanism result only. The next confirmatory route is a fresh graph-manifest panel with conditional-channel drift, missing-signature fallback, and task-level service quality. No sealed test was opened and no confidence intervals or bootstrap were run.
