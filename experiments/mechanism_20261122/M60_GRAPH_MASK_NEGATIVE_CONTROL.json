@@ -1,0 +1,40 @@
+{
+  "schema": "m60_graph_manifest_negative_control_v1",
+  "panel": "rows1_server_two_models_three_tasks",
+  "manifest_edit": [
+    "source_to_relay_0"
+  ],
+  "true_edit": [
+    "source_to_relay_1"
+  ],
+  "aggregate": {
+    "tcr_guard": {
+      "n": 768,
+      "action_error": 0.013020833333333334,
+      "exact_set": 0.96875,
+      "false_drop": 0.016927083333333332,
+      "false_keep": 0.015625,
+      "queries": 1.390625,
+      "tokens": 135.61197916666666
+    },
+    "tcr_token": {
+      "n": 768,
+      "action_error": 0.013020833333333334,
+      "exact_set": 0.96875,
+      "false_drop": 0.016927083333333332,
+      "false_keep": 0.015625,
+      "queries": 1.41796875,
+      "tokens": 137.31380208333334
+    },
+    "cold_token": {
+      "n": 768,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 16.302083333333332,
+      "tokens": 1296.1028645833333
+    }
+  },
+  "interpretation": "An incorrect graph manifest loses exact decision recovery. This is a falsification control, not a tuned result."
+}
