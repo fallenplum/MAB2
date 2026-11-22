@@ -1,0 +1,80 @@
+{
+  "schema": "m60_conditional_qwen3b_three_task_metadata_pilot_v1",
+  "model_family": "Qwen2.5-3B-Instruct",
+  "panels": [
+    "QASC-Qwen3B-pilot",
+    "SciQ-Qwen3B-pilot",
+    "Commonsense-Qwen3B-pilot"
+  ],
+  "total_questions": 384,
+  "workers": 1,
+  "manifest_changed_rows": "omitted",
+  "row_local_changed_rows": "worker_metadata_derived_from_new_old_relay_input",
+  "aggregate": {
+    "stale": {
+      "n": 384,
+      "action_error": 0.026041666666666668,
+      "exact_set": 0.9244791666666666,
+      "false_drop": 0.041666666666666664,
+      "false_keep": 0.046875,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    "warm_reweighted": {
+      "n": 384,
+      "action_error": 0.0078125,
+      "exact_set": 0.9791666666666666,
+      "false_drop": 0.015625,
+      "false_keep": 0.013020833333333334,
+      "queries": 0.6875,
+      "tokens": 67.59895833333333
+    },
+    "source_only_ctdr": {
+      "n": 384,
+      "action_error": 0.0078125,
+      "exact_set": 0.9791666666666666,
+      "false_drop": 0.015625,
+      "false_keep": 0.013020833333333334,
+      "queries": 0.6875,
+      "tokens": 67.59895833333333
+    },
+    "tcr_guard": {
+      "n": 384,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.6510416666666667,
+      "tokens": 156.734375
+    },
+    "tcr_token": {
+      "n": 384,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.6510416666666667,
+      "tokens": 156.61197916666666
+    },
+    "cold_restart": {
+      "n": 384,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 2.5234375,
+      "tokens": 260.5
+    },
+    "cold_token": {
+      "n": 384,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 2.515625,
+      "tokens": 259.5729166666667
+    }
+  },
+  "status": "exploratory_single_model_pilot",
+  "interpretation": "The scorer used per-row worker metadata and no manifest-level changed-row mask. Gold labels are used only for reporting. This remains a single-model pilot and does not establish ACL-level evidence."
+}

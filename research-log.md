@@ -67,3 +67,5 @@ Formal6 has96 fresh input-only train questions,2 generation seeds and11 terminal
 本地 RTX 4060 完成 QASC、SciQ 和 Commonsense 各128题的单模型 Qwen2.5-3B-Instruct 条件 worker，合计 10368 次 forward 请求，实际 GPU 占用约0.20437小时。统一回放结果在384题上显示 stale exact-set 92.45%，warm/reweighted 与 source-only CTDR 均97.92%，TCR guard/token 均100%，冷重启100%。TCR token 平均156.61 token，冷 token 259.57 token。该结果只是一模型三任务探索性试跑，不能作为独立多团队确认或 ACL 主会证据。
 
 评分器修正了聚合样本数口径，`aggregate.n` 现在表示所有面板和 worker 的总题数。服务器 59.174.160.105:10021 仍以5秒 TCP 超时，三团队正式推理尚未开始。
+
+同一 Qwen3B 的 QASC/SciQ 输出随后用修正后的 worker 重跑，三任务回放不再依赖 manifest 级 `changed_rows`，而是读取每条 worker 记录中由新旧 relay 输入差分生成的行掩码。结果与先前三任务聚合一致，表明评分器路径已切换到 metadata-only 行定位。该验证仍只有一个模型家族和一个 checkpoint，不能替代服务器上的独立团队实验。

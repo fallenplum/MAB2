@@ -1,0 +1,12 @@
+{
+  "schema": "m60_conditional_qwen3b_three_metadata_cost_v1",
+  "model": "Qwen2.5-3B-Instruct",
+  "device": "local_rtx_4060",
+  "panels": ["QASC", "SciQ", "Commonsense"],
+  "questions": 384,
+  "forward_requests": 17280,
+  "gpu_hours": 0.35905,
+  "accounting": "three-task pilot plus QASC/SciQ reruns with worker changed-row metadata",
+  "confidence_intervals": false,
+  "status": "exploratory_single_model_pilot_only"
+}
