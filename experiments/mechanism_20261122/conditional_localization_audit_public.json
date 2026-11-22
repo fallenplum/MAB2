@@ -1,0 +1,65 @@
+{
+  "schema": "conditional_localization_audit_v1",
+  "cases": [
+    {
+      "case": "source_only",
+      "expected": [],
+      "predicted": [],
+      "false_skip": 0,
+      "extra_rows": 0
+    },
+    {
+      "case": "one_row_signature",
+      "expected": [
+        1
+      ],
+      "predicted": [
+        1
+      ],
+      "false_skip": 0,
+      "extra_rows": 0
+    },
+    {
+      "case": "two_row_signature",
+      "expected": [
+        1,
+        3
+      ],
+      "predicted": [
+        1,
+        3
+      ],
+      "false_skip": 0,
+      "extra_rows": 0
+    },
+    {
+      "case": "hidden_propagation_graph_delta",
+      "expected": [
+        2
+      ],
+      "predicted": [
+        2
+      ],
+      "false_skip": 0,
+      "extra_rows": 0
+    },
+    {
+      "case": "missing_signature_fallback",
+      "expected": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "predicted": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "false_skip": 0,
+      "extra_rows": 0
+    }
+  ],
+  "note": "Deterministic manifest audit only; no model inference or labels."
+}
