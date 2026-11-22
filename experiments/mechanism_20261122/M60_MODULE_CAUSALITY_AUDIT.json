@@ -1,0 +1,21 @@
+{
+  "schema": "m60_module_causality_audit_v1",
+  "status": "NEGATIVE_ABLATION_RECORDED",
+  "n": 2304,
+  "aggregate": {
+    "warm_restart": {"action_error": 0.0, "exact_set": 1.0, "tokens": 98.20572916666667, "safe_rate": 0.0},
+    "reweighted_audit": {"action_error": 0.0, "exact_set": 1.0, "tokens": 98.20572916666667, "safe_rate": 0.0},
+    "ctdr_without_radius": {"action_error": 0.0, "exact_set": 1.0, "tokens": 98.20572916666667, "safe_rate": 0.0},
+    "ctdr_legacy": {"action_error": 0.0, "exact_set": 1.0, "tokens": 98.20572916666667, "safe_rate": 0.4782986111111111},
+    "warm_restart_token": {"action_error": 0.0, "exact_set": 1.0, "tokens": 96.63411458333333, "safe_rate": 0.0},
+    "decision_ranking": {"action_error": 0.0, "exact_set": 1.0, "tokens": 99.24479166666667, "safe_rate": 0.0},
+    "full_ctdr": {"action_error": 0.0, "exact_set": 1.0, "tokens": 99.24479166666667, "safe_rate": 0.4787326388888889}
+  },
+  "module_causal_necessity": "unproven_negative_ablation",
+  "interpretation": "Formal M60 ablation does not identify an independent decision or cost gain from the drift radius or decision ranking. Savings relative to cold restart are attributable to history reuse and reweighted audit within this panel.",
+  "limits": [
+    "This panel is a finite conditional audit and does not establish end-to-end service quality.",
+    "The result must not be reported as independent Full CTDR superiority."
+  ]
+}
+
