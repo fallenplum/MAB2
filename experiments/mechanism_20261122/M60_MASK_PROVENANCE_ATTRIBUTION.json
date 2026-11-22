@@ -1,0 +1,37 @@
+{
+  "schema": "m60_mask_provenance_attribution_v1",
+  "panel": "same_input_interface_drift_stress_control",
+  "question_model_units_per_density": 1152,
+  "modes": {
+    "graph_manifest": {
+      "description": "Use the frozen edited-edge to relay-descendant union.",
+      "rows1": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 170.20920138888889, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 171.05034722222223},
+      "rows2": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 307.58506944444446, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 307.7890625},
+      "rows4": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 587.8151041666666, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 586.9418402777778}
+    },
+    "fingerprint": {
+      "description": "Infer affected rows from old/new relay token-sequence fingerprints.",
+      "rows1": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 170.20920138888889, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 171.05034722222223},
+      "rows2": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 307.58506944444446, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 307.7890625},
+      "rows4": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 587.8151041666666, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 586.9418402777778}
+    },
+    "row_metadata": {
+      "description": "Use the worker-declared changed_rows field.",
+      "rows1": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 170.20920138888889, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 171.05034722222223},
+      "rows2": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 307.58506944444446, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 307.7890625},
+      "rows4": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 587.8151041666666, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 586.9418402777778}
+    },
+    "all_rows_negative_control": {
+      "description": "Conservatively refresh every relay row, regardless of the graph mask.",
+      "rows1": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 487.0234375, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 487.68836805555554},
+      "rows2": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 517.0364583333333, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 516.9565972222222},
+      "rows4": {"tcr_guard_exact_set": 1.0, "tcr_guard_tokens": 587.8151041666666, "tcr_token_exact_set": 1.0, "tcr_token_tokens": 586.9418402777778}
+    }
+  },
+  "interpretation": {
+    "provenance_equivalence": "Graph-manifest, worker row metadata and token fingerprints produce identical Full CTDR decisions and costs on all three densities in this stress panel.",
+    "mask_value": "Refreshing all rows preserves exact recovery but costs 487.0234/517.0365/587.8151 tokens for one/two/four-row edits. The graph mask therefore removes 65.1%/40.5%/0.0% of Full CTDR guard tokens relative to the all-row control in this finite panel.",
+    "scope": "This isolates mask provenance and finite-panel cost attribution. It does not establish service-level answer quality or independent generalization."
+  }
+}
+
