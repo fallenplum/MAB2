@@ -1,0 +1,11 @@
+{
+  "schema": "m60_source_transport_property_test_v1",
+  "checks": 500,
+  "source_drift_generation": "new_source = normalize(0.999 * old_source + 0.001 * Dirichlet(1))",
+  "label_count": 4,
+  "safe_transport_cases": 431,
+  "false_safe_cases": 0,
+  "purpose": "Synthetic property check that a source-only transport certificate does not classify a changed exact decision set incorrectly when its conservative radius declares safety.",
+  "interpretation": "This validates the finite implementation under the sampled synthetic contract. It is not a model-quality or independent-task result."
+}
+
