@@ -49,6 +49,9 @@ def main(model_path, input_path, output_path):
                          "\nChoose the best hypothesis. Return A, B, C or D."
                          for i in (-1, 0, 1, 2)]
             new_fact = row.get("second_fact_new", row.get("second_fact", ""))
+            changed_rows = [index for index, advice in enumerate((-1, 0, 1, 2))
+                            if (new_fact if advice == 0 else row.get("second_fact", ""))
+                            != row.get("second_fact", "")]
             new_relay = [source_problem + "\nEvidence: " + (new_fact if i == 0 else row.get("second_fact", "")) +
                          ("\nFirst researcher proposes hypothesis " + chr(65 + i) + "." if i >= 0 else "") +
                          "\nChoose the best hypothesis. Return A, B, C or D."
@@ -78,7 +81,8 @@ def main(model_path, input_path, output_path):
             full = {str(i): probs[i] for i in range(11)}
             full.update({str(11 + i): labels[i] for i in range(len(labels))})
             out.write(json.dumps({"key": row["key"], "full": full,
-                                  "tokens": list(map(len, seq))}) + "\n")
+                                  "tokens": list(map(len, seq)),
+                                  "changed_rows": changed_rows}) + "\n")
             out.flush()
     print(json.dumps({"questions": len(rows), "n_options": n, "requests": len(rows) * len(seq),
                       "torch": torch.__version__, "transformers": transformers.__version__}), flush=True)
