@@ -137,3 +137,12 @@ The authorized local asset search found no QASC, SciQ or CommonsenseQA cohort be
 ## 2026-11-23: source-only transport property check
 
 A 500-case synthetic source-only replay with a 0.1% normalized source perturbation found 431 cases where the transport guard declared safety and zero false-safe decision sets. This is an implementation property check under the finite source-only contract, not a task-quality or independent-generalization result.
+
+
+## 2026-11-23: module causality correction and learned-policy cycle
+
+正式 M60 模块消融共 2304 个条件实例。Warm Restart、Reweighted Audit、CTDR without Radius、CTDR legacy 和 Full CTDR 的 exact set 均为 1.0。Warm/Reweighted/No-radius 平均 98.2057 token，Full CTDR 和 Decision Ranking 平均 99.2448 token，warm token-aware 为 96.6341 token。该结果是负消融，不能把 radius、reweighting 或 decision ranking 宣称为独立算法收益。历史 transcript 复用和新图重加权是主要竞争解释，原有正面叙述已降级。
+
+用户授权扩大 GPU 预算后，启动新的可学习图条件复检策略周期。该策略使用 old/new source 分布、旧 relay 分布、边成本和图变化掩码预测需要复检的 relay 行，并在 GPU 上用三种随机种子训练。开发性跨任务测试的单次复检 exact set 约 0.956，显式 max-uncertainty 约 0.951，优势较小且尚未独立确认。图密度和接口变化测试未稳定超过强基线。pairwise ranking 候选正在运行，结果未开放为论文主张。
+
+本周期将继续以服务质量、独立任务流和同预算强基线为验收条件。当前状态保持 ACTIVE，项目级预算扩展为 400 GPU 小时，失败候选不会终止后续方向。
