@@ -1,0 +1,36 @@
+{
+  "schema": "manifest_mask_replay_audit_v1",
+  "source_manifest": "server_rows1_three_model_manifest.json",
+  "n_units": 1152,
+  "row_metadata_corrupted_to": [
+    0,
+    2,
+    3
+  ],
+  "scorer_graph_manifest_rows": [
+    1
+  ],
+  "aggregate_differences_after_metadata_corruption": {
+    "tcr_guard": {
+      "exact_set": 0.0,
+      "tokens": 0.0,
+      "action_error": 0.0
+    },
+    "tcr_token": {
+      "exact_set": 0.0,
+      "tokens": 0.0,
+      "action_error": 0.0
+    },
+    "cold_token": {
+      "exact_set": 0.0,
+      "tokens": 0.0,
+      "action_error": 0.0
+    },
+    "warm_reweighted": {
+      "exact_set": 0.0,
+      "tokens": 0.0,
+      "action_error": 0.0
+    }
+  },
+  "pass": true
+}
