@@ -10,7 +10,7 @@ updates, stopping rules, and token accounting.
 From a checkout of `fallenplum/MAB2`, run:
 
 ```text
-cd experiments/mechanism_20261122/repro
+cd MAB2_recovered/experiments/mechanism_20261122/repro
 python prepare_inputs.py
 python run_replay.py --manifest fixture_manifest.json
 python -m unittest discover -s tests -v
@@ -50,3 +50,4 @@ The CPU replay does not require model weights. Worker generation, sealed-key
 scoring and any real service latency measurement remain private execution
 steps. Pin the checkout to the release commit recorded in the accompanying
 research audit before reproducing published numbers.
+
