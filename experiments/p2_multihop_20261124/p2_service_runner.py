@@ -102,7 +102,7 @@ class Ledger:
         }
 
 
-def prompts(row: dict[str, Any], source_summary: str, relay_summaries: list[str], fact_set: list[str]) -> dict[str, Any]:
+def prompts(row: dict[str, Any], source_summary: str, relay_summaries: list[str], fact_set: list[str], interfaces: list[str] | None = None) -> dict[str, Any]:
     options = row["options"]
     menu = "\n".join(f"{chr(65 + i)}. {value}" for i, value in enumerate(options))
     grouped = "\n".join(
@@ -115,8 +115,10 @@ def prompts(row: dict[str, Any], source_summary: str, relay_summaries: list[str]
         + "\nReturn a probability over A, B, C, D."
     )
     relay_prompts = []
+    if interfaces is None:
+        interfaces = row.get("new_relay_interface", [""] * 4)
     for index in range(4):
-        interface = row["new_relay_interface"][index]
+        interface = interfaces[index]
         relay_prompts.append(
             row["stem"] + "\nHypotheses:\n" + grouped
             + "\nUpstream S0 distribution: " + source_summary
@@ -161,12 +163,13 @@ def summary(values: np.ndarray) -> str:
 
 def make_cache(row, ledger: Ledger, old: bool) -> dict[str, Any]:
     facts = [row["second_fact"]] * 4 if old else row["second_facts_new"]
-    source_prompt = prompts(row, "pending", ["pending"] * 4, facts)["source"]
+    interfaces = [""] * 4 if old else row.get("new_relay_interface", [""] * 4)
+    source_prompt = prompts(row, "pending", ["pending"] * 4, facts, interfaces)["source"]
     source = ledger.call(source_prompt, "source")
-    relay_prompts = prompts(row, summary(source), ["pending"] * 4, facts)["relay"]
+    relay_prompts = prompts(row, summary(source), ["pending"] * 4, facts, interfaces)["relay"]
     relay = [ledger.call(prompt, "source") for prompt in relay_prompts]
     relay_summaries = [summary(value) for value in relay]
-    terminal_prompts = prompts(row, summary(source), relay_summaries, facts)["terminal"]
+    terminal_prompts = prompts(row, summary(source), relay_summaries, facts, interfaces)["terminal"]
     labels = {
         cell: int(ledger.call(prompt, "label"))
         for cell, prompt in terminal_prompts.items()

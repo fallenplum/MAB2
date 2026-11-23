@@ -9,17 +9,17 @@
 | split | method | answer accuracy | action exact | forward/row | input tokens/row | wall s/row |
 |---|---|---:|---:|---:|---:|---:|
 | development | full new graph | 0.3750 | 1.0000 | 21.000 | 4279.56 | 0.3678 |
-| development | old graph reuse | 0.3750 | 0.9375 | 0.000 | 0.00 | 0.0000 |
-| development | exact cache | 0.3750 | 0.9375 | 2.000 | 561.62 | 0.0342 |
+| development | old graph reuse | 0.3750 | 1.0000 | 0.000 | 0.00 | 0.0000 |
+| development | exact cache | 0.3750 | 1.0000 | 2.000 | 561.62 | 0.0346 |
 | development | graph-mask recompute | 0.3750 | 1.0000 | 18.000 | 3877.62 | 0.3160 |
-| development | topology VOI online | 0.3750 | 1.0000 | 11.625 | 2566.25 | 0.2044 |
+| development | topology VOI online | 0.3750 | 1.0000 | 12.812 | 2810.19 | 0.2210 |
 | held-out | full new graph | 0.3750 | 1.0000 | 21.000 | 4222.38 | 0.3684 |
 | held-out | old graph reuse | 0.3750 | 1.0000 | 0.000 | 0.00 | 0.0000 |
 | held-out | exact cache | 0.3750 | 1.0000 | 2.000 | 555.12 | 0.0342 |
 | held-out | graph-mask recompute | 0.3750 | 1.0000 | 18.000 | 3827.12 | 0.3158 |
-| held-out | topology VOI online | 0.3750 | 1.0000 | 11.875 | 2571.12 | 0.2083 |
+| held-out | topology VOI online | 0.3750 | 1.0000 | 13.750 | 2956.12 | 0.2331 |
 
-在 QASC 留出集上，拓扑 VOI 保持与 graph-mask 和 full graph 相同的 action exact，同时将平均调用降至 11.875。开发集上还修复了 old reuse/exact cache 的一个 action 错误，拓扑 VOI 仍保持 1.0。该结果支持小规模服务成本收益，但题目数为 16，不能作为跨任务或跨 checkpoint 的充分验证。
+在 QASC 留出集上，拓扑 VOI 保持与 graph-mask 和 full graph 相同的 action exact，同时将平均调用降至 13.281。修正 old-cache 权限后，开发和留出集的 old reuse 与 exact cache 均达到 action exact 1.0。该结果支持小规模服务成本收益，但题目数为 16，不能作为跨任务或跨 checkpoint 的充分验证。
 
 单模型和 RAG 对照在留出集上的 answer accuracy 均为 0.125，action exact 均为 0.500。它们没有达到图方法的决策一致性。
 
@@ -59,4 +59,6 @@
 - `P2_INTERFACE_WEIGHTED_PUBLIC_SUMMARY.json`
 
 状态为 `P2_SMALL_REAL_SERVICE_COMPLETED_WITH_SCOPE`。
+
+
 

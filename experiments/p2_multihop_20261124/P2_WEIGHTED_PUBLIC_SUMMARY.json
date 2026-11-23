@@ -25,15 +25,15 @@
           "forward_calls": 21,
           "input_tokens": 4279.5625,
           "output_tokens": 21,
-          "wall_seconds": 0.3534839315107092,
+          "wall_seconds": 0.36233395387534983,
           "cache_hits": 0,
           "retrieval_calls": 0,
           "offline_only": false
         },
         "old_graph_reuse": {
           "answer_accuracy": 0.375,
-          "answer_action_exact": 0.9375,
-          "decision_exact": 0.9375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
           "forward_calls": 0,
           "input_tokens": 0,
           "output_tokens": 0,
@@ -49,7 +49,7 @@
           "forward_calls": 1,
           "input_tokens": 119.875,
           "output_tokens": 1,
-          "wall_seconds": 0.016505011124536395,
+          "wall_seconds": 0.016878217546036467,
           "cache_hits": 0,
           "retrieval_calls": 0,
           "offline_only": false
@@ -61,19 +61,19 @@
           "forward_calls": 1,
           "input_tokens": 123.875,
           "output_tokens": 1,
-          "wall_seconds": 0.016609859565505758,
+          "wall_seconds": 0.01674873399315402,
           "cache_hits": 0,
           "retrieval_calls": 2,
           "offline_only": false
         },
         "exact_cache": {
           "answer_accuracy": 0.375,
-          "answer_action_exact": 0.9375,
-          "decision_exact": 0.9375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
           "forward_calls": 2,
           "input_tokens": 561.625,
           "output_tokens": 2,
-          "wall_seconds": 0.034220117260701954,
+          "wall_seconds": 0.03460099938092753,
           "cache_hits": 19,
           "retrieval_calls": 0,
           "offline_only": false
@@ -85,7 +85,7 @@
           "forward_calls": 18,
           "input_tokens": 3877.625,
           "output_tokens": 18,
-          "wall_seconds": 0.30436237627873197,
+          "wall_seconds": 0.3101215883216355,
           "cache_hits": 3,
           "retrieval_calls": 0,
           "offline_only": false
@@ -94,34 +94,34 @@
           "answer_accuracy": 0.375,
           "answer_action_exact": 1.0,
           "decision_exact": 1.0,
-          "forward_calls": 11.625,
-          "input_tokens": 2566.25,
-          "output_tokens": 11.625,
-          "wall_seconds": 0.1967013967805542,
-          "cache_hits": 9.375,
+          "forward_calls": 12.8125,
+          "input_tokens": 2810.1875,
+          "output_tokens": 12.8125,
+          "wall_seconds": 0.2209873468382284,
+          "cache_hits": 8.1875,
           "retrieval_calls": 0,
           "offline_only": false,
-          "mean_queried_terminal_cells": 9.625,
+          "mean_queried_terminal_cells": 10.8125,
           "threshold": 0.08
         },
         "full_information_voi_upper_bound": {
           "answer_accuracy": 0.375,
           "answer_action_exact": 1.0,
           "decision_exact": 1.0,
-          "forward_calls": 2.0625,
+          "forward_calls": 2,
           "input_tokens": 0,
           "output_tokens": 0,
           "wall_seconds": 0.0,
-          "cache_hits": 18.9375,
+          "cache_hits": 19,
           "retrieval_calls": 0,
           "offline_only": true
         }
       },
       "old_transcript_setup": {
         "forward_calls": 21,
-        "input_tokens": 4300.6875,
+        "input_tokens": 4017.5625,
         "output_tokens": 21,
-        "wall_seconds": 0.41983488769619726
+        "wall_seconds": 0.42347604819224216
       }
     },
     {
@@ -135,7 +135,7 @@
           "forward_calls": 21,
           "input_tokens": 4222.375,
           "output_tokens": 21,
-          "wall_seconds": 0.35452297134906985,
+          "wall_seconds": 0.35497874705470167,
           "cache_hits": 0,
           "retrieval_calls": 0,
           "offline_only": false
@@ -159,7 +159,7 @@
           "forward_calls": 1,
           "input_tokens": 117.1875,
           "output_tokens": 1,
-          "wall_seconds": 0.016510069544892758,
+          "wall_seconds": 0.016530024935491383,
           "cache_hits": 0,
           "retrieval_calls": 0,
           "offline_only": false
@@ -171,7 +171,7 @@
           "forward_calls": 1,
           "input_tokens": 121.1875,
           "output_tokens": 1,
-          "wall_seconds": 0.016536759620066732,
+          "wall_seconds": 0.01650714728748426,
           "cache_hits": 0,
           "retrieval_calls": 2,
           "offline_only": false
@@ -183,7 +183,7 @@
           "forward_calls": 2,
           "input_tokens": 555.125,
           "output_tokens": 2,
-          "wall_seconds": 0.03417684999294579,
+          "wall_seconds": 0.03406102035660297,
           "cache_hits": 19,
           "retrieval_calls": 0,
           "offline_only": false
@@ -195,7 +195,7 @@
           "forward_calls": 18,
           "input_tokens": 3827.125,
           "output_tokens": 18,
-          "wall_seconds": 0.3045584005303681,
+          "wall_seconds": 0.30425343292881735,
           "cache_hits": 3,
           "retrieval_calls": 0,
           "offline_only": false
@@ -204,14 +204,14 @@
           "answer_accuracy": 0.375,
           "answer_action_exact": 1.0,
           "decision_exact": 1.0,
-          "forward_calls": 11.875,
-          "input_tokens": 2571.125,
-          "output_tokens": 11.875,
-          "wall_seconds": 0.2009224947541952,
-          "cache_hits": 9.125,
+          "forward_calls": 13.75,
+          "input_tokens": 2956.125,
+          "output_tokens": 13.75,
+          "wall_seconds": 0.23311997298151255,
+          "cache_hits": 7.25,
           "retrieval_calls": 0,
           "offline_only": false,
-          "mean_queried_terminal_cells": 9.875,
+          "mean_queried_terminal_cells": 11.75,
           "threshold": 0.08
         },
         "full_information_voi_upper_bound": {
@@ -229,24 +229,24 @@
       },
       "old_transcript_setup": {
         "forward_calls": 21,
-        "input_tokens": 4246.5,
+        "input_tokens": 3964.375,
         "output_tokens": 21,
-        "wall_seconds": 0.4153489008313045
+        "wall_seconds": 0.4164089328260161
       }
     }
   ],
   "private_shards": {
     "development": [
-      "P2_wdev_2.json",
-      "P2_wdev_3.json",
-      "P2_wdev_6.json",
-      "P2_wdev_7.json"
+      "P2_fixdev_2.json",
+      "P2_fixdev_3.json",
+      "P2_fixdev_6.json",
+      "P2_fixdev_7.json"
     ],
     "held_out": [
-      "P2_wheld_2.json",
-      "P2_wheld_3.json",
-      "P2_wheld_6.json",
-      "P2_wheld_7.json"
+      "P2_fixheld_2.json",
+      "P2_fixheld_3.json",
+      "P2_fixheld_6.json",
+      "P2_fixheld_7.json"
     ]
   },
   "note": "No question keys, targets or per-row predictions are included. Full-information VOI is offline-only."

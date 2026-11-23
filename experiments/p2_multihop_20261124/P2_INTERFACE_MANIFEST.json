@@ -42,5 +42,6 @@
   "status": "P2_SMALL_REAL_SERVICE_COMPLETED_WITH_SCOPE",
   "result_summary": "P2_INTERFACE_WEIGHTED_PUBLIC_SUMMARY.json",
   "runner": "p2_service_runner.py",
-  "terminal_weight": "P(S0=i) * P(R_i=j) over all terminal cells"
+  "terminal_weight": "P(S0=i) * P(R_i=j) over all terminal cells",
+  "old_cache_permission_fix": "old cache disables new_relay_interface suffixes"
 }

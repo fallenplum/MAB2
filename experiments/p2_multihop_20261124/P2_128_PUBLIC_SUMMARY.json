@@ -1,0 +1,253 @@
+{
+  "schema": "mab2_p2_service_public_v1",
+  "model": "/home/chen/KDBPT/KD/models/Qwen-0.5B",
+  "microbatch": 1,
+  "online_gold_access": false,
+  "methods": [
+    "full_new_graph",
+    "old_graph_reuse",
+    "single_model",
+    "retrieval_augmented_generation",
+    "exact_cache",
+    "graph_mask_recompute",
+    "topology_voi_online",
+    "full_information_voi_upper_bound"
+  ],
+  "splits": [
+    {
+      "split": "development",
+      "n": 128,
+      "methods": {
+        "full_new_graph": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 21,
+          "input_tokens": 4265.9296875,
+          "output_tokens": 21,
+          "wall_seconds": 0.3542484982353926,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "old_graph_reuse": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 0.96875,
+          "decision_exact": 0.96875,
+          "forward_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 21,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "single_model": {
+          "answer_accuracy": 0.1640625,
+          "answer_action_exact": 0.4453125,
+          "decision_exact": 0.4453125,
+          "forward_calls": 1,
+          "input_tokens": 118.703125,
+          "output_tokens": 1,
+          "wall_seconds": 0.01649344989709789,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "retrieval_augmented_generation": {
+          "answer_accuracy": 0.1328125,
+          "answer_action_exact": 0.453125,
+          "decision_exact": 0.453125,
+          "forward_calls": 1,
+          "input_tokens": 122.703125,
+          "output_tokens": 1,
+          "wall_seconds": 0.016524088016012684,
+          "cache_hits": 0,
+          "retrieval_calls": 2,
+          "offline_only": false
+        },
+        "exact_cache": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 0.96875,
+          "decision_exact": 0.96875,
+          "forward_calls": 2,
+          "input_tokens": 559.296875,
+          "output_tokens": 2,
+          "wall_seconds": 0.03415981492435094,
+          "cache_hits": 19,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "graph_mask_recompute": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 18,
+          "input_tokens": 3866.296875,
+          "output_tokens": 18,
+          "wall_seconds": 0.30457643406043644,
+          "cache_hits": 3,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "topology_voi_online": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 13.171875,
+          "input_tokens": 2871.4453125,
+          "output_tokens": 13.171875,
+          "wall_seconds": 0.22315232353139436,
+          "cache_hits": 7.828125,
+          "retrieval_calls": 0,
+          "offline_only": false,
+          "mean_queried_terminal_cells": 11.171875,
+          "threshold": 0.08
+        },
+        "full_information_voi_upper_bound": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 2.03125,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 18.96875,
+          "retrieval_calls": 0,
+          "offline_only": true
+        }
+      },
+      "old_transcript_setup": {
+        "forward_calls": 21,
+        "input_tokens": 4004.9921875,
+        "output_tokens": 21,
+        "wall_seconds": 0.3605397273931885
+      }
+    },
+    {
+      "split": "held_out",
+      "n": 128,
+      "methods": {
+        "full_new_graph": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 21,
+          "input_tokens": 4265.9296875,
+          "output_tokens": 21,
+          "wall_seconds": 0.3542484982353926,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "old_graph_reuse": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 0.96875,
+          "decision_exact": 0.96875,
+          "forward_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 21,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "single_model": {
+          "answer_accuracy": 0.1640625,
+          "answer_action_exact": 0.4453125,
+          "decision_exact": 0.4453125,
+          "forward_calls": 1,
+          "input_tokens": 118.703125,
+          "output_tokens": 1,
+          "wall_seconds": 0.01649344989709789,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "retrieval_augmented_generation": {
+          "answer_accuracy": 0.1328125,
+          "answer_action_exact": 0.453125,
+          "decision_exact": 0.453125,
+          "forward_calls": 1,
+          "input_tokens": 122.703125,
+          "output_tokens": 1,
+          "wall_seconds": 0.016524088016012684,
+          "cache_hits": 0,
+          "retrieval_calls": 2,
+          "offline_only": false
+        },
+        "exact_cache": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 0.96875,
+          "decision_exact": 0.96875,
+          "forward_calls": 2,
+          "input_tokens": 559.296875,
+          "output_tokens": 2,
+          "wall_seconds": 0.03415981492435094,
+          "cache_hits": 19,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "graph_mask_recompute": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 18,
+          "input_tokens": 3866.296875,
+          "output_tokens": 18,
+          "wall_seconds": 0.30457643406043644,
+          "cache_hits": 3,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "topology_voi_online": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 13.171875,
+          "input_tokens": 2871.4453125,
+          "output_tokens": 13.171875,
+          "wall_seconds": 0.22315232353139436,
+          "cache_hits": 7.828125,
+          "retrieval_calls": 0,
+          "offline_only": false,
+          "mean_queried_terminal_cells": 11.171875,
+          "threshold": 0.08
+        },
+        "full_information_voi_upper_bound": {
+          "answer_accuracy": 0.3828125,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 2.03125,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 18.96875,
+          "retrieval_calls": 0,
+          "offline_only": true
+        }
+      },
+      "old_transcript_setup": {
+        "forward_calls": 21,
+        "input_tokens": 4004.9921875,
+        "output_tokens": 21,
+        "wall_seconds": 0.3605397273931885
+      }
+    }
+  ],
+  "private_shards": {
+    "development": [
+      "P2_128_2.json",
+      "P2_128_3.json",
+      "P2_128_6.json",
+      "P2_128_7.json"
+    ],
+    "held_out": [
+      "P2_128_2.json",
+      "P2_128_3.json",
+      "P2_128_6.json",
+      "P2_128_7.json"
+    ]
+  },
+  "note": "No question keys, targets or per-row predictions are included. Full-information VOI is offline-only."
+}
