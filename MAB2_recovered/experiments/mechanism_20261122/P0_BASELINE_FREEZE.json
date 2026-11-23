@@ -1,0 +1,743 @@
+{
+  "schema": "p0_baseline_freeze_v1",
+  "freeze_date": "2026-11-24",
+  "scope": "P0 corrected M60 strong matrix plus pre-existing Pairwise and graph-mask summaries",
+  "cost_contract": {
+    "m60": "post-edit incremental query tokens, common legal-action budget per unit",
+    "pairwise": "pairwise logical token ledger in matched baseline artifacts",
+    "graph_mask": "post-edit logical relay tokens in mask-provenance stress panel",
+    "confidence_intervals": "not computed under project contract"
+  },
+  "m60_strong_matrix": {
+    "artifact": "P0_M60_STRONG_BASELINE_MATRIX_FROZEN_PUBLIC.json",
+    "sha256": "705e4409c7c9650e354bf6d6d0c4a690624a4c8399cf68e18c77d460fd2635b1",
+    "n": 3456,
+    "common_budget_tokens": 1924.9615162037037,
+    "aggregate": {
+      "stale": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9039351851851852,
+        "action_error": 0.04282407407407408,
+        "false_drop": 0.06365740740740741,
+        "false_keep": 0.05758101851851852,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1924.9615162037037
+      },
+      "exact_warm_cache": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.8877314814814815,
+        "action_error": 0.044270833333333336,
+        "false_drop": 0.08940972222222222,
+        "false_keep": 0.04079861111111111,
+        "queries": 0.0,
+        "tokens": 0.0,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1924.9615162037037
+      },
+      "reweighted_old_history": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9166666666666666,
+        "action_error": 0.0390625,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.0546875,
+        "queries": 0.2800925925925926,
+        "tokens": 22.86429398148148,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1902.0972222222222
+      },
+      "ctdr_transport_only": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9166666666666666,
+        "action_error": 0.0390625,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.0546875,
+        "queries": 0.2800925925925926,
+        "tokens": 22.86429398148148,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1902.0972222222222
+      },
+      "ctdr_transport_selective_ranking": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9166666666666666,
+        "action_error": 0.0390625,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.0546875,
+        "queries": 0.30844907407407407,
+        "tokens": 24.613136574074073,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1900.3483796296296
+      },
+      "full_ctdr": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 1.0,
+        "action_error": 0.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 3.0986689814814814,
+        "tokens": 230.90653935185185,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1694.054976851852
+      },
+      "max_uncertainty": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9166666666666666,
+        "action_error": 0.0390625,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.0546875,
+        "queries": 0.2800925925925926,
+        "tokens": 22.86429398148148,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1902.0972222222222
+      },
+      "periodic": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9166666666666666,
+        "action_error": 0.0390625,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.0546875,
+        "queries": 0.49074074074074076,
+        "tokens": 39.80700231481482,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1885.154513888889
+      },
+      "random": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9166666666666666,
+        "action_error": 0.0390625,
+        "false_drop": 0.052083333333333336,
+        "false_keep": 0.0546875,
+        "queries": 0.47164351851851855,
+        "tokens": 37.34375,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1887.6177662037037
+      },
+      "full_restart": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 1.0,
+        "action_error": 0.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 11.369791666666666,
+        "tokens": 878.7806712962963,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1046.1808449074074
+      },
+      "oracle_row_refresh": {
+        "n": 3456,
+        "completion_rate": 1.0,
+        "incomplete": 0,
+        "exact_set": 0.9068287037037037,
+        "action_error": 0.0390625,
+        "false_drop": 0.0931712962962963,
+        "false_keep": 0.0,
+        "queries": 0.5486111111111112,
+        "tokens": 42.70543981481482,
+        "budget_tokens": 1924.9615162037037,
+        "unused_budget_tokens": 1882.256076388889
+      }
+    },
+    "protocol": {
+      "same_old_transcript": true,
+      "same_post_edit_source": true,
+      "same_token_prices": true,
+      "same_stopping_rule": "Audit.decision exact set, with method-specific legal action ordering",
+      "budget_definition": "sum of all legal post-edit relay row and conditional-cell prices per unit",
+      "cost_scope": "post_edit_incremental_query_tokens_only",
+      "full_ctdr_mask_source": "graph_manifest.edge_to_relay_descendants, never sealed labels or row-level metadata",
+      "oracle_definition": "restricted row-refresh optimum over changed relay rows",
+      "oracle_lower_bound_definition": "zero if exact warm cache is exact, otherwise cheapest changed-row query",
+      "oracle_selection": "hindsight target labels select the offline plan only",
+      "oracle_prediction": "plan actions are independently replayed before scoring",
+      "oracle_scope": "restricted changed-row actions, not a global action-space optimum"
+    }
+  },
+  "pairwise": {
+    "artifact": "PAIRWISE_GAP_CERTIFICATE_AGGREGATE.json",
+    "sha256": "5bab00b6a57da8c3e1147379a62c0fb6def8b3a4d603572af8476565b0dfc929",
+    "schema": "pairwise_gap_certificate_aggregate_v1",
+    "selection": "per-cell q is selected on residues 0-3 and the test residue is 4",
+    "aggregate": {
+      "all": {
+        "cells": 27,
+        "action_exact": 1.0,
+        "pairwise_tokens": 112.2670615750326,
+        "fair_tokens": 178.34393451422437,
+        "token_reduction": 0.4019160304751931,
+        "weighted_token_reduction": 0.37050249630957655,
+        "fair_action_exact": 1.0
+      },
+      "model=Llama-3": {
+        "cells": 9,
+        "action_exact": 1.0,
+        "pairwise_tokens": 89.80312571888659,
+        "fair_tokens": 171.31924315619966,
+        "token_reduction": 0.49836497994066925,
+        "weighted_token_reduction": 0.4758141346853316,
+        "fair_action_exact": 1.0
+      },
+      "model=Qwen-0.5B": {
+        "cells": 9,
+        "action_exact": 1.0,
+        "pairwise_tokens": 160.69379744651482,
+        "fair_tokens": 215.68961352657004,
+        "token_reduction": 0.27386256528182346,
+        "weighted_token_reduction": 0.2549766545586605,
+        "fair_action_exact": 1.0
+      },
+      "model=Qwen-14B": {
+        "cells": 9,
+        "action_exact": 1.0,
+        "pairwise_tokens": 86.30426155969634,
+        "fair_tokens": 148.02294685990339,
+        "token_reduction": 0.4335205462030869,
+        "weighted_token_reduction": 0.4169534968022277,
+        "fair_action_exact": 1.0
+      },
+      "density=1": {
+        "cells": 9,
+        "action_exact": 1.0,
+        "pairwise_tokens": 45.53502415458937,
+        "fair_tokens": 77.2902576489533,
+        "token_reduction": 0.41611704056751714,
+        "weighted_token_reduction": 0.41085687200829213,
+        "fair_action_exact": 1.0
+      },
+      "density=2": {
+        "cells": 9,
+        "action_exact": 1.0,
+        "pairwise_tokens": 89.00291867954911,
+        "fair_tokens": 154.5805152979066,
+        "token_reduction": 0.4393639908036718,
+        "weighted_token_reduction": 0.4242293829333973,
+        "fair_action_exact": 1.0
+      },
+      "density=4": {
+        "cells": 9,
+        "action_exact": 1.0,
+        "pairwise_tokens": 202.26324189095928,
+        "fair_tokens": 303.1610305958132,
+        "token_reduction": 0.3502670600543907,
+        "weighted_token_reduction": 0.33281912423425897,
+        "fair_action_exact": 1.0
+      }
+    },
+    "records": [
+      {
+        "cell": "dedup_llama3_commonsense_rows1_pairwise",
+        "model": "Llama-3",
+        "task": "commonsense",
+        "density": 1,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 42.6875,
+        "pairwise_queries": 0.625,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 71.75,
+        "fair_queries": 1.0,
+        "token_reduction": 0.4050522648083623
+      },
+      {
+        "cell": "dedup_llama3_commonsense_rows2_pairwise",
+        "model": "Llama-3",
+        "task": "commonsense",
+        "density": 2,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 68.75,
+        "pairwise_queries": 1.0,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 143.5,
+        "fair_queries": 2.0,
+        "token_reduction": 0.5209059233449478
+      },
+      {
+        "cell": "dedup_llama3_commonsense_rows4_pairwise",
+        "model": "Llama-3",
+        "task": "commonsense",
+        "density": 4,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 180.625,
+        "pairwise_queries": 2.625,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 281.0,
+        "fair_queries": 4.0,
+        "token_reduction": 0.3572064056939501
+      },
+      {
+        "cell": "dedup_llama3_qasc_rows1_pairwise",
+        "model": "Llama-3",
+        "task": "qasc",
+        "density": 1,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 28.238095238095237,
+        "pairwise_queries": 0.3333333333333333,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 80.52380952380952,
+        "fair_queries": 1.0,
+        "token_reduction": 0.6493199290360734
+      },
+      {
+        "cell": "dedup_llama3_qasc_rows2_pairwise",
+        "model": "Llama-3",
+        "task": "qasc",
+        "density": 2,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 52.38095238095238,
+        "pairwise_queries": 0.6190476190476191,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 161.04761904761904,
+        "fair_queries": 2.0,
+        "token_reduction": 0.6747486694263749
+      },
+      {
+        "cell": "dedup_llama3_qasc_rows4_pairwise",
+        "model": "Llama-3",
+        "task": "qasc",
+        "density": 4,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 173.28571428571428,
+        "pairwise_queries": 2.1904761904761907,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 316.0952380952381,
+        "fair_queries": 4.0,
+        "token_reduction": 0.4517927086471829
+      },
+      {
+        "cell": "dedup_llama3_sciq_rows1_pairwise",
+        "model": "Llama-3",
+        "task": "sciq",
+        "density": 1,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 39.869565217391305,
+        "pairwise_queries": 0.5652173913043478,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 70.56521739130434,
+        "fair_queries": 1.0,
+        "token_reduction": 0.4349969192852742
+      },
+      {
+        "cell": "dedup_llama3_sciq_rows2_pairwise",
+        "model": "Llama-3",
+        "task": "sciq",
+        "density": 2,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 58.78260869565217,
+        "pairwise_queries": 0.8260869565217391,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 141.1304347826087,
+        "fair_queries": 2.0,
+        "token_reduction": 0.5834873690696241
+      },
+      {
+        "cell": "dedup_llama3_sciq_rows4_pairwise",
+        "model": "Llama-3",
+        "task": "sciq",
+        "density": 4,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 163.6086956521739,
+        "pairwise_queries": 2.391304347826087,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 276.2608695652174,
+        "fair_queries": 4.0,
+        "token_reduction": 0.40777463015423354
+      },
+      {
+        "cell": "dedup_qwen05_commonsense_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "commonsense",
+        "density": 1,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 74.0625,
+        "pairwise_queries": 0.8125,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 90.75,
+        "fair_queries": 1.0,
+        "token_reduction": 0.18388429752066116
+      },
+      {
+        "cell": "dedup_qwen05_commonsense_rows2_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "commonsense",
+        "density": 2,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 164.8125,
+        "pairwise_queries": 1.8125,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 181.5,
+        "fair_queries": 2.0,
+        "token_reduction": 0.09194214876033058
+      },
+      {
+        "cell": "dedup_qwen05_commonsense_rows4_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "commonsense",
+        "density": 4,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 319.4375,
+        "pairwise_queries": 3.5625,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 357.0,
+        "fair_queries": 4.0,
+        "token_reduction": 0.10521708683473385
+      },
+      {
+        "cell": "dedup_qwen05_qasc_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "qasc",
+        "density": 1,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 38.38095238095238,
+        "pairwise_queries": 0.38095238095238093,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 99.57142857142857,
+        "fair_queries": 1.0,
+        "token_reduction": 0.6145384983261597
+      },
+      {
+        "cell": "dedup_qwen05_qasc_rows2_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "qasc",
+        "density": 2,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 86.0,
+        "pairwise_queries": 0.8571428571428571,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 199.14285714285714,
+        "fair_queries": 2.0,
+        "token_reduction": 0.5681492109038737
+      },
+      {
+        "cell": "dedup_qwen05_qasc_rows4_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "qasc",
+        "density": 4,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 234.33333333333334,
+        "pairwise_queries": 2.380952380952381,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 392.2857142857143,
+        "fair_queries": 4.0,
+        "token_reduction": 0.40264627336732217
+      },
+      {
+        "cell": "dedup_qwen05_sciq_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "sciq",
+        "density": 1,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 69.82608695652173,
+        "pairwise_queries": 0.782608695652174,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 89.56521739130434,
+        "fair_queries": 1.0,
+        "token_reduction": 0.2203883495145631
+      },
+      {
+        "cell": "dedup_qwen05_sciq_rows2_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "sciq",
+        "density": 2,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 152.30434782608697,
+        "pairwise_queries": 1.6956521739130435,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 179.1304347826087,
+        "fair_queries": 2.0,
+        "token_reduction": 0.14975728155339796
+      },
+      {
+        "cell": "dedup_qwen05_sciq_rows4_pairwise",
+        "model": "Qwen-0.5B",
+        "task": "sciq",
+        "density": 4,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 307.0869565217391,
+        "pairwise_queries": 3.4782608695652173,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 352.2608695652174,
+        "fair_queries": 4.0,
+        "token_reduction": 0.12823994075536904
+      },
+      {
+        "cell": "dedup_qwen14_commonsense_pairwise",
+        "model": "Qwen-14B",
+        "task": "commonsense",
+        "density": 1,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 21.5,
+        "pairwise_queries": 0.3125,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 61.75,
+        "fair_queries": 1.0,
+        "token_reduction": 0.6518218623481782
+      },
+      {
+        "cell": "dedup_qwen14_commonsense_rows2_pairwise",
+        "model": "Qwen-14B",
+        "task": "commonsense",
+        "density": 2,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 22.0,
+        "pairwise_queries": 0.3125,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 123.5,
+        "fair_queries": 2.0,
+        "token_reduction": 0.8218623481781376
+      },
+      {
+        "cell": "dedup_qwen14_commonsense_rows4_pairwise",
+        "model": "Qwen-14B",
+        "task": "commonsense",
+        "density": 4,
+        "test_n": 16,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 56.375,
+        "pairwise_queries": 0.8125,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 241.0,
+        "fair_queries": 4.0,
+        "token_reduction": 0.7660788381742738
+      },
+      {
+        "cell": "dedup_qwen14_qasc_pairwise",
+        "model": "Qwen-14B",
+        "task": "qasc",
+        "density": 1,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 67.38095238095238,
+        "pairwise_queries": 0.9523809523809523,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 70.57142857142857,
+        "fair_queries": 1.0,
+        "token_reduction": 0.045209176788124195
+      },
+      {
+        "cell": "dedup_qwen14_qasc_rows2_pairwise",
+        "model": "Qwen-14B",
+        "task": "qasc",
+        "density": 2,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 137.95238095238096,
+        "pairwise_queries": 1.9523809523809523,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 141.14285714285714,
+        "fair_queries": 2.0,
+        "token_reduction": 0.022604588394061986
+      },
+      {
+        "cell": "dedup_qwen14_qasc_rows4_pairwise",
+        "model": "Qwen-14B",
+        "task": "qasc",
+        "density": 4,
+        "test_n": 21,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 270.0952380952381,
+        "pairwise_queries": 3.9047619047619047,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 276.2857142857143,
+        "fair_queries": 4.0,
+        "token_reduction": 0.022406066873492003
+      },
+      {
+        "cell": "dedup_qwen14_sciq_pairwise",
+        "model": "Qwen-14B",
+        "task": "sciq",
+        "density": 1,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 27.869565217391305,
+        "pairwise_queries": 0.43478260869565216,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 60.56521739130435,
+        "fair_queries": 1.0,
+        "token_reduction": 0.5398420674802584
+      },
+      {
+        "cell": "dedup_qwen14_sciq_rows2_pairwise",
+        "model": "Qwen-14B",
+        "task": "sciq",
+        "density": 2,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 58.04347826086956,
+        "pairwise_queries": 0.9130434782608695,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 121.1304347826087,
+        "fair_queries": 2.0,
+        "token_reduction": 0.5208183776022972
+      },
+      {
+        "cell": "dedup_qwen14_sciq_rows4_pairwise",
+        "model": "Qwen-14B",
+        "task": "sciq",
+        "density": 4,
+        "test_n": 23,
+        "pairwise_action_exact": 1.0,
+        "pairwise_tokens": 115.52173913043478,
+        "pairwise_queries": 1.8695652173913044,
+        "fair_action_exact": 1.0,
+        "fair_tokens": 236.2608695652174,
+        "fair_queries": 4.0,
+        "token_reduction": 0.5110415899889584
+      }
+    ]
+  },
+  "graph_mask": {
+    "artifact": "M60_MASK_PROVENANCE_ATTRIBUTION.json",
+    "sha256": "e7367921554243962246abd89e5ea0a4fb716111d5cc69468dd722e282ab6543",
+    "schema": "m60_mask_provenance_attribution_v1",
+    "panel": "same_input_interface_drift_stress_control",
+    "question_model_units_per_density": 1152,
+    "modes": {
+      "graph_manifest": {
+        "description": "Use the frozen edited-edge to relay-descendant union.",
+        "rows1": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 170.20920138888889,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 171.05034722222223
+        },
+        "rows2": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 307.58506944444446,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 307.7890625
+        },
+        "rows4": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 587.8151041666666,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 586.9418402777778
+        }
+      },
+      "fingerprint": {
+        "description": "Infer affected rows from old/new relay token-sequence fingerprints.",
+        "rows1": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 170.20920138888889,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 171.05034722222223
+        },
+        "rows2": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 307.58506944444446,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 307.7890625
+        },
+        "rows4": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 587.8151041666666,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 586.9418402777778
+        }
+      },
+      "row_metadata": {
+        "description": "Use the worker-declared changed_rows field.",
+        "rows1": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 170.20920138888889,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 171.05034722222223
+        },
+        "rows2": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 307.58506944444446,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 307.7890625
+        },
+        "rows4": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 587.8151041666666,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 586.9418402777778
+        }
+      },
+      "all_rows_negative_control": {
+        "description": "Conservatively refresh every relay row, regardless of the graph mask.",
+        "rows1": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 487.0234375,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 487.68836805555554
+        },
+        "rows2": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 517.0364583333333,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 516.9565972222222
+        },
+        "rows4": {
+          "tcr_guard_exact_set": 1.0,
+          "tcr_guard_tokens": 587.8151041666666,
+          "tcr_token_exact_set": 1.0,
+          "tcr_token_tokens": 586.9418402777778
+        }
+      }
+    },
+    "interpretation": {
+      "provenance_equivalence": "Graph-manifest, worker row metadata and token fingerprints produce identical Full CTDR decisions and costs on all three densities in this stress panel.",
+      "mask_value": "Refreshing all rows preserves exact recovery but costs 487.0234/517.0365/587.8151 tokens for one/two/four-row edits. The graph mask therefore removes 65.1%/40.5%/0.0% of Full CTDR guard tokens relative to the all-row control in this finite panel.",
+      "scope": "This isolates mask provenance and finite-panel cost attribution. It does not establish service-level answer quality or independent generalization."
+    }
+  },
+  "freeze_rules": [
+    "Do not pool corrected M60 strong-matrix values with the legacy 23-field module-ablation schema.",
+    "Do not use sealed targets, question keys or action traces as online controller inputs.",
+    "Oracle row refresh remains hindsight-selected and restricted to changed-row actions.",
+    "Future experiments must write a new artifact and declare any changed cost or action contract."
+  ],
+  "entrypoints": {
+    "m60_strong_baseline_matrix.py": "91bc3e6a54a7ceb81fa1a51d2f8370e7245655e0ab4d46eed5db1d721f2eec0e",
+    "conditional_real_score.py": "4d606a9a6be7865044348d7acd3483df8594a06695560b2ecca9a9888c93b9f1",
+    "ctdr.py": "625749390376d5610af494974481caa9dd4ace827db590e445779dff11147704",
+    "blind_scheduler.py": "13e457a1dfd746ed16e48b1864f7078211c9cecea3ddad548db21cdc1dcefe84",
+    "test_p0_permissions_oracle.py": "4f771b65073c8012fe675fe32fbabbaede50f1260a611976ec7366ddeb0cf641",
+    "pairwise_gap_baselines.py": "c8cabbdf118ef11698b4dd7e81dac44223f3957dffae66b5a9bd7fa8fd732911",
+    "pairwise_gap_certificate.py": "279e5fd7fc7cd66baa3284f0ca81b7eced55e2667b50e2b4bd11c6296ea726a9",
+    "pairwise_gap_global_selection.py": "de389c0590fbc85801127b7a37742e0668ee123bda944effbcb9a5c4b8aeb639",
+    "score_interface_semantic.py": "9344e8c91564acc3845c408cb640b60db5c8c70e94a0e16251423dd2c25e29c8",
+    "p0_5_6_audit.py": "0d1c33e949148c3891cd2829c18c36aafc67cc81099d5d56ba3a45715aeadd7c"
+  }
+}

@@ -94,8 +94,22 @@ def oracle_row_refresh(new_source, base, new_relay, labels, history,
     """
     changed = tuple(sorted(set(int(i) for i in changed_rows)))
     row_prices = {i: int(tokens[7 + i]) for i in range(4)}
-    warm_pred, _, warm_completed = exact_warm_cache(new_source, base, labels, history)
-    lower_bound = 0 if warm_completed and warm_pred == target else min(row_prices[i] for i in changed)
+    # ``exact_warm_cache`` returns the public controller pair
+    # ``(prediction, actions)``.  It does not expose a third completion flag,
+    # so completion must be derived from the prediction itself.  Unpacking a
+    # nonexistent third value made every full-matrix run fail before the
+    # oracle comparison was reached.
+    warm_pred, _ = exact_warm_cache(new_source, base, labels, history)
+    warm_completed = warm_pred is not None
+    if warm_completed and warm_pred == target:
+        lower_bound = 0
+    elif changed:
+        lower_bound = min(row_prices[i] for i in changed)
+    else:
+        # With no declared graph edit there is no legal changed-row action to
+        # buy.  Keep the lower bound defined at zero instead of calling
+        # ``min`` on an empty set.
+        lower_bound = 0
     best = None
     best_rows: tuple[int, ...] = ()
     for size in range(len(changed) + 1):
@@ -118,8 +132,12 @@ def oracle_row_refresh(new_source, base, new_relay, labels, history,
     if best is None:
         # The restricted oracle cannot certify the target without conditional
         # cell actions.  Full restart remains a finite feasible upper bound.
-        best = int(sum(int(tokens[7 + i]) for i in range(4)))
-        best_rows = tuple(changed)
+        if changed:
+            best = int(sum(int(tokens[7 + i]) for i in changed))
+            best_rows = tuple(changed)
+        else:
+            best = 0
+            best_rows = ()
     return best_rows, int(best), int(lower_bound)
 
 

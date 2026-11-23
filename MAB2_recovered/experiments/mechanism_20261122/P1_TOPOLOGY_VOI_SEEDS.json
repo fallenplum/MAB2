@@ -1,0 +1,231 @@
+{
+  "schema": "controlled_dag_topology_voi_seed_sweep_v1",
+  "n_cases_per_seed": 1000,
+  "seeds": [
+    {
+      "seed": 20261124,
+      "summary": {
+        "exact_cache": {
+          "n": 1000,
+          "action_error": 0.041,
+          "mean_tokens": 0.0,
+          "mean_queries": 0.0,
+          "exact_action": 0.959,
+          "certificate_counts": {
+            "reuse": 1000
+          }
+        },
+        "descendant_recompute": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 133.404,
+          "mean_queries": 11.1,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "descendant_mask": 1000
+          }
+        },
+        "pairwise": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 68.466,
+          "mean_queries": 5.995,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "pairwise": 1000
+          }
+        },
+        "generic_adaptive": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 125.672,
+          "mean_queries": 11.138,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "generic_adaptive": 1000
+          }
+        },
+        "topology_voi": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 68.049,
+          "mean_queries": 5.941,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "topology_voi": 1000
+          }
+        },
+        "full_recompute": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 179.935,
+          "mean_queries": 15.0,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "full": 1000
+          }
+        },
+        "offline_full_info": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 0.0,
+          "mean_queries": 0.0,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "offline_oracle": 1000
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261125,
+      "summary": {
+        "exact_cache": {
+          "n": 1000,
+          "action_error": 0.042,
+          "mean_tokens": 0.0,
+          "mean_queries": 0.0,
+          "exact_action": 0.958,
+          "certificate_counts": {
+            "reuse": 1000
+          }
+        },
+        "descendant_recompute": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 131.095,
+          "mean_queries": 10.943,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "descendant_mask": 1000
+          }
+        },
+        "pairwise": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 66.79,
+          "mean_queries": 5.846,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "pairwise": 1000
+          }
+        },
+        "generic_adaptive": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 124.242,
+          "mean_queries": 11.071,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "generic_adaptive": 1000
+          }
+        },
+        "topology_voi": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 66.204,
+          "mean_queries": 5.793,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "topology_voi": 1000
+          }
+        },
+        "full_recompute": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 179.477,
+          "mean_queries": 15.0,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "full": 1000
+          }
+        },
+        "offline_full_info": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 0.0,
+          "mean_queries": 0.0,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "offline_oracle": 1000
+          }
+        }
+      }
+    },
+    {
+      "seed": 20261126,
+      "summary": {
+        "exact_cache": {
+          "n": 1000,
+          "action_error": 0.047,
+          "mean_tokens": 0.0,
+          "mean_queries": 0.0,
+          "exact_action": 0.953,
+          "certificate_counts": {
+            "reuse": 1000
+          }
+        },
+        "descendant_recompute": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 132.926,
+          "mean_queries": 11.1,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "descendant_mask": 1000
+          }
+        },
+        "pairwise": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 67.364,
+          "mean_queries": 5.929,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "pairwise": 1000
+          }
+        },
+        "generic_adaptive": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 123.945,
+          "mean_queries": 11.044,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "generic_adaptive": 1000
+          }
+        },
+        "topology_voi": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 67.029,
+          "mean_queries": 5.888,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "topology_voi": 1000
+          }
+        },
+        "full_recompute": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 179.406,
+          "mean_queries": 15.0,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "full": 1000
+          }
+        },
+        "offline_full_info": {
+          "n": 1000,
+          "action_error": 0.0,
+          "mean_tokens": 0.0,
+          "mean_queries": 0.0,
+          "exact_action": 1.0,
+          "certificate_counts": {
+            "offline_oracle": 1000
+          }
+        }
+      }
+    }
+  ]
+}

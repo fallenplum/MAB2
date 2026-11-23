@@ -1,0 +1,105 @@
+{
+  "schema": "controlled_dag_topology_voi_v1",
+  "seed": 20261124,
+  "n_cases": 5000,
+  "n_nodes": 15,
+  "n_actions": 3,
+  "methods": [
+    "exact_cache",
+    "descendant_recompute",
+    "pairwise",
+    "generic_adaptive",
+    "topology_voi",
+    "full_recompute",
+    "offline_full_info"
+  ],
+  "summary": {
+    "exact_cache": {
+      "n": 5000,
+      "action_error": 0.0462,
+      "mean_tokens": 0.0,
+      "mean_queries": 0.0,
+      "exact_action": 0.9538,
+      "certificate_counts": {
+        "reuse": 5000
+      }
+    },
+    "descendant_recompute": {
+      "n": 5000,
+      "action_error": 0.0,
+      "mean_tokens": 132.0916,
+      "mean_queries": 11.032,
+      "exact_action": 1.0,
+      "certificate_counts": {
+        "descendant_mask": 5000
+      }
+    },
+    "pairwise": {
+      "n": 5000,
+      "action_error": 0.0,
+      "mean_tokens": 66.5634,
+      "mean_queries": 5.8642,
+      "exact_action": 1.0,
+      "certificate_counts": {
+        "pairwise": 5000
+      }
+    },
+    "generic_adaptive": {
+      "n": 5000,
+      "action_error": 0.0,
+      "mean_tokens": 124.4434,
+      "mean_queries": 11.0596,
+      "exact_action": 1.0,
+      "certificate_counts": {
+        "generic_adaptive": 5000
+      }
+    },
+    "topology_voi": {
+      "n": 5000,
+      "action_error": 0.0,
+      "mean_tokens": 66.0002,
+      "mean_queries": 5.8026,
+      "exact_action": 1.0,
+      "certificate_counts": {
+        "topology_voi": 5000
+      }
+    },
+    "full_recompute": {
+      "n": 5000,
+      "action_error": 0.0,
+      "mean_tokens": 179.6272,
+      "mean_queries": 15.0,
+      "exact_action": 1.0,
+      "certificate_counts": {
+        "full": 5000
+      }
+    },
+    "offline_full_info": {
+      "n": 5000,
+      "action_error": 0.0,
+      "mean_tokens": 0.0,
+      "mean_queries": 0.0,
+      "exact_action": 1.0,
+      "certificate_counts": {
+        "offline_oracle": 5000
+      }
+    }
+  },
+  "affected_size": {
+    "mean": 11.032,
+    "min": 1,
+    "max": 13
+  },
+  "graph_protocol": {
+    "topology": "four-level DAG with explicit parent-to-child dependencies",
+    "edit": "one source node per case",
+    "affected_rows": "edit node plus all reachable descendants",
+    "decision": "argmax of three weighted action scores",
+    "risk": "post-edit action error against generated q_new",
+    "cost": "sum of queried node token prices",
+    "pairwise_baseline": "existing worst-case action-gap-per-cost ranking over the affected mask",
+    "topology_voi": "same affected mask with dynamic current-action local impact per cost",
+    "offline_oracle": "offline_full_info reports the generated upper bound and is not an online policy"
+  },
+  "scope": "CPU synthetic mechanism diagnostic; no language-model calls or sealed task labels."
+}

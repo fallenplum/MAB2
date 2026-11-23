@@ -1,0 +1,43 @@
+{
+  "schema": "mab2_p2_multihop_manifest_v1",
+  "input_source": "MAB2_recovered\\qasc_rows2_INPUT.json",
+  "input_rows": 32,
+  "selection": "sha256(key) ascending, first 32 eligible QASC rows",
+  "split": {
+    "development": 16,
+    "held_out": 16
+  },
+  "model_path_server": "/home/chen/KDBPT/KD/models/Qwen-0.5B",
+  "gold_path_private": "MAB2_recovered/interface_drift_rows1/qasc/SEALED.json",
+  "gold_in_public_input": false,
+  "dag": "S0 -> R0 -> {R1,R2,R3} -> T, with direct S0 edges retained",
+  "methods": [
+    "full_new_graph",
+    "old_graph_reuse",
+    "single_model",
+    "retrieval_augmented_generation",
+    "exact_cache",
+    "graph_mask_recompute",
+    "topology_voi_online",
+    "full_information_voi_upper_bound"
+  ],
+  "online_information_rule": "methods may read old transcript, source edit and public graph manifest only; sealed labels are scoring-only",
+  "upper_bound_rule": "full_information_voi_upper_bound is offline analysis and cannot be reported as an online method",
+  "cost_fields": [
+    "forward_calls",
+    "input_tokens",
+    "output_tokens",
+    "wall_seconds",
+    "cache_hits",
+    "retrieval_calls"
+  ],
+  "quality_fields": [
+    "answer_accuracy",
+    "answer_action_exact",
+    "decision_exact",
+    "false_drop",
+    "false_keep",
+    "recovery_rate"
+  ],
+  "status": "prepared_only_pending_P1_gain_gate"
+}
