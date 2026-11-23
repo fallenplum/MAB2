@@ -1,5 +1,832 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/PAIRWISE_GAP_GLOBAL_ …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\PAIRWISE_GAP_GLOBAL_SELECTION.json' because it does not exist.
+{
+  "schema": "pairwise_gap_global_selection_v1",
+  "pooled": {
+    "selection": {
+      "q": 0.9,
+      "action": 1.0,
+      "tokens": 118.42779769016327,
+      "candidates": [
+        {
+          "q": 0.5,
+          "action": 0.997610513739546,
+          "tokens": 104.14242731979292
+        },
+        {
+          "q": 0.75,
+          "action": 0.997610513739546,
+          "tokens": 112.6448884906412
+        },
+        {
+          "q": 0.9,
+          "action": 1.0,
+          "tokens": 118.42779769016327
+        },
+        {
+          "q": 0.95,
+          "action": 1.0,
+          "tokens": 121.48205296694545
+        },
+        {
+          "q": 1.0,
+          "action": 1.0,
+          "tokens": 128.16306053365193
+        }
+      ]
+    },
+    "test": [
+      {
+        "model": "llama3",
+        "task": "commonsense",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 47.875
+      },
+      {
+        "model": "llama3",
+        "task": "commonsense",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 82.3125
+      },
+      {
+        "model": "llama3",
+        "task": "commonsense",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 193.9375
+      },
+      {
+        "model": "llama3",
+        "task": "qasc",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 39.142857142857146
+      },
+      {
+        "model": "llama3",
+        "task": "qasc",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 67.0
+      },
+      {
+        "model": "llama3",
+        "task": "qasc",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 173.28571428571428
+      },
+      {
+        "model": "llama3",
+        "task": "sciq",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 51.52173913043478
+      },
+      {
+        "model": "llama3",
+        "task": "sciq",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 85.26086956521739
+      },
+      {
+        "model": "llama3",
+        "task": "sciq",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 195.69565217391303
+      },
+      {
+        "model": "qwen05",
+        "task": "commonsense",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 80.3125
+      },
+      {
+        "model": "qwen05",
+        "task": "commonsense",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 171.0625
+      },
+      {
+        "model": "qwen05",
+        "task": "commonsense",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 335.875
+      },
+      {
+        "model": "qwen05",
+        "task": "qasc",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 43.38095238095238
+      },
+      {
+        "model": "qwen05",
+        "task": "qasc",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 115.47619047619048
+      },
+      {
+        "model": "qwen05",
+        "task": "qasc",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 294.0952380952381
+      },
+      {
+        "model": "qwen05",
+        "task": "sciq",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 81.91304347826087
+      },
+      {
+        "model": "qwen05",
+        "task": "sciq",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 167.8695652173913
+      },
+      {
+        "model": "qwen05",
+        "task": "sciq",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 334.30434782608694
+      },
+      {
+        "model": "qwen14",
+        "task": "commonsense",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 21.5
+      },
+      {
+        "model": "qwen14",
+        "task": "commonsense",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 31.4375
+      },
+      {
+        "model": "qwen14",
+        "task": "commonsense",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 61.5
+      },
+      {
+        "model": "qwen14",
+        "task": "qasc",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 70.57142857142857
+      },
+      {
+        "model": "qwen14",
+        "task": "qasc",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 141.14285714285714
+      },
+      {
+        "model": "qwen14",
+        "task": "qasc",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 273.2857142857143
+      },
+      {
+        "model": "qwen14",
+        "task": "sciq",
+        "density": 1,
+        "action": 1.0,
+        "tokens": 30.17391304347826
+      },
+      {
+        "model": "qwen14",
+        "task": "sciq",
+        "density": 2,
+        "action": 1.0,
+        "tokens": 60.34782608695652
+      },
+      {
+        "model": "qwen14",
+        "task": "sciq",
+        "density": 4,
+        "action": 1.0,
+        "tokens": 117.82608695652173
+      }
+    ]
+  },
+  "leave_one_task_out": [
+    {
+      "held_out": "commonsense",
+      "selection": {
+        "q": 0.9,
+        "action": 1.0,
+        "tokens": 121.28614097968936,
+        "candidates": [
+          {
+            "q": 0.5,
+            "action": 0.9964157706093191,
+            "tokens": 106.64030764635604
+          },
+          {
+            "q": 0.75,
+            "action": 0.9964157706093191,
+            "tokens": 115.01844384707289
+          },
+          {
+            "q": 0.9,
+            "action": 1.0,
+            "tokens": 121.28614097968936
+          },
+          {
+            "q": 0.95,
+            "action": 1.0,
+            "tokens": 124.22752389486261
+          },
+          {
+            "q": 1.0,
+            "action": 1.0,
+            "tokens": 131.9534796893668
+          }
+        ]
+      },
+      "test": [
+        {
+          "model": "llama3",
+          "task": "commonsense",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 47.875
+        },
+        {
+          "model": "llama3",
+          "task": "commonsense",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 82.3125
+        },
+        {
+          "model": "llama3",
+          "task": "commonsense",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 193.9375
+        },
+        {
+          "model": "qwen05",
+          "task": "commonsense",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 80.3125
+        },
+        {
+          "model": "qwen05",
+          "task": "commonsense",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 171.0625
+        },
+        {
+          "model": "qwen05",
+          "task": "commonsense",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 335.875
+        },
+        {
+          "model": "qwen14",
+          "task": "commonsense",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 21.5
+        },
+        {
+          "model": "qwen14",
+          "task": "commonsense",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 31.4375
+        },
+        {
+          "model": "qwen14",
+          "task": "commonsense",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 61.5
+        }
+      ]
+    },
+    {
+      "held_out": "qasc",
+      "selection": {
+        "q": 0.5,
+        "action": 1.0,
+        "tokens": 99.24231481481482,
+        "candidates": [
+          {
+            "q": 0.5,
+            "action": 1.0,
+            "tokens": 99.24231481481482
+          },
+          {
+            "q": 0.75,
+            "action": 1.0,
+            "tokens": 107.61787037037037
+          },
+          {
+            "q": 0.9,
+            "action": 1.0,
+            "tokens": 112.22592592592592
+          },
+          {
+            "q": 0.95,
+            "action": 1.0,
+            "tokens": 115.42379629629629
+          },
+          {
+            "q": 1.0,
+            "action": 1.0,
+            "tokens": 120.25175925925926
+          }
+        ]
+      },
+      "test": [
+        {
+          "model": "llama3",
+          "task": "qasc",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 28.238095238095237
+        },
+        {
+          "model": "llama3",
+          "task": "qasc",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 52.38095238095238
+        },
+        {
+          "model": "llama3",
+          "task": "qasc",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 150.8095238095238
+        },
+        {
+          "model": "qwen05",
+          "task": "qasc",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 38.38095238095238
+        },
+        {
+          "model": "qwen05",
+          "task": "qasc",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 86.0
+        },
+        {
+          "model": "qwen05",
+          "task": "qasc",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 234.33333333333334
+        },
+        {
+          "model": "qwen14",
+          "task": "qasc",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 67.38095238095238
+        },
+        {
+          "model": "qwen14",
+          "task": "qasc",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 137.95238095238096
+        },
+        {
+          "model": "qwen14",
+          "task": "qasc",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 270.0952380952381
+        }
+      ]
+    },
+    {
+      "held_out": "sciq",
+      "selection": {
+        "q": 0.9,
+        "action": 1.0,
+        "tokens": 121.77132616487455,
+        "candidates": [
+          {
+            "q": 0.5,
+            "action": 0.9964157706093191,
+            "tokens": 106.54465949820788
+          },
+          {
+            "q": 0.75,
+            "action": 0.9964157706093191,
+            "tokens": 115.2983512544803
+          },
+          {
+            "q": 0.9,
+            "action": 1.0,
+            "tokens": 121.77132616487455
+          },
+          {
+            "q": 0.95,
+            "action": 1.0,
+            "tokens": 124.79483870967744
+          },
+          {
+            "q": 1.0,
+            "action": 1.0,
+            "tokens": 132.28394265232973
+          }
+        ]
+      },
+      "test": [
+        {
+          "model": "llama3",
+          "task": "sciq",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 51.52173913043478
+        },
+        {
+          "model": "llama3",
+          "task": "sciq",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 85.26086956521739
+        },
+        {
+          "model": "llama3",
+          "task": "sciq",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 195.69565217391303
+        },
+        {
+          "model": "qwen05",
+          "task": "sciq",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 81.91304347826087
+        },
+        {
+          "model": "qwen05",
+          "task": "sciq",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 167.8695652173913
+        },
+        {
+          "model": "qwen05",
+          "task": "sciq",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 334.30434782608694
+        },
+        {
+          "model": "qwen14",
+          "task": "sciq",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 30.17391304347826
+        },
+        {
+          "model": "qwen14",
+          "task": "sciq",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 60.34782608695652
+        },
+        {
+          "model": "qwen14",
+          "task": "sciq",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 117.82608695652173
+        }
+      ]
+    }
+  ],
+  "leave_one_model_out": [
+    {
+      "held_out": "llama3",
+      "selection": {
+        "q": 0.5,
+        "action": 1.0,
+        "tokens": 121.85372461170849,
+        "candidates": [
+          {
+            "q": 0.5,
+            "action": 1.0,
+            "tokens": 121.85372461170849
+          },
+          {
+            "q": 0.75,
+            "action": 1.0,
+            "tokens": 129.9508452807646
+          },
+          {
+            "q": 0.9,
+            "action": 1.0,
+            "tokens": 134.27344982078853
+          },
+          {
+            "q": 0.95,
+            "action": 1.0,
+            "tokens": 136.40214157706092
+          },
+          {
+            "q": 1.0,
+            "action": 1.0,
+            "tokens": 140.9101523297491
+          }
+        ]
+      },
+      "test": [
+        {
+          "model": "llama3",
+          "task": "commonsense",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 42.6875
+        },
+        {
+          "model": "llama3",
+          "task": "commonsense",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 68.75
+        },
+        {
+          "model": "llama3",
+          "task": "commonsense",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 180.625
+        },
+        {
+          "model": "llama3",
+          "task": "qasc",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 28.238095238095237
+        },
+        {
+          "model": "llama3",
+          "task": "qasc",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 52.38095238095238
+        },
+        {
+          "model": "llama3",
+          "task": "qasc",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 150.8095238095238
+        },
+        {
+          "model": "llama3",
+          "task": "sciq",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 39.869565217391305
+        },
+        {
+          "model": "llama3",
+          "task": "sciq",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 58.78260869565217
+        },
+        {
+          "model": "llama3",
+          "task": "sciq",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 163.6086956521739
+        }
+      ]
+    },
+    {
+      "held_out": "qwen05",
+      "selection": {
+        "q": 0.9,
+        "action": 1.0,
+        "tokens": 86.67977001194744,
+        "candidates": [
+          {
+            "q": 0.5,
+            "action": 0.9964157706093191,
+            "tokens": 76.65325567502985
+          },
+          {
+            "q": 0.75,
+            "action": 0.9964157706093191,
+            "tokens": 81.78652927120669
+          },
+          {
+            "q": 0.9,
+            "action": 1.0,
+            "tokens": 86.67977001194744
+          },
+          {
+            "q": 0.95,
+            "action": 1.0,
+            "tokens": 89.13246117084827
+          },
+          {
+            "q": 1.0,
+            "action": 1.0,
+            "tokens": 94.64596176821982
+          }
+        ]
+      },
+      "test": [
+        {
+          "model": "qwen05",
+          "task": "commonsense",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 80.3125
+        },
+        {
+          "model": "qwen05",
+          "task": "commonsense",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 171.0625
+        },
+        {
+          "model": "qwen05",
+          "task": "commonsense",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 335.875
+        },
+        {
+          "model": "qwen05",
+          "task": "qasc",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 43.38095238095238
+        },
+        {
+          "model": "qwen05",
+          "task": "qasc",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 115.47619047619048
+        },
+        {
+          "model": "qwen05",
+          "task": "qasc",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 294.0952380952381
+        },
+        {
+          "model": "qwen05",
+          "task": "sciq",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 81.91304347826087
+        },
+        {
+          "model": "qwen05",
+          "task": "sciq",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 167.8695652173913
+        },
+        {
+          "model": "qwen05",
+          "task": "sciq",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 334.30434782608694
+        }
+      ]
+    },
+    {
+      "held_out": "qwen14",
+      "selection": {
+        "q": 0.9,
+        "action": 1.0,
+        "tokens": 134.33017323775388,
+        "candidates": [
+          {
+            "q": 0.5,
+            "action": 0.9964157706093191,
+            "tokens": 113.92030167264039
+          },
+          {
+            "q": 0.75,
+            "action": 0.9964157706093191,
+            "tokens": 126.19729091995221
+          },
+          {
+            "q": 0.9,
+            "action": 1.0,
+            "tokens": 134.33017323775388
+          },
+          {
+            "q": 0.95,
+            "action": 1.0,
+            "tokens": 138.91155615292712
+          },
+          {
+            "q": 1.0,
+            "action": 1.0,
+            "tokens": 148.9330675029869
+          }
+        ]
+      },
+      "test": [
+        {
+          "model": "qwen14",
+          "task": "commonsense",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 21.5
+        },
+        {
+          "model": "qwen14",
+          "task": "commonsense",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 31.4375
+        },
+        {
+          "model": "qwen14",
+          "task": "commonsense",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 61.5
+        },
+        {
+          "model": "qwen14",
+          "task": "qasc",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 70.57142857142857
+        },
+        {
+          "model": "qwen14",
+          "task": "qasc",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 141.14285714285714
+        },
+        {
+          "model": "qwen14",
+          "task": "qasc",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 273.2857142857143
+        },
+        {
+          "model": "qwen14",
+          "task": "sciq",
+          "density": 1,
+          "action": 1.0,
+          "tokens": 30.17391304347826
+        },
+        {
+          "model": "qwen14",
+          "task": "sciq",
+          "density": 2,
+          "action": 1.0,
+          "tokens": 60.34782608695652
+        },
+        {
+          "model": "qwen14",
+          "task": "sciq",
+          "density": 4,
+          "action": 1.0,
+          "tokens": 117.82608695652173
+        }
+      ]
+    }
+  ]
+}

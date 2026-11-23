@@ -1,5 +1,86 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/pairwise_llama1b_hid …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\pairwise_llama1b_hidden_iface.json' because it does not exist.
+{
+  "schema": "pairwise_gap_certificate_v1",
+  "worker": "arcc_llama1b_dedup_hidden_iface_v310.jsonl",
+  "calibration_n": 72,
+  "selection_n": 25,
+  "test_n": 31,
+  "candidates": [
+    {
+      "q": 0.5,
+      "radius": {
+        "1": 0.10074558947235346,
+        "3": 0.29704866744577885
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 166.96,
+        "queries": 1.24
+      }
+    },
+    {
+      "q": 0.75,
+      "radius": {
+        "1": 0.21618344401940703,
+        "3": 0.44380733743309975
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 181.52,
+        "queries": 1.36
+      }
+    },
+    {
+      "q": 0.9,
+      "radius": {
+        "1": 0.3099074862897396,
+        "3": 0.5137225447455421
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 195.52,
+        "queries": 1.48
+      }
+    },
+    {
+      "q": 0.95,
+      "radius": {
+        "1": 0.33352403128519664,
+        "3": 0.6586667122086511
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 195.52,
+        "queries": 1.48
+      }
+    },
+    {
+      "q": 1.0,
+      "radius": {
+        "1": 0.47250536549836397,
+        "3": 0.8305049543268979
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 195.52,
+        "queries": 1.48
+      }
+    }
+  ],
+  "selected": {
+    "q": 0.5,
+    "radius": {
+      "1": 0.10074558947235346,
+      "3": 0.29704866744577885
+    },
+    "selection": {
+      "answer_action_exact": 1.0,
+      "tokens": 166.96,
+      "queries": 1.24
+    }
+  },
+  "test": {
+    "answer_action_exact": 1.0,
+    "tokens": 174.93548387096774,
+    "queries": 1.1290322580645162
+  }
+}

@@ -1,5 +1,285 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/PAIRWISE_CONFORMAL_R …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\PAIRWISE_CONFORMAL_ROUTE.json' because it does not exist.
+{
+  "schema": "pairwise_split_conformal_route_v1",
+  "alpha": 0.1,
+  "rowwise_bonferroni": true,
+  "claim": "Under row-wise exchangeability, the split-conformal radii cover all four changed-row TV scores with marginal failure controlled by alpha under the stated calibration contract. The action certificate is conditional on all row bounds holding.",
+  "records": [
+    {
+      "model": "llama3",
+      "task": "commonsense",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 53.625,
+      "queries": 0.75,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "llama3",
+      "task": "commonsense",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 97.125,
+      "queries": 1.375,
+      "radius_coverage": 0.96875,
+      "all_rows_covered": 0.9375
+    },
+    {
+      "model": "llama3",
+      "task": "commonsense",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 207.5625,
+      "queries": 3.0,
+      "radius_coverage": 0.984375,
+      "all_rows_covered": 0.9375
+    },
+    {
+      "model": "llama3",
+      "task": "qasc",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 49.523809523809526,
+      "queries": 0.6190476190476191,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "llama3",
+      "task": "qasc",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 95.66666666666667,
+      "queries": 1.1904761904761905,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "llama3",
+      "task": "qasc",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 206.38095238095238,
+      "queries": 2.619047619047619,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "llama3",
+      "task": "sciq",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 51.52173913043478,
+      "queries": 0.7391304347826086,
+      "radius_coverage": 0.9565217391304348,
+      "all_rows_covered": 0.9565217391304348
+    },
+    {
+      "model": "llama3",
+      "task": "sciq",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 100.04347826086956,
+      "queries": 1.434782608695652,
+      "radius_coverage": 0.9565217391304348,
+      "all_rows_covered": 0.9565217391304348
+    },
+    {
+      "model": "llama3",
+      "task": "sciq",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 213.7826086956522,
+      "queries": 3.130434782608696,
+      "radius_coverage": 0.967391304347826,
+      "all_rows_covered": 0.9565217391304348
+    },
+    {
+      "model": "qwen05",
+      "task": "commonsense",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 85.5625,
+      "queries": 0.9375,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen05",
+      "task": "commonsense",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 176.3125,
+      "queries": 1.9375,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen05",
+      "task": "commonsense",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 346.625,
+      "queries": 3.875,
+      "radius_coverage": 0.984375,
+      "all_rows_covered": 0.9375
+    },
+    {
+      "model": "qwen05",
+      "task": "qasc",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 56.904761904761905,
+      "queries": 0.5714285714285714,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen05",
+      "task": "qasc",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 152.47619047619048,
+      "queries": 1.5238095238095237,
+      "radius_coverage": 0.9761904761904762,
+      "all_rows_covered": 0.9523809523809523
+    },
+    {
+      "model": "qwen05",
+      "task": "qasc",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 318.3809523809524,
+      "queries": 3.238095238095238,
+      "radius_coverage": 0.9404761904761905,
+      "all_rows_covered": 0.8571428571428571
+    },
+    {
+      "model": "qwen05",
+      "task": "sciq",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 81.91304347826087,
+      "queries": 0.9130434782608695,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen05",
+      "task": "sciq",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 171.91304347826087,
+      "queries": 1.9130434782608696,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen05",
+      "task": "sciq",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 334.30434782608694,
+      "queries": 3.782608695652174,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen14",
+      "task": "commonsense",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 21.5,
+      "queries": 0.3125,
+      "radius_coverage": 0.9375,
+      "all_rows_covered": 0.9375
+    },
+    {
+      "model": "qwen14",
+      "task": "commonsense",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 35.875,
+      "queries": 0.5,
+      "radius_coverage": 0.96875,
+      "all_rows_covered": 0.9375
+    },
+    {
+      "model": "qwen14",
+      "task": "commonsense",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 65.8125,
+      "queries": 0.9375,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen14",
+      "task": "qasc",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 70.57142857142857,
+      "queries": 1.0,
+      "radius_coverage": 0.9523809523809523,
+      "all_rows_covered": 0.9523809523809523
+    },
+    {
+      "model": "qwen14",
+      "task": "qasc",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 141.14285714285714,
+      "queries": 2.0,
+      "radius_coverage": 0.9523809523809523,
+      "all_rows_covered": 0.9523809523809523
+    },
+    {
+      "model": "qwen14",
+      "task": "qasc",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 273.2857142857143,
+      "queries": 3.9523809523809526,
+      "radius_coverage": 0.9523809523809523,
+      "all_rows_covered": 0.9047619047619048
+    },
+    {
+      "model": "qwen14",
+      "task": "sciq",
+      "density": 1,
+      "action_exact": 1.0,
+      "tokens": 30.17391304347826,
+      "queries": 0.4782608695652174,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen14",
+      "task": "sciq",
+      "density": 2,
+      "action_exact": 1.0,
+      "tokens": 60.34782608695652,
+      "queries": 0.9565217391304348,
+      "radius_coverage": 1.0,
+      "all_rows_covered": 1.0
+    },
+    {
+      "model": "qwen14",
+      "task": "sciq",
+      "density": 4,
+      "action_exact": 1.0,
+      "tokens": 117.82608695652173,
+      "queries": 1.9130434782608696,
+      "radius_coverage": 0.9782608695652174,
+      "all_rows_covered": 0.9130434782608695
+    }
+  ],
+  "aggregate": {
+    "action_exact": 1.0,
+    "tokens": 133.93183038110575,
+    "queries": 1.6888946399815965,
+    "radius_coverage": 0.9806020435549422,
+    "all_rows_covered": 0.9662650486925849
+  }
+}

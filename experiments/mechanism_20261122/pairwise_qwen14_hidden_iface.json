@@ -1,5 +1,86 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/pairwise_qwen14_hidd …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\pairwise_qwen14_hidden_iface.json' because it does not exist.
+{
+  "schema": "pairwise_gap_certificate_v1",
+  "worker": "arcc_qwen14_dedup_hidden_iface_v310.jsonl",
+  "calibration_n": 72,
+  "selection_n": 25,
+  "test_n": 31,
+  "candidates": [
+    {
+      "q": 0.5,
+      "radius": {
+        "1": 0.08519424684345722,
+        "3": 0.09369154646992683
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 154.32,
+        "queries": 1.48
+      }
+    },
+    {
+      "q": 0.75,
+      "radius": {
+        "1": 0.133900779299438,
+        "3": 0.18487877678126097
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 184.72,
+        "queries": 1.8
+      }
+    },
+    {
+      "q": 0.9,
+      "radius": {
+        "1": 0.22577637098729608,
+        "3": 0.2331441819667816
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 184.72,
+        "queries": 1.8
+      }
+    },
+    {
+      "q": 0.95,
+      "radius": {
+        "1": 0.24549149638041856,
+        "3": 0.2503972740843892
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 188.28,
+        "queries": 1.84
+      }
+    },
+    {
+      "q": 1.0,
+      "radius": {
+        "1": 0.2975659556686878,
+        "3": 0.27863987162709236
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 188.28,
+        "queries": 1.84
+      }
+    }
+  ],
+  "selected": {
+    "q": 0.5,
+    "radius": {
+      "1": 0.08519424684345722,
+      "3": 0.09369154646992683
+    },
+    "selection": {
+      "answer_action_exact": 1.0,
+      "tokens": 154.32,
+      "queries": 1.48
+    }
+  },
+  "test": {
+    "answer_action_exact": 1.0,
+    "tokens": 189.5483870967742,
+    "queries": 1.5806451612903225
+  }
+}

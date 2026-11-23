@@ -1,5 +1,80 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/pairwise_interface_d …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\pairwise_interface_drift_qwen05_rows1.json' because it does not exist.
+{
+  "schema": "pairwise_gap_certificate_v1",
+  "worker": "M60_INTERFACE_DRIFT_TRANSFER_qwen05_qasc_rows1.jsonl",
+  "calibration_n": 76,
+  "selection_n": 31,
+  "test_n": 21,
+  "candidates": [
+    {
+      "q": 0.5,
+      "radius": {
+        "1": 0.4194069532677531
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 114.87096774193549,
+        "queries": 0.9354838709677419
+      }
+    },
+    {
+      "q": 0.75,
+      "radius": {
+        "1": 0.4679952305741608
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 114.87096774193549,
+        "queries": 0.9354838709677419
+      }
+    },
+    {
+      "q": 0.9,
+      "radius": {
+        "1": 0.5069787511602044
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 114.87096774193549,
+        "queries": 0.9354838709677419
+      }
+    },
+    {
+      "q": 0.95,
+      "radius": {
+        "1": 0.537528223823756
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 114.87096774193549,
+        "queries": 0.9354838709677419
+      }
+    },
+    {
+      "q": 1.0,
+      "radius": {
+        "1": 0.5517172291874886
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 114.87096774193549,
+        "queries": 0.9354838709677419
+      }
+    }
+  ],
+  "selected": {
+    "q": 0.5,
+    "radius": {
+      "1": 0.4194069532677531
+    },
+    "selection": {
+      "answer_action_exact": 1.0,
+      "tokens": 114.87096774193549,
+      "queries": 0.9354838709677419
+    }
+  },
+  "test": {
+    "answer_action_exact": 1.0,
+    "tokens": 112.47619047619048,
+    "queries": 0.9047619047619048
+  }
+}

@@ -1,5 +1,86 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/arc_q05_rows2_pairwi …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\arc_q05_rows2_pairwise.json' because it does not exist.
+{
+  "schema": "pairwise_gap_certificate_v1",
+  "worker": "arc_q05_validation_rows2.jsonl",
+  "calibration_n": 73,
+  "selection_n": 31,
+  "test_n": 24,
+  "candidates": [
+    {
+      "q": 0.5,
+      "radius": {
+        "1": 0.09300696104764938,
+        "2": 0.07396386191248894
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 201.6451612903226,
+        "queries": 1.5806451612903225
+      }
+    },
+    {
+      "q": 0.75,
+      "radius": {
+        "1": 0.15938198752701283,
+        "2": 0.11595487594604492
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 209.38709677419354,
+        "queries": 1.6451612903225807
+      }
+    },
+    {
+      "q": 0.9,
+      "radius": {
+        "1": 0.2074872486293316,
+        "2": 0.14573809951543806
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 214.09677419354838,
+        "queries": 1.6774193548387097
+      }
+    },
+    {
+      "q": 0.95,
+      "radius": {
+        "1": 0.23341521024703968,
+        "2": 0.16456008926033966
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 223.96774193548387,
+        "queries": 1.7419354838709677
+      }
+    },
+    {
+      "q": 1.0,
+      "radius": {
+        "1": 0.3525436813943088,
+        "2": 0.20172486081719398
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 232.0,
+        "queries": 1.8064516129032258
+      }
+    }
+  ],
+  "selected": {
+    "q": 0.5,
+    "radius": {
+      "1": 0.09300696104764938,
+      "2": 0.07396386191248894
+    },
+    "selection": {
+      "answer_action_exact": 1.0,
+      "tokens": 201.6451612903226,
+      "queries": 1.5806451612903225
+    }
+  },
+  "test": {
+    "answer_action_exact": 1.0,
+    "tokens": 253.75,
+    "queries": 1.6666666666666667
+  }
+}

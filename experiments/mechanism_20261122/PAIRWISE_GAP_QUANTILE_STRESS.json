@@ -1,5 +1,41 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/PAIRWISE_GAP_QUANTIL …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\PAIRWISE_GAP_QUANTILE_STRESS.json' because it does not exist.
+{
+  "schema": "pairwise_gap_quantile_stress_v1",
+  "records": [
+    {
+      "q": 0.5,
+      "n_cells": 27,
+      "exact_cells": 27,
+      "mean_action_exact": 1.0,
+      "mean_tokens": 111.43461007591442
+    },
+    {
+      "q": 0.75,
+      "n_cells": 27,
+      "exact_cells": 27,
+      "mean_action_exact": 1.0,
+      "mean_tokens": 117.83325185951998
+    },
+    {
+      "q": 0.9,
+      "n_cells": 27,
+      "exact_cells": 27,
+      "mean_action_exact": 1.0,
+      "mean_tokens": 124.7446850318227
+    },
+    {
+      "q": 0.95,
+      "n_cells": 27,
+      "exact_cells": 27,
+      "mean_action_exact": 1.0,
+      "mean_tokens": 127.42570546737213
+    },
+    {
+      "q": 1.0,
+      "n_cells": 27,
+      "exact_cells": 27,
+      "mean_action_exact": 1.0,
+      "mean_tokens": 134.7740203972088
+    }
+  ],
+  "note": "Quantiles are evaluated on the fixed held-out residue as a robustness diagnostic. No test result was used to select the reported route."
+}

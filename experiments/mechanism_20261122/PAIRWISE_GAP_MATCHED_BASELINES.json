@@ -1,5 +1,761 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/PAIRWISE_GAP_MATCHED …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\PAIRWISE_GAP_MATCHED_BASELINES.json' because it does not exist.
+{
+  "schema": "pairwise_gap_matched_baselines_v1",
+  "records": [
+    {
+      "cell": "dedup_llama3_commonsense_rows1_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 42.6875,
+      "queries": 0.625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows1_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 42.6875,
+      "queries": 0.625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows1_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 42.6875,
+      "queries": 0.625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows1_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 42.6875,
+      "queries": 0.625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 68.75,
+      "queries": 1.0
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 68.75,
+      "queries": 1.0
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 73.9375,
+      "queries": 1.0625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 73.9375,
+      "queries": 1.0625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 180.625,
+      "queries": 2.625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 180.625,
+      "queries": 2.625
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 191.5625,
+      "queries": 2.75
+    },
+    {
+      "cell": "dedup_llama3_commonsense_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 217.6875,
+      "queries": 3.125
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows1_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 28.238095238095237,
+      "queries": 0.3333333333333333
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows1_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 28.238095238095237,
+      "queries": 0.3333333333333333
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows1_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 28.238095238095237,
+      "queries": 0.3333333333333333
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows1_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 28.238095238095237,
+      "queries": 0.3333333333333333
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 52.38095238095238,
+      "queries": 0.6190476190476191
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 52.38095238095238,
+      "queries": 0.6190476190476191
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 52.38095238095238,
+      "queries": 0.6190476190476191
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 56.476190476190474,
+      "queries": 0.6666666666666666
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 173.28571428571428,
+      "queries": 2.1904761904761907
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 173.28571428571428,
+      "queries": 2.1904761904761907
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 184.76190476190476,
+      "queries": 2.3333333333333335
+    },
+    {
+      "cell": "dedup_llama3_qasc_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 210.1904761904762,
+      "queries": 2.6666666666666665
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows1_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 39.869565217391305,
+      "queries": 0.5652173913043478
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows1_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 39.869565217391305,
+      "queries": 0.5652173913043478
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows1_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 39.869565217391305,
+      "queries": 0.5652173913043478
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows1_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 39.869565217391305,
+      "queries": 0.5652173913043478
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 58.78260869565217,
+      "queries": 0.8260869565217391
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 58.78260869565217,
+      "queries": 0.8260869565217391
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 61.43478260869565,
+      "queries": 0.8695652173913043
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 67.78260869565217,
+      "queries": 0.9565217391304348
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 163.6086956521739,
+      "queries": 2.391304347826087
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 163.6086956521739,
+      "queries": 2.391304347826087
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 175.1304347826087,
+      "queries": 2.5652173913043477
+    },
+    {
+      "cell": "dedup_llama3_sciq_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 207.47826086956522,
+      "queries": 3.0
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 74.0625,
+      "queries": 0.8125
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 74.0625,
+      "queries": 0.8125
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 74.0625,
+      "queries": 0.8125
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 74.0625,
+      "queries": 0.8125
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 164.8125,
+      "queries": 1.8125
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 164.8125,
+      "queries": 1.8125
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 181.5,
+      "queries": 2.0
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 170.0625,
+      "queries": 1.875
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 319.4375,
+      "queries": 3.5625
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 319.4375,
+      "queries": 3.5625
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 357.0,
+      "queries": 4.0
+    },
+    {
+      "cell": "dedup_qwen05_commonsense_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 335.5,
+      "queries": 3.75
+    },
+    {
+      "cell": "dedup_qwen05_qasc_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 38.38095238095238,
+      "queries": 0.38095238095238093
+    },
+    {
+      "cell": "dedup_qwen05_qasc_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 38.38095238095238,
+      "queries": 0.38095238095238093
+    },
+    {
+      "cell": "dedup_qwen05_qasc_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 38.38095238095238,
+      "queries": 0.38095238095238093
+    },
+    {
+      "cell": "dedup_qwen05_qasc_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 38.38095238095238,
+      "queries": 0.38095238095238093
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 86.0,
+      "queries": 0.8571428571428571
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 86.0,
+      "queries": 0.8571428571428571
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 109.47619047619048,
+      "queries": 1.0952380952380953
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 99.80952380952381,
+      "queries": 1.0
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 234.33333333333334,
+      "queries": 2.380952380952381
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 234.33333333333334,
+      "queries": 2.380952380952381
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 261.95238095238096,
+      "queries": 2.6666666666666665
+    },
+    {
+      "cell": "dedup_qwen05_qasc_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 272.0952380952381,
+      "queries": 2.761904761904762
+    },
+    {
+      "cell": "dedup_qwen05_sciq_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 69.82608695652173,
+      "queries": 0.782608695652174
+    },
+    {
+      "cell": "dedup_qwen05_sciq_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 69.82608695652173,
+      "queries": 0.782608695652174
+    },
+    {
+      "cell": "dedup_qwen05_sciq_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 69.82608695652173,
+      "queries": 0.782608695652174
+    },
+    {
+      "cell": "dedup_qwen05_sciq_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 69.82608695652173,
+      "queries": 0.782608695652174
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 152.30434782608697,
+      "queries": 1.6956521739130435
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 152.30434782608697,
+      "queries": 1.6956521739130435
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 167.8695652173913,
+      "queries": 1.8695652173913044
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 160.04347826086956,
+      "queries": 1.7826086956521738
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 307.0869565217391,
+      "queries": 3.4782608695652173
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 307.0869565217391,
+      "queries": 3.4782608695652173
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 334.04347826086956,
+      "queries": 3.782608695652174
+    },
+    {
+      "cell": "dedup_qwen05_sciq_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 319.39130434782606,
+      "queries": 3.608695652173913
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 21.5,
+      "queries": 0.3125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 21.5,
+      "queries": 0.3125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 21.5,
+      "queries": 0.3125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 21.5,
+      "queries": 0.3125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 22.0,
+      "queries": 0.3125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 22.0,
+      "queries": 0.3125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 35.875,
+      "queries": 0.5
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 31.4375,
+      "queries": 0.4375
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 56.375,
+      "queries": 0.8125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 56.375,
+      "queries": 0.8125
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 70.25,
+      "queries": 1.0
+    },
+    {
+      "cell": "dedup_qwen14_commonsense_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 65.8125,
+      "queries": 0.9375
+    },
+    {
+      "cell": "dedup_qwen14_qasc_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 67.38095238095238,
+      "queries": 0.9523809523809523
+    },
+    {
+      "cell": "dedup_qwen14_qasc_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 67.38095238095238,
+      "queries": 0.9523809523809523
+    },
+    {
+      "cell": "dedup_qwen14_qasc_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 67.38095238095238,
+      "queries": 0.9523809523809523
+    },
+    {
+      "cell": "dedup_qwen14_qasc_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 67.38095238095238,
+      "queries": 0.9523809523809523
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 137.95238095238096,
+      "queries": 1.9523809523809523
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 137.95238095238096,
+      "queries": 1.9523809523809523
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 137.95238095238096,
+      "queries": 1.9523809523809523
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 141.14285714285714,
+      "queries": 2.0
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 270.0952380952381,
+      "queries": 3.9047619047619047
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 270.0952380952381,
+      "queries": 3.9047619047619047
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 276.2857142857143,
+      "queries": 4.0
+    },
+    {
+      "cell": "dedup_qwen14_qasc_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 276.2857142857143,
+      "queries": 4.0
+    },
+    {
+      "cell": "dedup_qwen14_sciq_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 27.869565217391305,
+      "queries": 0.43478260869565216
+    },
+    {
+      "cell": "dedup_qwen14_sciq_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 27.869565217391305,
+      "queries": 0.43478260869565216
+    },
+    {
+      "cell": "dedup_qwen14_sciq_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 27.869565217391305,
+      "queries": 0.43478260869565216
+    },
+    {
+      "cell": "dedup_qwen14_sciq_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 27.869565217391305,
+      "queries": 0.43478260869565216
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows2_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 58.04347826086956,
+      "queries": 0.9130434782608695
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows2_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 58.04347826086956,
+      "queries": 0.9130434782608695
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows2_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 60.34782608695652,
+      "queries": 0.9565217391304348
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows2_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 60.34782608695652,
+      "queries": 0.9565217391304348
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows4_pairwise",
+      "policy": "pairwise_gap",
+      "action_exact": 1.0,
+      "tokens": 115.52173913043478,
+      "queries": 1.8695652173913044
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows4_pairwise",
+      "policy": "max_uncertainty",
+      "action_exact": 1.0,
+      "tokens": 115.52173913043478,
+      "queries": 1.8695652173913044
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows4_pairwise",
+      "policy": "periodic",
+      "action_exact": 1.0,
+      "tokens": 117.82608695652173,
+      "queries": 1.9130434782608696
+    },
+    {
+      "cell": "dedup_qwen14_sciq_rows4_pairwise",
+      "policy": "random",
+      "action_exact": 1.0,
+      "tokens": 117.82608695652173,
+      "queries": 1.9130434782608696
+    }
+  ]
+}

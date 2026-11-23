@@ -1,5 +1,89 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/arc_q05_service_rows …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\arc_q05_service_rows2_q09.json' because it does not exist.
+{
+  "schema": "mab2_actual_service_forward_v1",
+  "input": "arc_validation_rows2_INPUT.json",
+  "worker": "arc_q05_validation_rows2.jsonl",
+  "model": "/home/chen/KDBPT/KD/models/Qwen-0.5B",
+  "results": [
+    {
+      "method": "stale",
+      "n": 128,
+      "forward_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "wall_seconds": 0.6951349969021976,
+      "mean_calls": 0.0,
+      "mean_input_tokens": 0.0,
+      "mean_output_tokens": 0.0,
+      "mean_wall_seconds": 0.005430742163298419,
+      "decision_exact": 0.8828125,
+      "answer_action_exact": 0.8828125,
+      "answer_accuracy": 0.3359375
+    },
+    {
+      "method": "tcr_guard",
+      "n": 128,
+      "forward_calls": 256,
+      "input_tokens": 35488,
+      "output_tokens": 256,
+      "wall_seconds": 4.882035934831947,
+      "mean_calls": 2.0,
+      "mean_input_tokens": 277.25,
+      "mean_output_tokens": 2.0,
+      "mean_wall_seconds": 0.03814090574087459,
+      "decision_exact": 0.984375,
+      "answer_action_exact": 0.9609375,
+      "answer_accuracy": 0.3046875
+    },
+    {
+      "method": "answer_region_q1",
+      "n": 128,
+      "forward_calls": 238,
+      "input_tokens": 32646,
+      "output_tokens": 238,
+      "wall_seconds": 4.434936811216176,
+      "mean_calls": 1.859375,
+      "mean_input_tokens": 255.046875,
+      "mean_output_tokens": 1.859375,
+      "mean_wall_seconds": 0.03464794383762637,
+      "decision_exact": 0.984375,
+      "answer_action_exact": 0.953125,
+      "answer_accuracy": 0.3125
+    },
+    {
+      "method": "pairwise_gap",
+      "n": 128,
+      "forward_calls": 222,
+      "input_tokens": 30734,
+      "output_tokens": 222,
+      "wall_seconds": 4.175443423911929,
+      "mean_calls": 1.734375,
+      "mean_input_tokens": 240.109375,
+      "mean_output_tokens": 1.734375,
+      "mean_wall_seconds": 0.032620651749311946,
+      "decision_exact": 0.984375,
+      "answer_action_exact": 0.9609375,
+      "answer_accuracy": 0.3046875
+    },
+    {
+      "method": "cold_restart",
+      "n": 128,
+      "forward_calls": 2944,
+      "input_tokens": 344624,
+      "output_tokens": 2944,
+      "wall_seconds": 45.910617345012724,
+      "mean_calls": 23.0,
+      "mean_input_tokens": 2692.375,
+      "mean_output_tokens": 23.0,
+      "mean_wall_seconds": 0.3586766980079119,
+      "decision_exact": 0.6796875,
+      "answer_action_exact": 0.609375,
+      "answer_accuracy": 0.2734375
+    }
+  ],
+  "radius_q1_all": {
+    "0": 0.0,
+    "1": 0.2074872486293316,
+    "2": 0.14573809951543806,
+    "3": 0.0
+  }
+}

@@ -1,5 +1,80 @@
-Get-Content: 
-Line |
-  16 |  Get-Content -Raw 'experiments/mechanism_20261122/arc_q05_rows1_pairwi …
-     |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-     | Cannot find path 'D:\develop\CV\多臂老虎机\experiments\mechanism_20261122\arc_q05_rows1_pairwise.json' because it does not exist.
+{
+  "schema": "pairwise_gap_certificate_v1",
+  "worker": "arc_q05_validation_rows1.jsonl",
+  "calibration_n": 73,
+  "selection_n": 31,
+  "test_n": 24,
+  "candidates": [
+    {
+      "q": 0.5,
+      "radius": {
+        "1": 0.09300696104764938
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 95.2258064516129,
+        "queries": 0.7419354838709677
+      }
+    },
+    {
+      "q": 0.75,
+      "radius": {
+        "1": 0.15938198752701283
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 108.16129032258064,
+        "queries": 0.8387096774193549
+      }
+    },
+    {
+      "q": 0.9,
+      "radius": {
+        "1": 0.2074872486293316
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 112.87096774193549,
+        "queries": 0.8709677419354839
+      }
+    },
+    {
+      "q": 0.95,
+      "radius": {
+        "1": 0.23341521024703968
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 112.87096774193549,
+        "queries": 0.8709677419354839
+      }
+    },
+    {
+      "q": 1.0,
+      "radius": {
+        "1": 0.3525436813943088
+      },
+      "selection": {
+        "answer_action_exact": 1.0,
+        "tokens": 120.93548387096774,
+        "queries": 0.9354838709677419
+      }
+    }
+  ],
+  "selected": {
+    "q": 0.5,
+    "radius": {
+      "1": 0.09300696104764938
+    },
+    "selection": {
+      "answer_action_exact": 1.0,
+      "tokens": 95.2258064516129,
+      "queries": 0.7419354838709677
+    }
+  },
+  "test": {
+    "answer_action_exact": 1.0,
+    "tokens": 113.29166666666667,
+    "queries": 0.75
+  }
+}
