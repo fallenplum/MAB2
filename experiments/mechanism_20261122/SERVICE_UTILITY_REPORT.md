@@ -18,8 +18,7 @@ estimates are introduced.
 | answer-region q=1.0, all rows | 0.5521 | 1.0000 | 1.0000 | 150.9 |
 | cold restart | 0.5521 | 0.9951 | 1.0000 | 1065.7 |
 
-The answer-region controller preserves the cold-restart service answer on all
-held-out cells while reducing relay tokens by 86.8% at q=.9 and 85.8% at q=1.0.
+The answer-region controller matches cold-restart answer accuracy in aggregate and reaches worker-reference action exactness 1.0000 while reducing relay tokens by 86.8% at q=.9 and 85.8% at q=1.0.
 The result is a quality-preserving cost result.  It does not show that the
 controller improves the underlying model accuracy.
 
@@ -45,5 +44,6 @@ stable effect is answer-action preservation with a large cost reduction.
 The table is an end-to-end service readout of model-generated answer
 probabilities.  It still evaluates the current MCQA interface and does not
 establish user-facing latency or deployment throughput.  The independent
-deduplicated ARC-Challenge reruns remain the next evidence gate.
+ARC-Challenge worker replay is reported separately with the frozen pooled
+$q=.9$ protocol and the input provenance manifest.
 
