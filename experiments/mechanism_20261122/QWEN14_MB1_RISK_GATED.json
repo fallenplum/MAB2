@@ -1,0 +1,169 @@
+{
+  "schema": "qwen14_mb1_risk_gated_v1",
+  "rows": [
+    {
+      "density": 1,
+      "risk": {
+        "risk": 0.06959862250022247,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.25806451612903225,
+        "tokens": 19.64516129032258,
+        "queries": 0.22580645161290322,
+        "route_fraction_answer_region": 1.0,
+        "route_n": {
+          "mask": 0,
+          "answer_region": 31
+        }
+      },
+      "selected": {
+        "q": 0.5,
+        "threshold": 0.0,
+        "radius": {
+          "1": 0.035410866141319275
+        },
+        "calibration": {
+          "risk": 1.159582869658333,
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2638888888888889,
+          "tokens": 12.972222222222221,
+          "queries": 0.125,
+          "route_fraction_answer_region": 1.0,
+          "route_n": {
+            "mask": 0,
+            "answer_region": 72
+          }
+        }
+      },
+      "tcr": {
+        "n": 128,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2421875,
+        "tokens": 151.8046875,
+        "queries": 1.59375,
+        "gold_mode": "corrected"
+      },
+      "cold": {
+        "n": 128,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2421875,
+        "tokens": 795.7578125,
+        "queries": 8.71875,
+        "gold_mode": "corrected"
+      }
+    },
+    {
+      "density": 2,
+      "risk": {
+        "risk": 1914975.688050752,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.22580645161290322,
+        "tokens": 112.64516129032258,
+        "queries": 1.0,
+        "route_fraction_answer_region": 0.0,
+        "route_n": {
+          "mask": 31,
+          "answer_region": 0
+        }
+      },
+      "selected": {
+        "q": 0.5,
+        "threshold": Infinity,
+        "radius": {
+          "1": 0.05049750627949834
+        },
+        "calibration": {
+          "risk": 751963.873066888,
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.2222222222222222,
+          "tokens": 101.30555555555556,
+          "queries": 1.0,
+          "route_fraction_answer_region": 0.0,
+          "route_n": {
+            "mask": 72,
+            "answer_region": 0
+          }
+        }
+      },
+      "tcr": {
+        "n": 128,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2109375,
+        "tokens": 150.4765625,
+        "queries": 1.578125,
+        "gold_mode": "corrected"
+      },
+      "cold": {
+        "n": 128,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2109375,
+        "tokens": 896.5390625,
+        "queries": 10.2734375,
+        "gold_mode": "corrected"
+      }
+    },
+    {
+      "density": 4,
+      "risk": {
+        "risk": 1666752.2907330457,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.16129032258064516,
+        "tokens": 337.93548387096774,
+        "queries": 3.0,
+        "route_fraction_answer_region": 0.0,
+        "route_n": {
+          "mask": 31,
+          "answer_region": 0
+        }
+      },
+      "selected": {
+        "q": 0.5,
+        "threshold": Infinity,
+        "radius": {
+          "1": 0.031072251498699188,
+          "2": 0.03629623167216778,
+          "3": 0.032749537378549576
+        },
+        "calibration": {
+          "risk": 1575031.9660565848,
+          "decision_exact": 1.0,
+          "answer_action_exact": 1.0,
+          "answer_accuracy": 0.3055555555555556,
+          "tokens": 303.9166666666667,
+          "queries": 3.0,
+          "route_fraction_answer_region": 0.0,
+          "route_n": {
+            "mask": 72,
+            "answer_region": 0
+          }
+        }
+      },
+      "tcr": {
+        "n": 128,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2578125,
+        "tokens": 415.53125,
+        "queries": 4.3359375,
+        "gold_mode": "corrected"
+      },
+      "cold": {
+        "n": 128,
+        "decision_exact": 1.0,
+        "answer_action_exact": 1.0,
+        "answer_accuracy": 0.2578125,
+        "tokens": 859.953125,
+        "queries": 9.6796875,
+        "gold_mode": "corrected"
+      }
+    }
+  ]
+}

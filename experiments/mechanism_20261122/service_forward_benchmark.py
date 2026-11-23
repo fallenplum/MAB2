@@ -21,6 +21,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from answer_region_only import choose as answer_choose
 from answer_region_only import parse_rows, radii
 from answer_safe_arcc import values
+from risk_gated_route import risk_score
 
 
 def encode(tok, text):
@@ -118,7 +119,8 @@ def score_action(row, source, base, relay, labels, gold):
     }
 
 
-def run_method(name, rows, raw_by_key, tok, model, pad_id, device, radii_all):
+def run_method(name, rows, raw_by_key, tok, model, pad_id, device, radii_all,
+               risk_threshold=float("inf")):
     n_options = len(raw_by_key[rows[0]["key"]]["options"])
     source_ids = [tok.encode(chr(65 + i), add_special_tokens=False)[0] for i in range(4)]
     label_ids = [tok.encode(chr(65 + i), add_special_tokens=False) for i in range(n_options)]
@@ -152,13 +154,18 @@ def run_method(name, rows, raw_by_key, tok, model, pad_id, device, radii_all):
                 total_calls += 1
                 input_tokens += len(relay_ids_enc[int(index)])
                 output_tokens += 1
-        elif name in ("answer_region_q1", "calibrated_route"):
+        elif name in ("answer_region_q1", "calibrated_route", "risk_gated"):
             policy_row = (
                 {**parsed, "changed_rows": [0, 1, 2, 3]}
                 if name == "answer_region_q1"
                 else parsed
             )
-            selected = answer_choose(policy_row, radii_all)
+            answer_selected = answer_choose({**parsed, "changed_rows": [0, 1, 2, 3]}, radii_all)
+            if name == "risk_gated":
+                mask_selected = sorted(set(int(i) for i in parsed.get("changed_rows", [])))
+                selected = answer_selected if risk_score(parsed, radii_all) >= risk_threshold else mask_selected
+            else:
+                selected = answer_choose(policy_row, radii_all)
             source = parsed["new_source"]
             base = parsed["base"]
             relay = parsed["old_relay"].copy()
@@ -228,6 +235,7 @@ def main():
     parser.add_argument("--quantile", type=float, default=1.0)
     parser.add_argument("--route", choices=("q1", "calibrated"), default="q1")
     parser.add_argument("--methods", default="", help="comma-separated subset of methods")
+    parser.add_argument("--risk-threshold", type=float, default=float("inf"))
     args = parser.parse_args()
     raw_rows = json.loads(args.input.read_text(encoding="utf-8"))
     raw_by_key = {row["key"]: row for row in raw_rows}
@@ -264,10 +272,12 @@ def main():
     methods = ("stale", "tcr_guard", "answer_region_q1", "cold_restart")
     if args.route == "calibrated":
         methods = methods + ("calibrated_route",)
+    if args.risk_threshold != float("inf"):
+        methods = methods + ("risk_gated",)
     if args.methods:
         methods = tuple(value.strip() for value in args.methods.split(",") if value.strip())
     for method in methods:
-        results.append(run_method(method, parsed, raw_by_key, tok, model, pad_id, device, radius))
+        results.append(run_method(method, parsed, raw_by_key, tok, model, pad_id, device, radius, args.risk_threshold))
     out = {"schema": "mab2_actual_service_forward_v1", "input": args.input.name,
            "worker": args.worker.name, "model": str(args.model), "results": results,
            "radius_q1_all": {str(k): float(v) for k, v in radius.items()}}

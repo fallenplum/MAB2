@@ -5,6 +5,7 @@
 - Qwen-0.5B 的真实单条 forward 服务测量显示，TCR guard 在 rows1/2 使用 1 次 relay 调用，answer-region q=1 使用 1.31 次。rows4 分别为 3.00 和 3.02 次。两者在单条调用口径下均达到 action exact 1.0，answer-region 没有降低实际 relay forward 成本。此前微批量结果造成的 action 差异已排除。
 - Qwen-14B 的 calibrated route 在 rows2 独立面板上只触发 1 次 relay forward，128 题平均 0.0078 次调用，decision/action exact 均为 1.0。该结果只覆盖 rows2，不能外推到更高编辑密度。
 - Qwen-14B 单条 forward 成本测量已覆盖 rows1/2/4。answer-region q=1 使用 0.055、0.992 和 2.914 次 relay forward/题。其动作指标相对 worker reference 在 rows1 为 0.992、rows2 为 0.758、rows4 为 0.719，存在 custom-model forward 复算差异，因此这些动作值只作诊断。
+- 匹配 `MAB2_MICROBATCH=1` 的 Qwen-14B worker replay 已完成风险门控评估。rows1/2/4 均达到 action 和 edge exact 1.0，较 TCR logical relay tokens 分别降低 87.1%、25.1% 和 18.7%。这已经满足算法 replay gate，服务入口仍因 custom-model forward mismatch 保持开放。
 - 语义接口漂移面板覆盖三类模型和三个任务族的九个单元。TCR guard 在所有已完成单元达到 exact-set 1.0。stale 与 warm reweighted 在多个单元失效，说明接口变化需要进入复检依据。
 - 隐藏接口面板显示，事实编辑掩码会漏掉未声明的接口变化。加入接口指纹后，三种模型的 answer-action exact 均恢复到 1.0，但 Qwen-14B 仍有一个 edge-decision 边界错误。
 - 独立正交消融的主要节约来自 all-row 校准中未观测行的零漂移假设。可信 changed-row mask 下，row-specific radius 和 source-aware priority 的额外收益较小。
