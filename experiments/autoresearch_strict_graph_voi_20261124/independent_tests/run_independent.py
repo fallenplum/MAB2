@@ -1,7 +1,7 @@
 from pathlib import Path
 import subprocess,sys,json
 root=Path(__file__).resolve().parent
-files=['test_contract_properties.py','test_certificate_exhaustive.py','test_information_ledger.py','test_cycle_005_h2.py','test_cycle_006_impl.py']
+files=['test_contract_properties.py','test_certificate_exhaustive.py','test_information_ledger.py','test_cycle_005_h2.py','test_cycle_006_impl.py','test_theory.py']
 records=[]
 for name in files:
     r=subprocess.run([sys.executable,str(root/name)],capture_output=True,text=True)
