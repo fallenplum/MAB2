@@ -106,7 +106,7 @@ If the graph, relay interfaces and source distribution do not change, then
 U=\varnothing,\qquad s^{+}=s^{-},\qquad q_i^{+}=q_i^{-}.
 \]
 
-Both transport radii are zero and \(\underline D_{ab}=\widehat D_{ab}). The
+Both transport radii are zero and \(\underline D_{ab}=\widehat D_{ab}\). The
 controller performs no feedback query and returns the stale transcript action.
 This is the formal degeneration of CTDR to stale reuse. If only source weights
 change, the source term remains and stale reuse is not certified without it.

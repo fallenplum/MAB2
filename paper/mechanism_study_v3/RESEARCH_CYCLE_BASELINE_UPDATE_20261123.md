@@ -60,7 +60,5 @@ stopping rules and token accounting without private questions or weights.
 
 ## Release note
 
-The source changes in this cycle require a fresh PDF rebuild. The prior PDF is
-retained until that rebuild succeeds. No new positive claim is released from an
-uncompiled source.
+The source changes in this cycle were rebuilt with pdfTeX on the server into a six-page PDF. The source/PDF pair was rendered locally and checked visually before release.
 
