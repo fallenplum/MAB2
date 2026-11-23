@@ -45,6 +45,9 @@ The controller queries the row maximizing $2s_i\delta_i$ per observed relay toke
 \paragraph{Conditional answer-action proposition.}
 Assume every unqueried row $i\in U$ satisfies $\operatorname{TV}(q_i^{\rm new},q_i^{\rm old})\leq\delta_i$ and every relay-interface fingerprint is complete. If $G_{ab}>0$ for all competitors $b\neq a$, then $a$ is the unique post-edit answer action for every admissible conditional relay distribution. The proof follows because the pairwise gap can decrease by at most the uncertainty sum in Eq.~\ref{eq:pairwise-gap}. Empirical development quantiles for $\delta_i$ do not provide finite-sample coverage without an additional calibration assumption.
 
+\paragraph{Proof sketch.}
+For one unresolved row, total variation bounds the change in the mass assigned to the answer group of $a$ and to the group of $b$ by $\delta_i$ each. Multiplying by the source mass gives a pairwise decrease no larger than $2s_i\delta_i$. Summing over unresolved rows yields Eq.~\ref{eq:pairwise-gap}. Strict positivity for every competitor excludes every alternative action under the admissible post-edit table.
+
 \section{Interface-aware revalidation}
 The graph mask is the union of descendants of edited edges. For every relay row, the worker also derives a fingerprint from the tokenized relay interface. A row enters the revalidation set when either the graph mask or the fingerprint indicates a change. If a fingerprint is absent or malformed, the policy marks all rows unknown. This is a fail-closed implementation condition.
 
