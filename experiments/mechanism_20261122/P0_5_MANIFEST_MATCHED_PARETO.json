@@ -1,0 +1,81 @@
+{
+  "frontier_methods": [
+    "stale",
+    "reweighted_old_history",
+    "ctdr_transport_only",
+    "full_ctdr",
+    "max_uncertainty"
+  ],
+  "aggregate": {
+    "stale": {
+      "exact_set": 0.9039351851851852,
+      "action_error": 0.04282407407407408,
+      "tokens": 0.0
+    },
+    "exact_warm_cache": {
+      "exact_set": 0.8877314814814815,
+      "action_error": 0.044270833333333336,
+      "tokens": 0.0
+    },
+    "reweighted_old_history": {
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 22.86429398148148
+    },
+    "ctdr_transport_only": {
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 22.86429398148148
+    },
+    "ctdr_transport_selective_ranking": {
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 24.613136574074073
+    },
+    "full_ctdr": {
+      "exact_set": 1.0,
+      "action_error": 0.0,
+      "tokens": 230.90653935185185
+    },
+    "max_uncertainty": {
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 22.86429398148148
+    },
+    "periodic": {
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 39.80700231481482
+    },
+    "random": {
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 37.34375
+    },
+    "full_restart": {
+      "exact_set": 1.0,
+      "action_error": 0.0,
+      "tokens": 878.7806712962963
+    },
+    "oracle_row_refresh": {
+      "exact_set": 0.9068287037037037,
+      "action_error": 0.0390625,
+      "tokens": 42.70543981481482
+    }
+  },
+  "protocol": {
+    "same_old_transcript": true,
+    "same_post_edit_source": true,
+    "same_token_prices": true,
+    "same_stopping_rule": "Audit.decision exact set, with method-specific legal action ordering",
+    "budget_definition": "sum of all legal post-edit relay row and conditional-cell prices per unit",
+    "cost_scope": "post_edit_incremental_query_tokens_only",
+    "full_ctdr_mask_source": "graph_manifest.edge_to_relay_descendants, never sealed labels or row-level metadata",
+    "oracle_definition": "restricted row-refresh optimum over changed relay rows",
+    "oracle_lower_bound_definition": "zero if exact warm cache is exact, otherwise cheapest changed-row query",
+    "oracle_selection": "hindsight target labels select the offline plan only",
+    "oracle_prediction": "plan actions are independently replayed before scoring",
+    "oracle_scope": "restricted changed-row actions, not a global action-space optimum"
+  },
+  "budget_violations": []
+}

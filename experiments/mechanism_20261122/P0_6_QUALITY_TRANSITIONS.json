@@ -1,0 +1,67 @@
+{
+  "schema": "mab2_p0_6_quality_transition_v1",
+  "decision_action_transitions": {
+    "exact_warm_cache": {
+      "corrected": 153,
+      "damaged": 0,
+      "unchanged_correct": 3303,
+      "unchanged_wrong": 0,
+      "n": 3456
+    },
+    "reweighted_old_history": {
+      "corrected": 135,
+      "damaged": 0,
+      "unchanged_correct": 3321,
+      "unchanged_wrong": 0,
+      "n": 3456
+    },
+    "max_uncertainty": {
+      "corrected": 135,
+      "damaged": 0,
+      "unchanged_correct": 3321,
+      "unchanged_wrong": 0,
+      "n": 3456
+    },
+    "periodic": {
+      "corrected": 135,
+      "damaged": 0,
+      "unchanged_correct": 3321,
+      "unchanged_wrong": 0,
+      "n": 3456
+    },
+    "random": {
+      "corrected": 135,
+      "damaged": 0,
+      "unchanged_correct": 3321,
+      "unchanged_wrong": 0,
+      "n": 3456
+    }
+  },
+  "interpretation": {
+    "corrected": "baseline action error and full CTDR action error is zero",
+    "damaged": "baseline action error is zero and full CTDR action error is nonzero",
+    "unchanged_correct": "both actions agree with the sealed decision target",
+    "unchanged_wrong": "both actions disagree with the sealed decision target"
+  },
+  "task_quality": {
+    "per_question_task_quality_available": true,
+    "reason": "private question-level service predictions and sealed labels are retained locally and summarized separately",
+    "quality_transition_artifact": "P0_6_TASK_QUALITY.json",
+    "aggregate_methods": [
+      "answer_region_q09",
+      "answer_region_q10",
+      "cold_restart",
+      "max_uncertainty",
+      "periodic_recheck",
+      "random_recheck",
+      "stale",
+      "tcr_bound",
+      "tcr_guard"
+    ],
+    "task_aggregate_available": [
+      "commonsense",
+      "qasc",
+      "sciq"
+    ]
+  }
+}

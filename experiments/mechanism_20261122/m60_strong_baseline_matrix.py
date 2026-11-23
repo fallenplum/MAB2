@@ -25,6 +25,8 @@ from blind_scheduler import Audit  # noqa: E402
 from conditional_real_score import (  # noqa: E402
     baseline_recheck,
     cost,
+    decision_from_history,
+    decision_set,
     graph_manifest_changed_rows,
     guarded,
     old_history,
@@ -54,7 +56,10 @@ def exact_warm_cache(new_source, base, labels, history):
     audit = Audit(new_source, base, np.ones(4), np.ones((4, 4)), "joint", tau=TAU)
     for action, value in history:
         audit.update(action, value)
-    return set(audit.decision() or []), []
+    decision = audit.decision()
+    if decision is None:
+        return None, []
+    return {int(value) for value in decision}, []
 
 
 def _audit_from_history(new_source, base, history):
@@ -74,23 +79,37 @@ def _row_refresh_prediction(new_source, base, new_relay, history, rows):
     # update replaces the row certificate and clears its conditional cells.
     for i in sorted(stale_rows):
         audit.update((i, None), new_relay[i])
-    return set(audit.decision() or [])
+    decision = audit.decision()
+    if decision is None:
+        return None
+    return {int(value) for value in decision}
 
 
 def oracle_row_refresh(new_source, base, new_relay, labels, history,
                        changed_rows, tokens, target):
-    """Return restricted row-refresh optimum and a valid necessary lower bound."""
+    """Return a hindsight restricted row-refresh plan and cost bound.
+
+    ``target`` is used only to choose the offline plan. The plan is replayed
+    independently before scoring, so target labels never become predictions.
+    """
     changed = tuple(sorted(set(int(i) for i in changed_rows)))
     row_prices = {i: int(tokens[7 + i]) for i in range(4)}
-    warm_pred, _ = exact_warm_cache(new_source, base, labels, history)
-    lower_bound = 0 if warm_pred == target else min(row_prices[i] for i in changed)
+    warm_pred, _, warm_completed = exact_warm_cache(new_source, base, labels, history)
+    lower_bound = 0 if warm_completed and warm_pred == target else min(row_prices[i] for i in changed)
     best = None
     best_rows: tuple[int, ...] = ()
     for size in range(len(changed) + 1):
         for subset in itertools.combinations(changed, size):
-            pred = _row_refresh_prediction(new_source, base, new_relay, history,
-                                           [(i, None) for i in subset])
-            if pred == target:
+            try:
+                pred = _row_refresh_prediction(
+                    new_source, base, new_relay, history,
+                    [(i, None) for i in subset],
+                )
+            except RuntimeError:
+                # An unresolved row-refresh subset is infeasible. It must not
+                # be represented as an empty decision or a zero-cost oracle.
+                continue
+            if pred is not None and pred == target:
                 spent = sum(row_prices[i] for i in subset)
                 if best is None or spent < best:
                     best, best_rows = spent, tuple(subset)
@@ -104,23 +123,36 @@ def oracle_row_refresh(new_source, base, new_relay, labels, history,
     return best_rows, int(best), int(lower_bound)
 
 
-def _record(pred, actions, target, gold, tokens):
+def _record(pred, actions, target, gold, tokens, completed=None):
+    completed = (pred is not None) if completed is None else bool(completed)
+    pred = set() if pred is None else set(pred)
     return {
+        "completed": int(completed),
         "pred": sorted(int(x) for x in pred),
         "target": sorted(int(x) for x in target),
         "actions": [[int(i), None if j is None else int(j)] for i, j in actions],
         "tokens": int(cost(actions, tokens)),
-        "exact_set": int(set(pred) == set(target)),
-        "action_error": int((gold in pred) != (gold in target)),
+        "exact_set": int(completed and set(pred) == set(target)),
+        "action_error": int((not completed) or ((gold in pred) != (gold in target))),
         "false_drop": int(bool(set(target) - set(pred))),
         "false_keep": int(bool(set(pred) - set(target))),
     }
+
+
+def optional_controller(factory):
+    """Keep an unfinished controller as ``(None, actions)`` for auditing."""
+    try:
+        return factory()
+    except RuntimeError:
+        return None, []
 
 
 def _summarize(rows):
     n = len(rows)
     return {
         "n": n,
+        "completion_rate": float(np.mean([r["completed"] for r in rows])),
+        "incomplete": int(sum(1 - r["completed"] for r in rows)),
         "exact_set": float(np.mean([r["exact_set"] for r in rows])),
         "action_error": float(np.mean([r["action_error"] for r in rows])),
         "false_drop": float(np.mean([r["false_drop"] for r in rows])),
@@ -153,34 +185,41 @@ def run(manifests: list[Path], output: Path):
                     labels = parsed["labels"]
                     history = old_history(old_source, base, old_relay, labels)
                     target = set(np.flatnonzero(truth(new_source, base, new_relay, labels, tau=TAU)))
-                    stale_target = set(np.flatnonzero(truth(old_source, base, old_relay, labels, tau=TAU)))
                     gold = int(sealed[row["key"]])
                     changed_rows = tuple(graph_manifest_changed_rows(manifest))
                     oracle_rows, oracle_cost, oracle_lb = oracle_row_refresh(
                         new_source, base, new_relay, labels, history,
                         changed_rows, row["tokens"], target)
                     methods = {
-                        "stale": (stale_target, []),
-                        "exact_warm_cache": exact_warm_cache(new_source, base, labels, history),
-                        "reweighted_old_history": replay(old_source, new_source, base, old_relay, labels,
-                                                          row["tokens"], history),
-                        "ctdr_transport_only": replay(old_source, new_source, base, old_relay, labels,
-                                                       row["tokens"], history, radius=True),
-                        "ctdr_transport_selective_ranking": replay(old_source, new_source, base, old_relay,
+                        "stale": optional_controller(lambda: (decision_from_history(old_source, base, history, context="stale"), [])),
+                        "exact_warm_cache": optional_controller(lambda: exact_warm_cache(new_source, base, labels, history)),
+                        "reweighted_old_history": optional_controller(lambda: replay(old_source, new_source, base, new_relay, labels,
+                                                          row["tokens"], history)),
+                        "ctdr_transport_only": optional_controller(lambda: replay(old_source, new_source, base, new_relay, labels,
+                                                       row["tokens"], history, radius=True)),
+                        "ctdr_transport_selective_ranking": optional_controller(lambda: replay(old_source, new_source, base, new_relay,
                                                                     labels, row["tokens"], history,
-                                                                    radius=True, token_aware=True),
-                        "full_ctdr": guarded(old_source, new_source, base, old_relay, new_relay,
-                                             labels, row["tokens"], history, changed_rows, True),
-                        "max_uncertainty": baseline_recheck(new_source, base, new_relay, labels,
+                                                                    radius=True, token_aware=True)),
+                        "full_ctdr": optional_controller(lambda: guarded(old_source, new_source, base, old_relay, new_relay,
+                                             labels, row["tokens"], history, changed_rows, True)),
+                        "max_uncertainty": optional_controller(lambda: baseline_recheck(new_source, base, new_relay, labels,
                                                              row["tokens"], history, "max_uncertainty",
-                                                             int(row["key"][:8], 16)),
-                        "periodic": baseline_recheck(new_source, base, new_relay, labels,
-                                                      row["tokens"], history, "periodic"),
-                        "random": baseline_recheck(new_source, base, new_relay, labels,
-                                                   row["tokens"], history, "random", int(row["key"][:8], 16)),
-                        "full_restart": replay(new_source, new_source, base, new_relay, labels,
-                                                row["tokens"]),
-                        "oracle_row_refresh": (set(target), [(i, None) for i in oracle_rows]),
+                                                             int(row["key"][:8], 16))),
+                        "periodic": optional_controller(lambda: baseline_recheck(new_source, base, new_relay, labels,
+                                                      row["tokens"], history, "periodic")),
+                        "random": optional_controller(lambda: baseline_recheck(new_source, base, new_relay, labels,
+                                                   row["tokens"], history, "random", int(row["key"][:8], 16))),
+                        "full_restart": optional_controller(lambda: replay(new_source, new_source, base, new_relay, labels,
+                                                row["tokens"])),
+                        "oracle_row_refresh": optional_controller(
+                            lambda: (
+                                _row_refresh_prediction(
+                                    new_source, base, new_relay, history,
+                                    [(i, None) for i in oracle_rows],
+                                ),
+                                [(i, None) for i in oracle_rows],
+                            )
+                        ),
                     }
                     rec = {
                         "density": density,
@@ -190,10 +229,25 @@ def run(manifests: list[Path], output: Path):
                         "oracle_rows": list(oracle_rows),
                         "oracle_row_opt_tokens": oracle_cost,
                         "oracle_lower_bound_tokens": oracle_lb,
-                        "methods": {name: _record(pred, actions, target, gold, row["tokens"])
-                                    for name, (pred, actions) in methods.items()},
+                        "oracle_selection": "hindsight_target_selection_only",
+                        "oracle_prediction": "independent_row_refresh_replay",
+                        "oracle_scope": "restricted_changed_row_actions_not_global",
+                        "methods": {},
                     }
-                    common_budget = rec["methods"]["full_restart"]["tokens"]
+                    for name, result_value in methods.items():
+                        if len(result_value) == 3:
+                            pred, actions, completed = result_value
+                        else:
+                            pred, actions = result_value
+                            completed = True
+                        rec["methods"][name] = _record(
+                            pred, actions, target, gold, row["tokens"], completed=completed
+                        )
+                    # Predeclared common post-edit budget. It is the cost of
+                    # the complete legal relay action set for this unit, so
+                    # every controller has the same finite budget and no
+                    # method can exceed it because of ordering.
+                    common_budget = int(sum(int(value) for value in row["tokens"][3:]))
                     for method_record in rec["methods"].values():
                         method_record["budget_tokens"] = common_budget
                         method_record["unused_budget_tokens"] = common_budget - method_record["tokens"]
@@ -211,10 +265,14 @@ def run(manifests: list[Path], output: Path):
             "same_post_edit_source": True,
             "same_token_prices": True,
             "same_stopping_rule": "Audit.decision exact set, with method-specific legal action ordering",
+            "budget_definition": "sum of all legal post-edit relay row and conditional-cell prices per unit",
             "cost_scope": "post_edit_incremental_query_tokens_only",
             "full_ctdr_mask_source": "graph_manifest.edge_to_relay_descendants, never sealed labels or row-level metadata",
             "oracle_definition": "restricted row-refresh optimum over changed relay rows",
             "oracle_lower_bound_definition": "zero if exact warm cache is exact, otherwise cheapest changed-row query",
+            "oracle_selection": "hindsight target labels select the offline plan only",
+            "oracle_prediction": "plan actions are independently replayed before scoring",
+            "oracle_scope": "restricted changed-row actions, not a global action-space optimum",
         },
         "aggregate": aggregate(all_rows),
         "by_density": {k: aggregate(v) for k, v in by_density.items()},

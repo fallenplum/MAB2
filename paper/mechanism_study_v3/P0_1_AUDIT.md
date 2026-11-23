@@ -17,9 +17,9 @@ the repaired small-blob set.
 ## Source/PDF pair
 
 The current source is `main.tex`, SHA-256
-`2ff366e955bc5ab4ba79631db53f5c801f7a61c6001fc816dfda22f3371d10ec`.
-The matching server-built PDF is six pages, 140218 bytes, SHA-256
-`01d0b20ba790ee68159db430d2dd71c3198985650162cbd6d6195ea916fdac21`.
+`1a1a8420b84ef4e5a46a1b27a48a093bbd3210392168f186b1c3ff716c979623`.
+The matching server-built PDF is six pages, 140227 bytes, SHA-256
+`d93703d902072d0542d40f9b6d293aba7d1baa2b3a03914177be4497aaef4cb5`.
 The PDF was rendered locally and pages 1--6 were visually checked after the
 M60 table and theory additions.
 

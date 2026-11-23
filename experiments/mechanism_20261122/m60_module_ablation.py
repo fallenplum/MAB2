@@ -22,6 +22,14 @@ METHODS = [
 ]
 
 
+def decision_set(audit: Audit, *, context: str) -> set[int]:
+    """Keep unresolved ``None`` distinct from a proved empty set."""
+    value = audit.decision()
+    if value is None:
+        raise RuntimeError(f"unfinished audit was treated as a decision: {context}")
+    return {int(item) for item in value}
+
+
 def token_cost(actions, tokens):
     return int(sum(int(tokens[3 + i] if j is None else tokens[7 + i * 4 + j]) for i, j in actions))
 
@@ -115,7 +123,7 @@ def replay(old, new, base, cond, labels, tokens, history, method):
         actions.append(action)
         if radius_mode:
             safe, *_ = safe_transport(old, new, a, base, tau=TAU, label_count=label_count)
-    return set(a.decision() or []), actions, bool(safe)
+    return decision_set(a, context=f"replay:{mode}"), actions, bool(safe)
 
 
 def summarize(items):
@@ -217,3 +225,5 @@ def run(panel_paths, output_path):
 if __name__ == "__main__":
     manifest = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     run(manifest["panels"], manifest["output"])
+
+

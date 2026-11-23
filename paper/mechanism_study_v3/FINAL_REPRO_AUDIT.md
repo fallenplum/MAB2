@@ -9,7 +9,7 @@
 - Pairwise Gap Certificate 单元测试：`test_pairwise_gap_certificate.py`，3/3 通过。
 - 结果 JSON 解析：机制目录内 118 个 JSON 中 116 个以 UTF-8 JSON 成功解析。
 - 论文源文件结构：`main.tex` 的花括号及 `begin/end` 环境计数平衡，引用与标签未发现静态不闭合。
-- PDF 产物：`main.pdf` 可由 pdfTeX 读取，共 6 页，文件大小 140218 bytes。最新源/PDF 对的 SHA-256 分别为 `2ff366e955bc5ab4ba79631db53f5c801f7a61c6001fc816dfda22f3371d10ec` 和 `01d0b20ba790ee68159db430d2dd71c3198985650162cbd6d6195ea916fdac21`。6 页渲染 PNG 已完成视觉检查，新增强基线表格和理论段落无重叠。
+- PDF 产物：`main.pdf` 可由 pdfTeX 读取，共 6 页，文件大小 140227 bytes。最新源/PDF 对的 SHA-256 分别为 `1a1a8420b84ef4e5a46a1b27a48a093bbd3210392168f186b1c3ff716c979623` 和 `d93703d902072d0542d40f9b6d293aba7d1baa2b3a03914177be4497aaef4cb5`。6 页渲染 PNG 已完成视觉检查，新增强基线表格和理论段落无重叠。
 - 时间顺序：`main.tex` 的修改时间早于 `main.pdf` 的生成时间，当前 PDF 对应当前源文件版本。
 - 关键结果文件存在：全局 pooled selection、split-conformal、matched baselines、独立 ARC worker/service、fingerprint replay、M60 负消融与机制层 radius 对照均存在。
 

@@ -19,15 +19,15 @@ refreshes changed relay rows offline.
 | --- | ---: | ---: | ---: |
 | stale | 0.9039 | 0.0428 | 0.00 |
 | exact warm cache | 0.8877 | 0.0443 | 0.00 |
-| reweighted old history | 0.9167 | 0.0391 | 22.73 |
-| CTDR transport only | 0.9167 | 0.0391 | 22.73 |
-| CTDR + selective ranking | 0.9167 | 0.0391 | 24.48 |
+| reweighted old history | 0.9167 | 0.0391 | 22.86 |
+| CTDR transport only | 0.9167 | 0.0391 | 22.86 |
+| CTDR + selective ranking | 0.9167 | 0.0391 | 24.61 |
 | Full CTDR | 1.0000 | 0.0000 | 230.91 |
 | max uncertainty | 0.9167 | 0.0391 | 22.86 |
 | periodic | 0.9167 | 0.0391 | 39.81 |
 | random | 0.9167 | 0.0391 | 37.34 |
 | full restart | 1.0000 | 0.0000 | 878.78 |
-| restricted oracle row refresh | 1.0000 | 0.0000 | 21.20 |
+| restricted oracle row refresh | 1.0000 | 0.0000 | 42.71 |
 
 Full CTDR removes the action error of warm, reweighted, uncertainty, periodic
 and random controllers, while saving 73.7% of full-restart tokens. Its cost is

@@ -20,6 +20,19 @@ METHODS = ("stale", "warm_reweighted", "max_uncertainty", "random_recheck", "per
            "cold_restart", "cold_token")
 
 
+def decision_set(audit: Audit, *, context: str) -> set[int]:
+    """Return a certified decision set and reject an unfinished audit.
+
+    ``set(audit.decision() or [])`` is unsafe because ``None`` means that the
+    interval audit is unresolved, while ``set()`` is a valid proved empty
+    decision.  Every scorer path must keep these states distinct.
+    """
+    decision = audit.decision()
+    if decision is None:
+        raise RuntimeError(f"unfinished audit was treated as a decision: {context}")
+    return {int(value) for value in decision}
+
+
 def inferred_changed_rows(row, fallback):
     """Infer affected relay rows from frozen interface fingerprints.
 
@@ -89,6 +102,18 @@ def old_history(old, base, relay, labels):
     return history
 
 
+def decision_from_history(source, base, history, *, context="history"):
+    """Replay only the paid transcript and return its certified decision.
+
+    This is the legal stale/warm information path. It must not reconstruct a
+    decision from the full post-edit relay table or sealed target labels.
+    """
+    audit = Audit(source, base, np.ones(4), np.ones((4, 4)), "joint", tau=TAU)
+    for action, value in history:
+        audit.update(action, value)
+    return decision_set(audit, context=context)
+
+
 def replay(old_source, new_source, base, relay, labels, tokens, history=(), radius=False, token_aware=False):
     row_prices, cell_prices = price_arrays(tokens, token_aware)
     audit = Audit(new_source, base, row_prices, cell_prices, "joint", tau=TAU)
@@ -108,7 +133,7 @@ def replay(old_source, new_source, base, relay, labels, tokens, history=(), radi
         actions.append(action)
         if radius:
             safe, *_ = safe_transport(old_source, new_source, audit, base, tau=TAU, label_count=8)
-    return set(audit.decision() or []), actions
+    return decision_set(audit, context="replay"), actions
 
 
 def baseline_recheck(new_source, base, new_relay, labels, tokens, history, policy, seed=0):
@@ -154,7 +179,7 @@ def baseline_recheck(new_source, base, new_relay, labels, tokens, history, polic
         value = new_relay[i] if j is None else int(labels[i, j])
         audit.update(action, value)
         actions.append(action)
-    return set(audit.decision() or []), actions
+    return decision_set(audit, context="replay"), actions
 
 
 def guarded(old_source, new_source, base, old_relay, new_relay, labels, tokens, history, changed_rows, token_aware):
@@ -180,7 +205,7 @@ def guarded(old_source, new_source, base, old_relay, new_relay, labels, tokens, 
         value = new_relay[i] if j is None else int(labels[i, j])
         audit.update(action, value)
         actions.append(action)
-    return set(audit.decision() or []), actions
+    return decision_set(audit, context="replay"), actions
 
 
 def bounded_decision(audit, unknown_rows, labels, label_count):
@@ -252,8 +277,10 @@ def bounded_guard(old_source, new_source, base, old_relay, new_relay, labels,
             value = new_relay[i] if j is None else int(labels[i, j])
             audit.update(action, value)
             actions.append(action)
-        pred = bounded_decision(audit, unknown, labels, 8) if unknown else set(audit.decision() or [])
-    return set(pred or []), actions
+        pred = bounded_decision(audit, unknown, labels, 8) if unknown else decision_set(audit, context="guarded-no-unknown")
+    if pred is None:
+        raise RuntimeError("unfinished bounded audit was treated as an empty decision: guarded")
+    return {int(value) for value in pred}, actions
 
 
 def density_gate(old_source, new_source, base, old_relay, new_relay, labels,
@@ -297,14 +324,14 @@ def run(manifest):
                 target = set(np.flatnonzero(truth(new_source, base, new_relay, labels, tau=TAU)))
                 gold = int(sealed[row["key"]])
                 result = {
-                    "stale": (set(np.flatnonzero(truth(old_source, base, old_relay, labels, tau=TAU))), []),
-                    "warm_reweighted": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history),
+                    "stale": (decision_from_history(old_source, base, history, context="stale"), []),
+                    "warm_reweighted": replay(old_source, new_source, base, new_relay, labels, row["tokens"], history),
                     "max_uncertainty": baseline_recheck(new_source, base, new_relay, labels,
                                                          row["tokens"], history, "max_uncertainty",
                                                          int(row["key"][:8], 16)),
                     "random_recheck": baseline_recheck(new_source, base, new_relay, labels, row["tokens"], history, "random", int(row["key"][:8], 16)),
                     "periodic_recheck": baseline_recheck(new_source, base, new_relay, labels, row["tokens"], history, "periodic"),
-                    "source_only_ctdr": replay(old_source, new_source, base, old_relay, labels, row["tokens"], history, radius=True),
+                    "source_only_ctdr": replay(old_source, new_source, base, new_relay, labels, row["tokens"], history, radius=True),
                     "tcr_guard": guarded(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, False),
                     "tcr_token": guarded(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, True),
                     "tcr_bound": bounded_guard(old_source, new_source, base, old_relay, new_relay, labels, row["tokens"], history, changed_rows, False),

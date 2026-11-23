@@ -99,8 +99,7 @@ and exact-set stopping target. Exact warm cache
 replays the old transcript on the new source and forbids every new query.
 Reweighted old-history audit allows the common post-edit audit scheduler to
 query. Full CTDR receives only the graph-manifest descendant rows as affected
-and then applies token-aware selective ranking. The oracle is restricted to
-changed-row refresh actions and is an offline lower-cost reference.
+and then applies token-aware selective ranking. The oracle is restricted to changed-row refresh actions and is an offline hindsight diagnostic.
 
 \begin{table}[t]
 \centering\scriptsize
@@ -111,14 +110,14 @@ Controller & Exact set & Action error & False drop & Queries & Tokens\\\\
 \midrule
 Stale & 0.9039 & 0.0428 & 0.0637 & 0.0000 & 0.00\\\\
 Exact warm cache & 0.8877 & 0.0443 & 0.0894 & 0.0000 & 0.00\\\\
-Reweighted old history & 0.9167 & 0.0391 & 0.0521 & 0.2784 & 22.73\\\\
-CTDR transport only & 0.9167 & 0.0391 & 0.0521 & 0.2784 & 22.73\\\\
-CTDR + selective ranking & 0.9167 & 0.0391 & 0.0521 & 0.3067 & 24.48\\\\
+Reweighted old history & 0.9167 & 0.0391 & 0.0521 & 0.2784 & 22.86\\\\
+CTDR transport only & 0.9167 & 0.0391 & 0.0521 & 0.2784 & 22.86\\\\
+CTDR + selective ranking & 0.9167 & 0.0391 & 0.0521 & 0.3067 & 24.61\\\\
 Full CTDR & 1.0000 & 0.0000 & 0.0000 & 3.0987 & 230.91\\\\
 Max uncertainty & 0.9167 & 0.0391 & 0.0521 & 0.2801 & 22.86\\\\
 Periodic / random & 0.9167 & 0.0391 & 0.0521 & 0.4907 / 0.4716 & 39.81 / 37.34\\\\
 Full restart & 1.0000 & 0.0000 & 0.0000 & 11.3698 & 878.78\\\\
-Oracle row refresh & 1.0000 & 0.0000 & 0.0000 & 0.2778 & 21.20\\\\
+Oracle row refresh & 0.9068 & 0.0391 & 0.0932 & 0.2778 & 42.71\\\\
 \bottomrule
 \end{tabular}%
 }

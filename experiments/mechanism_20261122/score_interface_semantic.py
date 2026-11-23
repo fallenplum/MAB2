@@ -13,7 +13,7 @@ from pathlib import Path
 
 import numpy as np
 
-from conditional_real_score import baseline_recheck, old_history, price_arrays
+from conditional_real_score import baseline_recheck, decision_from_history, old_history, price_arrays
 from conditional_schema import validate_conditional_full
 from ctdr import truth
 from score_arcc_independent import generic_guarded, generic_replay
@@ -33,10 +33,10 @@ def score(worker_path: Path, input_path: Path):
         tokens = item["tokens"]
         changed = by_key[item["key"]].get("interface_drift_rows", item.get("changed_rows", []))
         history = old_history(old_source, base, old_relay, labels)
-        target = set(np.flatnonzero(truth(new_source, base, new_relay, tau=0.01)))
+        target = set(np.flatnonzero(truth(new_source, base, new_relay, labels, tau=0.01)))
         methods = {
-            "stale": (set(np.flatnonzero(truth(old_source, base, old_relay, tau=0.01))), []),
-            "warm_reweighted": generic_replay(old_source, new_source, base, old_relay, labels, tokens, history),
+            "stale": (decision_from_history(old_source, base, history, context="stale"), []),
+            "warm_reweighted": generic_replay(old_source, new_source, base, new_relay, labels, tokens, history),
             "max_uncertainty": baseline_recheck(new_source, base, new_relay, labels, tokens, history, "max_uncertainty", int(item["key"][:8], 16)),
             "random": baseline_recheck(new_source, base, new_relay, labels, tokens, history, "random", int(item["key"][:8], 16)),
             "periodic": baseline_recheck(new_source, base, new_relay, labels, tokens, history, "periodic"),

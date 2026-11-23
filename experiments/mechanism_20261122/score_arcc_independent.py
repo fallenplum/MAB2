@@ -24,6 +24,8 @@ from conditional_real_score import (  # noqa: E402
     baseline_recheck,
     bounded_decision,
     cost,
+    decision_set,
+    decision_from_history,
     old_history,
     price_arrays,
 )
@@ -86,7 +88,7 @@ def generic_replay(old_source, new_source, base, relay, labels, tokens, history=
         actions.append(action)
         if radius:
             safe, *_ = safe_transport(old_source, new_source, audit, base, tau=TAU, label_count=label_count)
-    return set(audit.decision() or []), actions
+    return decision_set(audit, context="arcc-replay"), actions
 
 
 def generic_guarded(old_source, new_source, base, old_relay, new_relay, labels, tokens, history, changed_rows, token_aware):
@@ -113,7 +115,7 @@ def generic_guarded(old_source, new_source, base, old_relay, new_relay, labels, 
         value = new_relay[i] if j is None else int(labels[i, j])
         audit.update(action, value)
         actions.append(action)
-    return set(audit.decision() or []), actions
+    return decision_set(audit, context="arcc-baseline"), actions
 
 
 def generic_bounded_guard(old_source, new_source, base, old_relay, new_relay, labels, tokens, history, changed_rows, token_aware):
@@ -151,8 +153,10 @@ def generic_bounded_guard(old_source, new_source, base, old_relay, new_relay, la
             value = new_relay[i] if j is None else int(labels[i, j])
             audit.update(action, value)
             actions.append(action)
-        pred = bounded_decision(audit, unknown, labels, label_count) if unknown else set(audit.decision() or [])
-    return set(pred or []), actions
+        pred = bounded_decision(audit, unknown, labels, label_count) if unknown else decision_set(audit, context="arcc-guard-no-unknown")
+    if pred is None:
+        raise RuntimeError("unfinished bounded ARC audit was treated as an empty decision")
+    return {int(value) for value in pred}, actions
 
 
 def values(source, base, relay, labels):
@@ -207,14 +211,14 @@ def evaluate_row(item, raw_gold):
     labels = parsed["labels"]
     history = old_history(old_source, base, old_relay, labels)
     target = set(np.flatnonzero(truth(new_source, base, new_relay, labels, tau=TAU)))
-    old_target = set(np.flatnonzero(truth(old_source, base, old_relay, labels, tau=TAU)))
+    old_target = decision_from_history(old_source, base, history, context="stale")
     changed = tuple(int(value) for value in item.get("changed_rows", []))
     tokens = item["tokens"]
 
     result = {
         "stale": (old_target, []),
         "relay_refresh": (set(), relay_refresh(old_relay, new_relay, tokens, changed)),
-        "warm_reweighted": generic_replay(old_source, new_source, base, old_relay, labels, tokens, history),
+        "warm_reweighted": generic_replay(old_source, new_source, base, new_relay, labels, tokens, history),
         "max_uncertainty": baseline_recheck(
             new_source, base, new_relay, labels, tokens, history, "max_uncertainty", int(item["key"][:8], 16)
         ),
@@ -225,7 +229,7 @@ def evaluate_row(item, raw_gold):
             new_source, base, new_relay, labels, tokens, history, "periodic"
         ),
         "source_only_ctdr": generic_replay(
-            old_source, new_source, base, old_relay, labels, tokens, history, radius=True
+            old_source, new_source, base, new_relay, labels, tokens, history, radius=True
         ),
         "tcr_guard": generic_guarded(
             old_source, new_source, base, old_relay, new_relay, labels, tokens, history, changed, False

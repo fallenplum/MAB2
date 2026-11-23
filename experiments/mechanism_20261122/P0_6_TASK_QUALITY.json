@@ -1,0 +1,212 @@
+{
+  "schema": "mab2_p0_6_task_quality_v1",
+  "n_score_files": 51,
+  "n_question_rows": 6528,
+  "methods": [
+    "warm_reweighted",
+    "max_uncertainty",
+    "source_only_ctdr",
+    "tcr_guard",
+    "cold_restart"
+  ],
+  "transitions": {
+    "warm_reweighted": {
+      "answer_accuracy_corrected": {
+        "corrected": 348,
+        "damaged": 219,
+        "unchanged_correct": 3071,
+        "unchanged_wrong": 2890,
+        "n": 6528
+      },
+      "answer_action_exact": {
+        "corrected": 812,
+        "damaged": 5,
+        "unchanged_correct": 5663,
+        "unchanged_wrong": 48,
+        "n": 6528
+      }
+    },
+    "max_uncertainty": {
+      "answer_accuracy_corrected": {
+        "corrected": 348,
+        "damaged": 219,
+        "unchanged_correct": 3071,
+        "unchanged_wrong": 2890,
+        "n": 6528
+      },
+      "answer_action_exact": {
+        "corrected": 812,
+        "damaged": 5,
+        "unchanged_correct": 5663,
+        "unchanged_wrong": 48,
+        "n": 6528
+      }
+    },
+    "source_only_ctdr": {
+      "answer_accuracy_corrected": {
+        "corrected": 348,
+        "damaged": 219,
+        "unchanged_correct": 3071,
+        "unchanged_wrong": 2890,
+        "n": 6528
+      },
+      "answer_action_exact": {
+        "corrected": 812,
+        "damaged": 5,
+        "unchanged_correct": 5663,
+        "unchanged_wrong": 48,
+        "n": 6528
+      }
+    }
+  },
+  "by_cell_answer_accuracy": {
+    "m60_conditional_dedup_commonsense": {
+      "warm_reweighted": 0.5625,
+      "max_uncertainty": 0.5625,
+      "source_only_ctdr": 0.5625,
+      "tcr_guard": 0.5546875,
+      "cold_restart": 0.5546875
+    },
+    "m60_conditional_dedup_qasc": {
+      "warm_reweighted": 0.31640625,
+      "max_uncertainty": 0.31640625,
+      "source_only_ctdr": 0.31640625,
+      "tcr_guard": 0.32421875,
+      "cold_restart": 0.32421875
+    },
+    "m60_conditional_dedup_rows2_commonsense": {
+      "warm_reweighted": 0.55859375,
+      "max_uncertainty": 0.55859375,
+      "source_only_ctdr": 0.55859375,
+      "tcr_guard": 0.59375,
+      "cold_restart": 0.59375
+    },
+    "m60_conditional_dedup_rows2_qasc": {
+      "warm_reweighted": 0.3203125,
+      "max_uncertainty": 0.3203125,
+      "source_only_ctdr": 0.3203125,
+      "tcr_guard": 0.3828125,
+      "cold_restart": 0.3828125
+    },
+    "m60_conditional_dedup_rows2_sciq": {
+      "warm_reweighted": 0.58984375,
+      "max_uncertainty": 0.58984375,
+      "source_only_ctdr": 0.58984375,
+      "tcr_guard": 0.58984375,
+      "cold_restart": 0.58984375
+    },
+    "m60_conditional_dedup_rows4_commonsense": {
+      "warm_reweighted": 0.55859375,
+      "max_uncertainty": 0.55859375,
+      "source_only_ctdr": 0.55859375,
+      "tcr_guard": 0.63671875,
+      "cold_restart": 0.63671875
+    },
+    "m60_conditional_dedup_rows4_qasc": {
+      "warm_reweighted": 0.3203125,
+      "max_uncertainty": 0.3203125,
+      "source_only_ctdr": 0.3203125,
+      "tcr_guard": 0.40234375,
+      "cold_restart": 0.40234375
+    },
+    "m60_conditional_dedup_rows4_sciq": {
+      "warm_reweighted": 0.58984375,
+      "max_uncertainty": 0.58984375,
+      "source_only_ctdr": 0.58984375,
+      "tcr_guard": 0.63671875,
+      "cold_restart": 0.63671875
+    },
+    "m60_conditional_dedup_sciq": {
+      "warm_reweighted": 0.59375,
+      "max_uncertainty": 0.59375,
+      "source_only_ctdr": 0.59375,
+      "tcr_guard": 0.5859375,
+      "cold_restart": 0.5859375
+    },
+    "m60_conditional_llama3_commonsense": {
+      "warm_reweighted": 0.5703125,
+      "max_uncertainty": 0.5703125,
+      "source_only_ctdr": 0.5703125,
+      "tcr_guard": 0.5651041666666666,
+      "cold_restart": 0.5651041666666666
+    },
+    "m60_conditional_llama3_qasc": {
+      "warm_reweighted": 0.3880208333333333,
+      "max_uncertainty": 0.3880208333333333,
+      "source_only_ctdr": 0.3880208333333333,
+      "tcr_guard": 0.3932291666666667,
+      "cold_restart": 0.3932291666666667
+    },
+    "m60_conditional_llama3_rows2_commonsense": {
+      "warm_reweighted": 0.5677083333333334,
+      "max_uncertainty": 0.5677083333333334,
+      "source_only_ctdr": 0.5677083333333334,
+      "tcr_guard": 0.5911458333333334,
+      "cold_restart": 0.5911458333333334
+    },
+    "m60_conditional_llama3_rows2_qasc": {
+      "warm_reweighted": 0.390625,
+      "max_uncertainty": 0.390625,
+      "source_only_ctdr": 0.390625,
+      "tcr_guard": 0.4296875,
+      "cold_restart": 0.4322916666666667
+    },
+    "m60_conditional_llama3_rows2_sciq": {
+      "warm_reweighted": 0.5911458333333334,
+      "max_uncertainty": 0.5911458333333334,
+      "source_only_ctdr": 0.5911458333333334,
+      "tcr_guard": 0.5911458333333334,
+      "cold_restart": 0.5911458333333334
+    },
+    "m60_conditional_llama3_rows4_commonsense": {
+      "warm_reweighted": 0.5677083333333334,
+      "max_uncertainty": 0.5677083333333334,
+      "source_only_ctdr": 0.5677083333333334,
+      "tcr_guard": 0.5911458333333334,
+      "cold_restart": 0.5911458333333334
+    },
+    "m60_conditional_llama3_rows4_qasc": {
+      "warm_reweighted": 0.390625,
+      "max_uncertainty": 0.390625,
+      "source_only_ctdr": 0.390625,
+      "tcr_guard": 0.4270833333333333,
+      "cold_restart": 0.4270833333333333
+    },
+    "m60_conditional_llama3_rows4_sciq": {
+      "warm_reweighted": 0.5911458333333334,
+      "max_uncertainty": 0.5911458333333334,
+      "source_only_ctdr": 0.5911458333333334,
+      "tcr_guard": 0.6171875,
+      "cold_restart": 0.6171875
+    },
+    "m60_conditional_llama3_sciq": {
+      "warm_reweighted": 0.5963541666666666,
+      "max_uncertainty": 0.5963541666666666,
+      "source_only_ctdr": 0.5963541666666666,
+      "tcr_guard": 0.5911458333333334,
+      "cold_restart": 0.5911458333333334
+    },
+    "m60_conditional_server_commonsense": {
+      "warm_reweighted": 0.546875,
+      "max_uncertainty": 0.546875,
+      "source_only_ctdr": 0.546875,
+      "tcr_guard": 0.54296875,
+      "cold_restart": 0.546875
+    },
+    "m60_conditional_server_qasc": {
+      "warm_reweighted": 0.328125,
+      "max_uncertainty": 0.328125,
+      "source_only_ctdr": 0.328125,
+      "tcr_guard": 0.33203125,
+      "cold_restart": 0.35546875
+    },
+    "m60_conditional_server_sciq": {
+      "warm_reweighted": 0.5859375,
+      "max_uncertainty": 0.5859375,
+      "source_only_ctdr": 0.5859375,
+      "tcr_guard": 0.578125,
+      "cold_restart": 0.57421875
+    }
+  },
+  "scope": "sealed per-question score artifacts, answer accuracy is separate from decision-set exactness"
+}
