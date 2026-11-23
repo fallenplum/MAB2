@@ -61,6 +61,12 @@ The Pairwise Gap Certificate uses a development residue to select its drift quan
 
 The split-conformal variant fixes $\alpha=.1$ before scoring. It uses rowwise Bonferroni order statistics and reaches answer-action exactness 1.000 with 133.93 mean tokens. The observed marginal row-radius coverage is 0.981 and all-row coverage is 0.966. These diagnostics are interpreted under row-wise exchangeability, not as an unconditional guarantee.
 
+Matched row-order controls use the same pairwise certificate and differ only in
+which legal row is queried next. Pairwise Gap and maximum uncertainty both use
+112.27 mean tokens with action exactness 1.000. Periodic and seeded random
+orders use 120.72 and 121.97 tokens with the same action exactness. This
+isolates the cost effect of gap-per-token ordering from the certificate target.
+
 \begin{table}[t]
 \centering\small
 \begin{tabular}{lrrrr}
