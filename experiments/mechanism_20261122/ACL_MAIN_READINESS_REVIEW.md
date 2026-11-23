@@ -32,8 +32,10 @@ decision exactness 0.9677 and remains an explicit boundary failure.
    now available for rows1/2/4 under single-forward execution. Its action
    comparison remains diagnostic because the custom model path does not exactly
    reproduce the worker reference.
-   A risk-gated route reaches exact action and edge recovery on the 21 local
-   historical cells. On the three Qwen-14B historical panels it improves
+   A risk-gated route reaches exact answer-action recovery on the 21 local
+   historical cells. Edge matches there are consistency diagnostics because
+   the low-risk branch does not acquire every conditional cell. On the three
+   Qwen-14B historical panels it improves
    action exactness over TCR, but those panels still require a matching
    single-forward worker output before they can support a service claim.
    The matched Qwen-14B single-forward worker replay now covers rows1/2/4 and

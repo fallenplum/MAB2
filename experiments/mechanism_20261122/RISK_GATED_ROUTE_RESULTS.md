@@ -3,7 +3,7 @@
 The route uses a development-selected quantile and answer-margin risk threshold.
 The test residue is reported with the existing TCR and cold-restart traces.
 
-| cell | q | threshold | risk action | risk decision | risk tokens | TCR action | TCR tokens | cold tokens |
+| cell | q | threshold | risk action | edge consistency | risk tokens | TCR action | TCR tokens | cold tokens |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | m60_conditional_dedup_commonsense | 0.5 | inf | 1.000 | 1.000 | 90.8 | 1.000 | 98.3 | 1349.8 |
 | m60_conditional_dedup_qasc | 0.5 | inf | 1.000 | 1.000 | 99.6 | 1.000 | 182.2 | 1655.3 |
@@ -27,5 +27,5 @@ The test residue is reported with the existing TCR and cold-restart traces.
 | m60_conditional_server_qasc | 0.95 | 1 | 1.000 | 1.000 | 232.2 | 0.891 | 182.8 | 1645.2 |
 | m60_conditional_server_sciq | 0.5 | 0.25 | 1.000 | 1.000 | 487.0 | 0.867 | 160.5 | 1540.9 |
 
-The risk-gated route reaches exact answer-action and edge-decision recovery on every listed local cell. On the three Qwen-14B server panels, TCR action exactness is 0.914, 0.891 and 0.867, while risk-gated recovery is exact with 343.5, 232.2 and 487.0 logical relay tokens. These panels are historical model-generated traces and still require single-forward service confirmation.
+The risk-gated route reaches exact answer-action recovery on every listed local cell. Edge matches are consistency diagnostics because the low-risk branch does not acquire every conditional cell. On the three Qwen-14B server panels, TCR action exactness is 0.914, 0.891 and 0.867, while the risk-gated answer action is exact with 343.5, 232.2 and 487.0 logical relay tokens. These panels are historical model-generated traces and still require single-forward service confirmation.
 

@@ -85,7 +85,9 @@ threshold are selected on development questions and the gate uses no newly
 queried relay values.
 
 On the 21 local model-task-density cells, the gate reaches exact answer-action
-and edge-decision recovery on every held-out residue. On the three historical
+recovery on every held-out residue. Edge matches against the full worker
+reference are consistency diagnostics because the low-risk mask branch does
+not acquire all conditional cells. On the three historical
 Qwen-14B panels, TCR action exactness is 0.914, 0.891 and 0.867, while the
 risk-gated route reaches 1.0 with 343.5, 232.2 and 487.0 logical relay tokens.
 The corrected single-forward Qwen-0.5B service panel retains action exactness

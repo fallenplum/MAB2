@@ -137,7 +137,9 @@ threshold sends low-risk cases through the descendant mask and high-risk cases
 through answer-region revalidation. The gate uses no new relay values.
 
 On the 21 local model-task-density cells, this gate reached exact answer-action
-and edge-decision recovery on every held-out residue. On the three historical
+recovery on every held-out residue. The corresponding edge-decision matches
+are consistency diagnostics because the low-risk mask branch does not acquire
+every downstream conditional cell. On the three historical
 Qwen-14B server panels, TCR action exactness was 0.914, 0.891 and 0.867. The
 risk-gated route reached 1.0 on all three at 343.5, 232.2 and 487.0 logical
 relay tokens, versus 1350.0, 1645.2 and 1540.9 for cold restart. These server

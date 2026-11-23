@@ -32,7 +32,7 @@ def main():
     lines = ["# Risk-gated revalidation route", "",
              "The route uses a development-selected quantile and answer-margin risk threshold.",
              "The test residue is reported with the existing TCR and cold-restart traces.", "",
-             "| cell | q | threshold | risk action | risk decision | risk tokens | TCR action | TCR tokens | cold tokens |",
+             "| cell | q | threshold | risk action | edge consistency | risk tokens | TCR action | TCR tokens | cold tokens |",
              "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for row in rows:
         lines.append("| {cell} | {q:g} | {threshold:g} | {risk_action:.3f} | {risk_decision:.3f} | {risk_tokens:.1f} | {tcr_action:.3f} | {tcr_tokens:.1f} | {cold_tokens:.1f} |".format(**row))

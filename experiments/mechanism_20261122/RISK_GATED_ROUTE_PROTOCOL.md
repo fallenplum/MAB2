@@ -18,8 +18,10 @@ all-row path.
 
 ## Acceptance criteria
 
-- Development selection requires exact answer-action recovery and exact edge
-  recovery for the selected route.
+- Development selection requires exact answer-action recovery. Edge exactness
+  is reported as a consistency diagnostic against the full worker reference.
+  It is not a runtime edge certificate unless the downstream conditional cells
+  are also acquired.
 - The independent residue reports answer-action exactness, edge-decision
   exactness, answer accuracy, relay tokens, relay forwards and wall time.
 - A model-side forward mismatch invalidates service action comparisons until the

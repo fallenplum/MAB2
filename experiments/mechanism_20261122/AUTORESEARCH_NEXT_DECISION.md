@@ -9,7 +9,7 @@
 - 语义接口漂移面板覆盖三类模型和三个任务族的九个单元。TCR guard 在所有已完成单元达到 exact-set 1.0。stale 与 warm reweighted 在多个单元失效，说明接口变化需要进入复检依据。
 - 隐藏接口面板显示，事实编辑掩码会漏掉未声明的接口变化。加入接口指纹后，三种模型的 answer-action exact 均恢复到 1.0，但 Qwen-14B 仍有一个 edge-decision 边界错误。
 - 独立正交消融的主要节约来自 all-row 校准中未观测行的零漂移假设。可信 changed-row mask 下，row-specific radius 和 source-aware priority 的额外收益较小。
-- 风险门控路线在 21 个历史模型-任务-密度单元上达到 exact action 和 edge recovery。它在三个 Qwen-14B 历史面板上修复了 TCR 的 action loss，但这些面板仍需要同口径单条 worker reference 才能支持服务主张。
+- 风险门控路线在 21 个历史模型-任务-密度单元上达到 exact answer action。edge exact 只作为完整 worker reference 的一致性诊断，因为低风险掩码分支没有购买所有边级条件核。它在三个 Qwen-14B 历史面板上修复了 TCR 的 action loss，但这些面板仍需要同口径单条 worker reference 才能支持服务主张。
 - 本地历史三模型 route selector 的低调用版本在 Qwen-14B 服务面板上出现 action exact 0.78--0.88，说明仅按 relay 行数选择路线会漏掉需要补充条件核的情况，当前不能作为主算法。
 
 ## 研究判断
