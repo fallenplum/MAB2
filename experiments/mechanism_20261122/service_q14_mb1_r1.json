@@ -1,0 +1,74 @@
+{
+  "schema": "mab2_actual_service_forward_v1",
+  "input": "arcc_independent_rows1_INPUT.json",
+  "worker": "q14_mb1_r1.jsonl",
+  "model": "/home/chen/KDBPT/KD/models/Qwen-14B",
+  "results": [
+    {
+      "method": "stale",
+      "n": 128,
+      "forward_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "wall_seconds": 0.24858175683766603,
+      "mean_calls": 0.0,
+      "mean_input_tokens": 0.0,
+      "mean_output_tokens": 0.0,
+      "mean_wall_seconds": 0.001942044975294266,
+      "decision_exact": 1.0,
+      "answer_action_exact": 0.9921875,
+      "answer_accuracy": 0.25
+    },
+    {
+      "method": "tcr_guard",
+      "n": 128,
+      "forward_calls": 128,
+      "input_tokens": 13183,
+      "output_tokens": 128,
+      "wall_seconds": 7.7168280920013785,
+      "mean_calls": 1.0,
+      "mean_input_tokens": 102.9921875,
+      "mean_output_tokens": 1.0,
+      "mean_wall_seconds": 0.06028771946876077,
+      "decision_exact": 0.984375,
+      "answer_action_exact": 0.9921875,
+      "answer_accuracy": 0.234375
+    },
+    {
+      "method": "answer_region_q1",
+      "n": 128,
+      "forward_calls": 7,
+      "input_tokens": 653,
+      "output_tokens": 7,
+      "wall_seconds": 0.6457092356868088,
+      "mean_calls": 0.0546875,
+      "mean_input_tokens": 5.1015625,
+      "mean_output_tokens": 0.0546875,
+      "mean_wall_seconds": 0.005044603403803194,
+      "decision_exact": 0.984375,
+      "answer_action_exact": 0.9921875,
+      "answer_accuracy": 0.234375
+    },
+    {
+      "method": "cold_restart",
+      "n": 128,
+      "forward_calls": 2944,
+      "input_tokens": 250217,
+      "output_tokens": 2944,
+      "wall_seconds": 160.28910793410614,
+      "mean_calls": 23.0,
+      "mean_input_tokens": 1954.8203125,
+      "mean_output_tokens": 23.0,
+      "mean_wall_seconds": 1.2522586557352042,
+      "decision_exact": 0.2265625,
+      "answer_action_exact": 0.6171875,
+      "answer_accuracy": 0.25
+    }
+  ],
+  "radius_q1_all": {
+    "0": 0.0,
+    "1": 0.2613607356324792,
+    "2": 0.0,
+    "3": 0.0
+  }
+}

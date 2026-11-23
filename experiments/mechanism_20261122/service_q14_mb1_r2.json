@@ -1,0 +1,74 @@
+{
+  "schema": "mab2_actual_service_forward_v1",
+  "input": "arcc_independent_rows2_INPUT.json",
+  "worker": "q14_mb1_r2.jsonl",
+  "model": "/home/chen/KDBPT/KD/models/Qwen-14B",
+  "results": [
+    {
+      "method": "stale",
+      "n": 128,
+      "forward_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "wall_seconds": 0.2528388798236847,
+      "mean_calls": 0.0,
+      "mean_input_tokens": 0.0,
+      "mean_output_tokens": 0.0,
+      "mean_wall_seconds": 0.0019753037486225367,
+      "decision_exact": 0.9296875,
+      "answer_action_exact": 0.8125,
+      "answer_accuracy": 0.234375
+    },
+    {
+      "method": "tcr_guard",
+      "n": 128,
+      "forward_calls": 128,
+      "input_tokens": 13183,
+      "output_tokens": 128,
+      "wall_seconds": 7.642218780703843,
+      "mean_calls": 1.0,
+      "mean_input_tokens": 102.9921875,
+      "mean_output_tokens": 1.0,
+      "mean_wall_seconds": 0.05970483422424877,
+      "decision_exact": 0.828125,
+      "answer_action_exact": 0.7578125,
+      "answer_accuracy": 0.234375
+    },
+    {
+      "method": "answer_region_q1",
+      "n": 128,
+      "forward_calls": 127,
+      "input_tokens": 13054,
+      "output_tokens": 127,
+      "wall_seconds": 7.392348357941955,
+      "mean_calls": 0.9921875,
+      "mean_input_tokens": 101.984375,
+      "mean_output_tokens": 0.9921875,
+      "mean_wall_seconds": 0.057752721546421526,
+      "decision_exact": 0.828125,
+      "answer_action_exact": 0.7578125,
+      "answer_accuracy": 0.234375
+    },
+    {
+      "method": "cold_restart",
+      "n": 128,
+      "forward_calls": 2944,
+      "input_tokens": 250217,
+      "output_tokens": 2944,
+      "wall_seconds": 159.022548540961,
+      "mean_calls": 23.0,
+      "mean_input_tokens": 1954.8203125,
+      "mean_output_tokens": 23.0,
+      "mean_wall_seconds": 1.2423636604762578,
+      "decision_exact": 0.75,
+      "answer_action_exact": 0.4453125,
+      "answer_accuracy": 0.2421875
+    }
+  ],
+  "radius_q1_all": {
+    "0": 0.0,
+    "1": 0.21192579716444016,
+    "2": 0.0,
+    "3": 0.0
+  }
+}
