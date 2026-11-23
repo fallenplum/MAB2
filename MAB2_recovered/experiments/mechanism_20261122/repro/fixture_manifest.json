@@ -1,0 +1,31 @@
+{
+  "panels": {
+    "public_fixture": "fixture"
+  },
+  "workers": [
+    0
+  ],
+  "changed_rows": [
+    1
+  ],
+  "changed_rows_mode": "fingerprint",
+  "output": "fixture_result.json",
+  "graph_manifest": {
+    "schema": "frozen_graph_edit_manifest_v1",
+    "edited_edges": [
+      "source_to_relay_1"
+    ],
+    "edge_to_relay_descendants": {
+      "source_to_relay_1": [
+        1
+      ]
+    },
+    "relay_rows": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "uses_answer_keys": false
+  }
+}

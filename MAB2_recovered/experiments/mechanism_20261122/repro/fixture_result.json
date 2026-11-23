@@ -1,0 +1,374 @@
+{
+  "schema": "m60_clean_replay_v1",
+  "stages": [
+    "prepare inputs",
+    "run worker outputs",
+    "score old transcript",
+    "run post-edit baselines",
+    "run CTDR",
+    "generate M60 table"
+  ],
+  "manifest": "fixture_manifest.json",
+  "table": [
+    {
+      "method": "stale",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    {
+      "method": "reweighted old-history audit / exact warm cache",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    {
+      "method": "CTDR transport only",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    {
+      "method": "CTDR transport + selective ranking",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 1.0,
+      "tokens": 1.0
+    },
+    {
+      "method": "full restart",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 18.25,
+      "tokens": 18.25
+    },
+    {
+      "method": "max-uncertainty",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    {
+      "method": "periodic",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    {
+      "method": "random",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 0.0,
+      "tokens": 0.0
+    },
+    {
+      "method": "oracle lower bound",
+      "n": 4,
+      "action_error": 0.0,
+      "exact_set": 1.0,
+      "false_drop": 0.0,
+      "false_keep": 0.0,
+      "queries": 0.0,
+      "tokens": 0.0
+    }
+  ],
+  "raw_result": {
+    "schema": "m60_conditional_real_replay_v2",
+    "panels": [
+      "public_fixture"
+    ],
+    "changed_rows": [
+      1
+    ],
+    "changed_rows_mode": "fingerprint",
+    "aggregate": {
+      "stale": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "warm_reweighted": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "max_uncertainty": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "random_recheck": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "periodic_recheck": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "source_only_ctdr": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "tcr_guard": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.0,
+        "tokens": 1.0
+      },
+      "tcr_token": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.0,
+        "tokens": 1.0
+      },
+      "tcr_bound": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "tcr_bound_token": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 0.0,
+        "tokens": 0.0
+      },
+      "tcr_density_gate": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.0,
+        "tokens": 1.0
+      },
+      "tcr_density_gate_token": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 1.0,
+        "tokens": 1.0
+      },
+      "cold_restart": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 18.25,
+        "tokens": 18.25
+      },
+      "cold_token": {
+        "n": 4,
+        "action_error": 0.0,
+        "exact_set": 1.0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "queries": 18.25,
+        "tokens": 18.25
+      }
+    },
+    "panel_team": {
+      "public_fixture": {
+        "0": {
+          "stale": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "warm_reweighted": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "max_uncertainty": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "random_recheck": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "periodic_recheck": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "source_only_ctdr": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "tcr_guard": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 1.0,
+            "tokens": 1.0
+          },
+          "tcr_token": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 1.0,
+            "tokens": 1.0
+          },
+          "tcr_bound": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "tcr_bound_token": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 0.0,
+            "tokens": 0.0
+          },
+          "tcr_density_gate": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 1.0,
+            "tokens": 1.0
+          },
+          "tcr_density_gate_token": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 1.0,
+            "tokens": 1.0
+          },
+          "cold_restart": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 18.25,
+            "tokens": 18.25
+          },
+          "cold_token": {
+            "n": 4,
+            "action_error": 0.0,
+            "exact_set": 1.0,
+            "false_drop": 0.0,
+            "false_keep": 0.0,
+            "queries": 18.25,
+            "tokens": 18.25
+          }
+        }
+      }
+    }
+  }
+}
