@@ -27,3 +27,28 @@ The proof establishes certificate soundness. It does not establish global
 optimality of the mass ranking, which is evaluated separately against random,
 periodic and relay-distance orderings.
 
+## Row-level transport radius
+
+For a product of independent row distributions, couple old and new rows so
+that row `i` disagrees with probability `delta_i`, its total variation
+distance. The probability that any row differs is at most
+
+```text
+rho_joint = 1 - product_i (1 - delta_i) <= sum_i delta_i.
+```
+
+For an action score in `[0,1]`, the expectation changes by at most
+`rho_joint`. An action-gap score can therefore change by at most
+`2 * rho_joint`. If an old certificate has known gap `g` and unknown mass
+`W_U`, a conservative transport condition is
+
+```text
+g > 2 * rho_joint + W_U.
+```
+
+The row-level terms cannot be dropped when an edited row changes a descendant
+channel. A one-row counterexample with two actions and a complete mass flip
+changes the preferred action while all unchanged-row terms remain zero. The
+radius is sufficient under the stated coupling assumptions and is not claimed
+necessary for every model.
+
