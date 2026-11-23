@@ -127,6 +127,24 @@ decision-region reduction in feedback cost. Independent interface-drift cells
 are required before treating a descendant mask as safe without the all-row
 fallback.
 
+## Risk-gated route selection
+
+The final route candidate estimates a mask risk from the cached post-edit
+answer margin. Let M be the difference between the largest and second
+largest answer score under reused relay rows. Let R equal the sum of
+s_i times delta_i over the uncertain rows, divided by M. A development-selected
+threshold sends low-risk cases through the descendant mask and high-risk cases
+through answer-region revalidation. The gate uses no new relay values.
+
+On the 21 local model-task-density cells, this gate reached exact answer-action
+and edge-decision recovery on every held-out residue. On the three historical
+Qwen-14B server panels, TCR action exactness was 0.914, 0.891 and 0.867. The
+risk-gated route reached 1.0 on all three at 343.5, 232.2 and 487.0 logical
+relay tokens, versus 1350.0, 1645.2 and 1540.9 for cold restart. These server
+panels still require single-forward service confirmation before a deployment
+claim. The corrected Qwen-0.5B single-forward panel keeps action exactness at
+1.0 and shows no relay-call reduction relative to TCR.
+
 The hidden-interface panel makes this boundary causal across Qwen2.5-0.5B,
 Qwen-14B, and Llama-3.2-1B. A fact-only mask under an undeclared row-3
 interface change loses answer-action exactness on Qwen2.5 and Llama. Including

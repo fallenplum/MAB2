@@ -76,6 +76,23 @@ Answer accuracy does not improve because the policy preserves the model's
 selected action. The evidence supports a cost reduction for certified action
 maintenance, not a claim of better language-model knowledge or task accuracy.
 
+## Risk-gated route candidate
+
+The route gate estimates the ratio between calibrated conditional-drift mass
+and the cached post-edit answer margin. Low-risk cases use the graph-descendant
+mask. High-risk cases use answer-region revalidation. The quantile and risk
+threshold are selected on development questions and the gate uses no newly
+queried relay values.
+
+On the 21 local model-task-density cells, the gate reaches exact answer-action
+and edge-decision recovery on every held-out residue. On the three historical
+Qwen-14B panels, TCR action exactness is 0.914, 0.891 and 0.867, while the
+risk-gated route reaches 1.0 with 343.5, 232.2 and 487.0 logical relay tokens.
+The corrected single-forward Qwen-0.5B service panel retains action exactness
+1.0 and shows no relay-call reduction relative to TCR. Qwen-14B rows1 and
+rows4 still require a matching single-forward worker output before this route
+can be promoted to the primary service claim.
+
 ## Open failure conditions
 
 The independent cohort remains a single new MCQA task family. The historical
