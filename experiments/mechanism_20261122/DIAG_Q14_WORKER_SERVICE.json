@@ -201,5 +201,8 @@
         0.0
       ]
     }
-  ]
+  ],
+  "status": "invalid_mapping_diagnostic",
+  "note": "Selected indices in the diagnostic mixed worker old-relay/new-relay positions. Do not use this file to claim full service equivalence."
 }
+
