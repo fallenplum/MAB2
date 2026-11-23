@@ -127,6 +127,21 @@ Cold restart & 1.000 & 554--1,606 & Edge set\\
 \caption{Semantic relay-interface drift panel. Exact recovery is a finite worker-reference diagnostic.}
 \end{table}
 
+\subsection{Attribution and negative controls}
+The earlier Full CTDR module ablation is retained as a negative result. Warm
+Restart, Reweighted Audit and CTDR without the radius all recover the exact
+finite decision set with 98.2057 mean logical tokens. Full CTDR and its decision
+ranking use 99.2448 tokens at the same exactness. This rules out attributing the
+historical four-panel savings to the drift radius or generic ranking loop.
+
+An independent answer-region ablation isolates graph-conditioned drift
+information under the same stopping rule. Row-specific radii with source-aware
+priority use 162.29 tokens at answer-action exactness 1.000, while a pooled
+radius uses 356.87 tokens at the same action exactness. A pooled-radius uniform
+priority control uses 356.90 tokens. The Pairwise Gap Certificate therefore
+uses the graph-conditioned radius and interface mask as the mechanism input,
+while its gap-per-token order is treated as a heuristic implementation choice.
+
 \section{Discussion}
 The pairwise certificate separates two questions that are often conflated. An old certificate may be cheap to reuse while being insufficient for the final answer. Conversely, a graph edit can change several relay rows while leaving every unresolved answer gap safely positive. The observed answer-action preservation and token reduction across model families support this mechanism. Gap-directed refinement and decision-region stopping are established neighboring ideas, so the contribution is the graph-conditioned validity condition, interface-fingerprint invalidation and fail-closed transport of a paid communication transcript. The Qwen-0.5B service result shows that the logical-token reduction can translate into fewer forwards and lower wall time when the answer-action target is used. The Qwen-14B replay discrepancy limits cross-model service claims until the custom model path is reproducible across worker and service entry points.
 
