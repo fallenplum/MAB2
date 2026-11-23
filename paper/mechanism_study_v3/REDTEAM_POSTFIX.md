@@ -52,5 +52,5 @@ full-service latency remains unsupported and must stay out of the paper.
 
 The corrected source was rebuilt with pdfTeX on the server and the resulting
 five-page PDF was rendered locally. The source and PDF now correspond to the
-same release pair. The release commit is `326181fee3b84fe94941c4f9560b2155a53a4b1b`.
+same release pair. The release commit is `43492d3004be38a980c877447e362c9151e5127d`.
 
