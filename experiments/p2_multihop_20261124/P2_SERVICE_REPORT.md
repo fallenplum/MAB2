@@ -33,12 +33,12 @@
 | development | old graph reuse | 0.3750 | 1.0000 | 0.000 | 0.00 |
 | development | exact cache | 0.3750 | 1.0000 | 1.000 | 164.81 |
 | development | graph-mask recompute | 0.3750 | 1.0000 | 17.000 | 3480.81 |
-| development | topology VOI online | 0.3750 | 1.0000 | 1.000 | 164.81 |
+| development | topology VOI online | 0.3750 | 1.0000 | 8.000 | 1615.56 |
 | held-out | full new graph | 0.3750 | 1.0000 | 21.000 | 3979.38 |
 | held-out | old graph reuse | 0.3750 | 1.0000 | 0.000 | 0.00 |
 | held-out | exact cache | 0.3750 | 1.0000 | 1.000 | 163.56 |
 | held-out | graph-mask recompute | 0.3750 | 1.0000 | 17.000 | 3435.56 |
-| held-out | topology VOI online | 0.3750 | 1.0000 | 1.000 | 163.56 |
+| held-out | topology VOI online | 0.3750 | 1.0000 | 8.000 | 1595.06 |
 
 接口压力面板没有造成最终 answer-action 改变，因此它只验证了该 runner 能记录结构化接口变化，不能支持接口漂移带来任务质量变化的主张。
 
@@ -59,6 +59,7 @@
 - `P2_INTERFACE_WEIGHTED_PUBLIC_SUMMARY.json`
 
 状态为 `P2_SMALL_REAL_SERVICE_COMPLETED_WITH_SCOPE`。
+
 
 
 
