@@ -11,4 +11,4 @@ Corrected means baseline answer incorrect and candidate answer correct. Damaged 
 | source_only_ctdr -> tcr_guard | 348 | 219 | 3071 | 2890 | 6528 |
 
 The answer-accuracy transitions are computed from per-question sealed score artifacts. They are not inferred from decision-set transitions.
-	cr_guard is the graph-manifest guard available in the per-question scorer. A separate per-question full-CTDR service trace is not present, so these transitions do not imply full-CTDR task quality.\n
+`TCR guard` is the graph-manifest guard available in the per-question scorer. A separate per-question full-CTDR service trace is not present, so these transitions do not imply full-CTDR task quality.
