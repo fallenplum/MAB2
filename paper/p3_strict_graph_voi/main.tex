@@ -1,0 +1,101 @@
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times,latexsym,amsmath,amssymb,booktabs,microtype,url}
+\title{Graph-Conditional Certificate Revalidation for Multi-Small-Model Collaboration}
+\author{Research draft for author review}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Multi-model systems often reuse a communication transcript after editing the collaboration graph. Reusing every old terminal observation is cheap but can silently preserve a wrong action. Recomputing every descendant is safe but expensive. We study this trade-off as graph-conditional certificate revalidation. After a source edit, the method marks the dirty descendant cone, reuses valid transcript cells, ranks dirty terminal feedback by graph-conditioned mass, and stops only when a strict weighted decision certificate makes the action invariant to every unqueried completion. A finite-prior CPU study with 160,000 cases reaches action exactness 1.0 and reduces cost by 10.70\% against a matched masked-Pairwise baseline. On two independent natural-language tasks and two checkpoints, the confirmatory held-out panels preserve the full-new-graph action and use 2--3 forward calls versus 18 for graph-mask recomputation. A 128-row semantic-interface extension uses 7--9 calls versus 20--21. Mass-aware ranking is consistently cheaper than random, periodic, and relay-distance orderings under the same certificate. The method does not improve answer accuracy and does not dominate exact cache whenever stale reuse is already correct. The evidence supports a risk-constrained graph-conditional revalidation mechanism.
+\end{abstract}
+
+\section{Introduction}
+Multi-small-model systems pay for intermediate messages, relay decisions, and terminal checks. When a communication graph changes, an old transcript may no longer be valid because an edited source changes a descendant interface or because the conditional output of a relay shifts. The two extreme policies are to reuse every old observation or to recompute the whole graph. The first can cross an action boundary, while the second wastes feedback on irrelevant descendants.
+
+We ask when a previously paid transcript can be transported across an edit with a certified action. The method has three parts. It computes a fail-closed dirty descendant cone from the graph manifest and interface signatures. It assigns the remaining unresolved terminal cells their post-edit probability mass and queries cells in descending mass per cost. It stops only when the leading action has a strict weighted margin larger than the total mass of unqueried cells.
+
+Our contributions are as follows.
+\begin{itemize}
+\item We formalize graph-conditional transcript reuse as a certificate-maintenance problem and prove a strict weighted decision certificate, a tight equality counterexample, and a no-drift degeneration.
+\item We provide a budgeted revalidation controller with graph-conditioned dirty cones and mass-aware ordering, together with matched random, periodic, uncertainty, exact-cache, graph-mask, and full-restart controls.
+\item We evaluate the mechanism on 160,000 finite-prior cases and on QASC and SciQ service panels with Qwen-0.5B and Qwen-14B checkpoints. The real-service evidence separates action risk, answer accuracy, calls, input tokens, and wall time.
+\end{itemize}
+
+The evidence supports a narrow claim. The certificate route reduces cost at a fixed action-risk target against descendant-mask and full-restart routes. Exact cache remains cheaper when its stale action is already correct, so the method is a risk-constrained frontier point rather than a universal cost winner.
+
+\section{Related work}
+Decision-region active testing stops when all hypotheses consistent with observations lie in one decision region \citep{javdani2014}. Adaptive decision trees and noisy test selection extend this framework to cost-sensitive observations. Our certificate uses the same decision-invariance principle but transports a previously paid communication transcript through a graph edit.
+
+Sparse communication topology selection, agent pruning, dynamic agent dropout, and runtime message pruning reduce communication during a run \citep{li2024sparse,zhang2025agentprune,wang2025agentdropout,you2026messagesieve}. They do not determine which historical relay observations remain valid after a graph mutation. Work on graph distribution shift and graph conditional shift studies adaptation of graph predictors, while our object is the validity and cost of communication evidence.
+
+\section{Graph-conditional certificate revalidation}
+Let terminal cells be indexed by $j\in\{1,\ldots,m\}$, with non-negative post-edit weights $w_j$ and labels $y_j\in\mathcal{A}$. The old transcript contains labels for all cells. An edited source and its interface signature induce a dirty set $D$. A cell outside $D$ is a legal cache hit. Cells in $D$ are initially unknown.
+
+For a queried set $K$, define
+\begin{equation}
+S_a(K)=\sum_{j\in K:y_j=a} w_j,\qquad W_U=\sum_{j\notin K}w_j.
+\end{equation}
+The controller certifies action $a^*$ when
+\begin{equation}
+S_{a^*}(K)>\max_{b\neq a^*}S_b(K)+W_U.\label{eq:cert}
+\end{equation}
+The inequality is strict. Any completion of unknown labels gives $a^*$ at least $S_{a^*}$ and every alternative at most its known score plus $W_U$. Thus Eq.~\ref{eq:cert} makes the action invariant.
+
+The bound is tight. With known scores $S_{a^*}=1$ and $S_b=0$ and one unknown cell of weight one, equality permits a completion that selects $b$. Without a graph edit, the dirty cone is empty and the controller reuses the old transcript without a post-edit query.
+
+The online order is mass-aware. After changed relay rows are queried, each dirty terminal cell is assigned its graph-conditioned mass. The controller queries the largest mass first and updates Eq.~\ref{eq:cert}. Random, periodic, and relay-distance controls use the same dirty set, costs, and certificate, changing only the order. Full-information routes are offline diagnostics.
+
+For row-level distribution drift, coupling independent old and new rows with total-variation distances $\delta_i$ gives a joint disagreement probability at most $\rho=1-\prod_i(1-\delta_i)\leq\sum_i\delta_i$. For scores in $[0,1]$, a pairwise gap changes by at most $2\rho$. A conservative transport condition is therefore old gap $>2\rho+W_U$. We use this bound as a sufficient condition and do not claim necessity.
+
+\section{Experimental protocol}
+All online methods share old transcripts, source edits, stopping targets, token prices, model checkpoints, and question panels. Sealed answer keys are accessed only after route actions are selected. We report no confidence intervals or bootstrap estimates under the project contract.
+
+\subsection{Finite-prior CPU evaluation}
+The CPU simulator contains chain, fanout, diamond, and mixed DAG families, five seeds, four drift levels, two cost regimes, two edit counts, and 500 cases per family-condition. The strongest baseline is masked Pairwise with the same affected mask. The confirmatory controller is a bounded horizon-two posterior rollout with the strict certificate. It reaches action exactness 1.0 on 160,000 cases. Mean cost is 26.8312 versus 30.0467 for masked Pairwise, a 10.70\% reduction. Family reductions are 23.73\% for chain, 10.54\% for fanout, 7.00\% for diamond, and 6.41\% for mixed. We therefore retain the aggregate result with an explicit topology boundary.
+
+\subsection{Real service panels}
+The confirmatory service panel uses 32 rows per task and checkpoint, with 16 development and 16 held-out rows. The tasks are QASC and SciQ. The checkpoints are Qwen-0.5B and Qwen-14B. The held-out certificate route matches full-new-graph action exactness on every panel and uses 2--3 forward calls versus 18 for graph-mask recomputation and 21 for full graph execution. A semantic-interface 128-row extension uses 7--9 calls versus 20--21 and retains action exactness 1.0 on all four held-out panels.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Route & Action exact & Calls & Input tokens\\
+\midrule
+Full new graph & 1.000 & 21.0 & 3,000--4,000\\
+Graph-mask & 1.000 & 18--20 & 2,800--4,000\\
+Certificate VOI & 1.000 & 2--3 & 277--569\\
+Exact cache & 0.938--1.000 & 2--4 & 233--640\\
+\bottomrule
+\end{tabular}
+\caption{Held-out rows2 service ranges across QASC and SciQ with two checkpoints. Exact cache is cheaper when its stale action remains correct.}
+\end{table}
+
+The semantic 32-row ranking ablation uses the same certificate and compares mass ranking with periodic, maximum relay-distance, and random ordering. Held-out certificate-VOI calls are 6--10, compared with 7--11 periodic, 11--14 relay-distance, and 13--14 random, with action exactness 1.0 for all routes.
+
+\section{Discussion and limitations}
+The evidence identifies a mechanism boundary. Graph-conditioned dirty cones and strict stopping remove most descendant queries when the action is already certified. Mass-aware ordering is useful within the unresolved cone. Exact cache can remain the best cost route when the old action happens to survive the edit. The method therefore targets a risk-constrained objective, not unconstrained minimum cost.
+
+The CPU prior and terminal interface are controlled abstractions. The real service panels use two tasks and two checkpoints but remain small and use fixed interface fixtures. Answer accuracy is unchanged by the certificate route. We do not claim broad task-accuracy gains, production latency improvements, or universal dominance over exact cache. The public branch contains code, contracts, tests, proofs, and sanitized summaries. Raw questions, sealed labels, model weights, and per-question outputs remain private.
+
+\section{Conclusion}
+Graph editing turns communication-credit reuse into a certificate-maintenance problem. A graph-conditioned dirty cone identifies evidence that may be stale, and a strict weighted certificate allows the controller to stop before refreshing every descendant. Across controlled CPU cases and two-task, two-checkpoint service panels, this combination preserves full-graph actions while reducing the cost of descendant-mask and full-restart revalidation. The strongest supported claim is a graph-conditional risk--cost mechanism with explicit exact-cache boundaries.
+
+\bibliographystyle{acl_natbib}
+\begin{thebibliography}{9}
+\bibitem[Javdani et~al.(2014)]{javdani2014}
+Shervin Javdani, Y. B. Tian, and M. Schaal. 2014. Near optimal Bayesian active learning for decision making. In \emph{AISTATS}.
+\bibitem[Li et~al.(2024)]{li2024sparse}
+Zhen Li et~al. 2024. Improving multi-agent debate with sparse communication topology. In \emph{Findings of EMNLP}.
+\bibitem[Zhang et~al.(2025)]{zhang2025agentprune}
+Yifan Zhang et~al. 2025. Cut the crap: An economical communication pipeline for LLM-based multi-agent systems. In \emph{ICLR}.
+\bibitem[Wang et~al.(2025)]{wang2025agentdropout}
+Zhenyu Wang et~al. 2025. AgentDropout: Dynamic agent elimination for token-efficient and high-performance LLM-based multi-agent collaboration. In \emph{ACL}.
+\bibitem[You et~al.(2026)]{you2026messagesieve}
+Ziyu You et~al. 2026. MessageSieve: Runtime message pruning for accurate and efficient LLM-based multi-agent communication. In \emph{EMNLP}.
+\end{thebibliography}
+\end{document}
+
