@@ -142,7 +142,10 @@ are consistency diagnostics because the low-risk mask branch does not acquire
 every downstream conditional cell. On the three historical
 Qwen-14B server panels, TCR action exactness was 0.914, 0.891 and 0.867. The
 risk-gated route reached 1.0 on all three at 343.5, 232.2 and 487.0 logical
-relay tokens, versus 1350.0, 1645.2 and 1540.9 for cold restart. These server
+relay tokens. The fair answer-only mask reaches 0.875, 0.859 and 0.783 on
+these panels. The route trades extra relay tokens for action safety when the
+mask misses the final action, rather than claiming a universal cost win.
+Cold restart costs 1350.0, 1645.2 and 1540.9 tokens. These server
 panels still require single-forward service confirmation before a deployment
 claim. The corrected Qwen-0.5B single-forward panel keeps action exactness at
 1.0 and shows no relay-call reduction relative to TCR.

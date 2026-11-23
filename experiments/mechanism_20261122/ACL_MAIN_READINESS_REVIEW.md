@@ -43,6 +43,10 @@ decision exactness 0.9677 and remains an explicit boundary failure.
    logical relay tokens than TCR. The separate service entry point still has a
    model-forward mismatch, so this closes the algorithmic replay gate while
    leaving the end-to-end service gate open.
+   Against the fair answer-only mask baseline, the matched risk gate saves
+   82.6% at rows1 and ties the baseline at rows2/rows4. The larger TCR savings
+   therefore compare different certification targets and must be labeled that
+   way.
 4. The theoretical soundness proof is a standard interval argument. The paper
    should present the graph-density and answer-margin predictions as the
    mechanism contribution, with the proof supporting the certificate rather
