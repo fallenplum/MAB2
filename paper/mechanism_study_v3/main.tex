@@ -69,6 +69,7 @@ isolates the cost effect of gap-per-token ordering from the certificate target.
 
 \begin{table}[t]
 \centering\small
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lrrrr}
 \toprule
 Group & Cells & Pairwise tokens & Fair tokens & Reduction\\
@@ -82,7 +83,8 @@ One-row edits & 9 & 45.54 & 77.29 & 41.1\%\\
 Two-row edits & 9 & 89.00 & 154.58 & 42.4\%\\
 Four-row edits & 9 & 202.26 & 303.16 & 33.3\%\\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \caption{Held-out answer-action replay with per-cell quantile selection. The pooled $q=.9$ selection gives 124.74 mean tokens and is reported in the text. All methods use the same cached transcript, graph mask and row prices.}
 \end{table}
 
@@ -91,6 +93,7 @@ Workers were regenerated with microbatch one. Pairwise tokens were 3.39, 110.23 
 
 \begin{table}[t]
 \centering\small
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lrrrrr}
 \toprule
 Density & Pairwise action & Fair action & Pairwise tokens & Fair tokens & TCR tokens\\
@@ -99,7 +102,8 @@ Rows1 & 1.000 & 1.000 & 3.39 & 112.65 & 151.80\\
 Rows2 & 1.000 & 1.000 & 110.23 & 112.65 & 150.48\\
 Rows4 & 1.000 & 1.000 & 320.00 & 337.94 & 415.53\\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \caption{Matched Qwen-14B worker replay. Fair action cost refreshes descendant relay rows and stops at the answer target. TCR includes the full edge-audit target.}
 \end{table}
 
@@ -110,7 +114,7 @@ Across the 27-panel replay, the answer-action target is preserved on every held-
 To test question-cohort transfer, we generated Qwen-0.5B worker traces on 128 ARC-Challenge validation questions cached on the server. The pooled quantile and the 27-panel test residues were frozen before this run. On the 24-question held-out residue at one-, two- and four-row edits, Pairwise Gap action exactness is 1.000 at 113.29, 253.75 and 530.54 logical tokens. The fair descendant-mask baseline also has action exactness 1.000 at 151.38, 302.75 and 599.50 tokens, yielding reductions of 25.2\%, 16.2\% and 11.5\%. The worker transfer run selects its per-panel development quantile independently, while the service run uses the pre-frozen pooled $q=.9$ value. In the ARC single-forward service benchmark, relay forwards fall from 1.00, 2.00 and 4.00 for TCR to 0.867, 1.734 and 3.742 for Pairwise Gap, while action agreement with the worker is 0.992, 0.961 and 0.859. Gold-answer accuracy remains 0.344, 0.305 and 0.297 for the Pairwise route, matching TCR on this diagnostic service trace. This confirms the worker-level action-cost effect on a question cohort from a separate task source and records the service replay boundary.
 
 \subsection{Actual service measurements}
-The corrected Qwen-0.5B single-forward benchmark uses the same worker and service execution protocol. The pooled worker selection fixes the Pairwise Gap quantile at $q=.9$. At rows1, rows2 and rows4, Pairwise Gap uses 0.867, 0.867 and 2.852 relay forwards per question, compared with 1.00, 1.00 and 3.00 for TCR guard. Input tokens fall from 131.99, 131.99 and 395.98 to 115.27, 115.27 and 377.56. Wall time falls from 0.0311, 0.0263 and 0.0778 seconds to 0.0262, 0.0228 and 0.0686 seconds. Answer-action exactness remains 1.0 on all densities. The edge decision-set diagnostic is 0.992 at each density, so the service result supports answer-action savings and records the edge-target trade-off explicitly.
+The corrected Qwen-0.5B single-forward benchmark uses the same worker and service execution protocol. The pooled worker selection fixes the Pairwise Gap quantile at $q=.9$. At rows1, rows2 and rows4, Pairwise Gap uses 0.867, 0.867 and 2.852 relay forwards per question, compared with 1.00, 1.00 and 3.00 for TCR guard. Input tokens fall from 131.99, 131.99 and 395.98 to 115.27, 115.27 and 377.56. Wall time falls from 0.0311, 0.0263 and 0.0778 seconds to 0.0262, 0.0228 and 0.0686 seconds. Answer-action exactness remains 1.0 on all densities. The edge decision-set diagnostic is 0.992 at each density, so the service result supports answer-action savings and records the edge-target trade-off explicitly. These are incremental relay costs after cached source, base and terminal observations. Model loading, queueing and full end-to-end answer latency are outside this ledger.
 
 The Qwen-14B service process records cost for rows1, rows2 and rows4, but its single-call replay differs from the worker reference even under microbatch one. We retain its forward counts and input-token measurements as diagnostics and exclude its action values from the primary service claim.
 
@@ -121,6 +125,7 @@ The Pairwise Gap Certificate was also evaluated on hidden-interface worker files
 
 \begin{table}[t]
 \centering\small
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{lrrr}
 \toprule
 Controller & Mean exact recovery & Mean relay tokens & Target\\
@@ -129,7 +134,8 @@ Stale / warm transport & 0.914--0.977 & 0 & Reuse\\
 TCR guard & 1.000 & 144--607 & Edge set\\
 Cold restart & 1.000 & 554--1,606 & Edge set\\
 \bottomrule
-\end{tabular}
+\end{tabular}%
+}
 \caption{Semantic relay-interface drift panel. Exact recovery is a finite worker-reference diagnostic.}
 \end{table}
 
