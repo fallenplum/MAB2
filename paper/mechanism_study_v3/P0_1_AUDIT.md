@@ -25,8 +25,5 @@ M60 table and theory additions.
 
 ## Reproduction status
 
-The CPU clean-replay fixture runs its two unit tests and covers all nine
-controller labels. Mechanism Python files pass `compileall`. The server build
-uses the vendored ACL style and pdfTeX. Local MiKTeX and offline Tectonic are
-environment-limited in this Windows sandbox, so the server build is the
-authoritative compilation check for this release.
+A fresh shallow checkout of release commit `da1360fbbbedb29f57098fffacafe38f2ca8780d` was verified on the server with `PYTHONPATH=.`. Mechanism `compileall`, `test_none_semantics.py` (2/2), `test_p0_permissions_oracle.py` (4/4), and `repro/tests/test_clean_replay.py` (2/2) all passed. The explicit `prepare_inputs.py` -> `run_replay.py` fixture pipeline also completed. The server build uses the vendored ACL style and pdfTeX. Local MiKTeX and offline Tectonic are environment-limited in this Windows sandbox, so the server build is the authoritative compilation check for this release.
+
