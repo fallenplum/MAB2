@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times,latexsym,amsmath,amssymb,booktabs,graphicx,microtype,url}
+\title{When Does Graph-Conditional Communication Credit Survive an Edit?}
+\author{Research draft for author review}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Historical communication credit is useful only while its conditional interface remains valid. We study graph evolution as a certificate-maintenance problem. An edit changes source mass and may invalidate relay rows whose evidence or interface has changed. We introduce a conservative risk gate that compares the cached post-edit answer margin with calibrated conditional-drift mass. Low-risk edits reuse a graph-descendant mask, while high-risk edits invoke answer-region revalidation. The gate is coupled to relay-interface fingerprints and a fail-closed fallback. On 21 historical model--task--density cells, the gate preserves the final answer action on every held-out residue. On a matched single-forward Qwen-14B worker replay, it reduces logical relay tokens relative to TCR by 87.1\%, 25.1\%, and 18.7\% at one-, two-, and four-row edit densities while preserving the answer action. A Qwen-0.5B service benchmark confirms action preservation but finds no reduction in actual relay forwards, and a Qwen-14B service path exhibits a custom-model replay discrepancy. We therefore claim a mechanism for graph-conditional credit validity and a risk-gated replay algorithm, with end-to-end service savings left conditional on model-side forward reproducibility.
+\end{abstract}
+
+\section{Introduction}
+Multi-model systems often reuse a paid communication transcript after changing the collaboration graph. A relay output is a conditional distribution produced under an interface, an evidence context, and a source mixture. Reusing its historical value after any of these change can silently alter the downstream action.
+
+The practical question is when an old credit certificate remains usable. Recomputing every relay row and every terminal conditional is safe but expensive. Reusing every old row is cheap but can cross a decision boundary. Uncertainty-only scheduling does not identify whether a change is action-relevant.
+
+We study a finite four-row communication interface with a signed credit score and a final multiple-choice action. The method has two components. First, graph descendants and relay-interface fingerprints define the rows whose certificates may be stale. Missing fingerprints trigger an all-row fallback. Second, a risk gate compares the cached post-edit answer margin with a calibrated bound on conditional drift. It invokes answer-region revalidation only when the mask route has insufficient margin.
+
+Our claims are deliberately bounded.
+\begin{itemize}
+\item Graph edits and interface edits create separable failure modes for historical communication credit.
+\item A margin-to-drift risk gate can preserve answer actions while avoiding unnecessary all-row revalidation on the tested finite interfaces.
+\item Interface fingerprints are part of the safety condition. A fact-only descendant mask can miss a changed relay interface.
+\end{itemize}
+We do not claim improved language-model knowledge accuracy. We report action preservation, edge-consistency diagnostics, logical relay tokens, actual relay forwards, input tokens, and wall-clock time separately.
+
+\section{Graph-conditional credit}
+Let $s\in\Delta^3$ be the post-edit source distribution, $b\in\Delta^3$ the base row, and $q_i\in\Delta^3$ the conditional output of relay row $i$. Let $g(i,j)$ map relay condition $j$ to an answer label. The credit for label $y$ is
+\begin{equation}
+F_y(s,q,b)=\sum_{i=1}^4 s_i\sum_{j:g(i,j)=y}(q_i(j)-b(j)).
+\end{equation}
+An edge decision marks $y$ active when $F_y>\tau$. The served answer is the largest downstream answer score induced by the same finite table.
+
+After an edit, $U$ denotes rows whose conditional certificate may be stale. If an unqueried row satisfies $\operatorname{TV}(q_i^{\rm new},q_i^{\rm old})\leq\delta_i$, its contribution to any answer label changes by at most $s_i\delta_i$. The interval radius over an answer region is therefore $\rho=\sum_{i\in U}s_i\delta_i$.
+
+Let $M$ be the cached post-edit margin between the largest and second-largest answer scores under reused rows. We define the observable risk proxy $R=\rho/M$ with a small positive denominator floor. A development-selected threshold routes low-risk instances through the graph mask and high-risk instances through answer-region revalidation. The gate does not read new relay values before choosing a route.
+
+\section{Interface-aware revalidation}
+The graph mask is the union of descendants of edited edges. For every relay row, the worker also derives a fingerprint from the tokenized relay interface. A row enters the revalidation set when either the graph mask or the fingerprint indicates a change. If a fingerprint is absent or malformed, the policy marks all rows unknown. This is a fail-closed implementation condition.
+
+For the answer-region route, the controller maintains lower and upper answer scores. It stops when the leading answer lower bound is larger than every competing upper bound. This certificate protects the final answer action. Individual edge signs can remain unresolved, so edge exactness is reported separately.
+
+\section{Experiments}
+All quantiles and risk thresholds are selected on development questions. The held-out residue is used once. We do not report confidence intervals or bootstrap estimates under the project protocol.
+
+\subsection{Matched Qwen-14B worker replay}
+Independent rows1, rows2 and rows4 workers were regenerated with microbatch one. The risk gate selected $q=.5$ with thresholds 0, $\infty$, and $\infty$. It reached exact answer actions on all three residues. Logical relay tokens were 19.65, 112.65 and 337.94, compared with 151.80, 150.48 and 415.53 for TCR. Cold restart costs were 795.76, 896.54 and 859.95 tokens. Edge matches against the full worker output are consistency diagnostics because the low-risk branch does not acquire all conditional cells.
+
+\subsection{Historical model--task--density panels}
+Across 21 local cells spanning QASC, SciQ and CommonsenseQA, three model families and three edit densities, the risk gate preserved the final answer action on every held-out residue. The Qwen-14B panels show TCR action exactness of .914, .891 and .867, while the risk-gated route is exact at 343.5, 232.2 and 487.0 logical relay tokens. These are worker replays and are not substituted for service measurements.
+
+\subsection{Actual service measurements}
+The corrected Qwen-0.5B single-forward benchmark uses the same worker and service execution protocol. At rows1, rows2 and rows4, TCR uses 1.00, 1.00 and 3.00 relay forwards per question. Answer-region q=1 uses 1.31, 1.31 and 3.02. Both routes retain action exactness 1.0. This closes action safety for the small model and shows that logical-token savings need not become fewer model calls.
+
+The Qwen-14B service process records cost for rows1, rows2 and rows4, but its single-call replay differs from the worker reference even under microbatch one. We retain its forward counts and input-token measurements as diagnostics and exclude its action values from the primary service claim.
+
+\subsection{Interface drift}
+Nine semantic interface-drift cells cover QASC, SciQ and CommonsenseQA with three model scales. TCR recovers the complete finite decision set in every cell. Stale and warm transport fail in multiple cells. A hidden-interface panel shows that a fact-only mask can miss a relay interface change, while fingerprint-aware invalidation restores answer actions across three model scales with one Qwen-14B edge boundary failure.
+
+\section{Discussion}
+The risk gate separates two questions that are often conflated. An old certificate may be cheap to reuse while being insufficient for the final answer. Conversely, a graph edit can change several relay rows while leaving the answer margin large enough for safe service. The observed answer-action preservation across model families supports this mechanism. The Qwen-0.5B service result shows that certificate token savings and actual forward savings are distinct quantities. The Qwen-14B replay discrepancy limits end-to-end claims until the custom model path is reproducible across worker and service entry points.
+
+\section{Related work and novelty boundary}
+Decision-region determination, adaptive testing, uncertainty sampling and multi-agent communication pruning are established. Our contribution is the graph-conditional validity condition for a reused communication certificate, combined with interface-fingerprint invalidation and a margin-to-drift route gate. The interval proof is standard. The mechanism claim concerns when graph evolution invalidates an old certificate and how a conservative route chooses between localized and answer-region revalidation.
+
+\section{Limitations}
+The communication interface has four relay rows and finite multiple-choice labels. Historical cells reuse task cohorts across model families. The risk radius is calibrated empirically and does not provide a finite-sample coverage guarantee. The Qwen-14B service forward mismatch prevents a universal end-to-end latency claim. The work does not claim improved answer accuracy or a public-system leaderboard gain.
+
+\section{Conclusion}
+Graph evolution can invalidate historical communication credit through both conditional evidence drift and interface drift. A graph-aware, fingerprint-gated and risk-adaptive revalidation route preserves answer actions on the tested finite interfaces and reduces logical feedback cost in matched worker replay. Actual service savings remain model-dependent, which makes forward reproducibility part of the acceptance criterion for deployment claims.
+
+\section*{Reproducibility}
+The companion MAB2 branch contains the risk-gated route, interface-drift panels, service ledgers, worker outputs used for public summaries, and negative results. Private question-level arrays, answer keys, model weights and credentials remain outside the public release.
+
+\begin{thebibliography}{9}
+\bibitem[Javdani et~al.(2014)]{javdani} S.~Javdani, Y.~Chen, A.~Karbasi, A.~Krause, D.~Bagnell, and D.~Srinivasa. 2014. Near optimal Bayesian active learning for decision making. AISTATS.
+\bibitem[Zhuge et~al.(2025)]{agentdropout} M.~Zhuge et~al. 2025. AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration. ACL.
+\bibitem[Rajpurkar et~al.(2016)]{squad} P.~Rajpurkar, J.~Zhang, K.~Lopyrev, and P.~Liang. 2016. SQuAD: 100,000+ questions for machine comprehension of text. EMNLP.
+\end{thebibliography}
+\end{document}
+
