@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\usepackage[preprint]{acl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times,latexsym,amsmath,amssymb,booktabs,graphicx,microtype,url}
+\title{When Does Graph-Conditional Communication Credit Survive an Edit?}
+\author{Research draft for author review}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Historical communication credit is useful only while its conditional interface remains valid. We study graph evolution as a certificate-maintenance problem. An edit changes source mass and may invalidate relay rows whose evidence or interface has changed. We introduce a graph-conditioned Pairwise Gap Certificate that bounds how each unqueried relay row can reduce every incumbent--challenger answer gap. The controller queries rows by worst-case gap reduction per token and stops when all answer pairs remain separated. Graph descendants and relay-interface fingerprints define the potentially stale rows, while missing metadata triggers a fail-closed fallback. On 27 deduplicated model--task--density panels, a pooled quantile selected without test residues preserves the answer action on every held-out residue and reduces logical relay tokens by 30.0\% relative to a fair descendant-mask baseline. Per-cell quantile diagnostics reach a 37.1\% weighted reduction. A matched Qwen-14B worker replay gives additional savings at one- and four-row edit densities. These are certificate and worker-replay results. A Qwen-0.5B service benchmark shows that logical-token savings need not reduce forward calls, and a Qwen-14B service path exhibits a custom-model replay discrepancy. We therefore claim a graph-conditional credit-validity mechanism and an answer-action certificate, with end-to-end service savings left conditional on model-side forward reproducibility.
+\end{abstract}
+
+\section{Introduction}
+Multi-model systems often reuse a paid communication transcript after changing the collaboration graph. A relay output is a conditional distribution produced under an interface, an evidence context, and a source mixture. Reusing its historical value after any of these change can silently alter the downstream action.
+
+The practical question is when an old credit certificate remains usable. Recomputing every relay row and every terminal conditional is safe but expensive. Reusing every old row is cheap but can cross a decision boundary. Uncertainty-only scheduling does not identify whether a change is action-relevant.
+
+We study a finite four-row communication interface with a signed credit score and a final multiple-choice action. The method has two components. First, graph descendants and relay-interface fingerprints define the rows whose certificates may be stale. Missing fingerprints trigger an all-row fallback. Second, a Pairwise Gap Certificate converts conditional drift radii into worst-case reductions of every answer gap. It queries the row with the largest gap reduction per token until the incumbent action is separated from every competitor.
+
+Our claims are deliberately bounded.
+\begin{itemize}
+\item Graph edits and interface edits create separable failure modes for historical communication credit.
+\item A pairwise graph-conditioned certificate can preserve answer actions while avoiding unnecessary descendant-row revalidation on the tested finite interfaces.
+\item Interface fingerprints are part of the safety condition. A fact-only descendant mask can miss a changed relay interface.
+\end{itemize}
+We do not claim improved language-model knowledge accuracy. We report action preservation, edge-consistency diagnostics, logical relay tokens, actual relay forwards, input tokens, and wall-clock time separately.
+
+\section{Graph-conditional credit}
+Let $s\in\Delta^3$ be the post-edit source distribution, $b\in\Delta^3$ the base row, and $q_i\in\Delta^3$ the conditional output of relay row $i$. Let $g(i,j)$ map relay condition $j$ to an answer label. The credit for label $y$ is
+\begin{equation}
+F_y(s,q,b)=\sum_{i=1}^4 s_i\sum_{j:g(i,j)=y}(q_i(j)-b(j)).
+\label{eq:credit}
+\end{equation}
+An edge decision marks $y$ active when $F_y>\tau$. The served answer is the largest downstream answer score induced by the same finite table.
+
+After an edit, $U$ denotes rows whose conditional certificate may be stale. If an unqueried row satisfies $\operatorname{TV}(q_i^{\rm new},q_i^{\rm old})\leq\delta_i$, its contribution to any answer label changes by at most $s_i\delta_i$. Therefore the change in any answer-pair gap is at most $2s_i\delta_i$. With incumbent answer $a$ and competitor $b$, the unresolved lower gap is
+\begin{equation}
+G_{ab}=F_a-F_b-\sum_{i\in U}2s_i\delta_i.
+\label{eq:pairwise-gap}
+\end{equation}
+The controller queries the row maximizing $2s_i\delta_i$ per observed relay token, updates the incumbent from the new observation, and repeats until every $G_{ab}$ is positive. The ordering is a cost heuristic. The certificate condition is the stopping rule.
+
+\paragraph{Conditional answer-action proposition.}
+Assume every unqueried row $i\in U$ satisfies $\operatorname{TV}(q_i^{\rm new},q_i^{\rm old})\leq\delta_i$ and every relay-interface fingerprint is complete. If $G_{ab}>0$ for all competitors $b\neq a$, then $a$ is the unique post-edit answer action for every admissible conditional relay distribution. The proof follows because the pairwise gap can decrease by at most the uncertainty sum in Eq.~\ref{eq:pairwise-gap}. Empirical development quantiles for $\delta_i$ do not provide finite-sample coverage without an additional calibration assumption.
+
+\section{Interface-aware revalidation}
+The graph mask is the union of descendants of edited edges. For every relay row, the worker also derives a fingerprint from the tokenized relay interface. A row enters the revalidation set when either the graph mask or the fingerprint indicates a change. If a fingerprint is absent or malformed, the policy marks all rows unknown. This is a fail-closed implementation condition.
+
+For the answer-region route, the controller maintains lower and upper answer scores. It stops when the leading answer lower bound is larger than every competing upper bound. This certificate protects the final answer action. Individual edge signs can remain unresolved, so edge exactness is reported separately.
+
+\section{Experiments}
+All quantiles and risk thresholds are selected on development questions. The held-out residue is used once. We do not report confidence intervals or bootstrap estimates under the project protocol.
+
+\subsection{Pairwise replay across model--task--density panels}
+The Pairwise Gap Certificate uses a development residue to select its drift quantile and evaluates the held-out residue once. Across 27 deduplicated panels spanning Qwen-0.5B, Qwen-14B and Llama-3, QASC, SciQ and CommonsenseQA, and one-, two- and four-row edits, answer-action exactness is 1.000 on every panel. A pooled selection chooses $q=.9$ from the selection residues of all panels and gives 124.74 mean logical relay tokens versus 178.34 for the fair descendant-mask baseline, a weighted reduction of 30.0\%. Per-cell selection is retained as a diagnostic and reaches 112.27 tokens, a 37.1\% weighted reduction. The fair baseline refreshes every graph-descendant row and targets the same answer action, which isolates the pairwise certificate from the graph mask.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+Group & Cells & Pairwise tokens & Fair tokens & Reduction\\
+\midrule
+All panels & 27 & 112.27 & 178.34 & 37.1\%\\
+Qwen-0.5B & 9 & 160.69 & 215.69 & 25.5\%\\
+Qwen-14B & 9 & 86.30 & 148.02 & 41.7\%\\
+Llama-3 & 9 & 89.80 & 171.32 & 47.6\%\\
+One-row edits & 9 & 45.54 & 77.29 & 41.1\%\\
+Two-row edits & 9 & 89.00 & 154.58 & 42.4\%\\
+Four-row edits & 9 & 202.26 & 303.16 & 33.3\%\\
+\bottomrule
+\end{tabular}
+\caption{Held-out answer-action replay with per-cell quantile selection. The pooled $q=.9$ selection gives 124.74 mean tokens and is reported in the text. All methods use the same cached transcript, graph mask and row prices.}
+\end{table}
+
+\subsection{Matched Qwen-14B worker replay}
+Workers were regenerated with microbatch one. Pairwise tokens were 3.39, 110.23 and 320.00 for one-, two- and four-row edits, compared with 112.65, 112.65 and 337.94 for the fair answer-action mask. Answer-action exactness was 1.000 at every density. The risk-gated route is retained as an earlier candidate and is not used as the primary comparator. Edge matches against the full worker output are consistency diagnostics because the low-cost branch does not acquire all conditional cells.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Density & Pairwise action & Fair action & Pairwise tokens & Fair tokens & TCR tokens\\
+\midrule
+Rows1 & 1.000 & 1.000 & 3.39 & 112.65 & 151.80\\
+Rows2 & 1.000 & 1.000 & 110.23 & 112.65 & 150.48\\
+Rows4 & 1.000 & 1.000 & 320.00 & 337.94 & 415.53\\
+\bottomrule
+\end{tabular}
+\caption{Matched Qwen-14B worker replay. Fair action cost refreshes descendant relay rows and stops at the answer target. TCR includes the full edge-audit target.}
+\end{table}
+
+\subsection{Historical model--task--density panels}
+Across the 27-panel replay, the answer-action target is preserved on every held-out residue. The earlier risk-gated route is retained as a negative and comparative result. It helps recover the Qwen-14B historical server panels where the fair mask misses action, but it can pay more tokens than the fair mask. Pairwise gap selection provides a consistent reduction against the fair mask on the deduplicated panels. These are worker replays and are not substituted for service measurements.
+
+\subsection{Actual service measurements}
+The corrected Qwen-0.5B single-forward benchmark uses the same worker and service execution protocol. At rows1, rows2 and rows4, TCR uses 1.00, 1.00 and 3.00 relay forwards per question. Answer-region q=1 uses 1.31, 1.31 and 3.02. Both routes retain action exactness 1.0. This closes action safety for the small model and shows that logical-token savings need not become fewer model calls.
+
+The Qwen-14B service process records cost for rows1, rows2 and rows4, but its single-call replay differs from the worker reference even under microbatch one. We retain its forward counts and input-token measurements as diagnostics and exclude its action values from the primary service claim.
+
+\subsection{Interface drift}
+Nine semantic interface-drift cells cover QASC, SciQ and CommonsenseQA with three model scales. TCR recovers the complete finite decision set in every cell. Stale and warm transport fail in multiple cells. A hidden-interface panel shows that a fact-only mask can miss a relay interface change, while fingerprint-aware invalidation restores answer actions across three model scales with one Qwen-14B edge boundary failure.
+
+The Pairwise Gap Certificate was also evaluated on a hidden-interface transfer file for Qwen-0.5B. Its held-out answer-action exactness is 1.000 with 112.48 logical relay tokens and 0.905 queried rows per question. The pairwise implementation resolves fingerprints before legacy masks and falls back to all four rows when metadata is missing. This panel tests the metadata boundary. It does not establish deterministic service-forward equivalence.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Controller & Mean exact recovery & Mean relay tokens & Target\\
+\midrule
+Stale / warm transport & 0.914--0.977 & 0 & Reuse\\
+TCR guard & 1.000 & 144--607 & Edge set\\
+Cold restart & 1.000 & 554--1,606 & Edge set\\
+\bottomrule
+\end{tabular}
+\caption{Semantic relay-interface drift panel. Exact recovery is a finite worker-reference diagnostic.}
+\end{table}
+
+\section{Discussion}
+The pairwise certificate separates two questions that are often conflated. An old certificate may be cheap to reuse while being insufficient for the final answer. Conversely, a graph edit can change several relay rows while leaving every unresolved answer gap safely positive. The observed answer-action preservation and token reduction across model families support this mechanism. Gap-directed refinement and decision-region stopping are established neighboring ideas, so the contribution is the graph-conditioned validity condition, interface-fingerprint invalidation and fail-closed transport of a paid communication transcript. The Qwen-0.5B service result shows that logical-token savings and actual forward savings are distinct quantities. The Qwen-14B replay discrepancy limits end-to-end claims until the custom model path is reproducible across worker and service entry points.
+
+\section{Related work and novelty boundary}
+Decision-region determination, adaptive testing, uncertainty sampling and multi-agent communication pruning are established. Javdani et al. formulate decision-region stopping and adaptive test selection \cite{javdani}. ActiveEvidence uses gap-directed interaction refinement and an action certificate \cite{activeevidence}, which bounds the novelty of pairwise gap scheduling as a stand-alone contribution. AgentPrune, AgentDropout and MessageSieve study communication or message reduction in multi-agent language-model systems \cite{agentprune,agentdropout,messagesieve}. Graph conditional-shift work studies distributional changes in graph predictors \cite{graces}. Our contribution is the graph-conditional validity condition for a reused communication certificate, combined with interface-fingerprint invalidation and fail-closed transport. The mechanism claim concerns when graph evolution invalidates an old certificate and how a conservative route repairs only the rows that can still change the answer action.
+
+\section{Limitations}
+The communication interface has four relay rows and finite multiple-choice labels. Historical cells reuse task cohorts across model families, so the 27 panels are repeated model--task--density factors rather than 27 independent datasets. The drift radius is calibrated empirically and does not provide a finite-sample coverage guarantee. The Qwen-14B service forward mismatch prevents a universal end-to-end latency claim. The work does not claim improved answer accuracy or a public-system leaderboard gain.
+
+\section{Conclusion}
+Graph evolution can invalidate historical communication credit through both conditional evidence drift and interface drift. A graph-aware, fingerprint-gated Pairwise Gap Certificate preserves answer actions on the tested finite interfaces and reduces logical feedback cost in matched worker replay. Actual service savings remain model-dependent, which makes forward reproducibility part of the acceptance criterion for deployment claims.
+
+\section*{Reproducibility}
+The companion MAB2 branch contains the risk-gated route, interface-drift panels, service ledgers, worker outputs used for public summaries, and negative results. Private question-level arrays, answer keys, model weights and credentials remain outside the public release.
+
+\begin{thebibliography}{9}
+\bibitem[Javdani et~al.(2014)]{javdani} S.~Javdani, Y.~Chen, A.~Karbasi, A.~Krause, D.~Bagnell, and D.~Srinivasa. 2014. Near optimal Bayesian active learning for decision making. AISTATS.
+\bibitem[Zhang et~al.(2025)]{agentprune} Y.~Zhang et~al. 2025. Cut the Crap: An Economical Communication Pipeline for LLM-Based Multi-Agent Systems. ICLR.
+\bibitem[Zhuge et~al.(2025)]{agentdropout} M.~Zhuge et~al. 2025. AgentDropout: Dynamic Agent Elimination for Token-Efficient and High-Performance LLM-Based Multi-Agent Collaboration. ACL.
+\bibitem[You et~al.(2026)]{messagesieve} Y.~You et~al. 2026. MessageSieve: Runtime Message Pruning for Accurate and Efficient LLM-Based Multi-Agent Communication. EMNLP.
+\bibitem[Qin et~al.(2022)]{graces} J.~Qin et~al. 2022. Graph Neural Architecture Search Under Distribution Shifts. ICML.
+\bibitem[Hu et~al.(2026)]{activeevidence} M.~Hu, S.~Hu, X.~Guo, X.~Wang, B.~Wang, P.~Zhang, D.~Zha, and J.~Xiao. 2026. ActiveEvidence: Decision-Focused Evidence Graphs with Verifiable Acquisition Gaps. arXiv:2610.20532.
+\bibitem[Rajpurkar et~al.(2016)]{squad} P.~Rajpurkar, J.~Zhang, K.~Lopyrev, and P.~Liang. 2016. SQuAD: 100,000+ questions for machine comprehension of text. EMNLP.
+\end{thebibliography}
+\end{document}
+
