@@ -1,0 +1,180 @@
+{
+  "schema": "mab2_p3_cycle006_h2_aggregate_v1",
+  "seeds": [
+    20261124,
+    20261125,
+    20261126,
+    20261127,
+    20261128
+  ],
+  "cases_per_family": 500,
+  "summary": {
+    "masked_pairwise": {
+      "n": 160000,
+      "action_exact": 1.0,
+      "mean_cost": 30.046724338240764,
+      "mean_queries": 4.4273875,
+      "by_family": {
+        "chain": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 21.810563122770137,
+          "relative_reduction_vs_pairwise": null
+        },
+        "fanout": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 28.992260454261892,
+          "relative_reduction_vs_pairwise": null
+        },
+        "diamond": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 30.892270351223512,
+          "relative_reduction_vs_pairwise": null
+        },
+        "mixed": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 38.49180342470787,
+          "relative_reduction_vs_pairwise": null
+        }
+      }
+    },
+    "topology_voi_h2": {
+      "n": 160000,
+      "action_exact": 1.0,
+      "mean_cost": 26.831232685216754,
+      "mean_queries": 3.80171875,
+      "by_family": {
+        "chain": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 16.6341639592869,
+          "relative_reduction_vs_pairwise": 0.23733450321046945
+        },
+        "fanout": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 25.93745584025838,
+          "relative_reduction_vs_pairwise": 0.10536621036578928
+        },
+        "diamond": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 28.72995651304167,
+          "relative_reduction_vs_pairwise": 0.06999530347228756
+        },
+        "mixed": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 36.02335442828005,
+          "relative_reduction_vs_pairwise": 0.06412921133342693
+        }
+      },
+      "relative_reduction_vs_pairwise": 0.10701637945044219
+    },
+    "exact_dependency_cache": {
+      "n": 160000,
+      "action_exact": 1.0,
+      "mean_cost": 34.339291683127605,
+      "mean_queries": 4.7445375,
+      "by_family": {
+        "chain": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 25.439082012498442,
+          "relative_reduction_vs_pairwise": null
+        },
+        "fanout": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 32.50088316160078,
+          "relative_reduction_vs_pairwise": null
+        },
+        "diamond": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 37.36216560256523,
+          "relative_reduction_vs_pairwise": null
+        },
+        "mixed": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 42.055035955846485,
+          "relative_reduction_vs_pairwise": null
+        }
+      }
+    },
+    "strict_certificate_first": {
+      "n": 160000,
+      "action_exact": 1.0,
+      "mean_cost": 33.16613728510761,
+      "mean_queries": 4.5335,
+      "by_family": {
+        "chain": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 21.851788282882406,
+          "relative_reduction_vs_pairwise": null
+        },
+        "fanout": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 32.065571275122345,
+          "relative_reduction_vs_pairwise": null
+        },
+        "diamond": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 36.92545239814045,
+          "relative_reduction_vs_pairwise": null
+        },
+        "mixed": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 41.821737184285645,
+          "relative_reduction_vs_pairwise": null
+        }
+      }
+    },
+    "full_recompute": {
+      "n": 160000,
+      "action_exact": 1.0,
+      "mean_cost": 76.25144247527622,
+      "mean_queries": 10.75,
+      "by_family": {
+        "chain": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 49.99031566823634,
+          "relative_reduction_vs_pairwise": null
+        },
+        "fanout": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 77.51681514635848,
+          "relative_reduction_vs_pairwise": null
+        },
+        "diamond": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 77.55535959438319,
+          "relative_reduction_vs_pairwise": null
+        },
+        "mixed": {
+          "n": 40000,
+          "action_exact": 1.0,
+          "mean_cost": 99.943279492127,
+          "relative_reduction_vs_pairwise": null
+        }
+      }
+    }
+  },
+  "candidate_comparison": {
+    "baseline": "masked_pairwise",
+    "candidate": "topology_voi_h2",
+    "cost_reduction": 0.10701637945044219,
+    "practical_target": 0.1
+  }
+}

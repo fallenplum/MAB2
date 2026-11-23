@@ -1,0 +1,2 @@
+{"schema":"p3_cycle_001_result_v1","seed":20261124,"cases_per_family":20,"families":["chain","fanout","diamond","mixed"],"status":"REJECT_NO_HEADROOM","summary":{"masked_pairwise_cost":30.32066695229937,"generic_adaptive_cost":30.32066695229937,"strict_certificate_cost":33.508313471441255,"topology_voi_exact_dp_cost":33.02682814311286,"exact_dependency_cache_cost":34.60059119629376,"all_nonstale_action_exact":1.0},"gpu_started":false}
+

@@ -1,0 +1,83 @@
+{
+  "schema": "p3_cycle_003_aggregate_v1",
+  "seeds": [
+    20261124,
+    20261125,
+    20261126,
+    20261127,
+    20261128
+  ],
+  "cases_per_family": 20,
+  "summary": {
+    "descendant_mask_recompute": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 38.113622125715054,
+      "mean_queries": 5.1946875,
+      "certificate_rate": 1.0
+    },
+    "exact_dependency_cache": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 34.718317354412704,
+      "mean_queries": 4.75109375,
+      "certificate_rate": 1.0
+    },
+    "full_recompute": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 76.33162507437683,
+      "mean_queries": 10.75,
+      "certificate_rate": 1.0
+    },
+    "generic_adaptive": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 30.32255926522451,
+      "mean_queries": 4.43796875,
+      "certificate_rate": 1.0
+    },
+    "masked_pairwise": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 30.32255926522451,
+      "mean_queries": 4.43796875,
+      "certificate_rate": 1.0
+    },
+    "offline_full_information": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 0.0,
+      "mean_queries": 0.0,
+      "certificate_rate": 1.0
+    },
+    "stale": {
+      "n": 6400,
+      "action_exact": 0.7590625,
+      "mean_cost": 0.0,
+      "mean_queries": 0.0,
+      "certificate_rate": 0.0
+    },
+    "strict_certificate_first": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 33.57601022967899,
+      "mean_queries": 4.54609375,
+      "certificate_rate": 1.0
+    },
+    "topology_voi_exact_dp": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 26.921358260242833,
+      "mean_queries": 3.78453125,
+      "certificate_rate": 1.0
+    },
+    "topology_voi_h1": {
+      "n": 6400,
+      "action_exact": 1.0,
+      "mean_cost": 29.85609380812511,
+      "mean_queries": 4.38265625,
+      "certificate_rate": 1.0
+    }
+  }
+}

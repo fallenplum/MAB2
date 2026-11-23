@@ -1,0 +1,28 @@
+{
+  "schema": "p3_cycle_006_decision_v1",
+  "status": "PASS_CPU_HEADROOM_CONFIRMATORY",
+  "candidate": "topology_voi_h2_fast",
+  "implementation": "cycles/h2_fast.py",
+  "runner": "cycles/cycle_006_h2_confirmatory.py",
+  "action_exact": 1.0,
+  "masked_pairwise_cost": 30.046724338240764,
+  "candidate_cost": 26.831232685216754,
+  "cost_reduction": 0.10701637945044219,
+  "practical_target": 0.1,
+  "cases": 160000,
+  "cases_per_family": 500,
+  "seeds": [
+    20261124,
+    20261125,
+    20261126,
+    20261127,
+    20261128
+  ],
+  "gpu_started": false,
+  "family_reductions": {
+    "chain": 0.23733450321046945,
+    "fanout": 0.10536621036578928,
+    "diamond": 0.06999530347228756,
+    "mixed": 0.06412921133342693
+  }
+}

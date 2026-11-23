@@ -1,0 +1,32 @@
+{
+  "schema": "mab2_p3_cpu_strict_graph_voi_contract_v1",
+  "status": "frozen_before_execution",
+  "families": ["chain", "fanout", "diamond", "mixed"],
+  "nodes": {"chain": 8, "fanout": 12, "diamond": 12, "mixed": 16},
+  "seeds": [20261124, 20261125, 20261126, 20261127, 20261128],
+  "cases_per_seed_family": 500,
+  "actions": 3,
+  "labels": 3,
+  "edits": ["single_source", "two_source", "relay_interface"],
+  "drift": [0.0, 0.1, 0.4, 1.0],
+  "cost_regimes": ["uniform", "heterogeneous"],
+  "methods": [
+    "stale",
+    "exact_dependency_cache",
+    "descendant_mask_recompute",
+    "masked_pairwise",
+    "generic_adaptive",
+    "strict_certificate_first",
+    "topology_voi_exact_dp",
+    "full_recompute",
+    "offline_full_information"
+  ],
+  "primary_metrics": ["action_exact", "mean_incremental_cost", "query_count", "certificate_sound"],
+  "primary_comparison": "topology_voi_exact_dp versus strict_certificate_first, masked_pairwise, generic_adaptive and exact_dependency_cache",
+  "practical_threshold": {"cost_reduction": 0.1, "paired_ci": "not computed under project contract"},
+  "online_information": "old transcript, public DAG, queried outputs and frozen development predictive prior only",
+  "offline_rule": "offline_full_information is diagnostic only and cannot select online actions",
+  "target_reference": "full_recompute new-graph action",
+  "failure_labels": ["NO_HEADROOM", "CACHE_EXPLAINS_ALL", "BOUND_TOO_LOOSE", "QUERY_PREDICTOR_POOR", "TOPOLOGY_NO_CROSSNODE_EFFECT", "SOUNDNESS_FAIL", "COST_ACCOUNTING_FAIL"]
+}
+

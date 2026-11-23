@@ -1,0 +1,17 @@
+{
+  "schema": "mab2_p3_phase2_service_contract_v1",
+  "status": "frozen_for_rows2_followup_before_execution",
+  "tasks": ["qasc", "sciq"],
+  "checkpoints": ["Qwen-0.5B", "Qwen-14B"],
+  "confirmatory_fixture": "interface_drift_rows2",
+  "rows": 32,
+  "split": {"development": [0, 16], "heldout": [16, 32]},
+  "candidate": "certificate_voi",
+  "ablations": ["certificate_random", "certificate_periodic", "certificate_uncertainty"],
+  "baselines": ["stale", "exact_cache", "graph_mask_recompute", "topology_voi_online", "full_new_graph"],
+  "primary_gates": ["heldout_action_exact_matches_full_new_graph", "heldout_forward_calls_below_graph_mask", "heldout_input_tokens_below_graph_mask"],
+  "sealed_labels_for_routing": false,
+  "confidence_intervals": false,
+  "exploratory_extension": "interface_semantic_rows4_128"
+}
+

@@ -1,0 +1,8 @@
+{
+  "cycle": "001",
+  "gpu_hours": 0.0,
+  "cpu_runs": 0,
+  "status": "contract_and_independent_tests_complete",
+  "budget_note": "No GPU run is authorized until the CPU contract gate passes."
+}
+

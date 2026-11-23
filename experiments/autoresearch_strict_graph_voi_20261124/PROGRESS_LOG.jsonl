@@ -1,0 +1,12 @@
+{"timestamp":"2026-11-24","cycle":"001","event":"contract_and_independent_tests_created","status":"in_progress"}
+{"timestamp":"2026-11-24","cycle":"001","event":"T01-T10_applicable_tests","status":"pending_run"}
+{"timestamp":"2026-11-24","cycle":"001","event":"T01-T10_applicable_tests","status":"PASS","counts":{"contract_properties":10,"certificate_exhaustive":2,"information_ledger":4}}
+{"timestamp":"2026-11-24","cycle":"001","event":"cpu_pilot","status":"REJECT_NO_HEADROOM","topology_voi_cost":33.0268,"masked_pairwise_cost":30.3207,"gpu_started":false}
+{"timestamp":"2026-11-24","cycle":"001","event":"five_seed_cpu_confirmation","status":"REJECT_NO_HEADROOM","masked_pairwise_mean_cost":30.13978717594396,"topology_voi_exact_dp_mean_cost":32.69348526705022,"action_exact":1.0}
+{"cycle":"phase0","status":"BASELINE_ANCHOR_RECORDED","gpu_hours":0.0,"evidence":["results/BASELINE_REPLAY.md","ledgers/DATA_AND_BUDGET_LEDGER.json"]}
+{"timestamp":"2026-11-24","cycle":"004","event":"topology_risk_greedy_pilot","status":"REJECT_NO_PRACTICAL_HEADROOM","candidate_cost":43.4084,"masked_pairwise_cost":30.3226,"action_exact":1.0,"gpu_started":false}
+{"timestamp":"2026-11-24","cycle":"005","event":"bounded_horizon2_pilot","status":"KEEP_EXPLORATORY_CANDIDATE","candidate":"topology_voi_h2","candidate_cost":27.1277,"masked_pairwise_cost":30.3226,"reduction":0.1054,"cases":6400,"gpu_started":false}
+{"timestamp":"2026-11-24","cycle":"006","event":"bounded_horizon2_confirmatory","status":"CONDITIONAL_PASS_AGGREGATE_WITH_FAMILY_BOUNDARY","candidate":"topology_voi_h2_fast","candidate_cost":26.8312,"masked_pairwise_cost":30.0467,"reduction":0.1070,"action_exact":1.0,"cases":160000,"family_reductions":{"chain":0.2373,"fanout":0.1054,"diamond":0.0700,"mixed":0.0641},"gpu_started":false}
+{"timestamp":"2026-11-24","cycle":"phase2","event":"real_service_rows2_confirmatory","status":"PASS_RISK_COST_GATE","tasks":["qasc","sciq"],"checkpoints":["Qwen-0.5B","Qwen-14B"],"heldout_rows_per_panel":16,"candidate":"certificate_voi","action_exact_matches_full_graph":true,"forward_cost_below_graph_mask":true,"raw_private_on_server":true}
+{"timestamp":"2026-11-24","cycle":"phase2","event":"semantic_rows4_128_extension","status":"EXPLORATORY_POSITIVE","candidate":"certificate_voi","heldout_rows_per_panel":64,"action_exact_all_panels":true,"calls_range": [7,9],"graph_mask_calls":20,"full_graph_calls":21}
+

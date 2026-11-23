@@ -1,0 +1,17 @@
+{
+  "schema": "mab2_p3_cycle006_config_v1",
+  "status": "frozen_before_execution",
+  "seeds": [20261124, 20261125, 20261126, 20261127, 20261128],
+  "cases_per_seed_family": 500,
+  "families": ["chain", "fanout", "diamond", "mixed"],
+  "drift": [0.0, 0.1, 0.4, 1.0],
+  "regimes": ["uniform", "heterogeneous"],
+  "edit_counts": [1, 2],
+  "candidate": "topology_voi_h2",
+  "comparators": ["masked_pairwise", "exact_dependency_cache", "strict_certificate_first", "full_recompute"],
+  "target": "full_new_graph_action",
+  "stopping_rule": "strict_weighted_certificate",
+  "practical_threshold": 0.10,
+  "ci": "not computed under project contract"
+}
+

@@ -1,0 +1,15 @@
+{
+  "schema": "mab2_p3_cycle009_config_v1",
+  "status": "frozen_before_rows2_execution",
+  "fixture": "interface_drift_rows2",
+  "tasks": ["qasc", "sciq"],
+  "checkpoints": ["Qwen-0.5B", "Qwen-14B"],
+  "rows": 32,
+  "split": {"development": 16, "heldout": 16},
+  "candidate": "certificate_voi",
+  "ablations": ["certificate_random", "certificate_periodic", "certificate_uncertainty"],
+  "baselines": ["stale", "exact_cache", "graph_mask_recompute", "topology_voi_online", "full_new_graph"],
+  "gates": {"heldout_action_exact": "match_full_new_graph", "forward_calls": "below_graph_mask", "input_tokens": "below_graph_mask"},
+  "ci": false
+}
+

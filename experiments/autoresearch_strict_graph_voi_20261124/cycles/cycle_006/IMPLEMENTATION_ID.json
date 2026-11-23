@@ -1,0 +1,14 @@
+{
+  "schema": "p3_cycle_006_implementation_id_v1",
+  "config_lock": "cycles/cycle_006/CONFIG_LOCK.json",
+  "candidate_label_in_lock": "topology_voi_h2",
+  "implementation_name": "topology_voi_h2_fast",
+  "implementation_path": "cycles/h2_fast.py",
+  "runner_path": "cycles/cycle_006_h2_confirmatory.py",
+  "tie_policy": "exact_float_then_lexical_kind_index",
+  "note": "The lock label names the algorithm; this file records the optimized bit-mask implementation used for confirmatory execution.",
+  "leaf_aggregation": "float(np.mean(completion))",
+  "label_branch_order": "first-seen label order over itertools.product assignments",
+  "terminal_cache_guard": "skip terminal when terminal in known cache",
+  "verified_against": "results/cycle_006_smoke/cycle_006_seed20261124_aggregate.json"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "mab2_p3_cycle009_decision_v1",
+  "status": "PASS_REAL_SERVICE_RISK_COST_GATE",
+  "candidate": "certificate_voi",
+  "panels": 4,
+  "tasks": 2,
+  "checkpoints": 2,
+  "heldout_rows_per_panel": 16,
+  "heldout_action_exact_matches_full_new_graph": true,
+  "heldout_cost_below_graph_mask_all_panels": true,
+  "interpretation": "supports graph-conditioned certificate revalidation against graph-mask/full restart; exact-cache dominance remains panel-dependent"
+}
+

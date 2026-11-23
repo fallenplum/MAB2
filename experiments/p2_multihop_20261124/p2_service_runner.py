@@ -105,10 +105,13 @@ class Ledger:
 def prompts(row: dict[str, Any], source_summary: str, relay_summaries: list[str], fact_set: list[str], interfaces: list[str] | None = None) -> dict[str, Any]:
     options = row["options"]
     menu = "\n".join(f"{chr(65 + i)}. {value}" for i, value in enumerate(options))
-    grouped = "\n".join(
-        f"{chr(65 + i)}. {options[2 * i]} OR {options[2 * i + 1]}"
-        for i in range(4)
-    )
+    if len(options) == 8:
+        grouped = "\n".join(
+            f"{chr(65 + i)}. {options[2 * i]} OR {options[2 * i + 1]}"
+            for i in range(4)
+        )
+    else:
+        grouped = "\n".join(f"{chr(65 + i)}. {value}" for i, value in enumerate(options))
     source_prompt = (
         row["stem"] + "\nHypotheses:\n" + grouped
         + "\nSource evidence: " + row["first_fact"]
@@ -237,6 +240,134 @@ def run_row(row, gold: int, model, tokenizer, device, pad_id, source_ids, label_
     answer = terminal_answer(old_cache["source"], relay, labels)
     methods["graph_mask_recompute"] = {"metrics": score(answer, target, gold), "cost": ledger.snapshot()}
 
+    # Certificate VOI revalidation. Changed relay rows are queried first, then
+    # dirty terminal cells are ranked by their graph-conditioned mass. The
+    # strict weighted certificate permits stopping before all dirty cells when
+    # one answer remains separated from every alternative by the unqueried mass.
+    ledger = Ledger(model, tokenizer, device, pad_id, source_ids, label_ids)
+    relay = list(old_cache["relay"])
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    for index in sorted(changed):
+        relay[index] = ledger.call(p["relay"][index], "source")
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    labels = dict(old_cache["labels"])
+    weights = {cell: float(old_cache["source"][cell[0]] * relay[cell[0]][cell[1]]) for cell in labels}
+    dirty = [cell for cell in sorted(labels) if cell[0] in changed]
+    order = sorted(dirty, key=lambda cell: (weights[cell], cell), reverse=True)
+    queried = 0
+    for cell in order:
+        known_scores = np.zeros(8, dtype=float)
+        unknown = 0.0
+        for key, value in labels.items():
+            if key in order[queried:]:
+                unknown += weights[key]
+            else:
+                known_scores[int(value)] += weights[key]
+        choice = int(np.argmax(known_scores))
+        other = max(float(known_scores[i]) for i in range(8) if i != choice)
+        if known_scores[choice] > other + unknown:
+            break
+        labels[cell] = int(ledger.call(p["terminal"][cell], "label"))
+        queried += 1
+    ledger.cache_hits = 21 - len(changed) - queried
+    answer = terminal_answer(old_cache["source"], relay, labels)
+    methods["certificate_voi"] = {
+        "metrics": score(answer, target, gold),
+        "cost": ledger.snapshot(),
+        "queried_terminal_cells": queried,
+        "certificate": bool(queried < len(dirty)),
+    }
+
+    # Same strict certificate and dirty cone, but a deterministic random cell
+    # order. This isolates the gain from certificate stopping versus the
+    # graph-conditioned weight ranking.
+    ledger = Ledger(model, tokenizer, device, pad_id, source_ids, label_ids)
+    relay = list(old_cache["relay"])
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    for index in sorted(changed):
+        relay[index] = ledger.call(p["relay"][index], "source")
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    labels = dict(old_cache["labels"])
+    weights = {cell: float(old_cache["source"][cell[0]] * relay[cell[0]][cell[1]]) for cell in labels}
+    dirty = [cell for cell in sorted(labels) if cell[0] in changed]
+    import hashlib as _hashlib
+    order = sorted(dirty, key=lambda cell: _hashlib.sha256(f"{row['key']}:{cell[0]}:{cell[1]}".encode()).hexdigest())
+    queried = 0
+    for cell in order:
+        known_scores = np.zeros(8, dtype=float)
+        unknown = 0.0
+        for key, value in labels.items():
+            if key in order[queried:]:
+                unknown += weights[key]
+            else:
+                known_scores[int(value)] += weights[key]
+        choice = int(np.argmax(known_scores))
+        other = max(float(known_scores[i]) for i in range(8) if i != choice)
+        if known_scores[choice] > other + unknown:
+            break
+        labels[cell] = int(ledger.call(p["terminal"][cell], "label"))
+        queried += 1
+    ledger.cache_hits = 21 - len(changed) - queried
+    answer = terminal_answer(old_cache["source"], relay, labels)
+    methods["certificate_random"] = {
+        "metrics": score(answer, target, gold),
+        "cost": ledger.snapshot(),
+        "queried_terminal_cells": queried,
+        "certificate": bool(queried < len(dirty)),
+    }
+
+    # Max-uncertainty ablation. The dirty cells are ordered by the observed
+    # relay distribution change, with cell mass as a deterministic tiebreaker.
+    ledger = Ledger(model, tokenizer, device, pad_id, source_ids, label_ids)
+    relay = list(old_cache["relay"])
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    for index in sorted(changed):
+        relay[index] = ledger.call(p["relay"][index], "source")
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    labels = dict(old_cache["labels"])
+    weights = {cell: float(old_cache["source"][cell[0]] * relay[cell[0]][cell[1]]) for cell in labels}
+    dirty = [cell for cell in sorted(labels) if cell[0] in changed]
+    uncertainty = {cell: float(np.abs(old_cache["relay"][cell[0]] - relay[cell[0]]).sum()) for cell in dirty}
+    order = sorted(dirty, key=lambda cell: (uncertainty[cell], weights[cell], cell), reverse=True)
+    queried = 0
+    for cell in order:
+        known_scores = np.zeros(8, dtype=float); unknown = 0.0
+        for key, value in labels.items():
+            if key in order[queried:]: unknown += weights[key]
+            else: known_scores[int(value)] += weights[key]
+        choice = int(np.argmax(known_scores)); other = max(float(known_scores[i]) for i in range(8) if i != choice)
+        if known_scores[choice] > other + unknown: break
+        labels[cell] = int(ledger.call(p["terminal"][cell], "label")); queried += 1
+    ledger.cache_hits = 21 - len(changed) - queried
+    answer = terminal_answer(old_cache["source"], relay, labels)
+    methods["certificate_uncertainty"] = {
+        "metrics": score(answer, target, gold), "cost": ledger.snapshot(), "queried_terminal_cells": queried,
+        "certificate": bool(queried < len(dirty)),
+    }
+
+    # Periodic fixed-order ablation with the same stopping certificate.
+    ledger = Ledger(model, tokenizer, device, pad_id, source_ids, label_ids)
+    relay = list(old_cache["relay"])
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    for index in sorted(changed): relay[index] = ledger.call(p["relay"][index], "source")
+    p = prompts(row, summary(old_cache["source"]), [summary(value) for value in relay], row["second_facts_new"])
+    labels = dict(old_cache["labels"]); weights = {cell: float(old_cache["source"][cell[0]] * relay[cell[0]][cell[1]]) for cell in labels}
+    dirty = [cell for cell in sorted(labels) if cell[0] in changed]; order = sorted(dirty); queried = 0
+    for cell in order:
+        known_scores = np.zeros(8, dtype=float); unknown = 0.0
+        for key, value in labels.items():
+            if key in order[queried:]: unknown += weights[key]
+            else: known_scores[int(value)] += weights[key]
+        choice = int(np.argmax(known_scores)); other = max(float(known_scores[i]) for i in range(8) if i != choice)
+        if known_scores[choice] > other + unknown: break
+        labels[cell] = int(ledger.call(p["terminal"][cell], "label")); queried += 1
+    ledger.cache_hits = 21 - len(changed) - queried
+    answer = terminal_answer(old_cache["source"], relay, labels)
+    methods["certificate_periodic"] = {
+        "metrics": score(answer, target, gold), "cost": ledger.snapshot(), "queried_terminal_cells": queried,
+        "certificate": bool(queried < len(dirty)),
+    }
+
     # Online topology VOI uses only graph impact and token costs, no gold/new cache.
     ledger = Ledger(model, tokenizer, device, pad_id, source_ids, label_ids)
     relay = list(old_cache["relay"])
@@ -305,6 +436,17 @@ def main() -> None:
 
     rows = json.loads(args.input.read_text(encoding="utf-8"))
     gold = json.loads(args.gold.read_text(encoding="utf-8"))
+    for row in rows:
+        if "changed_rows" not in row:
+            raw = row.get("interface_drift_rows", "[]")
+            try:
+                row["changed_rows"] = json.loads(raw) if isinstance(raw, str) else list(raw)
+            except (TypeError, ValueError, json.JSONDecodeError):
+                row["changed_rows"] = []
+        if "new_relay_interface" not in row:
+            row["new_relay_interface"] = [""] * 4
+        if "second_facts_new" not in row:
+            row["second_facts_new"] = [row.get("second_fact_new") or row["second_fact"]] * 4
     rows = rows[args.offset : args.offset + args.limit] if args.limit else rows[args.offset :]
     tokenizer = AutoTokenizer.from_pretrained(args.model, local_files_only=True, trust_remote_code=True)
     tokenizer.padding_side = "left"
@@ -325,5 +467,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 

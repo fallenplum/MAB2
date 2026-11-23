@@ -1,0 +1,13 @@
+{
+  "schema": "mab2_p3_strict_graph_voi_contract_v1",
+  "date": "2026-11-24",
+  "source_prompt": "MAB2_AutoResearch_P3_StrictGraphVOI_Prompt.md",
+  "primary_metrics": ["action_exact_vs_new_graph", "incremental_forward_calls", "input_tokens", "wall_seconds"],
+  "certificate": "strict weighted terminal bound with exhaustive finite verification",
+  "baselines": ["stale", "exact_cache", "graph_mask", "masked_pairwise", "max_uncertainty", "random", "periodic", "generic_drd"],
+  "seeds": [20261124, 20261125, 20261126, 20261127, 20261128],
+  "test_set_access": "sealed labels and unqueried new outputs are scoring-only",
+  "raw_private_inputs": true,
+  "status": "in_progress"
+}
+

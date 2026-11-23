@@ -1,0 +1,64 @@
+{
+  "schema": "mab2_p3_phase2_real_service_summary_v1",
+  "confirmatory": {
+    "fixture": "interface_drift_rows2",
+    "rows": 32,
+    "split": {"development": 16, "heldout": 16},
+    "tasks": ["qasc", "sciq"],
+    "checkpoints": ["Qwen-0.5B", "Qwen-14B"],
+    "heldout": {
+      "qasc_Qwen-0.5B": {
+        "full_new_graph": {"answer_accuracy": 0.312, "action_exact": 1.0, "forward_calls": 21.0, "input_tokens": 3974},
+        "graph_mask_recompute": {"answer_accuracy": 0.312, "action_exact": 1.0, "forward_calls": 18.0, "input_tokens": 3581},
+        "exact_cache": {"answer_accuracy": 0.312, "action_exact": 0.938, "forward_calls": 2.0, "input_tokens": 303},
+        "certificate_voi": {"answer_accuracy": 0.312, "action_exact": 1.0, "forward_calls": 3.0, "input_tokens": 569},
+        "certificate_random": {"answer_accuracy": 0.312, "action_exact": 1.0, "forward_calls": 3.0, "input_tokens": 700}
+      },
+      "qasc_Qwen-14B": {
+        "full_new_graph": {"answer_accuracy": 0.125, "action_exact": 1.0, "forward_calls": 21.0, "input_tokens": 3365},
+        "graph_mask_recompute": {"answer_accuracy": 0.125, "action_exact": 1.0, "forward_calls": 18.0, "input_tokens": 3059},
+        "exact_cache": {"answer_accuracy": 0.125, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 245},
+        "certificate_voi": {"answer_accuracy": 0.125, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 277},
+        "certificate_random": {"answer_accuracy": 0.125, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 256}
+      },
+      "sciq_Qwen-0.5B": {
+        "full_new_graph": {"answer_accuracy": 0.438, "action_exact": 1.0, "forward_calls": 21.0, "input_tokens": 3959},
+        "graph_mask_recompute": {"answer_accuracy": 0.438, "action_exact": 1.0, "forward_calls": 18.0, "input_tokens": 3362},
+        "exact_cache": {"answer_accuracy": 0.438, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 293},
+        "certificate_voi": {"answer_accuracy": 0.438, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 317},
+        "certificate_random": {"answer_accuracy": 0.438, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 329}
+      },
+      "sciq_Qwen-14B": {
+        "full_new_graph": {"answer_accuracy": 0.375, "action_exact": 1.0, "forward_calls": 21.0, "input_tokens": 3350},
+        "graph_mask_recompute": {"answer_accuracy": 0.375, "action_exact": 1.0, "forward_calls": 18.0, "input_tokens": 2840},
+        "exact_cache": {"answer_accuracy": 0.375, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 235},
+        "certificate_voi": {"answer_accuracy": 0.375, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 321},
+        "certificate_random": {"answer_accuracy": 0.375, "action_exact": 1.0, "forward_calls": 2.0, "input_tokens": 353}
+      }
+    }
+  },
+  "exploratory_semantic_rows4_128": {
+    "rows_per_task_checkpoint": 128,
+    "split": {"development": 64, "heldout": 64},
+    "heldout_pattern": {
+      "qasc_Qwen-0.5B": {"full_calls": 21.0, "graph_mask_calls": 20.0, "certificate_voi_calls": 7.0, "certificate_voi_action_exact": 1.0, "exact_cache_action_exact": 0.969},
+      "qasc_Qwen-14B": {"full_calls": 21.0, "graph_mask_calls": 20.0, "certificate_voi_calls": 8.0, "certificate_voi_action_exact": 1.0, "exact_cache_action_exact": 0.969},
+      "sciq_Qwen-0.5B": {"full_calls": 21.0, "graph_mask_calls": 20.0, "certificate_voi_calls": 7.0, "certificate_voi_action_exact": 1.0, "exact_cache_action_exact": 0.969},
+      "sciq_Qwen-14B": {"full_calls": 21.0, "graph_mask_calls": 20.0, "certificate_voi_calls": 9.0, "certificate_voi_action_exact": 1.0, "exact_cache_action_exact": 0.953}
+    }
+  },
+  "ranking_ablation_semantic_rows4_32": {
+    "heldout_certificate_voi_calls": [7.0, 7.0, 6.0, 10.0],
+    "heldout_certificate_periodic_calls": [10.0, 7.0, 7.0, 11.0],
+    "heldout_certificate_uncertainty_calls": [11.0, 14.0, 13.0, 13.0],
+    "heldout_certificate_random_calls": [13.0, 13.0, 14.0, 14.0],
+    "all_methods_action_exact": 1.0,
+    "order": ["qasc_Qwen-0.5B", "qasc_Qwen-14B", "sciq_Qwen-0.5B", "sciq_Qwen-14B"]
+  },
+  "interpretation": {
+    "supported": ["strict certificate stopping plus graph-conditioned dirty-cone revalidation can preserve full-graph action while reducing calls and tokens against graph-mask/full recomputation", "mass ranking is better than random, periodic and relay-distance ordering on the semantic ablation"],
+    "not_supported": ["universal dominance over exact cache", "answer-accuracy improvement", "production latency claim"],
+    "private_raw_artifacts": "server /tmp/p3_*_*.json and sealed labels remain private"
+  }
+}
+

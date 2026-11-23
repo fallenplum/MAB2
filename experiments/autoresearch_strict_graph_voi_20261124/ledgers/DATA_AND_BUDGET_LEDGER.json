@@ -1,0 +1,12 @@
+{
+  "schema": "mab2_p3_data_budget_ledger_v1",
+  "phase": "P3",
+  "gpu_hours_used": 0.0,
+  "gpu_hours_authorized": 160.0,
+  "cpu_phase_required_before_gpu": true,
+  "raw_private_inputs": ["MAB2_recovered/qasc_rows2_INPUT.json", "MAB2_recovered/interface_drift_rows1/qasc/SEALED.json"],
+  "public_artifacts_exclude_raw_questions_and_sealed_keys": true,
+  "p0_p2_artifacts_are_frozen_references": true,
+  "ci_policy": "No confidence intervals or bootstrap-only runs under project contract"
+}
+
