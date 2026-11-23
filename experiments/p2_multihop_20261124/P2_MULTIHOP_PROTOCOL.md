@@ -17,7 +17,7 @@ S0 source reviewer
   -> T terminal answer selector
 ```
 
-`R1/R2/R3` 同时接收 `S0` 的结构化输出和对应原始 relay evidence。`T` 接收四个 relay 输出以及原始选项。每条记录同时保存 `raw_evidence` 和 `structured_interface`，后者只规定节点依赖、假设槽位和返回格式，不替代自然语言证据。
+`R1/R2/R3` 同时接收 `S0` 的结构化输出和对应原始 relay evidence。`T` 接收四个 relay 输出以及原始选项。每条记录同时保存 `raw_evidence` 和 `structured_interface`，后者只规定节点依赖、假设槽位和返回格式，不替代自然语言证据。 输入还记录 source/relay 的词法重叠，仅作审计诊断，不作为语义证明或在线查询信号。
 
 ## 方法
 
@@ -53,4 +53,5 @@ P2 的成功标准不是某个模型的绝对准确率，而是在相同任务�
 - 私有 scorer 输出逐题质量、调用账本和失败记录。
 - 最终报告区分开发结果、独立留出结果和离线 VOI 上界。
 
-当前状态为 `prepared_only_pending_P1_gain_gate`。
+当前状态为 `completed_primary_32_plus_exploratory_128`。正式报告使用加权的十六个 terminal cells 聚合，早期单路径 argmax runner 已隔离，不计入正式结论。
+

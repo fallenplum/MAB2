@@ -39,5 +39,11 @@
     "false_keep",
     "recovery_rate"
   ],
-  "status": "prepared_only_pending_P1_gain_gate"
+  "status": "P2_SMALL_REAL_SERVICE_COMPLETED_WITH_SCOPE",
+  "runner": "p2_service_runner.py",
+  "decision_aggregation": "weighted_all_terminal_cells_source_i_times_relay_i_j",
+  "result_artifact": "P2_WEIGHTED_PUBLIC_SUMMARY.json",
+  "result_scope": "primary 32 rows plus exploratory fixed 128-row extension",
+  "result_summary": "P2_WEIGHTED_PUBLIC_SUMMARY.json",
+  "terminal_weight": "P(S0=i) * P(R_i=j) over all terminal cells"
 }

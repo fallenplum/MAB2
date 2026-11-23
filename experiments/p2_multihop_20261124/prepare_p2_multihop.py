@@ -25,8 +25,10 @@ def _stable_rows(rows: list[dict[str, Any]], limit: int) -> list[dict[str, Any]]
         if len(row.get("options", [])) == 8
         and row.get("first_fact")
         and row.get("second_fact")
-        and isinstance(row.get("second_facts_new"), list)
-        and len(row["second_facts_new"]) == 4
+        and (
+            (isinstance(row.get("second_facts_new"), list) and len(row["second_facts_new"]) == 4)
+            or (isinstance(row.get("new_relay_interface"), list) and len(row["new_relay_interface"]) == 4)
+        )
     ]
     eligible.sort(key=lambda row: hashlib.sha256(row["key"].encode()).hexdigest())
     return eligible[:limit]
@@ -48,13 +50,19 @@ def _interface(row: dict[str, Any], branch: int, changed: bool) -> str:
 
 
 def build_row(row: dict[str, Any]) -> dict[str, Any]:
-    new_facts = row["second_facts_new"]
+    new_facts = row.get("second_facts_new")
+    if not isinstance(new_facts, list) or len(new_facts) != 4:
+        new_facts = [row["second_fact"]] * 4
+    base_interfaces = row.get("new_relay_interface")
+    if not isinstance(base_interfaces, list) or len(base_interfaces) != 4:
+        base_interfaces = [""] * 4
     changed_rows = [
         index for index, value in enumerate(new_facts)
         if value != row["second_fact"]
     ]
+    changed_rows = sorted(set(changed_rows) | {index for index, value in enumerate(base_interfaces) if value})
     interfaces = [
-        _interface(row, branch, branch in changed_rows)
+        (base_interfaces[branch] or _interface(row, branch, True))
         if branch in changed_rows else ""
         for branch in range(4)
     ]

@@ -1,0 +1,253 @@
+{
+  "schema": "mab2_p2_service_public_v1",
+  "model": "/home/chen/KDBPT/KD/models/Qwen-0.5B",
+  "microbatch": 1,
+  "online_gold_access": false,
+  "methods": [
+    "full_new_graph",
+    "old_graph_reuse",
+    "single_model",
+    "retrieval_augmented_generation",
+    "exact_cache",
+    "graph_mask_recompute",
+    "topology_voi_online",
+    "full_information_voi_upper_bound"
+  ],
+  "splits": [
+    {
+      "split": "development",
+      "n": 16,
+      "methods": {
+        "full_new_graph": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 21,
+          "input_tokens": 4279.5625,
+          "output_tokens": 21,
+          "wall_seconds": 0.3534839315107092,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "old_graph_reuse": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 0.9375,
+          "forward_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 21,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "single_model": {
+          "answer_accuracy": 0.1875,
+          "answer_action_exact": 0.375,
+          "decision_exact": 0.375,
+          "forward_calls": 1,
+          "input_tokens": 119.875,
+          "output_tokens": 1,
+          "wall_seconds": 0.016505011124536395,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "retrieval_augmented_generation": {
+          "answer_accuracy": 0.0625,
+          "answer_action_exact": 0.3125,
+          "decision_exact": 0.3125,
+          "forward_calls": 1,
+          "input_tokens": 123.875,
+          "output_tokens": 1,
+          "wall_seconds": 0.016609859565505758,
+          "cache_hits": 0,
+          "retrieval_calls": 2,
+          "offline_only": false
+        },
+        "exact_cache": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 0.9375,
+          "decision_exact": 0.9375,
+          "forward_calls": 2,
+          "input_tokens": 561.625,
+          "output_tokens": 2,
+          "wall_seconds": 0.034220117260701954,
+          "cache_hits": 19,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "graph_mask_recompute": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 18,
+          "input_tokens": 3877.625,
+          "output_tokens": 18,
+          "wall_seconds": 0.30436237627873197,
+          "cache_hits": 3,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "topology_voi_online": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 11.625,
+          "input_tokens": 2566.25,
+          "output_tokens": 11.625,
+          "wall_seconds": 0.1967013967805542,
+          "cache_hits": 9.375,
+          "retrieval_calls": 0,
+          "offline_only": false,
+          "mean_queried_terminal_cells": 9.625,
+          "threshold": 0.08
+        },
+        "full_information_voi_upper_bound": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 2.0625,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 18.9375,
+          "retrieval_calls": 0,
+          "offline_only": true
+        }
+      },
+      "old_transcript_setup": {
+        "forward_calls": 21,
+        "input_tokens": 4300.6875,
+        "output_tokens": 21,
+        "wall_seconds": 0.41983488769619726
+      }
+    },
+    {
+      "split": "held_out",
+      "n": 16,
+      "methods": {
+        "full_new_graph": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 21,
+          "input_tokens": 4222.375,
+          "output_tokens": 21,
+          "wall_seconds": 0.35452297134906985,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "old_graph_reuse": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 21,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "single_model": {
+          "answer_accuracy": 0.125,
+          "answer_action_exact": 0.5,
+          "decision_exact": 0.5,
+          "forward_calls": 1,
+          "input_tokens": 117.1875,
+          "output_tokens": 1,
+          "wall_seconds": 0.016510069544892758,
+          "cache_hits": 0,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "retrieval_augmented_generation": {
+          "answer_accuracy": 0.125,
+          "answer_action_exact": 0.5,
+          "decision_exact": 0.5,
+          "forward_calls": 1,
+          "input_tokens": 121.1875,
+          "output_tokens": 1,
+          "wall_seconds": 0.016536759620066732,
+          "cache_hits": 0,
+          "retrieval_calls": 2,
+          "offline_only": false
+        },
+        "exact_cache": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 2,
+          "input_tokens": 555.125,
+          "output_tokens": 2,
+          "wall_seconds": 0.03417684999294579,
+          "cache_hits": 19,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "graph_mask_recompute": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 18,
+          "input_tokens": 3827.125,
+          "output_tokens": 18,
+          "wall_seconds": 0.3045584005303681,
+          "cache_hits": 3,
+          "retrieval_calls": 0,
+          "offline_only": false
+        },
+        "topology_voi_online": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 11.875,
+          "input_tokens": 2571.125,
+          "output_tokens": 11.875,
+          "wall_seconds": 0.2009224947541952,
+          "cache_hits": 9.125,
+          "retrieval_calls": 0,
+          "offline_only": false,
+          "mean_queried_terminal_cells": 9.875,
+          "threshold": 0.08
+        },
+        "full_information_voi_upper_bound": {
+          "answer_accuracy": 0.375,
+          "answer_action_exact": 1.0,
+          "decision_exact": 1.0,
+          "forward_calls": 2,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0,
+          "cache_hits": 19,
+          "retrieval_calls": 0,
+          "offline_only": true
+        }
+      },
+      "old_transcript_setup": {
+        "forward_calls": 21,
+        "input_tokens": 4246.5,
+        "output_tokens": 21,
+        "wall_seconds": 0.4153489008313045
+      }
+    }
+  ],
+  "private_shards": {
+    "development": [
+      "P2_wdev_2.json",
+      "P2_wdev_3.json",
+      "P2_wdev_6.json",
+      "P2_wdev_7.json"
+    ],
+    "held_out": [
+      "P2_wheld_2.json",
+      "P2_wheld_3.json",
+      "P2_wheld_6.json",
+      "P2_wheld_7.json"
+    ]
+  },
+  "note": "No question keys, targets or per-row predictions are included. Full-information VOI is offline-only."
+}

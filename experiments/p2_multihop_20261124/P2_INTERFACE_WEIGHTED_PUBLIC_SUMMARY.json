@@ -1,0 +1,160 @@
+{
+  "schema": "mab2_p2_interface_public_v1",
+  "model": "Qwen-0.5B",
+  "online_gold_access": false,
+  "panel": "fixed 32 interface-drift rows, 16 development and 16 held-out",
+  "methods": [
+    "full_new_graph",
+    "old_graph_reuse",
+    "exact_cache",
+    "graph_mask_recompute",
+    "topology_voi_online"
+  ],
+  "splits": {
+    "development": {
+      "full_new_graph": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 21,
+        "input_tokens": 4032.56,
+        "output_tokens": 21,
+        "wall_seconds": 0.35,
+        "cache_hits": 0,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "old_graph_reuse": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_seconds": 0,
+        "cache_hits": 21,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "exact_cache": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 1,
+        "input_tokens": 164.81,
+        "output_tokens": 1,
+        "wall_seconds": 0.02,
+        "cache_hits": 20,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "graph_mask_recompute": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 17,
+        "input_tokens": 3480.81,
+        "output_tokens": 17,
+        "wall_seconds": 0.3,
+        "cache_hits": 4,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "topology_voi_online": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 1,
+        "input_tokens": 164.81,
+        "output_tokens": 1,
+        "wall_seconds": 0.02,
+        "cache_hits": 20,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      }
+    },
+    "held_out": {
+      "full_new_graph": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 21,
+        "input_tokens": 3979.38,
+        "output_tokens": 21,
+        "wall_seconds": 0.35,
+        "cache_hits": 0,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "old_graph_reuse": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 0,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "wall_seconds": 0,
+        "cache_hits": 21,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "exact_cache": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 1,
+        "input_tokens": 163.56,
+        "output_tokens": 1,
+        "wall_seconds": 0.02,
+        "cache_hits": 20,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "graph_mask_recompute": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 17,
+        "input_tokens": 3435.56,
+        "output_tokens": 17,
+        "wall_seconds": 0.3,
+        "cache_hits": 4,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      },
+      "topology_voi_online": {
+        "answer_accuracy": 0.375,
+        "action_exact": 1,
+        "decision_exact": 1,
+        "forward_calls": 1,
+        "input_tokens": 163.56,
+        "output_tokens": 1,
+        "wall_seconds": 0.02,
+        "cache_hits": 20,
+        "retrieval_calls": 0,
+        "false_drop": 0.0,
+        "false_keep": 0.0,
+        "recovery_rate": 0.0
+      }
+    }
+  },
+  "note": "Interface panel changes one structured relay protocol. It records cost behavior. No action or answer-quality change was observed."
+}
