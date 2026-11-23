@@ -1,0 +1,26 @@
+{
+  "schema": "mab2_actual_service_forward_v1",
+  "input": "arcc_independent_rows2_INPUT.json",
+  "worker": "arcc_qwen14_dedup_v310b_r2.jsonl",
+  "model": "/home/chen/KDBPT/KD/models/Qwen-14B",
+  "results": [
+    {
+      "method": "calibrated_route",
+      "n": 128,
+      "forward_calls": 1,
+      "input_tokens": 161,
+      "output_tokens": 1,
+      "wall_seconds": 0.594335958827287,
+      "mean_calls": 0.0078125,
+      "mean_input_tokens": 1.2578125,
+      "mean_output_tokens": 0.0078125,
+      "mean_wall_seconds": 0.004643249678338179,
+      "decision_exact": 1.0,
+      "answer_action_exact": 1.0,
+      "answer_accuracy": 0.25
+    }
+  ],
+  "radius_q1_all": {
+    "1": 0.030352900736033916
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "generic_answer_region_ablation_independent_v1",
+  "cell_count": 10,
+  "quantile": 0.9,
+  "protocol": "all four relay rows exposed in calibration and test; same cached transcript and answer-region stopping rule",
+  "mean": {
+    "graph_conditioned": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "tokens": 162.2935483870968, "queries": 1.1838709677419355},
+    "pooled_radius": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "tokens": 356.8741935483871, "queries": 2.7064516129032254},
+    "pooled_uniform_priority": {"decision_exact": 0.9967741935483871, "answer_action_exact": 1.0, "tokens": 356.90322580645164, "queries": 2.7064516129032254}
+  },
+  "interpretation": "On ten corrected independent cells, row-conditioned drift radii reduce relay tokens by 54.5% relative to a pooled-radius control at equal answer-action exactness. The all-row calibration protocol encodes an interface-invariance prior. The hidden-interface panel separately shows that this prior must be gated by interface fingerprints."
+}
+

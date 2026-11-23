@@ -26,6 +26,11 @@ decision exactness 0.9677 and remains an explicit boundary failure.
 3. Existing service results measure logical relay tokens and answer-action
    agreement. A main-track paper should add actual generated tokens, model-call
    counts, and elapsed latency on a held-out service stream.
+   The corrected single-forward Qwen-0.5B stream now closes this accounting
+   for three edit densities. It shows equal action safety and no relay-call
+   reduction for answer-region q=1 relative to TCR. Qwen-14B has one low-call
+   rows2 result, while rows1 and rows4 remain unverified under the same
+   single-forward protocol.
 4. The theoretical soundness proof is a standard interval argument. The paper
    should present the graph-density and answer-margin predictions as the
    mechanism contribution, with the proof supporting the certificate rather
@@ -41,6 +46,8 @@ decision exactness 0.9677 and remains an explicit boundary failure.
 - Run a held-out service stream for QASC, SciQ, and Commonsense with stale,
   TCR guard, answer-region (q=0.9), and cold restart. Record final answers,
   actual input/output tokens, model calls, and wall-clock latency.
+- Complete the same single-forward service stream on Qwen-14B rows1 and rows4
+  before treating calibrated route selection as a candidate method.
 - Report the (q=0.5) through (q=1.0) frontier with question-level failure
   counts and density/margin strata.
 
