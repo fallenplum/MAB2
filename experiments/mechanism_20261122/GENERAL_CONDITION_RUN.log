@@ -1,0 +1,247 @@
+[
+  {
+    "drift_type": "source_only",
+    "methods": {
+      "stale": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "warm_reweighted": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "ctdr_transport": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "lower_positive": 237,
+          "upper_nonpositive": 263
+        }
+      },
+      "fixed_reverse_recheck": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "lower_positive": 237,
+          "upper_nonpositive": 263
+        }
+      },
+      "full_restart": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 42.13,
+        "mean_queries": 4.0,
+        "certificate_counts": {
+          "full": 500
+        }
+      },
+      "oracle_lower_bound": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "oracle": 500
+        }
+      }
+    }
+  },
+  {
+    "drift_type": "conditional",
+    "methods": {
+      "stale": {
+        "n": 500,
+        "action_error": 0.43,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "warm_reweighted": {
+        "n": 500,
+        "action_error": 0.43,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "ctdr_transport": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 9.512,
+        "mean_queries": 0.898,
+        "certificate_counts": {
+          "lower_positive": 262,
+          "upper_nonpositive": 238
+        }
+      },
+      "fixed_reverse_recheck": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 9.512,
+        "mean_queries": 0.898,
+        "certificate_counts": {
+          "lower_positive": 262,
+          "upper_nonpositive": 238
+        }
+      },
+      "full_restart": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 41.812,
+        "mean_queries": 4.0,
+        "certificate_counts": {
+          "full": 500
+        }
+      },
+      "oracle_lower_bound": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "oracle": 500
+        }
+      }
+    }
+  },
+  {
+    "drift_type": "interface",
+    "methods": {
+      "stale": {
+        "n": 500,
+        "action_error": 0.486,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "warm_reweighted": {
+        "n": 500,
+        "action_error": 0.486,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "ctdr_transport": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 9.362,
+        "mean_queries": 0.91,
+        "certificate_counts": {
+          "lower_positive": 264,
+          "upper_nonpositive": 236
+        }
+      },
+      "fixed_reverse_recheck": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 9.362,
+        "mean_queries": 0.91,
+        "certificate_counts": {
+          "lower_positive": 264,
+          "upper_nonpositive": 236
+        }
+      },
+      "full_restart": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 41.758,
+        "mean_queries": 4.0,
+        "certificate_counts": {
+          "full": 500
+        }
+      },
+      "oracle_lower_bound": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "oracle": 500
+        }
+      }
+    }
+  },
+  {
+    "drift_type": "mixed",
+    "methods": {
+      "stale": {
+        "n": 500,
+        "action_error": 0.404,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "warm_reweighted": {
+        "n": 500,
+        "action_error": 0.404,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "reuse": 500
+        }
+      },
+      "ctdr_transport": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 11.544,
+        "mean_queries": 1.142,
+        "certificate_counts": {
+          "lower_positive": 252,
+          "upper_nonpositive": 248
+        }
+      },
+      "fixed_reverse_recheck": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 14.2,
+        "mean_queries": 1.366,
+        "certificate_counts": {
+          "lower_positive": 252,
+          "upper_nonpositive": 248
+        }
+      },
+      "full_restart": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 42.222,
+        "mean_queries": 4.0,
+        "certificate_counts": {
+          "full": 500
+        }
+      },
+      "oracle_lower_bound": {
+        "n": 500,
+        "action_error": 0.0,
+        "mean_tokens": 0.0,
+        "mean_queries": 0.0,
+        "certificate_counts": {
+          "oracle": 500
+        }
+      }
+    }
+  }
+]
+

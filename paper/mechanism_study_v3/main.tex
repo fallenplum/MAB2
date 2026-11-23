@@ -9,7 +9,7 @@
 \maketitle
 
 \begin{abstract}
-Historical communication credit is useful only while its conditional interface remains valid. We study graph evolution as a certificate-maintenance problem. An edit changes source mass and may invalidate relay rows whose evidence or interface has changed. We introduce a graph-conditioned Pairwise Gap Certificate that bounds how each unqueried relay row can reduce every incumbent--challenger answer gap. The controller queries rows by worst-case gap reduction per token and stops when all answer pairs remain separated. Graph descendants and relay-interface fingerprints define the potentially stale rows, while missing metadata triggers a fail-closed fallback. On 27 deduplicated model--task--density panels, a pooled quantile selected without test residues preserves the answer action on every held-out residue and reduces logical relay tokens by 30.0\% relative to a fair descendant-mask baseline. A split-conformal $\alpha=.1$ variant preserves all answer actions with a 24.9\% weighted reduction and provides an assumption-conditioned coverage statement. An independent ARC-Challenge validation cohort confirms 3.3\%, 1.7\% and 4.2\% worker-cost reductions at one-, two- and four-row edits under the same pooled quantile used by service replay. Across 51 matched held-out service cells, an answer-region instantiation of the same graph-conditioned certificate matches cold-restart answer accuracy and preserves the worker-reference action while reducing incremental relay tokens by 86.8\%. On the original Qwen-0.5B service cohort, the pooled route preserves action exactness while reducing relay forwards by 13.3\%, 13.3\% and 4.9\% at one-, two- and four-row edit densities. The edge decision-set diagnostic is 0.992 at each density. Qwen-14B service action values still exhibit a custom-model replay discrepancy. We therefore claim a graph-conditional credit-validity mechanism and an answer-action certificate.
+Historical communication credit is useful only while its conditional interface remains valid. We study graph evolution as a certificate-maintenance problem. An edit changes source mass and may invalidate relay rows whose evidence or interface has changed. We introduce a graph-conditioned Pairwise Gap Certificate that bounds how each unqueried relay row can reduce every incumbent--challenger answer gap. The controller queries rows by worst-case gap reduction per token and stops when all answer pairs remain separated. Graph descendants and relay-interface fingerprints define the potentially stale rows, while missing metadata triggers a fail-closed fallback. On 27 deduplicated model--task--density panels, a pooled quantile selected without test residues preserves the answer action on every held-out residue and reduces logical relay tokens by 30.0\% relative to a fair descendant-mask baseline. A split-conformal $\alpha=.1$ variant preserves all answer actions with a 24.9\% weighted reduction and provides an assumption-conditioned coverage statement. On a matched 3,456-unit M60 matrix, graph-manifest CTDR reaches exact-set recovery 1.000 with zero action error, whereas reweighted old-history replay reaches 0.9167 exact set with 0.0391 action error. An independent ARC-Challenge validation cohort confirms 3.3\%, 1.7\% and 4.2\% worker-cost reductions at one-, two- and four-row edits under the same pooled quantile used by service replay. Across 51 matched held-out service cells, an answer-region instantiation of the same graph-conditioned certificate matches cold-restart answer accuracy and preserves the worker-reference action while reducing incremental relay tokens by 86.8\%. On the original Qwen-0.5B service cohort, the pooled route preserves action exactness while reducing relay forwards by 13.3\%, 13.3\% and 4.9\% at one-, two- and four-row edit densities. The edge decision-set diagnostic is 0.992 at each density. Qwen-14B service action values still exhibit a custom-model replay discrepancy. We therefore claim a graph-conditional credit-validity mechanism and an answer-action certificate.
 \end{abstract}
 
 \section{Introduction}
@@ -47,6 +47,9 @@ Assume every unqueried row $i\in U$ satisfies $\operatorname{TV}(q_i^{\rm new},q
 
 \paragraph{Proof sketch.}
 For one unresolved row, total variation bounds the change in the mass assigned to the answer group of $a$ and to the group of $b$ by $\delta_i$ each. Multiplying by the source mass gives a pairwise decrease no larger than $2s_i\delta_i$. Summing over unresolved rows yields Eq.~\ref{eq:pairwise-gap}. Strict positivity for every competitor excludes every alternative action under the admissible post-edit table.
+
+\paragraph{Transport boundary.}
+The source-distribution term is a sufficient conservative radius. A tighter pairwise source term weights each source change by the row's incumbent--challenger contribution. The row-level TV term cannot be removed under conditional drift: a two-point row construction attains the factor $2s_i\delta_i$ in the pairwise gap decrease. When source, conditional channels and interface fingerprints are unchanged, the unresolved set is empty and the certificate performs zero new queries, which is exactly stale reuse. Selective ranking changes the cost ordering only. It does not strengthen the safety certificate. These tightness, necessity and no-drift results are tested in the companion theory artifact.
 
 \section{Interface-aware revalidation}
 The graph mask is the union of descendants of edited edges. For every relay row, the worker also derives a fingerprint from the tokenized relay interface. A row enters the revalidation set when either the graph mask or the fingerprint indicates a change. If a fingerprint is absent or malformed, the policy marks all rows unknown. This is a fail-closed implementation condition.
@@ -87,6 +90,49 @@ Four-row edits & 9 & 202.26 & 303.16 & 33.3\%\\
 }
 \caption{Held-out answer-action replay with per-cell quantile selection. The pooled $q=.9$ selection gives 124.74 mean tokens and is reported in the text. All methods use the same cached transcript, graph mask and row prices.}
 \end{table}
+
+\subsection{Matched M60 strong baseline matrix}
+The same M60 panels provide a direct attribution test. All 3,456
+model--task--density--worker units share the old transcript, edited source,
+relay outputs, token prices, post-edit budget equal to the full-restart cost,
+and exact-set stopping target. Exact warm cache
+replays the old transcript on the new source and forbids every new query.
+Reweighted old-history audit allows the common post-edit audit scheduler to
+query. Full CTDR receives only the graph-manifest descendant rows as affected
+and then applies token-aware selective ranking. The oracle is restricted to
+changed-row refresh actions and is an offline lower-cost reference.
+
+\begin{table}[t]
+\centering\scriptsize
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Controller & Exact set & Action error & False drop & Queries & Tokens\\\\
+\midrule
+Stale & 0.9039 & 0.0428 & 0.0637 & 0.0000 & 0.00\\\\
+Exact warm cache & 0.8877 & 0.0443 & 0.0894 & 0.0000 & 0.00\\\\
+Reweighted old history & 0.9167 & 0.0391 & 0.0521 & 0.2784 & 22.73\\\\
+CTDR transport only & 0.9167 & 0.0391 & 0.0521 & 0.2784 & 22.73\\\\
+CTDR + selective ranking & 0.9167 & 0.0391 & 0.0521 & 0.3067 & 24.48\\\\
+Full CTDR & 1.0000 & 0.0000 & 0.0000 & 3.0987 & 230.91\\\\
+Max uncertainty & 0.9167 & 0.0391 & 0.0521 & 0.2801 & 22.86\\\\
+Periodic / random & 0.9167 & 0.0391 & 0.0521 & 0.4907 / 0.4716 & 39.81 / 37.34\\\\
+Full restart & 1.0000 & 0.0000 & 0.0000 & 11.3698 & 878.78\\\\
+Oracle row refresh & 1.0000 & 0.0000 & 0.0000 & 0.2778 & 21.20\\\\
+\bottomrule
+\end{tabular}%
+}
+\caption{Fair M60 baseline matrix. Costs are post-edit incremental tokens.
+The oracle is restricted to changed-row refresh actions.}
+\end{table}
+
+Full CTDR reduces full-restart tokens by 73.7\% and removes the action error
+of warm, reweighted, uncertainty, periodic and random controllers. It does not
+reduce cost relative to reweighted old-history replay, and the transport gate
+and selective ranking do not improve that replay in isolation. The attributable
+mechanism in this matrix is graph-manifest changed-row revalidation. This
+result narrows the algorithmic claim while strengthening the credit-maintenance
+claim.
 
 \subsection{Matched Qwen-14B worker replay}
 Workers were regenerated with microbatch one. Pairwise tokens were 3.39, 110.23 and 320.00 for one-, two- and four-row edits, compared with 112.65, 112.65 and 337.94 for the fair answer-action mask. Answer-action exactness was 1.000 at every density. The risk-gated route is retained as an earlier candidate and is not used as the primary comparator. Edge matches against the full worker output are consistency diagnostics because the low-cost branch does not acquire all conditional cells.
@@ -191,13 +237,13 @@ The pairwise certificate separates two questions that are often conflated. An ol
 Decision-region determination, adaptive testing, uncertainty sampling and multi-agent communication pruning are established. Javdani et al. formulate decision-region stopping and adaptive test selection \cite{javdani}. ActiveEvidence uses gap-directed interaction refinement and an action certificate \cite{activeevidence}, which bounds the novelty of pairwise gap scheduling as a stand-alone contribution. AgentPrune, AgentDropout and MessageSieve study communication or message reduction in multi-agent language-model systems \cite{agentprune,agentdropout,messagesieve}. Graph conditional-shift work studies distributional changes in graph predictors \cite{graces}. Our contribution is the graph-conditional validity condition for a reused communication certificate, combined with interface-fingerprint invalidation and fail-closed transport. The mechanism claim concerns when graph evolution invalidates an old certificate and how a conservative route repairs only the rows that can still change the answer action.
 
 \section{Limitations}
-The communication interface has four relay rows and finite multiple-choice labels. Historical cells reuse task cohorts across model families, so the 27 panels are repeated model--task--density factors rather than 27 independent datasets. The pooled radius is calibrated empirically and does not provide a finite-sample coverage guarantee. The split-conformal variant supplies an assumption-conditioned statement under row-wise exchangeability and complete graph/interface metadata. The Qwen-14B service forward mismatch prevents a universal end-to-end latency claim. The work does not claim improved answer accuracy or a public-system leaderboard gain.
+The communication interface has four relay rows and finite multiple-choice labels. Historical cells reuse task cohorts across model families, so the 27 panels and M60 matrix are repeated model--task--density factors rather than independent datasets. The pooled radius is calibrated empirically and does not provide a finite-sample coverage guarantee. The split-conformal variant supplies an assumption-conditioned statement under row-wise exchangeability and complete graph/interface metadata. The Qwen-14B service forward mismatch prevents a universal end-to-end latency claim. A synthetic binary conditional-channel stress test supports mechanism sanity outside MCQA, while a real non-MCQA task and new checkpoint remain future validation. The work does not claim improved answer accuracy or a public-system leaderboard gain.
 
 \section{Conclusion}
 Graph evolution can invalidate historical communication credit through both conditional evidence drift and interface drift. A graph-aware, fingerprint-gated Pairwise Gap Certificate preserves answer actions on the tested finite interfaces, reduces logical feedback cost in matched worker replay and lowers measured service cost on Qwen-0.5B. The Qwen-14B forward discrepancy keeps cross-model deployment claims conditional on reproducible model-side execution.
 
 \section*{Reproducibility}
-The companion MAB2 branch contains the risk-gated route, interface-drift panels, service ledgers, worker outputs used for public summaries, and negative results. Private question-level arrays, answer keys, model weights and credentials remain outside the public release.
+The companion MAB2 branch contains the risk-gated route, interface-drift panels, strong M60 baseline matrix, theory closure tests, clean CPU replay fixture, service ledgers, worker outputs used for public summaries, and negative results. Private question-level arrays, answer keys, model weights and credentials remain outside the public release.
 
 \begin{thebibliography}{9}
 \bibitem[Javdani et~al.(2014)]{javdani} S.~Javdani, Y.~Chen, A.~Karbasi, A.~Krause, D.~Bagnell, and D.~Srinivasa. 2014. Near optimal Bayesian active learning for decision making. AISTATS.
