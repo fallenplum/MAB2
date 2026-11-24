@@ -4,6 +4,11 @@
   "normalized_equal": false,
   "root_lines": 439,
   "zip_lines": 449,
-  "status": "PROMPT_VERSION_MISMATCH_CONTRACT_DEFECT"
+  "status": "LOCKED_ROOT_PROMPT_ZIP_LEGACY_RECORD",
+  "authoritative_prompt": "MAB2_AutoResearch_P4_AntiRewardHacking_Prompt.md",
+  "zip_embedded_prompt_role": "legacy_audit_record_only",
+  "researcher_freeze_response": "user_selected_root_prompt_as_latest",
+  "branch": "research/p4-falsification-graph-voi-20261124",
+  "base_commit": "fe1d79f94b6bc1360bb875d8ec07e949bc40e79e"
 }
 

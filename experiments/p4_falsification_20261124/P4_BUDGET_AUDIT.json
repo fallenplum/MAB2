@@ -1,0 +1,14 @@
+{
+  "status": "UNVERIFIED",
+  "MAX_NEW_GPU_HOURS": null,
+  "MAX_CPU_HOURS": null,
+  "MAX_CPU_RUNS": null,
+  "MAX_PAID_API_COST": null,
+  "historical_p3_160_gpu_hours": "historical_only_not_authorization",
+  "server_job_ledger": "UNAVAILABLE_IN_CURRENT_SESSION",
+  "server_gpu_telemetry": "UNAVAILABLE_IN_CURRENT_SESSION",
+  "new_gpu_started": false,
+  "new_paid_api_started": false,
+  "decision": "BLOCK_FORMAL_EXPERIMENTS_UNTIL_BUDGET_IS_VERIFIABLE"
+}
+

@@ -1,0 +1,74 @@
+{
+  "schema": "mab2_p4_g0_readonly_audit_v1",
+  "status": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
+  "formal_experiments_started": false,
+  "gpu_started": false,
+  "source_sha256": {
+    "experiments\\autoresearch_strict_graph_voi_20261124\\cycles\\strict_graph_voi_cpu.py": "8ce354de813f2c42ad713be0c5d1fa99ca302bb5a751263a45b685443f239572",
+    "experiments\\autoresearch_strict_graph_voi_20261124\\cycles\\h2_fast.py": "81854c9dfb00fd4876ed7175ec59ae4760ef97885247e80f297e6d6109f7b9f3",
+    "experiments\\p2_multihop_20261124\\p2_service_runner.py": "9e7642e143a3b3b2a069ccaaf33824bee5dd23c0a4dab03d9cc83b41e762d2f6"
+  },
+  "tests": [
+    {
+      "test": "T02_second_parent_dirty",
+      "status": "FAIL",
+      "evidence": "p2_service_runner.py:255,292,329,355",
+      "reason": "dirty cells use cell[0] in changed although terminal prompts consume both relay indices"
+    },
+    {
+      "test": "T03_no_target_fallback",
+      "status": "FAIL",
+      "evidence": "strict_graph_voi_cpu.py:295 and h2_fast.py:130",
+      "reason": "candidate has target fallback when no legal option exists"
+    },
+    {
+      "test": "T07_independent_ledger",
+      "status": "FAIL",
+      "evidence": "p2_service_runner.py:run_row Ledger",
+      "reason": "ledger is instantiated inside candidate runner and is not an independent broker source"
+    },
+    {
+      "test": "T10_clean_imports",
+      "status": "UNVERIFIED",
+      "evidence": "G3_CLEAN_REPLAY.md",
+      "reason": "network clean checkout and independent environment were unavailable"
+    },
+    {
+      "test": "T13_deployable_prior",
+      "status": "FAIL",
+      "evidence": "strict_graph_voi_cpu.py:terminal_label/new_labels",
+      "reason": "ideal generator and future labels are available to the CPU candidate"
+    },
+    {
+      "test": "T14_unresolved_status",
+      "status": "FAIL",
+      "evidence": "strict_graph_voi_cpu.py:295 and h2_fast.py:130",
+      "reason": "unresolved paths return target instead of a non-success status"
+    },
+    {
+      "test": "T15_algorithm_identity",
+      "status": "FAIL",
+      "evidence": "h2_fast.py versus p2_service_runner.py",
+      "reason": "CPU H2 and real service certificate_voi do not share a planner/certifier core"
+    },
+    {
+      "test": "T16_complete_independent_ledger",
+      "status": "UNVERIFIED",
+      "evidence": "P3 summaries and local ledgers",
+      "reason": "raw per-case broker traces and independently generated call ledger are absent"
+    },
+    {
+      "test": "T01_real_input_digest",
+      "status": "UNVERIFIED",
+      "evidence": "p2_service_runner.py",
+      "reason": "runner records tokenizer lengths but no independent parent-input digest event log"
+    },
+    {
+      "test": "T05_public_state_boundary",
+      "status": "FAIL",
+      "evidence": "p2_service_runner.py:run_row",
+      "reason": "candidate route receives full row, model and target context in one process"
+    }
+  ],
+  "decision": "STOP_FORMAL_CANDIDATE_WORK_UNTIL_BROKER_CACHE_CLOSURE_TARGET_FALLBACK_AND_ALGORITHM_IDENTITY_ARE_FIXED"
+}

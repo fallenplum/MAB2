@@ -1,0 +1,8 @@
+{
+  "status": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
+  "formal_candidate_experiments": false,
+  "gpu_started": false,
+  "reason": "Read-only audit finds target fallback, second-parent dirty-mask omission, candidate-owned ledger, ideal generator access and CPU/service algorithm identity mismatch.",
+  "next": "Implement an independent broker/cache-closure boundary and mutation tests, then rerun G0 before any P4 CPU confirmation."
+}
+

@@ -1,2 +1,10 @@
-{"status":"BLOCKED_CONTRACT_DEFECT","formal_experiments_started":false,"gpu_started":false,"reason":"Prompt version mismatch and dedicated P4 branch approval timeout","next":"Researcher must freeze the authoritative prompt version and provide/allow dedicated branch creation."}
+{
+  "status": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
+  "formal_experiments_started": false,
+  "gpu_started": false,
+  "reason": "Root prompt frozen by researcher. Public kit only audit completed.",
+  "prompt_mismatch": "resolved_by_researcher_freeze_root_authoritative",
+  "branch": "research/p4-falsification-graph-voi-20261124",
+  "next": "Fix broker/cache closure, target fallback, second-parent dirty closure, candidate/public-state boundary and CPU/service algorithm identity. Rerun G0 with mutation tests."
+}
 

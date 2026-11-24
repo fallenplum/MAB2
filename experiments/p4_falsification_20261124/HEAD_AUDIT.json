@@ -1,0 +1,11 @@
+{
+  "repository": "fallenplum/MAB2",
+  "p3_head": "fe1d79f94b6bc1360bb875d8ec07e949bc40e79e",
+  "p4_branch": "research/p4-falsification-graph-voi-20261124",
+  "p4_branch_commit": "8a001da671a74585ae82065a513d2ed72ac7d280",
+  "base_commit": "fe1d79f94b6bc1360bb875d8ec07e949bc40e79e",
+  "local_git_checkout": false,
+  "workspace_uncommitted_state": "local_workspace_not_a_git_checkout",
+  "formal_experiments_started": false
+}
+
