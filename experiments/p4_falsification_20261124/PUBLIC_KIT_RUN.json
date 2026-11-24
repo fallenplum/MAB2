@@ -1,0 +1,13 @@
+{
+  "kit": "MAB2_P4_Research_Gate.zip",
+  "test_command": "python -m unittest -v test_verify_trace",
+  "test_exit": 0,
+  "test_count": 12,
+  "verify_command": "python verify_trace.py --fixtures example_private_fixture.json --traces example_trace.json",
+  "verify_exit": 0,
+  "public_fixture_count": 1,
+  "public_solved": 1,
+  "public_total_cost": 3,
+  "interpretation": "PUBLIC_KIT_DEVELOPMENT_ONLY_NOT_G0_SIGNOFF"
+}
+

@@ -1,0 +1,4 @@
+{"issue_id":"P4-000","severity":"INVALIDATING","status":"OPEN","title":"Root P4 prompt and ZIP embedded prompt differ","evidence":"P4_SCOPE_AND_LOCK.json and LOCK_RECEIPT.json","action":"Stop formal candidate experiments. Preserve both hashes and require researcher-side version freeze."}
+{"issue_id":"P4-001","severity":"BLOCKING","status":"OPEN","title":"Dedicated GitHub branch creation timed out at approval review","evidence":"GitHub create_branch attempts","action":"No public P4 commit or formal experiment until dedicated branch exists."}
+{"issue_id":"P4-002","severity":"INFO","status":"PASS_PUBLIC_KIT_ONLY","title":"Public verifier tests and example trace","evidence":"audit_kit_original/MAB2_P4_Research_Gate","action":"Treat as development-only. It is not G0 or independent signoff."}
+

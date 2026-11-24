@@ -1,0 +1,2 @@
+{"status":"BLOCKED_CONTRACT_DEFECT","formal_experiments_started":false,"gpu_started":false,"reason":"Prompt version mismatch and dedicated P4 branch approval timeout","next":"Researcher must freeze the authoritative prompt version and provide/allow dedicated branch creation."}
+

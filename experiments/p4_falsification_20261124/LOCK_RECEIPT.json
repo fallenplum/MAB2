@@ -1,0 +1,48 @@
+[
+  {
+    "path": "MAB2_AutoResearch_P4_AntiRewardHacking_Prompt.md",
+    "sha256": "BD9524B188331255AD81B279126612CED9063F20B222ABD64B95D5DFAEA7A7C2",
+    "source": "user_attached_root_prompt"
+  },
+  {
+    "path": "MAB2_P4_Research_Gate.zip",
+    "sha256": "79DB12CC137B926C9534A596AE68A20767B7313467CA83C18BF0BA8FADF30B5C",
+    "source": "user_attached_gate_zip"
+  },
+  {
+    "path": "audit_kit_original\\MAB2_P4_Research_Gate\\example_private_fixture.json",
+    "sha256": "14D1A02DED723C4AFAC07D2E449CD76E0EF08AE3A6B2C8C61161830DAC0ECD17",
+    "source": "zip_member"
+  },
+  {
+    "path": "audit_kit_original\\MAB2_P4_Research_Gate\\example_trace.json",
+    "sha256": "E74D73EE857895D175E792ED245409388B3934626303C84C5C8F752FC260B765",
+    "source": "zip_member"
+  },
+  {
+    "path": "audit_kit_original\\MAB2_P4_Research_Gate\\MAB2_AutoResearch_P4_AntiRewardHacking_Prompt.md",
+    "sha256": "93651C3AD7719550F75C6BB63A804A67FC1EB0CCA99505CD9A3777CB7C0526F1",
+    "source": "zip_member"
+  },
+  {
+    "path": "audit_kit_original\\MAB2_P4_Research_Gate\\README.md",
+    "sha256": "30B38212C127853C1E6BAD6412A0F0546B5E8D10780E478ABEB9986893560639",
+    "source": "zip_member"
+  },
+  {
+    "path": "audit_kit_original\\MAB2_P4_Research_Gate\\SHA256SUMS.txt",
+    "sha256": "11BD4E51C69899785AD8D861D9B77A1604E3982BD3DF71E9CF4E6DD0E2C1E53E",
+    "source": "zip_member"
+  },
+  {
+    "path": "audit_kit_original\\MAB2_P4_Research_Gate\\test_verify_trace.py",
+    "sha256": "140DCCBB62BCD8C57B3DACDE5BDB9110929A98CE392EAE144E6CB576FAF57E00",
+    "source": "zip_member"
+  },
+  {
+    "path": "audit_kit_original\\MAB2_P4_Research_Gate\\verify_trace.py",
+    "sha256": "D47C5DD88EA080DE08138FD27EDC5E883D7C5F3979994EE13DC2505AD55C7528",
+    "source": "zip_member"
+  }
+]
+
