@@ -1,6 +1,7 @@
 {
   "schema": "mab2_e0_result_v1",
-  "status": "NOT_RUN",
-  "reason": "No eligible workflow graph."
+  "status": "BLOCKED_KNOWLEDGE_SOURCE",
+  "reason": "Official labeled data locked, but the 20GB official knowledge source is unavailable; no model-call or baseline result generated.",
+  "groups_locked": 32
 }
 
