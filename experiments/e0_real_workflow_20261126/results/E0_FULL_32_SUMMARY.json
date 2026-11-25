@@ -1,0 +1,83 @@
+{
+  "schema": "mab2_e0_full_summary_v1",
+  "status": "DEVELOPMENT_FULL_RUN_PARTIAL_BASELINES",
+  "groups_requested": 32,
+  "groups_valid_for_pairwise_decision": 30,
+  "invalid_groups": [
+    "e0g_154ac3f7f522d230",
+    "e0g_178046edc16d7aec"
+  ],
+  "model": "Qwen2.5-3B-Instruct",
+  "knowledge_source_document_count": 6187531,
+  "old": {
+    "events": 777,
+    "cache_hits": 0,
+    "input_tokens": 921677,
+    "output_tokens": 2281,
+    "latency_seconds": 292.8679933000167,
+    "unresolved": 9
+  },
+  "new_cold": {
+    "events": 1073,
+    "cache_hits": 0,
+    "input_tokens": 1259696,
+    "output_tokens": 3157,
+    "latency_seconds": 426.5438179000448,
+    "unresolved": 10
+  },
+  "new_warm": {
+    "events": 1073,
+    "cache_hits": 70,
+    "input_tokens": 1167945,
+    "output_tokens": 2957,
+    "latency_seconds": 408.9221100000541,
+    "unresolved": 10
+  },
+  "warm_input_token_saving_fraction": 0.07283582705668668,
+  "warm_latency_saving_fraction": 0.041312772944983034,
+  "posthoc": {
+    "schema": "mab2_e0_smoke_posthoc_v1",
+    "online_run_status": "PASS_E0_SMOKE_DEV",
+    "labels_read_posthoc_only": true,
+    "old": {
+      "comparable_facts": 768,
+      "ambiguous_or_missing_targets": 9,
+      "accuracy": 0.6979166666666666,
+      "support_targets": 381,
+      "unsupported_targets": 387
+    },
+    "new_cold": {
+      "comparable_facts": 1063,
+      "ambiguous_or_missing_targets": 10,
+      "accuracy": 0.6810912511759172,
+      "support_targets": 616,
+      "unsupported_targets": 447
+    },
+    "new_warm": {
+      "comparable_facts": 1063,
+      "ambiguous_or_missing_targets": 10,
+      "accuracy": 0.6810912511759172,
+      "support_targets": 616,
+      "unsupported_targets": 447
+    }
+  },
+  "decision_changes": [
+    {
+      "group_id": "e0g_0811023b0ccf8728",
+      "old": null,
+      "new": "FAIL",
+      "old_status": "UNRESOLVED",
+      "new_status": "CERTIFIED"
+    }
+  ],
+  "raw_cache_reuse_fraction": 0.06523765144454799,
+  "caveats": [
+    "No strong flat/RAG baseline yet",
+    "No canonical cache rerun yet",
+    "No strict gate or stale action replay yet",
+    "All groups are development data, not independent confirmation",
+    "No confidence intervals per project-wide instruction"
+  ],
+  "interpretation": "Observed raw cache reuse is limited. Continue with matched canonical/strict-gate/stale baselines before selecting a direction."
+}
+
