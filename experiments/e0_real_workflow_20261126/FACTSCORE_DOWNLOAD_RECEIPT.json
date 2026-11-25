@@ -60,11 +60,13 @@
     }
   },
   "knowledge_source": {
-    "status": "BLOCKED",
+    "status": "DOWNLOADED_SQLITE_VALID",
     "file": "enwiki-20230401.db",
-    "size": "20G",
-    "download_attempt": "confirmation_page_only",
-    "reason": "No local 20GB copy and server read-only access unavailable."
+    "path": "E:\\图结构演化\\data\\raw\\factscore\\enwiki-20230401.db",
+    "bytes": 21924696064,
+    "document_count": 6187531,
+    "selected_smoke_topics_verified": 4,
+    "sha256": "NOT_COMPLETED_AFTER_SIZE_VALIDATION"
   },
   "raw_data_not_uploaded": true
 }
