@@ -1,18 +1,22 @@
 {
   "schema": "mab2_e0_gate_receipts_v1",
-  "status": "INCONCLUSIVE_SMOKE_ONLY_FULL_E0_OPEN",
+  "status": "INCONCLUSIVE_STRICT_GATE_ACTION_RISK",
   "gates": {
     "source_hash_lock": "PASS",
     "fixed_threshold_cpu_certifier": "PASS",
     "primary_asset": "PASS_OFFICIAL_CODE_AND_LABELED_DATA",
     "budget_and_compute": "BLOCKED_RESOURCE_AUTHORIZATION",
-    "workflow_trace": "PASS_E0_SMOKE_DEV_4_GROUPS",
+    "workflow_trace": "PASS_E0_FULL_DEVELOPMENT_32_GROUPS",
     "F_baselines": "NOT_RUN",
     "D_baselines": "NOT_RUN",
     "headroom": "NOT_RUN",
     "knowledge_source": "PASS_OFFICIAL_DB_READONLY",
     "group_selection": "PASS_32_DEVELOPMENT_GROUPS_LOCKED",
-    "D_smoke": "PASS_DEVELOPMENT_ONLY"
+    "D_smoke": "PASS_DEVELOPMENT_ONLY",
+    "D_full": "PASS_DEVELOPMENT_PARTIAL_BASELINES",
+    "D_strict_gate": "PASS_DEVELOPMENT_ACTUAL",
+    "strong_flat": "NOT_RUN",
+    "stale_quality": "NOT_RUN"
   },
   "p4_status_preserved": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
   "prohibited_claims": [
@@ -21,6 +25,6 @@
     "RESEARCH_SUCCESS",
     "ACL readiness"
   ],
-  "next": "Run all remaining locked groups and complete F/D baseline ledger."
+  "next": "Complete strong-flat/RAG and stale quality baselines before any positive mechanism claim."
 }
 
