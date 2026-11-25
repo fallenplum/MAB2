@@ -1,8 +1,8 @@
 {
   "schema": "mab2_e0_decision_v1",
-  "status": "INCONCLUSIVE_SMOKE_ONLY",
-  "conclusion": "The official FActScore code, labeled data, and knowledge source are available. Four-group smoke passed after a parser fix, while the full 32-group E0 evaluation remains incomplete.",
-  "recommendation": "Run the remaining 28 locked groups with the same model, database, ledger, and posthoc scorer. Do not claim full E0 or ACL readiness yet.",
+  "status": "INCONCLUSIVE_STRICT_GATE_ACTION_RISK",
+  "conclusion": "Full development run and actual strict-gate baselines completed. Strict gates save substantial verifier cost but show more action errors than full cold on the locked development groups.",
+  "recommendation": "Finish strong flat/RAG and stale baselines. If their quality ordering confirms this pattern, freeze strict certificate optimization and report the negative mechanism result.",
   "p4_state_unchanged": true,
   "smoke_artifact": "results/E0_SMOKE_4_SUMMARY.json"
 }
