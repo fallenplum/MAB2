@@ -6,4 +6,5 @@
 {"id": "E0-006", "severity": "INFO", "status": "CLOSED", "issue": "Fixed-threshold CPU certifier was implemented and mutation-tested without target or gold access."}
 {"id":"E0-007","severity":"BLOCKER","status":"OPEN","issue":"Official enwiki-20230401.db knowledge source is approximately 20GB and remains unavailable locally; server access is blocked by the current execution environment."}
 {"id":"E0-008","severity":"MAJOR","status":"CLOSED_AFTER_RERUN","issue":"Initial 4-group smoke parser misread split token UN SUPPORTED. The run was excluded and rerun with normalized verdict parsing."}
+{"id": "E0-009", "severity": "MAJOR", "status": "OPEN", "issue": "Actual cold and canonical strict-gate baselines reduced tokens but caused 17/30 action errors versus 7/30 for full cold on development groups."}
 
