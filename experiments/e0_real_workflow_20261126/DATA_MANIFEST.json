@@ -7,7 +7,7 @@
   "source_model": "InstructGPT",
   "source_data_file_sha256": "4ec1fa538a9f99606130c76db63d4af7f203ca460954a3edd7c4d0e385cd2d58",
   "official_labeled_data": "AVAILABLE_PRIVATE_LOCAL",
-  "official_knowledge_source": "BLOCKED_20GB_OR_REMOTE_ACCESS",
+  "official_knowledge_source": "AVAILABLE_LOCAL_E_DRIVE",
   "sealed_data_read": false,
   "gold_read_by_online_methods": false,
   "labels_available_only_to_posthoc_scorer": true,
@@ -24,6 +24,7 @@
   "update_family": "subject_generator_checkpoint_update",
   "F_fact_source": "official_model_atomic_facts",
   "D_fact_source": "official_human_atomic_fact_text_only",
-  "D_label_visibility": "posthoc_only"
+  "D_label_visibility": "posthoc_only",
+  "knowledge_source_path": "E:\\图结构演化\\data\\raw\\factscore\\enwiki-20230401.db"
 }
 
