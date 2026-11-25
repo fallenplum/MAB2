@@ -1,0 +1,21 @@
+{
+  "schema": "mab2_e0_protocol_lock_revision_v1",
+  "revision": "001",
+  "supersedes": "E0_PROTOCOL_LOCK.json",
+  "locked_at_utc": "2026-11-25T19:19:04.214216+00:00",
+  "status": "LOCKED_PARTIAL_ASSET_KNOWLEDGE_SOURCE_BLOCKED",
+  "reason": "Official FActScore code and labeled data were downloaded and verified after the initial asset-gated lock. The 20GB enwiki knowledge source remains unavailable, so real F/D service execution remains blocked.",
+  "source_model": "InstructGPT",
+  "group_selection_manifest": "TOPIC_SELECTION_MANIFEST.json",
+  "group_count": 32,
+  "online_gold_access": false,
+  "new_gpu_started": false,
+  "paid_api_started": false,
+  "update_manifest": "UPDATE_MANIFEST.json",
+  "update_family": "subject_generator_checkpoint_update",
+  "update_control": "LOCKED_CONTROLLED_VERSION_UPDATE",
+  "D_fact_list_source": "official_human_atomic_fact_text_only",
+  "D_labels_online_access": false,
+  "F_fact_list_source": "official_model_atomic_facts_or_locked_output_projection"
+}
+
