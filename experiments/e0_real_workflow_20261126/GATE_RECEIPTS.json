@@ -1,15 +1,17 @@
 {
   "schema": "mab2_e0_gate_receipts_v1",
-  "status": "INCONCLUSIVE_BLOCKED_ASSET",
+  "status": "INCONCLUSIVE_KNOWLEDGE_SOURCE_BLOCKED",
   "gates": {
     "source_hash_lock": "PASS",
     "fixed_threshold_cpu_certifier": "PASS",
-    "primary_asset": "BLOCKED_ASSET",
+    "primary_asset": "PASS_OFFICIAL_CODE_AND_LABELED_DATA",
     "budget_and_compute": "BLOCKED_RESOURCE_AUTHORIZATION",
     "workflow_trace": "NOT_RUN",
     "F_baselines": "NOT_RUN",
     "D_baselines": "NOT_RUN",
-    "headroom": "NOT_RUN"
+    "headroom": "NOT_RUN",
+    "knowledge_source": "BLOCKED_ASSET",
+    "group_selection": "PASS_32_DEVELOPMENT_GROUPS_LOCKED"
   },
   "p4_status_preserved": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
   "prohibited_claims": [
@@ -17,6 +19,7 @@
     "G0_PASS",
     "RESEARCH_SUCCESS",
     "ACL readiness"
-  ]
+  ],
+  "next": "Acquire or access enwiki-20230401.db, then build the E0 real adapter before any model calls."
 }
 
