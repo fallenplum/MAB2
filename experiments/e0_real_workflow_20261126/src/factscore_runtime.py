@@ -80,12 +80,7 @@ class QwenFactVerifier:
         elapsed = time.perf_counter() - start
         generated = output[0, inputs["input_ids"].shape[1] :]
         text = self.tokenizer.decode(generated, skip_special_tokens=True).strip().upper()
-        if "SUPPORT" in text and "UNSUPPORTED" not in text:
-            label = 1
-        elif "UNSUPPORTED" in text:
-            label = 0
-        else:
-            label = None
+        label = parse_verdict(text)
         return {
             "label": label,
             "raw_output": text,
@@ -93,4 +88,15 @@ class QwenFactVerifier:
             "output_tokens": int(generated.shape[0]),
             "latency_seconds": elapsed,
         }
+
+
+def parse_verdict(text: str) -> int | None:
+    """Parse robustly without treating ``UN SUPPORTED`` as support."""
+
+    normalized = re.sub(r"\s+", "", text.upper())
+    if "UNSUPPORTED" in normalized:
+        return 0
+    if "SUPPORT" in normalized:
+        return 1
+    return None
 
