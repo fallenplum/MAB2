@@ -1,7 +1,7 @@
 {
   "schema": "mab2_e0_asset_inventory_v1",
-  "audited_at_utc": "2026-11-25T18:41:16.623004+00:00",
-  "status": "BLOCKED_PRIMARY_ASSET",
+  "audited_at_utc": "2026-11-25T18:55:31.549286+00:00",
+  "status": "PARTIAL_PRIMARY_ASSET_KNOWLEDGE_SOURCE_BLOCKED",
   "local_workspace": {
     "root": "D:\\develop\\CV\\多臂老虎机",
     "factscore_data": {
@@ -65,9 +65,35 @@
   },
   "server": {
     "status": "NOT_VERIFIED",
-    "reason": "The requested read-only SSH probe was denied by the current execution environment before a remote command ran.",
+    "reason": "The read-only SSH probe remains blocked by the current execution environment; server-side asset presence is unknown.",
     "no_remote_write_or_gpu_started": true
   },
-  "decision": "No legal FActScore primary asset was verified. Do not silently switch to Qasper/LongBench/HotpotQA."
+  "decision": "No legal FActScore primary asset was verified. Do not silently switch to Qasper/LongBench/HotpotQA.",
+  "official_factscore_download": {
+    "status": "DOWNLOADED_AND_VERIFIED",
+    "source_code_sha256": "6959518913fbab8d3b01379936d6ab64322de62029444ea528e2eacb203d1925",
+    "data_zip_sha256": "404482c9a7d588d581a2f7a78d609fe6bfec4ddc0f729c8560a61b1743dbffab",
+    "demos_zip_sha256": "5ab4ba73f8c2483867535ae314e692c0c4c8b6343006f1cf2378235153b7fae0",
+    "labeled_files": [
+      "data/data/labeled/ChatGPT.jsonl",
+      "data/data/labeled/InstructGPT.jsonl",
+      "data/data/labeled/PerplexityAI.jsonl",
+      "data/data/labeled/prompt_entities.txt"
+    ],
+    "labeled_rows": {
+      "data/data/labeled/ChatGPT.jsonl": 183,
+      "data/data/labeled/InstructGPT.jsonl": 183,
+      "data/data/labeled/PerplexityAI.jsonl": 183
+    },
+    "raw_data_private_path": "experiments/e0_real_workflow_20261126/external/factscore_official",
+    "public_upload": "metadata_only"
+  },
+  "knowledge_source": {
+    "status": "BLOCKED_ASSET",
+    "official_file": "enwiki-20230401.db",
+    "official_size_claim": "20G",
+    "local_copy": false,
+    "server_copy": "NOT_VERIFIED"
+  }
 }
 
