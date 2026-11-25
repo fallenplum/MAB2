@@ -1,0 +1,312 @@
+{
+  "schema": "mab2_e0_interface_prediagnostic_v2",
+  "status": "DEVELOPMENT_PRETRACE_ONLY",
+  "fact_source": "official_human_atomic_fact_text_only",
+  "update_manifest": "UPDATE_MANIFEST.json",
+  "groups": 32,
+  "rows": [
+    {
+      "group_id": "e0g_01be23e8b793f9a1",
+      "old_facts": 31,
+      "new_facts": 33,
+      "raw_shared": 2,
+      "canonical_shared": 3,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_040bf4fd22e2b0fb",
+      "old_facts": 18,
+      "new_facts": 29,
+      "raw_shared": 1,
+      "canonical_shared": 1,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_07449192ef94c68d",
+      "old_facts": 38,
+      "new_facts": 38,
+      "raw_shared": 6,
+      "canonical_shared": 6,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_0811023b0ccf8728",
+      "old_facts": 12,
+      "new_facts": 24,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_087b0296b0468b78",
+      "old_facts": 25,
+      "new_facts": 29,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_088f5725ed26d950",
+      "old_facts": 30,
+      "new_facts": 38,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_0a89a1d4b9d89d96",
+      "old_facts": 23,
+      "new_facts": 43,
+      "raw_shared": 2,
+      "canonical_shared": 2,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_0bce491ee68766f4",
+      "old_facts": 18,
+      "new_facts": 41,
+      "raw_shared": 1,
+      "canonical_shared": 1,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_0df512412e9aca7b",
+      "old_facts": 15,
+      "new_facts": 16,
+      "raw_shared": 1,
+      "canonical_shared": 1,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_0dff82076c53261a",
+      "old_facts": 31,
+      "new_facts": 24,
+      "raw_shared": 2,
+      "canonical_shared": 2,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_0f4ccce9918b38a6",
+      "old_facts": 29,
+      "new_facts": 34,
+      "raw_shared": 5,
+      "canonical_shared": 5,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_11114f9db8d126a6",
+      "old_facts": 16,
+      "new_facts": 21,
+      "raw_shared": 2,
+      "canonical_shared": 2,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_1274f15b9224093e",
+      "old_facts": 24,
+      "new_facts": 39,
+      "raw_shared": 4,
+      "canonical_shared": 4,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_1511ad284aa1f5f1",
+      "old_facts": 23,
+      "new_facts": 63,
+      "raw_shared": 4,
+      "canonical_shared": 4,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_154ac3f7f522d230",
+      "old_facts": 20,
+      "new_facts": 0,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": true
+    },
+    {
+      "group_id": "e0g_15ae96525fb23c7c",
+      "old_facts": 20,
+      "new_facts": 35,
+      "raw_shared": 1,
+      "canonical_shared": 1,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_1650be3a68b8fea0",
+      "old_facts": 33,
+      "new_facts": 33,
+      "raw_shared": 3,
+      "canonical_shared": 3,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_178046edc16d7aec",
+      "old_facts": 20,
+      "new_facts": 0,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": true
+    },
+    {
+      "group_id": "e0g_1a1e986e5fe0fa69",
+      "old_facts": 21,
+      "new_facts": 45,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_1c13ed4d036ec5d2",
+      "old_facts": 23,
+      "new_facts": 37,
+      "raw_shared": 3,
+      "canonical_shared": 3,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_1c6a6ba1678c7d1b",
+      "old_facts": 23,
+      "new_facts": 25,
+      "raw_shared": 3,
+      "canonical_shared": 3,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_1c7d158437c26235",
+      "old_facts": 21,
+      "new_facts": 30,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_21bb5acda95a0362",
+      "old_facts": 17,
+      "new_facts": 29,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_21f9c820d87521e2",
+      "old_facts": 23,
+      "new_facts": 37,
+      "raw_shared": 4,
+      "canonical_shared": 4,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_227ca1a8d8364071",
+      "old_facts": 29,
+      "new_facts": 43,
+      "raw_shared": 3,
+      "canonical_shared": 3,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_2448b3d7d0a335a1",
+      "old_facts": 30,
+      "new_facts": 35,
+      "raw_shared": 7,
+      "canonical_shared": 7,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_255f624d4ae006ac",
+      "old_facts": 38,
+      "new_facts": 53,
+      "raw_shared": 6,
+      "canonical_shared": 6,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_2797a3a90bbd440e",
+      "old_facts": 23,
+      "new_facts": 54,
+      "raw_shared": 6,
+      "canonical_shared": 6,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_2c56c45b48a43bd5",
+      "old_facts": 13,
+      "new_facts": 36,
+      "raw_shared": 1,
+      "canonical_shared": 1,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_2caa6981d5b5c4c1",
+      "old_facts": 32,
+      "new_facts": 33,
+      "raw_shared": 2,
+      "canonical_shared": 2,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_2e55c99b466b3599",
+      "old_facts": 21,
+      "new_facts": 28,
+      "raw_shared": 0,
+      "canonical_shared": 0,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    },
+    {
+      "group_id": "e0g_2f4637ee6a9724c1",
+      "old_facts": 37,
+      "new_facts": 48,
+      "raw_shared": 1,
+      "canonical_shared": 1,
+      "old_missing_decomposition": false,
+      "new_missing_decomposition": false
+    }
+  ],
+  "totals": {
+    "old_facts": 777,
+    "new_facts": 1073,
+    "raw_shared": 70,
+    "canonical_shared": 71
+  },
+  "missing_groups": {
+    "old": [],
+    "new": [
+      "e0g_154ac3f7f522d230",
+      "e0g_178046edc16d7aec"
+    ]
+  },
+  "warning": "No retrieval outcomes, semantic judgments, labels, or service costs used."
+}
+
