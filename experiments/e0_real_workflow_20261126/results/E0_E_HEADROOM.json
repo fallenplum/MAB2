@@ -1,7 +1,8 @@
 {
   "schema": "mab2_e0_result_v1",
-  "status": "BLOCKED_KNOWLEDGE_SOURCE",
+  "status": "NOT_RUN_STRONG_BASELINE_PENDING",
   "reason": "Official labeled data locked, but the 20GB official knowledge source is unavailable; no model-call or baseline result generated.",
-  "groups_locked": 32
+  "groups_locked": 32,
+  "note": "No clairvoyant headroom until matched baselines are complete"
 }
 
