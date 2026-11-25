@@ -1,6 +1,6 @@
 {
   "schema": "mab2_e0_gate_receipts_v1",
-  "status": "INCONCLUSIVE_STRICT_GATE_ACTION_RISK",
+  "status": "INCONCLUSIVE_NEGATIVE_MECHANISM_DEVELOPMENT",
   "gates": {
     "source_hash_lock": "PASS",
     "fixed_threshold_cpu_certifier": "PASS",
@@ -9,14 +9,14 @@
     "workflow_trace": "PASS_E0_FULL_DEVELOPMENT_32_GROUPS",
     "F_baselines": "NOT_RUN",
     "D_baselines": "NOT_RUN",
-    "headroom": "NOT_RUN",
+    "headroom": "PARTIAL_DEVELOPMENT_NO_CLAIRVOYANT_DP",
     "knowledge_source": "PASS_OFFICIAL_DB_READONLY",
     "group_selection": "PASS_32_DEVELOPMENT_GROUPS_LOCKED",
     "D_smoke": "PASS_DEVELOPMENT_ONLY",
     "D_full": "PASS_DEVELOPMENT_PARTIAL_BASELINES",
     "D_strict_gate": "PASS_DEVELOPMENT_ACTUAL",
-    "strong_flat": "NOT_RUN",
-    "stale_quality": "NOT_RUN"
+    "strong_flat": "PASS_DEVELOPMENT_NEGATIVE",
+    "stale_quality": "PASS_REPLAY_DEVELOPMENT"
   },
   "p4_status_preserved": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
   "prohibited_claims": [
@@ -25,6 +25,6 @@
     "RESEARCH_SUCCESS",
     "ACL readiness"
   ],
-  "next": "Complete strong-flat/RAG and stale quality baselines before any positive mechanism claim."
+  "next": "Archive E0 negative mechanism result; do not auto-start E1."
 }
 
