@@ -1,0 +1,12 @@
+from pathlib import Path
+import json
+root=Path('experiments/e0_real_workflow_20261126')
+def load(n): return json.loads((root/n).read_text(encoding='utf-8'))
+def save(n,o): (root/n).write_text(json.dumps(o,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+rep=load('results/E0_BASELINE_COMPARISON_SUMMARY.json'); flat=load('results/E0_FLAT_32_POSTHOC.json'); rep['methods']['flat_group_rag_actual']=flat; rep['methods']['stale_replay']={'decision_errors':8,'cost_tokens':0}; rep['methods']['canonical_full_replay']['decision_changes_vs_cold']=0; save('results/E0_BASELINE_COMPARISON_SUMMARY.json',rep)
+head={'schema':'mab2_e0_headroom_v1','status':'DEVELOPMENT_PARTIAL_HEADROOM','cold_full_input_tokens':1259696,'canonical_cache_replay_input_tokens':1162048,'canonical_cache_observed_saving_fraction':1-1162048/1259696,'canonical_cache_decision_changes_vs_cold':0,'strict_gate_cold_input_tokens':33861,'strict_gate_cold_action_errors':17,'full_cold_action_errors':7,'flat_group_rag_input_tokens':121627,'flat_group_rag_decision_errors':30,'clairvoyant_dp':'NOT_RUN','conclusion':'Safe observed headroom is limited to canonical cache replay in this development workflow. Larger strict-gate savings are not safe under the current verifier because action errors increase.'}
+save('results/E0_E_HEADROOM.json',head)
+d=load('E0_DECISION.json'); d['status']='INCONCLUSIVE_NEGATIVE_MECHANISM_DEVELOPMENT'; d['conclusion']='The full E0 development evidence does not support a positive graph-optimization claim. Canonical cache replay preserves decisions with about 7.28% token savings, while strict-gate methods save more cost but increase action errors. The group-level flat baseline also fails all 30 comparable action targets.'; d['recommendation']='Freeze positive graph-search claims for this workflow. Preserve the negative result and only consider a new task or a separately authorized verifier-calibration direction.'; save('E0_DECISION.json',d)
+g=load('GATE_RECEIPTS.json'); g['status']='INCONCLUSIVE_NEGATIVE_MECHANISM_DEVELOPMENT'; g['gates']['strong_flat']='PASS_DEVELOPMENT_NEGATIVE'; g['gates']['stale_quality']='PASS_REPLAY_DEVELOPMENT'; g['gates']['headroom']='PARTIAL_DEVELOPMENT_NO_CLAIRVOYANT_DP'; g['next']='Archive E0 negative mechanism result; do not auto-start E1.'; save('GATE_RECEIPTS.json',g)
+r=load('results/E0_D_BASELINE_CERTIFICATE.json'); r['flat_group_rag']='results/E0_FLAT_32_POSTHOC.json'; r['stale_replay_decision_errors']=8; r['canonical_cache_decision_changes_vs_cold']=0; save('results/E0_D_BASELINE_CERTIFICATE.json',r)
+
