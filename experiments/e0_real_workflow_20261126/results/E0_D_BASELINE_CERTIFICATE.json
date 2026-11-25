@@ -17,6 +17,9 @@
   "strict_gate_summary": "results/E0_STRICT_GATE_SUMMARY.json",
   "baseline_comparison": "results/E0_BASELINE_COMPARISON_SUMMARY.json",
   "strict_gate_action_errors": 17,
-  "full_cold_action_errors": 7
+  "full_cold_action_errors": 7,
+  "flat_group_rag": "results/E0_FLAT_32_POSTHOC.json",
+  "stale_replay_decision_errors": 8,
+  "canonical_cache_decision_changes_vs_cold": 0
 }
 
