@@ -1,7 +1,7 @@
 {
   "schema": "mab2_e0_asset_inventory_v1",
   "audited_at_utc": "2026-11-25T18:55:31.549286+00:00",
-  "status": "PARTIAL_PRIMARY_ASSET_KNOWLEDGE_SOURCE_BLOCKED",
+  "status": "OFFICIAL_ASSETS_AVAILABLE_SMOKE_COMPLETE",
   "local_workspace": {
     "root": "D:\\develop\\CV\\多臂老虎机",
     "factscore_data": {
@@ -64,7 +64,7 @@
     ]
   },
   "server": {
-    "status": "NOT_VERIFIED",
+    "status": "NOT_NEEDED_FOR_LOCAL_SMOKE",
     "reason": "The read-only SSH probe remains blocked by the current execution environment; server-side asset presence is unknown.",
     "no_remote_write_or_gpu_started": true
   },
@@ -89,11 +89,11 @@
     "public_upload": "metadata_only"
   },
   "knowledge_source": {
-    "status": "BLOCKED_ASSET",
-    "official_file": "enwiki-20230401.db",
-    "official_size_claim": "20G",
-    "local_copy": false,
-    "server_copy": "NOT_VERIFIED"
+    "status": "PASS_OFFICIAL_DB_READONLY",
+    "path": "E:\\图结构演化\\data\\raw\\factscore\\enwiki-20230401.db",
+    "bytes": 21924696064,
+    "document_count": 6187531,
+    "selected_smoke_topics_verified": 4
   }
 }
 
