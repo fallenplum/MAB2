@@ -1,0 +1,113 @@
+{
+  "schema": "mab2_e0_baseline_comparison_v1",
+  "status": "DEVELOPMENT_FULL_WITH_STRICT_GATE",
+  "methods": {
+    "new_cold_actual": {
+      "events": 1073,
+      "input_tokens": 1259696,
+      "posthoc_accuracy": 0.6810912511759172,
+      "decision_errors_vs_human": 7
+    },
+    "new_warm_actual": {
+      "events": 1073,
+      "cache_hits": 70,
+      "input_tokens": 1167945,
+      "posthoc_accuracy": 0.6810912511759172,
+      "decision_errors_vs_human": 7
+    },
+    "strict_gate_cold_actual": {
+      "events": 30,
+      "input_tokens": 33861,
+      "output_tokens": 87,
+      "invalid": 2,
+      "decision_errors": 17,
+      "valid_groups": 30,
+      "decisions": {
+        "e0g_01be23e8b793f9a1": "PASS",
+        "e0g_040bf4fd22e2b0fb": "FAIL",
+        "e0g_07449192ef94c68d": "PASS",
+        "e0g_0811023b0ccf8728": "PASS",
+        "e0g_087b0296b0468b78": "FAIL",
+        "e0g_088f5725ed26d950": "PASS",
+        "e0g_0a89a1d4b9d89d96": "PASS",
+        "e0g_0bce491ee68766f4": "FAIL",
+        "e0g_0df512412e9aca7b": "FAIL",
+        "e0g_0dff82076c53261a": "FAIL",
+        "e0g_0f4ccce9918b38a6": "PASS",
+        "e0g_11114f9db8d126a6": "PASS",
+        "e0g_1274f15b9224093e": "PASS",
+        "e0g_1511ad284aa1f5f1": "PASS",
+        "e0g_154ac3f7f522d230": null,
+        "e0g_15ae96525fb23c7c": "PASS",
+        "e0g_1650be3a68b8fea0": "PASS",
+        "e0g_178046edc16d7aec": null,
+        "e0g_1a1e986e5fe0fa69": "FAIL",
+        "e0g_1c13ed4d036ec5d2": "FAIL",
+        "e0g_1c6a6ba1678c7d1b": "PASS",
+        "e0g_1c7d158437c26235": "PASS",
+        "e0g_21bb5acda95a0362": "FAIL",
+        "e0g_21f9c820d87521e2": "PASS",
+        "e0g_227ca1a8d8364071": "PASS",
+        "e0g_2448b3d7d0a335a1": "FAIL",
+        "e0g_255f624d4ae006ac": "PASS",
+        "e0g_2797a3a90bbd440e": "PASS",
+        "e0g_2c56c45b48a43bd5": "PASS",
+        "e0g_2caa6981d5b5c4c1": "FAIL",
+        "e0g_2e55c99b466b3599": "FAIL",
+        "e0g_2f4637ee6a9724c1": "PASS"
+      }
+    },
+    "strict_gate_canonical_actual": {
+      "events": 30,
+      "input_tokens": 18448,
+      "output_tokens": 50,
+      "invalid": 2,
+      "decision_errors": 17,
+      "valid_groups": 30,
+      "decisions": {
+        "e0g_01be23e8b793f9a1": "PASS",
+        "e0g_040bf4fd22e2b0fb": "FAIL",
+        "e0g_07449192ef94c68d": "PASS",
+        "e0g_0811023b0ccf8728": "PASS",
+        "e0g_087b0296b0468b78": "FAIL",
+        "e0g_088f5725ed26d950": "PASS",
+        "e0g_0a89a1d4b9d89d96": "PASS",
+        "e0g_0bce491ee68766f4": "FAIL",
+        "e0g_0df512412e9aca7b": "FAIL",
+        "e0g_0dff82076c53261a": "FAIL",
+        "e0g_0f4ccce9918b38a6": "PASS",
+        "e0g_11114f9db8d126a6": "PASS",
+        "e0g_1274f15b9224093e": "PASS",
+        "e0g_1511ad284aa1f5f1": "PASS",
+        "e0g_154ac3f7f522d230": null,
+        "e0g_15ae96525fb23c7c": "PASS",
+        "e0g_1650be3a68b8fea0": "PASS",
+        "e0g_178046edc16d7aec": null,
+        "e0g_1a1e986e5fe0fa69": "FAIL",
+        "e0g_1c13ed4d036ec5d2": "FAIL",
+        "e0g_1c6a6ba1678c7d1b": "PASS",
+        "e0g_1c7d158437c26235": "PASS",
+        "e0g_21bb5acda95a0362": "FAIL",
+        "e0g_21f9c820d87521e2": "PASS",
+        "e0g_227ca1a8d8364071": "PASS",
+        "e0g_2448b3d7d0a335a1": "FAIL",
+        "e0g_255f624d4ae006ac": "PASS",
+        "e0g_2797a3a90bbd440e": "PASS",
+        "e0g_2c56c45b48a43bd5": "PASS",
+        "e0g_2caa6981d5b5c4c1": "FAIL",
+        "e0g_2e55c99b466b3599": "FAIL",
+        "e0g_2f4637ee6a9724c1": "PASS"
+      }
+    },
+    "canonical_full_replay": {
+      "input_tokens": 1162048
+    },
+    "stale_replay": {
+      "decision_errors": "not yet scored",
+      "cost_tokens": 0
+    }
+  },
+  "interpretation": "Strict gates reduce calls sharply but introduce more action errors than full cold on these development groups. Canonical strict gate is a replay-compatible implementation, but the comparison remains development-only.",
+  "next": "Run strong flat/RAG and stale quality scoring under the same target before any claim."
+}
+
