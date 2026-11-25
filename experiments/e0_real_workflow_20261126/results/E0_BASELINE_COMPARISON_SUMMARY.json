@@ -100,11 +100,23 @@
       }
     },
     "canonical_full_replay": {
-      "input_tokens": 1162048
+      "input_tokens": 1162048,
+      "decision_changes_vs_cold": 0
     },
     "stale_replay": {
-      "decision_errors": "not yet scored",
+      "decision_errors": 8,
       "cost_tokens": 0
+    },
+    "flat_group_rag_actual": {
+      "schema": "mab2_e0_flat_posthoc_v1",
+      "status": "DEVELOPMENT_ONLY",
+      "groups": 30,
+      "input_tokens": 121627,
+      "output_tokens": 90,
+      "decision_errors": 30,
+      "invalid_groups": 2,
+      "truth_comparable_groups": 30,
+      "warning": "Group-level flat RAG baseline is development-only and uses fixed human fact text without online labels."
     }
   },
   "interpretation": "Strict gates reduce calls sharply but introduce more action errors than full cold on these development groups. Canonical strict gate is a replay-compatible implementation, but the comparison remains development-only.",
