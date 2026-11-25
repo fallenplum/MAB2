@@ -1,0 +1,71 @@
+{
+  "schema": "mab2_e0_download_receipt_v1",
+  "status": "OFFICIAL_CODE_AND_LABELED_DATA_AVAILABLE",
+  "source": "https://github.com/shmsw25/FActScore",
+  "source_download": {
+    "status": "DOWNLOADED_AND_ZIP_VALID",
+    "url": "https://github.com/shmsw25/FActScore/archive/refs/heads/main.zip",
+    "bytes": 30859,
+    "sha256": "6959518913fbab8d3b01379936d6ab64322de62029444ea528e2eacb203d1925",
+    "member_count": 21,
+    "has_download_script": true
+  },
+  "data_download": {
+    "downloaded_at_utc": "2026-11-25T19:07:16.000190+00:00",
+    "source": "https://github.com/shmsw25/FActScore/blob/main/factscore/download_data.py",
+    "items": {
+      "data.zip": {
+        "status": "DOWNLOADED_AND_ZIP_VALID",
+        "file_id": "155exEdKs7R21gZF4G-x54-XN3qswBcPo",
+        "url": "https://drive.google.com/uc?export=download&id=155exEdKs7R21gZF4G-x54-XN3qswBcPo",
+        "bytes": 2197467,
+        "sha256": "404482c9a7d588d581a2f7a78d609fe6bfec4ddc0f729c8560a61b1743dbffab",
+        "members": [
+          "data/",
+          "data/labeled/",
+          "data/labeled/prompt_entities.txt",
+          "data/labeled/InstructGPT.jsonl",
+          "data/labeled/ChatGPT.jsonl",
+          "data/labeled/PerplexityAI.jsonl",
+          "data/unlabeled/",
+          "data/unlabeled/Pythia-12B.jsonl",
+          "data/unlabeled/prompt_entities.txt",
+          "data/unlabeled/InstructGPT.jsonl",
+          "data/unlabeled/Alpaca-65B.jsonl",
+          "data/unlabeled/Vicuna-13B.jsonl",
+          "data/unlabeled/ChatGPT.jsonl",
+          "data/unlabeled/Dolly-12B.jsonl",
+          "data/unlabeled/MPT-Chat-7B.jsonl",
+          "data/unlabeled/Stablelm-alpha-7B.jsonl",
+          "data/unlabeled/Vicuna-7B.jsonl",
+          "data/unlabeled/Alpaca-7B.jsonl",
+          "data/unlabeled/Alpaca-13B.jsonl",
+          "data/unlabeled/GPT-4.jsonl"
+        ]
+      },
+      "demos.zip": {
+        "status": "DOWNLOADED_AND_ZIP_VALID",
+        "file_id": "1sbW6pkYl6cc9gooD4WLaeoFKcAj3poZu",
+        "url": "https://drive.google.com/uc?export=download&id=1sbW6pkYl6cc9gooD4WLaeoFKcAj3poZu",
+        "bytes": 7831,
+        "sha256": "5ab4ba73f8c2483867535ae314e692c0c4c8b6343006f1cf2378235153b7fae0",
+        "members": [
+          "demos/",
+          "demos/demons_full.txt",
+          "demos/demons.txt",
+          "demos/demons_complex.json",
+          "demos/demons.json"
+        ]
+      }
+    }
+  },
+  "knowledge_source": {
+    "status": "BLOCKED",
+    "file": "enwiki-20230401.db",
+    "size": "20G",
+    "download_attempt": "confirmation_page_only",
+    "reason": "No local 20GB copy and server read-only access unavailable."
+  },
+  "raw_data_not_uploaded": true
+}
+
