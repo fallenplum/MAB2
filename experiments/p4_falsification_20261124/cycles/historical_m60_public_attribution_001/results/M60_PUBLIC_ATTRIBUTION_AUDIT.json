@@ -1,0 +1,122 @@
+{
+  "schema": "p4_historical_m60_public_attribution_v1",
+  "source": "MAB2_recovered\\experiments\\mechanism_20261122\\P0_M60_STRONG_BASELINE_MATRIX_FROZEN_PUBLIC.json",
+  "classification": "HISTORICAL_DEVELOPMENT_ONLY",
+  "n": 3456,
+  "aggregate": [
+    {
+      "method": "stale",
+      "exact_set": 0.9039351851851852,
+      "action_error": 0.04282407407407408,
+      "tokens": 0.0,
+      "queries": 0.0,
+      "false_drop": 0.06365740740740741,
+      "false_keep": 0.05758101851851852
+    },
+    {
+      "method": "exact_warm_cache",
+      "exact_set": 0.8877314814814815,
+      "action_error": 0.044270833333333336,
+      "tokens": 0.0,
+      "queries": 0.0,
+      "false_drop": 0.08940972222222222,
+      "false_keep": 0.04079861111111111
+    },
+    {
+      "method": "reweighted_old_history",
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 22.86429398148148,
+      "queries": 0.2800925925925926,
+      "false_drop": 0.052083333333333336,
+      "false_keep": 0.0546875
+    },
+    {
+      "method": "ctdr_transport_only",
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 22.86429398148148,
+      "queries": 0.2800925925925926,
+      "false_drop": 0.052083333333333336,
+      "false_keep": 0.0546875
+    },
+    {
+      "method": "ctdr_transport_selective_ranking",
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 24.613136574074073,
+      "queries": 0.30844907407407407,
+      "false_drop": 0.052083333333333336,
+      "false_keep": 0.0546875
+    },
+    {
+      "method": "full_ctdr",
+      "exact_set": 1.0,
+      "action_error": 0.0,
+      "tokens": 230.90653935185185,
+      "queries": 3.0986689814814814,
+      "false_drop": 0.0,
+      "false_keep": 0.0
+    },
+    {
+      "method": "full_restart",
+      "exact_set": 1.0,
+      "action_error": 0.0,
+      "tokens": 878.7806712962963,
+      "queries": 11.369791666666666,
+      "false_drop": 0.0,
+      "false_keep": 0.0
+    },
+    {
+      "method": "max_uncertainty",
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 22.86429398148148,
+      "queries": 0.2800925925925926,
+      "false_drop": 0.052083333333333336,
+      "false_keep": 0.0546875
+    },
+    {
+      "method": "periodic",
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 39.80700231481482,
+      "queries": 0.49074074074074076,
+      "false_drop": 0.052083333333333336,
+      "false_keep": 0.0546875
+    },
+    {
+      "method": "random",
+      "exact_set": 0.9166666666666666,
+      "action_error": 0.0390625,
+      "tokens": 37.34375,
+      "queries": 0.47164351851851855,
+      "false_drop": 0.052083333333333336,
+      "false_keep": 0.0546875
+    },
+    {
+      "method": "oracle_row_refresh",
+      "exact_set": 0.9068287037037037,
+      "action_error": 0.0390625,
+      "tokens": 42.70543981481482,
+      "queries": 0.5486111111111112,
+      "false_drop": 0.0931712962962963,
+      "false_keep": 0.0
+    }
+  ],
+  "derived": {
+    "full_vs_full_restart_token_reduction": 0.7372421277640986,
+    "full_vs_warm_exact_set_delta": 0.11226851851851849,
+    "transport_only_vs_reweighted_exact_set_delta": 0.0,
+    "transport_only_vs_reweighted_token_delta": 0.0,
+    "selective_vs_transport_token_delta": 1.7488425925925917,
+    "selective_vs_transport_exact_set_delta": 0.0
+  },
+  "interpretation": [
+    "Reweighted old history and CTDR transport only are numerically identical in the public aggregate.",
+    "Selective ranking changes token cost but not public exact set in this aggregate.",
+    "Full CTDR combines radius and ranking and is not independently attributable from this public table."
+  ],
+  "sealed_labels_used": false,
+  "candidate_confirmation": false
+}

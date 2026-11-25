@@ -1,0 +1,25 @@
+{
+  "schema": "mab2_p4_gate_receipts_v1",
+  "cycle_id": "g0_p2_production_001",
+  "created_at_utc": "2026-11-24T18:06:25.519980+00:00",
+  "status": "G0_INCONCLUSIVE",
+  "receipts": [
+    {
+      "run_id": "p2_sandbox_repeat_006",
+      "lock_verify": "PASS_LOCK",
+      "pre_gpu_tests": "PASS_EXIT_0",
+      "adapter_exit_code": 0,
+      "independent_event_audit_exit_code": 0,
+      "repeat_check": "PASS",
+      "os_policy_probe": "PASS_BOUNDED_DEV_ONLY"
+    }
+  ],
+  "gate_failures": [
+    "one exposed row",
+    "gold/quality absent",
+    "unchanged production runner path not used",
+    "T06/T09/T10/T12/T15/T16 incomplete",
+    "external signoff absent",
+    "budget unverified"
+  ]
+}

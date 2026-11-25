@@ -1,0 +1,30 @@
+{
+  "schema": "mab2_p4_implementation_id_v1",
+  "cycle_id": "g0_p2_production_001",
+  "created_at_utc": "2026-11-24T18:05:27.538461+00:00",
+  "algorithm_id": "P2_PRODUCTION_ADAPTER_G0_DEV",
+  "classification": "BOUNDED_G0_DEVELOPMENT_ONLY",
+  "authoritative_prompt_sha256": "bd9524b188331255ad81b279126612ced9063f20b222abd64b95d5dfaea7a7c2",
+  "lock_sha256": "768efade05808340ad0e554e8ab37b10e360617b0216a72e9649697a7248a9f5",
+  "cycle_files_sha256": {
+    "p4_core.py": "1bbf02f0205f7273e73372e24252688fe5a1d28bb47a7be396adb82dd2d99ff4",
+    "p4_online_runtime.py": "4799268faafbac9eadb67f8d04b784ae2f9e012ece5b1b14ed459e15d727a25a",
+    "p4_policy_worker.py": "dcd86aefc17f772c9ccc14fa70a2dbb6f548168309700e3222ee66bc5aba2915",
+    "p4_p2_service_adapter.py": "cbecde046e6e6a08dd1af5a39828b010abf96211e5f3b4d93202e81914910a41",
+    "audit_p4_call_ledger.py": "6b9dde7fe01847f5b3195d2f9b6942754cd3e63627826148ccf02427cea4669b",
+    "test_p4_zero_weight.py": "8d3ee72e3cab7eea3d4ff330e33568e98b3b0f1c67ef4099f8344d8ab56ea957",
+    "test_p4_p2_adapter.py": "86749fe9b86a4021559e5669e626ed6a2e82e7ffa7834a68965a4b125d648bb1",
+    "test_p4_call_ledger_audit.py": "4b726989acadfb107b26e456863b85f9e903475bca79e8061e079f59bb0aa578",
+    "verify_p2_integration_lock.py": "fc46f3ba1d4fbf2d84707b2ba8fcb0a22e9d517a1f90e3bd8aa795939b8b187e",
+    "remote_run_p2_adapter.py": "4a4bb4c1a68a3daffd9ca076650a564274eb02e0ef82faac9b77432515a40a41",
+    "freeze_p2_integration.py": "de9419aa50933279cc87071e9e33ae1d66ade50aec0af6313f94a48a426d828c",
+    "run_p2_g0_local_gate.py": "24fdb8220986ee0897900d5dfb8d7b9da248d8a760b300c13d803ad732b40cb8",
+    "test_p4_os_policy_sandbox.py": "01e6e1256776119f167739de1957b8b1f8024f5ba4afd5060580907b4a7f5f2b"
+  },
+  "p2_files_sha256": {
+    "p2_service_runner.py": "9e7642e143a3b3b2a069ccaaf33824bee5dd23c0a4dab03d9cc83b41e762d2f6",
+    "p2_logic.py": "55492d2e19065289a9ee7264dbcf893c95b53f6dc010638ea5070ae2a6970e77"
+  },
+  "latest_result_sha256": "f7f62513318c017531b3025c9917a4cd139a1bf31ea394def6c4a74461b528d3",
+  "latest_audit_sha256": "53ce32a9edc340409ac7fa8614b09c6c9e5012af98b5f78e81f4698b161e84ca"
+}

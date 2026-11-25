@@ -1,0 +1,8 @@
+{
+  "schema": "p4_dev_cpu_h2_fails_closed_failures_v1",
+  "issues": [
+    "The copied H2 still depends on the public simulator generator and finite-prior model.",
+    "The original source contains target fallback branches even though they did not trigger in 1600 cases.",
+    "No independent split or true NLP task was used."
+  ]
+}

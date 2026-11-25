@@ -1,10 +1,61 @@
 {
   "status": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
   "formal_experiments_started": false,
-  "gpu_started": false,
-  "reason": "Root prompt frozen by researcher. Public kit only audit completed.",
+  "gpu_started": true,
+  "gpu_run_count": 2,
+  "gpu_run": "cycles/g0_real_runner_t01_001/results/T01_RESULT.json",
+  "reason": "Development broker tests pass, but the first real Qwen chain probe used an unchanged evidence branch, so its cache-reuse assertion failed and it produced no post-edit calls. The failure is preserved; a full-resolved status defect was also found and fixed in development. G0 remains open.",
   "prompt_mismatch": "resolved_by_researcher_freeze_root_authoritative",
   "branch": "research/p4-falsification-graph-voi-20261124",
-  "next": "Fix broker/cache closure, target fallback, second-parent dirty closure, candidate/public-state boundary and CPU/service algorithm identity. Rerun G0 with mutation tests."
+  "next": "Continue G0 production-path and T01-T16 closure. Do not start formal candidate comparison until G0 and budget gates are satisfied.",
+  "gpu_runs": [
+    "cycles/g0_real_runner_t01_001/results/T01_RESULT.json",
+    "cycles/g0_online_runtime_001/results/P4_REAL_CHAIN_FAIL_001.json"
+  ],
+  "gpu_run_count_reconciled": 13,
+  "latest_cycle": "cycles/g0_p2_production_001",
+  "latest_evidence": "cycles/g0_p2_production_001/results/remote_p2_row3_repeat_011/",
+  "latest_status": "PASS_T01_T02_T03_T04_T05_T07_T11_BOUNDED_DEV_ROWS0_3",
+  "g0_closed": false,
+  "history_updates": [
+    {
+      "timestamp_utc": "2026-11-25T02:06:25.51998+08:00",
+      "event": "P2 sandbox repeat 006 archived",
+      "status": "PASS_BOUNDED_G0_DEVELOPMENT_ONLY",
+      "repeat_check": "PASS",
+      "independent_event_audit": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+      "gpu_hours_upper_bound": 0.0015789778261548944
+    },
+    {
+      "timestamp_utc": "2026-11-25T02:41:00+08:00",
+      "event": "P2 adversarial repeat 008 archived",
+      "status": "PASS_BOUNDED_G0_DEVELOPMENT_ONLY",
+      "repeat_check": "PASS",
+      "independent_event_audit": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+      "adversarial_pretests": "T08/T14 PASS",
+      "gpu_hours_upper_bound": 0.0015682625911560737,
+      "wrapper_gpu_hours_upper_bound": 0.0031493386041579973
+    },
+    {
+      "timestamp_utc": "2026-11-25T02:59:00+08:00",
+      "event": "P2 exposed rows 1-3 archived",
+      "status": "PASS_BOUNDED_G0_DEVELOPMENT_ONLY",
+      "rows": [
+        1,
+        2,
+        3
+      ],
+      "repeat_check": "PASS_ALL",
+      "independent_event_audit": "PASS_ALL",
+      "gpu_hours_upper_bound": 0.009465258577191788,
+      "wrapper_gpu_hours_upper_bound": 0.009465258577191788
+    },
+    {
+      "timestamp_utc": "2026-11-25T03:10:00+08:00",
+      "event": "SEALED development mapping exposure recorded",
+      "status": "EXPOSED_DEVELOPMENT_DATA_DO_NOT_USE",
+      "artifact": "MAB2_recovered/interface_drift_rows1/qasc/SEALED.json",
+      "effect": "No quality score or candidate decision was derived. Queue is ineligible for independent confirmation."
+    }
+  ]
 }
-

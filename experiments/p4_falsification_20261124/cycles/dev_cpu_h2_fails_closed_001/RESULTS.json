@@ -1,0 +1,76 @@
+{
+  "schema": "p4_dev_cpu_h2_fails_closed_results_v1",
+  "classification": "DEVELOPMENT_ONLY",
+  "status": "INCONCLUSIVE_EXPOSED_GENERATOR",
+  "cases": 1600,
+  "methods": {
+    "masked_pairwise": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 48151.98624152675,
+      "queries": 7113,
+      "certified": 1600,
+      "mean_cost": 30.094991400954218,
+      "mean_queries": 4.445625,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "h2_fails_closed": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 43193.90427438902,
+      "queries": 6139,
+      "certified": 1600,
+      "mean_cost": 26.996190171493136,
+      "mean_queries": 3.836875,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "exact_dependency_cache": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 55098.76166501078,
+      "queries": 7628,
+      "certified": 1600,
+      "mean_cost": 34.43672604063174,
+      "mean_queries": 4.7675,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "strict_certificate_first": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 53247.41943260917,
+      "queries": 7295,
+      "certified": 1600,
+      "mean_cost": 33.27963714538073,
+      "mean_queries": 4.559375,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "full_recompute": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 121902.76160981855,
+      "queries": 17200,
+      "certified": 1600,
+      "mean_cost": 76.1892260061366,
+      "mean_queries": 10.75,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    }
+  },
+  "comparison": "h2_fails_closed equals the public H2 point estimate on this matrix. No unresolved exits occurred.",
+  "gold_or_private_test": false,
+  "gpu_hours": 0
+}

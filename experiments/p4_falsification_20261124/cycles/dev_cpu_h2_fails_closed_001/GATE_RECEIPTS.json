@@ -1,0 +1,12 @@
+{
+  "schema": "p4_dev_cpu_h2_fails_closed_gate_v1",
+  "status": "PASS_DEVELOPMENT_ONLY",
+  "action_exact_all_methods": 1.0,
+  "h2_mean_cost": 26.996190171493136,
+  "pairwise_mean_cost": 30.094991400954218,
+  "point_drop": 0.1029673405842152,
+  "unresolved_h2": 0,
+  "gold_loaded": false,
+  "gpu_started": false,
+  "independent_confirmation": false
+}

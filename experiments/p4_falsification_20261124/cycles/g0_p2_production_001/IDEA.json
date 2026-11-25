@@ -1,0 +1,9 @@
+{
+  "schema": "mab2_p4_cycle_idea_v1",
+  "cycle_id": "g0_p2_production_001",
+  "created_at_utc": "2026-11-24T18:05:27.538461+00:00",
+  "hypothesis": "真实 P2 prompt renderer 与 Qwen forward hook 在受控版本化接口编辑下，可以通过合法旧 transcript、精确输入指纹和严格证书完成在线复检，并保持 policy 不可见未来输出。",
+  "falsification": "任一实际父输入未改变、第二父依赖漏检、在线动作受 post-stop target audit 影响、重复执行不一致、账本不可独立重算或 policy 可见 sealed/未付费输出，则本周期集成证据失效。",
+  "scope": "G0 bounded development only. One exposed P2 row, two repeats, Qwen-0.5B. No candidate comparison or gold quality claim.",
+  "gate": "G0 remains open until unchanged production run_row path, T01-T16 applicable matrix, external blind signoff and verified aggregate budget are complete."
+}

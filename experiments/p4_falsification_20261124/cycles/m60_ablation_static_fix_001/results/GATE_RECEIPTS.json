@@ -1,0 +1,21 @@
+{
+  "schema": "p4_m60_ablation_static_fix_receipt_v1",
+  "classification": "DEVELOPMENT_ONLY",
+  "status": "PASS_STATIC_FIX_SYNTHETIC_SMOKE",
+  "source_sha256": "bba7d08ace495da299b3c5370606eaca6c0f947b733cc3e09265d6914e28a444",
+  "fix": "undefined mode replaced by method in replay context",
+  "methods": [
+    "warm_restart",
+    "reweighted_audit",
+    "ctdr_without_radius",
+    "ctdr_legacy",
+    "warm_restart_token",
+    "decision_ranking",
+    "full_ctdr"
+  ],
+  "synthetic_history_calls": 4,
+  "sealed_panel_run": false,
+  "gold_loaded": false,
+  "full_claim": false,
+  "disclosure": "Only a synthetic in-memory smoke was run. Historical sealed M60 panels were not read or rerun."
+}

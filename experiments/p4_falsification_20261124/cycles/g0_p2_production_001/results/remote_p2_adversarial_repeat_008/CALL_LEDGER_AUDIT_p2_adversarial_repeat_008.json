@@ -1,0 +1,10 @@
+{
+  "status": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+  "errors": [],
+  "event_count": 70,
+  "unique_call_id_count": 70,
+  "cost_total": 14868,
+  "input_token_total": 14798,
+  "scope": "Independent code path over hook event rows; validates internal event/cost consistency, not OS isolation or external blind signoff.",
+  "input_sha256": "fb16521a3621d60cd97cb39a4315fc0007adfc5edefefe1b5d58e0f31c9ebd6a"
+}

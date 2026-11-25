@@ -1,0 +1,165 @@
+{
+  "schema": "mab2_p4_raw_trace_index_v1",
+  "cycle_id": "g0_p2_production_001",
+  "created_at_utc": "2026-11-25T02:05:27.538461+08:00",
+  "runs": [
+    {
+      "run_id": "p2_sandbox_repeat_006",
+      "result": "results/remote_p2_sandbox_repeat_006/P4_P2_PRODUCTION_ADAPTER_p2_sandbox_repeat_006.json",
+      "result_sha256": "f7f62513318c017531b3025c9917a4cd139a1bf31ea394def6c4a74461b528d3",
+      "audit": "results/remote_p2_sandbox_repeat_006/CALL_LEDGER_AUDIT_p2_sandbox_repeat_006.json",
+      "audit_sha256": "53ce32a9edc340409ac7fa8614b09c6c9e5012af98b5f78e81f4698b161e84ca",
+      "receipt": "results/remote_p2_sandbox_repeat_006/RUNNER_RECEIPT_p2_sandbox_repeat_006.json",
+      "receipt_sha256": "929c5b84a3c052e3c5e2b9b31af79927f2d1e48944941f074ced0fcecc061e4d",
+      "calls": {
+        "history": 42,
+        "online": 10,
+        "post_stop_audit": 18
+      },
+      "tokens": {
+        "history": 8434,
+        "online": 2458,
+        "post_stop_audit": 3906
+      },
+      "cost_units": {
+        "history": 8476,
+        "online": 2468,
+        "post_stop_audit": 3924
+      },
+      "physical_gpu": 3,
+      "gpu_hours_upper_bound_result": 0.0015789778261548944,
+      "status": "PASS_T01_T02_T03_T04_T05_T07_T11_T13_BOUNDED_DEV"
+    },
+    {
+      "run_id": "p2_adversarial_repeat_008",
+      "result": "results/remote_p2_adversarial_repeat_008/P4_P2_PRODUCTION_ADAPTER_p2_adversarial_repeat_008.json",
+      "audit": "results/remote_p2_adversarial_repeat_008/CALL_LEDGER_AUDIT_p2_adversarial_repeat_008.json",
+      "receipt": "results/remote_p2_adversarial_repeat_008/RUNNER_RECEIPT_p2_adversarial_repeat_008.json",
+      "calls": {
+        "history": 42,
+        "online": 10,
+        "post_stop_audit": 18
+      },
+      "tokens": {
+        "history": 8434,
+        "online": 2458,
+        "post_stop_audit": 3906
+      },
+      "cost_units": {
+        "history": 8476,
+        "online": 2468,
+        "post_stop_audit": 3924
+      },
+      "physical_gpu": 4,
+      "gpu_hours_upper_bound_result": 0.0015682625911560737,
+      "status": "PASS_T01_T02_T03_T04_T05_T07_T11_BOUNDED_DEV",
+      "independent_audit": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+      "repeat_check": "PASS",
+      "result_sha256": "fb16521a3621d60cd97cb39a4315fc0007adfc5edefefe1b5d58e0f31c9ebd6a",
+      "audit_sha256": "d2df943fe57f1edba638b1e7b49a2ad4b1c65c73a2db9101469b383fb788a1c7",
+      "receipt_sha256": "8a23143bfc29b54944183001b2363ccd3f4ba39ed0790e536ab8be42e1ff0ca1"
+    },
+    {
+      "run_id": "p2_row1_repeat_009",
+      "result": "results/remote_p2_row1_repeat_009/P4_P2_PRODUCTION_ADAPTER_p2_row1_repeat_009.json",
+      "audit": "results/remote_p2_row1_repeat_009/CALL_LEDGER_AUDIT_p2_row1_repeat_009.json",
+      "receipt": "results/remote_p2_row1_repeat_009/RUNNER_RECEIPT_p2_row1_repeat_009.json",
+      "calls": {
+        "history": 42,
+        "online": 12,
+        "post_stop_audit": 16
+      },
+      "tokens": {
+        "history": 8448,
+        "online": 2900,
+        "post_stop_audit": 3456
+      },
+      "cost_units": {
+        "history": 8490,
+        "online": 2912,
+        "post_stop_audit": 3472
+      },
+      "physical_gpu": 4,
+      "gpu_hours_upper_bound_result": 0.001507783636657728,
+      "status": "PASS_T01_T02_T03_T04_T05_T07_T11_BOUNDED_DEV",
+      "independent_audit": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+      "repeat_check": "PASS",
+      "row_index": 1,
+      "result_sha256": "c88a1e0f57a1bcd281ea7478ad8e9d7ec967de0ba66d716ecca4dfe6eb1c5754",
+      "audit_sha256": "2201ba87d551db4d27b5c4401623f0e59ee910adfd09e77df8599ab0fb569351",
+      "receipt_sha256": "50aebac5f7ecd1326a20cc0794a4083a0cac3e557560b7f02326c79a48dbda91"
+    },
+    {
+      "run_id": "p2_row2_repeat_010",
+      "result": "results/remote_p2_row2_repeat_010/P4_P2_PRODUCTION_ADAPTER_p2_row2_repeat_010.json",
+      "audit": "results/remote_p2_row2_repeat_010/CALL_LEDGER_AUDIT_p2_row2_repeat_010.json",
+      "receipt": "results/remote_p2_row2_repeat_010/RUNNER_RECEIPT_p2_row2_repeat_010.json",
+      "calls": {
+        "history": 42,
+        "online": 10,
+        "post_stop_audit": 18
+      },
+      "tokens": {
+        "history": 8350,
+        "online": 2428,
+        "post_stop_audit": 3852
+      },
+      "cost_units": {
+        "history": 8392,
+        "online": 2438,
+        "post_stop_audit": 3870
+      },
+      "physical_gpu": 4,
+      "gpu_hours_upper_bound_result": 0.0015424946564922316,
+      "status": "PASS_T01_T02_T03_T04_T05_T07_T11_BOUNDED_DEV",
+      "independent_audit": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+      "repeat_check": "PASS",
+      "row_index": 2,
+      "result_sha256": "ee2c6b99e68cb672d5789cd5464013f451c0e48a01c163074d8880a87f1fbabc",
+      "audit_sha256": "f2e95a6f4a46d964cf3379c6ac4f73b20f35471c6fc927cde61fa25bdd36f8f1",
+      "receipt_sha256": "838c34e4227b9992e22507ab3fb0c62c02f369aa49b7529446b4d06739b6d569"
+    },
+    {
+      "run_id": "p2_row3_repeat_011",
+      "result": "results/remote_p2_row3_repeat_011/P4_P2_PRODUCTION_ADAPTER_p2_row3_repeat_011.json",
+      "audit": "results/remote_p2_row3_repeat_011/CALL_LEDGER_AUDIT_p2_row3_repeat_011.json",
+      "receipt": "results/remote_p2_row3_repeat_011/RUNNER_RECEIPT_p2_row3_repeat_011.json",
+      "calls": {
+        "history": 42,
+        "online": 24,
+        "post_stop_audit": 4
+      },
+      "tokens": {
+        "history": 7936,
+        "online": 5220,
+        "post_stop_audit": 824
+      },
+      "cost_units": {
+        "history": 7978,
+        "online": 5244,
+        "post_stop_audit": 828
+      },
+      "physical_gpu": 4,
+      "gpu_hours_upper_bound_result": 0.0020053116916420146,
+      "status": "PASS_T01_T02_T03_T04_T05_T07_T11_BOUNDED_DEV",
+      "independent_audit": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+      "repeat_check": "PASS",
+      "row_index": 3,
+      "result_sha256": "d0e9d3e160f8a5b5bddf0468f4d0baaeceec3dce751d54ec98719bc9c41a1535",
+      "audit_sha256": "eaf87aecce352ab26acfcdbf5183fa16c4471db68eb708e964dc7865fab9af47",
+      "receipt_sha256": "403ff14619c7ac1d96b0e50c0c39c3fd4c37534d0b2d6d67e917dfeec2917618"
+    }
+  ],
+  "raw_prompts_saved": false,
+  "gold_loaded": false,
+  "external_signoff": false,
+  "latest_batch": {
+    "run_ids": [
+      "p2_row1_repeat_009",
+      "p2_row2_repeat_010",
+      "p2_row3_repeat_011"
+    ],
+    "exposed_rows": 4,
+    "gold_loaded": false
+  }
+}

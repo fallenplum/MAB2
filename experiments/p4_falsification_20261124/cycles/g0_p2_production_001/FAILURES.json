@@ -1,0 +1,49 @@
+{
+  "schema": "mab2_p4_failures_v1",
+  "cycle_id": "g0_p2_production_001",
+  "created_at_utc": "2026-11-24T18:06:25.519980+00:00",
+  "failures": [
+    {
+      "id": "P4-017",
+      "status": "FIXED_IN_DEV_PENDING_EXTERNAL_REPLAY",
+      "summary": "lock schema mismatch before completed adapter",
+      "artifact": "results/P2_ADAPTER_SETUP_FAIL_001.json"
+    },
+    {
+      "id": "P4-018",
+      "status": "PASS_BOUNDED_DEV_ONLY",
+      "summary": "P2 renderer adapter one-row probe",
+      "artifact": "results/remote_p2_production_001/"
+    },
+    {
+      "id": "P4-019",
+      "status": "FIXED_IN_DEV_PENDING_EXTERNAL_AUDIT",
+      "summary": "unique run IDs prevent stale artifact overwrite",
+      "artifact": "remote_run_p2_adapter.py"
+    },
+    {
+      "id": "P4-020",
+      "status": "PASS_BOUNDED_DEV_ONLY",
+      "summary": "two-repeat Qwen semantic match",
+      "artifact": "results/remote_p2_repeat_004/"
+    },
+    {
+      "id": "P4-021",
+      "status": "PASS_BOUNDED_DEV_ONLY",
+      "summary": "GPU idle guard and GPU3 routing",
+      "artifact": "results/remote_p2_sandbox_repeat_006/RUNNER_RECEIPT_p2_sandbox_repeat_006.json"
+    },
+    {
+      "id": "P4-022",
+      "status": "PASS_BOUNDED_DEV_ONLY",
+      "summary": "bwrap policy namespace probe",
+      "artifact": "results/remote_p2_sandbox_repeat_006/PRE_GPU_TESTS_p2_sandbox_repeat_006.stdout.txt"
+    }
+  ],
+  "open_blockers": [
+    "original p2_service_runner run_row not routed through broker",
+    "T01-T16 full production matrix incomplete",
+    "no sealed fixture or external signoff",
+    "budget unverified"
+  ]
+}

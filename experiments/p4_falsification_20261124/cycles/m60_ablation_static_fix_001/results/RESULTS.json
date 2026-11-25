@@ -1,0 +1,7 @@
+{
+  "schema": "p4_m60_ablation_static_fix_results_v1",
+  "status": "PASS_STATIC_FIX_SYNTHETIC_SMOKE",
+  "sealed_panel_run": false,
+  "gold_loaded": false,
+  "methods_tested": 7
+}

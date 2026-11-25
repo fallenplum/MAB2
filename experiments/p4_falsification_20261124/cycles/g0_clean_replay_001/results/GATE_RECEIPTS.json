@@ -1,0 +1,12 @@
+{
+  "schema": "mab2_p4_t10_isolated_copy_receipt_v1",
+  "classification": "DEVELOPMENT_ONLY",
+  "status": "PASS_T10_ISOLATED_COPY_DEVELOPMENT_ONLY",
+  "copy_root": "cycles/g0_clean_replay_001/worktree",
+  "test_count": 15,
+  "exit_code": 0,
+  "command": "python -B -m unittest -v test_p4_zero_weight test_p4_p2_adapter test_p4_call_ledger_audit test_p4_adversarial_boundary",
+  "gold_loaded": false,
+  "clean_git_checkout": false,
+  "disclosure": "This is an isolated filesystem copy with public P2 files. It is not an independent git checkout or external audit."
+}

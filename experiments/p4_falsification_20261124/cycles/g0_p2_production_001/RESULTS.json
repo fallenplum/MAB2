@@ -1,0 +1,40 @@
+{
+  "schema": "mab2_p4_cycle_results_v1",
+  "cycle_id": "g0_p2_production_001",
+  "created_at_utc": "2026-11-25T02:05:27.538461+08:00",
+  "classification": "BOUNDED_G0_DEVELOPMENT_ONLY",
+  "status": "INCONCLUSIVE_G0_OPEN",
+  "latest_run": {
+    "run_id": "p2_row3_repeat_011",
+    "status": "PASS_T01_T02_T03_T04_T05_T07_T11_BOUNDED_DEV",
+    "independent_event_audit": "PASS_INDEPENDENT_EVENT_RECONCILIATION_DEV",
+    "repeat_check": {
+      "status": "PASS",
+      "repeat_count": 2,
+      "semantic_match_each": [
+        true
+      ]
+    },
+    "online_action": "E",
+    "full_new_graph_action": "E",
+    "action_match": true,
+    "second_parent_invalidation": true,
+    "policy_target_separation": true,
+    "os_policy_isolation": "PASS_BOUNDED_DEV_RECORDED_IN_PRE_GPU_TESTS",
+    "pre_gpu_test_count": 16,
+    "exposed_row_count": 4
+  },
+  "aggregate_claims": {
+    "candidate_comparison_started": false,
+    "gold_quality_result": false,
+    "G0_closed": false,
+    "formal_cpu_gate_started": false
+  },
+  "remaining_blockers": [
+    "unchanged original p2_service_runner run_row path is not the online broker path",
+    "four exposed development rows only and no sealed independent fixture",
+    "T06 true RAG, T09/T10/T12/T15/T16 incomplete",
+    "aggregate GPU/CPU/API budget unverified",
+    "external blind signoff absent"
+  ]
+}

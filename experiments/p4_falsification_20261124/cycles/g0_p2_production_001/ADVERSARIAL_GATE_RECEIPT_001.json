@@ -1,0 +1,25 @@
+{
+  "schema": "mab2_p4_g0_adversarial_boundary_receipt_v1",
+  "classification": "DEVELOPMENT_ONLY",
+  "created_at_local": "2026-11-25T02:20:00+08:00",
+  "status": "PASS_T08_T14_DEVELOPMENT_ONLY",
+  "command": [
+    "D:\\Anaconda\\envs\\tslib\\python.exe",
+    "-m",
+    "unittest",
+    "-v",
+    "test_p4_adversarial_boundary"
+  ],
+  "exit_code": 0,
+  "tests_run": 4,
+  "tests_passed": 4,
+  "tests_failed": 0,
+  "tests": {
+    "T08": "PASS_DEVELOPMENT_ONLY",
+    "T14": "PASS_DEVELOPMENT_ONLY",
+    "T13": "NOT_APPLICABLE_OPEN_NO_DEPLOYABLE_PREDICTOR_OR_HIDDEN_GENERATOR_PROBE"
+  },
+  "source_sha256": "eaec4e75da55d8ea821d1d413ae350279908f2badea172e4933f235635630b57",
+  "scope": "Malformed parent topology, second-parent cache invalidation, unresolved stop and invalid terminal output. No gold, target, private fixture or GPU used.",
+  "gate_effect": "G0 remains open. This receipt closes no T10/T12/T15/T16 and is not an independent blind signoff."
+}

@@ -1,0 +1,7 @@
+{
+  "schema": "p4_dev_cpu_h2_fails_closed_decision_v1",
+  "decision": "KEEP_AS_NEGATIVE_DIAGNOSTIC",
+  "status": "INCONCLUSIVE",
+  "reason": "Fail-closed correction did not change the exposed development aggregate, but this cannot support G1 because the generator and split remain exposed.",
+  "next": "Do not start GPU confirmation from this cycle."
+}

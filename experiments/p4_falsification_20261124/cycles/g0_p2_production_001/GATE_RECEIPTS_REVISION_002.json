@@ -1,0 +1,30 @@
+{
+  "schema": "mab2_p4_g0_gate_receipts_revision_v2",
+  "created_at_local": "2026-11-25T03:05:00+08:00",
+  "status": "INCONCLUSIVE_G0_OPEN",
+  "local_gate": "PASS_DEVELOPMENT_ONLY",
+  "adversarial": "PASS_T08_T14_DEVELOPMENT_ONLY",
+  "remote_rows": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "remote_status": "PASS_BOUNDED_G0_DEVELOPMENT_ONLY_ALL_ROWS",
+  "remote_repeat": "PASS_ALL",
+  "remote_event_audit": "PASS_ALL",
+  "current_adapter_status": "PASS_T01_T02_T03_T04_T05_T07_T11_BOUNDED_DEV",
+  "T13": "NOT_APPLICABLE_OPEN_NO_DEPLOYABLE_PREDICTOR_OR_HIDDEN_GENERATOR_PROBE",
+  "gold_loaded": false,
+  "candidate_comparison_started": false,
+  "g0_closed": false,
+  "blockers": [
+    "frozen p2_service_runner.run_row cannot serve as online broker path",
+    "no sealed independent fixture or external blind signoff",
+    "T06/T09/T10/T12/T15/T16 incomplete",
+    "aggregate budget remains UNVERIFIED"
+  ],
+  "exposed_development_queue": "MAB2_recovered/interface_drift_rows1/qasc/SEALED.json",
+  "independent_confirmation_eligible": false,
+  "exposure_reason": "SEALED mapping was read during inventory and is excluded from all confirmation and quality claims."
+}

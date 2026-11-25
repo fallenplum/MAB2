@@ -1,0 +1,83 @@
+{
+  "schema": "p4_dev_cpu_h2_fails_closed_new_seed_results_v1",
+  "classification": "DEVELOPMENT_ONLY_EXPOSED_GENERATOR",
+  "seeds": [
+    20261201,
+    20261202,
+    20261203,
+    20261204,
+    20261205
+  ],
+  "cases": 1600,
+  "summary": {
+    "masked_pairwise": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 48566.92336880517,
+      "queries": 7086,
+      "certified": 1600,
+      "mean_cost": 30.35432710550323,
+      "mean_queries": 4.42875,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "h2_fails_closed": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 43200.25951766288,
+      "queries": 6067,
+      "certified": 1600,
+      "mean_cost": 27.0001621985393,
+      "mean_queries": 3.791875,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "exact_dependency_cache": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 55304.46080629423,
+      "queries": 7532,
+      "certified": 1600,
+      "mean_cost": 34.565288003933894,
+      "mean_queries": 4.7075,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "strict_certificate_first": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 53301.881760500255,
+      "queries": 7180,
+      "certified": 1600,
+      "mean_cost": 33.31367610031266,
+      "mean_queries": 4.4875,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    },
+    "full_recompute": {
+      "n": 1600,
+      "correct": 1600,
+      "unresolved": 0,
+      "cost": 122395.317885526,
+      "queries": 17200,
+      "certified": 1600,
+      "mean_cost": 76.49707367845376,
+      "mean_queries": 10.75,
+      "action_exact": 1.0,
+      "unresolved_rate": 0.0,
+      "certificate_rate": 1.0
+    }
+  },
+  "point_drop": 0.11050038748366198,
+  "status": "INCONCLUSIVE_EXPOSED_GENERATOR",
+  "gold_loaded": false,
+  "gpu_hours": 0
+}

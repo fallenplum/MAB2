@@ -1,0 +1,23 @@
+{
+  "schema": "mab2_p4_cycle_decision_v1",
+  "cycle_id": "g0_p2_production_001",
+  "created_at_utc": "2026-11-24T18:06:25.519980+00:00",
+  "decision": "KEEP_G0_DEVELOPMENT_EVIDENCE_CONTINUE",
+  "status": "INCONCLUSIVE_G0_OPEN",
+  "evidence": [
+    "P2 sandbox repeat passes lock, pre-GPU tests, Qwen forward hook, independent event reconciliation, bwrap policy probe and deterministic repeat comparison"
+  ],
+  "rejected_claims": [
+    "G0 closure",
+    "formal candidate comparison",
+    "quality gain",
+    "ACL readiness",
+    "external confirmation"
+  ],
+  "next_gate_actions": [
+    "wire or audit unchanged p2_service_runner run_row path",
+    "complete T01-T16 matrix",
+    "verify aggregate budget and CPU ledger",
+    "then start locked CPU candidate cycle only if G0 permits"
+  ]
+}
