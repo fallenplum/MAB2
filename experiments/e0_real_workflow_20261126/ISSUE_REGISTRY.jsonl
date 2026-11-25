@@ -1,0 +1,7 @@
+{"id": "E0-001", "severity": "BLOCKER", "status": "OPEN", "issue": "FActScore primary data and knowledge-source bundle not found in inspected local assets."}
+{"id": "E0-002", "severity": "BLOCKER", "status": "OPEN", "issue": "Official FActScore code/data was not materialized in the workspace; no download was completed."}
+{"id": "E0-003", "severity": "MAJOR", "status": "OPEN", "issue": "Server read-only SSH probe was denied by the execution environment before any remote command ran."}
+{"id": "E0-004", "severity": "MAJOR", "status": "OPEN", "issue": "Qasper, LongBench v2 and HotpotQA are available but are not authorized substitutes for the frozen primary task."}
+{"id": "E0-005", "severity": "MAJOR", "status": "OPEN", "issue": "No E0-specific compute budget or model-call authorization has been recorded."}
+{"id": "E0-006", "severity": "INFO", "status": "CLOSED", "issue": "Fixed-threshold CPU certifier was implemented and mutation-tested without target or gold access."}
+

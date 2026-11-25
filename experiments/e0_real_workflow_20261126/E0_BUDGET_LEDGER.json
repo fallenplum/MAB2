@@ -1,0 +1,12 @@
+{
+  "schema": "mab2_e0_budget_ledger_v1",
+  "status": "NO_E0_EXECUTION_STARTED",
+  "new_gpu_hours": 0,
+  "new_cpu_hours": 0,
+  "paid_api_cost": 0,
+  "download_cost": 0,
+  "remote_model_calls": 0,
+  "historical_p4_gpu_hours": "not reused as E0 authorization",
+  "resource_authorization": "User authorized E-drive/server access, but no separate E0 compute budget was recorded in the current prompt."
+}
+

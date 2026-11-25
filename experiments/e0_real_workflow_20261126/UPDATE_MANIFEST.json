@@ -1,0 +1,9 @@
+{
+  "schema": "mab2_e0_update_manifest_v1",
+  "status": "NOT_LOCKED_BLOCKED_ASSET",
+  "old_version": null,
+  "new_version": null,
+  "update_family": null,
+  "reason": "E0 requires the update rule to be frozen before observing outputs, but the primary task asset is unavailable."
+}
+

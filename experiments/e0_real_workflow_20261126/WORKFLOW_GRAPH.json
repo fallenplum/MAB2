@@ -1,0 +1,8 @@
+{
+  "schema": "mab2_e0_workflow_graph_v1",
+  "status": "NOT_BUILT_BLOCKED_ASSET",
+  "nodes": [],
+  "edges": [],
+  "reason": "The graph must be inferred from real execution traces. No eligible E0 task trace is available."
+}
+

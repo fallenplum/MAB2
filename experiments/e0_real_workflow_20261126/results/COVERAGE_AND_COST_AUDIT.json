@@ -1,0 +1,9 @@
+{
+  "schema": "mab2_e0_result_v1",
+  "status": "INCONCLUSIVE_BLOCKED_ASSET",
+  "expected_groups": 32,
+  "completed_groups": 0,
+  "new_gpu_hours": 0,
+  "paid_api_cost": 0
+}
+

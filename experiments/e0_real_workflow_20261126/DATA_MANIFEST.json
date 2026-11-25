@@ -1,0 +1,17 @@
+{
+  "schema": "mab2_e0_data_manifest_v1",
+  "status": "BLOCKED_ASSET",
+  "primary_task": "FActScore-style atomic factuality",
+  "groups_locked": 0,
+  "group_selection": "NOT_STARTED",
+  "reason": "No legal primary FActScore data and knowledge-source bundle is available in the inspected local assets.",
+  "excluded_candidates": [
+    "Qasper",
+    "LongBench v2",
+    "HotpotQA",
+    "historical QASC/SciQ/2Wiki"
+  ],
+  "sealed_data_read": false,
+  "gold_read": false
+}
+

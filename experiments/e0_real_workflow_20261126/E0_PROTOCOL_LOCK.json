@@ -1,0 +1,54 @@
+{
+  "schema": "mab2_e0_protocol_lock_v1",
+  "locked_at_utc": "2026-11-25T18:41:16.623004+00:00",
+  "status": "LOCKED_BLOCKED_ASSET",
+  "cycle": "E0-real-workflow-applicability-20261126",
+  "repository": "fallenplum/MAB2",
+  "branch_intent": "research/e0-real-workflow-applicability-20261126",
+  "base_commit": "0918cb5892a803ce8832de2a84734f68a0425d54",
+  "source_hashes": {
+    "MAB2_E0_Real_Workflow_Applicability_Prompt.md": "edf3b5ab5ba3536e6c437b108bd7d866062af3eb7e27e73a26efa3876ec7b91f",
+    "MAB2_AutoResearch_P4_AntiRewardHacking_Prompt.md": "bd9524b188331255ad81b279126612ced9063f20b222abd64b95d5dfaea7a7c2",
+    "AGENTS.md": "a8da9db5027f05b6087aceef2912828dd3952f6a796e603f167d41faae7ed596",
+    "experiments/p4_falsification_20261124/P4_STATE.json": "c3ac5dc4815edb23e73c49da6093c515272072847ee117864ac253577888a160",
+    "experiments/p2_multihop_20261124/p2_service_runner.py": "9e7642e143a3b3b2a069ccaaf33824bee5dd23c0a4dab03d9cc83b41e762d2f6",
+    "external_reference": {
+      "E0_prompt_sha256_from_authoritative_audit": "edf3b5ab5ba3536e6c437b108bd7d866062af3eb7e27e73a26efa3876ec7b91f",
+      "P4_prompt_sha256_from_authoritative_audit": "bd9524b188331255ad81b279126612ced9063f20b222abd64b95d5dfaea7a7c2",
+      "AGENTS_sha256_from_authoritative_audit": "a8da9db5027f05b6087aceef2912828dd3952f6a796e603f167d41faae7ed596"
+    }
+  },
+  "frozen_scope": [
+    "E0-A real workflow value",
+    "E0-B raw/canonical/semantic interface stability",
+    "E0-C propagation and joint recovery",
+    "E0-D fixed-threshold certificate and legal baselines",
+    "E0-E offline headroom diagnosis"
+  ],
+  "explicit_exclusions": [
+    "E1/E2/DGBR/Horizon-2 search",
+    "changing the P4 claim or historical P4 status",
+    "using HotpotQA, QASC, SciQ, 2Wiki or historical M60 as an E0 replacement",
+    "sealed labels, future outputs, or target leakage",
+    "new GPU or paid API execution before a separate E0 budget is recorded"
+  ],
+  "primary_task_contract": {
+    "task": "FActScore-style long-form atomic fact verification",
+    "required_groups": 32,
+    "calibration_groups": 16,
+    "diagnostic_groups": 16,
+    "threshold_service": {
+      "threshold": 0.8,
+      "weights": "unit",
+      "decision": "PASS/FAIL/UNRESOLVED"
+    }
+  },
+  "analysis_plan": "Do not choose an alternative task after observing asset availability or expected outcomes.",
+  "resource_policy": {
+    "new_gpu_hours": "UNAUTHORIZED_FOR_E0_AT_LOCK",
+    "paid_api_cost": 0,
+    "cpu_asset_audit": "allowed",
+    "remote_read_only_asset_audit": "user_authorized_but_execution_environment_blocked"
+  }
+}
+

@@ -1,0 +1,18 @@
+{
+  "schema": "mab2_e0_execution_versions_v1",
+  "status": "ASSET_AUDIT_ONLY",
+  "local_python": "not_locked",
+  "observed_server_environment_record": {
+    "python": "3.11.9",
+    "cuda_runtime": "12.8",
+    "torch": "2.9.1",
+    "transformers": "4.54.0",
+    "source": "E:\\图结构演化\\artifacts\\audit\\server_environment.json"
+  },
+  "models": [
+    "Qwen2.5-1.5B-Instruct",
+    "Qwen2.5-3B-Instruct"
+  ],
+  "selection": "not frozen because the primary task and evidence source are unavailable"
+}
+

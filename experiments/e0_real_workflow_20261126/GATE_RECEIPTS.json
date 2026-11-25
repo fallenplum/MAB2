@@ -1,0 +1,22 @@
+{
+  "schema": "mab2_e0_gate_receipts_v1",
+  "status": "INCONCLUSIVE_BLOCKED_ASSET",
+  "gates": {
+    "source_hash_lock": "PASS",
+    "fixed_threshold_cpu_certifier": "PASS",
+    "primary_asset": "BLOCKED_ASSET",
+    "budget_and_compute": "BLOCKED_RESOURCE_AUTHORIZATION",
+    "workflow_trace": "NOT_RUN",
+    "F_baselines": "NOT_RUN",
+    "D_baselines": "NOT_RUN",
+    "headroom": "NOT_RUN"
+  },
+  "p4_status_preserved": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
+  "prohibited_claims": [
+    "PASS_E0_DEV",
+    "G0_PASS",
+    "RESEARCH_SUCCESS",
+    "ACL readiness"
+  ]
+}
+

@@ -1,0 +1,73 @@
+{
+  "schema": "mab2_e0_asset_inventory_v1",
+  "audited_at_utc": "2026-11-25T18:41:16.623004+00:00",
+  "status": "BLOCKED_PRIMARY_ASSET",
+  "local_workspace": {
+    "root": "D:\\develop\\CV\\多臂老虎机",
+    "factscore_data": {
+      "status": "NOT_FOUND"
+    },
+    "factscore_official_code": {
+      "status": "NOT_MATERIALIZED"
+    },
+    "historical_assets": {
+      "status": "FOUND_BUT_INELIGIBLE_FOR_E0_PRIMARY",
+      "categories": [
+        "QASC",
+        "SciQ",
+        "Commonsense",
+        "2Wiki",
+        "HotpotQA",
+        "M60/P3 traces"
+      ],
+      "reason": "E0 freezes FActScore as the primary task and forbids substituting old traces."
+    }
+  },
+  "authorized_e_drive_read_only": {
+    "root": "E:\\图结构演化",
+    "status": "READ_ONLY_INVENTORY_COMPLETE",
+    "assets": [
+      {
+        "kind": "dataset",
+        "path": "E:\\图结构演化\\data\\raw\\qasper\\fdc9d8214fbab5dd782958601db4d678e6934a54",
+        "status": "AVAILABLE_EXCLUDED_PRIMARY_TASK",
+        "license": "CC BY 4.0",
+        "metadata_sha256": "c5a5b7abb6a0a91b2d9b173cdf1224d3d6e400b3d658d322acb67e12305dd5bf",
+        "reason": "Qasper is document QA, not FActScore-style atomic factuality."
+      },
+      {
+        "kind": "dataset",
+        "path": "E:\\图结构演化\\data\\raw\\longbench_v2\\2b48e494f2c7a2f0af81aae178e05c7e1dde0fe9",
+        "status": "AVAILABLE_EXCLUDED_PRIMARY_TASK",
+        "metadata_sha256": "9fdd1a3ebe86507253c124a18e9f78c898ce6341c12990af17ab868b8f600c35",
+        "reason": "No frozen atomic-fact verification contract in the current E0 scope."
+      },
+      {
+        "kind": "dataset",
+        "path": "E:\\图结构演化\\data\\raw\\hotpotqa\\1908d6afbbead072334abe2965f91bd2709910ab",
+        "status": "AVAILABLE_EXCLUDED_BY_PROMPT",
+        "metadata_sha256": "1cc3729536a8738b0fcd8e33accc849f95b8c3313b323359eafebd0d035db5f6",
+        "reason": "The E0 prompt explicitly excludes HotpotQA as the primary task."
+      },
+      {
+        "kind": "model",
+        "path": "E:\\图结构演化\\models\\Qwen2.5-1.5B-Instruct",
+        "status": "AVAILABLE_FOR_LATER_LOCK",
+        "config_sha256": "98d2ff8cc47488d08a2b0b3ac4feb99ef210779b42bd48605f6b8e36acdbf670"
+      },
+      {
+        "kind": "model",
+        "path": "E:\\图结构演化\\models\\Qwen2.5-3B-Instruct",
+        "status": "AVAILABLE_FOR_LATER_LOCK",
+        "config_sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b"
+      }
+    ]
+  },
+  "server": {
+    "status": "NOT_VERIFIED",
+    "reason": "The requested read-only SSH probe was denied by the current execution environment before a remote command ran.",
+    "no_remote_write_or_gpu_started": true
+  },
+  "decision": "No legal FActScore primary asset was verified. Do not silently switch to Qasper/LongBench/HotpotQA."
+}
+

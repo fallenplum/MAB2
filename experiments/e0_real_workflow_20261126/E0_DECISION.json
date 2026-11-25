@@ -1,0 +1,8 @@
+{
+  "schema": "mab2_e0_decision_v1",
+  "status": "BLOCKED_ASSET_INCONCLUSIVE",
+  "conclusion": "No evidence about real workflow reuse or headroom can be claimed before a legal FActScore primary asset is available.",
+  "recommendation": "Obtain the official FActScore human-annotated data and legal knowledge-source bundle, or obtain an explicit researcher-approved alternative protocol. Do not start E1 automatically.",
+  "p4_state_unchanged": true
+}
+

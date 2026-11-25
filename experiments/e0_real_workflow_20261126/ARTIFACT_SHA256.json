@@ -1,0 +1,37 @@
+{
+  "schema": "mab2_e0_artifact_sha256_v1",
+  "generated_at_utc": "2026-11-25T18:41:16.623004+00:00",
+  "files": {
+    "ASSET_INVENTORY.json": "b508bfd88624d0aa5ba095bf5eaa83288258a722f511577c814356d7660e494b",
+    "DATA_MANIFEST.json": "c4ebc92b3996c1063bdf742946260dae1a9371edae88b9cf62681f9972a76ed9",
+    "E0_BUDGET_LEDGER.json": "41c9d6291d0aa0d787d16cc6ec219481ec8109bd571003da63ce5ae6f455ea4c",
+    "E0_DECISION.json": "a57437a4fbc0404b70a968f9daab56ea448406fc4001ffe3e030b8f8d6d41d47",
+    "E0_FINAL_REPORT_ZH.md": "194d6776def4711c0a2f83b630eb6ee7fc177d2415af6f4059d3add9e3572a4b",
+    "E0_PROTOCOL_LOCK.json": "b45219903c961804413d1aafb3c70408291a43249a1ff08dc1ab6fe4f9e2dfc5",
+    "EXECUTION_VERSIONS.json": "400aa95caf73477465ff7aec82f7969636a8b1a241155f3fd127d6b8220c1bff",
+    "GATE_RECEIPTS.json": "58483172dae3abb163baac824ac5e74642af2d67aa063bb2bf5a99ca7770ef18",
+    "ISSUE_REGISTRY.jsonl": "0cfa63c54bbe488bdb3c27aa6d45e75e22e3f75ea2e40295bbe880edea0583cb",
+    "PROGRESS_LOG.jsonl": "ebc0a08b752b39578b29b60bb8b98d20505123ed99ff41849e4c3f8e29f487ee",
+    "REPRODUCE.md": "877c9d85ca8f174e4f61b51918bcc96d542acb51b630afaa27f42ce89ebe12f9",
+    "results/COVERAGE_AND_COST_AUDIT.json": "3b876f0a978caf8986b8eaea560fbe116fc4deb9ba301b07e0f66554f3c2f018",
+    "results/E0_A_WORKFLOW_VALUE.json": "31794e6d79f578179ad5229edb22e9b882f009961fac793eeb0a98380a55eb18",
+    "results/E0_B_INTERFACE_STABILITY.json": "1f78850532398951386f1aaf7660cf375727fa073eedd69ffbf7c8a9307a578e",
+    "results/E0_C_PROPAGATION_JOINT_RECOVERY.json": "9a1d3f15eefa4ad0999346645c2101b027bd8b1be8514db22327237bf90394aa",
+    "results/E0_D_BASELINE_CERTIFICATE.json": "81601b67774ae33e7c314b2a66f91babefdf6fc0a9ab9446a02f661dec197567",
+    "results/E0_E_HEADROOM.json": "3a7f13de54f2c578f315065d7ea5b3d7ac88b5d3c1adc8b92022ed89af6e1adf",
+    "results/FAILURE_CASES.jsonl": "5c379fb1265ca5f95d0caae3bde7cf9d1afbcc9cc820477b88b4e81f6f0f4ed6",
+    "results/PAIRED_GROUP_RESULTS.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scripts/build_e0_records.py": "500ae338dcef7dc048eaa31f81869ade045b67db2210731ddae075f04efef7f2",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/__pycache__/__init__.cpython-313.pyc": "d40499f1fafd13e8b97d78c11446237adb343d6c436e08820dcbbb4a43ffe892",
+    "src/__pycache__/e0_certificate.cpython-313.pyc": "7468a0e80a457563e1043203735e87b0897d96cca4c4df2f761d646024133bea",
+    "src/e0_certificate.py": "d76d43ba2099d51c68a0f32ba5cd54c05877d7957e0ed32104156e18bbdd988f",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/__pycache__/__init__.cpython-313.pyc": "300f385bede68147194f67a96f478bf01b213730cd1b18b66b58e804f85a7aee",
+    "tests/__pycache__/test_e0_certificate.cpython-313.pyc": "7543a4b77b79f2c1989a423edb47c11c144e57ed424f62356a00f375f0bbc899",
+    "tests/test_e0_certificate.py": "8e920b9f3b4cbdfe624390834275d35ff6f21401feeacfc02fc35e8958815140",
+    "UPDATE_MANIFEST.json": "cdf5097a7a28eff89f8aefd63e27f195dd29f43711cd6021fb87ff649c337559",
+    "WORKFLOW_GRAPH.json": "4736948583acbf0c8e649e40730eacc273101c4a078af6ae7556ab8b92a2a8f9"
+  }
+}
+
