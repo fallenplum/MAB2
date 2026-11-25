@@ -1,6 +1,6 @@
 {
   "schema": "mab2_e0_gate_receipts_v1",
-  "status": "INCONCLUSIVE_FULL_E0_OPEN",
+  "status": "INCONCLUSIVE_SMOKE_ONLY_FULL_E0_OPEN",
   "gates": {
     "source_hash_lock": "PASS",
     "fixed_threshold_cpu_certifier": "PASS",
@@ -10,7 +10,7 @@
     "F_baselines": "NOT_RUN",
     "D_baselines": "NOT_RUN",
     "headroom": "NOT_RUN",
-    "knowledge_source": "BLOCKED_ASSET",
+    "knowledge_source": "PASS_OFFICIAL_DB_READONLY",
     "group_selection": "PASS_32_DEVELOPMENT_GROUPS_LOCKED",
     "D_smoke": "PASS_DEVELOPMENT_ONLY"
   },
@@ -21,6 +21,6 @@
     "RESEARCH_SUCCESS",
     "ACL readiness"
   ],
-  "next": "Run all locked groups after smoke review; retain invalid prior run and parser fix."
+  "next": "Run all remaining locked groups and complete F/D baseline ledger."
 }
 
