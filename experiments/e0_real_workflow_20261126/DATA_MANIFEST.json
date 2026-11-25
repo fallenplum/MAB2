@@ -1,17 +1,29 @@
 {
-  "schema": "mab2_e0_data_manifest_v1",
-  "status": "BLOCKED_ASSET",
+  "schema": "mab2_e0_data_manifest_v2",
+  "status": "GROUPS_LOCKED_KNOWLEDGE_SOURCE_BLOCKED",
   "primary_task": "FActScore-style atomic factuality",
-  "groups_locked": 0,
-  "group_selection": "NOT_STARTED",
-  "reason": "No legal primary FActScore data and knowledge-source bundle is available in the inspected local assets.",
+  "groups_locked": 32,
+  "group_selection_manifest": "TOPIC_SELECTION_MANIFEST.json",
+  "source_model": "InstructGPT",
+  "source_data_file_sha256": "4ec1fa538a9f99606130c76db63d4af7f203ca460954a3edd7c4d0e385cd2d58",
+  "official_labeled_data": "AVAILABLE_PRIVATE_LOCAL",
+  "official_knowledge_source": "BLOCKED_20GB_OR_REMOTE_ACCESS",
+  "sealed_data_read": false,
+  "gold_read_by_online_methods": false,
+  "labels_available_only_to_posthoc_scorer": true,
   "excluded_candidates": [
     "Qasper",
     "LongBench v2",
     "HotpotQA",
     "historical QASC/SciQ/2Wiki"
   ],
-  "sealed_data_read": false,
-  "gold_read": false
+  "generated_at_utc": "2026-11-25T19:19:04.214216+00:00",
+  "version_pair": "UPDATE_MANIFEST.json",
+  "old_source_model": "InstructGPT",
+  "new_source_model": "ChatGPT",
+  "update_family": "subject_generator_checkpoint_update",
+  "F_fact_source": "official_model_atomic_facts",
+  "D_fact_source": "official_human_atomic_fact_text_only",
+  "D_label_visibility": "posthoc_only"
 }
 
