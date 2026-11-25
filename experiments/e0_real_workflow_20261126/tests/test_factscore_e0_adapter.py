@@ -60,6 +60,16 @@ class FactScoreAdapterTests(unittest.TestCase):
         self.assertEqual(parse_verdict("SUPPORT\\nTHE FACT"), 1)
         self.assertIsNone(parse_verdict("DECISION: UNS"))
 
+    def test_missing_frozen_facts_can_be_retained_as_invalid_group(self):
+        row = {"topic": "Example", "output": "Answer.", "annotations": None}
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "rows.jsonl"
+            path.write_text(json.dumps(row) + "\n", encoding="utf-8")
+            group_id = "e0g_" + hashlib.sha256(b"salt|Example").hexdigest()[:16]
+            group = load_online_groups(path, {group_id}, "salt", fact_source="human", allow_missing=True)[0]
+        self.assertEqual(group.atomic_facts, ())
+        self.assertEqual(group.decomposition_source, "INVALID_NO_FROZEN_FACTS")
+
 
 if __name__ == "__main__":
     unittest.main()
