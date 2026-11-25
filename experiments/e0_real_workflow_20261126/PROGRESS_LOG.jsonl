@@ -7,4 +7,9 @@
 {"timestamp_utc": "2026-11-25T19:19:04.214216+00:00", "event": "Metadata-only topic selection", "status": "PASS_32_GROUPS_LOCKED", "source": "InstructGPT labeled file", "online_gold_access": false}
 {"timestamp_utc": "2026-11-25T19:19:04.214216+00:00", "event": "Official enwiki knowledge source", "status": "BLOCKED_ASSET", "size": "20G", "gpu_started": false}
 {"timestamp_utc": "2026-11-25T19:19:04.214216+00:00", "event": "E0 stage decision", "status": "BLOCKED_KNOWLEDGE_SOURCE_INCONCLUSIVE", "next": "acquire/access enwiki-20230401.db"}
+{"event":"E0_SMOKE_4","status":"INVALID_IMPLEMENTATION_BUG","action":"preserved and excluded; rerun with corrected verdict parser"}
+{"timestamp_utc": "2026-11-25T21:02:18.179357+00:00", "event": "Official knowledge source downloaded and SQLite checked", "status": "PASS", "document_count": 6187531, "groups_smoke_checked": 4}
+{"timestamp_utc": "2026-11-25T21:02:18.179357+00:00", "event": "E0_SMOKE_4", "status": "INVALID_IMPLEMENTATION_BUG", "failure": "split unsupported parser"}
+{"timestamp_utc": "2026-11-25T21:02:18.179357+00:00", "event": "E0_SMOKE_4_RERUN_001", "status": "PASS_E0_SMOKE_DEV", "groups": 4, "model": "Qwen2.5-3B-Instruct"}
+{"timestamp_utc": "2026-11-25T21:02:18.179357+00:00", "event": "E0 stage decision", "status": "INCONCLUSIVE_SMOKE_ONLY", "next": "run remaining 28 locked groups"}
 
