@@ -1,8 +1,10 @@
 {
   "schema": "mab2_e0_result_v1",
-  "status": "BLOCKED_KNOWLEDGE_SOURCE",
+  "status": "DEVELOPMENT_FULL_NO_FLAT_BASELINE",
   "n_groups": 0,
   "reason": "Official labeled data locked, but the 20GB official knowledge source is unavailable; no model-call or baseline result generated.",
-  "groups_locked": 32
+  "groups_locked": 32,
+  "groups_completed": 32,
+  "note": "No strong flat/RAG comparison yet"
 }
 
