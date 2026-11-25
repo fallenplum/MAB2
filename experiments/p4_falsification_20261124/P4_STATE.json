@@ -6,7 +6,7 @@
   "gpu_run": "cycles/g0_real_runner_t01_001/results/T01_RESULT.json",
   "reason": "Development broker tests pass, but the first real Qwen chain probe used an unchanged evidence branch, so its cache-reuse assertion failed and it produced no post-edit calls. The failure is preserved; a full-resolved status defect was also found and fixed in development. G0 remains open.",
   "prompt_mismatch": "resolved_by_researcher_freeze_root_authoritative",
-  "branch": "research/p4-falsification-graph-voi-20261124",
+  "branch": "research/p4-g0-integrity-20261125",
   "next": "Continue G0 production-path and T01-T16 closure. Do not start formal candidate comparison until G0 and budget gates are satisfied.",
   "gpu_runs": [
     "cycles/g0_real_runner_t01_001/results/T01_RESULT.json",
@@ -57,5 +57,7 @@
       "artifact": "MAB2_recovered/interface_drift_rows1/qasc/SEALED.json",
       "effect": "No quality score or candidate decision was derived. Queue is ineligible for independent confirmation."
     }
-  ]
+  ],
+  "repository": "fallenplum/MAB2",
+  "repository_commit": "b0e83325c2c4e3ecbebfc911029fba41aa1a58e8"
 }
