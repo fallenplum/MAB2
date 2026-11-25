@@ -1,0 +1,189 @@
+{
+  "schema": "mab2_e0_smoke_summary_v1",
+  "status": "DEVELOPMENT_ONLY",
+  "run": "E0_SMOKE_4_RERUN_001",
+  "invalid_prior_run": "E0_SMOKE_4",
+  "groups": 4,
+  "model": "Qwen2.5-3B-Instruct",
+  "knowledge_source": "enwiki-20230401.db",
+  "old": {
+    "events": 99,
+    "cache_hits": 0,
+    "input_tokens": 122453,
+    "output_tokens": 288,
+    "latency_seconds": 38.0849800000251,
+    "unresolved": 4
+  },
+  "new_cold": {
+    "events": 124,
+    "cache_hits": 0,
+    "input_tokens": 153730,
+    "output_tokens": 362,
+    "latency_seconds": 47.29171659999702,
+    "unresolved": 7
+  },
+  "new_warm": {
+    "events": 124,
+    "cache_hits": 9,
+    "input_tokens": 141725,
+    "output_tokens": 339,
+    "latency_seconds": 44.686189499996544,
+    "unresolved": 7
+  },
+  "posthoc": {
+    "schema": "mab2_e0_smoke_posthoc_v1",
+    "online_run_status": "PASS_E0_SMOKE_DEV",
+    "labels_read_posthoc_only": true,
+    "old": {
+      "comparable_facts": 95,
+      "ambiguous_or_missing_targets": 4,
+      "accuracy": 0.6947368421052632,
+      "support_targets": 53,
+      "unsupported_targets": 42
+    },
+    "new_cold": {
+      "comparable_facts": 117,
+      "ambiguous_or_missing_targets": 7,
+      "accuracy": 0.7008547008547008,
+      "support_targets": 80,
+      "unsupported_targets": 37
+    },
+    "new_warm": {
+      "comparable_facts": 117,
+      "ambiguous_or_missing_targets": 7,
+      "accuracy": 0.7008547008547008,
+      "support_targets": 80,
+      "unsupported_targets": 37
+    }
+  },
+  "decisions": {
+    "old": {
+      "e0g_01be23e8b793f9a1": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 31,
+        "required_support": 25,
+        "supported": 8,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "e0g_040bf4fd22e2b0fb": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 18,
+        "required_support": 15,
+        "supported": 5,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "e0g_07449192ef94c68d": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 16,
+        "failed": 20,
+        "unknown": 2,
+        "reason": null
+      },
+      "e0g_0811023b0ccf8728": {
+        "status": "UNRESOLVED",
+        "decision": null,
+        "n": 12,
+        "required_support": 10,
+        "supported": 9,
+        "failed": 1,
+        "unknown": 2,
+        "reason": null
+      }
+    },
+    "new_cold": {
+      "e0g_01be23e8b793f9a1": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 16,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "e0g_040bf4fd22e2b0fb": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 10,
+        "failed": 19,
+        "unknown": 0,
+        "reason": null
+      },
+      "e0g_07449192ef94c68d": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 15,
+        "failed": 19,
+        "unknown": 4,
+        "reason": null
+      },
+      "e0g_0811023b0ccf8728": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 14,
+        "failed": 7,
+        "unknown": 3,
+        "reason": null
+      }
+    },
+    "new_warm": {
+      "e0g_01be23e8b793f9a1": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 16,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "e0g_040bf4fd22e2b0fb": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 10,
+        "failed": 19,
+        "unknown": 0,
+        "reason": null
+      },
+      "e0g_07449192ef94c68d": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 15,
+        "failed": 19,
+        "unknown": 4,
+        "reason": null
+      },
+      "e0g_0811023b0ccf8728": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 14,
+        "failed": 7,
+        "unknown": 3,
+        "reason": null
+      }
+    }
+  },
+  "warning": "Four-group development smoke only. Not full E0, not independent confirmation, and not an ACL claim."
+}
+
