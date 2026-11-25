@@ -36,6 +36,7 @@ def load_online_groups(
     group_ids: set[str],
     salt: str,
     fact_source: str = "model",
+    allow_missing: bool = False,
 ) -> list[OnlineFactGroup]:
     """Load only online-safe fields for the selected groups.
 
@@ -56,13 +57,13 @@ def load_online_groups(
             if group_id not in group_ids:
                 continue
             facts = []
-            for annotation in row.get("annotations", []):
+            for annotation in row.get("annotations") or []:
                 field = "model-atomic-facts" if fact_source == "model" else "human-atomic-facts"
-                for fact in annotation.get(field, []):
+                for fact in (annotation or {}).get(field) or []:
                     text = fact.get("text")
                     if isinstance(text, str) and text.strip():
                         facts.append(text.strip())
-            if not facts:
+            if not facts and not allow_missing:
                 raise ValueError(f"no frozen atomic facts for {group_id}")
             groups.append(
                 OnlineFactGroup(
@@ -73,8 +74,10 @@ def load_online_groups(
                     row_index,
                     decomposition_source=(
                         "official_model_atomic_facts"
-                        if fact_source == "model"
+                        if fact_source == "model" and facts
                         else "official_human_atomic_fact_text_only"
+                        if fact_source == "human" and facts
+                        else "INVALID_NO_FROZEN_FACTS"
                     ),
                 )
             )
