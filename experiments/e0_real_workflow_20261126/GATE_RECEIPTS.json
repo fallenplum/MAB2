@@ -1,17 +1,18 @@
 {
   "schema": "mab2_e0_gate_receipts_v1",
-  "status": "INCONCLUSIVE_KNOWLEDGE_SOURCE_BLOCKED",
+  "status": "INCONCLUSIVE_FULL_E0_OPEN",
   "gates": {
     "source_hash_lock": "PASS",
     "fixed_threshold_cpu_certifier": "PASS",
     "primary_asset": "PASS_OFFICIAL_CODE_AND_LABELED_DATA",
     "budget_and_compute": "BLOCKED_RESOURCE_AUTHORIZATION",
-    "workflow_trace": "NOT_RUN",
+    "workflow_trace": "PASS_E0_SMOKE_DEV_4_GROUPS",
     "F_baselines": "NOT_RUN",
     "D_baselines": "NOT_RUN",
     "headroom": "NOT_RUN",
     "knowledge_source": "BLOCKED_ASSET",
-    "group_selection": "PASS_32_DEVELOPMENT_GROUPS_LOCKED"
+    "group_selection": "PASS_32_DEVELOPMENT_GROUPS_LOCKED",
+    "D_smoke": "PASS_DEVELOPMENT_ONLY"
   },
   "p4_status_preserved": "G0_INCONCLUSIVE_INVALIDATING_ISSUES",
   "prohibited_claims": [
@@ -20,6 +21,6 @@
     "RESEARCH_SUCCESS",
     "ACL readiness"
   ],
-  "next": "Acquire or access enwiki-20230401.db, then build the E0 real adapter before any model calls."
+  "next": "Run all locked groups after smoke review; retain invalid prior run and parser fix."
 }
 
