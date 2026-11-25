@@ -1,0 +1,27 @@
+{
+  "schema": "mab2_e0_smoke_posthoc_v1",
+  "online_run_status": "PASS_E0_SMOKE_DEV",
+  "labels_read_posthoc_only": true,
+  "old": {
+    "comparable_facts": 95,
+    "ambiguous_or_missing_targets": 4,
+    "accuracy": 0.6947368421052632,
+    "support_targets": 53,
+    "unsupported_targets": 42
+  },
+  "new_cold": {
+    "comparable_facts": 117,
+    "ambiguous_or_missing_targets": 7,
+    "accuracy": 0.7008547008547008,
+    "support_targets": 80,
+    "unsupported_targets": 37
+  },
+  "new_warm": {
+    "comparable_facts": 117,
+    "ambiguous_or_missing_targets": 7,
+    "accuracy": 0.7008547008547008,
+    "support_targets": 80,
+    "unsupported_targets": 37
+  }
+}
+
