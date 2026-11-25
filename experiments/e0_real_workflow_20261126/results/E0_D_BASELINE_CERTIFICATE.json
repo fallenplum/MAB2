@@ -1,12 +1,22 @@
 {
   "schema": "mab2_e0_result_v1",
-  "status": "DEVELOPMENT_SMOKE_ONLY",
+  "status": "DEVELOPMENT_FULL_WITH_ACTUAL_STRICT_GATE",
   "reason": "Official labeled data locked, but the 20GB official knowledge source is unavailable; no model-call or baseline result generated.",
   "groups_locked": 32,
   "smoke_summary": "results/E0_SMOKE_4_SUMMARY.json",
   "groups_completed": 4,
   "groups_remaining": 28,
   "quality_metric": "posthoc fact-label accuracy only",
-  "note": "No full E0 baseline comparison or independent confirmation."
+  "note": "No full E0 baseline comparison or independent confirmation.",
+  "summary": "results/E0_FULL_32_SUMMARY.json",
+  "valid_groups": 30,
+  "invalid_groups": [
+    "e0g_154ac3f7f522d230",
+    "e0g_178046edc16d7aec"
+  ],
+  "strict_gate_summary": "results/E0_STRICT_GATE_SUMMARY.json",
+  "baseline_comparison": "results/E0_BASELINE_COMPARISON_SUMMARY.json",
+  "strict_gate_action_errors": 17,
+  "full_cold_action_errors": 7
 }
 
