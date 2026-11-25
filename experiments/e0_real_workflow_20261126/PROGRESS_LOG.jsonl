@@ -13,4 +13,10 @@
 {"timestamp_utc": "2026-11-25T21:02:18.179357+00:00", "event": "E0_SMOKE_4_RERUN_001", "status": "PASS_E0_SMOKE_DEV", "groups": 4, "model": "Qwen2.5-3B-Instruct"}
 {"timestamp_utc": "2026-11-25T21:02:18.179357+00:00", "event": "E0 stage decision", "status": "INCONCLUSIVE_SMOKE_ONLY", "next": "run remaining 28 locked groups"}
 {"timestamp_utc": "2026-11-25T21:09:43.901842+00:00", "event": "Knowledge source download and SQLite validation", "status": "PASS", "bytes": 21924696064, "document_count": 6187531}
+{"timestamp_utc": "2026-11-25T21:34:22.805468+00:00", "event": "E0_FULL_32", "status": "PASS_E0_SMOKE_DEV", "groups": 32, "valid_pairwise_groups": 30}
+{"timestamp_utc": "2026-11-25T21:34:22.805468+00:00", "event": "E0_FULL_32 interpretation", "status": "INCONCLUSIVE_DIRECTIONAL_DEVELOPMENT", "raw_cache_hits": 70, "decision_changes": 1}
+{"timestamp_utc": "2026-11-25T21:34:22.805468+00:00", "event": "E0 next baseline gate", "status": "OPEN", "next": "canonical/stale/strict-gate/strong-flat"}
+{"timestamp_utc": "2026-11-25T21:40:24.120057+00:00", "event": "E0_STRICT_GATE_COLD_32", "status": "PASS_E0_STRICT_GATE_DEV", "input_tokens": 33861, "decision_errors": 17}
+{"timestamp_utc": "2026-11-25T21:40:24.120057+00:00", "event": "E0_STRICT_GATE_CANONICAL_32", "status": "PASS_E0_STRICT_GATE_DEV", "input_tokens": 18448, "decision_errors": 17}
+{"timestamp_utc": "2026-11-25T21:40:24.120057+00:00", "event": "E0 strict gate interpretation", "status": "INCONCLUSIVE_ACTION_RISK", "next": "strong-flat/stale baselines"}
 
