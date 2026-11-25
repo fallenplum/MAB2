@@ -30,3 +30,15 @@ FActScore 人工标注数据已经具备，但完整 F/D 服务还需要官方�
 - `INVALID`: 无新的 E0 结果；历史 P4/P3 负结果保持原状态。
 
 
+## 7. 32 组开发运行结果
+
+完整锁定运行覆盖 32 组，30 组具有可配对的旧/新固定事实分解，2 组因新版本缺少冻结事实分解被保留为 `INVALID`。旧版本产生 777 个事实事件，新版本产生 1073 个事实事件，warm cache 命中 70 个事件，占新事件的 6.52%。warm 相对新版本冷启动减少 7.28% 输入 token，减少 4.13% verifier latency。后置可比事实准确率为旧 69.79%、新冷启动 68.11%，warm 与新冷启动相同。有效组中只有 1 组最终 PASS/FAIL/UNRESOLVED 动作发生变化。
+
+这些结果是开发数据上的机制诊断。当前工作流表现为按主题检索后逐事实扇出，没有建立非平凡共享动态祖先，因此 E0-C 不把它冒充深层图传播。强 flat、stale、canonical cache、strict gate 和独立 headroom 仍待完成。
+
+## 8. Strict-gate 基线
+
+在同一 32 组开发数据上实际运行了 cold strict-gate 和 canonical-cache strict-gate。cold strict-gate 只产生 30 个有效组事件、33861 个输入 token，canonical strict-gate 产生 18448 个输入 token。相对新版本冷启动的 1259696 个输入 token，节省分别为 97.31% 和 98.54%。但相对人工标签构造的固定 D 目标，两个 strict-gate 方法各有 17/30 个有效组动作错误，而新版本完整冷启动为 7/30 个错误。
+
+这说明证书早停的成本收益伴随明显的动作风险。当前不能把节省数字解释成有效算法收益，也不能把 replay-only 的 stale 或 canonical full 结果当作独立在线结果。强 flat/RAG 和完整 stale 质量对照仍需补齐。
+
