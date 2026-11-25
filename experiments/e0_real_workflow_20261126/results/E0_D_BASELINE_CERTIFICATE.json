@@ -1,7 +1,12 @@
 {
   "schema": "mab2_e0_result_v1",
-  "status": "BLOCKED_KNOWLEDGE_SOURCE",
+  "status": "DEVELOPMENT_SMOKE_ONLY",
   "reason": "Official labeled data locked, but the 20GB official knowledge source is unavailable; no model-call or baseline result generated.",
-  "groups_locked": 32
+  "groups_locked": 32,
+  "smoke_summary": "results/E0_SMOKE_4_SUMMARY.json",
+  "groups_completed": 4,
+  "groups_remaining": 28,
+  "quality_metric": "posthoc fact-label accuracy only",
+  "note": "No full E0 baseline comparison or independent confirmation."
 }
 
