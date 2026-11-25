@@ -350,7 +350,7 @@ python experiments/e0_real_workflow_20261126/tests/test_e0_certificate.py
     # Hash all generated files except the hash index itself.
     hashes = {}
     for path in sorted(ROOT.rglob("*")):
-        if path.is_file() and path.name != "ARTIFACT_SHA256.json" and "__pycache__" not in path.parts:
+        if path.is_file() and path.name != "ARTIFACT_SHA256.json" and "__pycache__" not in path.parts and "external" not in path.parts:
             hashes[str(path.relative_to(ROOT)).replace("\\", "/")] = sha256(path)
     write_json("ARTIFACT_SHA256.json", {"schema": "mab2_e0_artifact_sha256_v1", "generated_at_utc": now, "files": hashes})
 
