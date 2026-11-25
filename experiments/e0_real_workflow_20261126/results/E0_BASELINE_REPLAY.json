@@ -1,0 +1,2482 @@
+{
+  "schema": "mab2_e0_baseline_replay_v1",
+  "status": "REPLAY_DEVELOPMENT_ONLY",
+  "online_labels_or_costs_changed": false,
+  "methods": [
+    "stale",
+    "new_cold",
+    "new_warm",
+    "canonical_full_replay",
+    "strict_gate_cold_replay",
+    "canonical_strict_gate_replay"
+  ],
+  "rows": [
+    {
+      "group_id": "e0g_01be23e8b793f9a1",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 31,
+        "required_support": 25,
+        "supported": 8,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 16,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 16,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 31,
+        "required_support": 25,
+        "supported": 8,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 16,
+        "failed": 17,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 28292,
+        "new_warm_input_tokens": 26582,
+        "canonical_full_input_tokens_replay": 25727,
+        "strict_gate_cold_input_tokens_replay": 855,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 99,
+        "new_warm_output_tokens": 93,
+        "canonical_full_output_tokens_replay": 90,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_040bf4fd22e2b0fb",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 18,
+        "required_support": 15,
+        "supported": 5,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 10,
+        "failed": 19,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 10,
+        "failed": 19,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 18,
+        "required_support": 15,
+        "supported": 5,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 10,
+        "failed": 19,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 41740,
+        "new_warm_input_tokens": 40301,
+        "canonical_full_input_tokens_replay": 40301,
+        "strict_gate_cold_input_tokens_replay": 1436,
+        "canonical_strict_gate_input_tokens_replay": 1436,
+        "new_cold_output_tokens": 87,
+        "new_warm_output_tokens": 84,
+        "canonical_full_output_tokens_replay": 84,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_07449192ef94c68d",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 16,
+        "failed": 20,
+        "unknown": 2,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 15,
+        "failed": 19,
+        "unknown": 4,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 15,
+        "failed": 19,
+        "unknown": 4,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 16,
+        "failed": 20,
+        "unknown": 2,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 15,
+        "failed": 19,
+        "unknown": 4
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 55906,
+        "new_warm_input_tokens": 47050,
+        "canonical_full_input_tokens_replay": 47050,
+        "strict_gate_cold_input_tokens_replay": 1479,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 104,
+        "new_warm_output_tokens": 90,
+        "canonical_full_output_tokens_replay": 90,
+        "strict_gate_cold_output_tokens_replay": 2,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_0811023b0ccf8728",
+      "old": {
+        "status": "UNRESOLVED",
+        "decision": null,
+        "n": 12,
+        "required_support": 10,
+        "supported": 9,
+        "failed": 1,
+        "unknown": 2,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 14,
+        "failed": 7,
+        "unknown": 3,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 14,
+        "failed": 7,
+        "unknown": 3,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "UNRESOLVED",
+        "decision": null,
+        "n": 12,
+        "required_support": 10,
+        "supported": 9,
+        "failed": 1,
+        "unknown": 2,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 14,
+        "failed": 7,
+        "unknown": 3
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 27792,
+        "new_warm_input_tokens": 27792,
+        "canonical_full_input_tokens_replay": 27792,
+        "strict_gate_cold_input_tokens_replay": 1154,
+        "canonical_strict_gate_input_tokens_replay": 1154,
+        "new_cold_output_tokens": 72,
+        "new_warm_output_tokens": 72,
+        "canonical_full_output_tokens_replay": 72,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_087b0296b0468b78",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 25,
+        "required_support": 20,
+        "supported": 3,
+        "failed": 22,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 6,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 6,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 25,
+        "required_support": 20,
+        "supported": 3,
+        "failed": 22,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 6,
+        "failed": 23,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 15237,
+        "new_warm_input_tokens": 15237,
+        "canonical_full_input_tokens_replay": 15237,
+        "strict_gate_cold_input_tokens_replay": 524,
+        "canonical_strict_gate_input_tokens_replay": 524,
+        "new_cold_output_tokens": 87,
+        "new_warm_output_tokens": 87,
+        "canonical_full_output_tokens_replay": 87,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_088f5725ed26d950",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 30,
+        "required_support": 24,
+        "supported": 15,
+        "failed": 14,
+        "unknown": 1,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 25,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 25,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 30,
+        "required_support": 24,
+        "supported": 15,
+        "failed": 14,
+        "unknown": 1,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 25,
+        "failed": 13,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 55358,
+        "new_warm_input_tokens": 55358,
+        "canonical_full_input_tokens_replay": 53840,
+        "strict_gate_cold_input_tokens_replay": 1517,
+        "canonical_strict_gate_input_tokens_replay": 1517,
+        "new_cold_output_tokens": 109,
+        "new_warm_output_tokens": 109,
+        "canonical_full_output_tokens_replay": 106,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_0a89a1d4b9d89d96",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 12,
+        "failed": 11,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 43,
+        "required_support": 35,
+        "supported": 20,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 43,
+        "required_support": 35,
+        "supported": 20,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 12,
+        "failed": 11,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 43,
+        "required_support": 35,
+        "supported": 20,
+        "failed": 23,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 62269,
+        "new_warm_input_tokens": 59352,
+        "canonical_full_input_tokens_replay": 59352,
+        "strict_gate_cold_input_tokens_replay": 1489,
+        "canonical_strict_gate_input_tokens_replay": 1489,
+        "new_cold_output_tokens": 126,
+        "new_warm_output_tokens": 120,
+        "canonical_full_output_tokens_replay": 120,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_0bce491ee68766f4",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 18,
+        "required_support": 15,
+        "supported": 5,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 41,
+        "required_support": 33,
+        "supported": 11,
+        "failed": 30,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 41,
+        "required_support": 33,
+        "supported": 11,
+        "failed": 30,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 18,
+        "required_support": 15,
+        "supported": 5,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 41,
+        "required_support": 33,
+        "supported": 11,
+        "failed": 30,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 54467,
+        "new_warm_input_tokens": 53206,
+        "canonical_full_input_tokens_replay": 53206,
+        "strict_gate_cold_input_tokens_replay": 1261,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 122,
+        "new_warm_output_tokens": 119,
+        "canonical_full_output_tokens_replay": 119,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_0df512412e9aca7b",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 15,
+        "required_support": 12,
+        "supported": 1,
+        "failed": 14,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 16,
+        "required_support": 13,
+        "supported": 2,
+        "failed": 14,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 16,
+        "required_support": 13,
+        "supported": 2,
+        "failed": 14,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 15,
+        "required_support": 12,
+        "supported": 1,
+        "failed": 14,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 16,
+        "required_support": 13,
+        "supported": 2,
+        "failed": 14,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 3386,
+        "new_warm_input_tokens": 3177,
+        "canonical_full_input_tokens_replay": 3177,
+        "strict_gate_cold_input_tokens_replay": 209,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 48,
+        "new_warm_output_tokens": 45,
+        "canonical_full_output_tokens_replay": 45,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_0dff82076c53261a",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 31,
+        "required_support": 25,
+        "supported": 5,
+        "failed": 26,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 12,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 12,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 31,
+        "required_support": 25,
+        "supported": 5,
+        "failed": 26,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 12,
+        "failed": 12,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 35264,
+        "new_warm_input_tokens": 32463,
+        "canonical_full_input_tokens_replay": 32463,
+        "strict_gate_cold_input_tokens_replay": 1477,
+        "canonical_strict_gate_input_tokens_replay": 1477,
+        "new_cold_output_tokens": 71,
+        "new_warm_output_tokens": 65,
+        "canonical_full_output_tokens_replay": 65,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_0f4ccce9918b38a6",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 6,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 34,
+        "required_support": 28,
+        "supported": 11,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 34,
+        "required_support": 28,
+        "supported": 11,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 6,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 34,
+        "required_support": 28,
+        "supported": 11,
+        "failed": 23,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 50404,
+        "new_warm_input_tokens": 43030,
+        "canonical_full_input_tokens_replay": 43030,
+        "strict_gate_cold_input_tokens_replay": 1490,
+        "canonical_strict_gate_input_tokens_replay": 1490,
+        "new_cold_output_tokens": 99,
+        "new_warm_output_tokens": 85,
+        "canonical_full_output_tokens_replay": 85,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_11114f9db8d126a6",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 16,
+        "required_support": 13,
+        "supported": 6,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 9,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 9,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 16,
+        "required_support": 13,
+        "supported": 6,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 9,
+        "failed": 12,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 29685,
+        "new_warm_input_tokens": 26855,
+        "canonical_full_input_tokens_replay": 26855,
+        "strict_gate_cold_input_tokens_replay": 1412,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 59,
+        "new_warm_output_tokens": 54,
+        "canonical_full_output_tokens_replay": 54,
+        "strict_gate_cold_output_tokens_replay": 2,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_1274f15b9224093e",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 8,
+        "failed": 13,
+        "unknown": 3,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 39,
+        "required_support": 32,
+        "supported": 12,
+        "failed": 25,
+        "unknown": 2,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 39,
+        "required_support": 32,
+        "supported": 12,
+        "failed": 25,
+        "unknown": 2,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 24,
+        "required_support": 20,
+        "supported": 8,
+        "failed": 13,
+        "unknown": 3,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 39,
+        "required_support": 32,
+        "supported": 12,
+        "failed": 25,
+        "unknown": 2
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 58290,
+        "new_warm_input_tokens": 52280,
+        "canonical_full_input_tokens_replay": 52280,
+        "strict_gate_cold_input_tokens_replay": 1505,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 116,
+        "new_warm_output_tokens": 104,
+        "canonical_full_output_tokens_replay": 104,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_1511ad284aa1f5f1",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 13,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 63,
+        "required_support": 51,
+        "supported": 22,
+        "failed": 41,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 63,
+        "required_support": 51,
+        "supported": 22,
+        "failed": 41,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 13,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 63,
+        "required_support": 51,
+        "supported": 22,
+        "failed": 41,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 77216,
+        "new_warm_input_tokens": 72321,
+        "canonical_full_input_tokens_replay": 72321,
+        "strict_gate_cold_input_tokens_replay": 1223,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 189,
+        "new_warm_output_tokens": 177,
+        "canonical_full_output_tokens_replay": 177,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_15ae96525fb23c7c",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 20,
+        "required_support": 16,
+        "supported": 8,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 35,
+        "required_support": 28,
+        "supported": 17,
+        "failed": 18,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 35,
+        "required_support": 28,
+        "supported": 17,
+        "failed": 18,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 20,
+        "required_support": 16,
+        "supported": 8,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 35,
+        "required_support": 28,
+        "supported": 17,
+        "failed": 18,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 20513,
+        "new_warm_input_tokens": 19930,
+        "canonical_full_input_tokens_replay": 19930,
+        "strict_gate_cold_input_tokens_replay": 585,
+        "canonical_strict_gate_input_tokens_replay": 585,
+        "new_cold_output_tokens": 105,
+        "new_warm_output_tokens": 102,
+        "canonical_full_output_tokens_replay": 102,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_1650be3a68b8fea0",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 10,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 13,
+        "failed": 20,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 13,
+        "failed": 20,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 10,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 13,
+        "failed": 20,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 47996,
+        "new_warm_input_tokens": 43575,
+        "canonical_full_input_tokens_replay": 43575,
+        "strict_gate_cold_input_tokens_replay": 1477,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 91,
+        "new_warm_output_tokens": 83,
+        "canonical_full_output_tokens_replay": 83,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_1a1e986e5fe0fa69",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 0,
+        "failed": 21,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 45,
+        "required_support": 36,
+        "supported": 0,
+        "failed": 45,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 45,
+        "required_support": 36,
+        "supported": 0,
+        "failed": 45,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 0,
+        "failed": 21,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 45,
+        "required_support": 36,
+        "supported": 0,
+        "failed": 45,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 16832,
+        "new_warm_input_tokens": 16832,
+        "canonical_full_input_tokens_replay": 16832,
+        "strict_gate_cold_input_tokens_replay": 374,
+        "canonical_strict_gate_input_tokens_replay": 374,
+        "new_cold_output_tokens": 135,
+        "new_warm_output_tokens": 135,
+        "canonical_full_output_tokens_replay": 135,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_1c13ed4d036ec5d2",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 7,
+        "failed": 16,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 17,
+        "failed": 20,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 17,
+        "failed": 20,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 7,
+        "failed": 16,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 17,
+        "failed": 20,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 53857,
+        "new_warm_input_tokens": 49480,
+        "canonical_full_input_tokens_replay": 49480,
+        "strict_gate_cold_input_tokens_replay": 1487,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 107,
+        "new_warm_output_tokens": 98,
+        "canonical_full_output_tokens_replay": 98,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_1c6a6ba1678c7d1b",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 13,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 25,
+        "required_support": 20,
+        "supported": 13,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 25,
+        "required_support": 20,
+        "supported": 13,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 13,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 25,
+        "required_support": 20,
+        "supported": 13,
+        "failed": 12,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 20003,
+        "new_warm_input_tokens": 17606,
+        "canonical_full_input_tokens_replay": 17606,
+        "strict_gate_cold_input_tokens_replay": 799,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 75,
+        "new_warm_output_tokens": 66,
+        "canonical_full_output_tokens_replay": 66,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_1c7d158437c26235",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 11,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 30,
+        "required_support": 24,
+        "supported": 17,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 30,
+        "required_support": 24,
+        "supported": 17,
+        "failed": 13,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 11,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 30,
+        "required_support": 24,
+        "supported": 18,
+        "failed": 12,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 42862,
+        "new_warm_input_tokens": 42862,
+        "canonical_full_input_tokens_replay": 41447,
+        "strict_gate_cold_input_tokens_replay": 1436,
+        "canonical_strict_gate_input_tokens_replay": 1436,
+        "new_cold_output_tokens": 86,
+        "new_warm_output_tokens": 86,
+        "canonical_full_output_tokens_replay": 83,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_21bb5acda95a0362",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 17,
+        "required_support": 14,
+        "supported": 0,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 0,
+        "failed": 29,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 0,
+        "failed": 29,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 17,
+        "required_support": 14,
+        "supported": 0,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 0,
+        "failed": 29,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 6817,
+        "new_warm_input_tokens": 6817,
+        "canonical_full_input_tokens_replay": 6817,
+        "strict_gate_cold_input_tokens_replay": 235,
+        "canonical_strict_gate_input_tokens_replay": 235,
+        "new_cold_output_tokens": 87,
+        "new_warm_output_tokens": 87,
+        "canonical_full_output_tokens_replay": 87,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_21f9c820d87521e2",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 17,
+        "failed": 6,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 18,
+        "failed": 19,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 18,
+        "failed": 19,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 23,
+        "required_support": 19,
+        "supported": 17,
+        "failed": 6,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 18,
+        "failed": 19,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 35974,
+        "new_warm_input_tokens": 32089,
+        "canonical_full_input_tokens_replay": 32089,
+        "strict_gate_cold_input_tokens_replay": 970,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 111,
+        "new_warm_output_tokens": 99,
+        "canonical_full_output_tokens_replay": 99,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_227ca1a8d8364071",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 12,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 43,
+        "required_support": 35,
+        "supported": 15,
+        "failed": 28,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 43,
+        "required_support": 35,
+        "supported": 15,
+        "failed": 28,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 29,
+        "required_support": 24,
+        "supported": 12,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 43,
+        "required_support": 35,
+        "supported": 15,
+        "failed": 28,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 63521,
+        "new_warm_input_tokens": 59196,
+        "canonical_full_input_tokens_replay": 59196,
+        "strict_gate_cold_input_tokens_replay": 1489,
+        "canonical_strict_gate_input_tokens_replay": 1489,
+        "new_cold_output_tokens": 128,
+        "new_warm_output_tokens": 119,
+        "canonical_full_output_tokens_replay": 119,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_2448b3d7d0a335a1",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 30,
+        "required_support": 24,
+        "supported": 8,
+        "failed": 22,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 35,
+        "required_support": 28,
+        "supported": 12,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 35,
+        "required_support": 28,
+        "supported": 12,
+        "failed": 23,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 30,
+        "required_support": 24,
+        "supported": 8,
+        "failed": 22,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 35,
+        "required_support": 28,
+        "supported": 12,
+        "failed": 23,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 50472,
+        "new_warm_input_tokens": 40410,
+        "canonical_full_input_tokens_replay": 40410,
+        "strict_gate_cold_input_tokens_replay": 1441,
+        "canonical_strict_gate_input_tokens_replay": 1441,
+        "new_cold_output_tokens": 100,
+        "new_warm_output_tokens": 81,
+        "canonical_full_output_tokens_replay": 81,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_255f624d4ae006ac",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 12,
+        "failed": 25,
+        "unknown": 1,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 53,
+        "required_support": 43,
+        "supported": 14,
+        "failed": 38,
+        "unknown": 1,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 53,
+        "required_support": 43,
+        "supported": 14,
+        "failed": 38,
+        "unknown": 1,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 38,
+        "required_support": 31,
+        "supported": 12,
+        "failed": 25,
+        "unknown": 1,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 53,
+        "required_support": 43,
+        "supported": 15,
+        "failed": 37,
+        "unknown": 1
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 78342,
+        "new_warm_input_tokens": 69651,
+        "canonical_full_input_tokens_replay": 68167,
+        "strict_gate_cold_input_tokens_replay": 1250,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 158,
+        "new_warm_output_tokens": 140,
+        "canonical_full_output_tokens_replay": 137,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_2797a3a90bbd440e",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 23,
+        "required_support": 19,
+        "supported": 20,
+        "failed": 3,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 54,
+        "required_support": 44,
+        "supported": 44,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 54,
+        "required_support": 44,
+        "supported": 44,
+        "failed": 10,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 23,
+        "required_support": 19,
+        "supported": 20,
+        "failed": 3,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 54,
+        "required_support": 44,
+        "supported": 44,
+        "failed": 10,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 80288,
+        "new_warm_input_tokens": 71379,
+        "canonical_full_input_tokens_replay": 71379,
+        "strict_gate_cold_input_tokens_replay": 1486,
+        "canonical_strict_gate_input_tokens_replay": 0,
+        "new_cold_output_tokens": 158,
+        "new_warm_output_tokens": 141,
+        "canonical_full_output_tokens_replay": 141,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 0
+      }
+    },
+    {
+      "group_id": "e0g_2c56c45b48a43bd5",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 13,
+        "required_support": 11,
+        "supported": 1,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 36,
+        "required_support": 29,
+        "supported": 6,
+        "failed": 30,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 36,
+        "required_support": 29,
+        "supported": 6,
+        "failed": 30,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 13,
+        "required_support": 11,
+        "supported": 1,
+        "failed": 12,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 36,
+        "required_support": 29,
+        "supported": 6,
+        "failed": 30,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 36949,
+        "new_warm_input_tokens": 35924,
+        "canonical_full_input_tokens_replay": 35924,
+        "strict_gate_cold_input_tokens_replay": 1026,
+        "canonical_strict_gate_input_tokens_replay": 1026,
+        "new_cold_output_tokens": 108,
+        "new_warm_output_tokens": 105,
+        "canonical_full_output_tokens_replay": 105,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_2caa6981d5b5c4c1",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 32,
+        "required_support": 26,
+        "supported": 0,
+        "failed": 32,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 0,
+        "failed": 33,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 0,
+        "failed": 33,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 32,
+        "required_support": 26,
+        "supported": 0,
+        "failed": 32,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 33,
+        "required_support": 27,
+        "supported": 0,
+        "failed": 33,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 20760,
+        "new_warm_input_tokens": 19508,
+        "canonical_full_input_tokens_replay": 18883,
+        "strict_gate_cold_input_tokens_replay": 637,
+        "canonical_strict_gate_input_tokens_replay": 637,
+        "new_cold_output_tokens": 99,
+        "new_warm_output_tokens": 93,
+        "canonical_full_output_tokens_replay": 90,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_2e55c99b466b3599",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 4,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 28,
+        "required_support": 23,
+        "supported": 1,
+        "failed": 27,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 28,
+        "required_support": 23,
+        "supported": 1,
+        "failed": 27,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 21,
+        "required_support": 17,
+        "supported": 4,
+        "failed": 17,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 28,
+        "required_support": 23,
+        "supported": 1,
+        "failed": 27,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 1,
+        "required_support": 1,
+        "supported": 0,
+        "failed": 1,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 18334,
+        "new_warm_input_tokens": 18334,
+        "canonical_full_input_tokens_replay": 18334,
+        "strict_gate_cold_input_tokens_replay": 654,
+        "canonical_strict_gate_input_tokens_replay": 654,
+        "new_cold_output_tokens": 84,
+        "new_warm_output_tokens": 84,
+        "canonical_full_output_tokens_replay": 84,
+        "strict_gate_cold_output_tokens_replay": 3,
+        "canonical_strict_gate_output_tokens_replay": 3
+      }
+    },
+    {
+      "group_id": "e0g_2f4637ee6a9724c1",
+      "old": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 6,
+        "failed": 31,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_cold": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 48,
+        "required_support": 39,
+        "supported": 11,
+        "failed": 37,
+        "unknown": 0,
+        "reason": null
+      },
+      "new_warm": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 48,
+        "required_support": 39,
+        "supported": 11,
+        "failed": 37,
+        "unknown": 0,
+        "reason": null
+      },
+      "stale_action": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 37,
+        "required_support": 30,
+        "supported": 6,
+        "failed": 31,
+        "unknown": 0,
+        "reason": null
+      },
+      "canonical_full": {
+        "status": "CERTIFIED",
+        "decision": "FAIL",
+        "n": 48,
+        "required_support": 39,
+        "supported": 11,
+        "failed": 37,
+        "unknown": 0
+      },
+      "strict_gate_cold": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "canonical_strict_gate": {
+        "status": "CERTIFIED",
+        "decision": "PASS",
+        "n": 1,
+        "required_support": 1,
+        "supported": 1,
+        "failed": 0,
+        "unknown": 0
+      },
+      "costs": {
+        "new_cold_input_tokens": 70870,
+        "new_warm_input_tokens": 69348,
+        "canonical_full_input_tokens_replay": 69348,
+        "strict_gate_cold_input_tokens_replay": 1484,
+        "canonical_strict_gate_input_tokens_replay": 1484,
+        "new_cold_output_tokens": 137,
+        "new_warm_output_tokens": 134,
+        "canonical_full_output_tokens_replay": 134,
+        "strict_gate_cold_output_tokens_replay": 2,
+        "canonical_strict_gate_output_tokens_replay": 2
+      }
+    }
+  ],
+  "caveats": [
+    "Replay uses completed full-run labels and costs after the online run",
+    "No strong flat/RAG run",
+    "No independent confirmation",
+    "Do not interpret replay-only policies as deployed algorithms"
+  ]
+}
+
