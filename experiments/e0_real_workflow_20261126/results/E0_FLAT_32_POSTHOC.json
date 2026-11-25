@@ -1,0 +1,12 @@
+{
+  "schema": "mab2_e0_flat_posthoc_v1",
+  "status": "DEVELOPMENT_ONLY",
+  "groups": 30,
+  "input_tokens": 121627,
+  "output_tokens": 90,
+  "decision_errors": 30,
+  "invalid_groups": 2,
+  "truth_comparable_groups": 30,
+  "warning": "Group-level flat RAG baseline is development-only and uses fixed human fact text without online labels."
+}
+
