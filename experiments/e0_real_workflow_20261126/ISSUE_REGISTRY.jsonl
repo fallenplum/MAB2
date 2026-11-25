@@ -4,4 +4,5 @@
 {"id": "E0-004", "severity": "MAJOR", "status": "OPEN", "issue": "Qasper, LongBench v2 and HotpotQA are available but are not authorized substitutes for the frozen primary task."}
 {"id": "E0-005", "severity": "MAJOR", "status": "OPEN", "issue": "No E0-specific compute budget or model-call authorization has been recorded."}
 {"id": "E0-006", "severity": "INFO", "status": "CLOSED", "issue": "Fixed-threshold CPU certifier was implemented and mutation-tested without target or gold access."}
+{"id":"E0-007","severity":"BLOCKER","status":"OPEN","issue":"Official enwiki-20230401.db knowledge source is approximately 20GB and remains unavailable locally; server access is blocked by the current execution environment."}
 
