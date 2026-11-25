@@ -1,0 +1,240 @@
+{
+  "schema": "mab2_e0_topic_selection_v1",
+  "status": "LOCKED_DEVELOPMENT_GROUPS",
+  "selected_from": "official FActScore labeled data only",
+  "source_model": "InstructGPT",
+  "selection_rule": "sort by SHA256(salt|topic), take first 32 unique topics",
+  "salt": "mab2-e0-20261126-factscore-topic-v1",
+  "source_file_sha256": "4ec1fa538a9f99606130c76db63d4af7f203ca460954a3edd7c4d0e385cd2d58",
+  "group_count": 32,
+  "groups": [
+    {
+      "group_id": "e0g_01be23e8b793f9a1",
+      "topic_sha256": "bf12bf8fa636da1c2bf22fbd3b1208ad58ee385e2b46852af712559d9b6c2447",
+      "row_index": 173,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 479
+    },
+    {
+      "group_id": "e0g_040bf4fd22e2b0fb",
+      "topic_sha256": "8a442ac54b5be1ffd578a82ffc48f438d0ba01594be638ce3ab178feea66d9b5",
+      "row_index": 106,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 503
+    },
+    {
+      "group_id": "e0g_07449192ef94c68d",
+      "topic_sha256": "1ee1ed8ca76eb50abd7c7d707a5dff75e1c03510f02f58bc01c32f1153486f41",
+      "row_index": 166,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 643
+    },
+    {
+      "group_id": "e0g_0811023b0ccf8728",
+      "topic_sha256": "6ff59f2cb9edd47d06595f9f99e036e8dabc0d918363cc6fb815035e72c1bf89",
+      "row_index": 83,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 450
+    },
+    {
+      "group_id": "e0g_087b0296b0468b78",
+      "topic_sha256": "383c217b7bfb892a1eeb7dbb025e7665e4b57cda8f90eff77cfc0ca26bf0ad03",
+      "row_index": 6,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 585
+    },
+    {
+      "group_id": "e0g_088f5725ed26d950",
+      "topic_sha256": "f4ac10a1e1712073726ff0939c084f4168ba27ef4d48f38b29b2f7a40db753ac",
+      "row_index": 87,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 592
+    },
+    {
+      "group_id": "e0g_0a89a1d4b9d89d96",
+      "topic_sha256": "1124adea9cb3808ea08b5456016bff2e4c99aef87ca8fae1fcce2a3e18b1efa7",
+      "row_index": 156,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 520
+    },
+    {
+      "group_id": "e0g_0bce491ee68766f4",
+      "topic_sha256": "13cf706a9b528b219031eabfba41e0d3cb0616437e87f987c5778c1971a13854",
+      "row_index": 55,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 502
+    },
+    {
+      "group_id": "e0g_0df512412e9aca7b",
+      "topic_sha256": "38e6e94135ad2c15192fafdf966b00a960dac38b1412fdd71934473701a1ea90",
+      "row_index": 16,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 438
+    },
+    {
+      "group_id": "e0g_0dff82076c53261a",
+      "topic_sha256": "eb54a8d946facb65da1c2727996b7e417d976e71f2146c836506a05a5ac1afd7",
+      "row_index": 139,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 735
+    },
+    {
+      "group_id": "e0g_0f4ccce9918b38a6",
+      "topic_sha256": "47fac06f6b5a986c367966220f4ef927b0445565e48d0a4d01da4750288b9612",
+      "row_index": 129,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 751
+    },
+    {
+      "group_id": "e0g_11114f9db8d126a6",
+      "topic_sha256": "e381ae0665dfc4d8d18dafc55b24ea32ba02d0e050d0c25030ea9289dab93852",
+      "row_index": 122,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 528
+    },
+    {
+      "group_id": "e0g_1274f15b9224093e",
+      "topic_sha256": "75f56418df48f77ce535e82be80519e26636ba047f1789c6d0adc420364bbc28",
+      "row_index": 147,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 696
+    },
+    {
+      "group_id": "e0g_1511ad284aa1f5f1",
+      "topic_sha256": "1c7aac21f8eea10ed124d5beb27754a5440a3c1171448599d027f76ffbd4bb88",
+      "row_index": 59,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 569
+    },
+    {
+      "group_id": "e0g_154ac3f7f522d230",
+      "topic_sha256": "18fdf4e9de1dcb546da22793356a84eeee7669dd7ab6ecee4c1e96f215d578bf",
+      "row_index": 50,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 433
+    },
+    {
+      "group_id": "e0g_15ae96525fb23c7c",
+      "topic_sha256": "8bf8e416864d2e7c3bc2c3023fc756167e1133010687bfbac9820953c57adbc8",
+      "row_index": 48,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 760
+    },
+    {
+      "group_id": "e0g_1650be3a68b8fea0",
+      "topic_sha256": "c57cdf8d0fe659ef1ab78f7d2ff9d626accc21f28fc77d24f46d5b8f0bc14219",
+      "row_index": 128,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 1014
+    },
+    {
+      "group_id": "e0g_178046edc16d7aec",
+      "topic_sha256": "2c3f38c115cd95a9c2cb27206eef7ab5746379c2cebdee14b5396624813465c2",
+      "row_index": 5,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 537
+    },
+    {
+      "group_id": "e0g_1a1e986e5fe0fa69",
+      "topic_sha256": "ed57240b3ed2fa429b62b41684c8dd9bf9a19b23b8cc20f3451a7dbf17163ce0",
+      "row_index": 35,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 578
+    },
+    {
+      "group_id": "e0g_1c13ed4d036ec5d2",
+      "topic_sha256": "7e55adf8d2af156619fe8ae261f461947ac7ee7ab43388fa4aa3f79b0e98256a",
+      "row_index": 92,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 554
+    },
+    {
+      "group_id": "e0g_1c6a6ba1678c7d1b",
+      "topic_sha256": "dc465f5fd7d0351bde1538be56a63a42e68fd2846b06f874f64cba2410921f75",
+      "row_index": 39,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 468
+    },
+    {
+      "group_id": "e0g_1c7d158437c26235",
+      "topic_sha256": "4cc9ce02aadd7204202912f3d90529dbca1ed8697f3e7211d827daeb7aae79b2",
+      "row_index": 172,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 567
+    },
+    {
+      "group_id": "e0g_21bb5acda95a0362",
+      "topic_sha256": "7985886559cf4eb8b0c0ecdb8b8b42c7af55070ed03897cad4049c630c6553fa",
+      "row_index": 30,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 411
+    },
+    {
+      "group_id": "e0g_21f9c820d87521e2",
+      "topic_sha256": "3db3f858e36ea7d706be2fe3e7e20bd63c3eff8c3354bcba9ce5d5fc9da6c602",
+      "row_index": 70,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 792
+    },
+    {
+      "group_id": "e0g_227ca1a8d8364071",
+      "topic_sha256": "ca8fa076e218dab442181f99f84d5cf1b220426da861486f69d8c1996ae44802",
+      "row_index": 126,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 809
+    },
+    {
+      "group_id": "e0g_2448b3d7d0a335a1",
+      "topic_sha256": "99cf4160c876474e93ba1edaf68a673e43a4ff6c79b056a35f7f50d85c214305",
+      "row_index": 125,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 840
+    },
+    {
+      "group_id": "e0g_255f624d4ae006ac",
+      "topic_sha256": "688a65f0f342a6af4029f529aa6652058b1e46ef345ffc28ed095c6c596e0554",
+      "row_index": 174,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 734
+    },
+    {
+      "group_id": "e0g_2797a3a90bbd440e",
+      "topic_sha256": "9c9699bdd6e3ef9fa830eed5ef3feaa242ac31e212b8e0fbdcffd07fd427005c",
+      "row_index": 153,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 503
+    },
+    {
+      "group_id": "e0g_2c56c45b48a43bd5",
+      "topic_sha256": "5e80c2bef2a4397054ef5fa93759cd7f5f17159b9f2b5b35403dd8dbbd61988d",
+      "row_index": 19,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 406
+    },
+    {
+      "group_id": "e0g_2caa6981d5b5c4c1",
+      "topic_sha256": "94906348781dc58958ac60d46e00f8ddaeba4668bacf1b5600498dd138d5ec83",
+      "row_index": 46,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 529
+    },
+    {
+      "group_id": "e0g_2e55c99b466b3599",
+      "topic_sha256": "7c8dbb9ebd1cbe400e68186eaa3f76d57190809d036b952c4b1e0d9cc1d30573",
+      "row_index": 104,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 541
+    },
+    {
+      "group_id": "e0g_2f4637ee6a9724c1",
+      "topic_sha256": "02a79f45d993b2a9ff796e770d765dd1fa619145fa519c03a5f24ec0470ccac4",
+      "row_index": 144,
+      "source_file": "data/labeled/InstructGPT.jsonl",
+      "output_chars": 794
+    }
+  ],
+  "labels_excluded_from_manifest": true,
+  "online_gold_access": false,
+  "generated_at_utc": "2026-11-25T19:17:58.760398+00:00"
+}
+
