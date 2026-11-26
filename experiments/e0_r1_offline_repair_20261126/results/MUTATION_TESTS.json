@@ -1,0 +1,14 @@
+{
+  "schema": "mab2_r1_mutation_probe_v1",
+  "all_pass": true,
+  "cases": {
+    "certificate_boundary_pass": true,
+    "future_label_cannot_change_certified_pass": true,
+    "observed_witness_mutation_invalidates_pass": true,
+    "fact_parser_rejects_document_fragment": true,
+    "doc_parser_rejects_fact_fragment": true,
+    "doc_parser_accepts_exact_pass": true
+  },
+  "status": "PASS"
+}
+
