@@ -1,0 +1,14 @@
+{
+  "schema": "mab2_r1_flat_parse_diagnostic_v1",
+  "status": "PARSE_DIAGNOSTIC_UNFAIR_FLAT",
+  "raw_file": "E0_FLAT_32.json",
+  "old_parser": "SUPPORT/UNSUPPORTED",
+  "required_parser": "PASS/FAIL",
+  "k_mismatch": {
+    "flat": 1,
+    "verifier": 5
+  },
+  "context_truncation": 4096,
+  "fairness": "cannot be closed by CPU reparse"
+}
+
