@@ -1,0 +1,145 @@
+{
+  "schema": "mab2_r1_threshold_sweep_v1",
+  "rows": [
+    {
+      "threshold_pct": 40,
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "UNRESOLVED": 1,
+        "INVALID": 2,
+        "FULL_RESOLVED": 2,
+        "CERTIFIED": 27
+      },
+      "decision_counts": {
+        "PASS": 12,
+        "FAIL": 17,
+        "UNRESOLVED": 1
+      },
+      "valid_groups": 30,
+      "invalid_groups": 2,
+      "strict_fixed_query_count": 847,
+      "input_tokens": 1027989,
+      "output_tokens": 2482,
+      "total_tokens": 1030471,
+      "action_errors_vs_human_target": 16
+    },
+    {
+      "threshold_pct": 50,
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "UNRESOLVED": 1,
+        "INVALID": 2,
+        "FULL_RESOLVED": 3,
+        "CERTIFIED": 26
+      },
+      "decision_counts": {
+        "PASS": 6,
+        "FAIL": 23,
+        "UNRESOLVED": 1
+      },
+      "valid_groups": 30,
+      "invalid_groups": 2,
+      "strict_fixed_query_count": 827,
+      "input_tokens": 994773,
+      "output_tokens": 2421,
+      "total_tokens": 997194,
+      "action_errors_vs_human_target": 10
+    },
+    {
+      "threshold_pct": 60,
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "UNRESOLVED": 1,
+        "INVALID": 2,
+        "FULL_RESOLVED": 1,
+        "CERTIFIED": 28
+      },
+      "decision_counts": {
+        "PASS": 2,
+        "FAIL": 27,
+        "UNRESOLVED": 1
+      },
+      "valid_groups": 30,
+      "invalid_groups": 2,
+      "strict_fixed_query_count": 747,
+      "input_tokens": 902813,
+      "output_tokens": 2187,
+      "total_tokens": 905000,
+      "action_errors_vs_human_target": 9
+    },
+    {
+      "threshold_pct": 70,
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "UNRESOLVED": 1,
+        "INVALID": 2,
+        "FULL_RESOLVED": 0,
+        "CERTIFIED": 29
+      },
+      "decision_counts": {
+        "PASS": 1,
+        "FAIL": 28,
+        "UNRESOLVED": 1
+      },
+      "valid_groups": 30,
+      "invalid_groups": 2,
+      "strict_fixed_query_count": 621,
+      "input_tokens": 756652,
+      "output_tokens": 1821,
+      "total_tokens": 758473,
+      "action_errors_vs_human_target": 8
+    },
+    {
+      "threshold_pct": 80,
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "UNRESOLVED": 0,
+        "INVALID": 2,
+        "FULL_RESOLVED": 0,
+        "CERTIFIED": 30
+      },
+      "decision_counts": {
+        "PASS": 1,
+        "FAIL": 29,
+        "UNRESOLVED": 0
+      },
+      "valid_groups": 30,
+      "invalid_groups": 2,
+      "strict_fixed_query_count": 472,
+      "input_tokens": 581101,
+      "output_tokens": 1383,
+      "total_tokens": 582484,
+      "action_errors_vs_human_target": 7
+    },
+    {
+      "threshold_pct": 90,
+      "counts": {
+        "PASS": 0,
+        "FAIL": 0,
+        "UNRESOLVED": 0,
+        "INVALID": 2,
+        "FULL_RESOLVED": 0,
+        "CERTIFIED": 30
+      },
+      "decision_counts": {
+        "PASS": 0,
+        "FAIL": 30,
+        "UNRESOLVED": 0
+      },
+      "valid_groups": 30,
+      "invalid_groups": 2,
+      "strict_fixed_query_count": 303,
+      "input_tokens": 379663,
+      "output_tokens": 888,
+      "total_tokens": 380551,
+      "action_errors_vs_human_target": 6
+    }
+  ],
+  "interpretation": "decision_counts include completed certificates; unresolved is separate; invalid empty groups are excluded from the valid denominator"
+}
+
