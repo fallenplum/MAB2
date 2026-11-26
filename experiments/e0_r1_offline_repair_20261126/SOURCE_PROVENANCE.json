@@ -1,0 +1,22 @@
+{
+  "schema": "mab2_r1_source_provenance_v1",
+  "authoritative_prompt_hashes": {
+    "MAB2_E0_R1_Repair_Prompt.md": null,
+    "MAB2_E0_Real_Workflow_Applicability_Prompt.md": null,
+    "MAB2_AutoResearch_P4_AntiRewardHacking_Prompt.md": "bd9524b188331255ad81b279126612ced9063f20b222abd64b95d5dfaea7a7c2",
+    "AGENTS.md": "a8da9db5027f05b6087aceef2912828dd3952f6a796e603f167d41faae7ed596",
+    "experiments/p4_falsification_20261124/P4_STATE.json": "c3ac5dc4815edb23e73c49da6093c515272072847ee117864ac253577888a160",
+    "experiments/e0_real_workflow_20261126/E0_PROTOCOL_LOCK.json": "5d1f9ce933cea9ee23791f6b7a010b08d9ed9eff9cb15c48445b85d090a2c6fa",
+    "experiments/e0_real_workflow_20261126/E0_PROTOCOL_LOCK_REVISION_001.json": "dc20524d7bb89480100785edf8627290e58216ea3760715e705c14686f0cb1b0",
+    "experiments/e0_real_workflow_20261126/TOPIC_SELECTION_MANIFEST.json": "3238ec48273a40ae4ca3c24a052c081ea41d8a72e351fcef2a4c8c2c53eb11da",
+    "experiments/e0_real_workflow_20261126/UPDATE_MANIFEST.json": "bd3a75d92d5901208db9e23051a3895fc483a9d70636ba424b5b23d2339201ef"
+  },
+  "e0_base_commit": "f0f575d631cebfacb5c97df293e392e86d16faf",
+  "external_reference": "MAB2_E0_R1_AuditKit.zip missing",
+  "unavailable_attached_prompt_files": [
+    "MAB2_E0_R1_Repair_Prompt.md",
+    "MAB2_E0_Real_Workflow_Applicability_Prompt.md"
+  ],
+  "old_e0_frozen": true
+}
+
