@@ -1,0 +1,22 @@
+{
+  "schema": "mab2_r1_fact_digest_mapping_v1",
+  "mapping_scope": "scorer_side_only",
+  "records": {
+    "old": {
+      "events": 777,
+      "matched": 777,
+      "mismatches": [],
+      "mismatch_count": 0,
+      "stable_occurrence_id_count": 777
+    },
+    "new_cold": {
+      "events": 1073,
+      "matched": 1073,
+      "mismatches": [],
+      "mismatch_count": 0,
+      "stable_occurrence_id_count": 1073
+    }
+  },
+  "labels_not_used_for_mapping": true
+}
+
