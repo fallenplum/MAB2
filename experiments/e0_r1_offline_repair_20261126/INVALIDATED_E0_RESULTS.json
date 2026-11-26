@@ -1,0 +1,30 @@
+{
+  "schema": "mab2_r1_invalidated_e0_results_v1",
+  "invalidated": [
+    {
+      "id": "R01-R02",
+      "files": [
+        "E0_STRICT_GATE_COLD_32.json",
+        "E0_STRICT_GATE_CANONICAL_32.json"
+      ],
+      "reason": "prefix n and n=1 strict path"
+    },
+    {
+      "id": "R03",
+      "files": [
+        "E0_FLAT_32.json"
+      ],
+      "reason": "parser/k/truncation unfairness"
+    },
+    {
+      "id": "R04-R05",
+      "files": [
+        "E0_BASELINE_REPLAY.json",
+        "UPDATE_MANIFEST.json"
+      ],
+      "reason": "canonical scope and whole-document update"
+    }
+  ],
+  "historical_values_preserved": true
+}
+
