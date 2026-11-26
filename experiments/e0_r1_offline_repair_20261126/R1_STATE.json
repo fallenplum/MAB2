@@ -1,0 +1,21 @@
+{
+  "schema": "mab2_e0_r1_state_v1",
+  "status": "R1_VALID_REPLAY_DEVELOPMENT_ONLY",
+  "branch": "research/e0-r1-offline-repair-20261126",
+  "base_commit": "f0f575d631cebfacba5c97df293e392e86d16faf",
+  "scope": "CPU-only offline repair of existing E0 traces",
+  "new_gpu_hours": 0,
+  "new_paid_api_cost": 0,
+  "valid_groups": 30,
+  "invalid_groups": 2,
+  "strict_80_queries": 472,
+  "strict_80_total_tokens": 582484,
+  "strict_80_action_errors_vs_human_target": 7,
+  "random_expected_cost_tokens": 503239.86187659914,
+  "oracle_cost_tokens": 314416,
+  "cache_verified_events": 0,
+  "external_auditkit": "MISSING",
+  "auto_advance": false,
+  "ci": "OMITTED_BY_PROJECT_AGENTS_RULE"
+}
+
