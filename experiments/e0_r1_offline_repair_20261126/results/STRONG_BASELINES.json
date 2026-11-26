@@ -1,0 +1,30 @@
+{
+  "schema": "mab2_r1_strong_baselines_v1",
+  "B0_cold_full": {
+    "status": "ACTUAL_REPAIRED_REPLAY",
+    "input_plus_output_tokens": 1262853.0
+  },
+  "B1_fixed_order_strict": {
+    "status": "REPLAY_FIXED_N",
+    "queries_80_valid": 472
+  },
+  "B2_random": {
+    "status": "CPU_REPLAY_100_SEEDS"
+  },
+  "B3_cost_first": {
+    "status": "NOT_DEPLOYABLE_FUTURE_COST_DIAGNOSTIC"
+  },
+  "B4_B7_verified_cache": {
+    "status": "BLOCKED_CACHE_PERMISSION"
+  },
+  "B8_history_prior": {
+    "status": "NOT_APPLICABLE_INSUFFICIENT_HISTORICAL_PRIOR"
+  },
+  "D0_stale": {
+    "status": "REPLAY_EXPERIENCE_ONLY"
+  },
+  "O0_clairvoyant": {
+    "status": "CPU_ADDITIVE_WITNESS_DIAGNOSTIC"
+  }
+}
+
