@@ -1,0 +1,10 @@
+{
+  "schema": "mab2_r1_cache_permission_audit_v1",
+  "text_match_only_events": 70,
+  "cache_verified_events": 0,
+  "canonical_diagnostic_only": 71,
+  "occurrence_mapping": "fact_digest_mapping_verified_in_scorer_side_audit",
+  "stale_status": "EXPERIENCE_ONLY",
+  "reason": "fact occurrence identity is recoverable from frozen text digest, but billing/evidence reuse and online permission contract are not independently verifiable"
+}
+
