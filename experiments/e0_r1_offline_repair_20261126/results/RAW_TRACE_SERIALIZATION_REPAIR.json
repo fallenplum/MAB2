@@ -1,0 +1,85 @@
+{
+  "schema": "mab2_r1_raw_trace_repair_v1",
+  "records": [
+    {
+      "file": "E0_FULL_32.json",
+      "source_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_real_workflow_20261126\\results\\E0_FULL_32.json",
+      "source_sha256": "e8868e9cf59743ef2a92fb6e782989307e21253208cf6f42211af4d693cc40b9",
+      "repaired_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_r1_offline_repair_20261126\\private_repaired\\E0_FULL_32.json",
+      "repaired_sha256": "34d82a159ea2558c8dbc30928fdb941506bb4bfa2325690d809f4ba222daa0ac",
+      "repair": "escape top-level model/knowledge_source Windows backslashes only",
+      "parsed": true,
+      "top_level_keys": [
+        "elapsed_seconds",
+        "groups",
+        "knowledge_source",
+        "model",
+        "new_cold_decisions",
+        "new_cold_events",
+        "new_warm_decisions",
+        "new_warm_events",
+        "old_decisions",
+        "old_events",
+        "status"
+      ]
+    },
+    {
+      "file": "E0_STRICT_GATE_COLD_32.json",
+      "source_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_real_workflow_20261126\\results\\E0_STRICT_GATE_COLD_32.json",
+      "source_sha256": "2220c5da8b46c2ccef0cbfa358b58fdbd79cec1fc65e1cf124369ba033d6e014",
+      "repaired_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_r1_offline_repair_20261126\\private_repaired\\E0_STRICT_GATE_COLD_32.json",
+      "repaired_sha256": "28375eb1c39e4bc4a9fb831d80382e748afc4b9d263a23cd8bb122718f453d9a",
+      "repair": "escape top-level model/knowledge_source Windows backslashes only",
+      "parsed": true,
+      "top_level_keys": [
+        "elapsed_seconds",
+        "knowledge_source",
+        "method",
+        "model",
+        "rows",
+        "schema",
+        "status"
+      ]
+    },
+    {
+      "file": "E0_STRICT_GATE_CANONICAL_32.json",
+      "source_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_real_workflow_20261126\\results\\E0_STRICT_GATE_CANONICAL_32.json",
+      "source_sha256": "50fc537aa43304a093fab0af8fabe6f96531219e8defe00131e18a694b4e1e6c",
+      "repaired_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_r1_offline_repair_20261126\\private_repaired\\E0_STRICT_GATE_CANONICAL_32.json",
+      "repaired_sha256": "6798bae64e1842fbcbdf89434714b7f683024a25ff395f9c4dd3a985706f2b1c",
+      "repair": "escape top-level model/knowledge_source Windows backslashes only",
+      "parsed": true,
+      "top_level_keys": [
+        "elapsed_seconds",
+        "knowledge_source",
+        "method",
+        "model",
+        "rows",
+        "schema",
+        "status"
+      ]
+    },
+    {
+      "file": "E0_FLAT_32.json",
+      "source_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_real_workflow_20261126\\results\\E0_FLAT_32.json",
+      "source_sha256": "ea1e26a5da70e49debcffa23a630e261fd2a43115bc8065e229251627d520763",
+      "repaired_path": "D:\\develop\\CV\\多臂老虎机\\experiments\\e0_r1_offline_repair_20261126\\private_repaired\\E0_FLAT_32.json",
+      "repaired_sha256": "5bf2dd39a8801046a229aaac246d980186bf6cb2719251e42d1cfd857e08b920",
+      "repair": "escape top-level model/knowledge_source Windows backslashes only",
+      "parsed": true,
+      "top_level_keys": [
+        "elapsed_seconds",
+        "knowledge_source",
+        "method",
+        "model",
+        "rows",
+        "schema",
+        "status"
+      ]
+    }
+  ],
+  "fields_changed": [
+    "serialization_only"
+  ]
+}
+
