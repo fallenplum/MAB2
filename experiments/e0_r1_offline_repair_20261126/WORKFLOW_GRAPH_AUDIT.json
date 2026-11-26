@@ -1,0 +1,14 @@
+{
+  "schema": "mab2_r1_workflow_graph_audit_v1",
+  "status": "NO_BUNDLE_STRUCTURE_IN_CURRENT_WORKFLOW",
+  "nodes": [
+    "frozen_fact_list",
+    "topic_retrieval",
+    "per_fact_verifier",
+    "threshold_aggregator"
+  ],
+  "dynamic_shared_ancestors": [],
+  "evidence": "actual E0 workflow is topic fan-out with independent fact verification",
+  "historical_report_conflict": "E0_FINAL_REPORT_ZH and WORKFLOW_GRAPH.json retain stale blocked/not-built sections; R1 uses raw traces and manifests as authoritative for executed rows"
+}
+
