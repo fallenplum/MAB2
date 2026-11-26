@@ -1,0 +1,14 @@
+{
+  "schema": "mab2_r1_fact_trace_index_v1",
+  "groups": 32,
+  "valid_groups": 30,
+  "invalid_groups": [
+    "e0g_154ac3f7f522d230",
+    "e0g_178046edc16d7aec"
+  ],
+  "old_events": 777,
+  "new_cold_events": 1073,
+  "new_warm_events": 1073,
+  "raw_trace_source": "private repaired copy"
+}
+
