@@ -1,0 +1,19 @@
+{
+  "schema": "mab2_r1_gate_receipts_v1",
+  "status": "R1_VALID_REPLAY_DEVELOPMENT_ONLY",
+  "gates": {
+    "fixed_n_certificate": "PASS_CPU",
+    "n33_and_exhaustive_tests": "PASS",
+    "mutation_probes": "PASS",
+    "fact_digest_mapping": "PASS_SCORER_SIDE_777_AND_1073",
+    "raw_trace_repair": "PASS_SERIALIZATION_ONLY",
+    "coverage_32": "PASS_DEVELOPMENT",
+    "random_expectation": "PASS_CPU",
+    "cache_strict_verification": "BLOCKED_MISSING_EXECUTION_CONTRACT",
+    "flat_fairness": "UNFAIR_BASELINE",
+    "external_auditkit": "EXTERNAL_REFERENCE_MISSING",
+    "independent_confirmation": "NOT_APPLICABLE_EXPOSED_DATA"
+  },
+  "next": "do not auto-advance; a new stage requires a legal cache permission contract and matched post-edit trace"
+}
+
