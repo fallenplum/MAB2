@@ -1,0 +1,10 @@
+{
+  "schema": "mab2_r1_headroom_v1",
+  "status": "HEADROOM_PARTIAL_COST_SCOPE_LIMITED",
+  "cold_to_random_expected": 0.6015055894260067,
+  "cold_to_oracle": 0.7510272375327929,
+  "strong_baseline": "B0 cold actual; cache strict verification blocked",
+  "graph_attribution": "NO_BUNDLE_STRUCTURE",
+  "clairvoyant_scope": "flat additive input+output token diagnostic"
+}
+
