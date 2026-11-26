@@ -1,0 +1,21 @@
+{
+  "schema": "mab2_r1_quality_v1",
+  "fact_accuracy_old_aggregate": 0.6979166666666666,
+  "fact_accuracy_new_aggregate": 0.6810912511759172,
+  "document_errors_new_cold": 7,
+  "strict_gate_errors_prefix_n_invalidated": 17,
+  "strict_gate_errors_full_n_repaired": 7,
+  "flat_errors": 30,
+  "unknown_new_facts": 10,
+  "human_target_counts": {
+    "PASS": 6,
+    "FAIL": 24
+  },
+  "invalid_groups": [
+    "e0g_154ac3f7f522d230",
+    "e0g_178046edc16d7aec"
+  ],
+  "mapping": "S -> support; NS/IR -> unsupported for custom D only",
+  "official_factscore_equivalence": "not claimed"
+}
+
