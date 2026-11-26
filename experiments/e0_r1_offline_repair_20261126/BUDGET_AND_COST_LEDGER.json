@@ -1,0 +1,15 @@
+{
+  "schema": "mab2_r1_budget_cost_ledger_v1",
+  "new_gpu_hours": 0,
+  "new_paid_api_cost": 0,
+  "new_cpu_seconds": 0.279,
+  "historical_gpu_hours": null,
+  "historical_billing": "UNKNOWN",
+  "token_cost_scope": "input+output tokens from actual E0 trace",
+  "unknown_fields": [
+    "retrieval cost",
+    "wall time billing",
+    "GPU hours"
+  ]
+}
+
